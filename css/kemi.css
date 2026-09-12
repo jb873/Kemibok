@@ -220,6 +220,18 @@
    kap-7 saknar regel i geografi.css (blev muted-grå) och får patina. */
 .kapitel-kort.kap-7 { border-left-color: var(--accent); }
 
+/* SKYDDSNÄT – kortets titel och beskrivning på var sin rad.
+   Kanonisk markup (Geografi, referensimplementationen) är
+     <span class="kap-titel">…</span>
+     <p class="kap-beskrivning">…</p>
+   geografi.css sätter aldrig display, så med <span class="kap-beskrivning">
+   (Historias root- och delkapitel-index) flyter titel och beskrivning ihop
+   till en mening. Kemi ska få sex kapitel till som skrivs av från befintliga
+   sidor – regeln finns för att <span>-formen inte ska kunna smyga sig in igen.
+   Den döljer inget: markupen ska ändå vara <p>. */
+.kapitel-kort .kap-titel,
+.kapitel-kort .kap-beskrivning { display: block; }
+
 /* Elevboken-fliken */
 .elevbok-textarea:focus,
 .egen-fraga-input:focus { border-color: var(--accent-text); }
