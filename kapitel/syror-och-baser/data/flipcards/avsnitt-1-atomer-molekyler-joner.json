@@ -1,0 +1,180 @@
+{
+  "avsnitt": 1,
+  "titel": "Atomer, molekyler och joner",
+  "delkapitel": "repetition",
+  "version": "1.0",
+  "kort_totalt": 24,
+  "_kommentar": "Flipcards för avsnitt 1 (Atomer, molekyler och joner). 16 begreppskort + 8 modellkort = 24 kort; inga redogörelsekort (KEMI-TILLAGG §2). Repetitionsdelkapitlet överskrider riktmärket 8–14 medvetet. Nivåfördelning 19 grundlaggande / 5 fordjupning. Formler som \\(\\ce{...}\\) – renderas av MathJax via KemiFormler-hooken i flipcards.js.",
+  "begreppskort": [
+    {
+      "id": "k1-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en atomkärna?",
+      "svar": "Den lilla delen i mitten av atomen. Den innehåller **protoner** och **neutroner**, och nästan hela atomens massa finns där."
+    },
+    {
+      "id": "k1-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en proton?",
+      "svar": "En partikel i atomkärnan med **positiv** laddning. Antalet protoner bestämmer vilket atomslag atomen tillhör."
+    },
+    {
+      "id": "k1-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en neutron?",
+      "svar": "En partikel i atomkärnan **utan** elektrisk laddning. Antalet neutroner kan variera mellan atomer av samma atomslag."
+    },
+    {
+      "id": "k1-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en elektron?",
+      "svar": "En partikel med **negativ** laddning som finns runt atomkärnan. Det är elektronerna som ändras när en atom blir en jon."
+    },
+    {
+      "id": "k1-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder det att två laddningar attraherar varandra?",
+      "svar": "Att de **dras mot varandra**. Det sker när laddningarna har olika tecken — en positiv och en negativ."
+    },
+    {
+      "id": "k1-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder det att två laddningar repellerar varandra?",
+      "svar": "Att de **stöter bort varandra**. Det sker när laddningarna har samma tecken — två positiva eller två negativa."
+    },
+    {
+      "id": "k1-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad menas med ett atomslag?",
+      "svar": "Alla atomer som har **samma antal protoner**. Alla atomer med 8 protoner är syre, oavsett hur många neutroner eller elektroner de har."
+    },
+    {
+      "id": "k1-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en valenselektron?",
+      "svar": "En elektron som sitter **längst ut** i atomen. Det är valenselektronerna som avgör hur atomen reagerar med andra atomer."
+    },
+    {
+      "id": "k1-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en molekyl?",
+      "svar": "Två eller flera atomer som sitter ihop. Atomerna kan vara av samma slag, som \\(\\ce{O2}\\), eller av olika slag, som \\(\\ce{H2O}\\)."
+    },
+    {
+      "id": "k1-b10",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är ett grundämne?",
+      "svar": "Ett ämne som bara innehåller **ett atomslag**. \\(\\ce{O2}\\) är ett grundämne — två atomer, men bara en sort."
+    },
+    {
+      "id": "k1-b11",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en kemisk förening?",
+      "svar": "Ett ämne som innehåller **minst två olika atomslag**. \\(\\ce{H2O}\\) innehåller både väte och syre."
+    },
+    {
+      "id": "k1-b12",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en jon?",
+      "svar": "En partikel som har en **elektrisk laddning**. Den uppstår när en atom inte längre har lika många elektroner som protoner."
+    },
+    {
+      "id": "k1-b13",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en sammansatt jon?",
+      "svar": "Flera atomer som sitter ihop och tillsammans har en laddning. Till exempel hydroxidjonen, \\(\\ce{OH-}\\), och sulfatjonen, \\(\\ce{SO4^2-}\\)."
+    },
+    {
+      "id": "k1-b14",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är en isotop?",
+      "svar": "Atomer av samma atomslag som har **olika antal neutroner**. De har samma antal protoner och är därför samma ämne."
+    },
+    {
+      "id": "k1-b15",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad menas med ädelgasstruktur?",
+      "svar": "Att det **yttersta elektronskalet är fullt**. Ädelgaserna har det redan, och andra atomslag strävar mot det genom att avge, ta upp eller dela elektroner."
+    },
+    {
+      "id": "k1-b16",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är en orbital?",
+      "svar": "Ett område runt atomkärnan där en elektron **troligen befinner sig**. Elektroner rör sig inte i banor — orbitalen är ett sannolikhetsmoln."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k1-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur många atomer finns det i en molekyl \\(\\ce{H2O}\\)?",
+      "svar": "**Tre.** Två väteatomer och en syreatom. Tvåan gäller bara vätet — står ingen siffra efter O menas en."
+    },
+    {
+      "id": "k1-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Kväve har atomnummer 7. Hur många protoner har en kväveatom?",
+      "svar": "**Sju.** Atomnumret är alltid samma sak som antalet protoner."
+    },
+    {
+      "id": "k1-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "En atom har 8 protoner i kärnan. Vilket ämne är det?",
+      "svar": "**Syre.** Antalet protoner avgör vilket atomslag det är — inget annat."
+    },
+    {
+      "id": "k1-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Är \\(\\ce{CO2}\\) ett grundämne eller en kemisk förening?",
+      "svar": "En **kemisk förening.** Den innehåller två olika atomslag: kol och syre."
+    },
+    {
+      "id": "k1-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "En litiumatom har 3 protoner och 2 elektroner. Vilken laddning har den?",
+      "svar": "**Plus ett**, alltså \\(\\ce{Li+}\\). Tre plus och två minus ger ett plus över."
+    },
+    {
+      "id": "k1-m6",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer med antalet protoner när en atom blir en jon?",
+      "svar": "**Ingenting.** Antalet protoner ändras aldrig — det är bara elektronerna som kommer och går."
+    },
+    {
+      "id": "k1-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Protonerna i kärnan är alla positiva och borde repellera varandra. Varför faller inte kärnan isär?",
+      "svar": "Den **starka kärnkraften** håller ihop den. Den är mycket starkare än repulsionen, men bara på extremt korta avstånd."
+    },
+    {
+      "id": "k1-m8",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför har tunga atomslag fler neutroner än protoner?",
+      "svar": "Neutronerna bidrar till kärnkraften **utan att öka repulsionen**. Ju fler protoner som ska repellera varandra, desto fler neutroner behövs för att hålla ihop kärnan."
+    }
+  ]
+}
