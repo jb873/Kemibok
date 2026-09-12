@@ -3,10 +3,115 @@
   "kapitel_titel": "Syror och baser",
   "version": 1,
   "skapad": "2026-09-12",
-  "kommentar": "Begrepp levereras separat, 1:1 ur flipcardsens begreppskort. kallfil = kapitel/{kapitel}/data/flipcards/avsnitt-N-{slug}.json (repo-relativ).",
+  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds ur flipcardsens grundläggande begreppskort (kallfil). Fördjupningsbegrepp (isotop, ädelgasstruktur, orbital) finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här, flipcardsen behåller sina.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
   },
-  "begrepp": []
+  "begrepp": [
+    {
+      "id": "k1-b1",
+      "avsnitt": "1",
+      "avsnitt_titel": "Atomer, molekyler och joner",
+      "term": "atomkärna",
+      "expertdefinition": "Den lilla delen i mitten av atomen. Den innehåller protoner och neutroner, och nästan hela atomens massa finns där.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    },
+    {
+      "id": "k1-b2",
+      "avsnitt": "1",
+      "avsnitt_titel": "Atomer, molekyler och joner",
+      "term": "proton",
+      "expertdefinition": "En partikel i atomkärnan med positiv laddning. Antalet protoner bestämmer vilket atomslag atomen tillhör.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    },
+    {
+      "id": "k1-b3",
+      "avsnitt": "1",
+      "avsnitt_titel": "Atomer, molekyler och joner",
+      "term": "neutron",
+      "expertdefinition": "En partikel i atomkärnan utan elektrisk laddning. Antalet neutroner kan variera mellan atomer av samma atomslag.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    },
+    {
+      "id": "k1-b4",
+      "avsnitt": "1",
+      "avsnitt_titel": "Atomer, molekyler och joner",
+      "term": "elektron",
+      "expertdefinition": "En partikel med negativ laddning som finns runt atomkärnan. Det är elektronerna som ändras när en atom blir en jon.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    },
+    {
+      "id": "k1-b5",
+      "avsnitt": "1",
+      "avsnitt_titel": "Atomer, molekyler och joner",
+      "term": "attrahera",
+      "expertdefinition": "Att de dras mot varandra. Det sker när laddningarna har olika tecken — en positiv och en negativ.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    },
+    {
+      "id": "k1-b6",
+      "avsnitt": "1",
+      "avsnitt_titel": "Atomer, molekyler och joner",
+      "term": "repellera",
+      "expertdefinition": "Att de stöter bort varandra. Det sker när laddningarna har samma tecken — två positiva eller två negativa.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    },
+    {
+      "id": "k1-b7",
+      "avsnitt": "1",
+      "avsnitt_titel": "Atomer, molekyler och joner",
+      "term": "atomslag",
+      "expertdefinition": "Alla atomer som har samma antal protoner. Alla atomer med 8 protoner är syre, oavsett hur många neutroner eller elektroner de har.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    },
+    {
+      "id": "k1-b8",
+      "avsnitt": "1",
+      "avsnitt_titel": "Atomer, molekyler och joner",
+      "term": "valenselektron",
+      "expertdefinition": "En elektron som sitter längst ut i atomen. Det är valenselektronerna som avgör hur atomen reagerar med andra atomer.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    },
+    {
+      "id": "k1-b9",
+      "avsnitt": "1",
+      "avsnitt_titel": "Atomer, molekyler och joner",
+      "term": "molekyl",
+      "expertdefinition": "Två eller flera atomer som sitter ihop. Atomerna kan vara av samma slag, som i syrgas, eller av olika slag, som i vatten.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    },
+    {
+      "id": "k1-b10",
+      "avsnitt": "1",
+      "avsnitt_titel": "Atomer, molekyler och joner",
+      "term": "grundämne",
+      "expertdefinition": "Ett ämne som bara innehåller ett atomslag. Syrgas är ett grundämne: molekylen har två atomer, men bara en sort.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    },
+    {
+      "id": "k1-b11",
+      "avsnitt": "1",
+      "avsnitt_titel": "Atomer, molekyler och joner",
+      "term": "kemisk förening",
+      "expertdefinition": "Ett ämne som innehåller minst två olika atomslag. Vatten innehåller både väte och syre.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    },
+    {
+      "id": "k1-b12",
+      "avsnitt": "1",
+      "avsnitt_titel": "Atomer, molekyler och joner",
+      "term": "jon",
+      "expertdefinition": "En partikel som har en elektrisk laddning. Den uppstår när en atom inte längre har lika många elektroner som protoner.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    },
+    {
+      "id": "k1-b13",
+      "avsnitt": "1",
+      "avsnitt_titel": "Atomer, molekyler och joner",
+      "term": "sammansatt jon",
+      "expertdefinition": "Flera atomer som sitter ihop och tillsammans har en laddning. Hydroxidjonen och sulfatjonen är exempel.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    }
+  ]
 }
