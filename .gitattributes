@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Binära typsnitt – aldrig radslutsnormalisering
+*.woff binary
+*.woff2 binary

@@ -1,0 +1,121 @@
+/* ============================================================
+   NYA BLOCK för Revolutionernas tid kapitel-index.
+   Kandidater för DELAD-BAS (universaliseras i lärportal-chatten).
+   Använder riktiga tokens från geografi.css/historia.css.
+   ============================================================ */
+
+/* --- NYTT BLOCK 1: inledande text --- */
+.kapitel-intro{
+  max-width: var(--las-bredd);
+  margin: 1.5rem auto 0.5rem;
+}
+.kapitel-intro p{ margin: 0 0 1.1em; }
+.kapitel-intro p:last-child{ margin-bottom: 0; }
+.kapitel-intro p:first-of-type::first-letter{
+  font-family: var(--font-heading);
+  float: left;
+  font-size: 3.5rem;
+  line-height: 0.8;
+  padding: 0.06em 0.12em 0 0;
+  color: var(--accent);
+}
+.kapitel-intro strong{ color: var(--brass-text); font-weight: 600; }
+.kapitel-intro em{ color: var(--ink); font-style: italic; }
+
+/* --- NYTT BLOCK 2: översiktstidslinje (klickbar) --- */
+.oversiktstidslinje{ max-width: 1040px; margin: 3rem auto 0.5rem; }
+.oversiktstidslinje .ots-label{
+  text-align: center;
+  font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 1rem;
+}
+.oversiktstidslinje .ots-ram{
+  border: 1px solid rgba(27,42,54,0.15);
+  border-radius: 4px;
+  background: var(--paper-light);
+  padding: 2.1rem 1.75rem 1.6rem;
+  overflow-x: auto;
+}
+.ots-spar{
+  position: relative;
+  display: flex; justify-content: space-between;
+  min-width: 860px;
+}
+.ots-spar::before{
+  content:""; position:absolute; left:2%; right:2%; top:9px; height:2px;
+  background: var(--brass); opacity:.5;
+}
+.ots-nod{
+  position: relative; flex:1; text-align:center; padding-top: 1.5rem;
+  text-decoration: none; color: inherit;
+}
+.ots-nod .prick{
+  position:absolute; top:2px; left:50%; transform:translateX(-50%);
+  width:15px; height:15px; border-radius:50%;
+  background: var(--paper-light);
+  border: 3px solid var(--nod, var(--brass));
+  box-shadow: 0 0 0 3px var(--paper-light);
+  transition: transform .15s ease;
+}
+a.ots-nod:hover .prick{ transform: translateX(-50%) scale(1.25); }
+a.ots-nod:hover .handelse{ color: var(--accent); }
+.ots-nod .ar{
+  display:block; font-size:13px; font-weight:600; letter-spacing:.04em;
+  text-transform:uppercase; color: var(--ink); margin-bottom:.2rem;
+}
+.ots-nod .handelse{
+  display:block; font-family: var(--font-body); font-style:italic;
+  font-size:15px; color: var(--muted); line-height:1.35; padding:0 4px;
+  transition: color .15s ease;
+}
+
+/* --- NYTT BLOCK 3: delar-ingress --- */
+.delar-ingress{ text-align:center; max-width: var(--las-bredd); margin: 3.5rem auto 1.5rem; }
+.delar-ingress .ovre-label{
+  font-size:12px; letter-spacing:.24em; text-transform:uppercase; color: var(--brass-text);
+}
+.delar-ingress h2{
+  font-family: var(--font-heading); font-weight:400; font-size:1.9rem;
+  color: var(--ink); margin:.5rem 0 .6rem; border:0;
+}
+.delar-ingress .under{ font-style:italic; color: var(--muted); margin:0 auto; max-width:30rem; }
+
+/* --- NYTT BLOCK 4: sticky snabbnav (DELAD-BAS-kandidat) --- */
+.snabbnav{
+  position: fixed; top:0; left:0; right:0; z-index:50;
+  background: rgba(244,236,214,0.97);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid var(--brass);
+  box-shadow: 0 2px 10px rgba(27,42,54,0.08);
+  transform: translateY(-100%);
+  transition: transform .22s ease;
+}
+.snabbnav.synlig{ transform: translateY(0); }
+.snabbnav-inner{
+  max-width: 1040px; margin:0 auto; padding: .55rem 1rem;
+  display:flex; align-items:center; gap:1.25rem;
+}
+.snabbnav .sn-brand{
+  font-family: var(--font-heading); font-size: .95rem; color: var(--accent);
+  white-space:nowrap; flex:0 0 auto;
+}
+.snabbnav .sn-delar{
+  display:flex; gap: .9rem; flex:1 1 auto; justify-content:center; flex-wrap:nowrap;
+}
+.snabbnav .sn-delar a{
+  font-size: .82rem; color: var(--brass-text); text-decoration:none; white-space:nowrap;
+  letter-spacing:.01em;
+}
+.snabbnav .sn-delar a:hover{ color: var(--accent); text-decoration:underline; }
+.snabbnav .sn-delar a .rn{ color: var(--muted); font-size:.72rem; margin-right:.15em; }
+.snabbnav .sn-verktyg{
+  display:flex; gap:.7rem; flex:0 0 auto; padding-left:1rem;
+  border-left:1px solid rgba(27,42,54,0.15);
+}
+.snabbnav .sn-verktyg a{
+  font-size:.8rem; color: var(--ink); text-decoration:none; white-space:nowrap;
+}
+.snabbnav .sn-verktyg a:hover{ color: var(--accent); }
+
+/* Markör i kapitel-kort för Bakgrund (icke-numerisk) */
+.kapitel-kort .romersk.bakgrund-markor{ color: var(--brass-text); font-size:1.4rem; }
