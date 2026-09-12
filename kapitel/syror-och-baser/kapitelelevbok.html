@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elevbok – Syror och baser – Kemi</title>
+  <link rel="stylesheet" href="../../css/geografi.css">
+  <link rel="stylesheet" href="../../css/kemi.css">
+  <link rel="stylesheet" href="../../css/fonts.css">
+</head>
+<body>
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">Elevbok</span>
+      </nav>
+      <span class="avsnitt-label">Kapitelverktyg</span>
+      <h1>Elevbok – Syror och baser</h1>
+      <p class="subtitel">— alla dina sammanfattningar samlade —</p>
+    </div>
+  </header>
+
+  <main class="sida kapitel-vy elevbok-sida">
+
+<div id="kapitel-elevbok-verktyg"></div>
+
+    <div class="kelev-layout">
+      <nav class="kelev-nav-wrap" aria-label="Innehåll">
+        <div id="kapitel-elevbok-nav" class="kelev-nav"></div>
+      </nav>
+      <div id="kapitel-elevbok-innehall" class="kelev-innehall"></div>
+    </div>
+
+  </main>
+
+  <script>
+    // OBS: kapitel-id här, delkapitel-slug på avsnittssidorna → elevsvar delar inte
+    // localStorage-nyckel (geo-elev-svar-{id}). Känd plattformsfråga, väntar på
+    // ramverks-chatten (Historia PLATTFORMS-ANDRINGAR 2026-07-04). Byggt som dokumenterat.
+    const DELKAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_TITEL = 'Syror och baser';
+  </script>
+  <script src="../../js/elevbok.js"></script>
+  <script src="../../js/avsnitt.js"></script>
+  <script src="../../js/elevdata-overforing.js" defer></script>
+  <script src="../../js/kapitel-elevbok.js" defer></script>
+  <script src="../../js/elevfeedback.js" defer></script>
+</body>
+</html>

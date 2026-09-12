@@ -1,0 +1,12 @@
+{
+  "kapitel_id": "syror-och-baser",
+  "kapitel_titel": "Syror och baser",
+  "version": 1,
+  "skapad": "2026-09-12",
+  "kommentar": "Begrepp levereras separat, 1:1 ur flipcardsens begreppskort. kallfil = kapitel/{kapitel}/data/flipcards/avsnitt-N-{slug}.json (repo-relativ).",
+  "upplasning": {
+    "min_ord": 8,
+    "anvand_nyckelord": false
+  },
+  "begrepp": []
+}

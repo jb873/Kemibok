@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lösningar – Bakgrund och repetition – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Bakgrund och repetition</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">5. Lösningar</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 5</span>
+      <h1>Lösningar</h1>
+      <p class="subtitel">— {{kort underrubrik}} —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare (2-4 underdelar) – antal och titlar kommer med texterna -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">{{Underdel A-titel}}</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">{{Underdel B-titel}}</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-losningar">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- UNDERDEL A (aktiv = utan dold) -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+          <p>{{enkel brödtext, underdel A}}</p>
+        </div>
+
+        <!-- 📘 STANDARD (default synlig = utan dold) -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+          <p>{{standard brödtext, underdel A}}</p>
+        </div>
+
+        <!-- 📕 FÖRDJUPNING — i repetitionsdelkapitlet alltid ifylld (sannare modell) -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+          <p>{{fordjupning brödtext, underdel A}}</p>
+        </div>
+
+      </div>
+
+      <!-- UNDERDEL B (dold tills vald) -->
+      <div class="underdel-text dold" data-underdel="b">
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+          <p>{{enkel brödtext, underdel B}}</p>
+        </div>
+        <div class="niva-innehall brodtext" data-niva="standard">
+          <p>{{standard brödtext, underdel B}}</p>
+        </div>
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+          <p>{{fordjupning brödtext, underdel B}}</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-5-losningar.json"
+           data-avsnitt="a5_losningar">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a5_losningar';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'repetition';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "delkapitel": "syror-och-baser",
+  "_kommentar": "Elevboksfrågor för hela kapitlet Syror och baser (en fil per kapitel; avsnitt-elevbok.js filtrerar på AVSNITT_ID). Repetition: a1–a5. Frågor levereras separat.",
+  "avsnitt": [
+    {
+      "id": "a1_atomer-molekyler-joner",
+      "nummer": 1,
+      "titel": "Atomer, molekyler och joner",
+      "fragor": []
+    },
+    {
+      "id": "a2_periodiska-systemet",
+      "nummer": 2,
+      "titel": "Det periodiska systemet",
+      "fragor": []
+    },
+    {
+      "id": "a3_kemiska-bindningar",
+      "nummer": 3,
+      "titel": "Kemiska bindningar",
+      "fragor": []
+    },
+    {
+      "id": "a4_vattnets-egenskaper",
+      "nummer": 4,
+      "titel": "Vattnets egenskaper",
+      "fragor": []
+    },
+    {
+      "id": "a5_losningar",
+      "nummer": 5,
+      "titel": "Lösningar",
+      "fragor": []
+    }
+  ]
+}

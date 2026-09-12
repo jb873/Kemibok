@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Självskattning – Syror och baser – Kemi</title>
+  <link rel="stylesheet" href="../../css/geografi.css">
+  <link rel="stylesheet" href="../../css/kemi.css">
+  <link rel="stylesheet" href="../../css/fonts.css">
+</head>
+<body>
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">Självskattning</span>
+      </nav>
+      <span class="avsnitt-label">Kapitelverktyg</span>
+      <h1>Självskattning – Syror och baser</h1>
+      <p class="subtitel">— bedöm vad du kan, moment för moment —</p>
+    </div>
+  </header>
+
+  <main class="sida kapitel-vy matris-sida">
+
+<div id="sjalvskattning-verktyg"></div>
+    <div id="sjalvskattning-statistik" class="kelev-stats"></div>
+
+    <div class="kelev-layout">
+      <nav class="kelev-nav-wrap" aria-label="Innehåll">
+        <div id="sjalvskattning-nav" class="kelev-nav"></div>
+      </nav>
+      <div id="sjalvskattning-innehall" class="kelev-innehall"></div>
+    </div>
+
+  </main>
+
+  <script>
+    const KAPITEL_ID_VAR = 'syror-och-baser';
+    const KAPITEL_TITEL = 'Syror och baser';
+    window.MATRIS_URL = 'data/matris.json';
+    window.KAPITEL_ID_VAR = 'syror-och-baser';
+  </script>
+  <script src="../../js/elevdata-overforing.js" defer></script>
+  <script src="../../js/sjalvskattning-vy.js" defer></script>
+  <script src="../../js/elevfeedback.js" defer></script>
+</body>
+</html>

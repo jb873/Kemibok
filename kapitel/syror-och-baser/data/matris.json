@@ -1,0 +1,31 @@
+{
+  "kapitel_id": "syror-och-baser",
+  "kapitel_titel": "Syror och baser",
+  "version": 1,
+  "skapad": "2026-09-12",
+  "kommentar": "Moment levereras separat.",
+  "skattningsalternativ": [
+    {
+      "id": "kan",
+      "label": "Kan",
+      "farg": "gron"
+    },
+    {
+      "id": "osaker",
+      "label": "Osäker",
+      "farg": "gul"
+    },
+    {
+      "id": "kan_ej",
+      "label": "Kan ej",
+      "farg": "rod"
+    },
+    {
+      "id": "ej_bedomt",
+      "label": "Ej gjort bedömning",
+      "farg": "ljus",
+      "default": true
+    }
+  ],
+  "moment": []
+}

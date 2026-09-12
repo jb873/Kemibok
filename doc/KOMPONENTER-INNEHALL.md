@@ -7,8 +7,8 @@
 > Innehållssessioner ser inte CSS — bara HTML. För att producera
 > fungerande markup måste de exakta klassnamnen vara dokumenterade.
 
-**Senast uppdaterad:** 2026-09-12 (v1.0)
-**Version:** 1.0 (Kemi)
+**Senast uppdaterad:** 2026-09-12 (v1.1)
+**Version:** 1.1 (Kemi)
 **DELAD-BAS:** v1.1 — måste matcha över alla ämnen
 **Ärvd från:** KOMPONENTER-INNEHALL-GEOGRAFI v1.6
 **Källa för alla mallar:** Geografis v1.6 (DOM-verifierad hero-banner) + Historias mappstruktur
@@ -282,12 +282,12 @@ Underdels-sektioner behöver **ingen `id`**. `avsnitt.js` läser `location.hash`
         <div class="niva-innehall brodtext dold" data-niva="enkel">
 
           <div class="karnpunkter">
-            <h3>🎯 Kärnpunkter</h3>
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
             <ul><li>{{kärnpunkt}}</li><li>{{kärnpunkt}}</li></ul>
           </div>
 
           <div class="bildguide">
-            <h3>👁 Titta efter</h3>
+            <div class="bildguide-rubrik">👁 Titta efter</div>
             <ul><li>{{vad eleven ska leta efter}}</li></ul>
           </div>
           <figure class="brodtext-bild enkel">
@@ -614,7 +614,7 @@ gör den kontextlös, för mycket dränker den.
 
 ```html
 <div class="karnpunkter">
-  <h3>🎯 Kärnpunkter</h3>
+  <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
   <ul>
     <li>{Punkt 1 — kort, viktiga ord <strong>fetstilta</strong>}</li>
     <li>{Punkt 2}</li>
@@ -624,7 +624,9 @@ gör den kontextlös, för mycket dränker den.
 ```
 
 **Regler:**
-- Rubriken kan vara `<h3>` eller `<div class="karnpunkter-rubrik">` — båda fungerar
+- Rubriken är `<div class="karnpunkter-rubrik">` (som Historia). `<h3>` fungerar tekniskt men
+  träffas av `.brodtext h3` i geografi.css och blir en stor mellanrubrik i stället för en etikett
+  (v1.1, verifierat i Chromium)
 - 3–5 punkter, max 6
 - Fetstil för viktiga begrepp
 
@@ -637,7 +639,7 @@ gör den kontextlös, för mycket dränker den.
 
 ```html
 <div class="bildguide">
-  <h3>👁 Titta efter</h3>
+  <div class="bildguide-rubrik">👁 Titta efter</div>
   <ul>
     <li>{Vad eleven specifikt ska titta efter i bilden}</li>
     <li>{... max 5 punkter}</li>
@@ -721,7 +723,8 @@ sammanfattande rader stänger. Formen är flexibel nog för det som inte är ett
 - `kapitel-kort` (kapitelöversikt på startsidor) — ej dokumenterad
 - `resurs-kort` (kapitelverktygs-rad) — ej dokumenterad
 - Kapitelverktygs-sidor (`kapitelelevbok.html`, `kapitelbegreppsbank.html`,
-  `kapitelsjalvskattning.html`) — separat dokumentation
+  `sjalvskattning.html` — inte `kapitelsjalvskattning.html` som LEVERANSGUIDE DEL 2 säger;
+  Historia använder `sjalvskattning.html` och kemi följer verkligheten) — separat dokumentation
 - **`faktaruta`** — se DEL 4.6, beställd men ej byggd
 - **Klickbara begreppsord i löptext** — se DEL 12, plattformsfråga, ej kemibygge
 
@@ -1110,6 +1113,10 @@ När osäker — kolla referensimplementationen **plus** CSS:n **plus** JS:n. **
 ## Revisionshistorik
 **🎨 boklokal**
 
+- **v1.1 (2026-09-12):** Rättningar efter pilotbygget (Code, beslut av Joachim). Kärnpunkter- och
+  bildguide-rubriken i scaffolden och DEL 4.3/4.4 är `<div class="…-rubrik">`, inte `<h3>` — `<h3>`
+  träffas av `.brodtext h3` och renderas som mellanrubrik. Självskattningssidan heter
+  `sjalvskattning.html` (DEL 5), som i Historia. Inga komponenter ändrade; DELAD-BAS oförändrad.
 - **v1.0 (2026-09-12):** Första versionen. Ärvd från Geografi v1.6, DELAD-BAS v1.1 oförändrad.
   Kemispecifikt tillagt: fyra-nivåers mappstruktur med historias djup (DEL 0), signaturfärg
   `#5a9668`, kemins fördjupningsnivå som sannare modell med obligatorisk modellplacering
