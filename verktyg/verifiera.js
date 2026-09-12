@@ -3,7 +3,7 @@
    Rör aldrig källfiler; Chrome-profilen skapas i OS-temp och raderas efteråt.
 
    KÖR (från repo-roten):
-     node verktyg/verifiera.js <file://-url> <probe.js> [--pre pre.js] [--wait ms] [--shot fil.png] [--width px]
+     node verktyg/verifiera.js <file://-url> <probe.js> [--pre pre.js] [--wait ms] [--shot fil.png] [--width px] [--height px]
    Exempel – formelverifiering på avsnitt 1 med flipcards-fixtur (KOMPONENTER DEL 8.5):
      node verktyg/verifiera.js "file:///C:/Arkiv%20-%20webbbok/Kemibok/kapitel/syror-och-baser/delkapitel/repetition/avsnitt-1-atomer-molekyler-joner.html" verktyg/probe-formler.js --pre verktyg/pre-flipcards-fixtur.js --wait 3000
 
@@ -22,13 +22,14 @@ const WAIT = parseInt(opt('--wait', 2500), 10);
 const PRE = opt('--pre', null) ? fs.readFileSync(opt('--pre'), 'utf8') : null;
 const SHOT = opt('--shot', null);
 const WIDTH = parseInt(opt('--width', 1366), 10);
+const HEIGHT = parseInt(opt('--height', 900), 10);
 const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const PORT = 9300 + Math.floor(Math.random() * 500);
 const probe = fs.readFileSync(probeFil, 'utf8');
 
 const prof = fs.mkdtempSync(path.join(os.tmpdir(), 'kemi-verif-'));
 const chrome = spawn(CHROME, ['--headless=new', '--disable-gpu', '--allow-file-access-from-files',
-  '--no-first-run', '--hide-scrollbars', `--window-size=${WIDTH},900`,
+  '--no-first-run', '--hide-scrollbars', `--window-size=${WIDTH},${HEIGHT}`,
   '--remote-debugging-port=' + PORT, '--user-data-dir=' + prof, 'about:blank'], { stdio: 'ignore' });
 
 function getJson(p, method) {
@@ -70,7 +71,7 @@ async function waitPort() {
     };
     const send = (method, params) => new Promise(res => { const i = ++id; pending[i] = res; ws.send(JSON.stringify({ id: i, method, params: params || {} })); });
     await send('Page.enable'); await send('Runtime.enable'); await send('Network.enable');
-    await send('Emulation.setDeviceMetricsOverride', { width: WIDTH, height: 900, deviceScaleFactor: 1, mobile: false });
+    await send('Emulation.setDeviceMetricsOverride', { width: WIDTH, height: HEIGHT, deviceScaleFactor: 1, mobile: false });
     if (PRE) await send('Page.addScriptToEvaluateOnNewDocument', { source: PRE });
     await send('Page.navigate', { url });
     await new Promise(r => setTimeout(r, WAIT));
