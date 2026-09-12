@@ -12,10 +12,12 @@
      3. formel + strukturformel            (🎨 KOMPONENTER DEL 8)
      4. Disabled nivåknapp                 (plattformsbeteende, avsnitt.js)
      5. MathJax-finish                     (inline-formler i EB Garamond-text)
+     7. Patina-överskrivningar av geografi.css/flipcards.css (godkänd lista)
      6. Utskrift
 
    Godkända värden (2026-09-12): --accent #5a9668, --accent-2 #9c6b45,
-   hero-gradient #101a14 → #1d2e23, .avsnitt-label i patina.
+   --accent-text #3a6546, hero-gradient #101a14 → #1d2e23, .avsnitt-label i patina,
+   patina-listan i sektion 7.
    ============================================================ */
 
 /* ---------- 1. Tokens ---------- */
@@ -23,9 +25,13 @@
 :root {
   --accent: #5a9668;       /* varm patina – kemins signaturfärg (dekor, kanter, hero-label) */
   --accent-2: #9c6b45;     /* dämpad koppar – sekundär (gradienter i TIPSA-knapp m.m.) */
-  --accent-text: #3f6e4c;  /* patina för TEXT på papper – WCAG AA 5.0:1 på paper-light.
-                              Ren #5a9668 ger 2.97:1 och får inte användas som textfärg.
-                              Samma mönster som --brass / --brass-text i geografi.css. */
+  --accent-text: #3a6546;  /* patina för TEXT och knappfyllning – 5.7:1 på paper-light,
+                              5.2:1 mot paper-text när den är fyllning. Ren #5a9668 ger 2.97:1
+                              och används aldrig som textfärg. Samma mönster som
+                              --brass / --brass-text i geografi.css. */
+  --accent-hover: #2f5239;  /* mörkare patina för hover på fyllda knappar */
+  --accent-tint: rgba(90, 150, 104, 0.12);   /* hover-tint */
+  --accent-ram: rgba(90, 150, 104, 0.35);    /* ramar och tunna linjer */
 }
 
 /* Hero-banner: Kemi-identitet (mörk grön-svart). Överskriver geografi.css
@@ -42,8 +48,8 @@
 
 /* ---------- 2. faktaruta (KOMPONENTER DEL 4.6) ---------- */
 /* Ställer två förväxlingsbara begrepp mot varandra, i prosa. Sidoordnad
-   texten (<aside>), därför lugnare än karnpunkter (terra) och bildguide
-   (brass): patina-kant, svag grön ton, rubrik i heading-font.
+   texten (<aside>): patina-kant med ram, svag grön ton, rubrik i heading-font.
+   Grannrutor: karnpunkter = patina utan ram, bildguide = terra (sektion 7).
    Får --las-bredd automatiskt: geografi.css listar
    `.niva-innehall.brodtext > aside` i läsbreddsregeln. */
 
@@ -166,6 +172,81 @@
   max-width: 100%;
   overflow-x: auto;
 }
+
+/* ---------- 7. Patina i stället för guld/blått (godkänd lista 2026-09-12) ----------
+   Allt här är ÖVERSKRIVNINGAR av regler i geografi.css och flipcards.css.
+   geografi.css förblir orörd (byte-identisk med plattformen utom @import-raden).
+   Princip: det eleven klickar på och orienterar sig efter bär bokens färg;
+   papperstexturen (etiketter, ornament, tabeller, hero-brödsmulor) förblir
+   vintageatlas-guld. Fyllda ytor använder --accent-text (kontrast mot paper-text),
+   ramar/linjer --accent, tint --accent-tint.
+   flipcards.css laddas EFTER kemi.css i scaffolden → flipcards-reglerna nedan har
+   höjd specificitet (.flipcards …) så att de vinner oavsett laddningsordning. */
+
+/* Nivåväljare */
+.niva-valjare { border-color: var(--accent-ram); }
+.niva-knapp:hover { background-color: var(--accent-tint); }
+.niva-knapp.aktiv { background-color: var(--accent-text); border-color: var(--accent-text); }
+
+/* Underdelsväljare */
+.underdel-valjare { border-color: var(--accent-ram); }
+.underdel-bokstav { color: var(--accent-text); }
+.underdel-knapp.aktiv { background-color: var(--accent-text); border-color: var(--accent-text); }
+
+/* Flikrad */
+.flikar-rad { border-bottom-color: var(--accent); }
+.flik.aktiv { color: var(--accent-text); border-bottom-color: var(--accent-text); }
+
+/* Brödtext: rubriklinje, länkar utan klass (kort och knappar har klass och rörs inte) */
+.brodtext h2 { border-bottom-color: var(--accent); }
+.sida a:not([class]) { color: var(--accent-text); }
+.tillbaka-lank { color: var(--accent-text); }
+
+/* Kärnpunkter → patina; bildguide → terra (faktarutan behåller patina).
+   Tre rutor, tre färger: patina / terra / patina-med-ram. */
+.karnpunkter {
+  background-image: linear-gradient(rgba(90, 150, 104, 0.06), rgba(90, 150, 104, 0.06));
+  border-left-color: var(--accent);
+}
+.karnpunkter-rubrik { color: var(--accent-text); }
+.bildguide { border-left-color: var(--terra); }
+.bildguide-rubrik { color: var(--terra); }
+
+/* Djupdykningskort */
+.fordj-kort { border-left-color: var(--accent); }
+.fordj-kort-ikon { color: var(--accent-text); }
+
+/* Kapitel-/avsnittskort: plattformens roterande kantpalett behålls (kap-1…6);
+   kap-7 saknar regel i geografi.css (blev muted-grå) och får patina. */
+.kapitel-kort.kap-7 { border-left-color: var(--accent); }
+
+/* Elevboken-fliken */
+.elevbok-textarea:focus,
+.egen-fraga-input:focus { border-color: var(--accent-text); }
+.lagg-till-fraga-knapp,
+.egen-fraga-spara { background-color: var(--accent-text); border-color: var(--accent); }
+.lagg-till-fraga-knapp:hover { background-color: var(--accent-hover); }
+
+/* Kapitelverktyg (elevbok, begreppsbank, självskattning) */
+.kelev-avsnitt-rubrik,
+.skatt-avsnitt-rubrik { color: var(--accent-text); border-bottom-color: var(--accent-ram); }
+.kelev-textarea:focus,
+.kelev-sok:focus { border-color: var(--accent); }
+.kelev-chip.aktiv { background-color: var(--accent-text); border-color: var(--accent-text); }
+.kelev-nav-lank:hover { border-left-color: var(--accent-text); }
+.matris-avsnitt-rubrik { background-color: rgba(90, 150, 104, 0.16); }
+
+/* Flipcards (Öva-fliken). Korttypsfärgerna grön/blå/röd (📗📘📕) behålls. */
+.flipcards .flip-borja-knapp,
+.flipcards .flip-knapp:not(.sekundar) {
+  background-color: var(--accent-text);
+  border-color: var(--accent-text);
+}
+.flipcards .flip-borja-knapp:hover,
+.flipcards .flip-knapp:not(.sekundar):hover { background-color: var(--accent-hover); }
+.flipcards .flip-progress-fyll { background-color: var(--accent); }
+.flipcards .flip-lage-dropdown { border-color: var(--accent); }
+.flipcards .flip-lage-vald:not([class*="lage-niva"]) { border-color: var(--accent); }
 
 /* ---------- 6. Utskrift ---------- */
 @media print {
