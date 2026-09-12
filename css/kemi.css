@@ -212,6 +212,17 @@
 .bildguide { border-left-color: var(--terra); }
 .bildguide-rubrik { color: var(--terra); }
 
+/* KOMPENSATION för stavfel i geografi.css: läsbreddsregeln listar
+   `.niva-innehall.brodtext > .karnpunkt` (singular) – klassen heter
+   .karnpunkter, så blocket får aldrig --las-bredd utan går i full sidbredd
+   (1180 px) medan bildguide och stycken ligger på 770 px. 🔵-loggat
+   2026-09-12. Ta bort denna regel när plattformsposten är åtgärdad. */
+.niva-innehall.brodtext > .karnpunkter {
+  max-width: var(--las-bredd);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Djupdykningskort */
 .fordj-kort { border-left-color: var(--accent); }
 .fordj-kort-ikon { color: var(--accent-text); }
