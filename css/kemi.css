@@ -248,6 +248,15 @@
 .kelev-nav-lank:hover { border-left-color: var(--accent-text); }
 .matris-avsnitt-rubrik { background-color: rgba(90, 150, 104, 0.16); }
 
+/* Tillbaka-banner på djupdykningar (.tidslinje-header). Plattformsregeln är
+   linear-gradient(--accent → --accent-2); med patina → koppar läser den som två
+   färger med en skarv (samma problem som Geografis blå → guld; Historia undvek
+   det genom ett par i samma familj). Kemi: en yta i patina med en subtil
+   mörkare ton av samma kulör för djup – koppar används inte här. */
+.tidslinje-header {
+  background: linear-gradient(135deg, var(--accent) 0%, #4b8058 100%);
+}
+
 /* Flipcards (Öva-fliken). Korttypsfärgerna grön/blå/röd (📗📘📕) behålls. */
 .flipcards .flip-borja-knapp,
 .flipcards .flip-knapp:not(.sekundar) {
