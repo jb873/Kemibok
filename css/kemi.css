@@ -216,9 +216,13 @@
 .fordj-kort { border-left-color: var(--accent); }
 .fordj-kort-ikon { color: var(--accent-text); }
 
-/* Kapitel-/avsnittskort: plattformens roterande kantpalett behålls (kap-1…6);
-   kap-7 saknar regel i geografi.css (blev muted-grå) och får patina. */
-.kapitel-kort.kap-7 { border-left-color: var(--accent); }
+/* Kapitel-/delkapitel-/avsnittskort: en kant, patina.
+   geografi.css:s .kap-1…6 är Geografis TEMATISKA kapitelfärger (kartografi =
+   mässing, geologi = terrakotta …) som blev en betydelselös positionsrotation
+   när Historia kopierade dem på tre indexnivåer; kapitel 7+ saknar regel (grå).
+   Odokumenterat mönster, 🔵-loggat 2026-09-12. kap-N-klasserna behålls i
+   markupen – bara färgen neutraliseras. Dimmade kort skiljs via opacity. */
+.kapitel-kort[class*="kap-"] { border-left-color: var(--accent); }
 
 /* SKYDDSNÄT – kortets titel och beskrivning på var sin rad.
    Kanonisk markup (Geografi, referensimplementationen) är
