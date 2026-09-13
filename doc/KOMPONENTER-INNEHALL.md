@@ -954,11 +954,21 @@ eleven läsa bilderna innan hen läst texten.
 Detta är en **uppslagstabell**, inte en mall: plocka de rader som gäller och klistra in i
 prompten.
 
-**Bakgrund (v1.3):** transparent, se 4.2. Benvit bakgrund (`#f0e8d5`) i redan levererade
-AI-bilder går bara delvis att nyckla bort i efterhand: bakgrunden är brusig (±4 per kanal) och
-motiv i vitt/benvitt (väteatomer, plustecken, bubblor) ligger inom samma tolerans och blir
-halvgenomskinliga, och kanterna får ljusa halos mot allt som inte är papper. Bilder med sådana
-motiv promptas om.
+### 9.0 Bakgrund: kontrastfärg som nycklas bort (v1.3)
+
+Bildens bakgrund på sidan ska vara **transparent** (se 4.2). **Nya AI-bilder promptas med en ren
+kontrastfärg som bakgrund — `#00ff00` — som nycklas bort förlustfritt före leverans.** Motivet
+får aldrig innehålla den färgen. Skälet att inte be generatorn om "transparent" direkt är att
+resultatet ofta blir falsk transparens (ett inmålat rutmönster) eller en benvit ton som inte går
+att skilja från vita motiv.
+
+**De elva befintliga AI-bilderna** (repetition: atommodell-litium, attrahera-repellera,
+enkel-dubbel-trippel, grundamne-forening, is-och-vatten, jon-loses-i-vatten, litium-atom-och-jon,
+mattad-losning, metallbindning, polart-och-opolart; syror: stark-och-svag-syra) har **benvit
+bakgrund** (`#f0e8d5`, brusig ±4 per kanal). De ligger på dagens `--paper` och lämnas som de är.
+Ska de någon gång ligga på annan bakgrund — ett kort, ett ändrat `--paper` — behöver de göras om
+enligt regeln ovan; efterhandsnyckling ger halos och nycklar bort vita motiv (verifierat i
+Chromium 2026-09-13). Det är inte aktuellt nu.
 
 ### 9.1 Grundämnen — CPK-standard
 
@@ -1187,7 +1197,8 @@ När osäker — kolla referensimplementationen **plus** CSS:n **plus** JS:n. **
 **🎨 boklokal**
 
 - **v1.3 (2026-09-13):** 4.2 – ingen ram på brödtextbilder i kemi (kemi.css), bildbakgrund ska
-  vara transparent; DEL 9 – vad som går att göra med benvit bakgrund i efterhand.
+  vara transparent; 9.0 – nya AI-bilder promptas med `#00ff00` som nycklas bort före leverans;
+  de elva befintliga har benvit bakgrund och görs om först om de ska ligga på annan bakgrund.
 - **v1.2 (2026-09-13):** Öva-fliken får tre arbetssätt (Plugga begrepp / Testa dig själv /
   Tillämpa) via kemi-eget lager `js/ova-arbetssatt.js` ovanpå orörd flipcards.js, och den nya
   komponenten kortsvar (`js/kortsvar.js` + `js/kortsvar-gradering.js`). Scaffoldens Öva-panel
