@@ -154,6 +154,14 @@
   .strukturformel { max-width: 100%; }
 }
 
+/* SVG-bilder med transparent bakgrund: geografi.css ger alla .brodtext-bild img en tunn ram
+   (rgba(27,42,54,.2)) som på webp läser som bildkant men på en transparent SVG ramar in tomrum.
+   Ingen annan bok har transparenta SVG:er, så regeln är kemispecifik i effekt. */
+.brodtext-bild img[src$=".svg"] {
+  border: none;
+  border-radius: 0;
+}
+
 /* ---------- 4. Disabled nivåknapp ---------- */
 /* Sätts av avsnitt.js när nivån saknar innehåll i aktiv underdel.
    Samma uttryck som .flik[disabled] i geografi.css. */
