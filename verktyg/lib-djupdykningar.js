@@ -12,8 +12,9 @@ function tolkaDjupdykningar(fil) {
   if (!fs.existsSync(fil)) { return []; }
   const md = fs.readFileSync(fil, 'utf8').replace(/\r\n/g, '\n');
   const ut = [];
-  for (const m of md.matchAll(/\n# (\d+)\. ([^\n]+)\n([\s\S]*?)(?=\n---\n|$)/g)) {
-    const nr = +m[1], titel = m[2].trim(), block = m[3];
+  // "# 1. Titel" (repetition/syror) eller "## Titel" (neutralisation) – block utan **Korttext:** hoppas över
+  for (const m of md.matchAll(/\n#{1,2} (?:(\d+)\. )?([^\n]+)\n([\s\S]*?)(?=\n---\n|$)/g)) {
+    const nr = m[1] ? +m[1] : ut.length + 1, titel = m[2].trim(), block = m[3];
     const falt = re => { const x = block.match(re); return x ? x[1].trim() : null; };
     const d = { nr, titel, avsnitt: null, underdel: 'a', slug: null, underrubrik: null, korttext: null, text: null, textFil: null };
     const avs = falt(/^\*\*Avsnitt (\d+) — [^*]+\*\*$/m);
@@ -29,7 +30,7 @@ function tolkaDjupdykningar(fil) {
     const under = falt(/^\*\*Underrubrik:\*\* \*?([^*\n]+?)\*?$/m);
     if (under) { d.underrubrik = under; }
     const kort = block.match(/\*\*Korttext:\*\*\s*([\s\S]*?)(?:\n\n|$)/);
-    if (!kort) { throw new Error(`djupdykning "${titel}": **Korttext:** saknas`); }
+    if (!kort) { continue; }   // rubrik utan Korttext (t.ex. "## Varför den länkas från …") är prosa, inte en djupdykning
     d.korttext = kort[1].replace(/\n/g, ' ').trim();
     const inline = block.match(/\n## Text\n([\s\S]*)$/);
     const brod = falt(/^\*\*Brödtext:\*\* ([^\n]+)$/m);

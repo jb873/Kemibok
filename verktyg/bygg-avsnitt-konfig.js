@@ -82,11 +82,25 @@ const AVSNITT_BASER = {
   4: { dd: [],
        bilder: { 'fortvalning.webp': { aktiv: ['enkel', 'standard'], enkel: 'fast oavsiktlig och på\ndin hud', standard: 'omvandlas till bland annat ämnen som fungerar som tvål' } } }
 };
+// Neutralisation (leverans 2026-09-13): två SVG:er (bilder-svg.js) och antacidum.webp (levererad som
+// brustablett-i-glas.webp med grön bakgrund, nycklad + beskuren med nyckla-gron.js). Faktarutan i 1 A på
+// alla nivåer. Djupdykningen (Joachims text) från 1 C. Alla fem underdelar har fördjupning.
+const AVSNITT_NEUTRALISATION = {
+  1: { dd: [{ slug: 'neutralisation', titel: 'Neutralisation: när syra och bas reagerar', ikon: '⚗️' }],
+       bilder: {
+         'neutralisation-partiklar.svg': { aktiv: ['enkel', 'standard'], enkel: 'H⁺ + OH⁻ → H₂O', standard: 'H₃O⁺ + OH⁻ → 2 H₂O' },   // efter reaktionsraden
+         'vad-blir-kvar.svg': { aktiv: ['enkel', 'standard'], enkel: 'De simmar omkring precis som förut', standard: 'De finns fortfarande kvar lösta i vattnet efteråt' }
+       },
+       faktaruta: { enkel: 'handlar underdel C om', standard: 'Finns hydroxidjoner kvar är', fordjupning: 'Där finns också mol och mängdberäkningar' } },
+  2: { dd: [],
+       bilder: { 'antacidum.webp': { aktiv: ['enkel', 'standard'], enkel: 'kemi, inte absorption', standard: 'De reagerar kemiskt med den' } } }
+};
 const DELKAPITEL = {
   // bank: id-prefix och avsnittsoffset i kapitlets begreppsbank (en fil per kapitel; id/avsnitt unika över delkapitlen)
   repetition: { titel: 'Bakgrund och repetition', avsnitt: AVSNITT_REPETITION, bank: { idPrefix: '', avsnittOffset: 0 } },
   // uteslut: grundläggande begreppskort som INTE går till banken (kortet finns kvar som flipcard), term → skäl
   syror: { titel: 'Syror', avsnitt: AVSNITT_SYROR, bank: { idPrefix: 'S', avsnittOffset: 5, uteslut: { 'koncentration': 'finns redan i repetition avsnitt 5, där eleven möter begreppet först (Joachim 2026-09-13)' } } },
-  baser: { titel: 'Baser', avsnitt: AVSNITT_BASER, bank: { idPrefix: 'B', avsnittOffset: 10 } }
+  baser: { titel: 'Baser', avsnitt: AVSNITT_BASER, bank: { idPrefix: 'B', avsnittOffset: 10 } },
+  neutralisation: { titel: 'Neutralisation', avsnitt: AVSNITT_NEUTRALISATION, bank: { idPrefix: 'N', avsnittOffset: 14, uteslut: { 'neutralisation': 'finns redan i baser avsnitt 4, där eleven möter begreppet först (Joachim 2026-09-13)' } } }
 };
 module.exports = { DELKAPITEL };

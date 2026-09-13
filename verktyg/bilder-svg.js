@@ -11,6 +11,8 @@
 //   tre-vagar.svg                       avsnitt 3 A – avge / ta upp / dela
 //   vatebindning.svg                    avsnitt 4 A – fem vattenmolekyler, fyra vätebindningar från mittmolekylen
 //   tva-vagar-till-bas.svg              delkapitel Baser 1 B – NaOH-gitter / NH3 + H2O → NH4+ + OH- (baser/img/)
+//   neutralisation-partiklar.svg        delkapitel Neutralisation 1 A – sur + basisk → neutral (neutralisation/img/)
+//   vad-blir-kvar.svg                   delkapitel Neutralisation 1 B – före/efter, åskådarjoner kvar
 //   vatejon-och-oxoniumjon.svg          delkapitel Syror 1 B – H2O + H+ → H3O+ i tre lager (skrivs till delkapitel/syror/img/)
 //   ph-skalan.svg                       delkapitel Syror 2 A – skala 0–14 med exempel (syror/img/)
 //   fyra-kombinationerna.svg            delkapitel Syror 4 B – stark/svag × koncentrerad/utspädd (syror/img/)
@@ -519,4 +521,85 @@ ${STOPP.map(([ph, f]) => `      <stop offset="${r2(ph / 14 * 100)}%" stop-color=
     'Två vägar till en basisk lösning: natriumhydroxid frigör natriumjoner och hydroxidjoner ur ett jongitter; ammoniak tar upp en vätejon från vatten och bildar ammoniumjon och hydroxidjon', ut));
 }
 
-console.log('skrev 12 svg (8 till repetition/img, 3 till syror/img, 1 till baser/img)', path.relative(path.join(__dirname, '..'), UT));
+
+// ---------- 13–14. Neutralisation (delkapitel Neutralisation, avsnitt 1 A och B) ----------
+// Joachims spec 2026-09-13. Gemensamma delar: bägarglas som kontur i INK, vätska #a8c4d8, positiv jon #C64B3A
+// med +, negativ jon #3D6BA8 med −, vattenmolekyl = syre #C0392B med två väte #f5f0e4.
+// vad-blir-kvar: åskådarjoner "gröna Na⁺" och "gula Cl⁻" utan hex i leveransen – FÖRSLAG patina #5a9668
+// och fettgult #d9c47a (ur fortvalning-specen). Etiketterna som teckenförklaring under glasen.
+{
+  const UT4 = path.join(__dirname, '..', 'kapitel', 'syror-och-baser', 'delkapitel', 'neutralisation', 'img');
+  fs.mkdirSync(UT4, { recursive: true });
+  const VATSKA = '#a8c4d8', PLUS = '#C64B3A', MINUS = '#3D6BA8', NA = '#5a9668', CL = '#d9c47a';
+  const GB = 190, GH = 170;
+  let seed = 11;
+  const slump = () => { seed = (seed * 1103515245 + 12345) % 2147483648; return seed / 2147483648; };
+  // bägarglas med vätska; returnerar cellpositioner (rutnät med jitter) för partiklar
+  const glas = (x, y, namn, NR = 3) => {
+    const vTop = y + 50, vBot = y + GH - 3, vX = x + 3, vB = GB - 6;
+    let ut = `  <g aria-label="${namn}">
+  <path d="M${vX} ${vTop}H${vX + vB}V${vBot - 9}Q${vX + vB} ${vBot} ${vX + vB - 9} ${vBot}H${vX + 9}Q${vX} ${vBot} ${vX} ${vBot - 9}Z" fill="${VATSKA}"/>
+  <path d="M${x - 9} ${y + 8} L${x} ${y + 14} V${y + GH - 12} Q${x} ${y + GH} ${x + 12} ${y + GH} H${x + GB - 12} Q${x + GB} ${y + GH} ${x + GB} ${y + GH - 12} V${y + 14}" fill="none" stroke="${INK}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+`;
+    const celler = [];
+    const NC = 4, cw = (vB - 24) / NC, ch = (vBot - vTop - 24) / NR;
+    for (let r = 0; r < NR; r++) { for (let c = 0; c < NC; c++) { celler.push([vX + 12 + c * cw + cw / 2, vTop + 12 + r * ch + ch / 2]); } }
+    for (let i = celler.length - 1; i > 0; i--) { const j = Math.floor(slump() * (i + 1)); [celler[i], celler[j]] = [celler[j], celler[i]]; }
+    return { ut, celler: celler.map(([cx, cy]) => [r2(cx + (slump() - 0.5) * 4), r2(cy + (slump() - 0.5) * 4)]) };
+  };
+  const jon = (x, y, farg, tecken) => `  <circle cx="${x}" cy="${y}" r="10" fill="${farg}" stroke="#fff" stroke-width="1"/>
+` + (tecken === '+' ? `  <path d="M${r2(x - 5)} ${y}H${r2(x + 5)}M${x} ${r2(y - 5)}V${r2(y + 5)}" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+` : tecken === '−' ? `  <path d="M${r2(x - 5)} ${y}H${r2(x + 5)}" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+` : '');
+  const vatten = (x, y) => {   // liten vattenmolekyl: syre med två väten i 105°
+    const a = 52.5 * Math.PI / 180, d = 11;
+    const H = [[x - d * Math.sin(a), y + d * Math.cos(a)], [x + d * Math.sin(a), y + d * Math.cos(a)]];
+    return `  <circle cx="${x}" cy="${y}" r="7" fill="${SYRE}" stroke="${INK}" stroke-width="1"/>
+` + H.map(([hx, hy]) => `  <circle cx="${r2(hx)}" cy="${r2(hy)}" r="5" fill="${PAPPER}" stroke="${INK}" stroke-width="1"/>
+`).join('');
+  };
+  const etikett = (x, y, t) => `  <text x="${x}" y="${y}" text-anchor="middle" font-size="18" font-style="italic" fill="${INK}" ${FONT}>${t}</text>
+`;
+  // ----- 13. neutralisation-partiklar.svg: sur + basisk → neutral -----
+  {
+    const W = 760, H = 250, Y = 20;
+    const X = [40, 300, 560];
+    let ut = '';
+    const g1 = glas(X[0], Y, 'sur lösning med sex positiva joner'); ut += g1.ut; g1.celler.slice(0, 6).forEach(([x, y]) => { ut += jon(x, y, PLUS, '+'); });
+    ut += `  <text x="${X[0] + GB + 30}" y="${Y + GH / 2 + 12}" text-anchor="middle" font-size="40" fill="${INK}" ${FONT}>+</text>\n`;
+    const g2 = glas(X[1], Y, 'basisk lösning med sex negativa joner'); ut += g2.ut; g2.celler.slice(0, 6).forEach(([x, y]) => { ut += jon(x, y, MINUS, '−'); });
+    ut += pil(X[1] + GB + 14, Y + GH / 2, X[2] - 14, Y + GH / 2, INK, 3);
+    const g3 = glas(X[2], Y, 'neutral lösning med sex vattenmolekyler'); ut += g3.ut; g3.celler.slice(0, 6).forEach(([x, y]) => { ut += vatten(x, y - 4); });
+    ut += etikett(X[0] + GB / 2, Y + GH + 34, 'Sur lösning') + etikett(X[1] + GB / 2, Y + GH + 34, 'Basisk lösning') + etikett(X[2] + GB / 2, Y + GH + 34, 'Neutral lösning');
+    fs.writeFileSync(path.join(UT4, 'neutralisation-partiklar.svg'), svg(W, H,
+      'Tre bägarglas: sur lösning med sex positiva joner plus basisk lösning med sex negativa joner ger neutral lösning med sex vattenmolekyler', ut));
+  }
+  // ----- 14. vad-blir-kvar.svg: före/efter, åskådarjoner kvar -----
+  {
+    const W = 600, H = 300, Y = 20;
+    const X = [50, 360];
+    let ut = '';
+    const f = glas(X[0], Y, 'före neutralisationen: oxoniumjoner, hydroxidjoner, natriumjoner och kloridjoner', 4); ut += f.ut;   // 4×4 celler = fyra av varje sort
+    const sorter = [[PLUS, '+'], [MINUS, '−'], [NA, ''], [CL, '']];
+    f.celler.slice(0, 16).forEach(([x, y], i) => { const [farg, t] = sorter[i % 4]; ut += jon(x, y, farg, t); });
+    ut += pil(X[0] + GB + 16, Y + GH / 2, X[1] - 16, Y + GH / 2, INK, 3);
+    const e = glas(X[1], Y, 'efter neutralisationen: vattenmolekyler, natriumjoner och kloridjoner', 4); ut += e.ut;
+    // samma celler som före (samma slumpföljd ger olika – använd f-cellerna förskjutna i x) så att åskådarjonerna sitter kvar på sina platser
+    f.celler.slice(0, 16).forEach(([x, y], i) => { const dx = X[1] - X[0]; if (i % 4 === 2) { ut += jon(r2(x + dx), y, NA, ''); } else if (i % 4 === 3) { ut += jon(r2(x + dx), y, CL, ''); } });
+    // fyra vattenmolekyler där oxonium- och hydroxidjonerna var (par ihop: 8 joner → 4 molekyler, placerade på oxoniumjonernas platser)
+    f.celler.slice(0, 16).forEach(([x, y], i) => { if (i % 4 === 0) { ut += vatten(r2(x + X[1] - X[0]), y - 4); } });
+    ut += etikett(X[0] + GB / 2, Y + GH + 30, 'Före') + etikett(X[1] + GB / 2, Y + GH + 30, 'Efter');
+    // teckenförklaring
+    const ly = Y + GH + 68;
+    const namn = [`H<tspan font-size="11" dy="5">3</tspan><tspan dy="-5">O</tspan><tspan font-size="11" dy="-7">+</tspan>`, `OH<tspan font-size="11" dy="-7">−</tspan>`, `Na<tspan font-size="11" dy="-7">+</tspan>`, `Cl<tspan font-size="11" dy="-7">−</tspan>`];
+    [[PLUS, '+'], [MINUS, '−'], [NA, ''], [CL, '']].forEach(([farg, t], i) => {
+      const lx = 70 + i * 135;
+      ut += jon(lx, ly, farg, t) + `  <text x="${lx + 18}" y="${ly + 6}" font-size="17" fill="${INK}" ${FONT}>${namn[i]}</text>\n`;
+    });
+    fs.writeFileSync(path.join(UT4, 'vad-blir-kvar.svg'), svg(W, H,
+      'Två bägarglas före och efter neutralisation: oxonium- och hydroxidjonerna har blivit vattenmolekyler, natrium- och kloridjonerna finns kvar', ut));
+  }
+}
+
+console.log('skrev 14 svg (8 repetition, 3 syror, 1 baser, 2 neutralisation)', path.relative(path.join(__dirname, '..'), UT));

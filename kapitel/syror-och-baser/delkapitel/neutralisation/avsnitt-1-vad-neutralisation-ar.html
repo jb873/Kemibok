@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vad neutralisation är – Neutralisation – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Neutralisation</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">1. Vad neutralisation är</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 1</span>
+      <h1>Vad neutralisation är</h1>
+      <p class="subtitel">— när syra möter bas —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Jonerna möts</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Vad som blir kvar</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Hur mycket behövs</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-vad-neutralisation-ar">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Jonerna möts ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En sur lösning har <strong>vätejoner</strong>, en basisk har <strong>hydroxidjoner</strong></li>
+              <li>De två reagerar med varandra och bildar <strong>vatten</strong></li>
+              <li>Det kallas <strong>neutralisation</strong></li>
+              <li>Båda lösningarnas egenskaper försvinner</li>
+              <li>Blir det joner över är lösningen fortfarande sur eller basisk</li>
+            </ul>
+          </div>
+
+          <p>Du vet vad en syra gör och vad en bas gör. Nu ska vi se vad som händer när de möts.</p>
+          <h2>Två sorters joner</h2>
+          <p>En sur lösning innehåller <strong>vätejoner</strong>. Det är de som gör den sur.</p>
+          <p>En basisk lösning innehåller <strong>hydroxidjoner</strong>. Det är de som gör den basisk.</p>
+          <p>Blandar du de två lösningarna finns plötsligt båda sorterna i samma kärl. Och de kan reagera med varandra.</p>
+          <h2>Vad som bildas</h2>
+          <p>En vätejon och en hydroxidjon går ihop och bildar en <strong>vattenmolekyl</strong>.</p>
+          <div class="formel">\[\ce{H+ + OH- -> H2O}\]</div>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna partiklarna i det första och det andra glaset</li>
+              <li>Vad som finns i det tredje glaset som inte fanns i de två första</li>
+              <li>Om det finns några joner kvar i det tredje glaset</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/neutralisation-partiklar.svg" alt="Tre bägarglas. Det första innehåller sex positiva joner och är surt, det andra sex negativa joner och är basiskt. Efter pilen innehåller det tredje sex vattenmolekyler och är neutralt.">
+            <figcaption>Vätejonerna från syran och hydroxidjonerna från basen går ihop och bildar vatten. Det som gjorde lösningarna sura och basiska är då förbrukat.</figcaption>
+          </figure>
+          <p>Tänk efter vad det betyder. Vätejonen var det som gjorde lösningen sur. Hydroxidjonen var det som gjorde den basisk. Nu är båda borta — de har blivit vatten.</p>
+          <p>Reaktionen kallas <strong>neutralisation</strong>.</p>
+          <h2>Inte magi</h2>
+          <p>Det är lätt att tänka att syra och bas "tar ut varandra" på något oförklarligt sätt, som om deras egenskaper bara försvann.</p>
+          <p>Så är det inte. Det sker en verklig kemisk reaktion mellan bestämda partiklar. Vätejoner och hydroxidjoner <strong>förbrukas</strong>, och nya vattenmolekyler <strong>bildas</strong>. Det är lika konkret som när natrium och klor bildar koksalt.</p>
+          <h2>När det inte går jämnt ut</h2>
+          <p>Blandar du precis lagom mycket av varje tar jonerna ut varandra helt, och lösningen blir <strong>neutral</strong> med pH nära 7.</p>
+          <p>Men det händer bara om mängderna stämmer.</p>
+          <p>Finns det vätejoner kvar när alla hydroxidjoner är förbrukade är lösningen fortfarande <strong>sur</strong> — bara mindre sur än förut.</p>
+          <p>Finns det hydroxidjoner kvar är lösningen fortfarande <strong>basisk</strong>.</p>
+          <p>Hur man vet vad som är lagom handlar underdel C om.</p>
+          <aside class="faktaruta">
+            <h3>Neutralisera och neutral</h3>
+            <p><strong>Att neutralisera</strong> betyder att låta en syra och en bas reagera med varandra. Det är något man gör.</p>
+            <p><strong>Neutral</strong> betyder att lösningen har pH 7, alltså lika många vätejoner som hydroxidjoner. Det är ett tillstånd lösningen befinner sig i.</p>
+            <p>Oftast hänger de ihop: neutraliserar man en stark syra med en stark bas blir resultatet neutralt. Men inte alltid. Neutraliserar man en svag syra med en stark bas blir lösningen basisk, trots att allt har reagerat färdigt.</p>
+            <div class="faktaruta-sammanfattning">
+              <p><strong>Neutralisera = vad man gör</strong></p>
+              <p><strong>Neutral = pH 7</strong></p>
+            </div>
+          </aside>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>\(\ce{H3O+ + OH- -> 2 H2O}\)</li>
+              <li>Oxoniumjonen lämnar över en vätejon till hydroxidjonen</li>
+              <li>Det är en <strong>verklig kemisk reaktion</strong>, inte att motsatser tar ut varandra</li>
+              <li>Med rätt mängder blir lösningen neutral, pH nära 7</li>
+              <li>Överskott av någondera gör lösningen sur eller basisk</li>
+            </ul>
+          </div>
+
+          <p class="inledning">En sur lösning innehåller ett överskott av <strong>oxoniumjoner, \(\ce{H3O+}\)</strong>, medan en basisk lösning innehåller ett överskott av <strong>hydroxidjoner, \(\ce{OH-}\)</strong>. När en sur och en basisk lösning blandas kan dessa joner reagera med varandra.</p>
+          <p>Reaktionen kan skrivas:</p>
+          <div class="formel">\[\ce{H3O+ + OH- -> 2 H2O}\]</div>
+          <figure class="brodtext-bild standard">
+            <img src="img/neutralisation-partiklar.svg" alt="Tre bägarglas. Det första innehåller sex positiva joner och är surt, det andra sex negativa joner och är basiskt. Efter pilen innehåller det tredje sex vattenmolekyler och är neutralt.">
+            <figcaption>Oxoniumjoner och hydroxidjoner reagerar och bildar vatten. Det är en verklig kemisk reaktion, inte att två motsatser tar ut varandra.</figcaption>
+          </figure>
+          <p>Oxoniumjonen lämnar alltså över en vätejon till hydroxidjonen. Resultatet blir två vattenmolekyler. De joner som gjorde lösningen sur respektive basisk har därmed reagerat och omvandlats till vatten.</p>
+          <p>Detta kallas <strong>neutralisation</strong>.</p>
+          <p>Det är viktigt att förstå att neutralisation inte betyder att syra och bas bara "tar ut varandra" på något oförklarligt sätt. Det sker en verklig kemisk reaktion där bestämda partiklar reagerar med varandra. Oxoniumjoner och hydroxidjoner förbrukas och nya vattenmolekyler bildas.</p>
+          <p>Om rätt mängd syra och bas blandas kan lösningen bli neutral, alltså få ett pH nära 7. Om det däremot finns oxoniumjoner kvar efter reaktionen är lösningen fortfarande sur. Finns hydroxidjoner kvar är den fortfarande basisk.</p>
+          <aside class="faktaruta">
+            <h3>Neutralisera och neutral</h3>
+            <p><strong>Att neutralisera</strong> betyder att låta en syra och en bas reagera med varandra. Det är något man gör.</p>
+            <p><strong>Neutral</strong> betyder att lösningen har pH 7, alltså lika många vätejoner som hydroxidjoner. Det är ett tillstånd lösningen befinner sig i.</p>
+            <p>Oftast hänger de ihop: neutraliserar man en stark syra med en stark bas blir resultatet neutralt. Men inte alltid. Neutraliserar man en svag syra med en stark bas blir lösningen basisk, trots att allt har reagerat färdigt.</p>
+            <div class="faktaruta-sammanfattning">
+              <p><strong>Neutralisera = vad man gör</strong></p>
+              <p><strong>Neutral = pH 7</strong></p>
+            </div>
+          </aside>
+          <h2>Enklare skrivsätt</h2>
+          <p>Man kan förenklat tänka att en <strong>vätejon, \(\ce{H+}\)</strong>, från syran reagerar med en <strong>hydroxidjon, \(\ce{OH-}\)</strong>, från basen:</p>
+          <div class="formel">\[\ce{H+ + OH- -> H2O}\]</div>
+          <p>En vätejon och en hydroxidjon går alltså ihop och bildar vatten. Det är grunden för all neutralisation.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Neutralisation är protonöverföring</h2>
+          <p>Standardtexten säger att oxoniumjonen lämnar över en vätejon till hydroxidjonen. Läser du den meningen med glasögonen från syrornas fördjupning ser du vad som faktiskt sker.</p>
+          <p>En proton byter ägare. Oxoniumjonen <strong>avger</strong> den och fungerar som syra. Hydroxidjonen <strong>tar emot</strong> den och fungerar som bas.</p>
+          <p>Neutralisation är alltså inte en särskild sorts reaktion som skiljer sig från allt annat i kapitlet. Det är samma protonöverföring som när saltsyra löses i vatten, som när ammoniak tar en proton från vattnet, och som när en svag syra står i jämvikt med sin jon.</p>
+          <p>Skillnaden är bara att här är både syran och basen ovanligt bra på sitt jobb. Oxoniumjonen är den starkaste syra som kan finnas i vattenlösning, och hydroxidjonen den starkaste basen. Därför går reaktionen i praktiken fullständigt och mycket snabbt.</p>
+          <h2>Vad "neutral" egentligen betyder</h2>
+          <p>Ordet neutral används om två olika saker, och de sammanfaller inte alltid.</p>
+          <p><strong>Neutralisera</strong> betyder att låta syra och bas reagera med varandra. <strong>Neutral</strong> betyder att lösningen har pH 7.</p>
+          <p>Blandar man en stark syra med en stark bas i rätt mängder hamnar man på båda samtidigt. Men blandar man en <strong>svag</strong> syra med en stark bas blir lösningen basisk trots att allt reagerat, eftersom de joner som blir kvar själva kan reagera med vatten.</p>
+          <p>Skillnaden mellan de två punkterna, och varför de skiljer sig åt, står i djupdykningen <strong>Neutralisation — när syra och bas reagerar</strong>. Där finns också mol och mängdberäkningar.</p>
+          <aside class="faktaruta">
+            <h3>Neutralisera och neutral</h3>
+            <p><strong>Att neutralisera</strong> betyder att låta en syra och en bas reagera med varandra. Det är något man gör.</p>
+            <p><strong>Neutral</strong> betyder att lösningen har pH 7, alltså lika många vätejoner som hydroxidjoner. Det är ett tillstånd lösningen befinner sig i.</p>
+            <p>Oftast hänger de ihop: neutraliserar man en stark syra med en stark bas blir resultatet neutralt. Men inte alltid. Neutraliserar man en svag syra med en stark bas blir lösningen basisk, trots att allt har reagerat färdigt.</p>
+            <div class="faktaruta-sammanfattning">
+              <p><strong>Neutralisera = vad man gör</strong></p>
+              <p><strong>Neutral = pH 7</strong></p>
+            </div>
+          </aside>
+          <p><strong>Om modellen:</strong> standardtexten beskriver reaktionen mellan två joner. Med protonöverföringen blir den ett specialfall av något du mött hela kapitlet igenom, och den knyter ihop syror, baser och neutralisation till en enda mekanism.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Vad som blir kvar ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Alla joner i lösningen reagerar <strong>inte</strong></li>
+              <li>Bara vätejonerna och hydroxidjonerna</li>
+              <li>De andra jonerna finns <strong>kvar</strong> i vattnet efteråt</li>
+              <li>Avdunstar vattnet bildar de ett <strong>salt</strong></li>
+              <li><strong>syra + bas \(\rightarrow\) salt + vatten</strong></li>
+            </ul>
+          </div>
+
+          <p>Här kommer något som är lätt att missa, och som gör hela sammanfattningen begriplig.</p>
+          <h2>Fyra sorters joner, två som reagerar</h2>
+          <p>Blanda saltsyra med natriumhydroxid och tänk efter vad som finns i kärlet.</p>
+          <p>Från syran kommer <strong>vätejoner</strong> och <strong>kloridjoner</strong>. Från basen kommer <strong>natriumjoner</strong> och <strong>hydroxidjoner</strong>. Fyra sorter alltså.</p>
+          <p>Men bara två av dem reagerar. Vätejonerna och hydroxidjonerna går ihop och bildar vatten.</p>
+          <p>Natriumjonerna och kloridjonerna gör <strong>ingenting</strong>. De simmar omkring precis som förut, utan att påverkas.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Hur många <strong>sorters</strong> joner det finns i glaset före</li>
+              <li>Vilka två sorter som <strong>försvunnit</strong> i glaset efter</li>
+              <li>Vilka två sorter som <strong>finns kvar</strong></li>
+              <li>Vad som tillkommit i det högra glaset</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/vad-blir-kvar.svg" alt="Två glas före och efter neutralisation. Före finns oxoniumjoner, hydroxidjoner, natriumjoner och kloridjoner. Efter har oxonium- och hydroxidjonerna blivit vattenmolekyler, medan natrium- och kloridjonerna finns kvar oförändrade.">
+            <figcaption>Bara två av de fyra sorternas joner reagerar. Natrium- och kloridjonerna är kvar i lösningen efteråt.</figcaption>
+          </figure>
+          <h2>Lösningen är inte rent vatten</h2>
+          <p>Det betyder att en neutraliserad lösning inte består av bara vatten, även om pH är 7.</p>
+          <p>Den innehåller fortfarande massor av lösta joner — de som inte deltog. Vattnet ser klart ut, men jonerna är där.</p>
+          <h2>Vad som händer om vattnet avdunstar</h2>
+          <p>Låt lösningen stå tills vattnet dunstat bort. Vad blir kvar?</p>
+          <p>Natriumjonerna och kloridjonerna. Och när de inte längre har vatten omkring sig dras de till varandra och bildar ett fast ämne — <strong>natriumklorid</strong>, alltså vanligt koksalt.</p>
+          <p>Det är därför neutralisation brukar sammanfattas så här:</p>
+          <p><strong>syra + bas \(\rightarrow\) salt + vatten</strong></p>
+          <p>Vattnet kommer från vätejonerna och hydroxidjonerna. Saltet kommer från de joner som blev över.</p>
+          <h2>Olika syror ger olika salter</h2>
+          <p>Vilket salt som bildas beror på vilken syra och vilken bas du använt.</p>
+          <p>Saltsyra och natriumhydroxid ger natriumklorid. En annan kombination ger ett annat salt.</p>
+          <p>Vad salter är, hur de är uppbyggda och vad de används till får ett eget delkapitel längre fram.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Oxonium- och hydroxidjonerna reagerar; övriga joner deltar inte</li>
+              <li>En neutraliserad lösning är <strong>inte</strong> rent vatten</li>
+              <li>Vid avdunstning bildar de kvarvarande jonerna ett <strong>salt</strong></li>
+              <li>Saltsyra och natriumhydroxid ger <strong>natriumklorid</strong></li>
+              <li>Vilket salt som bildas beror på vilken syra och vilken bas</li>
+            </ul>
+          </div>
+
+          <p class="inledning">När en syra och en bas neutraliserar varandra är det inte alla joner i lösningen som reagerar.</p>
+          <p>Tänk dig att vi blandar <strong>saltsyra</strong> och <strong>natriumhydroxid</strong>. I den sura lösningen finns oxoniumjoner och kloridjoner. I den basiska lösningen finns natriumjoner och hydroxidjoner.</p>
+          <p>När lösningarna blandas reagerar oxoniumjonerna med hydroxidjonerna och bildar vatten:</p>
+          <div class="formel">\[\ce{H3O+ + OH- -> 2 H2O}\]</div>
+          <p>Men <strong>natriumjonerna, \(\ce{Na+}\), och kloridjonerna, \(\ce{Cl-}\), deltar inte i själva neutralisationsreaktionen</strong>. De finns fortfarande kvar lösta i vattnet efteråt.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/vad-blir-kvar.svg" alt="Två glas före och efter neutralisation. Före finns oxoniumjoner, hydroxidjoner, natriumjoner och kloridjoner. Efter har oxonium- och hydroxidjonerna blivit vattenmolekyler, medan natrium- och kloridjonerna finns kvar oförändrade.">
+            <figcaption>Neutralisationen förbrukar oxonium- och hydroxidjonerna. De övriga jonerna deltar inte och finns kvar lösta i vattnet.</figcaption>
+          </figure>
+          <p>Det betyder att en neutraliserad lösning inte består av enbart rent vatten. Den kan fortfarande innehålla många lösta joner.</p>
+          <p>Om vattnet sedan avdunstar kommer natriumjonerna och kloridjonerna att bli kvar och bilda det fasta ämnet <strong>natriumklorid, NaCl</strong>. Natriumklorid är ett <strong>salt</strong>.</p>
+          <p>Därför brukar neutralisation sammanfattas:</p>
+          <p><strong>syra + bas \(\rightarrow\) salt + vatten</strong></p>
+          <p>Vilket salt som bildas beror på vilken syra och vilken bas som reagerar. Vad salter är, hur de är uppbyggda och vilka egenskaper de har behandlas i ett eget delkapitel.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Åskådarjoner</h2>
+          <p>De joner som inte deltar har ett namn: <strong>åskådarjoner</strong>.</p>
+          <p>Namnet är träffande. De är närvarande vid reaktionen men gör ingenting — de står vid sidan och tittar på.</p>
+          <p>Det gör att man kan skriva reaktionen på två sätt.</p>
+          <p>Den <strong>fullständiga</strong> formeln tar med allt:</p>
+          <div class="formel">\[\ce{HCl + NaOH -> NaCl + H2O}\]</div>
+          <p>Den <strong>jonformeln</strong> tar bara med det som faktiskt händer:</p>
+          <div class="formel">\[\ce{H3O+ + OH- -> 2 H2O}\]</div>
+          <p>Den andra är i någon mening sannare. Den visar vad som sker, utan att blanda in partiklar som bara råkar vara i närheten.</p>
+          <h2>Samma reaktion varje gång</h2>
+          <p>Och här blir det intressant.</p>
+          <p>Neutraliserar du saltsyra med natriumhydroxid är jonformeln \(\ce{H3O+}\) + \(\ce{OH-}\) \(\rightarrow\) 2 \(\ce{H2O}\).</p>
+          <p>Neutraliserar du salpetersyra med kaliumhydroxid är jonformeln — exakt densamma.</p>
+          <p>Alla neutralisationer mellan en stark syra och en stark bas är i grunden <strong>samma reaktion</strong>. Bara åskådarjonerna skiljer sig, och de är just vad de heter.</p>
+          <p>Det förklarar också varför alla sådana neutralisationer frigör ungefär lika mycket värme per mol. Det är samma bindningar som bildas varje gång.</p>
+          <p><strong>Om modellen:</strong> standardtexten skiljer på de joner som reagerar och de som inte gör det. Med jonformeln blir skillnaden något man kan skriva ner — och det visar sig att en mängd olika reaktioner egentligen är en enda.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Hur mycket behövs ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En vätejon reagerar med <strong>en</strong> hydroxidjon</li>
+              <li>Det behövs alltså <strong>lika många</strong> av varje</li>
+              <li>Lika många är <strong>inte</strong> samma sak som lika stor volym</li>
+              <li>En koncentrerad lösning har fler joner per liter</li>
+              <li>En stark syra ger fler vätejoner än en svag vid samma koncentration</li>
+            </ul>
+          </div>
+
+          <p>Nu vet du vad som händer. Men hur mycket bas behövs för att neutralisera en viss mängd syra?</p>
+          <h2>Ett till ett</h2>
+          <p>Grunden är enkel. <strong>En vätejon reagerar med en hydroxidjon.</strong> Inte två, inte en halv — exakt en.</p>
+          <p>Det betyder att du behöver <strong>lika många</strong> hydroxidjoner som det finns vätejoner, om allt ska gå jämnt ut.</p>
+          <p>Finns det fler vätejoner blir några över, och lösningen förblir sur. Finns det fler hydroxidjoner blir några av dem över, och lösningen blir basisk.</p>
+          <h2>Lika många är inte lika mycket vätska</h2>
+          <p>Här kommer det som gör frågan svårare än den ser ut.</p>
+          <p>Lika många joner betyder <strong>inte</strong> lika stor volym. Två lösningar kan ha helt olika många joner i samma mängd vätska.</p>
+          <p>Tänk på saft igen. En deciliter koncentrerad saft innehåller mycket mer saft än en deciliter utspädd, trots att volymen är densamma.</p>
+          <p>Samma sak gäller syror och baser. En <strong>koncentrerad</strong> lösning innehåller fler partiklar per liter än en utspädd.</p>
+          <h2>Styrkan spelar också roll</h2>
+          <p>Och det finns en sak till att tänka på, som du känner igen från syrorna.</p>
+          <p>En <strong>stark</strong> syra avger nästan alla sina vätejoner. En <strong>svag</strong> syra avger bara en del. Har du två lösningar med lika mycket syra i, men den ena stark och den andra svag, innehåller den starka fler vätejoner.</p>
+          <p>Så både <strong>koncentrationen</strong> och <strong>styrkan</strong> påverkar hur många vätejoner som faktiskt finns i lösningen.</p>
+          <h2>Vad du behöver veta</h2>
+          <p>För att räkna ut hur mycket bas som behövs måste du alltså veta hur många joner det finns — inte hur mycket vätska.</p>
+          <p>Hur man faktiskt räknar på det finns i djupdykningen till det här avsnittet. Där används <strong>mol</strong>, som du mötte i syrorna.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Förhållandet är <strong>ett till ett</strong></li>
+              <li>Överskott av någondera gör lösningen sur respektive basisk</li>
+              <li>Volymen är inte avgörande — <strong>antalet joner</strong> är det</li>
+              <li>Koncentration och styrka påverkar båda hur många joner lösningen innehåller</li>
+            </ul>
+          </div>
+
+          <p class="inledning">För att en neutralisation ska bli fullständig måste rätt mängd av de reagerande partiklarna finnas.</p>
+          <p>En oxoniumjon reagerar med en hydroxidjon i förhållandet <strong>ett till ett</strong>:</p>
+          <div class="formel">\[\ce{H3O+ + OH- -> 2 H2O}\]</div>
+          <p>Det betyder att det behövs lika många hydroxidjoner som oxoniumjoner för att ingen av dem ska bli över.</p>
+          <p>Om det finns fler oxoniumjoner än hydroxidjoner kommer det att finnas oxoniumjoner kvar efter reaktionen. Lösningen blir då fortfarande <strong>sur</strong>.</p>
+          <p>Om det i stället finns fler hydroxidjoner än oxoniumjoner kommer hydroxidjoner att finnas kvar. Lösningen blir då fortfarande <strong>basisk</strong>.</p>
+          <p>Först när mängderna passar ihop kan de sura och basiska egenskaperna neutraliseras helt.</p>
+          <p>Det betyder däremot <strong>inte</strong> att man alltid ska blanda lika stora volymer syra och bas. Två lösningar kan innehålla mycket olika många joner i samma volym.</p>
+          <p>En <strong>koncentrerad lösning</strong> innehåller fler partiklar av det lösta ämnet per volym än en utspädd lösning. Dessutom påverkar syrans eller basens <strong>styrka</strong> hur stor andel av ämnets partiklar som reagerar med vatten och bildar oxoniumjoner eller hydroxidjoner.</p>
+          <p>Om två syralösningar har samma koncentration ger en stark syra i regel upphov till fler oxoniumjoner än en svag syra, eftersom en större andel av syrans partiklar reagerar. Men en mycket koncentrerad svag syra kan naturligtvis innehålla fler oxoniumjoner än en mycket utspädd stark syra.</p>
+          <p>När man ska neutralisera en lösning är det därför <strong>antalet reagerande joner</strong>, inte bara vätskans volym, som avgör hur mycket syra eller bas som behövs.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Inte alltid ett till ett</h2>
+          <p>Standardtexten säger att förhållandet är ett till ett. Det gäller mellan oxoniumjonen och hydroxidjonen — men inte alltid mellan syran och basen.</p>
+          <p>Svavelsyra kan avge <strong>två</strong> vätejoner per molekyl. En mol svavelsyra ger därför två mol oxoniumjoner, och det krävs två mol natriumhydroxid för att neutralisera den.</p>
+          <p>Kalciumhydroxid visar samma sak från andra hållet: varje formelenhet ger två hydroxidjoner, så en mol räcker till två mol saltsyra.</p>
+          <p>Det är därför den <strong>balanserade reaktionsformeln</strong> är det man måste utgå från, inte en tumregel.</p>
+          <h2>Svaga syror neutraliseras helt</h2>
+          <p>En sak till som kan förvåna.</p>
+          <p>Att en syra är svag betyder att bara en liten del av molekylerna har avgett sin vätejon vid varje ögonblick. Man skulle kunna tro att bara den delen går att neutralisera.</p>
+          <p>Så är det inte. När hydroxidjonerna plockar bort de vätejoner som finns förskjuts jämvikten, och fler syramolekyler avger sina. Till slut har <strong>hela</strong> mängden syra neutraliserats.</p>
+          <p>Det är samma jämviktsresonemang som i syrornas fördjupning, nu med ett praktiskt utfall.</p>
+          <h2>Räkna på det</h2>
+          <p>Hur man faktiskt beräknar mängderna — med mol, koncentrationer och volymer — finns i djupdykningen <strong>Neutralisation: när syra och bas reagerar</strong>. Där behandlas också skillnaden mellan ekvivalenspunkt och neutralpunkt, och titrering som metod.</p>
+          <p><strong>Om modellen:</strong> standardtexten ger förhållandet ett till ett mellan jonerna. Med balanserade formler blir det möjligt att räkna på vilken syra och bas som helst — och det visar sig att tumregeln bara gäller för ett specialfall.</p>
+        </div>
+
+      </div>
+
+      <!-- DJUPDYKNINGAR -->
+      <section class="djupdykningar">
+        <span class="sektion-label">Vill du veta mer?</span>
+        <div class="fordj-kort-grid">
+          <a class="fordj-kort" href="djupdykning-neutralisation.html">
+            <span class="fordj-kort-ikon" aria-hidden="true">⚗️</span>
+            <span class="fordj-kort-text">
+              <span class="fordj-kort-titel">Neutralisation: när syra och bas reagerar</span>
+              <span class="fordj-kort-sammanfattning">Hur mycket bas behövs för att neutralisera en syra? Här räknas det ut — med mol, koncentrationer och den skillnad mellan ekvivalenspunkt och neutralpunkt som avgör allt.</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-1-vad-neutralisation-ar.json"
+           data-avsnitt="a1_vad-neutralisation-ar">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-1-vad-neutralisation-ar.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a1_vad-neutralisation-ar';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'neutralisation';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

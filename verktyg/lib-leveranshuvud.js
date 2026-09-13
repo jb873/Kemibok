@@ -5,7 +5,7 @@
 const fs = require('fs');
 function fyllHuvud(K, fil) {
   const md = fs.readFileSync(fil, 'utf8').replace(/\r\n/g, '\n');
-  const rub = md.match(/^# (?:[^\n]*?[Aa]vsnitt \d+) — ([^\n]+)/), sok = md.match(/\*\*Sökväg:\*\* `[^`]*avsnitt-\d+-([a-z0-9-]+)\.html`/), sub = md.match(/\*\*Underrubrik i hero:\*\* ([^\n]+)/);
+  const rub = md.match(/^# (?:[^\n]*?(?:[Aa]vsnitt|AVSNITT) \d+) — ([^\n]+)/), sok = md.match(/\*\*Sökväg:\*\* `[^`]*avsnitt-\d+-([a-z0-9-]+)\.html`/), sub = md.match(/\*\*Underrubrik i hero:\*\* ([^\n]+)/);
   if (!K.titel) { if (!rub) { throw new Error('titel saknas i leveransens huvud: ' + fil); } K.titel = rub[1].trim(); }
   if (!K.slug) { if (!sok) { throw new Error('**Sökväg:** saknas i leveransens huvud: ' + fil); } K.slug = sok[1]; }
   if (!K.sub) { if (!sub) { throw new Error('**Underrubrik i hero:** saknas i leveransens huvud: ' + fil); } K.sub = sub[1].trim(); }

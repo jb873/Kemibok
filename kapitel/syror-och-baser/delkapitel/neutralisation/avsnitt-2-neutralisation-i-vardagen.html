@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neutralisation i vardagen – Neutralisation – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Neutralisation</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">2. Neutralisation i vardagen</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 2</span>
+      <h1>Neutralisation i vardagen</h1>
+      <p class="subtitel">— i kroppen, hemmet och industrin —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">I kroppen</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">I hemmet och industrin</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-neutralisation-i-vardagen">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — I kroppen ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Magsäcken har <strong>pH 1–2</strong> och skyddas av ett slemlager</li>
+              <li><strong>Halsbränna</strong> är magsyra som kommit upp i matstrupen</li>
+              <li><strong>Antacida</strong> innehåller baser som neutraliserar syran</li>
+              <li><strong>Bukspottet</strong> neutraliserar maten när den lämnar magsäcken</li>
+              <li><strong>Saliven</strong> neutraliserar syror i munnen och skyddar tänderna</li>
+            </ul>
+          </div>
+
+          <p>Neutralisation sker inte bara i kemisalen. Din egen kropp gör det hela tiden, och på flera ställen.</p>
+          <h2>Magsäcken</h2>
+          <p>Magsäcken innehåller magsaft som är mycket sur — pH ligger ofta runt <strong>1 till 2</strong>.</p>
+          <p>Det behövs. Den sura miljön hjälper till att bryta ner maten, och den dödar många av de bakterier som följer med.</p>
+          <p>Magsäcken klarar sig tack vare ett <strong>slemlager</strong> som skyddar väggarna. Matstrupen har inte det skyddet.</p>
+          <h2>Halsbränna</h2>
+          <p>Kommer magsyra upp i matstrupen börjar det svida och bränna. Det kallas <strong>halsbränna</strong>.</p>
+          <p>Mot tillfällig halsbränna används läkemedel som heter <strong>antacida</strong>. De innehåller basiska ämnen — till exempel kalciumkarbonat eller magnesiumhydroxid.</p>
+          <p>När basen möter magsyran sker en neutralisation. Vätejonerna reagerar med basen, surheten minskar och pH stiger.</p>
+          <p>Lägg märke till att tabletten inte suger upp syran som en svamp. Den <strong>reagerar</strong> med den. Det är kemi, inte absorption.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Var bubblorna kommer ifrån</li>
+              <li>Om tabletten ser hel eller upplöst ut</li>
+              <li>Vad som händer med tabletten över tid</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/antacidum.webp" alt="Ett glas med vätska och en vit tablett på botten som löses upp, med bubblor som stiger uppåt genom vätskan.">
+            <figcaption>En antacidtablett innehåller en bas. Den reagerar med magsyran och minskar surheten.</figcaption>
+          </figure>
+          <h2>När maten lämnar magsäcken</h2>
+          <p>Maten som lämnar magsäcken är fortfarande starkt sur, och tarmen skulle skadas av den.</p>
+          <p>Därför skickar bukspottkörteln ut <strong>bukspott</strong> som innehåller vätekarbonatjoner. De reagerar med syran och höjer pH.</p>
+          <p>Det behövs av två skäl. Tarmen skyddas, och de enzymer som arbetar där fungerar bäst när miljön inte längre är starkt sur.</p>
+          <h2>Munnen och tänderna</h2>
+          <p>Bakterier i tandbeläggningar bryter ner socker och bildar <strong>syror</strong> samtidigt.</p>
+          <p>När pH nära tandytan sjunker börjar mineraler lösas ut ur emaljen. Händer det ofta ökar risken för karies.</p>
+          <p><strong>Saliven</strong> motverkar det. Den innehåller ämnen som kan binda vätejoner och därmed höja pH, så att munnen återgår till det normala efter att du ätit.</p>
+          <p>Det är också därför många tandkrämer är svagt basiska.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Magsaften har pH omkring 1–2</li>
+              <li>Matstrupen saknar magsäckens skydd — därav halsbränna</li>
+              <li>Antacida reagerar <strong>kemiskt</strong> med syran, de absorberar den inte</li>
+              <li>Bukspottet innehåller <strong>vätekarbonatjoner</strong> som höjer pH i tolvfingertarmen</li>
+              <li>Saliven motverkar de syror bakterier bildar i munnen</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Neutralisation sker inte bara i kemilaboratoriet. Reaktioner mellan syror och baser är viktiga i kroppen, i hemmet, vid vattenrening och i många industriella processer.</p>
+          <h2>Magsäcken och halsbränna</h2>
+          <p>Magsäcken innehåller magsaft som är starkt sur. pH ligger ofta omkring <strong>1–2</strong>. Den sura miljön behövs bland annat för matsmältningen och för att döda många mikroorganismer som följer med maten.</p>
+          <p>Magsäcken har ett skyddande slemlager som gör att den klarar den sura miljön. Matstrupen har inte samma skydd. Om magsyra kommer upp i matstrupen kan det därför börja svida och bränna. Det kallas <strong>halsbränna</strong>.</p>
+          <p>Vid tillfällig halsbränna kan man använda läkemedel som kallas <strong>antacida</strong>. De innehåller ämnen som kan reagera med och neutralisera magsyran. Exempel är <strong>kalciumkarbonat</strong> och <strong>magnesiumhydroxid</strong>. När de reagerar med syran minskar mängden oxoniumjoner och pH stiger.</p>
+          <p>Antacida tar alltså inte bort syran genom att absorbera den. De reagerar kemiskt med den.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/antacidum.webp" alt="Ett glas med vätska och en vit tablett på botten som löses upp, med bubblor som stiger uppåt genom vätskan.">
+            <figcaption>Antacida innehåller basiska ämnen som kalciumkarbonat eller magnesiumhydroxid. De reagerar kemiskt med syran, de absorberar den inte.</figcaption>
+          </figure>
+          <h2>När maten lämnar magsäcken</h2>
+          <p>När maten lämnar magsäcken och kommer till <strong>tolvfingertarmen</strong> är den fortfarande sur. Tarmen skulle kunna skadas om den sura blandningen inte förändrades.</p>
+          <p>Bukspottkörteln avger därför bukspott som bland annat innehåller <strong>vätekarbonatjoner, \(\ce{HCO3-}\)</strong>. Vätekarbonat kan reagera med syran och höja pH.</p>
+          <p>Det är viktigt eftersom många av de enzymer som arbetar i tunntarmen fungerar bäst när miljön inte längre är starkt sur.</p>
+          <p>Kroppen använder alltså syra-basreaktioner för att skapa rätt kemisk miljö på olika platser i matsmältningssystemet.</p>
+          <h2>Munnen och tänderna</h2>
+          <p>Neutralisation är också viktig i munnen. Bakterier i tandbeläggningar kan bryta ner socker och andra kolhydrater och samtidigt bilda <strong>syror</strong>. När pH nära tandytan sjunker kan mineraler börja lösas ut ur tandemaljen. Om detta sker ofta ökar risken för karies.</p>
+          <p><strong>Saliven</strong> hjälper till att motverka detta. Den innehåller bland annat vätekarbonat och andra ämnen som kan binda vätejoner och därmed minska surheten. Saliven hjälper på så sätt pH i munnen att återgå mot sitt normala värde efter att vi har ätit.</p>
+          <p>Många tandkrämer innehåller också ämnen som bidrar till att hålla en miljö där syrornas angrepp på tänderna begränsas.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Blodet får inte ändra pH</h2>
+          <p>Standardtexten visar hur kroppen neutraliserar syror i magen, tarmen och munnen. Men det finns ett ställe där kravet är mycket hårdare än så.</p>
+          <p>Blodets pH måste hålla sig mellan ungefär 7,35 och 7,45. Avviker det mer än några tiondelar blir man allvarligt sjuk, och vid större avvikelser livshotande.</p>
+          <p>Samtidigt producerar kroppen syror hela tiden. Varje cell som förbränner näring bildar koldioxid, och koldioxid ger kolsyra i vatten. Vid hårt arbete tillkommer mjölksyra.</p>
+          <p>Att pH ändå står stilla beror på en <strong>buffert</strong> — samma sak du mötte i syrornas fördjupning.</p>
+          <h2>Hur den fungerar</h2>
+          <p>Blodet innehåller kolsyra och vätekarbonatjoner samtidigt, i jämvikt med varandra.</p>
+          <p>Tillförs syra reagerar vätekarbonatjonerna med den och blir kolsyra. Syran fångas upp, och pH ändras knappt.</p>
+          <p>Tillförs bas går det åt andra hållet: kolsyran avger en proton och blir vätekarbonat. Basen fångas upp.</p>
+          <p>Systemet fungerar alltså åt båda hållen, och det är just vätekarbonatjonens dubbla natur — den kan vara både syra och bas — som gör det möjligt.</p>
+          <h2>Och andningen hjälper till</h2>
+          <p>Bufferten har dessutom en utväg som få andra buffertar har.</p>
+          <p>Kolsyra kan sönderfalla till vatten och koldioxid, och koldioxid kan andas ut. Blir blodet för surt andas du snabbare och gör dig av med koldioxid, vilket förskjuter jämvikten och höjer pH.</p>
+          <p>Det är därför man börjar hyperventilera vid vissa förgiftningar, och varför andningen påverkas av kroppens syrabalans.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskriver neutralisationer där syra tillförs och tas om hand. Blodets buffert är något annat — ett system som står emot förändring i båda riktningarna, utan att någon tillsätter något alls.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — I hemmet och industrin ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Sura</strong> rengöringsmedel löser kalk</li>
+              <li><strong>Basiska</strong> rengöringsmedel löser fett</li>
+              <li><strong>Blanda dem aldrig</strong> — de förbrukar varandra och kan bli farliga</li>
+              <li>pH justeras vid <strong>vattenrening</strong> och i industrin</li>
+              <li>Vid spill på hud: <strong>spola med vatten</strong>, neutralisera aldrig</li>
+            </ul>
+          </div>
+
+          <p>Neutralisation används också utanför kroppen — i hemmet, i vattenverk och i fabriker.</p>
+          <h2>Rengöring</h2>
+          <p>Olika sorters smuts kräver olika medel, och skillnaden bygger på syror och baser.</p>
+          <p><strong>Kalkavlagringar</strong> löses med <strong>syra</strong>. Därför innehåller avkalkningsmedel ofta citronsyra. Kalken reagerar med syran och löses upp.</p>
+          <p><strong>Fett och matrester</strong> löses med <strong>bas</strong>. Därför innehåller propplösare ofta natriumhydroxid.</p>
+          <h2>Blanda aldrig</h2>
+          <p>Här kommer en regel som är värd att ta på allvar.</p>
+          <p><strong>Blanda aldrig ett surt och ett basiskt rengöringsmedel.</strong></p>
+          <p>Två saker händer, och båda är dåliga. För det första neutraliserar medlen varandra — de förbrukas, och rengöringseffekten försvinner. Du får ett medel som inte gör någonting.</p>
+          <p>För det andra kan reaktionen utveckla mycket värme. Blandningen kan börja koka och stänka frätande vätska omkring sig.</p>
+          <p>Det finns alltså ingenting att vinna och mycket att förlora.</p>
+          <h2>Vattenrening</h2>
+          <p>pH är viktigt både när dricksvatten framställs och när avloppsvatten renas.</p>
+          <p>Vatten som är för surt eller för basiskt kan skada ledningar, påverka djur och växter, och störa de processer som pågår i ett reningsverk.</p>
+          <p>Därför tillsätts syra eller bas för att justera pH till rätt nivå.</p>
+          <h2>Industrin</h2>
+          <p>Många tillverkningsprocesser fungerar bara inom ett bestämt pH-område. Det gäller livsmedel, läkemedel, papper och kemikalier.</p>
+          <p>Är en lösning för sur tillsätts en bas. Är den för basisk tillsätts en syra. Genom att mäta pH hela tiden kan processen hållas där den ska vara.</p>
+          <h2>Vid spill</h2>
+          <p>Ett sista och viktigt fall.</p>
+          <p>I laboratorier och industrier kan neutraliserande material användas vid spill — men bara enligt bestämda rutiner. Man häller inte en stark bas över en stark syra på måfå. Reaktionen kan utveckla så mycket värme att situationen blir farligare än den var.</p>
+          <p>Och en regel utan undantag: <strong>får du en syra eller bas på huden eller i ögat ska du aldrig försöka neutralisera den.</strong> Spola med stora mängder vatten i stället.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Kalk löses med syra, fett med bas</li>
+              <li>Blandning ger värmeutveckling och sämre rengöring</li>
+              <li>pH-justering krävs vid dricksvattenproduktion och avloppsrening</li>
+              <li>Många industriprocesser fungerar bara inom ett bestämt pH-område</li>
+              <li>Neutralisation vid spill sker bara under kontrollerade former</li>
+            </ul>
+          </div>
+
+          <h2>Rengöring</h2>
+          <p class="inledning">Olika typer av smuts kräver olika rengöringsmedel. Kalkavlagringar består till stor del av ämnen som reagerar med syror. Därför används exempelvis citronsyra eller andra sura rengöringsmedel för att lösa kalk.</p>
+          <p>Fett och organiska rester kan däremot angripas med basiska rengöringsmedel. Vissa propplösare innehåller till exempel den starka basen <strong>natriumhydroxid</strong>.</p>
+          <p>Man ska aldrig blanda starka sura och basiska rengöringsmedel. När de reagerar med varandra kan mycket värme utvecklas, vilket kan leda till kokning och stänk av frätande vätska. Dessutom förbrukar ämnena varandra och rengöringseffekten minskar.</p>
+          <p>Rengöringsmedel ska därför användas enligt anvisningarna och inte blandas.</p>
+          <h2>Vattenrening</h2>
+          <p>pH är viktigt vid både dricksvattenproduktion och rening av avloppsvatten. Vatten som är alltför surt eller basiskt kan skada ledningar, påverka levande organismer och störa de kemiska och biologiska processerna i ett reningsverk.</p>
+          <p>Därför kan man tillsätta syror eller baser för att justera vattnets pH. Vilket ämne som används beror på vilken typ av vatten som behandlas och vilket pH man vill uppnå.</p>
+          <h2>Industrin</h2>
+          <p>Många industriella processer fungerar bara inom ett bestämt pH-område. Det gäller exempelvis tillverkning av livsmedel, läkemedel, papper och kemikalier.</p>
+          <p>Om en lösning är för sur kan ett basiskt ämne tillsättas. Är den för basisk kan en syra tillsättas. Genom att mäta pH och noggrant styra mängden syra eller bas kan processen hållas inom rätt område.</p>
+          <p>Neutralisation används också för att behandla surt eller basiskt processvatten innan det går vidare till rening eller återanvändning.</p>
+          <h2>Spill av syror och baser</h2>
+          <p>Vid kemikaliespill kan neutraliserande material användas i laboratorier och industrier, men endast enligt särskilda säkerhetsrutiner. En stark syra neutraliseras inte genom att man på måfå häller en stark bas över den. Reaktionen kan utveckla mycket värme och göra situationen farligare.</p>
+          <p>Om en frätande syra eller bas hamnar <strong>på huden eller i ögonen ska man inte försöka neutralisera den</strong>. Då ska ämnet i stället omedelbart spolas bort med stora mängder vatten enligt gällande säkerhetsrutiner.</p>
+          <p>Neutralisation är alltså en användbar kemisk reaktion, men när koncentrerade syror och baser är inblandade måste den alltid ske under kontrollerade former.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Titrering</h2>
+          <p>Standardtexten nämner att man mäter pH för att styra processer. Det finns en metod där neutralisationen i sig är mätinstrumentet.</p>
+          <p>Vid <strong>titrering</strong> bestämmer man en okänd koncentration genom att tillsätta en lösning med <strong>känd</strong> koncentration, droppe för droppe, tills reaktionen är exakt fullständig.</p>
+          <p>Har du en syra av okänd koncentration tillsätter du bas tills all syra reagerat. Genom att mäta hur mycket bas som gick åt kan du räkna ut hur mycket syra det fanns.</p>
+          <p>Metoden kräver att man kan se när man är framme, och där kommer indikatorerna in.</p>
+          <h2>Varför indikatorvalet spelar roll</h2>
+          <p>Nu blir omslagsområdena från syrornas fördjupning användbara.</p>
+          <p>Titrerar du en <strong>stark</strong> syra med en stark bas hamnar slutpunkten nära pH 7. Där fungerar BTB utmärkt, eftersom dess omslagsområde ligger mellan 6 och 7,6.</p>
+          <p>Titrerar du en <strong>svag</strong> syra med en stark bas hamnar slutpunkten över pH 7 — ofta runt 8 eller 9. Där skulle BTB slå om för tidigt och du skulle tro att du var klar innan du var det. I stället används fenolftalein, som slår om mellan 8 och 10.</p>
+          <p>Att välja rätt indikator är alltså inte en smaksak utan en förutsättning för att mätningen ska bli rätt.</p>
+          <h2>Räkna på det</h2>
+          <p>Hur en titrering beräknas, och varför ekvivalenspunkten inte alltid ligger vid pH 7, står i djupdykningen <strong>Neutralisation: när syra och bas reagerar</strong>.</p>
+          <p><strong>Om modellen:</strong> standardtexten använder pH-mätning som kontroll. Med titrering blir neutralisationen i stället en metod — ett sätt att ta reda på något man inte visste.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-2-neutralisation-i-vardagen.json"
+           data-avsnitt="a2_neutralisation-i-vardagen">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-2-neutralisation-i-vardagen.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a2_neutralisation-i-vardagen';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'neutralisation';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>
