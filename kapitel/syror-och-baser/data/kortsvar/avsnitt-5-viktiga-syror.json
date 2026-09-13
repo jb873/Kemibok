@@ -1,0 +1,134 @@
+{
+  "avsnitt": 5,
+  "titel": "Viktiga syror: egenskaper, användning och säkerhet",
+  "delkapitel": "syror",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 5 (Viktiga syror: egenskaper, användning och säkerhet), delkapitel Syror, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/syror/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k5-s1",
+      "typ": "ord",
+      "fraga": "Vilken syra finns naturligt i magsäcken?",
+      "svar": [
+        "saltsyra"
+      ],
+      "forklaring": "Saltsyra. Den bryter ner mat och oskadliggör mikroorganismer."
+    },
+    {
+      "id": "k5-s2",
+      "typ": "ord",
+      "fraga": "Vilken syra ger ättika och vinäger deras smak?",
+      "svar": [
+        "ättiksyra"
+      ],
+      "forklaring": "Ättiksyra. Den används också för att konservera livsmedel."
+    },
+    {
+      "id": "k5-s3",
+      "typ": "ord",
+      "fraga": "Vilken gas bildas när en syra reagerar med en metall?",
+      "svar": [
+        "vätgas"
+      ],
+      "forklaring": "Vätgas. Den bubblar upp ur lösningen."
+    },
+    {
+      "id": "k5-s4",
+      "typ": "ord",
+      "fraga": "Vilken syra finns naturligt i citrusfrukter?",
+      "svar": [
+        "citronsyra"
+      ],
+      "forklaring": "Citronsyra. Den finns i citron, lime och andra citrusfrukter."
+    },
+    {
+      "id": "k5-s5",
+      "typ": "formel",
+      "fraga": "Skriv formeln för svavelsyra.",
+      "svar": [
+        "H2SO4"
+      ],
+      "forklaring": "\\(\\ce{H2SO4}\\) — en av industrins viktigaste kemikalier."
+    },
+    {
+      "id": "k5-s6",
+      "typ": "tal",
+      "fraga": "Vilket ungefärligt pH har magsäckens innehåll?",
+      "svar": 1,
+      "forklaring": "Omkring 1 till 2. Magsäcken är mycket sur."
+    },
+    {
+      "id": "k5-s7",
+      "typ": "flerval",
+      "fraga": "Vad används svavelsyra till?",
+      "alternativ": [
+        "Gödselmedel och batterier",
+        "Livsmedel",
+        "Rengöring av tänder"
+      ],
+      "svar": 0,
+      "forklaring": "Gödselmedel och batterier. Den är världens mest tillverkade kemikalie."
+    },
+    {
+      "id": "k5-s8",
+      "typ": "flerval",
+      "fraga": "Varför bildas vätgas när metall möter syra?",
+      "alternativ": [
+        "Metallatomerna avger elektroner till vätejonerna",
+        "Metallen smälter",
+        "Syran kokar"
+      ],
+      "svar": 0,
+      "forklaring": "Metallatomerna avger elektroner, som tas upp av vätejonerna. Två väteatomer bildar en vätgasmolekyl."
+    },
+    {
+      "id": "k5-s9",
+      "typ": "flerval",
+      "fraga": "Vad används citronsyra till förutom i livsmedel?",
+      "alternativ": [
+        "Avkalkning",
+        "Smörjning",
+        "Färgning"
+      ],
+      "svar": 0,
+      "forklaring": "Avkalkning. Citronsyra löser upp kalkavlagringar."
+    },
+    {
+      "id": "k5-s10",
+      "typ": "flerval",
+      "fraga": "Är en svag syra alltid ofarlig?",
+      "alternativ": [
+        "Nej, koncentrationen spelar också roll",
+        "Ja, alltid",
+        "Bara om den är utspädd"
+      ],
+      "svar": 0,
+      "forklaring": "Nej. Även koncentrerade svaga syror kan vara frätande."
+    },
+    {
+      "id": "k5-s11",
+      "typ": "flerval",
+      "fraga": "Vad gör du om du får syra på huden?",
+      "alternativ": [
+        "Sköljer omedelbart med mycket vatten",
+        "Torkar av med papper",
+        "Väntar och ser"
+      ],
+      "svar": 0,
+      "forklaring": "Skölj omedelbart med rikligt med vatten, länge. Ta av förorenade kläder och säg till din lärare."
+    },
+    {
+      "id": "k5-s12",
+      "typ": "flerval",
+      "fraga": "Hur bildas kolsyra?",
+      "alternativ": [
+        "Koldioxid löser sig i vatten",
+        "Vatten kokas",
+        "Salt löses i vatten"
+      ],
+      "svar": 0,
+      "forklaring": "Koldioxid löser sig i vatten. Därför är kolsyrade drycker lite sura."
+    }
+  ]
+}

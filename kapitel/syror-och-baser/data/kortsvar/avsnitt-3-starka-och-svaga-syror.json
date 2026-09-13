@@ -1,0 +1,137 @@
+{
+  "avsnitt": 3,
+  "titel": "Starka och svaga syror",
+  "delkapitel": "syror",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 3 (Starka och svaga syror), delkapitel Syror, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/syror/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k3-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas en syra som avger nästan alla sina vätejoner i vatten?",
+      "svar": [
+        "stark",
+        "stark syra"
+      ],
+      "forklaring": "Stark. Nästan varje partikel avger sin vätejon."
+    },
+    {
+      "id": "k3-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas en syra som bara avger en del av sina vätejoner?",
+      "svar": [
+        "svag",
+        "svag syra"
+      ],
+      "forklaring": "Svag. Resten finns kvar som hela syrapartiklar i lösningen."
+    },
+    {
+      "id": "k3-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas det tillstånd där två motsatta reaktioner går lika fort?",
+      "svar": [
+        "jämvikt",
+        "kemisk jämvikt"
+      ],
+      "forklaring": "Kemisk jämvikt. Antalen förblir oförändrade, men partiklarna byter ständigt form."
+    },
+    {
+      "id": "k3-s4",
+      "typ": "formel",
+      "fraga": "Skriv formeln för svavelsyra.",
+      "svar": [
+        "H2SO4"
+      ],
+      "forklaring": "\\(\\ce{H2SO4}\\) — två vätejoner att avge."
+    },
+    {
+      "id": "k3-s5",
+      "typ": "formel",
+      "fraga": "Skriv formeln för salpetersyra.",
+      "svar": [
+        "HNO3"
+      ],
+      "forklaring": "\\(\\ce{HNO3}\\) — en vätejon att avge."
+    },
+    {
+      "id": "k3-s6",
+      "typ": "tal",
+      "fraga": "Hur många vätejoner kan en svavelsyramolekyl avge?",
+      "svar": 2,
+      "forklaring": "Två. Den första avges lätt, den andra sitter hårdare."
+    },
+    {
+      "id": "k3-s7",
+      "typ": "flerval",
+      "fraga": "Vad beskriver orden stark och svag hos en syra?",
+      "alternativ": [
+        "Hur lätt syran avger sina vätejoner",
+        "Hur mycket syra som finns i lösningen",
+        "Hur farlig syran är"
+      ],
+      "svar": 0,
+      "forklaring": "Hur lätt syran avger vätejoner. Det säger ingenting om hur mycket syra som finns."
+    },
+    {
+      "id": "k3-s8",
+      "typ": "flerval",
+      "fraga": "Vilken av dessa är en svag syra?",
+      "alternativ": [
+        "Ättiksyra",
+        "Saltsyra",
+        "Salpetersyra"
+      ],
+      "svar": 0,
+      "forklaring": "Ättiksyra. Citronsyra, kolsyra, mjölksyra och myrsyra är också svaga."
+    },
+    {
+      "id": "k3-s9",
+      "typ": "flerval",
+      "fraga": "Vilken av dessa är en stark syra?",
+      "alternativ": [
+        "Saltsyra",
+        "Ättiksyra",
+        "Citronsyra"
+      ],
+      "svar": 0,
+      "forklaring": "Saltsyra. Svavelsyra och salpetersyra är de andra två starka."
+    },
+    {
+      "id": "k3-s10",
+      "typ": "flerval",
+      "fraga": "Vad betyder pilen \\(\\ce{<=>}\\) i en reaktionsformel?",
+      "alternativ": [
+        "Att reaktionen går åt båda hållen samtidigt",
+        "Att reaktionen är klar",
+        "Att den går långsamt"
+      ],
+      "svar": 0,
+      "forklaring": "Reaktionen går åt båda hållen samtidigt och blir aldrig helt färdig."
+    },
+    {
+      "id": "k3-s11",
+      "typ": "flerval",
+      "fraga": "Två glas innehåller lika mycket syra, ett starkt och ett svagt. Vilket har flest oxoniumjoner?",
+      "alternativ": [
+        "Det med den starka syran",
+        "Det med den svaga syran",
+        "Lika många i båda"
+      ],
+      "svar": 0,
+      "forklaring": "Den starka syran. Nästan alla dess partiklar har avgett sin vätejon."
+    },
+    {
+      "id": "k3-s12",
+      "typ": "flerval",
+      "fraga": "Varför avges svavelsyrans andra vätejon svårare än den första?",
+      "alternativ": [
+        "Den ska lämna en partikel som redan är negativ",
+        "Molekylen är större",
+        "Den sitter längre in"
+      ],
+      "svar": 0,
+      "forklaring": "Den ska lämna en partikel som redan är negativ, och negativ laddning håller kvar den positiva vätejonen."
+    }
+  ]
+}

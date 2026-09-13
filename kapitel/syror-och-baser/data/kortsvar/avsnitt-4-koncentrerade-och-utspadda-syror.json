@@ -1,0 +1,133 @@
+{
+  "avsnitt": 4,
+  "titel": "Koncentrerade och utspädda syror",
+  "delkapitel": "syror",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 4 (Koncentrerade och utspädda syror), delkapitel Syror, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/syror/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k4-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas ett mått på hur mycket syra som finns i en viss mängd lösning?",
+      "svar": [
+        "koncentration"
+      ],
+      "forklaring": "Koncentration. Mycket löst ämne betyder koncentrerad, lite betyder utspädd."
+    },
+    {
+      "id": "k4-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas en lösning som innehåller mycket löst ämne?",
+      "svar": [
+        "koncentrerad"
+      ],
+      "forklaring": "Koncentrerad. Den innehåller mycket löst ämne i förhållande till mängden vätska."
+    },
+    {
+      "id": "k4-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas en lösning som innehåller lite löst ämne?",
+      "svar": [
+        "utspädd"
+      ],
+      "forklaring": "Utspädd. Mängden löst ämne är liten i förhållande till mängden vätska."
+    },
+    {
+      "id": "k4-s4",
+      "typ": "ord",
+      "fraga": "Vilken regel säger att man alltid ska hälla syran i vattnet?",
+      "svar": [
+        "SIV",
+        "SIV-regeln"
+      ],
+      "forklaring": "SIV-regeln — Syra I Vatten. Häll alltid syran i vattnet, aldrig tvärtom."
+    },
+    {
+      "id": "k4-s5",
+      "typ": "tal",
+      "fraga": "Hur många liter är en kubikdecimeter?",
+      "svar": 1,
+      "forklaring": "En. En kubikdecimeter är exakt samma volym som en liter."
+    },
+    {
+      "id": "k4-s6",
+      "typ": "tal",
+      "fraga": "Du har 36 gram vatten. Molmassan är 18 g/mol. Hur många mol är det?",
+      "svar": 2,
+      "forklaring": "Två mol. n = m / M = 36 / 18."
+    },
+    {
+      "id": "k4-s7",
+      "typ": "flerval",
+      "fraga": "En stark syra späds ut med vatten. Blir den svagare?",
+      "alternativ": [
+        "Nej, styrkan är oförändrad",
+        "Ja, den blir svagare",
+        "Ja, den blir starkare"
+      ],
+      "svar": 0,
+      "forklaring": "Nej. Styrkan är en egenskap hos syran och ändras aldrig. Det är koncentrationen som minskat."
+    },
+    {
+      "id": "k4-s8",
+      "typ": "flerval",
+      "fraga": "Vad händer med pH när en sur lösning späds med vatten?",
+      "alternativ": [
+        "Det stiger mot 7",
+        "Det sjunker",
+        "Det är oförändrat"
+      ],
+      "svar": 0,
+      "forklaring": "Det stiger mot 7. Samma mängd syra fördelas i mer vatten, så koncentrationen sjunker."
+    },
+    {
+      "id": "k4-s9",
+      "typ": "flerval",
+      "fraga": "Går det att avgöra om en syra är stark eller svag genom att mäta pH?",
+      "alternativ": [
+        "Nej",
+        "Ja, alltid",
+        "Bara om man vet volymen"
+      ],
+      "svar": 0,
+      "forklaring": "Nej. En utspädd stark syra kan ha högre pH än en koncentrerad svag."
+    },
+    {
+      "id": "k4-s10",
+      "typ": "flerval",
+      "fraga": "Varför får man aldrig hälla vatten i koncentrerad syra?",
+      "alternativ": [
+        "Den lilla vattenmängden blir mycket varm och kan koka",
+        "Syran blir starkare",
+        "Det bildas gas"
+      ],
+      "svar": 0,
+      "forklaring": "Värmen frigörs i den lilla vattenmängden, som snabbt kokar och kastar ut frätande syra."
+    },
+    {
+      "id": "k4-s11",
+      "typ": "flerval",
+      "fraga": "Vilka två saker avgör en syralösnings pH?",
+      "alternativ": [
+        "Syrans styrka och lösningens koncentration",
+        "Bara styrkan",
+        "Bara koncentrationen"
+      ],
+      "svar": 0,
+      "forklaring": "Båda. Styrkan avgör hur stor andel som avger vätejoner, koncentrationen hur mycket syra som finns."
+    },
+    {
+      "id": "k4-s12",
+      "typ": "flerval",
+      "fraga": "Kan en svag syra ha lägre pH än en stark?",
+      "alternativ": [
+        "Ja, om den är tillräckligt mycket mer koncentrerad",
+        "Nej, aldrig",
+        "Bara vid uppvärmning"
+      ],
+      "svar": 0,
+      "forklaring": "Ja. pH beror på antalet oxoniumjoner, och tillräckligt mycket svag syra kan ge fler än lite stark."
+    }
+  ]
+}

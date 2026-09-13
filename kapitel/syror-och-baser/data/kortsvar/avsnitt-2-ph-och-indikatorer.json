@@ -1,0 +1,131 @@
+{
+  "avsnitt": 2,
+  "titel": "pH och indikatorer",
+  "delkapitel": "syror",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 2 (pH och indikatorer), delkapitel Syror, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/syror/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k2-s1",
+      "typ": "tal",
+      "fraga": "Vilket pH har en neutral lösning?",
+      "svar": 7,
+      "forklaring": "Sju. Rent vatten är neutralt, och det är skalans mittpunkt."
+    },
+    {
+      "id": "k2-s2",
+      "typ": "tal",
+      "fraga": "En lösning har pH 3. En annan har pH 4. Hur många gånger surare är den första?",
+      "svar": 10,
+      "forklaring": "Tio gånger. Varje steg på pH-skalan är en tiofaldig skillnad."
+    },
+    {
+      "id": "k2-s3",
+      "typ": "tal",
+      "fraga": "Hur många gånger surare är pH 2 än pH 4?",
+      "svar": 100,
+      "forklaring": "Hundra gånger. Två steg betyder tio gånger tio."
+    },
+    {
+      "id": "k2-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas ett ämne som byter färg beroende på lösningens pH?",
+      "svar": [
+        "indikator"
+      ],
+      "forklaring": "Indikator. Den ger ett ungefärligt värde, inte ett exakt."
+    },
+    {
+      "id": "k2-s5",
+      "typ": "ord",
+      "fraga": "Vilket instrument ger pH som ett exakt tal?",
+      "svar": [
+        "pH-mätare"
+      ],
+      "forklaring": "En pH-mätare. Den har en elektrod som doppas i lösningen."
+    },
+    {
+      "id": "k2-s6",
+      "typ": "ord",
+      "fraga": "Vilken indikator blir gul i surt, grön i neutralt och blå i basiskt?",
+      "svar": [
+        "BTB",
+        "bromtymolblått"
+      ],
+      "forklaring": "BTB, bromtymolblått. Tre färger gör att man ser om man är nära neutralt."
+    },
+    {
+      "id": "k2-s7",
+      "typ": "flerval",
+      "fraga": "En lösning innehåller många oxoniumjoner. Vad gäller för dess pH?",
+      "alternativ": [
+        "Det är lågt",
+        "Det är högt",
+        "Det är 7"
+      ],
+      "svar": 0,
+      "forklaring": "Lågt. Fler oxoniumjoner betyder lägre pH — talen går åt motsatt håll."
+    },
+    {
+      "id": "k2-s8",
+      "typ": "flerval",
+      "fraga": "Vilken färg blir blått lackmuspapper i en sur lösning?",
+      "alternativ": [
+        "Rött",
+        "Blått",
+        "Grönt"
+      ],
+      "svar": 0,
+      "forklaring": "Rött. Rött lackmuspapper blir i stället blått i basiskt."
+    },
+    {
+      "id": "k2-s9",
+      "typ": "flerval",
+      "fraga": "Vad visar universalindikator som lackmus inte visar?",
+      "alternativ": [
+        "Ett ungefärligt pH-värde",
+        "Om lösningen leder ström",
+        "Hur mycket syra det finns"
+      ],
+      "svar": 0,
+      "forklaring": "Ett ungefärligt pH-värde. Universalindikator innehåller flera indikatorämnen."
+    },
+    {
+      "id": "k2-s10",
+      "typ": "flerval",
+      "fraga": "Vilken färg blir rödkålsindikator i en sur lösning?",
+      "alternativ": [
+        "Röd eller rosa",
+        "Blå",
+        "Grön"
+      ],
+      "svar": 0,
+      "forklaring": "Röd eller rosa. I neutralt blir den lila, i basiskt blått eller grönt."
+    },
+    {
+      "id": "k2-s11",
+      "typ": "flerval",
+      "fraga": "En lösning har pH 9. Är den sur, neutral eller basisk?",
+      "alternativ": [
+        "Basisk",
+        "Sur",
+        "Neutral"
+      ],
+      "svar": 0,
+      "forklaring": "Basisk. Allt över 7 är basiskt."
+    },
+    {
+      "id": "k2-s12",
+      "typ": "flerval",
+      "fraga": "När räcker en indikator, och när behövs en pH-mätare?",
+      "alternativ": [
+        "Indikator räcker för att avgöra surt eller basiskt; mätaren behövs för exakta tal",
+        "Mätaren behövs alltid",
+        "Indikatorn är alltid bäst"
+      ],
+      "svar": 0,
+      "forklaring": "Indikatorn räcker när du bara vill veta om lösningen är sur eller basisk."
+    }
+  ]
+}

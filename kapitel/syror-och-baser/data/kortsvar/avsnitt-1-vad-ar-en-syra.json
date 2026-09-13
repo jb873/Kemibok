@@ -1,0 +1,129 @@
+{
+  "avsnitt": 1,
+  "titel": "Vad är en syra?",
+  "delkapitel": "syror",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 1 (Vad är en syra?), delkapitel Syror, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/syror/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k1-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas en väteatom som avgett sin enda elektron?",
+      "svar": [
+        "vätejon"
+      ],
+      "forklaring": "Vätejon. Kvar finns bara protonen — inget elektronskal alls."
+    },
+    {
+      "id": "k1-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas ett ämne som kan avge vätejoner?",
+      "svar": [
+        "syra"
+      ],
+      "forklaring": "Syra. Det är hela definitionen: ett ämne som kan avge vätejoner."
+    },
+    {
+      "id": "k1-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas jonen som bildas när en vattenmolekyl tar upp en vätejon?",
+      "svar": [
+        "oxoniumjon"
+      ],
+      "forklaring": "Oxoniumjon. Det är den som faktiskt finns i en sur lösning."
+    },
+    {
+      "id": "k1-s4",
+      "typ": "formel",
+      "fraga": "Skriv formeln för en oxoniumjon.",
+      "svar": [
+        "H3O+"
+      ],
+      "forklaring": "\\(\\ce{H3O+}\\) — en vattenmolekyl plus en vätejon."
+    },
+    {
+      "id": "k1-s5",
+      "typ": "formel",
+      "fraga": "Skriv formeln för en kloridjon.",
+      "svar": [
+        "Cl-"
+      ],
+      "forklaring": "\\(\\ce{Cl-}\\) — kloratomen har tagit upp en elektron."
+    },
+    {
+      "id": "k1-s6",
+      "typ": "tal",
+      "fraga": "Hur många protoner har en vätejon?",
+      "svar": 1,
+      "forklaring": "En. Vätejonen *är* en proton."
+    },
+    {
+      "id": "k1-s7",
+      "typ": "tal",
+      "fraga": "Hur många elektroner har en vätejon?",
+      "svar": 0,
+      "forklaring": "Noll. Den har avgett sin enda elektron, och det är hela poängen."
+    },
+    {
+      "id": "k1-s8",
+      "typ": "flerval",
+      "fraga": "Varför finns inga fria vätejoner i en vattenlösning?",
+      "alternativ": [
+        "De binder omedelbart till vattenmolekyler",
+        "De är för tunga",
+        "De försvinner"
+      ],
+      "svar": 0,
+      "forklaring": "Vätejonen är en naken kärna utan elektronskal. Den fastnar direkt på det första den möter."
+    },
+    {
+      "id": "k1-s9",
+      "typ": "flerval",
+      "fraga": "Vilken partikel gör en saltsyralösning sur?",
+      "alternativ": [
+        "Oxoniumjonen",
+        "Kloridjonen",
+        "Vattenmolekylen"
+      ],
+      "svar": 0,
+      "forklaring": "Oxoniumjonen. Kloridjonerna finns också i lösningen men påverkar inte surheten."
+    },
+    {
+      "id": "k1-s10",
+      "typ": "flerval",
+      "fraga": "Varför leder sura lösningar elektrisk ström?",
+      "alternativ": [
+        "De innehåller fria joner som kan röra sig",
+        "De är sura",
+        "De är frätande"
+      ],
+      "svar": 0,
+      "forklaring": "Fria joner. Ström är laddning i rörelse, och jonerna kan röra sig genom vattnet."
+    },
+    {
+      "id": "k1-s11",
+      "typ": "flerval",
+      "fraga": "Vad är saltsyra?",
+      "alternativ": [
+        "Väteklorid löst i vatten",
+        "Salt löst i vatten",
+        "Klorgas löst i vatten"
+      ],
+      "svar": 0,
+      "forklaring": "Väteklorid löst i vatten. Ämnet heter väteklorid; lösningen heter saltsyra."
+    },
+    {
+      "id": "k1-s12",
+      "typ": "flerval",
+      "fraga": "Vad blir kvar av vätekloriden när den avgett sin vätejon?",
+      "alternativ": [
+        "En kloridjon",
+        "En natriumjon",
+        "En kloratom"
+      ],
+      "svar": 0,
+      "forklaring": "En kloridjon. Den har fått elektronen som vätejonen lämnade kvar."
+    }
+  ]
+}
