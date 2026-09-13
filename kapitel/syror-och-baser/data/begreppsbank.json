@@ -3,7 +3,7 @@
   "kapitel_titel": "Syror och baser",
   "version": 3,
   "skapad": "2026-09-13",
-  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Bakgrund och repetition 48 + Syror 33 + Baser 26 + Neutralisation 12 = 119.",
+  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Bakgrund och repetition 48 + Syror 33 + Baser 26 + Neutralisation 12 + Försurning 22 = 141.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -1079,6 +1079,204 @@
       "term": "fett och bas",
       "expertdefinition": "Basiska. Propplösare innehåller ofta natriumhydroxid.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-neutralisation-i-vardagen.json"
+    },
+    {
+      "id": "kF1-b1",
+      "avsnitt": "17",
+      "avsnitt_titel": "Varför blir det surt?",
+      "delkapitel_titel": "Försurning",
+      "term": "naturligt sur nederbörd",
+      "expertdefinition": "Omkring 5,6. Luftens koldioxid löser sig i regndroppen och bildar kolsyra.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-varfor-blir-det-surt.json"
+    },
+    {
+      "id": "kF1-b2",
+      "avsnitt": "17",
+      "avsnitt_titel": "Varför blir det surt?",
+      "delkapitel_titel": "Försurning",
+      "term": "försurning",
+      "expertdefinition": "Att mark och vatten blir surare än naturligt, eftersom människan tillför mer försurande ämnen än naturen hinner ta hand om.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-varfor-blir-det-surt.json"
+    },
+    {
+      "id": "kF1-b3",
+      "avsnitt": "17",
+      "avsnitt_titel": "Varför blir det surt?",
+      "delkapitel_titel": "Försurning",
+      "term": "svaveldioxid",
+      "expertdefinition": "Bildas när bränslen som innehåller svavel förbränns. Kol och olja innehåller svavel naturligt.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-varfor-blir-det-surt.json"
+    },
+    {
+      "id": "kF1-b4",
+      "avsnitt": "17",
+      "avsnitt_titel": "Varför blir det surt?",
+      "delkapitel_titel": "Försurning",
+      "term": "kväveoxider",
+      "expertdefinition": "Från luftens eget kväve, som reagerar med syre vid mycket höga temperaturer i motorer och pannor.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-varfor-blir-det-surt.json"
+    },
+    {
+      "id": "kF1-b5",
+      "avsnitt": "17",
+      "avsnitt_titel": "Varför blir det surt?",
+      "delkapitel_titel": "Försurning",
+      "term": "vad de blir",
+      "expertdefinition": "Svaveldioxid ger svavelsyra. Kväveoxider ger salpetersyra.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-varfor-blir-det-surt.json"
+    },
+    {
+      "id": "kF1-b6",
+      "avsnitt": "17",
+      "avsnitt_titel": "Varför blir det surt?",
+      "delkapitel_titel": "Försurning",
+      "term": "vått nedfall",
+      "expertdefinition": "Försurande ämnen som är lösta i regn eller snö och följer med nederbörden ner.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-varfor-blir-det-surt.json"
+    },
+    {
+      "id": "kF1-b7",
+      "avsnitt": "17",
+      "avsnitt_titel": "Varför blir det surt?",
+      "delkapitel_titel": "Försurning",
+      "term": "torrt nedfall",
+      "expertdefinition": "Gaser och partiklar som fastnar direkt på mark, växter och byggnader, och blir sura först när de möter fukt.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-varfor-blir-det-surt.json"
+    },
+    {
+      "id": "kF1-b8",
+      "avsnitt": "17",
+      "avsnitt_titel": "Varför blir det surt?",
+      "delkapitel_titel": "Försurning",
+      "term": "gränsöverskridande",
+      "expertdefinition": "Vindarna för föroreningarna hundratals kilometer. Ett land kan drabbas av utsläpp från andra länder.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-varfor-blir-det-surt.json"
+    },
+    {
+      "id": "kF2-b1",
+      "avsnitt": "18",
+      "avsnitt_titel": "Vad försurningen gör",
+      "delkapitel_titel": "Försurning",
+      "term": "buffertförmåga",
+      "expertdefinition": "Markens förmåga att ta upp vätejoner utan att pH ändras nämnvärt.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-vad-forsurningen-gor.json"
+    },
+    {
+      "id": "kF2-b2",
+      "avsnitt": "18",
+      "avsnitt_titel": "Vad försurningen gör",
+      "delkapitel_titel": "Försurning",
+      "term": "urlakning",
+      "expertdefinition": "Att näringsjoner som kalcium, magnesium och kalium trängs undan av vätejoner och följer med markvattnet bort.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-vad-forsurningen-gor.json"
+    },
+    {
+      "id": "kF2-b3",
+      "avsnitt": "18",
+      "avsnitt_titel": "Vad försurningen gör",
+      "delkapitel_titel": "Försurning",
+      "term": "aluminium i marken",
+      "expertdefinition": "Det löses ut i jonform ur mineralen. Lösta aluminiumjoner är giftiga för rötter och fisk.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-vad-forsurningen-gor.json"
+    },
+    {
+      "id": "kF2-b4",
+      "avsnitt": "18",
+      "avsnitt_titel": "Vad försurningen gör",
+      "delkapitel_titel": "Försurning",
+      "term": "avrinningsområde",
+      "expertdefinition": "Det landområde som avvattnas till sjön. Sjöns kemi bestäms till stor del av markens.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-vad-forsurningen-gor.json"
+    },
+    {
+      "id": "kF2-b5",
+      "avsnitt": "18",
+      "avsnitt_titel": "Vad försurningen gör",
+      "delkapitel_titel": "Försurning",
+      "term": "surstöt",
+      "expertdefinition": "Ett kraftigt pH-fall under snösmältningen, när vinterns lagrade syra kommer på några dagar.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-vad-forsurningen-gor.json"
+    },
+    {
+      "id": "kF2-b6",
+      "avsnitt": "18",
+      "avsnitt_titel": "Vad försurningen gör",
+      "delkapitel_titel": "Försurning",
+      "term": "klar sjö",
+      "expertdefinition": "Klarheten beror på att plankton försvunnit. Det finns inget kvar som grumlar vattnet.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-vad-forsurningen-gor.json"
+    },
+    {
+      "id": "kF2-b7",
+      "avsnitt": "18",
+      "avsnitt_titel": "Vad försurningen gör",
+      "delkapitel_titel": "Försurning",
+      "term": "kalksten och syra",
+      "expertdefinition": "Kalkstenen löses upp. Det är samma reaktion som när avkalkningsmedel tar bort kalk i en kaffebryggare.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-vad-forsurningen-gor.json"
+    },
+    {
+      "id": "kF3-b1",
+      "avsnitt": "19",
+      "avsnitt_titel": "Vad man kan göra åt det",
+      "delkapitel_titel": "Försurning",
+      "term": "rökgasavsvavling",
+      "expertdefinition": "Att fånga upp svavelföreningar ur rökgaser innan de lämnar skorstenen, ofta med kalksten.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-vad-man-kan-gora.json"
+    },
+    {
+      "id": "kF3-b2",
+      "avsnitt": "19",
+      "avsnitt_titel": "Vad man kan göra åt det",
+      "delkapitel_titel": "Försurning",
+      "term": "katalysator",
+      "expertdefinition": "Den omvandlar kväveoxider till ofarliga ämnen innan de släpps ut.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-vad-man-kan-gora.json"
+    },
+    {
+      "id": "kF3-b3",
+      "avsnitt": "19",
+      "avsnitt_titel": "Vad man kan göra åt det",
+      "delkapitel_titel": "Försurning",
+      "term": "kalkning",
+      "expertdefinition": "Att tillsätta kalk till försurade sjöar och vattendrag. Kalken är en bas och neutraliserar syran.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-vad-man-kan-gora.json"
+    },
+    {
+      "id": "kF3-b4",
+      "avsnitt": "19",
+      "avsnitt_titel": "Vad man kan göra åt det",
+      "delkapitel_titel": "Försurning",
+      "term": "vad kalkningen gör",
+      "expertdefinition": "Den höjer pH direkt, och den ökar vattnets buffertkapacitet inför framtida syra.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-vad-man-kan-gora.json"
+    },
+    {
+      "id": "kF3-b5",
+      "avsnitt": "19",
+      "avsnitt_titel": "Vad man kan göra åt det",
+      "delkapitel_titel": "Försurning",
+      "term": "skyddsåtgärd",
+      "expertdefinition": "Den tar bort symptomet, inte orsaken. Så länge surt nedfall fortsätter förbrukas kalken.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-vad-man-kan-gora.json"
+    },
+    {
+      "id": "kF3-b6",
+      "avsnitt": "19",
+      "avsnitt_titel": "Vad man kan göra åt det",
+      "delkapitel_titel": "Försurning",
+      "term": "utvecklingen",
+      "expertdefinition": "Ja, tydligt. Svavelnedfallet över Sverige har minskat med mer än 80 procent sedan 1980.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-vad-man-kan-gora.json"
+    },
+    {
+      "id": "kF3-b7",
+      "avsnitt": "19",
+      "avsnitt_titel": "Vad man kan göra åt det",
+      "delkapitel_titel": "Försurning",
+      "term": "internationella avtal",
+      "expertdefinition": "Föroreningarna korsar gränser. Det krävs avtal mellan länder för att nedfallet ska minska.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-vad-man-kan-gora.json"
     }
   ]
 }

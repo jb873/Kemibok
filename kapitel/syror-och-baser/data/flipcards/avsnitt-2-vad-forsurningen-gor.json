@@ -1,0 +1,138 @@
+{
+  "avsnitt": 2,
+  "titel": "Vad försurningen gör",
+  "delkapitel": "forsurning",
+  "version": "1.0",
+  "kort_totalt": 18,
+  "_kommentar": "Flipcards för avsnitt 2 (Vad försurningen gör), delkapitel Försurning. 10 begreppskort + 8 modellkort = 18 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/forsurning/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k2-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad menas med markens buffertförmåga?",
+      "svar": "Markens förmåga att **ta upp vätejoner** utan att pH ändras nämnvärt."
+    },
+    {
+      "id": "k2-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är urlakning?",
+      "svar": "Att **näringsjoner** som kalcium, magnesium och kalium trängs undan av vätejoner och följer med markvattnet bort."
+    },
+    {
+      "id": "k2-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer med aluminium när marken blir sur?",
+      "svar": "Det **löses ut i jonform** ur mineralen. Lösta aluminiumjoner är giftiga för rötter och fisk."
+    },
+    {
+      "id": "k2-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en sjös avrinningsområde?",
+      "svar": "Det **landområde** som avvattnas till sjön. Sjöns kemi bestäms till stor del av markens."
+    },
+    {
+      "id": "k2-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en surstöt?",
+      "svar": "Ett kraftigt pH-fall under **snösmältningen**, när vinterns lagrade syra kommer på några dagar."
+    },
+    {
+      "id": "k2-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Varför kan en försurad sjö se klar och fin ut?",
+      "svar": "Klarheten beror på att **plankton försvunnit**. Det finns inget kvar som grumlar vattnet."
+    },
+    {
+      "id": "k2-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer när kalksten möter sur nederbörd?",
+      "svar": "Den löses upp: \\(\\ce{CaCO3 + 2 H+ -> Ca^2+ + CO2 + H2O}\\). Samma reaktion som i avkalkningsmedel."
+    },
+    {
+      "id": "k2-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad skiljer markens buffert från blodets?",
+      "svar": "Blodets **återställs ständigt**. Markens är ett **förråd** som förbrukas och bara fylls på genom långsam vittring."
+    },
+    {
+      "id": "k2-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Varför sjunker markens pH plötsligt i stället för gradvis?",
+      "svar": "Så länge bufferten räcker neutraliseras varje vätejon. När förrådet är slut sänker nästa vätejon pH direkt."
+    },
+    {
+      "id": "k2-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad bildas när svavelsyra reagerar med kalksten på en byggnad?",
+      "svar": "**Gips**, alltså kalciumsulfat. Det bygger en svart skorpa som spränger sönder stenen inifrån."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k2-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför märktes försurningen först efter decennier?",
+      "svar": "Markens **buffert** höll pH stabilt under lång tid. Skadan byggdes upp innan den syntes."
+    },
+    {
+      "id": "k2-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Är det pH-värdet i sig som skadar fisken mest?",
+      "svar": "Ofta inte. **Aluminiumjonerna** fastnar på gälarna och stör både syreupptag och saltbalans."
+    },
+    {
+      "id": "k2-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför drabbas just gälarna?",
+      "svar": "De har **enorm yta** i förhållande till sin storlek — bra för syreupptag, men sårbart för allt som fastnar."
+    },
+    {
+      "id": "k2-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Försuras en sjö mest av regn som faller i den, eller av vatten från marken?",
+      "svar": "Från **marken**. Det mesta av sjöns vatten har passerat markens avrinningsområde först."
+    },
+    {
+      "id": "k2-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför är snösmältningen särskilt farlig?",
+      "svar": "All vinterns syra kommer **på en gång**, och samtidigt är fiskens ägg och yngel som känsligast."
+    },
+    {
+      "id": "k2-m6",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför suddas detaljer ut på gamla gravstenar?",
+      "svar": "Kalksten och marmor **löses upp** av sur nederbörd. Reaktionen är långsam men pågår i sekler."
+    },
+    {
+      "id": "k2-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Vid vilket pH är aluminium farligast för fisk?",
+      "svar": "Runt **pH 5 till 5,5** — inte vid lägsta pH. Där finns former som fäller ut just när de möter gälens högre pH."
+    },
+    {
+      "id": "k2-m8",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför tränger vätejonen undan näringsjonerna i marken?",
+      "svar": "Den är liten och har **hög laddningstäthet**, så den binder hårdare till markpartiklarna."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "avsnitt": 1,
+  "titel": "Varför blir det surt?",
+  "delkapitel": "forsurning",
+  "version": "1.0",
+  "kort_totalt": 17,
+  "_kommentar": "Flipcards för avsnitt 1 (Varför blir det surt?), delkapitel Försurning. 10 begreppskort + 7 modellkort = 17 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/forsurning/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k1-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilket pH har rent regnvatten?",
+      "svar": "Omkring **5,6**. Luftens koldioxid löser sig i regndroppen och bildar kolsyra."
+    },
+    {
+      "id": "k1-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder försurning?",
+      "svar": "Att mark och vatten blir **surare än naturligt**, eftersom människan tillför mer försurande ämnen än naturen hinner ta hand om."
+    },
+    {
+      "id": "k1-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Hur bildas svaveldioxid?",
+      "svar": "När bränslen som innehåller svavel förbränns. Kol och olja innehåller svavel naturligt. Formeln är \\(\\ce{SO2}\\)."
+    },
+    {
+      "id": "k1-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Var kommer kväveoxiderna ifrån?",
+      "svar": "Från **luftens eget kväve**, som reagerar med syre vid mycket höga temperaturer i motorer och pannor."
+    },
+    {
+      "id": "k1-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilka syror bildas av svaveldioxid och kväveoxider?",
+      "svar": "Svaveldioxid ger **svavelsyra**, \\(\\ce{H2SO4}\\). Kväveoxider ger **salpetersyra**, \\(\\ce{HNO3}\\)."
+    },
+    {
+      "id": "k1-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är vått nedfall?",
+      "svar": "Försurande ämnen som är **lösta i regn eller snö** och följer med nederbörden ner."
+    },
+    {
+      "id": "k1-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är torrt nedfall?",
+      "svar": "**Gaser och partiklar** som fastnar direkt på mark, växter och byggnader, och blir sura först när de möter fukt."
+    },
+    {
+      "id": "k1-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Varför kallas försurning ett gränsöverskridande problem?",
+      "svar": "Vindarna för föroreningarna **hundratals kilometer**. Ett land kan drabbas av utsläpp från andra länder."
+    },
+    {
+      "id": "k1-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad betyder beteckningen \\(\\ce{NO_x}\\)?",
+      "svar": "En samlingsbeteckning för kväveoxider. Det lilla x:et betyder att **antalet syreatomer varierar** — främst NO och \\(\\ce{NO2}\\)."
+    },
+    {
+      "id": "k1-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är havsförsurning?",
+      "svar": "Att havets pH sjunker när det tar upp **koldioxid** ur luften. Samma kemi som i en regndroppe, men i stor skala."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k1-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför är rent regnvatten inte neutralt?",
+      "svar": "Luftens **koldioxid** löser sig i regndroppen och bildar kolsyra, som avger vätejoner."
+    },
+    {
+      "id": "k1-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Surt nedfall kan ha pH 4,2 mot regnets naturliga 5,6. Hur stor är skillnaden?",
+      "svar": "Ungefär **tjugofem gånger** fler vätejoner. Varje pH-steg är tio gånger."
+    },
+    {
+      "id": "k1-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Kvävgas är mycket reaktionströg. Hur kan det ändå bildas kväveoxider?",
+      "svar": "Vid mycket **höga temperaturer** räcker energin för att bryta trippelbindningen. I en motor blir det över 2000 grader."
+    },
+    {
+      "id": "k1-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför innehåller kol och olja svavel?",
+      "svar": "Det fanns i det **organiska material** bränslet en gång bildades av. Det är inte tillsatt."
+    },
+    {
+      "id": "k1-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför löste inte höga skorstenar problemet?",
+      "svar": "De minskade halterna **lokalt** men spred utsläppen längre bort. Ett lokalt problem blev ett gemensamt."
+    },
+    {
+      "id": "k1-m6",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilket försurande ämne kommer från jordbruket?",
+      "svar": "**Ammoniak**, från gödsel och djurhållning."
+    },
+    {
+      "id": "k1-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Svavel går att tvätta bort ur bränslet. Varför fungerar inte samma metod på kväve?",
+      "svar": "Kvävet kommer från **luften motorn andas**, inte från bränslet. Reningen måste ske efteråt, i katalysatorn."
+    }
+  ]
+}

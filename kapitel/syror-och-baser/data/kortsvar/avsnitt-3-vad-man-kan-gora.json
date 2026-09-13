@@ -1,0 +1,137 @@
+{
+  "avsnitt": 3,
+  "titel": "Vad man kan göra åt det",
+  "delkapitel": "forsurning",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 3 (Vad man kan göra åt det), delkapitel Försurning, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/forsurning/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k3-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas metoden att fånga upp svavel ur rökgaser?",
+      "svar": [
+        "rökgasavsvavling"
+      ],
+      "forklaring": "Rökgasavsvavling. Kalksten används ofta för att fånga svavelföreningarna."
+    },
+    {
+      "id": "k3-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas anordningen i bilen som omvandlar kväveoxider?",
+      "svar": [
+        "katalysator"
+      ],
+      "forklaring": "Katalysator. Den omvandlar kväveoxiderna till kvävgas och syre."
+    },
+    {
+      "id": "k3-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas det att tillsätta kalk till försurade sjöar?",
+      "svar": [
+        "kalkning"
+      ],
+      "forklaring": "Kalkning. Sverige har gjort det i stor skala sedan 1977."
+    },
+    {
+      "id": "k3-s4",
+      "typ": "ord",
+      "fraga": "Vilken långsam process fyller på markens buffertförråd?",
+      "svar": [
+        "vittring"
+      ],
+      "forklaring": "Vittring. Den tar decennier eller sekler."
+    },
+    {
+      "id": "k3-s5",
+      "typ": "tal",
+      "fraga": "Hur många procent har svavelnedfallet minskat sedan 1980?",
+      "svar": 80,
+      "forklaring": "Mer än 80 procent. Nedfallet ligger nu nära förindustriella nivåer."
+    },
+    {
+      "id": "k3-s6",
+      "typ": "flerval",
+      "fraga": "Vilken åtgärd löser försurningen, och vilken lindrar bara?",
+      "alternativ": [
+        "Minskade utsläpp löser, kalkning lindrar",
+        "Kalkning löser, utsläpp lindrar",
+        "Båda löser lika bra"
+      ],
+      "svar": 0,
+      "forklaring": "Minskade utsläpp löser orsaken. Kalkning tar bort symptomet men botar inte."
+    },
+    {
+      "id": "k3-s7",
+      "typ": "flerval",
+      "fraga": "Varför används kalk i sjöar och inte en starkare bas?",
+      "alternativ": [
+        "Kalk är svårlöslig och går inte att överdosera",
+        "Kalk är billigare",
+        "Kalk är inte frätande"
+      ],
+      "svar": 0,
+      "forklaring": "Kalk är svårlöslig. Den går inte att överdosera, och överskottet blir ett förråd."
+    },
+    {
+      "id": "k3-s8",
+      "typ": "flerval",
+      "fraga": "Varför måste kalkningen upprepas?",
+      "alternativ": [
+        "Kalken förbrukas så länge surt nedfall fortsätter",
+        "Kalken avdunstar",
+        "Fiskarna äter upp den"
+      ],
+      "svar": 0,
+      "forklaring": "Kalken förbrukas. Så länge surt nedfall fortsätter måste den fyllas på."
+    },
+    {
+      "id": "k3-s9",
+      "typ": "flerval",
+      "fraga": "Varför återhämtar sig marken långsammare än luften?",
+      "alternativ": [
+        "Buffertförrådet byggs upp genom långsam vittring",
+        "Marken är tjockare",
+        "Regnet når inte marken"
+      ],
+      "svar": 0,
+      "forklaring": "Vittring är mycket långsam. Marken kan förbli försurad långt efter att luften renats."
+    },
+    {
+      "id": "k3-s10",
+      "typ": "flerval",
+      "fraga": "Varför har kvävenedfallet minskat mindre än svavlets?",
+      "alternativ": [
+        "Kväve kommer från många små utspridda källor",
+        "Kväve är farligare",
+        "Ingen har försökt"
+      ],
+      "svar": 0,
+      "forklaring": "Kväve kommer från trafik, sjöfart och jordbruk — många små källor i stället för få stora."
+    },
+    {
+      "id": "k3-s11",
+      "typ": "flerval",
+      "fraga": "Varför räcker det inte att ett land minskar sina utsläpp?",
+      "alternativ": [
+        "Föroreningarna korsar gränser",
+        "Det är för dyrt",
+        "Utsläppen är för små"
+      ],
+      "svar": 0,
+      "forklaring": "Föroreningarna korsar gränser. Det krävs internationella avtal."
+    },
+    {
+      "id": "k3-s12",
+      "typ": "flerval",
+      "fraga": "Hur påverkar skogsbruk markens återhämtning?",
+      "alternativ": [
+        "Basiska ämnen förs bort med biomassan",
+        "Träden skuggar marken",
+        "Maskinerna packar jorden"
+      ],
+      "svar": 0,
+      "forklaring": "När träd och grenar förs bort följer basiska ämnen med ut ur skogen."
+    }
+  ]
+}

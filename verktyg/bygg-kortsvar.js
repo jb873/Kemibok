@@ -63,6 +63,8 @@ function tolkaTabell(N, inneh) {
   for (const m of inneh.matchAll(/^\*\*Flerval (\d+):\*\* ([\s\S]*?)(?=\n\*\*Flerval|\n\n|\n---|(?![\s\S]))/gm)) { alt[+m[1]] = m[2].replace(/\s*\n\s*/g, ' ').split(' · ').map(x => x.trim()); }   // radbrytning först, sedan dela vid ·
   const tol = {};
   for (const m of inneh.matchAll(/^\*\*Tolerans (\d+):\*\* ([\d.,]+)/gm)) { tol[+m[1]] = Number(m[2].replace(',', '.')); }
+  // eller "**Tolerans A:N:** x" var som helst i filen (försurning: i Räkning-avsnittet), A = avsnitt
+  for (const m of md.matchAll(/^\*\*Tolerans (\d+):(\d+):\*\* ([\d.,]+)/gm)) { if (+m[1] === N) { tol[+m[2]] = Number(m[3].replace(',', '.')); } }
   return rader.map(r => {
     const id = `k${N}-s${r.nr}`;
     if (!forkl[r.nr]) { throw new Error(`${id}: förklaring saknas`); }

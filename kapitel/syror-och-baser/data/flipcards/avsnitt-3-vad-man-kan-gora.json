@@ -1,0 +1,131 @@
+{
+  "avsnitt": 3,
+  "titel": "Vad man kan göra åt det",
+  "delkapitel": "forsurning",
+  "version": "1.0",
+  "kort_totalt": 17,
+  "_kommentar": "Flipcards för avsnitt 3 (Vad man kan göra åt det), delkapitel Försurning. 10 begreppskort + 7 modellkort = 17 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/forsurning/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k3-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är rökgasavsvavling?",
+      "svar": "Att **fånga upp svavelföreningar** ur rökgaser innan de lämnar skorstenen, ofta med kalksten."
+    },
+    {
+      "id": "k3-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad gör en katalysator i ett avgassystem?",
+      "svar": "Den omvandlar **kväveoxider** till ofarliga ämnen innan de släpps ut."
+    },
+    {
+      "id": "k3-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är kalkning?",
+      "svar": "Att tillsätta **kalk** till försurade sjöar och vattendrag. Kalken är en bas och neutraliserar syran."
+    },
+    {
+      "id": "k3-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilka två saker gör kalkningen?",
+      "svar": "Den **höjer pH** direkt, och den ökar vattnets **buffertkapacitet** inför framtida syra."
+    },
+    {
+      "id": "k3-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Varför måste kalkning upprepas?",
+      "svar": "Den tar bort **symptomet**, inte orsaken. Så länge surt nedfall fortsätter förbrukas kalken."
+    },
+    {
+      "id": "k3-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Har försurningen minskat?",
+      "svar": "**Ja, tydligt.** Svavelnedfallet över Sverige har minskat med mer än 80 procent sedan 1980."
+    },
+    {
+      "id": "k3-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Varför räcker det inte att ett land minskar sina utsläpp?",
+      "svar": "Föroreningarna **korsar gränser**. Det krävs avtal mellan länder för att nedfallet ska minska."
+    },
+    {
+      "id": "k3-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är vittring, och varför är den viktig här?",
+      "svar": "Kemisk nedbrytning av mineral som frigör basiska joner. Den **fyller på markens buffertförråd** — men mycket långsamt."
+    },
+    {
+      "id": "k3-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är skillnaden?",
+      "svar": "En **punktkälla** är en enskild stor anläggning som går att reglera. **Diffusa källor** är miljontals små, som varje bilmotor."
+    },
+    {
+      "id": "k3-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Varför måste bensin vara blyfri?",
+      "svar": "Bly **blockerar permanent** katalysatorns ädelmetallyta. Skadan går inte att reparera."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k3-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilken åtgärd löser försurningen, och vilken lindrar bara?",
+      "svar": "**Minskade utsläpp** löser. **Kalkning** lindrar — den botar inte orsaken."
+    },
+    {
+      "id": "k3-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför används kalk i sjöar, inte en starkare bas?",
+      "svar": "Kalk är **svårlöslig**. Den går inte att överdosera, och överskottet fungerar som förråd."
+    },
+    {
+      "id": "k3-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför återhämtar sig marken långsammare än luften?",
+      "svar": "Buffertförrådet byggs upp genom **vittring**, som tar decennier eller sekler."
+    },
+    {
+      "id": "k3-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur kan skogsbruk påverka återhämtningen?",
+      "svar": "När träd och grenar **förs bort** följer basiska ämnen med biomassan ut ur skogen."
+    },
+    {
+      "id": "k3-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför har kvävenedfallet minskat mindre än svavlets?",
+      "svar": "Kväveoxider kommer från **många små källor** — trafik och sjöfart — och ammoniak från jordbruket."
+    },
+    {
+      "id": "k3-m6",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför sönderfaller inte kväveoxider av sig själva i avgasröret?",
+      "svar": "Reaktionen är gynnsam men går **för långsamt**. Katalysatorn erbjuder en snabbare väg utan att själv förbrukas."
+    },
+    {
+      "id": "k3-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför löser sig kalken i lagom takt?",
+      "svar": "Är vattnet **surt** löser sig mer. Närmar sig pH det normala löser sig mindre. Doseringen sköter sig själv."
+    }
+  ]
+}

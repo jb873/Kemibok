@@ -1,0 +1,137 @@
+{
+  "avsnitt": 1,
+  "titel": "Varför blir det surt?",
+  "delkapitel": "forsurning",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 1 (Varför blir det surt?), delkapitel Försurning, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/forsurning/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k1-s1",
+      "typ": "tal",
+      "fraga": "Vilket ungefärligt pH har rent regnvatten?",
+      "svar": 5.6,
+      "tolerans": {
+        "abs": 0.5
+      },
+      "forklaring": "Omkring 5,6. Luftens koldioxid bildar kolsyra i regndroppen."
+    },
+    {
+      "id": "k1-s2",
+      "typ": "ord",
+      "fraga": "Vilket ämne i luften gör att regnvatten är naturligt surt?",
+      "svar": [
+        "koldioxid"
+      ],
+      "forklaring": "Koldioxid. Den löser sig i regndroppar och bildar kolsyra."
+    },
+    {
+      "id": "k1-s3",
+      "typ": "ord",
+      "fraga": "Vilken syra bildas av svaveldioxid i atmosfären?",
+      "svar": [
+        "svavelsyra"
+      ],
+      "forklaring": "Svavelsyra. Svaveldioxiden oxideras och löser sig i vatten."
+    },
+    {
+      "id": "k1-s4",
+      "typ": "ord",
+      "fraga": "Vilken syra bildas av kväveoxider?",
+      "svar": [
+        "salpetersyra"
+      ],
+      "forklaring": "Salpetersyra. Kväveoxiderna omvandlas vidare i atmosfären."
+    },
+    {
+      "id": "k1-s5",
+      "typ": "formel",
+      "fraga": "Skriv formeln för svaveldioxid.",
+      "svar": [
+        "SO2"
+      ],
+      "forklaring": "\\(\\ce{SO2}\\) — svavel och två syre."
+    },
+    {
+      "id": "k1-s6",
+      "typ": "formel",
+      "fraga": "Skriv formeln för svavelsyra.",
+      "svar": [
+        "H2SO4"
+      ],
+      "forklaring": "\\(\\ce{H2SO4}\\) — samma starka syra du mötte i syrorna."
+    },
+    {
+      "id": "k1-s7",
+      "typ": "flerval",
+      "fraga": "Var kommer kväveoxiderna ifrån?",
+      "alternativ": [
+        "Luftens eget kväve vid höga temperaturer",
+        "Kväve i bränslet",
+        "Kväve från marken"
+      ],
+      "svar": 0,
+      "forklaring": "Luftens eget kväve. Trippelbindningen bryts vid över 2000 grader i en motor."
+    },
+    {
+      "id": "k1-s8",
+      "typ": "flerval",
+      "fraga": "Varför innehåller kol och olja svavel?",
+      "alternativ": [
+        "Det fanns i det organiska material bränslet bildades av",
+        "Det tillsätts vid raffinering",
+        "Det kommer från luften"
+      ],
+      "svar": 0,
+      "forklaring": "Det fanns i det organiska materialet. Svavlet är inte tillsatt."
+    },
+    {
+      "id": "k1-s9",
+      "typ": "flerval",
+      "fraga": "Vad betyder försurning?",
+      "alternativ": [
+        "Att mark och vatten blir surare än naturligt",
+        "Att allt regn är surt",
+        "Att pH sjunker under 7"
+      ],
+      "svar": 0,
+      "forklaring": "Att mark och vatten blir surare än naturligt. Regn är alltid lite surt."
+    },
+    {
+      "id": "k1-s10",
+      "typ": "flerval",
+      "fraga": "Vad är torrt nedfall?",
+      "alternativ": [
+        "Gaser och partiklar som faller ner utan nederbörd",
+        "Syra i snö",
+        "Regn utan moln"
+      ],
+      "svar": 0,
+      "forklaring": "Gaser och partiklar som fastnar direkt och blir sura när de möter fukt."
+    },
+    {
+      "id": "k1-s11",
+      "typ": "flerval",
+      "fraga": "Varför löste inte höga skorstenar problemet?",
+      "alternativ": [
+        "De spred utsläppen över större områden i stället",
+        "De var för dyra",
+        "De fungerade bara på vintern"
+      ],
+      "svar": 0,
+      "forklaring": "De minskade halterna lokalt men spred utsläppen längre bort."
+    },
+    {
+      "id": "k1-s12",
+      "typ": "flerval",
+      "fraga": "Varför kallas försurning gränsöverskridande?",
+      "alternativ": [
+        "Vindarna för föroreningarna hundratals kilometer",
+        "Alla länder släpper ut lika mycket",
+        "Det är ett internationellt avtal"
+      ],
+      "svar": 0,
+      "forklaring": "Vindarna bryr sig inte om gränser. Sverige tog emot mycket från andra länder."
+    }
+  ]
+}

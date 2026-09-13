@@ -1,0 +1,141 @@
+{
+  "avsnitt": 2,
+  "titel": "Vad försurningen gör",
+  "delkapitel": "forsurning",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 2 (Vad försurningen gör), delkapitel Försurning, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/forsurning/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k2-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas markens förmåga att ta upp vätejoner utan att pH ändras?",
+      "svar": [
+        "buffertförmåga",
+        "buffertkapacitet"
+      ],
+      "forklaring": "Buffertförmåga. Den kommer från kalk och vittrande mineral."
+    },
+    {
+      "id": "k2-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas det när näringsjoner sköljs ur marken?",
+      "svar": [
+        "urlakning"
+      ],
+      "forklaring": "Urlakning. Vätejonerna tränger undan näringsjonerna, som följer med markvattnet."
+    },
+    {
+      "id": "k2-s3",
+      "typ": "ord",
+      "fraga": "Vilket ämne frigörs ur marken vid lågt pH och skadar fisk?",
+      "svar": [
+        "aluminium"
+      ],
+      "forklaring": "Aluminium. Bundet i mineral är det ofarligt; löst i jonform är det giftigt."
+    },
+    {
+      "id": "k2-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas det kraftiga pH-fallet vid snösmältningen?",
+      "svar": [
+        "surstöt"
+      ],
+      "forklaring": "Surstöt. Vinterns lagrade syra frigörs på några dagar."
+    },
+    {
+      "id": "k2-s5",
+      "typ": "ord",
+      "fraga": "Vilken del av fisken skadas av aluminium?",
+      "svar": [
+        "gälarna",
+        "gälar"
+      ],
+      "forklaring": "Gälarna. Aluminium stör både syreupptaget och saltbalansen."
+    },
+    {
+      "id": "k2-s6",
+      "typ": "flerval",
+      "fraga": "Varför tog det decennier att upptäcka försurningen?",
+      "alternativ": [
+        "Markens buffert höll pH stabilt länge",
+        "Ingen mätte pH",
+        "Utsläppen var små"
+      ],
+      "svar": 0,
+      "forklaring": "Markens buffert höll pH stabilt. Skadan byggdes upp innan den syntes."
+    },
+    {
+      "id": "k2-s7",
+      "typ": "flerval",
+      "fraga": "Vad händer när markens buffert är förbrukad?",
+      "alternativ": [
+        "pH sjunker snabbt",
+        "pH stiger",
+        "Ingenting händer"
+      ],
+      "svar": 0,
+      "forklaring": "pH sjunker snabbt. Det är en tröskeleffekt, inte en gradvis förändring."
+    },
+    {
+      "id": "k2-s8",
+      "typ": "flerval",
+      "fraga": "Försuras en sjö mest av regn som faller i den?",
+      "alternativ": [
+        "Nej, mest av vatten från marken runt omkring",
+        "Ja, regnet står för det mesta",
+        "Nej, mest av grundvatten"
+      ],
+      "svar": 0,
+      "forklaring": "Nej. Det mesta av vattnet har passerat markens avrinningsområde först."
+    },
+    {
+      "id": "k2-s9",
+      "typ": "flerval",
+      "fraga": "Varför kan en försurad sjö se klar ut?",
+      "alternativ": [
+        "Planktonet har försvunnit",
+        "Vattnet har renats",
+        "Syran gör vattnet genomskinligt"
+      ],
+      "svar": 0,
+      "forklaring": "Planktonet har försvunnit. Klart vatten kan vara ett dåligt tecken."
+    },
+    {
+      "id": "k2-s10",
+      "typ": "flerval",
+      "fraga": "Varför är snösmältningen särskilt farlig?",
+      "alternativ": [
+        "All vinterns syra kommer på en gång",
+        "Vattnet är kallare",
+        "Solen är starkare"
+      ],
+      "svar": 0,
+      "forklaring": "All vinterns syra kommer på en gång, samtidigt som fiskens ägg och yngel är känsligast."
+    },
+    {
+      "id": "k2-s11",
+      "typ": "flerval",
+      "fraga": "Vilka näringsämnen sköljs ur marken?",
+      "alternativ": [
+        "Kalcium, magnesium och kalium",
+        "Kol, väte och syre",
+        "Svavel och kväve"
+      ],
+      "svar": 0,
+      "forklaring": "Kalcium, magnesium och kalium. De byts ut mot vätejoner."
+    },
+    {
+      "id": "k2-s12",
+      "typ": "flerval",
+      "fraga": "Varför vittrar gravstenar av kalksten?",
+      "alternativ": [
+        "Kalksten löses upp av sur nederbörd",
+        "Vinden sliter på stenen",
+        "Frost spränger sönder den"
+      ],
+      "svar": 0,
+      "forklaring": "Kalksten består av kalciumkarbonat, som reagerar med vätejoner."
+    }
+  ]
+}
