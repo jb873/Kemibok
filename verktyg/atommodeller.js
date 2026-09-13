@@ -4,6 +4,11 @@
 // proton #C64B3A med vitt +, neutron #8A8A8A, elektron #3D6BA8 med vitt −,
 // banor #2d4a35 3px utan fyllning, transparent bakgrund, elektroner med lika vinkelsteg.
 // Verifiering: verktyg/skarmbilder/atommodeller-900px.png (Chromium, 900 px bredd).
+//
+// STATUS 2026-09-13: de genererade SVG-filerna togs bort ur repot (commit 79841c2) –
+// avsnittens atommodeller är AI-genererade webp i delkapitel/repetition/img/. Ingen sida
+// använder generatorns utdata just nu. Behålls för framtida atommodeller där
+// elektronplacering måste vara entydig; skriver till img/repetition/ vid körning.
 'use strict';
 const fs = require('fs'), path = require('path');
 const UT = path.join(__dirname, '..', 'img', 'repetition');   // körs från valfri cwd
