@@ -62,10 +62,31 @@ const AVSNITT_SYROR = {
   5: { dd: [],
        bilder: { 'syra-och-metall.webp': { aktiv: [], enkel: 'tillsammans en vätgasmolekyl', standard: 'metallatomerna avger elektroner' } } }
 };
+// Baser (leverans 2026-09-13): titel/slug/underrubrik ur huvudet. tva-vagar-till-bas.svg genererad (bilder-svg.js);
+// stark-och-svag-bas.webp och fortvalning.webp levereras med grön bakgrund (#00ff00) och nycklas med
+// verktyg/nyckla-gron.js – kommentarsmarkup tills filerna ligger i img/. Avsnitt 3 återanvänder syrornas
+// ph-skalan.svg (fil med sökväg relativt img/; spec i konfigurationen eftersom leveransen inte har någon
+// ### `fil`-rad – bildtexter och bildguide ur avsnitt-3.md). Djupdykningen Starka och svaga syror och baser
+// (doc/leveranser/syror/starka-och-svaga.md) länkas från avsnitt 2 A via baser/djupdykningar.md.
+const AVSNITT_BASER = {
+  1: { dd: [],
+       bilder: { 'tva-vagar-till-bas.svg': { aktiv: ['enkel', 'standard'], enkel: 'NH₃ + H₂O ⇌ NH₄⁺ + OH⁻', standard: 'NH₃ + H₂O ⇌ NH₄⁺ + OH⁻' } } },   // efter reaktionsraden
+  2: { dd: [{ slug: 'starka-och-svaga', titel: 'Starka och svaga syror och baser', ikon: '⚖️' }],
+       bilder: { 'stark-och-svag-bas.webp': { aktiv: [], enkel: 'men helt olika många hydroxidjoner', standard: 'bara till en del med vattnet' } } },
+  3: { dd: [],
+       bilder: { 'ph-skalan.svg': { fil: '../../syror/img/ph-skalan.svg', aktiv: ['enkel', 'standard'], enkel: 'Propplösare kan ligga över 13', standard: 'Ju större överskott av hydroxidjoner',
+         spec: { underdel: 'a', alt: 'En pH-skala från 0 till 14, färglagd från rött vid låga värden genom grönt vid 7 till blått vid höga. Magsyra ligger vid 1,5, citronsaft vid 2,5, kaffe vid 5, rent vatten vid 7 och tvållösning vid 9,5. Under skalan står surt till vänster, neutralt vid 7 och basiskt till höger.',
+           enkel: 'Basiska lösningar ligger till höger på skalan, över 7. Ju fler hydroxidjoner, desto högre pH.',
+           standard: 'Samma skala, andra änden. Fler hydroxidjoner betyder färre oxoniumjoner — de två hänger ihop.',
+           guide: '- Var på skalan tvållösningen ligger\n- Hur långt från 7 den ligger jämfört med citronsaften\n- Åt vilket håll lösningarna blir mer basiska' } } } },
+  4: { dd: [],
+       bilder: { 'fortvalning.webp': { aktiv: [], enkel: 'fast oavsiktlig och på\ndin hud', standard: 'omvandlas till bland annat ämnen som fungerar som tvål' } } }
+};
 const DELKAPITEL = {
   // bank: id-prefix och avsnittsoffset i kapitlets begreppsbank (en fil per kapitel; id/avsnitt unika över delkapitlen)
   repetition: { titel: 'Bakgrund och repetition', avsnitt: AVSNITT_REPETITION, bank: { idPrefix: '', avsnittOffset: 0 } },
   // uteslut: grundläggande begreppskort som INTE går till banken (kortet finns kvar som flipcard), term → skäl
-  syror: { titel: 'Syror', avsnitt: AVSNITT_SYROR, bank: { idPrefix: 'S', avsnittOffset: 5, uteslut: { 'koncentration': 'finns redan i repetition avsnitt 5, där eleven möter begreppet först (Joachim 2026-09-13)' } } }
+  syror: { titel: 'Syror', avsnitt: AVSNITT_SYROR, bank: { idPrefix: 'S', avsnittOffset: 5, uteslut: { 'koncentration': 'finns redan i repetition avsnitt 5, där eleven möter begreppet först (Joachim 2026-09-13)' } } },
+  baser: { titel: 'Baser', avsnitt: AVSNITT_BASER, bank: { idPrefix: 'B', avsnittOffset: 10 } }
 };
 module.exports = { DELKAPITEL };

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starka och svaga baser – Baser – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">2. Starka och svaga baser</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 2</span>
+      <h1>Starka och svaga baser</h1>
+      <p class="subtitel">— hur fullständigt basen ger hydroxidjoner —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Vad betyder stark och svag?</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Starka baser</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Svaga baser</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-starka-och-svaga-baser">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Vad betyder stark och svag? ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Stark</strong> och <strong>svag</strong> beskriver hur fullständigt basen ger hydroxidjoner</li>
+              <li>En <strong>stark</strong> bas ger nästan alla</li>
+              <li>En <strong>svag</strong> bas ger bara en del</li>
+              <li>Det säger <strong>inget</strong> om hur mycket bas som finns i lösningen</li>
+              <li>Samma princip som för syror</li>
+            </ul>
+          </div>
+
+          <p>Precis som syror delas baser in i <strong>starka</strong> och <strong>svaga</strong>. Och precis som hos syrorna handlar det inte om hur mycket bas det finns.</p>
+          <h2>Vad orden betyder</h2>
+          <p>Häll lika mycket av två olika baser i två glas vatten.</p>
+          <p>I det ena glaset ger nästan varje partikel upphov till en hydroxidjon. Vattnet fylls av hydroxidjoner. Det är en <strong>stark bas</strong>.</p>
+          <p>I det andra glaset reagerar bara en liten del av partiklarna. Resten finns kvar oförändrade. Det är en <strong>svag bas</strong>.</p>
+          <p>Lika mycket bas i båda glasen — men helt olika många hydroxidjoner.</p>
+          <!-- BILD: stark-och-svag-bas.webp – levereras senare, avkommentera när filen finns i img/.
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna de <strong>blå</strong> partiklarna i varje glas</li>
+              <li>Att det är <strong>lika mycket vätska</strong> i båda glasen</li>
+              <li>Vad som finns i det högra glaset som inte finns i det vänstra</li>
+              <li>Jämför med bilden av stark och svag syra — vad är likt, och vad skiljer?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/stark-och-svag-bas.webp" alt="Två bägarglas med lika mycket bas i. I det vänstra har basen gett tio hydroxidjoner. I det högra har bara två bildats, medan åtta basmolekyler finns kvar oreagerade.">
+            <figcaption>Lika mycket bas i båda glasen. Den starka basen till vänster har gett alla sina hydroxidjoner, medan den svaga till höger bara gett några.</figcaption>
+          </figure>
+          -->
+          <p>Känner du igen resonemanget är det inte konstigt. Det är exakt samma sak som med starka och svaga syror, fast spegelvänt: där handlade det om hur många vätejoner syran <strong>avgav</strong>, här om hur många hydroxidjoner basen <strong>ger</strong>.</p>
+          <h2>Vad orden inte betyder</h2>
+          <p>Samma varning som hos syrorna gäller här.</p>
+          <p><strong>Stark och svag säger ingenting om hur mycket bas som finns i lösningen.</strong> De säger bara hur fullständigt basen ger sina hydroxidjoner.</p>
+          <p>En stark bas kan finnas i mycket liten mängd, utspädd i massor av vatten. En svag bas kan finnas i stor mängd, nästan outspädd.</p>
+          <p>Det är samma skillnad som mellan <strong>styrka</strong> och <strong>koncentration</strong> hos syror, och den återkommer i nästa avsnitt.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Styrkan handlar om hur <strong>fullständigt</strong> basen ger hydroxidjoner i vatten</li>
+              <li>En stark bas ger i praktiken fullständigt upphov till hydroxidjoner</li>
+              <li>En svag bas reagerar bara delvis</li>
+              <li><strong>Styrka</strong> och <strong>koncentration</strong> är två olika saker</li>
+              <li>En stark bas kan vara utspädd, en svag bas koncentrerad</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Precis som syror kan baser delas in i <strong>starka</strong> och <strong>svaga</strong> baser.</p>
+          <p>Styrkan hos en bas handlar inte om hur mycket bas det finns i en lösning. Den handlar om <strong>hur fullständigt basen ger upphov till hydroxidjoner i vatten</strong>.</p>
+          <p>För en bas som redan innehåller hydroxidjoner handlar det om hur fullständigt ämnet delas upp i sina joner när det löses. Att ett ämne delas upp i fria joner i lösning kallas att det <strong>dissocierar</strong>.</p>
+          <p>För en bas som inte innehåller hydroxidjoner handlar det i stället om hur stor andel av molekylerna som reagerar med vattnet.</p>
+          <p>En stark bas ger i praktiken fullständigt upphov till hydroxidjoner i den mängd som löser sig. En svag bas reagerar däremot bara till en del med vattnet.</p>
+          <!-- BILD: stark-och-svag-bas.webp – levereras senare, avkommentera när filen finns i img/.
+          <figure class="brodtext-bild standard">
+            <img src="img/stark-och-svag-bas.webp" alt="Två bägarglas med lika mycket bas i. I det vänstra har basen gett tio hydroxidjoner. I det högra har bara två bildats, medan åtta basmolekyler finns kvar oreagerade.">
+            <figcaption>En stark bas ger i princip fullständigt upphov till hydroxidjoner. En svag bas reagerar bara delvis med vattnet, och en stor del av molekylerna finns kvar.</figcaption>
+          </figure>
+          -->
+          <p>Det är därför viktigt att skilja mellan <strong>styrka</strong> och <strong>koncentration</strong>.</p>
+          <p>En lösning kan till exempel innehålla en stark bas men vara mycket utspädd. Den innehåller då få mol bas per liter, trots att basen är stark.</p>
+          <p>På samma sätt kan en lösning innehålla mycket av en svag bas. Lösningen är då koncentrerad, trots att basen är svag.</p>
+          <p><strong>Stark och svag beskriver alltså basens sätt att reagera — koncentrerad och utspädd beskriver hur mycket ämne som finns i lösningen.</strong></p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför en stark bas är stark</h2>
+          <p>Standardtexten säger att en stark bas ger fullständigt upphov till hydroxidjoner. Men varför gör den det, medan ammoniak bara reagerar delvis?</p>
+          <p>Svaret ligger i att de två sorternas baser gör helt olika saker.</p>
+          <p>Natriumhydroxid behöver inte <strong>reagera</strong> alls. Hydroxidjonerna finns redan färdiga i jongittret, och det enda som krävs är att vattnet drar isär gittret. Det är en upplösning, inte en kemisk reaktion — och upplösningar går i princip fullständigt så länge ämnet är lösligt.</p>
+          <p>Ammoniak måste däremot slita loss en proton från en vattenmolekyl. Vatten håller sina protoner förhållandevis hårt, och bara en liten andel av ammoniakmolekylerna lyckas vid varje ögonblick.</p>
+          <p>Skillnaden mellan stark och svag bas är alltså inte bara en gradskillnad. För hydroxidbaserna handlar det om löslighet, för de övriga om jämvikt.</p>
+          <h2>Vattnet sätter taket, även här</h2>
+          <p>I syrornas fördjupning såg du att vattnet <strong>nivellerar</strong> alla syror som är starkare än oxoniumjonen — de blir omöjliga att skilja åt i vattenlösning.</p>
+          <p>Samma sak gäller åt basernas håll. Hydroxidjonen är den starkaste bas som kan finnas i vattenlösning. Tillsätter man något som är en starkare bas än så — till exempel oxidjonen, \(\ce{O^2-}\) — rycker den omedelbart en proton från vattnet och blir en hydroxidjon.</p>
+          <p>Det betyder att natriumhydroxid, kaliumhydroxid och kalciumhydroxid alla ger exakt samma bas i lösning: hydroxidjonen. Deras "styrka" skiljer sig inte alls när de väl är lösta.</p>
+          <p><strong>Om modellen:</strong> standardtexten delar baser i starka och svaga som om det vore en egenskap hos ämnet. I vattenlösning är det snarare en fråga om vad som faktiskt finns i lösningen — och där finns bara hydroxidjoner, oavsett vilken stark bas man startade med.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Starka baser ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Tre viktiga starka baser: <strong>natriumhydroxid</strong>, <strong>kaliumhydroxid</strong>, <strong>kalciumhydroxid</strong></li>
+              <li>De innehåller hydroxidjoner som <strong>frigörs</strong> i vatten</li>
+              <li>Kalciumhydroxid ger <strong>två</strong> hydroxidjoner per formelenhet</li>
+              <li><strong>Svårlöslig</strong> och <strong>svag</strong> betyder inte samma sak</li>
+              <li>Kalciumhydroxid är svårlöslig men stark</li>
+            </ul>
+          </div>
+
+          <p>Tre starka baser är särskilt viktiga att känna till: <strong>natriumhydroxid</strong>, <strong>kaliumhydroxid</strong> och <strong>kalciumhydroxid</strong>.</p>
+          <p>De hör alla till den första av de två vägarna du läste om i förra avsnittet — de innehåller hydroxidjoner redan från början.</p>
+          <h2>Natriumhydroxid och kaliumhydroxid</h2>
+          <p>Natriumhydroxid är uppbyggt av natriumjoner och hydroxidjoner. När det löses i vatten frigörs jonerna:</p>
+          <div class="formel">\[\ce{NaOH -> Na+ + OH-}\]</div>
+          <p>Kaliumhydroxid fungerar likadant, fast med kaliumjoner:</p>
+          <div class="formel">\[\ce{KOH -> K+ + OH-}\]</div>
+          <p>Båda ger alltså <strong>en</strong> hydroxidjon per formelenhet.</p>
+          <h2>Kalciumhydroxid ger två</h2>
+          <p>Kalciumhydroxid skiljer sig genom att varje formelenhet innehåller <strong>två</strong> hydroxidjoner.</p>
+          <div class="formel">\[\ce{Ca(OH)2 -> Ca^2+ + 2 OH-}\]</div>
+          <p>Anledningen är laddningen. Kalciumjonen har laddningen plus två, och för att helheten ska bli neutral behövs två hydroxidjoner med minus ett vardera.</p>
+          <p>Det betyder att lika många formelenheter kalciumhydroxid ger dubbelt så många hydroxidjoner som natriumhydroxid.</p>
+          <h2>Svårlöslig men stark</h2>
+          <p>Här kommer något som är lätt att blanda ihop, och som är värt att stanna upp vid.</p>
+          <p>Kalciumhydroxid löser sig <strong>dåligt</strong> i vatten. Bara en begränsad mängd går att få i lösning, och resten ligger kvar som ett vitt pulver på botten.</p>
+          <p>Men den del som faktiskt löser sig delas upp helt och hållet i joner. Varje formelenhet som kommer i lösning ger sina två hydroxidjoner, utan undantag.</p>
+          <p>Kalciumhydroxid är därför en <strong>stark bas trots att den är svårlöslig</strong>.</p>
+          <p><strong>Svårlöslig och svag betyder inte samma sak.</strong> Svårlöslig handlar om hur mycket som går att lösa. Svag handlar om vad som händer med det som faktiskt löst sig.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>NaOH, KOH och \(\ce{Ca(OH)2}\)</strong> är de viktigaste starka baserna</li>
+              <li>De dissocierar i princip fullständigt i den mängd som löser sig</li>
+              <li>\(\ce{Ca(OH)2}\) ger två hydroxidjoner per formelenhet</li>
+              <li><strong>Löslighet</strong> och <strong>styrka</strong> är olika saker</li>
+              <li>Kalciumhydroxid är svårlöslig men stark</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Natriumhydroxid, kaliumhydroxid och kalciumhydroxid är exempel på starka baser.</p>
+          <p>När natriumhydroxid löses i vatten delas ämnet upp i sina joner:</p>
+          <div class="formel">\[\ce{NaOH -> Na+ + OH-}\]</div>
+          <p>Kaliumhydroxid fungerar på motsvarande sätt:</p>
+          <div class="formel">\[\ce{KOH -> K+ + OH-}\]</div>
+          <p>De hydroxidjoner som finns i ämnet blir fria i lösningen.</p>
+          <p>Kalciumhydroxid fungerar på liknande sätt:</p>
+          <div class="formel">\[\ce{Ca(OH)2 -> Ca^2+ + 2 OH-}\]</div>
+          <p>Varje formelenhet kalciumhydroxid kan alltså ge två hydroxidjoner. Det beror på att kalciumjonen har laddningen 2+, och två hydroxidjoner med laddningen 1− vardera behövs för att helheten ska bli neutral.</p>
+          <p>Här finns en viktig skillnad mellan <strong>styrka</strong> och <strong>löslighet</strong>. Kalciumhydroxid är ganska svårlösligt i vatten. Det betyder att endast en begränsad mängd kalciumhydroxid kan lösas. Men den del som faktiskt löser sig dissocierar i princip fullständigt till joner.</p>
+          <p>Kalciumhydroxid är därför en <strong>stark bas trots att den är svårlöslig</strong>.</p>
+          <p>Svårlöslig och svag betyder alltså inte samma sak.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför kalciumhydroxid är svårlöslig</h2>
+          <p>Standardtexten konstaterar att kalciumhydroxid löser sig dåligt. Förklaringen mötte du redan i repetitionsavsnitt 5.</p>
+          <p>Attraktionen mellan joner i ett gitter växer kraftigt med laddningen. Natriumjonen har plus ett, kalciumjonen plus två — och dubbla laddningen ger betydligt starkare bindning till hydroxidjonerna.</p>
+          <p>Vattenmolekylerna måste övervinna den attraktionen för att dra isär gittret. För natriumhydroxid går det lätt; för kalciumhydroxid räcker det bara delvis.</p>
+          <p>Samma sak gällde kalk i repetitionen, av samma skäl.</p>
+          <h2>Vad svårlösligheten används till</h2>
+          <p>Att kalciumhydroxid är svårlöslig är inte bara en olägenhet. Den är en av anledningarna till att ämnet är så användbart.</p>
+          <p>En mättad kalciumhydroxidlösning har pH omkring 12,5 — starkt basiskt, men inte mer än så, eftersom inte mer kan lösas. Häller man i mer kalk stiger pH inte ytterligare; överskottet lägger sig bara på botten.</p>
+          <p>Det gör kalciumhydroxid till en bas som är <strong>svår att överdosera</strong>. Vid kalkning av mark och sjöar är det en avgörande egenskap: tillsätter man för mycket natriumhydroxid får man en dödligt basisk miljö, men överskott av kalk löser sig helt enkelt inte.</p>
+          <p>Överskottet fungerar dessutom som ett förråd. Sjunker pH igen löser sig lite mer av det som legat på botten, och pH stiger tillbaka.</p>
+          <p><strong>Om modellen:</strong> standardtexten behandlar svårlösligheten som ett förbehåll — kalciumhydroxid är stark <em>trots</em> att den är svårlöslig. Men i praktisk användning är svårlösligheten själva poängen.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Svaga baser ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Ammoniak</strong> är den viktigaste svaga basen</li>
+              <li>Bara <strong>en del</strong> av molekylerna reagerar med vattnet</li>
+              <li>Lösningen innehåller ammoniak, ammoniumjoner och hydroxidjoner samtidigt</li>
+              <li>Reaktionen går <strong>åt båda hållen</strong> — jämviktspilen \(\ce{<=>}\)</li>
+              <li><strong>Bikarbonat</strong> innehåller också en svag bas</li>
+            </ul>
+          </div>
+
+          <p>Ammoniak är den svaga bas du framför allt behöver känna till.</p>
+          <p>Den hör till den andra vägen från förra avsnittet — den innehåller inga hydroxidjoner utan bildar dem genom att reagera med vattnet.</p>
+          <h2>Bara en del reagerar</h2>
+          <p>När ammoniak löses i vatten tar vissa av molekylerna en vätejon från en vattenmolekyl. Då bildas en ammoniumjon och en hydroxidjon.</p>
+          <div class="formel">\[\ce{NH3 + H2O <=> NH4+ + OH-}\]</div>
+          <p>Men långtifrån alla ammoniakmolekyler gör det. I lösningen finns samtidigt tre olika sorters partiklar: ammoniakmolekyler som inte reagerat, ammoniumjoner som reagerat, och hydroxidjoner.</p>
+          <p>Ungefär en molekyl av hundra har reagerat vid varje givet ögonblick. Resten simmar omkring som ammoniak.</p>
+          <h2>Pilen åt båda hållen</h2>
+          <p>Lägg märke till pilen i formeln. Den pekar åt båda hållen, precis som hos de svaga syrorna.</p>
+          <p>Det betyder att reaktionen går båda vägarna samtidigt. Ammoniakmolekyler tar upp vätejoner och blir ammonium — men ammoniumjoner lämnar också tillbaka vätejoner och blir ammoniak igen.</p>
+          <p>Efter en stund ställer det in sig i en balans. Lika många reagerar åt ena hållet som åt det andra, och då ändras ingenting mer utåt sett.</p>
+          <h2>Därför är ammoniak svag</h2>
+          <p>Eftersom bara en liten del av molekylerna har reagerat bildas det få hydroxidjoner.</p>
+          <p>Jämför med natriumhydroxid, där varje formelenhet som löser sig ger sin hydroxidjon direkt. Samma mängd ammoniak ger betydligt färre hydroxidjoner.</p>
+          <p>Det är det som gör ammoniak till en <strong>svag bas</strong>.</p>
+          <h2>Bikarbonat</h2>
+          <p>Ett ämne till är värt att nämna, eftersom du säkert har det hemma.</p>
+          <p><strong>Bikarbonat</strong> innehåller vätekarbonatjoner, och de kan också ta upp vätejoner. Bikarbonat fungerar alltså som en svag bas — och det är därför det används mot halsbränna och i bakning.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Ammoniak, \(\ce{NH3}\)</strong>, är det viktigaste exemplet</li>
+              <li>\(\ce{NH3 + H2O <=> NH4+ + OH-}\)</li>
+              <li>Bara en del av molekylerna har reagerat vid varje tillfälle</li>
+              <li>Det råder <strong>kemisk jämvikt</strong></li>
+              <li><strong>Vätekarbonatjonen, \(\ce{HCO3-}\)</strong>, fungerar också som svag bas</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Ammoniak är ett viktigt exempel på en svag bas.</p>
+          <p>När ammoniak löses i vatten tar vissa ammoniakmolekyler upp en vätejon från vatten:</p>
+          <div class="formel">\[\ce{NH3 + H2O <=> NH4+ + OH-}\]</div>
+          <p>Men alla ammoniakmolekyler reagerar inte. I lösningen finns därför samtidigt ammoniakmolekyler, ammoniumjoner och hydroxidjoner.</p>
+          <p>Den dubbla reaktionspilen visar att reaktionen kan gå åt båda hållen. Ammoniak kan ta upp en vätejon och bilda ammonium, men ammonium kan också lämna tillbaka en vätejon.</p>
+          <p>Efter en stund uppstår en <strong>kemisk jämvikt</strong>. Det betyder att reaktionen fortsätter åt båda hållen, men att mängderna av de olika ämnena i genomsnitt håller sig ungefär konstanta.</p>
+          <p>Eftersom bara en del av ammoniakmolekylerna har reagerat vid varje tillfälle bildas färre hydroxidjoner än om samma mängd av en stark bas hade reagerat fullständigt.</p>
+          <p>Därför räknas ammoniak som en <strong>svag bas</strong>.</p>
+          <p>Även vätekarbonatjonen, \(\ce{HCO3-}\), som bland annat finns i bikarbonat, kan fungera som en svag bas genom att ta upp vätejoner.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Ammoniumjonen är en syra</h2>
+          <p>Titta på jämvikten från höger till vänster i stället:</p>
+          <div class="formel">\[\ce{NH4+ + OH- <=> NH3 + H2O}\]</div>
+          <p>Här avger ammoniumjonen en proton till hydroxidjonen. Och att avge en proton är precis vad en syra gör.</p>
+          <p>Ammoniumjonen är alltså en <strong>syra</strong>, och dessutom en svag sådan. Löser du ett ammoniumsalt i vatten — till exempel ammoniumklorid — blir lösningen svagt sur.</p>
+          <p>Det här är ett mönster som gäller generellt: <strong>varje svag bas har en motsvarande svag syra, och tvärtom.</strong> De kallas ett syra–baspar. Ättiksyra och acetatjonen är ett annat, ammoniak och ammoniumjonen ett tredje.</p>
+          <p>Ju svagare basen är, desto starkare är dess motsvarande syra. Klorid är en så svag bas att den knappt tar tillbaka någon proton alls — och därför är saltsyra en stark syra.</p>
+          <h2>Vätekarbonatjonen kan vara både</h2>
+          <p>Vätekarbonatjonen är det tydligaste exemplet på att rollerna inte sitter fast i ämnet.</p>
+          <p>Den kan <strong>ta upp</strong> en proton och bli kolsyra. Då är den en bas.</p>
+          <p>Den kan också <strong>avge</strong> en proton och bli karbonatjon. Då är den en syra.</p>
+          <p>Vätekarbonatjonen är alltså en amfolyt, precis som vatten. Och det är just den dubbelheten som gör den till kroppens viktigaste buffert: möter den syra fungerar den som bas, möter den bas fungerar den som syra. I båda fallen dämpar den pH-förändringen.</p>
+          <p>Det är därför blodets pH håller sig runt 7,4 trots att kroppen ständigt producerar syror.</p>
+          <p><strong>Om modellen:</strong> standardtexten nämner vätekarbonatjonen som ännu en svag bas i förbifarten. Den är mer intressant än så — den är exemplet på att syra och bas är roller, inte sorter, och den är förklaringen till hur kroppen håller sitt pH stabilt.</p>
+        </div>
+
+      </div>
+
+      <!-- DJUPDYKNINGAR -->
+      <section class="djupdykningar">
+        <span class="sektion-label">Vill du veta mer?</span>
+        <div class="fordj-kort-grid">
+          <a class="fordj-kort" href="djupdykning-starka-och-svaga.html">
+            <span class="fordj-kort-ikon" aria-hidden="true">⚖️</span>
+            <span class="fordj-kort-text">
+              <span class="fordj-kort-titel">Starka och svaga syror och baser</span>
+              <span class="fordj-kort-sammanfattning">{{1-2 meningar.}}</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-2-starka-och-svaga-baser.json"
+           data-avsnitt="a2_starka-och-svaga-baser">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-2-starka-och-svaga-baser.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a2_starka-och-svaga-baser';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'baser';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

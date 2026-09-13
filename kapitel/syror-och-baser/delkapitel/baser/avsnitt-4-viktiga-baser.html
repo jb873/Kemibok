@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viktiga baser: egenskaper, användning och säkerhet – Baser – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">4. Viktiga baser: egenskaper, användning och säkerhet</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 4</span>
+      <h1>Viktiga baser: egenskaper, användning och säkerhet</h1>
+      <p class="subtitel">— baser i hemmet, industrin och naturen —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Basers gemensamma egenskaper</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Baser i vardagen och industrin</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Säkerhet</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-viktiga-baser">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Basers gemensamma egenskaper ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Basiska lösningar har <strong>pH över 7</strong></li>
+              <li>De innehåller fler <strong>hydroxidjoner</strong> än vätejoner</li>
+              <li>De <strong>leder ström</strong></li>
+              <li>De kan kännas <strong>hala</strong> — ett varningstecken</li>
+              <li>Många är <strong>frätande</strong>, och de <strong>neutraliseras</strong> av syror</li>
+            </ul>
+          </div>
+
+          <p>Baser är olika ämnen med olika användning, men basiska lösningar har flera saker gemensamt. Det mesta har du redan mött — här samlar vi ihop det.</p>
+          <h2>De har högt pH</h2>
+          <p>Alla basiska lösningar har pH över 7. Det beror på att de innehåller fler hydroxidjoner än vätejoner.</p>
+          <h2>De leder ström</h2>
+          <p>En basisk lösning innehåller joner som kan röra sig fritt. Därför leder den elektrisk ström, precis som sura lösningar och saltlösningar gör.</p>
+          <p>Det är fria laddningar som krävs, och en basisk lösning har gott om dem.</p>
+          <h2>De känns hala</h2>
+          <p>Baser reagerar med fett, och din hud har ett lager fett på ytan. När en basisk lösning kommer åt det börjar fettet brytas ner, och det som bildas är tvålliknande.</p>
+          <p>Därför känns basiska lösningar hala. Men som du redan vet är det inget att pröva — halheten betyder att lösningen har börjat lösa upp din hud.</p>
+          <h2>De kan vara frätande</h2>
+          <p>Många starka baser är kraftigt frätande och kan ge allvarliga skador på hud och ögon.</p>
+          <p>Att en bas är svag gör den inte automatiskt ofarlig. Precis som hos syrorna spelar koncentrationen lika stor roll som styrkan.</p>
+          <h2>De reagerar med syror</h2>
+          <p>Den sista gemensamma egenskapen är den som leder vidare till nästa delkapitel.</p>
+          <p>När en bas möter en syra reagerar hydroxidjonerna med vätejonerna och bildar vatten. Båda lösningarnas egenskaper försvinner.</p>
+          <p>Den reaktionen kallas <strong>neutralisation</strong>, och den får ett eget delkapitel.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>pH över 7, överskott av hydroxidjoner</li>
+              <li>Leder ström tack vare rörliga joner</li>
+              <li>Reagerar med fett, vilket ger halheten</li>
+              <li>Många starka baser är kraftigt <strong>frätande</strong></li>
+              <li>Reagerar med syror: \(\ce{H3O+ + OH- -> 2 H2O}\)</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Baser är olika ämnen, men basiska lösningar har flera gemensamma egenskaper.</p>
+          <p>De har <strong>pH över 7</strong> och innehåller ett överskott av hydroxidjoner jämfört med oxoniumjoner.</p>
+          <p>Eftersom basiska lösningar innehåller joner kan de leda elektrisk ström.</p>
+          <p>Många basiska lösningar kan också kännas hala. Det beror bland annat på att starka baser reagerar med fett. Det är en av anledningarna till att baser används i bland annat rengöringsmedel och vid tvåltillverkning.</p>
+          <p>Många starka baser är dessutom kraftigt <strong>frätande</strong> och kan orsaka allvarliga skador på hud och ögon.</p>
+          <p>En annan viktig egenskap är att baser kan reagera med syror. När en syra och en bas reagerar med varandra kan vätejoner och hydroxidjoner bilda vatten:</p>
+          <div class="formel">\[\ce{H3O+ + OH- -> 2 H2O}\]</div>
+          <p>Detta är grunden för <strong>neutralisation</strong>.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför basiska lösningar leder ström olika bra</h2>
+          <p>Standardtexten säger att basiska lösningar leder ström eftersom de innehåller joner. Det stämmer, men alla basiska lösningar leder inte lika bra.</p>
+          <p>Ledningsförmågan beror på hur många rörliga joner lösningen faktiskt innehåller — och där skiljer sig starka och svaga baser kraftigt.</p>
+          <p>En natriumhydroxidlösning på 0,1 mol/dm³ innehåller 0,1 mol hydroxidjoner och 0,1 mol natriumjoner per liter. Nästan allt ämne har blivit joner.</p>
+          <p>En ammoniaklösning på samma koncentration innehåller bara omkring 0,001 mol hydroxidjoner. Resten är oreagerade ammoniakmolekyler, och de är neutrala — de bär ingen laddning och bidrar inte till strömmen.</p>
+          <p>Mäter man ledningsförmågan i de två lösningarna är skillnaden dramatisk, trots att de innehåller lika mycket bas. Det är faktiskt ett sätt att avgöra om en bas är stark eller svag.</p>
+          <h2>Hydroxidjonen rör sig ovanligt snabbt</h2>
+          <p>En detalj som förklarar varför basiska lösningar leder särskilt bra.</p>
+          <p>De flesta joner färdas genom vatten genom att knuffa sig fram mellan molekylerna. Det går långsamt.</p>
+          <p>Hydroxidjonen och oxoniumjonen gör något annat. De behöver inte förflytta sig alls — i stället hoppar en proton från molekyl till molekyl längs en kedja av vätebundna vattenmolekyler. Laddningen rör sig snabbt genom vätskan, medan varje enskild partikel bara flyttar sig en liten bit.</p>
+          <p>Mekanismen kallas Grotthuss-mekanismen, och den gör att just dessa två joner leder ström flera gånger effektivare än andra joner av samma storlek.</p>
+          <p><strong>Om modellen:</strong> standardtexten behandlar ledningsförmågan som en egenskap alla joner ger. Med skillnaden mellan stark och svag bas blir den ett mått på hur mycket som faktiskt reagerat — och med protonhoppen blir det tydligt att alla joner inte är lika.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Baser i vardagen och industrin ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Natriumhydroxid</strong> i propplösare, tvål och pappersindustri</li>
+              <li><strong>Kaliumhydroxid</strong> i mjuktvål och batterier</li>
+              <li><strong>Kalciumhydroxid</strong> i murbruk och byggmaterial</li>
+              <li><strong>Ammoniak</strong> i rengöringsmedel och som råvara till konstgödsel</li>
+              <li>Tvåltillverkning bygger på att baser reagerar med fett</li>
+            </ul>
+          </div>
+
+          <p>Baser finns i hemmet, i industrin och i naturen. Här är de viktigaste.</p>
+          <h2>Natriumhydroxid</h2>
+          <p>Natriumhydroxid är den vanligaste starka basen, och du har den troligen under diskbänken.</p>
+          <p><strong>Propplösare</strong> innehåller ofta natriumhydroxid. Den fungerar för att den bryter ner fett och annat organiskt material — precis det som brukar sätta igen ett avlopp.</p>
+          <p>Samma egenskap används vid <strong>tvåltillverkning</strong>. Man låter fett reagera med natriumhydroxid, och produkten är tvål. Att basiska lösningar känns hala är alltså samma reaktion, fast oavsiktlig och på din hud.</p>
+          <!-- BILD: fortvalning.webp – levereras senare, avkommentera när filen finns i img/.
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vad som finns på vänster sida om pilen</li>
+              <li>Vad som finns på höger sida</li>
+              <li>Om du känner igen det ena av ämnena till vänster från köket</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/fortvalning.webp" alt="Till vänster en klick fett och en hög vita natriumhydroxidpellets, med en pil mot höger. Till höger en färdig tvålbit.">
+            <figcaption>Fett plus en stark bas ger tvål. Det är samma reaktion som gör att basiska lösningar känns hala på huden.</figcaption>
+          </figure>
+          -->
+          <p>Inom <strong>pappersindustrin</strong> används natriumhydroxid för att behandla trä och separera vedens olika beståndsdelar från varandra.</p>
+          <h2>Kaliumhydroxid</h2>
+          <p>Kaliumhydroxid liknar natriumhydroxid men ger <strong>mjukare tvålar</strong>. Flytande tvål och såpa tillverkas ofta med kaliumhydroxid i stället.</p>
+          <p>Den används också som vätska i vissa <strong>batterier</strong>.</p>
+          <h2>Kalciumhydroxid</h2>
+          <p>Kalciumhydroxid kallas ibland <strong>släckt kalk</strong> och används i <strong>murbruk</strong> och andra byggmaterial.</p>
+          <p>Murbruk härdar genom att kalciumhydroxiden långsamt reagerar med koldioxid ur luften och blir kalksten igen. Det är därför gamla murar blir hårdare med tiden.</p>
+          <h2>Ammoniak</h2>
+          <p>Ammoniak är den vanligaste svaga basen.</p>
+          <p>Den finns i vissa <strong>rengöringsmedel</strong>, eftersom den hjälper till att lösa fett och smuts.</p>
+          <p>Men den allra största användningen är en helt annan: ammoniak är råvaran till <strong>konstgödsel</strong>. Växter behöver kväve för att bygga proteiner, och luftens kvävgas är för trög för att de ska kunna använda den direkt.</p>
+          <p>Genom att först tillverka ammoniak av luftens kväve kan man göra gödsel som växterna kan ta upp. Ammoniak har därför enorm betydelse för världens matproduktion.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>NaOH</strong>: propplösare, tvåltillverkning, pappersindustri</li>
+              <li><strong>KOH</strong>: mjuka och flytande tvålar, batterier</li>
+              <li><strong>\(\ce{Ca(OH)2}\)</strong>: murbruk och byggmaterial</li>
+              <li><strong>\(\ce{NH3}\)</strong>: rengöringsmedel och <strong>kvävegödsel</strong></li>
+              <li>Ammoniak har stor betydelse för livsmedelsproduktionen</li>
+            </ul>
+          </div>
+
+          <h2>Natriumhydroxid</h2>
+          <p class="inledning">Natriumhydroxid, NaOH, är en stark bas. Ämnet används bland annat i propplösare eftersom det kan bryta ned fett och annat organiskt material.</p>
+          <p>Natriumhydroxid används också vid tillverkning av tvål. Fett får då reagera med en stark bas och omvandlas till bland annat ämnen som fungerar som tvål.</p>
+          <!-- BILD: fortvalning.webp – levereras senare, avkommentera när filen finns i img/.
+          <figure class="brodtext-bild standard">
+            <img src="img/fortvalning.webp" alt="Till vänster en klick fett och en hög vita natriumhydroxidpellets, med en pil mot höger. Till höger en färdig tvålbit.">
+            <figcaption>Vid förtvålning bryter den starka basen ner fettmolekylerna. De delar som blir kvar har en polär och en opolär ände — alltså tensider.</figcaption>
+          </figure>
+          -->
+          <p>Inom pappersindustrin används natriumhydroxid i processer där man behandlar trä och separerar olika delar av veden från varandra.</p>
+          <h2>Kaliumhydroxid</h2>
+          <p>Kaliumhydroxid, KOH, är också en stark bas.</p>
+          <p>Den används bland annat vid tillverkning av mjuka och flytande tvålar. Kaliumhydroxid används även som elektrolyt i vissa typer av batterier.</p>
+          <h2>Kalciumhydroxid</h2>
+          <p>Kalciumhydroxid, \(\ce{Ca(OH)2}\), kallas ibland <strong>släckt kalk</strong>.</p>
+          <p>Ämnet används bland annat i murbruk och andra byggmaterial. Murbruk härdar genom att kalciumhydroxiden långsamt reagerar med koldioxid ur luften och åter bildar kalciumkarbonat.</p>
+          <p>Kalciumhydroxid används också för att höja pH i sura miljöer. Den användningen behandlas i delkapitlet om försurning.</p>
+          <h2>Ammoniak</h2>
+          <p>Ammoniak, \(\ce{NH3}\), är en svag bas.</p>
+          <p>Ammoniak används i vissa rengöringsmedel eftersom den kan hjälpa till att lösa fett och smuts.</p>
+          <p>En mycket stor användning av ammoniak finns inom jordbruket. Ammoniak är en viktig råvara vid tillverkning av <strong>kvävegödsel</strong>. Kväve är ett grundämne som växter behöver för att bland annat kunna bygga proteiner.</p>
+          <p>Ammoniak har därför stor betydelse för den moderna livsmedelsproduktionen.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Ammoniak och världens mat</h2>
+          <p>Ammoniak är kanske det ämne som mest direkt påverkat hur många människor som kan leva på jorden.</p>
+          <p>Kväve finns i överflöd — nästan åttio procent av luften är kvävgas. Men kvävgasmolekylen hålls samman av en trippelbindning, som du mötte i repetitionsavsnitt 3, och den är så stark att växter inte kan bryta den. Kvävet är där men oåtkomligt.</p>
+          <p>I naturen löses problemet av bakterier som kan omvandla kvävgas till former växter kan ta upp. Det går långsamt, och länge var tillgången på kväve den gräns som satte taket för hur mycket mat som kunde odlas.</p>
+          <p>I början av 1900-talet löste Fritz Haber och Carl Bosch problemet tekniskt. Under mycket högt tryck och hög temperatur, med hjälp av en katalysator, går det att få kvävgas och vätgas att reagera och bilda ammoniak.</p>
+          <p>Processen används fortfarande, och en betydande del av allt kväve i din egen kropp har passerat genom den. Uppskattningar pekar på att ungefär halva världens befolkning äter mat som odlats med konstgödsel.</p>
+          <h2>Och baksidan</h2>
+          <p>Samma process har en annan sida.</p>
+          <p>Haber-Bosch-processen kräver mycket energi och står för ett par procent av världens energianvändning. Kvävegödsel som inte tas upp av växterna rinner ut i vattendrag och orsakar övergödning.</p>
+          <p>Och ammoniak användes också till sprängämnen. Samma process som gav världen mat gav den också möjlighet att tillverka ammunition i industriell skala under första världskriget.</p>
+          <p><strong>Om modellen:</strong> standardtexten nämner att ammoniak är viktig för livsmedelsproduktionen. Bakom den meningen ligger en av 1900-talets mest omvälvande uppfinningar — och ett tydligt exempel på att kemisk kunskap i sig varken är god eller ond.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Säkerhet ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Starka baser är <strong>kraftigt frätande</strong></li>
+              <li>Ögonskador är särskilt allvarliga — basen tränger djupare in än syra</li>
+              <li>Använd alltid <strong>skyddsglasögon</strong></li>
+              <li>Vid stänk: <strong>spola länge</strong> med mycket vatten</li>
+              <li><strong>Blanda aldrig</strong> propplösare med andra rengöringsmedel</li>
+            </ul>
+          </div>
+
+          <p>Baser ska hanteras med samma respekt som syror, och på ett sätt med ännu större.</p>
+          <h2>Varför ögon är särskilt allvarligt</h2>
+          <p>Både syror och baser kan skada ögat, men baser gör det på ett farligare sätt.</p>
+          <p>När en syra träffar vävnad reagerar den med proteinerna på ytan. De klumpar ihop sig och bildar ett lager som faktiskt bromsar syran från att tränga djupare.</p>
+          <p>En bas gör tvärtom. Den löser upp fett, och cellernas ytterhöljen består av fett. Basen löser alltså upp det som skulle ha hindrat den, och kan fortsätta inåt.</p>
+          <p>Skadan blir därför ofta djupare än den ser ut, och den kan fortsätta utvecklas efter att ämnet sköljts bort.</p>
+          <p><strong>Använd alltid skyddsglasögon</strong> när du arbetar med starka baser.</p>
+          <h2>Om något går fel</h2>
+          <p>Får du bas på huden eller i ögat: <strong>spola omedelbart med stora mängder vatten</strong>.</p>
+          <p>Och spola längre än du tror behövs. Vid stänk i ögat ska spolningen fortsätta i minst tjugo minuter, och du ska säga till din lärare direkt.</p>
+          <h2>Blanda aldrig</h2>
+          <p>Propplösare innehåller ofta natriumhydroxid, och den <strong>får aldrig blandas med andra rengöringsmedel</strong>.</p>
+          <p>Blandningar av rengöringskemikalier kan utveckla kraftig värme eller bilda giftiga gaser. Det finns inget att vinna på att blanda — en propplösare är redan så effektiv den kan vara.</p>
+          <h2>Varför reglerna finns</h2>
+          <p>Starka baser är användbara just för att de reagerar kraftigt med andra ämnen. De löser fett, bryter ner organiskt material och fungerar i industriella processer.</p>
+          <p>Samma egenskap gör dem farliga. Det är inte två olika saker — det är samma egenskap sedd från två håll.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Starka baser skadar hud, ögon och vävnad</li>
+              <li>Basen tränger in i vävnaden och fortsätter skada</li>
+              <li>Skyddsglasögon alltid</li>
+              <li>Spolning under lång tid vid stänk, hjälp tillkallas snabbt</li>
+              <li>Rengöringskemikalier får aldrig blandas</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Starka baser kan vara kraftigt frätande.</p>
+          <p>Frätande baser kan skada hud, ögon och andra vävnader. Skador i ögonen är särskilt allvarliga eftersom starka baser kan tränga in i vävnaden och fortsätta orsaka skada.</p>
+          <p>Därför ska man alltid använda <strong>skyddsglasögon</strong> när man arbetar med starka baser i laboratorium.</p>
+          <p>Om en frätande bas kommer på huden eller i ögonen ska området omedelbart spolas med stora mängder vatten. Vid stänk i ögonen behöver spolningen fortsätta under lång tid och hjälp ska snabbt tillkallas.</p>
+          <p>Produkter som innehåller starka baser ska alltid hanteras enligt säkerhetsinformationen på förpackningen.</p>
+          <p>Propplösare kan till exempel innehålla natriumhydroxid och får aldrig blandas med andra rengöringsmedel. Blandningar av olika rengöringskemikalier kan orsaka kraftig värmeutveckling eller bilda farliga ämnen.</p>
+          <p>Starka baser är användbara just därför att de reagerar kraftigt med andra ämnen. Samma egenskap gör att de måste hanteras med stor försiktighet.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-4-viktiga-baser.json"
+           data-avsnitt="a4_viktiga-baser">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-4-viktiga-baser.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a4_viktiga-baser';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'baser';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

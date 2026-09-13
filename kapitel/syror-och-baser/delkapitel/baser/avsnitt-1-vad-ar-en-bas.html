@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vad är en bas? – Baser – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">1. Vad är en bas?</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 1</span>
+      <h1>Vad är en bas?</h1>
+      <p class="subtitel">— vad som gör en lösning basisk —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Hydroxidjonen</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Två vägar till en basisk lösning</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Basiska lösningar</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-vad-ar-en-bas">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Hydroxidjonen ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Hydroxidjonen</strong>, \(\ce{OH-}\), består av en syreatom och en väteatom</li>
+              <li>Den har en <strong>negativ</strong> laddning</li>
+              <li>Den kan <strong>ta emot en vätejon</strong></li>
+              <li>Då bildas en <strong>vattenmolekyl</strong></li>
+              <li>En <strong>bas</strong> är ett ämne som kan ta upp vätejoner</li>
+            </ul>
+          </div>
+
+          <p>I syrorna handlade allt om vätejonen — partikeln som syran avger. Nu vänder vi på det och tittar på den partikel som kan <strong>ta emot</strong> en vätejon.</p>
+          <h2>En jon du redan mött</h2>
+          <p>Hydroxidjonen, <strong>\(\ce{OH-}\)</strong>, dök upp redan i repetitionen. Den är en sammansatt jon, alltså flera atomer som sitter ihop och tillsammans har en laddning. Här är det en syreatom och en väteatom med en gemensam negativ laddning.</p>
+          <p>Det negativa är nyckeln. En vätejon är positiv, och olika laddningar attraherar varandra — precis som du lärde dig i första repetitionsavsnittet.</p>
+          <h2>Vad som händer när de möts</h2>
+          <p>Kommer en vätejon i närheten av en hydroxidjon fastnar den direkt.</p>
+          <p>Tänk efter vad som blir kvar. Hydroxidjonen består av en syreatom och en väteatom. Lägger man till ytterligare en väteatom har man en syreatom och två väteatomer — alltså en <strong>vattenmolekyl</strong>.</p>
+          <p>Och laddningarna? En plus och en minus tar ut varandra, så molekylen blir neutral.</p>
+          <div class="formel">\[\ce{H+ + OH- -> H2O}\]</div>
+          <p>Det är därför hydroxidjonen är så viktig. Den kan plocka bort vätejoner ur en lösning, och det som blir kvar är helt vanligt vatten.</p>
+          <h2>Definitionen av en bas</h2>
+          <p>Nu kan vi säga vad en bas är.</p>
+          <p><strong>En bas är ett ämne som kan ta upp vätejoner.</strong></p>
+          <p>Lägg märke till hur det speglar syrorna. En syra <strong>avger</strong> vätejoner, en bas <strong>tar upp</strong> dem. De är varandras motsatser, och det är därför de kan reagera med varandra.</p>
+          <p>Men här kommer något viktigt: definitionen säger ingenting om att basen måste innehålla hydroxidjoner. Det finns baser som gör det, och baser som inte gör det — och det handlar nästa del om.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Hydroxidjonen är en <strong>sammansatt jon</strong> med negativ laddning</li>
+              <li>Den har <strong>fria elektronpar</strong> och kan därför ta emot en vätejon</li>
+              <li>\(\ce{H+ + OH- -> H2O}\)</li>
+              <li><strong>En bas är ett ämne som kan ta upp vätejoner</strong></li>
+              <li>Alla baser innehåller <strong>inte</strong> hydroxidjoner från början</li>
+            </ul>
+          </div>
+
+          <p class="inledning">När vi studerade vatten mötte vi hydroxidjonen, <strong>\(\ce{OH-}\)</strong>. Hydroxidjonen är en sammansatt jon som består av en syreatom och en väteatom. Tillsammans har de en negativ laddning.</p>
+          <p>Hydroxidjonen är viktig när vi ska förstå baser. Den har <strong>fria elektronpar</strong> — elektronpar som inte delas med någon annan atom — och kan därför ta emot en <strong>vätejon, \(\ce{H+}\)</strong>. En vätejon består egentligen bara av en proton, och den binder till just ett sådant fritt elektronpar.</p>
+          <p>När hydroxidjonen tar upp en vätejon bildas en vattenmolekyl:</p>
+          <div class="formel">\[\ce{H+ + OH- -> H2O}\]</div>
+          <p>Detta leder oss till den viktigaste definitionen av en bas:</p>
+          <p><strong>En bas är ett ämne som kan ta upp vätejoner.</strong></p>
+          <p>Det betyder däremot inte att alla baser innehåller hydroxidjoner från början. Hydroxidjoner kan uppstå på olika sätt när ett basiskt ämne kommer i kontakt med vatten.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför hydroxidjonen är en så bra protonmottagare</h2>
+          <p>Standardtexten sa att hydroxidjonen har fria elektronpar och därför kan ta emot en vätejon. Två saker samverkar, och båda drar åt samma håll.</p>
+          <p>Det första är <strong>laddningen</strong>. Hydroxidjonen är negativ, vätejonen positiv, och de attraherar varandra på avstånd. Redan innan de möts dras de mot varandra.</p>
+          <p>Det andra är de <strong>fria elektronparen</strong>. Syreatomen i hydroxidjonen har tre elektronpar som inte delas med något — de sitter kvar på syret och pekar ut i rummet. En proton utan eget elektronskal söker sig just till sådana par.</p>
+          <p>Jämför med kloridjonen. Den är också negativ och har också fria elektronpar, men den binder protoner mycket svagare. Skillnaden är att klor är en stor atom där laddningen är utspridd, medan syre är liten och kompakt. Laddningstätheten hos hydroxidjonen är betydligt högre.</p>
+          <p>Det är därför saltsyra är en stark syra: kloridjonen tar ogärna tillbaka sin proton. Och det är därför hydroxidjonen är en så effektiv bas: den tar emot mycket gärna.</p>
+          <h2>Baser utan hydroxidjoner</h2>
+          <p>Definitionen säger att en bas tar upp vätejoner, inte att den innehåller hydroxidjoner. Det öppnar för fler baser än man först tror.</p>
+          <p>Vilket ämne som helst med ett fritt elektronpar kan i princip fungera som bas. Ammoniak är det vanligaste exemplet, men även vatten kan det — som du såg i syrornas fördjupning, där vattnet tog emot protonen från saltsyran.</p>
+          <p>Också de joner som blir kvar efter en svag syra fungerar som baser. Acetatjonen kan ta tillbaka den proton ättiksyran avgav, och det är just därför jämvikten finns.</p>
+          <p><strong>Om modellen:</strong> standardtexten introducerar baser via hydroxidjonen, vilket är rätt ingång eftersom hydroxidjonen är den vanligaste. Men definitionen är vidare än så. En bas är inte ett ämne av en viss sort — det är en <strong>roll</strong> ett ämne kan spela i en reaktion.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Två vägar till en basisk lösning ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En basisk lösning innehåller många <strong>hydroxidjoner</strong></li>
+              <li>Vissa baser <strong>innehåller</strong> hydroxidjoner redan från början</li>
+              <li>Andra <strong>bildar</strong> hydroxidjoner genom att reagera med vatten</li>
+              <li>Natriumhydroxid är ett exempel på det första</li>
+              <li>Ammoniak är ett exempel på det andra</li>
+            </ul>
+          </div>
+
+          <p>En basisk lösning innehåller många hydroxidjoner. Men hur hamnar de där?</p>
+          <p>Det finns två olika sätt, och skillnaden mellan dem är den viktigaste saken i hela avsnittet.</p>
+          <h2>Väg 1: hydroxidjonerna fanns redan</h2>
+          <p>Natriumhydroxid är exemplet. Ämnet är uppbyggt av joner redan i fast form — natriumjoner och hydroxidjoner, ordnade i ett jongitter precis som koksalt.</p>
+          <p>Lägger du natriumhydroxid i vatten händer samma sak som när salt löses. De polära vattenmolekylerna lägger sig runt jonerna och drar isär dem, och jonerna blir fria i lösningen.</p>
+          <div class="formel">\[\ce{NaOH -> Na+ + OH-}\]</div>
+          <p>Hydroxidjonerna kommer alltså inte från vattnet. De fanns i natriumhydroxiden hela tiden och frigjordes bara.</p>
+          <p>Kaliumhydroxid och kalciumhydroxid fungerar likadant.</p>
+          <h2>Väg 2: hydroxidjonerna bildas</h2>
+          <p>Ammoniak fungerar helt annorlunda, och det är därför den är så bra att känna till.</p>
+          <p>En ammoniakmolekyl innehåller <strong>ingen</strong> hydroxidjon. Den består av en kväveatom och tre väteatomer, och det finns inget OH någonstans i den.</p>
+          <p>Ändå blir en ammoniaklösning basisk. Så var kommer hydroxidjonerna ifrån?</p>
+          <p>De kommer från <strong>vattnet</strong>. Ammoniakmolekylen tar en vätejon från en vattenmolekyl. Ammoniaken blir då en ammoniumjon, och vattenmolekylen som förlorat sin vätejon är inte längre vatten — den har blivit en hydroxidjon.</p>
+          <div class="formel">\[\ce{NH3 + H2O <=> NH4+ + OH-}\]</div>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Var hydroxidjonerna <strong>fanns från början</strong> i den vänstra halvan</li>
+              <li>Vilken partikel som <strong>flyttar</strong> i den högra halvan</li>
+              <li>Vad som blir kvar av vattenmolekylen när den lämnat ifrån sig en vätejon</li>
+              <li>Att resultatet blir <strong>samma sorts jon</strong> i båda halvorna</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/tva-vagar-till-bas.svg" alt="Till vänster ett jongitter av natriumhydroxid där en natriumjon och en hydroxidjon lossnar när ämnet löses. Till höger en ammoniakmolekyl som tar upp en vätejon från en vattenmolekyl, varvid en ammoniumjon och en hydroxidjon bildas.">
+            <figcaption>Två olika vägar till samma sak. Till vänster fanns hydroxidjonerna redan i ämnet. Till höger bildas de när ammoniaken tar en vätejon från vattnet.</figcaption>
+          </figure>
+          <h2>Varför det spelar roll</h2>
+          <p>Det är frestande att tro att en bas är ett ämne som innehåller OH. Många baser gör det, och det fungerar som tumregel för dem.</p>
+          <p>Men ammoniak visar att regeln är fel. Definitionen måste vara den vi gav i förra delen: <strong>en bas är ett ämne som kan ta upp vätejoner.</strong> Vad som händer sedan beror på ämnet.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En basisk lösning har ett <strong>överskott av hydroxidjoner</strong></li>
+              <li><strong>Väg 1:</strong> basen är uppbyggd av joner, och de frigörs i vatten</li>
+              <li><strong>Väg 2:</strong> basen tar upp en vätejon från vatten, varvid \(\ce{OH-}\) bildas</li>
+              <li>\(\ce{NaOH -> Na+ + OH-}\)</li>
+              <li>\(\ce{NH3 + H2O <=> NH4+ + OH-}\)</li>
+            </ul>
+          </div>
+
+          <p class="inledning">En basisk lösning innehåller ett överskott av hydroxidjoner, <strong>\(\ce{OH-}\)</strong>. Det finns två viktiga sätt som dessa hydroxidjoner kan hamna i lösningen.</p>
+          <h2>Basen innehåller redan hydroxidjoner</h2>
+          <p>Natriumhydroxid, <strong>NaOH</strong>, är ett exempel på en bas som redan innehåller hydroxidjoner. Fast natriumhydroxid är uppbyggt av positiva natriumjoner, \(\ce{Na+}\), och negativa hydroxidjoner, \(\ce{OH-}\). Jonerna sitter ordnade i ett jongitter.</p>
+          <p>När natriumhydroxid läggs i vatten drar de polära vattenmolekylerna isär jonerna. Natriumjonerna och hydroxidjonerna blir då fria i lösningen:</p>
+          <div class="formel">\[\ce{NaOH -> Na+ + OH-}\]</div>
+          <p>Det är alltså inte vattnet som skapar hydroxidjonerna i detta fall. De fanns redan i natriumhydroxiden och frigörs när ämnet löses.</p>
+          <p>På samma sätt fungerar till exempel kaliumhydroxid, KOH, och kalciumhydroxid, \(\ce{Ca(OH)2}\).</p>
+          <h2>Basen reagerar med vatten och bildar hydroxidjoner</h2>
+          <p>Alla baser innehåller inte hydroxidjoner. <strong>Ammoniak, \(\ce{NH3}\)</strong>, är ett viktigt exempel.</p>
+          <p>När ammoniak löses i vatten kan en ammoniakmolekyl ta upp en vätejon från en vattenmolekyl. Ammoniaken omvandlas då till en ammoniumjon, \(\ce{NH4+}\). När vattenmolekylen har förlorat en vätejon återstår en hydroxidjon, \(\ce{OH-}\):</p>
+          <div class="formel">\[\ce{NH3 + H2O <=> NH4+ + OH-}\]</div>
+          <figure class="brodtext-bild standard">
+            <img src="img/tva-vagar-till-bas.svg" alt="Till vänster ett jongitter av natriumhydroxid där en natriumjon och en hydroxidjon lossnar när ämnet löses. Till höger en ammoniakmolekyl som tar upp en vätejon från en vattenmolekyl, varvid en ammoniumjon och en hydroxidjon bildas.">
+            <figcaption>Natriumhydroxid frigör hydroxidjoner ur ett jongitter. Ammoniak innehåller inga hydroxidjoner alls utan bildar dem genom att ta upp en proton från vatten.</figcaption>
+          </figure>
+          <p>Ammoniak innehåller alltså inga hydroxidjoner från början. Hydroxidjonerna <strong>bildas när ammoniak reagerar med vatten</strong>.</p>
+          <p>Detta är viktigt eftersom det visar varför man inte kan säga att en bas är ett ämne som innehåller \(\ce{OH-}\). Den bättre definitionen är att en bas är ett ämne som <strong>kan ta upp vätejoner</strong>.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Vattnet spelar olika roller</h2>
+          <p>Jämför de två reaktionerna noga, så framträder något du mötte redan i syrornas fördjupning.</p>
+          <p>I natriumhydroxidfallet gör vattnet ingenting kemiskt. Det löser upp jongittret genom att omge jonerna — precis som när koksalt löses — men det deltar inte i någon protonöverföring.</p>
+          <p>I ammoniakfallet är vattnet en av reaktanterna. Det <strong>avger en proton</strong> till ammoniaken, och det är precis vad en syra gör.</p>
+          <p>Vattnet fungerar alltså som syra i den ena reaktionen. I syrornas avsnitt 1 såg du motsatsen: när saltsyra löses tar vattnet emot en proton och fungerar som bas.</p>
+          <p>Ett ämne som kan vara både syra och bas kallas <strong>amfolyt</strong>, och vatten är det viktigaste exemplet.</p>
+          <h2>Varför ammoniak bara är en svag bas</h2>
+          <p>Ammoniakreaktionen har en dubbelpil, och skälet är detsamma som för svaga syror.</p>
+          <p>För att ammoniak ska bilda en hydroxidjon måste den slita loss en proton från en vattenmolekyl. Men vatten håller sina protoner ganska hårt — det är ju inte en syra i vanlig mening.</p>
+          <p>Bara en liten andel av ammoniakmolekylerna lyckas därför. I en ammoniaklösning har i storleksordningen en molekyl av hundra reagerat vid varje ögonblick; resten är fortfarande ammoniak.</p>
+          <p>Natriumhydroxid har inget sådant problem. Dess hydroxidjoner finns redan färdiga, och det enda som behövs är att gittret löses upp.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskrev två vägar som om de vore likvärdiga alternativ. De är det inte. Den ena är en upplösning av ett jongitter, den andra är en kemisk reaktion med jämvikt — och det är därför den ena ger en stark bas och den andra en svag.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Basiska lösningar ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En basisk lösning har fler <strong>hydroxidjoner</strong> än vätejoner</li>
+              <li>Basiska lösningar har <strong>pH över 7</strong></li>
+              <li>De innehåller joner och <strong>leder ström</strong></li>
+              <li>De kan kännas <strong>hala</strong>, eftersom baser reagerar med fett</li>
+              <li>Många baser är <strong>frätande</strong> — känn aldrig på en okänd lösning</li>
+            </ul>
+          </div>
+
+          <p>Nu vet du hur hydroxidjonerna hamnar i lösningen. Men vad kännetecknar själva lösningen?</p>
+          <h2>Fler hydroxidjoner än vätejoner</h2>
+          <p>I rent vatten finns både vätejoner och hydroxidjoner, i lika stora mängder. Därför är rent vatten neutralt.</p>
+          <p>I en <strong>basisk</strong> lösning finns fler hydroxidjoner än vätejoner. Det är precis spegelbilden av en sur lösning, där det finns fler vätejoner än hydroxidjoner.</p>
+          <p>Och eftersom pH beskriver hur många vätejoner det finns, hamnar en basisk lösning <strong>över 7</strong> på skalan.</p>
+          <h2>De leder ström</h2>
+          <p>En basisk lösning innehåller joner som kan röra sig fritt i vattnet — hydroxidjoner och de positiva joner som hör till basen.</p>
+          <p>Precis som med sura lösningar betyder det att strömmen kan ta sig igenom. Ju fler rörliga joner, desto bättre leder lösningen.</p>
+          <h2>De känns hala</h2>
+          <p>Det här är basernas mest kända egenskap, och den har en förklaring.</p>
+          <p>Starka baser reagerar med fett. Din hud har ett tunt lager fett på ytan, och när en basisk lösning kommer åt det börjar fettet brytas ner. Det som bildas har tvålliknande egenskaper — och tvål känns hal.</p>
+          <p>Halheten är alltså inte en trevlig egenskap utan ett <strong>varningstecken</strong>. Känner du att något är halt betyder det att lösningen har börjat lösa upp din hud.</p>
+          <p><strong>Känn därför aldrig på en okänd lösning för att avgöra om den är basisk.</strong> Många baser är frätande och kan ge allvarliga skador.</p>
+          <h2>De reagerar med syror</h2>
+          <p>Den sista egenskapen är den som leder vidare.</p>
+          <p>Baser reagerar med syror. Vätejonerna från syran och hydroxidjonerna från basen går ihop och bildar vatten, och båda lösningarnas egenskaper försvinner.</p>
+          <p>Den reaktionen kallas <strong>neutralisation</strong>, och den får ett eget delkapitel.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En basisk lösning har fler <strong>hydroxidjoner än oxoniumjoner</strong></li>
+              <li>pH över 7</li>
+              <li>Leder ström tack vare rörliga joner</li>
+              <li>Kan kännas hala eftersom baser reagerar med fett och bildar tvålliknande ämnen</li>
+              <li>Reagerar med syror i en <strong>neutralisation</strong></li>
+            </ul>
+          </div>
+
+          <p class="inledning">I rent vatten finns både oxoniumjoner, \(\ce{H3O+}\), och hydroxidjoner, \(\ce{OH-}\). Vid neutralitet finns lika mycket av båda.</p>
+          <p>I en <strong>basisk lösning finns fler hydroxidjoner än oxoniumjoner</strong>. Därför har en basisk lösning ett pH-värde över 7.</p>
+          <p>Basiska lösningar innehåller joner och kan därför leda elektrisk ström. Ju fler rörliga joner som finns i lösningen, desto bättre kan lösningen vanligtvis leda ström.</p>
+          <p>Basiska lösningar kan också upplevas som hala. Det beror bland annat på att starka baser kan reagera med fett. Fett kan brytas ned och ämnen med tvålliknande egenskaper kan bildas. Man ska däremot aldrig känna på okända basiska lösningar, eftersom många baser är frätande.</p>
+          <p>Baser reagerar också med syror. När en syra och en bas reagerar med varandra kan deras sura och basiska egenskaper minska. Den reaktionen kallas <strong>neutralisation</strong> och behandlas längre fram.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför basiska lösningar är farligare för ögon än sura</h2>
+          <p>Standardtexten säger att baser kan vara frätande. Det gäller syror också — men på ett annat sätt, och skillnaden har praktisk betydelse.</p>
+          <p>En stark syra som träffar vävnad reagerar med proteinerna på ytan. Proteinerna klumpar ihop sig och bildar ett skorpliknande lager, och det lagret bromsar faktiskt syran från att tränga djupare. Skadan blir allvarlig men ofta ytlig.</p>
+          <p>En stark bas gör något annat. Den bryter ner fett, och cellmembraner består av fett. Basen löser alltså upp de barriärer som skulle hindra den, och kan fortsätta inåt lager efter lager.</p>
+          <p>Skadan från en bas är därför ofta djupare än den ser ut i början, och den fortsätter utvecklas efter att ämnet sköljts bort. Det är därför spolning vid basstänk i ögat ska pågå betydligt längre än man tror är nödvändigt — ofta tjugo minuter eller mer.</p>
+          <h2>Tvål är en bas som har reagerat färdigt</h2>
+          <p>Halheten och tvåltillverkningen är samma fenomen.</p>
+          <p>När en stark bas möter fett bryts fettmolekylerna sönder, och de bitar som blir kvar har en polär ände och en opolär. Det är precis den byggnad du mötte i repetitionsavsnitt 4 — det är en <strong>tensid</strong>.</p>
+          <p>Tvåltillverkning går ut på att göra detta med avsikt: man låter fett reagera med natriumhydroxid under kontrollerade former, och produkten är tvål. Processen kallas <strong>förtvålning</strong>.</p>
+          <p>När du känner att en basisk lösning är hal tillverkar du alltså tvål, på din egen hud, av ditt eget hudfett.</p>
+          <p><strong>Om modellen:</strong> standardtexten nämner halheten som en egenskap bland andra. Med förtvålningen blir den en reaktion du kan förklara — och en varning som är lättare att ta på allvar när man vet vad som händer.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-1-vad-ar-en-bas.json"
+           data-avsnitt="a1_vad-ar-en-bas">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-1-vad-ar-en-bas.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a1_vad-ar-en-bas';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'baser';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

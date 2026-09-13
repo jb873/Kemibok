@@ -10,6 +10,7 @@
 //   adelgasstruktur.svg                 avsnitt 3 A – neon (2+8) mot natrium (2+8+1)
 //   tre-vagar.svg                       avsnitt 3 A – avge / ta upp / dela
 //   vatebindning.svg                    avsnitt 4 A – fem vattenmolekyler, fyra vätebindningar från mittmolekylen
+//   tva-vagar-till-bas.svg              delkapitel Baser 1 B – NaOH-gitter / NH3 + H2O → NH4+ + OH- (baser/img/)
 //   vatejon-och-oxoniumjon.svg          delkapitel Syror 1 B – H2O + H+ → H3O+ i tre lager (skrivs till delkapitel/syror/img/)
 //   ph-skalan.svg                       delkapitel Syror 2 A – skala 0–14 med exempel (syror/img/)
 //   fyra-kombinationerna.svg            delkapitel Syror 4 B – stark/svag × koncentrerad/utspädd (syror/img/)
@@ -454,4 +455,68 @@ ${STOPP.map(([ph, f]) => `      <stop offset="${r2(ph / 14 * 100)}%" stop-color=
     'Fem vattenmolekyler. Från molekylen i mitten går fyra streckade vätebindningar: två från dess väteatomer till grannars syreatomer och två från dess syreatom till grannars väteatomer', ut));
 }
 
-console.log('skrev 11 svg (8 till repetition/img, 3 till syror/img)', path.relative(path.join(__dirname, '..'), UT));
+
+// ---------- 12. Två vägar till en basisk lösning (delkapitel Baser, avsnitt 1 B) ----------
+// Joachims spec 2026-09-13: vänster natriumhydroxid – jongitter (röda + / blå −) och två lossnade joner
+// Na⁺, OH⁻; höger ammoniak – NH3 + H2O, en vätejon flyttar, resultat NH4⁺ (hakparentes, +) och OH⁻.
+// Färger ur bokens palett: positiv jon #C64B3A, negativ jon/kväve #3D6BA8 (bokens blå – FÖRSLAG för N,
+// CPK-blått #3050F8 är inte dämpat), syre #C0392B, väte #f5f0e4, konturer/text #2d4a35. Transparent.
+{
+  const UT3 = path.join(__dirname, '..', 'kapitel', 'syror-och-baser', 'delkapitel', 'baser', 'img');
+  fs.mkdirSync(UT3, { recursive: true });
+  const W = 800, H = 360, MITT = 400, PLUS = '#C64B3A', MINUS = '#3D6BA8', KVAVE = '#3D6BA8';
+  const rJ = 15, rN = 22, rO = 22, rH = 13, BIND = 42;
+  const jon = (x, y, tecken) => `  <circle cx="${r2(x)}" cy="${r2(y)}" r="${rJ}" fill="${tecken === '+' ? PLUS : MINUS}" stroke="#fff" stroke-width="1.5"/>
+  <path d="${tecken === '+' ? `M${r2(x - 6)} ${r2(y)}H${r2(x + 6)}M${r2(x)} ${r2(y - 6)}V${r2(y + 6)}` : `M${r2(x - 6)} ${r2(y)}H${r2(x + 6)}`}" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+`;
+  const etikett = (x, y, bas, tecken, sub) => `  <text x="${r2(x)}" y="${r2(y)}" text-anchor="middle" font-size="20" fill="${INK}" ${FONT}>${bas}${sub ? `<tspan font-size="13" dy="6">${sub}</tspan><tspan dy="-6"></tspan>` : ''}<tspan font-size="13" dy="-9">${tecken}</tspan></text>
+`;
+  const bildtext = (x, t) => `  <text x="${x}" y="${H - 22}" text-anchor="middle" font-size="19" font-style="italic" fill="${INK}" ${FONT}>${t}</text>
+`;
+  // en molekyl: centralatom + väteatomer i givna vinklar (grader, 0 = höger, 90 = nedåt)
+  const molekyl = (cx, cy, farg, rC, vinklar, namn) => {
+    let ut = `  <g aria-label="${namn}">\n`;
+    const Hs = vinklar.map(g => [cx + BIND * Math.cos(g * Math.PI / 180), cy + BIND * Math.sin(g * Math.PI / 180)]);
+    Hs.forEach(([x, y]) => { ut += `    <line x1="${cx}" y1="${cy}" x2="${r2(x)}" y2="${r2(y)}" stroke="${VARMGRA}" stroke-width="7" stroke-linecap="round"/>\n`; });
+    ut += `    <circle cx="${cx}" cy="${cy}" r="${rC}" fill="${farg}" stroke="${INK}" stroke-width="1.5"/>\n`;
+    Hs.forEach(([x, y]) => { ut += `    <circle class="vate" cx="${r2(x)}" cy="${r2(y)}" r="${rH}" fill="${PAPPER}" stroke="${INK}" stroke-width="1.5"/>\n`; });
+    ut += `  </g>\n`;
+    return { ut, Hs };
+  };
+  let ut = `  <line x1="${MITT}" y1="18" x2="${MITT}" y2="${H - 18}" stroke="${INK}" stroke-width="2"/>\n`;
+  // --- vänster: jongitter 3×3 uppe till vänster ---
+  const G0x = 60, G0y = 60, steg = 36;
+  for (let r = 0; r < 3; r++) { for (let c = 0; c < 3; c++) { ut += jon(G0x + c * steg, G0y + r * steg, (r + c) % 2 === 0 ? '+' : '−'); } }
+  ut += pil(G0x + 2 * steg + rJ + 14, G0y + steg, 262, G0y + steg, INK, 2.5);
+  // lossnade joner med etiketter
+  ut += jon(300, G0y + steg - 22, '+') + etikett(300, G0y + steg + 26, 'Na', '+', '');
+  ut += jon(352, G0y + steg + 30, '−') + etikett(352, G0y + steg + 78, 'OH', '−', '');
+  ut += `  <text x="${G0x + steg}" y="${G0y + 3 * steg + 8}" text-anchor="middle" font-size="15" fill="${INK}" ${FONT}>natriumhydroxid, fast</text>\n`;
+  ut += bildtext(MITT / 2, 'Hydroxidjonerna fanns redan');
+  // --- höger: NH3 + H2O → NH4+ + OH- ---
+  const y0 = 150;
+  const nh3 = molekyl(455, y0, KVAVE, rN, [200, 90, 340], 'ammoniakmolekyl');           // tre H, lucka uppåt
+  const h2o = molekyl(566, y0 - 34, SYRE, rO, [95, 200], 'vattenmolekyl');   // H-vinkel 105°: en H nedåt, en mot ammoniaken
+  ut += nh3.ut + h2o.ut;
+  // vätejonen som flyttar: från vattnets vänstra H mot kväveatomens lucka (uppåt)
+  const [hx, hy] = h2o.Hs[1];   // vätet som pekar mot ammoniaken → luckan ovanför kväveatomen
+  ut += pil(hx - rH - 2, hy - 4, 455 + 6, y0 - rN - 10, PLUS, 2.5);
+  ut += `  <text x="${r2((hx + 455) / 2 - 4)}" y="${r2(hy - 30)}" text-anchor="middle" font-size="14" fill="${PLUS}" ${FONT}>H<tspan font-size="10" dy="-6">+</tspan></text>\n`;
+  ut += pil(612, y0 + 10, 656, y0 + 10, INK, 3);
+  // resultat: ammoniumjon med fyra H och hakparentes, hydroxidjon
+  const nh4 = molekyl(715, y0 + 8, KVAVE, rN, [225, 315, 45, 135], 'ammoniumjon');
+  ut += nh4.ut;
+  const bx1 = 715 - 64, bx2 = 715 + 64, by1 = y0 + 8 - 60, by2 = y0 + 8 + 60;
+  ut += `  <path d="M${bx1 + 10} ${by1}H${bx1}V${by2}H${bx1 + 10}" fill="none" stroke="${INK}" stroke-width="2.5"/>
+  <path d="M${bx2 - 10} ${by1}H${bx2}V${by2}H${bx2 - 10}" fill="none" stroke="${INK}" stroke-width="2.5"/>
+  <text x="${bx2 + 5}" y="${by1 + 4}" font-size="20" fill="${INK}" ${FONT}>+</text>\n`;
+  const oh = molekyl(650, y0 + 92, SYRE, rO - 4, [0], 'hydroxidjon');
+  ut += oh.ut + etikett(650, y0 + 92 + 46, 'OH', '−', '');
+  ut += `  <text x="455" y="${y0 + 70}" text-anchor="middle" font-size="15" fill="${INK}" ${FONT}>ammoniak</text>
+  <text x="596" y="${y0 - 34 - 34}" text-anchor="middle" font-size="15" fill="${INK}" ${FONT}>vatten</text>\n`;
+  ut += bildtext(MITT + MITT / 2, 'Hydroxidjonen bildades');
+  fs.writeFileSync(path.join(UT3, 'tva-vagar-till-bas.svg'), svg(W, H,
+    'Två vägar till en basisk lösning: natriumhydroxid frigör natriumjoner och hydroxidjoner ur ett jongitter; ammoniak tar upp en vätejon från vatten och bildar ammoniumjon och hydroxidjon', ut));
+}
+
+console.log('skrev 12 svg (8 till repetition/img, 3 till syror/img, 1 till baser/img)', path.relative(path.join(__dirname, '..'), UT));

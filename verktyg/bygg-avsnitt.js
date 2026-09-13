@@ -39,7 +39,7 @@ const B4 = '../../../../';
 // ---------- läs och dela upp leveransen ----------
 const LEV = path.join(ROT, 'doc', 'leveranser', DK.id);   // leveransfiler per delkapitel
 const md = fs.readFileSync(path.join(LEV, `avsnitt-${N}.md`), 'utf8').replace(/\r\n/g, '\n');
-const stopp = md.search(/\n# (Volym|Vad jag ändrat|Vad jag gjort|Djupdykningar|Repetitionsdelkapitlet|Anmärkningar|Om nivåuppdelningen|Att bestämma|Delkapitlet)/);
+const stopp = md.search(/\n# (Volym|Vad jag ändrat|Vad jag gjort|Djupdykningar|Repetitionsdelkapitlet|Anmärkningar|Om nivåuppdelningen|Att bestämma|Delkapitlet|Bearbetningar)/);
 const kropp = stopp > 0 ? md.slice(0, stopp) : md;
 require('./lib-leveranshuvud.js').fyllHuvud(K, path.join(LEV, `avsnitt-${N}.md`));   // titel/slug/underrubrik ur huvudet om konfigurationen saknar dem
 
@@ -161,10 +161,15 @@ function nivaHtml(text, niva) {
   return ut;
 }
 function lista(text) {
-  return text.split('\n').filter(r => /^- /.test(r)).map(r => `              <li>${inline(r.replace(/^- /, ''))}</li>`).join('\n');
+  return text.split('\n').filter(r => /^- /.test(r)).map(r => `              <li>${inline(punktReaktion(r.replace(/^- /, '')))}</li>`).join('\n');
+}
+// punkt som är (eller slutar med "…: ") en ren reaktion utan fetstil → fetmarkera så att inline() gör ett \(\ce{}\) av den
+function punktReaktion(r) {
+  const m = r.match(/^(.*?: )?([^:*]+)$/);
+  return m && arReaktion(m[2]) ? (m[1] || '') + '**' + m[2].trim() + '**' : r;
 }
 function figur(f, niva, spec, cfg, titta) {
-  const fil = cfg.fil || f;
+  const fil = cfg.fil || f;   // får innehålla sökväg relativt img/ när bilden ligger i ett annat delkapitel
   const cap = niva === 'enkel' ? spec.enkel : spec.standard;
   const aktiv = Array.isArray(cfg.aktiv) ? cfg.aktiv.includes(niva) : !!cfg.aktiv;
   if (aktiv) {

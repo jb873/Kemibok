@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basiska lösningar: pH, koncentration och utspädning – Baser – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">3. Basiska lösningar: pH, koncentration och utspädning</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 3</span>
+      <h1>Basiska lösningar: pH, koncentration och utspädning</h1>
+      <p class="subtitel">— hur basiskt och hur mycket —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">pH på den basiska sidan</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Koncentration och utspädning</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-basiska-losningar">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — pH på den basiska sidan ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Basiska lösningar har <strong>pH över 7</strong></li>
+              <li>Ju fler <strong>hydroxidjoner</strong>, desto högre pH</li>
+              <li>Fler hydroxidjoner betyder <strong>färre vätejoner</strong></li>
+              <li><strong>BTB</strong> blir blått i en basisk lösning</li>
+              <li>Samma skala som för syror, andra änden</li>
+            </ul>
+          </div>
+
+          <p>Du kan redan pH-skalan från syrorna. Nu ska vi bara flytta oss till andra sidan av den.</p>
+          <h2>Över 7</h2>
+          <p>En basisk lösning har <strong>pH över 7</strong>. Ju mer basisk lösningen är, desto högre är talet.</p>
+          <p>Det är spegelbilden av det du lärde dig om syror. Där gällde att ju fler vätejoner, desto lägre pH. Här gäller att ju fler hydroxidjoner, desto högre pH.</p>
+          <p>En tvållösning ligger ofta runt pH 9 eller 10. Propplösare kan ligga över 13, och det är en av anledningarna till att den är så farlig.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Var på skalan tvållösningen ligger</li>
+              <li>Hur långt från 7 den ligger jämfört med citronsaften</li>
+              <li>Åt vilket håll lösningarna blir mer basiska</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/../../syror/img/ph-skalan.svg" alt="En pH-skala från 0 till 14, färglagd från rött vid låga värden genom grönt vid 7 till blått vid höga. Magsyra ligger vid 1,5, citronsaft vid 2,5, kaffe vid 5, rent vatten vid 7 och tvållösning vid 9,5. Under skalan står surt till vänster, neutralt vid 7 och basiskt till höger.">
+            <figcaption>Basiska lösningar ligger till höger på skalan, över 7. Ju fler hydroxidjoner, desto högre pH.</figcaption>
+          </figure>
+          <h2>De två jonerna hänger ihop</h2>
+          <p>Här finns något som är värt att tänka igenom.</p>
+          <p>I en lösning finns alltid både vätejoner och hydroxidjoner. I rent vatten finns lika många av varje.</p>
+          <p>Tillsätter du en bas ökar antalet hydroxidjoner. Men samtidigt <strong>minskar</strong> antalet vätejoner — de reagerar med de nya hydroxidjonerna och bildar vatten.</p>
+          <p>De två talen rör sig alltså alltid åt motsatta håll. Blir det fler av det ena blir det färre av det andra.</p>
+          <p>Det betyder att man kan beskriva samma sak på två sätt: en basisk lösning har många hydroxidjoner, eller så har den få vätejoner. Båda stämmer.</p>
+          <h2>Att se det</h2>
+          <p>För att se om en lösning är basisk kan du använda samma indikatorer som förut.</p>
+          <p><strong>BTB</strong> blir <strong>blått</strong> i en basisk lösning. Rött lackmuspapper blir blått. Rödkålsindikator går mot blått och grönt.</p>
+          <p>En pH-mätare visar förstås talet direkt.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>pH över 7 betyder basisk lösning</li>
+              <li>[\(\ce{OH-}\)] > [\(\ce{H3O+}\)] i en basisk lösning</li>
+              <li>De två koncentrationerna <strong>hänger ihop</strong> — ökar den ena minskar den andra</li>
+              <li>BTB blir blått</li>
+              <li>Skalan är densamma, bara andra sidan om 7</li>
+            </ul>
+          </div>
+
+          <p class="inledning">pH-skalan används för att beskriva hur sur eller basisk en vattenlösning är.</p>
+          <p>En basisk lösning har <strong>pH över 7</strong>. Ju större överskott av hydroxidjoner lösningen har, desto högre blir pH.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/../../syror/img/ph-skalan.svg" alt="En pH-skala från 0 till 14, färglagd från rött vid låga värden genom grönt vid 7 till blått vid höga. Magsyra ligger vid 1,5, citronsaft vid 2,5, kaffe vid 5, rent vatten vid 7 och tvållösning vid 9,5. Under skalan står surt till vänster, neutralt vid 7 och basiskt till höger.">
+            <figcaption>Samma skala, andra änden. Fler hydroxidjoner betyder färre oxoniumjoner — de två hänger ihop.</figcaption>
+          </figure>
+          <p>Samtidigt minskar mängden oxoniumjoner, \(\ce{H3O+}\). Mängden oxoniumjoner och hydroxidjoner hänger nämligen ihop: de reagerar med varandra och bildar vatten, så ökar den ena minskar den andra.</p>
+          <p>Ett vanligt sätt att skriva en koncentration är att sätta ämnet inom hakparentes. <strong>[\(\ce{OH-}\)]</strong> betyder alltså koncentrationen av hydroxidjoner.</p>
+          <p>I neutralt vatten är de två koncentrationerna lika stora:</p>
+          <p><strong>[\(\ce{H3O+}\)] = [\(\ce{OH-}\)]</strong></p>
+          <p>I en basisk lösning gäller i stället:</p>
+          <p><strong>[\(\ce{OH-}\)] > [\(\ce{H3O+}\)]</strong></p>
+          <p>Ju större skillnaden blir, desto mer basisk är lösningen.</p>
+          <p>En syra-basindikator kan användas för att visa om en lösning är basisk. <strong>BTB, bromtymolblått</strong>, blir blått i basiska lösningar.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Hur hårt de hänger ihop</h2>
+          <p>Standardtexten säger att koncentrationerna hänger ihop. Sambandet är exakt, och det är värt att se.</p>
+          <p>I vattenlösning gäller alltid vid 25 °C:</p>
+          <p><strong>[\(\ce{H3O+}\)] · [\(\ce{OH-}\)] = \(10^{-14}\)</strong></p>
+          <p>Multiplicerar man de två koncentrationerna får man samma tal, oavsett vad man tillsatt. Det betyder att om den ena tiofaldigas måste den andra bli en tiondel.</p>
+          <p>I rent vatten är båda \(10^{-7}\), och \(10^{-7}\) gånger \(10^{-7}\) blir \(10^{-14}\). Det är därför neutralt ligger just vid pH 7.</p>
+          <p>En basisk lösning med pH 11 har oxoniumjonkoncentrationen \(10^{-11}\). Hydroxidjonkoncentrationen måste då vara \(10^{-3}\), eftersom \(10^{-11}\) gånger \(10^{-3}\) blir \(10^{-14}\).</p>
+          <h2>pOH</h2>
+          <p>Eftersom hydroxidjonerna är lika intressanta som oxoniumjonerna finns ett mått för dem också.</p>
+          <p><strong>pOH</strong> fungerar precis som pH, fast för hydroxidjoner. En lösning med hydroxidjonkoncentrationen \(10^{-3}\) har pOH 3.</p>
+          <p>Och eftersom produkten alltid är \(10^{-14}\) följer ett enkelt samband:</p>
+          <p><strong>pH + pOH = 14</strong></p>
+          <p>En lösning med pH 11 har alltså pOH 3. En med pH 3 har pOH 11. I rent vatten är båda 7.</p>
+          <p>Var noga med vad som adderas. Det är inte koncentrationerna som blir 14 — det är pH och pOH.</p>
+          <h2>Varför gränserna inte är absoluta</h2>
+          <p>Skalan brukar ritas från 0 till 14, och för vanliga lösningar räcker det.</p>
+          <p>Men talen är inte gränser i sig. En mycket koncentrerad stark syra kan ha pH under 0, och en mycket koncentrerad stark bas kan ha pH över 14. I praktiken förekommer värden omkring −1 och 15.</p>
+          <p>Vid så höga koncentrationer fungerar dock inte de enkla sambanden lika bra, och skalan ska därför inte tänkas som en linjal som fortsätter obegränsat åt båda hållen.</p>
+          <p><strong>Om modellen:</strong> standardtexten säger att de två jonerna hänger ihop. Med jonprodukten blir det mätbart — och pH-skalans mittpunkt och längd faller ut som en konsekvens i stället för att vara något man måste memorera.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Koncentration och utspädning ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Styrka</strong> och <strong>koncentration</strong> är två olika saker, precis som hos syror</li>
+              <li>Fyra kombinationer: stark/svag × koncentrerad/utspädd</li>
+              <li>Späder man en bas <strong>sjunker pH mot 7</strong></li>
+              <li>Basen blir <strong>inte svagare</strong> av att spädas</li>
+              <li>Starka baser utvecklar <strong>värme</strong> när de löses — häll basen i vattnet</li>
+            </ul>
+          </div>
+
+          <p>Nu kommer samma skillnad som hos syrorna, och den är lika viktig här.</p>
+          <h2>Två olika saker</h2>
+          <p><strong>Stark och svag</strong> beskriver hur fullständigt basen ger hydroxidjoner. Det är en egenskap hos ämnet, och den ändras aldrig.</p>
+          <p><strong>Koncentrerad och utspädd</strong> beskriver hur mycket bas som finns i lösningen. Det kan du ändra genom att hälla i mer vatten.</p>
+          <p>Eftersom de är oberoende kan de kombineras fritt, precis som hos syrorna:</p>
+          <ul><li>stark och koncentrerad</li><li>stark och utspädd</li><li>svag och koncentrerad</li><li>svag och utspädd</li></ul>
+          <p>Natriumhydroxid är en stark bas. Men häller du en nypa i en hink vatten är lösningen utspädd, och den kan ha ganska måttligt pH.</p>
+          <p>Ammoniak är en svag bas. Men en ammoniaklösning kan ändå vara koncentrerad om den innehåller mycket ammoniak per liter.</p>
+          <h2>Att späda ut</h2>
+          <p>När du tillsätter vatten till en basisk lösning fördelas hydroxidjonerna i mer vätska. Det går alltså färre hydroxidjoner på varje liter.</p>
+          <p>Koncentrationen minskar, och <strong>pH sjunker mot 7</strong>. Lösningen blir mindre basisk.</p>
+          <p>Men lägg märke till vad som inte hänt. Basen har inte blivit svagare. En stark bas är precis lika stark efter utspädningen — det finns bara mindre av den per liter.</p>
+          <p>Det är exakt samma resonemang som när du spädde ut en syra, fast åt andra hållet på skalan.</p>
+          <h2>Säkerhet vid utspädning</h2>
+          <p>Starka baser kan utveckla mycket värme när de löses i vatten. Natriumhydroxid är värst — fast natriumhydroxid som möter vatten blir hett snabbt.</p>
+          <p>Därför gäller samma princip som med syror. <strong>Tillsätt basen till vattnet, lite i taget, och rör om.</strong> Häll aldrig en liten mängd vatten på en stor mängd fast eller koncentrerad bas — då hettar den lilla vattenmängden upp sig så fort att den kan koka och stänka.</p>
+          <p><strong>Skyddsglasögon ska alltid användas</strong> när du arbetar med starka baser. Ögon är det som skadas allvarligast.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Styrka och koncentration måste hållas isär</li>
+              <li>En stark bas kan vara utspädd, en svag bas koncentrerad</li>
+              <li>Utspädning minskar koncentrationen av hydroxidjoner, pH sjunker mot 7</li>
+              <li>Styrkan är oförändrad efter utspädning</li>
+              <li>Natriumhydroxid utvecklar mycket värme — tillsätt basen till vattnet</li>
+            </ul>
+          </div>
+
+          <p class="inledning">När man beskriver en bas måste man hålla isär två olika egenskaper: <strong>styrka</strong> och <strong>koncentration</strong>.</p>
+          <p>En bas kan vara:</p>
+          <ul><li>stark och koncentrerad</li><li>stark och utspädd</li><li>svag och koncentrerad</li><li>svag och utspädd</li></ul>
+          <p>Natriumhydroxid är till exempel en stark bas. Men om en mycket liten mängd natriumhydroxid finns i en stor mängd vatten är lösningen utspädd.</p>
+          <p>Ammoniak är en svag bas. Men en ammoniaklösning kan ändå vara koncentrerad om den innehåller mycket ammoniak per liter.</p>
+          <p>När en basisk lösning späds med vatten minskar koncentrationen av hydroxidjoner. Det finns då färre hydroxidjoner per liter lösning.</p>
+          <p>Därför sjunker pH-värdet och närmar sig 7.</p>
+          <p>Lösningen blir alltså <strong>mindre basisk</strong>, men själva basen har inte blivit svagare. En stark bas är fortfarande en stark bas även när den späds ut.</p>
+          <h2>Säkerhet vid utspädning</h2>
+          <p>Starka baser kan utveckla mycket värme när de löses i vatten. Detta gäller särskilt natriumhydroxid.</p>
+          <p>Därför måste utspädning ske försiktigt. Basen tillsätts gradvis till vatten under omrörning. Man ska inte hälla en större mängd vatten direkt på koncentrerad eller fast stark bas, eftersom kraftig värmeutveckling kan göra att vätskan börjar koka eller stänka.</p>
+          <p>Skyddsglasögon ska alltid användas när man arbetar med starka baser.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför pH aldrig når 7 vid utspädning</h2>
+          <p>Samma sak gäller som för syror, men åt andra hållet.</p>
+          <p>Späder du en basisk lösning tio gånger sjunker pH ett steg. Tio gånger till, ett steg till. Men fortsätter du bortom pH 8 börjar vattnets egna joner ta över.</p>
+          <p>Rent vatten har hydroxidjonkoncentrationen \(10^{-7}\). När basens eget bidrag närmar sig den nivån blir vattnets egna joner dominerande, och pH planar ut strax över 7.</p>
+          <p>En basisk lösning kan alltså aldrig bli sur genom utspädning — bara alltmer nära neutral.</p>
+          <h2>Varför natriumhydroxid blir så hett</h2>
+          <p>Standardtexten säger att natriumhydroxid utvecklar mycket värme. Förklaringen mötte du i repetitionsavsnitt 5.</p>
+          <p>När ett ämne löses sker tre saker: bindningarna i ämnet bryts, vätebindningar mellan vattenmolekyler bryts, och nya bindningar mellan vattenmolekyler och joner bildas. De två första kostar energi, den tredje frigör energi.</p>
+          <p>För natriumhydroxid frigör det tredje steget betydligt mer än de två första kostar. Överskottet blir värme, och eftersom natriumjonen och hydroxidjonen båda är små och kraftigt hydratiserade blir överskottet stort.</p>
+          <p>En koncentrerad natriumhydroxidlösning kan bli över 50 grader varm när den bereds — utan att någon värmt den.</p>
+          <h2>Därför gäller samma regel som SIV</h2>
+          <p>Principen är identisk med syrornas SIV-regel, och den bygger på vattnets värmekapacitet.</p>
+          <p>Häller du basen i mycket vatten fördelas energin i en stor vattenmängd, och temperaturen stiger måttligt. Häller du vatten på fast bas frigörs samma energi i den lilla vattenmängd som just tillsatts, och den kan koka omedelbart.</p>
+          <p>Skillnaden mot syror är att fast natriumhydroxid dessutom drar åt sig fukt ur luften. Lämnar du burken öppen blir pelletsen klibbiga och börjar lösa sig i sin egen upptagna fukt.</p>
+          <p><strong>Om modellen:</strong> standardtexten ger en säkerhetsregel. Med energiresonemanget blir den en följd av vad upplösning är — och samma princip förklarar både syrornas och basernas hantering.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-3-basiska-losningar.json"
+           data-avsnitt="a3_basiska-losningar">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-3-basiska-losningar.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a3_basiska-losningar';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'baser';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

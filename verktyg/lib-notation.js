@@ -16,7 +16,8 @@ function ceify(s) {
   return s.replace(/[₀-₉]/g, c => SUB[c]).replace(/²([⁺⁻])/g, '^2$1').replace(/³([⁺⁻])/g, '^3$1')
     .replace(/⁺/g, '+').replace(/⁻/g, '-').replace(/→/g, '->').replace(/⇌/g, '<=>').replace(/\s+/g, ' ').trim();
 }
-const FORMELTOKEN = /(?:[A-Z][a-z]?[₀-₉]*)+(?:[²³]?[⁺⁻])?|\be[⁺⁻]/g;
+// element med index, ev. parentesgrupper (Ca(OH)₂), ev. laddning; samt elektronen e⁻
+const FORMELTOKEN = /(?:[A-Z][a-z]?[₀-₉]*|\((?:[A-Z][a-z]?[₀-₉]*)+\)[₀-₉]+)+(?:[²³]?[⁺⁻])?|\be[⁺⁻]/g;
 // tiopotens med valfri mantissa: "6,02 · 10²³", "1 · 10⁻⁷", "10⁻¹⁴"; inte föregånget av bokstav/siffra (dm³ lämnas)
 const TIOPOTENS = /(?<![\p{L}\d])(?:(\d+(?:,\d+)?) · )?(\d+)(⁻?)([⁰¹²³⁴-⁹]+)/gu;
 // en reaktion: bara formeltokens, koefficienter, +, →/⇌ och parenteser – "HCl + H₂O → H₃O⁺ + Cl⁻"
