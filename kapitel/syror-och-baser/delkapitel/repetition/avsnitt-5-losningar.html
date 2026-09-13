@@ -25,7 +25,7 @@
       </nav>
       <span class="avsnitt-label">Avsnitt 5</span>
       <h1>Lösningar</h1>
-      <p class="subtitel">— {{kort underrubrik}} —</p>
+      <p class="subtitel">— vad som händer när något löser sig —</p>
     </div>
   </header>
 
@@ -48,15 +48,19 @@
     <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
     <section class="flik-innehall" data-flik="las" role="tabpanel">
 
-      <!-- Underdelsväljare (2-4 underdelar) – antal och titlar kommer med texterna -->
+      <!-- Underdelsväljare -->
       <div class="underdel-valjare" role="tablist" aria-label="Textval">
         <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
           <span class="underdel-bokstav">A</span>
-          <span class="underdel-titel">{{Underdel A-titel}}</span>
+          <span class="underdel-titel">Vad en lösning är</span>
         </button>
         <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
           <span class="underdel-bokstav">B</span>
-          <span class="underdel-titel">{{Underdel B-titel}}</span>
+          <span class="underdel-titel">Hur olika ämnen löser sig</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Koncentration och löslighet</span>
         </button>
       </div>
 
@@ -68,37 +72,294 @@
         <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
       </div>
 
-      <!-- UNDERDEL A (aktiv = utan dold) -->
+      <!-- ==================== UNDERDEL A — Vad en lösning är ==================== -->
       <div class="underdel-text" data-underdel="a">
 
         <!-- 📗 ENKEL -->
         <div class="niva-innehall brodtext dold" data-niva="enkel">
-          <p>{{enkel brödtext, underdel A}}</p>
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En <strong>lösning</strong> bildas när ett ämne fördelar sig jämnt i ett annat</li>
+              <li>Ämnet som löser kallas <strong>lösningsmedel</strong></li>
+              <li>Ämnet som löses kallas <strong>löst ämne</strong></li>
+              <li>Det lösta ämnet <strong>försvinner inte</strong> — partiklarna sprids ut</li>
+              <li>Vatten är det vanligaste lösningsmedlet</li>
+            </ul>
+          </div>
+
+          <p>Många av de ämnen du möter till vardags är blandningar. Havsvatten är vatten med salt i, läsk är vatten med socker och kolsyra, och blodet i din kropp är vatten med en mängd ämnen lösta i sig. En viktig sorts blandning kallas <strong>lösning</strong>.</p>
+          <h2>Två roller</h2>
+          <p>En lösning bildas när ett ämne fördelar sig jämnt i ett annat. De två ämnena får olika namn beroende på vilken roll de har.</p>
+          <p>Ämnet som löser det andra kallas <strong>lösningsmedel</strong>, och ämnet som löses kallas <strong>löst ämne</strong>. Löser du socker i vatten är vattnet lösningsmedel och sockret det lösta ämnet. Vanligtvis är lösningsmedlet det det finns mest av.</p>
+          <h2>Ämnet försvinner inte</h2>
+          <p>Det ser ut som om sockret försvinner när du rör om. Det gör det inte.</p>
+          <p>Sockerpartiklarna finns kvar precis som förut, men de har spridits ut och fördelat sig mellan vattenmolekylerna. De är för små för att synas var för sig, och därför ser lösningen klar ut.</p>
+          <p>Du kan övertyga dig själv på två sätt. Vattnet smakar sött, vilket det inte gjorde innan. Och låter du vattnet avdunsta ligger sockret kvar.</p>
+          <h2>Varför vatten löser så mycket</h2>
+          <p>Vatten är det vanligaste lösningsmedlet på jorden, och det är ingen slump. I förra avsnittet lärde du dig att vattenmolekylen är <strong>polär</strong> — den har en svagt negativ sida vid syret och svagt positiva sidor vid vätena. Det gör att vattenmolekyler kan attrahera andra partiklar som är laddade eller polära.</p>
+          <p>När ett ämne hamnar i vatten kan vattenmolekylerna lägga sig runt partiklarna och dra i dem från olika håll. Är dragningen tillräckligt stark lossnar partiklarna från varandra och sprids ut i vattnet, och då säger vi att ämnet har lösts. Exakt hur det går till beror på vad för slags ämne det är, och det är vad nästa del handlar om.</p>
         </div>
 
-        <!-- 📘 STANDARD (default synlig = utan dold) -->
+        <!-- 📘 STANDARD -->
         <div class="niva-innehall brodtext" data-niva="standard">
-          <p>{{standard brödtext, underdel A}}</p>
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En <strong>lösning</strong> är en blandning där ett ämne fördelats jämnt i ett annat</li>
+              <li><strong>Lösningsmedlet</strong> är det ämne som löser, oftast vatten</li>
+              <li>Det <strong>lösta ämnet</strong> är det som fördelas</li>
+              <li>Partiklarna finns kvar men sprids mellan lösningsmedlets partiklar</li>
+              <li>Vattnets <strong>polaritet</strong> gör det till ett ovanligt bra lösningsmedel</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Många ämnen omkring oss finns blandade med andra ämnen, och en viktig typ av blandning är en <strong>lösning</strong>.</p>
+          <p>En lösning bildas när ett ämne fördelas jämnt i ett annat ämne. Det ämne som löser det andra kallas <strong>lösningsmedel</strong>, och det ämne som löses kallas <strong>löst ämne</strong>. Om man till exempel löser socker i vatten är vattnet lösningsmedel och sockret det lösta ämnet.</p>
+          <p>När ett ämne löses försvinner det inte. Partiklarna finns fortfarande kvar, men de sprids ut och fördelas mellan lösningsmedlets partiklar.</p>
+          <h2>Vatten är ett polärt lösningsmedel</h2>
+          <p>Vatten är ett mycket viktigt lösningsmedel, och det beror på att vattenmolekylen är <strong>polär</strong>.</p>
+          <p>Vattenmolekylen har en svagt negativ sida vid syreatomen och svagt positiva sidor vid väteatomerna. Därför kan vattenmolekyler attrahera andra laddade eller polära partiklar.</p>
+          <p>När ett ämne hamnar i vatten kan vattenmolekylerna lägga sig runt partiklarna och dra i dem från olika håll. Om krafterna mellan vattenmolekylerna och ämnets partiklar är tillräckligt starka kan partiklarna skiljas från varandra och spridas ut i vattnet. Ämnet har då lösts.</p>
         </div>
 
-        <!-- 📕 FÖRDJUPNING — i repetitionsdelkapitlet alltid ifylld (sannare modell) -->
+        <!-- 📕 FORDJUPNING -->
         <div class="niva-innehall brodtext dold" data-niva="fordjupning">
-          <p>{{fordjupning brödtext, underdel A}}</p>
+
+          <h2>Varför löser sig något alls?</h2>
+          <p>Standardtexten sa att partiklar löses om krafterna är tillräckligt starka. Men tillräckligt starka jämfört med vad?</p>
+          <p>Att lösa ett ämne innebär alltid att befintliga bindningar bryts och nya bildas. Tre saker sker samtidigt när salt hamnar i vatten. Attraktionen mellan jonerna i kristallen måste brytas, vilket kräver energi. Vätebindningar mellan vattenmolekyler måste brytas för att ge plats, vilket också kräver energi. Och nya bindningar mellan vattenmolekyler och joner bildas, vilket frigör energi.</p>
+          <p>Om det tredje ger mer än de två första kostar, löser sig ämnet lätt. Är det ungefär jämnt kan ämnet lösas ändå, men lösningen blir då kall — energin tas från omgivningen.</p>
+          <p>Det kan du känna. Löser du ammoniumnitrat i vatten blir bägaren märkbart kall, och det är precis principen bakom kylpåsar från apoteket. Löser du i stället kalciumklorid blir vattnet varmt, och det är principen bakom värmepåsar.</p>
+          <h2>Och en sak till som driver på</h2>
+          <p>Energi är inte hela historien. Det finns en andra drivkraft som kallas <strong>entropi</strong>, ungefär oordning eller utspriddhet.</p>
+          <p>Naturen går över tid mot mer oordnade tillstånd, helt enkelt för att det finns långt fler sätt att vara oordnad på än att vara ordnad. Ett saltkorn där varje jon har sin bestämda plats är extremt ordnat. Samma joner utspridda i en liter vatten är oordnade, och det finns ofantligt många fler sätt att vara utspridd på.</p>
+          <p>Därför kan ämnen lösas även när energiräkningen går back. Utspridningen i sig är en vinst.</p>
+          <p><strong>Om modellen:</strong> standardtexten talade om krafter som är "tillräckligt starka", vilket är sant men cirkulärt. Med energibalans och entropi blir upplösning något du kan resonera om — och det förklarar varför vissa ämnen kyler ner vattnet när de löses, vilket krafterna ensamma inte kan.</p>
         </div>
 
       </div>
 
-      <!-- UNDERDEL B (dold tills vald) -->
+      <!-- ==================== UNDERDEL B — Hur olika ämnen löser sig ==================== -->
       <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
         <div class="niva-innehall brodtext dold" data-niva="enkel">
-          <p>{{enkel brödtext, underdel B}}</p>
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Jonbundna ämnen</strong> löses genom att vattenmolekylerna drar isär jonerna</li>
+              <li>Jonerna blir <strong>fria</strong> i vattnet men finns kvar</li>
+              <li><strong>Polära molekyler</strong> löses också, men blir inte joner</li>
+              <li><strong>Opolära ämnen</strong> löser sig dåligt i vatten</li>
+              <li>Regeln kallas <strong>lika löser lika</strong></li>
+            </ul>
+          </div>
+
+          <p>Olika ämnen löser sig på olika sätt, beroende på hur de är byggda. Det är här allt du lärt dig i de tidigare avsnitten kommer till användning.</p>
+          <h2>När jonbundna ämnen löses</h2>
+          <p>I ett jonbundet ämne som koksalt hålls positiva och negativa joner samman i ett regelbundet mönster. Det du lärde dig i avsnitt 3.</p>
+          <p>När saltet hamnar i vatten händer något. Vattenmolekylerna är polära och kan därför vända rätt sida mot varje jon: den svagt negativa syresidan vänds mot de positiva jonerna, och de svagt positiva vätesidorna vänds mot de negativa jonerna.</p>
+          <p>Många vattenmolekyler lägger sig på det sättet runt varje jon och drar i den från olika håll. Blir den samlade dragningen starkare än attraktionen som håller jonen kvar i kristallen, lossnar jonen och sprids ut i vattnet.</p>
+          <!-- BILD: jon-loses-i-vatten.webp – levereras senare, avkommentera när filen finns i img/.
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul><li>{{bildguide saknas i leveransen – 2–5 punkter}}</li></ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/jon-loses-i-vatten.webp" alt="Ett hörn av en saltkristall i vatten. Vattenmolekyler omger en positiv jon med sina syresidor vända inåt, och en negativ jon med sina vätesidor vända inåt. Jonerna är på väg att lossna från kristallen.">
+            <figcaption>Vattenmolekylerna vänder rätt sida mot varje jon och drar loss den från kristallen.</figcaption>
+          </figure>
+          -->
+          <p>De positiva och negativa jonerna finns fortfarande kvar. Men de är inte längre bundna till varandra — de simmar omkring var för sig, omgivna av vattenmolekyler.</p>
+          <p>Det är alltså vattnets polaritet som gör att jonbundna ämnen kan lösas. Och att det finns fria joner i lösningen får stor betydelse längre fram, när vi kommer till syror och baser.</p>
+          <h2>När molekylära ämnen löses</h2>
+          <p>Ämnen som består av molekyler kan också lösas i vatten, men något annat händer med dem. Socker är ett exempel. Sockermolekyler är polära, och därför attraheras de av vattenmolekylerna på ungefär samma sätt som joner gör. Vattenmolekylerna lägger sig runt sockermolekylerna och drar isär dem från varandra.</p>
+          <p>Men här är skillnaden: sockermolekylerna <strong>blir inte joner</strong>. De delas inte upp i laddade delar utan finns kvar som hela molekyler, bara utspridda mellan vattenmolekylerna.</p>
+          <p>Det är därför sockerlösning inte leder ström, medan saltlösning gör det. I saltlösningen finns fria laddningar som kan röra sig, i sockerlösningen finns det inte.</p>
+          <h2>När ämnen inte löser sig</h2>
+          <p>Opolära ämnen löser sig oftast dåligt i vatten. Olja är det tydligaste exemplet. Oljemolekyler är opolära — de har ingen positiv och ingen negativ sida — och därför har vattenmolekylerna ingenting att haka tag i. Vattenmolekylerna håller hellre ihop med varandra, och oljan trängs undan till ett eget lager.</p>
+          <!-- BILD: polart-och-opolart.webp – levereras senare, avkommentera när filen finns i img/.
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul><li>{{bildguide saknas i leveransen – 2–5 punkter}}</li></ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/polart-och-opolart.webp" alt="Två glas. I det vänstra är olja och vatten skilda i två lager med en tydlig gräns. I det högra har socker lösts i vattnet och vätskan är genomskinlig och enhetlig.">
+            <figcaption>Olja är opolärt och blandar sig inte med vatten. Socker är polärt och löser sig.</figcaption>
+          </figure>
+          -->
+          <h2>Lika löser lika</h2>
+          <p>Det ger en av kemins mest användbara tumregler:</p>
+          <p><strong>lika löser lika</strong></p>
+          <p>Polära ämnen löser sig bra i polära lösningsmedel. Opolära ämnen löser sig bra i opolära lösningsmedel. Blandar man polärt och opolärt händer däremot inte mycket.</p>
+          <p>Det förklarar varför fettfläckar inte går bort med bara vatten, men går bort med diskmedel. Och det förklarar varför vissa saker doftar starkare i olja än i vatten.</p>
         </div>
+
+        <!-- 📘 STANDARD -->
         <div class="niva-innehall brodtext" data-niva="standard">
-          <p>{{standard brödtext, underdel B}}</p>
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vattnets polaritet gör att molekylerna kan orientera sig efter laddning</li>
+              <li>I jonbundna ämnen dras <strong>jonerna isär</strong> och sprids i vattnet</li>
+              <li>I molekylära ämnen sprids <strong>hela molekyler</strong> ut, de delas inte</li>
+              <li>Opolära ämnen som olja löses dåligt i vatten</li>
+              <li><strong>Lika löser lika</strong> — polärt i polärt, opolärt i opolärt</li>
+            </ul>
+          </div>
+
+          <h2>När jonbundna ämnen löses</h2>
+          <p class="inledning">I ett jonbundet ämne hålls positiva och negativa joner samman av elektriska krafter i ett regelbundet mönster.</p>
+          <p>När ämnet hamnar i vatten påverkas jonerna av vattenmolekylernas polaritet. Vattenmolekylens svagt negativa sida dras mot positiva joner, medan den svagt positiva sidan dras mot negativa joner.</p>
+          <p>Vattenmolekylerna kan därför lägga sig runt jonerna och dra i dem från olika håll. Om attraktionskraften mellan vattenmolekylerna och jonerna blir tillräckligt stor kan jonerna skiljas från varandra och spridas ut i vattnet.</p>
+          <!-- BILD: jon-loses-i-vatten.webp – levereras senare, avkommentera när filen finns i img/.
+          <figure class="brodtext-bild standard">
+            <img src="img/jon-loses-i-vatten.webp" alt="Ett hörn av en saltkristall i vatten. Vattenmolekyler omger en positiv jon med sina syresidor vända inåt, och en negativ jon med sina vätesidor vända inåt. Jonerna är på väg att lossna från kristallen.">
+            <figcaption>Vattnets polaritet gör att molekylerna kan orientera sig efter jonernas laddning. Tillräckligt många vattenmolekyler som drar samtidigt övervinner attraktionen i kristallen.</figcaption>
+          </figure>
+          -->
+          <p>De positiva och negativa jonerna finns då kvar, men de är inte längre bundna tillsammans på samma sätt som i det fasta ämnet. Det är alltså vattnets polaritet som gör att många jonbundna ämnen kan lösas i vatten.</p>
+          <p>Att lösningen innehåller fria, rörliga joner får betydelse längre fram — det är därför sådana lösningar leder elektrisk ström, och det är utgångspunkten när vi kommer till syror och baser.</p>
+          <h2>När molekylära ämnen löses</h2>
+          <p>Även ämnen som består av molekyler kan lösas i vatten.</p>
+          <p>Polära molekyler kan ofta attraheras av vattenmolekyler, eftersom även de har ojämnt fördelade laddningar. Socker är ett exempel på ett molekylärt ämne som kan lösas i vatten — vattenmolekylerna attraherar olika delar av sockermolekylerna och drar isär dem från varandra.</p>
+          <p>Sockermolekylerna förändras däremot inte till joner när de löses. De finns kvar som molekyler, men sprids ut mellan vattenmolekylerna. Det är skillnaden mot jonbundna ämnen, och det är också förklaringen till att en sockerlösning inte leder ström.</p>
+          <h2>Opolära ämnen</h2>
+          <p>Opolära ämnen löser sig oftast dåligt i vatten.</p>
+          <p>Olja är ett exempel. Oljemolekylerna är opolära och attraheras därför inte särskilt starkt av vattenmolekylerna, som hellre håller ihop med varandra. Därför blandas olja och vatten dåligt.</p>
+          <!-- BILD: polart-och-opolart.webp – levereras senare, avkommentera när filen finns i img/.
+          <figure class="brodtext-bild standard">
+            <img src="img/polart-och-opolart.webp" alt="Två glas. I det vänstra är olja och vatten skilda i två lager med en tydlig gräns. I det högra har socker lösts i vattnet och vätskan är genomskinlig och enhetlig.">
+            <figcaption>Lika löser lika. Polära ämnen löser sig i polära lösningsmedel, opolära i opolära.</figcaption>
+          </figure>
+          -->
+          <p>En vanlig regel inom kemin är därför:</p>
+          <p><strong>lika löser lika</strong></p>
+          <p>Det betyder att polära ämnen ofta löser sig bra i polära lösningsmedel, medan opolära ämnen löser sig bättre i opolära lösningsmedel.</p>
         </div>
+
+        <!-- 📕 FORDJUPNING -->
         <div class="niva-innehall brodtext dold" data-niva="fordjupning">
-          <p>{{fordjupning brödtext, underdel B}}</p>
+
+          <h2>Varför löser sig inte allt salt?</h2>
+          <p>Regeln lika löser lika antyder att alla jonföreningar borde lösa sig i vatten, eftersom joner är så laddade de kan bli. Men så är det inte. Koksalt löser sig utmärkt, medan kalk — kalciumkarbonat — knappt löser sig alls, och silverklorid är i praktiken olösligt.</p>
+          <p>Skillnaden ligger i en tävling mellan två attraktioner.</p>
+          <p>Å ena sidan attraktionen mellan jonerna i kristallen, som håller ihop den. Å andra sidan attraktionen mellan vattenmolekylerna och de enskilda jonerna, som drar isär den. Vinner den andra löser sig ämnet. Vinner den första blir kristallen kvar.</p>
+          <p>Attraktionen i kristallen växer kraftigt med laddningen. Natrium- och kloridjoner har laddningarna plus ett och minus ett. Kalciumjoner har plus två och karbonatjoner minus två, och dubbla laddningar ger mycket starkare bindning i gittret — samma sak som gjorde magnesiumoxidens smältpunkt så hög.</p>
+          <p>Att kalk är svårlösligt är därför inte ett undantag från regeln, utan en konsekvens av att den ena sidan i tävlingen råkar vara mycket stark.</p>
+          <p>Det här får praktisk betydelse. Kalk som inte löser sig är vad som bygger upp droppstenar i grottor, vad som sätter igen kaffebryggaren, och vad som gör att kalksten kan användas som byggnadsmaterial utan att lösas upp i regn. Nästan.</p>
+          <h2>Och varför olja faktiskt inte löser sig</h2>
+          <p>Den vanliga förklaringen är att vattenmolekylerna hellre håller ihop med varandra än med oljan. Det är sant, men bilden är mer intressant än så.</p>
+          <p>En oljemolekyl i vatten tvingar vattenmolekylerna runt omkring att ordna sig. De kan inte bilda vätebindningar in mot oljan, så de vänder sig och bildar ett ordnat skal runt den i stället.</p>
+          <p>Ordning är entropimässigt dyrt, som vi såg i fördjupningen till underdel A. Ju mer oljeyta som exponeras mot vatten, desto fler vattenmolekyler tvingas in i ett ordnat skal.</p>
+          <p>Därför klumpar oljedropparna ihop sig. Två små droppar som blir en stor har mindre sammanlagd yta än de hade var för sig, och färre vattenmolekyler behöver ordna sig. Oljan skiljer sig inte från vattnet för att den stöts bort — den gör det för att vattnet vinner på att hålla ihop.</p>
+          <p><strong>Om modellen:</strong> lika löser lika är en utmärkt tumregel och stämmer nästan alltid. Men den beskriver ett utfall, inte en orsak. Under den ligger samma två drivkrafter som i förra fördjupningen: vilka bindningar som ger mest energi, och hur ordnat resultatet blir.</p>
         </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Koncentration och löslighet ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Koncentration</strong> säger hur mycket löst ämne det finns i lösningen</li>
+              <li>Mycket löst ämne = <strong>koncentrerad</strong>, lite = <strong>utspädd</strong></li>
+              <li><strong>Löslighet</strong> är hur mycket av ett ämne som går att lösa</li>
+              <li>Lösligheten beror på ämnet, lösningsmedlet och <strong>temperaturen</strong></li>
+              <li>När inget mer kan lösas är lösningen <strong>mättad</strong></li>
+            </ul>
+          </div>
+
+          <p>När man beskriver en lösning räcker det inte att veta vilka ämnen som ingår. Man behöver också veta hur mycket.</p>
+          <h2>Koncentration</h2>
+          <p>Hur mycket löst ämne en lösning innehåller kallas lösningens <strong>koncentration</strong>. En lösning med mycket löst ämne i förhållande till mängden lösningsmedel har hög koncentration, och en lösning med lite löst ämne har låg koncentration. Man brukar säga att lösningen är <strong>koncentrerad</strong> respektive <strong>utspädd</strong>.</p>
+          <p>Koncentrationen går att ändra på två sätt. Tillsätter du mer av det lösta ämnet ökar den. Tillsätter du mer lösningsmedel minskar den, och lösningen blir mer utspädd.</p>
+          <p>Det känner du igen från saft. Samma mängd saftkoncentrat blir svagare ju mer vatten du häller i.</p>
+          <h2>Löslighet</h2>
+          <p>Det går inte att lösa hur mycket som helst av ett ämne. Hur mycket som går kallas ämnets <strong>löslighet</strong>. Lösligheten beror på tre saker: vilket ämne det är, vilket lösningsmedel som används, och vilken temperatur det är.</p>
+          <p>För de flesta fasta ämnen ökar lösligheten när temperaturen stiger. Det betyder att du oftast kan lösa mer av ett ämne i varmt vatten än i kallt, och det är därför socker löser sig lättare i varmt te än i kallt.</p>
+          <h2>Mättad lösning</h2>
+          <p>Fortsätter du att tillsätta ett ämne kommer du till slut till en punkt där inget mer löser sig. Lösningen är då <strong>mättad</strong>. Allt du tillsätter därefter blir liggande olöst, oavsett hur mycket du rör om.</p>
+          <!-- BILD: mattad-losning.webp – levereras senare, avkommentera när filen finns i img/.
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul><li>{{bildguide saknas i leveransen – 2–5 punkter}}</li></ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/mattad-losning.webp" alt="Tre glas i rad. I det första har lite salt lösts helt. I det andra mer salt, också helt löst. I det tredje ligger olöst salt kvar på botten trots omrörning.">
+            <figcaption>Till slut går det inte att lösa mer. Då är lösningen mättad, och resten lägger sig på botten.</figcaption>
+          </figure>
+          -->
+          <p>En mättad lösning innehåller alltså så mycket löst ämne som över huvud taget kan lösas under de förhållanden som råder just då. Ändrar du förhållandena — värmer du till exempel upp lösningen — kan mer lösas igen.</p>
+          <h2>Vad du tar med dig</h2>
+          <p>Det här avsnittet avslutar repetitionen, och det mesta i det bygger på det du redan gått igenom. Att vatten löser så mycket beror på att vattenmolekylen är polär, vilket i sin tur beror på hur elektronerna delas i de kovalenta bindningarna. Att salt löses till fria joner beror på att salt hålls ihop av jonbindningar, som vattenmolekylerna kan bryta.</p>
+          <p>Och just de fria jonerna i lösning är utgångspunkten för nästa område. Syror och baser handlar om vad särskilda joner gör i vattenlösning, och nu har du allt du behöver för att förstå det.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Koncentration</strong> anger mängden löst ämne i förhållande till lösningsmedlet</li>
+              <li>Lösningar beskrivs som <strong>koncentrerade</strong> eller <strong>utspädda</strong></li>
+              <li><strong>Löslighet</strong> är den största mängd som kan lösas under givna förhållanden</li>
+              <li>För de flesta fasta ämnen <strong>ökar lösligheten med temperaturen</strong></li>
+              <li>En <strong>mättad lösning</strong> innehåller så mycket löst ämne som kan lösas</li>
+            </ul>
+          </div>
+
+          <h2>Koncentration</h2>
+          <p class="inledning">När vi beskriver en lösning är det ofta viktigt att veta hur mycket löst ämne som finns i lösningen. Det kallas lösningens <strong>koncentration</strong>.</p>
+          <p>En lösning med mycket löst ämne i förhållande till mängden lösningsmedel har hög koncentration, medan en lösning med lite löst ämne har låg koncentration. Man brukar därför tala om <strong>koncentrerade</strong> och <strong>utspädda</strong> lösningar.</p>
+          <p>Om mer av det lösta ämnet tillsätts ökar koncentrationen. Om mer lösningsmedel tillsätts minskar den, och lösningen blir mer utspädd.</p>
+          <h2>Löslighet</h2>
+          <p>Alla ämnen löser sig inte lika lätt, och det går inte alltid att lösa hur mycket som helst.</p>
+          <p>Hur mycket av ett ämne som kan lösas i ett visst lösningsmedel kallas ämnets <strong>löslighet</strong>. Lösligheten beror bland annat på vilket ämne det är, vilket lösningsmedel som används och temperaturen.</p>
+          <p>För många fasta ämnen ökar lösligheten när temperaturen stiger. Det innebär att man ofta kan lösa mer av ett ämne i varmt vatten än i kallt vatten.</p>
+          <h2>Mättad lösning</h2>
+          <p>Om man fortsätter att tillsätta ett ämne till en lösning kommer man till slut till en punkt där inget mer kan lösas. Lösningen är då <strong>mättad</strong>.</p>
+          <p>Om mer av ämnet tillsätts kommer det att bli kvar utan att lösas. En mättad lösning innehåller alltså så mycket löst ämne som kan lösas under de aktuella förhållandena.</p>
+          <!-- BILD: mattad-losning.webp – levereras senare, avkommentera när filen finns i img/.
+          <figure class="brodtext-bild standard">
+            <img src="img/mattad-losning.webp" alt="Tre glas i rad. I det första har lite salt lösts helt. I det andra mer salt, också helt löst. I det tredje ligger olöst salt kvar på botten trots omrörning.">
+            <figcaption>En mättad lösning innehåller den största mängd löst ämne som kan lösas vid den aktuella temperaturen. Överskottet förblir olöst.</figcaption>
+          </figure>
+          -->
+          <h2>Sammanfattning av repetitionen</h2>
+          <p>För att förstå hur lösningar bildas behöver man tänka på hur partiklar påverkar varandra.</p>
+          <p>Vattnets polaritet gör att vattenmolekyler kan attrahera många andra partiklar. Jonbundna ämnen kan lösas när vattenmolekylerna omger och drar isär jonerna, och polära molekyler kan ofta lösas därför att de attraheras av vattenmolekylernas laddningsskillnader. Opolära ämnen löser sig däremot oftast dåligt i vatten.</p>
+          <p>Begreppen <strong>lösningsmedel, löst ämne, koncentration, löslighet och mättad lösning</strong> används för att beskriva hur lösningar fungerar och hur mycket av ett ämne som finns löst.</p>
+          <p>Att jonbundna ämnen löses till fria, rörliga joner är dessutom utgångspunkten för nästa område. Syror och baser handlar om vad vissa bestämda joner gör i vattenlösning.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför ökar lösligheten med temperaturen — och när gör den inte det?</h2>
+          <p>Standardtexten sa att lösligheten för de flesta fasta ämnen ökar med temperaturen. Det stämmer, men formuleringen döljer att det finns undantag och att orsaken inte är självklar.</p>
+          <p>Att lösa ett ämne kräver ofta energi, som vi såg i fördjupningen till underdel A. Tillför man värme tillför man energi, och då blir det lättare att bryta bindningarna som håller ämnet samman. Därför ökar lösligheten.</p>
+          <p>Men för ämnen där upplösningen i stället <em>frigör</em> energi gäller det motsatta. Ökad temperatur motverkar då upplösningen, och lösligheten minskar när det blir varmare. Läsk illustrerar det: koldioxid löser sig sämre i varmt vatten än i kallt, och det är därför en ljummen läsk pyser mer och smakar fadare.</p>
+          <p>Samma sak har konsekvenser i naturen. Varmare vatten håller mindre syre löst, och det är en av orsakerna till att uppvärmning av sjöar och hav påverkar fisk och andra vattenlevande organismer.</p>
+          <h2>Övermättade lösningar</h2>
+          <p>Det finns ett tillstånd standardtexten inte nämner, och det är märkligare än det låter.</p>
+          <p>Löser man socker i hett vatten tills lösningen är mättad, och sedan kyler ner den mycket försiktigt utan att röra om, händer ibland ingenting. Lösningen innehåller nu mer socker än den borde kunna hålla vid den temperaturen. Den är <strong>övermättad</strong>.</p>
+          <p>Ett sådant tillstånd är instabilt men kan bestå länge, eftersom kristallisationen behöver något att börja på. Tillsätter man ett enda sockerkorn, eller bara skakar till bägaren, växer kristaller blixtsnabbt genom hela lösningen.</p>
+          <p>Det är precis så man gör kandisocker. Och samma princip, med ett annat ämne, är vad som får en värmedyna att stelna och bli varm när man knäpper på metallplattan inuti.</p>
+          <p><strong>Om modellen:</strong> att lösligheten ökar med temperaturen är en tumregel med undantag, och undantagen är inte slarv i regeln — de följer av om upplösningen kräver eller frigör energi. Den som förstår det kan förutsäga åt vilket håll temperaturen drar, i stället för att memorera en regel som ibland inte stämmer.</p>
+        </div>
+
       </div>
 
     </section>

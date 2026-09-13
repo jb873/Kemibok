@@ -25,7 +25,7 @@
       </nav>
       <span class="avsnitt-label">Avsnitt 4</span>
       <h1>Vattnets egenskaper</h1>
-      <p class="subtitel">— {{kort underrubrik}} —</p>
+      <p class="subtitel">— därför beter sig vatten som det gör —</p>
     </div>
   </header>
 
@@ -48,15 +48,19 @@
     <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
     <section class="flik-innehall" data-flik="las" role="tabpanel">
 
-      <!-- Underdelsväljare (2-4 underdelar) – antal och titlar kommer med texterna -->
+      <!-- Underdelsväljare -->
       <div class="underdel-valjare" role="tablist" aria-label="Textval">
         <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
           <span class="underdel-bokstav">A</span>
-          <span class="underdel-titel">{{Underdel A-titel}}</span>
+          <span class="underdel-titel">Vatten är polärt</span>
         </button>
         <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
           <span class="underdel-bokstav">B</span>
-          <span class="underdel-titel">{{Underdel B-titel}}</span>
+          <span class="underdel-titel">Vattnets densitet</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Ytspänning</span>
         </button>
       </div>
 
@@ -68,37 +72,288 @@
         <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
       </div>
 
-      <!-- UNDERDEL A (aktiv = utan dold) -->
+      <!-- ==================== UNDERDEL A — Vatten är polärt ==================== -->
       <div class="underdel-text" data-underdel="a">
 
         <!-- 📗 ENKEL -->
         <div class="niva-innehall brodtext dold" data-niva="enkel">
-          <p>{{enkel brödtext, underdel A}}</p>
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>I en vattenmolekyl delar atomerna elektroner, men <strong>inte lika</strong></li>
+              <li>Syret drar hårdare, så syresidan blir <strong>svagt negativ</strong></li>
+              <li>Vätesidorna blir <strong>svagt positiva</strong></li>
+              <li>En molekyl med en positiv och en negativ sida är <strong>polär</strong></li>
+              <li>Polära molekyler dras till varandra — det kallas <strong>vätebindning</strong></li>
+            </ul>
+          </div>
+
+          <p>Vatten är ett av de viktigaste ämnena på jorden. Allt levande behöver det, en stor del av din egen kropp består av det, och det finns i hav, sjöar, mark och luft.</p>
+          <p>Vatten har också flera egenskaper som är ovanliga, och nästan alla går att förklara med hur vattenmolekylen är byggd. Det är därför vi börjar där.</p>
+          <h2>Elektronerna delas inte lika</h2>
+          <p>En vattenmolekyl består av två väteatomer och en syreatom, och den skrivs \(\ce{H2O}\). Atomerna hålls ihop av kovalenta bindningar, vilket betyder att de delar elektroner — precis som du lärde dig i förra avsnittet.</p>
+          <p>Men de delar inte lika. Syreatomen drar hårdare i de gemensamma elektronerna än väteatomerna gör, och elektronerna befinner sig därför oftare nära syret än nära vätena.</p>
+          <p>Det får en följd. Eftersom elektroner är negativa blir syresidan av molekylen <strong>svagt negativ</strong>, medan vätesidorna blir <strong>svagt positiva</strong>.</p>
+          <!-- BILD: polar-vattenmolekyl.webp – levereras senare, avkommentera när filen finns i img/.
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul><li>{{bildguide saknas i leveransen – 2–5 punkter}}</li></ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/polar-vattenmolekyl.webp" alt="En vattenmolekyl med en röd syreatom och två vita väteatomer i en vinkel. Vid syreatomen står ett litet minustecken med ett delta framför, och vid väteatomerna små plustecken med delta. Pilar visar att elektronerna dras mot syreatomen.">
+            <figcaption>Syret drar hårdare i elektronerna än vätena gör. Därför blir syresidan svagt negativ och vätesidorna svagt positiva.</figcaption>
+          </figure>
+          -->
+          <p>Lägg märke till ordet svagt. Det här är inte hela laddningar som hos en jon — ingen atom har tappat eller fått en elektron. Det handlar bara om att elektronerna hänger lite mer åt ena hållet.</p>
+          <h2>Polära molekyler</h2>
+          <p>En molekyl som har en positiv och en negativ sida på det här sättet kallas <strong>polär</strong>. Vattenmolekylen är polär, och det är förklaringen till nästan allt annat i det här avsnittet.</p>
+          <h2>Molekylerna dras till varandra</h2>
+          <p>Nu kommer du ihåg regeln från avsnitt 1: olika laddningar attraherar varandra. Vattenmolekylerna har både en positiv och en negativ sida, så när många vattenmolekyler ligger nära varandra dras den positiva vätesidan hos en molekyl till den negativa syresidan hos nästa. Den attraktionen kallas <strong>vätebindning</strong>.</p>
+          <!-- BILD: vatebindning.webp – levereras senare, avkommentera när filen finns i img/.
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul><li>{{bildguide saknas i leveransen – 2–5 punkter}}</li></ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/vatebindning.webp" alt="Flera vattenmolekyler bredvid varandra. Streckade linjer går från väteatomerna på en molekyl till syreatomen på en annan, och visar attraktionen mellan molekylerna.">
+            <figcaption>Den positiva vätesidan på en molekyl dras till den negativa syresidan på nästa. Det är vätebindningar.</figcaption>
+          </figure>
+          -->
+          <p>Vätebindningar är svagare än de kovalenta bindningarna inuti molekylen. Men i ett glas vatten finns det ofattbart många vattenmolekyler, och därför blir de svaga krafterna tillsammans mycket betydelsefulla. Det är vätebindningarna som ligger bakom allt det ovanliga med vatten. Att vatten är polärt är också en viktig orsak till att så många ämnen kan lösas i vatten, och det kommer vi tillbaka till i nästa avsnitt.</p>
         </div>
 
-        <!-- 📘 STANDARD (default synlig = utan dold) -->
+        <!-- 📘 STANDARD -->
         <div class="niva-innehall brodtext" data-niva="standard">
-          <p>{{standard brödtext, underdel A}}</p>
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vattenmolekylen hålls ihop av <strong>kovalenta bindningar</strong></li>
+              <li>Elektronerna är <strong>ojämnt fördelade</strong> — syret drar starkare än vätet</li>
+              <li>Det ger molekylen en negativ och en positiv sida, den är <strong>polär</strong></li>
+              <li>Laddningarna är <strong>inte hela</strong> som hos joner, bara små förskjutningar</li>
+              <li>Attraktionen mellan vattenmolekyler kallas <strong>vätebindning</strong></li>
+            </ul>
+          </div>
+
+          <p class="inledning">Vatten är ett av de viktigaste ämnena på jorden. Alla levande organismer behöver vatten och en stor del av våra kroppar består av vatten. Det finns i hav, sjöar, mark och atmosfär och deltar i många kemiska och biologiska processer.</p>
+          <p>Vatten har flera speciella egenskaper som beror på hur vattenmolekylen är uppbyggd och hur vattenmolekylerna påverkar varandra. Tre av de viktigaste är att vatten är <strong>polärt</strong>, att vattnets <strong>densitet förändras på ett ovanligt sätt med temperaturen</strong> och att vatten har hög <strong>ytspänning</strong>.</p>
+          <h2>Ojämn fördelning av elektroner</h2>
+          <p>En vattenmolekyl består av två väteatomer och en syreatom och har formeln <strong>\(\ce{H2O}\)</strong>. Atomerna hålls samman av kovalenta bindningar där de delar elektroner.</p>
+          <p>Elektronerna delas däremot inte jämnt. Syreatomen drar starkare i de gemensamma elektronerna än vad väteatomerna gör, och elektronerna befinner sig därför något oftare nära syreatomen.</p>
+          <p>Det gör att syresidan av vattenmolekylen blir <strong>svagt negativt laddad</strong>, medan vätesidorna blir <strong>svagt positivt laddade</strong>. Dessa laddningar är inte hela positiva eller negativa laddningar som hos joner, utan mindre laddningsskillnader inom molekylen.</p>
+          <!-- BILD: polar-vattenmolekyl.webp – levereras senare, avkommentera när filen finns i img/.
+          <figure class="brodtext-bild standard">
+            <img src="img/polar-vattenmolekyl.webp" alt="En vattenmolekyl med en röd syreatom och två vita väteatomer i en vinkel. Vid syreatomen står ett litet minustecken med ett delta framför, och vid väteatomerna små plustecken med delta. Pilar visar att elektronerna dras mot syreatomen.">
+            <figcaption>Elektronparen i vattenmolekylen är ojämnt fördelade. Syreatomen är mer elektronegativ och drar dem närmare sig, vilket ger molekylen en negativ och en positiv sida.</figcaption>
+          </figure>
+          -->
+          <p>Vattenmolekylen får därför en positiv och en negativ sida. En molekyl med en sådan ojämn fördelning av elektrisk laddning kallas <strong>polär</strong>.</p>
+          <h2>Vätebindningar</h2>
+          <p>Eftersom olika elektriska laddningar dras till varandra påverkar vattenmolekylerna varandra. Den svagt positiva vätesidan hos en vattenmolekyl attraheras av den svagt negativa syresidan hos en annan vattenmolekyl. Attraktionen mellan vattenmolekylerna kallas <strong>vätebindning</strong>.</p>
+          <!-- BILD: vatebindning.webp – levereras senare, avkommentera när filen finns i img/.
+          <figure class="brodtext-bild standard">
+            <img src="img/vatebindning.webp" alt="Flera vattenmolekyler bredvid varandra. Streckade linjer går från väteatomerna på en molekyl till syreatomen på en annan, och visar attraktionen mellan molekylerna.">
+            <figcaption>Vätebindningar är svagare än de kovalenta bindningarna inuti molekylen, men eftersom de är så många får de stor betydelse för vattnets egenskaper.</figcaption>
+          </figure>
+          -->
+          <p>Vätebindningarna är svagare än de kovalenta bindningarna som håller samman atomerna inne i vattenmolekylen. Men eftersom det finns mycket stora mängder vattenmolekyler får vätebindningarna stor betydelse för vattnets egenskaper.</p>
+          <p>Att vatten är polärt är också en viktig orsak till att många ämnen kan lösas i vatten. Detta återkommer vi till i nästa avsnitt.</p>
         </div>
 
-        <!-- 📕 FÖRDJUPNING — i repetitionsdelkapitlet alltid ifylld (sannare modell) -->
+        <!-- 📕 FORDJUPNING -->
         <div class="niva-innehall brodtext dold" data-niva="fordjupning">
-          <p>{{fordjupning brödtext, underdel A}}</p>
+
+          <h2>Varför just syre drar hårdare</h2>
+          <p>I avsnitt 3 mötte du begreppet <strong>elektronegativitet</strong> — ett atomslags förmåga att dra till sig elektroner i en bindning. Det är den som förklarar vattnets polaritet, men vi kan gå ett steg längre och fråga varför syre har hög elektronegativitet och väte låg.</p>
+          <p>Två saker avgör. Det första är <strong>kärnans laddning</strong>: syre har åtta protoner mot vätets en, och drar därför hårdare i allt som kommer nära. Det andra är <strong>avståndet</strong>: syres valenselektroner sitter i andra skalet, vilket fortfarande är nära kärnan. Elektronegativiteten ökar därför åt höger i periodiska systemet, där kärnladdningen växer, och uppåt, där valensskalet ligger närmare.</p>
+          <p>Fluor sitter längst upp till höger bland de reaktiva ämnena och är därför det mest elektronegativa av alla atomslag. Syre kommer strax efter.</p>
+          <h2>Vinkeln spelar roll</h2>
+          <p>Här finns något som lätt förbises. Att bindningarna är polära räcker inte för att molekylen ska vara polär — molekylens <strong>form</strong> avgör också.</p>
+          <p>Koldioxid, \(\ce{CO2}\), har starkt polära bindningar: syre drar mycket hårdare än kol. Men molekylen är rak, O=C=O, och de två syreatomerna drar åt exakt motsatta håll. Dragningarna tar ut varandra, och molekylen som helhet är opolär. Därför löser sig koldioxid inte särskilt bra i vatten, trots bindningarnas polaritet.</p>
+          <p>Vattenmolekylen är vinklad, ungefär 105 grader mellan väteatomerna. Båda vätena sitter på samma sida, och deras dragningar tar därför inte ut varandra utan förstärker varandra. Molekylen får en tydlig negativ och en tydlig positiv ände.</p>
+          <p>Vore vattenmolekylen rak skulle den vara opolär, och då skulle vatten sakna nästan alla de egenskaper som gör det till förutsättning för liv.</p>
+          <h2>Varför den är vinklad</h2>
+          <p>Syreatomen har sex valenselektroner. Två par delas med väteatomerna, men två par delas inte med någon — de kallas <strong>fria elektronpar</strong> och sitter kvar på syreatomen.</p>
+          <p>Alla fyra paren är negativa och repellerar varandra, och de fördelar sig därför så långt från varandra som möjligt runt syreatomen. De fria paren tar dessutom mer plats än de bindande, eftersom de bara hålls av en kärna i stället för två. Resultatet blir att väteatomerna trycks ihop till en vinkel på omkring 105 grader i stället för de 109 som annars vore väntat.</p>
+          <p><strong>Om modellen:</strong> standardtexten sa att syre drar starkare, och lämnade det där. Med elektronegativitet, molekylform och fria elektronpar blir vattnets polaritet något du kan härleda — och du kan avgöra om en molekyl du aldrig sett är polär eller inte.</p>
         </div>
 
       </div>
 
-      <!-- UNDERDEL B (dold tills vald) -->
+      <!-- ==================== UNDERDEL B — Vattnets densitet ==================== -->
       <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
         <div class="niva-innehall brodtext dold" data-niva="enkel">
-          <p>{{enkel brödtext, underdel B}}</p>
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Densitet</strong> är hur mycket massa som ryms i en viss volym</li>
+              <li>De flesta ämnen blir tätare när de kyls</li>
+              <li>Vatten är tätast vid <strong>4 °C</strong>, inte vid fryspunkten</li>
+              <li>När vatten fryser ordnar sig molekylerna i ett mönster <strong>med hål i</strong></li>
+              <li>Därför <strong>flyter is</strong> — och därför överlever fiskar vintern</li>
+            </ul>
+          </div>
+
+          <p>Den andra ovanliga saken med vatten handlar om hur tätt molekylerna packas. <strong>Densitet</strong> beskriver hur mycket massa ett ämne har i förhållande till sin volym. Ett ämne med hög densitet har mycket massa samlad på liten plats.</p>
+          <h2>Så beter sig de flesta ämnen</h2>
+          <p>När ett ämne kyls rör sig partiklarna långsammare och kommer närmare varandra. Ämnet tar då mindre plats, och densiteten ökar. Ju kallare, desto tätare — det gäller nästan allt.</p>
+          <h2>Så beter sig vatten</h2>
+          <p>Vatten följer regeln en bit på vägen. När vatten kyls rör sig molekylerna mindre och kommer närmare varandra, precis som väntat, och densiteten ökar.</p>
+          <p>Men bara ner till ungefär <strong>4 °C</strong>. Där är flytande vatten som tätast.</p>
+          <p>Kyls vattnet ytterligare händer något oväntat: molekylerna börjar ordna sig så att avståndet mellan dem ökar igen. Vattnet tar då mer plats, och densiteten minskar.</p>
+          <p>När vatten fryser till is blir mönstret fullständigt. Vätebindningarna tvingar molekylerna att ställa sig i ett regelbundet mönster med tomrum emellan. Samma mängd vatten tar därför större plats som is än som flytande vatten.</p>
+          <!-- BILD: is-och-vatten.webp – levereras senare, avkommentera när filen finns i img/.
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul><li>{{bildguide saknas i leveransen – 2–5 punkter}}</li></ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/is-och-vatten.webp" alt="Två halvor. Till vänster vattenmolekyler i flytande vatten, tätt och oordnat packade. Till höger samma molekyler i is, ordnade i ett öppet sexkantigt mönster med tomrum emellan.">
+            <figcaption>I is ordnar sig molekylerna i ett mönster med hål i. Samma mängd vatten tar därför större plats som is.</figcaption>
+          </figure>
+          -->
+          <p>Det är därför <strong>is flyter</strong>. Isen är lättare per liter än vattnet under.</p>
+          <h2>Varför det spelar roll för livet</h2>
+          <p>Det här är inte bara en kuriosa. Det avgör om det finns liv i sjöar på vintern.</p>
+          <p>När ytvattnet i en sjö kyls på hösten blir det tätare och sjunker, medan varmare vatten stiger upp. På så sätt blandas sjön om.</p>
+          <p>Men när hela sjön närmar sig 4 °C ändras allt. Vatten som kyls under 4 °C blir mindre tätt och stannar därför kvar vid ytan i stället för att sjunka. Till slut fryser ytan och bildar ett islager.</p>
+          <p>Isen lägger sig ovanpå och fungerar dessutom som ett isolerande lock. Under isen är vattnet fortfarande flytande, och därför kan fiskar och andra vattenlevande djur överleva vintern även i en sjö som ser helt igenfrusen ut. Om is i stället sjönk skulle sjöar frysa från botten och uppåt, och de skulle frysa igen helt.</p>
         </div>
+
+        <!-- 📘 STANDARD -->
         <div class="niva-innehall brodtext" data-niva="standard">
-          <p>{{standard brödtext, underdel B}}</p>
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Densitet</strong> är massa i förhållande till volym</li>
+              <li>Vatten har sin <strong>högsta densitet vid ungefär 4 °C</strong></li>
+              <li>Under 4 °C minskar densiteten igen, tvärtemot de flesta ämnen</li>
+              <li>Is har <strong>lägre densitet</strong> än flytande vatten och flyter därför</li>
+              <li>Detta gör att sjöar fryser uppifrån och inte från botten</li>
+            </ul>
+          </div>
+
+          <p class="inledning"><strong>Densitet</strong> beskriver hur stor massa ett ämne har i förhållande till sin volym. Ett ämne med hög densitet har mycket massa samlad i en liten volym.</p>
+          <p>För de flesta ämnen ökar densiteten när ämnet kyls, eftersom partiklarna rör sig mindre och kommer närmare varandra.</p>
+          <p>Vatten beter sig annorlunda.</p>
+          <p>När vatten kyls minskar molekylernas rörelser och de kommer närmare varandra, så vattnets densitet ökar när temperaturen sjunker. Men detta gäller bara ner till ungefär <strong>4 °C</strong>, och vid 4 °C har flytande vatten sin högsta densitet.</p>
+          <p>Om vattnet kyls ytterligare börjar vattenmolekylerna ordna sig på ett sätt som gör att avståndet mellan dem ökar. Vattnet tar då större plats och densiteten minskar.</p>
+          <p>När vatten fryser och blir is bildar vattenmolekylerna en mer öppen struktur. Samma mängd vatten tar därför större plats som is än som flytande vatten, is får lägre densitet än flytande vatten och <strong>flyter därför på vatten</strong>.</p>
+          <!-- BILD: is-och-vatten.webp – levereras senare, avkommentera när filen finns i img/.
+          <figure class="brodtext-bild standard">
+            <img src="img/is-och-vatten.webp" alt="Två halvor. Till vänster vattenmolekyler i flytande vatten, tätt och oordnat packade. Till höger samma molekyler i is, ordnade i ett öppet sexkantigt mönster med tomrum emellan.">
+            <figcaption>Vätebindningarna tvingar molekylerna till ett regelbundet, öppet gitter när vatten fryser. Strukturen har lägre densitet än flytande vatten, och därför flyter is.</figcaption>
+          </figure>
+          -->
+          <h2>Betydelsen för livet i sjöar</h2>
+          <p>Detta är mycket viktigt för livet i sjöar och andra vattendrag.</p>
+          <p>När ytvattnet i en sjö kyls på hösten blir det tätare och sjunker, samtidigt som vatten med högre temperatur stiger upp mot ytan. På så sätt blandas vattnet om.</p>
+          <p>När hela sjön närmar sig 4 °C förändras situationen. Vatten som kyls under 4 °C blir mindre tätt och stannar därför kvar vid ytan. Till slut kan ytvattnet frysa och bilda ett islager.</p>
+          <p>Isen flyter ovanpå vattnet och fungerar dessutom som ett isolerande lager. Under isen kan vattnet fortfarande vara flytande, och därför kan fiskar och andra vattenlevande organismer överleva vintern även när sjön är täckt av is.</p>
         </div>
+
+        <!-- 📕 FORDJUPNING -->
         <div class="niva-innehall brodtext dold" data-niva="fordjupning">
-          <p>{{fordjupning brödtext, underdel B}}</p>
+
+          <h2>Varför isens struktur har hål</h2>
+          <p>Standardtexten sa att vattenmolekylerna bildar en mer öppen struktur när vatten fryser. Vad är det för struktur, och varför blir den öppen?</p>
+          <p>I flytande vatten bildas och bryts vätebindningar hela tiden. Molekylerna rör sig, byter grannar och packas så tätt som rörelsen tillåter. En genomsnittlig vattenmolekyl har kanske tre till fyra vätebindningar åt gången, men aldrig samma hela tiden.</p>
+          <p>När vattnet fryser upphör rörelsen. Nu kan varje molekyl bilda sina vätebindningar i lugn och ro, och den bildar exakt <strong>fyra</strong> — två genom sina egna väteatomer och två genom sina fria elektronpar.</p>
+          <p>Och här är poängen: de fyra bindningarna pekar inte åt godtyckliga håll. De riktar sig mot hörnen i en tetraeder, vilket följer av samma elektronparsrepulsion som ger molekylen dess vinkel. När varje molekyl binder fyra grannar i den geometrin uppstår ett sexkantigt gitter — och ett sexkantigt gitter har hål i mitten.</p>
+          <p>Molekylerna i is sitter alltså <em>längre</em> från varandra än i flytande vatten, trots att de är stillastående. Ordningen kostar plats.</p>
+          <h2>Därför är snöflingor sexkantiga</h2>
+          <p>Det sexkantiga gittret syns med blotta ögat. Varje snöflinga har sex armar, och det är en direkt avspegling av hur vattenmolekylerna sitter inuti — precis som saltkristallens räta vinklar speglar jongittret.</p>
+          <h2>Och 4-gradersmaximum</h2>
+          <p>Nu går även densitetsmaximet att förklara. Två motverkande processer pågår samtidigt när vatten kyls.</p>
+          <p>Den ena är den vanliga: molekylerna rör sig mindre och packas tätare. Den ökar densiteten.</p>
+          <p>Den andra är att allt fler molekyler hinner bilda ordnade, tetraedriska vätebindningar även i flytande tillstånd — små områden med isliknande struktur. Den minskar densiteten.</p>
+          <p>Över 4 °C vinner den första. Under 4 °C vinner den andra. Vid 4 °C är de i jämvikt, och där är vattnet som tätast.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskrev vad som händer. Med vätebindningarnas riktning blir det härlett — och tre saker som verkar orelaterade, densitetsmaximet vid 4 grader, isens lägre densitet och snöflingans form, visar sig vara samma sak.</p>
         </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Ytspänning ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Molekyler inne i vattnet dras åt <strong>alla håll</strong> samtidigt</li>
+              <li>Molekyler vid ytan har inget ovanför sig och dras bara <strong>inåt och åt sidorna</strong></li>
+              <li>Det gör att ytan dras ihop — det kallas <strong>ytspänning</strong></li>
+              <li>Ytspänningen får droppar att bli runda och låter lätta saker vila på ytan</li>
+              <li><strong>Diskmedel sänker ytspänningen</strong></li>
+            </ul>
+          </div>
+
+          <p>Den tredje ovanliga egenskapen hos vatten handlar om ytan, och även den beror på vätebindningarna. För att förstå den behöver man jämföra två ställen i vattnet som har helt olika villkor.</p>
+          <h2>Olika villkor inne i vattnet och vid ytan</h2>
+          <p>Tänk dig en vattenmolekyl mitt inne i ett glas vatten. Den omges av andra vattenmolekyler åt alla håll — över, under och åt sidorna — och den dras mot dem allihop samtidigt. Eftersom dragningen kommer från alla håll tar den ut sig själv.</p>
+          <p>Vid ytan är situationen annorlunda. Där finns inga vattenmolekyler ovanför, bara luft. En molekyl vid ytan dras därför bara åt sidorna och nedåt, mot vattnet under.</p>
+          <p>Resultatet blir att ytan dras ihop och försöker göra sig så liten som möjligt. Det fenomenet kallas <strong>ytspänning</strong>.</p>
+          <h2>Vad ytspänningen gör</h2>
+          <p>Ytspänningen gör att vattenytan beter sig nästan som en tunn elastisk hinna. Små vattendroppar blir därför nästan klotrunda. Ett klot är den form som ger minsta möjliga yta för en viss mängd vatten, och ytan strävar ju efter att bli liten.</p>
+          <p>Ytspänningen gör också att vissa små djur kan röra sig på vattenytan. En skräddare kan stå och springa på vatten utan att sjunka igenom, inte för att den är lättare än vatten utan för att den inte bryter igenom hinnan.</p>
+          <p>Lägger du försiktigt ett gem på vattenytan kan det till och med bli liggande där, trots att metall har högre densitet än vatten och alltså borde sjunka. Det flyter inte — det vilar på ytspänningen.</p>
+          <h2>Diskmedel förstör den</h2>
+          <p>Ytspänningen går att ändra. <strong>Diskmedel och andra tensider sänker ytspänningen</strong> genom att störa attraktionen mellan vattenmolekylerna.</p>
+          <p>Det är precis vad man vill ha när man diskar. Med lägre ytspänning kan vattnet sprida ut sig över ytor i stället för att dra ihop sig till droppar, och då kommer det åt smuts och fett.</p>
+          <p>Prova själv: lägg ett gem på vattenytan och droppa sedan en droppe diskmedel i vattnet. Gemet sjunker på en gång.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Ytspänning uppstår av <strong>vätebindningar</strong> mellan vattenmolekyler</li>
+              <li>Molekyler vid ytan saknar grannar ovanför och dras inåt</li>
+              <li>Ytan strävar efter att bli <strong>så liten som möjligt</strong></li>
+              <li>Det förklarar droppars form och att vissa insekter kan gå på vatten</li>
+              <li><strong>Tensider</strong> som diskmedel stör attraktionen och sänker ytspänningen</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Vattenmolekyler dras till varandra genom vätebindningar. Inne i vattnet omges en vattenmolekyl av andra vattenmolekyler åt alla håll och attraheras därför i flera riktningar samtidigt, så krafterna tar ut varandra.</p>
+          <p>Vid vattenytan är situationen annorlunda. Där finns inga vattenmolekyler ovanför ytan, och molekylerna vid ytan dras därför främst åt sidorna och nedåt mot de andra vattenmolekylerna.</p>
+          <p>Det gör att vattenytan dras ihop och försöker få så liten yta som möjligt. Detta fenomen kallas <strong>ytspänning</strong>.</p>
+          <h2>Vad ytspänningen orsakar</h2>
+          <p>Ytspänningen gör att vattenytan kan bete sig nästan som en mycket tunn elastisk hinna.</p>
+          <p>Små vattendroppar blir därför ofta nästan klotformade, eftersom en sådan form ger en liten yta i förhållande till mängden vatten.</p>
+          <p>Ytspänningen gör också att vissa små djur kan röra sig på vattenytan. En skräddare kan till exempel stå och springa på vatten utan att omedelbart sjunka igenom ytan.</p>
+          <p>Om man försiktigt placerar ett lätt föremål, exempelvis ett gem, på vattenytan kan ytspänningen i vissa fall hålla det kvar trots att metallen egentligen har högre densitet än vatten.</p>
+          <h2>Tensider</h2>
+          <p>Ytspänningen kan förändras om andra ämnen blandas i vattnet. <strong>Diskmedel och andra tensider sänker ytspänningen</strong> eftersom de stör attraktionen mellan vattenmolekylerna.</p>
+          <p>Det gör att vattnet lättare kan sprida ut sig över en yta och komma åt smuts och fett.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Hur en tensid fungerar</h2>
+          <p>Standardtexten sa att tensider stör attraktionen mellan vattenmolekylerna. Det stämmer, men det säger inte hur — och hur:et är det som gör diskmedel användbart.</p>
+          <p>En tensidmolekyl är byggd med två olika ändar. Den ena änden är <strong>polär</strong> och trivs bland vattenmolekyler. Den andra är en lång <strong>opolär</strong> kolkedja som inte trivs där alls.</p>
+          <p>När tensid hamnar i vatten kan molekylen inte göra båda ändarna nöjda samtidigt. Lösningen blir att den ställer sig vid ytan, med den polära änden nedstucken i vattnet och den opolära änden uppstickande i luften.</p>
+          <p>Ytan fylls därmed av tensidmolekyler som tränger sig in mellan vattenmolekylerna. Vattenmolekylerna vid ytan får färre grannar att bilda vätebindningar med, och den inåtriktade dragningen försvagas. Ytspänningen sjunker.</p>
+          <h2>Och därför löser diskmedel fett</h2>
+          <p>Samma dubbelhet förklarar den andra halvan av diskmedlets jobb.</p>
+          <p>Fett är opolärt och löser sig inte i vatten. Men tensidernas opolära ändar trivs i fett. När fett finns i vattnet samlas tensidmolekylerna runt fettdroppen med sina opolära ändar inåt och sina polära ändar utåt, mot vattnet.</p>
+          <p>Utifrån sett har fettdroppen därmed fått ett polärt ytterhölje, och en sådan kula kan vattnet bära med sig. Fettet sköljs bort, inte för att det lösts upp, utan för att det paketerats i något vattnet kan hantera.</p>
+          <p>Konstruktionen kallas <strong>micell</strong>, och samma princip gör att tvål fungerar.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskrev en effekt. Med tensidens två ändar blir både ytspänningen och fettlösandet konsekvenser av en enda sak — att molekylen har en polär och en opolär del. Det är också nyckeln till nästa avsnitt, där regeln lika löser lika står i centrum.</p>
+        </div>
+
       </div>
 
       <!-- DJUPDYKNINGAR -->
