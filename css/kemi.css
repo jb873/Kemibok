@@ -9,7 +9,7 @@
    Innehåll:
      1. Tokens och hero-banner            (🎨 ämneseget – signaturfärg)
      2. faktaruta                          (🎨 ny komponent, KOMPONENTER DEL 4.6)
-     3. formel + strukturformel + brödtexttabell (🎨 KOMPONENTER DEL 8; tabellen kemi-egen)
+     3. formel + strukturformel + brödtexttabell + bilder utan ram (🎨 KOMPONENTER DEL 8 / 4.2)
      4. Disabled nivåknapp                 (plattformsbeteende, avsnitt.js)
      5. MathJax-finish                     (inline-formler i EB Garamond-text)
      7. Patina-överskrivningar av geografi.css/flipcards.css (godkänd lista)
@@ -154,10 +154,12 @@
   .strukturformel { max-width: 100%; }
 }
 
-/* SVG-bilder med transparent bakgrund: geografi.css ger alla .brodtext-bild img en tunn ram
-   (rgba(27,42,54,.2)) som på webp läser som bildkant men på en transparent SVG ramar in tomrum.
-   Ingen annan bok har transparenta SVG:er, så regeln är kemispecifik i effekt. */
-.brodtext-bild img[src$=".svg"] {
+/* Ingen ram på brödtextbilder i kemi (beslut 2026-09-13, KOMPONENTER 4.2). geografi.css ger
+   .brodtext-bild img en tunn ram (rgba(27,42,54,.2)) som fungerar på Historias och Geografis foton
+   och målningar med kant-till-kant-motiv. Kemins bilder är platta illustrationer med transparent
+   bakgrund (SVG, och AI-bilder ska levereras så), och där ramar linjen in tomrum. Ämnesegen
+   avvikelse – ingen plattformsändring. Zoom-cursor och bredd från geografi.css behålls. */
+.brodtext-bild img {
   border: none;
   border-radius: 0;
 }

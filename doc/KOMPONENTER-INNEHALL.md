@@ -7,8 +7,8 @@
 > Innehållssessioner ser inte CSS — bara HTML. För att producera
 > fungerande markup måste de exakta klassnamnen vara dokumenterade.
 
-**Senast uppdaterad:** 2026-09-13 (v1.2)
-**Version:** 1.2 (Kemi)
+**Senast uppdaterad:** 2026-09-13 (v1.3)
+**Version:** 1.3 (Kemi)
 **DELAD-BAS:** v1.1 — måste matcha över alla ämnen
 **Ärvd från:** KOMPONENTER-INNEHALL-GEOGRAFI v1.6
 **Källa för alla mallar:** Geografis v1.6 (DOM-verifierad hero-banner) + Historias mappstruktur
@@ -631,6 +631,15 @@ fortsätter.
 **Balans:** bilden ska vara ett **stöd**, aldrig en **tröskel**. För lite text runt bilden
 gör den kontextlös, för mycket dränker den.
 
+**🎨 Kemi: ingen ram, transparent bakgrund (v1.3).** Plattformens tunna ram runt `.brodtext-bild img`
+är avstängd i kemi.css. Den fungerar på Historias och Geografis foton och målningar, men kemins
+bilder är platta illustrationer på sidans eget papper, och där ramar linjen in tomrum. Ämnesegen
+avvikelse, inte en plattformsändring. Följden för bildleveranser: **bakgrunden ska vara
+transparent** – aldrig en hårdkodad benvit eller `--paper`-färg, som låser bilden till en viss
+sidbakgrund och spricker om `--paper` ändras eller bilden läggs på ett kort. SVG:er genereras
+transparenta; AI-bilder promptas med transparent bakgrund, eller med en enhetlig kontrastfärg
+som inte förekommer i motivet och nycklas bort innan leverans (se DEL 9).
+
 ---
 
 ### 4.3 karnpunkter (Det viktigaste-block)
@@ -945,6 +954,12 @@ eleven läsa bilderna innan hen läst texten.
 Detta är en **uppslagstabell**, inte en mall: plocka de rader som gäller och klistra in i
 prompten.
 
+**Bakgrund (v1.3):** transparent, se 4.2. Benvit bakgrund (`#f0e8d5`) i redan levererade
+AI-bilder går bara delvis att nyckla bort i efterhand: bakgrunden är brusig (±4 per kanal) och
+motiv i vitt/benvitt (väteatomer, plustecken, bubblor) ligger inom samma tolerans och blir
+halvgenomskinliga, och kanterna får ljusa halos mot allt som inte är papper. Bilder med sådana
+motiv promptas om.
+
 ### 9.1 Grundämnen — CPK-standard
 
 CPK är den färgstandard molekylmodeller och läromedel använder. Skälet att inte hitta på
@@ -1171,6 +1186,8 @@ När osäker — kolla referensimplementationen **plus** CSS:n **plus** JS:n. **
 ## Revisionshistorik
 **🎨 boklokal**
 
+- **v1.3 (2026-09-13):** 4.2 – ingen ram på brödtextbilder i kemi (kemi.css), bildbakgrund ska
+  vara transparent; DEL 9 – vad som går att göra med benvit bakgrund i efterhand.
 - **v1.2 (2026-09-13):** Öva-fliken får tre arbetssätt (Plugga begrepp / Testa dig själv /
   Tillämpa) via kemi-eget lager `js/ova-arbetssatt.js` ovanpå orörd flipcards.js, och den nya
   komponenten kortsvar (`js/kortsvar.js` + `js/kortsvar-gradering.js`). Scaffoldens Öva-panel
