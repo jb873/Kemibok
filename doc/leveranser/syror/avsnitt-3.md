@@ -5,6 +5,10 @@
 **AVSNITT_ID:** `a3_starka-och-svaga-syror`
 **Underrubrik i hero:** hur lätt syran släpper sin vätejon
 
+> **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
+> påståenderubriker (###) och delade stycken enligt `reviderat-syror-1-3.md`. Tillagda meningar (där märkta ▸) ligger här
+> utan märke. Enkel och Fördjupning oförändrade.
+
 ---
 
 ## Underdelar
@@ -73,11 +77,11 @@ oxoniumjoner. En svag syra reagerar bara delvis, och en stor del av syramolekyle
 
 ## Kärnpunkter (Standard)
 
-- **Stark och svag** beskriver hur lätt syran avger sina vätejoner
-- En stark syra avger i princip **alla** vätejoner den kan avge
-- En svag syra avger bara **en del**
-- Styrka är inte samma sak som **koncentration**
-- Styrkan beror på hur hårt vätejonen sitter fast i syrans partikel
+- Vad beskriver orden stark och svag?
+- Vad gör en stark syra i vatten?
+- Vad gör en svag syra?
+- Varför är styrka och koncentration olika saker?
+- Vad avgör hur lätt en syra avger sin vätejon?
 
 ---
 
@@ -121,21 +125,32 @@ syran är stark. Sitter den hårt behövs mer för att få loss den, och syran �
 
 ## A — STANDARD
 
+### Styrka handlar om hur lätt vätejonen avges
+
 Syror kan delas in i **starka syror** och **svaga syror**. Skillnaden handlar om hur lätt syran avger
 sina vätejoner när den kommer i kontakt med vatten.
 
 **Stark och svag beskriver hur lätt syran avger sina vätejoner — inte hur mycket syra som finns i
 lösningen.**
 
+### En stark syra avger nästan alla sina vätejoner
+
 En stark syra avger i princip alla vätejoner som den kan avge när den löses i vatten. Vätejonerna tas
 direkt upp av vattenmolekyler och bildar oxoniumjoner, H₃O⁺.
+
+### En svag syra avger bara en del
 
 En svag syra avger däremot bara en del av sina vätejoner. I lösningen finns därför både syramolekyler
 som fortfarande har kvar sin vätejon och partiklar som har avgett den.
 
+### Styrka och koncentration är två olika saker
+
 Det är viktigt att skilja syrans styrka från syrans koncentration. Styrkan beskriver hur lätt syran
-avger vätejoner. Koncentrationen beskriver hur mycket syra som finns i en viss mängd lösning. En
-stark syra kan därför vara utspädd och en svag syra kan vara koncentrerad.
+avger vätejoner. Koncentrationen beskriver hur mycket syra som finns i en viss mängd lösning.
+
+En stark syra kan därför vara utspädd och en svag syra kan vara koncentrerad.
+
+### Hur hårt vätejonen sitter avgör styrkan
 
 Vad som avgör hur lätt en syra avger sin vätejon beror på hur hårt vätejonen sitter fast i syrans
 partikel. Sitter den löst avges den lätt, och syran är stark.
@@ -199,10 +214,11 @@ resonera sig fram till för en syra man aldrig sett.
 
 ## Kärnpunkter (Standard)
 
-- **Saltsyra, svavelsyra och salpetersyra** är de viktigaste starka syrorna
-- De avger i princip fullständigt sina vätejoner till vatten
-- Svavelsyra har **två** vätejoner att avge, och den andra sitter hårdare
-- Hur lågt pH som uppnås beror också på **koncentrationen**
+- Vilka är de tre viktigaste starka syrorna?
+- Vad har de gemensamt?
+- Hur skiljer sig svavelsyra från de andra två?
+- Varför sitter svavelsyrans andra vätejon hårdare?
+- Vad avgör hur lågt pH en stark syra ger?
 
 ---
 
@@ -250,27 +266,38 @@ precis vad nästa avsnitt handlar om.
 
 ## B — STANDARD
 
+### Tre starka syror är särskilt viktiga
+
 Tre viktiga starka syror är saltsyra, svavelsyra och salpetersyra. Gemensamt för dem är att de
 reagerar mycket lätt med vatten och i princip fullständigt avger de vätejoner som kan avges i
 vattenlösningen.
+
+### Saltsyra och salpetersyra avger en vätejon var
 
 **Saltsyra, HCl**, bildas när väteklorid löses i vatten. Vätekloriden avger sin vätejon till en
 vattenmolekyl. Då bildas en oxoniumjon och en kloridjon:
 
 **HCl + H₂O → H₃O⁺ + Cl⁻**
 
-**Salpetersyra, HNO₃**, fungerar på liknande sätt. När den reagerar med vatten bildas oxoniumjoner
-och nitratjoner:
+**Salpetersyra, HNO₃**, fungerar på liknande sätt. När den reagerar med vatten bildas oxoniumjoner och
+nitratjoner:
 
 **HNO₃ + H₂O → H₃O⁺ + NO₃⁻**
 
+### Svavelsyra kan avge två
+
 **Svavelsyra, H₂SO₄**, skiljer sig från de två andra genom att varje molekyl innehåller två vätejoner
-som kan avges. Den första avges mycket lätt, precis som hos saltsyra. Den andra sitter hårdare,
-eftersom den ska lämna en partikel som redan har en negativ laddning — och en negativ laddning håller
-kvar den positiva vätejonen. Därför avges den andra vätejonen bara delvis.
+som kan avges. Den första avges mycket lätt, precis som hos saltsyra.
+
+### Den andra vätejonen sitter hårdare
+
+Den andra sitter hårdare, eftersom den ska lämna en partikel som redan har en negativ laddning — och en
+negativ laddning håller kvar den positiva vätejonen. Därför avges den andra vätejonen bara delvis.
 
 Svavelsyra är alltså stark när det gäller den första vätejonen och svagare när det gäller den andra. I
 praktiken räknas den ändå som en stark syra, eftersom det första steget ger så många oxoniumjoner.
+
+### Hur lågt pH blir beror också på koncentrationen
 
 Starka syror kan ge upphov till en hög koncentration av oxoniumjoner och därmed ett lågt pH. Hur lågt
 pH blir beror dock också på hur koncentrerad syralösningen är.
@@ -324,11 +351,11 @@ och vattnet döljer den ena änden av den. Indelningen är användbar men den ä
 
 ## Kärnpunkter (Standard)
 
-- **Ättiksyra, citronsyra, kolsyra, mjölksyra och myrsyra** är svaga syror
-- Bara en del av syramolekylerna avger sin vätejon
-- Reaktionen skrivs med **dubbelriktad pil**, ⇌
-- Det råder en **balans** mellan de två riktningarna
-- Skillnaden handlar om **andelen** avgivna vätejoner
+- Vilka svaga syror möter du i vardagen?
+- Vad händer när en svag syra blandas med vatten?
+- Vad betyder den dubbelriktade pilen?
+- Varför blir det en balans?
+- Vad är det egentligen som skiljer starka från svaga?
 
 ---
 
@@ -376,30 +403,41 @@ vatten. Nästan alla betyder stark. Bara en del betyder svag.
 
 ## C — STANDARD
 
+### Många vanliga syror är svaga
+
 Många syror är svaga. Exempel är ättiksyra, citronsyra, kolsyra, mjölksyra och myrsyra. De förekommer
 bland annat i livsmedel, i naturen och i levande organismer.
 
+### Bara en del av molekylerna avger sin vätejon
+
 När en svag syra blandas med vatten avger bara en del av syramolekylerna sina vätejoner. Resten finns
 fortfarande kvar som syramolekyler i lösningen.
+
+### Ättiksyra visar hur det ser ut
 
 Ättiksyra kan användas som exempel. När en ättiksyramolekyl avger en vätejon till en vattenmolekyl
 bildas en oxoniumjon och en acetatjon:
 
 **CH₃COOH + H₂O ⇌ H₃O⁺ + CH₃COO⁻**
 
-Här används en dubbelriktad pil, ⇌, eftersom reaktionen kan gå åt båda hållen. Ättiksyramolekyler
-avger vätejoner, men samtidigt kan vätejoner överföras tillbaka så att ättiksyra återbildas. Efter en
-tid uppstår en balans mellan de båda reaktionerna.
+### Pilen åt båda hållen betyder att reaktionen går båda vägarna
+
+Här används en dubbelriktad pil, ⇌, eftersom reaktionen kan gå åt båda hållen. Ättiksyramolekyler avger
+vätejoner, men samtidigt kan vätejoner överföras tillbaka så att ättiksyra återbildas.
+
+Efter en tid uppstår en balans mellan de båda reaktionerna.
 
 Det är detta som är grunden till att ättiksyra är en svag syra: bara en del av syramolekylerna har
 avgett sin vätejon vid en viss tidpunkt.
 
+### Det är andelen avgivna vätejoner som avgör
+
 Samma grundprincip gäller för andra svaga syror. De kan avge vätejoner, men reaktionen med vatten är
 inte fullständig.
 
-Skillnaden mellan starka och svaga syror handlar alltså inte om vilken syra som det finns mest av
-eller vilken lösning som har lägst pH. Den handlar om hur stor andel av syrans möjliga vätejoner som
-avges när syran reagerar med vatten.
+Skillnaden mellan starka och svaga syror handlar alltså inte om vilken syra som det finns mest av eller
+vilken lösning som har lägst pH. Den handlar om hur stor andel av syrans möjliga vätejoner som avges
+när syran reagerar med vatten.
 
 ---
 

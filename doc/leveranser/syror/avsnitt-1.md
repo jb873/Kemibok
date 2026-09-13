@@ -9,6 +9,10 @@
 > Enkel = vätejon. Standard = oxoniumjon. Fördjupning = protonöverföring.
 > **Ingen `\ce{H3O+}` får förekomma i en Enkel-text.**
 
+> **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
+> påståenderubriker (###) och delade stycken enligt `reviderat-syror-1-3.md`. Tillagda meningar (där märkta ▸) ligger här
+> utan märke. Enkel och Fördjupning oförändrade.
+
 ---
 
 ## Underdelar
@@ -63,11 +67,11 @@ ett av vattenmolekylens fria elektronpar, och det som bildas är en oxoniumjon.
 
 ## Kärnpunkter (Standard)
 
-- En vätejon är en väteatom som avgett sin enda elektron
-- Den består därför av **enbart en proton** — inget elektronskal
-- Det gör den till den **minsta** jonen och mycket **reaktiv**
-- Vätejoner förekommer **inte fritt** i vattenlösning
-- De binder omedelbart till andra partiklar
+- Vad består en vätejon av?
+- Varför är den den minsta jon som finns?
+- Vad skiljer den från alla andra joner?
+- Varför är den så reaktiv?
+- Kan den finnas fri i vatten?
 
 ---
 
@@ -106,18 +110,28 @@ direkt. Det är viktigt att komma ihåg när vi nu ska se vad som händer när e
 
 ## A — STANDARD
 
+### En vätejon är en väteatom utan sin elektron
+
 En väteatom är den enklaste atom som finns. Den består av en atomkärna med en proton och har en
-elektron runt kärnan. Om väteatomen lämnar ifrån sig sin enda elektron finns bara den positivt
-laddade protonen kvar. Då har det bildats en **vätejon, H⁺**.
+elektron runt kärnan. Om väteatomen lämnar ifrån sig sin enda elektron finns bara den positivt laddade
+protonen kvar. Då har det bildats en **vätejon, H⁺**.
 
 Man kan därför beskriva en vätejon som en väteatom som har lämnat ifrån sig sin elektron. Eftersom
 vätejonen bara består av en proton är den den minsta jon som finns.
 
+### Den saknar elektronskal, till skillnad från andra joner
+
 Det skiljer vätejonen från alla andra joner. När en natriumatom blir en jon har den fortfarande tio
 elektroner kvar runt kärnan, och en kloridjon har arton. Vätejonen har inga alls.
 
-Vätejonen är mycket reaktiv. Den har positiv laddning men inget elektronskal som omger kärnan.
-Därför förekommer vätejoner inte fritt i en vattenlösning — de binder snabbt till andra partiklar.
+Storleksskillnaden blir därför enorm. En vätejon är i storleksordningen hundratusen gånger mindre än
+de joner den ska samsas med i en lösning.
+
+### Därför kan den inte finnas fri i vatten
+
+Vätejonen är mycket reaktiv. Den har positiv laddning men inget elektronskal som omger kärnan. Därför
+förekommer vätejoner inte fritt i en vattenlösning — de binder snabbt till andra partiklar.
+
 Detta är viktigt för att förstå vad som händer när en syra löses i vatten.
 
 ---
@@ -169,11 +183,11 @@ spelar det ingen roll var protonen sitter — då fungerar H⁺ utmärkt. Först
 
 ## Kärnpunkter (Standard)
 
-- En **syra** är ett ämne som kan avge **vätejoner, H⁺**
-- Vattenmolekylen är **polär** och har **fria elektronpar** på syreatomen
-- Vätejonen binder omedelbart till en vattenmolekyl
-- Det som bildas är en **oxoniumjon, H₃O⁺**
-- Det är oxoniumjonerna som gör lösningen sur
+- Vad är en syra?
+- Vad händer med vätejonen när den möter vatten?
+- Varför dras den just till syreatomen?
+- Vilken jon bildas då?
+- Vad är det som gör lösningen sur?
 
 ## Bildguide (endast Standard — ingen bild på Enkel)
 
@@ -219,12 +233,19 @@ Hittar du en syra du aldrig sett förut kan du vara säker på att det är vad d
 
 ## B — STANDARD
 
+### En syra är ett ämne som kan avge vätejoner
+
 En **syra** är ett ämne som kan avge vätejoner, H⁺. När en syra kommer i kontakt med vatten kan
 vätejoner lämna syrans partiklar och överföras till vattenmolekyler.
 
+### Vätejonen binder omedelbart till en vattenmolekyl
+
 Vattenmolekylen är polär. Syreatomen har en svagt negativ sida och dessutom fria elektronpar. Den
-positivt laddade vätejonen dras därför starkt till syreatomen. Eftersom vätejonen i praktiken är en
-ensam proton binder den omedelbart till en vattenmolekyl.
+positivt laddade vätejonen dras därför starkt till syreatomen.
+
+Eftersom vätejonen i praktiken är en ensam proton binder den omedelbart till en vattenmolekyl.
+
+### Det som bildas är en oxoniumjon
 
 När en vattenmolekyl, H₂O, tar upp en vätejon, H⁺, bildas en **oxoniumjon, H₃O⁺**:
 
@@ -233,13 +254,17 @@ När en vattenmolekyl, H₂O, tar upp en vätejon, H⁺, bildas en **oxoniumjon,
 Det innebär att när vi säger att en syra avger vätejoner i vatten är det egentligen oxoniumjoner som
 finns i lösningen.
 
+### Saltsyra visar hur det går till
+
 Saltsyra är ett tydligt exempel. Saltsyra består av väteklorid, HCl, löst i vatten. När väteklorid
-reagerar med vatten överförs en vätejon från HCl till en vattenmolekyl. Då bildas en oxoniumjon och
-en kloridjon:
+reagerar med vatten överförs en vätejon från HCl till en vattenmolekyl. Då bildas en oxoniumjon och en
+kloridjon:
 
 **HCl + H₂O → H₃O⁺ + Cl⁻**
 
 Det är alltså bildandet av oxoniumjoner som gör vattenlösningen sur.
+
+Kloridjonen som blir kvar påverkar inte surheten. Den finns i lösningen men gör ingenting.
 
 ---
 
@@ -314,11 +339,11 @@ lösningen innehåller oxoniumjoner beskriver man vad som finns där.
 
 ## Kärnpunkter (Standard)
 
-- En sur lösning har fler **oxoniumjoner** än **hydroxidjoner**
-- Ju högre koncentration oxoniumjoner, desto surare
-- Lösningen innehåller **rörliga joner** och leder därför ström
-- Syror känns igen på vad de gör i kontakt med vatten
-- Olika syror avger sina vätejoner **olika lätt**
+- Vad kännetecknar en sur lösning?
+- Vad är en hydroxidjon, och varför nämns den här?
+- Varför leder sura lösningar ström?
+- Vad har alla syror gemensamt?
+- Beter sig alla syror likadant?
 
 ---
 
@@ -360,20 +385,38 @@ bara avger en del. Den skillnaden är viktig, och det är den vi ska titta på o
 
 ## C — STANDARD
 
+### En sur lösning har fler oxoniumjoner än hydroxidjoner
+
 En sur lösning är en vattenlösning där det finns fler oxoniumjoner, H₃O⁺, än hydroxidjoner, OH⁻. Ju
 större koncentrationen av oxoniumjoner är, desto surare är lösningen.
 
-Hydroxidjonen, OH⁻, består av en syreatom och en väteatom med en gemensam negativ laddning. Den
-finns alltid i små mängder i vatten, tillsammans med oxoniumjoner. I rent vatten finns det lika
-många av båda, och då är lösningen neutral. När en syra tillsätts ökar antalet oxoniumjoner, och
-lösningen blir sur.
+Magsyra har mycket hög koncentration av oxoniumjoner och är därför starkt sur. Citronsaft har lägre
+koncentration, och kaffe ännu lägre.
 
-När en syra reagerar med vatten bildas laddade partiklar, alltså joner. I exemplet med saltsyra
-finns bland annat oxoniumjoner, H₃O⁺, och kloridjoner, Cl⁻, i lösningen. Jonerna kan röra sig genom
-vattnet och transportera elektrisk laddning. Därför kan sura vattenlösningar leda elektrisk ström.
+### Hydroxidjoner finns alltid i vatten
 
-Syror kan alltså kännas igen på vad som händer när de kommer i kontakt med vatten: de avger
-vätejoner, vätejonerna binds till vattenmolekyler och det bildas oxoniumjoner.
+Hydroxidjonen, OH⁻, består av en syreatom och en väteatom med en gemensam negativ laddning. Den finns
+alltid i små mängder i vatten, tillsammans med oxoniumjoner.
+
+I rent vatten finns det lika många av båda, och då är lösningen neutral. När en syra tillsätts ökar
+antalet oxoniumjoner, och lösningen blir sur.
+
+### Sura lösningar leder ström
+
+När en syra reagerar med vatten bildas laddade partiklar, alltså joner. I exemplet med saltsyra finns
+bland annat oxoniumjoner, H₃O⁺, och kloridjoner, Cl⁻, i lösningen.
+
+Jonerna kan röra sig genom vattnet och transportera elektrisk laddning. Därför kan sura
+vattenlösningar leda elektrisk ström.
+
+Det är samma sak som gör att en saltlösning leder ström, medan rent vatten leder mycket dåligt.
+
+### Alla syror gör samma sak i vatten
+
+Syror kan alltså kännas igen på vad som händer när de kommer i kontakt med vatten: de avger vätejoner,
+vätejonerna binds till vattenmolekyler och det bildas oxoniumjoner.
+
+### Men de gör det olika lätt
 
 Alla syror beter sig däremot inte på exakt samma sätt. Olika syror avger sina vätejoner olika lätt.
 Det är grunden till skillnaden mellan starka och svaga syror, som vi återkommer till längre fram.

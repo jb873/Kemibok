@@ -8,6 +8,10 @@
 > **Enkel använder vätejon. Standard använder oxoniumjon.** Ordet oxoniumjon förekommer inte i
 > någon Enkel-text.
 
+> **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
+> påståenderubriker (###) och delade stycken enligt `reviderat-syror-1-3.md`. Tillagda meningar (där märkta ▸) ligger här
+> utan märke. Enkel och Fördjupning oförändrade.
+
 ---
 
 ## Underdelar
@@ -68,11 +72,11 @@ oxoniumjoner och surare lösning.
 
 ## Kärnpunkter (Standard)
 
-- Mängden **oxoniumjoner** avgör hur sur en lösning är
-- **pH-skalan** går från 0 till 14 i vanliga vattenlösningar
-- Under 7 surt, 7 neutralt, över 7 basiskt
-- Högre koncentration oxoniumjoner ger **lägre pH**
-- Ett steg på skalan motsvarar en **tiofaldig** skillnad i koncentration
+- Vad avgör hur sur en lösning är?
+- Vad visar pH-skalan?
+- Var går gränsen mellan surt, neutralt och basiskt?
+- Åt vilket håll går talen när surheten ökar?
+- Hur stor är skillnaden mellan två pH-steg?
 
 ---
 
@@ -130,21 +134,29 @@ inte lite surare än kaffe med pH 5 — den är tusen gånger surare.
 
 ## A — STANDARD
 
-Vi har sett att en syra avger vätejoner när den kommer i kontakt med vatten. Vätejonerna binds till
-vattenmolekyler och bildar **oxoniumjoner, H₃O⁺**. Det är mängden oxoniumjoner i en vattenlösning
-som avgör hur sur lösningen är.
+### Mängden oxoniumjoner avgör hur sur lösningen är
 
-För att beskriva hur sur eller basisk en lösning är använder man **pH-skalan**. Skalan brukar i
-vanliga vattenlösningar visas från 0 till 14.
+Vi har sett att en syra avger vätejoner när den kommer i kontakt med vatten. Vätejonerna binds till
+vattenmolekyler och bildar **oxoniumjoner, H₃O⁺**. Det är mängden oxoniumjoner i en vattenlösning som
+avgör hur sur lösningen är.
+
+### pH-skalan går från 0 till 14
+
+För att beskriva hur sur eller basisk en lösning är använder man **pH-skalan**. Skalan brukar i vanliga
+vattenlösningar visas från 0 till 14.
 
 - **pH under 7** betyder att lösningen är sur.
 - **pH 7** betyder att lösningen är neutral.
 - **pH över 7** betyder att lösningen är basisk.
 
+### Fler oxoniumjoner ger lägre pH
+
 Ju större koncentrationen av oxoniumjoner är, desto **lägre pH** har lösningen och desto surare är
-den. Magsyra har till exempel mycket lågt pH och är mycket sur. Citronsaft är också sur men har
-högre pH. Kaffe är svagt surt och ligger ännu närmare pH 7. Rent vatten är neutralt och har pH 7,
-medan exempelvis många tvållösningar är basiska och har pH över 7.
+den.
+
+Magsyra har till exempel mycket lågt pH och är mycket sur. Citronsaft är också sur men har högre pH.
+Kaffe är svagt surt och ligger ännu närmare pH 7. Rent vatten är neutralt och har pH 7, medan
+exempelvis många tvållösningar är basiska och har pH över 7.
 
 | Ämne | Ungefärligt pH |
 |---|---:|
@@ -154,9 +166,13 @@ medan exempelvis många tvållösningar är basiska och har pH över 7.
 | Rent vatten | 7 |
 | Tvållösning | 9–10 |
 
-pH-skalan fungerar inte som en vanlig skala. **Ett steg på pH-skalan motsvarar en tiofaldig skillnad
-i koncentrationen av oxoniumjoner.** En lösning med pH 3 har därför tio gånger högre koncentration
-av oxoniumjoner än en lösning med pH 4. Jämför man pH 3 med pH 5 är skillnaden hundra gånger.
+### Varje steg på skalan är tio gånger
+
+pH-skalan fungerar inte som en vanlig skala. **Ett steg på pH-skalan motsvarar en tiofaldig skillnad i
+koncentrationen av oxoniumjoner.**
+
+En lösning med pH 3 har därför tio gånger högre koncentration av oxoniumjoner än en lösning med pH 4.
+Jämför man pH 3 med pH 5 är skillnaden hundra gånger.
 
 Det betyder att en till synes liten skillnad i pH kan motsvara en stor skillnad i hur mycket
 oxoniumjoner som finns i lösningen.
@@ -218,11 +234,11 @@ inte är absoluta — finns det i djupdykningen **pH-värdet: oxoniumjoner, hydr
 
 ## Kärnpunkter (Standard)
 
-- En **indikator** ändrar färg beroende på lösningens pH
-- Olika indikatorer visar olika delar av skalan
-- **Rödkål** fungerar som indikator och går att göra hemma
-- Indikatorn byter färg för att den själv **avger eller behåller** en vätejon
-- Indikatorer ger ungefärligt pH, en **pH-mätare** ger ett tal
+- Vad är en indikator?
+- Vad visar lackmus, och vad visar den inte?
+- Vilken indikator är bäst nära neutralt?
+- Varför byter indikatorer färg över huvud taget?
+- När räcker en indikator, och när behövs en mätare?
 
 ---
 
@@ -282,34 +298,54 @@ eller basisk är lackmus snabbast. Behöver du ett exakt värde är mätaren rä
 
 ## B — STANDARD
 
+### En indikator byter färg beroende på pH
+
 För att ta reda på om en lösning är sur, neutral eller basisk kan man använda en **indikator**. En
 indikator är ett ämne som ändrar färg beroende på lösningens pH.
 
+### Lackmus visar surt eller basiskt
+
 **Lackmus** är en enkel indikator. Blått lackmuspapper blir rött i en sur lösning och rött
-lackmuspapper blir blått i en basisk lösning. Lackmus visar framför allt om en lösning är sur eller
-basisk, men ger inte något exakt pH-värde.
+lackmuspapper blir blått i en basisk lösning.
+
+Lackmus visar framför allt om en lösning är sur eller basisk, men ger inte något exakt pH-värde.
+
+### BTB har tre färger och visar även neutralt
 
 **BTB**, bromtymolblått, är en annan vanlig indikator. BTB är gult i sura lösningar, grönt omkring
 neutralt och blått i basiska lösningar. Den gör det därför lätt att se om en lösning är sur, neutral
 eller basisk.
 
+### Universalindikator och pH-papper ger ett ungefärligt värde
+
 **Universalindikator** består av flera olika indikatorämnen och kan visa ett större område av
-pH-skalan. Färgen jämförs med en färgskala för att uppskatta lösningens pH. **pH-papper** fungerar
-på liknande sätt: papperet ändrar färg och färgen jämförs med en skala.
+pH-skalan. Färgen jämförs med en färgskala för att uppskatta lösningens pH.
+
+**pH-papper** fungerar på liknande sätt: papperet ändrar färg och färgen jämförs med en skala.
+
+### Rödkål fungerar som indikator
 
 Det går också att tillverka en indikator av **rödkål**. Rödkål innehåller färgämnen som ändrar färg
 beroende på pH. Rödkålsindikator blir röd eller rosa i sura lösningar, lila omkring neutralt och går
-mot blått och grönt i basiska lösningar. Därför går det att göra enkla undersökningar av pH även
-hemma, till exempel med citronsaft, vatten och en lösning av tvål.
+mot blått och grönt i basiska lösningar.
+
+Därför går det att göra enkla undersökningar av pH även hemma, till exempel med citronsaft, vatten och
+en lösning av tvål.
+
+### Indikatorn är själv ett ämne som reagerar
 
 Att indikatorer kan byta färg beror på att de själva är ämnen som reagerar med syror och baser. En
-indikator är oftast ett ämne som själv kan avge en vätejon. När den avger sin vätejon ändras
-molekylens uppbyggnad, och den nya formen har en annan färg än den ursprungliga. Färgen visar alltså
-vilken form av indikatorn som dominerar i lösningen, och det beror i sin tur på lösningens pH.
+indikator är oftast ett ämne som själv kan avge en vätejon.
 
-Indikatorer ger framför allt ett **ungefärligt pH-värde**. Om man behöver veta pH mer exakt använder
-man i stället en **pH-mätare**. Den har en elektrod som placeras i lösningen och instrumentet visar
-pH som ett tal.
+När den avger sin vätejon ändras molekylens uppbyggnad, och den nya formen har en annan färg än den
+ursprungliga. Färgen visar alltså vilken form av indikatorn som dominerar i lösningen, och det beror i
+sin tur på lösningens pH.
+
+### En pH-mätare ger ett exakt tal
+
+Indikatorer ger framför allt ett **ungefärligt pH-värde**. Om man behöver veta pH mer exakt använder man
+i stället en **pH-mätare**. Den har en elektrod som placeras i lösningen och instrumentet visar pH som
+ett tal.
 
 Vilken metod man väljer beror därför på vad man vill ta reda på. För att snabbt avgöra om en lösning
 är sur eller basisk kan en indikator vara tillräcklig. Om man behöver ett mer exakt värde är en

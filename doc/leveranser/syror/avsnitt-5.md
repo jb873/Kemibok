@@ -7,6 +7,10 @@
 
 > **Sista avsnittet i delkapitlet Syror.** Underdel A avslutas med bryggan till baser.
 
+> **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
+> påståenderubriker (###) och delade stycken enligt `reviderat-syror-4-5.md`. Tillagda meningar (där märkta ▸) ligger här
+> utan märke. Enkel och Fördjupning oförändrade.
+
 ---
 
 ## Underdelar
@@ -69,11 +73,11 @@ väteatomer. Två väteatomer bildar en vätgasmolekyl.
 
 ## Kärnpunkter (Standard)
 
-- Sur smak — men **aldrig** smaka på kemikalier
-- **pH under 7**: fler oxoniumjoner än hydroxidjoner
-- Leder ström tack vare **rörliga joner**
-- Reagerar med vissa metaller under bildning av **vätgas**
-- Kan vara **frätande**, och kan **neutraliseras** av baser
+- Vad har alla sura lösningar gemensamt?
+- Varför har de pH under 7?
+- Varför leder de ström?
+- Vad händer när en syra möter en metall?
+- Vad är gemensamt för syrornas säkerhetsrisker?
 
 ---
 
@@ -136,35 +140,53 @@ Vad baser är, och hur neutralisation går till, är vad de kommande delkapitlen
 
 ## A — STANDARD
 
-Syror är en stor grupp ämnen med många olika egenskaper. En del finns naturligt i mat och dryck,
-medan andra används inom industrin och kan vara starkt frätande. Trots skillnaderna har sura
-lösningar flera gemensamma egenskaper.
+### Syror är olika men har gemensamma drag
 
-Sura ämnen förknippas ofta med **sur smak**. Citronsaft, vinäger och många frukter smakar surt
-eftersom de innehåller syror. Man får däremot **aldrig smaka på ett okänt ämne eller på kemikalier i
-ett laboratorium** för att undersöka om de är sura.
+Syror är en stor grupp ämnen med många olika egenskaper. En del finns naturligt i mat och dryck, medan
+andra används inom industrin och kan vara starkt frätande. Trots skillnaderna har sura lösningar flera
+gemensamma egenskaper.
+
+### De smakar surt — men smaka aldrig
+
+Sura ämnen förknippas ofta med **sur smak**. Citronsaft, vinäger och många frukter smakar surt eftersom
+de innehåller syror.
+
+Man får däremot **aldrig smaka på ett okänt ämne eller på kemikalier i ett laboratorium** för att
+undersöka om de är sura.
+
+### De har pH under 7
 
 Sura vattenlösningar har **pH under 7**. Det beror på att de innehåller fler oxoniumjoner, H₃O⁺, än
 hydroxidjoner, OH⁻. Ju större koncentrationen av oxoniumjoner är, desto lägre blir pH-värdet.
+
+### De leder elektrisk ström
 
 Sura lösningar **leder elektrisk ström** eftersom de innehåller rörliga joner. När exempelvis
 väteklorid löses i vatten bildas oxoniumjoner och kloridjoner som kan transportera elektrisk laddning
 genom lösningen.
 
+### De kan reagera med metaller och bilda vätgas
+
 Syror kan också **reagera med vissa metaller**. Vid sådana reaktioner kan det bildas vätgas. Alla
 metaller reagerar dock inte lika lätt med syror.
 
-Det som händer är att metallatomerna avger elektroner, precis som när de bildar joner. Elektronerna
-tas upp av vätejonerna i lösningen, som därmed blir väteatomer igen. Två väteatomer bildar
-tillsammans en vätgasmolekyl, som bubblar upp ur lösningen.
+Det som händer är att metallatomerna avger elektroner, precis som när de bildar joner. Elektronerna tas
+upp av vätejonerna i lösningen, som därmed blir väteatomer igen. Två väteatomer bildar tillsammans en
+vätgasmolekyl, som bubblar upp ur lösningen.
 
-Många syror kan vara **frätande**. Det gäller särskilt koncentrerade lösningar av starka syror, men
-även vissa koncentrerade svaga syror kan orsaka allvarliga skador. Hur farlig en syralösning är beror
-därför inte enbart på om syran kallas stark eller svag.
+### Många är frätande — också svaga
+
+Många syror kan vara **frätande**. Det gäller särskilt koncentrerade lösningar av starka syror, men även
+vissa koncentrerade svaga syror kan orsaka allvarliga skador.
+
+Hur farlig en syralösning är beror därför inte enbart på om syran kallas stark eller svag.
+
+### De kan neutraliseras av baser
 
 En annan viktig egenskap är att syror kan **neutraliseras av baser**. När en syra och en bas reagerar
-med varandra minskar deras sura respektive basiska egenskaper. Detta kallas **neutralisation** och är
-något vi kommer att undersöka närmare längre fram.
+med varandra minskar deras sura respektive basiska egenskaper.
+
+Detta kallas **neutralisation** och är något vi kommer att undersöka närmare längre fram.
 
 ---
 
@@ -220,10 +242,11 @@ elektrokemi, där den ligger till grund för hur batterier fungerar.
 
 ## Kärnpunkter (Standard)
 
-- Tre starka syror: saltsyra, svavelsyra, salpetersyra — främst industri
-- Fem svaga: ättiksyra, citronsyra, kolsyra, mjölksyra, myrsyra — främst natur och livsmedel
-- Svavelsyra är en av industrins **viktigaste** kemikalier
-- Kolsyran ingår i naturens system för att hålla pH stabilt
+- Vilka starka syror används i industrin?
+- Vilken syra finns i din egen kropp?
+- Vilka syror finns i maten?
+- Vad används citronsyra till förutom smak?
+- Vilken syra har fått sitt namn av ett djur?
 
 ---
 
@@ -297,63 +320,89 @@ miljön hindrar fodret från att ruttna.
 
 ## B — STANDARD
 
+### Syror finns överallt
+
 Syror finns både i naturen och i produkter som vi använder varje dag. De används också som viktiga
 råvaror inom industrin.
 
-### Saltsyra
+Tabellen ger en översikt. Texten under går igenom var och en närmare.
 
-**Saltsyra** är väteklorid, HCl, löst i vatten. Den finns naturligt i magsäcken, där den bidrar till
-den mycket sura miljön som behövs för matsmältningen och hjälper till att oskadliggöra många
-mikroorganismer. Inom industrin används saltsyra bland annat för att rengöra och behandla metallytor.
+| Syra | Formel | Stark/svag | Var den finns | Används till |
+|---|---|---|---|---|
+| Saltsyra | HCl | Stark | Magsäcken | Metallrengöring |
+| Svavelsyra | H₂SO₄ | Stark | Industrin | Gödsel, batterier |
+| Salpetersyra | HNO₃ | Stark | Industrin | Gödsel, sprängämnen |
+| Ättiksyra | CH₃COOH | Svag | Ättika, vinäger | Matlagning, konservering |
+| Citronsyra | — | Svag | Citrusfrukter | Livsmedel, avkalkning |
+| Kolsyra | H₂CO₃ | Svag | Kolsyrade drycker, natur | — |
+| Mjölksyra | — | Svag | Yoghurt, muskler | Livsmedel |
+| Myrsyra | HCOOH | Svag | Myror | Ensilering |
 
-### Svavelsyra
+### Saltsyra finns i magsäcken
+
+**Saltsyra** är väteklorid, HCl, löst i vatten. Den finns naturligt i magsäcken, där den bidrar till den
+mycket sura miljön som behövs för matsmältningen och hjälper till att oskadliggöra många
+mikroorganismer.
+
+Inom industrin används saltsyra bland annat för att rengöra och behandla metallytor.
+
+### Svavelsyra är industrins viktigaste kemikalie
 
 **Svavelsyra, H₂SO₄**, är en av industrins viktigaste kemikalier. Den används bland annat vid
-tillverkning av gödselmedel och många andra kemiska produkter. Svavelsyra används också som elektrolyt
-i vanliga blybatterier, exempelvis startbatterier i många bilar.
+tillverkning av gödselmedel och många andra kemiska produkter.
 
-### Salpetersyra
+Svavelsyra används också som elektrolyt i vanliga blybatterier, exempelvis startbatterier i många
+bilar.
+
+### Salpetersyra används till gödsel och sprängämnen
 
 **Salpetersyra, HNO₃**, används framför allt inom kemisk industri. Den är viktig vid framställning av
 gödselmedel och används även vid tillverkning av vissa sprängämnen och andra kemiska produkter.
 
-### Ättiksyra
+### Ättiksyra ger ättika dess smak
 
 **Ättiksyra, CH₃COOH**, är en svag syra som ger ättika och vinäger deras sura smak. Den används i
 matlagning och för konservering av livsmedel eftersom den sura miljön hämmar tillväxten av många
-mikroorganismer. Ättiksyra används också i många industriella processer.
+mikroorganismer.
 
-### Citronsyra
+Ättiksyra används också i många industriella processer.
 
-**Citronsyra** är en svag syra som finns naturligt i bland annat citrusfrukter. Den används i
-livsmedel för att ge syrlig smak och för att reglera surhetsgraden. Citronsyra kan också användas för
-**avkalkning**, eftersom den kan hjälpa till att lösa upp kalkavlagringar.
+### Citronsyra löser kalk
 
-### Kolsyra
+**Citronsyra** är en svag syra som finns naturligt i bland annat citrusfrukter. Den används i livsmedel
+för att ge syrlig smak och för att reglera surhetsgraden.
+
+Citronsyra kan också användas för **avkalkning**, eftersom den kan hjälpa till att lösa upp
+kalkavlagringar.
+
+### Kolsyra bildas när koldioxid löses i vatten
 
 **Kolsyra, H₂CO₃**, bildas när koldioxid löser sig i vatten och reagerar med vattenmolekyler. Den
 förekommer därför bland annat i kolsyrade drycker.
 
 Kolsyra har också stor betydelse i naturen. När koldioxid löser sig i vatten bildas kolsyra, och
 kolsyran kan sedan avge sina vätejoner i två steg. Det gör att flera olika partiklar finns i vattnet
-samtidigt, och de kan omvandlas till varandra. Tillsammans hjälper de till att hålla vattnets pH
-någorlunda stabilt, även om något surt eller basiskt tillförs. Det har stor betydelse i sjöar, hav och
-grundvatten.
+samtidigt, och de kan omvandlas till varandra.
 
-### Mjölksyra
+Tillsammans hjälper de till att hålla vattnets pH någorlunda stabilt, även om något surt eller basiskt
+tillförs. Det har stor betydelse i sjöar, hav och grundvatten.
+
+### Mjölksyra bildas av bakterier — och i musklerna
 
 **Mjölksyra** förekommer i många livsmedel och bildas bland annat av mjölksyrabakterier. Bakteriernas
 ämnesomsättning används vid framställning av exempelvis yoghurt och syrade grönsaker.
 
 I kroppen talar man ibland om att "mjölksyra bildas i musklerna" vid hårt arbete. Det är en
-förenkling. Vid kroppens pH förekommer ämnet huvudsakligen i sin jonform, **laktat**. Laktat bildas
-när musklerna arbetar intensivt och kan sedan användas vidare i kroppens ämnesomsättning.
+förenkling. Vid kroppens pH förekommer ämnet huvudsakligen i sin jonform, **laktat**. Laktat bildas när
+musklerna arbetar intensivt och kan sedan användas vidare i kroppens ämnesomsättning.
 
-### Myrsyra
+### Myrsyra har fått sitt namn av myror
 
 **Myrsyra, HCOOH**, är en svag syra som bland annat förekommer hos myror och har fått sitt namn
-därifrån. Myrsyra används också inom jordbruket, bland annat vid **ensilering**, där den sura miljön
-hjälper till att bevara djurfoder.
+därifrån.
+
+Myrsyra används också inom jordbruket, bland annat vid **ensilering**, där den sura miljön hjälper till
+att bevara djurfoder.
 
 ---
 
@@ -411,11 +460,11 @@ nästa delkapitel handlar om.
 
 ## Kärnpunkter (Standard)
 
-- En kemikalie kan vara farlig även om syran kallas svag
-- Kontrollera **farosymboler** och följ instruktioner
-- **Skyddsglasögon** vid risk för stänk
-- **SIV-regeln** vid utspädning
-- Vid stänk: skölj rikligt, ta av förorenade kläder, kontakta lärare
+- Kan en svag syra vara farlig?
+- Vad ska man kontrollera innan man börjar?
+- När behövs skyddsglasögon?
+- Vad gör man vid stänk på hud eller i ögon?
+- Vad gör man vid större spill?
 
 ---
 
@@ -462,21 +511,38 @@ gör är en del av att kunna använda dem säkert.
 
 ## C — STANDARD
 
+### Också svaga syror kan vara farliga
+
 Syror ska alltid hanteras med respekt. En kemikalie kan vara farlig även om syran som ingår
-klassificeras som svag. Därför ska man alltid följa instruktioner och kontrollera kemikaliens
-farosymboler innan den används.
+klassificeras som svag.
+
+Därför ska man alltid följa instruktioner och kontrollera kemikaliens farosymboler innan den används.
+
+### Skyddsglasögon vid risk för stänk
 
 I laboratorium används **skyddsglasögon** när det finns risk för stänk. Man får aldrig smaka på
 laboratoriekemikalier och bör undvika att få dem på hud och kläder.
 
+### SIV-regeln gäller vid all utspädning
+
 När en koncentrerad syra ska spädas med vatten gäller **SIV-regeln — Syra I Vatten**. Syran tillsätts
-försiktigt till vattnet. Man ska inte hälla vatten i koncentrerad syra eftersom blandningen kan bli
-mycket varm och syra kan stänka upp.
+försiktigt till vattnet.
+
+Man ska inte hälla vatten i koncentrerad syra eftersom blandningen kan bli mycket varm och syra kan
+stänka upp.
+
+### Vid stänk: skölj omedelbart och länge
 
 Om man får syra på huden ska det förorenade området **omedelbart sköljas med rikligt med vatten** och
-förorenade kläder tas bort. Vid stänk i ögonen ska ögat omedelbart sköljas med mycket vatten under lång
-tid och ansvarig vuxen eller lärare kontaktas direkt. Vid större spill i ett laboratorium ska man inte
-försöka lösa situationen själv utan varna andra och följa lärarens instruktioner.
+förorenade kläder tas bort.
+
+Vid stänk i ögonen ska ögat omedelbart sköljas med mycket vatten under lång tid och ansvarig vuxen eller
+lärare kontaktas direkt.
+
+### Vid större spill: varna andra
+
+Vid större spill i ett laboratorium ska man inte försöka lösa situationen själv utan varna andra och
+följa lärarens instruktioner.
 
 Syror kan alltså vara både användbara och nödvändiga. Samtidigt måste deras kemiska egenskaper förstås
 för att de ska kunna användas på ett säkert sätt.
