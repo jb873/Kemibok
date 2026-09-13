@@ -23,7 +23,7 @@
     {
       "id": "k3-s3",
       "typ": "tal",
-      "fraga": "En lösning har pH 9. En annan har pH 10. Hur många gånger fler hydroxidjoner har den andra?",
+      "fraga": "En lösning har pH 8. En annan har pH 9. Hur många gånger fler hydroxidjoner har den andra?",
       "svar": 10,
       "forklaring": "Tio gånger. Varje steg på skalan är en tiofaldig skillnad, även åt basiska hållet."
     },

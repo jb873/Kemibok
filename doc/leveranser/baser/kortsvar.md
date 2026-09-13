@@ -7,6 +7,7 @@
 >
 > Bygg (Code 2026-09-13): `node verktyg/bygg-kortsvar.js baser` läser denna fil i tabellform (samma form
 > som syrornas kortsvar.md). Leverans 2026-09-13 (klistrad i chatten).
+> Justerat 2026-09-13 (Joachim): 3:3 använder pH 8 och pH 9 i stället för 9 och 10, så att facit 10 inte står i frågan.
 
 ---
 
@@ -105,7 +106,7 @@ större · Ammoniak är ett gas
 |---|---|---|---|
 | 1 | tal | Vilket pH har en neutral lösning? | 7 |
 | 2 | tal | En lösning har pH 11. Vilket pOH har den? | 3 |
-| 3 | tal | En lösning har pH 9. En annan har pH 10. Hur många gånger fler hydroxidjoner har den andra? | 10 |
+| 3 | tal | En lösning har pH 8. En annan har pH 9. Hur många gånger fler hydroxidjoner har den andra? | 10 |
 | 4 | ord | Vad kallas måttet på koncentrationen av hydroxidjoner? | pOH |
 | 5 | flerval | Vilket pH har en basisk lösning? | Över 7 |
 | 6 | flerval | Vilken färg blir BTB i en basisk lösning? | Blå |
