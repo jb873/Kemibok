@@ -95,12 +95,29 @@ const AVSNITT_NEUTRALISATION = {
   2: { dd: [],
        bilder: { 'antacidum.webp': { aktiv: ['enkel', 'standard'], staende: true, enkel: 'kemi, inte absorption', standard: 'De reagerar kemiskt med den' } } }   // staende: max-height i kemi.css
 };
+// Försurning (leverans 2026-09-13): avsnitt 1 saknas i leveransen ännu (sur-nederbord.svg, forbranning-till-syra.svg,
+// utsläppsbilden, faktarutan och delkapitlets intro kommer med den). AI-bilderna levererade med grön bakgrund,
+// nycklade + beskurna (nyckla-gron.js --beskar); diagrammen genererade i bilder-svg.js. Alla underdelar har fördjupning.
+const AVSNITT_FORSURNING = {
+  2: { dd: [],
+       bilder: {
+         'buffert-tar-slut.svg': { aktiv: ['enkel', 'standard'], enkel: 'Skadan byggdes upp långt innan den syntes', standard: 'betydligt sämre buffertförmåga' },
+         'aluminium-i-gal.webp': { aktiv: ['enkel', 'standard'], enkel: 'Sätter aluminiumet igen dem störs båda', standard: 'arter som är känsliga för försurning' },
+         'vittrad-sten.webp': { aktiv: ['enkel', 'standard'], enkel: 'Skillnaden är bara hastigheten', standard: 'gravstenar och andra kulturföremål' }
+       } },
+  3: { dd: [],
+       bilder: {
+         'kalkning.webp': { aktiv: ['enkel', 'standard'], enkel: 'i rinnande vatten finns särskilda doserare', standard: 'Många vatten behöver kalkas återkommande' },
+         'svavelutslapp-diagram.svg': { aktiv: ['enkel', 'standard'], enkel: 'nära nivåerna före', standard: 'ligger nu nära förindustriella nivåer' }
+       } }
+};
 const DELKAPITEL = {
   // bank: id-prefix och avsnittsoffset i kapitlets begreppsbank (en fil per kapitel; id/avsnitt unika över delkapitlen)
   repetition: { titel: 'Bakgrund och repetition', avsnitt: AVSNITT_REPETITION, bank: { idPrefix: '', avsnittOffset: 0 } },
   // uteslut: grundläggande begreppskort som INTE går till banken (kortet finns kvar som flipcard), term → skäl
   syror: { titel: 'Syror', avsnitt: AVSNITT_SYROR, bank: { idPrefix: 'S', avsnittOffset: 5, uteslut: { 'koncentration': 'finns redan i repetition avsnitt 5, där eleven möter begreppet först (Joachim 2026-09-13)' } } },
   baser: { titel: 'Baser', avsnitt: AVSNITT_BASER, bank: { idPrefix: 'B', avsnittOffset: 10 } },
-  neutralisation: { titel: 'Neutralisation', avsnitt: AVSNITT_NEUTRALISATION, bank: { idPrefix: 'N', avsnittOffset: 14, uteslut: { 'neutralisation': 'finns redan i baser avsnitt 4, där eleven möter begreppet först (Joachim 2026-09-13)' } } }
+  neutralisation: { titel: 'Neutralisation', avsnitt: AVSNITT_NEUTRALISATION, bank: { idPrefix: 'N', avsnittOffset: 14, uteslut: { 'neutralisation': 'finns redan i baser avsnitt 4, där eleven möter begreppet först (Joachim 2026-09-13)' } } },
+  forsurning: { titel: 'Försurning', avsnitt: AVSNITT_FORSURNING, bank: { idPrefix: 'F', avsnittOffset: 16 } }
 };
 module.exports = { DELKAPITEL };

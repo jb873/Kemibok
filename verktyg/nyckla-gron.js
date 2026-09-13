@@ -67,7 +67,9 @@ let o;
 try { o = JSON.parse(ut.slice(start)); } catch (e) { console.error('verifiera gav inget resultat:', ut.slice(0, 500), res.stderr); process.exit(1); }
 const p = o.probe;
 if (!p || p.FEL) { console.error('nyckling misslyckades:', JSON.stringify(p)); process.exit(1); }
-if (p.hornAlfa.some(a => a !== 0)) { console.error(`hörnen är inte genomskinliga efter nyckling (alfa ${p.hornAlfa.join(',')}) – var bakgrunden verkligen #00ff00?`); process.exit(1); }
+// alla fyra hörn opaka = bakgrunden var inte grön → avbryt; enstaka opaka hörn = motivet går till kanten (t.ex. vattenyta), varna
+if (p.hornAlfa.every(a => a !== 0)) { console.error(`hörnen är inte genomskinliga efter nyckling (alfa ${p.hornAlfa.join(',')}) – var bakgrunden verkligen #00ff00?`); process.exit(1); }
+if (p.hornAlfa.some(a => a !== 0)) { console.log(`  ⚠ motivet går ända till bildkanten i ${p.hornAlfa.filter(a => a !== 0).length} hörn (alfa ${p.hornAlfa.join(',')}) – kontrollera hur kanten möter papperet`); }
 fs.writeFileSync(utFil, Buffer.from(p.data.split(',')[1], 'base64'));
 const b = p.beskuren;
 const beskText = !b ? '' : b.oforandrad ? ', beskärning: inget att ta bort' : `, beskuren till ${b.bw}x${b.bh} (bort: ${b.bortUpp} upp, ${b.bortNer} ner, ${b.bortVanster} vänster, ${b.bortHoger} höger px; marginal ${MARGINAL} %)`;

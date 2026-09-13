@@ -13,6 +13,8 @@
 //   tva-vagar-till-bas.svg              delkapitel Baser 1 B – NaOH-gitter / NH3 + H2O → NH4+ + OH- (baser/img/)
 //   neutralisation-partiklar.svg        delkapitel Neutralisation 1 A – sur + basisk → neutral (neutralisation/img/)
 //   vad-blir-kvar.svg                   delkapitel Neutralisation 1 B – före/efter, åskådarjoner kvar
+//   buffert-tar-slut.svg                delkapitel Försurning 2 A – pH-diagram, bufferten räcker/förbrukad
+//   svavelutslapp-diagram.svg           delkapitel Försurning 3 C – svavelnedfall 1980–2020
 //   vatejon-och-oxoniumjon.svg          delkapitel Syror 1 B – H2O + H+ → H3O+ i tre lager (skrivs till delkapitel/syror/img/)
 //   ph-skalan.svg                       delkapitel Syror 2 A – skala 0–14 med exempel (syror/img/)
 //   fyra-kombinationerna.svg            delkapitel Syror 4 B – stark/svag × koncentrerad/utspädd (syror/img/)
@@ -602,4 +604,51 @@ ${STOPP.map(([ph, f]) => `      <stop offset="${r2(ph / 14 * 100)}%" stop-color=
   }
 }
 
-console.log('skrev 14 svg (8 repetition, 3 syror, 1 baser, 2 neutralisation)', path.relative(path.join(__dirname, '..'), UT));
+
+// ---------- 15–16. Försurning: två diagram med axlar (avsnitt 2 A, avsnitt 3 C) ----------
+// Joachims spec 2026-09-13. Kurva i mörkgrönt, axlar och text INK, transparent bakgrund.
+{
+  const UT5 = path.join(__dirname, '..', 'kapitel', 'syror-och-baser', 'delkapitel', 'forsurning', 'img');
+  fs.mkdirSync(UT5, { recursive: true });
+  const KURVA = '#2d4a35';
+  const axel = (x0, y0, x1, y1) => `  <line x1="${x0}" y1="${y0}" x2="${x1}" y2="${y1}" stroke="${INK}" stroke-width="2"/>\n`;
+  const txt = (x, y, t, extra = '') => `  <text x="${r2(x)}" y="${r2(y)}" fill="${INK}" ${/font-size=/.test(extra) ? '' : 'font-size="16"'} ${FONT} ${extra}>${t}</text>\n`;   // font-size i extra ersätter (dubbla attribut = ogiltig XML)
+  // ----- 15. buffert-tar-slut.svg -----
+  {
+    const W = 640, H = 400, L = 70, Rr = 600, T = 30, B = 300;   // plotområde
+    const ph = v => B - (v - 4) / (7 - 4) * (B - T);              // pH 4..7 → y
+    const x = f => L + f * (Rr - L);                              // andel av tid → x
+    let ut = axel(L, T - 10, L, B) + axel(L, B, Rr + 10, B);
+    [4, 5, 6, 7].forEach(v => { ut += `  <line x1="${L - 6}" y1="${r2(ph(v))}" x2="${L}" y2="${r2(ph(v))}" stroke="${INK}" stroke-width="2"/>\n` + txt(L - 14, ph(v) + 6, v, 'text-anchor="end"'); });
+    ut += txt(L - 40, T - 18, 'pH', 'text-anchor="middle"');
+    ut += txt((L + Rr) / 2, B + 34, 'Tillförd syra över tid', 'text-anchor="middle" font-style="italic"');
+    // kurvan: nästan vågrät från 6,5 över två tredjedelar, sedan snabbt ner till 4,3
+    const P = []; for (let i = 0; i <= 100; i++) { const f = i / 100; const v = f < 0.62 ? 6.5 - 0.15 * f / 0.62 : 6.35 - (6.35 - 4.3) * Math.pow((f - 0.62) / 0.38, 0.75); P.push([r2(x(f)), r2(ph(v))]); }
+    ut += `  <polyline points="${P.map(p => p.join(',')).join(' ')}" fill="none" stroke="${KURVA}" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>\n`;
+    // klamrar under kurvans två delar
+    const klammer = (xa, xb, y, text) => `  <path d="M${r2(xa)} ${y}v8h${r2(xb - xa)}v-8" fill="none" stroke="${INK}" stroke-width="1.5"/>\n` + txt((xa + xb) / 2, y + 28, text, 'text-anchor="middle" font-style="italic"');
+    ut += klammer(x(0.02), x(0.6), B + 48, 'Bufferten räcker') + klammer(x(0.64), x(0.98), B + 48, 'Bufferten är förbrukad');
+    fs.writeFileSync(path.join(UT5, 'buffert-tar-slut.svg'), svg(W, H,
+      'Diagram: markens pH när syra tillförs över tid. Nästan vågrät kurva kring pH 6,5 medan bufferten räcker, sedan brant fall till pH 4,3 när bufferten är förbrukad', ut));
+  }
+  // ----- 16. svavelutslapp-diagram.svg -----
+  {
+    const W = 640, H = 380, L = 130, Rr = 600, T = 40, B = 300;
+    const yr = a => L + (a - 1980) / 40 * (Rr - L);
+    const niva = f => B - f * (B - T);                            // 0..1 av 1980 års nivå → y
+    let ut = axel(L, T - 10, L, B) + axel(L, B, Rr + 10, B);
+    [1980, 1990, 2000, 2010, 2020].forEach(a => { ut += `  <line x1="${r2(yr(a))}" y1="${B}" x2="${r2(yr(a))}" y2="${B + 6}" stroke="${INK}" stroke-width="2"/>\n` + txt(yr(a), B + 26, a, 'text-anchor="middle"'); });
+    ut += `  <line x1="${L - 6}" y1="${niva(1)}" x2="${L}" y2="${niva(1)}" stroke="${INK}" stroke-width="2"/>\n` + txt(L - 12, niva(1) + 5, '1980 års nivå', 'text-anchor="end" font-size="13"');
+    ut += `  <text transform="translate(${L - 100} ${(T + B) / 2}) rotate(-90)" text-anchor="middle" fill="${INK}" font-size="16" ${FONT} font-style="italic">Svavelnedfall</text>\n`;
+    // förindustriell nivå: streckad linje nära botten
+    const FOR = 0.12;
+    ut += `  <line x1="${L}" y1="${r2(niva(FOR))}" x2="${Rr}" y2="${r2(niva(FOR))}" stroke="${INK}" stroke-width="1.5" stroke-dasharray="6 5"/>\n` + txt(L + 190, niva(FOR) - 8, 'förindustriell nivå', 'text-anchor="start" font-style="italic" font-size="14"');
+    // kurvan: från 1,0 vid 1980, brant fall till ~2000, sedan utplaning nära den streckade linjen
+    const P = []; for (let a = 1980; a <= 2020; a += 0.5) { const f = (a - 1980) / 40; const v = FOR + 0.03 + (1 - FOR - 0.03) * Math.exp(-4.2 * f) * (1 - 0.15 * f); P.push([r2(yr(a)), r2(niva(v))]); }
+    ut += `  <polyline points="${P.map(p => p.join(',')).join(' ')}" fill="none" stroke="${KURVA}" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>\n`;
+    fs.writeFileSync(path.join(UT5, 'svavelutslapp-diagram.svg'), svg(W, H,
+      'Diagram över svavelnedfallet över Sverige 1980–2020: kurvan börjar högt vid 1980, faller brant till omkring 2000 och planar ut nära en streckad linje för förindustriell nivå', ut));
+  }
+}
+
+console.log('skrev 16 svg (8 repetition, 3 syror, 1 baser, 2 neutralisation, 2 försurning)', path.relative(path.join(__dirname, '..'), UT));

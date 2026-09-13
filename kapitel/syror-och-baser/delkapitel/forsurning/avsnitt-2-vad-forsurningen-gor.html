@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vad försurningen gör – Försurning – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Försurning</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">2. Vad försurningen gör</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 2</span>
+      <h1>Vad försurningen gör</h1>
+      <p class="subtitel">— mark, vatten och material —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">I marken</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">I sjöar och vattendrag</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">På byggnader och material</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-vad-forsurningen-gor">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — I marken ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Marken kan <strong>ta emot</strong> en viss mängd syra utan att pH ändras</li>
+              <li>Det kallas <strong>buffertförmåga</strong></li>
+              <li>När bufferten tar slut sjunker pH <strong>snabbt</strong></li>
+              <li><strong>Näringsämnen</strong> sköljs ur marken</li>
+              <li><strong>Aluminium</strong> frigörs och skadar rötter och vattendjur</li>
+            </ul>
+          </div>
+
+          <p>Försurningen börjar i marken, och det är också där den blir svårast att göra något åt.</p>
+          <h2>Marken tål en del</h2>
+          <p>Mark utsätts för syror hela tiden, också helt naturligt. Ändå ändras markens pH ofta väldigt långsamt.</p>
+          <p>Anledningen är att marken har en <strong>buffertförmåga</strong>. Den innehåller ämnen som kan ta upp vätejoner och på så sätt hålla pH någorlunda stabilt — ungefär som blodets buffert du läste om tidigare.</p>
+          <p>I marken sker det dels genom att mineral långsamt vittrar sönder, dels genom reaktioner med basiska ämnen som redan finns där. Jordar med mycket kalk klarar det bäst.</p>
+          <p>Svenska marker har ofta dålig buffertförmåga. Berggrunden består till stor del av svårvittrade bergarter som ger ifrån sig lite.</p>
+          <h2>Tills den inte gör det</h2>
+          <p>Här kommer det som gör försurningen lömsk.</p>
+          <p>Så länge bufferten räcker händer nästan ingenting. Syra tillförs år efter år, och pH ligger stilla. Allt ser bra ut.</p>
+          <p>Men bufferten förbrukas. Och när den är slut sjunker pH <strong>snabbt</strong> — det är inte en gradvis försämring utan ett plötsligt fall.</p>
+          <p>Det är därför försurningen tog decennier att upptäcka. Skadan byggdes upp långt innan den syntes.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Hur kurvan ser ut i <strong>början</strong> av diagrammet</li>
+              <li>Var kurvan <strong>börjar sjunka</strong></li>
+              <li>Hur snabbt den faller därefter</li>
+              <li>Vad de två klamrarna under kurvan säger</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/buffert-tar-slut.svg" alt="Ett diagram som visar markens pH när syra tillförs över tid. Kurvan ligger nästan vågrät kring pH 6,5 under den första delen, märkt att bufferten räcker. Därefter faller den brant till pH 4,3, där bufferten är förbrukad.">
+            <figcaption>Länge händer nästan ingenting — marken tar hand om syran. När den inte klarar mer sjunker pH snabbt.</figcaption>
+          </figure>
+          <h2>Näringen försvinner</h2>
+          <p>Samtidigt händer något annat.</p>
+          <p>Marken innehåller positivt laddade näringsjoner som växterna behöver — <strong>kalcium, magnesium och kalium</strong>. De sitter bundna till markpartiklarna.</p>
+          <p>När vätejoner tillförs tränger de undan näringsjonerna, som då följer med markvattnet nedåt och försvinner. Det kallas <strong>urlakning</strong>.</p>
+          <p>Marken blir alltså fattigare på näring, samtidigt som den blir surare.</p>
+          <h2>Aluminium frigörs</h2>
+          <p>Och till sist något som är värre än de två föregående.</p>
+          <p><strong>Aluminium</strong> finns naturligt bundet i markens mineral. Där är det ofarligt — det sitter fast och påverkar ingenting.</p>
+          <p>Men vid lågt pH löses aluminium ut i jonform. Och lösta aluminiumjoner är <strong>giftiga</strong>. De skadar växternas rötter, och de följer med vattnet till bäckar och sjöar där de skadar fisken.</p>
+          <h2>Mer än bara pH</h2>
+          <p>Slutsatsen är viktig: försurning handlar inte bara om att ett tal blir lägre.</p>
+          <p><strong>Hela markens jonbalans förändras.</strong> Näringsämnen försvinner, och ämnen som var ofarliga blir tillgängliga och giftiga. Det är summan av detta som skadar naturen.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Marken har en <strong>buffertförmåga</strong> genom vittring och basiska ämnen</li>
+              <li>Kalkrika jordar buffrar bäst; svårvittrade bergarter sämst</li>
+              <li>Vätejoner tränger undan kalcium, magnesium och kalium — <strong>urlakning</strong></li>
+              <li>Vid lägre pH ökar mängden <strong>lösliga aluminiumformer</strong></li>
+              <li>Hela markens <strong>jonbalans</strong> förändras, inte bara pH</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Marken utsätts ständigt för syror, även från naturliga processer. Trots det förändras markens pH ofta långsamt. Orsaken är att marken har en <strong>buffertförmåga</strong>.</p>
+          <p>En buffert kan ta upp tillsatta vätejoner och därmed motverka stora förändringar av pH. I marken sker detta bland annat genom vittring av mineral och genom reaktioner med olika basiska ämnen. Jordar som innehåller mycket kalk har särskilt stor förmåga att neutralisera syra. Många svenska marker består däremot av svårvittrade bergarter och har därför betydligt sämre buffertförmåga.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/buffert-tar-slut.svg" alt="Ett diagram som visar markens pH när syra tillförs över tid. Kurvan ligger nästan vågrät kring pH 6,5 under den första delen, märkt att bufferten räcker. Därefter faller den brant till pH 4,3, där bufferten är förbrukad.">
+            <figcaption>Markens buffertkapacitet håller pH nästan konstant tills den är förbrukad. Därefter sjunker pH snabbt. Det är därför försurningen tog decennier att upptäcka.</figcaption>
+          </figure>
+          <p>När vätejoner tillförs marken under lång tid förbrukas en del av denna buffert. Samtidigt påverkas markens joner. Positivt laddade näringsjoner som <strong>kalciumjoner, magnesiumjoner och kaliumjoner</strong> kan trängas undan av vätejoner och följa med markvattnet nedåt. Detta kallas <strong>urlakning</strong>.</p>
+          <p>Marken förlorar då ämnen som växterna behöver.</p>
+          <p>När pH sjunker ytterligare händer något annat viktigt. Aluminium finns naturligt bundet i markens mineral. Vid högre pH är mycket av aluminiumet relativt hårt bundet, men i surare mark ökar mängden lösliga former av aluminium. Dessa kan skada växternas rötter och transporteras med markvattnet till bäckar, åar och sjöar.</p>
+          <p>Det betyder att försurning inte bara handlar om ett lägre pH-värde. <strong>Hela markens jonbalans förändras.</strong> Näringsämnen försvinner samtidigt som ämnen som aluminium blir mer tillgängliga.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Vad buffertkapacitet betyder i marken</h2>
+          <p>Standardtexten säger att marken har en buffertförmåga. Begreppet mötte du i syrornas och basernas fördjupningar, men markens buffert fungerar inte riktigt som blodets.</p>
+          <p>Blodets buffert bygger på en jämvikt mellan kolsyra och vätekarbonat i lösning. Den reagerar omedelbart och fungerar åt båda hållen.</p>
+          <p>Markens buffert är något annat. Den är en <strong>förrådsbuffert</strong>: ett lager av basiska ämnen som förbrukas när de används. Vittring fyller på förrådet, men mycket långsamt.</p>
+          <p>Det gör att markens buffert har en <strong>kapacitet</strong> — en total mängd syra den kan ta emot innan den är slut. Blodets buffert har ingen sådan gräns på samma sätt, eftersom den ständigt återställs.</p>
+          <h2>Därför tröskeleffekten</h2>
+          <p>Nu blir kurvan begriplig.</p>
+          <p>Så länge det finns basiska ämnen kvar neutraliseras varje vätejon som tillförs, och pH ändras knappt. Marken beter sig som om ingenting händer.</p>
+          <p>Men varje vätejon som neutraliseras förbrukar lite av förrådet. När förrådet är slut finns inget kvar att neutralisera med, och nästa vätejon som tillförs sänker pH direkt.</p>
+          <p>Övergången är därför inte gradvis utan skarp. Det är samma sak som händer när en titrering passerar ekvivalenspunkten — pH står nästan stilla länge och rusar sedan.</p>
+          <h2>Jonbytet</h2>
+          <p>Urlakningen förtjänar en förklaring till.</p>
+          <p>Markpartiklar har negativt laddade ytor, och positiva joner fäster vid dem. Kalcium-, magnesium- och kaliumjoner sitter där och kan tas upp av växtrötter vid behov — marken fungerar som ett skafferi.</p>
+          <p>Vätejonen är liten och har hög laddningstäthet, så den binder hårdare till markpartiklarna än näringsjonerna gör. När vätejoner tillförs <strong>byter de plats</strong> med näringsjonerna, som släpps fria.</p>
+          <p>De fria näringsjonerna följer sedan med markvattnet bort, och skafferiet töms.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskriver urlakning som att jonerna trängs undan. Med laddningstätheten blir det begripligt varför just vätejonen vinner — samma egenskap som gjorde den så reaktiv i syrornas första avsnitt.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — I sjöar och vattendrag ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Sjöar försuras mest genom <strong>vatten som runnit genom marken</strong></li>
+              <li>Både lågt pH och <strong>aluminium</strong> skadar fisken</li>
+              <li>Aluminium fastnar på <strong>gälarna</strong></li>
+              <li><strong>Vårfloden</strong> är den farligaste tiden — en <strong>surstöt</strong></li>
+              <li>En försurad sjö kan se <strong>klar och fin</strong> ut</li>
+            </ul>
+          </div>
+
+          <p>Sjöarna är där försurningen syns tydligast — och där den först upptäcktes.</p>
+          <h2>Vattnet kommer från marken</h2>
+          <p>Det är lätt att tänka att en sjö försuras av regnet som faller rakt ner i den. Men så är det bara till en liten del.</p>
+          <p>Det mesta av vattnet i en sjö har först passerat genom <strong>marken</strong> i området runt omkring. Området som avvattnas till sjön kallas dess avrinningsområde.</p>
+          <p>Det betyder att sjöns kemi bestäms av markens. Har marken god buffertförmåga blir vattnet neutraliserat på vägen. Är bufferten förbrukad rinner surt vatten rakt ut i sjön — och med det följer aluminium.</p>
+          <h2>Två saker skadar fisken</h2>
+          <p>Fisken drabbas av <strong>både</strong> det låga pH:t och aluminiumet, men det senare är ofta värre.</p>
+          <p>Aluminiumjoner fastnar på fiskens <strong>gälar</strong>. Gälarna gör två saker: de tar upp syre ur vattnet, och de reglerar balansen av salter i fiskens kropp. Sätter aluminiumet igen dem störs båda.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Var på fisken markeringen sitter</li>
+              <li>Vilken kroppsdel det är</li>
+              <li>Vad den delen används till</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/aluminium-i-gal.webp" alt="En förenklad fisk sedd från sidan, med gälområdet bakom huvudet markerat med en ring.">
+            <figcaption>Aluminium från marken fastnar på fiskens gälar. Då blir det svårt för fisken att ta upp syre.</figcaption>
+          </figure>
+          <p>Fisken kan alltså både få syrebrist och tappa kontrollen över sin saltbalans. Lax och mört är exempel på arter som är särskilt känsliga.</p>
+          <p>Ägg och yngel är känsligast av allt.</p>
+          <h2>Våren är farligast</h2>
+          <p>Här kommer något som gör problemet värre än det verkar.</p>
+          <p>Under vintern lagras försurande ämnen i snön. När snön smälter på våren kommer allt på en gång — stora mängder smältvatten på kort tid, med lite som kan neutralisera det.</p>
+          <p>Då kan pH sjunka kraftigt under några dagar. Det kallas en <strong>surstöt</strong>.</p>
+          <p>Och timingen är olycklig. Våren är precis när många fiskar leker och ynglen kläcks, alltså när de är som mest känsliga.</p>
+          <h2>En sjö kan se fin ut</h2>
+          <p>Till sist något som är lätt att missförstå.</p>
+          <p>En försurad sjö ser ofta <strong>klar och ren</strong> ut. Vattnet är genomskinligt, ibland vackert blått.</p>
+          <p>Men klarheten är ett dåligt tecken. Den beror på att plankton och andra små organismer försvunnit — det finns helt enkelt inget kvar i vattnet som gör det grumligt.</p>
+          <p>Man kan alltså inte avgöra hur ett ekosystem mår genom att titta på hur klart vattnet är.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Avrinningsområdet</strong> avgör hur en sjö påverkas</li>
+              <li>Surt vatten och löst aluminium kommer via marken</li>
+              <li>Aluminium på gälarna stör <strong>syreupptag</strong> och <strong>saltbalans</strong></li>
+              <li>Snösmältningen ger en <strong>surstöt</strong> när många ämnen kommer samtidigt</li>
+              <li>Klart vatten kan vara ett tecken på förlorad mångfald</li>
+            </ul>
+          </div>
+
+          <p class="inledning">En sjö påverkas av hela området som avvattnas till sjön, det så kallade <strong>avrinningsområdet</strong>. Därför kommer en stor del av försurningspåverkan via vatten som först har passerat genom marken.</p>
+          <p>När markens buffertförmåga försämras kan surt vatten rinna vidare till bäckar, åar och sjöar. Samtidigt kan löst aluminium följa med.</p>
+          <p>Både ett lågt pH och förhöjda halter av vissa former av aluminium kan skada vattenlevande organismer. Fisk är särskilt känslig under vissa delar av livet, exempelvis när rom och yngel utvecklas.</p>
+          <p>Aluminium kan fastna på fiskarnas <strong>gälar</strong>. Där kan det störa fiskens förmåga att ta upp syre och reglera mängden salter i kroppen. Resultatet kan bli både syrebrist och störningar i fiskens saltbalans. Lax och mört är exempel på arter som är känsliga för försurning.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/aluminium-i-gal.webp" alt="En förenklad fisk sedd från sidan, med gälområdet bakom huvudet markerat med en ring.">
+            <figcaption>Lösta aluminiumformer fastnar på gälarna och stör både syreupptaget och fiskens saltbalans.</figcaption>
+          </figure>
+          <p>Även plankton, bottenlevande djur och andra arter påverkas. När känsliga arter försvinner förändras hela näringsväven. En försurad sjö kan därför se klar och ren ut samtidigt som den biologiska mångfalden har minskat kraftigt. Man kan alltså inte avgöra hur ett ekosystem mår bara genom att titta på hur klart vattnet är.</p>
+          <p>Särskilt kraftiga förändringar kan inträffa under <strong>snösmältningen på våren</strong>. Då kommer stora mängder smältvatten ut i mark och vattendrag under kort tid. Smältvattnet innehåller få neutraliserande ämnen och kan föra med sig försurande ämnen från marken och snön. Under sådana perioder kan pH tillfälligt sjunka kraftigt. Detta brukar kallas en <strong>surstöt</strong>.</p>
+          <p>Problemet blir extra allvarligt eftersom våren samtidigt är en känslig period för många vattenlevande djur.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför aluminium är giftigt för gälar</h2>
+          <p>Standardtexten säger att aluminium stör syreupptag och saltbalans. Mekanismen är värd att titta på, eftersom den förklarar varför just gälar och varför just aluminium.</p>
+          <p>Gälarna är byggda för maximal kontakt med vattnet — tunna, veckade membran med enorm yta i förhållande till sin storlek. Det är precis vad som krävs för att ta upp syre effektivt, och precis vad som gör dem sårbara.</p>
+          <p>Aluminiumjonen har laddningen 3+, alltså ovanligt hög. Den binder därför hårt till negativt laddade ytor, och gälmembranen är negativt laddade.</p>
+          <p>Två saker händer. Aluminiumet fäller ut som en gelliknande beläggning på membranet, vilket fysiskt hindrar syret från att passera. Och det stör de jonpumpar som fisken använder för att hålla rätt salthalt — pumparna är gjorda för att hantera natrium och kalcium, inte en trevärd jon som binder hårdare än båda.</p>
+          <h2>Varför pH omkring 5 är värst</h2>
+          <p>Här finns något som förvånar.</p>
+          <p>Aluminium är <strong>inte</strong> mest giftigt vid lägsta möjliga pH. Det är farligast i ett mellanområde, runt pH 5 till 5,5.</p>
+          <p>Skälet är att aluminium finns i olika former beroende på pH. Vid mycket lågt pH dominerar en form som är löslig men mindre benägen att fälla ut på gälarna. I mellanområdet finns däremot former som är lösliga i vattnet men fäller ut just när de möter gälens något högre pH.</p>
+          <p>Det betyder att en sjö som håller på att försuras kan vara farligare för fisk än en som redan är kraftigt sur — och att kalkning som höjer pH för lite kan göra saken värre.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskriver aluminium som något som är giftigt i sur miljö. I verkligheten beror giftigheten på vilken form aluminiumet har, och den avgörs av pH på ett sätt som inte är rätlinjigt.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — På byggnader och material ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Kalksten och marmor</strong> löses upp av sur nederbörd</li>
+              <li>Det är samma kemi som i <strong>avkalkningsmedel</strong>, fast långsamt</li>
+              <li>Detaljer på statyer och gravstenar <strong>suddas ut</strong></li>
+              <li><strong>Metaller</strong> korroderar snabbare</li>
+              <li>Försurningen skadar alltså också kulturföremål</li>
+            </ul>
+          </div>
+
+          <p>Försurningen skadar inte bara det som lever. Den angriper också material.</p>
+          <h2>Kalksten löses upp</h2>
+          <p><strong>Kalksten och marmor</strong> består till stor del av kalciumkarbonat — samma ämne som kalkavlagringarna i en vattenkokare.</p>
+          <p>Och du vet redan vad som händer när kalk möter syra: den löses upp. Det är därför avkalkningsmedel innehåller citronsyra.</p>
+          <p>Sur nederbörd gör exakt samma sak med stenen, fast mycket långsammare. Varje regn löser bort en försvinnande liten mängd.</p>
+          <h2>År efter år</h2>
+          <p>Men det sker om och om igen, i decennier och sekler.</p>
+          <p>Till slut syns det. Skarpa kanter blir rundade, ristade bokstäver blir otydliga, ansikten på statyer suddas ut. Gravstenar från 1800-talet kan vara oläsliga medan stenar från samma tid i torrare klimat är som nya.</p>
+          <p>Det är samma reaktion som i din vattenkokare. Skillnaden är bara hastigheten.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Jämför <strong>kanterna</strong> på de två stenarna</li>
+              <li>Jämför <strong>hörnen</strong></li>
+              <li>Vad som hänt med inramningen på den högra</li>
+              <li>Vilken som stått ute längst</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/vittrad-sten.webp" alt="Två gravstenar. Den vänstra har skarpa kanter och en tydlig ristad inramning. Den högra har rundade, ojämna kanter och en inramning som nästan försvunnit.">
+            <figcaption>Sur nederbörd löser långsamt upp kalksten och marmor. Efter många år försvinner detaljerna.</figcaption>
+          </figure>
+          <h2>Metaller också</h2>
+          <p>Sur miljö påskyndar dessutom <strong>korrosion</strong> — det vi till vardags kallar rost när det gäller järn.</p>
+          <p>Broar, ledningar, järnvägar och kulturföremål av metall får kortare livslängd i sur miljö.</p>
+          <h2>Därför räknas det med</h2>
+          <p>Det här är skälet till att Sveriges miljömål om försurning inte bara handlar om naturen.</p>
+          <p>Målet omfattar också skador på <strong>tekniska material och kulturföremål</strong> — byggnader, broar och föremål som är omöjliga att ersätta.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Kalciumkarbonat reagerar med vätejoner</li>
+              <li>\(\ce{CaCO3 + 2 H+ -> Ca^2+ + CO2 + H2O}\)</li>
+              <li>Reaktionen är långsam men ger synlig skada efter år</li>
+              <li>Sur miljö <strong>påskyndar korrosion</strong> av metaller</li>
+              <li>Sveriges miljömål omfattar även tekniska material och kulturföremål</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Försurningen påverkar inte bara levande organismer. Syror reagerar också med olika material.</p>
+          <p><strong>Kalksten och marmor</strong> består till stor del av kalciumkarbonat, \(\ce{CaCO3}\). Kalciumkarbonat reagerar med vätejoner:</p>
+          <div class="formel">\[\ce{CaCO3 + 2 H+ -> Ca^2+ + CO2 + H2O}\]</div>
+          <p>När kalksten utsätts för sur nederbörd löses därför små mängder av stenen upp. Reaktionen går långsamt, men efter många år kan detaljer på statyer, byggnader, gravstenar och andra kulturföremål skadas.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/vittrad-sten.webp" alt="Två gravstenar. Den vänstra har skarpa kanter och en tydlig ristad inramning. Den högra har rundade, ojämna kanter och en inramning som nästan försvunnit.">
+            <figcaption>Kalciumkarbonat reagerar med vätejoner. Reaktionen går långsamt, men efter årtionden är skadan synlig på statyer, byggnader och gravstenar.</figcaption>
+          </figure>
+          <p>Samma grundläggande kemi används när man tar bort kalkavlagringar hemma med en syra. Skillnaden är framför allt hastigheten.</p>
+          <p>Även <strong>metaller</strong> påverkas. En sur miljö kan påskynda korrosion av vissa metaller. Broar, ledningar, järnvägsanläggningar och kulturföremål kan därför få kortare livslängd. Sveriges miljömål om försurning omfattar därför inte bara naturen utan även skador på tekniska material och kulturföremål.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför reaktionen går åt det hållet</h2>
+          <p>Standardtexten ger formeln men inte förklaringen till varför den går.</p>
+          <p>Kalciumkarbonat är svårlösligt, som du vet från repetitionens sista avsnitt. Ett litet antal joner löser sig ändå, och mellan det fasta ämnet och lösningen råder en jämvikt.</p>
+          <p>Karbonatjonen är en <strong>bas</strong> — den kan ta upp protoner. Möter den en vätejon gör den det, och blir vätekarbonat och sedan kolsyra.</p>
+          <p>Kolsyran är instabil och sönderfaller till vatten och koldioxid, som bubblar bort.</p>
+          <p>Och där ligger poängen: <strong>karbonatjonen försvinner ur systemet.</strong> Jämvikten kan då inte återställas — mer kalksten måste lösa sig för att ersätta det som försvunnit, och den processen fortsätter så länge det finns syra.</p>
+          <p>Det är därför en svårlöslig sten ändå vittrar bort. Syran tar bort produkten, och jämvikten följer efter.</p>
+          <h2>Gipskrustan</h2>
+          <p>En detalj som förklarar hur skadan faktiskt ser ut på gamla byggnader.</p>
+          <p>När svavelsyra reagerar med kalciumkarbonat bildas inte bara lösliga produkter. Det bildas också <strong>kalciumsulfat</strong>, alltså gips.</p>
+          <p>Gips är mer lösligt än kalksten men inte helt lösligt, och det har större volym. På ytor som skyddas från direkt regn bygger det upp en svart skorpa — svart för att sot och partiklar bakas in i den.</p>
+          <p>Skorpan spränger sakta sönder stenen inifrån, och när den till slut lossnar följer ett lager av den ursprungliga stenen med.</p>
+          <p>Det är därför skador på gamla byggnader ofta är värst på ytor <strong>under</strong> utsprång, där regnet inte sköljer bort gipset — tvärtemot vad man skulle gissa.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskriver upplösning. I verkligheten sker både upplösning och ombildning till ett annat ämne, och det är ombildningen som gör mest skada.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-2-vad-forsurningen-gor.json"
+           data-avsnitt="a2_vad-forsurningen-gor">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-2-vad-forsurningen-gor.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a2_vad-forsurningen-gor';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'forsurning';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

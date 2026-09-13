@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" width="640" height="380" role="img" aria-labelledby="t">
+  <title id="t">Diagram över svavelnedfallet över Sverige 1980–2020: kurvan börjar högt vid 1980, faller brant till omkring 2000 och planar ut nära en streckad linje för förindustriell nivå</title>
+  <line x1="130" y1="30" x2="130" y2="300" stroke="#2d4a35" stroke-width="2"/>
+  <line x1="130" y1="300" x2="610" y2="300" stroke="#2d4a35" stroke-width="2"/>
+  <line x1="130" y1="300" x2="130" y2="306" stroke="#2d4a35" stroke-width="2"/>
+  <text x="130" y="326" fill="#2d4a35" font-size="16" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">1980</text>
+  <line x1="247.5" y1="300" x2="247.5" y2="306" stroke="#2d4a35" stroke-width="2"/>
+  <text x="247.5" y="326" fill="#2d4a35" font-size="16" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">1990</text>
+  <line x1="365" y1="300" x2="365" y2="306" stroke="#2d4a35" stroke-width="2"/>
+  <text x="365" y="326" fill="#2d4a35" font-size="16" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">2000</text>
+  <line x1="482.5" y1="300" x2="482.5" y2="306" stroke="#2d4a35" stroke-width="2"/>
+  <text x="482.5" y="326" fill="#2d4a35" font-size="16" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">2010</text>
+  <line x1="600" y1="300" x2="600" y2="306" stroke="#2d4a35" stroke-width="2"/>
+  <text x="600" y="326" fill="#2d4a35" font-size="16" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">2020</text>
+  <line x1="124" y1="40" x2="130" y2="40" stroke="#2d4a35" stroke-width="2"/>
+  <text x="118" y="45" fill="#2d4a35"  font-family="Georgia, 'Times New Roman', serif" text-anchor="end" font-size="13">1980 års nivå</text>
+  <text transform="translate(30 170) rotate(-90)" text-anchor="middle" fill="#2d4a35" font-size="16" font-family="Georgia, 'Times New Roman', serif" font-style="italic">Svavelnedfall</text>
+  <line x1="130" y1="268.8" x2="600" y2="268.8" stroke="#2d4a35" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="320" y="260.8" fill="#2d4a35"  font-family="Georgia, 'Times New Roman', serif" text-anchor="start" font-style="italic" font-size="14">förindustriell nivå</text>
+  <polyline points="130,40 135.88,51.7 141.75,62.77 147.63,73.27 153.5,83.2 159.38,92.62 165.25,101.53 171.13,109.97 177,117.97 182.88,125.54 188.75,132.72 194.63,139.51 200.5,145.95 206.38,152.04 212.25,157.81 218.13,163.28 224,168.45 229.88,173.36 235.75,178 241.63,182.4 247.5,186.56 253.38,190.51 259.25,194.24 265.13,197.78 271,201.13 276.88,204.31 282.75,207.31 288.63,210.16 294.5,212.85 300.38,215.41 306.25,217.82 312.13,220.11 318,222.28 323.88,224.34 329.75,226.28 335.63,228.12 341.5,229.87 347.38,231.52 353.25,233.08 359.13,234.56 365,235.97 370.88,237.3 376.75,238.55 382.63,239.74 388.5,240.87 394.38,241.94 400.25,242.95 406.13,243.91 412,244.82 417.88,245.68 423.75,246.49 429.63,247.26 435.5,247.99 441.38,248.68 447.25,249.34 453.13,249.96 459,250.54 464.88,251.1 470.75,251.63 476.63,252.12 482.5,252.6 488.38,253.04 494.25,253.46 500.13,253.87 506,254.24 511.88,254.6 517.75,254.94 523.63,255.27 529.5,255.57 535.38,255.86 541.25,256.13 547.13,256.39 553,256.64 558.88,256.87 564.75,257.09 570.63,257.3 576.5,257.49 582.38,257.68 588.25,257.86 594.13,258.02 600,258.18" fill="none" stroke="#2d4a35" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

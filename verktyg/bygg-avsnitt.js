@@ -50,7 +50,7 @@ if (bsBlock) {
   for (const m of bsBlock[1].matchAll(/### `([^`]+)` — underdel ([A-D]), ([^\n]+)\n([\s\S]*?)(?=\n### `|$)/g)) {
     const f = m[1], text = m[4];
     const ta = re => { const x = text.match(re); return x ? x[1].replace(/\n/g, ' ').trim() : null; };
-    const guide = text.match(/### Bildguide \(endast Enkel\)\n([\s\S]*?)(?=\n---|\n### |$)/);
+    const guide = text.match(/(?:### |\*\*)Bildguide \(endast Enkel\)\*{0,2}\n([\s\S]*?)(?=\n---|\n### |\n\n|$)/);   // "### Bildguide" eller "**Bildguide**" (försurning)
     bildspec[f] = { underdel: m[2].toLowerCase(), nivaer: m[3].trim(), alt: ta(/\*\*Alt-text:\*\*\s*([\s\S]*?)\n\n/), enkel: ta(/\*\*Bildtext Enkel:\*\*\s*([\s\S]*?)\n\n/), standard: ta(/\*\*Bildtext Standard:\*\*\s*([\s\S]*?)(?:\n\n|$)/), guide: guide ? guide[1].trim() : null };
   }
 }

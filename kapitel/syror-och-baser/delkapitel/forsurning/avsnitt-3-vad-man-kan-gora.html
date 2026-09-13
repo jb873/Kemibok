@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vad man kan göra åt det – Försurning – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Försurning</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">3. Vad man kan göra åt det</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 3</span>
+      <h1>Vad man kan göra åt det</h1>
+      <p class="subtitel">— åtgärder som fungerade —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Minska utsläppen</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Kalkning</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Har det blivit bättre?</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-vad-man-kan-gora">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Minska utsläppen ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Den viktigaste åtgärden är att <strong>minska utsläppen</strong></li>
+              <li>Svavel kan renas ur <strong>rökgaser</strong> med kalksten</li>
+              <li><strong>Katalysatorer</strong> i bilar omvandlar kväveoxider</li>
+              <li><strong>Internationella avtal</strong> krävs, eftersom föroreningar korsar gränser</li>
+              <li>Svavelnedfallet har minskat med <strong>mer än 80 procent</strong></li>
+            </ul>
+          </div>
+
+          <p>Nu vet du vad försurningen beror på och vad den ställer till med. Så vad gör man åt det?</p>
+          <h2>Det enda som verkligen löser problemet</h2>
+          <p>Svaret är enkelt att formulera men var svårt att genomföra: <strong>släpp ut mindre</strong>.</p>
+          <p>Allt annat är att lindra symptom. Så länge försurande ämnen fortsätter falla ner kommer problemet att finnas kvar.</p>
+          <h2>Att rena svavlet</h2>
+          <p>Svavelutsläppen går att minska på två sätt.</p>
+          <p>Det första är att <strong>välja bränsle</strong> med låg svavelhalt. Kol och tjockolja innehåller mycket svavel, naturgas nästan inget.</p>
+          <p>Det andra är att <strong>rena rökgaserna</strong> innan de lämnar skorstenen. En vanlig metod heter rökgasavsvavling, och den använder något du känner igen: <strong>kalksten</strong>.</p>
+          <p>Kalkstenen är basisk och reagerar med svavelföreningarna i röken. Föroreningen fångas upp innan den kommer ut — samma neutralisationskemi som i en sjö, fast i en skorsten.</p>
+          <h2>Att rena kvävet</h2>
+          <p>Kväveoxiderna är svårare, eftersom de bildas av luften själv och inte går att ta bort i förväg.</p>
+          <p>Lösningen är att rena <strong>efteråt</strong>. I bilars avgassystem sitter en <strong>katalysator</strong> som omvandlar kväveoxiderna till ofarliga ämnen innan de släpps ut.</p>
+          <p>Samma princip används i större motorer, kraftverk och industrier, med andra tekniska lösningar.</p>
+          <h2>Men teknik räcker inte</h2>
+          <p>Här kommer den svåra delen.</p>
+          <p>Som du läste i avsnitt 1 färdas luftföroreningar över gränser. Ett land som renar allt kan ändå drabbas av nedfall från grannar.</p>
+          <p>Därför krävde försurningen något mer än teknik: <strong>internationella avtal</strong>. Länderna i Europa förband sig att minska sina utsläpp, var och en för sig, för att alla skulle tjäna på det.</p>
+          <p>Och det fungerade. Svavelnedfallet över Sverige har minskat med <strong>mer än 80 procent</strong>.</p>
+          <h2>Principen bakom</h2>
+          <p>Det finns en lärdom här som gäller långt utanför kemin.</p>
+          <p>Det effektivaste är nästan alltid att angripa <strong>orsaken</strong> till ett problem, inte att reparera skadorna efteråt. Kalkning kan hålla en sjö vid liv, men bara minskade utsläpp kan göra den frisk.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Bränslen med låg svavelhalt och <strong>rökgasavsvavling</strong></li>
+              <li>Kalksten används för att fånga svavelföreningar</li>
+              <li><strong>Katalytisk rening</strong> av kväveoxider i fordon och industri</li>
+              <li>Teknik räcker inte — <strong>internationellt samarbete</strong> krävs</li>
+              <li>Bäst är att angripa <strong>orsaken</strong>, inte skadorna</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Den viktigaste åtgärden mot försurning är att hindra de försurande ämnena från att släppas ut från början.</p>
+          <p>Svavelutsläpp kan minskas på flera sätt. Man kan använda bränslen med låg svavelhalt och rena rökgaser från kraftverk och industrier. Vid <strong>rökgasavsvavling</strong> kan exempelvis kalksten användas för att fånga upp svavelföreningar innan de lämnar skorstenen.</p>
+          <p>Kväveoxider kan också minskas med teknisk rening. I bilars avgassystem används katalysatorer som omvandlar kväveoxider till andra ämnen. I större dieselmotorer, kraftverk och industrier kan andra katalytiska reningsmetoder användas.</p>
+          <p>Men teknik vid enskilda utsläppskällor räcker inte. Eftersom luftföroreningarna kan färdas mellan länder krävs <strong>internationellt samarbete</strong>. Länderna i Europa har därför ingått avtal där de förbinder sig att minska sina utsläpp.</p>
+          <p>Resultatet har varit tydligt. Naturvårdsverkets miljöövervakning visar att svavelnedfallet över Sverige har minskat med <strong>mer än 80 procent</strong>. Kvävenedfallet har också minskat, men betydligt mindre.</p>
+          <p>Det visar en viktig princip inom miljöarbetet: det effektivaste är att angripa <strong>orsaken</strong> till problemet, inte bara försöka reparera skadorna efteråt.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Vad en katalysator gör</h2>
+          <p>Standardtexten säger att katalysatorn omvandlar kväveoxider till andra ämnen. Vad den faktiskt gör är värt att förstå, eftersom begreppet återkommer i organisk kemi.</p>
+          <p>En <strong>katalysator</strong> är ett ämne som får en reaktion att gå snabbare utan att själv förbrukas. Den deltar i förloppet men kommer ut oförändrad på andra sidan.</p>
+          <p>Att kväveoxider sönderfaller till kvävgas och syre är i sig energimässigt gynnsamt — det borde ske spontant. Problemet är att det går alldeles för långsamt vid de temperaturer som råder i ett avgasrör.</p>
+          <p>Katalysatorn löser det genom att erbjuda en <strong>annan väg</strong>. Kväveoxidmolekylerna fäster tillfälligt vid en yta av platina, palladium eller rodium. Bindningarna i molekylen försvagas när den sitter fast, och atomerna kan byta partner mycket lättare än om de flugit fritt.</p>
+          <p>Resultatet blir kvävgas och syre — samma ämnen som fanns i luften från början.</p>
+          <h2>Därför måste bensinen vara blyfri</h2>
+          <p>En praktisk följd som förklarar en historisk förändring.</p>
+          <p>Bly förstör katalysatorn. Blyatomerna binder permanent till ädelmetallytan och blockerar de platser där reaktionen skulle ske. Katalysatorn slutar fungera, och skadan går inte att reparera.</p>
+          <p>Det kallas att katalysatorn <strong>förgiftas</strong>.</p>
+          <p>När katalysatorer infördes i bilar under 1970- och 80-talen måste därför blyad bensin fasas ut. Blytillsatsen hade använts för att förbättra bensinens egenskaper i motorn, och den behövde ersättas med andra ämnen.</p>
+          <p>Två miljöproblem löstes alltså samtidigt, delvis av en teknisk nödvändighet: kväveoxiderna minskade, och blyutsläppen försvann.</p>
+          <p><strong>Om modellen:</strong> standardtexten nämner katalysatorn som en reningsmetod. Med mekanismen blir den ett exempel på något mer allmänt — att kemi handlar lika mycket om hur fort en reaktion går som om den är möjlig alls.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Kalkning ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Kalkning</strong> betyder att man tillsätter kalk till försurade vatten</li>
+              <li>Kalken är en <strong>bas</strong> och neutraliserar syran</li>
+              <li>Den ökar också vattnets förmåga att stå emot ny syra</li>
+              <li>Kalk är <strong>svårlöslig</strong>, vilket gör effekten mer långvarig</li>
+              <li>Kalkning tar <strong>inte bort orsaken</strong> och måste upprepas</li>
+            </ul>
+          </div>
+
+          <p>Att minska utsläppen tar tid, och under tiden finns sjöar som redan skadats. Vad gör man med dem?</p>
+          <h2>Kalk i sjön</h2>
+          <p>Man tillsätter <strong>kalk</strong>. Det kallas kalkning, och Sverige har gjort det i stor skala sedan 1970-talet.</p>
+          <p>Kalken som används är finmalen <strong>kalksten</strong>, samma ämne som du mött flera gånger nu: kalciumkarbonat.</p>
+          <p>När kalken kommer i det sura vattnet reagerar den med vätejonerna. Vätejonerna förbrukas, och pH stiger.</p>
+          <p>Det är ren <strong>neutralisation</strong> — en bas som reagerar med en syra, precis som i föregående delkapitel, fast i en hel sjö.</p>
+          <h2>Kalken stannar kvar</h2>
+          <p>Kalkningen gör två saker, och den andra är nästan viktigare.</p>
+          <p>Den höjer pH direkt, vilket är det uppenbara.</p>
+          <p>Men den ökar också vattnets <strong>buffertkapacitet</strong> — alltså förmågan att stå emot syra som kommer senare. Nästa gång det regnar surt tar vattnet hand om det bättre.</p>
+          <p>Det beror på att kalk är <strong>svårlöslig</strong>. Allt löser sig inte på en gång. Överskottet lägger sig på botten och löser sig långsamt, efterhand som det behövs.</p>
+          <p>Det är samma egenskap du läste om i baserna: kalk är svår att överdosera, och det gör den lämplig för just det här.</p>
+          <h2>Men lagom är viktigt</h2>
+          <p>Mängden måste ändå anpassas till sjön.</p>
+          <p>Målet är <strong>inte</strong> att göra vattnet basiskt. Målet är att återställa en vattenkemi där de arter som naturligt hör hemma där kan leva. För mycket kalk skapar ett annat problem i stället för att lösa det.</p>
+          <h2>Det botar inte orsaken</h2>
+          <p>Och här kommer det viktigaste.</p>
+          <p>Kalkning tar bort <strong>symptomet</strong>, inte orsaken. Så länge surt nedfall fortsätter förbrukas kalken, och sjön måste kalkas igen. Och igen.</p>
+          <p>Sverige har kalkat sedan <strong>1977</strong>, och det är en av landets största miljöinsatser. Kalk sprids från båtar och helikoptrar, och i rinnande vatten finns särskilda doserare.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vad som hänger under helikoptern</li>
+              <li>Vad som faller ner mot vattnet</li>
+              <li>Var det hamnar</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/kalkning.webp" alt="En helikopter med en hängande behållare flyger över en sjö och sprider ett moln av vita kalkpartiklar ner mot vattenytan. Granar syns i silhuett vid strandkanten.">
+            <figcaption>Kalk sprids över sjöar från helikopter eller båt. Kalken är en bas och neutraliserar syran i vattnet.</figcaption>
+          </figure>
+          <p>Man ska se det som en <strong>skyddsåtgärd</strong>: något som håller ett skadat ekosystem vid liv medan naturen långsamt återhämtar sig. Det ersätter inte minskade utsläpp.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Finmalen kalksten med <strong>kalciumkarbonat, \(\ce{CaCO3}\)</strong></li>
+              <li>Karbonatjonerna reagerar med vätejoner, pH stiger</li>
+              <li>Vattnets <strong>buffertkapacitet</strong> ökar</li>
+              <li>Svårlösligheten ger långvarig effekt men kräver rätt dosering</li>
+              <li>En <strong>skyddsåtgärd</strong>, inte en lösning — Sverige kalkar sedan 1977</li>
+            </ul>
+          </div>
+
+          <p class="inledning">När en sjö eller ett vattendrag redan har försurats kan man minska skadorna genom <strong>kalkning</strong>.</p>
+          <p>I Sverige används framför allt finmalen kalksten som innehåller <strong>kalciumkarbonat, \(\ce{CaCO3}\)</strong>. När kalken kommer i kontakt med det sura vattnet reagerar karbonatet med vätejoner. Vätejoner förbrukas och pH-värdet stiger.</p>
+          <p>Detta är samma neutralisationskemi som du tidigare har mött:</p>
+          <p><strong>syra + bas \(\rightarrow\) mindre sur lösning</strong></p>
+          <p>Kalkningen ökar dessutom vattnets förmåga att motstå nya tillskott av syra. Man säger att vattnets <strong>buffertkapacitet</strong> ökar.</p>
+          <p>Kalciumkarbonat är relativt svårlösligt. Det gör att effekten blir mer långvarig än om man skulle tillsätta en mycket lättlöslig stark bas. Men mängden kalk måste ändå anpassas noggrant till sjön eller vattendraget. Målet är inte att göra vattnet basiskt utan att återställa en vattenkemi där de arter som naturligt hör hemma där kan överleva.</p>
+          <p>Kalkning tar däremot inte bort själva orsaken till försurningen. Om försurande ämnen fortsätter att tillföras förbrukas kalkens neutraliserande effekt, och kalkningen måste upprepas.</p>
+          <p>Sverige började med statligt stödd försökskalkning <strong>1977</strong>. Kalkning har sedan blivit en av landets största miljövårdsinsatser. Den sker bland annat genom spridning från båt eller helikopter och genom särskilda kalkdoserare i rinnande vatten. Många vatten behöver kalkas återkommande.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/kalkning.webp" alt="En helikopter med en hängande behållare flyger över en sjö och sprider ett moln av vita kalkpartiklar ner mot vattenytan. Granar syns i silhuett vid strandkanten.">
+            <figcaption>Finmalen kalksten sprids över sjöar och vattendrag. Karbonatjonerna reagerar med vätejoner, pH stiger och vattnets buffertkapacitet ökar.</figcaption>
+          </figure>
+          <p>Kalkningen är därför bäst att se som en <strong>skyddsåtgärd</strong>. Den kan hålla ett skadat ekosystem vid liv medan naturen långsamt återhämtar sig, men den ersätter inte minskade utsläpp.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför kalk fungerar bättre än en stark bas</h2>
+          <p>Standardtexten säger att svårlösligheten ger långvarig effekt. Kontrasten mot en stark bas gör det tydligare.</p>
+          <p>Tillsätter man natriumhydroxid i en sjö löser den sig omedelbart och fullständigt. pH skjuter i höjden lokalt där den hamnar, sjunker tillbaka när den späds ut, och efter en tid är effekten borta. Dessutom riskerar man att döda allt i det område där basen först landade.</p>
+          <p>Kalksten beter sig helt annorlunda. Bara en liten del löser sig åt gången, och hur mycket beror på hur surt vattnet är. Är vattnet surt löser sig mer; närmar sig pH det normala löser sig mindre.</p>
+          <p>Det är i praktiken en <strong>självreglerande</strong> dosering. Kalken svarar på behovet i stället för att tillföras i en klumpsumma.</p>
+          <h2>Och därför stannar effekten</h2>
+          <p>Överskottet på botten är inte spill utan förråd.</p>
+          <p>När surt vatten kommer nästa vår möter det den olösta kalken, och mer löser sig. Sjön har alltså fått en kemisk stötdämpare som fungerar utan att någon behöver ingripa.</p>
+          <p>Hur länge den räcker beror på hur mycket syra som fortsätter komma — och det är därför kalkningen måste upprepas, med intervall som varierar från några år till ett decennium.</p>
+          <h2>Vad kalkning inte kan göra</h2>
+          <p>En begränsning värd att nämna.</p>
+          <p>Kalkning återställer vattenkemin, men den återställer inte ekosystemet. Arter som försvunnit kommer inte tillbaka av sig själva om det inte finns någonstans de kan vandra in ifrån.</p>
+          <p>Och marken i avrinningsområdet är fortfarande försurad. Kalkar man bara sjön fortsätter surt vatten att rinna dit. Därför kalkas ibland även våtmarker och skogsmark, vilket är dyrare och mer omdiskuterat — eftersom det påverkar markens egen kemi på sätt som är svårare att förutse.</p>
+          <p><strong>Om modellen:</strong> standardtexten kallar kalkning en skyddsåtgärd. Med självregleringen blir det tydligt varför just kalk valts framför starkare baser — och varför den ändå inte räcker.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Har det blivit bättre? ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Ja</strong>, tydligt. Svavelutsläppen har minskat kraftigt</li>
+              <li>Sveriges svavelutsläpp 2024 var en <strong>tiondel</strong> av 1990 års nivå</li>
+              <li>Många sjöar har börjat <strong>återhämta sig</strong></li>
+              <li>Men <strong>marken</strong> återhämtar sig mycket långsammare</li>
+              <li><strong>Kvävet</strong> är ett svårare problem än svavlet</li>
+            </ul>
+          </div>
+
+          <p>Efter allt det här kommer en fråga som förtjänar ett rakt svar: har något av det hjälpt?</p>
+          <h2>Ja</h2>
+          <p>Försurningen är ett av få stora miljöproblem där utvecklingen tydligt vänt åt rätt håll.</p>
+          <p>Sveriges utsläpp av svaveldioxid var 2024 bara drygt en <strong>tiondel</strong> av vad de var 1990. Svavelnedfallet över landet har minskat med mer än 80 procent och ligger nu nära nivåerna före industrialiseringen.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Var kurvan börjar och var den slutar</li>
+              <li>Under vilka årtionden den faller <strong>snabbast</strong></li>
+              <li>Vad den streckade linjen nära botten visar</li>
+              <li>Hur nära kurvan kommer den linjen</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/svavelutslapp-diagram.svg" alt="Ett diagram över svavelnedfallet över Sverige från 1980 till 2020. Kurvan börjar högt, faller brant fram till omkring år 2000 och planar sedan ut nära en streckad linje som markerar förindustriell nivå.">
+            <figcaption>Svavelnedfallet har minskat kraftigt sedan 1980. I dag ligger det nära nivåerna före industrialiseringen.</figcaption>
+          </figure>
+          <p>Det syns i naturen. Antalet försurade sjöar och vattendrag har minskat, och många vatten har börjat återhämta sig.</p>
+          <p>Det gick alltså att göra något. Det är värt att säga rakt ut, eftersom miljöfrågor annars lätt känns hopplösa.</p>
+          <h2>Men marken släpar efter</h2>
+          <p>Här kommer förbehållet.</p>
+          <p>Luften blev renare snabbt. Marken gör det inte.</p>
+          <p>Under decennier av surt nedfall förlorade marken stora mängder av de ämnen som neutraliserar syra. De måste byggas upp igen, och det sker främst genom att mineral långsamt <strong>vittrar</strong> sönder.</p>
+          <p>Vittring tar decennier eller sekler. Marken i södra Sverige är fortfarande påverkad, trots att nedfallet minskat kraftigt.</p>
+          <h2>Skogsbruket påverkar också</h2>
+          <p>En sak som är lätt att förbise.</p>
+          <p>När skog avverkas och träd, grenar och toppar förs bort följer näringsämnen och basiska ämnen med biomassan ut ur skogen.</p>
+          <p>Ett stort uttag kan därför göra markens återhämtning ännu långsammare. Det är inte försurning i sig, men det verkar åt samma håll.</p>
+          <h2>Kvävet är svårare</h2>
+          <p>Och till sist det problem som inte lösts lika bra.</p>
+          <p>Svavelutsläppen gick att minska dramatiskt, eftersom svavlet sitter i bränslet och går att rena bort.</p>
+          <p>Kväveoxiderna är svårare. De kommer från trafik, sjöfart och all slags förbränning — utspridda källor som är många och små. Och ammoniaken kommer från jordbruket.</p>
+          <p>Nedfallet av kväve har minskat, men betydligt mindre än svavlets.</p>
+          <h2>Vad det säger oss</h2>
+          <p>Försurningen är alltså inte ett avslutat kapitel. Men den visar något viktigt.</p>
+          <p><strong>Miljöproblem går att påverka.</strong> Genom forskning, teknik, lagar och internationella avtal minskade utsläppen kraftigt, och naturen började återhämta sig.</p>
+          <p>Samtidigt visar den något annat: det som tog några årtionden att förstöra kan ta betydligt längre tid att återställa.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Svavelnedfallet har minskat med mer än 80 procent, nära förindustriella nivåer</li>
+              <li>Antalet försurade sjöar har minskat</li>
+              <li>Markens återhämtning kräver <strong>vittring</strong>, en mycket långsam process</li>
+              <li><strong>Skogsbruket</strong> påverkar balansen genom uttag av biomassa</li>
+              <li>Kvävet kommer från trafik, sjöfart och jordbruk och är svårare att minska</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Ja. Försurningen är ett miljöproblem där utvecklingen på många sätt har vänt åt rätt håll.</p>
+          <p>Utsläppen av svavel har minskat mycket kraftigt i Sverige och Europa. Sveriges utsläpp av svaveldioxid var 2024 bara drygt en tiondel av nivån 1990. Samtidigt har svavelnedfallet över Sverige minskat med mer än 80 procent och ligger nu nära förindustriella nivåer.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/svavelutslapp-diagram.svg" alt="Ett diagram över svavelnedfallet över Sverige från 1980 till 2020. Kurvan börjar högt, faller brant fram till omkring år 2000 och planar sedan ut nära en streckad linje som markerar förindustriell nivå.">
+            <figcaption>Svavelnedfallet över Sverige har minskat med mer än 80 procent sedan 1980 och ligger nu nära förindustriella nivåer.</figcaption>
+          </figure>
+          <p>Det har fått effekt i naturen. Antalet försurade sjöar och vattendrag har minskat och många vatten har börjat återhämta sig.</p>
+          <p>Men återhämtningen går betydligt långsammare i marken. Under årtionden av kraftigt surt nedfall förlorade många marker stora mängder neutraliserande ämnen. Dessa måste bland annat ersättas genom <strong>vittring av mineral</strong>, och vittring är en mycket långsam process. Därför kan marken förbli försurad långt efter att luftföroreningarna har minskat.</p>
+          <p>Även skogsbruket påverkar balansen. När träd, grenar och toppar förs bort från skogen följer näringsämnen och basiska ämnen med biomassan. Ett stort uttag kan därför bidra till att markens återhämtning går långsammare.</p>
+          <p>Kvävet är dessutom ett mer svårlöst problem än svavlet. Utsläppen och nedfallet har minskat, men inte lika kraftigt som för svavel. Kväveoxider kommer bland annat från trafik, sjöfart och olika former av förbränning, medan ammoniak framför allt kommer från jordbruket.</p>
+          <p>Försurningen är därför inte ett avslutat miljöproblem. Men utvecklingen visar samtidigt något viktigt: <strong>miljöproblem går att påverka</strong>. Genom forskning, teknisk utveckling, lagstiftning och internationella avtal har utsläppen minskat kraftigt och naturen har börjat återhämta sig.</p>
+          <p>Det som tog några årtionden att försura kan däremot ta betydligt längre tid att återställa.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför marken är så trög</h2>
+          <p>Standardtexten säger att vittring är långsam. Hur långsam, och varför?</p>
+          <p>Vittring är kemisk nedbrytning av mineral. Regnvatten, som är svagt surt, reagerar med berggrundens mineral och frigör joner — kalcium, magnesium, kalium. Det är den processen som fyller på markens buffertförråd.</p>
+          <p>Hastigheten beror på berggrunden. Kalksten vittrar relativt snabbt. Granit och gnejs, som dominerar i Sverige, vittrar mycket långsamt.</p>
+          <p>Storleksordningen är svår att ta in: i svenska skogsmarker frigörs i storleksordningen några kilo kalcium per hektar och år genom vittring. Under försurningens värsta decennier förlorade samma mark mångdubbelt mer.</p>
+          <p>Det tog alltså några decennier att tömma ett förråd som tar sekler att fylla.</p>
+          <h2>Och därför är skogsbruket en faktor</h2>
+          <p>Nu blir skogsbrukets roll begriplig.</p>
+          <p>Ett träd som växer tar upp kalcium, magnesium och kalium ur marken och bygger in dem i sin ved, sina grenar och sina barr. Faller trädet och förmultnar på plats återförs ämnena.</p>
+          <p>Avverkas trädet och forslas bort försvinner ämnena ur systemet.</p>
+          <p>Vid traditionell avverkning lämnas grenar och toppar kvar, och de innehåller en oproportionerligt stor del av näringen. Vid <strong>grotuttag</strong> — grenar och toppar — förs även de bort, och uttaget av basiska ämnen kan bli i samma storleksordning som vad vittringen hinner producera.</p>
+          <p>Det är därför askåterföring diskuteras: att sprida tillbaka askan från förbränd biomassa för att återföra de ämnen som togs ut.</p>
+          <h2>Varför kvävet är svårare</h2>
+          <p>Skillnaden mot svavlet är strukturell, inte teknisk.</p>
+          <p>Svavel kommer från ett fåtal stora punktkällor: kraftverk, raffinaderier, smältverk. Sådana går att reglera, mäta och rena. Trettio stora anläggningar som installerar rening ger en dramatisk effekt.</p>
+          <p>Kväveoxider kommer från miljontals små källor — varje bilmotor, varje fartyg, varje panna. Varje enskild källa släpper ut lite, men summan är stor, och det finns ingen skorsten att sätta ett filter på.</p>
+          <p>Ammoniaken från jordbruket är ännu svårare. Den kommer från gödsel och djurhållning, alltså från biologiska processer på tusentals gårdar.</p>
+          <p>Kvävet illustrerar därför en allmän regel i miljöarbetet: <strong>diffusa källor är mycket svårare att åtgärda än punktkällor</strong>, även när tekniken finns.</p>
+          <p><strong>Om modellen:</strong> standardtexten konstaterar att kvävet minskat mindre. Med skillnaden mellan punkt- och diffusa källor blir det inte en brist på vilja utan en annan sorts problem.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-3-vad-man-kan-gora.json"
+           data-avsnitt="a3_vad-man-kan-gora">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-3-vad-man-kan-gora.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a3_vad-man-kan-gora';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'forsurning';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>
