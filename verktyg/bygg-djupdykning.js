@@ -105,7 +105,7 @@ ${html}
     antal++;
     const ord = lev.text.replace(/[#*]/g, '').split(/\s+/).filter(Boolean).length;
     console.log(`${TORR ? '(torr) ' : 'skrev '}${path.basename(ut)}: "${lev.titel}" – ${block.filter(b => !/^### /.test(b)).length} stycken, ${block.filter(b => /^### /.test(b)).length} h2, ~${ord} ord`);
-    if (enstaka.length) { console.log(`  §7.1 – stycken med en mening (${enstaka.length}): ${enstaka.map(e => '"' + e + '…"').join(' | ')}`); }
+    if (enstaka.length) { console.log(`  §7.1 – stycken med en mening, rapporteras men är inte fel i djupdykningar (${enstaka.length}): ${enstaka.map(e => '"' + e + '…"').join(' | ')}`); }
   }
 }
 console.log(`${antal} djupdykningar, ${alla.length} i leveransen`);

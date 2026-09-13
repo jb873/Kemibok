@@ -4,7 +4,7 @@
 > Läses **tillsammans med** huvuddokumentet, aldrig i stället för.
 > Allt som inte står här följer huvuddokumentet oförändrat.
 
-**Senast uppdaterad:** 2026-09-13 (v1.2)
+**Senast uppdaterad:** 2026-09-13 (v1.3)
 **Gäller:** Kemibok
 **Kräver:** `LEVERANSGUIDE-INNEHALL.md` v2.1 + `KOMPONENTER-INNEHALL.md` v1.0 (Kemi)
 
@@ -182,6 +182,11 @@ Huvuddokumentets riktmärke är 1–3 per avsnitt. **Kemi: 0–2, ofta noll.**
 Djupdykningar föddes ur historias "frågor utan enkla svar". Kemi har färre sådana, och det som i
 historia blivit en djupdykning blir i kemi oftare en **fördjupning**.
 
+**Gränsen mot fördjupning.** Fördjupningen ger en **sannare modell** av det standardtexten beskrev —
+den svarar på *hur det egentligen fungerar*. Djupdykningen ger **berättelsen och konsekvenserna** —
+den svarar på *vad det betyder i världen*. Samma fenomen kan därför förekomma på båda ställena utan
+att bli upprepning.
+
 ---
 
 ## 6 — Matris: verbval för kemi
@@ -284,6 +289,9 @@ Undantaget är en mening som *ska* stå ensam för att den bär avsnittets kärn
 
 Ett sådant per underdel, inte fler.
 
+**Formregeln gäller Enkel brödtext, inte djupdykningar.** Djupdykningar är berättande texter där
+enmeningsstycken kan bära rytm. Kontrollen ska rapportera dem men inte flagga dem som fel.
+
 ---
 
 ### 7.2 Röst och ägarskap på Enkel
@@ -381,6 +389,9 @@ Bygg ingenting på gissningar. Rapportera först, invänta godkännande.
 
 ## Revisionshistorik
 
+- **v1.3 (2026-09-13):** §5 gränsen mellan fördjupning (sannare modell, *hur*) och djupdykning
+  (berättelse och konsekvenser, *vad det betyder*). §7.1 formregeln gäller Enkel brödtext, inte
+  djupdykningar; kontrollen rapporterar enmeningsstycken där utan att flagga dem som fel.
 - **v1.2 (2026-09-13):** §8 Kortsvar tillagt – leveransschema för Testa dig själv (fasta frågor
   med facit och obligatorisk förklaring), sex svarstyper, tolerans/enhet/alternativ.
 - **v1.1 (2026-09-12):** §7 tillagt — Enkelnivån i kemi är uppackad, inte kortad, och skrivs i
