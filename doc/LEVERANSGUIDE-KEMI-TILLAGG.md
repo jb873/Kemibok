@@ -348,7 +348,7 @@ Det levereras som en JSON-fil per avsnitt:
 | `tal-par` | `[a, b]` | två fält | båda värdena |
 | `flerval` | index | ett alternativ | index |
 | `markera` | `[index, …]` | flera alternativ | exakt mängd – alla rätta, inga fel |
-| `ord` | `["ord", …]` | text | gemener, ändelser tolereras (jonen, joner, jonerna); flera accepterade former |
+| `ord` | `["ord", …]` | text | **skiftlägesokänsligt** (Jon = jon), ändelser tolereras (jonen, joner, jonerna); flera accepterade former |
 | `formel` | `["H2O", …]` | text | normaliserat: H₂O = H2O, Na⁺ = Na+, SO₄²⁻ = SO4^2- = SO4 2-; skiftlägeskänsligt |
 
 ### Riktmärken

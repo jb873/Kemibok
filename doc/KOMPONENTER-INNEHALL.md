@@ -1032,7 +1032,7 @@ vad hon svarade). Alla rätt → belöning. **Formativt: inget sparas** – inge
 Rättningen (`js/kortsvar-gradering.js`, ren funktion, Node-testad med `verktyg/test-gradering.js`)
 är portad ur matematikbokens provbyggare (numeric/binary/markera/ordsvar/talfoljd) och utökad
 med `formel` (Unicode-index och laddningar normaliseras: H₂O = H2O, SO₄²⁻ = SO4^2-),
-tolerans, enhet och alternativa svar. `formel` är **skiftlägeskänslig** (CO ≠ Co); ett svar som
+tolerans, enhet och alternativa svar. `ord` är skiftlägesokänslig (Jon = jon); `formel` är **skiftlägeskänslig** (CO ≠ Co); ett svar som
 är rätt bortsett från skiftläge räknas som fel men får en egen förklaring om stor bokstav först.
 
 Leveransschemat för kortsvarsfiler står i `LEVERANSGUIDE-KEMI-TILLAGG.md` §8. Kemi har **inte**

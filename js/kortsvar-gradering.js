@@ -10,7 +10,7 @@
 //   tal-par  svar: [1, 6]       oordnad?: true
 //   flerval  alternativ: [...]  svar: index
 //   markera  alternativ: [...]  svar: [index, ...]   (exakt mängd: alla rätta, inga fel)
-//   ord      svar: ['jon', ...] (gemener, ändelser tolereras: jonen, joner, jonerna)
+//   ord      svar: ['jon', ...] (skiftlägesokänsligt – begreppsord har ingen CO/Co-skillnad; ändelser tolereras: jonen, joner, jonerna)
 //   formel   svar: ['H2O', ...] (Unicode-index/laddningar normaliseras; skiftlägeskänslig om inte skiftlage:false)
 (function (root, factory) {
   if (typeof module === 'object' && module.exports) { module.exports = factory(); }
