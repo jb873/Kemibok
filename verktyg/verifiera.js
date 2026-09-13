@@ -3,7 +3,7 @@
    Rör aldrig källfiler; Chrome-profilen skapas i OS-temp och raderas efteråt.
 
    KÖR (från repo-roten):
-     node verktyg/verifiera.js <file://-url> <probe.js> [--pre pre.js] [--wait ms] [--shot fil.png] [--width px] [--height px]
+     node verktyg/verifiera.js <file://-url> <probe.js> [--pre pre.js] [--wait ms] [--shot fil.png] [--width px] [--height px] [--som-vanlig-chrome]
    Exempel – formelverifiering på avsnitt 1 med flipcards-fixtur (KOMPONENTER DEL 8.5):
      node verktyg/verifiera.js "file:///C:/Arkiv%20-%20webbbok/Kemibok/kapitel/syror-och-baser/delkapitel/repetition/avsnitt-1-atomer-molekyler-joner.html" verktyg/probe-formler.js --pre verktyg/pre-flipcards-fixtur.js --wait 3000
 
@@ -28,7 +28,9 @@ const PORT = 9300 + Math.floor(Math.random() * 500);
 const probe = fs.readFileSync(probeFil, 'utf8');
 
 const prof = fs.mkdtempSync(path.join(os.tmpdir(), 'kemi-verif-'));
-const chrome = spawn(CHROME, ['--headless=new', '--disable-gpu', '--allow-file-access-from-files',
+// --som-vanlig-chrome: utan --allow-file-access-from-files, dvs. som en elev som dubbelklickar på filen
+const VANLIG = args.includes('--som-vanlig-chrome');
+const chrome = spawn(CHROME, ['--headless=new', '--disable-gpu', ...(VANLIG ? [] : ['--allow-file-access-from-files']),
   '--no-first-run', '--hide-scrollbars', `--window-size=${WIDTH},${HEIGHT}`,
   '--remote-debugging-port=' + PORT, '--user-data-dir=' + prof, 'about:blank'], { stdio: 'ignore' });
 

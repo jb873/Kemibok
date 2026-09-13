@@ -1,0 +1,5 @@
+# OS- och editorskräp
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp

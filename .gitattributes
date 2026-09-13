@@ -4,3 +4,8 @@
 # Binära typsnitt – aldrig radslutsnormalisering
 *.woff binary
 *.woff2 binary
+
+# Bilder
+*.webp binary
+*.png  binary
+*.svg  text
