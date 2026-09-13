@@ -95,10 +95,16 @@ const AVSNITT_NEUTRALISATION = {
   2: { dd: [],
        bilder: { 'antacidum.webp': { aktiv: ['enkel', 'standard'], staende: true, enkel: 'kemi, inte absorption', standard: 'De reagerar kemiskt med den' } } }   // staende: max-height i kemi.css
 };
-// Försurning (leverans 2026-09-13): avsnitt 1 saknas i leveransen ännu (sur-nederbord.svg, forbranning-till-syra.svg,
-// utsläppsbilden, faktarutan och delkapitlets intro kommer med den). AI-bilderna levererade med grön bakgrund,
+// Försurning (leverans 2026-09-13). AI-bilderna levererade med grön bakgrund,
 // nycklade + beskurna (nyckla-gron.js --beskar); diagrammen genererade i bilder-svg.js. Alla underdelar har fördjupning.
 const AVSNITT_FORSURNING = {
+  1: { dd: [],
+       bilder: {
+         'sur-nederbord.svg': { aktiv: ['enkel', 'standard'], enkel: 'fler vätejoner', standard: 'havssalt, stoft och naturliga organiska ämnen' },
+         'forbranning-till-syra.svg': { aktiv: ['enkel', 'standard'], enkel: 'bara för att det är tillräckligt hett', standard: 'ökar mängden vätejoner och' },
+         'grans-overskridande.webp': { aktiv: ['enkel', 'standard'], enkel: 'till stor del kommer utifrån', standard: 'hundratals kilometer från utsläppskällan' }   // levererad som 01_forsurning_utslapp_surt_nedfall
+       },
+       faktaruta: { enkel: 'inte en exakt gräns', standard: 'än naturen hinner neutralisera', fordjupning: 'samma i en regndroppe som i ett hav' } },
   2: { dd: [],
        bilder: {
          'buffert-tar-slut.svg': { aktiv: ['enkel', 'standard'], enkel: 'Skadan byggdes upp långt innan den syntes', standard: 'betydligt sämre buffertförmåga' },

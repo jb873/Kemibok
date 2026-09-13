@@ -15,6 +15,8 @@
 //   vad-blir-kvar.svg                   delkapitel Neutralisation 1 B – före/efter, åskådarjoner kvar
 //   buffert-tar-slut.svg                delkapitel Försurning 2 A – pH-diagram, bufferten räcker/förbrukad
 //   svavelutslapp-diagram.svg           delkapitel Försurning 3 C – svavelnedfall 1980–2020
+//   sur-nederbord.svg                   delkapitel Försurning 1 A – pH 3–8 med surt nedfall/rent regn/neutralt
+//   forbranning-till-syra.svg           delkapitel Försurning 1 B – skorsten → moln → surt nedfall
 //   vatejon-och-oxoniumjon.svg          delkapitel Syror 1 B – H2O + H+ → H3O+ i tre lager (skrivs till delkapitel/syror/img/)
 //   ph-skalan.svg                       delkapitel Syror 2 A – skala 0–14 med exempel (syror/img/)
 //   fyra-kombinationerna.svg            delkapitel Syror 4 B – stark/svag × koncentrerad/utspädd (syror/img/)
@@ -651,4 +653,84 @@ ${STOPP.map(([ph, f]) => `      <stop offset="${r2(ph / 14 * 100)}%" stop-color=
   }
 }
 
-console.log('skrev 16 svg (8 repetition, 3 syror, 1 baser, 2 neutralisation, 2 försurning)', path.relative(path.join(__dirname, '..'), UT));
+
+// ---------- 17–18. Försurning avsnitt 1: sur-nederbord.svg (A) och forbranning-till-syra.svg (B) ----------
+// Joachims spec 2026-09-13. Skalfärger som i ph-skalan.svg (syror); konturer/text INK, transparent bakgrund.
+{
+  const UT5 = path.join(__dirname, '..', 'kapitel', 'syror-och-baser', 'delkapitel', 'forsurning', 'img');
+  // ----- 17. sur-nederbord.svg: pH 3–8 med tre markeringar och klammer "försurning" -----
+  {
+    const W = 700, H = 270, X0 = 50, X1 = 650, Y = 130, HOJD = 30;
+    const px = ph => r2(X0 + (X1 - X0) * (ph - 3) / 5);
+    // samma färgstopp som ph-skalan.svg (pH 0–14), uttryckta för intervallet 3–8
+    const STOPP = [[0, '#C0392B'], [3, '#E07B39'], [5, '#E8C547'], [7, '#5a9668'], [9, '#a8c4d8'], [14, '#2F4F8F']];
+    const offs = ph => Math.min(1, Math.max(0, (ph - 3) / 5));
+    let ut = `  <defs>
+    <linearGradient id="ph38" x1="0" x2="1" y1="0" y2="0">
+${STOPP.filter(([p]) => p >= 3 && p <= 8).map(([ph, f]) => `      <stop offset="${r2(offs(ph) * 100)}%" stop-color="${f}"/>`).join('\n')}
+    </linearGradient>
+  </defs>
+  <rect x="${X0}" y="${Y}" width="${X1 - X0}" height="${HOJD}" rx="4" fill="url(#ph38)" stroke="${INK}" stroke-width="1.5"/>
+`;
+    for (let ph = 3; ph <= 8; ph++) {
+      ut += `  <line x1="${px(ph)}" y1="${Y + HOJD}" x2="${px(ph)}" y2="${Y + HOJD + 7}" stroke="${INK}" stroke-width="1.5"/>
+  <text x="${px(ph)}" y="${Y + HOJD + 24}" text-anchor="middle" font-size="15" fill="${INK}" ${FONT}>${ph}</text>
+`;
+    }
+    const ETIK = [[4.2, 'Surt nedfall', 1], [5.6, 'Rent regnvatten', 0], [7, 'Neutralt', 1]];
+    for (const [ph, namn, rad] of ETIK) {
+      const ty = rad ? 44 : 78;
+      ut += `  <line x1="${px(ph)}" y1="${ty + 8}" x2="${px(ph)}" y2="${Y - 4}" stroke="${INK}" stroke-width="1.5"/>
+  <circle cx="${px(ph)}" cy="${Y - 4}" r="3" fill="${INK}"/>
+  <text x="${px(ph)}" y="${ty}" text-anchor="middle" font-size="17" font-weight="bold" fill="${INK}" ${FONT}>${namn}</text>
+`;
+    }
+    const ky = Y + HOJD + 44;
+    ut += `  <path d="M${px(4.2)} ${ky}v8H${px(5.6)}v-8" fill="none" stroke="${INK}" stroke-width="1.5"/>
+  <text x="${r2((+px(4.2) + +px(5.6)) / 2)}" y="${ky + 30}" text-anchor="middle" font-size="17" font-style="italic" fill="${INK}" ${FONT}>försurning</text>
+`;
+    fs.writeFileSync(path.join(UT5, 'sur-nederbord.svg'), svg(W, H,
+      'pH-skala från 3 till 8 med surt nedfall vid 4,2, rent regnvatten vid 5,6 och neutralt vid 7; en klammer mellan 4,2 och 5,6 är märkt försurning', ut));
+  }
+  // ----- 18. forbranning-till-syra.svg: skorsten → moln (SO2, NOx) → regn (H2SO4, HNO3) -----
+  {
+    const W = 760, H = 300, GRA = '#8A8A8A', VATSKA = '#a8c4d8';
+    const CX = [130, 380, 630], CY = 120;
+    const sub = (t, s) => `${t}<tspan font-size="13" dy="6">${s}</tspan><tspan dy="-6"></tspan>`;
+    let ut = '';
+    // steg 1: skorsten med rök
+    ut += `  <g aria-label="skorsten med rök">
+    <path d="M${CX[0] - 26} ${CY + 70}V${CY - 10}h52V${CY + 70}Z" fill="${PAPPER}" stroke="${INK}" stroke-width="2.5" stroke-linejoin="round"/>
+    <rect x="${CX[0] - 32}" y="${CY - 20}" width="64" height="12" fill="${INK}"/>
+    <rect x="${CX[0] - 70}" y="${CY + 40}" width="140" height="30" fill="${PAPPER}" stroke="${INK}" stroke-width="2.5"/>
+    <path d="M${CX[0] - 8} ${CY - 26}c-10-14 8-22 4-36c-6-12 12-18 10-32" fill="none" stroke="${GRA}" stroke-width="4" stroke-linecap="round"/>
+    <path d="M${CX[0] + 10} ${CY - 26}c-10-14 8-22 4-36c-6-12 12-18 10-32" fill="none" stroke="${GRA}" stroke-width="4" stroke-linecap="round"/>
+  </g>
+`;
+    // steg 2: moln med partiklar och etiketter
+    const mx = CX[1], my = CY - 10;
+    ut += `  <g aria-label="moln med svaveldioxid och kväveoxider">
+    <path d="M${mx - 80} ${my + 30}a30 30 0 0 1 12-56a40 40 0 0 1 72-18a36 36 0 0 1 62 14a30 30 0 0 1 4 60Z" fill="${PAPPER}" stroke="${INK}" stroke-width="2.5" stroke-linejoin="round"/>
+`;
+    [[-45, -12], [-20, 12], [10, -18], [35, 8], [-5, 24], [50, -14]].forEach(([dx, dy]) => { ut += `    <circle cx="${mx + dx}" cy="${my + dy}" r="4" fill="${GRA}"/>\n`; });
+    ut += `    <text x="${mx - 30}" y="${my + 52}" text-anchor="middle" font-size="19" fill="${INK}" ${FONT}>${sub('SO', '2')}</text>
+    <text x="${mx + 34}" y="${my + 52}" text-anchor="middle" font-size="19" fill="${INK}" ${FONT}>${sub('NO', 'x')}</text>
+  </g>
+`;
+    // steg 3: regndroppar med etiketter
+    const dropp = (x, y, s) => `    <path d="M${x} ${y - 16 * s}c-10 14-14 20-14 28a14 14 0 0 0 28 0c0-8-4-14-14-28Z" transform="scale(1)" fill="${VATSKA}" stroke="${INK}" stroke-width="1.5"/>\n`;
+    ut += `  <g aria-label="regndroppar med svavelsyra och salpetersyra">\n`;
+    [[-60, -30], [-10, 10], [40, -20], [-40, 40], [20, 55], [65, 30]].forEach(([dx, dy]) => { ut += dropp(CX[2] + dx, CY + dy, 1); });
+    ut += `    <text x="${CX[2] - 40}" y="${CY + 100}" text-anchor="middle" font-size="19" fill="${INK}" ${FONT}>${sub('H', '2')}SO${'<tspan font-size="13" dy="6">4</tspan><tspan dy="-6"></tspan>'}</text>
+    <text x="${CX[2] + 50}" y="${CY + 100}" text-anchor="middle" font-size="19" fill="${INK}" ${FONT}>HNO<tspan font-size="13" dy="6">3</tspan><tspan dy="-6"></tspan></text>
+  </g>
+`;
+    // pilar mellan stegen och etiketter under
+    ut += pil(CX[0] + 90, CY + 20, CX[1] - 100, CY + 20, INK, 3) + pil(CX[1] + 100, CY + 20, CX[2] - 90, CY + 20, INK, 3);
+    ['Förbränning', 'I luften', 'Surt nedfall'].forEach((t, i) => { ut += `  <text x="${CX[i]}" y="${H - 28}" text-anchor="middle" font-size="19" font-style="italic" fill="${INK}" ${FONT}>${t}</text>\n`; });
+    fs.writeFileSync(path.join(UT5, 'forbranning-till-syra.svg'), svg(W, H,
+      'Tre steg: en skorsten med rök, ett moln med svaveldioxid och kväveoxider, och regndroppar med svavelsyra och salpetersyra som faller', ut));
+  }
+}
+
+console.log('skrev 18 svg (8 repetition, 3 syror, 1 baser, 2 neutralisation, 4 försurning)', path.relative(path.join(__dirname, '..'), UT));

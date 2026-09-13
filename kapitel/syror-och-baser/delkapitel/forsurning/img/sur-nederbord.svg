@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 270" width="700" height="270" role="img" aria-labelledby="t">
+  <title id="t">pH-skala från 3 till 8 med surt nedfall vid 4,2, rent regnvatten vid 5,6 och neutralt vid 7; en klammer mellan 4,2 och 5,6 är märkt försurning</title>
+  <defs>
+    <linearGradient id="ph38" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#E07B39"/>
+      <stop offset="40%" stop-color="#E8C547"/>
+      <stop offset="80%" stop-color="#5a9668"/>
+    </linearGradient>
+  </defs>
+  <rect x="50" y="130" width="600" height="30" rx="4" fill="url(#ph38)" stroke="#2d4a35" stroke-width="1.5"/>
+  <line x1="50" y1="160" x2="50" y2="167" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="50" y="184" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">3</text>
+  <line x1="170" y1="160" x2="170" y2="167" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="170" y="184" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">4</text>
+  <line x1="290" y1="160" x2="290" y2="167" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="290" y="184" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">5</text>
+  <line x1="410" y1="160" x2="410" y2="167" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="410" y="184" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">6</text>
+  <line x1="530" y1="160" x2="530" y2="167" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="530" y="184" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">7</text>
+  <line x1="650" y1="160" x2="650" y2="167" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="650" y="184" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">8</text>
+  <line x1="194" y1="52" x2="194" y2="126" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="194" cy="126" r="3" fill="#2d4a35"/>
+  <text x="194" y="44" text-anchor="middle" font-size="17" font-weight="bold" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Surt nedfall</text>
+  <line x1="362" y1="86" x2="362" y2="126" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="362" cy="126" r="3" fill="#2d4a35"/>
+  <text x="362" y="78" text-anchor="middle" font-size="17" font-weight="bold" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Rent regnvatten</text>
+  <line x1="530" y1="52" x2="530" y2="126" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="530" cy="126" r="3" fill="#2d4a35"/>
+  <text x="530" y="44" text-anchor="middle" font-size="17" font-weight="bold" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Neutralt</text>
+  <path d="M194 204v8H362v-8" fill="none" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="278" y="234" text-anchor="middle" font-size="17" font-style="italic" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">försurning</text>
+</svg>

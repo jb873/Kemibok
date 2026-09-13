@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" role="img" aria-labelledby="t">
+  <title id="t">Tre steg: en skorsten med rök, ett moln med svaveldioxid och kväveoxider, och regndroppar med svavelsyra och salpetersyra som faller</title>
+  <g aria-label="skorsten med rök">
+    <path d="M104 190V110h52V190Z" fill="#f5f0e4" stroke="#2d4a35" stroke-width="2.5" stroke-linejoin="round"/>
+    <rect x="98" y="100" width="64" height="12" fill="#2d4a35"/>
+    <rect x="60" y="160" width="140" height="30" fill="#f5f0e4" stroke="#2d4a35" stroke-width="2.5"/>
+    <path d="M122 94c-10-14 8-22 4-36c-6-12 12-18 10-32" fill="none" stroke="#8A8A8A" stroke-width="4" stroke-linecap="round"/>
+    <path d="M140 94c-10-14 8-22 4-36c-6-12 12-18 10-32" fill="none" stroke="#8A8A8A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g aria-label="moln med svaveldioxid och kväveoxider">
+    <path d="M300 140a30 30 0 0 1 12-56a40 40 0 0 1 72-18a36 36 0 0 1 62 14a30 30 0 0 1 4 60Z" fill="#f5f0e4" stroke="#2d4a35" stroke-width="2.5" stroke-linejoin="round"/>
+    <circle cx="335" cy="98" r="4" fill="#8A8A8A"/>
+    <circle cx="360" cy="122" r="4" fill="#8A8A8A"/>
+    <circle cx="390" cy="92" r="4" fill="#8A8A8A"/>
+    <circle cx="415" cy="118" r="4" fill="#8A8A8A"/>
+    <circle cx="375" cy="134" r="4" fill="#8A8A8A"/>
+    <circle cx="430" cy="96" r="4" fill="#8A8A8A"/>
+    <text x="350" y="162" text-anchor="middle" font-size="19" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">SO<tspan font-size="13" dy="6">2</tspan><tspan dy="-6"></tspan></text>
+    <text x="414" y="162" text-anchor="middle" font-size="19" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">NO<tspan font-size="13" dy="6">x</tspan><tspan dy="-6"></tspan></text>
+  </g>
+  <g aria-label="regndroppar med svavelsyra och salpetersyra">
+    <path d="M570 74c-10 14-14 20-14 28a14 14 0 0 0 28 0c0-8-4-14-14-28Z" transform="scale(1)" fill="#a8c4d8" stroke="#2d4a35" stroke-width="1.5"/>
+    <path d="M620 114c-10 14-14 20-14 28a14 14 0 0 0 28 0c0-8-4-14-14-28Z" transform="scale(1)" fill="#a8c4d8" stroke="#2d4a35" stroke-width="1.5"/>
+    <path d="M670 84c-10 14-14 20-14 28a14 14 0 0 0 28 0c0-8-4-14-14-28Z" transform="scale(1)" fill="#a8c4d8" stroke="#2d4a35" stroke-width="1.5"/>
+    <path d="M590 144c-10 14-14 20-14 28a14 14 0 0 0 28 0c0-8-4-14-14-28Z" transform="scale(1)" fill="#a8c4d8" stroke="#2d4a35" stroke-width="1.5"/>
+    <path d="M650 159c-10 14-14 20-14 28a14 14 0 0 0 28 0c0-8-4-14-14-28Z" transform="scale(1)" fill="#a8c4d8" stroke="#2d4a35" stroke-width="1.5"/>
+    <path d="M695 134c-10 14-14 20-14 28a14 14 0 0 0 28 0c0-8-4-14-14-28Z" transform="scale(1)" fill="#a8c4d8" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="590" y="220" text-anchor="middle" font-size="19" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">H<tspan font-size="13" dy="6">2</tspan><tspan dy="-6"></tspan>SO<tspan font-size="13" dy="6">4</tspan><tspan dy="-6"></tspan></text>
+    <text x="680" y="220" text-anchor="middle" font-size="19" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">HNO<tspan font-size="13" dy="6">3</tspan><tspan dy="-6"></tspan></text>
+  </g>
+  <line x1="220" y1="140" x2="268" y2="140" stroke="#2d4a35" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="280,140 268,146 268,134" fill="#2d4a35"/>
+  <line x1="480" y1="140" x2="528" y2="140" stroke="#2d4a35" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="540,140 528,146 528,134" fill="#2d4a35"/>
+  <text x="130" y="272" text-anchor="middle" font-size="19" font-style="italic" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Förbränning</text>
+  <text x="380" y="272" text-anchor="middle" font-size="19" font-style="italic" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">I luften</text>
+  <text x="630" y="272" text-anchor="middle" font-size="19" font-style="italic" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Surt nedfall</text>
+</svg>

@@ -28,6 +28,7 @@ function arReaktion(s) {
 }
 // enskilda tokens med index/laddning → \(\ce{…}\); hela reaktionsrader hanteras av anroparen
 function formler(s) {
+  s = s.replace(/\b([A-Z][a-z]?(?:O|H)?)ₓ/g, (_, b) => `\\(\\ce{${b}_x}\\)`);   // NOₓ, SOₓ – obestämt index x
   return s.replace(FORMELTOKEN, t => /[₀-₉⁺⁻]/.test(t) ? `\\(\\ce{${ceify(t)}}\\)` : t)
     .replace(TIOPOTENS, (_, mant, bas, minus, exp) => `\\(${mant ? mant.replace(',', '{,}') + ' \\cdot ' : ''}${bas}^{${minus ? '-' : ''}${[...exp].map(c => SUPD[c]).join('')}}\\)`)
     .replace(/⇌/g, '\\(\\ce{<=>}\\)').replace(/→/g, '\\(\\rightarrow\\)');
