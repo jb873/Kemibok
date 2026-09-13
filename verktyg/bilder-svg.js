@@ -7,6 +7,8 @@
 //   jonbindning-natrium-klor.svg        avsnitt 3 B – Na + Cl → Na+ + Cl- (staplad layout)
 //   polar-vattenmolekyl.svg             avsnitt 4 A – kulpinnmodell med δ− / δ+ och pilar
 //   elektronpar-vate.svg                avsnitt 3 C – två fria väteatomer / H2 med delat elektronpar (ingen text)
+//   adelgasstruktur.svg                 avsnitt 3 A – neon (2+8) mot natrium (2+8+1)
+//   tre-vagar.svg                       avsnitt 3 A – avge / ta upp / dela
 //   vatejon-och-oxoniumjon.svg          delkapitel Syror 1 B – H2O + H+ → H3O+ i tre lager (skrivs till delkapitel/syror/img/)
 //   ph-skalan.svg                       delkapitel Syror 2 A – skala 0–14 med exempel (syror/img/)
 //   fyra-kombinationerna.svg            delkapitel Syror 4 B – stark/svag × koncentrerad/utspädd (syror/img/)
@@ -346,4 +348,60 @@ ${STOPP.map(([ph, f]) => `      <stop offset="${r2(ph / 14 * 100)}%" stop-color=
     'Fyra bägarglas: stark och koncentrerad, stark och utspädd, svag och koncentrerad, svag och utspädd – röda vätejoner och gråa hela syrapartiklar', ut));
 }
 
-console.log('skrev 8 svg (5 till repetition/img, 3 till syror/img)', path.relative(path.join(__dirname, '..'), UT));
+
+// ---------- 9. Ädelgasstruktur: neon mot natrium (repetition avsnitt 3 A) ----------
+// Joachims spec 2026-09-13: neon 10p/10n, elektroner 2+8; natrium 11p/12n, elektroner 2+8+1; namn under.
+{
+  const W = 720, H = 400, CY = 178;
+  const rK = 7, rE = 8;
+  let ut = '';
+  ut += A.modell({ cx: 190, cy: CY, p: 10, n: 10, rK, rE, skal: [{ R: 58, e: 2, start: -90 }, { R: 108, e: 8, start: -90 }] }, 'neonatom: fullt yttersta skal med åtta elektroner');
+  ut += A.modell({ cx: 530, cy: CY, p: 11, n: 12, rK, rE, skal: [{ R: 58, e: 2, start: -90 }, { R: 108, e: 8, start: -90 }, { R: 158, e: 1, start: -90 }] }, 'natriumatom: en ensam elektron i yttersta skalet');
+  ut += `  <text x="190" y="${CY + 190}" text-anchor="middle" font-size="24" fill="${INK}" ${FONT}>Neon</text>
+  <text x="530" y="${CY + 190}" text-anchor="middle" font-size="24" fill="${INK}" ${FONT}>Natrium</text>
+`;
+  fs.writeFileSync(path.join(UT, 'adelgasstruktur.svg'), svg(W, H,
+    'Neonatom med fullt yttersta skal bredvid natriumatom med en ensam elektron i yttersta skalet', ut));
+}
+
+// ---------- 10. Tre vägar till fullt skal: avge, ta upp, dela (repetition avsnitt 3 A) ----------
+// Joachims spec 2026-09-13: tre rutor med lodräta skiljelinjer; vänster atom med ensam ytterelektron
+// som lämnar (litium), mitten atom som saknar en elektron och tar upp en (fluor), höger två atomer
+// som överlappar med delat elektronpar (två väteatomer). Ord under: avge, ta upp, dela.
+{
+  const P = 240, W = 3 * P, H = 300, CY = 128, rK = 5, rE = 6;
+  const ELEK = A.F.elektron;
+  let ut = '';
+  for (let i = 1; i < 3; i++) { ut += `  <line x1="${i * P}" y1="16" x2="${i * P}" y2="${H - 16}" stroke="${INK}" stroke-width="1" opacity="0.5"/>\n`; }
+  const elektron = (x, y) => `    <circle class="elektron" cx="${r2(x)}" cy="${r2(y)}" r="${rE}" fill="${ELEK}" stroke="#fff" stroke-width="1.5"/>
+    <path d="M${r2(x - rE * 0.5)} ${r2(y)}H${r2(x + rE * 0.5)}" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+`;
+  // 1 avge: litium, ytterelektronen rakt upp, pil från den och uppåt-höger ut ur skalet
+  {
+    const cx = P / 2, cy = CY;
+    ut += A.modell({ cx, cy, p: 3, n: 4, rK, rE, skal: [{ R: 30, e: 2, start: -90 }, { R: 60, e: 1, start: -90 }] }, 'litiumatom som avger sin ensamma ytterelektron');
+    ut += pil(cx + 7, cy - 60 - 7, cx + 62, cy - 60 - 42, ELEK, 2.5);
+  }
+  // 2 ta upp: fluor, sju ytterelektroner med luckan rakt upp, en elektron utanför med pil in i luckan
+  {
+    const cx = P + P / 2, cy = CY;
+    ut += A.modell({ cx, cy, p: 9, n: 10, rK, rE, skal: [{ R: 30, e: 2, start: -90 }, { R: 60, e: 7, start: -90 + 360 / 14 }] }, 'fluoratom som tar upp en elektron i luckan i yttersta skalet');
+    // luckan mellan sista och första elektronen centreras rakt upp (start = -90° + halva steget); elektronen kommer uppifrån
+    ut += elektron(cx + 44, cy - 60 - 46);
+    ut += pil(cx + 34, cy - 60 - 36, cx + 8, cy - 60 - 8, ELEK, 2.5);
+  }
+  // 3 dela: två väteatomer vars skal överlappar, ett elektronpar i överlappet
+  {
+    const cx = 2 * P + P / 2, cy = CY, R = 46, d = 34;
+    ut += `  <g aria-label="två väteatomer som delar ett elektronpar">
+    <circle class="bana" cx="${cx - d}" cy="${cy}" r="${R}" fill="none" stroke="${INK}" stroke-width="3"/>
+    <circle class="bana" cx="${cx + d}" cy="${cy}" r="${R}" fill="none" stroke="${INK}" stroke-width="3"/>
+` + A.karna(cx - d - 8, cy, 1, 0, 7) + A.karna(cx + d + 8, cy, 1, 0, 7) + elektron(cx, cy - 9) + elektron(cx, cy + 9) + `  </g>
+`;
+  }
+  ['avge', 'ta upp', 'dela'].forEach((ord, i) => { ut += `  <text x="${i * P + P / 2}" y="${H - 34}" text-anchor="middle" font-size="24" fill="${INK}" ${FONT}>${ord}</text>\n`; });
+  fs.writeFileSync(path.join(UT, 'tre-vagar.svg'), svg(W, H,
+    'Tre vägar till fullt yttersta skal: avge en elektron, ta upp en elektron eller dela ett elektronpar', ut));
+}
+
+console.log('skrev 10 svg (7 till repetition/img, 3 till syror/img)', path.relative(path.join(__dirname, '..'), UT));

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="720" height="300" role="img" aria-labelledby="t">
+  <title id="t">Tre vägar till fullt yttersta skal: avge en elektron, ta upp en elektron eller dela ett elektronpar</title>
+  <line x1="240" y1="16" x2="240" y2="284" stroke="#2d4a35" stroke-width="1" opacity="0.5"/>
+  <line x1="480" y1="16" x2="480" y2="284" stroke="#2d4a35" stroke-width="1" opacity="0.5"/>
+  <g aria-label="litiumatom som avger sin ensamma ytterelektron">
+    <circle class="bana" cx="120" cy="128" r="30" fill="none" stroke="#2d4a35" stroke-width="3"/>
+    <circle class="bana" cx="120" cy="128" r="60" fill="none" stroke="#2d4a35" stroke-width="3"/>
+    <circle class="neutron" cx="111" cy="128" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="neutron" cx="115.5" cy="135.79" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="proton" cx="124.5" cy="135.79" r="5" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M122 135.79H127M124.5 133.29V138.29" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="neutron" cx="129" cy="128" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="proton" cx="124.5" cy="120.21" r="5" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M122 120.21H127M124.5 117.71V122.71" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="neutron" cx="115.5" cy="120.21" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="proton" cx="120" cy="128" r="5" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M117.5 128H122.5M120 125.5V130.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" data-bana="30" cx="120" cy="98" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M117 98H123" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" data-bana="30" cx="120" cy="158" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M117 158H123" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" data-bana="60" cx="120" cy="68" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M117 68H123" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <line x1="127" y1="61" x2="173.56" y2="31.37" stroke="#3D6BA8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="182,26 176.25,35.59 170.88,27.15" fill="#3D6BA8"/>
+  <g aria-label="fluoratom som tar upp en elektron i luckan i yttersta skalet">
+    <circle class="bana" cx="360" cy="128" r="30" fill="none" stroke="#2d4a35" stroke-width="3"/>
+    <circle class="bana" cx="360" cy="128" r="60" fill="none" stroke="#2d4a35" stroke-width="3"/>
+    <circle class="neutron" cx="342" cy="128" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="neutron" cx="351" cy="143.59" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="proton" cx="369" cy="143.59" r="5" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M366.5 143.59H371.5M369 141.09V146.09" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="neutron" cx="378" cy="128" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="proton" cx="369" cy="112.41" r="5" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M366.5 112.41H371.5M369 109.91V114.91" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="neutron" cx="351" cy="112.41" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="proton" cx="346.5" cy="135.79" r="5" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M344 135.79H349M346.5 133.29V138.29" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="neutron" cx="360" cy="143.59" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="proton" cx="373.5" cy="135.79" r="5" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M371 135.79H376M373.5 133.29V138.29" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="neutron" cx="373.5" cy="120.21" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="proton" cx="360" cy="112.41" r="5" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M357.5 112.41H362.5M360 109.91V114.91" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="neutron" cx="346.5" cy="120.21" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="proton" cx="351" cy="128" r="5" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M348.5 128H353.5M351 125.5V130.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="neutron" cx="355.5" cy="135.79" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="proton" cx="364.5" cy="135.79" r="5" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M362 135.79H367M364.5 133.29V138.29" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="neutron" cx="369" cy="128" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="proton" cx="364.5" cy="120.21" r="5" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M362 120.21H367M364.5 117.71V122.71" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="neutron" cx="355.5" cy="120.21" r="5" fill="#8A8A8A" stroke="#fff" stroke-width="1.5"/>
+    <circle class="proton" cx="360" cy="128" r="5" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M357.5 128H362.5M360 125.5V130.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" data-bana="30" cx="360" cy="98" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M357 98H363" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" data-bana="30" cx="360" cy="158" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M357 158H363" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" data-bana="60" cx="386.03" cy="73.94" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M383.03 73.94H389.03" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" data-bana="60" cx="418.5" cy="114.65" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M415.5 114.65H421.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" data-bana="60" cx="406.91" cy="165.41" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M403.91 165.41H409.91" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" data-bana="60" cx="360" cy="188" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M357 188H363" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" data-bana="60" cx="313.09" cy="165.41" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M310.09 165.41H316.09" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" data-bana="60" cx="301.5" cy="114.65" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M298.5 114.65H304.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" data-bana="60" cx="333.97" cy="73.94" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M330.97 73.94H336.97" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+    <circle class="elektron" cx="404" cy="22" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M401 22H407" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="394" y1="32" x2="374.8" y2="52.67" stroke="#3D6BA8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="368,60 371.14,49.27 378.47,56.07" fill="#3D6BA8"/>
+  <g aria-label="två väteatomer som delar ett elektronpar">
+    <circle class="bana" cx="566" cy="128" r="46" fill="none" stroke="#2d4a35" stroke-width="3"/>
+    <circle class="bana" cx="634" cy="128" r="46" fill="none" stroke="#2d4a35" stroke-width="3"/>
+    <circle class="proton" cx="558" cy="128" r="7" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M554.5 128H561.5M558 124.5V131.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="proton" cx="642" cy="128" r="7" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+    <path d="M638.5 128H645.5M642 124.5V131.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" cx="600" cy="119" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M597 119H603" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle class="elektron" cx="600" cy="137" r="6" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+    <path d="M597 137H603" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="120" y="266" text-anchor="middle" font-size="24" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">avge</text>
+  <text x="360" y="266" text-anchor="middle" font-size="24" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">ta upp</text>
+  <text x="600" y="266" text-anchor="middle" font-size="24" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">dela</text>
+</svg>
