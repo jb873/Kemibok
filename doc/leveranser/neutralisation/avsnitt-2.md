@@ -380,8 +380,11 @@ rätt.
 
 ### Räkna på det
 
-Hur en titrering beräknas, och varför ekvivalenspunkten inte alltid ligger vid pH 7, står i
-djupdykningen **Neutralisation: när syra och bas reagerar**.
+Hur en titrering går till steg för steg, med byrett och ett räknat exempel, står i djupdykningen
+**Titrering: att bestämma en okänd koncentration**.
+
+Varför ekvivalenspunkten inte alltid ligger vid pH 7 står i djupdykningen **Neutralisation: när syra
+och bas reagerar**.
 
 **Om modellen:** standardtexten använder pH-mätning som kontroll. Med titrering blir neutralisationen
 i stället en metod — ett sätt att ta reda på något man inte visste.

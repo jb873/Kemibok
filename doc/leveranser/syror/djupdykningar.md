@@ -91,6 +91,32 @@ Syrornas avsnitt 3 kan hänvisa framåt till den, men djupdykningskortet hör he
 
 ---
 
+# 4. Koncentration och spädning
+
+**Länkas från:** avsnitt 4, underdel A
+**Filnamn:** `djupdykning-koncentration.html`
+**Underrubrik:** *c = n/V, och vad som händer när man häller i mer vatten*
+
+**Korttext:** Vad betyder egentligen 0,1 mol/dm³? Och varför ändras pH när man späder, fast mängden syra är densamma? Här räknas det ut.
+
+**Text:** Joachims dokument, oförändrat (leverans 2026-09-13, djupdykningar-placeringar-2026-09-13.md).
+**Brödtext:** koncentration-och-spadning.md
+
+---
+
+# 5. Indikatorer och mätning av pH
+
+**Länkas från:** avsnitt 2, underdel B
+**Filnamn:** `djupdykning-indikatorer.html`
+**Underrubrik:** *vad som händer i molekylen när färgen byts*
+
+**Korttext:** Varför byter en indikator färg? Och hur mäter en pH-meter något man inte kan se? Här finns svaren — inklusive vad som gör rödkål så användbar.
+
+**Text:** Joachims dokument, oförändrat (leverans 2026-09-13, djupdykningar-placeringar-2026-09-13.md).
+**Brödtext:** indikatorer-och-matning.md
+
+---
+
 # Justeringar i befintliga fördjupningar
 
 Två ändringar är gjorda så att fördjupning och djupdykning inte upprepar varandra.

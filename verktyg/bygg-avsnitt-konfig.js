@@ -53,11 +53,13 @@ const AVSNITT_SYROR = {
   1: { dd: [],
        bilder: { 'vatejon-och-oxoniumjon.svg': { aktiv: [], standard: 'H₂O + H⁺ → H₃O⁺' } },   // endast Standard; efter reaktionsraden
        faktaruta: { standard: 'egentligen oxoniumjoner som' } },
-  2: { dd: [{ slug: 'ph-och-mol', titel: 'pH-värdet: oxoniumjoner, hydroxidjoner och mol', ikon: '🧪' }],   // Joachims text, doc/leveranser/syror/ph-vardet.md
+  2: { dd: [{ slug: 'ph-och-mol', titel: 'pH-värdet: oxoniumjoner, hydroxidjoner och mol', ikon: '🧪' },   // Joachims text, doc/leveranser/syror/ph-vardet.md
+            { slug: 'indikatorer', titel: 'Indikatorer och mätning av pH', ikon: '🎨' }],                       // Joachims text, indikatorer-och-matning.md (2 B)
        bilder: { 'ph-skalan.svg': { aktiv: [], enkel: 'en tvållösning kan ha 9 eller 10', standard: 'många tvållösningar är basiska' } } },
   3: { dd: [],
        bilder: { 'stark-och-svag-syra.webp': { aktiv: ['enkel', 'standard'], enkel: 'helt olika många vätejoner i vattnet', standard: 'partiklar som har avgett den' } } },
-  4: { dd: [{ slug: 'mol', titel: 'Mol: en brygga mellan atomer och gram', ikon: '⚖️' }],   // Joachims text, mol.md – länkas senare även från neutralisation/salter (byggs där ur samma fil)
+  4: { dd: [{ slug: 'mol', titel: 'Mol: en brygga mellan atomer och gram', ikon: '⚖️' },   // Joachims text, mol.md – länkas senare även från neutralisation/salter (byggs där ur samma fil)
+            { slug: 'koncentration', titel: 'Koncentration och spädning', ikon: '💧' }],   // Joachims text, koncentration-och-spadning.md (4 A)
        bilder: { 'fyra-kombinationerna.svg': { aktiv: [], enkel: 'en syra som avger ogärna', standard: 'Utspädd ättiksyra är ett exempel' } } },
   5: { dd: [],
        bilder: { 'syra-och-metall.webp': { aktiv: ['enkel', 'standard'], staende: true, enkel: 'tillsammans en vätgasmolekyl', standard: 'metallatomerna avger elektroner' } } }   // grön bakgrund, nycklad 2026-09-13; stående provrör
@@ -92,7 +94,7 @@ const AVSNITT_NEUTRALISATION = {
          'vad-blir-kvar.svg': { aktiv: ['enkel', 'standard'], enkel: 'De simmar omkring precis som förut', standard: 'De finns fortfarande kvar lösta i vattnet efteråt' }
        },
        faktaruta: { enkel: 'handlar underdel C om', standard: 'Finns hydroxidjoner kvar är', fordjupning: 'Där finns också mol och mängdberäkningar' } },
-  2: { dd: [],
+  2: { dd: [{ slug: 'titrering', titel: 'Titrering: att bestämma en okänd koncentration', ikon: '🧫' }],   // Joachims text, titrering.md (2 B)
        bilder: { 'antacidum.webp': { aktiv: ['enkel', 'standard'], staende: true, enkel: 'kemi, inte absorption', standard: 'De reagerar kemiskt med den' } } }   // staende: max-height i kemi.css
 };
 // Försurning (leverans 2026-09-13). AI-bilderna levererade med grön bakgrund,

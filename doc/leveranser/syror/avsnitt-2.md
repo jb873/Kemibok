@@ -354,6 +354,9 @@ då slår BTB om för tidigt. Där används fenolftalein i stället.
 som om omslaget skedde vid pH 7. Det gör det sällan. Varje indikator har sitt eget område, och att
 välja rätt indikator till rätt reaktion är en del av kemiskt hantverk.
 
+Vill du veta mer om hur indikatormolekylen faktiskt ändrar färg, vad antocyaninerna i rödkål är, och
+hur en pH-meter mäter — läs djupdykningen **Indikatorer och mätning av pH**.
+
 ---
 
 # Volym

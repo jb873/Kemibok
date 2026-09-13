@@ -23,6 +23,19 @@ koncentrationer och den skillnad mellan ekvivalenspunkt och neutralpunkt som avg
 
 ---
 
+## Titrering: att bestämma en okänd koncentration
+
+**Länkas från:** avsnitt 2, underdel B
+**Filnamn:** `djupdykning-titrering.html`
+**Underrubrik:** *hur man mäter något man inte kan se*
+
+**Korttext:** Med en byrett, en indikator och en balanserad reaktionsformel går det att räkna ut hur koncentrerad en okänd syra är. Här visas hur.
+
+**Text:** Joachims dokument, oförändrat (leverans 2026-09-13, djupdykningar-placeringar-2026-09-13.md).
+**Brödtext:** titrering.md
+
+---
+
 ## Varför den länkas från underdel C
 
 Underdel C handlar om hur mycket som behövs, och stannar vid att det är antalet joner som avgör —
