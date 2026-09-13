@@ -8,17 +8,20 @@
   "fragor": [
     {
       "id": "k2-s1",
-      "typ": "tal",
-      "fraga": "Kol har atomnummer 6. Hur många protoner har en kolatom?",
-      "svar": 6,
-      "forklaring": "Atomnumret är alltid samma sak som antalet protoner."
+      "typ": "ord",
+      "fraga": "Vilket ämne har atomnummer 6?",
+      "svar": [
+        "kol",
+        "C"
+      ],
+      "forklaring": "Atomnumret är antalet protoner, och sex protoner betyder alltid kol."
     },
     {
       "id": "k2-s2",
       "typ": "tal",
-      "fraga": "Hur många valenselektroner har ett atomslag i grupp 1?",
+      "fraga": "Natrium har en enda valenselektron. Vilken grupp står natrium i?",
       "svar": 1,
-      "forklaring": "Gruppnumret säger antalet valenselektroner i huvudgrupperna. Grupp 1 har en."
+      "forklaring": "Gruppnumret säger antalet valenselektroner i huvudgrupperna. En valenselektron betyder grupp 1."
     },
     {
       "id": "k2-s3",
@@ -30,9 +33,9 @@
     {
       "id": "k2-s4",
       "typ": "tal",
-      "fraga": "Ett atomslag står i period 2. Hur många elektronskal använder det?",
-      "svar": 2,
-      "forklaring": "Perioden talar om hur många skal atomen använder. Period 2 betyder två skal."
+      "fraga": "En atom använder tre elektronskal. Vilken period står den i?",
+      "svar": 3,
+      "forklaring": "Perioden talar om hur många skal atomen använder. Tre skal betyder period 3."
     },
     {
       "id": "k2-s5",

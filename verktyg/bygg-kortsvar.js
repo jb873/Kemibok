@@ -1,5 +1,5 @@
 // bygg-kortsvar.js – kortsvarsfiler för avsnitt 2–5 ur leveransen 2026-09-13 (doc/kortsvar-avsnitt-2-5.md).
-// Kör: node verktyg/bygg-kortsvar.js   → kapitel/syror-och-baser/data/kortsvar/avsnitt-N-{slug}.json
+// Kör: node verktyg/bygg-kortsvar.js   (k2-s1/s2/s4 omskrivna 2026-09-13 enligt §8: frågan får inte innehålla svaret)   → kapitel/syror-och-baser/data/kortsvar/avsnitt-N-{slug}.json
 // Schema: KEMI-TILLAGG §8. Formler i förklaringar som \(\ce{…}\) (String.raw → JSON.stringify dubblar).
 // Flerval: första alternativet i leveransen är det rätta (svar: 0); kortsvar.js blandar alternativen.
 'use strict';
@@ -17,10 +17,10 @@ const flerval = (fraga, alternativ, forklaring) => ({ typ: 'flerval', fraga, alt
 
 const FRAGOR = {
   2: [
-    tal('Kol har atomnummer 6. Hur många protoner har en kolatom?', 6, 'Atomnumret är alltid samma sak som antalet protoner.'),
-    tal('Hur många valenselektroner har ett atomslag i grupp 1?', 1, 'Gruppnumret säger antalet valenselektroner i huvudgrupperna. Grupp 1 har en.'),
+    ord('Vilket ämne har atomnummer 6?', ['kol', 'C'], 'Atomnumret är antalet protoner, och sex protoner betyder alltid kol.'),
+    tal('Natrium har en enda valenselektron. Vilken grupp står natrium i?', 1, 'Gruppnumret säger antalet valenselektroner i huvudgrupperna. En valenselektron betyder grupp 1.'),
     tal('Hur många valenselektroner har ett atomslag i grupp 17?', 7, 'Grupp 17 har sju — de saknar alltså bara en för att nå åtta.'),
-    tal('Ett atomslag står i period 2. Hur många elektronskal använder det?', 2, 'Perioden talar om hur många skal atomen använder. Period 2 betyder två skal.'),
+    tal('En atom använder tre elektronskal. Vilken period står den i?', 3, 'Perioden talar om hur många skal atomen använder. Tre skal betyder period 3.'),
     ord('Vad kallas de vågräta raderna i det periodiska systemet?', ['period', 'perioder'], 'Raderna kallas perioder. Kolumnerna kallas grupper.'),
     ord('Vad kallas de lodräta kolumnerna i det periodiska systemet?', ['grupp', 'grupper'], 'Kolumnerna kallas grupper. Atomslag i samma grupp har lika många valenselektroner.'),
     ord('Vad kallas elektronerna i atomens yttersta skal?', ['valenselektroner', 'valenselektron'], 'De kallas valenselektroner, och det är de som avgör hur atomen reagerar.'),
