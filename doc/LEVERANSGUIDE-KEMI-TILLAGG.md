@@ -296,8 +296,6 @@ standardtexten. Uppackning betyder fler steg genom samma material, inte nytt mat
 
 ---
 
----
-
 ## Öppna punkter — Code inventerar och rapporterar
 
 Bygg ingenting på gissningar. Rapportera först, invänta godkännande.
