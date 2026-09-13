@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 340" width="700" height="340" role="img" aria-labelledby="t">
+  <title id="t">Vattenmolekyl plus vätejon ger oxoniumjon, i tre lager: molekylbilder, ord och formeln H2O + H+ → H3O+</title>
+  <g aria-label="vattenmolekyl">
+  <line x1="115" y1="100" x2="144.22" y2="138.08" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+  <line x1="115" y1="100" x2="85.78" y2="138.08" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+  <circle class="syre" cx="115" cy="100" r="26" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="vate" cx="144.22" cy="138.08" r="15" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="vate" cx="85.78" cy="138.08" r="15" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="elektronprick" cx="101.9" cy="68.31" r="3.2" fill="#2d4a35"/>
+  <circle class="elektronprick" cx="94.1" cy="72.81" r="3.2" fill="#2d4a35"/>
+  <circle class="elektronprick" cx="135.9" cy="72.81" r="3.2" fill="#2d4a35"/>
+  <circle class="elektronprick" cx="128.1" cy="68.31" r="3.2" fill="#2d4a35"/>
+  </g>
+  <text x="235" y="111" text-anchor="middle" font-size="34" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">+</text>
+  <g aria-label="vätejon">
+  <circle cx="325" cy="100" r="13" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+  <path d="M319 100H331M325 94V106" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <line x1="385" y1="100" x2="468" y2="100" stroke="#2d4a35" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="480,100 468,106 468,94" fill="#2d4a35"/>
+  <g aria-label="oxoniumjon">
+  <line x1="585" y1="100" x2="537" y2="100" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+  <line x1="585" y1="100" x2="609" y2="141.57" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+  <line x1="585" y1="100" x2="561" y2="141.57" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+  <circle class="syre" cx="585" cy="100" r="26" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="vate" cx="537" cy="100" r="15" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="vate" cx="609" cy="141.57" r="15" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="vate" cx="561" cy="141.57" r="15" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="elektronprick" cx="600.86" cy="69.59" r="3.2" fill="#2d4a35"/>
+  <circle class="elektronprick" cx="592.4" cy="66.51" r="3.2" fill="#2d4a35"/>
+  <path d="M523 48H513V166H523" fill="none" stroke="#2d4a35" stroke-width="2.5"/>
+  <path d="M647 48H657V166H647" fill="none" stroke="#2d4a35" stroke-width="2.5"/>
+  <text x="663" y="52" font-size="22" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">+</text>
+  </g>
+  <text x="115" y="225" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">vattenmolekyl</text>
+  <text x="235" y="227" text-anchor="middle" font-size="28" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">+</text>
+  <text x="325" y="225" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">vätejon</text>
+  <line x1="385" y1="218" x2="470" y2="218" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="480,218 470,223 470,213" fill="#2d4a35"/>
+  <text x="585" y="225" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">oxoniumjon</text>
+  <text x="115" y="309" text-anchor="middle" font-size="30" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">H<tspan font-size="19" dy="8">2</tspan><tspan dy="-8">O</tspan></text>
+  <text x="235" y="309" text-anchor="middle" font-size="30" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">+</text>
+  <text x="325" y="309" text-anchor="middle" font-size="30" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">H<tspan font-size="18" dy="-12">+</tspan></text>
+  <line x1="385" y1="300" x2="470" y2="300" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="480,300 470,305 470,295" fill="#2d4a35"/>
+  <text x="585" y="309" text-anchor="middle" font-size="30" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">H<tspan font-size="19" dy="8">3</tspan><tspan dy="-8">O</tspan><tspan font-size="18" dy="-12">+</tspan></text>
+</svg>

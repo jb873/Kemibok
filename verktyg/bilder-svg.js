@@ -7,6 +7,7 @@
 //   jonbindning-natrium-klor.svg        avsnitt 3 B – Na + Cl → Na+ + Cl- (staplad layout)
 //   polar-vattenmolekyl.svg             avsnitt 4 A – kulpinnmodell med δ− / δ+ och pilar
 //   elektronpar-vate.svg                avsnitt 3 C – två fria väteatomer / H2 med delat elektronpar (ingen text)
+//   vatejon-och-oxoniumjon.svg          delkapitel Syror – H2O + H+ → H3O+ i tre lager (skrivs till delkapitel/syror/img/)
 //
 // Färger: linjer/text #2d4a35, rutor/väte #f5f0e4, syre #C0392B, proton #C64B3A,
 // neutron #8A8A8A, elektron #3D6BA8. Transparent bakgrund. Typsnitt: Georgia-fallback
@@ -186,4 +187,69 @@ function vatten(cx, cy, rO, rH, avst, stav) {
   fs.writeFileSync(path.join(UT, 'elektronpar-vate.svg'), svg(W, H,
     'Två fria väteatomer med varsin elektron, och en vätemolekyl där de två elektronerna ligger som ett gemensamt par i överlappet', ut));
 }
-console.log('skrev 5 svg till', path.relative(path.join(__dirname, '..'), UT));
+// ---------- 6. Vätejon + vattenmolekyl → oxoniumjon, tre lager ----------
+{
+  const UT2 = path.join(__dirname, '..', 'kapitel', 'syror-och-baser', 'delkapitel', 'syror', 'img');
+  fs.mkdirSync(UT2, { recursive: true });
+  const W = 700, H = 340;
+  // kolumner – samma x i alla tre lager
+  const X = { vatten: 115, plus: 235, vatejon: 325, pilFran: 385, pilTill: 480, oxonium: 585 };
+  const Y = { mol: 100, ord: 218, formel: 300 };
+  const rO = 26, rH = 15, avst = 48, PROTON = '#C64B3A';
+  const prick = (x, y) => `  <circle class="elektronprick" cx="${r2(x)}" cy="${r2(y)}" r="3.2" fill="${INK}"/>
+`;
+  const par = (cx, cy, vinkelGrader, R) => { const v = vinkelGrader * Math.PI / 180, px = -Math.sin(v), py = Math.cos(v); const bx = cx + R * Math.cos(v), by = cy + R * Math.sin(v); return prick(bx + px * 4.5, by + py * 4.5) + prick(bx - px * 4.5, by - py * 4.5); };
+  const H_at = (cx, cy, grader) => [cx + avst * Math.cos(grader * Math.PI / 180), cy + avst * Math.sin(grader * Math.PI / 180)];
+  const molekyl = (cx, cy, hVinklar, friaPar) => {
+    let ut = '';
+    hVinklar.forEach(g => { const [x, y] = H_at(cx, cy, g); ut += `  <line x1="${cx}" y1="${cy}" x2="${r2(x)}" y2="${r2(y)}" stroke="${VARMGRA}" stroke-width="7" stroke-linecap="round"/>
+`; });
+    ut += `  <circle class="syre" cx="${cx}" cy="${cy}" r="${rO}" fill="${SYRE}" stroke="${INK}" stroke-width="1.5"/>
+`;
+    hVinklar.forEach(g => { const [x, y] = H_at(cx, cy, g); ut += `  <circle class="vate" cx="${r2(x)}" cy="${r2(y)}" r="${rH}" fill="${PAPPER}" stroke="${INK}" stroke-width="1.5"/>
+`; });
+    friaPar.forEach(g => { ut += par(cx, cy, g, rO + 8); });
+    return ut;
+  };
+  let ut = '';
+  // --- lager 1: molekyler ---
+  ut += `  <g aria-label="vattenmolekyl">
+` + molekyl(X.vatten, Y.mol, [52.5, 127.5], [-120, -60]) + `  </g>
+`;   // H nedåt, två fria par uppåt
+  ut += `  <text x="${X.plus}" y="${Y.mol + 11}" text-anchor="middle" font-size="34" fill="${INK}" ${FONT}>+</text>
+`;
+  ut += `  <g aria-label="vätejon">
+  <circle cx="${X.vatejon}" cy="${Y.mol}" r="13" fill="${PROTON}" stroke="#fff" stroke-width="1.5"/>
+  <path d="M${X.vatejon - 6} ${Y.mol}H${X.vatejon + 6}M${X.vatejon} ${Y.mol - 6}V${Y.mol + 6}" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+`;
+  ut += pil(X.pilFran, Y.mol, X.pilTill, Y.mol, INK, 3);
+  // oxonium: tre H (vänster, ned-vänster, ned-höger) + ett fritt par uppåt-höger, hakparentes med +
+  ut += `  <g aria-label="oxoniumjon">
+` + molekyl(X.oxonium, Y.mol, [180, 60, 120], [-70]);
+  const bx1 = X.oxonium - 72, bx2 = X.oxonium + 72, by1 = Y.mol - 52, by2 = Y.mol + 66;
+  ut += `  <path d="M${bx1 + 10} ${by1}H${bx1}V${by2}H${bx1 + 10}" fill="none" stroke="${INK}" stroke-width="2.5"/>
+  <path d="M${bx2 - 10} ${by1}H${bx2}V${by2}H${bx2 - 10}" fill="none" stroke="${INK}" stroke-width="2.5"/>
+`;
+  ut += `  <text x="${bx2 + 6}" y="${by1 + 4}" font-size="22" fill="${INK}" ${FONT}>+</text>
+  </g>
+`;
+  // --- lager 2: ord ---
+  const ord = (x, t) => `  <text x="${x}" y="${Y.ord + 7}" text-anchor="middle" font-size="20" fill="${INK}" ${FONT}>${t}</text>
+`;
+  ut += ord(X.vatten, 'vattenmolekyl') + `  <text x="${X.plus}" y="${Y.ord + 9}" text-anchor="middle" font-size="28" fill="${INK}" ${FONT}>+</text>
+` + ord(X.vatejon, 'vätejon') + pil(X.pilFran, Y.ord, X.pilTill, Y.ord, INK, 2.5) + ord(X.oxonium, 'oxoniumjon');
+  // --- lager 3: formel ---
+  const F = (x, inner) => `  <text x="${x}" y="${Y.formel + 9}" text-anchor="middle" font-size="30" fill="${INK}" ${FONT}>${inner}</text>
+`;
+  const sub = n => `<tspan font-size="19" dy="8">${n}</tspan><tspan dy="-8">`;
+  ut += F(X.vatten, `H${sub(2)}O</tspan>`);
+  ut += `  <text x="${X.plus}" y="${Y.formel + 9}" text-anchor="middle" font-size="30" fill="${INK}" ${FONT}>+</text>
+`;
+  ut += F(X.vatejon, `H<tspan font-size="18" dy="-12">+</tspan>`);
+  ut += pil(X.pilFran, Y.formel, X.pilTill, Y.formel, INK, 2.5);
+  ut += F(X.oxonium, `H${sub(3)}O</tspan><tspan font-size="18" dy="-12">+</tspan>`);
+  fs.writeFileSync(path.join(UT2, 'vatejon-och-oxoniumjon.svg'), svg(W, H,
+    'Vattenmolekyl plus vätejon ger oxoniumjon, i tre lager: molekylbilder, ord och formeln H2O + H+ → H3O+', ut));
+}
+console.log('skrev 6 svg (5 till repetition/img, 1 till syror/img)', path.relative(path.join(__dirname, '..'), UT));
