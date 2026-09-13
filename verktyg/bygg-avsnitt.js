@@ -1,4 +1,4 @@
-// bygg-avsnitt.js – bygger en avsnittssida ur en leveransfil (doc/avsnitt-N-komplett.md)
+// bygg-avsnitt.js – bygger en avsnittssida ur en leveransfil (doc/leveranser/{delkapitel}/avsnitt-N.md)
 // enligt KOMPONENTER DEL 1-scaffolden. Kör: node verktyg/bygg-avsnitt.js <N> [--torr]
 //
 // Leveransfilens struktur (samma i avsnitt 2–5):
@@ -61,7 +61,8 @@ const KAP = { id: 'syror-och-baser', titel: 'Syror och baser' }, DK = { id: 'rep
 const B4 = '../../../../';
 
 // ---------- läs och dela upp leveransen ----------
-const md = fs.readFileSync(path.join(ROT, 'doc', `avsnitt-${N}-komplett.md`), 'utf8').replace(/\r\n/g, '\n');
+const LEV = path.join(ROT, 'doc', 'leveranser', DK.id);   // leveransfiler per delkapitel
+const md = fs.readFileSync(path.join(LEV, `avsnitt-${N}.md`), 'utf8').replace(/\r\n/g, '\n');
 const stopp = md.search(/\n# (Volym|Vad jag ändrat|Djupdykningar|Repetitionsdelkapitlet)/);
 const kropp = stopp > 0 ? md.slice(0, stopp) : md;
 
@@ -81,9 +82,9 @@ for (const f of Object.keys(K.bilder)) {
 }
 for (const f of Object.keys(bildspec)) { if (!K.bilder[f]) { throw new Error('ankare saknas i konfigurationen för ' + f); } }
 
-// bildguider (doc/bildguider-avsnitt-3-5.md): "## Underdel X — `fil`" följt av punktlista, per bildfil
+// bildguider (doc/leveranser/{delkapitel}/bildguider.md): "## Underdel X — `fil`" följt av punktlista, per bildfil
 const bildguider = {};
-const bgFil = path.join(ROT, 'doc', 'bildguider-avsnitt-3-5.md');
+const bgFil = path.join(LEV, 'bildguider.md');
 if (fs.existsSync(bgFil)) {
   const bg = fs.readFileSync(bgFil, 'utf8').replace(/\r\n/g, '\n');
   for (const m of bg.matchAll(/## Underdel [A-D] — `([^`]+)`\n([\s\S]*?)(?=\n## |\n# |\n---|$)/g)) {

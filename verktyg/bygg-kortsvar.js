@@ -1,4 +1,4 @@
-// bygg-kortsvar.js – kortsvarsfiler för avsnitt 2–5 ur leveransen 2026-09-13 (doc/kortsvar-avsnitt-2-5.md).
+// bygg-kortsvar.js – kortsvarsfiler för avsnitt 2–5 ur leveransen 2026-09-13 (levererad som chattext; frågorna ligger här som data, ingen doc/leveranser-fil finns).
 // Kör: node verktyg/bygg-kortsvar.js   (k2-s1/s2/s4 omskrivna 2026-09-13 enligt §8: frågan får inte innehålla svaret)   → kapitel/syror-och-baser/data/kortsvar/avsnitt-N-{slug}.json
 // Schema: KEMI-TILLAGG §8. Formler i förklaringar som \(\ce{…}\) (String.raw → JSON.stringify dubblar).
 // Flerval: första alternativet i leveransen är det rätta (svar: 0); kortsvar.js blandar alternativen.

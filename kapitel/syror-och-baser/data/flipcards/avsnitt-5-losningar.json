@@ -4,7 +4,7 @@
   "delkapitel": "repetition",
   "version": "1.0",
   "kort_totalt": 17,
-  "_kommentar": "Flipcards för avsnitt 5 (Lösningar). 9 begreppskort + 8 modellkort = 17 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/flipcards-avsnitt-2-5.md.",
+  "_kommentar": "Flipcards för avsnitt 5 (Lösningar). 9 begreppskort + 8 modellkort = 17 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/repetition/flipcards.md.",
   "begreppskort": [
     {
       "id": "k5-b1",

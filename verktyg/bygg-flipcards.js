@@ -1,4 +1,4 @@
-// bygg-flipcards.js – bygger flipcards-JSON för avsnitt 2–5 ur doc/flipcards-avsnitt-2-5.md och
+// bygg-flipcards.js – bygger flipcards-JSON för avsnitt 2–5 ur doc/leveranser/repetition/flipcards.md och
 // bygger om begreppsbank.json (alla grundläggande begreppskort i kapitlet, 1:1 via kallfil).
 // Kör: node verktyg/bygg-flipcards.js
 //
@@ -15,7 +15,7 @@ const SLUG = { 1: 'atomer-molekyler-joner', 2: 'periodiska-systemet', 3: 'kemisk
 const TITEL = { 1: 'Atomer, molekyler och joner', 2: 'Det periodiska systemet', 3: 'Kemiska bindningar', 4: 'Vattnets egenskaper', 5: 'Lösningar' };
 const VANTAT = { 2: [12, 8], 3: [15, 6], 4: [7, 9], 5: [9, 8] };   // begrepp, modell enligt leveransens räkning
 
-const md = fs.readFileSync(path.join(ROT, 'doc', 'flipcards-avsnitt-2-5.md'), 'utf8').replace(/\r\n/g, '\n');
+const md = fs.readFileSync(path.join(ROT, 'doc', 'leveranser', DK, 'flipcards.md'), 'utf8').replace(/\r\n/g, '\n');
 const slut = md.indexOf('\n# Begreppsbanken');
 const kropp = md.slice(0, slut);
 
@@ -48,7 +48,7 @@ for (const a of kropp.matchAll(/\n# AVSNITT (\d) — [^\n]+\n([\s\S]*?)(?=\n# AV
   const data = {
     avsnitt: N, titel: TITEL[N], delkapitel: DK, version: '1.0',
     kort_totalt: vb + vm,
-    _kommentar: `Flipcards för avsnitt ${N} (${TITEL[N]}). ${vb} begreppskort + ${vm} modellkort = ${vb + vm} kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/flipcards-avsnitt-2-5.md.`,
+    _kommentar: `Flipcards för avsnitt ${N} (${TITEL[N]}). ${vb} begreppskort + ${vm} modellkort = ${vb + vm} kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/repetition/flipcards.md.`,
     begreppskort: kort.begreppskort, modellkort: kort.modellkort
   };
   const ut = path.join(ROT, 'kapitel', KAP, 'data', 'flipcards', `avsnitt-${N}-${SLUG[N]}.json`);
