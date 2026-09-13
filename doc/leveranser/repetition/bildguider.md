@@ -102,7 +102,7 @@
 - Åt vilket håll pilarna pekar
 - Att molekylen är **vinklad**, inte rak
 
-## Underdel A — `vatebindning.webp`
+## Underdel A — `vatebindning.svg`
 
 - Skillnaden mellan de **heldragna** och de **streckade** linjerna
 - Att de streckade alltid går från en **vit** atom till en **röd**

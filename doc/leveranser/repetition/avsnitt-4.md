@@ -36,6 +36,8 @@ elektronegativ och drar dem närmare sig, vilket ger molekylen en negativ och en
 
 ### `vatebindning.webp` — underdel A, Enkel + Standard
 
+*Byggs som `vatebindning.svg` (verktyg/bilder-svg.js) sedan 2026-09-13: AI-bilden hade tre väteatomer per molekyl. Fem molekyler, mittmolekylen binder två åt varje håll.*
+
 **Alt-text:** Flera vattenmolekyler bredvid varandra. Streckade linjer går från väteatomerna på en
 molekyl till syreatomen på en annan, och visar attraktionen mellan molekylerna.
 

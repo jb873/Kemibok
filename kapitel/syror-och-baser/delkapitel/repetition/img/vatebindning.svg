@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" width="400" height="340" role="img" aria-labelledby="t">
+  <title id="t">Fem vattenmolekyler. Från molekylen i mitten går fyra streckade vätebindningar: två från dess väteatomer till grannars syreatomer och två från dess syreatom till grannars väteatomer</title>
+  <line class="vatebindning" x1="245.22" y1="204.7" x2="290.44" y2="239.4" stroke="#2d4a35" stroke-width="2.5" stroke-dasharray="7 6" stroke-linecap="round"/>
+  <line class="vatebindning" x1="154.78" y1="204.7" x2="109.56" y2="239.4" stroke="#2d4a35" stroke-width="2.5" stroke-dasharray="7 6" stroke-linecap="round"/>
+  <line class="vatebindning" x1="182.55" y1="156.61" x2="137.33" y2="121.91" stroke="#2d4a35" stroke-width="2.5" stroke-dasharray="7 6" stroke-linecap="round"/>
+  <line class="vatebindning" x1="217.45" y1="156.61" x2="262.67" y2="121.91" stroke="#2d4a35" stroke-width="2.5" stroke-dasharray="7 6" stroke-linecap="round"/>
+  <g class="molekyl" aria-label="vattenmolekyl nere till vänster">
+    <line x1="307.9" y1="252.79" x2="350.4" y2="241.4" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+    <line x1="307.9" y1="252.79" x2="307.9" y2="296.79" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+    <circle class="syre" cx="307.9" cy="252.79" r="22" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+    <circle class="vate" cx="350.4" cy="241.4" r="13" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+    <circle class="vate" cx="307.9" cy="296.79" r="13" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  </g>
+  <g class="molekyl" aria-label="vattenmolekyl nere till höger">
+    <line x1="92.1" y1="252.79" x2="92.1" y2="296.79" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+    <line x1="92.1" y1="252.79" x2="49.6" y2="241.4" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+    <circle class="syre" cx="92.1" cy="252.79" r="22" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+    <circle class="vate" cx="92.1" cy="296.79" r="13" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+    <circle class="vate" cx="49.6" cy="241.4" r="13" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  </g>
+  <g class="molekyl" aria-label="vattenmolekyl uppe till vänster">
+    <line x1="92.1" y1="87.21" x2="108.94" y2="46.56" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+    <line x1="92.1" y1="87.21" x2="127.01" y2="114" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+    <circle class="syre" cx="92.1" cy="87.21" r="22" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+    <circle class="vate" cx="108.94" cy="46.56" r="13" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+    <circle class="vate" cx="127.01" cy="114" r="13" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  </g>
+  <g class="molekyl" aria-label="vattenmolekyl uppe till höger">
+    <line x1="307.9" y1="87.21" x2="272.99" y2="114" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+    <line x1="307.9" y1="87.21" x2="291.06" y2="46.56" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+    <circle class="syre" cx="307.9" cy="87.21" r="22" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+    <circle class="vate" cx="272.99" cy="114" r="13" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+    <circle class="vate" cx="291.06" cy="46.56" r="13" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  </g>
+  <g class="molekyl" aria-label="vattenmolekyl i mitten">
+    <line x1="200" y1="170" x2="234.91" y2="196.79" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+    <line x1="200" y1="170" x2="165.09" y2="196.79" stroke="#9a8b7a" stroke-width="7" stroke-linecap="round"/>
+    <circle class="syre" cx="200" cy="170" r="22" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+    <circle class="vate" cx="234.91" cy="196.79" r="13" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+    <circle class="vate" cx="165.09" cy="196.79" r="13" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  </g>
+</svg>

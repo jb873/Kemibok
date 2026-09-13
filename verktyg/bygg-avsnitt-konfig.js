@@ -37,7 +37,7 @@ const AVSNITT_REPETITION = {
        dd: [{ slug: 'varfor-is-flyter', titel: 'Varför is flyter', ikon: '🧊' }, { slug: 'ytspanning', titel: 'Ytspänning i verkligheten', ikon: '💧' }],
        bilder: {
          'polar-vattenmolekyl.webp': { fil: 'polar-vattenmolekyl.svg', aktiv: ['enkel', 'standard'], enkel: 'medan vätesidorna blir **svagt positiva**', standard: 'mindre laddningsskillnader inom molekylen' },
-         'vatebindning.webp': { aktiv: ['enkel', 'standard'], enkel: 'Den attraktionen\nkallas **vätebindning**', standard: 'Attraktionen mellan vattenmolekylerna kallas **vätebindning**' },
+         'vatebindning.webp': { fil: 'vatebindning.svg', aktiv: ['enkel', 'standard'], enkel: 'Den attraktionen\nkallas **vätebindning**', standard: 'Attraktionen mellan vattenmolekylerna kallas **vätebindning**' },   // SVG ersätter AI-bilden (tre H per molekyl) 2026-09-13
          'is-och-vatten.webp': { aktiv: ['enkel', 'standard'], enkel: 'plats som is än som flytande vatten.', standard: '**flyter därför på vatten**' }
        } },
   5: { slug: 'losningar', titel: 'Lösningar', sub: 'vad som händer när något löser sig', dd: [],

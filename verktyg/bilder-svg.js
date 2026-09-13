@@ -9,6 +9,7 @@
 //   elektronpar-vate.svg                avsnitt 3 C – två fria väteatomer / H2 med delat elektronpar (ingen text)
 //   adelgasstruktur.svg                 avsnitt 3 A – neon (2+8) mot natrium (2+8+1)
 //   tre-vagar.svg                       avsnitt 3 A – avge / ta upp / dela
+//   vatebindning.svg                    avsnitt 4 A – fem vattenmolekyler, fyra vätebindningar från mittmolekylen
 //   vatejon-och-oxoniumjon.svg          delkapitel Syror 1 B – H2O + H+ → H3O+ i tre lager (skrivs till delkapitel/syror/img/)
 //   ph-skalan.svg                       delkapitel Syror 2 A – skala 0–14 med exempel (syror/img/)
 //   fyra-kombinationerna.svg            delkapitel Syror 4 B – stark/svag × koncentrerad/utspädd (syror/img/)
@@ -404,4 +405,53 @@ ${STOPP.map(([ph, f]) => `      <stop offset="${r2(ph / 14 * 100)}%" stop-color=
     'Tre vägar till fullt yttersta skal: avge en elektron, ta upp en elektron eller dela ett elektronpar', ut));
 }
 
-console.log('skrev 10 svg (7 till repetition/img, 3 till syror/img)', path.relative(path.join(__dirname, '..'), UT));
+
+// ---------- 11. Vätebindningar: fem vattenmolekyler, mittmolekylen binder två åt varje håll ----------
+// Joachims spec 2026-09-13 (ersätter AI-bilden vatebindning.webp, som hade tre väteatomer per molekyl):
+// varje molekyl exakt en syreatom + två väteatomer i ~105°; från mittmolekylen fyra streckade linjer i INK –
+// två från dess väteatomer till grannars syreatomer, två från dess syreatom till grannars väteatomer.
+{
+  const W = 400, H = 340, rO = 22, rH = 13, BIND = 44, AVST = 92;   // tät ram kring figuren; AVST = avstånd mellan bundna atomers mittpunkter
+  const rad = g => g * Math.PI / 180, HALV = VINKEL / 2;
+  // molekyl med H-bisektris i riktning `bis` (grader, 0 = höger, 90 = nedåt); returnerar H-positioner
+  const molekyl = (cx, cy, bis, namn) => {
+    const Hs = [bis - HALV, bis + HALV].map(g => [cx + BIND * Math.cos(rad(g)), cy + BIND * Math.sin(rad(g))]);
+    let ut = `  <g class="molekyl" aria-label="${namn}">\n`;
+    Hs.forEach(([x, y]) => { ut += `    <line x1="${cx}" y1="${cy}" x2="${r2(x)}" y2="${r2(y)}" stroke="${VARMGRA}" stroke-width="7" stroke-linecap="round"/>\n`; });
+    ut += `    <circle class="syre" cx="${cx}" cy="${cy}" r="${rO}" fill="${SYRE}" stroke="${INK}" stroke-width="1.5"/>\n`;
+    Hs.forEach(([x, y]) => { ut += `    <circle class="vate" cx="${r2(x)}" cy="${r2(y)}" r="${rH}" fill="${PAPPER}" stroke="${INK}" stroke-width="1.5"/>\n`; });
+    ut += `  </g>\n`;
+    return { ut, Hs };
+  };
+  const streck = (x1, y1, x2, y2, rFran, rTill) => {   // från kant till kant, streckad
+    const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L;
+    return `  <line class="vatebindning" x1="${r2(x1 + ux * rFran)}" y1="${r2(y1 + uy * rFran)}" x2="${r2(x2 - ux * rTill)}" y2="${r2(y2 - uy * rTill)}" stroke="${INK}" stroke-width="2.5" stroke-dasharray="7 6" stroke-linecap="round"/>\n`;
+  };
+  const cx = W / 2, cy = H / 2;
+  let ut = '', linjer = '';
+  const mitt = molekyl(cx, cy, 90, 'vattenmolekyl i mitten');   // H nedåt: -52.5° och +52.5° kring lodlinjen
+  // två grannar nedanför: syreatomen i förlängningen av var sin O–H-riktning från mittmolekylen
+  [90 - HALV, 90 + HALV].forEach((g, i) => {
+    const [hx, hy] = mitt.Hs[i];
+    const ox = hx + AVST * Math.cos(rad(g)), oy = hy + AVST * Math.sin(rad(g));
+    const m = molekyl(r2(ox), r2(oy), g, `vattenmolekyl ${i === 0 ? 'nere till vänster' : 'nere till höger'}`);   // H bort från mitten
+    ut += m.ut;
+    linjer += streck(hx, hy, ox, oy, rH, rO);
+  });
+  // två grannar ovanför: en av deras väteatomer pekar mot mittmolekylens syreatom (fria elektronparens riktningar)
+  [-90 - HALV, -90 + HALV].forEach((g, i) => {
+    const hx = cx + AVST * Math.cos(rad(g)), hy = cy + AVST * Math.sin(rad(g));   // grannens H
+    const mot = g + 180;                                                          // riktning från H mot dess O
+    const ox = hx + BIND * Math.cos(rad(g)), oy = hy + BIND * Math.sin(rad(g));   // grannens O längre ut
+    // H1 ska ligga i riktning `mot` från O; bisektrisen = mot ± HALV så att H2 vrids utåt/uppåt
+    const bis = i === 0 ? mot - HALV : mot + HALV;
+    const m = molekyl(r2(ox), r2(oy), bis, `vattenmolekyl ${i === 0 ? 'uppe till vänster' : 'uppe till höger'}`);
+    ut += m.ut;
+    linjer += streck(cx, cy, hx, hy, rO, rH);
+  });
+  ut = linjer + ut + mitt.ut;   // streck under, mittmolekylen överst
+  fs.writeFileSync(path.join(UT, 'vatebindning.svg'), svg(W, H,
+    'Fem vattenmolekyler. Från molekylen i mitten går fyra streckade vätebindningar: två från dess väteatomer till grannars syreatomer och två från dess syreatom till grannars väteatomer', ut));
+}
+
+console.log('skrev 11 svg (8 till repetition/img, 3 till syror/img)', path.relative(path.join(__dirname, '..'), UT));
