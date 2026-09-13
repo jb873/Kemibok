@@ -14,6 +14,7 @@
      5. MathJax-finish                     (inline-formler i EB Garamond-text)
      7. Patina-överskrivningar av geografi.css/flipcards.css (godkänd lista)
      6. Utskrift
+     8. Öva-fliken: arbetssättsväljare + kortsvar (kemi-egna komponenter)
 
    Godkända värden (2026-09-12): --accent #5a9668, --accent-2 #9c6b45,
    --accent-text #3a6546, hero-gradient #101a14 → #1d2e23, .avsnitt-label i patina,
@@ -296,3 +297,132 @@
     border-left-color: #333;
   }
 }
+
+/* ---------- 8. Öva-fliken: arbetssätt + kortsvar (kemi-egna, kandidat till plattform) ----------
+   Tre arbetssätt utan inbördes ordning (.ova-valjare) ovanpå flipcards.js, som är orörd:
+   dess startskärm och de lägen kemi inte använder döljs här. Kortsvar (.kortsvar) är en egen
+   komponent (js/kortsvar.js) med omedelbar rättning – formativ, sparar inget. */
+
+.ova-valjare.dold, .flipcards-mount.dold, .kortsvar-mount.dold { display: none; }
+
+/* flipcards.js egen startskärm och lägen kemi inte använder (Nivå 3 = redogörelsekort, Anpassa) */
+.flipcards-mount .flip-start-rubrik,
+.flipcards-mount .flip-lage,
+.flipcards-mount .flip-anpassa,
+.flipcards-mount .flip-borja-knapp { display: none; }
+.flipcards .flip-lage-dropdown button[data-lage="niva3"],
+.flipcards .flip-lage-dropdown button[data-lage="anpassa"] { display: none; }
+
+.ova-valjare {
+  max-width: var(--las-bredd);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.ova-valjare .sektion-label { grid-column: 1 / -1; }
+.ova-kort {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  text-align: left;
+  padding: 1.1rem 1.2rem 1.2rem;
+  background-color: var(--paper-light);
+  border: 1px solid rgba(27, 42, 54, 0.15);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-family: var(--font-body);
+  color: var(--ink);
+  transition: background-color 0.18s ease, transform 0.18s ease;
+}
+.ova-kort:hover { background-color: #faf4e4; transform: translateY(-1px); }
+.ova-kort:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 2px; }
+.ova-kort-ikon { font-size: 1.5rem; line-height: 1; }
+.ova-kort-titel { font-family: var(--font-heading); font-size: 1.05rem; letter-spacing: 0.03em; color: var(--accent-text); }
+.ova-kort-beskr { font-size: 0.95rem; line-height: 1.45; color: var(--muted); }
+@media (max-width: 700px) { .ova-valjare { grid-template-columns: 1fr; } }
+
+/* Kortsvar */
+.kortsvar { max-width: 600px; margin: 0 auto; }
+.ks-huvud { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; }
+.ks-etikett { font-family: var(--font-heading); font-size: 0.85rem; letter-spacing: 0.1em; color: var(--accent-text); }
+.ks-raknare { font-size: 0.9rem; color: var(--muted); }
+.ks-progress-spar { height: 6px; background: rgba(27, 42, 54, 0.12); border-radius: 3px; overflow: hidden; margin-bottom: 1rem; }
+.ks-progress-fyll { height: 100%; width: 0; background: var(--accent); transition: width 0.3s ease; }
+
+.ks-kort {
+  background-color: var(--paper-light);
+  border: 1px solid rgba(27, 42, 54, 0.2);
+  border-top: 4px solid var(--accent);
+  border-radius: 6px;
+  padding: 1.2rem 1.2rem 1.3rem;
+}
+.ks-fraga { font-family: var(--font-body); font-size: 1.15rem; line-height: 1.45; color: var(--ink); margin-bottom: 0.9rem; }
+.ks-inmatning { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.6rem; }
+.ks-text {
+  font-family: var(--font-body); font-size: 1.05rem; color: var(--ink);
+  background: #fff; border: 1px solid rgba(27, 42, 54, 0.3); border-radius: 3px;
+  padding: 0.5rem 0.7rem; width: 100%; max-width: 320px;
+}
+.ks-text.kort { max-width: 120px; }
+.ks-text:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-tint); }
+.ks-och { color: var(--muted); }
+.ks-alternativ {
+  display: flex; align-items: center; gap: 0.6rem; width: 100%;
+  padding: 0.45rem 0.7rem; border: 1px solid rgba(27, 42, 54, 0.15); border-radius: 3px;
+  background: rgba(255, 255, 255, 0.4); cursor: pointer; font-size: 1.02rem;
+}
+.ks-alternativ:hover { background: #faf4e4; }
+.ks-alternativ input { accent-color: var(--accent-text); }
+
+.ks-aterkoppling { margin-top: 1rem; padding: 0.8rem 1rem; border-radius: 3px; border-left: 4px solid transparent; }
+.ks-aterkoppling.dold { display: none; }
+.ks-aterkoppling.tomt { color: var(--muted); border-left-color: rgba(27, 42, 54, 0.3); background: rgba(27, 42, 54, 0.04); }
+.ks-aterkoppling.ratt { border-left-color: var(--accent); background: rgba(90, 150, 104, 0.12); }
+.ks-aterkoppling.fel { border-left-color: var(--blood); background: rgba(110, 46, 30, 0.08); }
+.ks-aterkoppling.fel.skiftlage { border-left-color: var(--brass); background: rgba(184, 144, 42, 0.12); }
+.ks-status { font-family: var(--font-heading); letter-spacing: 0.05em; margin-bottom: 0.3rem; }
+.ks-aterkoppling.ratt .ks-status { color: var(--accent-text); }
+.ks-aterkoppling.fel .ks-status { color: var(--blood); }
+.ks-aterkoppling.fel.skiftlage .ks-status { color: var(--brass-text); }
+.ks-facit { margin-bottom: 0.4rem; }
+.ks-facit-etikett { color: var(--muted); }
+.ks-facit-varde { font-weight: 600; color: var(--ink); }
+.ks-forklaring { line-height: 1.5; color: var(--ink); }
+
+.ks-knapprad { display: flex; gap: 0.6rem; margin-top: 0.9rem; }
+.ks-knapp {
+  min-height: 44px; flex: 1 1 auto;
+  font-family: var(--font-heading); font-size: 0.85rem; letter-spacing: 0.06em;
+  color: var(--paper); background-color: var(--accent-text); border: 1px solid var(--accent-text);
+  border-radius: 3px; padding: 0.6rem 1.3rem; cursor: pointer; transition: background-color 0.15s ease;
+}
+.ks-knapp:hover { background-color: var(--accent-hover); }
+.ks-knapp.sekundar { color: var(--ink); background-color: transparent; border-color: rgba(27, 42, 54, 0.3); }
+.ks-knapp.sekundar:hover { background-color: var(--paper-light); }
+.ks-knapp.dold { display: none; }
+
+.ks-resultat { position: relative; overflow: hidden; text-align: center; padding: 1.5rem 1.2rem; background-color: var(--paper-light); border: 1px solid rgba(27, 42, 54, 0.2); border-top: 4px solid var(--accent); border-radius: 6px; }
+.ks-resultat h3 { font-family: var(--font-heading); font-size: 1.5rem; margin: 0 0 0.5rem; color: var(--ink); }
+.ks-resultat.alla-ratt h3 { color: var(--accent-text); }
+.ks-resultat p { margin: 0 0 1rem; color: var(--muted); }
+.ks-resultat .ks-knapprad { justify-content: center; }
+.ks-resultat .ks-knapp { flex: 0 1 auto; }
+.kortsvar-fel { text-align: center; color: var(--muted); font-style: italic; }
+
+/* Belöning: konfetti i patina/koppar/brass, ren CSS */
+.ks-konfetti { position: absolute; inset: 0; pointer-events: none; }
+.ks-konfetti span {
+  position: absolute; top: -12px; width: 8px; height: 14px; border-radius: 2px; opacity: 0;
+  background: var(--accent);
+  animation: ks-fall 2s ease-in forwards;
+}
+.ks-konfetti span:nth-child(3n) { background: var(--accent-2); }
+.ks-konfetti span:nth-child(3n+1) { background: var(--brass); }
+@keyframes ks-fall {
+  0%   { opacity: 1; transform: translateY(0) rotate(0deg); }
+  100% { opacity: 0; transform: translateY(260px) rotate(540deg); }
+}
+@media (prefers-reduced-motion: reduce) { .ks-konfetti { display: none; } }

@@ -4,7 +4,7 @@
 > Läses **tillsammans med** huvuddokumentet, aldrig i stället för.
 > Allt som inte står här följer huvuddokumentet oförändrat.
 
-**Senast uppdaterad:** 2026-09-12 (v1.1)
+**Senast uppdaterad:** 2026-09-13 (v1.2)
 **Gäller:** Kemibok
 **Kräver:** `LEVERANSGUIDE-INNEHALL.md` v2.1 + `KOMPONENTER-INNEHALL.md` v1.0 (Kemi)
 
@@ -15,7 +15,7 @@
 Leveransguiden är **gemensam för alla böcker**. Ändras den för kemis skull driver böckerna
 isär, vilket är precis vad plattformsdokumentationen finns för att hindra.
 
-Kemi avviker på sju punkter. De ligger här, samlade, så att huvuddokumentet förblir orört
+Kemi avviker på åtta punkter. De ligger här, samlade, så att huvuddokumentet förblir orört
 och skillnaderna är synliga på ett ställe.
 
 ---
@@ -296,6 +296,70 @@ standardtexten. Uppackning betyder fler steg genom samma material, inte nytt mat
 
 ---
 
+## 8 — Kortsvar: en leveransdel som inte finns i andra ämnen
+
+Kemi har ett fjärde övningsformat, **Testa dig själv**, under Öva-fliken (KOMPONENTER DEL 10).
+Det levereras som en JSON-fil per avsnitt:
+
+**Fil:** `kapitel/{kapitel}/data/kortsvar/avsnitt-N-{slug}.json`
+
+```json
+{
+  "avsnitt": 1,
+  "titel": "Atomer, molekyler och joner",
+  "delkapitel": "repetition",
+  "version": "1.0",
+  "antal_per_omgang": 10,
+  "fragor": [
+    { "id": "k1-s1", "typ": "tal", "fraga": "Hur många atomer finns det i en molekyl \\(\\ce{H2O}\\)?", "svar": 3,
+      "forklaring": "Två väteatomer och en syreatom. Står ingen siffra efter O menas en." },
+    { "id": "k1-s2", "typ": "formel", "fraga": "Skriv formeln för en vattenmolekyl.", "svar": ["H2O"],
+      "forklaring": "Två väteatomer och en syreatom." },
+    { "id": "k1-s3", "typ": "ord", "fraga": "Vad kallas en atom som fått laddning?", "svar": ["jon"],
+      "forklaring": "…" },
+    { "id": "k1-s4", "typ": "flerval", "fraga": "Vilket är ett grundämne?",
+      "alternativ": ["\\(\\ce{H2O}\\)", "\\(\\ce{O2}\\)", "\\(\\ce{CO2}\\)"], "svar": 1, "forklaring": "…" }
+  ]
+}
+```
+
+### Fält-för-fält
+
+| Fält | Krävs | Beskrivning |
+|---|---|---|
+| `avsnitt`, `titel`, `delkapitel`, `version` | ✅ | Som flipcards |
+| `antal_per_omgang` | ❌ | Antal frågor per omgång, slumpat urval (6–12). Utan → alla |
+| `fragor.id` | ✅ | `k{nr}-s{n}`, unikt |
+| `fragor.typ` | ✅ | `tal`, `tal-par`, `flerval`, `markera`, `ord`, `formel` |
+| `fragor.fraga` | ✅ | Frågetexten; formler som `\\(\\ce{…}\\)` (backslash dubblas i JSON) |
+| `fragor.svar` | ✅ | Se typtabellen |
+| `fragor.forklaring` | ✅ | **Obligatorisk.** Visas direkt vid fel svar. Filen laddas inte om den saknas |
+| `fragor.alternativ` | flerval/markera | Lista; blandas per omgång |
+| `fragor.tolerans` | ❌ (tal, tal-par) | `{"abs": 0.1}` eller `{"rel": 0.02}` |
+| `fragor.enhet` | ❌ (tal) | Utelämnad = enhet i svaret ignoreras; `"mol/dm³"` = enheten krävs |
+| `fragor.oordnad` | ❌ (tal-par) | `true` = valfri ordning |
+| `fragor.skiftlage` | ❌ (formel) | `false` = skiftlägesokänslig. Default känslig (CO ≠ Co) |
+
+### Svar per typ
+
+| Typ | `svar` | Eleven skriver/väljer | Rättas på |
+|---|---|---|---|
+| `tal` | tal | text | värde; decimalkomma och -punkt, alla minus-varianter; enhet strippas |
+| `tal-par` | `[a, b]` | två fält | båda värdena |
+| `flerval` | index | ett alternativ | index |
+| `markera` | `[index, …]` | flera alternativ | exakt mängd – alla rätta, inga fel |
+| `ord` | `["ord", …]` | text | gemener, ändelser tolereras (jonen, joner, jonerna); flera accepterade former |
+| `formel` | `["H2O", …]` | text | normaliserat: H₂O = H2O, Na⁺ = Na+, SO₄²⁻ = SO4^2- = SO4 2-; skiftlägeskänsligt |
+
+### Riktmärken
+
+- 10–15 frågor per avsnitt i filen, `antal_per_omgang` 6–12.
+- Blanda typer. Räknefrågor (`tal`) och formler (`formel`) är det kortsvar gör som flipcards inte kan.
+- `forklaring` säger **varför**, inte bara vad – det är den eleven lär sig av.
+- Formler i `fraga` och `alternativ` renderas; i `svar` skrivs de utan `\\ce{}` (`"H2O"`).
+
+---
+
 ## Öppna punkter — Code inventerar och rapporterar
 
 Bygg ingenting på gissningar. Rapportera först, invänta godkännande.
@@ -314,6 +378,8 @@ Bygg ingenting på gissningar. Rapportera först, invänta godkännande.
 
 ## Revisionshistorik
 
+- **v1.2 (2026-09-13):** §8 Kortsvar tillagt – leveransschema för Testa dig själv (fasta frågor
+  med facit och obligatorisk förklaring), sex svarstyper, tolerans/enhet/alternativ.
 - **v1.1 (2026-09-12):** §7 tillagt — Enkelnivån i kemi är uppackad, inte kortad, och skrivs i
   sammanhållna stycken om 3–5 meningar. Formregeln (§7.1) tillagd efter att levererade texter vid
   upprepade tillfällen glidit mot rad-per-mening, trots att principen var överenskommen.

@@ -7,8 +7,8 @@
 > Innehållssessioner ser inte CSS — bara HTML. För att producera
 > fungerande markup måste de exakta klassnamnen vara dokumenterade.
 
-**Senast uppdaterad:** 2026-09-12 (v1.1)
-**Version:** 1.1 (Kemi)
+**Senast uppdaterad:** 2026-09-13 (v1.2)
+**Version:** 1.2 (Kemi)
 **DELAD-BAS:** v1.1 — måste matcha över alla ämnen
 **Ärvd från:** KOMPONENTER-INNEHALL-GEOGRAFI v1.6
 **Källa för alla mallar:** Geografis v1.6 (DOM-verifierad hero-banner) + Historias mappstruktur
@@ -341,13 +341,34 @@ Underdels-sektioner behöver **ingen `id`**. `avsnitt.js` läser `location.hash`
 
     </section>
 
-    <!-- ===== ÖVA ===== -->
+    <!-- ===== ÖVA — tre arbetssätt (kemi-eget lager, DEL 10). Texterna i .ova-valjare kopieras
+         rakt av; flipcards-mount och kortsvar-mount pekar på kapitlets data-mapp. ===== -->
     <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
       <div class="flipcards-mount"
            data-fil="../../data/flipcards/avsnitt-{{N}}-{{slug}}.json"
            data-avsnitt="a{{N}}_{{slug}}">
         <p class="flipcards-laddar">Laddar övningskort…</p>
       </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-{{N}}-{{slug}}.json"></div>
     </section>
 
     <!-- ===== ELEVBOKEN ===== -->
@@ -377,6 +398,9 @@ Underdels-sektioner behöver **ingen `id`**. `avsnitt.js` läser `location.hash`
   <script src="../../../../js/avsnitt-elevbok.js" defer></script>
   <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
   <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
   <script src="../../../../js/forelasningar.js" defer></script>
   <script src="../../../../js/elevfeedback.js" defer></script>
 </body>
@@ -975,13 +999,47 @@ i alla områden. Gul är upptaget av svavel — förslag: ljus blågrå prick me
 
 ---
 
-## DEL 10 — Öva-fliken och flipcards
-**🔗 struktur / 🎨 korttyper**
+## DEL 10 — Öva-fliken: tre arbetssätt, flipcards och kortsvar
+**🔗 flikrad och flipcards.js / 🎨 arbetssättsväljare, kortsvar, korttyper**
 
-### Öva-fliken ärvs oförändrad
+### Tre arbetssätt utan inbördes ordning (v1.2)
 
-Öva-fliken är en `flipcards-mount` som läser JSON per avsnitt — inget annat. Ingen ny
-komponent, inget nytt beslut. Kemi har **inte** matematikbokens övningsmotor.
+Öva-fliken visar en **arbetssättsväljare** (`.ova-valjare`, tre `.ova-kort`) i stället för
+flipcards.js egen startskärm:
+
+| Arbetssätt | `data-arbetssatt` | Vad som startar |
+|---|---|---|
+| Plugga begrepp | `begrepp` | flipcards, läge Nivå 1 (begreppskort) |
+| Testa dig själv | `kortsvar` | `js/kortsvar.js` – kortsvar med omedelbar rättning |
+| Tillämpa | `tillampa` | flipcards, läge Nivå 2 (modellkort) |
+
+**Den delade `flipcards.js` är orörd.** `js/ova-arbetssatt.js` är ett lager ovanpå: den döljer
+plattformens startskärm (CSS i kemi.css sektion 8), markerar rätt radioknapp och klickar
+"Börja plugga" åt eleven, och visar väljaren igen när flipcards återvänder till sin startskärm
+("Plugga igen"/"Avsluta"). Lägena Nivå 3 (redogörelsekort) och Anpassa döljs i lägesmenyn.
+
+Detta är ett **kemi-eget lager** byggt fristående från kemi (inget i koden är kemispecifikt),
+placerat i kemi tills klassrummet visat om det fungerar. Blir det bra lyfts det till plattformen;
+blir det fel kastas det. 🔵-loggat 2026-09-13.
+
+### Kortsvar – Testa dig själv
+
+`<div class="kortsvar-mount" data-fil="../../data/kortsvar/avsnitt-N-{slug}.json">`. Fasta
+frågor med facit, `antal_per_omgang` slumpade per omgång, en fråga i taget. Rätt → bekräftelse.
+Fel → facit + `forklaring` **direkt** (en elev som får veta varför efter tolv frågor minns inte
+vad hon svarade). Alla rätt → belöning. **Formativt: inget sparas** – ingen progress, ingen mastery.
+
+Rättningen (`js/kortsvar-gradering.js`, ren funktion, Node-testad med `verktyg/test-gradering.js`)
+är portad ur matematikbokens provbyggare (numeric/binary/markera/ordsvar/talfoljd) och utökad
+med `formel` (Unicode-index och laddningar normaliseras: H₂O = H2O, SO₄²⁻ = SO4^2-),
+tolerans, enhet och alternativa svar. `formel` är **skiftlägeskänslig** (CO ≠ Co); ett svar som
+är rätt bortsett från skiftläge räknas som fel men får en egen förklaring om stor bokstav först.
+
+Leveransschemat för kortsvarsfiler står i `LEVERANSGUIDE-KEMI-TILLAGG.md` §8. Kemi har **inte**
+matematikbokens övningsmotor (inventerad 2026-09-13: generatorbaserad, ramberoende – bara
+graderaren återanvändes).
+
+### Flipcards
 
 Flipcards är det eleverna kommer använda mest i kemi.
 
@@ -1113,6 +1171,10 @@ När osäker — kolla referensimplementationen **plus** CSS:n **plus** JS:n. **
 ## Revisionshistorik
 **🎨 boklokal**
 
+- **v1.2 (2026-09-13):** Öva-fliken får tre arbetssätt (Plugga begrepp / Testa dig själv /
+  Tillämpa) via kemi-eget lager `js/ova-arbetssatt.js` ovanpå orörd flipcards.js, och den nya
+  komponenten kortsvar (`js/kortsvar.js` + `js/kortsvar-gradering.js`). Scaffoldens Öva-panel
+  och skriptlista uppdaterade (DEL 1), DEL 10 omskriven. Kemi-eget, kandidat till plattform.
 - **v1.1 (2026-09-12):** Rättningar efter pilotbygget (Code, beslut av Joachim). Kärnpunkter- och
   bildguide-rubriken i scaffolden och DEL 4.3/4.4 är `<div class="…-rubrik">`, inte `<h3>` — `<h3>`
   träffas av `.brodtext h3` och renderas som mellanrubrik. Självskattningssidan heter

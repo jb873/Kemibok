@@ -41,6 +41,8 @@
 | | | | | |
 | 2026-09-13 | C | Kemibok, Pages-förberedelse | localStorage-nycklarna (`geo-elev-svar-{delkapitel}`, `geo-flipcards-{avsnittsid}-…`, `geo-underdel-{delkapitel}-…`) saknar bok-id. Alla böcker ligger på samma origin (`jb873.github.io`), så ett delkapitel eller avsnitt med samma slug i två böcker blandar elevsvar. Ingen kollision idag. | Prefix per bok i plattformens JS (`elevbok.js`, `flipcards.js`, `avsnitt.js`, `egna-fragor.js`, `elevdata-overforing.js`). **Kandidat för 🟡** — kollisionen är känd och lösningen enkel. |
 
+| 2026-09-13 | B | Kemibok, Öva-fliken | Öva-fliken har ett kemi-eget lager (`js/ova-arbetssatt.js`) med tre arbetssätt ovanpå orörd `flipcards.js`, plus ny komponent kortsvar (`js/kortsvar.js`, `js/kortsvar-gradering.js` portad ur matematikens provbyggare). Fristående kod utan kemiberoenden, placerad i kemi tills klassrummet visat om det fungerar. | Lyft till plattform om det håller (Historia/Geografi har samma behov: årtal, begrepp, flerval); annars kastas. |
+
 *(Tom rad ovan är till för nya poster — fyll på underifrån)*
 
 ### Exempel på hur en post fylls i:

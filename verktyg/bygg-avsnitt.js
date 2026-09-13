@@ -319,13 +319,33 @@ ${knappar}
 ${underdelar.map(underdelHtml).join('\n')}${dd}
     </section>
 
-    <!-- ===== ÖVA ===== -->
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
     <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
       <div class="flipcards-mount"
            data-fil="../../data/flipcards/avsnitt-${N}-${K.slug}.json"
            data-avsnitt="${id}">
         <p class="flipcards-laddar">Laddar övningskort…</p>
       </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-${N}-${K.slug}.json"></div>
     </section>
 
     <!-- ===== ELEVBOKEN ===== -->
@@ -355,6 +375,9 @@ ${underdelar.map(underdelHtml).join('\n')}${dd}
   <script src="${B4}js/avsnitt-elevbok.js" defer></script>
   <script src="${B4}js/textbyggar-stodlarare.js" defer></script>
   <script src="${B4}js/flipcards.js" defer></script>
+  <script src="${B4}js/kortsvar-gradering.js" defer></script>
+  <script src="${B4}js/kortsvar.js" defer></script>
+  <script src="${B4}js/ova-arbetssatt.js" defer></script>
   <script src="${B4}js/forelasningar.js" defer></script>
   <script src="${B4}js/elevfeedback.js" defer></script>
 </body>
