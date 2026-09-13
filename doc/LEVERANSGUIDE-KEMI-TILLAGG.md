@@ -4,7 +4,7 @@
 > Läses **tillsammans med** huvuddokumentet, aldrig i stället för.
 > Allt som inte står här följer huvuddokumentet oförändrat.
 
-**Senast uppdaterad:** 2026-09-12 (v1.0)
+**Senast uppdaterad:** 2026-09-12 (v1.1)
 **Gäller:** Kemibok
 **Kräver:** `LEVERANSGUIDE-INNEHALL.md` v2.1 + `KOMPONENTER-INNEHALL.md` v1.0 (Kemi)
 
@@ -15,7 +15,7 @@
 Leveransguiden är **gemensam för alla böcker**. Ändras den för kemis skull driver böckerna
 isär, vilket är precis vad plattformsdokumentationen finns för att hindra.
 
-Kemi avviker på sex punkter. De ligger här, samlade, så att huvuddokumentet förblir orört
+Kemi avviker på sju punkter. De ligger här, samlade, så att huvuddokumentet förblir orört
 och skillnaderna är synliga på ett ställe.
 
 ---
@@ -198,6 +198,106 @@ ord.
 
 ---
 
+## 7 — Enkelnivån i kemi: uppackad, inte kortad
+
+Detta är kemins största avvikelse från DELAD-basen när det gäller textproduktion, och den beror
+på ämnets natur.
+
+### Varför kemi är annorlunda
+
+I historia och geografi går Enkel att göra kortare än Standard. Man tar bort nyanser, resonemang
+och undantag, och kärnan står kvar.
+
+I kemi finns sällan nyanser att ta bort. "Antalet protoner bestämmer atomslaget" är redan minimal
+— stryker man något försvinner en definition eleven behöver. Texten är tydlig fakta, och det är
+precis den fakta eleven ska förstå.
+
+**Enkel i kemi är därför inte kortare. Den är långsammare.** Samma innehåll, men med fler steg
+emellan.
+
+Det betyder att **Enkel ofta är kemins längsta nivå**. Leveransguidens spann (Enkel 250–400,
+kortast av nivåerna) gäller inte här. Räkna med 400–700 ord per underdel, och låt innehållet
+avgöra.
+
+### Fyra tekniker
+
+**Tal i stället för regler.** Standard säger "antalet protoner bestämmer atomslaget". Enkel säger
+"1 proton är väte, 6 är kol, 8 är syre — alltid".
+
+**Ett begrepp per stycke.** Laddning, repellera, attrahera och neutral introduceras i fyra
+separata steg i stället för i ett.
+
+**Frågan ställs innan den besvaras.** "Varför flyger inte kärnan isär?" får en egen rubrik, så att
+eleven hinner undra innan svaret kommer.
+
+**Något att haka upp det på.** Magneter för laddningar. En miljon atomer tunnare än ett hårstrå.
+
+---
+
+### 7.1 Formregel: stycken, inte rader
+
+**Detta är en hård regel och den bryts lätt.**
+
+Enkel brödtext skrivs i **sammanhållna stycken om tre till fem meningar**. Meningar som hör ihop
+står i samma stycke.
+
+Rubriker används för att orientera läsaren, inte för att bryta upp texten.
+
+#### Varför regeln finns
+
+Enkelnivån frestar till korta rader. Det *ser* lättläst ut — mycket luft, korta enheter, snabbt
+att skanna. Men effekten blir motsatt: en text där varje mening står för sig läser som en
+punktlista utan punkter, och den blir hackig snarare än lugn. Det bryter dessutom mot DELAD-basens
+regel att Enkel ska vara löpande prosa utan punktlistor i brödtexten.
+
+Luft hjälper. Radbrytning mellan meningar som hör ihop gör det inte.
+
+#### Exempel
+
+❌ **Fel — rader:**
+
+> Protoner och elektroner har något som kallas elektrisk laddning.
+>
+> Protonerna är positiva. Vi skriver det med ett plustecken: **+**
+>
+> Elektronerna är negativa. Vi skriver det med ett minustecken: **−**
+>
+> Neutronerna har ingen laddning alls. De är neutrala — det är därifrån namnet kommer.
+
+✅ **Rätt — stycke:**
+
+> Protoner och elektroner har något som kallas **elektrisk laddning**. Protonerna är positiva, och
+> vi skriver det med ett plustecken. Elektronerna är negativa, och de skrivs med ett minustecken.
+> Neutronerna har ingen laddning alls — de är neutrala, och det är därifrån namnet kommer.
+
+Samma information, samma ordning, samma begrepp. Skillnaden är att det andra går att läsa.
+
+#### Kontroll före leverans
+
+Gå igenom varje Enkel-text och räkna meningar per stycke. Finns stycken med **en enda mening**
+som inte är en avsiktlig markering — slå ihop dem med det som hör till.
+
+Undantaget är en mening som *ska* stå ensam för att den bär avsnittets kärna, till exempel:
+
+> Nu kommer det viktigaste i hela avsnittet: **det är antalet protoner som bestämmer vilket ämne
+> atomen är.**
+
+Ett sådant per underdel, inte fler.
+
+---
+
+### 7.2 Röst och ägarskap på Enkel
+
+Enkel-texten är **Claudes produkt** ur Joachims standardtext. Till skillnad från Standard och
+Fördjupning, som är Joachims röst, skrivs Enkel av Claude och granskas av Joachim.
+
+Det betyder att Claude får omformulera fritt — men inte lägga till sakinnehåll som inte finns i
+standardtexten. Uppackning betyder fler steg genom samma material, inte nytt material.
+
+---
+
+---
+
 ## Öppna punkter — Code inventerar och rapporterar
 
 Bygg ingenting på gissningar. Rapportera först, invänta godkännande.
@@ -216,6 +316,9 @@ Bygg ingenting på gissningar. Rapportera först, invänta godkännande.
 
 ## Revisionshistorik
 
+- **v1.1 (2026-09-12):** §7 tillagt — Enkelnivån i kemi är uppackad, inte kortad, och skrivs i
+  sammanhållna stycken om 3–5 meningar. Formregeln (§7.1) tillagd efter att levererade texter vid
+  upprepade tillfällen glidit mot rad-per-mening, trots att principen var överenskommen.
 - **v1.0 (2026-09-12):** Första versionen. Skriven som tillägg till gemensam LEVERANSGUIDE v2.1
   i stället för som egen fullständig guide, så att huvuddokumentet förblir delat mellan alla
   böcker. Sex avvikelser dokumenterade: formelkonvertering, två korttyper, fördjupning som
