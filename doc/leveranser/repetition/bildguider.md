@@ -41,6 +41,21 @@
 
 # AVSNITT 3 — Kemiska bindningar
 
+## Underdel A — `adelgasstruktur.svg`
+
+- Räkna elektronerna på den **yttersta** banan i vardera atomen
+- Att båda atomerna har **lika många** elektroner på de två inre banorna
+- Hur många banor natrium har jämfört med neon
+- Vad som skulle hända om natrium tappade sin yttersta elektron
+
+## Underdel A — `tre-vagar.svg`
+
+- Vilket ämne som står i varje ruta
+- Åt vilket håll pilen pekar i den vänstra rutan
+- Åt vilket håll den pekar i den mittersta
+- Vad som är annorlunda i den högra rutan — finns det någon pil där?
+- Var elektronparet sitter i den högra rutan
+
 ## Underdel B — `jonbindning-natrium-klor.svg`
 
 - Att natriumatomen har **en enda** elektron ytterst, medan kloratomen har **sju**

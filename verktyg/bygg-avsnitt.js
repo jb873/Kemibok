@@ -58,11 +58,9 @@ const AVSNITT_REPETITION = {
          'enkel-dubbel-trippel.webp': { aktiv: ['enkel', 'standard'], enkel: 'där varje atom saknar tre', standard: 'finns en\ntrippelbindning' },
          'molekylmodeller-vatten.webp': { fil: 'molekylmodeller-vatten.svg', aktiv: ['enkel', 'standard'], enkel: 'vilken man väljer beror på vad man vill visa', standard: 'Valet beror på vad som ska framgå' },   // bara Enkel + Standard (beslut 2026-09-13)
          'metallbindning.webp': { aktiv: ['enkel', 'standard'], enkel: 'jonerna ligger i ett hav av elektroner', standard: 'håller på så sätt samman metallen' },
-         // underdel A, Joachims spec 2026-09-13 (bilder-svg.js); alt-text och bildtexter kommer i nästa leverans → kommentarsmarkup tills dess
-         'adelgasstruktur.svg': { aktiv: [], enkel: 'samma uppsättning som en ädelgas har', standard: 'reagerar därför mycket lite',
-           spec: { underdel: 'a', alt: '{{alt-text – kommer i nästa leverans}}', enkel: '{{bildtext Enkel – kommer i nästa leverans}}', standard: '{{bildtext Standard – kommer i nästa leverans}}' } },
-         'tre-vagar.svg': { aktiv: [], enkel: 'jonbindning, kovalent bindning och metallbindning', standard: 'på var i det periodiska systemet den',
-           spec: { underdel: 'a', alt: '{{alt-text – kommer i nästa leverans}}', enkel: '{{bildtext Enkel – kommer i nästa leverans}}', standard: '{{bildtext Standard – kommer i nästa leverans}}' } }
+         // underdel A, genererade SVG:er (bilder-svg.js); spec och bildguider levererade 2026-09-13
+         'adelgasstruktur.svg': { aktiv: ['enkel', 'standard'], enkel: 'samma uppsättning som en ädelgas har', standard: 'reagerar därför mycket lite' },
+         'tre-vagar.svg': { aktiv: ['enkel', 'standard'], enkel: 'jonbindning, kovalent bindning och metallbindning', standard: 'på var i det periodiska systemet den' }
        } },
   4: { slug: 'vattnets-egenskaper', titel: 'Vattnets egenskaper', sub: 'därför beter sig vatten som det gör',
        dd: [{ slug: 'varfor-is-flyter', titel: 'Varför is flyter', ikon: '🧊' }, { slug: 'ytspanning', titel: 'Ytspänning i verkligheten', ikon: '💧' }],

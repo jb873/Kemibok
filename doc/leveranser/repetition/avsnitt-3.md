@@ -25,6 +25,36 @@
 
 Bilderna kommer senare. Markup förbereds enligt alternativ C.
 
+### `adelgasstruktur.svg` — underdel A, Enkel + Standard
+
+*Leverans 2026-09-13 (bildtexter-avsnitt-3-nya.md). Genererad SVG, verktyg/bilder-svg.js.*
+
+**Alt-text:** Två atommodeller sida vid sida. Till vänster en neonatom med tio protoner och tio
+neutroner i kärnan, och elektroner fördelade med två på den inre banan och åtta på den yttre. Till
+höger en natriumatom med elva protoner och tolv neutroner, och elektroner fördelade två, åtta och
+en, där den yttersta banan har en ensam elektron.
+
+**Bildtext Enkel:** Neon har åtta elektroner ytterst och behöver ingenting mer. Natrium har en ensam
+elektron längst ut — och det är den som gör natrium reaktivt.
+
+**Bildtext Standard:** Ädelgasstruktur betyder fullt yttersta skal. Neon har det redan och reagerar
+därför nästan inte alls. Natrium når samma uppsättning genom att avge sin ensamma valenselektron.
+
+### `tre-vagar.svg` — underdel A, Enkel + Standard
+
+*Leverans 2026-09-13 (bildtexter-avsnitt-3-nya.md). Genererad SVG, verktyg/bilder-svg.js.*
+
+**Alt-text:** Tre rutor i rad. I den vänstra lämnar en elektron en litiumatom som hade en ensam
+ytterelektron. I den mittersta kommer en elektron in till en fluoratom som saknade en för fullt
+skal. I den högra överlappar två väteatomer och delar på ett elektronpar mellan sig.
+
+**Bildtext Enkel:** Tre sätt att nå fullt yttersta skal. Ge bort, ta emot, eller dela med någon
+annan.
+
+**Bildtext Standard:** Vilken väg en atom tar beror på hur många valenselektroner den har. Få
+elektroner ytterst gör det billigast att avge, nästan fullt skal gör det billigast att ta upp, och
+två atomer som båda saknar elektroner måste dela.
+
 ### `jonbindning-natrium-klor.webp` — underdel B, Enkel + Standard
 
 **Alt-text:** En natriumatom till vänster med en ensam elektron i yttersta skalet, och en
