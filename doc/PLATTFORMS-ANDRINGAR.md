@@ -39,6 +39,7 @@
 | Datum | Typ | Var upptäckt | Observation | Förslag |
 |---|---|---|---|---|
 | | | | | |
+| 2026-09-13 | C | Kemibok, Pages-förberedelse | localStorage-nycklarna (`geo-elev-svar-{delkapitel}`, `geo-flipcards-{avsnittsid}-…`, `geo-underdel-{delkapitel}-…`) saknar bok-id. Alla böcker ligger på samma origin (`jb873.github.io`), så ett delkapitel eller avsnitt med samma slug i två böcker blandar elevsvar. Ingen kollision idag. | Prefix per bok i plattformens JS (`elevbok.js`, `flipcards.js`, `avsnitt.js`, `egna-fragor.js`, `elevdata-overforing.js`). **Kandidat för 🟡** — kollisionen är känd och lösningen enkel. |
 
 *(Tom rad ovan är till för nya poster — fyll på underifrån)*
 

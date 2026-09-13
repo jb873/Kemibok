@@ -3,7 +3,7 @@
 // Kör: node verktyg/atommodeller.js   Färger och regler enligt Joachims spec 2026-09-12:
 // proton #C64B3A med vitt +, neutron #8A8A8A, elektron #3D6BA8 med vitt −,
 // banor #2d4a35 3px utan fyllning, transparent bakgrund, elektroner med lika vinkelsteg.
-// Verifiering: verktyg/skarmbilder/atommodeller-900px.png (Chromium, 900 px bredd).
+// Verifiering: rendera i Chromium via verktyg/verifiera.js (900 px bredd); skärmbilder sparas inte i repot.
 //
 // STATUS 2026-09-13: de genererade SVG-filerna togs bort ur repot (commit 79841c2) –
 // avsnittens atommodeller är AI-genererade webp i delkapitel/repetition/img/. Ingen sida
