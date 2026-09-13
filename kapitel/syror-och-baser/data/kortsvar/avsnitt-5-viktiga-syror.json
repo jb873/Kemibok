@@ -56,6 +56,9 @@
       "typ": "tal",
       "fraga": "Vilket ungefärligt pH har magsäckens innehåll?",
       "svar": 1,
+      "tolerans": {
+        "abs": 1
+      },
       "forklaring": "Omkring 1 till 2. Magsäcken är mycket sur."
     },
     {
@@ -125,7 +128,7 @@
       "alternativ": [
         "Koldioxid löser sig i vatten",
         "Vatten kokas",
-        "Salt löses i vatten"
+        "Salt löses i vatten **Tolerans 6:** 1 (beslut 2026-09-13: facit 1, 0–2 godkänns – förklaringen säger 1 till 2)"
       ],
       "svar": 0,
       "forklaring": "Koldioxid löser sig i vatten. Därför är kolsyrade drycker lite sura."

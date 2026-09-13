@@ -6,6 +6,7 @@
 //     (A: alt | alt; S: ord/formel-alternativ med |, markera/tal-par med komma; O: {json med tolerans, enhet, oordnad, skiftlage})
 //   tabellform (syror): | # | Typ | Fråga | Svar |  +  ### Förklaringar (numrerade, får radbrytas)
 //     +  **Flerval N:** alt · alt · alt (får radbrytas; första alternativet = rätt och ska vara tabellens svar);
+//     +  **Tolerans N:** x  → tolerans: {abs: x} (tal);
 //     ord-alternativ i tabellen med komma ("stark, stark syra").
 // Formler skrivs i Unicode i leveransen (H₂O, Li⁺, 10⁻¹⁴, ⇌) och blir MathJax i fråga, alternativ och förklaring;
 // `\ce{…}` i backticks i förklaringar → \(\ce{…}\); svar för typen formel skrivs som \ce-inmatning (Li+, SO4^2-).
@@ -60,12 +61,14 @@ function tolkaTabell(N, inneh) {
   if (fBlock) { for (const m of fBlock[1].matchAll(/^(\d+)\. ([\s\S]*?)(?=\n\d+\. |\n\n|\n\*\*|(?![\s\S]))/gm)) { forkl[+m[1]] = m[2]; } }
   const alt = {};
   for (const m of inneh.matchAll(/^\*\*Flerval (\d+):\*\* ([\s\S]*?)(?=\n\*\*Flerval|\n\n|\n---|(?![\s\S]))/gm)) { alt[+m[1]] = m[2].split(' · ').map(x => x.replace(/\s*\n\s*/g, ' ').trim()); }
+  const tol = {};
+  for (const m of inneh.matchAll(/^\*\*Tolerans (\d+):\*\* ([\d.,]+)/gm)) { tol[+m[1]] = Number(m[2].replace(',', '.')); }
   return rader.map(r => {
     const id = `k${N}-s${r.nr}`;
     if (!forkl[r.nr]) { throw new Error(`${id}: förklaring saknas`); }
     const f = { id, typ: r.typ, fraga: text(r.fraga) };
     switch (r.typ) {
-      case 'tal': f.svar = talet(id, r.svar); break;
+      case 'tal': f.svar = talet(id, r.svar); if (tol[r.nr] !== undefined) { f.tolerans = { abs: tol[r.nr] }; } break;
       case 'ord': f.svar = r.svar.split(',').map(x => x.trim()); break;
       case 'formel': f.svar = [r.svar]; break;
       case 'flerval': {

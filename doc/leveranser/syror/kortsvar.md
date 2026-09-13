@@ -5,7 +5,7 @@
 >
 > Bygg (Code 2026-09-13): `node verktyg/bygg-kortsvar.js syror` läser denna fil i tabellform
 > (| # | Typ | Fråga | Svar | + ### Förklaringar + **Flerval N:** alternativ med · ; första
-> alternativet = rätt). Leverans 2026-09-13 (klistrad i chatten).
+> alternativet = rätt; **Tolerans N:** x ger `tolerans: {abs: x}`). Leverans 2026-09-13 (klistrad i chatten).
 
 ---
 
@@ -233,6 +233,7 @@ uppvärmning
 **Flerval 10:** Nej, koncentrationen spelar också roll · Ja, alltid · Bara om den är utspädd
 **Flerval 11:** Sköljer omedelbart med mycket vatten · Torkar av med papper · Väntar och ser
 **Flerval 12:** Koldioxid löser sig i vatten · Vatten kokas · Salt löses i vatten
+**Tolerans 6:** 1 (beslut 2026-09-13: facit 1, 0–2 godkänns – förklaringen säger 1 till 2)
 
 ---
 
@@ -258,8 +259,9 @@ skriva.
 
 Genomgånget för alla 60. De ställen där ett samband är en identitet är vända:
 
-- Inte *"Hur många protoner har en vätejon?"* efter att texten sagt att den är en proton — utan
-  frågan står ensam, och svaret kräver att eleven vet vad en vätejon är.
+- Avsnitt 1 fråga 6 och 7 (*"Hur många protoner/elektroner har en vätejon?"*) står kvar: svaret
+  står inte i frågan, och att svara kräver att eleven vet vad en vätejon är. (Formuleringen här
+  justerad 2026-09-13 – den tidigare beskrev en vändning som inte fanns i tabellen.)
 - Inte *"Vilken syra är stark?"* med saltsyra nämnd i frågan — utan flerval där hon måste välja.
 - Inte *"Hur många gånger är ett steg?"* — utan konkreta pH-värden att räkna på.
 
