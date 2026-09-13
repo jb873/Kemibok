@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vad är en syra? – Syror – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Syror</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">1. Vad är en syra?</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 1</span>
+      <h1>Vad är en syra?</h1>
+      <p class="subtitel">— vad som gör en lösning sur —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Vätejonen</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Syran i vatten</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Sura lösningar</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-vad-ar-en-syra">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Vätejonen ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En väteatom har <strong>en proton</strong> och <strong>en elektron</strong></li>
+              <li>Tappar den elektronen finns bara <strong>protonen</strong> kvar</li>
+              <li>Det är en <strong>vätejon</strong>, \(\ce{H+}\)</li>
+              <li>Vätejonen är den <strong>minsta</strong> jon som finns</li>
+              <li>Den är mycket reaktiv och finns aldrig ensam i vatten</li>
+            </ul>
+          </div>
+
+          <p>Väteatomen är den enklaste atom som finns. I kärnan sitter en enda proton, och runt kärnan finns en enda elektron. Inget mer.</p>
+          <p>Det gör den till ett bra ställe att börja, för här händer något som inte händer med någon annan atom.</p>
+          <h2>Vad blir kvar</h2>
+          <p>Tänk på vad du lärde dig i repetitionen: en atom blir en jon när den tappar eller får elektroner. Antalet protoner ändras aldrig.</p>
+          <p>När en väteatom tappar sin elektron finns det alltså en proton kvar och noll elektroner. Det är en positiv jon, och vi skriver den \(\ce{H+}\).</p>
+          <p>Men se vad som faktiskt blivit kvar. Hos alla andra joner finns fortfarande elektronskal runt kärnan — natriumjonen har tio elektroner kvar, kloridjonen har arton. Vätejonen har inga alls. Den är <strong>bara en naken kärna</strong>.</p>
+          <h2>Därför är den så reaktiv</h2>
+          <p>En vätejon är den minsta jon som finns, mycket mindre än alla andra. Och den är positivt laddad utan något elektronskal som skyddar.</p>
+          <p>Det gör den ovanligt benägen att fastna på saker. Så fort en vätejon finns i närheten av något som har negativ laddning eller elektroner att erbjuda, binder den sig dit.</p>
+          <p>Därför flyter det aldrig omkring ensamma vätejoner i en vattenlösning. De hinner inte — de fastnar direkt. Det är viktigt att komma ihåg när vi nu ska se vad som händer när en syra hamnar i vatten.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En vätejon är en väteatom som avgett sin enda elektron</li>
+              <li>Den består därför av <strong>enbart en proton</strong> — inget elektronskal</li>
+              <li>Det gör den till den <strong>minsta</strong> jonen och mycket <strong>reaktiv</strong></li>
+              <li>Vätejoner förekommer <strong>inte fritt</strong> i vattenlösning</li>
+              <li>De binder omedelbart till andra partiklar</li>
+            </ul>
+          </div>
+
+          <p class="inledning">En väteatom är den enklaste atom som finns. Den består av en atomkärna med en proton och har en elektron runt kärnan. Om väteatomen lämnar ifrån sig sin enda elektron finns bara den positivt laddade protonen kvar. Då har det bildats en <strong>vätejon, \(\ce{H+}\)</strong>.</p>
+          <p>Man kan därför beskriva en vätejon som en väteatom som har lämnat ifrån sig sin elektron. Eftersom vätejonen bara består av en proton är den den minsta jon som finns.</p>
+          <p>Det skiljer vätejonen från alla andra joner. När en natriumatom blir en jon har den fortfarande tio elektroner kvar runt kärnan, och en kloridjon har arton. Vätejonen har inga alls.</p>
+          <p>Vätejonen är mycket reaktiv. Den har positiv laddning men inget elektronskal som omger kärnan. Därför förekommer vätejoner inte fritt i en vattenlösning — de binder snabbt till andra partiklar. Detta är viktigt för att förstå vad som händer när en syra löses i vatten.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Ett specialfall bland joner</h2>
+          <p>Alla andra joner du mött behåller sitt elektronskal när de bildas. En natriumjon har avgett en elektron men har tio kvar. En kloridjon har tagit upp en och har arton. Skalen finns där, och de avgör hur stor jonen är.</p>
+          <p>Vätejonen har inget skal alls. Kvar finns bara kärnan.</p>
+          <p>Det gör skillnaden i storlek extrem. En natriumjon har en radie på omkring 100 pikometer. En proton har en radie på ungefär 0,001 pikometer. Vätejonen är alltså i storleksordningen <strong>hundratusen gånger mindre</strong> än de joner den ska samsas med.</p>
+          <p>Ladda den lilla ytan med en hel positiv laddning och du får en laddningstäthet som ingen annan jon kommer i närheten av. Det är därför vätejonen binder så hårt till allt som har ett fritt elektronpar att erbjuda — och det är därför den inte existerar fri i vattenlösning ens för en bråkdel av en sekund.</p>
+          <h2>Vad "\(\ce{H+}\) i lösning" egentligen betyder</h2>
+          <p>Du kommer att se skrivsättet \(\ce{H+}\) i många sammanhang, också i läroböcker och på gymnasiet. Det är en förkortning, inte en beskrivning.</p>
+          <p>Det som faktiskt finns i en sur lösning är oxoniumjoner, \(\ce{H3O+}\) — och i verkligheten inte ens de i ren form. En proton hoppar ständigt mellan vattenmolekyler, och man kan lika gärna beskriva den som bunden till flera molekyler samtidigt, i strukturer som \(\ce{H5O2+}\) eller \(\ce{H9O4+}\).</p>
+          <p><strong>Om modellen:</strong> \(\ce{H+}\) är inte fel på samma sätt som en felräkning är fel. Det är ett sätt att skriva "den proton som syran avgett, var den än råkar befinna sig just nu". När man ska räkna på surhet spelar det ingen roll var protonen sitter — då fungerar \(\ce{H+}\) utmärkt. Först när man vill förstå <em>varför</em> syran beter sig som den gör behövs oxoniumjonen.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Syran i vatten ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En <strong>syra</strong> är ett ämne som kan avge <strong>vätejoner</strong></li>
+              <li>I vatten lämnar vätejonerna syrans partiklar</li>
+              <li>Vätejonerna fastnar direkt på <strong>vattenmolekyler</strong></li>
+              <li>Det är vätejonerna i lösningen som gör den <strong>sur</strong></li>
+              <li>Saltsyra är ett exempel</li>
+            </ul>
+          </div>
+
+          <p>Nu kan vi säga vad en syra är.</p>
+          <p><strong>En syra är ett ämne som kan avge vätejoner.</strong> Det är hela definitionen.</p>
+          <h2>Vad som händer i vattnet</h2>
+          <p>När en syra hamnar i vatten lossnar vätejoner från syrans partiklar och lämnar dem. Men som du vet från förra delen kan en vätejon inte flyta omkring ensam — den fastnar direkt på något.</p>
+          <p>I vatten finns det gott om vattenmolekyler, och det är dit vätejonen tar vägen. Vattenmolekylen är polär, med en svagt negativ sida vid syreatomen, och den positiva vätejonen dras dit.</p>
+          <p>Så vätejonerna blir aldrig fria. De sitter på vattenmolekyler, utspridda i hela lösningen.</p>
+          <h2>Varför lösningen blir sur</h2>
+          <p>Det är just de här vätejonerna som gör lösningen sur. Ju fler vätejoner syran avgett, desto surare blir lösningen.</p>
+          <p>Saltsyra är ett exempel. Saltsyra är ämnet väteklorid löst i vatten. Varje vätekloridpartikel har en vätejon att avge, och när saltsyra blandas med vatten lämnar vätejonerna partiklarna och fastnar på vattenmolekylerna. Kvar av vätekloriden blir kloridjoner.</p>
+          <p>Lösningen innehåller alltså vätejoner och kloridjoner, och det är vätejonerna som gör den sur.</p>
+          <h2>Det är samma sak varje gång</h2>
+          <p>Olika syror ser olika ut och heter olika saker, men det de har gemensamt är just det här: de kan avge vätejoner till vatten.</p>
+          <p>Hittar du en syra du aldrig sett förut kan du vara säker på att det är vad den gör.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En <strong>syra</strong> är ett ämne som kan avge <strong>vätejoner, \(\ce{H+}\)</strong></li>
+              <li>Vattenmolekylen är <strong>polär</strong> och har <strong>fria elektronpar</strong> på syreatomen</li>
+              <li>Vätejonen binder omedelbart till en vattenmolekyl</li>
+              <li>Det som bildas är en <strong>oxoniumjon, \(\ce{H3O+}\)</strong></li>
+              <li>Det är oxoniumjonerna som gör lösningen sur</li>
+            </ul>
+          </div>
+
+          <p class="inledning">En <strong>syra</strong> är ett ämne som kan avge vätejoner, \(\ce{H+}\). När en syra kommer i kontakt med vatten kan vätejoner lämna syrans partiklar och överföras till vattenmolekyler.</p>
+          <p>Vattenmolekylen är polär. Syreatomen har en svagt negativ sida och dessutom fria elektronpar. Den positivt laddade vätejonen dras därför starkt till syreatomen. Eftersom vätejonen i praktiken är en ensam proton binder den omedelbart till en vattenmolekyl.</p>
+          <p>När en vattenmolekyl, \(\ce{H2O}\), tar upp en vätejon, \(\ce{H+}\), bildas en <strong>oxoniumjon, \(\ce{H3O+}\)</strong>:</p>
+          <div class="formel">\[\ce{H2O + H+ -> H3O+}\]</div>
+          <!-- BILD: vatejon-och-oxoniumjon.svg – levereras senare, avkommentera när filen finns i img/.
+          <figure class="brodtext-bild standard">
+            <img src="img/vatejon-och-oxoniumjon.svg" alt="En vattenmolekyl med två fria elektronpar vid syreatomen, en ensam vätejon, och resultatet: en oxoniumjon där vätejonen bundit till syreatomen och hela partikeln fått positiv laddning.">
+            <figcaption>Vätejonen är en ensam proton utan elektronskal. Den binder omedelbart till ett av vattenmolekylens fria elektronpar, och det som bildas är en oxoniumjon.</figcaption>
+          </figure>
+          -->
+          <p>Det innebär att när vi säger att en syra avger vätejoner i vatten är det egentligen oxoniumjoner som finns i lösningen.</p>
+          <aside class="faktaruta">
+            <h3>Vätejon och oxoniumjon</h3>
+            <p><strong>Vätejonen</strong>, \(\ce{H+}\), är det syran avger. Den är en ensam proton utan elektronskal, och den kan inte finnas fri i vatten mer än ett ögonblick.</p>
+            <p><strong>Oxoniumjonen</strong>, \(\ce{H3O+}\), är vad som bildas när vätejonen fastnar på en vattenmolekyl. Det är den som faktiskt finns i lösningen, och den som avgör hur sur den är.</p>
+            <p>Båda orden används. Säger man att en syra avger vätejoner beskriver man vad syran gör. Säger man att lösningen innehåller oxoniumjoner beskriver man vad som finns där.</p>
+            <div class="faktaruta-sammanfattning">
+              <p><strong>Vätejon = det syran avger</strong></p>
+              <p><strong>Oxoniumjon = det som finns i lösningen</strong></p>
+            </div>
+          </aside>
+          <p>Saltsyra är ett tydligt exempel. Saltsyra består av väteklorid, HCl, löst i vatten. När väteklorid reagerar med vatten överförs en vätejon från HCl till en vattenmolekyl. Då bildas en oxoniumjon och en kloridjon:</p>
+          <div class="formel">\[\ce{HCl + H2O -> H3O+ + Cl-}\]</div>
+          <p>Det är alltså bildandet av oxoniumjoner som gör vattenlösningen sur.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Definitionen förutsätter två parter</h2>
+          <p>Standardtexten sa att en syra avger vätejoner. Läs den meningen en gång till och fråga: avger dem till vad?</p>
+          <p>En syra kan inte avge en proton till ingenting. Protonen måste tas emot av något, och det som tar emot den har också ett namn — det är en <strong>bas</strong>.</p>
+          <p>Det betyder att syra och bas inte är två oberoende sorters ämnen som råkar kunna reagera med varandra. De är två <strong>roller</strong> i samma händelse. Där det finns en syra finns det alltid en bas, för annars skulle ingenting hända.</p>
+          <p>Den här synen på syror och baser kallas protonöverföring, och den är den modell du kommer att möta på gymnasiet.</p>
+          <h2>Vattnet är basen</h2>
+          <p>Titta nu på reaktionen igen med de glasögonen:</p>
+          <div class="formel">\[\ce{HCl + H2O -> H3O+ + Cl-}\]</div>
+          <p>Väteklorid avger en proton. Det är syran. Men vattnet <strong>tar emot</strong> protonen — och i den här reaktionen är alltså vatten basen.</p>
+          <p>Det är ett påstående som kan kännas märkligt. Vatten brukar ju kallas neutralt. Men neutral syftar på pH, alltså på balansen mellan olika joner i lösningen. Att vatten kan <strong>fungera</strong> som bas är något annat: det handlar om vad molekylen gör i en enskild reaktion.</p>
+          <p>Och vatten kan faktiskt gå åt båda hållen. Möter vattnet något som tar emot protoner kan vattnet avge en av sina egna och alltså fungera som syra. Ett ämne som kan vara både och kallas <strong>amfolyt</strong>, och vatten är det viktigaste exemplet.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskrev syran som ett ämne med en egenskap. Med protonöverföring blir syra i stället något ett ämne <strong>gör</strong> i en viss reaktion. Det förklarar varför samma ämne kan uppträda olika i olika sammanhang, och det gör att neutralisation senare blir begriplig — den är inte två motsatser som tar ut varandra, utan en proton som byter ägare.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Sura lösningar ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En <strong>sur lösning</strong> innehåller vätejoner</li>
+              <li>Ju <strong>fler</strong> vätejoner, desto surare</li>
+              <li>Lösningen innehåller <strong>joner</strong>, och därför leder den <strong>ström</strong></li>
+              <li>Alla syror gör samma sak: avger vätejoner till vatten</li>
+              <li>Olika syror avger dem <strong>olika lätt</strong></li>
+            </ul>
+          </div>
+
+          <p>Nu vet du vad som händer när en syra möter vatten. Men vad kännetecknar själva lösningen som blir resultatet?</p>
+          <h2>Fler vätejoner betyder surare</h2>
+          <p>En sur lösning är en vattenlösning som innehåller vätejoner, avgivna från en syra.</p>
+          <p>Och mängden spelar roll. Ju fler vätejoner det finns i lösningen, desto surare är den. En lösning med väldigt många vätejoner är starkt sur, och en med få är bara lite sur.</p>
+          <p>Det är därför man kan tala om att något är surare än något annat. Citronsaft är surare än kaffe, och magsyra är surare än båda — de innehåller olika mycket vätejoner.</p>
+          <h2>Sura lösningar leder ström</h2>
+          <p>Det finns en egenskap till som är värd att lägga märke till.</p>
+          <p>När en syra reagerar med vatten bildas laddade partiklar, alltså joner. I saltsyra finns både vätejoner och kloridjoner, och båda kan röra sig fritt i vattnet.</p>
+          <p>Precis som du lärde dig i repetitionen leder en lösning ström om den innehåller fria joner. Elektrisk ström är laddning som rör sig, och i en sur lösning finns gott om laddningar som kan göra det. Därför leder alla sura lösningar ström.</p>
+          <h2>Ett gemensamt mönster</h2>
+          <p>Syror kan alltså kännas igen på vad som händer när de möter vatten. De avger vätejoner, vätejonerna fastnar på vattenmolekylerna, och lösningen blir sur.</p>
+          <p>Men alla syror gör inte det lika lätt. Vissa avger nästan alla sina vätejoner direkt, medan andra bara avger en del. Den skillnaden är viktig, och det är den vi ska titta på om ett par avsnitt.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En sur lösning har fler <strong>oxoniumjoner</strong> än <strong>hydroxidjoner</strong></li>
+              <li>Ju högre koncentration oxoniumjoner, desto surare</li>
+              <li>Lösningen innehåller <strong>rörliga joner</strong> och leder därför ström</li>
+              <li>Syror känns igen på vad de gör i kontakt med vatten</li>
+              <li>Olika syror avger sina vätejoner <strong>olika lätt</strong></li>
+            </ul>
+          </div>
+
+          <p class="inledning">En sur lösning är en vattenlösning där det finns fler oxoniumjoner, \(\ce{H3O+}\), än hydroxidjoner, \(\ce{OH-}\). Ju större koncentrationen av oxoniumjoner är, desto surare är lösningen.</p>
+          <p>Hydroxidjonen, \(\ce{OH-}\), består av en syreatom och en väteatom med en gemensam negativ laddning. Den finns alltid i små mängder i vatten, tillsammans med oxoniumjoner. I rent vatten finns det lika många av båda, och då är lösningen neutral. När en syra tillsätts ökar antalet oxoniumjoner, och lösningen blir sur.</p>
+          <p>När en syra reagerar med vatten bildas laddade partiklar, alltså joner. I exemplet med saltsyra finns bland annat oxoniumjoner, \(\ce{H3O+}\), och kloridjoner, \(\ce{Cl-}\), i lösningen. Jonerna kan röra sig genom vattnet och transportera elektrisk laddning. Därför kan sura vattenlösningar leda elektrisk ström.</p>
+          <p>Syror kan alltså kännas igen på vad som händer när de kommer i kontakt med vatten: de avger vätejoner, vätejonerna binds till vattenmolekyler och det bildas oxoniumjoner.</p>
+          <p>Alla syror beter sig däremot inte på exakt samma sätt. Olika syror avger sina vätejoner olika lätt. Det är grunden till skillnaden mellan starka och svaga syror, som vi återkommer till längre fram.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Rent vatten innehåller redan joner</h2>
+          <p>Standardtexten sa att en sur lösning har fler oxoniumjoner än hydroxidjoner. Det förutsätter något som är lätt att missa: att det finns hydroxidjoner där över huvud taget.</p>
+          <p>Och det gör det, även i rent vatten.</p>
+          <p>Vattenmolekyler reagerar nämligen med varandra. Då och då överför en vattenmolekyl en proton till en annan, och resultatet blir en oxoniumjon och en hydroxidjon:</p>
+          <div class="formel">\[\ce{2 H2O <=> H3O+ + OH-}\]</div>
+          <p>Det är samma protonöverföring som i förra fördjupningen, fast mellan två likadana molekyler. Den ena fungerar som syra, den andra som bas.</p>
+          <p>Reaktionen sker ständigt, men i mycket liten omfattning. I rent vatten är bara ungefär en molekyl av en halv miljard omvandlad åt gången. Det låter försumbart, men det räcker för att vatten ska leda en aning ström — och det är grunden för hela pH-skalan.</p>
+          <h2>Därför är neutralt mitt emellan</h2>
+          <p>I rent vatten bildas oxoniumjoner och hydroxidjoner <strong>i par</strong>. Det finns därför exakt lika många av varje, och det är precis vad neutralt betyder.</p>
+          <p>Tillsätter du en syra rubbas balansen. Antalet oxoniumjoner ökar, och lösningen blir sur. Tillsätter du en bas ökar hydroxidjonerna i stället.</p>
+          <p>Men här kommer det oväntade: de två koncentrationerna är <strong>kopplade till varandra</strong>. Ökar den ena minskar den andra, och produkten av dem är alltid densamma i vattenlösning.</p>
+          <p>Det betyder att en sur lösning inte bara har många oxoniumjoner — den har också ovanligt <em>få</em> hydroxidjoner. Och en basisk lösning har tvärtom. Man kan därför beskriva surhet lika gärna med det ena talet som med det andra.</p>
+          <p><strong>Om modellen:</strong> standardtexten jämförde två sorters joner som om de vore oberoende av varandra. De är det inte. Att de hänger ihop genom vattnets egen reaktion är förklaringen till att pH-skalan har en mittpunkt vid 7 och till att den slutar vid 14 — något vi återkommer till i nästa avsnitt.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-1-vad-ar-en-syra.json"
+           data-avsnitt="a1_vad-ar-en-syra">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-1-vad-ar-en-syra.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a1_vad-ar-en-syra';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'syror';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

@@ -1,12 +1,18 @@
 // bygg-avsnitt.js – bygger en avsnittssida ur en leveransfil (doc/leveranser/{delkapitel}/avsnitt-N.md)
-// enligt KOMPONENTER DEL 1-scaffolden. Kör: node verktyg/bygg-avsnitt.js <N> [--torr]
+// enligt KOMPONENTER DEL 1-scaffolden. Kör: node verktyg/bygg-avsnitt.js [delkapitel] <N> [--torr]
+// (delkapitel utelämnat = repetition). Titel, slug och hero-underrubrik läses ur leveransens huvud
+// (# … — Titel / **Sökväg:** / **Underrubrik i hero:**) om konfigurationen inte anger dem.
 //
-// Leveransfilens struktur (samma i avsnitt 2–5):
+// Leveransfilens struktur:
 //   # UNDERDEL X — Titel
 //   ## Kärnpunkter (Enkel) / ## Kärnpunkter (Standard) / ## Titta efter (endast Enkel)
-//   ## X — ENKEL / ## X — STANDARD / ## X — FÖRDJUPNING   (### rubrik → <h2>, stycken → <p>)
-//   "*Ingen fördjupning skriven …*" → nivåblocket utelämnas helt (avsnitt.js disablar knappen)
-//   ## BILDSPECIFIKATIONER → <!-- BILD: … -->-kommentarer med färdig figure-markup (beslut C)
+//   ## X — ENKEL / ## X — STANDARD / ## X — FÖRDJUPNING   (### rubrik → <h2>, stycken → <p>,
+//   "- "-block → <ul>, "| … |"-block → <table class="brodtext-tabell">, "**Term** — …"-rader → egna <p>)
+//   "*Ingen fördjupning …*" → nivåblocket utelämnas helt (avsnitt.js disablar knappen)
+//   ## BILDSPECIFIKATION(ER) → figure-markup; "### Bildguide (endast Enkel)" inuti specen används som
+//   bildguide (prioritet: bildguider.md > specens bildguide > "Titta efter"). Inaktiv bild (konfig
+//   aktiv) → <!-- BILD: … --> med färdig markup (beslut C).
+//   # FAKTARUTA (underdel X, nivåer: enkel, standard | endast Standard | alla nivåer) → <aside class="faktaruta">
 //
 // Konvertering (KEMI-TILLAGG §1): Unicode-formler (H₂O, Na⁺, SO₄²⁻, "Na → Na⁺ + e⁻") → \(\ce{…}\);
 // fristående fetstilt reaktionsrad → <div class="formel">\[\ce{…}\]</div>. Ensamma beteckningar
@@ -17,12 +23,14 @@
 'use strict';
 const fs = require('fs'), path = require('path');
 const ROT = path.join(__dirname, '..');
-const N = parseInt(process.argv[2], 10);
+const ARG = process.argv.slice(2).filter(a => !a.startsWith('--'));
+const DKID = /^\d+$/.test(ARG[0] || '') ? 'repetition' : ARG[0];
+const N = parseInt(/^\d+$/.test(ARG[0] || '') ? ARG[0] : ARG[1], 10);
 const TORR = process.argv.includes('--torr');
-if (!N) { console.error('användning: node verktyg/bygg-avsnitt.js <avsnittsnummer> [--torr]'); process.exit(2); }
+if (!DKID || !N) { console.error('användning: node verktyg/bygg-avsnitt.js [delkapitel] <avsnittsnummer> [--torr]'); process.exit(2); }
 
 // ---------- per-avsnitt konfiguration (det leveransen inte säger maskinläsbart) ----------
-const AVSNITT = {
+const AVSNITT_REPETITION = {
   1: { slug: 'atomer-molekyler-joner', titel: 'Atomer, molekyler och joner', sub: 'materiens minsta byggstenar',
        dd: [{ slug: 'kvarkar', titel: 'Kvarkar', ikon: '⚛️' }],
        bilder: {
@@ -65,25 +73,53 @@ const AVSNITT = {
          'mattad-losning.webp': { aktiv: ['enkel', 'standard'], enkel: 'oavsett hur mycket du\nrör om', standard: 'Om mer av ämnet tillsätts kommer det att bli kvar' }
        } }
 };
-const K = AVSNITT[N];
+// Syror: titel/slug/underrubrik ur leveransens huvud; alla bilder som kommentarsmarkup (beslut C, 2026-09-13)
+// utom stark-och-svag-syra.webp som finns i img/. Inga djupdykningar levererade ännu.
+const AVSNITT_SYROR = {
+  1: { dd: [],
+       bilder: { 'vatejon-och-oxoniumjon.svg': { aktiv: [], standard: 'H₂O + H⁺ → H₃O⁺' } },   // endast Standard; efter reaktionsraden
+       faktaruta: { standard: 'egentligen oxoniumjoner som' } },
+  2: { dd: [],
+       bilder: { 'ph-skalan.svg': { aktiv: [], enkel: 'en tvållösning kan ha 9 eller 10', standard: 'många tvållösningar är basiska' } } },
+  3: { dd: [],
+       bilder: { 'stark-och-svag-syra.webp': { aktiv: ['enkel', 'standard'], enkel: 'helt olika många vätejoner i vattnet', standard: 'partiklar som har avgett den' } } },
+  4: { dd: [],
+       bilder: { 'fyra-kombinationerna.svg': { aktiv: [], enkel: 'en syra som avger ogärna', standard: 'Utspädd ättiksyra är ett exempel' } } },
+  5: { dd: [],
+       bilder: { 'syra-och-metall.webp': { aktiv: [], enkel: 'tillsammans en vätgasmolekyl', standard: 'metallatomerna avger elektroner' } } }
+};
+const DELKAPITEL = {
+  repetition: { titel: 'Bakgrund och repetition', avsnitt: AVSNITT_REPETITION },
+  syror: { titel: 'Syror', avsnitt: AVSNITT_SYROR }
+};
+if (!DELKAPITEL[DKID]) { console.error('okänt delkapitel ' + DKID); process.exit(2); }
+const K = DELKAPITEL[DKID].avsnitt[N];
 if (!K) { console.error('ingen konfiguration för avsnitt ' + N); process.exit(2); }
-const KAP = { id: 'syror-och-baser', titel: 'Syror och baser' }, DK = { id: 'repetition', titel: 'Bakgrund och repetition' };
+const KAP = { id: 'syror-och-baser', titel: 'Syror och baser' }, DK = { id: DKID, titel: DELKAPITEL[DKID].titel };
 const B4 = '../../../../';
 
 // ---------- läs och dela upp leveransen ----------
 const LEV = path.join(ROT, 'doc', 'leveranser', DK.id);   // leveransfiler per delkapitel
 const md = fs.readFileSync(path.join(LEV, `avsnitt-${N}.md`), 'utf8').replace(/\r\n/g, '\n');
-const stopp = md.search(/\n# (Volym|Vad jag ändrat|Djupdykningar|Repetitionsdelkapitlet)/);
+const stopp = md.search(/\n# (Volym|Vad jag ändrat|Vad jag gjort|Djupdykningar|Repetitionsdelkapitlet|Anmärkningar|Om nivåuppdelningen|Att bestämma|Delkapitlet)/);
 const kropp = stopp > 0 ? md.slice(0, stopp) : md;
+// titel, slug och underrubrik ur huvudet om konfigurationen saknar dem
+{
+  const rub = md.match(/^# (?:[^\n]*?[Aa]vsnitt \d+) — ([^\n]+)/), sok = md.match(/\*\*Sökväg:\*\* `[^`]*avsnitt-\d+-([a-z0-9-]+)\.html`/), sub = md.match(/\*\*Underrubrik i hero:\*\* ([^\n]+)/);
+  if (!K.titel) { if (!rub) { throw new Error('titel saknas i leveransens huvud'); } K.titel = rub[1].trim(); }
+  if (!K.slug) { if (!sok) { throw new Error('**Sökväg:** saknas i leveransens huvud'); } K.slug = sok[1]; }
+  if (!K.sub) { if (!sub) { throw new Error('**Underrubrik i hero:** saknas i leveransens huvud'); } K.sub = sub[1].trim(); }
+}
 
 // bildspecifikationer
 const bildspec = {};
-const bsBlock = kropp.match(/## BILDSPECIFIKATIONER([\s\S]*?)(?=\n# UNDERDEL)/);
+const bsBlock = kropp.match(/## BILDSPECIFIKATION(?:ER)?([\s\S]*?)(?=\n# UNDERDEL)/);
 if (bsBlock) {
   for (const m of bsBlock[1].matchAll(/### `([^`]+)` — underdel ([A-D]), ([^\n]+)\n([\s\S]*?)(?=\n### `|$)/g)) {
     const f = m[1], text = m[4];
     const ta = re => { const x = text.match(re); return x ? x[1].replace(/\n/g, ' ').trim() : null; };
-    bildspec[f] = { underdel: m[2].toLowerCase(), nivaer: m[3].trim(), alt: ta(/\*\*Alt-text:\*\*\s*([\s\S]*?)\n\n/), enkel: ta(/\*\*Bildtext Enkel:\*\*\s*([\s\S]*?)\n\n/), standard: ta(/\*\*Bildtext Standard:\*\*\s*([\s\S]*?)(?:\n\n|$)/) };
+    const guide = text.match(/### Bildguide \(endast Enkel\)\n([\s\S]*?)(?=\n---|\n### |$)/);
+    bildspec[f] = { underdel: m[2].toLowerCase(), nivaer: m[3].trim(), alt: ta(/\*\*Alt-text:\*\*\s*([\s\S]*?)\n\n/), enkel: ta(/\*\*Bildtext Enkel:\*\*\s*([\s\S]*?)\n\n/), standard: ta(/\*\*Bildtext Standard:\*\*\s*([\s\S]*?)(?:\n\n|$)/), guide: guide ? guide[1].trim() : null };
   }
 }
 for (const f of Object.keys(K.bilder)) {
@@ -104,21 +140,30 @@ if (fs.existsSync(bgFil)) {
 
 // faktaruta: "## FAKTARUTA (underdel A, nivåer: enkel, standard)" + **Rubrik:** + prosa + **Sammanfattning:**-lista
 let faktaruta = null;
-const frM = kropp.match(/\n## FAKTARUTA \(underdel ([A-D]), nivåer: ([^)]+)\)\n([\s\S]*?)(?=\n## |\n# |$)/);
+const frM = kropp.match(/\n#{1,2} FAKTARUTA \(underdel ([A-D]), ([^)]+)\)\n([\s\S]*?)(?=\n## |\n# |$)/);
 if (frM) {
-  const md = frM[3].trim();
+  const md = frM[3].replace(/\n---\s*$/, '').trim();
   const rubrik = (md.match(/\*\*Rubrik:\*\* ([^\n]+)/) || [])[1];
   const [prosaDel, sammDel] = md.split(/\n\*\*Sammanfattning:\*\*\n/);
   const prosa = prosaDel.split(/\n\s*\n/).map(x => x.trim()).filter(x => x && !/^\*\*Rubrik:/.test(x));
-  const samm = (sammDel || '').split('\n').filter(r => /^- /.test(r)).map(r => r.replace(/^- /, ''));
+  let samm = (sammDel || '').split('\n').filter(r => /^- /.test(r)).map(r => r.replace(/^- /, ''));
+  // utan **Sammanfattning:**-rubrik: avslutande stycke(n) där varje rad är helfet = sammanfattningen
+  while (!sammDel && prosa.length > 1 && prosa[prosa.length - 1].split('\n').every(r => /^\*\*[^*]+\*\*$/.test(r.trim()))) {
+    samm = [...prosa.pop().split('\n').map(r => r.trim().replace(/^\*\*|\*\*$/g, '')), ...samm];
+  }
+  const nivM = frM[2].trim();
+  const nivaer = /^nivåer:/.test(nivM) ? nivM.replace(/^nivåer:/, '').split(',').map(x => x.trim().toLowerCase())
+    : /^endast /.test(nivM) ? [nivM.replace(/^endast /, '').trim().toLowerCase().replace('fördjupning', 'fordjupning')]
+    : /^alla/.test(nivM) ? ['enkel', 'standard', 'fordjupning'] : null;
+  if (!nivaer) { throw new Error('FAKTARUTA: okänd nivåangivelse "' + nivM + '"'); }
   if (!rubrik || !prosa.length) { throw new Error('FAKTARUTA: rubrik eller prosa saknas'); }
-  faktaruta = { underdel: frM[1].toLowerCase(), nivaer: frM[2].split(',').map(x => x.trim()), rubrik, prosa, samm };
+  faktaruta = { underdel: frM[1].toLowerCase(), nivaer, rubrik, prosa, samm };
   if (!K.faktaruta) { throw new Error('leveransen har en FAKTARUTA men konfigurationen saknar ankare'); }
 }
 function faktarutaHtml() {
   return `<aside class="faktaruta">
             <h3>${inline(faktaruta.rubrik)}</h3>
-${faktaruta.prosa.map(p => '            <p>' + inline(p) + '</p>').join('\n')}
+${faktaruta.prosa.map(p => '            <p>' + inline(p.replace(/\n/g, ' ')) + '</p>').join('\n')}
             <div class="faktaruta-sammanfattning">
 ${faktaruta.samm.map(r => '              <p><strong>' + inline(r) + '</strong></p>').join('\n')}
             </div>
@@ -127,7 +172,7 @@ ${faktaruta.samm.map(r => '              <p><strong>' + inline(r) + '</strong></
 
 // underdelar
 const underdelar = [];
-for (const m of kropp.matchAll(/\n# UNDERDEL ([A-D]) — ([^\n]+)\n([\s\S]*?)(?=\n# UNDERDEL |$)/g)) {
+for (const m of kropp.matchAll(/\n# UNDERDEL ([A-D]) — ([^\n]+)\n([\s\S]*?)(?=\n# |$)/g)) {
   const bok = m[1].toLowerCase(), titel = m[2].trim(), inneh = m[3];
   const sek = {};
   for (const s of inneh.matchAll(/\n## ([^\n]+)\n([\s\S]*?)(?=\n## |$)/g)) { if (/^FAKTARUTA/.test(s[1])) { continue; } sek[s[1].trim()] = s[2].replace(/\n---\s*$/, '').trim(); }
@@ -136,16 +181,7 @@ for (const m of kropp.matchAll(/\n# UNDERDEL ([A-D]) — ([^\n]+)\n([\s\S]*?)(?=
 if (!underdelar.length) { throw new Error('inga underdelar hittade'); }
 
 // ---------- inline-konvertering ----------
-const SUB = { '₀': '0', '₁': '1', '₂': '2', '₃': '3', '₄': '4', '₅': '5', '₆': '6', '₇': '7', '₈': '8', '₉': '9' };
-function ceify(s) {
-  return s.replace(/[₀-₉]/g, c => SUB[c]).replace(/²([⁺⁻])/g, '^2$1').replace(/³([⁺⁻])/g, '^3$1')
-    .replace(/⁺/g, '+').replace(/⁻/g, '-').replace(/→/g, '->').replace(/\s+/g, ' ').trim();
-}
-const FORMELTOKEN = /(?:[A-Z][a-z]?[₀-₉]*)+(?:[²³]?[⁺⁻])?|\be[⁺⁻]/g;
-function formler(s) {
-  // hela reaktionsrader (innehåller →) hanteras av anroparen; här bara enskilda tokens
-  return s.replace(FORMELTOKEN, t => /[₀-₉⁺⁻]/.test(t) ? `\\(\\ce{${ceify(t)}}\\)` : t);
-}
+const { ceify, formler } = require('./lib-notation.js');   // Unicode → \ce (tokens, tiopotenser, ⇌); reaktionsrader via ceify
 function inline(s) {
   let t = s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
   t = formler(t);
@@ -162,13 +198,24 @@ function nivaHtml(text, niva) {
     if (/^### /.test(b)) { ut.push({ typ: 'h2', html: `<h2>${inline(b.replace(/^### /, ''))}</h2>` }); continue; }
     const rader = b.split('\n');
     // fristående fetstilt reaktionsrad → display-formel
-    if (rader.length === 1 && /^\*\*[^*]+\*\*$/.test(b) && /→/.test(b)) {
-      ut.push({ typ: 'formel', html: `<div class="formel">\\[\\ce{${ceify(b.replace(/\*\*/g, ''))}}\\]</div>` }); continue;
+    if (rader.length === 1 && /^\*\*[^*]+\*\*$/.test(b) && /[→⇌]/.test(b)) {
+      ut.push({ typ: 'formel', html: `<div class="formel">\\[\\ce{${ceify(b.replace(/\*\*/g, ''))}}\\]</div>`, kalla: b }); continue;
     }
-    // flera rader som börjar med **Ord** → egna stycken (modellistan i avsnitt 3 C);
-    // en radbruten fortsättning (utan **) hör till raden före
-    const starter = rader.filter(r => /^\*\*[^*]+\*\*/.test(r)).length;
-    if (rader.length > 1 && starter >= 2 && /^\*\*/.test(rader[0])) {
+    // punktlista → <ul> (plattformens .brodtext ul); tabell → <table class="brodtext-tabell"> (kemi.css)
+    if (rader.every(r => /^- /.test(r))) {
+      ut.push({ typ: 'lista', html: '<ul>' + rader.map(r => '<li>' + inline(r.replace(/^- /, '')) + '</li>').join('') + '</ul>', kalla: b }); continue;
+    }
+    if (rader.every(r => /^\|/.test(r))) {
+      const celler = r => r.replace(/^\|\s*|\s*\|$/g, '').split(/\s*\|\s*/);
+      const just = celler(rader[1]).map(c => /:$/.test(c) && !/^:/.test(c) ? ' class="hoger"' : '');
+      const rad = (r, tag) => '<tr>' + celler(r).map((c, i) => `<${tag}${just[i] || ''}>${inline(c)}</${tag}>`).join('') + '</tr>';
+      ut.push({ typ: 'tabell', html: `<div class="tabell-ram"><table class="brodtext-tabell"><thead>${rad(rader[0], 'th')}</thead><tbody>${rader.slice(2).map(r => rad(r, 'td')).join('')}</tbody></table></div>`, kalla: b }); continue;
+    }
+    // flera rader av formen "**Term** — …" → egna stycken (modellistan i repetition 3 C);
+    // en radbruten fortsättning (utan **) hör till raden före. Fet inledning på flera rader i ett
+    // vanligt stycke ("**Citronsyra** är … **avkalkning** …") ska däremot förbli ett stycke.
+    const starter = rader.filter(r => /^\*\*[^*]+\*\* — /.test(r)).length;
+    if (rader.length > 1 && starter >= 2 && /^\*\*[^*]+\*\* — /.test(rader[0])) {
       const poster = [];
       rader.forEach(r => { if (/^\*\*/.test(r)) { poster.push(r); } else { poster[poster.length - 1] += ' ' + r; } });
       poster.forEach(r => ut.push({ typ: 'p', html: `<p>${inline(r)}</p>`, kalla: r })); continue;
@@ -189,7 +236,7 @@ function figur(f, niva, spec, cfg, titta) {
   if (aktiv) {
     let guide = '';
     if (niva === 'enkel') {
-      const punkter = bildguider[fil] || titta;
+      const punkter = bildguider[fil] || spec.guide || titta;
       guide = punkter ? `<div class="bildguide">
             <div class="bildguide-rubrik">👁 Titta efter</div>
             <ul>
@@ -204,9 +251,10 @@ ${lista(punkter)}
             <figcaption>${inline(cap)}</figcaption>
           </figure>`;
   }
+  const punkter = bildguider[fil] || spec.guide || titta;
   const guide = niva === 'enkel' ? `<div class="bildguide">
             <div class="bildguide-rubrik">👁 Titta efter</div>
-            <ul><li>{{bildguide saknas i leveransen – 2–5 punkter}}</li></ul>
+            <ul>${punkter ? '\n' + lista(punkter) + '\n            ' : '<li>{{bildguide saknas i leveransen – 2–5 punkter}}</li>'}</ul>
           </div>
           ` : '';
   const not = niva === 'fordjupning' ? ' OBS: bildtext för fördjupning saknas i leveransen – Standard-texten använd' : '';
@@ -238,7 +286,7 @@ function underdelHtml(u, i) {
       const arAktiv = Array.isArray(ank.aktiv) ? ank.aktiv.includes(n) : !!ank.aktiv;
       block.splice(traff[0] + 1, 0, { typ: 'bild', html: figur(f, n, spec, ank, tittaHar), aktiv: arAktiv });
       if (arAktiv && tittaHar && !bildguider[ank.fil || f]) { u.tittaAnvand = true; }
-      if (arAktiv && n === 'enkel') { rapport.bildguide.push(`${ank.fil || f}: ${bildguider[ank.fil || f] ? 'bildguide ur doc/bildguider' : (tittaHar ? 'bildguide ur leveransens Titta efter' : 'BILDGUIDE SAKNAS')}`); }
+      if (n === 'enkel') { rapport.bildguide.push(`${ank.fil || f}${arAktiv ? '' : ' (kommentar)'}: ${bildguider[ank.fil || f] ? 'bildguide ur doc/bildguider' : spec.guide ? 'bildguide ur leveransens bildspec' : (tittaHar ? 'bildguide ur leveransens Titta efter' : 'BILDGUIDE SAKNAS')}`); }
       rapport.ankare.push(`${f} ${u.bok}/${n} → efter "${ank[n].replace(/\n/g, ' ').slice(0, 40)}…"${arAktiv ? ' [AKTIV]' : ''}`);
     }
     // faktaruta efter ankarstycket och den figur som följer det
@@ -268,7 +316,7 @@ function underdelHtml(u, i) {
       ut += `\n          <!-- TITTA EFTER (levererad bildguide – bilden kommer separat; aktivera tillsammans med figuren)\n          <div class="bildguide">\n            <div class="bildguide-rubrik">👁 Titta efter</div>\n            <ul>\n${lista(titta)}\n            </ul>\n          </div>\n          -->\n`;
     }
     ut += '\n' + block.map(b => '          ' + b.html).join('\n') + '\n        </div>\n';
-    rapport.nivaer.push(`${u.bok}/${n}: ${block.filter(b => b.typ === 'p').length} stycken, ${block.filter(b => b.typ === 'h2').length} h2, ${block.filter(b => b.typ === 'bild' && b.aktiv).length} aktiva bilder, ${block.filter(b => b.typ === 'bild' && !b.aktiv).length} bildkommentar(er)`);
+    rapport.nivaer.push(`${u.bok}/${n}: ${block.filter(b => b.typ === 'p').length} stycken, ${block.filter(b => b.typ === 'h2').length} h2, ${block.filter(b => b.typ === 'lista' || b.typ === 'tabell').length} listor/tabeller, ${block.filter(b => b.typ === 'bild' && b.aktiv).length} aktiva bilder, ${block.filter(b => b.typ === 'bild' && !b.aktiv).length} bildkommentar(er)`);
   }
   ut += `\n      </div>\n`;
   return ut;

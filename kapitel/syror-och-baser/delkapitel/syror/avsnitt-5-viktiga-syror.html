@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viktiga syror: egenskaper, användning och säkerhet – Syror – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Syror</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">5. Viktiga syror: egenskaper, användning och säkerhet</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 5</span>
+      <h1>Viktiga syror: egenskaper, användning och säkerhet</h1>
+      <p class="subtitel">— syror i kroppen, köket och industrin —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Syrors gemensamma egenskaper</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Syror i vardagen och industrin</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Säkerhet</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-viktiga-syror">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Syrors gemensamma egenskaper ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Sura lösningar har <strong>pH under 7</strong></li>
+              <li>De <strong>leder ström</strong>, eftersom de innehåller joner</li>
+              <li>Många är <strong>frätande</strong></li>
+              <li>De kan reagera med vissa <strong>metaller</strong> och bilda vätgas</li>
+              <li>De kan <strong>neutraliseras</strong> av baser</li>
+            </ul>
+          </div>
+
+          <p>Nu har du lärt dig vad syror gör i vatten, hur man mäter surhet och vad som skiljer starka från svaga. I det här avsnittet samlar vi ihop det: vad har alla syror gemensamt, och vad används de till?</p>
+          <h2>Sur smak — men smaka aldrig</h2>
+          <p>Syror smakar surt. Citronsaft, vinäger och sura frukter smakar som de gör för att de innehåller syror.</p>
+          <p>Men det är inget test du får göra. <strong>Smaka aldrig på ett okänt ämne, och aldrig på något i ett laboratorium.</strong> Många syror är frätande, och du kan inte se på ett ämne vilken sorts det är.</p>
+          <h2>Lågt pH</h2>
+          <p>Alla sura vattenlösningar har pH under 7. Ju surare, desto lägre tal — precis som du lärde dig i avsnitt 2.</p>
+          <p>Det beror på att lösningen innehåller vätejoner som syran avgett. Ju fler vätejoner, desto lägre pH.</p>
+          <h2>De leder ström</h2>
+          <p>En sur lösning innehåller joner, och jonerna kan röra sig fritt i vattnet.</p>
+          <p>Elektrisk ström är laddning som rör sig, så en lösning med fria joner kan leda ström. Alla sura lösningar gör det, och det är samma sak du lärde dig om saltlösning i repetitionen.</p>
+          <h2>De reagerar med metaller</h2>
+          <p>Syror kan reagera med vissa metaller. När det sker bildas <strong>vätgas</strong>, som bubblar upp ur lösningen.</p>
+          <p>Det som händer är att metallatomerna avger elektroner, precis som när de bildar joner. Elektronerna tas upp av vätejonerna i lösningen, som därmed blir väteatomer igen. Två väteatomer bildar tillsammans en vätgasmolekyl.</p>
+          <!-- BILD: syra-och-metall.webp – levereras senare, avkommentera när filen finns i img/.
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Var bubblorna <strong>börjar</strong></li>
+              <li>Om det finns bubblor någon annanstans än vid metallen</li>
+              <li>Åt vilket håll de rör sig</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/syra-och-metall.webp" alt="Ett provrör med sur lösning och tre metallbitar på botten. Från metallen stiger bubblor uppåt genom vätskan mot ytan.">
+            <figcaption>När en syra reagerar med en metall bildas vätgas. Bubblorna är gasen på väg upp.</figcaption>
+          </figure>
+          -->
+          <p>Alla metaller reagerar dock inte lika lätt. Guld och platina reagerar knappt alls, medan zink och magnesium reagerar villigt.</p>
+          <h2>De kan vara frätande</h2>
+          <p>Många syror är frätande, särskilt koncentrerade lösningar av starka syror.</p>
+          <p>Men var försiktig med slutsatsen. Även koncentrerade <strong>svaga</strong> syror kan ge allvarliga skador. Hur farlig en syra är beror inte bara på om den kallas stark eller svag, utan också på hur koncentrerad den är.</p>
+          <h2>De kan neutraliseras</h2>
+          <p>Den sista gemensamma egenskapen är den som leder vidare.</p>
+          <p>Syror kan <strong>neutraliseras av baser</strong>. När en syra och en bas möts tar deras egenskaper ut varandra, och lösningen blir mindre sur och mindre basisk.</p>
+          <p>Vad baser är, och hur neutralisation går till, är vad de kommande delkapitlen handlar om.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Sur smak — men <strong>aldrig</strong> smaka på kemikalier</li>
+              <li><strong>pH under 7</strong>: fler oxoniumjoner än hydroxidjoner</li>
+              <li>Leder ström tack vare <strong>rörliga joner</strong></li>
+              <li>Reagerar med vissa metaller under bildning av <strong>vätgas</strong></li>
+              <li>Kan vara <strong>frätande</strong>, och kan <strong>neutraliseras</strong> av baser</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Syror är en stor grupp ämnen med många olika egenskaper. En del finns naturligt i mat och dryck, medan andra används inom industrin och kan vara starkt frätande. Trots skillnaderna har sura lösningar flera gemensamma egenskaper.</p>
+          <p>Sura ämnen förknippas ofta med <strong>sur smak</strong>. Citronsaft, vinäger och många frukter smakar surt eftersom de innehåller syror. Man får däremot <strong>aldrig smaka på ett okänt ämne eller på kemikalier i ett laboratorium</strong> för att undersöka om de är sura.</p>
+          <p>Sura vattenlösningar har <strong>pH under 7</strong>. Det beror på att de innehåller fler oxoniumjoner, \(\ce{H3O+}\), än hydroxidjoner, \(\ce{OH-}\). Ju större koncentrationen av oxoniumjoner är, desto lägre blir pH-värdet.</p>
+          <p>Sura lösningar <strong>leder elektrisk ström</strong> eftersom de innehåller rörliga joner. När exempelvis väteklorid löses i vatten bildas oxoniumjoner och kloridjoner som kan transportera elektrisk laddning genom lösningen.</p>
+          <p>Syror kan också <strong>reagera med vissa metaller</strong>. Vid sådana reaktioner kan det bildas vätgas. Alla metaller reagerar dock inte lika lätt med syror.</p>
+          <p>Det som händer är att metallatomerna avger elektroner, precis som när de bildar joner. Elektronerna tas upp av vätejonerna i lösningen, som därmed blir väteatomer igen. Två väteatomer bildar tillsammans en vätgasmolekyl, som bubblar upp ur lösningen.</p>
+          <!-- BILD: syra-och-metall.webp – levereras senare, avkommentera när filen finns i img/.
+          <figure class="brodtext-bild standard">
+            <img src="img/syra-och-metall.webp" alt="Ett provrör med sur lösning och tre metallbitar på botten. Från metallen stiger bubblor uppåt genom vätskan mot ytan.">
+            <figcaption>Metallatomerna avger elektroner till vätejonerna i lösningen, som därmed blir väteatomer. Två väteatomer bildar en vätgasmolekyl.</figcaption>
+          </figure>
+          -->
+          <p>Många syror kan vara <strong>frätande</strong>. Det gäller särskilt koncentrerade lösningar av starka syror, men även vissa koncentrerade svaga syror kan orsaka allvarliga skador. Hur farlig en syralösning är beror därför inte enbart på om syran kallas stark eller svag.</p>
+          <p>En annan viktig egenskap är att syror kan <strong>neutraliseras av baser</strong>. När en syra och en bas reagerar med varandra minskar deras sura respektive basiska egenskaper. Detta kallas <strong>neutralisation</strong> och är något vi kommer att undersöka närmare längre fram.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför vissa metaller reagerar och andra inte</h2>
+          <p>Standardtexten säger att alla metaller inte reagerar lika lätt med syror. Vad avgör det?</p>
+          <p>Svaret är hur villigt metallen avger elektroner, och metallerna går att rangordna efter det i en <strong>spänningsserie</strong>.</p>
+          <p>Överst står de villigaste: kalium, natrium, kalcium, magnesium. De avger elektroner så gärna att de reagerar kraftigt även med vatten. Längre ner kommer zink och järn, som reagerar med syror men inte med vatten. Längst ner står koppar, silver, guld och platina.</p>
+          <p>Gränsen går vid vätet. En metall som avger elektroner <strong>villigare än vätet</strong> kan lämna dem till vätejonerna och därmed reagera med syran. En metall som avger ogärnare än vätet kan inte det — och reagerar därför inte.</p>
+          <p>Koppar ligger under vätet, och det är därför ett kopparmynt inte löser sig i saltsyra. Zink ligger över, och därför bubblar det direkt.</p>
+          <h2>Därför är guld guld</h2>
+          <p>Nu blir något begripligt som människor lagt märke till i tusentals år.</p>
+          <p>Guld ligger allra längst ner i serien. Det avger elektroner så ogärna att nästan ingenting får det att reagera — varken syre i luften, vatten eller vanliga syror.</p>
+          <p>Det är därför guldföremål från antika gravar ser ut som nya medan järnföremål från samma tid är rostklumpar. Och det är därför guld, som är sällsynt och dessutom vackert, kom att användas som värdemätare.</p>
+          <p>Det finns ett undantag. En blandning av saltsyra och salpetersyra löser faktiskt guld, och den kallas <strong>kungsvatten</strong> just därför.</p>
+          <p><strong>Om modellen:</strong> standardtexten konstaterade att metaller reagerar olika. Med spänningsserien blir det möjligt att förutsäga vilka som gör det — och samma serie kommer tillbaka i delkapitlet om elektrokemi, där den ligger till grund för hur batterier fungerar.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Syror i vardagen och industrin ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Saltsyra</strong> finns i magsäcken och används till metallrengöring</li>
+              <li><strong>Svavelsyra</strong> används i batterier och gödsel</li>
+              <li><strong>Salpetersyra</strong> används till gödsel och sprängämnen</li>
+              <li><strong>Ättiksyra</strong> finns i ättika, <strong>citronsyra</strong> i citrusfrukter</li>
+              <li><strong>Kolsyra</strong> finns i läsk, <strong>mjölksyra</strong> i filmjölk, <strong>myrsyra</strong> hos myror</li>
+            </ul>
+          </div>
+
+          <p>Syror finns överallt. I kroppen, i kylskåpet, i bilen och i fabriker. Här går vi igenom de viktigaste och vad de används till.</p>
+          <h2>Saltsyra</h2>
+          <p>Saltsyra finns naturligt i din <strong>magsäck</strong>. Där gör den två saker: den hjälper till att bryta ner maten, och den dödar många av de bakterier som följer med.</p>
+          <p>Magsäcken har ett pH runt 1 till 2, vilket är mycket surt. Att magen klarar det utan att skada sig själv beror på ett slemlager som skyddar väggarna.</p>
+          <p>Inom industrin används saltsyra bland annat för att <strong>rengöra metall</strong>.</p>
+          <h2>Svavelsyra</h2>
+          <p>Svavelsyra är en av industrins allra viktigaste kemikalier. Den används vid tillverkning av <strong>gödselmedel</strong> och en mängd andra produkter.</p>
+          <p>Du har den troligen i bilen också. Svavelsyra är vätskan i vanliga <strong>blybatterier</strong>, som startar motorn.</p>
+          <h2>Salpetersyra</h2>
+          <p>Salpetersyra används framför allt inom industrin, till <strong>gödselmedel</strong> och till vissa <strong>sprängämnen</strong>.</p>
+          <h2>Ättiksyra</h2>
+          <p>Ättiksyra är det som ger <strong>ättika och vinäger</strong> deras sura smak.</p>
+          <p>Den används i matlagning och för att <strong>konservera</strong> livsmedel. Den sura miljön gör det svårt för bakterier att växa, och det är därför inlagd gurka håller sig.</p>
+          <h2>Citronsyra</h2>
+          <p>Citronsyra finns naturligt i <strong>citrusfrukter</strong> som citron och lime.</p>
+          <p>Den används i livsmedel för att ge syrlig smak, och den är också bra på att <strong>lösa kalk</strong>. Därför finns citronsyra i många avkalkningsmedel för kaffebryggare och vattenkokare.</p>
+          <h2>Kolsyra</h2>
+          <p>Kolsyra bildas när <strong>koldioxid löser sig i vatten</strong>. Det är därför kolsyrade drycker är lite sura.</p>
+          <p>Kolsyra har också stor betydelse i naturen. När koldioxid löser sig i sjöar och hav bildas kolsyra, och de olika former den kan anta hjälper till att hålla vattnets pH någorlunda stabilt. Det blir viktigt i delkapitlet om försurning.</p>
+          <h2>Mjölksyra</h2>
+          <p>Mjölksyra bildas av <strong>mjölksyrabakterier</strong> och används vid framställning av yoghurt, filmjölk och syrade grönsaker.</p>
+          <p>Man säger ofta att man får mjölksyra i musklerna när man tränar hårt. Det är en förenkling — ämnet finns i kroppen mest i sin jonform, som kallas <strong>laktat</strong>. Laktat bildas när musklerna arbetar intensivt och används sedan vidare i kroppen.</p>
+          <h2>Myrsyra</h2>
+          <p>Myrsyra har fått sitt namn av <strong>myror</strong>, som använder den. Det är delvis därför myrbett svider.</p>
+          <p>Inom jordbruket används myrsyra vid <strong>ensilering</strong>, alltså för att konservera djurfoder. Den sura miljön hindrar fodret från att ruttna.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Tre starka syror: saltsyra, svavelsyra, salpetersyra — främst industri</li>
+              <li>Fem svaga: ättiksyra, citronsyra, kolsyra, mjölksyra, myrsyra — främst natur och livsmedel</li>
+              <li>Svavelsyra är en av industrins <strong>viktigaste</strong> kemikalier</li>
+              <li>Kolsyran ingår i naturens system för att hålla pH stabilt</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Syror finns både i naturen och i produkter som vi använder varje dag. De används också som viktiga råvaror inom industrin.</p>
+          <h2>Saltsyra</h2>
+          <p><strong>Saltsyra</strong> är väteklorid, HCl, löst i vatten. Den finns naturligt i magsäcken, där den bidrar till den mycket sura miljön som behövs för matsmältningen och hjälper till att oskadliggöra många mikroorganismer. Inom industrin används saltsyra bland annat för att rengöra och behandla metallytor.</p>
+          <h2>Svavelsyra</h2>
+          <p><strong>Svavelsyra, \(\ce{H2SO4}\)</strong>, är en av industrins viktigaste kemikalier. Den används bland annat vid tillverkning av gödselmedel och många andra kemiska produkter. Svavelsyra används också som elektrolyt i vanliga blybatterier, exempelvis startbatterier i många bilar.</p>
+          <h2>Salpetersyra</h2>
+          <p><strong>Salpetersyra, \(\ce{HNO3}\)</strong>, används framför allt inom kemisk industri. Den är viktig vid framställning av gödselmedel och används även vid tillverkning av vissa sprängämnen och andra kemiska produkter.</p>
+          <h2>Ättiksyra</h2>
+          <p><strong>Ättiksyra, \(\ce{CH3COOH}\)</strong>, är en svag syra som ger ättika och vinäger deras sura smak. Den används i matlagning och för konservering av livsmedel eftersom den sura miljön hämmar tillväxten av många mikroorganismer. Ättiksyra används också i många industriella processer.</p>
+          <h2>Citronsyra</h2>
+          <p><strong>Citronsyra</strong> är en svag syra som finns naturligt i bland annat citrusfrukter. Den används i livsmedel för att ge syrlig smak och för att reglera surhetsgraden. Citronsyra kan också användas för <strong>avkalkning</strong>, eftersom den kan hjälpa till att lösa upp kalkavlagringar.</p>
+          <h2>Kolsyra</h2>
+          <p><strong>Kolsyra, \(\ce{H2CO3}\)</strong>, bildas när koldioxid löser sig i vatten och reagerar med vattenmolekyler. Den förekommer därför bland annat i kolsyrade drycker.</p>
+          <p>Kolsyra har också stor betydelse i naturen. När koldioxid löser sig i vatten bildas kolsyra, och kolsyran kan sedan avge sina vätejoner i två steg. Det gör att flera olika partiklar finns i vattnet samtidigt, och de kan omvandlas till varandra. Tillsammans hjälper de till att hålla vattnets pH någorlunda stabilt, även om något surt eller basiskt tillförs. Det har stor betydelse i sjöar, hav och grundvatten.</p>
+          <h2>Mjölksyra</h2>
+          <p><strong>Mjölksyra</strong> förekommer i många livsmedel och bildas bland annat av mjölksyrabakterier. Bakteriernas ämnesomsättning används vid framställning av exempelvis yoghurt och syrade grönsaker.</p>
+          <p>I kroppen talar man ibland om att "mjölksyra bildas i musklerna" vid hårt arbete. Det är en förenkling. Vid kroppens pH förekommer ämnet huvudsakligen i sin jonform, <strong>laktat</strong>. Laktat bildas när musklerna arbetar intensivt och kan sedan användas vidare i kroppens ämnesomsättning.</p>
+          <h2>Myrsyra</h2>
+          <p><strong>Myrsyra, HCOOH</strong>, är en svag syra som bland annat förekommer hos myror och har fått sitt namn därifrån. Myrsyra används också inom jordbruket, bland annat vid <strong>ensilering</strong>, där den sura miljön hjälper till att bevara djurfoder.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Svavelsyra som mått på ett land</h2>
+          <p>Standardtexten kallar svavelsyra en av industrins viktigaste kemikalier. Det är en underdrift.</p>
+          <p>Svavelsyra är den kemikalie som tillverkas i störst mängd i världen — omkring 250 miljoner ton per år. Ingen annan kommer i närheten.</p>
+          <p>Skälet är att den behövs i så många olika processer. Den största användningen är gödselmedel: fosfat i berggrunden är olösligt och kan inte tas upp av växter, men behandlas det med svavelsyra blir det lösligt. En stor del av världens matproduktion bygger på det steget.</p>
+          <p>Därutöver används den vid metallframställning, oljeraffinering, tillverkning av färgämnen, plaster, läkemedel och batterier.</p>
+          <p>Under 1800- och 1900-talet blev ett lands svavelsyraproduktion ett vanligt mått på dess industriella kapacitet. Tanken var enkel: eftersom syran behövs i nästan all tillverkning säger mängden något om hur mycket landet faktiskt producerar. Måttet används sällan idag, men det säger något om hur grundläggande ämnet är.</p>
+          <h2>Varför magen inte fräter sönder sig själv</h2>
+          <p>Saltsyran i magsäcken har pH omkring 1 till 2. Det är tillräckligt surt för att lösa upp de flesta material, och magsäckens vägg består av samma sorts protein som maten som bryts ner.</p>
+          <p>Att magen ändå klarar sig beror på ett skyddssystem i flera lager.</p>
+          <p>Cellerna i magsäcksväggen utsöndrar ett tjockt lager <strong>slem</strong> som syran har svårt att tränga igenom. Under slemmet utsöndras dessutom <strong>vätekarbonat</strong>, som neutraliserar den syra som ändå tar sig in. Och magsäckens celler byts ut ovanligt snabbt — hela ytskiktet förnyas på några dagar.</p>
+          <p>När systemet sviktar uppstår problem. Magsår beror ofta på bakterien <em>Helicobacter pylori</em>, som kan överleva i den sura miljön och skadar slemhinnan. Halsbränna beror på att syra kommer upp i matstrupen, som saknar magsäckens skydd.</p>
+          <p><strong>Om modellen:</strong> standardtexten nämner att saltsyra finns i magsäcken. Att den gör det utan att skada kroppen är i sig ett litet kemiskt mästerverk — och neutralisationen med vätekarbonat är precis det som nästa delkapitel handlar om.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Säkerhet ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Läs alltid <strong>farosymbolerna</strong> innan du använder en kemikalie</li>
+              <li>Använd <strong>skyddsglasögon</strong> när det finns risk för stänk</li>
+              <li><strong>Smaka aldrig</strong>, och undvik hud och kläder</li>
+              <li><strong>SIV:</strong> syra i vatten, aldrig tvärtom</li>
+              <li>Vid stänk: <strong>skölj med mycket vatten</strong> och säg till direkt</li>
+            </ul>
+          </div>
+
+          <p>Syror är användbara men kan vara farliga. Reglerna nedan är inte formaliteter — de finns för att olyckor med syror går fort och kan ge bestående skador.</p>
+          <h2>Innan du börjar</h2>
+          <p>Läs alltid <strong>farosymbolerna</strong> på flaskan och följ lärarens instruktioner.</p>
+          <p>Kom ihåg att en kemikalie kan vara farlig även om syran i den kallas svag. Koncentrationen spelar lika stor roll som styrkan.</p>
+          <h2>När du arbetar</h2>
+          <p>Använd <strong>skyddsglasögon</strong> när det finns minsta risk för stänk. Ögon läker inte som hud gör.</p>
+          <p><strong>Smaka aldrig</strong> på något i ett laboratorium, och undvik att få kemikalier på händer och kläder.</p>
+          <p>Ska du späda en koncentrerad syra gäller <strong>SIV — syra i vatten</strong>. Häll syran långsamt i vattnet, aldrig tvärtom.</p>
+          <h2>Om något går fel</h2>
+          <p>Får du syra på huden: <strong>skölj omedelbart med rikligt med vatten</strong>, länge. Ta av kläder som fått syra på sig.</p>
+          <p>Får du stänk i ögat: skölj omedelbart med mycket vatten under lång tid, och säg till din lärare direkt. Vänta inte och se om det går över.</p>
+          <p>Vid större spill: försök inte lösa det själv. <strong>Varna de andra</strong> och följ lärarens instruktioner.</p>
+          <h2>Varför det spelar roll</h2>
+          <p>Syror är både användbara och nödvändiga. De finns i din mage, i maten du äter och i nästan allt som tillverkas.</p>
+          <p>Men samma egenskaper som gör dem användbara gör dem farliga om de hanteras fel. Att förstå vad de gör är en del av att kunna använda dem säkert.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En kemikalie kan vara farlig även om syran kallas svag</li>
+              <li>Kontrollera <strong>farosymboler</strong> och följ instruktioner</li>
+              <li><strong>Skyddsglasögon</strong> vid risk för stänk</li>
+              <li><strong>SIV-regeln</strong> vid utspädning</li>
+              <li>Vid stänk: skölj rikligt, ta av förorenade kläder, kontakta lärare</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Syror ska alltid hanteras med respekt. En kemikalie kan vara farlig även om syran som ingår klassificeras som svag. Därför ska man alltid följa instruktioner och kontrollera kemikaliens farosymboler innan den används.</p>
+          <p>I laboratorium används <strong>skyddsglasögon</strong> när det finns risk för stänk. Man får aldrig smaka på laboratoriekemikalier och bör undvika att få dem på hud och kläder.</p>
+          <p>När en koncentrerad syra ska spädas med vatten gäller <strong>SIV-regeln — Syra I Vatten</strong>. Syran tillsätts försiktigt till vattnet. Man ska inte hälla vatten i koncentrerad syra eftersom blandningen kan bli mycket varm och syra kan stänka upp.</p>
+          <p>Om man får syra på huden ska det förorenade området <strong>omedelbart sköljas med rikligt med vatten</strong> och förorenade kläder tas bort. Vid stänk i ögonen ska ögat omedelbart sköljas med mycket vatten under lång tid och ansvarig vuxen eller lärare kontaktas direkt. Vid större spill i ett laboratorium ska man inte försöka lösa situationen själv utan varna andra och följa lärarens instruktioner.</p>
+          <p>Syror kan alltså vara både användbara och nödvändiga. Samtidigt måste deras kemiska egenskaper förstås för att de ska kunna användas på ett säkert sätt.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-5-viktiga-syror.json"
+           data-avsnitt="a5_viktiga-syror">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-5-viktiga-syror.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a5_viktiga-syror';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'syror';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

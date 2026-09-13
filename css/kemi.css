@@ -9,7 +9,7 @@
    Innehåll:
      1. Tokens och hero-banner            (🎨 ämneseget – signaturfärg)
      2. faktaruta                          (🎨 ny komponent, KOMPONENTER DEL 4.6)
-     3. formel + strukturformel            (🎨 KOMPONENTER DEL 8)
+     3. formel + strukturformel + brödtexttabell (🎨 KOMPONENTER DEL 8; tabellen kemi-egen)
      4. Disabled nivåknapp                 (plattformsbeteende, avsnitt.js)
      5. MathJax-finish                     (inline-formler i EB Garamond-text)
      7. Patina-överskrivningar av geografi.css/flipcards.css (godkänd lista)
@@ -161,6 +161,38 @@
   border: none;
   border-radius: 0;
 }
+
+/* Brödtexttabell (Syror avsnitt 2 och 4: små uppslagstabeller i nivåtexten). Plattformen har ingen
+   tabellstil alls (Historia/Geografi använder inga tabeller i brödtext), så detta är kemi-eget.
+   Bara befintliga tokens och samma ram som .formel – inga nya färger. Kandidat till plattform. */
+.tabell-ram {                  /* linjerar med brödtextens vänsterkant (geografi.css B2), tabellen får vara smalare */
+  max-width: var(--las-bredd);
+  margin: 1.2em auto;
+  overflow-x: auto;
+}
+.brodtext-tabell {
+  margin: 0;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  background-color: var(--paper-light);
+  border: 1px solid rgba(90, 150, 104, 0.35);
+  border-left: 3px solid var(--accent);
+}
+.brodtext-tabell th,
+.brodtext-tabell td {
+  padding: 0.4em 0.9em;
+  text-align: left;
+  border-bottom: 1px solid rgba(27, 42, 54, 0.15);
+  vertical-align: top;
+}
+.brodtext-tabell th {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--accent-text);
+}
+.brodtext-tabell tbody tr:last-child td { border-bottom: none; }
+.brodtext-tabell .hoger { text-align: right; }   /* leveransens |---:| */
 
 /* ---------- 4. Disabled nivåknapp ---------- */
 /* Sätts av avsnitt.js när nivån saknar innehåll i aktiv underdel.

@@ -1,4 +1,4 @@
-// bilder-svg.js – genererar de fyra text-/notationsbilder som inte går som AI-bild
+// bilder-svg.js – genererar de text-/notationsbilder som inte går som AI-bild
 // (Joachims spec 2026-09-13). Skriver till kapitel/syror-och-baser/delkapitel/repetition/img/.
 // Kör: node verktyg/bilder-svg.js
 //
@@ -7,7 +7,9 @@
 //   jonbindning-natrium-klor.svg        avsnitt 3 B – Na + Cl → Na+ + Cl- (staplad layout)
 //   polar-vattenmolekyl.svg             avsnitt 4 A – kulpinnmodell med δ− / δ+ och pilar
 //   elektronpar-vate.svg                avsnitt 3 C – två fria väteatomer / H2 med delat elektronpar (ingen text)
-//   vatejon-och-oxoniumjon.svg          delkapitel Syror – H2O + H+ → H3O+ i tre lager (skrivs till delkapitel/syror/img/)
+//   vatejon-och-oxoniumjon.svg          delkapitel Syror 1 B – H2O + H+ → H3O+ i tre lager (skrivs till delkapitel/syror/img/)
+//   ph-skalan.svg                       delkapitel Syror 2 A – skala 0–14 med exempel (syror/img/)
+//   fyra-kombinationerna.svg            delkapitel Syror 4 B – stark/svag × koncentrerad/utspädd (syror/img/)
 //
 // Färger: linjer/text #2d4a35, rutor/väte #f5f0e4, syre #C0392B, proton #C64B3A,
 // neutron #8A8A8A, elektron #3D6BA8. Transparent bakgrund. Typsnitt: Georgia-fallback
@@ -252,4 +254,96 @@ function vatten(cx, cy, rO, rH, avst, stav) {
   fs.writeFileSync(path.join(UT2, 'vatejon-och-oxoniumjon.svg'), svg(W, H,
     'Vattenmolekyl plus vätejon ger oxoniumjon, i tre lager: molekylbilder, ord och formeln H2O + H+ → H3O+', ut));
 }
-console.log('skrev 6 svg (5 till repetition/img, 1 till syror/img)', path.relative(path.join(__dirname, '..'), UT));
+
+// ---------- 7. pH-skalan (delkapitel Syror, avsnitt 2 A) ----------
+// Färger: skalans övergång är inte hex-specificerad i leveransen ("djupt röd … mörkblå").
+// FÖRSLAG (ej godkända 2026-09-13): rött = SYRE #C0392B, orange #E07B39, gult #E8C547,
+// grönt = patina #5a9668, ljusblått #a8c4d8 (Joachims vätskefärg), mörkblått #2F4F8F.
+{
+  const UT2 = path.join(__dirname, '..', 'kapitel', 'syror-och-baser', 'delkapitel', 'syror', 'img');
+  const W = 760, H = 300;
+  const X0 = 50, X1 = 710, Y = 150, HOJD = 34;
+  const px = ph => r2(X0 + (X1 - X0) * ph / 14);
+  const STOPP = [[0, '#C0392B'], [3, '#E07B39'], [5, '#E8C547'], [7, '#5a9668'], [9, '#a8c4d8'], [14, '#2F4F8F']];
+  let ut = `  <defs>
+    <linearGradient id="ph" x1="0" x2="1" y1="0" y2="0">
+${STOPP.map(([ph, f]) => `      <stop offset="${r2(ph / 14 * 100)}%" stop-color="${f}"/>`).join('\n')}
+    </linearGradient>
+  </defs>
+  <rect x="${X0}" y="${Y}" width="${X1 - X0}" height="${HOJD}" rx="4" fill="url(#ph)" stroke="${INK}" stroke-width="1.5"/>
+`;
+  for (let ph = 0; ph <= 14; ph++) {
+    ut += `  <line x1="${px(ph)}" y1="${Y + HOJD}" x2="${px(ph)}" y2="${Y + HOJD + 7}" stroke="${INK}" stroke-width="1.5"/>
+  <text x="${px(ph)}" y="${Y + HOJD + 24}" text-anchor="middle" font-size="15" fill="${INK}" ${FONT}>${ph}</text>
+`;
+  }
+  // etiketter ovanför med linjer ner till rätt position (växlande höjd så att texterna inte krockar)
+  const ETIK = [[1.5, 'Magsyra', 1], [2.5, 'Citronsaft', 0], [5, 'Kaffe', 1], [7, 'Rent vatten', 0], [9.5, 'Tvållösning', 1]];
+  for (const [ph, namn, rad] of ETIK) {
+    const ty = rad ? 62 : 96;
+    ut += `  <line x1="${px(ph)}" y1="${ty + 8}" x2="${px(ph)}" y2="${Y - 4}" stroke="${INK}" stroke-width="1.5"/>
+  <circle cx="${px(ph)}" cy="${Y - 4}" r="3" fill="${INK}"/>
+  <text x="${px(ph)}" y="${ty}" text-anchor="middle" font-size="17" fill="${INK}" ${FONT}>${namn}</text>
+`;
+  }
+  // SURT / NEUTRALT / BASISKT
+  const ordY = Y + HOJD + 62;
+  ut += `  <text x="${px(3.5)}" y="${ordY}" text-anchor="middle" font-size="19" letter-spacing="2" fill="${INK}" ${FONT}>SURT</text>
+  <text x="${px(7)}" y="${ordY}" text-anchor="middle" font-size="19" letter-spacing="2" fill="${INK}" ${FONT}>NEUTRALT</text>
+  <text x="${px(10.5)}" y="${ordY}" text-anchor="middle" font-size="19" letter-spacing="2" fill="${INK}" ${FONT}>BASISKT</text>
+`;
+  fs.mkdirSync(UT2, { recursive: true });
+  fs.writeFileSync(path.join(UT2, 'ph-skalan.svg'), svg(W, H,
+    'pH-skalan från 0 till 14, färglagd från rött till blått, med magsyra, citronsaft, kaffe, rent vatten och tvållösning utsatta', ut));
+}
+
+// ---------- 8. De fyra kombinationerna (delkapitel Syror, avsnitt 4 B) ----------
+// Färger enligt leveransen: ljusblått #a8c4d8, tegelröd #C64B3A, grått #8A8A8A, konturer/text #2d4a35.
+{
+  const UT2 = path.join(__dirname, '..', 'kapitel', 'syror-och-baser', 'delkapitel', 'syror', 'img');
+  const VATSKA = '#a8c4d8', PROTON = '#C64B3A';
+  const W = 640, H = 560, GB = 220, GH = 190;   // glasets bredd/höjd
+  const KOL = [80, 340], RAD = [30, 300];
+  // deterministisk spridning (LCG) så att bilden blir densamma vid varje bygge
+  let seed = 7;
+  const slump = () => { seed = (seed * 1103515245 + 12345) % 2147483648; return seed / 2147483648; };
+  const glas = (x, y, roda, graa, etikett) => {
+    const vTop = y + 55, vBot = y + GH - 3, vX = x + 3, vB = GB - 6;
+    // vätskan följer glasets innerkontur (samma rundning som konturen, 3 px innanför)
+    let ut = `  <g aria-label="${etikett}">
+  <path d="M${vX} ${vTop}H${vX + vB}V${vBot - 9}Q${vX + vB} ${vBot} ${vX + vB - 9} ${vBot}H${vX + 9}Q${vX} ${vBot} ${vX} ${vBot - 9}Z" fill="${VATSKA}"/>
+`;
+    // partiklar i ett rutnät med jitter, roda först, sedan graa ovaler
+    const celler = [];
+    const NC = 5, NR = 4, cw = (vB - 30) / NC, ch = (vBot - vTop - 30) / NR;
+    for (let r = 0; r < NR; r++) { for (let c = 0; c < NC; c++) { celler.push([vX + 15 + c * cw + cw / 2, vTop + 15 + r * ch + ch / 2]); } }
+    for (let i = celler.length - 1; i > 0; i--) { const j = Math.floor(slump() * (i + 1)); [celler[i], celler[j]] = [celler[j], celler[i]]; }
+    let k = 0;
+    for (let i = 0; i < roda; i++, k++) {
+      const [cx, cy] = celler[k]; const jx = r2(cx + (slump() - 0.5) * 10), jy = r2(cy + (slump() - 0.5) * 10);
+      ut += `  <circle cx="${jx}" cy="${jy}" r="9" fill="${PROTON}" stroke="#fff" stroke-width="1"/>
+  <path d="M${r2(jx - 4.5)} ${jy}H${r2(jx + 4.5)}M${jx} ${r2(jy - 4.5)}V${r2(jy + 4.5)}" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+`;
+    }
+    for (let i = 0; i < graa; i++, k++) {
+      const [cx, cy] = celler[k]; const jx = r2(cx + (slump() - 0.5) * 6), jy = r2(cy + (slump() - 0.5) * 6);
+      ut += `  <ellipse cx="${jx}" cy="${jy}" rx="12" ry="8" fill="${GRA}" transform="rotate(${r2((slump() - 0.5) * 40)} ${jx} ${jy})"/>
+`;
+    }
+    // bägarglasets kontur: öppen upptill med liten pip, rundade nedre hörn
+    ut += `  <path d="M${x - 10} ${y + 8} L${x} ${y + 14} V${y + GH - 12} Q${x} ${y + GH} ${x + 12} ${y + GH} H${x + GB - 12} Q${x + GB} ${y + GH} ${x + GB} ${y + GH - 12} V${y + 14}" fill="none" stroke="${INK}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="${x + GB / 2}" y="${y + GH + 34}" text-anchor="middle" font-size="19" font-style="italic" fill="${INK}" ${FONT}>${etikett}</text>
+  </g>
+`;
+    return ut;
+  };
+  let ut = '';
+  ut += glas(KOL[0], RAD[0], 14, 0, 'Stark och koncentrerad');
+  ut += glas(KOL[1], RAD[0], 3, 0, 'Stark och utspädd');
+  ut += glas(KOL[0], RAD[1], 3, 10, 'Svag och koncentrerad');
+  ut += glas(KOL[1], RAD[1], 1, 3, 'Svag och utspädd');
+  fs.writeFileSync(path.join(UT2, 'fyra-kombinationerna.svg'), svg(W, H,
+    'Fyra bägarglas: stark och koncentrerad, stark och utspädd, svag och koncentrerad, svag och utspädd – röda vätejoner och gråa hela syrapartiklar', ut));
+}
+
+console.log('skrev 8 svg (5 till repetition/img, 3 till syror/img)', path.relative(path.join(__dirname, '..'), UT));

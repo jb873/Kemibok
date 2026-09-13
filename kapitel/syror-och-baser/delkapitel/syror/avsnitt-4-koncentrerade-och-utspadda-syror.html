@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koncentrerade och utspädda syror – Syror – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Syror</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">4. Koncentrerade och utspädda syror</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 4</span>
+      <h1>Koncentrerade och utspädda syror</h1>
+      <p class="subtitel">— hur mycket syra som finns i lösningen —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Koncentration</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">De fyra kombinationerna</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Att späda ut</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-koncentrerade-och-utspadda-syror">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Koncentration ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Koncentration</strong> är hur mycket syra det finns i en viss mängd lösning</li>
+              <li>Mycket syra = <strong>koncentrerad</strong></li>
+              <li>Lite syra = <strong>utspädd</strong></li>
+              <li>Koncentration mäts ofta i <strong>mol/dm³</strong></li>
+              <li>Koncentration och styrka är <strong>två olika saker</strong></li>
+            </ul>
+          </div>
+
+          <p>I förra avsnittet handlade allt om hur <strong>lätt</strong> en syra avger sina vätejoner. Nu ska vi titta på en helt annan sak: hur <strong>mycket</strong> syra det finns.</p>
+          <p>De två har inget med varandra att göra, och det är därför de behöver var sitt avsnitt.</p>
+          <h2>Mycket eller lite</h2>
+          <p>Tänk dig att du löser en sked ättika i ett stort glas vatten, och sedan häller ett helt glas ättika utan vatten alls. Det är samma syra i båda fallen — men mängden skiljer sig enormt.</p>
+          <p>För att beskriva det använder man ordet <strong>koncentration</strong>. Koncentration betyder hur mycket löst ämne det finns i en viss mängd lösning.</p>
+          <p>En lösning med mycket syra i förhållande till mängden vätska kallas <strong>koncentrerad</strong>. En lösning med lite syra kallas <strong>utspädd</strong>.</p>
+          <p>Du känner igen det från saft. Koncentrerad saft är stark och nästan sirapsaktig; utspädd saft är det du dricker.</p>
+          <h2>Hur man mäter det</h2>
+          <p>Inom kemin räcker det sällan att säga mycket eller lite. Man vill ha ett tal.</p>
+          <p>Det vanligaste måttet är <strong>mol per kubikdecimeter</strong>, som skrivs mol/dm³. En kubikdecimeter är samma sak som en liter, så du kan lika gärna tänka mol per liter.</p>
+          <p>En lösning på 1 mol/dm³ innehåller alltså 1 mol av ämnet i varje liter. Är talet högre finns det mer syra per liter, och lösningen är mer koncentrerad.</p>
+          <h2>De två orden du måste hålla isär</h2>
+          <p>Nu är det dags att sätta ihop det här avsnittet med det förra, och det är här det gäller att vara noga.</p>
+          <p><strong>Stark och svag</strong> beskriver hur lätt syran avger sina vätejoner. Det är en egenskap hos själva syran, och den ändras aldrig.</p>
+          <p><strong>Koncentrerad och utspädd</strong> beskriver hur mycket syra som finns i lösningen. Det är något du kan ändra genom att hälla i mer vatten.</p>
+          <p>En syra är alltså alltid lika stark eller svag — men samma syra kan vara koncentrerad ena stunden och utspädd nästa.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Koncentration</strong> anger mängden löst ämne per mängd lösning</li>
+              <li><strong>Koncentrerad</strong> och <strong>utspädd</strong> beskriver koncentrationen</li>
+              <li>Enheten är ofta <strong>mol per kubikdecimeter, mol/dm³</strong></li>
+              <li>En kubikdecimeter är detsamma som en liter</li>
+              <li><strong>Stark/svag</strong> och <strong>koncentrerad/utspädd</strong> beskriver olika egenskaper</li>
+            </ul>
+          </div>
+
+          <p class="inledning">I förra avsnittet såg vi att syror kan vara <strong>starka eller svaga</strong>. Syrans styrka beskriver hur lätt syran avger sina vätejoner. Det säger däremot inte hur mycket syra som finns i lösningen.</p>
+          <p>För att beskriva hur mycket av ett ämne som finns löst i en viss mängd lösning använder man begreppet <strong>koncentration</strong>.</p>
+          <p>En lösning som innehåller mycket syra i förhållande till mängden lösning är <strong>koncentrerad</strong>. En lösning som innehåller lite syra i förhållande till mängden lösning är <strong>utspädd</strong>.</p>
+          <p>Koncentration kan anges på olika sätt. Inom kemin används ofta enheten <strong>mol per kubikdecimeter, mol/dm³</strong>. En koncentration på 1 mol/dm³ betyder att det finns 1 mol av det lösta ämnet per kubikdecimeter lösning. Eftersom en kubikdecimeter är lika med en liter kan man också tänka 1 mol per liter lösning.</p>
+          <p>Det är därför viktigt att hålla isär två begrepp:</p>
+          <p><strong>Stark eller svag</strong> beskriver hur lätt syran avger vätejoner.</p>
+          <p><strong>Koncentrerad eller utspädd</strong> beskriver hur mycket syra som finns i en viss mängd lösning.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Vad en mol är</h2>
+          <p>Standardtexten använder enheten mol utan att förklara den. Det är rimligt — mol hör egentligen till ett annat område av kemin — men den är värd en förklaring, för den är enklare än den låter.</p>
+          <p>Atomer och molekyler är så små att antal blir ohanterliga. Ett glas vatten innehåller i storleksordningen tiotusen triljoner molekyler, och sådana tal går inte att räkna med.</p>
+          <p>Därför bestämde man sig för att räkna i <strong>buntar</strong>, precis som man räknar ägg i dussin. En mol är en bunt om ungefär 602 000 000 000 000 000 000 000 partiklar — ett tal som kallas Avogadros konstant.</p>
+          <p>Talet är inte godtyckligt valt. Det är bestämt så att en mol av ett ämne väger lika många gram som ämnets atommassa. En mol kolatomer väger 12 gram, en mol vatten väger 18 gram. Det gör att man kan gå mellan antal partiklar och vikt på en våg.</p>
+          <h2>Därför är mol/dm³ ett bra mått</h2>
+          <p>Nu blir enheten begriplig.</p>
+          <p>När kemi handlar om reaktioner är det <strong>antalet partiklar</strong> som spelar roll, inte vikten. Två vätejoner reagerar med en syrejon oavsett hur mycket de väger.</p>
+          <p>Anger man koncentrationen i gram per liter blir det svårt att jämföra olika ämnen, eftersom deras partiklar väger olika mycket. Anger man den i mol per liter jämför man i stället antal, och då blir reaktionerna direkt jämförbara.</p>
+          <p>En lösning med 0,1 mol/dm³ saltsyra och en med 0,1 mol/dm³ salpetersyra innehåller lika många syrapartiklar per liter, trots att de väger olika.</p>
+          <p><strong>Om modellen:</strong> standardtexten införde en enhet. Med mol som bunt blir enheten ett sätt att räkna partiklar i praktiken — och det är precis vad kemiska beräkningar handlar om på gymnasiet.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — De fyra kombinationerna ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Styrka och koncentration kan kombineras på <strong>fyra</strong> sätt</li>
+              <li>Stark och koncentrerad, stark och utspädd</li>
+              <li>Svag och koncentrerad, svag och utspädd</li>
+              <li>Man kan <strong>inte</strong> avgöra styrkan genom att mäta pH</li>
+              <li>En utspädd stark syra kan ha högre pH än en koncentrerad svag</li>
+            </ul>
+          </div>
+
+          <p>Eftersom styrka och koncentration är två olika saker kan de kombineras fritt. Det ger fyra möjliga sorters lösningar, och de är värda att gå igenom en i taget.</p>
+          <h2>Stark och koncentrerad</h2>
+          <p>Koncentrerad saltsyra är exemplet. Det finns mycket syra i lösningen, och eftersom saltsyra är stark avger nästan varje partikel sin vätejon.</p>
+          <p>Resultatet blir väldigt många vätejoner, och därmed mycket lågt pH. Det här är den farligaste sorten.</p>
+          <h2>Stark och utspädd</h2>
+          <p>Häller du en liten skvätt saltsyra i mycket vatten är syran fortfarande stark — det ändras aldrig. Varje partikel avger fortfarande sin vätejon lika villigt.</p>
+          <p>Men eftersom det finns så få partiklar blir det ändå få vätejoner totalt. pH blir betydligt högre än i den koncentrerade lösningen.</p>
+          <h2>Svag och koncentrerad</h2>
+          <p>Koncentrerad ättiksyra innehåller mycket syra. Men eftersom ättiksyra är svag avger bara en liten del av partiklarna sin vätejon.</p>
+          <p>Det blir alltså många syrapartiklar i lösningen men relativt få vätejoner.</p>
+          <h2>Svag och utspädd</h2>
+          <p>Utspädd ättiksyra är den mildaste kombinationen. Lite syra, och dessutom en syra som avger ogärna.</p>
+          <!-- BILD: fyra-kombinationerna.svg – levereras senare, avkommentera när filen finns i img/.
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna de <strong>röda</strong> partiklarna i varje glas</li>
+              <li>Vilka glas som innehåller <strong>gråa</strong> partiklar, och vilka som inte gör det</li>
+              <li>Jämför de två övre glasen med varandra</li>
+              <li>Jämför glaset uppe till höger med glaset nere till vänster</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/fyra-kombinationerna.svg" alt="Fyra bägarglas som visar kombinationerna av styrka och koncentration. Stark och koncentrerad har många vätejoner tätt. Stark och utspädd har få vätejoner. Svag och koncentrerad har få vätejoner men många hela syrapartiklar. Svag och utspädd har mycket få av båda.">
+            <figcaption>Fyra möjliga kombinationer. Antalet röda partiklar visar hur många vätejoner som finns i lösningen — och de är inte samma sak som hur mycket syra man hällt i.</figcaption>
+          </figure>
+          -->
+          <div class="tabell-ram"><table class="brodtext-tabell"><thead><tr><th>Styrka</th><th>Koncentration</th><th>Exempel</th></tr></thead><tbody><tr><td>Stark</td><td>Koncentrerad</td><td>Koncentrerad saltsyra</td></tr><tr><td>Stark</td><td>Utspädd</td><td>Utspädd saltsyra</td></tr><tr><td>Svag</td><td>Koncentrerad</td><td>Koncentrerad ättiksyra</td></tr><tr><td>Svag</td><td>Utspädd</td><td>Utspädd ättiksyra</td></tr></tbody></table></div>
+          <h2>Det viktigaste av allt</h2>
+          <p>Nu kommer slutsatsen, och den är avsnittets kärna.</p>
+          <p><strong>Du kan inte avgöra om en syra är stark eller svag genom att mäta pH.</strong></p>
+          <p>En mycket utspädd stark syra kan mycket väl ha högre pH än en koncentrerad svag syra. Mäter du bara pH vet du hur många vätejoner som finns — men inte om det beror på att syran är stark eller på att det finns mycket av den.</p>
+          <p>För att veta styrkan måste du veta vilken syra det är.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Styrka och koncentration är <strong>oberoende</strong> av varandra</li>
+              <li>Det ger fyra möjliga kombinationer</li>
+              <li>pH beror på <strong>båda</strong> egenskaperna tillsammans</li>
+              <li>Man kan inte avgöra om en syra är stark eller svag genom att mäta pH</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Eftersom styrka och koncentration beskriver olika egenskaper kan de kombineras på fyra olika sätt.</p>
+          <p>En lösning kan vara <strong>stark och koncentrerad</strong>. Koncentrerad saltsyra är ett exempel. Det finns mycket syra i lösningen och eftersom saltsyra är en stark syra avger i princip alla HCl-molekyler sina vätejoner till vattnet. Det bildas därför mycket oxoniumjoner.</p>
+          <p>En lösning kan också vara <strong>stark och utspädd</strong>. Om en liten mängd saltsyra blandas med mycket vatten är syran fortfarande stark. HCl-molekylerna avger fortfarande sina vätejoner mycket lätt, men eftersom det finns lite syra i lösningen blir koncentrationen av oxoniumjoner lägre.</p>
+          <p>En lösning kan vara <strong>svag och koncentrerad</strong>. Koncentrerad ättiksyra är ett exempel. Det finns mycket ättiksyra i lösningen, men eftersom ättiksyra är en svag syra är det bara en del av syramolekylerna som avger sina vätejoner.</p>
+          <p>Slutligen kan en lösning vara <strong>svag och utspädd</strong>. Utspädd ättiksyra är ett exempel. Då finns det både lite syra i lösningen och bara en del av syramolekylerna avger sina vätejoner.</p>
+          <!-- BILD: fyra-kombinationerna.svg – levereras senare, avkommentera när filen finns i img/.
+          <figure class="brodtext-bild standard">
+            <img src="img/fyra-kombinationerna.svg" alt="Fyra bägarglas som visar kombinationerna av styrka och koncentration. Stark och koncentrerad har många vätejoner tätt. Stark och utspädd har få vätejoner. Svag och koncentrerad har få vätejoner men många hela syrapartiklar. Svag och utspädd har mycket få av båda.">
+            <figcaption>Styrka och koncentration är två oberoende egenskaper. Koncentrationen av oxoniumjoner beror på båda.</figcaption>
+          </figure>
+          -->
+          <div class="tabell-ram"><table class="brodtext-tabell"><thead><tr><th>Syrans styrka</th><th>Koncentration</th><th>Exempel</th></tr></thead><tbody><tr><td>Stark</td><td>Koncentrerad</td><td>Koncentrerad saltsyra</td></tr><tr><td>Stark</td><td>Utspädd</td><td>Utspädd saltsyra</td></tr><tr><td>Svag</td><td>Koncentrerad</td><td>Koncentrerad ättiksyra</td></tr><tr><td>Svag</td><td>Utspädd</td><td>Utspädd ättiksyra</td></tr></tbody></table></div>
+          <p>Detta innebär att man <strong>inte kan avgöra om en syra är stark eller svag genom att bara mäta lösningens pH</strong>. En mycket utspädd stark syra kan ha högre pH än en koncentrerad svag syra. pH påverkas både av hur mycket syra som finns i lösningen och av hur lätt syran avger sina vätejoner.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Att räkna på det</h2>
+          <p>Standardtexten säger att en utspädd stark syra kan ha högre pH än en koncentrerad svag. Med tiopotenserna från avsnitt 2 går det att visa.</p>
+          <p>Ta en stark syra med koncentrationen 0,001 mol/dm³. Eftersom den är stark avger i princip varje partikel sin proton, så koncentrationen av oxoniumjoner blir också 0,001 mol/dm³, alltså \(10^{-3}\). pH blir 3.</p>
+          <p>Ta sedan en svag syra med koncentrationen 1 mol/dm³ — tusen gånger mer koncentrerad. Men bara en bråkdel av partiklarna avger sin proton. För ättiksyra är andelen ungefär fyra promille, vilket ger en oxoniumjonkoncentration på omkring 0,004 mol/dm³.</p>
+          <p>Den svaga syran ger alltså fler oxoniumjoner än den starka i det här fallet — men bara för att den är tusen gånger mer koncentrerad. Späder du den tio gånger vänder förhållandet.</p>
+          <h2>Varför utspädning inte är linjär</h2>
+          <p>Här finns något som förvånar.</p>
+          <p>Späder du en <strong>stark</strong> syra tio gånger minskar oxoniumjonkoncentrationen tio gånger, och pH stiger med exakt ett steg. Enkelt och förutsägbart.</p>
+          <p>Späder du en <strong>svag</strong> syra tio gånger stiger pH med mindre än ett steg. Anledningen är jämvikten från förra avsnittet: när oxoniumjonerna späds ut förskjuts jämvikten, och fler syramolekyler avger sin proton för att kompensera.</p>
+          <p>Den svaga syran motverkar alltså sin egen utspädning, åtminstone delvis. Det är samma buffertverkan som gör att blodets pH håller sig stabilt.</p>
+          <p><strong>Om modellen:</strong> standardtexten sa att pH beror på båda egenskaperna. Med jämvikten blir det tydligt att de inte bara adderas — de påverkar varandra, och en svag syra beter sig annorlunda vid utspädning än en stark.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Att späda ut ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Att <strong>späda ut</strong> betyder att tillsätta vatten</li>
+              <li>Mängden syra ändras inte — den <strong>fördelas</strong> i mer vatten</li>
+              <li>Koncentrationen minskar och pH <strong>stiger mot 7</strong></li>
+              <li>Syran blir inte svagare, bara mer utspädd</li>
+              <li><strong>SIV-regeln:</strong> häll alltid syra i vatten, aldrig tvärtom</li>
+            </ul>
+          </div>
+
+          <p>Att <strong>späda ut</strong> en syra betyder helt enkelt att tillsätta vatten.</p>
+          <p>Det låter enkelt, och det är det. Men det som händer är värt att tänka igenom, och sättet det görs på är en säkerhetsfråga.</p>
+          <h2>Vad som faktiskt händer</h2>
+          <p>När du häller vatten i en syralösning tillsätter du inte mer syra. Mängden syra är exakt densamma som förut.</p>
+          <p>Det som ändras är att samma mängd syra nu är fördelad i mer vätska. Det går alltså färre syrapartiklar på varje liter, och därmed färre vätejoner per liter.</p>
+          <p>Koncentrationen har minskat. Och eftersom pH beskriver hur många vätejoner det finns per liter, <strong>stiger pH mot 7</strong>.</p>
+          <p>Lägg märke till vad som <em>inte</em> hänt. Syran har inte blivit svagare. En stark syra är precis lika stark efter utspädningen — varje partikel avger fortfarande sin vätejon lika lätt. Det finns bara färre partiklar per liter.</p>
+          <h2>Varför det blir varmt</h2>
+          <p>När en koncentrerad syra blandas med vatten kan det frigöras mycket värme.</p>
+          <p>Det beror på samma sak som när andra ämnen löses i vatten: när syrans partiklar omges av vattenmolekyler frigörs energi. För koncentrerad svavelsyra är mängden ovanligt stor — lösningen kan bli så het att den börjar koka.</p>
+          <h2>SIV-regeln</h2>
+          <p>Det är därför ordningen spelar roll, och det är därför det finns en regel.</p>
+          <p>Häller du <strong>vatten i koncentrerad syra</strong> hamnar en liten mängd vatten ovanpå en stor mängd syra. All värme frigörs där, i den lilla vattenmängden, som snabbt kokar upp och sprutar frätande syra omkring sig.</p>
+          <p>Häller du <strong>syra i vatten</strong> hamnar en liten mängd syra i en stor mängd vatten. Värmen fördelas i hela vattenmängden, och temperaturen stiger bara måttligt.</p>
+          <p>Minnesregeln heter <strong>SIV — Syra I Vatten</strong>.</p>
+          <p><strong>Häll alltid syra i vatten, aldrig vatten i koncentrerad syra.</strong> Och häll långsamt, så att värmen hinner fördela sig.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Utspädning tillsätter vatten utan att ändra mängden syra</li>
+              <li>Koncentrationen av oxoniumjoner minskar, <strong>pH stiger mot 7</strong></li>
+              <li>Syrans <strong>styrka är oförändrad</strong></li>
+              <li>Utspädning av koncentrerad syra frigör <strong>värme</strong></li>
+              <li><strong>SIV — Syra I Vatten</strong></li>
+            </ul>
+          </div>
+
+          <p class="inledning">Att <strong>späda ut</strong> en syralösning betyder att man tillsätter vatten. Mängden syra förändras inte, men syrans partiklar fördelas i en större mängd lösning. Koncentrationen blir därför lägre.</p>
+          <p>När en sur lösning späds med vatten minskar koncentrationen av oxoniumjoner, \(\ce{H3O+}\). Lösningen blir mindre sur och <strong>pH-värdet stiger mot 7</strong>. Syran har däremot inte blivit svagare. En stark syra är fortfarande en stark syra efter utspädningen. Det är koncentrationen som har minskat.</p>
+          <p>Antalet vätejoner som syran avgett är alltså detsamma som förut. Skillnaden är att de nu är utspridda i en större mängd vatten, så att det går färre oxoniumjoner på varje kubikdecimeter. Det är koncentrationen som avgör pH, inte det totala antalet.</p>
+          <p>Utspädning av koncentrerade syror måste göras försiktigt. När en koncentrerad syra blandas med vatten kan mycket värme frigöras. Om man häller vatten direkt i koncentrerad syra kan den lilla mängden vatten snabbt bli mycket varm och börja koka. Då kan frätande syra stänka upp.</p>
+          <p>Värmen uppstår av samma skäl som när andra ämnen löses i vatten: när syrans partiklar omges av vattenmolekyler frigörs energi. För koncentrerad svavelsyra är den mängden ovanligt stor.</p>
+          <p>Därför används <strong>SIV-regeln</strong>:</p>
+          <p><strong>SIV — Syra I Vatten.</strong></p>
+          <p>När en koncentrerad syra ska spädas häller man syran försiktigt i en större mängd vatten, inte vatten i syran. Syran tillsätts långsamt så att värmen kan fördelas i vattnet.</p>
+          <p>SIV-regeln är därför både en minnesregel och en viktig säkerhetsregel:</p>
+          <p><strong>Häll alltid syra i vatten — aldrig vatten i koncentrerad syra.</strong></p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför pH aldrig når 7</h2>
+          <p>Standardtexten säger att pH stiger mot 7 vid utspädning. Ordet "mot" är noggrant valt, för pH kommer aldrig ända fram.</p>
+          <p>Späder du en syralösning tio gånger stiger pH ett steg. Tio gånger till, ett steg till. Men fortsätter du bortom pH 6 börjar något annat göra sig gällande.</p>
+          <p>Vattnet självt innehåller oxoniumjoner, som vi såg i avsnitt 1:s fördjupning — i rent vatten \(10^{-7}\) mol/dm³. När syran späds så mycket att dess eget bidrag närmar sig den nivån blir vattnets egna joner den dominerande källan.</p>
+          <p>Resultatet är att pH planar ut strax under 7 och sedan inte rör sig mer, hur mycket du än späder. En sur lösning kan aldrig bli basisk genom utspädning, bara alltmer nära neutral.</p>
+          <h2>Varför regeln är åt just det hållet</h2>
+          <p>SIV-regeln lärs ofta ut som något man ska komma ihåg. Men den följer av fysik, och när man ser varför behöver man inte memorera den.</p>
+          <p>Vatten har ovanligt hög <strong>värmekapacitet</strong> — det krävs mycket energi för att höja dess temperatur. Just den egenskapen är också vad som gör hav och sjöar tröga att värma upp, och den beror i sin tur på vätebindningarna.</p>
+          <p>Häller du syra i mycket vatten frigörs energin i en stor vattenmängd med hög värmekapacitet. Temperaturen stiger måttligt.</p>
+          <p>Häller du vatten i syra frigörs samma energi, men den hamnar i den lilla vattenmängd som just tillsatts, innan den hunnit blanda sig. Den lilla mängden värms extremt snabbt, kokar, och den explosiva ångbildningen kastar ut syran ur kärlet.</p>
+          <p><strong>Om modellen:</strong> standardtexten gav SIV som en regel att följa. Med värmekapaciteten blir den en konsekvens av vad vatten är — och samma egenskap som gör vatten säkert att späda i är den som gör att sjöar fryser långsamt.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-4-koncentrerade-och-utspadda-syror.json"
+           data-avsnitt="a4_koncentrerade-och-utspadda-syror">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-4-koncentrerade-och-utspadda-syror.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a4_koncentrerade-och-utspadda-syror';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'syror';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

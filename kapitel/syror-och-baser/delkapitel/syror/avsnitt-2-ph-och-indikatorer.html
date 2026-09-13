@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pH och indikatorer – Syror – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Syror</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">2. pH och indikatorer</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 2</span>
+      <h1>pH och indikatorer</h1>
+      <p class="subtitel">— hur vi mäter surhet —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">pH-skalan</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Indikatorer</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-ph-och-indikatorer">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — pH-skalan ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>pH</strong> beskriver hur sur eller basisk en lösning är</li>
+              <li>Skalan går från <strong>0 till 14</strong></li>
+              <li><strong>Under 7</strong> är surt, <strong>7</strong> är neutralt, <strong>över 7</strong> är basiskt</li>
+              <li>Fler vätejoner betyder <strong>lägre</strong> pH</li>
+              <li>Ett steg på skalan är en <strong>tiofaldig</strong> skillnad</li>
+            </ul>
+          </div>
+
+          <p>I förra avsnittet lärde du dig att en syra avger vätejoner till vattnet, och att det är vätejonerna som gör lösningen sur. Nu ska vi se hur man beskriver <strong>hur</strong> sur en lösning är.</p>
+          <p>Man kan inte se på ett glas vatten om det är surt. Det behövs ett sätt att mäta, och det sättet kallas <strong>pH</strong>.</p>
+          <h2>Skalan</h2>
+          <p>pH är ett tal som beskriver hur sur eller basisk en lösning är. I vanliga vattenlösningar går skalan från <strong>0 till 14</strong>.</p>
+          <p>Talen delar in skalan i tre delar. Ett pH <strong>under 7</strong> betyder att lösningen är sur. Ett pH på <strong>7</strong> betyder att den är neutral, varken sur eller basisk. Ett pH <strong>över 7</strong> betyder att lösningen är basisk, vilket vi kommer till i nästa delkapitel.</p>
+          <p>Rent vatten har pH 7. Det är alltså mitten av skalan, och utgångspunkten för allt annat.</p>
+          <h2>Fler vätejoner betyder lägre pH</h2>
+          <p>Här är något som är lätt att blanda ihop, så läs långsamt.</p>
+          <p>Ju <strong>fler</strong> vätejoner en lösning innehåller, desto <strong>lägre</strong> är pH. Talen går alltså åt motsatt håll mot det man först skulle tro. En mycket sur lösning har ett lågt tal, inte ett högt.</p>
+          <p>Magsyran i din mage har pH mellan 1 och 2 och är alltså mycket sur. Citronsaft ligger runt 2 till 3. Kaffe är svagt surt med pH omkring 5. Rent vatten har 7, och en tvållösning kan ha 9 eller 10.</p>
+          <!-- BILD: ph-skalan.svg – levereras senare, avkommentera när filen finns i img/.
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Var på skalan <strong>pH 7</strong> sitter</li>
+              <li>Åt vilket håll lösningarna blir <strong>surare</strong></li>
+              <li>Att magsyra och citronsaft ligger nära varandra</li>
+              <li>Hur långt från 7 tvållösningen ligger</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/ph-skalan.svg" alt="En pH-skala från 0 till 14, färglagd från rött vid låga värden genom grönt vid 7 till blått vid höga. Magsyra ligger vid 1,5, citronsaft vid 2,5, kaffe vid 5, rent vatten vid 7 och tvållösning vid 9,5. Under skalan står surt till vänster, neutralt vid 7 och basiskt till höger.">
+            <figcaption>Ju längre åt vänster på skalan, desto surare. Mitten, pH 7, är neutralt.</figcaption>
+          </figure>
+          -->
+          <div class="tabell-ram"><table class="brodtext-tabell"><thead><tr><th>Ämne</th><th class="hoger">Ungefärligt pH</th></tr></thead><tbody><tr><td>Magsyra</td><td class="hoger">1–2</td></tr><tr><td>Citronsaft</td><td class="hoger">2–3</td></tr><tr><td>Kaffe</td><td class="hoger">5</td></tr><tr><td>Rent vatten</td><td class="hoger">7</td></tr><tr><td>Tvållösning</td><td class="hoger">9–10</td></tr></tbody></table></div>
+          <h2>Varje steg är tio gånger</h2>
+          <p>Nu kommer det viktigaste i hela avsnittet, och det är också det som förvånar mest.</p>
+          <p>pH-skalan fungerar inte som en vanlig skala där varje steg är lika stort. <strong>Varje steg på pH-skalan betyder tio gånger så många vätejoner.</strong></p>
+          <p>En lösning med pH 3 har alltså tio gånger fler vätejoner än en lösning med pH 4. Jämför du pH 3 med pH 5 blir skillnaden hundra gånger, och mellan pH 3 och pH 6 tusen gånger.</p>
+          <p>Det betyder att en liten skillnad i pH är en stor skillnad i verkligheten. Citronsaft med pH 2 är inte lite surare än kaffe med pH 5 — den är tusen gånger surare.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Mängden <strong>oxoniumjoner</strong> avgör hur sur en lösning är</li>
+              <li><strong>pH-skalan</strong> går från 0 till 14 i vanliga vattenlösningar</li>
+              <li>Under 7 surt, 7 neutralt, över 7 basiskt</li>
+              <li>Högre koncentration oxoniumjoner ger <strong>lägre pH</strong></li>
+              <li>Ett steg på skalan motsvarar en <strong>tiofaldig</strong> skillnad i koncentration</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Vi har sett att en syra avger vätejoner när den kommer i kontakt med vatten. Vätejonerna binds till vattenmolekyler och bildar <strong>oxoniumjoner, \(\ce{H3O+}\)</strong>. Det är mängden oxoniumjoner i en vattenlösning som avgör hur sur lösningen är.</p>
+          <p>För att beskriva hur sur eller basisk en lösning är använder man <strong>pH-skalan</strong>. Skalan brukar i vanliga vattenlösningar visas från 0 till 14.</p>
+          <ul><li><strong>pH under 7</strong> betyder att lösningen är sur.</li><li><strong>pH 7</strong> betyder att lösningen är neutral.</li><li><strong>pH över 7</strong> betyder att lösningen är basisk.</li></ul>
+          <p>Ju större koncentrationen av oxoniumjoner är, desto <strong>lägre pH</strong> har lösningen och desto surare är den. Magsyra har till exempel mycket lågt pH och är mycket sur. Citronsaft är också sur men har högre pH. Kaffe är svagt surt och ligger ännu närmare pH 7. Rent vatten är neutralt och har pH 7, medan exempelvis många tvållösningar är basiska och har pH över 7.</p>
+          <!-- BILD: ph-skalan.svg – levereras senare, avkommentera när filen finns i img/.
+          <figure class="brodtext-bild standard">
+            <img src="img/ph-skalan.svg" alt="En pH-skala från 0 till 14, färglagd från rött vid låga värden genom grönt vid 7 till blått vid höga. Magsyra ligger vid 1,5, citronsaft vid 2,5, kaffe vid 5, rent vatten vid 7 och tvållösning vid 9,5. Under skalan står surt till vänster, neutralt vid 7 och basiskt till höger.">
+            <figcaption>pH-skalan beskriver koncentrationen av oxoniumjoner. Lägre pH betyder fler oxoniumjoner och surare lösning.</figcaption>
+          </figure>
+          -->
+          <div class="tabell-ram"><table class="brodtext-tabell"><thead><tr><th>Ämne</th><th class="hoger">Ungefärligt pH</th></tr></thead><tbody><tr><td>Magsyra</td><td class="hoger">1–2</td></tr><tr><td>Citronsaft</td><td class="hoger">2–3</td></tr><tr><td>Kaffe</td><td class="hoger">5</td></tr><tr><td>Rent vatten</td><td class="hoger">7</td></tr><tr><td>Tvållösning</td><td class="hoger">9–10</td></tr></tbody></table></div>
+          <p>pH-skalan fungerar inte som en vanlig skala. <strong>Ett steg på pH-skalan motsvarar en tiofaldig skillnad i koncentrationen av oxoniumjoner.</strong> En lösning med pH 3 har därför tio gånger högre koncentration av oxoniumjoner än en lösning med pH 4. Jämför man pH 3 med pH 5 är skillnaden hundra gånger.</p>
+          <p>Det betyder att en till synes liten skillnad i pH kan motsvara en stor skillnad i hur mycket oxoniumjoner som finns i lösningen.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Vad talet faktiskt betyder</h2>
+          <p>Standardtexten sa att varje steg på skalan är en tiofaldig skillnad. Det är sant, men det väcker en fråga: varför just tio, och varför slutar skalan vid 14?</p>
+          <p>Svaret är att pH-talet inte är en godtycklig gradering. Det är ett sätt att skriva en koncentration.</p>
+          <p>Koncentrationen av oxoniumjoner i en vattenlösning mäts i mol per kubikdecimeter, och talen är obekvämt små. I en neutral lösning är koncentrationen 0,0000001 mol/dm³. Skrivet som tiopotens blir det \(10^{-7}\) mol/dm³, vilket är betydligt lättare att hantera.</p>
+          <p>Och <strong>pH är helt enkelt exponenten, utan minustecknet</strong>. En lösning med koncentrationen \(10^{-7}\) har pH 7. En med \(10^{-3}\) har pH 3. En med \(10^{-11}\) har pH 11.</p>
+          <p>Nu blir den tiofaldiga skillnaden självklar. Går man från \(10^{-3}\) till \(10^{-4}\) har man dividerat med tio, och exponenten har ändrats med ett steg. Skalan är stegvis eftersom tiopotenser är det.</p>
+          <h2>Varför 0 till 14</h2>
+          <p>Här kommer sambandet från förra avsnittets fördjupning tillbaka.</p>
+          <p>Vattenmolekyler reagerar med varandra och bildar hela tiden små mängder oxoniumjoner och hydroxidjoner. De två koncentrationerna är kopplade: produkten av dem är alltid \(10^{-14}\) i vattenlösning.</p>
+          <p>I rent vatten finns lika många av varje, alltså \(10^{-7}\) av båda — och \(10^{-7}\) gånger \(10^{-7}\) blir just \(10^{-14}\). Det är därför neutralt ligger vid 7 och inte vid något annat tal.</p>
+          <p>Tillsätter du syra ökar oxoniumjonerna. Men eftersom produkten måste förbli \(10^{-14}\) måste hydroxidjonerna minska lika mycket. De två talen rör sig alltid åt motsatta håll, och tillsammans går de från 14 till 0.</p>
+          <p>Skalan har alltså inga ändpunkter av teknisk nödvändighet — man kan ha pH under 0 och över 14 i mycket koncentrerade lösningar. Men för vanliga lösningar räcker intervallet, och det är därför man ritar det så.</p>
+          <p><strong>Om modellen:</strong> standardtexten gav pH som ett tal med en regel om tiofaldighet. Med tiopotenserna blir pH i stället en direkt avläsning av hur många oxoniumjoner som finns, och skalans mittpunkt och gränser faller ut av sig själva.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Indikatorer ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En <strong>indikator</strong> är ett ämne som byter färg beroende på pH</li>
+              <li><strong>Lackmus</strong> visar surt eller basiskt</li>
+              <li><strong>BTB</strong> är gult i surt, grönt i neutralt, blått i basiskt</li>
+              <li><strong>Universalindikator</strong> och <strong>pH-papper</strong> visar ungefärligt pH</li>
+              <li>En <strong>pH-mätare</strong> ger ett exakt tal</li>
+            </ul>
+          </div>
+
+          <p>Nu vet du vad pH är. Men hur tar man reda på vilket pH en lösning har?</p>
+          <p>Ett sätt är att använda en <strong>indikator</strong>. Det är ett ämne som byter färg beroende på om lösningen är sur eller basisk. Man droppar i lite av indikatorn, eller doppar ett papper, och läser av färgen.</p>
+          <h2>Lackmus</h2>
+          <p><strong>Lackmus</strong> är den enklaste indikatorn och används ofta som papper.</p>
+          <p>Blått lackmuspapper blir <strong>rött</strong> i en sur lösning. Rött lackmuspapper blir <strong>blått</strong> i en basisk lösning. Händer ingenting alls är lösningen varken sur eller basisk.</p>
+          <p>Lackmus är snabbt och enkelt, men det säger bara om lösningen är sur eller basisk. Något pH-värde får du inte.</p>
+          <h2>BTB</h2>
+          <p><strong>BTB</strong> är en vätska som droppas i lösningen, och den ger lite mer information än lackmus.</p>
+          <p>BTB blir <strong>gult</strong> i sura lösningar, <strong>grönt</strong> när lösningen är ungefär neutral och <strong>blått</strong> i basiska. Tre färger i stället för två gör att du kan se om du är nära mitten av skalan.</p>
+          <h2>Universalindikator och pH-papper</h2>
+          <p>Vill du veta ungefär vilket pH lösningen har använder du <strong>universalindikator</strong>. Den innehåller flera olika indikatorämnen blandade, och färgen skiftar gradvis genom hela skalan.</p>
+          <p>Färgen jämförs med en färgskala där varje färg motsvarar ett pH-värde. <strong>pH-papper</strong> fungerar likadant — du doppar papperet, det byter färg, och du jämför.</p>
+          <h2>Rödkål</h2>
+          <p>Du kan tillverka en indikator själv av <strong>rödkål</strong>.</p>
+          <p>Rödkål innehåller färgämnen som ändrar färg beroende på pH. Kokar du kål i vatten och sparar vattnet får du en indikator som blir röd eller rosa i surt, lila i neutralt och går mot blått och grönt i basiskt.</p>
+          <p>Det gör att du kan undersöka pH hemma i köket, till exempel med citronsaft, kranvatten och tvålvatten.</p>
+          <h2>När det måste bli exakt</h2>
+          <p>Indikatorer ger ett ungefärligt värde. Det räcker ofta, men ibland behöver man veta mer noggrant.</p>
+          <p>Då används en <strong>pH-mätare</strong>. Den har en elektrod som doppas i lösningen, och på skärmen visas pH som ett tal med decimaler.</p>
+          <p>Vilken metod man väljer beror alltså på vad man vill veta. Räcker det att veta om lösningen är sur eller basisk är lackmus snabbast. Behöver du ett exakt värde är mätaren rätt verktyg.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En <strong>indikator</strong> ändrar färg beroende på lösningens pH</li>
+              <li>Olika indikatorer visar olika delar av skalan</li>
+              <li><strong>Rödkål</strong> fungerar som indikator och går att göra hemma</li>
+              <li>Indikatorn byter färg för att den själv <strong>avger eller behåller</strong> en vätejon</li>
+              <li>Indikatorer ger ungefärligt pH, en <strong>pH-mätare</strong> ger ett tal</li>
+            </ul>
+          </div>
+
+          <p class="inledning">För att ta reda på om en lösning är sur, neutral eller basisk kan man använda en <strong>indikator</strong>. En indikator är ett ämne som ändrar färg beroende på lösningens pH.</p>
+          <p><strong>Lackmus</strong> är en enkel indikator. Blått lackmuspapper blir rött i en sur lösning och rött lackmuspapper blir blått i en basisk lösning. Lackmus visar framför allt om en lösning är sur eller basisk, men ger inte något exakt pH-värde.</p>
+          <p><strong>BTB</strong>, bromtymolblått, är en annan vanlig indikator. BTB är gult i sura lösningar, grönt omkring neutralt och blått i basiska lösningar. Den gör det därför lätt att se om en lösning är sur, neutral eller basisk.</p>
+          <p><strong>Universalindikator</strong> består av flera olika indikatorämnen och kan visa ett större område av pH-skalan. Färgen jämförs med en färgskala för att uppskatta lösningens pH. <strong>pH-papper</strong> fungerar på liknande sätt: papperet ändrar färg och färgen jämförs med en skala.</p>
+          <p>Det går också att tillverka en indikator av <strong>rödkål</strong>. Rödkål innehåller färgämnen som ändrar färg beroende på pH. Rödkålsindikator blir röd eller rosa i sura lösningar, lila omkring neutralt och går mot blått och grönt i basiska lösningar. Därför går det att göra enkla undersökningar av pH även hemma, till exempel med citronsaft, vatten och en lösning av tvål.</p>
+          <p>Att indikatorer kan byta färg beror på att de själva är ämnen som reagerar med syror och baser. En indikator är oftast ett ämne som själv kan avge en vätejon. När den avger sin vätejon ändras molekylens uppbyggnad, och den nya formen har en annan färg än den ursprungliga. Färgen visar alltså vilken form av indikatorn som dominerar i lösningen, och det beror i sin tur på lösningens pH.</p>
+          <p>Indikatorer ger framför allt ett <strong>ungefärligt pH-värde</strong>. Om man behöver veta pH mer exakt använder man i stället en <strong>pH-mätare</strong>. Den har en elektrod som placeras i lösningen och instrumentet visar pH som ett tal.</p>
+          <p>Vilken metod man väljer beror därför på vad man vill ta reda på. För att snabbt avgöra om en lösning är sur eller basisk kan en indikator vara tillräcklig. Om man behöver ett mer exakt värde är en pH-mätare ett bättre val.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varje indikator har sitt eget område</h2>
+          <p>Standardtexten sa att indikatorn byter färg när den avger sin vätejon. Det leder till en följdfråga: vid vilket pH sker omslaget?</p>
+          <p>Svaret är att det beror på indikatorn, och att varje indikator har sitt eget <strong>omslagsområde</strong> — ett intervall på pH-skalan där färgen skiftar från den ena formen till den andra.</p>
+          <p>BTB slår om mellan ungefär pH 6 och 7,6. Under det området är nästan alla molekyler i sin sura form och lösningen är gul; över det är nästan alla i sin basiska form och lösningen är blå. Mitt i området finns båda formerna samtidigt, och blandningen av gult och blått ser grön ut.</p>
+          <p>Lackmus slår om runt pH 6,5, fenolftalein runt 8 till 10 och metylorange runt 3 till 4,5.</p>
+          <h2>Därför finns universalindikatorn</h2>
+          <p>Nu blir universalindikatorn begriplig. Den är ingen enskild indikator utan en <strong>blandning</strong> av flera, med olika omslagsområden.</p>
+          <p>Vid varje pH-värde har blandningens ingredienser olika färger, och summan blir en unik ton. Det är därför färgskalan glider jämnt från rött till blått i stället för att hoppa mellan två färger.</p>
+          <h2>Att välja rätt indikator</h2>
+          <p>Det här har praktisk betydelse. Vill man veta exakt när en syra är neutraliserad måste man välja en indikator vars omslagsområde ligger vid rätt pH.</p>
+          <p>Neutraliserar man en stark syra med en stark bas hamnar slutpunkten nära pH 7, och då fungerar BTB utmärkt. Men neutraliserar man en <strong>svag</strong> syra med en stark bas hamnar slutpunkten över pH 7, och då slår BTB om för tidigt. Där används fenolftalein i stället.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskrev indikatorer som ämnen som byter färg vid surt eller basiskt, som om omslaget skedde vid pH 7. Det gör det sällan. Varje indikator har sitt eget område, och att välja rätt indikator till rätt reaktion är en del av kemiskt hantverk.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-2-ph-och-indikatorer.json"
+           data-avsnitt="a2_ph-och-indikatorer">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-2-ph-och-indikatorer.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a2_ph-och-indikatorer';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'syror';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

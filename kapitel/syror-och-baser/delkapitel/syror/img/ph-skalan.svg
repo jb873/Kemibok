@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" role="img" aria-labelledby="t">
+  <title id="t">pH-skalan från 0 till 14, färglagd från rött till blått, med magsyra, citronsaft, kaffe, rent vatten och tvållösning utsatta</title>
+  <defs>
+    <linearGradient id="ph" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#C0392B"/>
+      <stop offset="21.43%" stop-color="#E07B39"/>
+      <stop offset="35.71%" stop-color="#E8C547"/>
+      <stop offset="50%" stop-color="#5a9668"/>
+      <stop offset="64.29%" stop-color="#a8c4d8"/>
+      <stop offset="100%" stop-color="#2F4F8F"/>
+    </linearGradient>
+  </defs>
+  <rect x="50" y="150" width="660" height="34" rx="4" fill="url(#ph)" stroke="#2d4a35" stroke-width="1.5"/>
+  <line x1="50" y1="184" x2="50" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="50" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">0</text>
+  <line x1="97.14" y1="184" x2="97.14" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="97.14" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">1</text>
+  <line x1="144.29" y1="184" x2="144.29" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="144.29" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">2</text>
+  <line x1="191.43" y1="184" x2="191.43" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="191.43" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">3</text>
+  <line x1="238.57" y1="184" x2="238.57" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="238.57" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">4</text>
+  <line x1="285.71" y1="184" x2="285.71" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="285.71" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">5</text>
+  <line x1="332.86" y1="184" x2="332.86" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="332.86" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">6</text>
+  <line x1="380" y1="184" x2="380" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="380" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">7</text>
+  <line x1="427.14" y1="184" x2="427.14" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="427.14" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">8</text>
+  <line x1="474.29" y1="184" x2="474.29" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="474.29" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">9</text>
+  <line x1="521.43" y1="184" x2="521.43" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="521.43" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">10</text>
+  <line x1="568.57" y1="184" x2="568.57" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="568.57" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">11</text>
+  <line x1="615.71" y1="184" x2="615.71" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="615.71" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">12</text>
+  <line x1="662.86" y1="184" x2="662.86" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="662.86" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">13</text>
+  <line x1="710" y1="184" x2="710" y2="191" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="710" y="208" text-anchor="middle" font-size="15" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">14</text>
+  <line x1="120.71" y1="70" x2="120.71" y2="146" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="120.71" cy="146" r="3" fill="#2d4a35"/>
+  <text x="120.71" y="62" text-anchor="middle" font-size="17" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Magsyra</text>
+  <line x1="167.86" y1="104" x2="167.86" y2="146" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="167.86" cy="146" r="3" fill="#2d4a35"/>
+  <text x="167.86" y="96" text-anchor="middle" font-size="17" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Citronsaft</text>
+  <line x1="285.71" y1="70" x2="285.71" y2="146" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="285.71" cy="146" r="3" fill="#2d4a35"/>
+  <text x="285.71" y="62" text-anchor="middle" font-size="17" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Kaffe</text>
+  <line x1="380" y1="104" x2="380" y2="146" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="380" cy="146" r="3" fill="#2d4a35"/>
+  <text x="380" y="96" text-anchor="middle" font-size="17" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Rent vatten</text>
+  <line x1="497.86" y1="70" x2="497.86" y2="146" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="497.86" cy="146" r="3" fill="#2d4a35"/>
+  <text x="497.86" y="62" text-anchor="middle" font-size="17" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Tvållösning</text>
+  <text x="215" y="246" text-anchor="middle" font-size="19" letter-spacing="2" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">SURT</text>
+  <text x="380" y="246" text-anchor="middle" font-size="19" letter-spacing="2" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">NEUTRALT</text>
+  <text x="545" y="246" text-anchor="middle" font-size="19" letter-spacing="2" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">BASISKT</text>
+</svg>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starka och svaga syror – Syror – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Syror</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">3. Starka och svaga syror</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 3</span>
+      <h1>Starka och svaga syror</h1>
+      <p class="subtitel">— hur lätt syran släpper sin vätejon —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Vad styrka betyder</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Starka syror</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Svaga syror</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-starka-och-svaga-syror">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Vad styrka betyder ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Stark</strong> och <strong>svag</strong> beskriver hur lätt syran avger sina vätejoner</li>
+              <li>En <strong>stark</strong> syra avger nästan alla</li>
+              <li>En <strong>svag</strong> syra avger bara en del</li>
+              <li>Det säger <strong>inget</strong> om hur mycket syra som finns i lösningen</li>
+              <li>Hur lätt vätejonen avges beror på hur hårt den sitter fast</li>
+            </ul>
+          </div>
+
+          <p>Alla syror gör samma sak: de avger vätejoner till vatten. Men de gör det inte lika lätt, och det är skillnaden mellan starka och svaga syror.</p>
+          <h2>Vad orden betyder</h2>
+          <p>Tänk dig att du häller lika mycket av två olika syror i två glas vatten.</p>
+          <p>I det ena glaset avger nästan varenda syrapartikel sin vätejon. Vattnet fylls av vätejoner. Det är en <strong>stark syra</strong>.</p>
+          <p>I det andra glaset avger bara några få av syrapartiklarna sin vätejon. Resten behåller den och fortsätter simma omkring hela. Det är en <strong>svag syra</strong>.</p>
+          <p>Lika mycket syra i båda glasen — men helt olika många vätejoner i vattnet.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna de <strong>röda</strong> partiklarna i varje glas</li>
+              <li>Att det är <strong>lika mycket vätska</strong> i båda glasen</li>
+              <li>Vad som finns i det högra glaset som inte finns i det vänstra</li>
+              <li>Att skillnaden inte handlar om hur mycket syra som hällts i</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/stark-och-svag-syra.webp" alt="Två bägarglas med lika mycket syra i. I det vänstra har alla syrapartiklar avgett sina vätejoner, så vätskan innehåller tio vätejoner. I det högra har bara två avgett sin, medan åtta syrapartiklar finns kvar hela.">
+            <figcaption>Lika mycket syra i båda glasen. Men den starka syran till vänster har avgett alla sina vätejoner, medan den svaga till höger bara avgett några.</figcaption>
+          </figure>
+          <h2>Vad orden inte betyder</h2>
+          <p>Här måste du vara noga, för det här är den vanligaste missuppfattningen i hela kapitlet.</p>
+          <p><strong>Stark och svag säger ingenting om hur mycket syra det finns i lösningen.</strong> De säger bara hur lätt syran släpper ifrån sig sina vätejoner.</p>
+          <p>En stark syra kan finnas i mycket liten mängd, utspädd i massor av vatten. En svag syra kan finnas i stor mängd, nästan outspädd. Orden beskriver syrans natur, inte mängden.</p>
+          <p>Vi kommer tillbaka till det i nästa avsnitt, för där handlar allt om just mängden.</p>
+          <h2>Varför vissa släpper lättare</h2>
+          <p>Om du undrar varför en syra släpper sin vätejon lättare än en annan är svaret ganska enkelt.</p>
+          <p>Det beror på hur hårt vätejonen sitter fast i syrans partikel. Sitter den löst lossnar den lätt, och syran är stark. Sitter den hårt behövs mer för att få loss den, och syran är svag.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Stark och svag</strong> beskriver hur lätt syran avger sina vätejoner</li>
+              <li>En stark syra avger i princip <strong>alla</strong> vätejoner den kan avge</li>
+              <li>En svag syra avger bara <strong>en del</strong></li>
+              <li>Styrka är inte samma sak som <strong>koncentration</strong></li>
+              <li>Styrkan beror på hur hårt vätejonen sitter fast i syrans partikel</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Syror kan delas in i <strong>starka syror</strong> och <strong>svaga syror</strong>. Skillnaden handlar om hur lätt syran avger sina vätejoner när den kommer i kontakt med vatten.</p>
+          <p><strong>Stark och svag beskriver hur lätt syran avger sina vätejoner — inte hur mycket syra som finns i lösningen.</strong></p>
+          <p>En stark syra avger i princip alla vätejoner som den kan avge när den löses i vatten. Vätejonerna tas direkt upp av vattenmolekyler och bildar oxoniumjoner, \(\ce{H3O+}\).</p>
+          <p>En svag syra avger däremot bara en del av sina vätejoner. I lösningen finns därför både syramolekyler som fortfarande har kvar sin vätejon och partiklar som har avgett den.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/stark-och-svag-syra.webp" alt="Två bägarglas med lika mycket syra i. I det vänstra har alla syrapartiklar avgett sina vätejoner, så vätskan innehåller tio vätejoner. I det högra har bara två avgett sin, medan åtta syrapartiklar finns kvar hela.">
+            <figcaption>En stark syra reagerar i princip fullständigt med vatten och ger många oxoniumjoner. En svag syra reagerar bara delvis, och en stor del av syramolekylerna finns kvar.</figcaption>
+          </figure>
+          <p>Det är viktigt att skilja syrans styrka från syrans koncentration. Styrkan beskriver hur lätt syran avger vätejoner. Koncentrationen beskriver hur mycket syra som finns i en viss mängd lösning. En stark syra kan därför vara utspädd och en svag syra kan vara koncentrerad.</p>
+          <p>Vad som avgör hur lätt en syra avger sin vätejon beror på hur hårt vätejonen sitter fast i syrans partikel. Sitter den löst avges den lätt, och syran är stark.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Vad "sitter hårt" egentligen betyder</h2>
+          <p>Standardtexten sa att styrkan beror på hur hårt vätejonen sitter fast. Det är rätt, men det säger inte vad som avgör hur hårt den sitter.</p>
+          <p>Två saker samverkar.</p>
+          <p>Det första är <strong>bindningen</strong> mellan vätet och resten av molekylen. Ju svagare den bindningen är, desto lättare lossnar protonen. Bindningens styrka beror bland annat på hur stor atomen är som vätet sitter på — ju större atom, desto längre och svagare bindning.</p>
+          <p>Det andra, och oftast viktigare, är hur <strong>stabil den jon</strong> är som blir kvar när protonen lämnat.</p>
+          <h2>Den kvarvarande jonen avgör</h2>
+          <p>Tänk på vad som händer när en syra avger sin proton. Kvar blir en negativt laddad partikel.</p>
+          <p>Om den partikeln är stabil, alltså trivs med sin negativa laddning, kommer syran gärna att avge protonen. Om partikeln är instabil vill den hellre ta tillbaka protonen, och då avges den ogärna.</p>
+          <p>Vad som gör en negativ jon stabil är framför allt att laddningen kan <strong>spridas ut</strong> över flera atomer i stället för att sitta koncentrerad på en. Kloridjonen som blir kvar efter saltsyra är mycket stabil — det är en ensam jon med hela ädelgasstruktur. Acetatjonen som blir kvar efter ättiksyra är mindre stabil, och därför är ättiksyra svagare.</p>
+          <h2>Varför svavelsyrans andra proton sitter hårdare</h2>
+          <p>Nu blir svavelsyran begriplig.</p>
+          <p>Den första protonen lämnar en neutral molekyl och skapar en negativ laddning. Det går lätt.</p>
+          <p>Den andra protonen ska lämna en partikel som <strong>redan är negativ</strong>, och en positiv proton dras till negativ laddning. Den ska alltså slitas loss från något som håller fast den hårdare än förut.</p>
+          <p>Samma princip gäller alla syror som kan avge mer än en proton: varje steg är svårare än det förra, eftersom den kvarvarande partikeln blir alltmer negativ.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskrev styrkan som en egenskap syran råkar ha. Med bindningsstyrka och jonstabilitet blir det i stället något som följer av hur molekylen är byggd — och något man kan resonera sig fram till för en syra man aldrig sett.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Starka syror ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Tre viktiga starka syror: <strong>saltsyra</strong>, <strong>svavelsyra</strong>, <strong>salpetersyra</strong></li>
+              <li>De avger nästan alla sina vätejoner i vatten</li>
+              <li>Saltsyra är <strong>väteklorid</strong> löst i vatten</li>
+              <li>Svavelsyra kan avge <strong>två</strong> vätejoner</li>
+              <li>Starka syror kan ge mycket lågt pH</li>
+            </ul>
+          </div>
+
+          <p>Tre starka syror är särskilt viktiga att känna till: <strong>saltsyra</strong>, <strong>svavelsyra</strong> och <strong>salpetersyra</strong>. De används i industrin, och saltsyra finns dessutom i din egen mage.</p>
+          <p>Gemensamt för dem är att de avger sina vätejoner mycket lätt. Nästan varje partikel som hamnar i vattnet släpper ifrån sig sin vätejon direkt.</p>
+          <h2>Saltsyra</h2>
+          <p>Saltsyra är ämnet <strong>väteklorid</strong> löst i vatten.</p>
+          <p>Varje vätekloridpartikel har en vätejon att avge. När den hamnar i vatten lämnar vätejonen partikeln nästan omedelbart, och kvar blir en kloridjon.</p>
+          <p>Lösningen innehåller därför vätejoner och kloridjoner, och det är vätejonerna som gör den sur.</p>
+          <h2>Salpetersyra</h2>
+          <p>Salpetersyra fungerar på samma sätt. Varje partikel avger en vätejon, och kvar blir en nitratjon.</p>
+          <h2>Svavelsyra</h2>
+          <p>Svavelsyra skiljer sig från de andra två på ett sätt.</p>
+          <p>Varje svavelsyrapartikel har <strong>två</strong> vätejoner som kan avges, inte en. Den första avges mycket lätt, precis som hos saltsyra. Den andra sitter hårdare och avges bara delvis.</p>
+          <p>Anledningen är att den andra vätejonen ska lämna en partikel som redan blivit negativ när den första lämnade. En positiv vätejon dras till negativ laddning och hålls därför kvar.</p>
+          <p>Svavelsyra räknas ändå som en stark syra, eftersom det första steget ensamt ger så många vätejoner.</p>
+          <h2>Hur surt blir det?</h2>
+          <p>En stark syra kan ge mycket lågt pH. Men hur lågt beror också på hur mycket syra som finns i vattnet.</p>
+          <p>En stark syra som är kraftigt utspädd kan ha ett ganska högt pH, trots att den är stark. Det är precis vad nästa avsnitt handlar om.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Saltsyra, svavelsyra och salpetersyra</strong> är de viktigaste starka syrorna</li>
+              <li>De avger i princip fullständigt sina vätejoner till vatten</li>
+              <li>Svavelsyra har <strong>två</strong> vätejoner att avge, och den andra sitter hårdare</li>
+              <li>Hur lågt pH som uppnås beror också på <strong>koncentrationen</strong></li>
+            </ul>
+          </div>
+
+          <p class="inledning">Tre viktiga starka syror är saltsyra, svavelsyra och salpetersyra. Gemensamt för dem är att de reagerar mycket lätt med vatten och i princip fullständigt avger de vätejoner som kan avges i vattenlösningen.</p>
+          <p><strong>Saltsyra, HCl</strong>, bildas när väteklorid löses i vatten. Vätekloriden avger sin vätejon till en vattenmolekyl. Då bildas en oxoniumjon och en kloridjon:</p>
+          <div class="formel">\[\ce{HCl + H2O -> H3O+ + Cl-}\]</div>
+          <p><strong>Salpetersyra, \(\ce{HNO3}\)</strong>, fungerar på liknande sätt. När den reagerar med vatten bildas oxoniumjoner och nitratjoner:</p>
+          <div class="formel">\[\ce{HNO3 + H2O -> H3O+ + NO3-}\]</div>
+          <p><strong>Svavelsyra, \(\ce{H2SO4}\)</strong>, skiljer sig från de två andra genom att varje molekyl innehåller två vätejoner som kan avges. Den första avges mycket lätt, precis som hos saltsyra. Den andra sitter hårdare, eftersom den ska lämna en partikel som redan har en negativ laddning — och en negativ laddning håller kvar den positiva vätejonen. Därför avges den andra vätejonen bara delvis.</p>
+          <p>Svavelsyra är alltså stark när det gäller den första vätejonen och svagare när det gäller den andra. I praktiken räknas den ändå som en stark syra, eftersom det första steget ger så många oxoniumjoner.</p>
+          <p>Starka syror kan ge upphov till en hög koncentration av oxoniumjoner och därmed ett lågt pH. Hur lågt pH blir beror dock också på hur koncentrerad syralösningen är.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Vad "i princip fullständigt" betyder</h2>
+          <p>Standardtexten säger att en stark syra avger sina vätejoner "i princip fullständigt". Den formuleringen är noggrannare vald än den ser ut.</p>
+          <p>För en stark syra i vanlig utspädning är andelen avgivna protoner så nära hundra procent att skillnaden saknar praktisk betydelse. Men den är inte exakt hundra. Ett fåtal partiklar finns alltid kvar oförändrade, och i mycket koncentrerade lösningar blir andelen märkbar.</p>
+          <p>Skillnaden mellan stark och svag är därför inte en skillnad i <strong>sort</strong> utan i <strong>grad</strong>. Det finns ingen skarp gräns där en syra slutar vara svag och börjar vara stark — precis som det inte fanns någon skarp gräns mellan jonbindning och kovalent bindning i repetitionsavsnitt 3.</p>
+          <h2>Vattnet sätter taket</h2>
+          <p>Det finns en gräns för hur stark en syra kan vara i vattenlösning, och den gränsen är vattnet självt.</p>
+          <p>Alla syror som är starkare än oxoniumjonen ger i vatten samma resultat: de avger sin proton fullständigt, och det som finns i lösningen är oxoniumjoner. Saltsyra, salpetersyra och perklorsyra har mycket olika styrka i sig, men i vatten går det inte att skilja dem åt. De är alla "helt avgivna".</p>
+          <p>Fenomenet kallas att vattnet <strong>nivellerar</strong> syrorna — det jämnar ut skillnaderna mellan alla som är starkare än en viss gräns.</p>
+          <p>Vill man jämföra starka syror med varandra måste man därför använda ett annat lösningsmedel, ett som inte tar emot protoner lika villigt. Det gör man i forskning, men aldrig i en högstadiesal.</p>
+          <p><strong>Om modellen:</strong> standardtexten delade syror i två fack. I verkligheten är styrka en glidande skala, och vattnet döljer den ena änden av den. Indelningen är användbar men den är vår, inte naturens.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Svaga syror ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Många vanliga syror är <strong>svaga</strong></li>
+              <li>Ättiksyra, citronsyra, kolsyra, mjölksyra och myrsyra</li>
+              <li>Bara <strong>en del</strong> av partiklarna avger sin vätejon</li>
+              <li>Resten finns kvar hela i lösningen</li>
+              <li>Reaktionen går <strong>åt båda hållen</strong> samtidigt</li>
+            </ul>
+          </div>
+
+          <p>De flesta syror du möter till vardags är svaga. Ättiksyra i ättika, citronsyra i citroner, kolsyra i läsk, mjölksyra i filmjölk och myrsyra hos myror — alla är svaga syror.</p>
+          <p>Det betyder inte att de är ofarliga. Det betyder att de avger sina vätejoner ogärna.</p>
+          <h2>Vad som händer i glaset</h2>
+          <p>Häller du ättiksyra i vatten avger bara en del av partiklarna sin vätejon. Resten behåller den.</p>
+          <p>Är det till exempel hundra ättiksyrapartiklar i vattnet kan kanske någon enstaka av dem ha avgett sin vätejon vid ett givet ögonblick. De andra simmar omkring hela.</p>
+          <p>Det är därför en svag syra ger färre vätejoner än en stark, även om det finns lika mycket syra i båda.</p>
+          <h2>Reaktionen går åt båda hållen</h2>
+          <p>Nu kommer något som är lätt att missa, och som förklarar hela saken.</p>
+          <p>När en svag syra hamnar i vatten sker två saker samtidigt. Syrapartiklar avger vätejoner — men vätejoner fastnar också tillbaka på partiklar som redan avgett sin, så att syran återbildas.</p>
+          <p>Båda reaktionerna pågår hela tiden. Efter en stund ställer de in sig i en balans där lika många partiklar avger som tar tillbaka, och då ändras ingenting mer utåt sett.</p>
+          <p>Det skrivs med en särskild pil som pekar åt båda hållen: \(\ce{<=>}\)</p>
+          <p>Den pilen betyder just det: reaktionen går åt båda hållen samtidigt, och den stannar aldrig av helt.</p>
+          <h2>Det är andelen som avgör</h2>
+          <p>Skillnaden mellan starka och svaga syror handlar alltså inte om vilken syra det finns mest av, eller vilken lösning som har lägst pH.</p>
+          <p>Den handlar om <strong>hur stor andel</strong> av syrans möjliga vätejoner som faktiskt avges när syran möter vatten. Nästan alla betyder stark. Bara en del betyder svag.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li><strong>Ättiksyra, citronsyra, kolsyra, mjölksyra och myrsyra</strong> är svaga syror</li>
+              <li>Bara en del av syramolekylerna avger sin vätejon</li>
+              <li>Reaktionen skrivs med <strong>dubbelriktad pil</strong>, \(\ce{<=>}\)</li>
+              <li>Det råder en <strong>balans</strong> mellan de två riktningarna</li>
+              <li>Skillnaden handlar om <strong>andelen</strong> avgivna vätejoner</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Många syror är svaga. Exempel är ättiksyra, citronsyra, kolsyra, mjölksyra och myrsyra. De förekommer bland annat i livsmedel, i naturen och i levande organismer.</p>
+          <p>När en svag syra blandas med vatten avger bara en del av syramolekylerna sina vätejoner. Resten finns fortfarande kvar som syramolekyler i lösningen.</p>
+          <p>Ättiksyra kan användas som exempel. När en ättiksyramolekyl avger en vätejon till en vattenmolekyl bildas en oxoniumjon och en acetatjon:</p>
+          <div class="formel">\[\ce{CH3COOH + H2O <=> H3O+ + CH3COO-}\]</div>
+          <p>Här används en dubbelriktad pil, \(\ce{<=>}\), eftersom reaktionen kan gå åt båda hållen. Ättiksyramolekyler avger vätejoner, men samtidigt kan vätejoner överföras tillbaka så att ättiksyra återbildas. Efter en tid uppstår en balans mellan de båda reaktionerna.</p>
+          <p>Det är detta som är grunden till att ättiksyra är en svag syra: bara en del av syramolekylerna har avgett sin vätejon vid en viss tidpunkt.</p>
+          <p>Samma grundprincip gäller för andra svaga syror. De kan avge vätejoner, men reaktionen med vatten är inte fullständig.</p>
+          <p>Skillnaden mellan starka och svaga syror handlar alltså inte om vilken syra som det finns mest av eller vilken lösning som har lägst pH. Den handlar om hur stor andel av syrans möjliga vätejoner som avges när syran reagerar med vatten.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Balansen är inte stillastående</h2>
+          <p>Standardtexten sa att det uppstår en balans mellan de två reaktionerna. Ordet balans kan låta som att allt stannar av. Det gör det inte.</p>
+          <p>Vid <strong>jämvikt</strong>, som tillståndet kallas, pågår båda reaktionerna för fullt. Ättiksyramolekyler avger protoner i samma takt som acetatjoner tar tillbaka dem. Eftersom takten är densamma åt båda hållen förblir antalen oförändrade, men de enskilda partiklarna byter ständigt form.</p>
+          <p>Det är ungefär som en rulltrappa där lika många går uppför som nedför. Antalet personer på trappan är konstant, men ingen står stilla.</p>
+          <h2>Jämvikten går att rubba</h2>
+          <p>Och här blir det användbart.</p>
+          <p>Tar man bort något av det som bildas kan reaktionen inte längre gå lika fort åt det hållet tillbaka. Jämvikten förskjuts, och mer av syran avger sin proton för att kompensera.</p>
+          <p>Det är precis vad som händer vid neutralisation. Tillsätter man en bas plockar den bort oxoniumjonerna ur lösningen. Då återbildas mindre ättiksyra, fler ättiksyramolekyler avger sin proton, och till slut kan <strong>hela</strong> mängden syra neutraliseras.</p>
+          <p>Att en syra är svag betyder alltså inte att bara en del av den går att neutralisera. Det betyder bara att bara en del har avgett sin proton vid varje givet ögonblick.</p>
+          <h2>Varför det spelar roll i kroppen</h2>
+          <p>Jämvikter av det här slaget finns överallt i naturen, och de gör något viktigt: de <strong>motstår förändring</strong>.</p>
+          <p>Blodet innehåller kolsyra och vätekarbonatjoner i jämvikt. Tillförs en liten mängd syra förskjuts jämvikten åt ena hållet och fångar upp den; tillförs bas förskjuts den åt andra hållet. Resultatet är att blodets pH hålls stabilt runt 7,4 trots att kroppen hela tiden producerar syror.</p>
+          <p>Ett sådant system kallas <strong>buffert</strong>, och det bygger helt på att svaga syror inte reagerar fullständigt.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskrev den ofullständiga reaktionen som en brist — syran gör inte hela jobbet. Med jämvikten blir det i stället en egenskap med ett syfte: just det att reaktionen kan gå åt båda hållen är vad som gör svaga syror användbara i naturen.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-3-starka-och-svaga-syror.json"
+           data-avsnitt="a3_starka-och-svaga-syror">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-3-starka-och-svaga-syror.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a3_starka-och-svaga-syror';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'syror';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>
