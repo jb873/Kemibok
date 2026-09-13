@@ -6,6 +6,9 @@
 > Bygg (Code 2026-09-13): `node verktyg/bygg-flipcards.js syror` läser denna fil och bygger om
 > kapitlets begreppsbank ur alla delkapitels flipcards.md. Kort märkta **[brygga]** byggs som
 > vanliga kort; märkningen är bara en notis. Leverans 2026-09-13 (klistrad i chatten).
+> Beslut 2026-09-13: räkningen nedan säger 85 kort men filen innehåller 84 (avsnitt 5 har 6 modellkort) –
+> 84 är rätt. "Koncentration" (avsnitt 4) går inte till begreppsbanken: repetitionens post står kvar
+> eftersom eleven möter begreppet där först; kortet finns kvar som flipcard (bygg-avsnitt-konfig.js).
 
 ---
 

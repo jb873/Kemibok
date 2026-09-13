@@ -3,7 +3,7 @@
   "kapitel_titel": "Syror och baser",
   "version": 3,
   "skapad": "2026-09-13",
-  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Bakgrund och repetition 48 + Syror 34 = 82.",
+  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Bakgrund och repetition 48 + Syror 33 = 81.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -629,15 +629,6 @@
       "term": "svavelsyrans två vätejoner",
       "expertdefinition": "Varje partikel har två vätejoner att avge. Den första avges lätt, den andra sitter hårdare.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-starka-och-svaga-syror.json"
-    },
-    {
-      "id": "kS4-b1",
-      "avsnitt": "9",
-      "avsnitt_titel": "Koncentrerade och utspädda syror",
-      "delkapitel_titel": "Syror",
-      "term": "koncentration",
-      "expertdefinition": "Hur mycket löst ämne det finns i en viss mängd lösning.",
-      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-koncentrerade-och-utspadda-syror.json"
     },
     {
       "id": "kS4-b2",

@@ -97,6 +97,7 @@ for (const dk of Object.keys(DELKAPITEL)) {
   for (const [N, a] of Object.entries(L.avsnitt)) {
     const K = avsnittInfo(dk, N);
     for (const t of a.termer) {
+      if (B.uteslut && B.uteslut[t.term]) { console.log(`  ${dk} avsnitt ${N}: "${t.term}" utesluten ur banken – ${B.uteslut[t.term]}`); continue; }
       let def = L.utanFormel[t.term] || t.svar.replace(/\*\*/g, '');
       if (/\\ce\{|\\\(/.test(def)) { throw new Error(`${dk} begrepp "${t.term}" har formel kvar och saknar omformulering`); }
       nya.push({ id: t.id.replace(/^k/, 'k' + B.idPrefix), avsnitt: String(+N + B.avsnittOffset), avsnitt_titel: K.titel, delkapitel_titel: DELKAPITEL[dk].titel,
