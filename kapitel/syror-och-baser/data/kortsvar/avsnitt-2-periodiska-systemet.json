@@ -1,0 +1,119 @@
+{
+  "avsnitt": 2,
+  "titel": "Det periodiska systemet",
+  "delkapitel": "repetition",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 2 (Det periodiska systemet), leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8).",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k2-s1",
+      "typ": "tal",
+      "fraga": "Kol har atomnummer 6. Hur många protoner har en kolatom?",
+      "svar": 6,
+      "forklaring": "Atomnumret är alltid samma sak som antalet protoner."
+    },
+    {
+      "id": "k2-s2",
+      "typ": "tal",
+      "fraga": "Hur många valenselektroner har ett atomslag i grupp 1?",
+      "svar": 1,
+      "forklaring": "Gruppnumret säger antalet valenselektroner i huvudgrupperna. Grupp 1 har en."
+    },
+    {
+      "id": "k2-s3",
+      "typ": "tal",
+      "fraga": "Hur många valenselektroner har ett atomslag i grupp 17?",
+      "svar": 7,
+      "forklaring": "Grupp 17 har sju — de saknar alltså bara en för att nå åtta."
+    },
+    {
+      "id": "k2-s4",
+      "typ": "tal",
+      "fraga": "Ett atomslag står i period 2. Hur många elektronskal använder det?",
+      "svar": 2,
+      "forklaring": "Perioden talar om hur många skal atomen använder. Period 2 betyder två skal."
+    },
+    {
+      "id": "k2-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas de vågräta raderna i det periodiska systemet?",
+      "svar": [
+        "period",
+        "perioder"
+      ],
+      "forklaring": "Raderna kallas perioder. Kolumnerna kallas grupper."
+    },
+    {
+      "id": "k2-s6",
+      "typ": "ord",
+      "fraga": "Vad kallas de lodräta kolumnerna i det periodiska systemet?",
+      "svar": [
+        "grupp",
+        "grupper"
+      ],
+      "forklaring": "Kolumnerna kallas grupper. Atomslag i samma grupp har lika många valenselektroner."
+    },
+    {
+      "id": "k2-s7",
+      "typ": "ord",
+      "fraga": "Vad kallas elektronerna i atomens yttersta skal?",
+      "svar": [
+        "valenselektroner",
+        "valenselektron"
+      ],
+      "forklaring": "De kallas valenselektroner, och det är de som avgör hur atomen reagerar."
+    },
+    {
+      "id": "k2-s8",
+      "typ": "ord",
+      "fraga": "Vad kallas ämnena i grupp 18, som nästan inte reagerar alls?",
+      "svar": [
+        "ädelgaser",
+        "ädelgas"
+      ],
+      "forklaring": "Ädelgaserna har fullt yttersta skal och behöver varken avge eller ta upp elektroner."
+    },
+    {
+      "id": "k2-s9",
+      "typ": "ord",
+      "fraga": "Vad kallas ämnena i grupp 1, som har en enda valenselektron?",
+      "svar": [
+        "alkalimetaller",
+        "alkalimetall"
+      ],
+      "forklaring": "Alkalimetallerna avger lätt sin enda valenselektron och blir positiva joner."
+    },
+    {
+      "id": "k2-s10",
+      "typ": "formel",
+      "fraga": "Natrium avger sin enda valenselektron. Skriv jonen som bildas.",
+      "svar": [
+        "Na+"
+      ],
+      "forklaring": "Natrium tappar en elektron, så det blir ett plus över: \\(\\ce{Na+}\\)."
+    },
+    {
+      "id": "k2-s11",
+      "typ": "formel",
+      "fraga": "Klor tar upp en elektron. Skriv jonen som bildas.",
+      "svar": [
+        "Cl-"
+      ],
+      "forklaring": "Klor tar upp en elektron, så det blir ett minus över: \\(\\ce{Cl-}\\)."
+    },
+    {
+      "id": "k2-s12",
+      "typ": "flerval",
+      "fraga": "Var i det periodiska systemet finns de flesta metallerna?",
+      "alternativ": [
+        "Till vänster och i mitten",
+        "Till höger",
+        "Längst upp",
+        "Längst ner"
+      ],
+      "svar": 0,
+      "forklaring": "Metallerna finns till vänster och i mitten. Icke-metallerna finns till höger."
+    }
+  ]
+}

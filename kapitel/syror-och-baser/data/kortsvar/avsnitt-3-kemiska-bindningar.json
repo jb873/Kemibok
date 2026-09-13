@@ -1,0 +1,121 @@
+{
+  "avsnitt": 3,
+  "titel": "Kemiska bindningar",
+  "delkapitel": "repetition",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 3 (Kemiska bindningar), leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8).",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k3-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas bindningen mellan en positiv och en negativ jon?",
+      "svar": [
+        "jonbindning"
+      ],
+      "forklaring": "Jonbindning är den elektriska attraktionen mellan joner med olika laddning."
+    },
+    {
+      "id": "k3-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas bindningen där två atomer delar på elektroner?",
+      "svar": [
+        "kovalent bindning",
+        "elektronparbindning"
+      ],
+      "forklaring": "Kovalent bindning, som också kallas elektronparbindning. Atomerna delar i stället för att ge bort."
+    },
+    {
+      "id": "k3-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas bindningen som håller ihop atomerna i en metall?",
+      "svar": [
+        "metallbindning"
+      ],
+      "forklaring": "Metallbindning. Positiva metalljoner omgivna av fria elektroner."
+    },
+    {
+      "id": "k3-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas de två elektroner som två atomer delar på?",
+      "svar": [
+        "elektronpar"
+      ],
+      "forklaring": "Ett elektronpar. Båda atomerna räknar de två elektronerna som sina."
+    },
+    {
+      "id": "k3-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas det när en atom har fullt yttersta elektronskal?",
+      "svar": [
+        "ädelgasstruktur"
+      ],
+      "forklaring": "Ädelgasstruktur, eftersom det är samma elektronuppsättning som en ädelgas har."
+    },
+    {
+      "id": "k3-s6",
+      "typ": "tal",
+      "fraga": "Hur många elektronpar delar atomerna i en dubbelbindning?",
+      "svar": 2,
+      "forklaring": "Två elektronpar. Ett par ger enkelbindning, tre ger trippelbindning."
+    },
+    {
+      "id": "k3-s7",
+      "typ": "tal",
+      "fraga": "Hur många elektronpar delar atomerna i en trippelbindning?",
+      "svar": 3,
+      "forklaring": "Tre elektronpar. Det gör trippelbindningen mycket stark."
+    },
+    {
+      "id": "k3-s8",
+      "typ": "formel",
+      "fraga": "Skriv formeln för en vattenmolekyl.",
+      "svar": [
+        "H2O"
+      ],
+      "forklaring": "Två väteatomer och en syreatom: \\(\\ce{H2O}\\)."
+    },
+    {
+      "id": "k3-s9",
+      "typ": "formel",
+      "fraga": "Skriv formeln för en koldioxidmolekyl.",
+      "svar": [
+        "CO2"
+      ],
+      "forklaring": "En kolatom och två syreatomer: \\(\\ce{CO2}\\)."
+    },
+    {
+      "id": "k3-s10",
+      "typ": "formel",
+      "fraga": "Skriv formeln för en syremolekyl.",
+      "svar": [
+        "O2"
+      ],
+      "forklaring": "Två syreatomer: \\(\\ce{O2}\\)."
+    },
+    {
+      "id": "k3-s11",
+      "typ": "flerval",
+      "fraga": "Natrium är en metall och klor en icke-metall. Vilken bindning bildar de?",
+      "alternativ": [
+        "Jonbindning",
+        "Kovalent bindning",
+        "Metallbindning"
+      ],
+      "svar": 0,
+      "forklaring": "Jonbindning. Metallen avger en elektron, icke-metallen tar upp den, och jonerna attraherar varandra."
+    },
+    {
+      "id": "k3-s12",
+      "typ": "flerval",
+      "fraga": "Två icke-metaller reagerar med varandra. Vilken bindning blir det?",
+      "alternativ": [
+        "Kovalent bindning",
+        "Jonbindning",
+        "Metallbindning"
+      ],
+      "svar": 0,
+      "forklaring": "Kovalent bindning. Båda saknar elektroner, så ingen kan avge — de måste dela."
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "avsnitt": 5,
+  "titel": "Lösningar",
+  "delkapitel": "repetition",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 5 (Lösningar), leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8).",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k5-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas det ämne som löser ett annat ämne?",
+      "svar": [
+        "lösningsmedel"
+      ],
+      "forklaring": "Lösningsmedel. Det är oftast det ämne det finns mest av, och oftast vatten."
+    },
+    {
+      "id": "k5-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas det ämne som löses i ett lösningsmedel?",
+      "svar": [
+        "löst ämne"
+      ],
+      "forklaring": "Löst ämne. Löser du socker i vatten är sockret det lösta ämnet."
+    },
+    {
+      "id": "k5-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas ett mått på hur mycket löst ämne en lösning innehåller?",
+      "svar": [
+        "koncentration"
+      ],
+      "forklaring": "Koncentration. Mycket löst ämne betyder koncentrerad, lite betyder utspädd."
+    },
+    {
+      "id": "k5-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas en lösning där inget mer av ämnet kan lösas?",
+      "svar": [
+        "mättad",
+        "mättad lösning"
+      ],
+      "forklaring": "Mättad. Allt som tillsätts därefter blir liggande olöst."
+    },
+    {
+      "id": "k5-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas hur mycket av ett ämne som går att lösa i ett lösningsmedel?",
+      "svar": [
+        "löslighet"
+      ],
+      "forklaring": "Löslighet. Den beror på ämnet, lösningsmedlet och temperaturen."
+    },
+    {
+      "id": "k5-s6",
+      "typ": "formel",
+      "fraga": "Skriv formeln för koksalt.",
+      "svar": [
+        "NaCl"
+      ],
+      "forklaring": "Natrium och klor: NaCl."
+    },
+    {
+      "id": "k5-s7",
+      "typ": "flerval",
+      "fraga": "Varför kan vatten lösa så många ämnen?",
+      "alternativ": [
+        "Vattenmolekylen är polär",
+        "Vatten är flytande",
+        "Vatten är genomskinligt"
+      ],
+      "svar": 0,
+      "forklaring": "Vattenmolekylen är polär och kan vända rätt sida mot laddade eller polära partiklar."
+    },
+    {
+      "id": "k5-s8",
+      "typ": "flerval",
+      "fraga": "Vad händer med jonerna när koksalt löses i vatten?",
+      "alternativ": [
+        "De skiljs åt och sprids ut i vattnet",
+        "De försvinner",
+        "De blir till molekyler"
+      ],
+      "svar": 0,
+      "forklaring": "De skiljs åt och sprids ut. Jonerna finns kvar — de är bara inte längre bundna till varandra."
+    },
+    {
+      "id": "k5-s9",
+      "typ": "flerval",
+      "fraga": "Varför leder en saltlösning ström, men inte en sockerlösning?",
+      "alternativ": [
+        "Saltlösningen innehåller fria joner",
+        "Salt är saltare",
+        "Socker är sötare"
+      ],
+      "svar": 0,
+      "forklaring": "Saltlösningen innehåller fria joner som kan röra sig. Socker blir inte joner när det löses."
+    },
+    {
+      "id": "k5-s10",
+      "typ": "flerval",
+      "fraga": "Varför blandar sig inte olja med vatten?",
+      "alternativ": [
+        "Olja är opolärt och attraheras inte av vattenmolekylerna",
+        "Olja är lättare",
+        "Olja är fet"
+      ],
+      "svar": 0,
+      "forklaring": "Olja är opolärt, så vattenmolekylerna har inget att haka tag i. De håller hellre ihop med varandra."
+    },
+    {
+      "id": "k5-s11",
+      "typ": "flerval",
+      "fraga": "Vad händer med koncentrationen om man tillsätter mer lösningsmedel?",
+      "alternativ": [
+        "Den minskar",
+        "Den ökar",
+        "Den är oförändrad"
+      ],
+      "svar": 0,
+      "forklaring": "Den minskar. Samma mängd löst ämne fördelas i mer lösningsmedel."
+    },
+    {
+      "id": "k5-s12",
+      "typ": "flerval",
+      "fraga": "Löser sig socker bäst i varmt eller kallt vatten?",
+      "alternativ": [
+        "Varmt",
+        "Kallt",
+        "Ingen skillnad"
+      ],
+      "svar": 0,
+      "forklaring": "Varmt. För de flesta fasta ämnen ökar lösligheten när temperaturen stiger."
+    }
+  ]
+}

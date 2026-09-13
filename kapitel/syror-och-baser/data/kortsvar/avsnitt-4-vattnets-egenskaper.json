@@ -1,0 +1,130 @@
+{
+  "avsnitt": 4,
+  "titel": "Vattnets egenskaper",
+  "delkapitel": "repetition",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 4 (Vattnets egenskaper), leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8).",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k4-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas en molekyl som har en svagt positiv och en svagt negativ sida?",
+      "svar": [
+        "polär"
+      ],
+      "forklaring": "Polär. Vattenmolekylen är polär, och det förklarar nästan alla dess egenskaper."
+    },
+    {
+      "id": "k4-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas ett ämnes massa i förhållande till dess volym?",
+      "svar": [
+        "densitet"
+      ],
+      "forklaring": "Densitet. Ett ämne med hög densitet har mycket massa på liten plats."
+    },
+    {
+      "id": "k4-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas det när vattenytan dras ihop och blir så liten som möjligt?",
+      "svar": [
+        "ytspänning"
+      ],
+      "forklaring": "Ytspänning. Den uppstår eftersom molekylerna vid ytan saknar grannar ovanför sig."
+    },
+    {
+      "id": "k4-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas attraktionen mellan vattenmolekyler?",
+      "svar": [
+        "vätebindning",
+        "vätebindningar"
+      ],
+      "forklaring": "Vätebindning. Den är svagare än bindningarna inuti molekylen, men de är många."
+    },
+    {
+      "id": "k4-s5",
+      "typ": "tal",
+      "fraga": "Vid vilken temperatur i celsius har flytande vatten sin högsta densitet?",
+      "svar": 4,
+      "forklaring": "Vid 4 °C. Kyls vattnet ytterligare minskar densiteten igen."
+    },
+    {
+      "id": "k4-s6",
+      "typ": "tal",
+      "fraga": "Hur många väteatomer finns i en vattenmolekyl?",
+      "svar": 2,
+      "forklaring": "Två. Tvåan i \\(\\ce{H2O}\\) står efter H och betyder två väteatomer."
+    },
+    {
+      "id": "k4-s7",
+      "typ": "formel",
+      "fraga": "Skriv formeln för en vattenmolekyl.",
+      "svar": [
+        "H2O"
+      ],
+      "forklaring": "Två väteatomer och en syreatom: \\(\\ce{H2O}\\)."
+    },
+    {
+      "id": "k4-s8",
+      "typ": "flerval",
+      "fraga": "Vilken sida av vattenmolekylen är svagt negativ?",
+      "alternativ": [
+        "Syresidan",
+        "Vätesidan",
+        "Ingen av dem"
+      ],
+      "svar": 0,
+      "forklaring": "Syresidan. Syret drar hårdare i de delade elektronerna än väteatomerna gör."
+    },
+    {
+      "id": "k4-s9",
+      "typ": "flerval",
+      "fraga": "Vad händer med vattnets densitet när det fryser till is?",
+      "alternativ": [
+        "Den minskar",
+        "Den ökar",
+        "Den är oförändrad"
+      ],
+      "svar": 0,
+      "forklaring": "Den minskar. Molekylerna ordnar sig i ett mönster med tomrum i, så vattnet tar större plats."
+    },
+    {
+      "id": "k4-s10",
+      "typ": "flerval",
+      "fraga": "Varför flyter is på vatten?",
+      "alternativ": [
+        "Isen har lägre densitet än vattnet",
+        "Isen är kallare",
+        "Isen innehåller luft"
+      ],
+      "svar": 0,
+      "forklaring": "Isen har lägre densitet. Samma mängd vatten väger lika mycket men tar större plats som is."
+    },
+    {
+      "id": "k4-s11",
+      "typ": "flerval",
+      "fraga": "Vad gör diskmedel med vattnets ytspänning?",
+      "alternativ": [
+        "Sänker den",
+        "Höjer den",
+        "Påverkar den inte"
+      ],
+      "svar": 0,
+      "forklaring": "Sänker den. Därför sjunker ett gem som vilat på vattenytan när man tillsätter diskmedel."
+    },
+    {
+      "id": "k4-s12",
+      "typ": "flerval",
+      "fraga": "Varför kan fiskar överleva vintern i en igenfrusen sjö?",
+      "alternativ": [
+        "Isen flyter och isolerar, så vattnet under förblir flytande",
+        "Fiskarna gräver ner sig",
+        "Vattnet under isen är saltare"
+      ],
+      "svar": 0,
+      "forklaring": "Isen flyter och bildar ett isolerande lock. Under det är vattnet fortfarande flytande."
+    }
+  ]
+}
