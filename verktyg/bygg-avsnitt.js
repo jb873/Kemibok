@@ -37,22 +37,22 @@ const AVSNITT = {
        bilder: {
          'jonbindning-natrium-klor.webp': { fil: 'jonbindning-natrium-klor.svg', aktiv: ['enkel', 'standard'], enkel: 'Möts de passar det perfekt', standard: 'kallas\n**jonbindning**' },
          'elektronpar-vate.webp': { fil: 'elektronpar-vate.svg', aktiv: ['enkel', 'standard'], enkel: 'Resultatet är en vätemolekyl', standard: 'det är paret som håller samman' },
-         'enkel-dubbel-trippel.webp': { enkel: 'där varje atom saknar tre', standard: 'finns en\ntrippelbindning' },
+         'enkel-dubbel-trippel.webp': { aktiv: ['enkel', 'standard'], enkel: 'där varje atom saknar tre', standard: 'finns en\ntrippelbindning' },
          'molekylmodeller-vatten.webp': { fil: 'molekylmodeller-vatten.svg', aktiv: ['enkel', 'standard'], enkel: 'vilken man väljer beror på vad man vill visa', standard: 'Valet beror på vad som ska framgå' },   // bara Enkel + Standard (beslut 2026-09-13)
-         'metallbindning.webp': { enkel: 'jonerna ligger i ett hav av elektroner', standard: 'håller på så sätt samman metallen' }
+         'metallbindning.webp': { aktiv: ['enkel', 'standard'], enkel: 'jonerna ligger i ett hav av elektroner', standard: 'håller på så sätt samman metallen' }
        } },
   4: { slug: 'vattnets-egenskaper', titel: 'Vattnets egenskaper', sub: 'därför beter sig vatten som det gör',
        dd: [{ slug: 'varfor-is-flyter', titel: 'Varför is flyter', ikon: '🧊' }, { slug: 'ytspanning', titel: 'Ytspänning i verkligheten', ikon: '💧' }],
        bilder: {
          'polar-vattenmolekyl.webp': { fil: 'polar-vattenmolekyl.svg', aktiv: ['enkel', 'standard'], enkel: 'medan vätesidorna blir **svagt positiva**', standard: 'mindre laddningsskillnader inom molekylen' },
-         'vatebindning.webp': { enkel: 'Den attraktionen\nkallas **vätebindning**', standard: 'Attraktionen mellan vattenmolekylerna kallas **vätebindning**' },
-         'is-och-vatten.webp': { enkel: 'plats som is än som flytande vatten.', standard: '**flyter därför på vatten**' }
+         'vatebindning.webp': { aktiv: ['enkel', 'standard'], enkel: 'Den attraktionen\nkallas **vätebindning**', standard: 'Attraktionen mellan vattenmolekylerna kallas **vätebindning**' },
+         'is-och-vatten.webp': { aktiv: ['enkel', 'standard'], enkel: 'plats som is än som flytande vatten.', standard: '**flyter därför på vatten**' }
        } },
   5: { slug: 'losningar', titel: 'Lösningar', sub: 'vad som händer när något löser sig', dd: [],
        bilder: {
-         'jon-loses-i-vatten.webp': { enkel: 'lossnar jonen\noch sprids ut i vattnet', standard: 'skiljas\nfrån varandra och spridas ut i vattnet' },
-         'polart-och-opolart.webp': { enkel: 'oljan trängs undan till ett\neget lager', standard: 'Därför blandas olja och vatten dåligt' },
-         'mattad-losning.webp': { enkel: 'oavsett hur mycket du\nrör om', standard: 'Om mer av ämnet tillsätts kommer det att bli kvar' }
+         'jon-loses-i-vatten.webp': { aktiv: ['enkel', 'standard'], enkel: 'lossnar jonen\noch sprids ut i vattnet', standard: 'skiljas\nfrån varandra och spridas ut i vattnet' },
+         'polart-och-opolart.webp': { aktiv: ['enkel', 'standard'], enkel: 'oljan trängs undan till ett\neget lager', standard: 'Därför blandas olja och vatten dåligt' },
+         'mattad-losning.webp': { aktiv: ['enkel', 'standard'], enkel: 'oavsett hur mycket du\nrör om', standard: 'Om mer av ämnet tillsätts kommer det att bli kvar' }
        } }
 };
 const K = AVSNITT[N];
@@ -80,6 +80,16 @@ for (const f of Object.keys(K.bilder)) {
   if (!bildspec[f]) { throw new Error('bildspec saknas i leveransen för ' + f); }
 }
 for (const f of Object.keys(bildspec)) { if (!K.bilder[f]) { throw new Error('ankare saknas i konfigurationen för ' + f); } }
+
+// bildguider (doc/bildguider-avsnitt-3-5.md): "## Underdel X — `fil`" följt av punktlista, per bildfil
+const bildguider = {};
+const bgFil = path.join(ROT, 'doc', 'bildguider-avsnitt-3-5.md');
+if (fs.existsSync(bgFil)) {
+  const bg = fs.readFileSync(bgFil, 'utf8').replace(/\r\n/g, '\n');
+  for (const m of bg.matchAll(/## Underdel [A-D] — `([^`]+)`\n([\s\S]*?)(?=\n## |\n# |\n---|$)/g)) {
+    bildguider[m[1]] = m[2].trim();
+  }
+}
 
 // underdelar
 const underdelar = [];
@@ -145,10 +155,11 @@ function figur(f, niva, spec, cfg, titta) {
   if (aktiv) {
     let guide = '';
     if (niva === 'enkel') {
-      guide = titta ? `<div class="bildguide">
+      const punkter = bildguider[fil] || titta;
+      guide = punkter ? `<div class="bildguide">
             <div class="bildguide-rubrik">👁 Titta efter</div>
             <ul>
-${lista(titta)}
+${lista(punkter)}
             </ul>
           </div>
           ` : `<!-- BILDGUIDE SAKNAS i leveransen för ${fil} (Enkel ska ha 2–5 "Titta efter"-punkter före bilden) -->
@@ -174,7 +185,7 @@ ${lista(titta)}
 }
 
 // ---------- bygg underdelar ----------
-const rapport = { nivaer: [], ankare: [], enstaka: [] };
+const rapport = { nivaer: [], ankare: [], enstaka: [], bildguide: [] };
 function underdelHtml(u, i) {
   const dold = i === 0 ? '' : ' dold';
   const nivaer = ['enkel', 'standard', 'fordjupning'];
@@ -192,7 +203,8 @@ function underdelHtml(u, i) {
       const tittaHar = n === 'enkel' ? u.sek['Titta efter (endast Enkel)'] : null;
       const arAktiv = Array.isArray(ank.aktiv) ? ank.aktiv.includes(n) : !!ank.aktiv;
       block.splice(traff[0] + 1, 0, { typ: 'bild', html: figur(f, n, spec, ank, tittaHar), aktiv: arAktiv });
-      if (arAktiv && tittaHar) { u.tittaAnvand = true; }
+      if (arAktiv && tittaHar && !bildguider[ank.fil || f]) { u.tittaAnvand = true; }
+      if (arAktiv && n === 'enkel') { rapport.bildguide.push(`${ank.fil || f}: ${bildguider[ank.fil || f] ? 'bildguide ur doc/bildguider' : (tittaHar ? 'bildguide ur leveransens Titta efter' : 'BILDGUIDE SAKNAS')}`); }
       rapport.ankare.push(`${f} ${u.bok}/${n} → efter "${ank[n].replace(/\n/g, ' ').slice(0, 40)}…"${arAktiv ? ' [AKTIV]' : ''}`);
     }
     // §7.1: stycken med en mening på Enkel
@@ -355,6 +367,7 @@ console.log((TORR ? '(torrkörning) ' : 'skrev ') + path.relative(ROT, ut));
 console.log('underdelar:', underdelar.map(u => u.bok.toUpperCase() + ' ' + u.titel).join(' | '));
 rapport.nivaer.forEach(r => console.log('  ' + r));
 rapport.ankare.forEach(r => console.log('  bild: ' + r));
+rapport.bildguide.forEach(r => console.log('  guide: ' + r));
 console.log('§7.1 – Enkel-stycken med en mening (' + rapport.enstaka.length + '):');
 rapport.enstaka.forEach(r => console.log('  ' + r));
 const kvar = (html.replace(/<!--[\s\S]*?-->/g, '').match(/[₀-₉⁺⁻→]/g) || []);
