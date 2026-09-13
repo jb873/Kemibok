@@ -60,7 +60,7 @@ const AVSNITT_SYROR = {
   4: { dd: [{ slug: 'mol', titel: 'Mol: en brygga mellan atomer och gram', ikon: '⚖️' }],   // Joachims text, mol.md – länkas senare även från neutralisation/salter (byggs där ur samma fil)
        bilder: { 'fyra-kombinationerna.svg': { aktiv: [], enkel: 'en syra som avger ogärna', standard: 'Utspädd ättiksyra är ett exempel' } } },
   5: { dd: [],
-       bilder: { 'syra-och-metall.webp': { aktiv: [], enkel: 'tillsammans en vätgasmolekyl', standard: 'metallatomerna avger elektroner' } } }
+       bilder: { 'syra-och-metall.webp': { aktiv: ['enkel', 'standard'], staende: true, enkel: 'tillsammans en vätgasmolekyl', standard: 'metallatomerna avger elektroner' } } }   // grön bakgrund, nycklad 2026-09-13; stående provrör
 };
 // Baser (leverans 2026-09-13): titel/slug/underrubrik ur huvudet. tva-vagar-till-bas.svg genererad (bilder-svg.js);
 // stark-och-svag-bas.webp och fortvalning.webp levererades med grön bakgrund (#00ff00) och nycklades
