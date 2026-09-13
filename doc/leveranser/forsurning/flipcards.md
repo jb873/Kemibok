@@ -63,7 +63,7 @@ länder.
 
 ## Begreppskort — fördjupning
 
-**NOₓ**
+**NOₓ** [formel]
 F: Vad betyder beteckningen NOₓ?
 S: En samlingsbeteckning för kväveoxider. Det lilla x:et betyder att **antalet syreatomer varierar**
 — främst NO och NO₂.

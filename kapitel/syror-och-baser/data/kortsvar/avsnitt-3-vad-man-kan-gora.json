@@ -47,6 +47,9 @@
       "typ": "tal",
       "fraga": "Hur många procent har svavelnedfallet minskat sedan 1980?",
       "svar": 80,
+      "tolerans": {
+        "abs": 5
+      },
       "forklaring": "Mer än 80 procent. Nedfallet ligger nu nära förindustriella nivåer."
     },
     {

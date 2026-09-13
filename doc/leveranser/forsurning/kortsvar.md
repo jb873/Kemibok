@@ -156,6 +156,7 @@ jorden
 **Kontrollräknat:** 12 + 12 + 12 = 36, och 2 + 12 + 2 + 20 = 36.
 
 **Tolerans 1:1:** 0,5 — så att 5,1 till 6,1 godkänns på frågan om regnvattnets pH.
+**Tolerans 3:5:** 5 — beslutat av Joachim 2026-09-13 (75 till 85 godkänns på frågan om svavelnedfallet).
 
 ---
 
