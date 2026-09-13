@@ -1,0 +1,143 @@
+{
+  "avsnitt": 2,
+  "titel": "Neutralisation i vardagen",
+  "delkapitel": "neutralisation",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 2 (Neutralisation i vardagen), delkapitel Neutralisation, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/neutralisation/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k2-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas det när magsyra kommer upp i matstrupen och svider?",
+      "svar": [
+        "halsbränna"
+      ],
+      "forklaring": "Halsbränna. Matstrupen saknar magsäckens skydd."
+    },
+    {
+      "id": "k2-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas läkemedel som neutraliserar magsyra?",
+      "svar": [
+        "antacida",
+        "antacidum"
+      ],
+      "forklaring": "Antacida. De innehåller basiska ämnen som kalciumkarbonat eller magnesiumhydroxid."
+    },
+    {
+      "id": "k2-s3",
+      "typ": "ord",
+      "fraga": "Vilken jon i bukspottet neutraliserar syran från magsäcken?",
+      "svar": [
+        "vätekarbonat",
+        "vätekarbonatjon"
+      ],
+      "forklaring": "Vätekarbonatjoner. De höjer pH så att tarmen inte skadas och enzymerna fungerar."
+    },
+    {
+      "id": "k2-s4",
+      "typ": "ord",
+      "fraga": "Vilken vätska i munnen neutraliserar de syror bakterier bildar?",
+      "svar": [
+        "saliv",
+        "saliven"
+      ],
+      "forklaring": "Saliven. Den innehåller ämnen som kan binda vätejoner."
+    },
+    {
+      "id": "k2-s5",
+      "typ": "tal",
+      "fraga": "Vilket ungefärligt pH har magsäckens innehåll?",
+      "svar": 1,
+      "tolerans": {
+        "abs": 1
+      },
+      "forklaring": "Omkring 1 till 2. Mycket surt."
+    },
+    {
+      "id": "k2-s6",
+      "typ": "flerval",
+      "fraga": "Varför skadas matstrupen av magsyra men inte magsäcken?",
+      "alternativ": [
+        "Magsäcken har ett skyddande slemlager",
+        "Magsyran är svagare i magen",
+        "Matstrupen är smalare"
+      ],
+      "svar": 0,
+      "forklaring": "Magsäcken har ett slemlager som skyddar väggarna. Matstrupen har inte det."
+    },
+    {
+      "id": "k2-s7",
+      "typ": "flerval",
+      "fraga": "Hur tar ett antacidum bort magsyran?",
+      "alternativ": [
+        "Det reagerar kemiskt med den",
+        "Det suger upp den",
+        "Det späder ut den"
+      ],
+      "svar": 0,
+      "forklaring": "Det reagerar kemiskt med syran. Det suger inte upp den."
+    },
+    {
+      "id": "k2-s8",
+      "typ": "flerval",
+      "fraga": "Vilken sorts rengöringsmedel löser kalkavlagringar?",
+      "alternativ": [
+        "Sura",
+        "Basiska",
+        "Neutrala"
+      ],
+      "svar": 0,
+      "forklaring": "Sura. Kalk reagerar med syror, därför används citronsyra i avkalkningsmedel."
+    },
+    {
+      "id": "k2-s9",
+      "typ": "flerval",
+      "fraga": "Vilken sorts rengöringsmedel löser fett?",
+      "alternativ": [
+        "Basiska",
+        "Sura",
+        "Neutrala"
+      ],
+      "svar": 0,
+      "forklaring": "Basiska. Baser bryter ner fett, därför innehåller propplösare natriumhydroxid."
+    },
+    {
+      "id": "k2-s10",
+      "typ": "flerval",
+      "fraga": "Varför ska man aldrig blanda ett surt och ett basiskt rengöringsmedel?",
+      "alternativ": [
+        "De förbrukar varandra och blandningen kan bli het",
+        "Det blir dyrare",
+        "Det tar längre tid"
+      ],
+      "svar": 0,
+      "forklaring": "De neutraliserar varandra så effekten försvinner, och reaktionen kan utveckla värme och stänka."
+    },
+    {
+      "id": "k2-s11",
+      "typ": "flerval",
+      "fraga": "Du får en syra på huden. Ska du neutralisera den med en bas?",
+      "alternativ": [
+        "Nej, spola med mycket vatten",
+        "Ja, med bikarbonat",
+        "Ja, med tvål"
+      ],
+      "svar": 0,
+      "forklaring": "Nej. Spola med stora mängder vatten. Neutralisering på hud kan göra skadan värre."
+    },
+    {
+      "id": "k2-s12",
+      "typ": "flerval",
+      "fraga": "Varför justeras pH vid vattenrening?",
+      "alternativ": [
+        "Fel pH skadar ledningar och stör reningsprocessen",
+        "Vattnet smakar bättre",
+        "Det sparar energi"
+      ],
+      "svar": 0,
+      "forklaring": "Fel pH skadar ledningar, påverkar djur och växter och stör processerna i reningsverket."
+    }
+  ]
+}

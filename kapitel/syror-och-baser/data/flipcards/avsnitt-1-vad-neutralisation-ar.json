@@ -1,0 +1,124 @@
+{
+  "avsnitt": 1,
+  "titel": "Vad neutralisation är",
+  "delkapitel": "neutralisation",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 1 (Vad neutralisation är), delkapitel Neutralisation. 9 begreppskort + 7 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/neutralisation/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k1-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är neutralisation?",
+      "svar": "När en syra och en bas reagerar med varandra så att **vätejoner och hydroxidjoner bildar vatten**."
+    },
+    {
+      "id": "k1-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad bildas när en vätejon möter en hydroxidjon?",
+      "svar": "En **vattenmolekyl**: \\(\\ce{H+ + OH- -> H2O}\\). Laddningarna tar ut varandra."
+    },
+    {
+      "id": "k1-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder att en lösning är neutral?",
+      "svar": "Att den har **pH 7** — lika många vätejoner som hydroxidjoner."
+    },
+    {
+      "id": "k1-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad blir kvar om vattnet avdunstar från en neutraliserad lösning?",
+      "svar": "De joner som **inte reagerade**. De bildar ett fast ämne — ett **salt**."
+    },
+    {
+      "id": "k1-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Hur sammanfattas neutralisation i ord?",
+      "svar": "**syra + bas \\(\\rightarrow\\) salt + vatten**"
+    },
+    {
+      "id": "k1-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "I vilket förhållande reagerar vätejoner och hydroxidjoner?",
+      "svar": "**Ett till ett.** En vätejon reagerar med exakt en hydroxidjon."
+    },
+    {
+      "id": "k1-b7",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Skriv neutralisationen med oxoniumjoner.",
+      "svar": "\\(\\ce{H3O+ + OH- -> 2 H2O}\\)"
+    },
+    {
+      "id": "k1-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är en åskådarjon?",
+      "svar": "En jon som finns i lösningen men **inte deltar** i reaktionen. Natrium- och kloridjonerna vid en neutralisation är exempel."
+    },
+    {
+      "id": "k1-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är skillnaden mellan den fullständiga formeln och jonformeln?",
+      "svar": "Den fullständiga tar med alla ämnen. **Jonformeln** tar bara med de partiklar som faktiskt reagerar."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k1-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad menas med att neutralisation inte är att syra och bas \"tar ut varandra\"?",
+      "svar": "Det sker en **verklig kemisk reaktion**. Bestämda partiklar förbrukas och nya bildas."
+    },
+    {
+      "id": "k1-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Blandar du saltsyra och natriumhydroxid — vilka joner reagerar, och vilka gör det inte?",
+      "svar": "**Vätejoner och hydroxidjoner** reagerar. **Natrium- och kloridjoner** gör ingenting och finns kvar."
+    },
+    {
+      "id": "k1-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "En lösning har neutraliserats och har pH 7. Består den av rent vatten?",
+      "svar": "**Nej.** Den innehåller fortfarande de joner som inte deltog i reaktionen."
+    },
+    {
+      "id": "k1-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Du tillsätter för lite bas till en syra. Vad blir resultatet?",
+      "svar": "Lösningen är fortfarande **sur** — det finns vätejoner kvar som inte fått någon hydroxidjon att reagera med."
+    },
+    {
+      "id": "k1-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Betyder \"lika många joner\" att man ska blanda lika stora volymer?",
+      "svar": "**Nej.** Två lösningar kan innehålla helt olika många joner i samma volym."
+    },
+    {
+      "id": "k1-m6",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilka två saker påverkar hur många vätejoner en syralösning innehåller?",
+      "svar": "**Koncentrationen** och syrans **styrka**."
+    },
+    {
+      "id": "k1-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför är alla neutralisationer mellan stark syra och stark bas i grunden samma reaktion?",
+      "svar": "Jonformeln är alltid \\(\\ce{H3O+ + OH- -> 2 H2O}\\). Bara **åskådarjonerna** skiljer sig."
+    }
+  ]
+}

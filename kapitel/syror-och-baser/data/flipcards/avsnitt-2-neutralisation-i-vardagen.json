@@ -1,0 +1,117 @@
+{
+  "avsnitt": 2,
+  "titel": "Neutralisation i vardagen",
+  "delkapitel": "neutralisation",
+  "version": "1.0",
+  "kort_totalt": 15,
+  "_kommentar": "Flipcards för avsnitt 2 (Neutralisation i vardagen), delkapitel Neutralisation. 9 begreppskort + 6 modellkort = 15 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/neutralisation/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k2-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilket pH har magsäckens innehåll?",
+      "svar": "Omkring **1 till 2**. Den sura miljön behövs för matsmältningen."
+    },
+    {
+      "id": "k2-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är halsbränna?",
+      "svar": "Magsyra som kommit upp i **matstrupen**, som saknar magsäckens skyddande slemlager."
+    },
+    {
+      "id": "k2-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är ett antacidum?",
+      "svar": "Ett läkemedel som innehåller en **bas** och neutraliserar magsyran."
+    },
+    {
+      "id": "k2-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad gör bukspottet när maten lämnar magsäcken?",
+      "svar": "Det innehåller **vätekarbonatjoner** som neutraliserar syran, så att tarmen inte skadas."
+    },
+    {
+      "id": "k2-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Hur skyddar saliven tänderna?",
+      "svar": "Den **neutraliserar de syror** som bakterier bildar, så att pH i munnen återgår till det normala."
+    },
+    {
+      "id": "k2-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilken sorts rengöringsmedel löser kalkavlagringar?",
+      "svar": "**Sura.** Citronsyra är ett vanligt exempel."
+    },
+    {
+      "id": "k2-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilken sorts rengöringsmedel löser fett?",
+      "svar": "**Basiska.** Propplösare innehåller ofta natriumhydroxid."
+    },
+    {
+      "id": "k2-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är titrering?",
+      "svar": "Att bestämma en **okänd koncentration** genom att tillsätta en lösning med känd koncentration tills reaktionen är fullständig."
+    },
+    {
+      "id": "k2-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad gör en buffert?",
+      "svar": "Den **motstår pH-förändringar** åt båda hållen. Blodets buffert bygger på kolsyra och vätekarbonat."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k2-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Tar ett antacidum bort syran genom att suga upp den?",
+      "svar": "**Nej.** Det **reagerar kemiskt** med syran. Basen och syran neutraliserar varandra."
+    },
+    {
+      "id": "k2-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför skadas inte magsäcken av sin egen syra, men matstrupen gör det?",
+      "svar": "Magsäcken har ett **slemlager** som skyddar väggarna. Matstrupen saknar det."
+    },
+    {
+      "id": "k2-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur uppstår karies, kemiskt sett?",
+      "svar": "Bakterier bildar **syror** som löser ut mineraler ur emaljen när pH nära tandytan sjunker."
+    },
+    {
+      "id": "k2-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför ska man aldrig blanda ett surt och ett basiskt rengöringsmedel?",
+      "svar": "De **förbrukar varandra**, så rengöringseffekten försvinner. Dessutom kan blandningen utveckla **värme** och stänka."
+    },
+    {
+      "id": "k2-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Får du en syra på huden — ska du neutralisera den med en bas?",
+      "svar": "**Nej, aldrig.** Spola med stora mängder **vatten** i stället."
+    },
+    {
+      "id": "k2-m6",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför spelar valet av indikator roll vid en titrering?",
+      "svar": "Slutpunkten ligger olika beroende på om syran är stark eller svag. Indikatorns **omslagsområde** måste stämma med den."
+    }
+  ]
+}

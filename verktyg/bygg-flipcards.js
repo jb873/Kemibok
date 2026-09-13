@@ -37,12 +37,14 @@ function lasLeverans(dk) {
   const fil = path.join(ROT, 'doc', 'leveranser', dk, 'flipcards.md');
   if (!fs.existsSync(fil)) { return null; }
   const md = fs.readFileSync(fil, 'utf8').replace(/\r\n/g, '\n');
-  const slut = md.indexOf('\n# Begreppsbanken');
+  const slut = md.search(/\n#{1,2} Begreppsbanken/);   // # eller ## (neutralisation)
   const kropp = slut > 0 ? md.slice(0, slut) : md;
   const utanFormel = {};
-  if (slut > 0) { for (const m of md.slice(slut).matchAll(/\n\*\*([^*]+)\*\* — ([\s\S]*?)(?=\n\n)/g)) { utanFormel[m[1].trim().toLowerCase()] = m[2].replace(/\n/g, ' ').trim(); } }
+  // bara Begreppsbanken-sektionen (fram till nästa rubrik) – "**Term** — …" i t.ex. "Dubbletter att kontrollera" ska inte räknas
+  const bankSek = slut > 0 ? md.slice(slut).replace(/^\n#{1,2} [^\n]+\n/, '').split(/\n#{1,2} /)[0] : '';
+  if (slut > 0) { for (const m of bankSek.matchAll(/\n\*\*([^*]+)\*\* — ([\s\S]*?)(?=\n\n|\n*$(?![\s\S]))/g)) { utanFormel[m[1].trim().toLowerCase()] = m[2].replace(/\n/g, ' ').trim(); } }
   const avsnitt = {};
-  for (const a of kropp.matchAll(/\n# AVSNITT (\d) — ([^\n]+)\n\*\*(\d+) kort:\*\* (\d+) begreppskort, (\d+) modellkort\n([\s\S]*?)(?=\n# AVSNITT |\n# Räkning|$)/g)) {
+  for (const a of kropp.matchAll(/\n# AVSNITT (\d) — ([^\n]+)\n\*\*(\d+) kort:\*\* (\d+) begreppskort, (\d+) modellkort\n([\s\S]*?)(?=\n# AVSNITT |\n#{1,2} Räkning|$)/g)) {
     const N = +a[1], inneh = a[6], vb = +a[4], vm = +a[5];
     if (+a[3] !== vb + vm) { throw new Error(`${dk} avsnitt ${N}: ${a[3]} kort ≠ ${vb} + ${vm}`); }
     const kort = { begreppskort: [], modellkort: [] }, termer = [], varningar = [];
@@ -58,7 +60,7 @@ function lasLeverans(dk) {
         const lista = typ === 'begrepp' ? kort.begreppskort : kort.modellkort;
         const id = `k${N}-${typ === 'begrepp' ? 'b' : 'm'}${lista.length + 1}`;
         lista.push({ id, type: typ, niva, fraga, svar });
-        if (typ === 'begrepp' && niva === 'grundlaggande') { termer.push({ id, term: titel.toLowerCase(), svar }); }
+        if (typ === 'begrepp' && niva === 'grundlaggande') { termer.push({ id, term: titel.toLowerCase(), svar, svarRaa: k[4].replace(/\n/g, ' ').trim() }); }   // svarRaa: råtexten (Unicode) till banken
       }
     }
     // leveransens egen räkning kontrolleras men stoppar inte bygget – det byggda antalet är sanningen
@@ -99,7 +101,8 @@ for (const dk of Object.keys(DELKAPITEL)) {
     const K = avsnittInfo(dk, N);
     for (const t of a.termer) {
       if (B.uteslut && B.uteslut[t.term]) { console.log(`  ${dk} avsnitt ${N}: "${t.term}" utesluten ur banken – ${B.uteslut[t.term]}`); continue; }
-      let def = L.utanFormel[t.term] || t.svar.replace(/\*\*/g, '');
+      // banken renderar ren text: leveransens omformulering, annars kortets råtext (Unicode-pilar och -index går bra, ce-formler inte)
+      let def = L.utanFormel[t.term] || t.svarRaa.replace(/\*\*/g, '');
       if (/\\ce\{|\\\(/.test(def)) { throw new Error(`${dk} begrepp "${t.term}" har formel kvar och saknar omformulering`); }
       nya.push({ id: t.id.replace(/^k/, 'k' + B.idPrefix), avsnitt: String(+N + B.avsnittOffset), avsnitt_titel: K.titel, delkapitel_titel: DELKAPITEL[dk].titel,
         term: t.term, expertdefinition: def, kallfil: `kapitel/${KAP}/data/flipcards/avsnitt-${N}-${K.slug}.json` });

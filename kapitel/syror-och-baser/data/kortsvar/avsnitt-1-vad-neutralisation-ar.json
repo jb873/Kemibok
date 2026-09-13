@@ -1,0 +1,134 @@
+{
+  "avsnitt": 1,
+  "titel": "Vad neutralisation är",
+  "delkapitel": "neutralisation",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 1 (Vad neutralisation är), delkapitel Neutralisation, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/neutralisation/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k1-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas reaktionen när en syra och en bas reagerar med varandra?",
+      "svar": [
+        "neutralisation"
+      ],
+      "forklaring": "Neutralisation. Vätejonerna och hydroxidjonerna bildar vatten."
+    },
+    {
+      "id": "k1-s2",
+      "typ": "ord",
+      "fraga": "Vilket ämne bildas när en vätejon och en hydroxidjon går ihop?",
+      "svar": [
+        "vatten"
+      ],
+      "forklaring": "Vatten. Det som gjorde lösningarna sura och basiska är då förbrukat."
+    },
+    {
+      "id": "k1-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas det fasta ämne som blir kvar om vattnet avdunstar efter en neutralisation?",
+      "svar": [
+        "salt"
+      ],
+      "forklaring": "Ett salt. Det består av de joner som inte deltog i reaktionen."
+    },
+    {
+      "id": "k1-s4",
+      "typ": "formel",
+      "fraga": "Skriv formeln för den partikel som bildas vid neutralisation.",
+      "svar": [
+        "H2O"
+      ],
+      "forklaring": "\\(\\ce{H2O}\\) — vatten."
+    },
+    {
+      "id": "k1-s5",
+      "typ": "formel",
+      "fraga": "Skriv formeln för koksalt.",
+      "svar": [
+        "NaCl"
+      ],
+      "forklaring": "\\(\\ce{NaCl}\\) — natrium och klorid, de joner som blev över."
+    },
+    {
+      "id": "k1-s6",
+      "typ": "tal",
+      "fraga": "Hur många hydroxidjoner krävs för att neutralisera en oxoniumjon?",
+      "svar": 1,
+      "forklaring": "En. Förhållandet är ett till ett."
+    },
+    {
+      "id": "k1-s7",
+      "typ": "flerval",
+      "fraga": "Vilka joner deltar inte när saltsyra neutraliseras med natriumhydroxid?",
+      "alternativ": [
+        "Natriumjoner och kloridjoner",
+        "Oxoniumjoner och hydroxidjoner",
+        "Alla joner deltar"
+      ],
+      "svar": 0,
+      "forklaring": "Natrium- och kloridjonerna. De kallas åskådarjoner och finns kvar i lösningen."
+    },
+    {
+      "id": "k1-s8",
+      "typ": "flerval",
+      "fraga": "En neutraliserad lösning har pH 7. Består den av rent vatten?",
+      "alternativ": [
+        "Nej, de joner som inte reagerade finns kvar",
+        "Ja, allt har blivit vatten",
+        "Bara om man filtrerar"
+      ],
+      "svar": 0,
+      "forklaring": "Nej. Lösningen innehåller fortfarande de joner som inte reagerade."
+    },
+    {
+      "id": "k1-s9",
+      "typ": "flerval",
+      "fraga": "Du tillsätter för lite bas till en syra. Hur blir lösningen?",
+      "alternativ": [
+        "Fortfarande sur",
+        "Fortfarande basisk",
+        "Neutral"
+      ],
+      "svar": 0,
+      "forklaring": "Fortfarande sur. Det finns oxoniumjoner kvar utan hydroxidjoner att reagera med."
+    },
+    {
+      "id": "k1-s10",
+      "typ": "flerval",
+      "fraga": "Betyder lika många joner att man ska blanda lika stora volymer?",
+      "alternativ": [
+        "Nej, en volym kan innehålla olika många joner",
+        "Ja, alltid",
+        "Bara för starka syror"
+      ],
+      "svar": 0,
+      "forklaring": "Nej. En koncentrerad lösning innehåller fler joner per liter än en utspädd."
+    },
+    {
+      "id": "k1-s11",
+      "typ": "flerval",
+      "fraga": "Vilka två saker avgör hur många oxoniumjoner en syralösning innehåller?",
+      "alternativ": [
+        "Koncentrationen och syrans styrka",
+        "Bara koncentrationen",
+        "Bara temperaturen"
+      ],
+      "svar": 0,
+      "forklaring": "Koncentrationen och styrkan. Båda påverkar hur många joner som faktiskt finns."
+    },
+    {
+      "id": "k1-s12",
+      "typ": "flerval",
+      "fraga": "Hur sammanfattas neutralisation i ord?",
+      "alternativ": [
+        "syra + bas \\(\\rightarrow\\) salt + vatten",
+        "syra + bas \\(\\rightarrow\\) vatten",
+        "syra + bas \\(\\rightarrow\\) gas + vatten"
+      ],
+      "svar": 0,
+      "forklaring": "syra + bas \\(\\rightarrow\\) salt + vatten. Vattnet kommer från jonerna som reagerade, saltet från de övriga."
+    }
+  ]
+}

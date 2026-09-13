@@ -3,7 +3,7 @@
   "kapitel_titel": "Syror och baser",
   "version": 3,
   "skapad": "2026-09-13",
-  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Bakgrund och repetition 48 + Syror 33 + Baser 26 = 107.",
+  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Bakgrund och repetition 48 + Syror 33 + Baser 26 + Neutralisation 12 = 119.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -744,7 +744,7 @@
       "avsnitt_titel": "Vad är en bas?",
       "delkapitel_titel": "Baser",
       "term": "hydroxidjon",
-      "expertdefinition": "nämns i repetitionsavsnitt 1 som exempel på sammansatt jon, men har där inget eget kort. Ingen dubblett.",
+      "expertdefinition": "En sammansatt jon av en syreatom och en väteatom med gemensam negativ laddning.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-bas.json"
     },
     {
@@ -971,6 +971,114 @@
       "term": "säkerhet vid stänk",
       "expertdefinition": "Spola omedelbart med mycket vatten, i minst tjugo minuter, och säg till din lärare direkt.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-viktiga-baser.json"
+    },
+    {
+      "id": "kN1-b2",
+      "avsnitt": "15",
+      "avsnitt_titel": "Vad neutralisation är",
+      "delkapitel_titel": "Neutralisation",
+      "term": "vad som bildas",
+      "expertdefinition": "En vätejon och en hydroxidjon bildar tillsammans en vattenmolekyl. Laddningarna tar ut varandra.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-neutralisation-ar.json"
+    },
+    {
+      "id": "kN1-b3",
+      "avsnitt": "15",
+      "avsnitt_titel": "Vad neutralisation är",
+      "delkapitel_titel": "Neutralisation",
+      "term": "neutral lösning",
+      "expertdefinition": "Att den har pH 7 — lika många vätejoner som hydroxidjoner.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-neutralisation-ar.json"
+    },
+    {
+      "id": "kN1-b4",
+      "avsnitt": "15",
+      "avsnitt_titel": "Vad neutralisation är",
+      "delkapitel_titel": "Neutralisation",
+      "term": "salt",
+      "expertdefinition": "De joner som inte reagerade. De bildar ett fast ämne — ett salt.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-neutralisation-ar.json"
+    },
+    {
+      "id": "kN1-b5",
+      "avsnitt": "15",
+      "avsnitt_titel": "Vad neutralisation är",
+      "delkapitel_titel": "Neutralisation",
+      "term": "sammanfattningen",
+      "expertdefinition": "syra + bas → salt + vatten",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-neutralisation-ar.json"
+    },
+    {
+      "id": "kN1-b6",
+      "avsnitt": "15",
+      "avsnitt_titel": "Vad neutralisation är",
+      "delkapitel_titel": "Neutralisation",
+      "term": "ett till ett",
+      "expertdefinition": "Ett till ett. En vätejon reagerar med exakt en hydroxidjon.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-neutralisation-ar.json"
+    },
+    {
+      "id": "kN2-b1",
+      "avsnitt": "16",
+      "avsnitt_titel": "Neutralisation i vardagen",
+      "delkapitel_titel": "Neutralisation",
+      "term": "magsyrans ph",
+      "expertdefinition": "Omkring 1 till 2. Den sura miljön behövs för matsmältningen.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-neutralisation-i-vardagen.json"
+    },
+    {
+      "id": "kN2-b2",
+      "avsnitt": "16",
+      "avsnitt_titel": "Neutralisation i vardagen",
+      "delkapitel_titel": "Neutralisation",
+      "term": "halsbränna",
+      "expertdefinition": "Magsyra som kommit upp i matstrupen, som saknar magsäckens skyddande slemlager.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-neutralisation-i-vardagen.json"
+    },
+    {
+      "id": "kN2-b3",
+      "avsnitt": "16",
+      "avsnitt_titel": "Neutralisation i vardagen",
+      "delkapitel_titel": "Neutralisation",
+      "term": "antacida",
+      "expertdefinition": "Ett läkemedel som innehåller en bas och neutraliserar magsyran.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-neutralisation-i-vardagen.json"
+    },
+    {
+      "id": "kN2-b4",
+      "avsnitt": "16",
+      "avsnitt_titel": "Neutralisation i vardagen",
+      "delkapitel_titel": "Neutralisation",
+      "term": "bukspott",
+      "expertdefinition": "Det innehåller vätekarbonatjoner som neutraliserar syran, så att tarmen inte skadas.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-neutralisation-i-vardagen.json"
+    },
+    {
+      "id": "kN2-b5",
+      "avsnitt": "16",
+      "avsnitt_titel": "Neutralisation i vardagen",
+      "delkapitel_titel": "Neutralisation",
+      "term": "saliven",
+      "expertdefinition": "Den neutraliserar de syror som bakterier bildar, så att pH i munnen återgår till det normala.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-neutralisation-i-vardagen.json"
+    },
+    {
+      "id": "kN2-b6",
+      "avsnitt": "16",
+      "avsnitt_titel": "Neutralisation i vardagen",
+      "delkapitel_titel": "Neutralisation",
+      "term": "kalk och syra",
+      "expertdefinition": "Sura. Citronsyra är ett vanligt exempel.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-neutralisation-i-vardagen.json"
+    },
+    {
+      "id": "kN2-b7",
+      "avsnitt": "16",
+      "avsnitt_titel": "Neutralisation i vardagen",
+      "delkapitel_titel": "Neutralisation",
+      "term": "fett och bas",
+      "expertdefinition": "Basiska. Propplösare innehåller ofta natriumhydroxid.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-neutralisation-i-vardagen.json"
     }
   ]
 }
