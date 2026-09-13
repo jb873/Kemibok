@@ -1,0 +1,139 @@
+{
+  "avsnitt": 4,
+  "titel": "Viktiga baser: egenskaper, användning och säkerhet",
+  "delkapitel": "baser",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 4 (Viktiga baser: egenskaper, användning och säkerhet), delkapitel Baser, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/baser/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k4-s1",
+      "typ": "ord",
+      "fraga": "Vilken bas finns i propplösare?",
+      "svar": [
+        "natriumhydroxid"
+      ],
+      "forklaring": "Natriumhydroxid. Den bryter ner fett och organiskt material."
+    },
+    {
+      "id": "k4-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas kalciumhydroxid i vardagligt tal?",
+      "svar": [
+        "släckt kalk"
+      ],
+      "forklaring": "Släckt kalk. Den används i murbruk och byggmaterial."
+    },
+    {
+      "id": "k4-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas reaktionen när en stark bas bryter ner fett och bildar tvål?",
+      "svar": [
+        "förtvålning"
+      ],
+      "forklaring": "Förtvålning. Samma reaktion som gör att basiska lösningar känns hala på huden."
+    },
+    {
+      "id": "k4-s4",
+      "typ": "ord",
+      "fraga": "Vilken bas är råvara till konstgödsel?",
+      "svar": [
+        "ammoniak"
+      ],
+      "forklaring": "Ammoniak. Den tillverkas av luftens kvävgas och blir sedan gödsel."
+    },
+    {
+      "id": "k4-s5",
+      "typ": "formel",
+      "fraga": "Skriv formeln för ammoniak.",
+      "svar": [
+        "NH3"
+      ],
+      "forklaring": "\\(\\ce{NH3}\\) — kväve och väte."
+    },
+    {
+      "id": "k4-s6",
+      "typ": "flerval",
+      "fraga": "Varför löser natriumhydroxid upp en propp i avloppet?",
+      "alternativ": [
+        "Den bryter ner fett och organiskt material",
+        "Den löser upp metall",
+        "Den värmer upp röret"
+      ],
+      "svar": 0,
+      "forklaring": "Den bryter ner fett och organiskt material, alltså precis det som brukar sätta igen ett avlopp."
+    },
+    {
+      "id": "k4-s7",
+      "typ": "flerval",
+      "fraga": "Vad har tvåltillverkning och halheten hos basiska lösningar gemensamt?",
+      "alternativ": [
+        "Det är samma reaktion",
+        "De har inget gemensamt",
+        "Tvål är en syra"
+      ],
+      "svar": 0,
+      "forklaring": "Samma reaktion. Basen bryter ner fett och bildar tvål — i det ena fallet avsiktligt."
+    },
+    {
+      "id": "k4-s8",
+      "typ": "flerval",
+      "fraga": "Hur härdar murbruk?",
+      "alternativ": [
+        "Kalciumhydroxiden reagerar med luftens koldioxid",
+        "Vattnet avdunstar",
+        "Kalken smälter"
+      ],
+      "svar": 0,
+      "forklaring": "Kalciumhydroxiden reagerar långsamt med luftens koldioxid och blir kalksten igen."
+    },
+    {
+      "id": "k4-s9",
+      "typ": "flerval",
+      "fraga": "Varför är starka baser särskilt farliga för ögonen?",
+      "alternativ": [
+        "De löser upp fettet i cellernas ytterhöljen och tränger djupare",
+        "De är varmare",
+        "De är tyngre"
+      ],
+      "svar": 0,
+      "forklaring": "Basen löser upp fettet i cellmembranen och kan fortsätta inåt. En syra bildar ett skorplager som bromsar den."
+    },
+    {
+      "id": "k4-s10",
+      "typ": "flerval",
+      "fraga": "Vad gör du om du får en stark bas i ögat?",
+      "alternativ": [
+        "Spolar med mycket vatten i minst tjugo minuter",
+        "Torkar av med papper",
+        "Sköljer med en syra"
+      ],
+      "svar": 0,
+      "forklaring": "Spola omedelbart med mycket vatten, i minst tjugo minuter, och säg till din lärare."
+    },
+    {
+      "id": "k4-s11",
+      "typ": "flerval",
+      "fraga": "Varför får propplösare aldrig blandas med andra rengöringsmedel?",
+      "alternativ": [
+        "Blandningen kan utveckla värme eller bilda giftiga gaser",
+        "Det blir dyrare",
+        "Det luktar illa"
+      ],
+      "svar": 0,
+      "forklaring": "Blandningen kan utveckla kraftig värme eller bilda giftiga gaser. Det finns inget att vinna."
+    },
+    {
+      "id": "k4-s12",
+      "typ": "flerval",
+      "fraga": "Varför behöver växter konstgödsel med kväve?",
+      "alternativ": [
+        "De kan inte ta upp luftens kvävgas direkt",
+        "Kväve finns inte i luften",
+        "De behöver extra vatten"
+      ],
+      "svar": 0,
+      "forklaring": "Kvävgasmolekylen hålls samman av en trippelbindning som växter inte kan bryta."
+    }
+  ]
+}

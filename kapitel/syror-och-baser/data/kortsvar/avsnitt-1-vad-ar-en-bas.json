@@ -1,0 +1,137 @@
+{
+  "avsnitt": 1,
+  "titel": "Vad är en bas?",
+  "delkapitel": "baser",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 1 (Vad är en bas?), delkapitel Baser, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/baser/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k1-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas jonen som består av en syreatom och en väteatom med negativ laddning?",
+      "svar": [
+        "hydroxidjon"
+      ],
+      "forklaring": "Hydroxidjonen. Den är en sammansatt jon, precis som nitratjonen och sulfatjonen."
+    },
+    {
+      "id": "k1-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas ett ämne som kan ta upp vätejoner?",
+      "svar": [
+        "bas"
+      ],
+      "forklaring": "Bas. Det är hela definitionen — den säger ingenting om hydroxidjoner."
+    },
+    {
+      "id": "k1-s3",
+      "typ": "ord",
+      "fraga": "Vad blir ammoniak när den tagit upp en vätejon?",
+      "svar": [
+        "ammoniumjon",
+        "ammonium"
+      ],
+      "forklaring": "En ammoniumjon. Kvar av vattenmolekylen blir en hydroxidjon."
+    },
+    {
+      "id": "k1-s4",
+      "typ": "formel",
+      "fraga": "Skriv formeln för en hydroxidjon.",
+      "svar": [
+        "OH-"
+      ],
+      "forklaring": "\\(\\ce{OH-}\\) — syre och väte med en gemensam negativ laddning."
+    },
+    {
+      "id": "k1-s5",
+      "typ": "formel",
+      "fraga": "Skriv formeln för ammoniak.",
+      "svar": [
+        "NH3"
+      ],
+      "forklaring": "\\(\\ce{NH3}\\) — en kväveatom och tre väteatomer. Inga hydroxidjoner någonstans."
+    },
+    {
+      "id": "k1-s6",
+      "typ": "formel",
+      "fraga": "Vilken partikel bildas när en vätejon och en hydroxidjon går ihop? Skriv formeln.",
+      "svar": [
+        "H2O"
+      ],
+      "forklaring": "\\(\\ce{H2O}\\) — vatten. Laddningarna tar ut varandra."
+    },
+    {
+      "id": "k1-s7",
+      "typ": "flerval",
+      "fraga": "Vilka två sätt kan hydroxidjoner hamna i en lösning på?",
+      "alternativ": [
+        "Basen innehåller dem redan, eller basen bildar dem ur vattnet",
+        "Bara genom att basen innehåller dem",
+        "Bara genom reaktion med vatten"
+      ],
+      "svar": 0,
+      "forklaring": "Antingen fanns hydroxidjonerna redan i ämnet, eller så bildas de när basen tar en vätejon från vattnet."
+    },
+    {
+      "id": "k1-s8",
+      "typ": "flerval",
+      "fraga": "Innehåller ammoniak hydroxidjoner från början?",
+      "alternativ": [
+        "Nej, de bildas ur vattnet",
+        "Ja, en per molekyl",
+        "Ja, tre per molekyl"
+      ],
+      "svar": 0,
+      "forklaring": "Nej. Ammoniak består av kväve och väte. Hydroxidjonen kommer från vattenmolekylen."
+    },
+    {
+      "id": "k1-s9",
+      "typ": "flerval",
+      "fraga": "Varför säger man inte att en bas är ett ämne som innehåller hydroxidjoner?",
+      "alternativ": [
+        "För att ammoniak är en bas utan att innehålla några",
+        "För att hydroxidjoner är ovanliga",
+        "För att definitionen är gammal"
+      ],
+      "svar": 0,
+      "forklaring": "Ammoniak innehåller inga hydroxidjoner men är ändå en bas. Därför måste definitionen vara vidare."
+    },
+    {
+      "id": "k1-s10",
+      "typ": "flerval",
+      "fraga": "Varför känns basiska lösningar hala?",
+      "alternativ": [
+        "Basen reagerar med fettet på huden",
+        "Basen är hal i sig",
+        "Huden blir våt"
+      ],
+      "svar": 0,
+      "forklaring": "Basen bryter ner hudens fett och bildar något tvålliknande. Det är ett varningstecken."
+    },
+    {
+      "id": "k1-s11",
+      "typ": "flerval",
+      "fraga": "Varför leder basiska lösningar elektrisk ström?",
+      "alternativ": [
+        "De innehåller fria joner som kan röra sig",
+        "De är basiska",
+        "De innehåller vatten"
+      ],
+      "svar": 0,
+      "forklaring": "Fria joner. Ström är laddning i rörelse."
+    },
+    {
+      "id": "k1-s12",
+      "typ": "flerval",
+      "fraga": "Vad händer med natriumhydroxid när det löses i vatten?",
+      "alternativ": [
+        "Jongittret löses upp och jonerna blir fria",
+        "Ämnet reagerar med vattnet",
+        "Ämnet bildar nya hydroxidjoner"
+      ],
+      "svar": 0,
+      "forklaring": "Jongittret löses upp av de polära vattenmolekylerna, precis som när koksalt löses."
+    }
+  ]
+}

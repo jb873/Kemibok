@@ -1,0 +1,136 @@
+{
+  "avsnitt": 3,
+  "titel": "Basiska lösningar: pH, koncentration och utspädning",
+  "delkapitel": "baser",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 3 (Basiska lösningar: pH, koncentration och utspädning), delkapitel Baser, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/baser/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k3-s1",
+      "typ": "tal",
+      "fraga": "Vilket pH har en neutral lösning?",
+      "svar": 7,
+      "forklaring": "Sju. Lika många oxoniumjoner som hydroxidjoner."
+    },
+    {
+      "id": "k3-s2",
+      "typ": "tal",
+      "fraga": "En lösning har pH 11. Vilket pOH har den?",
+      "svar": 3,
+      "forklaring": "Tre. pH + pOH = 14."
+    },
+    {
+      "id": "k3-s3",
+      "typ": "tal",
+      "fraga": "En lösning har pH 9. En annan har pH 10. Hur många gånger fler hydroxidjoner har den andra?",
+      "svar": 10,
+      "forklaring": "Tio gånger. Varje steg på skalan är en tiofaldig skillnad, även åt basiska hållet."
+    },
+    {
+      "id": "k3-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas måttet på koncentrationen av hydroxidjoner?",
+      "svar": [
+        "pOH"
+      ],
+      "forklaring": "pOH. Det fungerar precis som pH fast för hydroxidjoner."
+    },
+    {
+      "id": "k3-s5",
+      "typ": "flerval",
+      "fraga": "Vilket pH har en basisk lösning?",
+      "alternativ": [
+        "Över 7",
+        "Under 7",
+        "Exakt 7"
+      ],
+      "svar": 0,
+      "forklaring": "Över 7. Ju mer basisk, desto högre tal."
+    },
+    {
+      "id": "k3-s6",
+      "typ": "flerval",
+      "fraga": "Vilken färg blir BTB i en basisk lösning?",
+      "alternativ": [
+        "Blå",
+        "Gul",
+        "Röd"
+      ],
+      "svar": 0,
+      "forklaring": "Blå. BTB är gul i surt och grön omkring neutralt."
+    },
+    {
+      "id": "k3-s7",
+      "typ": "flerval",
+      "fraga": "Vad händer med antalet oxoniumjoner när man tillsätter en bas?",
+      "alternativ": [
+        "Det minskar",
+        "Det ökar",
+        "Det är oförändrat"
+      ],
+      "svar": 0,
+      "forklaring": "Det minskar. De reagerar med de nya hydroxidjonerna och bildar vatten."
+    },
+    {
+      "id": "k3-s8",
+      "typ": "flerval",
+      "fraga": "En stark bas späds ut med vatten. Blir den svagare?",
+      "alternativ": [
+        "Nej, styrkan är oförändrad",
+        "Ja, den blir svagare",
+        "Ja, den blir starkare"
+      ],
+      "svar": 0,
+      "forklaring": "Nej. Styrkan är en egenskap hos basen. Det är koncentrationen som minskat."
+    },
+    {
+      "id": "k3-s9",
+      "typ": "flerval",
+      "fraga": "Vad händer med pH när en basisk lösning späds med vatten?",
+      "alternativ": [
+        "Det sjunker mot 7",
+        "Det stiger",
+        "Det är oförändrat"
+      ],
+      "svar": 0,
+      "forklaring": "Det sjunker mot 7. Färre hydroxidjoner per liter betyder mindre basiskt."
+    },
+    {
+      "id": "k3-s10",
+      "typ": "flerval",
+      "fraga": "Kan en svag bas vara koncentrerad?",
+      "alternativ": [
+        "Ja, styrka och koncentration är oberoende",
+        "Nej, svaga baser är alltid utspädda",
+        "Bara vid uppvärmning"
+      ],
+      "svar": 0,
+      "forklaring": "Ja. En ammoniaklösning kan vara koncentrerad trots att ammoniak är en svag bas."
+    },
+    {
+      "id": "k3-s11",
+      "typ": "flerval",
+      "fraga": "Varför blir det varmt när natriumhydroxid löses i vatten?",
+      "alternativ": [
+        "Upplösningen frigör energi",
+        "Basen kokar",
+        "Vattnet reagerar med luften"
+      ],
+      "svar": 0,
+      "forklaring": "Upplösningen frigör energi, och för natriumhydroxid är mängden ovanligt stor."
+    },
+    {
+      "id": "k3-s12",
+      "typ": "flerval",
+      "fraga": "Hur ska en stark bas spädas?",
+      "alternativ": [
+        "Basen tillsätts till vattnet, lite i taget",
+        "Vattnet hälls på basen",
+        "Ordningen spelar ingen roll"
+      ],
+      "svar": 0,
+      "forklaring": "Basen tillsätts till vattnet under omrörning — aldrig vatten på fast eller koncentrerad bas."
+    }
+  ]
+}

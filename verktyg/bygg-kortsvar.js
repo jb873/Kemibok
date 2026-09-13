@@ -60,7 +60,7 @@ function tolkaTabell(N, inneh) {
   // radbrutna förklaringar/alternativ: avsluta bara vid nästa post, tom rad eller filslut – inte vid radslut
   if (fBlock) { for (const m of fBlock[1].matchAll(/^(\d+)\. ([\s\S]*?)(?=\n\d+\. |\n\n|\n\*\*|(?![\s\S]))/gm)) { forkl[+m[1]] = m[2]; } }
   const alt = {};
-  for (const m of inneh.matchAll(/^\*\*Flerval (\d+):\*\* ([\s\S]*?)(?=\n\*\*Flerval|\n\n|\n---|(?![\s\S]))/gm)) { alt[+m[1]] = m[2].split(' · ').map(x => x.replace(/\s*\n\s*/g, ' ').trim()); }
+  for (const m of inneh.matchAll(/^\*\*Flerval (\d+):\*\* ([\s\S]*?)(?=\n\*\*Flerval|\n\n|\n---|(?![\s\S]))/gm)) { alt[+m[1]] = m[2].replace(/\s*\n\s*/g, ' ').split(' · ').map(x => x.trim()); }   // radbrytning först, sedan dela vid ·
   const tol = {};
   for (const m of inneh.matchAll(/^\*\*Tolerans (\d+):\*\* ([\d.,]+)/gm)) { tol[+m[1]] = Number(m[2].replace(',', '.')); }
   return rader.map(r => {

@@ -1,0 +1,137 @@
+{
+  "avsnitt": 2,
+  "titel": "Starka och svaga baser",
+  "delkapitel": "baser",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 2 (Starka och svaga baser), delkapitel Baser, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/baser/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k2-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas en bas som ger nästan alla sina hydroxidjoner i vatten?",
+      "svar": [
+        "stark",
+        "stark bas"
+      ],
+      "forklaring": "Stark. Nästan allt ämne som löser sig ger sina hydroxidjoner."
+    },
+    {
+      "id": "k2-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas en bas som bara reagerar delvis med vattnet?",
+      "svar": [
+        "svag",
+        "svag bas"
+      ],
+      "forklaring": "Svag. En stor del av partiklarna finns kvar oreagerade."
+    },
+    {
+      "id": "k2-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas det när ett ämne delas upp i fria joner i lösning?",
+      "svar": [
+        "dissociera",
+        "dissociation"
+      ],
+      "forklaring": "Dissociera. Det gäller ämnen som redan är uppbyggda av joner."
+    },
+    {
+      "id": "k2-s4",
+      "typ": "formel",
+      "fraga": "Skriv formeln för natriumhydroxid.",
+      "svar": [
+        "NaOH"
+      ],
+      "forklaring": "\\(\\ce{NaOH}\\) — natriumjon och hydroxidjon."
+    },
+    {
+      "id": "k2-s5",
+      "typ": "formel",
+      "fraga": "Skriv formeln för kalciumhydroxid.",
+      "svar": [
+        "Ca(OH)2"
+      ],
+      "forklaring": "\\(\\ce{Ca(OH)2}\\) — två hydroxidjoner, eftersom kalciumjonen har laddningen 2+."
+    },
+    {
+      "id": "k2-s6",
+      "typ": "tal",
+      "fraga": "Hur många hydroxidjoner ger en formelenhet kalciumhydroxid?",
+      "svar": 2,
+      "forklaring": "Två. Kalciumjonen är 2+, och det krävs två minus för att balansera."
+    },
+    {
+      "id": "k2-s7",
+      "typ": "flerval",
+      "fraga": "Kalciumhydroxid löser sig dåligt i vatten. Är den därför en svag bas?",
+      "alternativ": [
+        "Nej, den del som löser sig ger fullständigt sina hydroxidjoner",
+        "Ja, den är svag",
+        "Ja, eftersom lite löser sig"
+      ],
+      "svar": 0,
+      "forklaring": "Nej. Svårlöslig handlar om hur mycket som går att lösa. Svag handlar om vad det lösta gör."
+    },
+    {
+      "id": "k2-s8",
+      "typ": "flerval",
+      "fraga": "Vilken av dessa är en svag bas?",
+      "alternativ": [
+        "Ammoniak",
+        "Natriumhydroxid",
+        "Kaliumhydroxid"
+      ],
+      "svar": 0,
+      "forklaring": "Ammoniak. Bara omkring en molekyl av hundra har reagerat vid varje tillfälle."
+    },
+    {
+      "id": "k2-s9",
+      "typ": "flerval",
+      "fraga": "Vilken av dessa är en stark bas?",
+      "alternativ": [
+        "Kaliumhydroxid",
+        "Ammoniak",
+        "Bikarbonat"
+      ],
+      "svar": 0,
+      "forklaring": "Kaliumhydroxid. Natrium- och kalciumhydroxid är de andra två starka."
+    },
+    {
+      "id": "k2-s10",
+      "typ": "flerval",
+      "fraga": "Vad beskriver orden stark och svag hos en bas?",
+      "alternativ": [
+        "Hur fullständigt basen ger sina hydroxidjoner",
+        "Hur mycket bas som finns",
+        "Hur frätande basen är"
+      ],
+      "svar": 0,
+      "forklaring": "Hur fullständigt basen ger hydroxidjoner. Det säger inget om mängden bas."
+    },
+    {
+      "id": "k2-s11",
+      "typ": "flerval",
+      "fraga": "Varför ger natriumhydroxid fullständigt sina hydroxidjoner men ammoniak bara delvis?",
+      "alternativ": [
+        "Natriumhydroxid behöver inte reagera, jonerna finns redan",
+        "Natriumhydroxid är större",
+        "Ammoniak är ett gas"
+      ],
+      "svar": 0,
+      "forklaring": "Natriumhydroxid behöver inte reagera — hydroxidjonerna finns färdiga och gittret löses bara upp."
+    },
+    {
+      "id": "k2-s12",
+      "typ": "flerval",
+      "fraga": "Vad finns i en ammoniaklösning som inte finns i en natriumhydroxidlösning?",
+      "alternativ": [
+        "Oreagerade ammoniakmolekyler",
+        "Fler hydroxidjoner",
+        "Natriumjoner"
+      ],
+      "svar": 0,
+      "forklaring": "Oreagerade ammoniakmolekyler. De är neutrala och bidrar inte till surhet eller ström."
+    }
+  ]
+}
