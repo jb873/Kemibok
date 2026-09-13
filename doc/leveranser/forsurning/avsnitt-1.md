@@ -6,6 +6,10 @@
 **Underrubrik i hero:** från skorsten till regndroppe
 
 > **Delkapitlets intro** (stycket före avsnitt 1 i leveransen) läggs på delkapitelsidan, inte här.
+>
+> Intro, levererad 2026-09-13 (ligger på delkapitelsidan index.html):
+>
+> Försurning handlar om hur mark och vatten blir surare än de naturligt är. Det är ett miljöproblem som under 1900-talet skadade skogar, sjöar och byggnader i stora delar av Europa — och samtidigt ett av få miljöproblem där utvecklingen tydligt har vänt. I det här delkapitlet tittar vi på varför det blir surt, vad det ställer till med, och vad man faktiskt kan göra åt det.
 
 ---
 
