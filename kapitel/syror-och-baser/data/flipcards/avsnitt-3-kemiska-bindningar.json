@@ -1,0 +1,159 @@
+{
+  "avsnitt": 3,
+  "titel": "Kemiska bindningar",
+  "delkapitel": "repetition",
+  "version": "1.0",
+  "kort_totalt": 21,
+  "_kommentar": "Flipcards för avsnitt 3 (Kemiska bindningar). 15 begreppskort + 6 modellkort = 21 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/flipcards-avsnitt-2-5.md.",
+  "begreppskort": [
+    {
+      "id": "k3-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en kemisk bindning?",
+      "svar": "Det som **håller samman** atomer eller joner i ett ämne."
+    },
+    {
+      "id": "k3-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad menas med ädelgasstruktur?",
+      "svar": "Att atomens **yttersta skal är fullt** — för de flesta atomslag åtta elektroner. Samma uppsättning som en ädelgas har."
+    },
+    {
+      "id": "k3-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en jonbindning?",
+      "svar": "Den elektriska **attraktionen** mellan en positiv och en negativ jon. Uppstår när en atom avger elektroner och en annan tar upp dem."
+    },
+    {
+      "id": "k3-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en kovalent bindning?",
+      "svar": "En bindning där två atomer **delar** ett elektronpar. Kallas också elektronparbindning."
+    },
+    {
+      "id": "k3-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är ett elektronpar i en kovalent bindning?",
+      "svar": "Två elektroner som **båda atomerna** räknar som sina. Det är paret som håller ihop dem."
+    },
+    {
+      "id": "k3-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en metallbindning?",
+      "svar": "Positiva metalljoner i ett regelbundet mönster, omgivna av **fria elektroner** som rör sig mellan dem."
+    },
+    {
+      "id": "k3-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en enkelbindning?",
+      "svar": "En kovalent bindning där atomerna delar **ett** elektronpar. Ritas som ett streck."
+    },
+    {
+      "id": "k3-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en dubbelbindning?",
+      "svar": "En kovalent bindning där atomerna delar **två** elektronpar. Finns till exempel i \\(\\ce{O2}\\)."
+    },
+    {
+      "id": "k3-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en trippelbindning?",
+      "svar": "En kovalent bindning där atomerna delar **tre** elektronpar. Finns i \\(\\ce{N2}\\), och den är mycket stark."
+    },
+    {
+      "id": "k3-b10",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad visar en summaformel?",
+      "svar": "Vilka atomslag som ingår och **hur många** av varje. \\(\\ce{H2O}\\) betyder två väteatomer och en syreatom."
+    },
+    {
+      "id": "k3-b11",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad visar en strukturformel?",
+      "svar": "Vilka atomer som är **bundna till vilka**. Varje streck är ett delat elektronpar: H–O–H."
+    },
+    {
+      "id": "k3-b12",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad visar en kalottmodell?",
+      "svar": "Molekylens **verkliga form** och atomernas storlek i förhållande till varandra. Atomerna ritas som klot som sitter ihop."
+    },
+    {
+      "id": "k3-b13",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är ett jongitter?",
+      "svar": "Det regelbundna mönster som joner sitter i. I natriumklorid omges varje positiv jon av **sex** negativa och tvärtom."
+    },
+    {
+      "id": "k3-b14",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är elektronegativitet?",
+      "svar": "Ett atomslags förmåga att **dra till sig elektroner** i en bindning. Ökar åt höger och uppåt i periodiska systemet."
+    },
+    {
+      "id": "k3-b15",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är en polär kovalent bindning?",
+      "svar": "En bindning där elektronparet delas **ojämnt**, eftersom det ena atomslaget är mer elektronegativt. Ena änden blir svagt negativ, den andra svagt positiv."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k3-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Natrium är en metall och klor en icke-metall. Vilken sorts bindning bildar de?",
+      "svar": "**Jonbindning.** Natrium avger en elektron, klor tar upp den, och de motsatt laddade jonerna attraherar varandra."
+    },
+    {
+      "id": "k3-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Två icke-metaller möts. Vilken sorts bindning blir det?",
+      "svar": "**Kovalent bindning.** Båda saknar elektroner, så ingen kan avge — de måste dela."
+    },
+    {
+      "id": "k3-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur många elektronpar delar de två kväveatomerna i \\(\\ce{N2}\\)?",
+      "svar": "**Tre.** Varje kväveatom har fem valenselektroner och saknar tre, så de måste dela tre par."
+    },
+    {
+      "id": "k3-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför leder metaller elektrisk ström?",
+      "svar": "Valenselektronerna är **fria att röra sig** mellan atomerna. Ström är elektroner i rörelse, och i en metall finns de redan."
+    },
+    {
+      "id": "k3-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför spricker en saltkristall när man slår på den, medan en metall bucklas?",
+      "svar": "I saltet hamnar **lika laddningar** bredvid varandra när lagren förskjuts, och de repellerar. I metallen finns bara ett elektronhav som anpassar sig."
+    },
+    {
+      "id": "k3-m6",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Vad menas med att jonbindning och kovalent bindning är ytterligheter på samma skala?",
+      "svar": "Det handlar om hur **ojämnt** elektronerna fördelas. Liten skillnad i elektronegativitet ger opolär kovalent bindning, stor skillnad ger jonbindning. Det finns ingen skarp gräns."
+    }
+  ]
+}

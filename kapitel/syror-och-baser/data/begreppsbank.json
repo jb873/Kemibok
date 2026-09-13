@@ -1,9 +1,9 @@
 {
   "kapitel_id": "syror-och-baser",
   "kapitel_titel": "Syror och baser",
-  "version": 1,
-  "skapad": "2026-09-12",
-  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds ur flipcardsens grundläggande begreppskort (kallfil). Fördjupningsbegrepp (isotop, ädelgasstruktur, orbital) finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här, flipcardsen behåller sina.",
+  "version": 2,
+  "skapad": "2026-09-13",
+  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler (molekyl, grundämne, kemisk förening, sammansatt jon, dubbelbindning, trippelbindning, summaformel) är omformulerade utan formler här, flipcardsen behåller sina. Avsnitt 1 (13) + 2 (11) + 3 (12) + 4 (5) + 5 (7) = 48.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -112,6 +112,286 @@
       "term": "sammansatt jon",
       "expertdefinition": "Flera atomer som sitter ihop och tillsammans har en laddning. Hydroxidjonen och sulfatjonen är exempel.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
+    },
+    {
+      "id": "k2-b1",
+      "avsnitt": "2",
+      "avsnitt_titel": "Det periodiska systemet",
+      "term": "atomnummer",
+      "expertdefinition": "Hur många protoner atomkärnan innehåller. Väte har atomnummer 1, syre har 8.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
+    },
+    {
+      "id": "k2-b2",
+      "avsnitt": "2",
+      "avsnitt_titel": "Det periodiska systemet",
+      "term": "period",
+      "expertdefinition": "En vågrät rad. Perioden visar hur många elektronskal atomen använder.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
+    },
+    {
+      "id": "k2-b3",
+      "avsnitt": "2",
+      "avsnitt_titel": "Det periodiska systemet",
+      "term": "valensskal",
+      "expertdefinition": "Atomens yttersta elektronskal, där valenselektronerna sitter. Perioden talar om vilket skal det är.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
+    },
+    {
+      "id": "k2-b4",
+      "avsnitt": "2",
+      "avsnitt_titel": "Det periodiska systemet",
+      "term": "grupp",
+      "expertdefinition": "En lodrät kolumn. Atomslag i samma grupp har lika många valenselektroner och beter sig ofta likadant.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
+    },
+    {
+      "id": "k2-b5",
+      "avsnitt": "2",
+      "avsnitt_titel": "Det periodiska systemet",
+      "term": "alkalimetall",
+      "expertdefinition": "Den står i grupp 1 och har en valenselektron. Avger den lätt och blir en positiv jon. Litium, natrium och kalium är exempel.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
+    },
+    {
+      "id": "k2-b6",
+      "avsnitt": "2",
+      "avsnitt_titel": "Det periodiska systemet",
+      "term": "alkalisk jordartsmetall",
+      "expertdefinition": "Den står i grupp 2 och har två valenselektroner. Magnesium och kalcium är exempel.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
+    },
+    {
+      "id": "k2-b7",
+      "avsnitt": "2",
+      "avsnitt_titel": "Det periodiska systemet",
+      "term": "halogen",
+      "expertdefinition": "Den står i grupp 17 och har sju valenselektroner. Saknar bara en för att nå åtta, och tar därför hellre upp en elektron än avger någon.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
+    },
+    {
+      "id": "k2-b8",
+      "avsnitt": "2",
+      "avsnitt_titel": "Det periodiska systemet",
+      "term": "ädelgas",
+      "expertdefinition": "Den står i grupp 18 och har fullt yttersta skal. Behöver varken avge eller ta upp elektroner och reagerar därför nästan inte alls.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
+    },
+    {
+      "id": "k2-b9",
+      "avsnitt": "2",
+      "avsnitt_titel": "Det periodiska systemet",
+      "term": "metall",
+      "expertdefinition": "Till vänster och i mitten. De leder ström och värme, är formbara och har metallglans. Ungefär åttio av atomslagen är metaller.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
+    },
+    {
+      "id": "k2-b10",
+      "avsnitt": "2",
+      "avsnitt_titel": "Det periodiska systemet",
+      "term": "icke-metall",
+      "expertdefinition": "Till höger i systemet. De leder ström dåligt, flera är gaser, och de fasta är ofta spröda.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
+    },
+    {
+      "id": "k2-b11",
+      "avsnitt": "2",
+      "avsnitt_titel": "Det periodiska systemet",
+      "term": "halvmetall",
+      "expertdefinition": "Ett atomslag med egenskaper från både metaller och icke-metaller. Kisel är den viktigaste — den är grunden för all elektronik.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
+    },
+    {
+      "id": "k3-b1",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kemiska bindningar",
+      "term": "kemisk bindning",
+      "expertdefinition": "Det som håller samman atomer eller joner i ett ämne.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
+    },
+    {
+      "id": "k3-b2",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kemiska bindningar",
+      "term": "ädelgasstruktur",
+      "expertdefinition": "Att atomens yttersta skal är fullt — för de flesta atomslag åtta elektroner. Samma uppsättning som en ädelgas har.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
+    },
+    {
+      "id": "k3-b3",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kemiska bindningar",
+      "term": "jonbindning",
+      "expertdefinition": "Den elektriska attraktionen mellan en positiv och en negativ jon. Uppstår när en atom avger elektroner och en annan tar upp dem.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
+    },
+    {
+      "id": "k3-b4",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kemiska bindningar",
+      "term": "kovalent bindning",
+      "expertdefinition": "En bindning där två atomer delar ett elektronpar. Kallas också elektronparbindning.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
+    },
+    {
+      "id": "k3-b5",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kemiska bindningar",
+      "term": "elektronpar",
+      "expertdefinition": "Två elektroner som båda atomerna räknar som sina. Det är paret som håller ihop dem.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
+    },
+    {
+      "id": "k3-b6",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kemiska bindningar",
+      "term": "metallbindning",
+      "expertdefinition": "Positiva metalljoner i ett regelbundet mönster, omgivna av fria elektroner som rör sig mellan dem.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
+    },
+    {
+      "id": "k3-b7",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kemiska bindningar",
+      "term": "enkelbindning",
+      "expertdefinition": "En kovalent bindning där atomerna delar ett elektronpar. Ritas som ett streck.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
+    },
+    {
+      "id": "k3-b8",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kemiska bindningar",
+      "term": "dubbelbindning",
+      "expertdefinition": "En kovalent bindning där atomerna delar två elektronpar. Finns till exempel i syremolekylen.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
+    },
+    {
+      "id": "k3-b9",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kemiska bindningar",
+      "term": "trippelbindning",
+      "expertdefinition": "En kovalent bindning där atomerna delar tre elektronpar. Finns i kvävemolekylen, och den är mycket stark.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
+    },
+    {
+      "id": "k3-b10",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kemiska bindningar",
+      "term": "summaformel",
+      "expertdefinition": "Visar vilka atomslag som ingår i en molekyl och hur många av varje. I vattenmolekylen två väteatomer och en syreatom.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
+    },
+    {
+      "id": "k3-b11",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kemiska bindningar",
+      "term": "strukturformel",
+      "expertdefinition": "Vilka atomer som är bundna till vilka. Varje streck är ett delat elektronpar: H–O–H.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
+    },
+    {
+      "id": "k3-b12",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kemiska bindningar",
+      "term": "kalottmodell",
+      "expertdefinition": "Molekylens verkliga form och atomernas storlek i förhållande till varandra. Atomerna ritas som klot som sitter ihop.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
+    },
+    {
+      "id": "k4-b1",
+      "avsnitt": "4",
+      "avsnitt_titel": "Vattnets egenskaper",
+      "term": "polär molekyl",
+      "expertdefinition": "En molekyl med en svagt positiv och en svagt negativ sida, eftersom elektronerna är ojämnt fördelade.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-vattnets-egenskaper.json"
+    },
+    {
+      "id": "k4-b2",
+      "avsnitt": "4",
+      "avsnitt_titel": "Vattnets egenskaper",
+      "term": "vätebindning",
+      "expertdefinition": "Attraktionen mellan vattenmolekyler — den svagt positiva vätesidan hos en molekyl dras till den svagt negativa syresidan hos en annan.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-vattnets-egenskaper.json"
+    },
+    {
+      "id": "k4-b3",
+      "avsnitt": "4",
+      "avsnitt_titel": "Vattnets egenskaper",
+      "term": "densitet",
+      "expertdefinition": "Hur mycket massa ett ämne har i förhållande till sin volym.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-vattnets-egenskaper.json"
+    },
+    {
+      "id": "k4-b4",
+      "avsnitt": "4",
+      "avsnitt_titel": "Vattnets egenskaper",
+      "term": "ytspänning",
+      "expertdefinition": "Att vattenytan dras ihop och strävar efter att bli så liten som möjligt, eftersom molekylerna vid ytan saknar grannar ovanför sig.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-vattnets-egenskaper.json"
+    },
+    {
+      "id": "k4-b5",
+      "avsnitt": "4",
+      "avsnitt_titel": "Vattnets egenskaper",
+      "term": "tensid",
+      "expertdefinition": "Sänker ytspänningen. Diskmedel är ett exempel — det stör attraktionen mellan vattenmolekylerna.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-vattnets-egenskaper.json"
+    },
+    {
+      "id": "k5-b1",
+      "avsnitt": "5",
+      "avsnitt_titel": "Lösningar",
+      "term": "lösning",
+      "expertdefinition": "En blandning där ett ämne har fördelats jämnt i ett annat.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
+    },
+    {
+      "id": "k5-b2",
+      "avsnitt": "5",
+      "avsnitt_titel": "Lösningar",
+      "term": "lösningsmedel",
+      "expertdefinition": "Det ämne som löser det andra. Oftast vatten, och oftast det det finns mest av.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
+    },
+    {
+      "id": "k5-b3",
+      "avsnitt": "5",
+      "avsnitt_titel": "Lösningar",
+      "term": "löst ämne",
+      "expertdefinition": "Det ämne som fördelas i lösningsmedlet. Löser du socker i vatten är sockret det lösta ämnet.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
+    },
+    {
+      "id": "k5-b4",
+      "avsnitt": "5",
+      "avsnitt_titel": "Lösningar",
+      "term": "koncentration",
+      "expertdefinition": "Hur mycket löst ämne lösningen innehåller i förhållande till mängden lösningsmedel.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
+    },
+    {
+      "id": "k5-b5",
+      "avsnitt": "5",
+      "avsnitt_titel": "Lösningar",
+      "term": "löslighet",
+      "expertdefinition": "Hur mycket av ämnet som går att lösa i ett visst lösningsmedel. Beror på ämnet, lösningsmedlet och temperaturen.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
+    },
+    {
+      "id": "k5-b6",
+      "avsnitt": "5",
+      "avsnitt_titel": "Lösningar",
+      "term": "mättad lösning",
+      "expertdefinition": "En lösning där inget mer kan lösas. Allt som tillsätts därefter blir liggande olöst.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
+    },
+    {
+      "id": "k5-b7",
+      "avsnitt": "5",
+      "avsnitt_titel": "Lösningar",
+      "term": "lika löser lika",
+      "expertdefinition": "Polära ämnen löser sig i polära lösningsmedel, opolära i opolära. Blandar man polärt och opolärt händer lite.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
     }
   ]
 }

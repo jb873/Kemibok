@@ -1,0 +1,152 @@
+{
+  "avsnitt": 2,
+  "titel": "Det periodiska systemet",
+  "delkapitel": "repetition",
+  "version": "1.0",
+  "kort_totalt": 20,
+  "_kommentar": "Flipcards för avsnitt 2 (Det periodiska systemet). 12 begreppskort + 8 modellkort = 20 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/flipcards-avsnitt-2-5.md.",
+  "begreppskort": [
+    {
+      "id": "k2-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad visar atomnumret?",
+      "svar": "Hur många **protoner** atomkärnan innehåller. Väte har atomnummer 1, syre har 8."
+    },
+    {
+      "id": "k2-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en period i det periodiska systemet?",
+      "svar": "En **vågrät rad**. Perioden visar hur många elektronskal atomen använder."
+    },
+    {
+      "id": "k2-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är valensskalet?",
+      "svar": "Atomens **yttersta** elektronskal, där valenselektronerna sitter. Perioden talar om vilket skal det är."
+    },
+    {
+      "id": "k2-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en grupp i det periodiska systemet?",
+      "svar": "En **lodrät kolumn**. Atomslag i samma grupp har lika många valenselektroner och beter sig ofta likadant."
+    },
+    {
+      "id": "k2-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad kännetecknar en alkalimetall?",
+      "svar": "Den står i **grupp 1** och har **en** valenselektron. Avger den lätt och blir en positiv jon. Litium, natrium och kalium är exempel."
+    },
+    {
+      "id": "k2-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad kännetecknar en alkalisk jordartsmetall?",
+      "svar": "Den står i **grupp 2** och har **två** valenselektroner. Magnesium och kalcium är exempel."
+    },
+    {
+      "id": "k2-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad kännetecknar en halogen?",
+      "svar": "Den står i **grupp 17** och har **sju** valenselektroner. Saknar bara en för att nå åtta, och tar därför hellre upp en elektron än avger någon."
+    },
+    {
+      "id": "k2-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad kännetecknar en ädelgas?",
+      "svar": "Den står i **grupp 18** och har **fullt** yttersta skal. Behöver varken avge eller ta upp elektroner och reagerar därför nästan inte alls."
+    },
+    {
+      "id": "k2-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Var i det periodiska systemet finns metallerna, och vad kännetecknar dem?",
+      "svar": "Till **vänster och i mitten**. De leder ström och värme, är formbara och har metallglans. Ungefär åttio av atomslagen är metaller."
+    },
+    {
+      "id": "k2-b10",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Var finns icke-metallerna, och vad kännetecknar dem?",
+      "svar": "Till **höger** i systemet. De leder ström dåligt, flera är gaser, och de fasta är ofta spröda."
+    },
+    {
+      "id": "k2-b11",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en halvmetall?",
+      "svar": "Ett atomslag med egenskaper från **både** metaller och icke-metaller. Kisel är den viktigaste — den är grunden för all elektronik."
+    },
+    {
+      "id": "k2-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är övergångsmetallerna?",
+      "svar": "Blocket i **mitten** av systemet — järn, koppar, zink, guld och andra. De finns där för att d-orbitalerna fylls på mitt i raden."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k2-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur många valenselektroner har ett atomslag i grupp 1?",
+      "svar": "**En.** Det är därför alkalimetallerna lätt bildar joner med laddningen plus ett."
+    },
+    {
+      "id": "k2-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Ett atomslag står i period 3. Hur många elektronskal använder det?",
+      "svar": "**Tre.** Och det tredje skalet är dess valensskal."
+    },
+    {
+      "id": "k2-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Natrium står i grupp 1. Vilken jon bildar det?",
+      "svar": "\\(\\ce{Na+}\\). Grupp 1 har en valenselektron att avge, så laddningen blir plus ett."
+    },
+    {
+      "id": "k2-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilket reagerar kraftigast — litium, natrium eller kalium?",
+      "svar": "**Kalium.** Reaktiviteten ökar nedåt i grupp 1, eftersom ytterelektronen sitter längre från kärnan och lossnar lättare."
+    },
+    {
+      "id": "k2-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Ett okänt ämne står långt till höger i systemet, i grupp 17. Bildar det en positiv eller negativ jon?",
+      "svar": "**Negativ.** Halogener saknar en elektron för fullt skal och tar därför upp en."
+    },
+    {
+      "id": "k2-m6",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför reagerar ädelgaser nästan inte alls?",
+      "svar": "De har redan **fullt yttersta skal**. Det finns ingenting att vinna på att avge eller ta upp elektroner."
+    },
+    {
+      "id": "k2-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför har första raden i systemet bara två atomslag?",
+      "svar": "Första skalet har bara **en s-orbital**, som rymmer två elektroner. Efter väte och helium är skalet fullt."
+    },
+    {
+      "id": "k2-m8",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Reaktiviteten ökar nedåt bland alkalimetallerna men minskar nedåt bland halogenerna. Varför?",
+      "svar": "Samma orsak, motsatt effekt. Längre ned sitter valensskalet **längre från kärnan**. För den som ska **avge** en elektron är det lättare. För den som ska **ta upp** en är det svårare."
+    }
+  ]
+}

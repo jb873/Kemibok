@@ -1,0 +1,131 @@
+{
+  "avsnitt": 5,
+  "titel": "Lösningar",
+  "delkapitel": "repetition",
+  "version": "1.0",
+  "kort_totalt": 17,
+  "_kommentar": "Flipcards för avsnitt 5 (Lösningar). 9 begreppskort + 8 modellkort = 17 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/flipcards-avsnitt-2-5.md.",
+  "begreppskort": [
+    {
+      "id": "k5-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en lösning?",
+      "svar": "En blandning där ett ämne har **fördelats jämnt** i ett annat."
+    },
+    {
+      "id": "k5-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är ett lösningsmedel?",
+      "svar": "Det ämne som **löser** det andra. Oftast vatten, och oftast det det finns mest av."
+    },
+    {
+      "id": "k5-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är det lösta ämnet?",
+      "svar": "Det ämne som **fördelas** i lösningsmedlet. Löser du socker i vatten är sockret det lösta ämnet."
+    },
+    {
+      "id": "k5-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder en lösnings koncentration?",
+      "svar": "Hur **mycket löst ämne** lösningen innehåller i förhållande till mängden lösningsmedel."
+    },
+    {
+      "id": "k5-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är ett ämnes löslighet?",
+      "svar": "Hur **mycket** av ämnet som går att lösa i ett visst lösningsmedel. Beror på ämnet, lösningsmedlet och temperaturen."
+    },
+    {
+      "id": "k5-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en mättad lösning?",
+      "svar": "En lösning där **inget mer** kan lösas. Allt som tillsätts därefter blir liggande olöst."
+    },
+    {
+      "id": "k5-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder regeln lika löser lika?",
+      "svar": "**Polära** ämnen löser sig i polära lösningsmedel, **opolära** i opolära. Blandar man polärt och opolärt händer lite."
+    },
+    {
+      "id": "k5-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad menas med entropi, förenklat?",
+      "svar": "Ungefär **oordning** eller utspriddhet. Naturen går mot mer oordnade tillstånd, och det är en av drivkrafterna bakom att ämnen löser sig."
+    },
+    {
+      "id": "k5-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är en övermättad lösning?",
+      "svar": "En lösning som innehåller **mer** löst ämne än den borde kunna hålla. Den är instabil — ett enda korn får allt att kristallisera."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k5-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför kan vatten lösa så många ämnen?",
+      "svar": "Vattenmolekylen är **polär** och kan därför vända rätt sida mot laddade eller polära partiklar och dra i dem."
+    },
+    {
+      "id": "k5-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer med jonerna när koksalt löses i vatten?",
+      "svar": "De **skiljs åt** och sprids ut i vattnet, omgivna av vattenmolekyler. De försvinner inte — de är bara inte längre bundna till varandra."
+    },
+    {
+      "id": "k5-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför leder en saltlösning ström, men inte en sockerlösning?",
+      "svar": "Saltlösningen innehåller **fria joner** som kan röra sig. Sockermolekylerna blir inte joner — de sprids ut som hela molekyler."
+    },
+    {
+      "id": "k5-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför blandar sig inte olja med vatten?",
+      "svar": "Oljemolekylerna är **opolära**, så vattenmolekylerna har inget att haka tag i. De håller hellre ihop med varandra."
+    },
+    {
+      "id": "k5-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer med koncentrationen om man tillsätter mer lösningsmedel?",
+      "svar": "Den **minskar**. Lösningen blir mer utspädd."
+    },
+    {
+      "id": "k5-m6",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför löser sig socker lättare i varmt te än i kallt?",
+      "svar": "För de flesta fasta ämnen **ökar lösligheten** med temperaturen."
+    },
+    {
+      "id": "k5-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför blir vattnet kallt när vissa ämnen löses i det?",
+      "svar": "Upplösningen **kräver mer energi** än den frigör, och energin tas från omgivningen. Det är principen bakom kylpåsar."
+    },
+    {
+      "id": "k5-m8",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför löser sig koksalt lätt men kalk knappt alls?",
+      "svar": "Kalciumjoner och karbonatjoner har **dubbla laddningar**, vilket ger mycket starkare attraktion i kristallen. Vattnet räcker inte till för att dra isär den."
+    }
+  ]
+}

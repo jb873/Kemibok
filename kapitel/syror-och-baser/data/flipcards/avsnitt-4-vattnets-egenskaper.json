@@ -1,0 +1,124 @@
+{
+  "avsnitt": 4,
+  "titel": "Vattnets egenskaper",
+  "delkapitel": "repetition",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 4 (Vattnets egenskaper). 7 begreppskort + 9 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/flipcards-avsnitt-2-5.md.",
+  "begreppskort": [
+    {
+      "id": "k4-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en polär molekyl?",
+      "svar": "En molekyl med en **svagt positiv** och en **svagt negativ** sida, eftersom elektronerna är ojämnt fördelade."
+    },
+    {
+      "id": "k4-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en vätebindning?",
+      "svar": "Attraktionen mellan vattenmolekyler — den svagt positiva vätesidan hos en molekyl dras till den svagt negativa syresidan hos en annan."
+    },
+    {
+      "id": "k4-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är densitet?",
+      "svar": "Hur mycket **massa** ett ämne har i förhållande till sin **volym**."
+    },
+    {
+      "id": "k4-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är ytspänning?",
+      "svar": "Att vattenytan **dras ihop** och strävar efter att bli så liten som möjligt, eftersom molekylerna vid ytan saknar grannar ovanför sig."
+    },
+    {
+      "id": "k4-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad gör en tensid?",
+      "svar": "**Sänker ytspänningen.** Diskmedel är ett exempel — det stör attraktionen mellan vattenmolekylerna."
+    },
+    {
+      "id": "k4-b6",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är ett fritt elektronpar?",
+      "svar": "Ett elektronpar som **inte** delas med någon annan atom. Syreatomen i vatten har två sådana, och de är orsaken till molekylens vinkel."
+    },
+    {
+      "id": "k4-b7",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är en micell?",
+      "svar": "En **fettdroppe omgiven av tensidmolekyler**, med deras opolära ändar inåt och polära ändar utåt. Det gör att vattnet kan bära bort fettet."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k4-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilken sida av vattenmolekylen är svagt negativ?",
+      "svar": "**Syresidan.** Syret drar hårdare i de delade elektronerna än väteatomerna gör."
+    },
+    {
+      "id": "k4-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vid vilken temperatur har flytande vatten sin högsta densitet?",
+      "svar": "Vid ungefär **4 °C**. Kyls vattnet ytterligare minskar densiteten igen."
+    },
+    {
+      "id": "k4-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför flyter is på vatten?",
+      "svar": "När vatten fryser ordnar sig molekylerna i ett mönster med **tomrum** i. Samma mängd vatten tar därför större plats som is, och isen får lägre densitet."
+    },
+    {
+      "id": "k4-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför kan fiskar överleva vintern i en igenfrusen sjö?",
+      "svar": "Isen **flyter** och bildar ett isolerande lock. Under det är vattnet fortfarande flytande."
+    },
+    {
+      "id": "k4-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför kan en skräddare gå på vattenytan?",
+      "svar": "**Ytspänningen** håller den uppe. Den flyter inte — den vilar på ytan utan att bryta igenom."
+    },
+    {
+      "id": "k4-m6",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer med ytspänningen när man droppar diskmedel i vatten?",
+      "svar": "Den **sjunker**. Därför sjunker ett gem som vilat på ytan direkt när man tillsätter diskmedel."
+    },
+    {
+      "id": "k4-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Koldioxid har starkt polära bindningar men är ändå en opolär molekyl. Hur går det ihop?",
+      "svar": "Molekylen är **rak**. De två syreatomerna drar åt exakt motsatta håll, och dragningarna tar ut varandra."
+    },
+    {
+      "id": "k4-m8",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför har snöflingor sex armar?",
+      "svar": "I is binder varje vattenmolekyl **fyra** grannar i en bestämd riktning, och det ger ett **sexkantigt** gitter. Flingans form speglar gittret."
+    },
+    {
+      "id": "k4-m9",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Hur kan en tensid både sänka ytspänningen och lösa fett?",
+      "svar": "Den har en **polär** och en **opolär** ände. Vid ytan tränger den isär vattenmolekylerna, och kring fett vänder den sin opolära ände inåt."
+    }
+  ]
+}
