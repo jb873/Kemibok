@@ -23,7 +23,8 @@ const KAP = 'syror-och-baser';
 const DKID = process.argv[2] && !process.argv[2].startsWith('--') ? process.argv[2] : 'repetition';
 if (!DELKAPITEL[DKID]) { console.error('okänt delkapitel ' + DKID); process.exit(2); }
 
-function ce(s) { return formler(s.replace(/`\\ce\{([^}]*)\}`/g, (_, x) => '\\(\\ce{' + x + '}\\)')); }
+// `\ce{X}` → \(\ce{X}\); färdig MathJax i backticks (`\(10^{-2}\)`, Baser 3) → avgränsarna behålls, backticks bort
+function ce(s) { return formler(s.replace(/`\\ce\{([^}]*)\}`/g, (_, x) => '\\(\\ce{' + x + '}\\)').replace(/`(\\\([\s\S]*?\\\))`/g, '$1')); }
 function avsnittInfo(dk, N) {
   const K = DELKAPITEL[dk].avsnitt[N];
   if (!K) { throw new Error(`${dk}: ingen konfiguration för avsnitt ${N}`); }

@@ -3,7 +3,7 @@
   "kapitel_titel": "Syror och baser",
   "version": 3,
   "skapad": "2026-09-13",
-  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Bakgrund och repetition 48 + Syror 33 = 81.",
+  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Bakgrund och repetition 48 + Syror 33 + Baser 26 = 107.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -737,6 +737,240 @@
       "term": "myrsyra",
       "expertdefinition": "Hos myror, som den fått sitt namn av. Den används också vid ensilering av djurfoder.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-viktiga-syror.json"
+    },
+    {
+      "id": "kB1-b1",
+      "avsnitt": "11",
+      "avsnitt_titel": "Vad är en bas?",
+      "delkapitel_titel": "Baser",
+      "term": "hydroxidjon",
+      "expertdefinition": "nämns i repetitionsavsnitt 1 som exempel på sammansatt jon, men har där inget eget kort. Ingen dubblett.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-bas.json"
+    },
+    {
+      "id": "kB1-b2",
+      "avsnitt": "11",
+      "avsnitt_titel": "Vad är en bas?",
+      "delkapitel_titel": "Baser",
+      "term": "bas",
+      "expertdefinition": "Ett ämne som kan ta upp vätejoner.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-bas.json"
+    },
+    {
+      "id": "kB1-b3",
+      "avsnitt": "11",
+      "avsnitt_titel": "Vad är en bas?",
+      "delkapitel_titel": "Baser",
+      "term": "basisk lösning",
+      "expertdefinition": "Den innehåller fler hydroxidjoner än vätejoner, och har pH över 7.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-bas.json"
+    },
+    {
+      "id": "kB1-b4",
+      "avsnitt": "11",
+      "avsnitt_titel": "Vad är en bas?",
+      "delkapitel_titel": "Baser",
+      "term": "natriumhydroxid",
+      "expertdefinition": "När ämnet löses i vatten delas det upp i natriumjoner och hydroxidjoner. Hydroxidjonerna fanns redan i ämnet.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-bas.json"
+    },
+    {
+      "id": "kB1-b5",
+      "avsnitt": "11",
+      "avsnitt_titel": "Vad är en bas?",
+      "delkapitel_titel": "Baser",
+      "term": "ammoniak",
+      "expertdefinition": "Den tar en vätejon från en vattenmolekyl. Kvar av vattnet blir en hydroxidjon.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-bas.json"
+    },
+    {
+      "id": "kB1-b6",
+      "avsnitt": "11",
+      "avsnitt_titel": "Vad är en bas?",
+      "delkapitel_titel": "Baser",
+      "term": "ammoniumjon",
+      "expertdefinition": "Det ammoniak blir när den tagit upp en vätejon.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-bas.json"
+    },
+    {
+      "id": "kB1-b7",
+      "avsnitt": "11",
+      "avsnitt_titel": "Vad är en bas?",
+      "delkapitel_titel": "Baser",
+      "term": "vatten bildas",
+      "expertdefinition": "En vätejon och en hydroxidjon bildar tillsammans en vattenmolekyl. Laddningarna tar ut varandra.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-bas.json"
+    },
+    {
+      "id": "kB2-b1",
+      "avsnitt": "12",
+      "avsnitt_titel": "Starka och svaga baser",
+      "delkapitel_titel": "Baser",
+      "term": "stark bas",
+      "expertdefinition": "En bas som ger nästan alla sina hydroxidjoner i vatten.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-starka-och-svaga-baser.json"
+    },
+    {
+      "id": "kB2-b2",
+      "avsnitt": "12",
+      "avsnitt_titel": "Starka och svaga baser",
+      "delkapitel_titel": "Baser",
+      "term": "svag bas",
+      "expertdefinition": "En bas som bara reagerar delvis med vattnet, så att få hydroxidjoner bildas.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-starka-och-svaga-baser.json"
+    },
+    {
+      "id": "kB2-b3",
+      "avsnitt": "12",
+      "avsnitt_titel": "Starka och svaga baser",
+      "delkapitel_titel": "Baser",
+      "term": "tre starka baser",
+      "expertdefinition": "Natriumhydroxid, kaliumhydroxid och kalciumhydroxid.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-starka-och-svaga-baser.json"
+    },
+    {
+      "id": "kB2-b4",
+      "avsnitt": "12",
+      "avsnitt_titel": "Starka och svaga baser",
+      "delkapitel_titel": "Baser",
+      "term": "kalciumhydroxid",
+      "expertdefinition": "Två hydroxidjoner per formelenhet, eftersom kalciumjonen har laddningen plus två.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-starka-och-svaga-baser.json"
+    },
+    {
+      "id": "kB2-b5",
+      "avsnitt": "12",
+      "avsnitt_titel": "Starka och svaga baser",
+      "delkapitel_titel": "Baser",
+      "term": "svårlöslig eller svag?",
+      "expertdefinition": "Nej. Den del som löser sig ger fullständigt sina hydroxidjoner. Svårlöslig och svag är olika saker.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-starka-och-svaga-baser.json"
+    },
+    {
+      "id": "kB2-b6",
+      "avsnitt": "12",
+      "avsnitt_titel": "Starka och svaga baser",
+      "delkapitel_titel": "Baser",
+      "term": "viktigaste svaga basen",
+      "expertdefinition": "Ammoniak. Bara omkring en molekyl av hundra har reagerat vid varje tillfälle.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-starka-och-svaga-baser.json"
+    },
+    {
+      "id": "kB2-b7",
+      "avsnitt": "12",
+      "avsnitt_titel": "Starka och svaga baser",
+      "delkapitel_titel": "Baser",
+      "term": "bikarbonat",
+      "expertdefinition": "Bikarbonat. Det innehåller vätekarbonatjoner, som kan ta upp vätejoner.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-starka-och-svaga-baser.json"
+    },
+    {
+      "id": "kB3-b1",
+      "avsnitt": "13",
+      "avsnitt_titel": "Basiska lösningar: pH, koncentration och utspädning",
+      "delkapitel_titel": "Baser",
+      "term": "ph över 7",
+      "expertdefinition": "Över 7. Ju mer basisk, desto högre tal.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-basiska-losningar.json"
+    },
+    {
+      "id": "kB3-b2",
+      "avsnitt": "13",
+      "avsnitt_titel": "Basiska lösningar: pH, koncentration och utspädning",
+      "delkapitel_titel": "Baser",
+      "term": "btb i basiskt",
+      "expertdefinition": "Blå.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-basiska-losningar.json"
+    },
+    {
+      "id": "kB3-b3",
+      "avsnitt": "13",
+      "avsnitt_titel": "Basiska lösningar: pH, koncentration och utspädning",
+      "delkapitel_titel": "Baser",
+      "term": "koncentrerad bas",
+      "expertdefinition": "Den innehåller mycket bas i förhållande till mängden vätska.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-basiska-losningar.json"
+    },
+    {
+      "id": "kB3-b4",
+      "avsnitt": "13",
+      "avsnitt_titel": "Basiska lösningar: pH, koncentration och utspädning",
+      "delkapitel_titel": "Baser",
+      "term": "utspädd bas",
+      "expertdefinition": "Den innehåller lite bas i förhållande till mängden vätska.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-basiska-losningar.json"
+    },
+    {
+      "id": "kB3-b5",
+      "avsnitt": "13",
+      "avsnitt_titel": "Basiska lösningar: pH, koncentration och utspädning",
+      "delkapitel_titel": "Baser",
+      "term": "att späda en bas",
+      "expertdefinition": "Det sjunker mot 7. Lösningen blir mindre basisk, men basen är lika stark som förut.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-basiska-losningar.json"
+    },
+    {
+      "id": "kB4-b1",
+      "avsnitt": "14",
+      "avsnitt_titel": "Viktiga baser: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Baser",
+      "term": "basers egenskaper",
+      "expertdefinition": "pH över 7, de leder ström, de kan kännas hala, många är frätande, och de neutraliseras av syror.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-viktiga-baser.json"
+    },
+    {
+      "id": "kB4-b2",
+      "avsnitt": "14",
+      "avsnitt_titel": "Viktiga baser: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Baser",
+      "term": "natriumhydroxid, användning",
+      "expertdefinition": "Propplösare, tvåltillverkning och pappersindustri.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-viktiga-baser.json"
+    },
+    {
+      "id": "kB4-b3",
+      "avsnitt": "14",
+      "avsnitt_titel": "Viktiga baser: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Baser",
+      "term": "kaliumhydroxid, användning",
+      "expertdefinition": "Mjuka och flytande tvålar, och som vätska i vissa batterier.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-viktiga-baser.json"
+    },
+    {
+      "id": "kB4-b4",
+      "avsnitt": "14",
+      "avsnitt_titel": "Viktiga baser: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Baser",
+      "term": "släckt kalk",
+      "expertdefinition": "Släckt kalk. Den används i murbruk och byggmaterial.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-viktiga-baser.json"
+    },
+    {
+      "id": "kB4-b5",
+      "avsnitt": "14",
+      "avsnitt_titel": "Viktiga baser: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Baser",
+      "term": "ammoniak, användning",
+      "expertdefinition": "Råvara till kvävegödsel. Växter behöver kväve men kan inte ta upp luftens kvävgas direkt.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-viktiga-baser.json"
+    },
+    {
+      "id": "kB4-b6",
+      "avsnitt": "14",
+      "avsnitt_titel": "Viktiga baser: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Baser",
+      "term": "neutralisation",
+      "expertdefinition": "När en syra och en bas reagerar bildar vätejonerna och hydroxidjonerna vatten.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-viktiga-baser.json"
+    },
+    {
+      "id": "kB4-b7",
+      "avsnitt": "14",
+      "avsnitt_titel": "Viktiga baser: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Baser",
+      "term": "säkerhet vid stänk",
+      "expertdefinition": "Spola omedelbart med mycket vatten, i minst tjugo minuter, och säg till din lärare direkt.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-viktiga-baser.json"
     }
   ]
 }

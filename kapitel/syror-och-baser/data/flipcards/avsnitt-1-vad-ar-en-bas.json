@@ -1,0 +1,131 @@
+{
+  "avsnitt": 1,
+  "titel": "Vad är en bas?",
+  "delkapitel": "baser",
+  "version": "1.0",
+  "kort_totalt": 17,
+  "_kommentar": "Flipcards för avsnitt 1 (Vad är en bas?), delkapitel Baser. 10 begreppskort + 7 modellkort = 17 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/baser/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k1-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en hydroxidjon?",
+      "svar": "En sammansatt jon av en syreatom och en väteatom med gemensam negativ laddning: \\(\\ce{OH-}\\)."
+    },
+    {
+      "id": "k1-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en bas?",
+      "svar": "Ett ämne som kan **ta upp vätejoner**."
+    },
+    {
+      "id": "k1-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad kännetecknar en basisk lösning?",
+      "svar": "Den innehåller fler **hydroxidjoner** än vätejoner, och har pH **över 7**."
+    },
+    {
+      "id": "k1-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer när natriumhydroxid löses i vatten?",
+      "svar": "Ämnet delas upp i sina joner: \\(\\ce{NaOH -> Na+ + OH-}\\). Hydroxidjonerna fanns redan i ämnet."
+    },
+    {
+      "id": "k1-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Hur bildar ammoniak hydroxidjoner?",
+      "svar": "Den tar en vätejon från en vattenmolekyl. Kvar av vattnet blir en hydroxidjon: \\(\\ce{NH3 + H2O <=> NH4+ + OH-}\\)."
+    },
+    {
+      "id": "k1-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad blir ammoniak när den tagit upp en vätejon?",
+      "svar": "En **ammoniumjon**, \\(\\ce{NH4+}\\)."
+    },
+    {
+      "id": "k1-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer när en vätejon möter en hydroxidjon?",
+      "svar": "De bildar en **vattenmolekyl**: \\(\\ce{H+ + OH- -> H2O}\\). Laddningarna tar ut varandra."
+    },
+    {
+      "id": "k1-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Varför kan hydroxidjonen ta emot en vätejon?",
+      "svar": "Den har **fria elektronpar** på syreatomen, och är dessutom negativt laddad. Båda drar protonen till sig."
+    },
+    {
+      "id": "k1-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är en amfolyt?",
+      "svar": "Ett ämne som kan fungera **både som syra och som bas**. Vatten är exemplet — det avger en proton till ammoniak men tar emot en från saltsyra."
+    },
+    {
+      "id": "k1-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är förtvålning?",
+      "svar": "När en stark bas bryter ner fett och bildar **tensider**, alltså tvål. Det är samma reaktion som gör basiska lösningar hala."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k1-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilka två sätt kan hydroxidjoner hamna i en lösning på?",
+      "svar": "Basen **innehåller** dem redan och frigör dem, eller basen **bildar** dem genom att ta en vätejon från vattnet."
+    },
+    {
+      "id": "k1-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Natriumhydroxid — innehåller den hydroxidjoner från början?",
+      "svar": "**Ja.** Den är uppbyggd av natriumjoner och hydroxidjoner i ett jongitter."
+    },
+    {
+      "id": "k1-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Ammoniak — innehåller den hydroxidjoner från början?",
+      "svar": "**Nej.** Den består av kväve och väte. Hydroxidjonerna bildas av vattnet."
+    },
+    {
+      "id": "k1-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför säger man inte att en bas är ett ämne som innehåller hydroxidjoner?",
+      "svar": "För att **ammoniak inte gör det**, men ändå är en bas. Definitionen måste vara att basen tar upp vätejoner."
+    },
+    {
+      "id": "k1-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför känns basiska lösningar hala?",
+      "svar": "Basen **reagerar med fettet** på huden och bildar något tvålliknande. Det är ett varningstecken, inte en trevlig egenskap."
+    },
+    {
+      "id": "k1-m6",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför leder basiska lösningar elektrisk ström?",
+      "svar": "De innehåller **fria joner** som kan röra sig genom vattnet."
+    },
+    {
+      "id": "k1-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "I reaktionen \\(\\ce{NH3 + H2O <=> NH4+ + OH-}\\) — vilket ämne fungerar som syra?",
+      "svar": "**Vattnet.** Det avger en proton till ammoniaken, och det är vad en syra gör."
+    }
+  ]
+}

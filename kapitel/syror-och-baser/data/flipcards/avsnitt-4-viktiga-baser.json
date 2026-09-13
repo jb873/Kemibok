@@ -1,0 +1,117 @@
+{
+  "avsnitt": 4,
+  "titel": "Viktiga baser: egenskaper, användning och säkerhet",
+  "delkapitel": "baser",
+  "version": "1.0",
+  "kort_totalt": 15,
+  "_kommentar": "Flipcards för avsnitt 4 (Viktiga baser: egenskaper, användning och säkerhet), delkapitel Baser. 9 begreppskort + 6 modellkort = 15 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/baser/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k4-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad har alla basiska lösningar gemensamt?",
+      "svar": "**pH över 7**, de **leder ström**, de kan kännas **hala**, många är **frätande**, och de **neutraliseras** av syror."
+    },
+    {
+      "id": "k4-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad används natriumhydroxid till?",
+      "svar": "**Propplösare**, **tvåltillverkning** och **pappersindustri**."
+    },
+    {
+      "id": "k4-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad används kaliumhydroxid till?",
+      "svar": "**Mjuka och flytande tvålar**, och som vätska i vissa **batterier**."
+    },
+    {
+      "id": "k4-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad kallas kalciumhydroxid i vardagligt tal, och vad används den till?",
+      "svar": "**Släckt kalk.** Den används i **murbruk** och byggmaterial."
+    },
+    {
+      "id": "k4-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är ammoniakens största användningsområde?",
+      "svar": "Råvara till **kvävegödsel**. Växter behöver kväve men kan inte ta upp luftens kvävgas direkt."
+    },
+    {
+      "id": "k4-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer när en syra och en bas reagerar?",
+      "svar": "Vätejonerna och hydroxidjonerna bildar **vatten**: \\(\\ce{H3O+ + OH- -> 2 H2O}\\)."
+    },
+    {
+      "id": "k4-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad gör du om du får en stark bas i ögat?",
+      "svar": "**Spola omedelbart med mycket vatten**, i minst tjugo minuter, och säg till din lärare direkt."
+    },
+    {
+      "id": "k4-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är Haber-Bosch-processen?",
+      "svar": "Sättet att tillverka **ammoniak** ur luftens kvävgas, under högt tryck och med katalysator. Den gjorde konstgödsel möjlig."
+    },
+    {
+      "id": "k4-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Varför leder hydroxid- och oxoniumjoner ström ovanligt bra?",
+      "svar": "De behöver inte förflytta sig. En **proton hoppar** mellan vätebundna vattenmolekyler, så laddningen rör sig snabbare än partiklarna."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k4-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför löser natriumhydroxid upp en propp i avloppet?",
+      "svar": "Den **bryter ner fett** och annat organiskt material — precis det som brukar sätta igen ett avlopp."
+    },
+    {
+      "id": "k4-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad har tvåltillverkning och halheten hos basiska lösningar gemensamt?",
+      "svar": "**Samma reaktion.** Basen bryter ner fett och bildar tvål — i det ena fallet avsiktligt, i det andra på din hud."
+    },
+    {
+      "id": "k4-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur härdar murbruk?",
+      "svar": "Kalciumhydroxiden reagerar långsamt med **koldioxid ur luften** och blir kalksten igen."
+    },
+    {
+      "id": "k4-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför är starka baser särskilt farliga för ögonen?",
+      "svar": "Basen **löser upp fettet** i cellernas ytterhöljen och kan därför tränga djupare in. En syra bildar ett skorplager som bromsar den."
+    },
+    {
+      "id": "k4-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför får propplösare aldrig blandas med andra rengöringsmedel?",
+      "svar": "Blandningen kan utveckla **kraftig värme** eller bilda **giftiga gaser**."
+    },
+    {
+      "id": "k4-m6",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Två baslösningar har samma koncentration men leder ström olika bra. Vad säger det?",
+      "svar": "Att den som leder bäst är den **starkare** basen — den har fler joner i lösningen. Den svaga består mest av neutrala molekyler."
+    }
+  ]
+}

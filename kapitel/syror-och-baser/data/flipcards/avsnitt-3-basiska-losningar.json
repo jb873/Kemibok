@@ -1,0 +1,110 @@
+{
+  "avsnitt": 3,
+  "titel": "Basiska lösningar: pH, koncentration och utspädning",
+  "delkapitel": "baser",
+  "version": "1.0",
+  "kort_totalt": 14,
+  "_kommentar": "Flipcards för avsnitt 3 (Basiska lösningar: pH, koncentration och utspädning), delkapitel Baser. 7 begreppskort + 7 modellkort = 14 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/baser/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k3-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilket pH har en basisk lösning?",
+      "svar": "**Över 7.** Ju mer basisk, desto högre tal."
+    },
+    {
+      "id": "k3-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilken färg blir BTB i en basisk lösning?",
+      "svar": "**Blå.**"
+    },
+    {
+      "id": "k3-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder att en baslösning är koncentrerad?",
+      "svar": "Den innehåller **mycket bas** i förhållande till mängden vätska."
+    },
+    {
+      "id": "k3-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder att en baslösning är utspädd?",
+      "svar": "Den innehåller **lite bas** i förhållande till mängden vätska."
+    },
+    {
+      "id": "k3-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer med pH när en basisk lösning späds med vatten?",
+      "svar": "Det **sjunker mot 7**. Lösningen blir mindre basisk, men basen är lika stark som förut."
+    },
+    {
+      "id": "k3-b6",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är pOH?",
+      "svar": "Ett mått på koncentrationen av **hydroxidjoner**, precis som pH mäter oxoniumjoner."
+    },
+    {
+      "id": "k3-b7",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vilket samband gäller alltid mellan oxonium- och hydroxidjoner i vattenlösning?",
+      "svar": "\\(\\ce{[H3O+]} \\cdot \\ce{[OH-]} = 10^{-14}\\) vid 25 °C."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k3-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer med antalet vätejoner när man tillsätter en bas?",
+      "svar": "Det **minskar**. Vätejonerna reagerar med de nya hydroxidjonerna och bildar vatten."
+    },
+    {
+      "id": "k3-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Kan en stark bas vara utspädd?",
+      "svar": "**Ja.** Styrka och koncentration är oberoende av varandra."
+    },
+    {
+      "id": "k3-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "En stark bas späds ut. Blir den svagare?",
+      "svar": "**Nej.** Styrkan är oförändrad — det finns bara mindre bas per liter."
+    },
+    {
+      "id": "k3-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför blir det varmt när natriumhydroxid löses i vatten?",
+      "svar": "Upplösningen **frigör energi**. För natriumhydroxid är mängden ovanligt stor."
+    },
+    {
+      "id": "k3-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur ska en stark bas spädas?",
+      "svar": "**Tillsätt basen till vattnet**, lite i taget och under omrörning. Aldrig tvärtom."
+    },
+    {
+      "id": "k3-m6",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "En lösning har pH 11. Vilket pOH har den?",
+      "svar": "**3.** pH + pOH = 14."
+    },
+    {
+      "id": "k3-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "En lösning har pH 12. Vilken koncentration av hydroxidjoner har den?",
+      "svar": "\\(10^{-2}\\) mol/dm³. Produkten av de två koncentrationerna är alltid \\(10^{-14}\\)."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "avsnitt": 2,
+  "titel": "Starka och svaga baser",
+  "delkapitel": "baser",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 2 (Starka och svaga baser), delkapitel Baser. 9 begreppskort + 7 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/baser/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k2-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en stark bas?",
+      "svar": "En bas som ger **nästan alla** sina hydroxidjoner i vatten."
+    },
+    {
+      "id": "k2-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en svag bas?",
+      "svar": "En bas som bara reagerar **delvis** med vattnet, så att få hydroxidjoner bildas."
+    },
+    {
+      "id": "k2-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilka är de tre viktigaste starka baserna?",
+      "svar": "Natriumhydroxid \\(\\ce{NaOH}\\), kaliumhydroxid \\(\\ce{KOH}\\) och kalciumhydroxid \\(\\ce{Ca(OH)2}\\)."
+    },
+    {
+      "id": "k2-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Hur många hydroxidjoner ger en formelenhet kalciumhydroxid?",
+      "svar": "**Två**: \\(\\ce{Ca(OH)2 -> Ca^2+ + 2 OH-}\\). Kalciumjonen har laddningen 2+."
+    },
+    {
+      "id": "k2-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kalciumhydroxid löser sig dåligt. Är den därför en svag bas?",
+      "svar": "**Nej.** Den del som löser sig ger fullständigt sina hydroxidjoner. Svårlöslig och svag är olika saker."
+    },
+    {
+      "id": "k2-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilken är den viktigaste svaga basen?",
+      "svar": "**Ammoniak.** Bara omkring en molekyl av hundra har reagerat vid varje tillfälle."
+    },
+    {
+      "id": "k2-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilket vardagligt ämne innehåller en svag bas?",
+      "svar": "**Bikarbonat.** Det innehåller vätekarbonatjoner, som kan ta upp vätejoner."
+    },
+    {
+      "id": "k2-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad betyder att ett ämne dissocierar?",
+      "svar": "Att det **delas upp i fria joner** när det löses."
+    },
+    {
+      "id": "k2-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad menas med ett syra–baspar?",
+      "svar": "En svag bas och den syra den blir när den tagit upp en proton. Ammoniak och **ammoniumjonen** är ett par."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k2-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Beskriver stark och svag hur mycket bas som finns i lösningen?",
+      "svar": "**Nej.** De beskriver hur fullständigt basen ger sina hydroxidjoner."
+    },
+    {
+      "id": "k2-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Ammoniak — stark eller svag bas?",
+      "svar": "**Svag.** Bara en liten del av molekylerna reagerar med vattnet."
+    },
+    {
+      "id": "k2-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Kaliumhydroxid — stark eller svag bas?",
+      "svar": "**Stark.** Den delas upp fullständigt i sina joner."
+    },
+    {
+      "id": "k2-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Två glas innehåller lika mycket bas — en stark och en svag. Vilket har flest hydroxidjoner?",
+      "svar": "Det med den **starka** basen."
+    },
+    {
+      "id": "k2-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad finns i en ammoniaklösning som inte finns i en natriumhydroxidlösning?",
+      "svar": "**Oreagerade ammoniakmolekyler.** De flesta har inte tagit upp någon vätejon."
+    },
+    {
+      "id": "k2-m6",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför ger natriumhydroxid fullständigt sina hydroxidjoner, medan ammoniak bara delvis gör det?",
+      "svar": "Natriumhydroxid behöver inte **reagera** — jonerna finns färdiga och gittret löses bara upp. Ammoniak måste slita loss en proton från vatten."
+    },
+    {
+      "id": "k2-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Ammoniumjonen kan avge en proton. Vad gör det den till?",
+      "svar": "En **syra** — en svag sådan. Därför blir en lösning av ammoniumsalt svagt sur."
+    }
+  ]
+}
