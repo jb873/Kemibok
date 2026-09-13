@@ -66,6 +66,9 @@ function modell(m, titel) {
     m.skal.map(s => elektroner(m.cx, m.cy, s.R, s.e, m.rE, s.start)).join('') + `  </g>\n`;
 }
 
+module.exports = { packning, karna, elektroner, banor, modell, F, r2 };
+
+if (require.main === module) {
 // ---------- Kol ----------
 {
   const W = 260, c = 130;
@@ -94,3 +97,4 @@ ${modell(na, 'Natriumatom')}${modell(jon, 'Natriumjon')}</svg>
   fs.writeFileSync(path.join(UT, 'atom-och-jon.svg'), svg);
 }
 console.log('skrivet');
+}

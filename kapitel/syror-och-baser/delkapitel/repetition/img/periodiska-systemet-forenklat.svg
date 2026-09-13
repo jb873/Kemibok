@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 938 180" width="938" height="180" role="img" aria-labelledby="t">
+  <title id="t">Förenklat periodiskt system, period 1–3, med grupp 1, 2, 17 och 18 färgmarkerade</title>
+  <text x="57" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">1</text>
+  <text x="107" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">2</text>
+  <text x="157" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">3</text>
+  <text x="207" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">4</text>
+  <text x="257" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">5</text>
+  <text x="307" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">6</text>
+  <text x="357" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">7</text>
+  <text x="407" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">8</text>
+  <text x="457" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">9</text>
+  <text x="507" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">10</text>
+  <text x="557" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">11</text>
+  <text x="607" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">12</text>
+  <text x="657" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">13</text>
+  <text x="707" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">14</text>
+  <text x="757" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">15</text>
+  <text x="807" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">16</text>
+  <text x="857" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">17</text>
+  <text x="907" y="18" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">18</text>
+  <text x="22" y="53" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">1</text>
+  <g class="ruta" data-grupp="1" data-period="1" data-z="1" data-sym="H">
+    <rect x="34" y="26" width="46" height="46" rx="3" fill="#e3bfb6" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="39" y="39" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">1</text>
+    <text x="57" y="60" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">H</text>
+  </g>
+  <g class="ruta" data-grupp="18" data-period="1" data-z="2" data-sym="He">
+    <rect x="884" y="26" width="46" height="46" rx="3" fill="#bfd2dc" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="889" y="39" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">2</text>
+    <text x="907" y="60" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">He</text>
+  </g>
+  <text x="22" y="103" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">2</text>
+  <g class="ruta" data-grupp="1" data-period="2" data-z="3" data-sym="Li">
+    <rect x="34" y="76" width="46" height="46" rx="3" fill="#e3bfb6" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="39" y="89" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">3</text>
+    <text x="57" y="110" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Li</text>
+  </g>
+  <g class="ruta" data-grupp="2" data-period="2" data-z="4" data-sym="Be">
+    <rect x="84" y="76" width="46" height="46" rx="3" fill="#e8d6a6" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="89" y="89" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">4</text>
+    <text x="107" y="110" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Be</text>
+  </g>
+  <g class="ruta" data-grupp="13" data-period="2" data-z="5" data-sym="B">
+    <rect x="634" y="76" width="46" height="46" rx="3" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="639" y="89" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">5</text>
+    <text x="657" y="110" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">B</text>
+  </g>
+  <g class="ruta" data-grupp="14" data-period="2" data-z="6" data-sym="C">
+    <rect x="684" y="76" width="46" height="46" rx="3" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="689" y="89" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">6</text>
+    <text x="707" y="110" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">C</text>
+  </g>
+  <g class="ruta" data-grupp="15" data-period="2" data-z="7" data-sym="N">
+    <rect x="734" y="76" width="46" height="46" rx="3" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="739" y="89" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">7</text>
+    <text x="757" y="110" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">N</text>
+  </g>
+  <g class="ruta" data-grupp="16" data-period="2" data-z="8" data-sym="O">
+    <rect x="784" y="76" width="46" height="46" rx="3" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="789" y="89" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">8</text>
+    <text x="807" y="110" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">O</text>
+  </g>
+  <g class="ruta" data-grupp="17" data-period="2" data-z="9" data-sym="F">
+    <rect x="834" y="76" width="46" height="46" rx="3" fill="#c8d8b3" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="839" y="89" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">9</text>
+    <text x="857" y="110" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">F</text>
+  </g>
+  <g class="ruta" data-grupp="18" data-period="2" data-z="10" data-sym="Ne">
+    <rect x="884" y="76" width="46" height="46" rx="3" fill="#bfd2dc" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="889" y="89" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">10</text>
+    <text x="907" y="110" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Ne</text>
+  </g>
+  <text x="22" y="153" text-anchor="middle" font-size="12" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">3</text>
+  <g class="ruta" data-grupp="1" data-period="3" data-z="11" data-sym="Na">
+    <rect x="34" y="126" width="46" height="46" rx="3" fill="#e3bfb6" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="39" y="139" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">11</text>
+    <text x="57" y="160" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Na</text>
+  </g>
+  <g class="ruta" data-grupp="2" data-period="3" data-z="12" data-sym="Mg">
+    <rect x="84" y="126" width="46" height="46" rx="3" fill="#e8d6a6" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="89" y="139" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">12</text>
+    <text x="107" y="160" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Mg</text>
+  </g>
+  <g class="ruta" data-grupp="13" data-period="3" data-z="13" data-sym="Al">
+    <rect x="634" y="126" width="46" height="46" rx="3" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="639" y="139" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">13</text>
+    <text x="657" y="160" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Al</text>
+  </g>
+  <g class="ruta" data-grupp="14" data-period="3" data-z="14" data-sym="Si">
+    <rect x="684" y="126" width="46" height="46" rx="3" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="689" y="139" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">14</text>
+    <text x="707" y="160" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Si</text>
+  </g>
+  <g class="ruta" data-grupp="15" data-period="3" data-z="15" data-sym="P">
+    <rect x="734" y="126" width="46" height="46" rx="3" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="739" y="139" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">15</text>
+    <text x="757" y="160" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">P</text>
+  </g>
+  <g class="ruta" data-grupp="16" data-period="3" data-z="16" data-sym="S">
+    <rect x="784" y="126" width="46" height="46" rx="3" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="789" y="139" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">16</text>
+    <text x="807" y="160" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">S</text>
+  </g>
+  <g class="ruta" data-grupp="17" data-period="3" data-z="17" data-sym="Cl">
+    <rect x="834" y="126" width="46" height="46" rx="3" fill="#c8d8b3" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="839" y="139" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">17</text>
+    <text x="857" y="160" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Cl</text>
+  </g>
+  <g class="ruta" data-grupp="18" data-period="3" data-z="18" data-sym="Ar">
+    <rect x="884" y="126" width="46" height="46" rx="3" fill="#bfd2dc" stroke="#2d4a35" stroke-width="1.5"/>
+    <text x="889" y="139" font-size="10" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">18</text>
+    <text x="907" y="160" text-anchor="middle" font-size="20" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Ar</text>
+  </g>
+</svg>

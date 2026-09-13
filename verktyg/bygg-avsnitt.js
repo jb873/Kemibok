@@ -24,20 +24,27 @@ if (!N) { console.error('användning: node verktyg/bygg-avsnitt.js <avsnittsnumm
 // ---------- per-avsnitt konfiguration (det leveransen inte säger maskinläsbart) ----------
 const AVSNITT = {
   2: { slug: 'periodiska-systemet', titel: 'Det periodiska systemet', sub: 'hur atomslagen hänger ihop',
-       dd: [{ slug: 'adelgaser-som-reagerar', titel: 'Ädelgaser som ändå reagerar', ikon: '💡' }], bilder: {} },
+       dd: [{ slug: 'adelgaser-som-reagerar', titel: 'Ädelgaser som ändå reagerar', ikon: '💡' }],
+       bilder: {
+         // leveransen saknar bildspec; spec från Joachim 2026-09-13, bilden är en genererad SVG (verktyg/bilder-svg.js)
+         'periodiska-systemet-forenklat.svg': { aktiv: ['enkel', 'standard'], enkel: 'siffra som kallas **atomnummer**', standard: 'och dess **atomnummer**',
+           spec: { underdel: 'a', alt: 'Ett förenklat periodiskt system med de tre första perioderna. Väte och helium står ensamma i första raden. Grupp 1, 2, 17 och 18 är färgmarkerade, och varje ruta visar atomnummer och kemisk beteckning.',
+             enkel: 'De tre första perioderna. Raderna är perioder, kolumnerna är grupper. De fyra färgade kolumnerna är de som har egna namn.',
+             standard: 'Ett förenklat periodiskt system. Lägg märke till luckan i period 2 och 3 — i det fullständiga systemet sitter övergångsmetallerna där, men de tillkommer först i period 4.' } }
+       } },
   3: { slug: 'kemiska-bindningar', titel: 'Kemiska bindningar', sub: 'vad som håller ihop ämnen',
        dd: [{ slug: 'koksalt-ofarligt', titel: 'Varför koksalt är ofarligt', ikon: '🧂' }],
        bilder: {
-         'jonbindning-natrium-klor.webp': { enkel: 'Möts de passar det perfekt', standard: 'kallas\n**jonbindning**' },
+         'jonbindning-natrium-klor.webp': { fil: 'jonbindning-natrium-klor.svg', aktiv: ['enkel', 'standard'], enkel: 'Möts de passar det perfekt', standard: 'kallas\n**jonbindning**' },
          'elektronpar-vate.webp': { enkel: 'Resultatet är en vätemolekyl', standard: 'det är paret som håller samman' },
          'enkel-dubbel-trippel.webp': { enkel: 'där varje atom saknar tre', standard: 'finns en\ntrippelbindning' },
-         'molekylmodeller-vatten.webp': { enkel: 'vilken man väljer beror på vad man vill visa', standard: 'Valet beror på vad som ska framgå', fordjupning: 'Bindningen är **polär**' },
+         'molekylmodeller-vatten.webp': { fil: 'molekylmodeller-vatten.svg', aktiv: ['enkel', 'standard'], enkel: 'vilken man väljer beror på vad man vill visa', standard: 'Valet beror på vad som ska framgå', fordjupning: 'Bindningen är **polär**' },
          'metallbindning.webp': { enkel: 'jonerna ligger i ett hav av elektroner', standard: 'håller på så sätt samman metallen' }
        } },
   4: { slug: 'vattnets-egenskaper', titel: 'Vattnets egenskaper', sub: 'därför beter sig vatten som det gör',
        dd: [{ slug: 'varfor-is-flyter', titel: 'Varför is flyter', ikon: '🧊' }, { slug: 'ytspanning', titel: 'Ytspänning i verkligheten', ikon: '💧' }],
        bilder: {
-         'polar-vattenmolekyl.webp': { enkel: 'medan vätesidorna blir **svagt positiva**', standard: 'mindre laddningsskillnader inom molekylen' },
+         'polar-vattenmolekyl.webp': { fil: 'polar-vattenmolekyl.svg', aktiv: ['enkel', 'standard'], enkel: 'medan vätesidorna blir **svagt positiva**', standard: 'mindre laddningsskillnader inom molekylen' },
          'vatebindning.webp': { enkel: 'Den attraktionen\nkallas **vätebindning**', standard: 'Attraktionen mellan vattenmolekylerna kallas **vätebindning**' },
          'is-och-vatten.webp': { enkel: 'plats som is än som flytande vatten.', standard: '**flyter därför på vatten**' }
        } },
@@ -68,7 +75,10 @@ if (bsBlock) {
     bildspec[f] = { underdel: m[2].toLowerCase(), nivaer: m[3].trim(), alt: ta(/\*\*Alt-text:\*\*\s*([\s\S]*?)\n\n/), enkel: ta(/\*\*Bildtext Enkel:\*\*\s*([\s\S]*?)\n\n/), standard: ta(/\*\*Bildtext Standard:\*\*\s*([\s\S]*?)(?:\n\n|$)/) };
   }
 }
-for (const f of Object.keys(K.bilder)) { if (!bildspec[f]) { throw new Error('bildspec saknas i leveransen för ' + f); } }
+for (const f of Object.keys(K.bilder)) {
+  if (K.bilder[f].spec) { bildspec[f] = K.bilder[f].spec; }
+  if (!bildspec[f]) { throw new Error('bildspec saknas i leveransen för ' + f); }
+}
 for (const f of Object.keys(bildspec)) { if (!K.bilder[f]) { throw new Error('ankare saknas i konfigurationen för ' + f); } }
 
 // underdelar
@@ -128,17 +138,36 @@ function nivaHtml(text, niva) {
 function lista(text) {
   return text.split('\n').filter(r => /^- /.test(r)).map(r => `              <li>${inline(r.replace(/^- /, ''))}</li>`).join('\n');
 }
-function figur(f, niva, spec) {
+function figur(f, niva, spec, cfg, titta) {
+  const fil = cfg.fil || f;
   const cap = niva === 'enkel' ? spec.enkel : spec.standard;
+  const aktiv = Array.isArray(cfg.aktiv) ? cfg.aktiv.includes(niva) : !!cfg.aktiv;
+  if (aktiv) {
+    let guide = '';
+    if (niva === 'enkel') {
+      guide = titta ? `<div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+${lista(titta)}
+            </ul>
+          </div>
+          ` : `<!-- BILDGUIDE SAKNAS i leveransen för ${fil} (Enkel ska ha 2–5 "Titta efter"-punkter före bilden) -->
+          `;
+    }
+    return `${guide}<figure class="brodtext-bild ${niva}">
+            <img src="img/${fil}" alt="${inline(spec.alt)}">
+            <figcaption>${inline(cap)}</figcaption>
+          </figure>`;
+  }
   const guide = niva === 'enkel' ? `<div class="bildguide">
             <div class="bildguide-rubrik">👁 Titta efter</div>
             <ul><li>{{bildguide saknas i leveransen – 2–5 punkter}}</li></ul>
           </div>
           ` : '';
   const not = niva === 'fordjupning' ? ' OBS: bildtext för fördjupning saknas i leveransen – Standard-texten använd' : '';
-  return `<!-- BILD: ${f} – levereras senare, avkommentera när filen finns i img/.${not}
+  return `<!-- BILD: ${fil} – levereras senare, avkommentera när filen finns i img/.${not}
           ${guide}<figure class="brodtext-bild ${niva}">
-            <img src="img/${f}" alt="${inline(spec.alt)}">
+            <img src="img/${fil}" alt="${inline(spec.alt)}">
             <figcaption>${inline(cap)}</figcaption>
           </figure>
           -->`;
@@ -160,8 +189,11 @@ function underdelHtml(u, i) {
       if (spec.underdel !== u.bok || !ank[n]) { continue; }
       const traff = block.map((b, ix) => (b.kalla && b.kalla.includes(ank[n])) ? ix : -1).filter(ix => ix >= 0);
       if (traff.length !== 1) { throw new Error(`ankare för ${f} (${n}) träffar ${traff.length} stycken`); }
-      block.splice(traff[0] + 1, 0, { typ: 'bild', html: figur(f, n, spec) });
-      rapport.ankare.push(`${f} ${u.bok}/${n} → efter "${ank[n].replace(/\n/g, ' ').slice(0, 40)}…"`);
+      const tittaHar = n === 'enkel' ? u.sek['Titta efter (endast Enkel)'] : null;
+      const arAktiv = Array.isArray(ank.aktiv) ? ank.aktiv.includes(n) : !!ank.aktiv;
+      block.splice(traff[0] + 1, 0, { typ: 'bild', html: figur(f, n, spec, ank, tittaHar), aktiv: arAktiv });
+      if (arAktiv && tittaHar) { u.tittaAnvand = true; }
+      rapport.ankare.push(`${f} ${u.bok}/${n} → efter "${ank[n].replace(/\n/g, ' ').slice(0, 40)}…"${arAktiv ? ' [AKTIV]' : ''}`);
     }
     // §7.1: stycken med en mening på Enkel
     if (n === 'enkel') {
@@ -171,7 +203,7 @@ function underdelHtml(u, i) {
       });
     }
     const karn = u.sek[`Kärnpunkter (${n === 'enkel' ? 'Enkel' : 'Standard'})`];
-    const titta = n === 'enkel' ? u.sek['Titta efter (endast Enkel)'] : null;
+    const titta = (n === 'enkel' && !u.tittaAnvand) ? u.sek['Titta efter (endast Enkel)'] : null;
     const emoji = { enkel: '📗', standard: '📘', fordjupning: '📕' }[n];
     ut += `\n        <!-- ${emoji} ${n.toUpperCase()} -->\n        <div class="niva-innehall brodtext${n === 'standard' ? '' : ' dold'}" data-niva="${n}">\n`;
     if (karn && n !== 'fordjupning') {
@@ -181,7 +213,7 @@ function underdelHtml(u, i) {
       ut += `\n          <!-- TITTA EFTER (levererad bildguide – bilden kommer separat; aktivera tillsammans med figuren)\n          <div class="bildguide">\n            <div class="bildguide-rubrik">👁 Titta efter</div>\n            <ul>\n${lista(titta)}\n            </ul>\n          </div>\n          -->\n`;
     }
     ut += '\n' + block.map(b => '          ' + b.html).join('\n') + '\n        </div>\n';
-    rapport.nivaer.push(`${u.bok}/${n}: ${block.filter(b => b.typ === 'p').length} stycken, ${block.filter(b => b.typ === 'h2').length} h2, ${block.filter(b => b.typ === 'bild').length} bildkommentar(er)`);
+    rapport.nivaer.push(`${u.bok}/${n}: ${block.filter(b => b.typ === 'p').length} stycken, ${block.filter(b => b.typ === 'h2').length} h2, ${block.filter(b => b.typ === 'bild' && b.aktiv).length} aktiva bilder, ${block.filter(b => b.typ === 'bild' && !b.aktiv).length} bildkommentar(er)`);
   }
   ut += `\n      </div>\n`;
   return ut;

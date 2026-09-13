@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" width="900" height="190" role="img" aria-labelledby="t">
+  <title id="t">Samma vattenmolekyl visad på fem sätt: summaformel, strukturformel, punktformel, kulpinnmodell och kalottmodell</title>
+  <line x1="180" y1="16" x2="180" y2="160" stroke="#2d4a35" stroke-width="1" opacity="0.5"/>
+  <line x1="360" y1="16" x2="360" y2="160" stroke="#2d4a35" stroke-width="1" opacity="0.5"/>
+  <line x1="540" y1="16" x2="540" y2="160" stroke="#2d4a35" stroke-width="1" opacity="0.5"/>
+  <line x1="720" y1="16" x2="720" y2="160" stroke="#2d4a35" stroke-width="1" opacity="0.5"/>
+  <text x="90" y="96" text-anchor="middle" font-size="44" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">H<tspan font-size="26" dy="10">2</tspan><tspan dy="-10">O</tspan></text>
+  <text x="270" y="94" text-anchor="middle" font-size="36" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">H–O–H</text>
+  <text x="450" y="93" text-anchor="middle" font-size="32" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">O</text>
+  <text x="408.75" y="123.66" text-anchor="middle" font-size="28" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">H</text>
+  <text x="491.25" y="123.66" text-anchor="middle" font-size="28" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">H</text>
+  <circle class="elektronprick" cx="431.81" cy="101" r="3" fill="#2d4a35"/>
+  <circle class="elektronprick" cx="426.94" cy="94.65" r="3" fill="#2d4a35"/>
+  <circle class="elektronprick" cx="473.06" cy="94.65" r="3" fill="#2d4a35"/>
+  <circle class="elektronprick" cx="468.19" cy="101" r="3" fill="#2d4a35"/>
+  <circle class="elektronprick" cx="432" cy="58" r="3" fill="#2d4a35"/>
+  <circle class="elektronprick" cx="440" cy="58" r="3" fill="#2d4a35"/>
+  <circle class="elektronprick" cx="460" cy="58" r="3" fill="#2d4a35"/>
+  <circle class="elektronprick" cx="468" cy="58" r="3" fill="#2d4a35"/>
+  <line x1="630" y1="70" x2="593.51" y2="98" stroke="#8A8A8A" stroke-width="6" stroke-linecap="round"/>
+  <line x1="630" y1="70" x2="666.49" y2="98" stroke="#8A8A8A" stroke-width="6" stroke-linecap="round"/>
+  <circle class="syre" cx="630" cy="70" r="22" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="vate" cx="593.51" cy="98" r="13" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="vate" cx="666.49" cy="98" r="13" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="syre" cx="810" cy="72" r="30" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="vate" cx="784.61" cy="91.48" r="19" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="vate" cx="835.39" cy="91.48" r="19" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="90" y="182" text-anchor="middle" font-size="14" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Summaformel</text>
+  <text x="270" y="182" text-anchor="middle" font-size="14" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Strukturformel</text>
+  <text x="450" y="182" text-anchor="middle" font-size="14" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Punktformel</text>
+  <text x="630" y="182" text-anchor="middle" font-size="14" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Kulpinnmodell</text>
+  <text x="810" y="182" text-anchor="middle" font-size="14" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Kalottmodell</text>
+</svg>
