@@ -356,6 +356,9 @@ Det levereras som en JSON-fil per avsnitt:
 - 10–15 frågor per avsnitt i filen, `antal_per_omgang` 6–12.
 - Blanda typer. Räknefrågor (`tal`) och formler (`formel`) är det kortsvar gör som flipcards inte kan.
 - `forklaring` säger **varför**, inte bara vad – det är den eleven lär sig av.
+- **Frågan får inte innehålla svaret.** "Kväve har atomnummer 7 – hur många protoner?" fungerar som
+  flipcard (sambandet är poängen) men inte som kortsvar (svaret står i frågan). Vänd den: "Vilket
+  ämne har atomnummer 7?" Kontrollera varje fråga: går den att läsa sig till är den fel.
 - Formler i `fraga` och `alternativ` renderas; i `svar` skrivs de utan `\\ce{}` (`"H2O"`).
 
 ---
