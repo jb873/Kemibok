@@ -41,13 +41,7 @@ const LEV = path.join(ROT, 'doc', 'leveranser', DK.id);   // leveransfiler per d
 const md = fs.readFileSync(path.join(LEV, `avsnitt-${N}.md`), 'utf8').replace(/\r\n/g, '\n');
 const stopp = md.search(/\n# (Volym|Vad jag ändrat|Vad jag gjort|Djupdykningar|Repetitionsdelkapitlet|Anmärkningar|Om nivåuppdelningen|Att bestämma|Delkapitlet)/);
 const kropp = stopp > 0 ? md.slice(0, stopp) : md;
-// titel, slug och underrubrik ur huvudet om konfigurationen saknar dem
-{
-  const rub = md.match(/^# (?:[^\n]*?[Aa]vsnitt \d+) — ([^\n]+)/), sok = md.match(/\*\*Sökväg:\*\* `[^`]*avsnitt-\d+-([a-z0-9-]+)\.html`/), sub = md.match(/\*\*Underrubrik i hero:\*\* ([^\n]+)/);
-  if (!K.titel) { if (!rub) { throw new Error('titel saknas i leveransens huvud'); } K.titel = rub[1].trim(); }
-  if (!K.slug) { if (!sok) { throw new Error('**Sökväg:** saknas i leveransens huvud'); } K.slug = sok[1]; }
-  if (!K.sub) { if (!sub) { throw new Error('**Underrubrik i hero:** saknas i leveransens huvud'); } K.sub = sub[1].trim(); }
-}
+require('./lib-leveranshuvud.js').fyllHuvud(K, path.join(LEV, `avsnitt-${N}.md`));   // titel/slug/underrubrik ur huvudet om konfigurationen saknar dem
 
 // bildspecifikationer
 const bildspec = {};
@@ -119,10 +113,12 @@ for (const m of kropp.matchAll(/\n# UNDERDEL ([A-D]) — ([^\n]+)\n([\s\S]*?)(?=
 if (!underdelar.length) { throw new Error('inga underdelar hittade'); }
 
 // ---------- inline-konvertering ----------
-const { ceify, formler } = require('./lib-notation.js');   // Unicode → \ce (tokens, tiopotenser, ⇌); reaktionsrader via ceify
+const { ceify, formler, arReaktion } = require('./lib-notation.js');   // Unicode → \ce (tokens, tiopotenser, ⇌); reaktionsrader via ceify
 function inline(s) {
   let t = s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
-  t = formler(t);
+  // fet reaktion i löptext → ett enda \(\ce{…}\) (lib-notation.arReaktion); övrig fetstil → <strong>
+  t = t.replace(/\*\*([^*]+)\*\*/g, (m, x) => arReaktion(x) ? `§§${ceify(x)}§§` : m);
+  t = formler(t).replace(/§§([^§]*)§§/g, '\\(\\ce{$1}\\)');
   t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/(^|[\s(])\*([^*\n]+)\*(?=[\s.,;:)]|$)/g, '$1<em>$2</em>');
   return t;
 }
@@ -136,7 +132,7 @@ function nivaHtml(text, niva) {
     if (/^### /.test(b)) { ut.push({ typ: 'h2', html: `<h2>${inline(b.replace(/^### /, ''))}</h2>` }); continue; }
     const rader = b.split('\n');
     // fristående fetstilt reaktionsrad → display-formel
-    if (rader.length === 1 && /^\*\*[^*]+\*\*$/.test(b) && /[→⇌]/.test(b)) {
+    if (rader.length === 1 && /^\*\*[^*]+\*\*$/.test(b) && arReaktion(b.replace(/\*\*/g, ''))) {
       ut.push({ typ: 'formel', html: `<div class="formel">\\[\\ce{${ceify(b.replace(/\*\*/g, ''))}}\\]</div>`, kalla: b }); continue;
     }
     // punktlista → <ul> (plattformens .brodtext ul); tabell → <table class="brodtext-tabell"> (kemi.css)

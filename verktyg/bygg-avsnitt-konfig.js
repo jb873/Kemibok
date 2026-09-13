@@ -53,11 +53,11 @@ const AVSNITT_SYROR = {
   1: { dd: [],
        bilder: { 'vatejon-och-oxoniumjon.svg': { aktiv: [], standard: 'H₂O + H⁺ → H₃O⁺' } },   // endast Standard; efter reaktionsraden
        faktaruta: { standard: 'egentligen oxoniumjoner som' } },
-  2: { dd: [],
+  2: { dd: [{ slug: 'ph-och-mol', titel: 'pH-värdet: oxoniumjoner, hydroxidjoner och mol', ikon: '🧪' }],   // Joachims text, doc/leveranser/syror/ph-vardet.md
        bilder: { 'ph-skalan.svg': { aktiv: [], enkel: 'en tvållösning kan ha 9 eller 10', standard: 'många tvållösningar är basiska' } } },
   3: { dd: [],
        bilder: { 'stark-och-svag-syra.webp': { aktiv: ['enkel', 'standard'], enkel: 'helt olika många vätejoner i vattnet', standard: 'partiklar som har avgett den' } } },
-  4: { dd: [],
+  4: { dd: [{ slug: 'mol', titel: 'Mol: en brygga mellan atomer och gram', ikon: '⚖️' }],   // Joachims text, mol.md – länkas senare även från neutralisation/salter (byggs där ur samma fil)
        bilder: { 'fyra-kombinationerna.svg': { aktiv: [], enkel: 'en syra som avger ogärna', standard: 'Utspädd ättiksyra är ett exempel' } } },
   5: { dd: [],
        bilder: { 'syra-och-metall.webp': { aktiv: [], enkel: 'tillsammans en vätgasmolekyl', standard: 'metallatomerna avger elektroner' } } }

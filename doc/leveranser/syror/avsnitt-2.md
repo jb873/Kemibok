@@ -197,13 +197,12 @@ Tillsätter du syra ökar oxoniumjonerna. Men eftersom produkten måste förbli 
 hydroxidjonerna minska lika mycket. De två talen rör sig alltid åt motsatta håll, och tillsammans
 går de från 14 till 0.
 
-Skalan har alltså inga ändpunkter av teknisk nödvändighet — man kan ha pH under 0 och över 14 i
-mycket koncentrerade lösningar. Men för vanliga lösningar räcker intervallet, och det är därför man
-ritar det så.
-
 **Om modellen:** standardtexten gav pH som ett tal med en regel om tiofaldighet. Med tiopotenserna
-blir pH i stället en direkt avläsning av hur många oxoniumjoner som finns, och skalans mittpunkt och
-gränser faller ut av sig själva.
+blir pH i stället en direkt avläsning av hur många oxoniumjoner som finns, och skalans mittpunkt
+faller ut av sig själv.
+
+Vill du gå vidare — hur man räknar med koncentrationerna, vad pOH är, och varför skalans ändpunkter
+inte är absoluta — finns det i djupdykningen **pH-värdet: oxoniumjoner, hydroxidjoner och mol**.
 
 ---
 
@@ -361,7 +360,7 @@ välja rätt indikator till rätt reaktion är en del av kemiskt hantverk.
 
 | Underdel | Enkel | Standard | Fördjupning |
 |---|---|---|---|
-| A | ~500 | ~330 | ~500 |
+| A | ~500 | ~330 | ~420 |
 | B | ~580 | ~400 | ~430 |
 
 ---

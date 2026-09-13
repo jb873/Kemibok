@@ -7,11 +7,14 @@
 //   **Avsnitt N — Avsnittstitel**    (vilket avsnitt kortet och tillbaka-länken hör till)
 //   **Korttext:** 1–2 meningar       (fordj-kort-sammanfattning; läses av bygg-avsnitt.js)
 //   ## Text  …  ---                  (### rubrik → <h2>, stycken → <p>; enkelnivå, §7.1 rapporteras)
+//   eller syror-formen med **Länkas från:** / **Filnamn:** / **Underrubrik:** / **Brödtext:** fil.md
+//   (texten i egen fil, oförändrad; fet reaktion → \(\ce{}\), fristående fet reaktionsrad → .formel).
+//   Se lib-djupdykningar.js.
 // Djupdykningarna matchas mot dd-listan i bygg-avsnitt.js via titelns början (leveransens rubrik
 // kan vara längre än kortets titel, t.ex. "Varför is flyter — och varför det räddar livet").
 'use strict';
 const fs = require('fs'), path = require('path');
-const { formler } = require('./lib-notation.js');
+const { formler, ceify, arReaktion } = require('./lib-notation.js');
 const ROT = path.join(__dirname, '..');
 const DKID = process.argv[2] && !process.argv[2].startsWith('--') ? process.argv[2] : 'repetition';
 const TORR = process.argv.includes('--torr');
@@ -24,26 +27,33 @@ const B4 = '../../../../';
 const alla = tolkaDjupdykningar(path.join(ROT, 'doc', 'leveranser', DK.id, 'djupdykningar.md'));
 
 function inline(s) {
+  // fet reaktion i löptext ("**HCl + H₂O → H₃O⁺ + Cl⁻**") → ett enda \(\ce{…}\); övrig fetstil → <strong>
   let t = s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
-  t = formler(t);
+  t = t.replace(/\*\*([^*]+)\*\*/g, (m, x) => arReaktion(x) ? `§§${ceify(x)}§§` : m);
+  t = formler(t).replace(/§§([^§]*)§§/g, '\\(\\ce{$1}\\)');
   return t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/(^|[\s(])\*([^*\n]+)\*(?=[\s.,;:)]|$)/g, '$1<em>$2</em>');
 }
 
 let antal = 0;
 for (const [N, K] of Object.entries(DELKAPITEL[DKID].avsnitt)) {
+  if (!K.slug) { require('./lib-leveranshuvud.js').fyllHuvud(K, path.join(ROT, 'doc', 'leveranser', DK.id, `avsnitt-${N}.md`)); }
   for (const d of K.dd) {
     const lev = alla.find(x => x.titel.startsWith(d.titel));
     if (!lev) { console.log(`  ${d.slug}: ingen text i leveransen – sidan lämnas orörd`); continue; }
     if (lev.avsnitt !== +N) { throw new Error(`${d.slug}: leveransen säger avsnitt ${lev.avsnitt}, konfigurationen avsnitt ${N}`); }
+    if (lev.slug && lev.slug !== d.slug) { throw new Error(`${d.slug}: leveransen anger filnamnet djupdykning-${lev.slug}.html`); }
+    if (lev.annatDelkapitel) { throw new Error(`${d.slug}: leveransen placerar texten i delkapitlet ${lev.annatDelkapitel}`); }
     const block = lev.text.split(/\n\s*\n/).map(b => b.trim()).filter(Boolean);
     const enstaka = [];
     const html = block.map(b => {
       if (/^### /.test(b)) { return `      <h2>${inline(b.replace(/^### /, ''))}</h2>`; }
       const p = b.replace(/\n/g, ' ');
+      // fristående fet reaktionsrad → display-formel (som i avsnittssidorna)
+      if (/^\*\*[^*]+\*\*$/.test(p) && arReaktion(p.replace(/\*\*/g, ''))) { return `      <div class="formel">\\[\\ce{${ceify(p.replace(/\*\*/g, ''))}}\\]</div>`; }
       if ((p.replace(/\*\*/g, '').match(/[.!?](\s|$)/g) || []).length <= 1) { enstaka.push(p.slice(0, 60)); }
       return `      <p>${inline(p)}</p>`;
     }).join('\n');
-    const avsnittFil = `avsnitt-${N}-${K.slug}.html#a`;
+    const avsnittFil = `avsnitt-${N}-${K.slug}.html#${lev.underdel || 'a'}`;
     const sida = `<!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -76,7 +86,7 @@ for (const [N, K] of Object.entries(DELKAPITEL[DKID].avsnitt)) {
       </nav>
       <span class="avsnitt-label">Djupdykning</span>
       <h1>${inline(lev.titel)}</h1>
-      <!-- ingen <p class="subtitel">: leveransen har ingen kort underrubrik (korttexten hör till fordj-kort) -->
+${lev.underrubrik ? `      <p class="subtitel">— ${inline(lev.underrubrik)} —</p>` : '      <!-- ingen <p class="subtitel">: leveransen har ingen kort underrubrik (korttexten hör till fordj-kort) -->'}
     </div>
   </header>
 

@@ -1,9 +1,11 @@
 // lib-notation.js – Unicode-formler ↔ \ce{} (KEMI-TILLAGG §1), delad av byggverktygen.
 //   formler('H₂O och Na⁺')      → 'H\\(\\ce{H2O}\\) …'   (leverans → sida)
 //   unicode('\\(\\ce{SO4^2-}\\)') → 'SO₄²⁻'                (sida → leverans, för återskapade leveransfiler)
-// Ensamma beteckningar (H, O, NaCl) och enheter (°C, mol/dm³) rörs inte.
-// Tiopotenser i löptext (10⁻⁷) → \(10^{-7}\) (DEL 8.1: matematiskt uttryck, vanlig MathJax);
-// jämviktspilen ⇌ → <=> i reaktionsrader (ceify) och \(\ce{<=>}\) ensam i löptext (formler).
+// Ensamma beteckningar (H, O, NaCl) och enheter (°C, mol/dm³, g/mol) rörs inte.
+// Matematiska uttryck (DEL 8.1, vanlig MathJax): 10⁻⁷ → \(10^{-7}\), 6,02 · 10²³ → \(6{,}02 \cdot 10^{23}\).
+// Jämviktspilen ⇌ → <=> i reaktioner (ceify) och \(\ce{<=>}\) ensam i löptext (formler).
+// En hel reaktion i löptext (t.ex. fet "HCl + H₂O → H₃O⁺ + Cl⁻") känns igen av arReaktion() och
+// blir ett enda \(\ce{…}\); pilar i vanlig text ("partiklar → mol → gram") blir \(\rightarrow\).
 'use strict';
 const SUB = { '₀': '0', '₁': '1', '₂': '2', '₃': '3', '₄': '4', '₅': '5', '₆': '6', '₇': '7', '₈': '8', '₉': '9' };
 const SUBI = Object.fromEntries(Object.entries(SUB).map(([u, d]) => [d, u]));
@@ -15,13 +17,19 @@ function ceify(s) {
     .replace(/⁺/g, '+').replace(/⁻/g, '-').replace(/→/g, '->').replace(/⇌/g, '<=>').replace(/\s+/g, ' ').trim();
 }
 const FORMELTOKEN = /(?:[A-Z][a-z]?[₀-₉]*)+(?:[²³]?[⁺⁻])?|\be[⁺⁻]/g;
-// tiopotens: siffror följda av upphöjda siffror (ev. ⁻), inte föregånget av bokstav/siffra (dm³ lämnas)
-const TIOPOTENS = /(?<![\p{L}\d])(\d+)(⁻?)([⁰¹²³⁴-⁹]+)/gu;
-// enskilda tokens med index/laddning → \(\ce{…}\); hela reaktionsrader (→/⇌) hanteras av anroparen
+// tiopotens med valfri mantissa: "6,02 · 10²³", "1 · 10⁻⁷", "10⁻¹⁴"; inte föregånget av bokstav/siffra (dm³ lämnas)
+const TIOPOTENS = /(?<![\p{L}\d])(?:(\d+(?:,\d+)?) · )?(\d+)(⁻?)([⁰¹²³⁴-⁹]+)/gu;
+// en reaktion: bara formeltokens, koefficienter, +, →/⇌ och parenteser – "HCl + H₂O → H₃O⁺ + Cl⁻"
+function arReaktion(s) {
+  const t = s.trim();
+  if (!/[→⇌]/.test(t)) { return false; }
+  return t.split(/\s+/).every(w => /^(\d+|\+|→|⇌|e⁻|(?:[A-Z][a-z]?[₀-₉]*|\((?:[A-Z][a-z]?[₀-₉]*)+\)[₀-₉]*)+(?:[²³]?[⁺⁻])?)$/.test(w));
+}
+// enskilda tokens med index/laddning → \(\ce{…}\); hela reaktionsrader hanteras av anroparen
 function formler(s) {
   return s.replace(FORMELTOKEN, t => /[₀-₉⁺⁻]/.test(t) ? `\\(\\ce{${ceify(t)}}\\)` : t)
-    .replace(TIOPOTENS, (_, bas, minus, exp) => `\\(${bas}^{${minus ? '-' : ''}${[...exp].map(c => SUPD[c]).join('')}}\\)`)
-    .replace(/⇌/g, '\\(\\ce{<=>}\\)');
+    .replace(TIOPOTENS, (_, mant, bas, minus, exp) => `\\(${mant ? mant.replace(',', '{,}') + ' \\cdot ' : ''}${bas}^{${minus ? '-' : ''}${[...exp].map(c => SUPD[c]).join('')}}\\)`)
+    .replace(/⇌/g, '\\(\\ce{<=>}\\)').replace(/→/g, '\\(\\rightarrow\\)');
 }
 // inversen för ett \ce-innehåll: H2O → H₂O, SO4^2- → SO₄²⁻, Li+ → Li⁺, -> → →
 function unicodeCe(x) {
@@ -31,4 +39,4 @@ function unicodeCe(x) {
 }
 function unicode(s) { return s.replace(/\\\(\\ce\{([^}]*)\}\\\)/g, (_, x) => unicodeCe(x)); }
 
-module.exports = { ceify, formler, unicode, unicodeCe, FORMELTOKEN };
+module.exports = { ceify, formler, unicode, unicodeCe, arReaktion, FORMELTOKEN };

@@ -1,16 +1,45 @@
 // lib-djupdykningar.js – läser doc/leveranser/{delkapitel}/djupdykningar.md (delad av
 // bygg-djupdykning.js och bygg-avsnitt.js, som hämtar korttexten till fordj-kort).
-// Returnerar [{ nr, titel, avsnitt, avsnittTitel, korttext, text }] i leveransens ordning.
+// Två leveransformer per djupdykning ("# N. Titel" + fält):
+//   repetition: **Avsnitt N — Titel** / **Korttext:** … / ## Text … (brödtexten i filen)
+//   syror:      **Länkas från:** avsnitt N, underdel A / **Filnamn:** `djupdykning-slug.html` /
+//               **Underrubrik:** *…* / **Korttext:** … / **Brödtext:** fil.md (texten i egen fil,
+//               dokumentets egen "# Titel"-rad skalas bort; sökväg relativt djupdykningar.md)
+// Returnerar [{ nr, titel, avsnitt, underdel, slug, underrubrik, korttext, text, textFil }].
 'use strict';
-const fs = require('fs');
+const fs = require('fs'), path = require('path');
 function tolkaDjupdykningar(fil) {
   if (!fs.existsSync(fil)) { return []; }
   const md = fs.readFileSync(fil, 'utf8').replace(/\r\n/g, '\n');
   const ut = [];
-  for (const m of md.matchAll(/\n# (\d+)\. ([^\n]+)\n\*\*Avsnitt (\d+) — ([^*]+)\*\*\n([\s\S]*?)\n## Text\n([\s\S]*?)(?=\n---\n|$)/g)) {
-    const huvud = m[5], kort = huvud.match(/\*\*Korttext:\*\*\s*([\s\S]*?)(?:\n\n|$)/);
-    if (!kort) { throw new Error(`djupdykning "${m[2]}": **Korttext:** saknas`); }
-    ut.push({ nr: +m[1], titel: m[2].trim(), avsnitt: +m[3], avsnittTitel: m[4].trim(), korttext: kort[1].replace(/\n/g, ' ').trim(), text: m[6].trim() });
+  for (const m of md.matchAll(/\n# (\d+)\. ([^\n]+)\n([\s\S]*?)(?=\n---\n|$)/g)) {
+    const nr = +m[1], titel = m[2].trim(), block = m[3];
+    const falt = re => { const x = block.match(re); return x ? x[1].trim() : null; };
+    const d = { nr, titel, avsnitt: null, underdel: 'a', slug: null, underrubrik: null, korttext: null, text: null, textFil: null };
+    const avs = falt(/^\*\*Avsnitt (\d+) — [^*]+\*\*$/m);
+    const lank = falt(/^\*\*Länkas från:\*\* ([^\n]+)$/m);
+    if (avs) { d.avsnitt = +avs; }
+    else if (lank) {
+      const a = lank.match(/avsnitt (\d+)(?:, underdel ([A-D]))?/i);
+      if (/delkapitel \*\*/.test(lank)) { d.annatDelkapitel = (lank.match(/delkapitel \*\*([^*]+)\*\*/) || [])[1]; }
+      if (a) { d.avsnitt = +a[1]; if (a[2]) { d.underdel = a[2].toLowerCase(); } }
+    }
+    const filnamn = falt(/^\*\*Filnamn:\*\* `djupdykning-([a-z0-9-]+)\.html`$/m);
+    if (filnamn) { d.slug = filnamn; }
+    const under = falt(/^\*\*Underrubrik:\*\* \*?([^*\n]+?)\*?$/m);
+    if (under) { d.underrubrik = under; }
+    const kort = block.match(/\*\*Korttext:\*\*\s*([\s\S]*?)(?:\n\n|$)/);
+    if (!kort) { throw new Error(`djupdykning "${titel}": **Korttext:** saknas`); }
+    d.korttext = kort[1].replace(/\n/g, ' ').trim();
+    const inline = block.match(/\n## Text\n([\s\S]*)$/);
+    const brod = falt(/^\*\*Brödtext:\*\* ([^\n]+)$/m);
+    if (inline) { d.text = inline[1].trim(); }
+    else if (brod) {
+      d.textFil = path.resolve(path.dirname(fil), brod);
+      if (!fs.existsSync(d.textFil)) { throw new Error(`djupdykning "${titel}": brödtextfilen ${brod} saknas`); }
+      d.text = fs.readFileSync(d.textFil, 'utf8').replace(/\r\n/g, '\n').replace(/^# [^\n]+\n+/, '').trim();
+    }
+    ut.push(d);
   }
   return ut;
 }

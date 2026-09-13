@@ -187,6 +187,10 @@ syrapartiklar per liter, trots att de väger olika.
 **Om modellen:** standardtexten införde en enhet. Med mol som bunt blir enheten ett sätt att räkna
 partiklar i praktiken — och det är precis vad kemiska beräkningar handlar om på gymnasiet.
 
+Mol är ett verktyg som återkommer i flera delkapitel, inte bara här. Hur man räknar med det —
+molmassa, sambandet mellan gram och antal partiklar, och hur man använder det på reaktionsformler —
+finns samlat i djupdykningen **Mol: en brygga mellan atomer och gram**.
+
 ---
 
 # UNDERDEL B — De fyra kombinationerna
