@@ -1,4 +1,4 @@
-// bygg-flipcards.js – bygger flipcards-JSON för avsnitt 2–5 ur doc/leveranser/repetition/flipcards.md och
+// bygg-flipcards.js – bygger flipcards-JSON för avsnitt 1–5 ur doc/leveranser/repetition/flipcards.md och
 // bygger om begreppsbank.json (alla grundläggande begreppskort i kapitlet, 1:1 via kallfil).
 // Kör: node verktyg/bygg-flipcards.js
 //
@@ -13,7 +13,7 @@ const ROT = path.join(__dirname, '..');
 const KAP = 'syror-och-baser', DK = 'repetition';
 const SLUG = { 1: 'atomer-molekyler-joner', 2: 'periodiska-systemet', 3: 'kemiska-bindningar', 4: 'vattnets-egenskaper', 5: 'losningar' };
 const TITEL = { 1: 'Atomer, molekyler och joner', 2: 'Det periodiska systemet', 3: 'Kemiska bindningar', 4: 'Vattnets egenskaper', 5: 'Lösningar' };
-const VANTAT = { 2: [12, 8], 3: [15, 6], 4: [7, 9], 5: [9, 8] };   // begrepp, modell enligt leveransens räkning
+const VANTAT = { 1: [16, 8], 2: [12, 8], 3: [15, 6], 4: [7, 9], 5: [9, 8] };   // begrepp, modell enligt leveransens räkning
 
 const md = fs.readFileSync(path.join(ROT, 'doc', 'leveranser', DK, 'flipcards.md'), 'utf8').replace(/\r\n/g, '\n');
 const slut = md.indexOf('\n# Begreppsbanken');
@@ -57,22 +57,21 @@ for (const a of kropp.matchAll(/\n# AVSNITT (\d) — [^\n]+\n([\s\S]*?)(?=\n# AV
   console.log(`avsnitt ${N}: ${vb} begrepp (${termer.length} till banken) + ${vm} modell, formelkort: ${resultat[N].formelkort.join(' ') || '–'}`);
 }
 
-// ---------- begreppsbank: avsnitt 1 (befintlig) + 2–5 ----------
+// ---------- begreppsbank: alla avsnitt, helt ur leveransen ----------
 const bankFil = path.join(ROT, 'kapitel', KAP, 'data', 'begreppsbank.json');
-const bank = JSON.parse(fs.readFileSync(bankFil, 'utf8'));
-const a1 = bank.begrepp.filter(b => b.avsnitt === '1');
-if (a1.length !== 13) { throw new Error('väntade 13 begrepp från avsnitt 1 i banken, fann ' + a1.length); }
+const bank = JSON.parse(fs.readFileSync(bankFil, 'utf8'));   // kapitel_id, titel, upplasning m.m. behålls
 const nya = [];
-for (const N of [2, 3, 4, 5]) {
+for (const N of [1, 2, 3, 4, 5]) {
   for (const t of resultat[N].termer) {
     let def = utanFormel[t.term] || t.svar.replace(/\*\*/g, '');
     if (/\\ce\{|\\\(/.test(def)) { throw new Error(`begrepp "${t.term}" har formel kvar och saknar omformulering`); }
     nya.push({ id: t.id, avsnitt: String(N), avsnitt_titel: TITEL[N], term: t.term, expertdefinition: def, kallfil: `kapitel/${KAP}/data/flipcards/avsnitt-${N}-${SLUG[N]}.json` });
   }
 }
-bank.begrepp = [...a1, ...nya];
+if (nya.length !== 48) { throw new Error('väntade 48 begrepp i banken, fann ' + nya.length); }
+bank.begrepp = nya;
 bank.version = 2;
 bank.skapad = '2026-09-13';
 bank.kommentar = 'Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler (molekyl, grundämne, kemisk förening, sammansatt jon, dubbelbindning, trippelbindning, summaformel) är omformulerade utan formler här, flipcardsen behåller sina. Avsnitt 1 (13) + 2 (11) + 3 (12) + 4 (5) + 5 (7) = 48.';
 fs.writeFileSync(bankFil, JSON.stringify(bank, null, 2) + '\n');
-console.log('begreppsbank:', bank.begrepp.length, 'begrepp | omformulerade utan formel:', Object.keys(utanFormel).join(', '));
+console.log('begreppsbank:', bank.begrepp.length, 'begrepp | omformulerade utan formel:', nya.filter(b => utanFormel[b.term]).map(b => b.term).join(', '));

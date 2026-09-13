@@ -23,6 +23,16 @@ if (!N) { console.error('användning: node verktyg/bygg-avsnitt.js <avsnittsnumm
 
 // ---------- per-avsnitt konfiguration (det leveransen inte säger maskinläsbart) ----------
 const AVSNITT = {
+  1: { slug: 'atomer-molekyler-joner', titel: 'Atomer, molekyler och joner', sub: 'materiens minsta byggstenar',
+       dd: [{ slug: 'kvarkar', titel: 'Kvarkar', ikon: '⚛️' }],
+       bilder: {
+         'atommodell-litium.webp': { aktiv: ['enkel', 'standard'], enkel: 'protoner och neutroner inne i kärnan, elektroner utanför', standard: 'I atomkärnan finns **protoner** och **neutroner**' },
+         'attrahera-repellera.webp': { aktiv: ['enkel', 'standard'], enkel: 'snäpper de ihop', standard: 'Vi säger att de **attraherar** varandra' },
+         'grundamne-forening.webp': { aktiv: ['enkel', 'standard'], enkel: 'bara genom att titta på formeln', standard: 'Genom att titta på vilka atomslag som ingår' },
+         'litium-atom-och-jon.webp': { aktiv: ['enkel', 'standard'], enkel: 'Det lilla plustecknet visar att laddningen är positiv', standard: 'Plustecknet visar att partikeln har en positiv laddning' }
+       },
+       // faktarutan (leveransens ## FAKTARUTA-sektion) läggs efter ankarstycket och den figur som följer det
+       faktaruta: { enkel: 'snäpper de ihop', standard: 'Vi säger att de **attraherar** varandra' } },
   2: { slug: 'periodiska-systemet', titel: 'Det periodiska systemet', sub: 'hur atomslagen hänger ihop',
        dd: [{ slug: 'adelgaser-som-reagerar', titel: 'Ädelgaser som ändå reagerar', ikon: '💡' }],
        bilder: {
@@ -92,12 +102,35 @@ if (fs.existsSync(bgFil)) {
   }
 }
 
+// faktaruta: "## FAKTARUTA (underdel A, nivåer: enkel, standard)" + **Rubrik:** + prosa + **Sammanfattning:**-lista
+let faktaruta = null;
+const frM = kropp.match(/\n## FAKTARUTA \(underdel ([A-D]), nivåer: ([^)]+)\)\n([\s\S]*?)(?=\n## |\n# |$)/);
+if (frM) {
+  const md = frM[3].trim();
+  const rubrik = (md.match(/\*\*Rubrik:\*\* ([^\n]+)/) || [])[1];
+  const [prosaDel, sammDel] = md.split(/\n\*\*Sammanfattning:\*\*\n/);
+  const prosa = prosaDel.split(/\n\s*\n/).map(x => x.trim()).filter(x => x && !/^\*\*Rubrik:/.test(x));
+  const samm = (sammDel || '').split('\n').filter(r => /^- /.test(r)).map(r => r.replace(/^- /, ''));
+  if (!rubrik || !prosa.length) { throw new Error('FAKTARUTA: rubrik eller prosa saknas'); }
+  faktaruta = { underdel: frM[1].toLowerCase(), nivaer: frM[2].split(',').map(x => x.trim()), rubrik, prosa, samm };
+  if (!K.faktaruta) { throw new Error('leveransen har en FAKTARUTA men konfigurationen saknar ankare'); }
+}
+function faktarutaHtml() {
+  return `<aside class="faktaruta">
+            <h3>${inline(faktaruta.rubrik)}</h3>
+${faktaruta.prosa.map(p => '            <p>' + inline(p) + '</p>').join('\n')}
+            <div class="faktaruta-sammanfattning">
+${faktaruta.samm.map(r => '              <p><strong>' + inline(r) + '</strong></p>').join('\n')}
+            </div>
+          </aside>`;
+}
+
 // underdelar
 const underdelar = [];
 for (const m of kropp.matchAll(/\n# UNDERDEL ([A-D]) — ([^\n]+)\n([\s\S]*?)(?=\n# UNDERDEL |$)/g)) {
   const bok = m[1].toLowerCase(), titel = m[2].trim(), inneh = m[3];
   const sek = {};
-  for (const s of inneh.matchAll(/\n## ([^\n]+)\n([\s\S]*?)(?=\n## |$)/g)) { sek[s[1].trim()] = s[2].replace(/\n---\s*$/, '').trim(); }
+  for (const s of inneh.matchAll(/\n## ([^\n]+)\n([\s\S]*?)(?=\n## |$)/g)) { if (/^FAKTARUTA/.test(s[1])) { continue; } sek[s[1].trim()] = s[2].replace(/\n---\s*$/, '').trim(); }
   underdelar.push({ bok, titel, sek });
 }
 if (!underdelar.length) { throw new Error('inga underdelar hittade'); }
@@ -207,6 +240,15 @@ function underdelHtml(u, i) {
       if (arAktiv && tittaHar && !bildguider[ank.fil || f]) { u.tittaAnvand = true; }
       if (arAktiv && n === 'enkel') { rapport.bildguide.push(`${ank.fil || f}: ${bildguider[ank.fil || f] ? 'bildguide ur doc/bildguider' : (tittaHar ? 'bildguide ur leveransens Titta efter' : 'BILDGUIDE SAKNAS')}`); }
       rapport.ankare.push(`${f} ${u.bok}/${n} → efter "${ank[n].replace(/\n/g, ' ').slice(0, 40)}…"${arAktiv ? ' [AKTIV]' : ''}`);
+    }
+    // faktaruta efter ankarstycket och den figur som följer det
+    if (faktaruta && faktaruta.underdel === u.bok && faktaruta.nivaer.includes(n) && K.faktaruta[n]) {
+      const traff = block.map((b, ix) => (b.kalla && b.kalla.includes(K.faktaruta[n])) ? ix : -1).filter(ix => ix >= 0);
+      if (traff.length !== 1) { throw new Error(`faktaruta-ankare (${n}) träffar ${traff.length} stycken`); }
+      let pos = traff[0] + 1;
+      while (block[pos] && block[pos].typ === 'bild') { pos++; }
+      block.splice(pos, 0, { typ: 'faktaruta', html: faktarutaHtml() });
+      rapport.ankare.push(`faktaruta ${u.bok}/${n} → efter "${K.faktaruta[n].slice(0, 40)}…" (+ figur)`);
     }
     // §7.1: stycken med en mening på Enkel
     if (n === 'enkel') {

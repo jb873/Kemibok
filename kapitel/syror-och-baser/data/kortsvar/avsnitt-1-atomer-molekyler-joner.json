@@ -3,7 +3,7 @@
   "titel": "Atomer, molekyler och joner",
   "delkapitel": "repetition",
   "version": "0.1-utkast",
-  "_kommentar": "UTKAST (Code 2026-09-13) härlett ur flipcardsens modell- och begreppskort, för att se komponenten i drift. Ersätts av leverans från innehållschatten efter Joachims granskning. forklaring är obligatorisk på varje fråga. Regel: frågan får inte innehålla svaret (rättat 2026-09-13 för s2, s5, s12).",
+  "_kommentar": "UTKAST (Code 2026-09-13) härlett ur flipcardsens modell- och begreppskort, för att se komponenten i drift. Ersätts av leverans från innehållschatten efter Joachims granskning. forklaring är obligatorisk på varje fråga. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/repetition/kortsvar.md.",
   "antal_per_omgang": 10,
   "fragor": [
     {

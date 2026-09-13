@@ -1,4 +1,4 @@
-# Flipcards — avsnitt 2–5
+# Flipcards — delkapitel Bakgrund och repetition
 
 > **Till Code:** samma schema och id-mönster som avsnitt 1. Inga `redogorelsekort`.
 > Backslash dubblas i JSON: `"\\(\\ce{H2O}\\)"`.
@@ -6,6 +6,117 @@
 > Kort som innehåller formler är markerade **[formel]**.
 >
 > Begreppsbanken: se avsnittet längst ner — urvalet är inte alla begreppskort.
+
+---
+
+# AVSNITT 1 — Atomer, molekyler och joner
+**24 kort:** 16 begreppskort, 8 modellkort
+
+> Återskapat 2026-09-13 ur avsnitt-1-…json och begreppsbank.json (titlar på modellkort är etiketter, används inte vid bygge).
+
+## Begreppskort — grundläggande
+
+**Atomkärna**
+F: Vad är en atomkärna?
+S: Den lilla delen i mitten av atomen. Den innehåller **protoner** och **neutroner**, och nästan hela atomens massa finns där.
+
+**Proton**
+F: Vad är en proton?
+S: En partikel i atomkärnan med **positiv** laddning. Antalet protoner bestämmer vilket atomslag atomen tillhör.
+
+**Neutron**
+F: Vad är en neutron?
+S: En partikel i atomkärnan **utan** elektrisk laddning. Antalet neutroner kan variera mellan atomer av samma atomslag.
+
+**Elektron**
+F: Vad är en elektron?
+S: En partikel med **negativ** laddning som finns runt atomkärnan. Det är elektronerna som ändras när en atom blir en jon.
+
+**Attrahera**
+F: Vad betyder det att två laddningar attraherar varandra?
+S: Att de **dras mot varandra**. Det sker när laddningarna har olika tecken — en positiv och en negativ.
+
+**Repellera**
+F: Vad betyder det att två laddningar repellerar varandra?
+S: Att de **stöter bort varandra**. Det sker när laddningarna har samma tecken — två positiva eller två negativa.
+
+**Atomslag**
+F: Vad menas med ett atomslag?
+S: Alla atomer som har **samma antal protoner**. Alla atomer med 8 protoner är syre, oavsett hur många neutroner eller elektroner de har.
+
+**Valenselektron**
+F: Vad är en valenselektron?
+S: En elektron som sitter **längst ut** i atomen. Det är valenselektronerna som avgör hur atomen reagerar med andra atomer.
+
+**Molekyl** [formel]
+F: Vad är en molekyl?
+S: Två eller flera atomer som sitter ihop. Atomerna kan vara av samma slag, som `\ce{O2}`, eller av olika slag, som `\ce{H2O}`.
+
+**Grundämne** [formel]
+F: Vad är ett grundämne?
+S: Ett ämne som bara innehåller **ett atomslag**. `\ce{O2}` är ett grundämne — två atomer, men bara en sort.
+
+**Kemisk förening** [formel]
+F: Vad är en kemisk förening?
+S: Ett ämne som innehåller **minst två olika atomslag**. `\ce{H2O}` innehåller både väte och syre.
+
+**Jon**
+F: Vad är en jon?
+S: En partikel som har en **elektrisk laddning**. Den uppstår när en atom inte längre har lika många elektroner som protoner.
+
+**Sammansatt jon** [formel]
+F: Vad är en sammansatt jon?
+S: Flera atomer som sitter ihop och tillsammans har en laddning. Till exempel hydroxidjonen, `\ce{OH-}`, och sulfatjonen, `\ce{SO4^2-}`.
+
+## Begreppskort — fördjupning
+
+**Isotop**
+F: Vad är en isotop?
+S: Atomer av samma atomslag som har **olika antal neutroner**. De har samma antal protoner och är därför samma ämne.
+
+**Ädelgasstruktur**
+F: Vad menas med ädelgasstruktur?
+S: Att det **yttersta elektronskalet är fullt**. Ädelgaserna har det redan, och andra atomslag strävar mot det genom att avge, ta upp eller dela elektroner.
+
+**Orbital**
+F: Vad är en orbital?
+S: Ett område runt atomkärnan där en elektron **troligen befinner sig**. Elektroner rör sig inte i banor — orbitalen är ett sannolikhetsmoln.
+
+## Modellkort — grundläggande
+
+**Räkna atomer** [formel]
+F: Hur många atomer finns det i en molekyl `\ce{H2O}`?
+S: **Tre.** Två väteatomer och en syreatom. Tvåan gäller bara vätet — står ingen siffra efter O menas en.
+
+**Från atomnummer till protoner**
+F: Kväve har atomnummer 7. Hur många protoner har en kväveatom?
+S: **Sju.** Atomnumret är alltid samma sak som antalet protoner.
+
+**Från protoner till ämne**
+F: En atom har 8 protoner i kärnan. Vilket ämne är det?
+S: **Syre.** Antalet protoner avgör vilket atomslag det är — inget annat.
+
+**Grundämne eller förening?** [formel]
+F: Är `\ce{CO2}` ett grundämne eller en kemisk förening?
+S: En **kemisk förening.** Den innehåller två olika atomslag: kol och syre.
+
+**Räkna laddning** [formel]
+F: En litiumatom har 3 protoner och 2 elektroner. Vilken laddning har den?
+S: **Plus ett**, alltså `\ce{Li+}`. Tre plus och två minus ger ett plus över.
+
+**Vad ändras inte?**
+F: Vad händer med antalet protoner när en atom blir en jon?
+S: **Ingenting.** Antalet protoner ändras aldrig — det är bara elektronerna som kommer och går.
+
+## Modellkort — fördjupning
+
+**Kärnans sammanhållning**
+F: Protonerna i kärnan är alla positiva och borde repellera varandra. Varför faller inte kärnan isär?
+S: Den **starka kärnkraften** håller ihop den. Den är mycket starkare än repulsionen, men bara på extremt korta avstånd.
+
+**Varför fler neutroner?**
+F: Varför har tunga atomslag fler neutroner än protoner?
+S: Neutronerna bidrar till kärnkraften **utan att öka repulsionen**. Ju fler protoner som ska repellera varandra, desto fler neutroner behövs för att hålla ihop kärnan.
 
 ---
 
@@ -414,11 +525,19 @@ Fördjupningsbegreppen finns kvar som flipcards.
 | 3 | 12 |
 | 4 | 5 |
 | 5 | 7 |
-| *Avsnitt 1 sedan tidigare* | *13* |
+| 1 | 13 |
 | **Totalt i kapitlet** | **48** |
 
 **Formler i begreppsbanken går inte** — samma begränsning som för avsnitt 1. Fyra begrepp behöver
 omformuleras utan formel:
+
+**Molekyl** — Två eller flera atomer som sitter ihop. Atomerna kan vara av samma slag, som i syrgas, eller av olika slag, som i vatten.
+
+**Grundämne** — Ett ämne som bara innehåller ett atomslag. Syrgas är ett grundämne: molekylen har två atomer, men bara en sort.
+
+**Kemisk förening** — Ett ämne som innehåller minst två olika atomslag. Vatten innehåller både väte och syre.
+
+**Sammansatt jon** — Flera atomer som sitter ihop och tillsammans har en laddning. Hydroxidjonen och sulfatjonen är exempel.
 
 **Dubbelbindning** — En kovalent bindning där atomerna delar två elektronpar. Finns till exempel i
 syremolekylen.

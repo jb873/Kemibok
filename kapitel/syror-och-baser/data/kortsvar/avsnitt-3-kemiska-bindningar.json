@@ -3,7 +3,7 @@
   "titel": "Kemiska bindningar",
   "delkapitel": "repetition",
   "version": "1.0",
-  "_kommentar": "Kortsvar för avsnitt 3 (Kemiska bindningar), leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8).",
+  "_kommentar": "Kortsvar för avsnitt 3 (Kemiska bindningar), leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/repetition/kortsvar.md.",
   "antal_per_omgang": 10,
   "fragor": [
     {

@@ -1,10 +1,41 @@
-# Bildguider — avsnitt 3, 4 och 5
+# Bildguider — delkapitel Bakgrund och repetition
 
 > Elva stycken, inte sju — jag räknade fel. Avsnitt 3 har fem bilder, avsnitt 4 tre, avsnitt 5 tre.
 >
 > **Endast Enkel-nivå.** Placeras före `<figure>`, enligt KOMPONENTER DEL 3.1. Rubrik: 👁 Titta efter.
 >
 > Punkterna pekar på vad eleven ska **leta efter i bilden** — de upprepar inte bildtexten.
+
+---
+
+# AVSNITT 1 — Atomer, molekyler och joner
+
+> Återskapat 2026-09-13 ur den byggda sidan.
+
+## Underdel A — `atommodell-litium.webp`
+
+- Var i atomen kärnan sitter, och hur liten den är jämfört med hela atomen
+- Att protonerna är markerade med **+** och elektronerna med **−**
+- Att neutronerna inte har något tecken alls
+
+## Underdel A — `attrahera-repellera.webp`
+
+- Att alla laddningar på vänster sida har samma tecken
+- Att höger sida har ett av varje
+- Åt vilket håll pilarna pekar i vardera halvan
+- Vilken sida där kloten ligger närmast varandra
+
+## Underdel B — `grundamne-forening.webp`
+
+- Att O₂ innehåller två atomer, men bara **en sort**
+- Att H₂O också innehåller flera atomer, men **två olika sorter**
+- Var siffrorna står, och hur små de är
+
+## Underdel C — `litium-atom-och-jon.webp`
+
+- Att kärnan ser **exakt likadan ut** på båda sidorna
+- Att det bara är en elektron som försvunnit
+- Att den yttre banan är tom till höger
 
 ---
 
