@@ -50,7 +50,7 @@
 
 ## Underdel A — `tre-vagar.svg`
 
-- Vilket ämne som står i varje ruta
+- Räkna protonerna i varje ruta — vilka ämnen är det?
 - Åt vilket håll pilen pekar i den vänstra rutan
 - Åt vilket håll den pekar i den mittersta
 - Vad som är annorlunda i den högra rutan — finns det någon pil där?
