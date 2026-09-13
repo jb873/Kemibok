@@ -5,6 +5,8 @@
 >
 > Bygg (Code 2026-09-13): `node verktyg/bygg-flipcards.js baser` läser denna fil och bygger om kapitlets
 > begreppsbank (id-prefix kB, avsnitt 11–14). Leverans 2026-09-13 (klistrad i chatten).
+> Justerat 2026-09-13 efter Joachims besked: räkningen för avsnitt 4 rättad till 6 modellkort (62 kort totalt,
+> inget kort saknas); "Vem är syran?" märkt [formel].
 
 ---
 
@@ -104,7 +106,7 @@ S: De innehåller **fria joner** som kan röra sig genom vattnet.
 
 ## Modellkort — fördjupning
 
-**Vem är syran?**
+**Vem är syran?** [formel]
 F: I reaktionen `\ce{NH3 + H2O <=> NH4+ + OH-}` — vilket ämne fungerar som syra?
 S: **Vattnet.** Det avger en proton till ammoniaken, och det är vad en syra gör.
 
@@ -260,7 +262,7 @@ S: `\(10^{-2}\)` mol/dm³. Produkten av de två koncentrationerna är alltid `\(
 ---
 
 # AVSNITT 4 — Viktiga baser
-**16 kort:** 9 begreppskort, 7 modellkort
+**15 kort:** 9 begreppskort, 6 modellkort
 
 ## Begreppskort — grundläggande
 
@@ -346,8 +348,8 @@ mest av neutrala molekyler.
 | 1 | 10 | 7 | 13 | 4 | 17 |
 | 2 | 9 | 7 | 12 | 4 | 16 |
 | 3 | 7 | 7 | 10 | 4 | 14 |
-| 4 | 9 | 7 | 12 | 4 | 16 |
-| **Summa** | **35** | **28** | **47** | **16** | **63** |
+| 4 | 9 | 6 | 12 | 3 | 15 |
+| **Summa** | **35** | **27** | **47** | **15** | **62** |
 
 ---
 
