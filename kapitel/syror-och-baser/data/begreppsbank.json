@@ -1,9 +1,9 @@
 {
   "kapitel_id": "syror-och-baser",
   "kapitel_titel": "Syror och baser",
-  "version": 2,
+  "version": 3,
   "skapad": "2026-09-13",
-  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler (molekyl, grundämne, kemisk förening, sammansatt jon, dubbelbindning, trippelbindning, summaformel) är omformulerade utan formler här, flipcardsen behåller sina. Avsnitt 1 (13) + 2 (11) + 3 (12) + 4 (5) + 5 (7) = 48.",
+  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Bakgrund och repetition 48 + Syror 34 = 82.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -13,6 +13,7 @@
       "id": "k1-b1",
       "avsnitt": "1",
       "avsnitt_titel": "Atomer, molekyler och joner",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "atomkärna",
       "expertdefinition": "Den lilla delen i mitten av atomen. Den innehåller protoner och neutroner, och nästan hela atomens massa finns där.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
@@ -21,6 +22,7 @@
       "id": "k1-b2",
       "avsnitt": "1",
       "avsnitt_titel": "Atomer, molekyler och joner",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "proton",
       "expertdefinition": "En partikel i atomkärnan med positiv laddning. Antalet protoner bestämmer vilket atomslag atomen tillhör.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
@@ -29,6 +31,7 @@
       "id": "k1-b3",
       "avsnitt": "1",
       "avsnitt_titel": "Atomer, molekyler och joner",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "neutron",
       "expertdefinition": "En partikel i atomkärnan utan elektrisk laddning. Antalet neutroner kan variera mellan atomer av samma atomslag.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
@@ -37,6 +40,7 @@
       "id": "k1-b4",
       "avsnitt": "1",
       "avsnitt_titel": "Atomer, molekyler och joner",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "elektron",
       "expertdefinition": "En partikel med negativ laddning som finns runt atomkärnan. Det är elektronerna som ändras när en atom blir en jon.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
@@ -45,6 +49,7 @@
       "id": "k1-b5",
       "avsnitt": "1",
       "avsnitt_titel": "Atomer, molekyler och joner",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "attrahera",
       "expertdefinition": "Att de dras mot varandra. Det sker när laddningarna har olika tecken — en positiv och en negativ.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
@@ -53,6 +58,7 @@
       "id": "k1-b6",
       "avsnitt": "1",
       "avsnitt_titel": "Atomer, molekyler och joner",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "repellera",
       "expertdefinition": "Att de stöter bort varandra. Det sker när laddningarna har samma tecken — två positiva eller två negativa.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
@@ -61,6 +67,7 @@
       "id": "k1-b7",
       "avsnitt": "1",
       "avsnitt_titel": "Atomer, molekyler och joner",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "atomslag",
       "expertdefinition": "Alla atomer som har samma antal protoner. Alla atomer med 8 protoner är syre, oavsett hur många neutroner eller elektroner de har.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
@@ -69,6 +76,7 @@
       "id": "k1-b8",
       "avsnitt": "1",
       "avsnitt_titel": "Atomer, molekyler och joner",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "valenselektron",
       "expertdefinition": "En elektron som sitter längst ut i atomen. Det är valenselektronerna som avgör hur atomen reagerar med andra atomer.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
@@ -77,6 +85,7 @@
       "id": "k1-b9",
       "avsnitt": "1",
       "avsnitt_titel": "Atomer, molekyler och joner",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "molekyl",
       "expertdefinition": "Två eller flera atomer som sitter ihop. Atomerna kan vara av samma slag, som i syrgas, eller av olika slag, som i vatten.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
@@ -85,6 +94,7 @@
       "id": "k1-b10",
       "avsnitt": "1",
       "avsnitt_titel": "Atomer, molekyler och joner",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "grundämne",
       "expertdefinition": "Ett ämne som bara innehåller ett atomslag. Syrgas är ett grundämne: molekylen har två atomer, men bara en sort.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
@@ -93,6 +103,7 @@
       "id": "k1-b11",
       "avsnitt": "1",
       "avsnitt_titel": "Atomer, molekyler och joner",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "kemisk förening",
       "expertdefinition": "Ett ämne som innehåller minst två olika atomslag. Vatten innehåller både väte och syre.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
@@ -101,6 +112,7 @@
       "id": "k1-b12",
       "avsnitt": "1",
       "avsnitt_titel": "Atomer, molekyler och joner",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "jon",
       "expertdefinition": "En partikel som har en elektrisk laddning. Den uppstår när en atom inte längre har lika många elektroner som protoner.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
@@ -109,6 +121,7 @@
       "id": "k1-b13",
       "avsnitt": "1",
       "avsnitt_titel": "Atomer, molekyler och joner",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "sammansatt jon",
       "expertdefinition": "Flera atomer som sitter ihop och tillsammans har en laddning. Hydroxidjonen och sulfatjonen är exempel.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-atomer-molekyler-joner.json"
@@ -117,6 +130,7 @@
       "id": "k2-b1",
       "avsnitt": "2",
       "avsnitt_titel": "Det periodiska systemet",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "atomnummer",
       "expertdefinition": "Hur många protoner atomkärnan innehåller. Väte har atomnummer 1, syre har 8.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
@@ -125,6 +139,7 @@
       "id": "k2-b2",
       "avsnitt": "2",
       "avsnitt_titel": "Det periodiska systemet",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "period",
       "expertdefinition": "En vågrät rad. Perioden visar hur många elektronskal atomen använder.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
@@ -133,6 +148,7 @@
       "id": "k2-b3",
       "avsnitt": "2",
       "avsnitt_titel": "Det periodiska systemet",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "valensskal",
       "expertdefinition": "Atomens yttersta elektronskal, där valenselektronerna sitter. Perioden talar om vilket skal det är.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
@@ -141,6 +157,7 @@
       "id": "k2-b4",
       "avsnitt": "2",
       "avsnitt_titel": "Det periodiska systemet",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "grupp",
       "expertdefinition": "En lodrät kolumn. Atomslag i samma grupp har lika många valenselektroner och beter sig ofta likadant.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
@@ -149,6 +166,7 @@
       "id": "k2-b5",
       "avsnitt": "2",
       "avsnitt_titel": "Det periodiska systemet",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "alkalimetall",
       "expertdefinition": "Den står i grupp 1 och har en valenselektron. Avger den lätt och blir en positiv jon. Litium, natrium och kalium är exempel.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
@@ -157,6 +175,7 @@
       "id": "k2-b6",
       "avsnitt": "2",
       "avsnitt_titel": "Det periodiska systemet",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "alkalisk jordartsmetall",
       "expertdefinition": "Den står i grupp 2 och har två valenselektroner. Magnesium och kalcium är exempel.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
@@ -165,6 +184,7 @@
       "id": "k2-b7",
       "avsnitt": "2",
       "avsnitt_titel": "Det periodiska systemet",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "halogen",
       "expertdefinition": "Den står i grupp 17 och har sju valenselektroner. Saknar bara en för att nå åtta, och tar därför hellre upp en elektron än avger någon.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
@@ -173,6 +193,7 @@
       "id": "k2-b8",
       "avsnitt": "2",
       "avsnitt_titel": "Det periodiska systemet",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "ädelgas",
       "expertdefinition": "Den står i grupp 18 och har fullt yttersta skal. Behöver varken avge eller ta upp elektroner och reagerar därför nästan inte alls.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
@@ -181,6 +202,7 @@
       "id": "k2-b9",
       "avsnitt": "2",
       "avsnitt_titel": "Det periodiska systemet",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "metall",
       "expertdefinition": "Till vänster och i mitten. De leder ström och värme, är formbara och har metallglans. Ungefär åttio av atomslagen är metaller.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
@@ -189,6 +211,7 @@
       "id": "k2-b10",
       "avsnitt": "2",
       "avsnitt_titel": "Det periodiska systemet",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "icke-metall",
       "expertdefinition": "Till höger i systemet. De leder ström dåligt, flera är gaser, och de fasta är ofta spröda.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
@@ -197,6 +220,7 @@
       "id": "k2-b11",
       "avsnitt": "2",
       "avsnitt_titel": "Det periodiska systemet",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "halvmetall",
       "expertdefinition": "Ett atomslag med egenskaper från både metaller och icke-metaller. Kisel är den viktigaste — den är grunden för all elektronik.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-periodiska-systemet.json"
@@ -205,6 +229,7 @@
       "id": "k3-b1",
       "avsnitt": "3",
       "avsnitt_titel": "Kemiska bindningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "kemisk bindning",
       "expertdefinition": "Det som håller samman atomer eller joner i ett ämne.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
@@ -213,6 +238,7 @@
       "id": "k3-b2",
       "avsnitt": "3",
       "avsnitt_titel": "Kemiska bindningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "ädelgasstruktur",
       "expertdefinition": "Att atomens yttersta skal är fullt — för de flesta atomslag åtta elektroner. Samma uppsättning som en ädelgas har.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
@@ -221,6 +247,7 @@
       "id": "k3-b3",
       "avsnitt": "3",
       "avsnitt_titel": "Kemiska bindningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "jonbindning",
       "expertdefinition": "Den elektriska attraktionen mellan en positiv och en negativ jon. Uppstår när en atom avger elektroner och en annan tar upp dem.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
@@ -229,6 +256,7 @@
       "id": "k3-b4",
       "avsnitt": "3",
       "avsnitt_titel": "Kemiska bindningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "kovalent bindning",
       "expertdefinition": "En bindning där två atomer delar ett elektronpar. Kallas också elektronparbindning.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
@@ -237,6 +265,7 @@
       "id": "k3-b5",
       "avsnitt": "3",
       "avsnitt_titel": "Kemiska bindningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "elektronpar",
       "expertdefinition": "Två elektroner som båda atomerna räknar som sina. Det är paret som håller ihop dem.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
@@ -245,6 +274,7 @@
       "id": "k3-b6",
       "avsnitt": "3",
       "avsnitt_titel": "Kemiska bindningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "metallbindning",
       "expertdefinition": "Positiva metalljoner i ett regelbundet mönster, omgivna av fria elektroner som rör sig mellan dem.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
@@ -253,6 +283,7 @@
       "id": "k3-b7",
       "avsnitt": "3",
       "avsnitt_titel": "Kemiska bindningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "enkelbindning",
       "expertdefinition": "En kovalent bindning där atomerna delar ett elektronpar. Ritas som ett streck.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
@@ -261,6 +292,7 @@
       "id": "k3-b8",
       "avsnitt": "3",
       "avsnitt_titel": "Kemiska bindningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "dubbelbindning",
       "expertdefinition": "En kovalent bindning där atomerna delar två elektronpar. Finns till exempel i syremolekylen.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
@@ -269,6 +301,7 @@
       "id": "k3-b9",
       "avsnitt": "3",
       "avsnitt_titel": "Kemiska bindningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "trippelbindning",
       "expertdefinition": "En kovalent bindning där atomerna delar tre elektronpar. Finns i kvävemolekylen, och den är mycket stark.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
@@ -277,6 +310,7 @@
       "id": "k3-b10",
       "avsnitt": "3",
       "avsnitt_titel": "Kemiska bindningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "summaformel",
       "expertdefinition": "Visar vilka atomslag som ingår i en molekyl och hur många av varje. I vattenmolekylen två väteatomer och en syreatom.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
@@ -285,6 +319,7 @@
       "id": "k3-b11",
       "avsnitt": "3",
       "avsnitt_titel": "Kemiska bindningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "strukturformel",
       "expertdefinition": "Vilka atomer som är bundna till vilka. Varje streck är ett delat elektronpar: H–O–H.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
@@ -293,6 +328,7 @@
       "id": "k3-b12",
       "avsnitt": "3",
       "avsnitt_titel": "Kemiska bindningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "kalottmodell",
       "expertdefinition": "Molekylens verkliga form och atomernas storlek i förhållande till varandra. Atomerna ritas som klot som sitter ihop.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-kemiska-bindningar.json"
@@ -301,6 +337,7 @@
       "id": "k4-b1",
       "avsnitt": "4",
       "avsnitt_titel": "Vattnets egenskaper",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "polär molekyl",
       "expertdefinition": "En molekyl med en svagt positiv och en svagt negativ sida, eftersom elektronerna är ojämnt fördelade.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-vattnets-egenskaper.json"
@@ -309,6 +346,7 @@
       "id": "k4-b2",
       "avsnitt": "4",
       "avsnitt_titel": "Vattnets egenskaper",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "vätebindning",
       "expertdefinition": "Attraktionen mellan vattenmolekyler — den svagt positiva vätesidan hos en molekyl dras till den svagt negativa syresidan hos en annan.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-vattnets-egenskaper.json"
@@ -317,6 +355,7 @@
       "id": "k4-b3",
       "avsnitt": "4",
       "avsnitt_titel": "Vattnets egenskaper",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "densitet",
       "expertdefinition": "Hur mycket massa ett ämne har i förhållande till sin volym.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-vattnets-egenskaper.json"
@@ -325,6 +364,7 @@
       "id": "k4-b4",
       "avsnitt": "4",
       "avsnitt_titel": "Vattnets egenskaper",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "ytspänning",
       "expertdefinition": "Att vattenytan dras ihop och strävar efter att bli så liten som möjligt, eftersom molekylerna vid ytan saknar grannar ovanför sig.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-vattnets-egenskaper.json"
@@ -333,6 +373,7 @@
       "id": "k4-b5",
       "avsnitt": "4",
       "avsnitt_titel": "Vattnets egenskaper",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "tensid",
       "expertdefinition": "Sänker ytspänningen. Diskmedel är ett exempel — det stör attraktionen mellan vattenmolekylerna.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-vattnets-egenskaper.json"
@@ -341,6 +382,7 @@
       "id": "k5-b1",
       "avsnitt": "5",
       "avsnitt_titel": "Lösningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "lösning",
       "expertdefinition": "En blandning där ett ämne har fördelats jämnt i ett annat.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
@@ -349,6 +391,7 @@
       "id": "k5-b2",
       "avsnitt": "5",
       "avsnitt_titel": "Lösningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "lösningsmedel",
       "expertdefinition": "Det ämne som löser det andra. Oftast vatten, och oftast det det finns mest av.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
@@ -357,6 +400,7 @@
       "id": "k5-b3",
       "avsnitt": "5",
       "avsnitt_titel": "Lösningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "löst ämne",
       "expertdefinition": "Det ämne som fördelas i lösningsmedlet. Löser du socker i vatten är sockret det lösta ämnet.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
@@ -365,6 +409,7 @@
       "id": "k5-b4",
       "avsnitt": "5",
       "avsnitt_titel": "Lösningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "koncentration",
       "expertdefinition": "Hur mycket löst ämne lösningen innehåller i förhållande till mängden lösningsmedel.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
@@ -373,6 +418,7 @@
       "id": "k5-b5",
       "avsnitt": "5",
       "avsnitt_titel": "Lösningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "löslighet",
       "expertdefinition": "Hur mycket av ämnet som går att lösa i ett visst lösningsmedel. Beror på ämnet, lösningsmedlet och temperaturen.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
@@ -381,6 +427,7 @@
       "id": "k5-b6",
       "avsnitt": "5",
       "avsnitt_titel": "Lösningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "mättad lösning",
       "expertdefinition": "En lösning där inget mer kan lösas. Allt som tillsätts därefter blir liggande olöst.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
@@ -389,9 +436,316 @@
       "id": "k5-b7",
       "avsnitt": "5",
       "avsnitt_titel": "Lösningar",
+      "delkapitel_titel": "Bakgrund och repetition",
       "term": "lika löser lika",
       "expertdefinition": "Polära ämnen löser sig i polära lösningsmedel, opolära i opolära. Blandar man polärt och opolärt händer lite.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-losningar.json"
+    },
+    {
+      "id": "kS1-b1",
+      "avsnitt": "6",
+      "avsnitt_titel": "Vad är en syra?",
+      "delkapitel_titel": "Syror",
+      "term": "vätejon",
+      "expertdefinition": "En väteatom som avgett sin enda elektron. Kvar finns bara protonen — ingen elektron, inget skal.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-syra.json"
+    },
+    {
+      "id": "kS1-b2",
+      "avsnitt": "6",
+      "avsnitt_titel": "Vad är en syra?",
+      "delkapitel_titel": "Syror",
+      "term": "syra",
+      "expertdefinition": "Ett ämne som kan avge vätejoner.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-syra.json"
+    },
+    {
+      "id": "kS1-b3",
+      "avsnitt": "6",
+      "avsnitt_titel": "Vad är en syra?",
+      "delkapitel_titel": "Syror",
+      "term": "sur lösning",
+      "expertdefinition": "Den innehåller vätejoner som en syra avgett. Ju fler, desto surare.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-syra.json"
+    },
+    {
+      "id": "kS1-b4",
+      "avsnitt": "6",
+      "avsnitt_titel": "Vad är en syra?",
+      "delkapitel_titel": "Syror",
+      "term": "saltsyra",
+      "expertdefinition": "Ämnet väteklorid löst i vatten. Varje partikel avger en vätejon, och kvar blir en kloridjon.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-syra.json"
+    },
+    {
+      "id": "kS1-b5",
+      "avsnitt": "6",
+      "avsnitt_titel": "Vad är en syra?",
+      "delkapitel_titel": "Syror",
+      "term": "kloridjon",
+      "expertdefinition": "Det som blir kvar av vätekloriden när den avgett sin vätejon. Den gör inte lösningen sur — det gör vätejonerna.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-syra.json"
+    },
+    {
+      "id": "kS1-b6",
+      "avsnitt": "6",
+      "avsnitt_titel": "Vad är en syra?",
+      "delkapitel_titel": "Syror",
+      "term": "brygga: vätejonen i vatten",
+      "expertdefinition": "Den kan inte vara ensam. Den binder direkt till en vattenmolekyl, och då bildas en oxoniumjon.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-syra.json"
+    },
+    {
+      "id": "kS1-b7",
+      "avsnitt": "6",
+      "avsnitt_titel": "Vad är en syra?",
+      "delkapitel_titel": "Syror",
+      "term": "brygga: oxoniumjon",
+      "expertdefinition": "En vattenmolekyl som tagit upp en vätejon. Det är den som faktiskt finns i en sur lösning.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-en-syra.json"
+    },
+    {
+      "id": "kS2-b1",
+      "avsnitt": "7",
+      "avsnitt_titel": "pH och indikatorer",
+      "delkapitel_titel": "Syror",
+      "term": "ph",
+      "expertdefinition": "Hur sur eller basisk en lösning är. Skalan går från 0 till 14.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-ph-och-indikatorer.json"
+    },
+    {
+      "id": "kS2-b2",
+      "avsnitt": "7",
+      "avsnitt_titel": "pH och indikatorer",
+      "delkapitel_titel": "Syror",
+      "term": "surt, neutralt, basiskt",
+      "expertdefinition": "Under 7 = surt. Precis 7 = neutralt. Över 7 = basiskt.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-ph-och-indikatorer.json"
+    },
+    {
+      "id": "kS2-b3",
+      "avsnitt": "7",
+      "avsnitt_titel": "pH och indikatorer",
+      "delkapitel_titel": "Syror",
+      "term": "indikator",
+      "expertdefinition": "Ett ämne som byter färg beroende på lösningens pH.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-ph-och-indikatorer.json"
+    },
+    {
+      "id": "kS2-b4",
+      "avsnitt": "7",
+      "avsnitt_titel": "pH och indikatorer",
+      "delkapitel_titel": "Syror",
+      "term": "lackmus",
+      "expertdefinition": "Blått papper blir rött i surt. Rött papper blir blått i basiskt. Inget pH-värde, bara surt eller basiskt.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-ph-och-indikatorer.json"
+    },
+    {
+      "id": "kS2-b5",
+      "avsnitt": "7",
+      "avsnitt_titel": "pH och indikatorer",
+      "delkapitel_titel": "Syror",
+      "term": "btb",
+      "expertdefinition": "Gult i surt, grönt omkring neutralt, blått i basiskt.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-ph-och-indikatorer.json"
+    },
+    {
+      "id": "kS2-b6",
+      "avsnitt": "7",
+      "avsnitt_titel": "pH och indikatorer",
+      "delkapitel_titel": "Syror",
+      "term": "universalindikator",
+      "expertdefinition": "Den innehåller flera indikatorämnen och visar ett ungefärligt pH-värde, inte bara surt eller basiskt.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-ph-och-indikatorer.json"
+    },
+    {
+      "id": "kS2-b7",
+      "avsnitt": "7",
+      "avsnitt_titel": "pH och indikatorer",
+      "delkapitel_titel": "Syror",
+      "term": "ph-mätare",
+      "expertdefinition": "När man behöver ett exakt tal. Indikatorer ger bara ungefärliga värden.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-ph-och-indikatorer.json"
+    },
+    {
+      "id": "kS3-b1",
+      "avsnitt": "8",
+      "avsnitt_titel": "Starka och svaga syror",
+      "delkapitel_titel": "Syror",
+      "term": "stark syra",
+      "expertdefinition": "En syra som avger nästan alla sina vätejoner i vatten.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-starka-och-svaga-syror.json"
+    },
+    {
+      "id": "kS3-b2",
+      "avsnitt": "8",
+      "avsnitt_titel": "Starka och svaga syror",
+      "delkapitel_titel": "Syror",
+      "term": "svag syra",
+      "expertdefinition": "En syra som bara avger en del av sina vätejoner. Resten finns kvar som hela partiklar.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-starka-och-svaga-syror.json"
+    },
+    {
+      "id": "kS3-b3",
+      "avsnitt": "8",
+      "avsnitt_titel": "Starka och svaga syror",
+      "delkapitel_titel": "Syror",
+      "term": "tre starka syror",
+      "expertdefinition": "Saltsyra, svavelsyra och salpetersyra.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-starka-och-svaga-syror.json"
+    },
+    {
+      "id": "kS3-b4",
+      "avsnitt": "8",
+      "avsnitt_titel": "Starka och svaga syror",
+      "delkapitel_titel": "Syror",
+      "term": "fem svaga syror",
+      "expertdefinition": "Ättiksyra, citronsyra, kolsyra, mjölksyra och myrsyra.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-starka-och-svaga-syror.json"
+    },
+    {
+      "id": "kS3-b5",
+      "avsnitt": "8",
+      "avsnitt_titel": "Starka och svaga syror",
+      "delkapitel_titel": "Syror",
+      "term": "vad styrka inte betyder",
+      "expertdefinition": "Nej. Styrka handlar bara om hur lätt syran avger sina vätejoner.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-starka-och-svaga-syror.json"
+    },
+    {
+      "id": "kS3-b6",
+      "avsnitt": "8",
+      "avsnitt_titel": "Starka och svaga syror",
+      "delkapitel_titel": "Syror",
+      "term": "jämviktspilen",
+      "expertdefinition": "Att reaktionen går åt båda hållen samtidigt och aldrig blir helt färdig.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-starka-och-svaga-syror.json"
+    },
+    {
+      "id": "kS3-b7",
+      "avsnitt": "8",
+      "avsnitt_titel": "Starka och svaga syror",
+      "delkapitel_titel": "Syror",
+      "term": "svavelsyrans två vätejoner",
+      "expertdefinition": "Varje partikel har två vätejoner att avge. Den första avges lätt, den andra sitter hårdare.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-starka-och-svaga-syror.json"
+    },
+    {
+      "id": "kS4-b1",
+      "avsnitt": "9",
+      "avsnitt_titel": "Koncentrerade och utspädda syror",
+      "delkapitel_titel": "Syror",
+      "term": "koncentration",
+      "expertdefinition": "Hur mycket löst ämne det finns i en viss mängd lösning.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-koncentrerade-och-utspadda-syror.json"
+    },
+    {
+      "id": "kS4-b2",
+      "avsnitt": "9",
+      "avsnitt_titel": "Koncentrerade och utspädda syror",
+      "delkapitel_titel": "Syror",
+      "term": "koncentrerad",
+      "expertdefinition": "Den innehåller mycket löst ämne i förhållande till mängden vätska.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-koncentrerade-och-utspadda-syror.json"
+    },
+    {
+      "id": "kS4-b3",
+      "avsnitt": "9",
+      "avsnitt_titel": "Koncentrerade och utspädda syror",
+      "delkapitel_titel": "Syror",
+      "term": "utspädd",
+      "expertdefinition": "Den innehåller lite löst ämne i förhållande till mängden vätska.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-koncentrerade-och-utspadda-syror.json"
+    },
+    {
+      "id": "kS4-b4",
+      "avsnitt": "9",
+      "avsnitt_titel": "Koncentrerade och utspädda syror",
+      "delkapitel_titel": "Syror",
+      "term": "mol/dm³",
+      "expertdefinition": "Antal mol per liter lösning. En kubikdecimeter är samma sak som en liter.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-koncentrerade-och-utspadda-syror.json"
+    },
+    {
+      "id": "kS4-b5",
+      "avsnitt": "9",
+      "avsnitt_titel": "Koncentrerade och utspädda syror",
+      "delkapitel_titel": "Syror",
+      "term": "att späda ut",
+      "expertdefinition": "Mängden syra är oförändrad, men den fördelas i mer vatten. Koncentrationen minskar och pH stiger.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-koncentrerade-och-utspadda-syror.json"
+    },
+    {
+      "id": "kS4-b6",
+      "avsnitt": "9",
+      "avsnitt_titel": "Koncentrerade och utspädda syror",
+      "delkapitel_titel": "Syror",
+      "term": "siv-regeln",
+      "expertdefinition": "Syra I Vatten. Häll alltid syran i vattnet, aldrig vatten i koncentrerad syra.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-koncentrerade-och-utspadda-syror.json"
+    },
+    {
+      "id": "kS5-b1",
+      "avsnitt": "10",
+      "avsnitt_titel": "Viktiga syror: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Syror",
+      "term": "syrors gemensamma egenskaper",
+      "expertdefinition": "pH under 7, de leder ström, många är frätande, och de kan neutraliseras av baser.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-viktiga-syror.json"
+    },
+    {
+      "id": "kS5-b2",
+      "avsnitt": "10",
+      "avsnitt_titel": "Viktiga syror: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Syror",
+      "term": "saltsyra i kroppen",
+      "expertdefinition": "I magsäcken. Den hjälper till att bryta ner maten och oskadliggör många mikroorganismer.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-viktiga-syror.json"
+    },
+    {
+      "id": "kS5-b3",
+      "avsnitt": "10",
+      "avsnitt_titel": "Viktiga syror: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Syror",
+      "term": "svavelsyra",
+      "expertdefinition": "Gödselmedel, kemisk industri, och som vätska i blybatterier.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-viktiga-syror.json"
+    },
+    {
+      "id": "kS5-b4",
+      "avsnitt": "10",
+      "avsnitt_titel": "Viktiga syror: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Syror",
+      "term": "salpetersyra",
+      "expertdefinition": "Gödselmedel och sprängämnen.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-viktiga-syror.json"
+    },
+    {
+      "id": "kS5-b5",
+      "avsnitt": "10",
+      "avsnitt_titel": "Viktiga syror: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Syror",
+      "term": "ättiksyra",
+      "expertdefinition": "I ättika och vinäger. Den används i matlagning och för att konservera livsmedel.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-viktiga-syror.json"
+    },
+    {
+      "id": "kS5-b6",
+      "avsnitt": "10",
+      "avsnitt_titel": "Viktiga syror: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Syror",
+      "term": "citronsyra",
+      "expertdefinition": "Avkalkning. Den löser upp kalkavlagringar i kaffebryggare och vattenkokare.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-viktiga-syror.json"
+    },
+    {
+      "id": "kS5-b7",
+      "avsnitt": "10",
+      "avsnitt_titel": "Viktiga syror: egenskaper, användning och säkerhet",
+      "delkapitel_titel": "Syror",
+      "term": "myrsyra",
+      "expertdefinition": "Hos myror, som den fått sitt namn av. Den används också vid ensilering av djurfoder.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-5-viktiga-syror.json"
     }
   ]
 }

@@ -1,0 +1,117 @@
+{
+  "avsnitt": 5,
+  "titel": "Viktiga syror: egenskaper, användning och säkerhet",
+  "delkapitel": "syror",
+  "version": "1.0",
+  "kort_totalt": 15,
+  "_kommentar": "Flipcards för avsnitt 5 (Viktiga syror: egenskaper, användning och säkerhet), delkapitel Syror. 9 begreppskort + 6 modellkort = 15 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/syror/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k5-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad har alla sura lösningar gemensamt?",
+      "svar": "**pH under 7**, de **leder ström**, många är **frätande**, och de kan **neutraliseras** av baser."
+    },
+    {
+      "id": "k5-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Var i kroppen finns saltsyra, och varför?",
+      "svar": "I **magsäcken**. Den hjälper till att bryta ner maten och oskadliggör många mikroorganismer."
+    },
+    {
+      "id": "k5-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad används svavelsyra till?",
+      "svar": "**Gödselmedel**, kemisk industri, och som vätska i **blybatterier**."
+    },
+    {
+      "id": "k5-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad används salpetersyra till?",
+      "svar": "**Gödselmedel** och **sprängämnen**."
+    },
+    {
+      "id": "k5-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Var finns ättiksyra?",
+      "svar": "I **ättika och vinäger**. Den används i matlagning och för att **konservera** livsmedel."
+    },
+    {
+      "id": "k5-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad används citronsyra till, förutom i livsmedel?",
+      "svar": "**Avkalkning.** Den löser upp kalkavlagringar i kaffebryggare och vattenkokare."
+    },
+    {
+      "id": "k5-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Var förekommer myrsyra?",
+      "svar": "Hos **myror**, som den fått sitt namn av. Den används också vid **ensilering** av djurfoder."
+    },
+    {
+      "id": "k5-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är laktat?",
+      "svar": "Mjölksyrans **jonform**. Det är den som faktiskt finns i kroppen, inte mjölksyra som molekyl."
+    },
+    {
+      "id": "k5-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är spänningsserien?",
+      "svar": "En rangordning av metaller efter hur **villigt de avger elektroner**. Gränsen går vid vätet."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k5-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad bildas när en syra reagerar med en metall?",
+      "svar": "**Vätgas**, som bubblar upp ur lösningen."
+    },
+    {
+      "id": "k5-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför bildas vätgas när metall möter syra?",
+      "svar": "Metallatomerna **avger elektroner** till vätejonerna, som blir väteatomer igen. Två av dem bildar en vätgasmolekyl."
+    },
+    {
+      "id": "k5-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Är en svag syra alltid ofarlig?",
+      "svar": "**Nej.** Även koncentrerade svaga syror kan vara frätande. Koncentrationen spelar lika stor roll som styrkan."
+    },
+    {
+      "id": "k5-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad gör du om du får syra på huden?",
+      "svar": "**Skölj omedelbart med rikligt med vatten**, länge. Ta av förorenade kläder och säg till din lärare."
+    },
+    {
+      "id": "k5-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur bildas kolsyra?",
+      "svar": "När **koldioxid löser sig i vatten**. Därför är kolsyrade drycker lite sura."
+    },
+    {
+      "id": "k5-m6",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Zink reagerar med saltsyra men koppar gör det inte. Varför?",
+      "svar": "Koppar ligger **under vätet** i spänningsserien och avger elektroner ogärnare. Zink ligger över."
+    }
+  ]
+}

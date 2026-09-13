@@ -1,0 +1,138 @@
+{
+  "avsnitt": 3,
+  "titel": "Starka och svaga syror",
+  "delkapitel": "syror",
+  "version": "1.0",
+  "kort_totalt": 18,
+  "_kommentar": "Flipcards för avsnitt 3 (Starka och svaga syror), delkapitel Syror. 10 begreppskort + 8 modellkort = 18 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/syror/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k3-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en stark syra?",
+      "svar": "En syra som avger **nästan alla** sina vätejoner i vatten."
+    },
+    {
+      "id": "k3-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en svag syra?",
+      "svar": "En syra som bara avger **en del** av sina vätejoner. Resten finns kvar som hela partiklar."
+    },
+    {
+      "id": "k3-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilka är de tre viktigaste starka syrorna?",
+      "svar": "**Saltsyra**, **svavelsyra** och **salpetersyra**."
+    },
+    {
+      "id": "k3-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Ge exempel på svaga syror.",
+      "svar": "**Ättiksyra**, **citronsyra**, **kolsyra**, **mjölksyra** och **myrsyra**."
+    },
+    {
+      "id": "k3-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Säger stark och svag något om hur mycket syra det finns i lösningen?",
+      "svar": "**Nej.** Styrka handlar bara om hur lätt syran avger sina vätejoner."
+    },
+    {
+      "id": "k3-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder pilen \\(\\ce{<=>}\\) i en reaktionsformel?",
+      "svar": "Att reaktionen går **åt båda hållen** samtidigt och aldrig blir helt färdig."
+    },
+    {
+      "id": "k3-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är särskilt med svavelsyra?",
+      "svar": "Varje partikel har **två** vätejoner att avge. Den första avges lätt, den andra sitter hårdare."
+    },
+    {
+      "id": "k3-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är kemisk jämvikt?",
+      "svar": "Ett tillstånd där två motsatta reaktioner går **lika fort**. Antalen förblir oförändrade, men partiklarna byter ständigt form."
+    },
+    {
+      "id": "k3-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är en buffert?",
+      "svar": "En lösning som **motstår pH-förändringar**. Den bygger på att en svag syra står i jämvikt med sin jon."
+    },
+    {
+      "id": "k3-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad blir kvar när en ättiksyramolekyl avgett sin vätejon?",
+      "svar": "En **acetatjon**, \\(\\ce{CH3COO-}\\). Den kan ta tillbaka vätejonen igen."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k3-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Två glas innehåller lika mycket syra — ett starkt och ett svagt. Vilket har flest vätejoner?",
+      "svar": "Det med den **starka** syran. Nästan alla dess partiklar har avgett sin vätejon."
+    },
+    {
+      "id": "k3-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad finns i en lösning med svag syra som inte finns i en med stark?",
+      "svar": "**Hela syrapartiklar** som ännu inte avgett sin vätejon."
+    },
+    {
+      "id": "k3-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Ättiksyra — stark eller svag?",
+      "svar": "**Svag.** Bara en liten del av molekylerna avger sin vätejon."
+    },
+    {
+      "id": "k3-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Salpetersyra — stark eller svag?",
+      "svar": "**Stark.** Nästan alla partiklar avger sin vätejon i vatten."
+    },
+    {
+      "id": "k3-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför avges svavelsyrans andra vätejon svårare än den första?",
+      "svar": "Den ska lämna en partikel som **redan är negativ**, och den negativa laddningen håller kvar den positiva vätejonen."
+    },
+    {
+      "id": "k3-m6",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Skriv reaktionen när ättiksyra reagerar med vatten.",
+      "svar": "\\(\\ce{CH3COOH + H2O <=> H3O+ + CH3COO-}\\)"
+    },
+    {
+      "id": "k3-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Vad avgör hur lätt en syra avger sin vätejon?",
+      "svar": "Bindningens styrka, och hur **stabil** den jon är som blir kvar. Är jonen stabil avges protonen gärna."
+    },
+    {
+      "id": "k3-m8",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Går det att neutralisera en svag syra fullständigt, trots att bara en del har avgett sin proton?",
+      "svar": "**Ja.** När oxoniumjonerna tas bort förskjuts jämvikten, och fler partiklar avger sin proton."
+    }
+  ]
+}

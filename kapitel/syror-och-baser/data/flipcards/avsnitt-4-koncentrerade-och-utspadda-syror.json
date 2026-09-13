@@ -1,0 +1,124 @@
+{
+  "avsnitt": 4,
+  "titel": "Koncentrerade och utspädda syror",
+  "delkapitel": "syror",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 4 (Koncentrerade och utspädda syror), delkapitel Syror. 8 begreppskort + 8 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/syror/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k4-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder en lösnings koncentration?",
+      "svar": "Hur **mycket** löst ämne det finns i en viss mängd lösning."
+    },
+    {
+      "id": "k4-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder att en lösning är koncentrerad?",
+      "svar": "Den innehåller **mycket** löst ämne i förhållande till mängden vätska."
+    },
+    {
+      "id": "k4-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder att en lösning är utspädd?",
+      "svar": "Den innehåller **lite** löst ämne i förhållande till mängden vätska."
+    },
+    {
+      "id": "k4-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder enheten mol/dm³?",
+      "svar": "Antal **mol per liter** lösning. En kubikdecimeter är samma sak som en liter."
+    },
+    {
+      "id": "k4-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer när man späder ut en syra?",
+      "svar": "Mängden syra är oförändrad, men den **fördelas i mer vatten**. Koncentrationen minskar och pH stiger."
+    },
+    {
+      "id": "k4-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder SIV?",
+      "svar": "**Syra I Vatten.** Häll alltid syran i vattnet, aldrig vatten i koncentrerad syra."
+    },
+    {
+      "id": "k4-b7",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är en mol?",
+      "svar": "En bunt om ungefär **\\(6 \\cdot 10^{23}\\) partiklar**, på samma sätt som ett dussin är tolv."
+    },
+    {
+      "id": "k4-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad anger molmassan?",
+      "svar": "Hur många **gram** ett mol av ämnet väger, i enheten g/mol."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k4-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilka två saker avgör en syralösnings pH?",
+      "svar": "Syrans **styrka** och lösningens **koncentration**. Båda spelar roll."
+    },
+    {
+      "id": "k4-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Går det att avgöra om en syra är stark eller svag genom att mäta pH?",
+      "svar": "**Nej.** En utspädd stark syra kan ha högre pH än en koncentrerad svag."
+    },
+    {
+      "id": "k4-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilka fyra kombinationer av styrka och koncentration finns?",
+      "svar": "Stark och koncentrerad, stark och utspädd, svag och koncentrerad, svag och utspädd."
+    },
+    {
+      "id": "k4-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "En stark syra späds ut. Blir den svagare?",
+      "svar": "**Nej.** Styrkan är oförändrad — det är koncentrationen som minskat."
+    },
+    {
+      "id": "k4-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför frigörs värme när koncentrerad syra blandas med vatten?",
+      "svar": "När syrans partiklar **omges av vattenmolekyler** frigörs energi. För svavelsyra är mängden ovanligt stor."
+    },
+    {
+      "id": "k4-m6",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför får man aldrig hälla vatten i koncentrerad syra?",
+      "svar": "Den lilla vattenmängden blir **mycket varm mycket snabbt**, kokar, och kastar ut frätande syra."
+    },
+    {
+      "id": "k4-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Du har 9 gram vatten. Vattnets molmassa är 18 g/mol. Hur många mol är det?",
+      "svar": "**0,5 mol.** n = m / M = 9 / 18."
+    },
+    {
+      "id": "k4-m8",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "En stark syra späds tio gånger. Hur ändras pH?",
+      "svar": "Det **stiger ett steg**. Tio gångers utspädning motsvarar ett pH-steg — men bara för starka syror."
+    }
+  ]
+}

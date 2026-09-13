@@ -63,7 +63,8 @@ const AVSNITT_SYROR = {
        bilder: { 'syra-och-metall.webp': { aktiv: [], enkel: 'tillsammans en vätgasmolekyl', standard: 'metallatomerna avger elektroner' } } }
 };
 const DELKAPITEL = {
-  repetition: { titel: 'Bakgrund och repetition', avsnitt: AVSNITT_REPETITION },
-  syror: { titel: 'Syror', avsnitt: AVSNITT_SYROR }
+  // bank: id-prefix och avsnittsoffset i kapitlets begreppsbank (en fil per kapitel; id/avsnitt unika över delkapitlen)
+  repetition: { titel: 'Bakgrund och repetition', avsnitt: AVSNITT_REPETITION, bank: { idPrefix: '', avsnittOffset: 0 } },
+  syror: { titel: 'Syror', avsnitt: AVSNITT_SYROR, bank: { idPrefix: 'S', avsnittOffset: 5 } }
 };
 module.exports = { DELKAPITEL };

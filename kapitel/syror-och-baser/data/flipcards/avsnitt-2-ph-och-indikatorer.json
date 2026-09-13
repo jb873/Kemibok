@@ -1,0 +1,131 @@
+{
+  "avsnitt": 2,
+  "titel": "pH och indikatorer",
+  "delkapitel": "syror",
+  "version": "1.0",
+  "kort_totalt": 17,
+  "_kommentar": "Flipcards för avsnitt 2 (pH och indikatorer), delkapitel Syror. 10 begreppskort + 7 modellkort = 17 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/syror/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k2-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad beskriver pH-värdet?",
+      "svar": "Hur **sur eller basisk** en lösning är. Skalan går från 0 till 14."
+    },
+    {
+      "id": "k2-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder pH under 7, pH 7 och pH över 7?",
+      "svar": "Under 7 = **surt**. Precis 7 = **neutralt**. Över 7 = **basiskt**."
+    },
+    {
+      "id": "k2-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en indikator?",
+      "svar": "Ett ämne som **byter färg** beroende på lösningens pH."
+    },
+    {
+      "id": "k2-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad visar lackmuspapper?",
+      "svar": "Blått papper blir **rött** i surt. Rött papper blir **blått** i basiskt. Inget pH-värde, bara surt eller basiskt."
+    },
+    {
+      "id": "k2-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilka färger har BTB?",
+      "svar": "**Gult** i surt, **grönt** omkring neutralt, **blått** i basiskt."
+    },
+    {
+      "id": "k2-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad skiljer universalindikator från lackmus?",
+      "svar": "Den innehåller **flera indikatorämnen** och visar ett ungefärligt pH-värde, inte bara surt eller basiskt."
+    },
+    {
+      "id": "k2-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "När använder man en pH-mätare i stället för en indikator?",
+      "svar": "När man behöver ett **exakt tal**. Indikatorer ger bara ungefärliga värden."
+    },
+    {
+      "id": "k2-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är en indikators omslagsområde?",
+      "svar": "Det **pH-intervall** där indikatorn byter färg. BTB slår om mellan ungefär pH 6 och 7,6."
+    },
+    {
+      "id": "k2-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är pOH?",
+      "svar": "Ett mått på koncentrationen av **hydroxidjoner**, på samma sätt som pH mäter oxoniumjoner. Vid 25 °C gäller pH + pOH = 14."
+    },
+    {
+      "id": "k2-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är sambandet mellan oxoniumjoner och hydroxidjoner i vattenlösning?",
+      "svar": "Produkten av deras koncentrationer är alltid **\\(10^{-14}\\)** vid 25 °C. Ökar den ena minskar den andra."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k2-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "En lösning innehåller många vätejoner. Är dess pH högt eller lågt?",
+      "svar": "**Lågt.** Fler vätejoner betyder lägre pH — talen går åt motsatt håll mot vad man först tror."
+    },
+    {
+      "id": "k2-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur mycket surare är en lösning med pH 3 än en med pH 4?",
+      "svar": "**Tio gånger.** Varje steg på skalan är en tiofaldig skillnad."
+    },
+    {
+      "id": "k2-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur många gånger surare är pH 2 än pH 4?",
+      "svar": "**Hundra gånger.** Två steg betyder tio gånger tio."
+    },
+    {
+      "id": "k2-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Du vill snabbt veta om en lösning är sur eller basisk. Vad använder du?",
+      "svar": "En **indikator**, till exempel lackmus. En pH-mätare behövs bara när du vill ha ett exakt tal."
+    },
+    {
+      "id": "k2-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilken färg blir rödkålsindikator i en sur lösning?",
+      "svar": "**Röd eller rosa.** I neutralt blir den lila, i basiskt blått eller grönt."
+    },
+    {
+      "id": "k2-m6",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "En lösning har oxoniumjonkoncentrationen \\(10^{-5}\\) mol/dm³. Vilket pH har den?",
+      "svar": "**pH 5.** pH är exponenten utan minustecknet."
+    },
+    {
+      "id": "k2-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "En lösning har pH 3. Vilken koncentration av hydroxidjoner har den?",
+      "svar": "**\\(10^{-11}\\) mol/dm³.** Produkten av de två koncentrationerna är alltid \\(10^{-14}\\)."
+    }
+  ]
+}

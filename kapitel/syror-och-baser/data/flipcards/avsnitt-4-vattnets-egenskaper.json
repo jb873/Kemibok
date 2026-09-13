@@ -4,7 +4,7 @@
   "delkapitel": "repetition",
   "version": "1.0",
   "kort_totalt": 16,
-  "_kommentar": "Flipcards för avsnitt 4 (Vattnets egenskaper). 7 begreppskort + 9 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/repetition/flipcards.md.",
+  "_kommentar": "Flipcards för avsnitt 4 (Vattnets egenskaper), delkapitel Bakgrund och repetition. 7 begreppskort + 9 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/repetition/flipcards.md.",
   "begreppskort": [
     {
       "id": "k4-b1",

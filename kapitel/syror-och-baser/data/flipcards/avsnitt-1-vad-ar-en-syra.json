@@ -1,0 +1,138 @@
+{
+  "avsnitt": 1,
+  "titel": "Vad är en syra?",
+  "delkapitel": "syror",
+  "version": "1.0",
+  "kort_totalt": 18,
+  "_kommentar": "Flipcards för avsnitt 1 (Vad är en syra?), delkapitel Syror. 11 begreppskort + 7 modellkort = 18 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/syror/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k1-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en vätejon?",
+      "svar": "En väteatom som avgett sin enda elektron. Kvar finns **bara protonen** — ingen elektron, inget skal."
+    },
+    {
+      "id": "k1-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en syra?",
+      "svar": "Ett ämne som kan **avge vätejoner**."
+    },
+    {
+      "id": "k1-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad kännetecknar en sur lösning?",
+      "svar": "Den innehåller **vätejoner** som en syra avgett. Ju fler, desto surare."
+    },
+    {
+      "id": "k1-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är saltsyra?",
+      "svar": "Ämnet **väteklorid** löst i vatten. Varje partikel avger en vätejon, och kvar blir en kloridjon."
+    },
+    {
+      "id": "k1-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad blir kvar av vätekloriden när den avgett sin vätejon?",
+      "svar": "En **kloridjon**, \\(\\ce{Cl-}\\). Den gör inte lösningen sur — det gör vätejonerna."
+    },
+    {
+      "id": "k1-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer med vätejonen när den hamnar i vatten?",
+      "svar": "Den kan inte vara ensam. Den **binder direkt till en vattenmolekyl**, och då bildas en oxoniumjon."
+    },
+    {
+      "id": "k1-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en oxoniumjon?",
+      "svar": "En vattenmolekyl som tagit upp en vätejon: \\(\\ce{H3O+}\\). Det är den som faktiskt finns i en sur lösning."
+    },
+    {
+      "id": "k1-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Skriv reaktionen när en vattenmolekyl tar upp en vätejon.",
+      "svar": "\\(\\ce{H2O + H+ -> H3O+}\\)"
+    },
+    {
+      "id": "k1-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är en amfolyt?",
+      "svar": "Ett ämne som kan fungera **både som syra och som bas**. Vatten är det viktigaste exemplet."
+    },
+    {
+      "id": "k1-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad menas med att en syra-basreaktion är en protonöverföring?",
+      "svar": "Att en **proton byter ägare** — syran avger den, basen tar emot. Det krävs alltid två parter."
+    },
+    {
+      "id": "k1-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad händer när två vattenmolekyler reagerar med varandra?",
+      "svar": "Den ena avger en proton till den andra: \\(\\ce{2 H2O <=> H3O+ + OH-}\\). Därför finns joner även i rent vatten."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k1-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför är vätejonen så reaktiv?",
+      "svar": "Den är **bara en naken kärna** utan elektronskal, och positivt laddad. Den fastnar på allt som har elektroner att erbjuda."
+    },
+    {
+      "id": "k1-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "En syra hamnar i vatten. Vad händer?",
+      "svar": "Syrans partiklar **avger vätejoner** till vattnet, och lösningen blir sur."
+    },
+    {
+      "id": "k1-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför leder sura lösningar elektrisk ström?",
+      "svar": "De innehåller **fria joner** som kan röra sig. Ström är laddning i rörelse."
+    },
+    {
+      "id": "k1-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Saltsyra ger både vätejoner och kloridjoner. Vilken av dem gör lösningen sur?",
+      "svar": "**Vätejonerna.** Kloridjonerna finns bara kvar i lösningen utan att påverka surheten."
+    },
+    {
+      "id": "k1-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "En syra har avgett sina vätejoner i vatten. Vilka joner finns nu i lösningen?",
+      "svar": "**Oxoniumjoner** — vätejonerna sitter på vattenmolekyler. Fria vätejoner finns inte i vatten."
+    },
+    {
+      "id": "k1-m6",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Skriv reaktionen när väteklorid löses i vatten.",
+      "svar": "\\(\\ce{HCl + H2O -> H3O+ + Cl-}\\)"
+    },
+    {
+      "id": "k1-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "I reaktionen \\(\\ce{HCl + H2O -> H3O+ + Cl-}\\) — vilket ämne fungerar som bas?",
+      "svar": "**Vattnet.** Det tar emot protonen, och det är vad en bas gör."
+    }
+  ]
+}

@@ -1,77 +1,116 @@
-// bygg-flipcards.js – bygger flipcards-JSON för avsnitt 1–5 ur doc/leveranser/repetition/flipcards.md och
-// bygger om begreppsbank.json (alla grundläggande begreppskort i kapitlet, 1:1 via kallfil).
-// Kör: node verktyg/bygg-flipcards.js
+// bygg-flipcards.js – bygger flipcards-JSON för ett delkapitel ur doc/leveranser/{delkapitel}/flipcards.md
+// och bygger om kapitlets begreppsbank.json ur ALLA delkapitels flipcards.md (grundläggande begreppskort 1:1).
+// Kör: node verktyg/bygg-flipcards.js [delkapitel]     (utelämnat = repetition)
 //
-// Leveransens struktur:  # AVSNITT N — Titel
+// Leveransens struktur:  # AVSNITT N — Titel  /  **X kort:** B begreppskort, M modellkort   (väntad räkning)
 //                        ## Begreppskort — grundläggande | fördjupning / ## Modellkort — grundläggande | fördjupning
-//                        **Korttitel** [formel]?  /  F: fråga  /  S: svar (får radbrytas)
+//                        **Korttitel** [formel]? [brygga]?  /  F: fråga  /  S: svar (får radbrytas)
+//                        # Begreppsbanken … **Term** — omformulering utan formel
 // `\ce{X}` i backticks → \(\ce{X}\). **fet** behålls (flipcards.js renderar den). Id: k{N}-b{n} / k{N}-m{n}
-// i leveransens ordning (grundläggande först). Inga redogorelsekort.
+// i leveransens ordning (grundläggande först). [brygga] är bara en notis. Inga redogorelsekort.
+//
+// Begreppsbanken är EN fil per kapitel (LEVERANSGUIDE), så id och avsnittsnummer måste vara unika över
+// delkapitlen: DELKAPITEL[dk].bank anger id-prefix (Historia: kU1-b1 för Upptäckterna) och avsnittsoffset
+// (Historia medeltiden: avsnitt 1–12 löpande över tre delkapitel). Kortens id i flipcards-JSON:en är
+// oförändrade (k1-b1) – de lever per fil.
 'use strict';
 const fs = require('fs'), path = require('path');
+const { DELKAPITEL } = require('./bygg-avsnitt-konfig.js');
+const { fyllHuvud } = require('./lib-leveranshuvud.js');
+const { formler } = require('./lib-notation.js');   // Unicode-tiopotenser (10⁻¹⁴) och ⇌ utanför \ce{} → MathJax (§1)
 const ROT = path.join(__dirname, '..');
-const KAP = 'syror-och-baser', DK = 'repetition';
-const SLUG = { 1: 'atomer-molekyler-joner', 2: 'periodiska-systemet', 3: 'kemiska-bindningar', 4: 'vattnets-egenskaper', 5: 'losningar' };
-const TITEL = { 1: 'Atomer, molekyler och joner', 2: 'Det periodiska systemet', 3: 'Kemiska bindningar', 4: 'Vattnets egenskaper', 5: 'Lösningar' };
-const VANTAT = { 1: [16, 8], 2: [12, 8], 3: [15, 6], 4: [7, 9], 5: [9, 8] };   // begrepp, modell enligt leveransens räkning
+const KAP = 'syror-och-baser';
+const DKID = process.argv[2] && !process.argv[2].startsWith('--') ? process.argv[2] : 'repetition';
+if (!DELKAPITEL[DKID]) { console.error('okänt delkapitel ' + DKID); process.exit(2); }
 
-const md = fs.readFileSync(path.join(ROT, 'doc', 'leveranser', DK, 'flipcards.md'), 'utf8').replace(/\r\n/g, '\n');
-const slut = md.indexOf('\n# Begreppsbanken');
-const kropp = md.slice(0, slut);
-
-// omformuleringar utan formel för begreppsbanken
-const utanFormel = {};
-for (const m of md.slice(slut).matchAll(/\n\*\*([^*]+)\*\* — ([\s\S]*?)(?=\n\n)/g)) { utanFormel[m[1].trim().toLowerCase()] = m[2].replace(/\n/g, ' ').trim(); }
-
-function ce(s) { return s.replace(/`\\ce\{([^}]*)\}`/g, (_, x) => '\\(\\ce{' + x + '}\\)'); }
-
-const resultat = {};
-for (const a of kropp.matchAll(/\n# AVSNITT (\d) — [^\n]+\n([\s\S]*?)(?=\n# AVSNITT |$)/g)) {
-  const N = +a[1], inneh = a[2];
-  const kort = { begreppskort: [], modellkort: [] };
-  const termer = [];   // grundläggande begrepp → banken
-  for (const s of inneh.matchAll(/\n## (Begreppskort|Modellkort) — (grundläggande|fördjupning)\n([\s\S]*?)(?=\n## |$)/g)) {
-    const typ = s[1] === 'Begreppskort' ? 'begrepp' : 'modell', niva = s[2] === 'grundläggande' ? 'grundlaggande' : 'fordjupning';
-    for (const k of s[3].matchAll(/\*\*([^*\n]+)\*\*( \[formel\])?\nF: ([\s\S]*?)\nS: ([\s\S]*?)(?=\n\n\*\*|\n\n---|\n*$)/g)) {
-      const titel = k[1].trim(), formel = !!k[2];
-      const fraga = ce(k[3].replace(/\n/g, ' ').trim()), svar = ce(k[4].replace(/\n/g, ' ').trim());
-      if (formel && !/\\ce\{/.test(fraga + svar)) { throw new Error(`avsnitt ${N} "${titel}": märkt [formel] men ingen \\ce{} hittad`); }
-      if (!formel && /\\ce\{/.test(fraga + svar)) { throw new Error(`avsnitt ${N} "${titel}": \\ce{} utan [formel]-märkning`); }
-      const lista = typ === 'begrepp' ? kort.begreppskort : kort.modellkort;
-      const id = `k${N}-${typ === 'begrepp' ? 'b' : 'm'}${lista.length + 1}`;
-      lista.push({ id, type: typ, niva, fraga, svar });
-      if (typ === 'begrepp' && niva === 'grundlaggande') { termer.push({ id, term: titel.toLowerCase(), svar }); }
-    }
-  }
-  const [vb, vm] = VANTAT[N];
-  if (kort.begreppskort.length !== vb || kort.modellkort.length !== vm) { throw new Error(`avsnitt ${N}: fann ${kort.begreppskort.length} begrepp + ${kort.modellkort.length} modell, väntade ${vb} + ${vm}`); }
-  const data = {
-    avsnitt: N, titel: TITEL[N], delkapitel: DK, version: '1.0',
-    kort_totalt: vb + vm,
-    _kommentar: `Flipcards för avsnitt ${N} (${TITEL[N]}). ${vb} begreppskort + ${vm} modellkort = ${vb + vm} kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/repetition/flipcards.md.`,
-    begreppskort: kort.begreppskort, modellkort: kort.modellkort
-  };
-  const ut = path.join(ROT, 'kapitel', KAP, 'data', 'flipcards', `avsnitt-${N}-${SLUG[N]}.json`);
-  fs.writeFileSync(ut, JSON.stringify(data, null, 2) + '\n');
-  resultat[N] = { termer, formelkort: [...kort.begreppskort, ...kort.modellkort].filter(k => /\\ce\{/.test(k.fraga + k.svar)).map(k => k.id) };
-  console.log(`avsnitt ${N}: ${vb} begrepp (${termer.length} till banken) + ${vm} modell, formelkort: ${resultat[N].formelkort.join(' ') || '–'}`);
+function ce(s) { return formler(s.replace(/`\\ce\{([^}]*)\}`/g, (_, x) => '\\(\\ce{' + x + '}\\)')); }
+function avsnittInfo(dk, N) {
+  const K = DELKAPITEL[dk].avsnitt[N];
+  if (!K) { throw new Error(`${dk}: ingen konfiguration för avsnitt ${N}`); }
+  if (!K.slug) { fyllHuvud(K, path.join(ROT, 'doc', 'leveranser', dk, `avsnitt-${N}.md`)); }
+  return K;
 }
 
-// ---------- begreppsbank: alla avsnitt, helt ur leveransen ----------
+// ---------- läs ett delkapitels flipcards.md → { avsnitt: {N: {titel, kort, termer, vb, vm}}, utanFormel } ----------
+function lasLeverans(dk) {
+  const fil = path.join(ROT, 'doc', 'leveranser', dk, 'flipcards.md');
+  if (!fs.existsSync(fil)) { return null; }
+  const md = fs.readFileSync(fil, 'utf8').replace(/\r\n/g, '\n');
+  const slut = md.indexOf('\n# Begreppsbanken');
+  const kropp = slut > 0 ? md.slice(0, slut) : md;
+  const utanFormel = {};
+  if (slut > 0) { for (const m of md.slice(slut).matchAll(/\n\*\*([^*]+)\*\* — ([\s\S]*?)(?=\n\n)/g)) { utanFormel[m[1].trim().toLowerCase()] = m[2].replace(/\n/g, ' ').trim(); } }
+  const avsnitt = {};
+  for (const a of kropp.matchAll(/\n# AVSNITT (\d) — ([^\n]+)\n\*\*(\d+) kort:\*\* (\d+) begreppskort, (\d+) modellkort\n([\s\S]*?)(?=\n# AVSNITT |\n# Räkning|$)/g)) {
+    const N = +a[1], inneh = a[6], vb = +a[4], vm = +a[5];
+    if (+a[3] !== vb + vm) { throw new Error(`${dk} avsnitt ${N}: ${a[3]} kort ≠ ${vb} + ${vm}`); }
+    const kort = { begreppskort: [], modellkort: [] }, termer = [], varningar = [];
+    for (const s of inneh.matchAll(/\n## (Begreppskort|Modellkort) — (grundläggande|fördjupning)\n([\s\S]*?)(?=\n## |$)/g)) {
+      const typ = s[1] === 'Begreppskort' ? 'begrepp' : 'modell', niva = s[2] === 'grundläggande' ? 'grundlaggande' : 'fordjupning';
+      for (const k of s[3].matchAll(/\*\*([^*\n]+)\*\*((?: \[[a-z]+\])*)\nF: ([\s\S]*?)\nS: ([\s\S]*?)(?=\n\n\*\*|\n\n---|\n*$)/g)) {
+        const titel = k[1].trim(), markning = k[2] || '', formel = /\[formel\]/.test(markning);
+        const fraga = ce(k[3].replace(/\n/g, ' ').trim()), svar = ce(k[4].replace(/\n/g, ' ').trim());
+        const harCe = /\\ce\{/.test(fraga + svar), harMath = /\\\(/.test(fraga + svar);
+        if (formel && !harCe) { throw new Error(`${dk} avsnitt ${N} "${titel}": märkt [formel] men ingen \\ce{} hittad`); }
+        if (!formel && harCe) { varningar.push(`"${titel}" har \\ce{} utan [formel]-märkning – byggt som formelkort`); }
+        if (!formel && !harCe && harMath) { varningar.push(`"${titel}": Unicode-tiopotens/pil konverterad till MathJax`); }
+        const lista = typ === 'begrepp' ? kort.begreppskort : kort.modellkort;
+        const id = `k${N}-${typ === 'begrepp' ? 'b' : 'm'}${lista.length + 1}`;
+        lista.push({ id, type: typ, niva, fraga, svar });
+        if (typ === 'begrepp' && niva === 'grundlaggande') { termer.push({ id, term: titel.toLowerCase(), svar }); }
+      }
+    }
+    // leveransens egen räkning kontrolleras men stoppar inte bygget – det byggda antalet är sanningen
+    if (kort.begreppskort.length !== vb || kort.modellkort.length !== vm) { varningar.push(`leveransen säger ${vb} begrepp + ${vm} modell, filen innehåller ${kort.begreppskort.length} + ${kort.modellkort.length}`); }
+    avsnitt[N] = { titel: a[2].trim(), kort, termer, vb: kort.begreppskort.length, vm: kort.modellkort.length, varningar };
+  }
+  return { avsnitt, utanFormel };
+}
+
+// ---------- flipcards-JSON för valt delkapitel ----------
+const lev = lasLeverans(DKID);
+if (!lev) { console.error(`doc/leveranser/${DKID}/flipcards.md saknas`); process.exit(2); }
+for (const [N, a] of Object.entries(lev.avsnitt)) {
+  const K = avsnittInfo(DKID, N);
+  const data = {
+    avsnitt: +N, titel: K.titel, delkapitel: DKID, version: '1.0',
+    kort_totalt: a.vb + a.vm,
+    _kommentar: `Flipcards för avsnitt ${N} (${K.titel}), delkapitel ${DELKAPITEL[DKID].titel}. ${a.vb} begreppskort + ${a.vm} modellkort = ${a.vb + a.vm} kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/${DKID}/flipcards.md.`,
+    begreppskort: a.kort.begreppskort, modellkort: a.kort.modellkort
+  };
+  const ut = path.join(ROT, 'kapitel', KAP, 'data', 'flipcards', `avsnitt-${N}-${K.slug}.json`);
+  fs.writeFileSync(ut, JSON.stringify(data, null, 2) + '\n');
+  const formelkort = [...a.kort.begreppskort, ...a.kort.modellkort].filter(k => /\\ce\{/.test(k.fraga + k.svar)).map(k => k.id);
+  console.log(`${DKID} avsnitt ${N}: ${a.vb} begrepp (${a.termer.length} till banken) + ${a.vm} modell, formelkort: ${formelkort.join(' ') || '–'}`);
+  a.varningar.forEach(v => console.log('  ⚠ ' + v));
+}
+
+// ---------- begreppsbank: alla delkapitel med flipcards.md, i DELKAPITEL-ordning ----------
 const bankFil = path.join(ROT, 'kapitel', KAP, 'data', 'begreppsbank.json');
 const bank = JSON.parse(fs.readFileSync(bankFil, 'utf8'));   // kapitel_id, titel, upplasning m.m. behålls
-const nya = [];
-for (const N of [1, 2, 3, 4, 5]) {
-  for (const t of resultat[N].termer) {
-    let def = utanFormel[t.term] || t.svar.replace(/\*\*/g, '');
-    if (/\\ce\{|\\\(/.test(def)) { throw new Error(`begrepp "${t.term}" har formel kvar och saknar omformulering`); }
-    nya.push({ id: t.id, avsnitt: String(N), avsnitt_titel: TITEL[N], term: t.term, expertdefinition: def, kallfil: `kapitel/${KAP}/data/flipcards/avsnitt-${N}-${SLUG[N]}.json` });
+const nya = [], summering = [];
+for (const dk of Object.keys(DELKAPITEL)) {
+  const L = dk === DKID ? lev : lasLeverans(dk);
+  if (!L) { continue; }
+  const B = DELKAPITEL[dk].bank || { idPrefix: '', avsnittOffset: 0 };
+  let antal = 0;
+  for (const [N, a] of Object.entries(L.avsnitt)) {
+    const K = avsnittInfo(dk, N);
+    for (const t of a.termer) {
+      let def = L.utanFormel[t.term] || t.svar.replace(/\*\*/g, '');
+      if (/\\ce\{|\\\(/.test(def)) { throw new Error(`${dk} begrepp "${t.term}" har formel kvar och saknar omformulering`); }
+      nya.push({ id: t.id.replace(/^k/, 'k' + B.idPrefix), avsnitt: String(+N + B.avsnittOffset), avsnitt_titel: K.titel, delkapitel_titel: DELKAPITEL[dk].titel,
+        term: t.term, expertdefinition: def, kallfil: `kapitel/${KAP}/data/flipcards/avsnitt-${N}-${K.slug}.json` });
+      antal++;
+    }
   }
+  summering.push(`${DELKAPITEL[dk].titel} ${antal}`);
 }
-if (nya.length !== 48) { throw new Error('väntade 48 begrepp i banken, fann ' + nya.length); }
+const ids = new Set(nya.map(b => b.id));
+if (ids.size !== nya.length) { throw new Error('begreppsbank: dubblerade id'); }
 bank.begrepp = nya;
-bank.version = 2;
+bank.version = 3;
 bank.skapad = '2026-09-13';
-bank.kommentar = 'Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler (molekyl, grundämne, kemisk förening, sammansatt jon, dubbelbindning, trippelbindning, summaformel) är omformulerade utan formler här, flipcardsen behåller sina. Avsnitt 1 (13) + 2 (11) + 3 (12) + 4 (5) + 5 (7) = 48.';
+bank.kommentar = `Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. ${summering.join(' + ')} = ${nya.length}.`;
 fs.writeFileSync(bankFil, JSON.stringify(bank, null, 2) + '\n');
-console.log('begreppsbank:', bank.begrepp.length, 'begrepp | omformulerade utan formel:', nya.filter(b => utanFormel[b.term]).map(b => b.term).join(', '));
+console.log('begreppsbank:', nya.length, 'begrepp |', summering.join(' + '));
