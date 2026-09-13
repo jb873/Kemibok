@@ -93,7 +93,7 @@ const AVSNITT_NEUTRALISATION = {
        },
        faktaruta: { enkel: 'handlar underdel C om', standard: 'Finns hydroxidjoner kvar är', fordjupning: 'Där finns också mol och mängdberäkningar' } },
   2: { dd: [],
-       bilder: { 'antacidum.webp': { aktiv: ['enkel', 'standard'], enkel: 'kemi, inte absorption', standard: 'De reagerar kemiskt med den' } } }
+       bilder: { 'antacidum.webp': { aktiv: ['enkel', 'standard'], staende: true, enkel: 'kemi, inte absorption', standard: 'De reagerar kemiskt med den' } } }   // staende: max-height i kemi.css
 };
 const DELKAPITEL = {
   // bank: id-prefix och avsnittsoffset i kapitlets begreppsbank (en fil per kapitel; id/avsnitt unika över delkapitlen)

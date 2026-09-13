@@ -185,7 +185,7 @@ ${lista(punkter)}
           ` : `<!-- BILDGUIDE SAKNAS i leveransen för ${fil} (Enkel ska ha 2–5 "Titta efter"-punkter före bilden) -->
           `;
     }
-    return `${guide}<figure class="brodtext-bild ${niva}">
+    return `${guide}<figure class="brodtext-bild ${niva}${cfg.staende ? ' staende' : ''}">
             <img src="img/${fil}" alt="${inline(spec.alt)}">
             <figcaption>${inline(cap)}</figcaption>
           </figure>`;
@@ -198,7 +198,7 @@ ${lista(punkter)}
           ` : '';
   const not = niva === 'fordjupning' ? ' OBS: bildtext för fördjupning saknas i leveransen – Standard-texten använd' : '';
   return `<!-- BILD: ${fil} – levereras senare, avkommentera när filen finns i img/.${not}
-          ${guide}<figure class="brodtext-bild ${niva}">
+          ${guide}<figure class="brodtext-bild ${niva}${cfg.staende ? ' staende' : ''}">
             <img src="img/${fil}" alt="${inline(spec.alt)}">
             <figcaption>${inline(cap)}</figcaption>
           </figure>

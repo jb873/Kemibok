@@ -164,6 +164,15 @@
   border-radius: 0;
 }
 
+/* Stående bild (konfigflaggan staende i bygg-avsnitt-konfig.js → klass .staende): plattformens width: 100 %
+   gör ett porträttformat ~1 200 px högt. Begränsa höjden och centrera; bredden följer. KOMPONENTER 4.2. */
+.brodtext-bild.staende img {
+  width: auto;
+  max-width: 100%;
+  max-height: 520px;
+  margin: 0 auto;
+}
+
 /* Brödtexttabell (Syror avsnitt 2 och 4: små uppslagstabeller i nivåtexten). Plattformen har ingen
    tabellstil alls (Historia/Geografi använder inga tabeller i brödtext), så detta är kemi-eget.
    Bara befintliga tokens och samma ram som .formel – inga nya färger. Kandidat till plattform. */

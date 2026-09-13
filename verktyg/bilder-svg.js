@@ -525,12 +525,12 @@ ${STOPP.map(([ph, f]) => `      <stop offset="${r2(ph / 14 * 100)}%" stop-color=
 // ---------- 13–14. Neutralisation (delkapitel Neutralisation, avsnitt 1 A och B) ----------
 // Joachims spec 2026-09-13. Gemensamma delar: bägarglas som kontur i INK, vätska #a8c4d8, positiv jon #C64B3A
 // med +, negativ jon #3D6BA8 med −, vattenmolekyl = syre #C0392B med två väte #f5f0e4.
-// vad-blir-kvar: åskådarjoner "gröna Na⁺" och "gula Cl⁻" utan hex i leveransen – FÖRSLAG patina #5a9668
-// och fettgult #d9c47a (ur fortvalning-specen). Etiketterna som teckenförklaring under glasen.
+// vad-blir-kvar: åskådarjoner Na⁺ #9b7cc4 och Cl⁻ #6a9e4f (Joachim 2026-09-13: dämpade CPK-färger; patina är
+// bokens signaturfärg och ska inte betyda ett ämne). Etiketterna som teckenförklaring under glasen.
 {
   const UT4 = path.join(__dirname, '..', 'kapitel', 'syror-och-baser', 'delkapitel', 'neutralisation', 'img');
   fs.mkdirSync(UT4, { recursive: true });
-  const VATSKA = '#a8c4d8', PLUS = '#C64B3A', MINUS = '#3D6BA8', NA = '#5a9668', CL = '#d9c47a';
+  const VATSKA = '#a8c4d8', PLUS = '#C64B3A', MINUS = '#3D6BA8', NA = '#9b7cc4', CL = '#6a9e4f';
   const GB = 190, GH = 170;
   let seed = 11;
   const slump = () => { seed = (seed * 1103515245 + 12345) % 2147483648; return seed / 2147483648; };

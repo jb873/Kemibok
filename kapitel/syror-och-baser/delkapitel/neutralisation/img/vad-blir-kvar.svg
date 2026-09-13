@@ -8,40 +8,40 @@
   <path d="M198.58 163.3H208.58M203.58 158.3V168.3" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
   <circle cx="163.98" cy="92.17" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
   <path d="M158.98 92.17H168.98" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="85.02" cy="163.15" r="10" fill="#5a9668" stroke="#fff" stroke-width="1"/>
-  <circle cx="204.62" cy="93.44" r="10" fill="#d9c47a" stroke="#fff" stroke-width="1"/>
+  <circle cx="85.02" cy="163.15" r="10" fill="#9b7cc4" stroke="#fff" stroke-width="1"/>
+  <circle cx="204.62" cy="93.44" r="10" fill="#6a9e4f" stroke="#fff" stroke-width="1"/>
   <circle cx="205.65" cy="139.98" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
   <path d="M200.65 139.98H210.65M205.65 134.98V144.98" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
   <circle cx="203.9" cy="116.57" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
   <path d="M198.9 116.57H208.9" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="126.74" cy="92.35" r="10" fill="#5a9668" stroke="#fff" stroke-width="1"/>
-  <circle cx="86.6" cy="116.98" r="10" fill="#d9c47a" stroke="#fff" stroke-width="1"/>
+  <circle cx="126.74" cy="92.35" r="10" fill="#9b7cc4" stroke="#fff" stroke-width="1"/>
+  <circle cx="86.6" cy="116.98" r="10" fill="#6a9e4f" stroke="#fff" stroke-width="1"/>
   <circle cx="125.22" cy="117.65" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
   <path d="M120.22 117.65H130.22M125.22 112.65V122.65" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
   <circle cx="124.38" cy="164.64" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
   <path d="M119.38 164.64H129.38" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="85.09" cy="94.47" r="10" fill="#5a9668" stroke="#fff" stroke-width="1"/>
-  <circle cx="163.26" cy="138.92" r="10" fill="#d9c47a" stroke="#fff" stroke-width="1"/>
+  <circle cx="85.09" cy="94.47" r="10" fill="#9b7cc4" stroke="#fff" stroke-width="1"/>
+  <circle cx="163.26" cy="138.92" r="10" fill="#6a9e4f" stroke="#fff" stroke-width="1"/>
   <circle cx="84.54" cy="141.62" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
   <path d="M79.54 141.62H89.54M84.54 136.62V146.62" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
   <circle cx="164.25" cy="163.94" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
   <path d="M159.25 163.94H169.25" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="165.7" cy="118.13" r="10" fill="#5a9668" stroke="#fff" stroke-width="1"/>
-  <circle cx="123.2" cy="139.12" r="10" fill="#d9c47a" stroke="#fff" stroke-width="1"/>
+  <circle cx="165.7" cy="118.13" r="10" fill="#9b7cc4" stroke="#fff" stroke-width="1"/>
+  <circle cx="123.2" cy="139.12" r="10" fill="#6a9e4f" stroke="#fff" stroke-width="1"/>
   <line x1="256" y1="105" x2="332" y2="105" stroke="#2d4a35" stroke-width="3" stroke-linecap="round"/>
   <polygon points="344,105 332,111 332,99" fill="#2d4a35"/>
   <g aria-label="efter neutralisationen: vattenmolekyler, natriumjoner och kloridjoner">
   <path d="M363 70H547V178Q547 187 538 187H372Q363 187 363 178Z" fill="#a8c4d8"/>
   <path d="M351 28 L360 34 V178 Q360 190 372 190 H538 Q550 190 550 178 V34" fill="none" stroke="#2d4a35" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   </g>
-  <circle cx="395.02" cy="163.15" r="10" fill="#5a9668" stroke="#fff" stroke-width="1"/>
-  <circle cx="514.62" cy="93.44" r="10" fill="#d9c47a" stroke="#fff" stroke-width="1"/>
-  <circle cx="436.74" cy="92.35" r="10" fill="#5a9668" stroke="#fff" stroke-width="1"/>
-  <circle cx="396.6" cy="116.98" r="10" fill="#d9c47a" stroke="#fff" stroke-width="1"/>
-  <circle cx="395.09" cy="94.47" r="10" fill="#5a9668" stroke="#fff" stroke-width="1"/>
-  <circle cx="473.26" cy="138.92" r="10" fill="#d9c47a" stroke="#fff" stroke-width="1"/>
-  <circle cx="475.7" cy="118.13" r="10" fill="#5a9668" stroke="#fff" stroke-width="1"/>
-  <circle cx="433.2" cy="139.12" r="10" fill="#d9c47a" stroke="#fff" stroke-width="1"/>
+  <circle cx="395.02" cy="163.15" r="10" fill="#9b7cc4" stroke="#fff" stroke-width="1"/>
+  <circle cx="514.62" cy="93.44" r="10" fill="#6a9e4f" stroke="#fff" stroke-width="1"/>
+  <circle cx="436.74" cy="92.35" r="10" fill="#9b7cc4" stroke="#fff" stroke-width="1"/>
+  <circle cx="396.6" cy="116.98" r="10" fill="#6a9e4f" stroke="#fff" stroke-width="1"/>
+  <circle cx="395.09" cy="94.47" r="10" fill="#9b7cc4" stroke="#fff" stroke-width="1"/>
+  <circle cx="473.26" cy="138.92" r="10" fill="#6a9e4f" stroke="#fff" stroke-width="1"/>
+  <circle cx="475.7" cy="118.13" r="10" fill="#9b7cc4" stroke="#fff" stroke-width="1"/>
+  <circle cx="433.2" cy="139.12" r="10" fill="#6a9e4f" stroke="#fff" stroke-width="1"/>
   <circle cx="513.58" cy="159.3" r="7" fill="#C0392B" stroke="#2d4a35" stroke-width="1"/>
   <circle cx="504.85" cy="166" r="5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1"/>
   <circle cx="522.31" cy="166" r="5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1"/>
@@ -62,8 +62,8 @@
   <circle cx="205" cy="258" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
   <path d="M200 258H210" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
   <text x="223" y="264" font-size="17" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">OH<tspan font-size="11" dy="-7">−</tspan></text>
-  <circle cx="340" cy="258" r="10" fill="#5a9668" stroke="#fff" stroke-width="1"/>
+  <circle cx="340" cy="258" r="10" fill="#9b7cc4" stroke="#fff" stroke-width="1"/>
   <text x="358" y="264" font-size="17" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Na<tspan font-size="11" dy="-7">+</tspan></text>
-  <circle cx="475" cy="258" r="10" fill="#d9c47a" stroke="#fff" stroke-width="1"/>
+  <circle cx="475" cy="258" r="10" fill="#6a9e4f" stroke="#fff" stroke-width="1"/>
   <text x="493" y="264" font-size="17" fill="#2d4a35" font-family="Georgia, 'Times New Roman', serif">Cl<tspan font-size="11" dy="-7">−</tspan></text>
 </svg>

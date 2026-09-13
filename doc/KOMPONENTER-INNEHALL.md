@@ -640,6 +640,11 @@ sidbakgrund och spricker om `--paper` ändras eller bilden läggs på ett kort. 
 transparenta; AI-bilder promptas med transparent bakgrund, eller med en enhetlig kontrastfärg
 som inte förekommer i motivet och nycklas bort innan leverans (se DEL 9).
 
+**🎨 Kemi: stående bilder (v1.3).** Plattformens `width: 100%` gör en bild i porträttformat lika bred
+som läsbredden och därmed mycket hög. En bild markeras `staende: true` i `verktyg/bygg-avsnitt-konfig.js`;
+figuren får då klassen `staende` och kemi.css begränsar den till `max-height: 520px`, centrerad, med
+bredden i proportion. Liggande bilder påverkas inte. Första fall: `antacidum.webp` (Neutralisation 2 A).
+
 ---
 
 ### 4.3 karnpunkter (Det viktigaste-block)
@@ -1197,7 +1202,7 @@ När osäker — kolla referensimplementationen **plus** CSS:n **plus** JS:n. **
 **🎨 boklokal**
 
 - **v1.3 (2026-09-13):** 4.2 – ingen ram på brödtextbilder i kemi (kemi.css), bildbakgrund ska
-  vara transparent; 9.0 – nya AI-bilder promptas med `#00ff00` som nycklas bort före leverans;
+  vara transparent, stående bilder via konfigflaggan staende (max-height 520 px); 9.0 – nya AI-bilder promptas med `#00ff00` som nycklas bort före leverans;
   de elva befintliga har benvit bakgrund och görs om först om de ska ligga på annan bakgrund.
 - **v1.2 (2026-09-13):** Öva-fliken får tre arbetssätt (Plugga begrepp / Testa dig själv /
   Tillämpa) via kemi-eget lager `js/ova-arbetssatt.js` ovanpå orörd flipcards.js, och den nya
