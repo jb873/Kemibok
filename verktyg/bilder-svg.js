@@ -6,6 +6,7 @@
 //   molekylmodeller-vatten.svg          avsnitt 3 C – fem sätt att rita H2O
 //   jonbindning-natrium-klor.svg        avsnitt 3 B – Na + Cl → Na+ + Cl- (staplad layout)
 //   polar-vattenmolekyl.svg             avsnitt 4 A – kulpinnmodell med δ− / δ+ och pilar
+//   elektronpar-vate.svg                avsnitt 3 C – två fria väteatomer / H2 med delat elektronpar (ingen text)
 //
 // Färger: linjer/text #2d4a35, rutor/väte #f5f0e4, syre #C0392B, proton #C64B3A,
 // neutron #8A8A8A, elektron #3D6BA8. Transparent bakgrund. Typsnitt: Georgia-fallback
@@ -166,4 +167,23 @@ function vatten(cx, cy, rO, rH, avst, stav) {
   fs.writeFileSync(path.join(UT, 'polar-vattenmolekyl.svg'), svg(W, H,
     'Polär vattenmolekyl: syre märkt delta minus, väte delta plus, pilar visar att elektronerna dras mot syret', ut));
 }
-console.log('skrev 4 svg till', path.relative(path.join(__dirname, '..'), UT));
+// ---------- 5. Elektronpar väte (två fria atomer | vätemolekyl) ----------
+{
+  const W = 600, H = 220, cy = 110, r = 48, prick = 5;
+  const atom = (cx) => `  <circle class="vate" cx="${cx}" cy="${cy}" r="${r}" fill="${PAPPER}" stroke="${INK}" stroke-width="2"/>
+`;
+  const el = (cx) => `  <circle class="elektron" cx="${cx}" cy="${cy}" r="${prick}" fill="#3D6BA8"/>
+`;
+  let ut = `  <line x1="${W / 2}" y1="16" x2="${W / 2}" y2="${H - 16}" stroke="${INK}" stroke-width="2"/>
+`;
+  // vänster: två fria atomer med tydligt mellanrum, en elektron i mitten av varje
+  const gap = 28, L1 = W / 4 - r - gap / 2, L2 = W / 4 + r + gap / 2;
+  ut += atom(L1) + atom(L2) + el(L1) + el(L2);
+  // höger: överlapp ≈ en fjärdedel av diametern (0.28 D så att paret ryms i zonen);
+  // elektronparet vågrätt på centrumlinjen, centrerat i överlappet
+  const d = 2 * r * (1 - 0.28), R1 = 3 * W / 4 - d / 2, R2 = 3 * W / 4 + d / 2, mitt = 3 * W / 4, sep = 7.5;
+  ut += atom(R1) + atom(R2) + el(mitt - sep) + el(mitt + sep);
+  fs.writeFileSync(path.join(UT, 'elektronpar-vate.svg'), svg(W, H,
+    'Två fria väteatomer med varsin elektron, och en vätemolekyl där de två elektronerna ligger som ett gemensamt par i överlappet', ut));
+}
+console.log('skrev 5 svg till', path.relative(path.join(__dirname, '..'), UT));

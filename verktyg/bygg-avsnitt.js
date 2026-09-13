@@ -36,7 +36,7 @@ const AVSNITT = {
        dd: [{ slug: 'koksalt-ofarligt', titel: 'Varför koksalt är ofarligt', ikon: '🧂' }],
        bilder: {
          'jonbindning-natrium-klor.webp': { fil: 'jonbindning-natrium-klor.svg', aktiv: ['enkel', 'standard'], enkel: 'Möts de passar det perfekt', standard: 'kallas\n**jonbindning**' },
-         'elektronpar-vate.webp': { enkel: 'Resultatet är en vätemolekyl', standard: 'det är paret som håller samman' },
+         'elektronpar-vate.webp': { fil: 'elektronpar-vate.svg', aktiv: ['enkel', 'standard'], enkel: 'Resultatet är en vätemolekyl', standard: 'det är paret som håller samman' },
          'enkel-dubbel-trippel.webp': { enkel: 'där varje atom saknar tre', standard: 'finns en\ntrippelbindning' },
          'molekylmodeller-vatten.webp': { fil: 'molekylmodeller-vatten.svg', aktiv: ['enkel', 'standard'], enkel: 'vilken man väljer beror på vad man vill visa', standard: 'Valet beror på vad som ska framgå' },   // bara Enkel + Standard (beslut 2026-09-13)
          'metallbindning.webp': { enkel: 'jonerna ligger i ett hav av elektroner', standard: 'håller på så sätt samman metallen' }

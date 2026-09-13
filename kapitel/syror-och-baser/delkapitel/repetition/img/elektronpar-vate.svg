@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" width="600" height="220" role="img" aria-labelledby="t">
+  <title id="t">Två fria väteatomer med varsin elektron, och en vätemolekyl där de två elektronerna ligger som ett gemensamt par i överlappet</title>
+  <line x1="300" y1="16" x2="300" y2="204" stroke="#2d4a35" stroke-width="2"/>
+  <circle class="vate" cx="88" cy="110" r="48" fill="#f5f0e4" stroke="#2d4a35" stroke-width="2"/>
+  <circle class="vate" cx="212" cy="110" r="48" fill="#f5f0e4" stroke="#2d4a35" stroke-width="2"/>
+  <circle class="elektron" cx="88" cy="110" r="5" fill="#3D6BA8"/>
+  <circle class="elektron" cx="212" cy="110" r="5" fill="#3D6BA8"/>
+  <circle class="vate" cx="415.44" cy="110" r="48" fill="#f5f0e4" stroke="#2d4a35" stroke-width="2"/>
+  <circle class="vate" cx="484.56" cy="110" r="48" fill="#f5f0e4" stroke="#2d4a35" stroke-width="2"/>
+  <circle class="elektron" cx="442.5" cy="110" r="5" fill="#3D6BA8"/>
+  <circle class="elektron" cx="457.5" cy="110" r="5" fill="#3D6BA8"/>
+</svg>
