@@ -91,9 +91,9 @@ const AVSNITT_NEUTRALISATION = {
   1: { dd: [{ slug: 'neutralisation', titel: 'Neutralisation: när syra och bas reagerar', ikon: '⚗️' }],
        bilder: {
          'neutralisation-partiklar.svg': { aktiv: ['enkel', 'standard'], enkel: 'H⁺ + OH⁻ → H₂O', standard: 'H₃O⁺ + OH⁻ → 2 H₂O' },   // efter reaktionsraden
-         'vad-blir-kvar.svg': { aktiv: ['enkel', 'standard'], enkel: 'De simmar omkring precis som förut', standard: 'De finns fortfarande kvar lösta i vattnet efteråt' }
+         'vad-blir-kvar.svg': { aktiv: ['enkel', 'standard'], enkel: 'De simmar omkring precis som förut', standard: 'finns fortfarande kvar lösta i vattnet efteråt' }
        },
-       faktaruta: { enkel: 'handlar underdel C om', standard: 'Finns hydroxidjoner kvar är', fordjupning: 'Där finns också mol och mängdberäkningar' } },
+       faktaruta: { enkel: 'handlar underdel C om', standard: 'hydroxidjoner kvar är den fortfarande basisk', fordjupning: 'Där finns också mol och mängdberäkningar' } },
   2: { dd: [{ slug: 'titrering', titel: 'Titrering: att bestämma en okänd koncentration', ikon: '🧫' }],   // Joachims text, titrering.md (2 B)
        bilder: { 'antacidum.webp': { aktiv: ['enkel', 'standard'], staende: true, enkel: 'kemi, inte absorption', standard: 'De reagerar kemiskt med den' } } }   // staende: max-height i kemi.css
 };
@@ -111,12 +111,12 @@ const AVSNITT_FORSURNING = {
        bilder: {
          'buffert-tar-slut.svg': { aktiv: ['enkel', 'standard'], enkel: 'Skadan byggdes upp långt innan den syntes', standard: 'betydligt sämre buffertförmåga' },
          'aluminium-i-gal.webp': { aktiv: ['enkel', 'standard'], enkel: 'Sätter aluminiumet igen dem störs båda', standard: 'arter som är känsliga för försurning' },
-         'vittrad-sten.webp': { aktiv: ['enkel', 'standard'], enkel: 'Skillnaden är bara hastigheten', standard: 'gravstenar och andra kulturföremål' }
+         'vittrad-sten.webp': { aktiv: ['enkel', 'standard'], enkel: 'Skillnaden är bara hastigheten', standard: 'byggnader, gravstenar och andra' }
        } },
   3: { dd: [],
        bilder: {
          'kalkning.webp': { aktiv: ['enkel', 'standard'], enkel: 'i rinnande vatten finns särskilda doserare', standard: 'Många vatten behöver kalkas återkommande' },
-         'svavelutslapp-diagram.svg': { aktiv: ['enkel', 'standard'], enkel: 'nära nivåerna före', standard: 'ligger nu nära förindustriella nivåer' }
+         'svavelutslapp-diagram.svg': { aktiv: ['enkel', 'standard'], enkel: 'nära nivåerna före', standard: '80 procent och ligger nu nära' }
        } }
 };
 const DELKAPITEL = {

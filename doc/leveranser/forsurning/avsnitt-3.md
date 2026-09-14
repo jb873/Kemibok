@@ -5,6 +5,10 @@
 **AVSNITT_ID:** `a3_vad-man-kan-gora`
 **Underrubrik i hero:** åtgärder som fungerade
 
+> **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
+> påståenderubriker (###) och delade stycken enligt `reviderat-forsurning.md`. Tillagda meningar (där märkta ▸) ligger här
+> utan märke. Enkel och Fördjupning oförändrade.
+
 ---
 
 ## Underdelar
@@ -97,11 +101,11 @@ ligger nu nära förindustriella nivåer.
 
 ## Kärnpunkter (Standard)
 
-- Bränslen med låg svavelhalt och **rökgasavsvavling**
-- Kalksten används för att fånga svavelföreningar
-- **Katalytisk rening** av kväveoxider i fordon och industri
-- Teknik räcker inte — **internationellt samarbete** krävs
-- Bäst är att angripa **orsaken**, inte skadorna
+- Vilken åtgärd är viktigast?
+- Hur minskar man svavelutsläppen?
+- Hur renas kväveoxider?
+- Varför räcker inte teknik?
+- Vilket resultat har åtgärderna gett?
 
 ---
 
@@ -161,23 +165,37 @@ efteråt. Kalkning kan hålla en sjö vid liv, men bara minskade utsläpp kan g�
 
 ## A — STANDARD
 
+### Det viktigaste är att hindra utsläppen
+
 Den viktigaste åtgärden mot försurning är att hindra de försurande ämnena från att släppas ut från
 början.
 
+### Svavel kan renas ur bränsle och rökgas
+
 Svavelutsläpp kan minskas på flera sätt. Man kan använda bränslen med låg svavelhalt och rena rökgaser
-från kraftverk och industrier. Vid **rökgasavsvavling** kan exempelvis kalksten användas för att fånga
-upp svavelföreningar innan de lämnar skorstenen.
+från kraftverk och industrier.
+
+Vid **rökgasavsvavling** kan exempelvis kalksten användas för att fånga upp svavelföreningar innan de
+lämnar skorstenen.
+
+### Kväveoxider renas i katalysatorer
 
 Kväveoxider kan också minskas med teknisk rening. I bilars avgassystem används katalysatorer som
-omvandlar kväveoxider till andra ämnen. I större dieselmotorer, kraftverk och industrier kan andra
-katalytiska reningsmetoder användas.
+omvandlar kväveoxider till andra ämnen.
 
-Men teknik vid enskilda utsläppskällor räcker inte. Eftersom luftföroreningarna kan färdas mellan
-länder krävs **internationellt samarbete**. Länderna i Europa har därför ingått avtal där de förbinder
-sig att minska sina utsläpp.
+I större dieselmotorer, kraftverk och industrier kan andra katalytiska reningsmetoder användas.
 
-Resultatet har varit tydligt. Naturvårdsverkets miljöövervakning visar att svavelnedfallet över
-Sverige har minskat med **mer än 80 procent**. Kvävenedfallet har också minskat, men betydligt mindre.
+### Teknik räcker inte utan samarbete
+
+Men teknik vid enskilda utsläppskällor räcker inte. Eftersom luftföroreningarna kan färdas mellan länder
+krävs **internationellt samarbete**.
+
+Länderna i Europa har därför ingått avtal där de förbinder sig att minska sina utsläpp.
+
+### Resultatet har varit tydligt
+
+Resultatet har varit tydligt. Naturvårdsverkets miljöövervakning visar att svavelnedfallet över Sverige
+har minskat med **mer än 80 procent**. Kvävenedfallet har också minskat, men betydligt mindre.
 
 Det visar en viktig princip inom miljöarbetet: det effektivaste är att angripa **orsaken** till
 problemet, inte bara försöka reparera skadorna efteråt.
@@ -238,11 +256,11 @@ möjlig alls.
 
 ## Kärnpunkter (Standard)
 
-- Finmalen kalksten med **kalciumkarbonat, CaCO₃**
-- Karbonatjonerna reagerar med vätejoner, pH stiger
-- Vattnets **buffertkapacitet** ökar
-- Svårlösligheten ger långvarig effekt men kräver rätt dosering
-- En **skyddsåtgärd**, inte en lösning — Sverige kalkar sedan 1977
+- Vad tillsätter man vid kalkning?
+- Vilken kemisk reaktion sker?
+- Varför används just kalksten?
+- Varför måste kalkningen upprepas?
+- Hur länge har Sverige kalkat?
 
 ---
 
@@ -304,7 +322,11 @@ långsamt återhämtar sig. Det ersätter inte minskade utsläpp.
 
 ## B — STANDARD
 
+### Kalk minskar skadorna i redan försurade vatten
+
 När en sjö eller ett vattendrag redan har försurats kan man minska skadorna genom **kalkning**.
+
+### Kalciumkarbonat reagerar med vätejoner
 
 I Sverige används framför allt finmalen kalksten som innehåller **kalciumkarbonat, CaCO₃**. När kalken
 kommer i kontakt med det sura vattnet reagerar karbonatet med vätejoner. Vätejoner förbrukas och
@@ -314,20 +336,31 @@ Detta är samma neutralisationskemi som du tidigare har mött:
 
 **syra + bas → mindre sur lösning**
 
+### Buffertkapaciteten ökar också
+
 Kalkningen ökar dessutom vattnets förmåga att motstå nya tillskott av syra. Man säger att vattnets
 **buffertkapacitet** ökar.
 
+### Svårlösligheten ger långvarig effekt
+
 Kalciumkarbonat är relativt svårlösligt. Det gör att effekten blir mer långvarig än om man skulle
-tillsätta en mycket lättlöslig stark bas. Men mängden kalk måste ändå anpassas noggrant till sjön
-eller vattendraget. Målet är inte att göra vattnet basiskt utan att återställa en vattenkemi där de
-arter som naturligt hör hemma där kan överleva.
+tillsätta en mycket lättlöslig stark bas.
+
+Men mängden kalk måste ändå anpassas noggrant till sjön eller vattendraget. Målet är inte att göra
+vattnet basiskt utan att återställa en vattenkemi där de arter som naturligt hör hemma där kan överleva.
+
+### Orsaken finns kvar
 
 Kalkning tar däremot inte bort själva orsaken till försurningen. Om försurande ämnen fortsätter att
 tillföras förbrukas kalkens neutraliserande effekt, och kalkningen måste upprepas.
 
+### Sverige har kalkat sedan 1977
+
 Sverige började med statligt stödd försökskalkning **1977**. Kalkning har sedan blivit en av landets
 största miljövårdsinsatser. Den sker bland annat genom spridning från båt eller helikopter och genom
-särskilda kalkdoserare i rinnande vatten. Många vatten behöver kalkas återkommande.
+särskilda kalkdoserare i rinnande vatten.
+
+Många vatten behöver kalkas återkommande.
 
 Kalkningen är därför bäst att se som en **skyddsåtgärd**. Den kan hålla ett skadat ekosystem vid liv
 medan naturen långsamt återhämtar sig, men den ersätter inte minskade utsläpp.
@@ -389,11 +422,11 @@ varför just kalk valts framför starkare baser — och varför den ändå inte 
 
 ## Kärnpunkter (Standard)
 
-- Svavelnedfallet har minskat med mer än 80 procent, nära förindustriella nivåer
-- Antalet försurade sjöar har minskat
-- Markens återhämtning kräver **vittring**, en mycket långsam process
-- **Skogsbruket** påverkar balansen genom uttag av biomassa
-- Kvävet kommer från trafik, sjöfart och jordbruk och är svårare att minska
+- Har försurningen minskat?
+- Hur mycket har svavelutsläppen minskat?
+- Varför släpar marken efter?
+- Hur påverkar skogsbruket?
+- Varför är kvävet svårare än svavlet?
 
 ---
 
@@ -462,31 +495,49 @@ att återställa.
 
 ## C — STANDARD
 
+### Ja, utvecklingen har vänt
+
 Ja. Försurningen är ett miljöproblem där utvecklingen på många sätt har vänt åt rätt håll.
 
+### Svavelutsläppen är en tiondel av 1990 års nivå
+
 Utsläppen av svavel har minskat mycket kraftigt i Sverige och Europa. Sveriges utsläpp av svaveldioxid
-var 2024 bara drygt en tiondel av nivån 1990. Samtidigt har svavelnedfallet över Sverige minskat med
-mer än 80 procent och ligger nu nära förindustriella nivåer.
+var 2024 bara drygt en tiondel av nivån 1990.
+
+Samtidigt har svavelnedfallet över Sverige minskat med mer än 80 procent och ligger nu nära
+förindustriella nivåer.
 
 Det har fått effekt i naturen. Antalet försurade sjöar och vattendrag har minskat och många vatten har
 börjat återhämta sig.
 
-Men återhämtningen går betydligt långsammare i marken. Under årtionden av kraftigt surt nedfall
-förlorade många marker stora mängder neutraliserande ämnen. Dessa måste bland annat ersättas genom
-**vittring av mineral**, och vittring är en mycket långsam process. Därför kan marken förbli försurad
-långt efter att luftföroreningarna har minskat.
+### Men marken återhämtar sig långsamt
 
-Även skogsbruket påverkar balansen. När träd, grenar och toppar förs bort från skogen följer
-näringsämnen och basiska ämnen med biomassan. Ett stort uttag kan därför bidra till att markens
-återhämtning går långsammare.
+Men återhämtningen går betydligt långsammare i marken. Under årtionden av kraftigt surt nedfall förlorade
+många marker stora mängder neutraliserande ämnen.
+
+Dessa måste bland annat ersättas genom **vittring av mineral**, och vittring är en mycket långsam process.
+Därför kan marken förbli försurad långt efter att luftföroreningarna har minskat.
+
+### Skogsbruket påverkar balansen
+
+Även skogsbruket påverkar balansen. När träd, grenar och toppar förs bort från skogen följer näringsämnen
+och basiska ämnen med biomassan.
+
+Ett stort uttag kan därför bidra till att markens återhämtning går långsammare.
+
+### Kvävet är svårare än svavlet
 
 Kvävet är dessutom ett mer svårlöst problem än svavlet. Utsläppen och nedfallet har minskat, men inte
-lika kraftigt som för svavel. Kväveoxider kommer bland annat från trafik, sjöfart och olika former av
-förbränning, medan ammoniak framför allt kommer från jordbruket.
+lika kraftigt som för svavel.
 
-Försurningen är därför inte ett avslutat miljöproblem. Men utvecklingen visar samtidigt något
-viktigt: **miljöproblem går att påverka**. Genom forskning, teknisk utveckling, lagstiftning och
-internationella avtal har utsläppen minskat kraftigt och naturen har börjat återhämta sig.
+Kväveoxider kommer bland annat från trafik, sjöfart och olika former av förbränning, medan ammoniak
+framför allt kommer från jordbruket.
+
+### Miljöproblem går att påverka
+
+Försurningen är därför inte ett avslutat miljöproblem. Men utvecklingen visar samtidigt något viktigt:
+**miljöproblem går att påverka**. Genom forskning, teknisk utveckling, lagstiftning och internationella
+avtal har utsläppen minskat kraftigt och naturen har börjat återhämta sig.
 
 Det som tog några årtionden att försura kan däremot ta betydligt längre tid att återställa.
 

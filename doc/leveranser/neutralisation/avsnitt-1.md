@@ -18,6 +18,10 @@
 | B | Vad som blir kvar |
 | C | Hur mycket behövs |
 
+> **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
+> påståenderubriker (###) och delade stycken enligt `reviderat-neutralisation.md`. Tillagda meningar (där märkta ▸) ligger här
+> utan märke. Enkel och Fördjupning oförändrade.
+
 ---
 
 ## BILDSPECIFIKATION
@@ -100,11 +104,11 @@ deltar inte och finns kvar lösta i vattnet.
 
 ## Kärnpunkter (Standard)
 
-- H₃O⁺ + OH⁻ → 2 H₂O
-- Oxoniumjonen lämnar över en vätejon till hydroxidjonen
-- Det är en **verklig kemisk reaktion**, inte att motsatser tar ut varandra
-- Med rätt mängder blir lösningen neutral, pH nära 7
-- Överskott av någondera gör lösningen sur eller basisk
+- Vilka joner finns i en sur respektive basisk lösning?
+- Vad händer när de möts?
+- Vad bildas?
+- Är det verkligen en kemisk reaktion?
+- Vad avgör om lösningen blir neutral?
 
 ---
 
@@ -159,36 +163,46 @@ Hur man vet vad som är lagom handlar underdel C om.
 
 ## A — STANDARD
 
-En sur lösning innehåller ett överskott av **oxoniumjoner, H₃O⁺**, medan en basisk lösning innehåller
-ett överskott av **hydroxidjoner, OH⁻**. När en sur och en basisk lösning blandas kan dessa joner
-reagera med varandra.
+### Två sorters joner möts
+
+En sur lösning innehåller ett överskott av **oxoniumjoner, H₃O⁺**, medan en basisk lösning innehåller ett
+överskott av **hydroxidjoner, OH⁻**. När en sur och en basisk lösning blandas kan dessa joner reagera med
+varandra.
+
+### Reaktionen bildar vatten
 
 Reaktionen kan skrivas:
 
 **H₃O⁺ + OH⁻ → 2 H₂O**
 
-Oxoniumjonen lämnar alltså över en vätejon till hydroxidjonen. Resultatet blir två vattenmolekyler.
-De joner som gjorde lösningen sur respektive basisk har därmed reagerat och omvandlats till vatten.
+Oxoniumjonen lämnar alltså över en vätejon till hydroxidjonen. Resultatet blir två vattenmolekyler. De
+joner som gjorde lösningen sur respektive basisk har därmed reagerat och omvandlats till vatten.
 
 Detta kallas **neutralisation**.
 
+### Det är en verklig kemisk reaktion
+
 Det är viktigt att förstå att neutralisation inte betyder att syra och bas bara "tar ut varandra" på
 något oförklarligt sätt. Det sker en verklig kemisk reaktion där bestämda partiklar reagerar med
-varandra. Oxoniumjoner och hydroxidjoner förbrukas och nya vattenmolekyler bildas.
+varandra.
 
-Om rätt mängd syra och bas blandas kan lösningen bli neutral, alltså få ett pH nära 7. Om det däremot
-finns oxoniumjoner kvar efter reaktionen är lösningen fortfarande sur. Finns hydroxidjoner kvar är
-den fortfarande basisk.
+Oxoniumjoner och hydroxidjoner förbrukas och nya vattenmolekyler bildas.
 
-### Enklare skrivsätt
+### Mängderna avgör om lösningen blir neutral
+
+Om rätt mängd syra och bas blandas kan lösningen bli neutral, alltså få ett pH nära 7.
+
+Om det däremot finns oxoniumjoner kvar efter reaktionen är lösningen fortfarande sur. Finns
+hydroxidjoner kvar är den fortfarande basisk.
+
+### Ett enklare skrivsätt
 
 Man kan förenklat tänka att en **vätejon, H⁺**, från syran reagerar med en **hydroxidjon, OH⁻**, från
 basen:
 
 **H⁺ + OH⁻ → H₂O**
 
-En vätejon och en hydroxidjon går alltså ihop och bildar vatten. Det är grunden för all
-neutralisation.
+En vätejon och en hydroxidjon går alltså ihop och bildar vatten. Det är grunden för all neutralisation.
 
 ---
 
@@ -260,11 +274,11 @@ reagerat färdigt.
 
 ## Kärnpunkter (Standard)
 
-- Oxonium- och hydroxidjonerna reagerar; övriga joner deltar inte
-- En neutraliserad lösning är **inte** rent vatten
-- Vid avdunstning bildar de kvarvarande jonerna ett **salt**
-- Saltsyra och natriumhydroxid ger **natriumklorid**
-- Vilket salt som bildas beror på vilken syra och vilken bas
+- Reagerar alla joner i lösningen?
+- Vilka joner deltar inte?
+- Är en neutraliserad lösning rent vatten?
+- Vad blir kvar om vattnet avdunstar?
+- Vad avgör vilket salt som bildas?
 
 ---
 
@@ -316,27 +330,37 @@ Vad salter är, hur de är uppbyggda och vad de används till får ett eget delk
 
 ## B — STANDARD
 
+### Alla joner deltar inte
+
 När en syra och en bas neutraliserar varandra är det inte alla joner i lösningen som reagerar.
 
-Tänk dig att vi blandar **saltsyra** och **natriumhydroxid**. I den sura lösningen finns oxoniumjoner
-och kloridjoner. I den basiska lösningen finns natriumjoner och hydroxidjoner.
+### Bara oxonium- och hydroxidjonerna reagerar
+
+Tänk dig att vi blandar **saltsyra** och **natriumhydroxid**. I den sura lösningen finns oxoniumjoner och
+kloridjoner. I den basiska lösningen finns natriumjoner och hydroxidjoner.
 
 När lösningarna blandas reagerar oxoniumjonerna med hydroxidjonerna och bildar vatten:
 
 **H₃O⁺ + OH⁻ → 2 H₂O**
 
-Men **natriumjonerna, Na⁺, och kloridjonerna, Cl⁻, deltar inte i själva neutralisationsreaktionen**.
-De finns fortfarande kvar lösta i vattnet efteråt.
+Men **natriumjonerna, Na⁺, och kloridjonerna, Cl⁻, deltar inte i själva neutralisationsreaktionen**. De
+finns fortfarande kvar lösta i vattnet efteråt.
+
+### Lösningen är inte rent vatten
 
 Det betyder att en neutraliserad lösning inte består av enbart rent vatten. Den kan fortfarande
 innehålla många lösta joner.
 
-Om vattnet sedan avdunstar kommer natriumjonerna och kloridjonerna att bli kvar och bilda det fasta
-ämnet **natriumklorid, NaCl**. Natriumklorid är ett **salt**.
+### De kvarvarande jonerna bildar ett salt
+
+Om vattnet sedan avdunstar kommer natriumjonerna och kloridjonerna att bli kvar och bilda det fasta ämnet
+**natriumklorid, NaCl**. Natriumklorid är ett **salt**.
 
 Därför brukar neutralisation sammanfattas:
 
 **syra + bas → salt + vatten**
+
+### Vilket salt beror på vilken syra och bas
 
 Vilket salt som bildas beror på vilken syra och vilken bas som reagerar. Vad salter är, hur de är
 uppbyggda och vilka egenskaper de har behandlas i ett eget delkapitel.
@@ -397,10 +421,11 @@ reaktioner egentligen är en enda.
 
 ## Kärnpunkter (Standard)
 
-- Förhållandet är **ett till ett**
-- Överskott av någondera gör lösningen sur respektive basisk
-- Volymen är inte avgörande — **antalet joner** är det
-- Koncentration och styrka påverkar båda hur många joner lösningen innehåller
+- I vilket förhållande reagerar jonerna?
+- Vad händer vid överskott av syra?
+- Vad händer vid överskott av bas?
+- Ska man blanda lika stora volymer?
+- Vad avgör hur många joner en lösning innehåller?
 
 ---
 
@@ -454,36 +479,46 @@ du mötte i syrorna.
 
 ## C — STANDARD
 
+### Förhållandet är ett till ett
+
 För att en neutralisation ska bli fullständig måste rätt mängd av de reagerande partiklarna finnas.
 
 En oxoniumjon reagerar med en hydroxidjon i förhållandet **ett till ett**:
 
 **H₃O⁺ + OH⁻ → 2 H₂O**
 
-Det betyder att det behövs lika många hydroxidjoner som oxoniumjoner för att ingen av dem ska bli
-över.
+Det betyder att det behövs lika många hydroxidjoner som oxoniumjoner för att ingen av dem ska bli över.
 
-Om det finns fler oxoniumjoner än hydroxidjoner kommer det att finnas oxoniumjoner kvar efter
-reaktionen. Lösningen blir då fortfarande **sur**.
+### Överskott av syra ger sur lösning
 
-Om det i stället finns fler hydroxidjoner än oxoniumjoner kommer hydroxidjoner att finnas kvar.
-Lösningen blir då fortfarande **basisk**.
+Om det finns fler oxoniumjoner än hydroxidjoner kommer det att finnas oxoniumjoner kvar efter reaktionen.
+Lösningen blir då fortfarande **sur**.
+
+### Överskott av bas ger basisk lösning
+
+Om det i stället finns fler hydroxidjoner än oxoniumjoner kommer hydroxidjoner att finnas kvar. Lösningen
+blir då fortfarande **basisk**.
 
 Först när mängderna passar ihop kan de sura och basiska egenskaperna neutraliseras helt.
 
-Det betyder däremot **inte** att man alltid ska blanda lika stora volymer syra och bas. Två lösningar
-kan innehålla mycket olika många joner i samma volym.
+### Lika många joner är inte lika stora volymer
 
-En **koncentrerad lösning** innehåller fler partiklar av det lösta ämnet per volym än en utspädd
-lösning. Dessutom påverkar syrans eller basens **styrka** hur stor andel av ämnets partiklar som
-reagerar med vatten och bildar oxoniumjoner eller hydroxidjoner.
+Det betyder däremot **inte** att man alltid ska blanda lika stora volymer syra och bas. Två lösningar kan
+innehålla mycket olika många joner i samma volym.
 
-Om två syralösningar har samma koncentration ger en stark syra i regel upphov till fler oxoniumjoner
-än en svag syra, eftersom en större andel av syrans partiklar reagerar. Men en mycket koncentrerad
-svag syra kan naturligtvis innehålla fler oxoniumjoner än en mycket utspädd stark syra.
+En **koncentrerad lösning** innehåller fler partiklar av det lösta ämnet per volym än en utspädd lösning.
 
-När man ska neutralisera en lösning är det därför **antalet reagerande joner**, inte bara vätskans
-volym, som avgör hur mycket syra eller bas som behövs.
+### Både koncentration och styrka spelar roll
+
+Dessutom påverkar syrans eller basens **styrka** hur stor andel av ämnets partiklar som reagerar med
+vatten och bildar oxoniumjoner eller hydroxidjoner.
+
+Om två syralösningar har samma koncentration ger en stark syra i regel upphov till fler oxoniumjoner än
+en svag syra, eftersom en större andel av syrans partiklar reagerar. Men en mycket koncentrerad svag syra
+kan naturligtvis innehålla fler oxoniumjoner än en mycket utspädd stark syra.
+
+När man ska neutralisera en lösning är det därför **antalet reagerande joner**, inte bara vätskans volym,
+som avgör hur mycket syra eller bas som behövs.
 
 ---
 

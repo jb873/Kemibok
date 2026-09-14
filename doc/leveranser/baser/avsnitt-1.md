@@ -10,6 +10,10 @@
 > **Obs för baser:** det är **oxoniumjonen** som inte får förekomma i Enkel-text. Hydroxidjonen är
 > basernas kärnbegrepp och används på alla nivåer.
 
+> **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
+> påståenderubriker (###) och delade stycken enligt `reviderat-baser.md`. Tillagda meningar (där märkta ▸) ligger här
+> utan märke. Enkel och Fördjupning oförändrade.
+
 ---
 
 ## Underdelar
@@ -72,11 +76,11 @@ inga hydroxidjoner alls utan bildar dem genom att ta upp en proton från vatten.
 
 ## Kärnpunkter (Standard)
 
-- Hydroxidjonen är en **sammansatt jon** med negativ laddning
-- Den har **fria elektronpar** och kan därför ta emot en vätejon
-- H⁺ + OH⁻ → H₂O
-- **En bas är ett ämne som kan ta upp vätejoner**
-- Alla baser innehåller **inte** hydroxidjoner från början
+- Vad består hydroxidjonen av?
+- Varför kan den ta emot en vätejon?
+- Vad bildas när den gör det?
+- Vad är en bas?
+- Innehåller alla baser hydroxidjoner?
 
 ---
 
@@ -125,23 +129,36 @@ om.
 
 ## A — STANDARD
 
-När vi studerade vatten mötte vi hydroxidjonen, **OH⁻**. Hydroxidjonen är en sammansatt jon som
-består av en syreatom och en väteatom. Tillsammans har de en negativ laddning.
+### Hydroxidjonen är en sammansatt jon
+
+När vi studerade vatten mötte vi hydroxidjonen, **OH⁻**. Hydroxidjonen är en sammansatt jon som består
+av en syreatom och en väteatom. Tillsammans har de en negativ laddning.
+
+### Den kan ta emot en vätejon
 
 Hydroxidjonen är viktig när vi ska förstå baser. Den har **fria elektronpar** — elektronpar som inte
-delas med någon annan atom — och kan därför ta emot en **vätejon, H⁺**. En vätejon består egentligen
-bara av en proton, och den binder till just ett sådant fritt elektronpar.
+delas med någon annan atom — och kan därför ta emot en **vätejon, H⁺**.
+
+En vätejon består egentligen bara av en proton, och den binder till just ett sådant fritt elektronpar.
+
+### Resultatet blir vatten
 
 När hydroxidjonen tar upp en vätejon bildas en vattenmolekyl:
 
 **H⁺ + OH⁻ → H₂O**
 
+Både den positiva och den negativa laddningen försvinner, eftersom de tar ut varandra.
+
+### En bas är ett ämne som kan ta upp vätejoner
+
 Detta leder oss till den viktigaste definitionen av en bas:
 
 **En bas är ett ämne som kan ta upp vätejoner.**
 
-Det betyder däremot inte att alla baser innehåller hydroxidjoner från början. Hydroxidjoner kan
-uppstå på olika sätt när ett basiskt ämne kommer i kontakt med vatten.
+### Men alla baser innehåller inte hydroxidjoner
+
+Det betyder däremot inte att alla baser innehåller hydroxidjoner från början. Hydroxidjoner kan uppstå
+på olika sätt när ett basiskt ämne kommer i kontakt med vatten.
 
 ---
 
@@ -196,11 +213,11 @@ sort — det är en **roll** ett ämne kan spela i en reaktion.
 
 ## Kärnpunkter (Standard)
 
-- En basisk lösning har ett **överskott av hydroxidjoner**
-- **Väg 1:** basen är uppbyggd av joner, och de frigörs i vatten
-- **Väg 2:** basen tar upp en vätejon från vatten, varvid OH⁻ bildas
-- NaOH → Na⁺ + OH⁻
-- NH₃ + H₂O ⇌ NH₄⁺ + OH⁻
+- Vad kännetecknar en basisk lösning?
+- Hur kan hydroxidjoner hamna i lösningen?
+- Vad händer när natriumhydroxid löses?
+- Var kommer ammoniakens hydroxidjoner ifrån?
+- Varför räcker inte definitionen "innehåller OH⁻"?
 
 ---
 
@@ -252,10 +269,12 @@ ett ämne som kan ta upp vätejoner.** Vad som händer sedan beror på ämnet.
 
 ## B — STANDARD
 
+### En basisk lösning har överskott av hydroxidjoner
+
 En basisk lösning innehåller ett överskott av hydroxidjoner, **OH⁻**. Det finns två viktiga sätt som
 dessa hydroxidjoner kan hamna i lösningen.
 
-### Basen innehåller redan hydroxidjoner
+### Väg 1: hydroxidjonerna fanns redan i ämnet
 
 Natriumhydroxid, **NaOH**, är ett exempel på en bas som redan innehåller hydroxidjoner. Fast
 natriumhydroxid är uppbyggt av positiva natriumjoner, Na⁺, och negativa hydroxidjoner, OH⁻. Jonerna
@@ -266,23 +285,25 @@ hydroxidjonerna blir då fria i lösningen:
 
 **NaOH → Na⁺ + OH⁻**
 
-Det är alltså inte vattnet som skapar hydroxidjonerna i detta fall. De fanns redan i
-natriumhydroxiden och frigörs när ämnet löses.
+Det är alltså inte vattnet som skapar hydroxidjonerna i detta fall. De fanns redan i natriumhydroxiden
+och frigörs när ämnet löses.
 
 På samma sätt fungerar till exempel kaliumhydroxid, KOH, och kalciumhydroxid, Ca(OH)₂.
 
-### Basen reagerar med vatten och bildar hydroxidjoner
+### Väg 2: hydroxidjonerna bildas ur vattnet
 
 Alla baser innehåller inte hydroxidjoner. **Ammoniak, NH₃**, är ett viktigt exempel.
 
-När ammoniak löses i vatten kan en ammoniakmolekyl ta upp en vätejon från en vattenmolekyl.
-Ammoniaken omvandlas då till en ammoniumjon, NH₄⁺. När vattenmolekylen har förlorat en vätejon
-återstår en hydroxidjon, OH⁻:
+När ammoniak löses i vatten kan en ammoniakmolekyl ta upp en vätejon från en vattenmolekyl. Ammoniaken
+omvandlas då till en ammoniumjon, NH₄⁺. När vattenmolekylen har förlorat en vätejon återstår en
+hydroxidjon, OH⁻:
 
 **NH₃ + H₂O ⇌ NH₄⁺ + OH⁻**
 
 Ammoniak innehåller alltså inga hydroxidjoner från början. Hydroxidjonerna **bildas när ammoniak
 reagerar med vatten**.
+
+### Därför måste definitionen vara vidare
 
 Detta är viktigt eftersom det visar varför man inte kan säga att en bas är ett ämne som innehåller
 OH⁻. Den bättre definitionen är att en bas är ett ämne som **kan ta upp vätejoner**.
@@ -337,11 +358,11 @@ det är därför den ena ger en stark bas och den andra en svag.
 
 ## Kärnpunkter (Standard)
 
-- En basisk lösning har fler **hydroxidjoner än oxoniumjoner**
-- pH över 7
-- Leder ström tack vare rörliga joner
-- Kan kännas hala eftersom baser reagerar med fett och bildar tvålliknande ämnen
-- Reagerar med syror i en **neutralisation**
+- Vad skiljer en basisk lösning från en neutral?
+- Varför leder basiska lösningar ström?
+- Varför känns de hala?
+- Varför ska man aldrig känna efter?
+- Vad händer när en bas möter en syra?
 
 ---
 
@@ -395,21 +416,35 @@ Den reaktionen kallas **neutralisation**, och den får ett eget delkapitel.
 
 ## C — STANDARD
 
-I rent vatten finns både oxoniumjoner, H₃O⁺, och hydroxidjoner, OH⁻. Vid neutralitet finns lika
-mycket av båda.
+### Fler hydroxidjoner än oxoniumjoner
+
+I rent vatten finns både oxoniumjoner, H₃O⁺, och hydroxidjoner, OH⁻. Vid neutralitet finns lika mycket
+av båda.
 
 I en **basisk lösning finns fler hydroxidjoner än oxoniumjoner**. Därför har en basisk lösning ett
 pH-värde över 7.
 
-Basiska lösningar innehåller joner och kan därför leda elektrisk ström. Ju fler rörliga joner som
-finns i lösningen, desto bättre kan lösningen vanligtvis leda ström.
+### De leder ström
+
+Basiska lösningar innehåller joner och kan därför leda elektrisk ström. Ju fler rörliga joner som finns
+i lösningen, desto bättre kan lösningen vanligtvis leda ström.
+
+### Halheten beror på att basen reagerar med fett
 
 Basiska lösningar kan också upplevas som hala. Det beror bland annat på att starka baser kan reagera
-med fett. Fett kan brytas ned och ämnen med tvålliknande egenskaper kan bildas. Man ska däremot
-aldrig känna på okända basiska lösningar, eftersom många baser är frätande.
+med fett. Fett kan brytas ned och ämnen med tvålliknande egenskaper kan bildas.
 
-Baser reagerar också med syror. När en syra och en bas reagerar med varandra kan deras sura och
-basiska egenskaper minska. Den reaktionen kallas **neutralisation** och behandlas längre fram.
+Det fett som bryts ned är hudens eget, och det är därför halheten är ett varningstecken snarare än
+en trevlig egenskap.
+
+Man ska däremot aldrig känna på okända basiska lösningar, eftersom många baser är frätande.
+
+### De reagerar med syror
+
+Baser reagerar också med syror. När en syra och en bas reagerar med varandra kan deras sura och basiska
+egenskaper minska.
+
+Den reaktionen kallas **neutralisation** och behandlas längre fram.
 
 ---
 

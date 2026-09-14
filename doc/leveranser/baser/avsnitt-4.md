@@ -10,6 +10,10 @@
 > **Kalkning av sjöar och åkrar är utflyttad** till försurningsdelkapitlet, enligt tidigare beslut.
 > Kalciumhydroxid finns kvar med sina övriga användningar.
 
+> **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
+> påståenderubriker (###) och delade stycken enligt `reviderat-baser.md`. Tillagda meningar (där märkta ▸) ligger här
+> utan märke. Enkel och Fördjupning oförändrade.
+
 ---
 
 ## Underdelar
@@ -71,11 +75,11 @@ kvar har en polär och en opolär ände — alltså tensider.
 
 ## Kärnpunkter (Standard)
 
-- pH över 7, överskott av hydroxidjoner
-- Leder ström tack vare rörliga joner
-- Reagerar med fett, vilket ger halheten
-- Många starka baser är kraftigt **frätande**
-- Reagerar med syror: H₃O⁺ + OH⁻ → 2 H₂O
+- Vad har alla basiska lösningar gemensamt?
+- Varför leder de ström?
+- Varför känns de hala?
+- Hur farliga är starka baser?
+- Vad händer när en bas möter en syra?
 
 ---
 
@@ -124,18 +128,31 @@ Den reaktionen kallas **neutralisation**, och den får ett eget delkapitel.
 
 ## A — STANDARD
 
+### Baser är olika men har gemensamma drag
+
 Baser är olika ämnen, men basiska lösningar har flera gemensamma egenskaper.
+
+### De har pH över 7
 
 De har **pH över 7** och innehåller ett överskott av hydroxidjoner jämfört med oxoniumjoner.
 
+### De leder ström
+
 Eftersom basiska lösningar innehåller joner kan de leda elektrisk ström.
 
+### De reagerar med fett
+
 Många basiska lösningar kan också kännas hala. Det beror bland annat på att starka baser reagerar med
-fett. Det är en av anledningarna till att baser används i bland annat rengöringsmedel och vid
+fett.
+
+Det är en av anledningarna till att baser används i bland annat rengöringsmedel och vid
 tvåltillverkning.
 
-Många starka baser är dessutom kraftigt **frätande** och kan orsaka allvarliga skador på hud och
-ögon.
+### Många är kraftigt frätande
+
+Många starka baser är dessutom kraftigt **frätande** och kan orsaka allvarliga skador på hud och ögon.
+
+### De reagerar med syror
 
 En annan viktig egenskap är att baser kan reagera med syror. När en syra och en bas reagerar med
 varandra kan vätejoner och hydroxidjoner bilda vatten:
@@ -197,11 +214,11 @@ protonhoppen blir det tydligt att alla joner inte är lika.
 
 ## Kärnpunkter (Standard)
 
-- **NaOH**: propplösare, tvåltillverkning, pappersindustri
-- **KOH**: mjuka och flytande tvålar, batterier
-- **Ca(OH)₂**: murbruk och byggmaterial
-- **NH₃**: rengöringsmedel och **kvävegödsel**
-- Ammoniak har stor betydelse för livsmedelsproduktionen
+- Vad används natriumhydroxid till?
+- Vad skiljer kaliumhydroxid från natriumhydroxid?
+- Vad kallas kalciumhydroxid i vardagligt tal?
+- Hur härdar murbruk?
+- Vad är ammoniakens största användningsområde?
 
 ---
 
@@ -254,10 +271,20 @@ Ammoniak har därför enorm betydelse för världens matproduktion.
 
 ## B — STANDARD
 
-### Natriumhydroxid
+Tabellen ger en översikt över de fyra viktigaste baserna. Texten under går igenom var och en
+närmare.
 
-Natriumhydroxid, NaOH, är en stark bas. Ämnet används bland annat i propplösare eftersom det kan
-bryta ned fett och annat organiskt material.
+| Bas | Formel | Stark/svag | Används till |
+|---|---|---|---|
+| Natriumhydroxid | NaOH | Stark | Propplösare, tvål, pappersindustri |
+| Kaliumhydroxid | KOH | Stark | Mjuka tvålar, batterier |
+| Kalciumhydroxid | Ca(OH)₂ | Stark | Murbruk, byggmaterial |
+| Ammoniak | NH₃ | Svag | Rengöringsmedel, kvävegödsel |
+
+### Natriumhydroxid löser fett och organiskt material
+
+Natriumhydroxid, NaOH, är en stark bas. Ämnet används bland annat i propplösare eftersom det kan bryta
+ned fett och annat organiskt material.
 
 Natriumhydroxid används också vid tillverkning av tvål. Fett får då reagera med en stark bas och
 omvandlas till bland annat ämnen som fungerar som tvål.
@@ -265,24 +292,24 @@ omvandlas till bland annat ämnen som fungerar som tvål.
 Inom pappersindustrin används natriumhydroxid i processer där man behandlar trä och separerar olika
 delar av veden från varandra.
 
-### Kaliumhydroxid
+### Kaliumhydroxid ger mjukare tvålar
 
 Kaliumhydroxid, KOH, är också en stark bas.
 
 Den används bland annat vid tillverkning av mjuka och flytande tvålar. Kaliumhydroxid används även som
 elektrolyt i vissa typer av batterier.
 
-### Kalciumhydroxid
+### Kalciumhydroxid kallas släckt kalk
 
 Kalciumhydroxid, Ca(OH)₂, kallas ibland **släckt kalk**.
 
-Ämnet används bland annat i murbruk och andra byggmaterial. Murbruk härdar genom att
-kalciumhydroxiden långsamt reagerar med koldioxid ur luften och åter bildar kalciumkarbonat.
+Ämnet används bland annat i murbruk och andra byggmaterial. Murbruk härdar genom att kalciumhydroxiden
+långsamt reagerar med koldioxid ur luften och åter bildar kalciumkarbonat.
 
-Kalciumhydroxid används också för att höja pH i sura miljöer. Den användningen behandlas i
-delkapitlet om försurning.
+Kalciumhydroxid används också för att höja pH i sura miljöer. Den användningen behandlas i delkapitlet
+om försurning.
 
-### Ammoniak
+### Ammoniak är råvara till konstgödsel
 
 Ammoniak, NH₃, är en svag bas.
 
@@ -347,11 +374,11 @@ kunskap i sig varken är god eller ond.
 
 ## Kärnpunkter (Standard)
 
-- Starka baser skadar hud, ögon och vävnad
-- Basen tränger in i vävnaden och fortsätter skada
-- Skyddsglasögon alltid
-- Spolning under lång tid vid stänk, hjälp tillkallas snabbt
-- Rengöringskemikalier får aldrig blandas
+- Varför är basstänk i ögonen särskilt allvarligt?
+- När ska skyddsglasögon användas?
+- Vad gör man vid stänk på hud eller i ögon?
+- Varför får propplösare aldrig blandas med annat?
+- Varför är baser farliga av samma skäl som de är användbara?
 
 ---
 
@@ -401,26 +428,37 @@ håll.
 
 ## C — STANDARD
 
+### Starka baser kan vara kraftigt frätande
+
 Starka baser kan vara kraftigt frätande.
+
+### Ögonskador är särskilt allvarliga
 
 Frätande baser kan skada hud, ögon och andra vävnader. Skador i ögonen är särskilt allvarliga eftersom
 starka baser kan tränga in i vävnaden och fortsätta orsaka skada.
 
 Därför ska man alltid använda **skyddsglasögon** när man arbetar med starka baser i laboratorium.
 
+### Vid stänk: spola länge
+
 Om en frätande bas kommer på huden eller i ögonen ska området omedelbart spolas med stora mängder
-vatten. Vid stänk i ögonen behöver spolningen fortsätta under lång tid och hjälp ska snabbt
-tillkallas.
+vatten. Vid stänk i ögonen behöver spolningen fortsätta under lång tid och hjälp ska snabbt tillkallas.
+
+### Följ alltid säkerhetsinformationen
 
 Produkter som innehåller starka baser ska alltid hanteras enligt säkerhetsinformationen på
 förpackningen.
+
+### Blanda aldrig rengöringsmedel
 
 Propplösare kan till exempel innehålla natriumhydroxid och får aldrig blandas med andra
 rengöringsmedel. Blandningar av olika rengöringskemikalier kan orsaka kraftig värmeutveckling eller
 bilda farliga ämnen.
 
-Starka baser är användbara just därför att de reagerar kraftigt med andra ämnen. Samma egenskap gör
-att de måste hanteras med stor försiktighet.
+### Samma egenskap gör dem användbara och farliga
+
+Starka baser är användbara just därför att de reagerar kraftigt med andra ämnen. Samma egenskap gör att
+de måste hanteras med stor försiktighet.
 
 ---
 
