@@ -96,7 +96,8 @@ const AVSNITT_NEUTRALISATION = {
   1: { dd: [{ slug: 'neutralisation', titel: 'Neutralisation: när syra och bas reagerar', ikon: '⚗️' }],
        bilder: {
          'neutralisation-partiklar.svg': { aktiv: ['enkel', 'standard'], enkel: 'H⁺ + OH⁻ → H₂O', standard: 'H₃O⁺ + OH⁻ → 2 H₂O' },   // efter reaktionsraden
-         'vad-blir-kvar.svg': { aktiv: ['enkel', 'standard'], enkel: 'De simmar omkring precis som förut', standard: 'finns fortfarande kvar lösta i vattnet efteråt' }
+         'vad-blir-kvar.svg': { aktiv: ['enkel', 'standard'], enkel: 'De simmar omkring precis som förut', standard: 'finns fortfarande kvar lösta i vattnet efteråt' },
+         'ett-till-ett.svg': { aktiv: ['enkel', 'standard'], enkel: 'några av dem över, och lösningen blir basisk.', standard: 'Först när mängderna passar ihop kan de sura och basiska egenskaperna neutraliseras helt.' }   // bildinventering 2026-09-14
        },
        faktaruta: { enkel: 'handlar underdel C om', standard: 'kvar är den fortfarande basisk', fordjupning: 'Där finns också mol och mängdberäkningar' } },
   2: { dd: [{ slug: 'titrering', titel: 'Titrering: att bestämma en okänd koncentration', ikon: '🧫' }],   // Joachims text, titrering.md (2 B)

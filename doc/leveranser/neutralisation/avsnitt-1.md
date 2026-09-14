@@ -93,6 +93,31 @@ deltar inte och finns kvar lösta i vattnet.
 - Vilka två sorter som **finns kvar**
 - Vad som tillkommit i det högra glaset
 
+### `ett-till-ett.svg` — underdel C, Enkel + Standard
+
+Ur bildinventeringen i omarbetat-neutralisation.md; texter ur bildtexter-ett-till-ett.md (2026-09-14). Genererad i bilder-svg.js.
+
+> Tre kolumner. I varje en ruta med oxoniumjoner (röda, +) till vänster och en med hydroxidjoner (blå, −) till
+> höger, pil ner, och resultatet under: 5 + 5 → inga joner kvar, *neutral*; 7 + 5 → två röda kvar, *fortfarande
+> sur*; 5 + 8 → tre blå kvar, *fortfarande basisk*.
+
+**Alt-text:** Tre kolumner som visar tre olika blandningar. I den första finns fem röda oxoniumjoner och fem
+blå hydroxidjoner, och resultatet är neutralt. I den andra finns sju röda och fem blå, och två röda blir kvar
+så att lösningen förblir sur. I den tredje finns fem röda och åtta blå, och tre blå blir kvar så att lösningen
+förblir basisk.
+
+**Bildtext Enkel:** Lika många av varje ger neutralt. Blir det över av någondera syns det i resultatet.
+
+**Bildtext Standard:** Överskottet avgör. Det räcker inte att både syra och bas finns — antalet joner måste
+stämma.
+
+### Bildguide (endast Enkel)
+
+- Räkna röda och blå i den första kolumnen
+- Vilken kolumn har flest röda?
+- Vilken har flest blå?
+- Vad står under varje kolumn?
+
 ---
 
 # UNDERDEL A — Jonerna möts

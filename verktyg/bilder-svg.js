@@ -22,6 +22,7 @@
 //   fyra-kombinationerna.svg            delkapitel Syror 4 B – stark/svag × koncentrerad/utspädd (syror/img/)
 //   vatejonens-storlek, indikatorfarger, siv-regeln   delkapitel Syror 1 A, 2 B, 4 C (syror/img/), bildinventering 2026-09-14
 //   hydroxid-plus-vate, en-eller-tva-hydroxid          delkapitel Baser 1 A, 2 B (baser/img/), bildinventering 2026-09-14
+//   ett-till-ett.svg                    delkapitel Neutralisation 1 C (neutralisation/img/), bildinventering 2026-09-14
 //   molekyl-mot-gitter, formelenhet, laddningsbalans, sammansatt-jon, saltbildning, havsvatten
 //                                       delkapitel Salter 1 B, 1 C, 2 A, 2 B, 4 A, 4 C (salter/img/)
 //
@@ -892,7 +893,49 @@ ${STOPP.filter(([p]) => p >= 3 && p <= 8).map(([ph, f]) => `      <stop offset="
   }
 }
 
-console.log('skrev 29 svg (8 repetition, 6 syror, 3 baser, 2 neutralisation, 4 försurning, 6 salter)', path.relative(path.join(__dirname, '..'), UT));
+
+// ---------- 30. Neutralisation 1 C: ett-till-ett.svg (bildinventering i omarbetat-neutralisation.md, Joachims beslut 2026-09-14) ----------
+// Tre kolumner: oxoniumjoner (#C64B3A, +) i vänster ruta, hydroxidjoner (#3D6BA8, −) i höger, resultatet under.
+{
+  const UT9 = path.join(__dirname, '..', 'kapitel', 'syror-och-baser', 'delkapitel', 'neutralisation', 'img');
+  const PLUS = '#C64B3A', MINUS = '#3D6BA8';
+  const txt = (x, y, t, extra = '') => `  <text x="${r2(x)}" y="${r2(y)}" fill="${INK}" ${/font-size=/.test(extra) ? '' : 'font-size="16"'} text-anchor="middle" ${FONT} ${extra}>${t}</text>\n`;
+  const jon = (x, y, farg, tecken) => `  <circle cx="${r2(x)}" cy="${r2(y)}" r="10" fill="${farg}" stroke="#fff" stroke-width="1"/>\n` +
+    (tecken === '+' ? `  <path d="M${r2(x - 5)} ${r2(y)}H${r2(x + 5)}M${r2(x)} ${r2(y - 5)}V${r2(y + 5)}" stroke="#fff" stroke-width="2" stroke-linecap="round"/>\n`
+      : `  <path d="M${r2(x - 5)} ${r2(y)}H${r2(x + 5)}" stroke="#fff" stroke-width="2" stroke-linecap="round"/>\n`);
+  // joner i ett rutnät (tre per rad) inne i en ruta
+  const ruta = (x, y, w, h, antal, farg, tecken) => {
+    let s = `  <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" fill="none" stroke="${INK}" stroke-width="1.5"/>\n`;
+    for (let i = 0; i < antal; i++) { const kol = i % 3, rad = Math.floor(i / 3); s += jon(x + 22 + kol * 26, y + 22 + rad * 26, farg, tecken); }
+    return s;
+  };
+  const W = 780, H = 330, KB = 240;
+  const fall = [
+    { rod: 5, bla: 5, kvar: [], text: 'neutral' },
+    { rod: 7, bla: 5, kvar: [PLUS, PLUS], text: 'fortfarande sur' },
+    { rod: 5, bla: 8, kvar: [MINUS, MINUS, MINUS], text: 'fortfarande basisk' }
+  ];
+  let ut = '';
+  fall.forEach((f, i) => {
+    const x0 = 20 + i * (KB + 10), mitt = x0 + KB / 2;
+    if (i > 0) { ut += `  <line x1="${x0 - 5}" y1="24" x2="${x0 - 5}" y2="${H - 24}" stroke="${INK}" stroke-width="1"/>\n`; }
+    ut += txt(x0 + 55, 40, `${f.rod} H<tspan font-size="0.7em" dy="0.35em">3</tspan><tspan dy="-0.35em">O</tspan><tspan font-size="0.7em" dy="-0.6em">+</tspan>`, 'font-size="15"');
+    ut += txt(x0 + 185, 40, `${f.bla} OH<tspan font-size="0.7em" dy="-0.6em">−</tspan>`, 'font-size="15"');
+    ut += ruta(x0 + 10, 52, 90, 100, f.rod, PLUS, '+');
+    ut += txt(mitt, 108, '+', 'font-size="26"');
+    ut += ruta(x0 + 140, 52, 90, 100, f.bla, MINUS, '−');
+    ut += pil(mitt, 166, mitt, 200, INK, 2.5);
+    // resultatrad: det som blir kvar
+    const n = f.kvar.length, start = mitt - ((n - 1) * 26) / 2;
+    f.kvar.forEach((farg, k) => { ut += jon(start + k * 26, 228, farg, farg === PLUS ? '+' : '−'); });
+    ut += txt(mitt, n ? 268 : 236, n ? `${n === 2 ? 'två' : 'tre'} ${f.kvar[0] === PLUS ? 'röda' : 'blå'} kvar` : 'inga joner kvar', 'font-size="14" font-style="italic"');
+    ut += txt(mitt, 300, f.text, 'font-size="18" font-weight="bold"');
+  });
+  fs.writeFileSync(path.join(UT9, 'ett-till-ett.svg'), svg(W, H,
+    'Tre kolumner med oxoniumjoner och hydroxidjoner: fem och fem ger neutral lösning, sju och fem lämnar två röda kvar och lösningen förblir sur, fem och åtta lämnar tre blå kvar och lösningen förblir basisk', ut));
+}
+
+console.log('skrev 30 svg (8 repetition, 6 syror, 3 baser, 3 neutralisation, 4 försurning, 6 salter)', path.relative(path.join(__dirname, '..'), UT));
 
 
 // ---------- 19–24. Salter: sex SVG:er (leverans 2026-09-14, salter-avsnitt-1-2-komplett.md / -3-4-komplett.md) ----------

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="780" height="330" role="img" aria-labelledby="t">
+  <title id="t">Tre kolumner med oxoniumjoner och hydroxidjoner: fem och fem ger neutral lösning, sju och fem lämnar två röda kvar och lösningen förblir sur, fem och åtta lämnar tre blå kvar och lösningen förblir basisk</title>
+  <text x="75" y="40" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15">5 H<tspan font-size="0.7em" dy="0.35em">3</tspan><tspan dy="-0.35em">O</tspan><tspan font-size="0.7em" dy="-0.6em">+</tspan></text>
+  <text x="205" y="40" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15">5 OH<tspan font-size="0.7em" dy="-0.6em">−</tspan></text>
+  <rect x="30" y="52" width="90" height="100" rx="8" fill="none" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="52" cy="74" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M47 74H57M52 69V79" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="78" cy="74" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M73 74H83M78 69V79" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="104" cy="74" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M99 74H109M104 69V79" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="52" cy="100" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M47 100H57M52 95V105" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="78" cy="100" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M73 100H83M78 95V105" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="140" y="108" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26">+</text>
+  <rect x="160" y="52" width="90" height="100" rx="8" fill="none" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="182" cy="74" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M177 74H187" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="208" cy="74" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M203 74H213" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="234" cy="74" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M229 74H239" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="182" cy="100" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M177 100H187" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="208" cy="100" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M203 100H213" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="140" y1="166" x2="140" y2="190" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="140,200 135,190 145,190" fill="#2d4a35"/>
+  <text x="140" y="236" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">inga joner kvar</text>
+  <text x="140" y="300" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold">neutral</text>
+  <line x1="265" y1="24" x2="265" y2="306" stroke="#2d4a35" stroke-width="1"/>
+  <text x="325" y="40" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15">7 H<tspan font-size="0.7em" dy="0.35em">3</tspan><tspan dy="-0.35em">O</tspan><tspan font-size="0.7em" dy="-0.6em">+</tspan></text>
+  <text x="455" y="40" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15">5 OH<tspan font-size="0.7em" dy="-0.6em">−</tspan></text>
+  <rect x="280" y="52" width="90" height="100" rx="8" fill="none" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="302" cy="74" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M297 74H307M302 69V79" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="328" cy="74" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M323 74H333M328 69V79" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="354" cy="74" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M349 74H359M354 69V79" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="302" cy="100" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M297 100H307M302 95V105" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="328" cy="100" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M323 100H333M328 95V105" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="354" cy="100" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M349 100H359M354 95V105" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="302" cy="126" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M297 126H307M302 121V131" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="390" y="108" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26">+</text>
+  <rect x="410" y="52" width="90" height="100" rx="8" fill="none" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="432" cy="74" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M427 74H437" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="458" cy="74" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M453 74H463" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="484" cy="74" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M479 74H489" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="432" cy="100" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M427 100H437" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="458" cy="100" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M453 100H463" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="390" y1="166" x2="390" y2="190" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="390,200 385,190 395,190" fill="#2d4a35"/>
+  <circle cx="377" cy="228" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M372 228H382M377 223V233" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="403" cy="228" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M398 228H408M403 223V233" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="390" y="268" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">två röda kvar</text>
+  <text x="390" y="300" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold">fortfarande sur</text>
+  <line x1="515" y1="24" x2="515" y2="306" stroke="#2d4a35" stroke-width="1"/>
+  <text x="575" y="40" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15">5 H<tspan font-size="0.7em" dy="0.35em">3</tspan><tspan dy="-0.35em">O</tspan><tspan font-size="0.7em" dy="-0.6em">+</tspan></text>
+  <text x="705" y="40" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15">8 OH<tspan font-size="0.7em" dy="-0.6em">−</tspan></text>
+  <rect x="530" y="52" width="90" height="100" rx="8" fill="none" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="552" cy="74" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M547 74H557M552 69V79" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="578" cy="74" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M573 74H583M578 69V79" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="604" cy="74" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M599 74H609M604 69V79" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="552" cy="100" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M547 100H557M552 95V105" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="578" cy="100" r="10" fill="#C64B3A" stroke="#fff" stroke-width="1"/>
+  <path d="M573 100H583M578 95V105" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="640" y="108" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26">+</text>
+  <rect x="660" y="52" width="90" height="100" rx="8" fill="none" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="682" cy="74" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M677 74H687" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="708" cy="74" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M703 74H713" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="734" cy="74" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M729 74H739" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="682" cy="100" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M677 100H687" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="708" cy="100" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M703 100H713" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="734" cy="100" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M729 100H739" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="682" cy="126" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M677 126H687" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="708" cy="126" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M703 126H713" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="640" y1="166" x2="640" y2="190" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="640,200 635,190 645,190" fill="#2d4a35"/>
+  <circle cx="614" cy="228" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M609 228H619" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="640" cy="228" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M635 228H645" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="666" cy="228" r="10" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <path d="M661 228H671" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="640" y="268" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">tre blå kvar</text>
+  <text x="640" y="300" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold">fortfarande basisk</text>
+</svg>
