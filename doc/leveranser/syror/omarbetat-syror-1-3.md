@@ -3,6 +3,12 @@
 > Klistrad i chatten 2026-09-14, sparad av Code. Bygg: Standard-blocken transplanteras till avsnitt-1..3.md
 > (#### → ###, ▸ bort men meningarna kvar); kärnpunkter, Enkel och Fördjupning orörda. Bildinventeringen sist i
 > filen är ett förslag och inte byggd.
+>
+> **Räkningen är trettio tillägg, inte tretton** (Joachim 2026-09-14): utöver de 13 ▸-meningarna i leveransen fann
+> Codes meningsvisa diff 15 omärkta nya meningar och 2 förlängningar av befintliga meningar (1 A "…löses i vatten, och
+> det är därför…", 2 A "…hundra gånger, och mellan pH 3 och pH 6…"). Alla 17 är nu märkta med ▸ av Code – de
+> 15 meningarna med ▸ före meningen (även inne i stycken), de 2 förlängningarna med ▸ före det tillagda ledet.
+> Joachims beslut: behåll alla. Byggt som levererat.
 
 > **Ersätter Standard-blocken** i `avsnitt-1.md`, `avsnitt-2.md` och `avsnitt-3.md`.
 > Kärnpunkter, Enkel och Fördjupning är oförändrade.
@@ -66,10 +72,10 @@ Vätejonen är mycket reaktiv. Den har positiv laddning men inget elektronskal s
 ▸ Laddningen sitter därför koncentrerad på en oerhört liten yta, och det gör att jonen dras kraftigt
 till allt som har elektroner att erbjuda.
 
-Därför förekommer vätejoner inte fritt i en vattenlösning — de binder snabbt till andra partiklar. I
+Därför förekommer vätejoner inte fritt i en vattenlösning — de binder snabbt till andra partiklar. ▸ I
 praktiken hinner en vätejon aldrig vara ensam ens en bråkdel av en sekund.
 
-Detta är viktigt för att förstå vad som händer när en syra löses i vatten, och det är därför nästa del
+Detta är viktigt för att förstå vad som händer när en syra löses i vatten, ▸ och det är därför nästa del
 handlar om vad vätejonen faktiskt fastnar på.
 
 ---
@@ -83,7 +89,7 @@ handlar om vad vätejonen faktiskt fastnar på.
 En **syra** är ett ämne som kan avge vätejoner, H⁺. När en syra kommer i kontakt med vatten kan
 vätejoner lämna syrans partiklar och överföras till vattenmolekyler.
 
-Det är hela definitionen av en syra, och den säger ingenting om vad syran i övrigt består av. Ämnen med
+▸ Det är hela definitionen av en syra, och den säger ingenting om vad syran i övrigt består av. ▸ Ämnen med
 mycket olika uppbyggnad kan alla vara syror, så länge de kan avge en vätejon.
 
 ▸ Det är också därför syror ser så olika ut. Saltsyra är en enkel partikel med två atomer, medan
@@ -156,7 +162,7 @@ därför betydligt bättre än en utspädd.
 Syror kan alltså kännas igen på vad som händer när de kommer i kontakt med vatten: de avger vätejoner,
 vätejonerna binds till vattenmolekyler och det bildas oxoniumjoner.
 
-Det gäller oavsett hur syran ser ut i övrigt, och det är det som gör syror till en grupp trots att de
+▸ Det gäller oavsett hur syran ser ut i övrigt, och det är det som gör syror till en grupp trots att de
 är så olika.
 
 Alla syror beter sig däremot inte på exakt samma sätt. Olika syror avger sina vätejoner olika lätt.
@@ -192,7 +198,7 @@ vattenlösningar visas från 0 till 14.
 
 Ju större koncentrationen av oxoniumjoner är, desto **lägre pH** har lösningen och desto surare är den.
 
-Det är en riktning som är lätt att missta sig på. Talen går alltså åt motsatt håll mot surheten — en
+▸ Det är en riktning som är lätt att missta sig på. ▸ Talen går alltså åt motsatt håll mot surheten — en
 mycket sur lösning har ett lågt tal, inte ett högt.
 
 Magsyra har till exempel mycket lågt pH och är mycket sur. Citronsaft är också sur men har högre pH.
@@ -213,7 +219,7 @@ pH-skalan fungerar inte som en vanlig skala. **Ett steg på pH-skalan motsvarar 
 koncentrationen av oxoniumjoner.**
 
 En lösning med pH 3 har därför tio gånger högre koncentration av oxoniumjoner än en lösning med pH 4.
-Jämför man pH 3 med pH 5 är skillnaden hundra gånger, och mellan pH 3 och pH 6 tusen gånger.
+Jämför man pH 3 med pH 5 är skillnaden hundra gånger, ▸ och mellan pH 3 och pH 6 tusen gånger.
 
 Det betyder att en till synes liten skillnad i pH kan motsvara en stor skillnad i hur mycket
 oxoniumjoner som finns i lösningen.
@@ -232,7 +238,7 @@ gånger fler oxoniumjoner.
 För att ta reda på om en lösning är sur, neutral eller basisk kan man använda en **indikator**. En
 indikator är ett ämne som ändrar färg beroende på lösningens pH.
 
-Indikatorer är det snabbaste sättet att undersöka en lösning. De kräver ingen utrustning utöver ämnet
+▸ Indikatorer är det snabbaste sättet att undersöka en lösning. ▸ De kräver ingen utrustning utöver ämnet
 självt, och resultatet syns omedelbart.
 
 ▸ Nackdelen är att svaret blir ungefärligt. Vill man ha ett exakt värde behövs ett instrument, vilket
@@ -315,7 +321,7 @@ En stark syra kan därför vara utspädd och en svag syra kan vara koncentrerad.
 ▸ Skillnaden går att tänka på så här: styrkan är en egenskap hos själva syran och kan inte ändras.
 Koncentrationen är något du kan ändra genom att hälla i mer vatten.
 
-Det betyder att två lösningar med lika mycket syra kan innehålla helt olika många vätejoner, beroende
+▸ Det betyder att två lösningar med lika mycket syra kan innehålla helt olika många vätejoner, beroende
 på vilken syra det är.
 
 #### Hur hårt vätejonen sitter avgör styrkan
@@ -326,7 +332,7 @@ partikel. Sitter den löst avges den lätt, och syran är stark.
 ▸ Hur hårt den sitter beror i sin tur på hur syrans partikel är byggd. Det är därför styrkan är
 förutsägbar för den som känner till molekylens uppbyggnad, men inte något man kan gissa sig till.
 
-Indelningen i starka och svaga syror är därför inte godtycklig. Den speglar en verklig egenskap som går
+▸ Indelningen i starka och svaga syror är därför inte godtycklig. ▸ Den speglar en verklig egenskap som går
 att mäta, och som skiljer sig kraftigt mellan olika syror.
 
 ---
@@ -368,7 +374,7 @@ praktiken räknas den ändå som en stark syra, eftersom det första steget ger 
 
 Starka syror kan ge upphov till en hög koncentration av oxoniumjoner och därmed ett lågt pH.
 
-Hur lågt pH blir beror dock också på hur koncentrerad syralösningen är. En stark syra som är kraftigt
+Hur lågt pH blir beror dock också på hur koncentrerad syralösningen är. ▸ En stark syra som är kraftigt
 utspädd kan ha ett ganska måttligt pH, trots att varje syrapartikel avgett sin vätejon.
 
 ▸ Det är en av de vanligaste missuppfattningarna om syror: att stark automatiskt betyder farlig eller
@@ -401,7 +407,7 @@ bildas en oxoniumjon och en acetatjon:
 Här används en dubbelriktad pil, ⇌, eftersom reaktionen kan gå åt båda hållen. Ättiksyramolekyler avger
 vätejoner, men samtidigt kan vätejoner överföras tillbaka så att ättiksyra återbildas.
 
-Efter en tid uppstår en balans mellan de båda reaktionerna. Det betyder inte att allt står stilla — båda
+Efter en tid uppstår en balans mellan de båda reaktionerna. ▸ Det betyder inte att allt står stilla — båda
 reaktionerna pågår för fullt, men lika fort åt båda hållen.
 
 Det är detta som är grunden till att ättiksyra är en svag syra: bara en del av syramolekylerna har
@@ -429,7 +435,7 @@ syran reagerar med vatten.
 | Ord i genomsnitt per underdel | 216 | 320 |
 | Ord per rubrik | 34–63 | 95–105 |
 
-**Tretton ▸-meningar tillagda**, fördelade över alla åtta underdelarna.
+**Tretton ▸-meningar tillagda**, fördelade över alla åtta underdelarna. *(Rättat 2026-09-14: trettio – se huvudet.)*
 
 **Ingen befintlig formulering ändrad.**
 
