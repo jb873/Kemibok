@@ -5,13 +5,13 @@ const AVSNITT_REPETITION = {
   1: { slug: 'atomer-molekyler-joner', titel: 'Atomer, molekyler och joner', sub: 'materiens minsta byggstenar',
        dd: [{ slug: 'kvarkar', titel: 'Kvarkar', ikon: '⚛️' }],
        bilder: {
-         'atommodell-litium.webp': { aktiv: ['enkel', 'standard'], enkel: 'protoner och neutroner inne i kärnan, elektroner utanför', standard: 'I atomkärnan finns **protoner** och **neutroner**' },
-         'attrahera-repellera.webp': { aktiv: ['enkel', 'standard'], enkel: 'snäpper de ihop', standard: 'Vi säger att de **attraherar** varandra' },
+         'atommodell-litium.webp': { aktiv: ['enkel', 'standard'], enkel: 'protoner och neutroner inne i kärnan, elektroner utanför', standard: '**protoner** och **neutroner**.' },
+         'attrahera-repellera.webp': { aktiv: ['enkel', 'standard'], enkel: 'snäpper de ihop', standard: '**attraherar** varandra.' },
          'grundamne-forening.webp': { aktiv: ['enkel', 'standard'], enkel: 'bara genom att titta på formeln', standard: 'Genom att titta på vilka atomslag som ingår' },
          'litium-atom-och-jon.webp': { aktiv: ['enkel', 'standard'], enkel: 'Det lilla plustecknet visar att laddningen är positiv', standard: 'Plustecknet visar att partikeln har en positiv laddning' }
        },
        // faktarutan (leveransens ## FAKTARUTA-sektion) läggs efter ankarstycket och den figur som följer det
-       faktaruta: { enkel: 'snäpper de ihop', standard: 'Vi säger att de **attraherar** varandra' } },
+       faktaruta: { enkel: 'snäpper de ihop', standard: '**attraherar** varandra.' } },
   2: { slug: 'periodiska-systemet', titel: 'Det periodiska systemet', sub: 'hur atomslagen hänger ihop',
        dd: [{ slug: 'adelgaser-som-reagerar', titel: 'Ädelgaser som ändå reagerar', ikon: '💡' }],
        bilder: {
@@ -31,7 +31,7 @@ const AVSNITT_REPETITION = {
          'metallbindning.webp': { aktiv: ['enkel', 'standard'], enkel: 'jonerna ligger i ett hav av elektroner', standard: 'håller på så sätt samman metallen' },
          // underdel A, genererade SVG:er (bilder-svg.js); spec och bildguider levererade 2026-09-13
          'adelgasstruktur.svg': { aktiv: ['enkel', 'standard'], enkel: 'samma uppsättning som en ädelgas har', standard: 'reagerar därför mycket lite' },
-         'tre-vagar.svg': { aktiv: ['enkel', 'standard'], enkel: 'jonbindning, kovalent bindning och metallbindning', standard: 'på var i det periodiska systemet den' }
+         'tre-vagar.svg': { aktiv: ['enkel', 'standard'], enkel: 'jonbindning, kovalent bindning och metallbindning', standard: 'var i det periodiska systemet den står.' }
        } },
   4: { slug: 'vattnets-egenskaper', titel: 'Vattnets egenskaper', sub: 'därför beter sig vatten som det gör',
        dd: [{ slug: 'varfor-is-flyter', titel: 'Varför is flyter', ikon: '🧊' }, { slug: 'ytspanning', titel: 'Ytspänning i verkligheten', ikon: '💧' }],

@@ -9,6 +9,10 @@
 > kan ha ändrats efteråt). Formler i Unicode – konverteras vid bygge. Bildguider i bildguider.md.
 > Faktarutan (underdel A, Enkel + Standard) ligger i egen sektion; placering i bygg-avsnitt.js.
 
+> **Reviderat 2026-09-14:** underdel A: kärnpunkter (Standard) omskrivna som frågor och Standard-texten försedd med
+> påståenderubriker (###) och delade stycken enligt `reviderat-repetition.md`. Tillagda meningar (där märkta ▸) ligger här
+> utan märke. Övriga underdelar orörda.
+
 ---
 
 ## Underdelar
@@ -69,11 +73,11 @@
 
 ## Kärnpunkter (Standard)
 
-- En atom består av en **atomkärna** med protoner och neutroner, och **elektroner** runt kärnan
-- **Antalet protoner** bestämmer vilket atomslag atomen tillhör
-- Lika laddningar **repellerar** varandra, olika laddningar **attraherar** varandra
-- En hel atom är **neutral** — lika många protoner som elektroner
-- **Valenselektronerna** sitter ytterst och avgör hur atomen reagerar
+- Vad består en atom av?
+- Vilka laddningar har partiklarna?
+- Vad händer när laddningar möts?
+- Varför faller inte atomkärnan isär?
+- Vad bestämmer vilket ämne en atom är?
 
 ---
 
@@ -135,27 +139,66 @@ Varje atomslag har en kort beteckning. Väte skrivs **H**, syre **O**, kol **C**
 
 ## A — STANDARD
 
-All materia omkring oss är uppbyggd av mycket små partiklar. Luften vi andas, vattnet vi dricker, maten vi äter och våra egna kroppar består av atomer. Atomer är så små att de inte går att se med vanliga mikroskop. Ändå vet vi mycket om hur de är uppbyggda.
+### All materia består av atomer
 
-En atom består av en **atomkärna** och **elektroner** som rör sig runt kärnan. I atomkärnan finns **protoner** och **neutroner**.
+All materia omkring oss är uppbyggd av mycket små partiklar. Luften vi andas, vattnet vi dricker, maten
+vi äter och våra egna kroppar består av atomer. Atomer är så små att de inte går att se med vanliga
+mikroskop. Ändå vet vi mycket om hur de är uppbyggda.
 
-Protonerna har positiv elektrisk laddning. Elektronerna har negativ elektrisk laddning. Neutronerna saknar laddning och är därför neutrala.
+### Atomen har en kärna och elektroner
 
-Elektriska laddningar påverkar varandra på två sätt. Två laddningar med samma tecken — två positiva eller två negativa — stöter bort varandra. Vi säger att de **repellerar** varandra. Två laddningar med olika tecken — en positiv och en negativ — dras mot varandra. Vi säger att de **attraherar** varandra.
+En atom består av en **atomkärna** och **elektroner** som rör sig runt kärnan. I atomkärnan finns
+**protoner** och **neutroner**.
 
-Det är en av kemins grundregler. Den förklarar inte bara hur atomen hålls ihop, utan också mycket av det vi kommer att arbeta med framöver.
+Protonerna har positiv elektrisk laddning. Elektronerna har negativ elektrisk laddning. Neutronerna
+saknar laddning och är därför neutrala.
 
-Men den väcker också en fråga. I atomkärnan sitter flera protoner tätt tillsammans, och alla är positiva — de borde repellera varandra och driva isär kärnan. Att det inte sker beror på att det finns en annan kraft som verkar inne i kärnan. Den är mycket stark, men bara på extremt korta avstånd, och den håller ihop både protoner och neutroner. Neutronerna bidrar till den kraften utan att tillföra någon laddning, och det är därför de behövs.
+### Lika laddningar repellerar, olika attraherar
 
-Det är antalet protoner i atomkärnan som bestämmer vilket **atomslag** atomen tillhör. Alla väteatomer har en proton. Alla kolatomer har sex protoner, och alla syreatomer har åtta. Atomer med samma antal protoner tillhör alltså samma atomslag.
+Elektriska laddningar påverkar varandra på två sätt. Två laddningar med samma tecken — två positiva
+eller två negativa — stöter bort varandra. Vi säger att de **repellerar** varandra.
 
-En vanlig atom är elektriskt neutral. Det betyder att den har lika många protoner som elektroner. En syreatom har åtta protoner och åtta elektroner. De positiva och negativa laddningarna tar ut varandra.
+Två laddningar med olika tecken — en positiv och en negativ — dras mot varandra. Vi säger att de
+**attraherar** varandra.
 
-Neutronerna påverkar inte atomens laddning. Däremot kan atomer av samma atomslag ha olika många neutroner. Sådana varianter av samma atomslag kallas **isotoper**.
+Det är en av kemins grundregler. Den förklarar inte bara hur atomen hålls ihop, utan också mycket av det
+vi kommer att arbeta med framöver.
 
-Elektronerna befinner sig på olika avstånd från kärnan. De elektroner som finns längst ut kallas **valenselektroner**. De är särskilt viktiga inom kemin, eftersom det är de som avgör hur atomen reagerar med andra atomer. Vi återkommer till dem när vi arbetar med det periodiska systemet och med kemiska bindningar.
+### En annan kraft håller ihop kärnan
 
-Varje atomslag har en egen kemisk beteckning. Väte skrivs H, syre O, kol C och natrium Na. Alla atomslag finns ordnade i det periodiska systemet.
+Men den väcker också en fråga. I atomkärnan sitter flera protoner tätt tillsammans, och alla är positiva
+— de borde repellera varandra och driva isär kärnan.
+
+Att det inte sker beror på att det finns en annan kraft som verkar inne i kärnan. Den är mycket stark,
+men bara på extremt korta avstånd, och den håller ihop både protoner och neutroner. Neutronerna bidrar
+till den kraften utan att tillföra någon laddning, och det är därför de behövs.
+
+### Antalet protoner bestämmer atomslaget
+
+Det är antalet protoner i atomkärnan som bestämmer vilket **atomslag** atomen tillhör. Alla väteatomer
+har en proton. Alla kolatomer har sex protoner, och alla syreatomer har åtta. Atomer med samma antal
+protoner tillhör alltså samma atomslag.
+
+### En hel atom är neutral
+
+En vanlig atom är elektriskt neutral. Det betyder att den har lika många protoner som elektroner. En
+syreatom har åtta protoner och åtta elektroner. De positiva och negativa laddningarna tar ut varandra.
+
+Neutronerna påverkar inte atomens laddning. Däremot kan atomer av samma atomslag ha olika många
+neutroner. Sådana varianter av samma atomslag kallas **isotoper**.
+
+### Valenselektronerna sitter ytterst
+
+Elektronerna befinner sig på olika avstånd från kärnan. De elektroner som finns längst ut kallas
+**valenselektroner**. De är särskilt viktiga inom kemin, eftersom det är de som avgör hur atomen reagerar
+med andra atomer.
+
+Vi återkommer till dem när vi arbetar med det periodiska systemet och med kemiska bindningar.
+
+### Varje atomslag har en beteckning
+
+Varje atomslag har en egen kemisk beteckning. Väte skrivs H, syre O, kol C och natrium Na. Alla atomslag
+finns ordnade i det periodiska systemet.
 
 ---
 

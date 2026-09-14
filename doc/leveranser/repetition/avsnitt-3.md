@@ -8,6 +8,10 @@
 > Formler i Unicode — konverteras vid leverans. Fyra underdelar, en per bindningstyp plus en
 > inledande.
 
+> **Reviderat 2026-09-14:** underdel A och D: kärnpunkter (Standard) omskrivna som frågor och Standard-texten försedd med
+> påståenderubriker (###) och delade stycken enligt `reviderat-repetition.md`. Tillagda meningar (där märkta ▸) ligger här
+> utan märke. Övriga underdelar orörda.
+
 ---
 
 ## Underdelar
@@ -124,11 +128,11 @@ valenselektroner som inte tillhör någon enskild atom.
 
 ## Kärnpunkter (Standard)
 
-- **Kemisk bindning** är det som håller samman atomer eller joner i ett ämne
-- **Valenselektronerna** avgör hur och om en atom binder
-- **Ädelgasstruktur** — fullt yttersta skal — är det stabila tillståndet
-- Atomer kan **avge**, **ta upp** eller **dela** elektroner
-- Det ger jonbindning, kovalent bindning och metallbindning
+- Vad håller ihop atomerna i ett ämne?
+- Vilka elektroner avgör om en atom binder?
+- Vad är ädelgasstruktur?
+- Vilka tre vägar finns dit?
+- Vad avgör vilken väg en atom tar?
 
 ---
 
@@ -160,20 +164,34 @@ om: jonbindning, kovalent bindning och metallbindning.
 
 ## A — STANDARD
 
-Atomer kan reagera med varandra och bilda nya ämnen. Det som håller ihop atomerna eller jonerna i
-ett ämne kallas **kemiska bindningar**.
+### Kemisk bindning håller ihop ämnen
 
-För att förstå varför bindningar bildas behöver man titta på atomernas **valenselektroner**,
-alltså elektronerna i valensskalet.
+Atomer kan reagera med varandra och bilda nya ämnen. Det som håller ihop atomerna eller jonerna i ett
+ämne kallas **kemiska bindningar**.
 
-Atomer strävar mot ett stabilt yttersta elektronskal. För många atomslag innebär det att det
-yttersta skalet innehåller åtta elektroner, vilket brukar kallas **ädelgasstruktur** — ädelgaserna
-har redan fullt yttersta skal och reagerar därför mycket lite.
+### Valenselektronerna avgör
 
-Atomer kan nå ett stabilare tillstånd på tre olika sätt: de kan **avge elektroner**, **ta upp
-elektroner** eller **dela elektroner** med andra atomer. Vilken väg som är möjlig beror på hur
-många valenselektroner atomen har från början, och därmed på var i det periodiska systemet den
-står.
+För att förstå varför bindningar bildas behöver man titta på atomernas **valenselektroner**, alltså
+elektronerna i valensskalet.
+
+### Ädelgasstruktur är det stabila tillståndet
+
+Atomer strävar mot ett stabilt yttersta elektronskal. För många atomslag innebär det att det yttersta
+skalet innehåller åtta elektroner, vilket brukar kallas **ädelgasstruktur** — ädelgaserna har redan fullt
+yttersta skal och reagerar därför mycket lite.
+
+### Tre vägar leder dit
+
+Atomer kan nå ett stabilare tillstånd på tre olika sätt: de kan **avge elektroner**, **ta upp elektroner**
+eller **dela elektroner** med andra atomer.
+
+Vilken väg som är billigast beror på hur många valenselektroner atomen har. Har den få är det lättast
+att avge dem; saknar den bara någon enstaka är det lättast att ta upp.
+
+Vilken väg som är möjlig beror alltså på hur många valenselektroner atomen har från början, och därmed på
+var i det periodiska systemet den står.
+
+### Tre vägar ger tre bindningstyper
 
 De tre vägarna leder till tre typer av kemiska bindningar: jonbindning, kovalent bindning och
 metallbindning.
@@ -544,11 +562,11 @@ skala vi själva ritat in.
 
 ## Kärnpunkter (Standard)
 
-- **Metallbindning** håller samman metallatomer
-- Valenselektronerna är **inte bundna** till enskilda atomer
-- Metallen kan beskrivas som positiva joner omgivna av rörliga elektroner
-- De rörliga elektronerna förklarar ledningsförmåga för både **ström och värme**
-- De förklarar också metallernas **formbarhet**
+- Vad håller ihop atomerna i en metall?
+- Var finns valenselektronerna?
+- Hur kan man beskriva en metalls uppbyggnad?
+- Varför leder metaller ström och värme?
+- Varför går metaller att forma?
 
 ---
 
@@ -590,13 +608,21 @@ eftersom lika laddningar då hamnar bredvid varandra. I en metall spelar förskj
 
 ## D — STANDARD
 
+### Metaller hålls ihop av en egen sorts bindning
+
 Metaller hålls samman av en tredje typ av bindning som kallas **metallbindning**.
 
-I en metall sitter metallatomerna mycket tätt tillsammans. Valenselektronerna är inte bundna till
-någon bestämd atom utan kan röra sig mellan många atomer samtidigt.
+### Valenselektronerna tillhör ingen enskild atom
+
+I en metall sitter metallatomerna mycket tätt tillsammans. Valenselektronerna är inte bundna till någon
+bestämd atom utan kan röra sig mellan många atomer samtidigt.
+
+### Positiva joner i ett hav av elektroner
 
 Man kan därför beskriva metallen som positiva metalljoner omgivna av rörliga elektroner. De negativa
 elektronerna dras till de positiva metalljonerna och håller på så sätt samman metallen.
+
+### De rörliga elektronerna leder ström och värme
 
 De rörliga elektronerna förklarar flera av metallernas typiska egenskaper.
 
@@ -605,10 +631,25 @@ Metaller **leder elektricitet** bra, eftersom elektroner redan kan röra sig gen
 Metaller **leder värme** bra, av samma skäl — de rörliga elektronerna transporterar energi genom
 metallen.
 
+### Elektronhavet gör metallen formbar
+
 Metaller kan dessutom **böjas och formas** utan att bindningarna bryts. När lager av metalljoner
 förskjuts i förhållande till varandra finns elektronerna fortfarande överallt och håller samman
-strukturen. Det är skillnaden mot ett jongitter, där en förskjutning ställer lika laddningar mot
-varandra och får kristallen att spricka.
+strukturen.
+
+Det är skillnaden mot ett jongitter, där en förskjutning ställer lika laddningar mot varandra och får
+kristallen att spricka.
+
+| | Jonbindning | Kovalent bindning | Metallbindning |
+|---|---|---|---|
+| **Mellan vilka** | Metall och icke-metall | Två icke-metaller | Metallatomer |
+| **Vad händer med elektronerna** | Flyttar över | Delas | Rör sig fritt |
+| **Vad som håller ihop** | Attraktion mellan joner | Gemensamt elektronpar | Elektroner mellan joner |
+| **Bildar** | Jongitter | Molekyler | Metallgitter |
+| **Leder ström** | Nej som fast, ja i lösning | Nej | Ja |
+| **Vid slag** | Spricker | — | Bucklas |
+
+Tabellen visar att alla tre bindningstyperna bygger på samma sak: attraktion mellan positiva och negativa laddningar. Skillnaden ligger i var elektronerna hamnar.
 
 ---
 
