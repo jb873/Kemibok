@@ -5,8 +5,8 @@
 > filen föreslår ingen ny bild.
 >
 > **Codes meningsvisa diff 2026-09-14:** 27 ▸-märkta tillägg som utlovat, inga omärkta. En befintlig mening i 1 B saknas
-> i den nya texten: "När ammoniak omvandlas i mark och vatten kan processerna bidra till försurning." – byggt som levererat,
-> rapporterat till Joachim.
+> i den nya texten: "När ammoniak omvandlas i mark och vatten kan processerna bidra till försurning." – återinsatt av Code på
+> Joachims uppdrag 2026-09-14 (försvann av misstag vid omarbetningen).
 
 > **Ersätter Standard-blocken** i `avsnitt-1.md` till `avsnitt-3.md`.
 > Kärnpunkter, Enkel och Fördjupning är oförändrade.
@@ -122,7 +122,8 @@ I atmosfären kan kväveoxiderna reagera vidare och bland annat bilda **salpeter
 och salpetersyra når mark och vatten ökar mängden vätejoner och därmed försurningen.
 
 Det finns även andra ämnen som kan bidra till försurning. Ett viktigt exempel är **ammoniak**, som framför
-allt kommer från jordbruket. I detta kapitel ligger dock tyngdpunkten på svaveldioxid och kväveoxider,
+allt kommer från jordbruket. När ammoniak omvandlas i mark och vatten kan processerna bidra till
+försurning. I detta kapitel ligger dock tyngdpunkten på svaveldioxid och kväveoxider,
 eftersom de hade en central roll i det historiska problemet.
 
 ---

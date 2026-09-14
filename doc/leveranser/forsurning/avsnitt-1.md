@@ -387,7 +387,8 @@ I atmosfären kan kväveoxiderna reagera vidare och bland annat bilda **salpeter
 och salpetersyra når mark och vatten ökar mängden vätejoner och därmed försurningen.
 
 Det finns även andra ämnen som kan bidra till försurning. Ett viktigt exempel är **ammoniak**, som framför
-allt kommer från jordbruket. I detta kapitel ligger dock tyngdpunkten på svaveldioxid och kväveoxider,
+allt kommer från jordbruket. När ammoniak omvandlas i mark och vatten kan processerna bidra till
+försurning. I detta kapitel ligger dock tyngdpunkten på svaveldioxid och kväveoxider,
 eftersom de hade en central roll i det historiska problemet.
 
 ---
