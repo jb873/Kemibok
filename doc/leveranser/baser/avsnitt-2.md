@@ -64,6 +64,28 @@ reagerar bara delvis med vattnet, och en stor del av molekylerna finns kvar.
 - Vad som finns i det högra glaset som inte finns i det vänstra
 - Jämför med bilden av stark och svag syra — vad är likt, och vad skiljer?
 
+### `en-eller-tva-hydroxid.svg` — underdel B, Enkel + Standard
+
+Ur bildinventeringen i omarbetat-baser.md; texter ur bildtexter-nya-svg.md (2026-09-14). Genererad i bilder-svg.js.
+
+> Två halvor med lodrät skiljelinje. Vänster: NaOH, pil ner, Na⁺ (violett) + OH⁻ (blå), "en hydroxidjon".
+> Höger: Ca(OH)₂, pil ner, Ca²⁺ (orange) + två OH⁻, "två hydroxidjoner".
+
+**Alt-text:** Två halvor. Till vänster natriumhydroxid som delas i en violett natriumjon och en blå
+hydroxidjon. Till höger kalciumhydroxid som delas i en orange kalciumjon och två blå hydroxidjoner.
+
+**Bildtext Enkel:** Natriumhydroxid ger en hydroxidjon. Kalciumhydroxid ger två.
+
+**Bildtext Standard:** Antalet hydroxidjoner följer av den positiva jonens laddning. En tvåvärd jon kräver
+två envärda för att balansera.
+
+### Bildguide (endast Enkel)
+
+- Räkna de blå jonerna i vardera halvan
+- Vilken laddning står på natriumjonen?
+- Vilken laddning står på kalciumjonen?
+- Vad har laddningen med antalet blå joner att göra?
+
 ---
 
 # UNDERDEL A — Vad betyder stark och svag?

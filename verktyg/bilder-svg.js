@@ -21,6 +21,7 @@
 //   ph-skalan.svg                       delkapitel Syror 2 A – skala 0–14 med exempel (syror/img/)
 //   fyra-kombinationerna.svg            delkapitel Syror 4 B – stark/svag × koncentrerad/utspädd (syror/img/)
 //   vatejonens-storlek, indikatorfarger, siv-regeln   delkapitel Syror 1 A, 2 B, 4 C (syror/img/), bildinventering 2026-09-14
+//   hydroxid-plus-vate, en-eller-tva-hydroxid          delkapitel Baser 1 A, 2 B (baser/img/), bildinventering 2026-09-14
 //   molekyl-mot-gitter, formelenhet, laddningsbalans, sammansatt-jon, saltbildning, havsvatten
 //                                       delkapitel Salter 1 B, 1 C, 2 A, 2 B, 4 A, 4 C (salter/img/)
 //
@@ -840,7 +841,58 @@ ${STOPP.filter(([p]) => p >= 3 && p <= 8).map(([ph, f]) => `      <stop offset="
   }
 }
 
-console.log('skrev 27 svg (8 repetition, 6 syror, 1 baser, 2 neutralisation, 4 försurning, 6 salter)', path.relative(path.join(__dirname, '..'), UT));
+
+// ---------- 28–29. Baser: två SVG:er ur bildinventeringen (omarbetat-baser.md, Joachims beslut 2026-09-14) ----------
+// hydroxid-plus-vate (1 A), en-eller-tva-hydroxid (2 B). Färger ur bokens jonpalett: syre #C0392B, väte #f5f0e4,
+// vätejon #C64B3A, hydroxid #3D6BA8, natrium #9b7cc4, kalcium #d9944a, stavar #8A8A8A, konturer/text INK.
+{
+  const UT8 = path.join(__dirname, '..', 'kapitel', 'syror-och-baser', 'delkapitel', 'baser', 'img');
+  const HJ = '#C64B3A', OHF = '#3D6BA8', NA = '#9b7cc4', CA = '#d9944a';
+  const txt = (x, y, t, extra = '') => `  <text x="${r2(x)}" y="${r2(y)}" fill="${INK}" ${/font-size=/.test(extra) ? '' : 'font-size="17"'} ${/text-anchor=/.test(extra) ? '' : 'text-anchor="middle"'} ${FONT} ${extra}>${t}</text>\n`;
+  const sup = (b, t) => `${b}<tspan font-size="0.7em" dy="-0.6em">${t}</tspan>`;
+  const jon = (x, y, r, farg, inner) => `  <circle cx="${r2(x)}" cy="${r2(y)}" r="${r}" fill="${farg}" stroke="#fff" stroke-width="1.5"/>\n` +
+    `  <text x="${r2(x)}" y="${r2(y + r * 0.32)}" fill="#fff" font-size="${r2(r * 0.9)}" font-weight="bold" text-anchor="middle" ${FONT}>${inner}</text>\n`;
+  const hak = (L, R, T, B, laddning) => `  <path d="M${L + 12} ${T}H${L}V${B}H${L + 12}" fill="none" stroke="${INK}" stroke-width="2"/>\n  <path d="M${R - 12} ${T}H${R}V${B}H${R - 12}" fill="none" stroke="${INK}" stroke-width="2"/>\n` + txt(R + 14, T + 8, laddning, 'font-size="20" font-weight="bold"');
+
+  // ----- 28. hydroxid-plus-vate.svg: [OH]⁻ + H⁺ → H₂O -----
+  {
+    const W = 700, H = 250, Y = 110;
+    let ut = '';
+    // hydroxidjon: syre med en väteatom, stav, hakparentes med −
+    ut += `  <line x1="120" y1="${Y}" x2="168" y2="${Y}" stroke="#8A8A8A" stroke-width="5" stroke-linecap="round"/>\n`;
+    ut += `  <circle cx="120" cy="${Y}" r="30" fill="${SYRE}" stroke="${INK}" stroke-width="1.5"/>\n  <circle cx="172" cy="${Y}" r="18" fill="${PAPPER}" stroke="${INK}" stroke-width="1.5"/>\n`;
+    ut += hak(70, 214, Y - 52, Y + 52, '−');
+    ut += txt(146, Y + 88, 'hydroxidjon', 'font-size="15" font-style="italic"') + txt(146, Y + 110, sup('OH', '−'), 'font-size="18"');
+    ut += txt(272, Y + 10, '+', 'font-size="34"');
+    ut += jon(330, Y, 13, HJ, '+');
+    ut += txt(330, Y + 88, 'vätejon', 'font-size="15" font-style="italic"') + txt(330, Y + 110, sup('H', '+'), 'font-size="18"');
+    ut += pil(380, Y, 450, Y, INK, 3);
+    ut += vatten(560, Y - 10, 30, 18, 46, { farg: '#8A8A8A', bredd: 5 }).ut;
+    ut += txt(560, Y + 88, 'vattenmolekyl', 'font-size="15" font-style="italic"') + txt(560, Y + 110, 'H<tspan font-size="0.7em" dy="0.35em">2</tspan><tspan dy="-0.35em">O</tspan>', 'font-size="18"');
+    fs.writeFileSync(path.join(UT8, 'hydroxid-plus-vate.svg'), svg(W, H,
+      'En hydroxidjon inom hakparentes med minustecken, ett plustecken, en liten vätejon med plustecken, en pil, och till höger en vattenmolekyl utan laddning', ut));
+  }
+  // ----- 29. en-eller-tva-hydroxid.svg: NaOH → Na⁺ + OH⁻ | Ca(OH)₂ → Ca²⁺ + 2 OH⁻ -----
+  {
+    const W = 760, H = 250, MITT = 380, Y = 100, r = 24;
+    let ut = `  <line x1="${MITT}" y1="20" x2="${MITT}" y2="${H - 20}" stroke="${INK}" stroke-width="2"/>\n`;
+    const halva = (x0, formel, katFarg, katEtikett, antalOH, rubrik) => {
+      let s = txt(x0 + 170, 40, formel, 'font-size="21" font-weight="bold"');
+      s += pil(x0 + 170, 58, x0 + 170, 82, INK, 2.5);
+      const n = 1 + antalOH, mellan = 2 * r + 18, start = x0 + 170 - ((n - 1) * mellan) / 2;
+      s += jon(start, Y + 30, r, katFarg, katEtikett);
+      for (let k = 0; k < antalOH; k++) { s += jon(start + (k + 1) * mellan, Y + 30, r, OHF, sup('OH', '−')); }
+      s += txt(x0 + 170, Y + 100, rubrik, 'font-size="16" font-style="italic"');
+      return s;
+    };
+    ut += halva(0, 'NaOH', NA, sup('Na', '+'), 1, 'en hydroxidjon');
+    ut += halva(MITT, 'Ca(OH)<tspan font-size="0.7em" dy="0.35em">2</tspan>', CA, sup('Ca', '2+'), 2, 'två hydroxidjoner');
+    fs.writeFileSync(path.join(UT8, 'en-eller-tva-hydroxid.svg'), svg(W, H,
+      'Två halvor. Till vänster natriumhydroxid som delas i en violett natriumjon och en blå hydroxidjon. Till höger kalciumhydroxid som delas i en orange kalciumjon och två blå hydroxidjoner', ut));
+  }
+}
+
+console.log('skrev 29 svg (8 repetition, 6 syror, 3 baser, 2 neutralisation, 4 försurning, 6 salter)', path.relative(path.join(__dirname, '..'), UT));
 
 
 // ---------- 19–24. Salter: sex SVG:er (leverans 2026-09-14, salter-avsnitt-1-2-komplett.md / -3-4-komplett.md) ----------

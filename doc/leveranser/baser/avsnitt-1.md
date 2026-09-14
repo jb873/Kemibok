@@ -65,6 +65,28 @@ inga hydroxidjoner alls utan bildar dem genom att ta upp en proton från vatten.
 - Vad som blir kvar av vattenmolekylen när den lämnat ifrån sig en vätejon
 - Att resultatet blir **samma sorts jon** i båda halvorna
 
+### `hydroxid-plus-vate.svg` — underdel A, Enkel + Standard
+
+Ur bildinventeringen i omarbetat-baser.md; texter ur bildtexter-nya-svg.md (2026-09-14). Genererad i bilder-svg.js.
+
+> Hydroxidjon (syre + väte, kulpinn) inom hakparentes med −, plustecken, liten vätejon med +, pil, vattenmolekyl.
+> Etiketter under: hydroxidjon OH⁻, vätejon H⁺, vattenmolekyl H₂O.
+
+**Alt-text:** En hydroxidjon med en röd syreatom och en vit väteatom inom hakparentes med minustecken, ett
+plustecken, en liten vätejon med plustecken, en pil, och till höger en vattenmolekyl utan laddning.
+
+**Bildtext Enkel:** Två laddade partiklar blir en oladdad. Det är hela grunden för neutralisation.
+
+**Bildtext Standard:** Hydroxidjonens fria elektronpar tar emot protonen. Laddningarna tar ut varandra och
+resultatet är vatten.
+
+### Bildguide (endast Enkel)
+
+- Vilken laddning har partikeln till vänster?
+- Vilken laddning har den mittersta?
+- Vilken laddning har vattenmolekylen till höger?
+- Hur många atomer finns det före och efter pilen?
+
 ---
 
 # UNDERDEL A — Hydroxidjonen

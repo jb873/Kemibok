@@ -75,9 +75,11 @@ const AVSNITT_SYROR = {
 // (doc/leveranser/syror/starka-och-svaga.md) länkas från avsnitt 2 A via baser/djupdykningar.md.
 const AVSNITT_BASER = {
   1: { dd: [],
-       bilder: { 'tva-vagar-till-bas.svg': { aktiv: ['enkel', 'standard'], enkel: 'NH₃ + H₂O ⇌ NH₄⁺ + OH⁻', standard: 'NH₃ + H₂O ⇌ NH₄⁺ + OH⁻' } } },   // efter reaktionsraden
+       bilder: { 'tva-vagar-till-bas.svg': { aktiv: ['enkel', 'standard'], enkel: 'NH₃ + H₂O ⇌ NH₄⁺ + OH⁻', standard: 'NH₃ + H₂O ⇌ NH₄⁺ + OH⁻' },   // efter reaktionsraden
+                 'hydroxid-plus-vate.svg': { aktiv: ['enkel', 'standard'], enkel: 'H⁺ + OH⁻ → H₂O', standard: 'H⁺ + OH⁻ → H₂O' } } },   // bildinventering 2026-09-14, efter formeln
   2: { dd: [{ slug: 'starka-och-svaga', titel: 'Starka och svaga syror och baser', ikon: '⚖️' }],
-       bilder: { 'stark-och-svag-bas.webp': { aktiv: ['enkel', 'standard'], enkel: 'men helt olika många hydroxidjoner', standard: 'bara till en del med vattnet' } } },
+       bilder: { 'stark-och-svag-bas.webp': { aktiv: ['enkel', 'standard'], enkel: 'men helt olika många hydroxidjoner', standard: 'bara till en del med vattnet' },
+                 'en-eller-tva-hydroxid.svg': { aktiv: ['enkel', 'standard'], enkel: 'Kalciumjonen har laddningen plus två', standard: 'Det beror på att kalciumjonen har' } } },   // bildinventering 2026-09-14
   3: { dd: [],
        bilder: { 'ph-skalan.svg': { fil: '../../syror/img/ph-skalan.svg', aktiv: ['enkel', 'standard'], enkel: 'Propplösare kan ligga över 13', standard: 'Ju större överskott av hydroxidjoner',
          spec: { underdel: 'a', alt: 'En pH-skala från 0 till 14, färglagd från rött vid låga värden genom grönt vid 7 till blått vid höga. Magsyra ligger vid 1,5, citronsaft vid 2,5, kaffe vid 5, rent vatten vid 7 och tvållösning vid 9,5. Under skalan står surt till vänster, neutralt vid 7 och basiskt till höger.',
