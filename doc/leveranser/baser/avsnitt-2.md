@@ -10,6 +10,9 @@
 > **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
 > påståenderubriker (###) och delade stycken enligt `reviderat-baser.md`. Tillagda meningar (där märkta ▸) ligger här
 > utan märke. Enkel och Fördjupning oförändrade.
+>
+> **Omarbetat 2026-09-14 (andra omgången):** Standard-blocken ersatta enligt `omarbetat-baser.md` (tre rubriker per
+> underdel, utbyggd text; ▸-meningar inlagda utan märke). Kärnpunkter, Enkel och Fördjupning orörda.
 
 ---
 
@@ -128,33 +131,37 @@ Precis som syror kan baser delas in i **starka** och **svaga** baser.
 Styrkan hos en bas handlar inte om hur mycket bas det finns i en lösning. Den handlar om **hur
 fullständigt basen ger upphov till hydroxidjoner i vatten**.
 
-### För hydroxidbaser handlar det om upplösning
+Det är samma princip som hos syrorna, fast spegelvänd. Där handlade det om hur stor andel av
+vätejonerna som avgavs; här om hur stor andel av hydroxidjonerna som frigörs eller bildas.
+
+### De två vägarna ger olika sorters styrka
 
 För en bas som redan innehåller hydroxidjoner handlar det om hur fullständigt ämnet delas upp i sina
 joner när det löses. Att ett ämne delas upp i fria joner i lösning kallas att det **dissocierar**.
 
-### För övriga handlar det om hur många som reagerar
-
 För en bas som inte innehåller hydroxidjoner handlar det i stället om hur stor andel av molekylerna som
 reagerar med vattnet.
 
-### Stark ger nästan alla, svag bara en del
+En stark bas ger i praktiken fullständigt upphov till hydroxidjoner i den mängd som löser sig. En svag bas
+reagerar däremot bara till en del med vattnet.
 
-En stark bas ger i praktiken fullständigt upphov till hydroxidjoner i den mängd som löser sig. En svag
-bas reagerar däremot bara till en del med vattnet.
+Skillnaden mellan de två sorterna är därför inte bara en gradskillnad. Den ena handlar om upplösning,
+den andra om en kemisk jämvikt.
 
 ### Styrka och koncentration måste hållas isär
 
 Det är därför viktigt att skilja mellan **styrka** och **koncentration**.
 
-En lösning kan till exempel innehålla en stark bas men vara mycket utspädd. Den innehåller då få mol
-bas per liter, trots att basen är stark.
+En lösning kan till exempel innehålla en stark bas men vara mycket utspädd. Den innehåller då få mol bas
+per liter, trots att basen är stark.
 
 På samma sätt kan en lösning innehålla mycket av en svag bas. Lösningen är då koncentrerad, trots att
 basen är svag.
 
-**Stark och svag beskriver alltså basens sätt att reagera — koncentrerad och utspädd beskriver hur
-mycket ämne som finns i lösningen.**
+**Stark och svag beskriver alltså basens sätt att reagera — koncentrerad och utspädd beskriver hur mycket
+ämne som finns i lösningen.**
+
+Samma fyra kombinationer är möjliga som för syror, och de tas upp i avsnitt 3.
 
 ---
 
@@ -271,7 +278,8 @@ Svag handlar om vad som händer med det som faktiskt löst sig.
 
 Natriumhydroxid, kaliumhydroxid och kalciumhydroxid är exempel på starka baser.
 
-### Natrium- och kaliumhydroxid ger en hydroxidjon var
+Alla tre hör till den första av de två vägarna: de innehåller hydroxidjoner redan i fast form, och
+jonerna behöver bara frigöras.
 
 När natriumhydroxid löses i vatten delas ämnet upp i sina joner:
 
@@ -283,7 +291,7 @@ Kaliumhydroxid fungerar på motsvarande sätt:
 
 De hydroxidjoner som finns i ämnet blir fria i lösningen.
 
-### Kalciumhydroxid ger två
+### Kalciumhydroxid ger två hydroxidjoner
 
 Kalciumhydroxid fungerar på liknande sätt:
 
@@ -291,6 +299,9 @@ Kalciumhydroxid fungerar på liknande sätt:
 
 Varje formelenhet kalciumhydroxid kan alltså ge två hydroxidjoner. Det beror på att kalciumjonen har
 laddningen 2+, och två hydroxidjoner med laddningen 1− vardera behövs för att helheten ska bli neutral.
+
+Lika många formelenheter kalciumhydroxid ger därför dubbelt så många hydroxidjoner som natriumhydroxid.
+Det spelar roll när man ska räkna ut hur mycket bas som behövs vid en neutralisation.
 
 ### Svårlöslig är inte samma sak som svag
 
@@ -300,6 +311,9 @@ vatten. Det betyder att endast en begränsad mängd kalciumhydroxid kan lösas.
 Men den del som faktiskt löser sig dissocierar i princip fullständigt till joner.
 
 Kalciumhydroxid är därför en **stark bas trots att den är svårlöslig**.
+
+Svårlöslighet handlar om **hur mycket** som går i lösning. Styrka handlar om vad som händer med det som
+faktiskt löst sig. De två frågorna är oberoende av varandra.
 
 Svårlöslig och svag betyder alltså inte samma sak.
 
@@ -415,7 +429,8 @@ alltså som en svag bas — och det är därför det används mot halsbränna oc
 
 Ammoniak är ett viktigt exempel på en svag bas.
 
-### Den tar en vätejon från vattnet
+Den hör till den andra vägen: ammoniakmolekylen innehåller ingen hydroxidjon alls utan måste skapa den
+ur vattnet.
 
 När ammoniak löses i vatten tar vissa ammoniakmolekyler upp en vätejon från vatten:
 
@@ -424,25 +439,32 @@ När ammoniak löses i vatten tar vissa ammoniakmolekyler upp en vätejon från 
 Men alla ammoniakmolekyler reagerar inte. I lösningen finns därför samtidigt ammoniakmolekyler,
 ammoniumjoner och hydroxidjoner.
 
-### Pilen åt båda hållen visar att reaktionen går båda vägarna
+Ungefär en molekyl av hundra har reagerat vid ett givet ögonblick. De övrigas hydroxidjoner har aldrig
+bildats.
 
-Den dubbla reaktionspilen visar att reaktionen kan gå åt båda hållen. Ammoniak kan ta upp en vätejon
-och bilda ammonium, men ammonium kan också lämna tillbaka en vätejon.
+### Reaktionen går åt båda hållen
 
-### Det uppstår en kemisk jämvikt
+Den dubbla reaktionspilen visar att reaktionen kan gå åt båda hållen. Ammoniak kan ta upp en vätejon och
+bilda ammonium, men ammonium kan också lämna tillbaka en vätejon.
 
 Efter en stund uppstår en **kemisk jämvikt**. Det betyder att reaktionen fortsätter åt båda hållen, men
 att mängderna av de olika ämnena i genomsnitt håller sig ungefär konstanta.
 
+Det är alltså inte så att reaktionen stannar av. Båda riktningarna pågår för fullt, men lika fort, och
+därför ändras ingenting utåt sett.
+
 ### Därför bildas färre hydroxidjoner
 
-Eftersom bara en del av ammoniakmolekylerna har reagerat vid varje tillfälle bildas färre hydroxidjoner
-än om samma mängd av en stark bas hade reagerat fullständigt.
+Eftersom bara en del av ammoniakmolekylerna har reagerat vid varje tillfälle bildas färre hydroxidjoner än
+om samma mängd av en stark bas hade reagerat fullständigt.
 
 Därför räknas ammoniak som en **svag bas**.
 
-Även vätekarbonatjonen, HCO₃⁻, som bland annat finns i bikarbonat, kan fungera som en svag bas genom att
-ta upp vätejoner.
+Det betyder inte att en ammoniaklösning är ofarlig. Är den tillräckligt koncentrerad kan den ändå bli
+starkt basisk och frätande.
+
+Även vätekarbonatjonen, HCO₃⁻, som bland annat finns i bikarbonat, kan fungera som en svag bas genom att ta
+upp vätejoner.
 
 ---
 

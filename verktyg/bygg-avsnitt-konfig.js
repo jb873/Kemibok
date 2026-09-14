@@ -85,7 +85,7 @@ const AVSNITT_BASER = {
            standard: 'Samma skala, andra änden. Fler hydroxidjoner betyder färre oxoniumjoner — de två hänger ihop.',
            guide: '- Var på skalan tvållösningen ligger\n- Hur långt från 7 den ligger jämfört med citronsaften\n- Åt vilket håll lösningarna blir mer basiska' } } } },
   4: { dd: [],
-       bilder: { 'fortvalning.webp': { aktiv: ['enkel', 'standard'], enkel: 'fast oavsiktlig och på\ndin hud', standard: 'omvandlas till bland annat ämnen som fungerar som tvål' } } }
+       bilder: { 'fortvalning.webp': { aktiv: ['enkel', 'standard'], enkel: 'fast oavsiktlig och på\ndin hud', standard: 'till bland annat ämnen som fungerar som tvål' } } }
 };
 // Neutralisation (leverans 2026-09-13): två SVG:er (bilder-svg.js) och antacidum.webp (levererad som
 // brustablett-i-glas.webp med grön bakgrund, nycklad + beskuren med nyckla-gron.js). Faktarutan i 1 A på

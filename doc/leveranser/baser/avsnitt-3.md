@@ -10,6 +10,9 @@
 > **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
 > påståenderubriker (###) och delade stycken enligt `reviderat-baser.md`. Tillagda meningar (där märkta ▸) ligger här
 > utan märke. Enkel och Fördjupning oförändrade.
+>
+> **Omarbetat 2026-09-14 (andra omgången):** Standard-blocken ersatta enligt `omarbetat-baser.md` (tre rubriker per
+> underdel, utbyggd text; ▸-meningar inlagda utan märke). Kärnpunkter, Enkel och Fördjupning orörda.
 
 ---
 
@@ -102,24 +105,25 @@ En pH-mätare visar förstås talet direkt.
 
 ## A — STANDARD
 
-### pH över 7 betyder basisk
+### pH över 7 betyder basisk lösning
 
 pH-skalan används för att beskriva hur sur eller basisk en vattenlösning är.
 
-En basisk lösning har **pH över 7**. Ju större överskott av hydroxidjoner lösningen har, desto högre
-blir pH.
+En basisk lösning har **pH över 7**. Ju större överskott av hydroxidjoner lösningen har, desto högre blir
+pH.
+
+Skalan är densamma som för syror, och stegen betyder samma sak. Ett steg uppåt motsvarar tio gånger
+fler hydroxidjoner, precis som ett steg nedåt motsvarar tio gånger fler oxoniumjoner.
+
+En tvållösning ligger ofta runt pH 9 eller 10. Propplösare kan ligga över 13.
 
 ### De två jonerna hänger ihop
 
-Samtidigt minskar mängden oxoniumjoner, H₃O⁺. Mängden oxoniumjoner och hydroxidjoner hänger nämligen
-ihop: de reagerar med varandra och bildar vatten, så ökar den ena minskar den andra.
+Samtidigt minskar mängden oxoniumjoner, H₃O⁺. Mängden oxoniumjoner och hydroxidjoner hänger nämligen ihop:
+de reagerar med varandra och bildar vatten, så ökar den ena minskar den andra.
 
-### Hakparentes betyder koncentration
-
-Ett vanligt sätt att skriva en koncentration är att sätta ämnet inom hakparentes. **[OH⁻]** betyder
-alltså koncentrationen av hydroxidjoner.
-
-### I neutralt vatten är de lika stora
+Ett vanligt sätt att skriva en koncentration är att sätta ämnet inom hakparentes. **[OH⁻]** betyder alltså
+koncentrationen av hydroxidjoner.
 
 I neutralt vatten är de två koncentrationerna lika stora:
 
@@ -131,10 +135,15 @@ I en basisk lösning gäller i stället:
 
 Ju större skillnaden blir, desto mer basisk är lösningen.
 
-### BTB blir blått
+### Indikatorer visar den basiska sidan också
 
-En syra-basindikator kan användas för att visa om en lösning är basisk. **BTB, bromtymolblått**, blir
-blått i basiska lösningar.
+En syra-basindikator kan användas för att visa om en lösning är basisk. **BTB, bromtymolblått**, blir blått
+i basiska lösningar.
+
+Rött lackmuspapper blir blått, och rödkålsindikator går mot blått och grönt. Samma indikatorer fungerar
+alltså åt båda hållen — det är bara färgen som skiljer.
+
+Vill man ha ett exakt värde gäller samma sak som för syror: då behövs en pH-mätare.
 
 ---
 
@@ -265,22 +274,16 @@ allvarligast.
 
 När man beskriver en bas måste man hålla isär två olika egenskaper: **styrka** och **koncentration**.
 
-En bas kan vara:
+En bas kan vara stark och koncentrerad, stark och utspädd, svag och koncentrerad eller svag och utspädd.
 
-- stark och koncentrerad
-- stark och utspädd
-- svag och koncentrerad
-- svag och utspädd
-
-### En stark bas kan vara utspädd
-
-Natriumhydroxid är till exempel en stark bas. Men om en mycket liten mängd natriumhydroxid finns i en
-stor mängd vatten är lösningen utspädd.
-
-### En svag bas kan vara koncentrerad
+Natriumhydroxid är till exempel en stark bas. Men om en mycket liten mängd natriumhydroxid finns i en stor
+mängd vatten är lösningen utspädd.
 
 Ammoniak är en svag bas. Men en ammoniaklösning kan ändå vara koncentrerad om den innehåller mycket
 ammoniak per liter.
+
+Precis som för syror betyder det att man inte kan avgöra en bas styrka genom att mäta pH. En utspädd
+stark bas kan ha lägre pH än en koncentrerad svag.
 
 ### Vid utspädning sjunker pH mot 7
 
@@ -289,20 +292,25 @@ hydroxidjoner per liter lösning.
 
 Därför sjunker pH-värdet och närmar sig 7.
 
-### Men basen blir inte svagare
-
 Lösningen blir alltså **mindre basisk**, men själva basen har inte blivit svagare. En stark bas är
 fortfarande en stark bas även när den späds ut.
 
-### Starka baser utvecklar värme
+Det är samma resonemang som vid utspädning av en syra, fast åt andra hållet på skalan. Mängden bas är
+oförändrad — den är bara fördelad i mer vatten.
+
+### Utspädning måste göras försiktigt
 
 Starka baser kan utveckla mycket värme när de löses i vatten. Detta gäller särskilt natriumhydroxid.
 
-### Därför tillsätts basen till vattnet
+En koncentrerad natriumhydroxidlösning kan bli över femtio grader varm när den bereds, utan att någon
+värmt den.
 
-Därför måste utspädning ske försiktigt. Basen tillsätts gradvis till vatten under omrörning. Man ska
-inte hälla en större mängd vatten direkt på koncentrerad eller fast stark bas, eftersom kraftig
-värmeutveckling kan göra att vätskan börjar koka eller stänka.
+Därför måste utspädning ske försiktigt. Basen tillsätts gradvis till vatten under omrörning. Man ska inte
+hälla en större mängd vatten direkt på koncentrerad eller fast stark bas, eftersom kraftig värmeutveckling
+kan göra att vätskan börjar koka eller stänka.
+
+Principen är densamma som SIV-regeln för syror: den lilla mängden tillsätts till den stora, aldrig
+tvärtom.
 
 Skyddsglasögon ska alltid användas när man arbetar med starka baser.
 

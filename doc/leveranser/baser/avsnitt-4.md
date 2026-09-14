@@ -13,6 +13,9 @@
 > **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
 > påståenderubriker (###) och delade stycken enligt `reviderat-baser.md`. Tillagda meningar (där märkta ▸) ligger här
 > utan märke. Enkel och Fördjupning oförändrade.
+>
+> **Omarbetat 2026-09-14 (andra omgången):** Standard-blocken ersatta enligt `omarbetat-baser.md` (tre rubriker per
+> underdel, utbyggd text; ▸-meningar inlagda utan märke). Kärnpunkter, Enkel och Fördjupning orörda.
 
 ---
 
@@ -128,38 +131,43 @@ Den reaktionen kallas **neutralisation**, och den får ett eget delkapitel.
 
 ## A — STANDARD
 
-### Baser är olika men har gemensamma drag
+### Basiska lösningar har högt pH och leder ström
 
 Baser är olika ämnen, men basiska lösningar har flera gemensamma egenskaper.
 
-### De har pH över 7
-
 De har **pH över 7** och innehåller ett överskott av hydroxidjoner jämfört med oxoniumjoner.
-
-### De leder ström
 
 Eftersom basiska lösningar innehåller joner kan de leda elektrisk ström.
 
-### De reagerar med fett
+Båda egenskaperna följer av samma sak: att basen gett upphov till joner i lösningen. pH mäter hur många
+hydroxidjoner det finns, och ledningsförmågan visar att de kan röra sig.
+
+### De reagerar med fett och kan vara frätande
 
 Många basiska lösningar kan också kännas hala. Det beror bland annat på att starka baser reagerar med
 fett.
 
-Det är en av anledningarna till att baser används i bland annat rengöringsmedel och vid
-tvåltillverkning.
+Det är en av anledningarna till att baser används i bland annat rengöringsmedel och vid tvåltillverkning.
 
-### Många är kraftigt frätande
+Samma egenskap som gör basen användbar i en propplösare gör den farlig på huden. Det är inte två olika
+saker — det är samma reaktion på olika material.
 
 Många starka baser är dessutom kraftigt **frätande** och kan orsaka allvarliga skador på hud och ögon.
 
-### De reagerar med syror
+### De neutraliseras av syror
 
-En annan viktig egenskap är att baser kan reagera med syror. När en syra och en bas reagerar med
-varandra kan vätejoner och hydroxidjoner bilda vatten:
+En annan viktig egenskap är att baser kan reagera med syror. När en syra och en bas reagerar med varandra
+kan vätejoner och hydroxidjoner bilda vatten:
 
 **H₃O⁺ + OH⁻ → 2 H₂O**
 
 Detta är grunden för **neutralisation**.
+
+Reaktionen är densamma oavsett vilken syra och vilken bas som används, så länge båda är starka. Det är
+alltid oxoniumjoner och hydroxidjoner som möts.
+
+De övriga jonerna deltar inte utan finns kvar i lösningen — och de bildar ett salt när vattnet
+avdunstar.
 
 ---
 
@@ -271,8 +279,7 @@ Ammoniak har därför enorm betydelse för världens matproduktion.
 
 ## B — STANDARD
 
-Tabellen ger en översikt över de fyra viktigaste baserna. Texten under går igenom var och en
-närmare.
+### Fyra baser är särskilt viktiga
 
 | Bas | Formel | Stark/svag | Används till |
 |---|---|---|---|
@@ -281,43 +288,44 @@ närmare.
 | Kalciumhydroxid | Ca(OH)₂ | Stark | Murbruk, byggmaterial |
 | Ammoniak | NH₃ | Svag | Rengöringsmedel, kvävegödsel |
 
+Tre av dem är starka och används där man vill ha kraftig effekt. Den svaga används där en mildare
+verkan räcker.
+
 ### Natriumhydroxid löser fett och organiskt material
 
-Natriumhydroxid, NaOH, är en stark bas. Ämnet används bland annat i propplösare eftersom det kan bryta
-ned fett och annat organiskt material.
+Natriumhydroxid, NaOH, är en stark bas. Ämnet används bland annat i propplösare eftersom det kan bryta ned
+fett och annat organiskt material.
 
-Natriumhydroxid används också vid tillverkning av tvål. Fett får då reagera med en stark bas och
-omvandlas till bland annat ämnen som fungerar som tvål.
+Natriumhydroxid används också vid tillverkning av tvål. Fett får då reagera med en stark bas och omvandlas
+till bland annat ämnen som fungerar som tvål.
 
-Inom pappersindustrin används natriumhydroxid i processer där man behandlar trä och separerar olika
-delar av veden från varandra.
+Inom pappersindustrin används natriumhydroxid i processer där man behandlar trä och separerar olika delar
+av veden från varandra.
 
-### Kaliumhydroxid ger mjukare tvålar
+### Kaliumhydroxid och kalciumhydroxid
 
-Kaliumhydroxid, KOH, är också en stark bas.
+Kaliumhydroxid, KOH, är också en stark bas. Den används bland annat vid tillverkning av mjuka och flytande
+tvålar. Kaliumhydroxid används även som elektrolyt i vissa typer av batterier.
 
-Den används bland annat vid tillverkning av mjuka och flytande tvålar. Kaliumhydroxid används även som
-elektrolyt i vissa typer av batterier.
+Kalciumhydroxid, Ca(OH)₂, kallas ibland **släckt kalk**. Ämnet används bland annat i murbruk och andra
+byggmaterial. Murbruk härdar genom att kalciumhydroxiden långsamt reagerar med koldioxid ur luften och
+åter bildar kalciumkarbonat.
 
-### Kalciumhydroxid kallas släckt kalk
+Det är därför gamla murar blir hårdare med tiden — reaktionen pågår i årtionden.
 
-Kalciumhydroxid, Ca(OH)₂, kallas ibland **släckt kalk**.
-
-Ämnet används bland annat i murbruk och andra byggmaterial. Murbruk härdar genom att kalciumhydroxiden
-långsamt reagerar med koldioxid ur luften och åter bildar kalciumkarbonat.
-
-Kalciumhydroxid används också för att höja pH i sura miljöer. Den användningen behandlas i delkapitlet
-om försurning.
+Kalciumhydroxid används också för att höja pH i sura miljöer. Den användningen behandlas i delkapitlet om
+försurning.
 
 ### Ammoniak är råvara till konstgödsel
 
-Ammoniak, NH₃, är en svag bas.
+Ammoniak, NH₃, är en svag bas. Ammoniak används i vissa rengöringsmedel eftersom den kan hjälpa till att
+lösa fett och smuts.
 
-Ammoniak används i vissa rengöringsmedel eftersom den kan hjälpa till att lösa fett och smuts.
+En mycket stor användning av ammoniak finns inom jordbruket. Ammoniak är en viktig råvara vid tillverkning
+av **kvävegödsel**. Kväve är ett grundämne som växter behöver för att bland annat kunna bygga proteiner.
 
-En mycket stor användning av ammoniak finns inom jordbruket. Ammoniak är en viktig råvara vid
-tillverkning av **kvävegödsel**. Kväve är ett grundämne som växter behöver för att bland annat kunna
-bygga proteiner.
+Luften består till nästan fyra femtedelar av kväve, men växter kan inte ta upp det direkt. Det måste
+först omvandlas till en form de kan använda, och det är där ammoniaken kommer in.
 
 Ammoniak har därför stor betydelse för den moderna livsmedelsproduktionen.
 
@@ -428,37 +436,39 @@ håll.
 
 ## C — STANDARD
 
-### Starka baser kan vara kraftigt frätande
+### Basskador i ögon är särskilt allvarliga
 
-Starka baser kan vara kraftigt frätande.
+Starka baser kan vara kraftigt frätande. Frätande baser kan skada hud, ögon och andra vävnader.
 
-### Ögonskador är särskilt allvarliga
+Skador i ögonen är särskilt allvarliga eftersom starka baser kan tränga in i vävnaden och fortsätta orsaka
+skada.
 
-Frätande baser kan skada hud, ögon och andra vävnader. Skador i ögonen är särskilt allvarliga eftersom
-starka baser kan tränga in i vävnaden och fortsätta orsaka skada.
+Det skiljer baser från syror. En syra bildar ett skorpliknande lager som bromsar den, medan en bas löser
+upp fettet i vävnaden och kan fortsätta inåt.
 
 Därför ska man alltid använda **skyddsglasögon** när man arbetar med starka baser i laboratorium.
 
-### Vid stänk: spola länge
+### Vid stänk: spola länge och tillkalla hjälp
 
-Om en frätande bas kommer på huden eller i ögonen ska området omedelbart spolas med stora mängder
-vatten. Vid stänk i ögonen behöver spolningen fortsätta under lång tid och hjälp ska snabbt tillkallas.
+Om en frätande bas kommer på huden eller i ögonen ska området omedelbart spolas med stora mängder vatten.
 
-### Följ alltid säkerhetsinformationen
+Vid stänk i ögonen behöver spolningen fortsätta under lång tid och hjälp ska snabbt tillkallas.
 
-Produkter som innehåller starka baser ska alltid hanteras enligt säkerhetsinformationen på
-förpackningen.
+Spola betydligt längre än det känns nödvändigt — ofta tjugo minuter eller mer. Skadan kan fortsätta
+utvecklas efter att ämnet sköljts bort.
 
-### Blanda aldrig rengöringsmedel
+Produkter som innehåller starka baser ska alltid hanteras enligt säkerhetsinformationen på förpackningen.
 
-Propplösare kan till exempel innehålla natriumhydroxid och får aldrig blandas med andra
-rengöringsmedel. Blandningar av olika rengöringskemikalier kan orsaka kraftig värmeutveckling eller
-bilda farliga ämnen.
+### Rengöringsmedel får aldrig blandas
 
-### Samma egenskap gör dem användbara och farliga
+Propplösare kan till exempel innehålla natriumhydroxid och får aldrig blandas med andra rengöringsmedel.
+Blandningar av olika rengöringskemikalier kan orsaka kraftig värmeutveckling eller bilda farliga ämnen.
 
-Starka baser är användbara just därför att de reagerar kraftigt med andra ämnen. Samma egenskap gör att
-de måste hanteras med stor försiktighet.
+Dessutom förbrukar de varandra. Blandar man ett surt och ett basiskt medel neutraliseras båda, och
+rengöringseffekten försvinner helt.
+
+Starka baser är användbara just därför att de reagerar kraftigt med andra ämnen. Samma egenskap gör att de
+måste hanteras med stor försiktighet.
 
 ---
 

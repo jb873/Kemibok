@@ -13,6 +13,9 @@
 > **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
 > påståenderubriker (###) och delade stycken enligt `reviderat-baser.md`. Tillagda meningar (där märkta ▸) ligger här
 > utan märke. Enkel och Fördjupning oförändrade.
+>
+> **Omarbetat 2026-09-14 (andra omgången):** Standard-blocken ersatta enligt `omarbetat-baser.md` (tre rubriker per
+> underdel, utbyggd text; ▸-meningar inlagda utan märke). Kärnpunkter, Enkel och Fördjupning orörda.
 
 ---
 
@@ -129,10 +132,16 @@ om.
 
 ## A — STANDARD
 
-### Hydroxidjonen är en sammansatt jon
+### Hydroxidjonen är en sammansatt jon med negativ laddning
 
 När vi studerade vatten mötte vi hydroxidjonen, **OH⁻**. Hydroxidjonen är en sammansatt jon som består
 av en syreatom och en väteatom. Tillsammans har de en negativ laddning.
+
+Den är alltså inte en enskild atom som blivit jon, utan två atomer som sitter ihop och delar på en
+laddning. Det gör den till en av de sammansatta joner du mötte i repetitionen.
+
+Hydroxidjonen förekommer i många ämnen. Natriumhydroxid, kaliumhydroxid och kalciumhydroxid är alla
+uppbyggda kring den.
 
 ### Den kan ta emot en vätejon
 
@@ -141,7 +150,8 @@ delas med någon annan atom — och kan därför ta emot en **vätejon, H⁺**.
 
 En vätejon består egentligen bara av en proton, och den binder till just ett sådant fritt elektronpar.
 
-### Resultatet blir vatten
+Två saker drar åt samma håll här. Hydroxidjonen är negativ och vätejonen positiv, så de attraherar
+varandra. Och de fria elektronparen ger vätejonen någonstans att fästa.
 
 När hydroxidjonen tar upp en vätejon bildas en vattenmolekyl:
 
@@ -155,10 +165,14 @@ Detta leder oss till den viktigaste definitionen av en bas:
 
 **En bas är ett ämne som kan ta upp vätejoner.**
 
-### Men alla baser innehåller inte hydroxidjoner
+Lägg märke till hur definitionen speglar syrornas. En syra **avger** vätejoner, en bas **tar upp** dem.
+De är varandras motsatser, och det är därför de kan reagera med varandra.
 
-Det betyder däremot inte att alla baser innehåller hydroxidjoner från början. Hydroxidjoner kan uppstå
-på olika sätt när ett basiskt ämne kommer i kontakt med vatten.
+Det betyder däremot inte att alla baser innehåller hydroxidjoner från början. Hydroxidjoner kan uppstå på
+olika sätt när ett basiskt ämne kommer i kontakt med vatten.
+
+Just den skillnaden är vad nästa underdel handlar om, och den är avgörande för att förstå vad en bas
+egentligen är.
 
 ---
 
@@ -274,6 +288,9 @@ ett ämne som kan ta upp vätejoner.** Vad som händer sedan beror på ämnet.
 En basisk lösning innehåller ett överskott av hydroxidjoner, **OH⁻**. Det finns två viktiga sätt som
 dessa hydroxidjoner kan hamna i lösningen.
 
+Skillnaden mellan de två vägarna är inte en detalj. Den avgör varför definitionen av en bas måste vara
+formulerad som den är.
+
 ### Väg 1: hydroxidjonerna fanns redan i ämnet
 
 Natriumhydroxid, **NaOH**, är ett exempel på en bas som redan innehåller hydroxidjoner. Fast
@@ -288,6 +305,9 @@ hydroxidjonerna blir då fria i lösningen:
 Det är alltså inte vattnet som skapar hydroxidjonerna i detta fall. De fanns redan i natriumhydroxiden
 och frigörs när ämnet löses.
 
+Det som sker är alltså en upplösning, precis som när koksalt löses i vatten. Ingen kemisk reaktion
+behövs.
+
 På samma sätt fungerar till exempel kaliumhydroxid, KOH, och kalciumhydroxid, Ca(OH)₂.
 
 ### Väg 2: hydroxidjonerna bildas ur vattnet
@@ -300,13 +320,14 @@ hydroxidjon, OH⁻:
 
 **NH₃ + H₂O ⇌ NH₄⁺ + OH⁻**
 
-Ammoniak innehåller alltså inga hydroxidjoner från början. Hydroxidjonerna **bildas när ammoniak
-reagerar med vatten**.
+Ammoniak innehåller alltså inga hydroxidjoner från början. Hydroxidjonerna **bildas när ammoniak reagerar
+med vatten**.
 
-### Därför måste definitionen vara vidare
+Här sker alltså en verklig kemisk reaktion, inte bara en upplösning. Det är en viktig skillnad mot
+väg 1.
 
-Detta är viktigt eftersom det visar varför man inte kan säga att en bas är ett ämne som innehåller
-OH⁻. Den bättre definitionen är att en bas är ett ämne som **kan ta upp vätejoner**.
+Detta är viktigt eftersom det visar varför man inte kan säga att en bas är ett ämne som innehåller OH⁻.
+Den bättre definitionen är att en bas är ett ämne som **kan ta upp vätejoner**.
 
 ---
 
@@ -418,24 +439,28 @@ Den reaktionen kallas **neutralisation**, och den får ett eget delkapitel.
 
 ### Fler hydroxidjoner än oxoniumjoner
 
-I rent vatten finns både oxoniumjoner, H₃O⁺, och hydroxidjoner, OH⁻. Vid neutralitet finns lika mycket
-av båda.
+I rent vatten finns både oxoniumjoner, H₃O⁺, och hydroxidjoner, OH⁻. Vid neutralitet finns lika mycket av
+båda.
 
 I en **basisk lösning finns fler hydroxidjoner än oxoniumjoner**. Därför har en basisk lösning ett
 pH-värde över 7.
 
-### De leder ström
+Det är spegelbilden av en sur lösning, där förhållandet är det omvända. Samma skala, samma två joner —
+bara olika sida om mitten.
 
-Basiska lösningar innehåller joner och kan därför leda elektrisk ström. Ju fler rörliga joner som finns
-i lösningen, desto bättre kan lösningen vanligtvis leda ström.
+Basiska lösningar innehåller joner och kan därför leda elektrisk ström. Ju fler rörliga joner som finns i
+lösningen, desto bättre kan lösningen vanligtvis leda ström.
 
 ### Halheten beror på att basen reagerar med fett
 
-Basiska lösningar kan också upplevas som hala. Det beror bland annat på att starka baser kan reagera
-med fett. Fett kan brytas ned och ämnen med tvålliknande egenskaper kan bildas.
+Basiska lösningar kan också upplevas som hala. Det beror bland annat på att starka baser kan reagera med
+fett. Fett kan brytas ned och ämnen med tvålliknande egenskaper kan bildas.
 
-Det fett som bryts ned är hudens eget, och det är därför halheten är ett varningstecken snarare än
-en trevlig egenskap.
+Det fett som bryts ned är hudens eget, och det är därför halheten är ett varningstecken snarare än en
+trevlig egenskap.
+
+Känner du att en lösning är hal betyder det alltså att den har börjat lösa upp hudens ytskikt. Det är
+inte en egenskap man ska undersöka med fingrarna.
 
 Man ska däremot aldrig känna på okända basiska lösningar, eftersom många baser är frätande.
 
@@ -444,7 +469,13 @@ Man ska däremot aldrig känna på okända basiska lösningar, eftersom många b
 Baser reagerar också med syror. När en syra och en bas reagerar med varandra kan deras sura och basiska
 egenskaper minska.
 
+Det som händer är att hydroxidjonerna från basen möter vätejonerna från syran och bildar vatten —
+precis den reaktion du mötte i underdel A.
+
 Den reaktionen kallas **neutralisation** och behandlas längre fram.
+
+Att syror och baser kan ta ut varandra är alltså inte en tillfällighet. Det följer direkt av att den ena
+avger det den andra tar upp.
 
 ---
 
