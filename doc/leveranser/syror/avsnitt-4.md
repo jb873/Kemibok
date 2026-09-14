@@ -8,6 +8,9 @@
 > **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
 > påståenderubriker (###) och delade stycken enligt `reviderat-syror-4-5.md`. Tillagda meningar (där märkta ▸) ligger här
 > utan märke. Enkel och Fördjupning oförändrade.
+>
+> **Omarbetat 2026-09-14 (andra omgången):** Standard-blocken ersatta enligt `omarbetat-syror-4-5.md` (tre rubriker per
+> underdel, utbyggd text; ▸-meningar inlagda utan märke). Kärnpunkter, Enkel och Fördjupning orörda.
 
 ---
 
@@ -163,16 +166,25 @@ utspädd nästa.
 I förra avsnittet såg vi att syror kan vara **starka eller svaga**. Syrans styrka beskriver hur lätt
 syran avger sina vätejoner. Det säger däremot inte hur mycket syra som finns i lösningen.
 
-### Koncentration beskriver hur mycket syra som finns
+Två flaskor kan innehålla samma syra, lika stark i båda, och ändå vara helt olika farliga. Skillnaden
+ligger i hur mycket syra som finns per liter.
 
 För att beskriva hur mycket av ett ämne som finns löst i en viss mängd lösning använder man begreppet
 **koncentration**.
 
-En lösning som innehåller mycket syra i förhållande till mängden lösning är **koncentrerad**. En
-lösning som innehåller lite syra i förhållande till mängden lösning är **utspädd**.
+### Koncentrerad och utspädd beskriver mängden
 
-Du känner igen det från saft. Koncentrerad saft är stark och sirapsaktig, utspädd saft är det du
-dricker — men det är samma saft i båda fallen.
+En lösning som innehåller mycket syra i förhållande till mängden lösning är **koncentrerad**. En lösning
+som innehåller lite syra i förhållande till mängden lösning är **utspädd**.
+
+Du känner igen det från saft. Koncentrerad saft är stark och sirapsaktig, utspädd saft är det du dricker
+— men det är samma saft i båda fallen.
+
+Lägg märke till formuleringen "i förhållande till mängden lösning". Koncentrationen handlar inte om
+hur mycket syra du har totalt, utan hur tätt partiklarna sitter.
+
+Ett halvt glas koncentrerad syra innehåller alltså färre syrapartiklar än en hink utspädd — men
+koncentrationen är ändå högre i glaset.
 
 ### Enheten är mol per kubikdecimeter
 
@@ -182,13 +194,13 @@ kubikdecimeter lösning.
 
 Eftersom en kubikdecimeter är lika med en liter kan man också tänka 1 mol per liter lösning.
 
-### Två begrepp som måste hållas isär
-
 Det är därför viktigt att hålla isär två begrepp:
 
 **Stark eller svag** beskriver hur lätt syran avger vätejoner.
 
 **Koncentrerad eller utspädd** beskriver hur mycket syra som finns i en viss mängd lösning.
+
+De två går att kombinera fritt, vilket nästa underdel handlar om.
 
 ---
 
@@ -306,31 +318,23 @@ För att veta styrkan måste du veta vilken syra det är.
 
 ## B — STANDARD
 
-### Fyra kombinationer är möjliga
+### Styrka och koncentration kan kombineras fritt
 
 Eftersom styrka och koncentration beskriver olika egenskaper kan de kombineras på fyra olika sätt.
-
-### Stark och koncentrerad ger mycket oxoniumjoner
 
 En lösning kan vara **stark och koncentrerad**. Koncentrerad saltsyra är ett exempel. Det finns mycket
 syra i lösningen och eftersom saltsyra är en stark syra avger i princip alla HCl-molekyler sina
 vätejoner till vattnet. Det bildas därför mycket oxoniumjoner.
 
-### Stark och utspädd är fortfarande stark
+En lösning kan också vara **stark och utspädd**. Om en liten mängd saltsyra blandas med mycket vatten är
+syran fortfarande stark. HCl-molekylerna avger fortfarande sina vätejoner mycket lätt, men eftersom det
+finns lite syra i lösningen blir koncentrationen av oxoniumjoner lägre.
 
-En lösning kan också vara **stark och utspädd**. Om en liten mängd saltsyra blandas med mycket vatten
-är syran fortfarande stark.
-
-HCl-molekylerna avger fortfarande sina vätejoner mycket lätt, men eftersom det finns lite syra i
-lösningen blir koncentrationen av oxoniumjoner lägre.
-
-### Svag och koncentrerad ger färre oxoniumjoner än man tror
+### De två svaga kombinationerna
 
 En lösning kan vara **svag och koncentrerad**. Koncentrerad ättiksyra är ett exempel. Det finns mycket
-ättiksyra i lösningen, men eftersom ättiksyra är en svag syra är det bara en del av syramolekylerna
-som avger sina vätejoner.
-
-### Svag och utspädd är den mildaste
+ättiksyra i lösningen, men eftersom ättiksyra är en svag syra är det bara en del av syramolekylerna som
+avger sina vätejoner.
 
 Slutligen kan en lösning vara **svag och utspädd**. Utspädd ättiksyra är ett exempel. Då finns det både
 lite syra i lösningen och bara en del av syramolekylerna avger sina vätejoner.
@@ -342,12 +346,21 @@ lite syra i lösningen och bara en del av syramolekylerna avger sina vätejoner.
 | Svag | Koncentrerad | Koncentrerad ättiksyra |
 | Svag | Utspädd | Utspädd ättiksyra |
 
+Lägg märke till att de två mellersta kombinationerna kan ge ungefär samma pH, trots att den ena är
+stark och den andra svag.
+
 ### pH avslöjar inte om syran är stark eller svag
 
 Detta innebär att man **inte kan avgöra om en syra är stark eller svag genom att bara mäta lösningens
 pH**. En mycket utspädd stark syra kan ha högre pH än en koncentrerad svag syra.
 
 pH påverkas både av hur mycket syra som finns i lösningen och av hur lätt syran avger sina vätejoner.
+
+För att veta styrkan måste man alltså veta **vilken** syra det är. pH-mätaren säger hur många
+oxoniumjoner som finns, men inte varför de är så många.
+
+Det är en viktig skillnad mellan att mäta och att förstå: mätvärdet är samma, men förklaringen bakom kan
+vara två helt olika.
 
 ---
 
@@ -459,26 +472,22 @@ hinner fördela sig.
 
 ## C — STANDARD
 
-### Att späda betyder att tillsätta vatten
+### Mängden syra är oförändrad, men fördelad i mer vatten
 
 Att **späda ut** en syralösning betyder att man tillsätter vatten. Mängden syra förändras inte, men
 syrans partiklar fördelas i en större mängd lösning. Koncentrationen blir därför lägre.
 
-### pH stiger mot 7
-
-När en sur lösning späds med vatten minskar koncentrationen av oxoniumjoner, H₃O⁺. Lösningen blir
-mindre sur och **pH-värdet stiger mot 7**.
+När en sur lösning späds med vatten minskar koncentrationen av oxoniumjoner, H₃O⁺. Lösningen blir mindre
+sur och **pH-värdet stiger mot 7**.
 
 Antalet vätejoner som syran avgett är alltså detsamma som förut. Skillnaden är att de nu är utspridda i
 en större mängd vatten, så att det går färre oxoniumjoner på varje kubikdecimeter. Det är
 koncentrationen som avgör pH, inte det totala antalet.
 
-### Syran blir inte svagare
-
 Syran har däremot inte blivit svagare. En stark syra är fortfarande en stark syra efter utspädningen.
 Det är koncentrationen som har minskat.
 
-### Utspädning frigör värme
+### Utspädning av koncentrerad syra frigör mycket värme
 
 Utspädning av koncentrerade syror måste göras försiktigt. När en koncentrerad syra blandas med vatten
 kan mycket värme frigöras.
@@ -486,12 +495,13 @@ kan mycket värme frigöras.
 Värmen uppstår av samma skäl som när andra ämnen löses i vatten: när syrans partiklar omges av
 vattenmolekyler frigörs energi. För koncentrerad svavelsyra är den mängden ovanligt stor.
 
-### Fel ordning kan få vätskan att koka
+En koncentrerad svavelsyralösning kan bli över femtio grader varm när den späds, utan att någon värmt
+den. Det är tillräckligt för att en oförsiktig hantering ska bli farlig.
 
-Om man häller vatten direkt i koncentrerad syra kan den lilla mängden vatten snabbt bli mycket varm
-och börja koka. Då kan frätande syra stänka upp.
+Om man häller vatten direkt i koncentrerad syra kan den lilla mängden vatten snabbt bli mycket varm och
+börja koka. Då kan frätande syra stänka upp.
 
-### SIV-regeln: syra i vatten
+### SIV-regeln avgör i vilken ordning man häller
 
 Därför används **SIV-regeln**:
 
@@ -499,6 +509,9 @@ Därför används **SIV-regeln**:
 
 När en koncentrerad syra ska spädas häller man syran försiktigt i en större mängd vatten, inte vatten i
 syran. Syran tillsätts långsamt så att värmen kan fördelas i vattnet.
+
+Skälet är att en stor vattenmängd kan ta upp mycket värme utan att temperaturen stiger särskilt
+mycket. En liten vattenmängd som får samma energi kokar i stället upp omedelbart.
 
 SIV-regeln är därför både en minnesregel och en viktig säkerhetsregel:
 
