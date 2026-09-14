@@ -767,27 +767,28 @@ ${STOPP.filter(([p]) => p >= 3 && p <= 8).map(([ph, f]) => `      <stop offset="
     ut += txt(170, 316, 'Kloridjon') + txt(170, 340, sup('Cl', '−'), 'font-size="19"');
     ut += txt(430, 316, 'Natriumjon') + txt(430, 340, sup('Na', '+'), 'font-size="19"');
     ut += txt(620, 316, 'Vätejon') + txt(620, 340, sup('H', '+'), 'font-size="19"');
-    ut += txt(W / 2, H - 8, 'Inte skalenlig — i verkligheten är skillnaden ännu större.', 'font-size="15" font-style="italic"');
+    ut += txt(W / 2, H - 8, 'Vätejonen är i verkligheten ännu mindre — den går inte att rita i rätt skala.', 'font-size="15" font-style="italic"');
     fs.writeFileSync(path.join(UT7, 'vatejonens-storlek.svg'), svg(W, H,
-      'Tre joner bredvid varandra: en kloridjon med tre elektronskal, en natriumjon med två, och en vätejon som bara är en punkt utan skal. Bilden är inte skalenlig', ut));
+      'Tre joner bredvid varandra: en kloridjon med tre elektronskal, en natriumjon med två, och en vätejon som bara är en punkt utan skal. Vätejonen går inte att rita i rätt skala', ut));
   }
   // ----- 26. indikatorfarger.svg: lackmus, BTB och rödkål över pH-skalan 0–14 -----
   {
     const W = 760, H = 330, X0 = 130, X1 = 720, Y0 = 60, BH = 44, GAP = 30;
-    const px = ph => X0 + (X1 - X0) * ph / 14;
+    const PH0 = 3, PH1 = 11;   // skalan 3–11 (bildtexter-nya-svg.md)
+    const px = ph => X0 + (X1 - X0) * (ph - PH0) / (PH1 - PH0);
     let ut = '  <defs>\n';
     // färgstopp per indikator: [pH, färg] – övergångarna som gradient mellan stoppen
     const band = [
-      ['Lackmus', [[0, ROD], [5, ROD], [8, BLA], [14, BLA]]],
-      ['BTB', [[0, GUL], [6, GUL], [6.8, GRON], [7.6, BLA], [14, BLA]]],
-      ['Rödkål', [[0, ROD], [2, ROD], [4, ROSA], [7, LILA], [9, BLA], [11.5, GRON], [14, GRON]]]
+      ['Lackmus', [[3, ROD], [5, ROD], [8, BLA], [11, BLA]]],
+      ['BTB', [[3, GUL], [6, GUL], [6.8, GRON], [7.6, BLA], [11, BLA]]],
+      ['Rödkål', [[3, ROD], [4, ROSA], [7, LILA], [9, BLA], [11, GRON]]]
     ];
     band.forEach(([namn, stopp], i) => {
-      ut += `    <linearGradient id="g${i}" x1="0" x2="1" y1="0" y2="0">\n` + stopp.map(([ph, f]) => `      <stop offset="${r2(ph / 14 * 100)}%" stop-color="${f}"/>\n`).join('') + '    </linearGradient>\n';
+      ut += `    <linearGradient id="g${i}" x1="0" x2="1" y1="0" y2="0">\n` + stopp.map(([ph, f]) => `      <stop offset="${r2((ph - PH0) / (PH1 - PH0) * 100)}%" stop-color="${f}"/>\n`).join('') + '    </linearGradient>\n';
     });
     ut += '  </defs>\n';
     // pH-axel överst
-    for (let ph = 0; ph <= 14; ph++) {
+    for (let ph = PH0; ph <= PH1; ph++) {
       ut += `  <line x1="${r2(px(ph))}" y1="${Y0 - 14}" x2="${r2(px(ph))}" y2="${Y0 - 6}" stroke="${INK}" stroke-width="1"/>\n` + txt(px(ph), Y0 - 20, String(ph), 'font-size="14"');
     }
     ut += txt(X0 - 16, Y0 - 20, 'pH', 'font-size="15" font-style="italic" text-anchor="end"');
@@ -799,9 +800,9 @@ ${STOPP.filter(([p]) => p >= 3 && p <= 8).map(([ph, f]) => `      <stop offset="
     // markering av neutralt
     ut += `  <line x1="${r2(px(7))}" y1="${Y0 - 4}" x2="${r2(px(7))}" y2="${Y0 + 3 * BH + 2 * GAP + 6}" stroke="${INK}" stroke-width="1" stroke-dasharray="4 4"/>\n`;
     ut += txt(px(7), Y0 + 3 * BH + 2 * GAP + 26, 'neutralt', 'font-size="14" font-style="italic"');
-    ut += txt(px(1.5), Y0 + 3 * BH + 2 * GAP + 26, '← surare', 'font-size="14" font-style="italic"') + txt(px(12.5), Y0 + 3 * BH + 2 * GAP + 26, 'mer basiskt →', 'font-size="14" font-style="italic"');
+    ut += txt(px(4), Y0 + 3 * BH + 2 * GAP + 26, '← surare', 'font-size="14" font-style="italic"') + txt(px(10), Y0 + 3 * BH + 2 * GAP + 26, 'mer basiskt →', 'font-size="14" font-style="italic"');
     fs.writeFileSync(path.join(UT7, 'indikatorfarger.svg'), svg(W, H,
-      'Tre färgband över pH-skalan 0 till 14: lackmus är rött i surt och blått i basiskt, BTB gult i surt, grönt vid neutralt och blått i basiskt, rödkål rött och rosa i surt, lila vid neutralt och blått till grönt i basiskt', ut));
+      'Tre färgband över pH-skalan 3 till 11: lackmus är rött i surt och blått i basiskt, BTB gult i surt, grönt vid neutralt och blått i basiskt, rödkål rött och rosa i surt, lila vid neutralt och blått till grönt i basiskt', ut));
   }
   // ----- 27. siv-regeln.svg: syra i vatten (rätt) mot vatten i syra (fel) -----
   {

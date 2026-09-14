@@ -51,16 +51,19 @@ const AVSNITT_REPETITION = {
 // utom stark-och-svag-syra.webp som finns i img/. Inga djupdykningar levererade ännu.
 const AVSNITT_SYROR = {
   1: { dd: [],
-       bilder: { 'vatejon-och-oxoniumjon.svg': { aktiv: [], standard: 'H₂O + H⁺ → H₃O⁺' } },   // endast Standard; efter reaktionsraden
+       bilder: { 'vatejon-och-oxoniumjon.svg': { aktiv: [], standard: 'H₂O + H⁺ → H₃O⁺' },   // endast Standard; efter reaktionsraden
+                 'vatejonens-storlek.svg': { aktiv: ['enkel', 'standard'], enkel: 'är **bara en naken kärna**', standard: 'joner den ska samsas med i en lösning.' } },   // bildinventering 2026-09-14
        faktaruta: { standard: 'egentligen oxoniumjoner som' } },
   2: { dd: [{ slug: 'ph-och-mol', titel: 'pH-värdet: oxoniumjoner, hydroxidjoner och mol', ikon: '🧪' },   // Joachims text, doc/leveranser/syror/ph-vardet.md
             { slug: 'indikatorer', titel: 'Indikatorer och mätning av pH', ikon: '🎨' }],                       // Joachims text, indikatorer-och-matning.md (2 B)
-       bilder: { 'ph-skalan.svg': { aktiv: [], enkel: 'en tvållösning kan ha 9 eller 10', standard: 'många tvållösningar är basiska' } } },
+       bilder: { 'ph-skalan.svg': { aktiv: [], enkel: 'en tvållösning kan ha 9 eller 10', standard: 'många tvållösningar är basiska' },
+                 'indikatorfarger.svg': { aktiv: ['enkel', 'standard'], enkel: 'undersöka pH hemma i köket', standard: 'Därför går det att göra enkla undersökningar av pH även hemma' } } },   // efter rödkålsstycket
   3: { dd: [],
        bilder: { 'stark-och-svag-syra.webp': { aktiv: ['enkel', 'standard'], enkel: 'helt olika många vätejoner i vattnet', standard: 'partiklar som har avgett den' } } },
   4: { dd: [{ slug: 'mol', titel: 'Mol: en brygga mellan atomer och gram', ikon: '⚖️' },   // Joachims text, mol.md – länkas senare även från neutralisation/salter (byggs där ur samma fil)
             { slug: 'koncentration', titel: 'Koncentration och spädning', ikon: '💧' }],   // Joachims text, koncentration-och-spadning.md (4 A)
-       bilder: { 'fyra-kombinationerna.svg': { aktiv: [], enkel: 'en syra som avger ogärna', standard: 'Utspädd ättiksyra är ett exempel' } } },
+       bilder: { 'fyra-kombinationerna.svg': { aktiv: [], enkel: 'en syra som avger ogärna', standard: 'Utspädd ättiksyra är ett exempel' },
+                 'siv-regeln.svg': { aktiv: ['enkel', 'standard'], enkel: 'Och häll långsamt, så att värmen', standard: '**Häll alltid syra i vatten — aldrig vatten i koncentrerad syra.**' } } },   // sist i 4 C
   5: { dd: [],
        bilder: { 'syra-och-metall.webp': { aktiv: ['enkel', 'standard'], staende: true, enkel: 'tillsammans en vätgasmolekyl', standard: 'metallatomerna avger elektroner' } } }   // grön bakgrund, nycklad 2026-09-13; stående provrör
 };

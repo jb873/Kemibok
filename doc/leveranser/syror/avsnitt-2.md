@@ -61,6 +61,29 @@ oxoniumjoner och surare lösning.
 - Att magsyra och citronsaft ligger nära varandra
 - Hur långt från 7 tvållösningen ligger
 
+### `indikatorfarger.svg` — underdel B, Enkel + Standard
+
+Ur bildinventeringen i omarbetat-syror-1-3.md; texter ur bildtexter-nya-svg.md (2026-09-14). Genererad i bilder-svg.js.
+
+> Tre vågräta färgband under varandra – lackmus, BTB, rödkål – längs en pH-skala från 3 till 11, med
+> omslagen som färgövergångar. Streckad linje vid pH 7.
+
+**Alt-text:** Tre vågräta färgband under varandra, ett för varje indikator, ritade längs en pH-skala från 3 till 11.
+Lackmus går från rött till blått kring pH 6 till 7. BTB går från gult via grönt till blått mellan pH 6
+och 7,6. Rödkål går gradvis från rött via rosa och lila till blått och grönt över hela skalan.
+
+**Bildtext Enkel:** Tre indikatorer, samma pH-skala. Lackmus ger två färger, BTB tre, och rödkål ett helt spektrum.
+
+**Bildtext Standard:** Varje indikator har sitt eget omslagsområde. Det är därför olika indikatorer passar för olika
+undersökningar.
+
+### Bildguide (endast Enkel)
+
+- Vilken färg har **BTB** vid pH 4?
+- Vid vilket pH slår **lackmus** om?
+- Vilken indikator ger **flest** olika färger?
+- Vilken skulle du välja om du vill veta om en lösning är nära neutral?
+
 ---
 
 # UNDERDEL A — pH-skalan

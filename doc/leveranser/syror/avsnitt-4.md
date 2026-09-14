@@ -64,6 +64,29 @@ oxoniumjoner beror på båda.
 - Jämför de två övre glasen med varandra
 - Jämför glaset uppe till höger med glaset nere till vänster
 
+### `siv-regeln.svg` — underdel C, Enkel + Standard
+
+Ur bildinventeringen i omarbetat-syror-1-3.md; texter ur bildtexter-nya-svg.md (2026-09-14). Genererad i bilder-svg.js.
+
+> Två halvor. Vänster: lite syra hälls i ett stort glas vatten, termometern visar måttlig temperatur.
+> Höger: vatten hälls på koncentrerad syra, stänk, termometern står högt, ett rött kryss över halvan.
+
+**Alt-text:** Två halvor. Till vänster hälls en liten mängd syra ner i ett stort kärl med vatten, och blandningen
+förblir lugn. Till höger hälls vatten ner på koncentrerad syra, blandningen stänker upp, och ett rött
+kryss är ritat över den bilden.
+
+**Bildtext Enkel:** Syra i vatten går bra. Vatten i syra kan koka upp och stänka.
+
+**Bildtext Standard:** Samma två ämnen, samma mängder, olika ordning. Vattnets stora värmekapacitet gör att den vänstra
+blandningen håller sig sval.
+
+### Bildguide (endast Enkel)
+
+- Vad hälls **i vad** i den vänstra halvan?
+- Vad hälls i vad i den **högra**?
+- Vilken halva har ett **kryss** över sig?
+- Vad händer med vätskan i den högra halvan?
+
 ---
 
 # UNDERDEL A — Koncentration

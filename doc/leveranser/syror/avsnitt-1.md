@@ -56,6 +56,29 @@ laddning.
 **Bildtext Standard:** Vätejonen är en ensam proton utan elektronskal. Den binder omedelbart till
 ett av vattenmolekylens fria elektronpar, och det som bildas är en oxoniumjon.
 
+### `vatejonens-storlek.svg` — underdel A, Enkel + Standard
+
+Ur bildinventeringen i omarbetat-syror-1-3.md; texter ur bildtexter-nya-svg.md (2026-09-14). Genererad i bilder-svg.js.
+
+> Tre joner bredvid varandra i schematisk skala: en kloridjon med tre elektronskal, en natriumjon med två,
+> och en vätejon som en punkt. Under bilden: *Vätejonen är i verkligheten ännu mindre — den går inte att rita
+> i rätt skala.*
+
+**Alt-text:** Tre joner sida vid sida. Längst till vänster en stor kloridjon med sina elektronskal, i mitten en
+något mindre natriumjon, och längst till höger en vätejon som bara är en liten punkt utan skal.
+
+**Bildtext Enkel:** Alla tre har en hel laddning. Men vätejonen har inget elektronskal alls — den är bara en naken kärna.
+
+**Bildtext Standard:** Jonernas storlek i förhållande till varandra. Skillnaden mot vätejonen är i verkligheten långt större
+än bilden kan visa.
+
+### Bildguide (endast Enkel)
+
+- Jämför **storleken** på de tre jonerna
+- Vilka av dem har **elektronskal** runt kärnan?
+- Hur många skal har kloridjonen jämfört med natriumjonen?
+- Vad finns runt vätejonen?
+
 ---
 
 # UNDERDEL A — Vätejonen

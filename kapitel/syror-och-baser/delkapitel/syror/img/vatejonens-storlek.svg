@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-labelledby="t">
-  <title id="t">Tre joner bredvid varandra: en kloridjon med tre elektronskal, en natriumjon med två, och en vätejon som bara är en punkt utan skal. Bilden är inte skalenlig</title>
+  <title id="t">Tre joner bredvid varandra: en kloridjon med tre elektronskal, en natriumjon med två, och en vätejon som bara är en punkt utan skal. Vätejonen går inte att rita i rätt skala</title>
   <circle cx="170" cy="170" r="34" fill="none" stroke="#2d4a35" stroke-width="1.2" stroke-dasharray="3 3"/>
   <circle cx="170" cy="170" r="74" fill="none" stroke="#2d4a35" stroke-width="1.2" stroke-dasharray="3 3"/>
   <circle cx="170" cy="170" r="114" fill="none" stroke="#2d4a35" stroke-width="1.2" stroke-dasharray="3 3"/>
@@ -43,5 +43,5 @@
   <text x="430" y="340" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19">Na<tspan font-size="0.7em" dy="-0.6em">+</tspan></text>
   <text x="620" y="316" fill="#2d4a35" font-size="17" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" >Vätejon</text>
   <text x="620" y="340" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19">H<tspan font-size="0.7em" dy="-0.6em">+</tspan></text>
-  <text x="380" y="372" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">Inte skalenlig — i verkligheten är skillnaden ännu större.</text>
+  <text x="380" y="372" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">Vätejonen är i verkligheten ännu mindre — den går inte att rita i rätt skala.</text>
 </svg>

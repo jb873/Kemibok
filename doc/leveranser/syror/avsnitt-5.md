@@ -10,6 +10,9 @@
 > **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
 > påståenderubriker (###) och delade stycken enligt `reviderat-syror-4-5.md`. Tillagda meningar (där märkta ▸) ligger här
 > utan märke. Enkel och Fördjupning oförändrade.
+>
+> **Tillägg 2026-09-14:** ▸-meningen "Farosymbolerna finns alltid på förpackningen …" i 5 C (Standard, stycket om
+> farosymboler) enligt bildtexter-nya-svg.md, i stället för en bild av CLP-piktogrammen.
 
 ---
 
@@ -517,6 +520,8 @@ Syror ska alltid hanteras med respekt. En kemikalie kan vara farlig även om syr
 klassificeras som svag.
 
 Därför ska man alltid följa instruktioner och kontrollera kemikaliens farosymboler innan den används.
+Farosymbolerna finns alltid på förpackningen. Titta på den riktiga flaskan innan du börjar — inte på
+en bild i en bok.
 
 ### Skyddsglasögon vid risk för stänk
 
