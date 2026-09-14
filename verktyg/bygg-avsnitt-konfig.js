@@ -98,7 +98,7 @@ const AVSNITT_NEUTRALISATION = {
          'neutralisation-partiklar.svg': { aktiv: ['enkel', 'standard'], enkel: 'H⁺ + OH⁻ → H₂O', standard: 'H₃O⁺ + OH⁻ → 2 H₂O' },   // efter reaktionsraden
          'vad-blir-kvar.svg': { aktiv: ['enkel', 'standard'], enkel: 'De simmar omkring precis som förut', standard: 'finns fortfarande kvar lösta i vattnet efteråt' }
        },
-       faktaruta: { enkel: 'handlar underdel C om', standard: 'hydroxidjoner kvar är den fortfarande basisk', fordjupning: 'Där finns också mol och mängdberäkningar' } },
+       faktaruta: { enkel: 'handlar underdel C om', standard: 'kvar är den fortfarande basisk', fordjupning: 'Där finns också mol och mängdberäkningar' } },
   2: { dd: [{ slug: 'titrering', titel: 'Titrering: att bestämma en okänd koncentration', ikon: '🧫' }],   // Joachims text, titrering.md (2 B)
        bilder: { 'antacidum.webp': { aktiv: ['enkel', 'standard'], staende: true, enkel: 'kemi, inte absorption', standard: 'De reagerar kemiskt med den' } } }   // staende: max-height i kemi.css
 };

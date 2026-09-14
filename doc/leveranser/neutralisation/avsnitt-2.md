@@ -20,6 +20,9 @@
 > **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
 > påståenderubriker (###) och delade stycken enligt `reviderat-neutralisation.md`. Tillagda meningar (där märkta ▸) ligger här
 > utan märke. Enkel och Fördjupning oförändrade.
+>
+> **Omarbetat 2026-09-14 (andra omgången):** Standard-blocken ersatta enligt `omarbetat-neutralisation.md` (tre–fyra rubriker
+> per underdel, utbyggd text; ▸-meningar inlagda utan märke). Kärnpunkter, Enkel och Fördjupning orörda.
 
 ---
 
@@ -133,21 +136,26 @@ Det är också därför många tandkrämer är svagt basiska.
 
 ## A — STANDARD
 
-### Neutralisation sker överallt, också i kroppen
+### Kroppen använder syra-basreaktioner på flera ställen
 
-Neutralisation sker inte bara i kemilaboratoriet. Reaktioner mellan syror och baser är viktiga i kroppen,
-i hemmet, vid vattenrening och i många industriella processer.
+Neutralisation sker inte bara i kemilaboratoriet. Reaktioner mellan syror och baser är viktiga i kroppen, i
+hemmet, vid vattenrening och i många industriella processer.
 
-### Magsäcken har pH 1 till 2
+I kroppen används de för att skapa rätt kemisk miljö på olika platser — surt där det behövs, mindre surt
+där det skulle skada.
 
-Magsäcken innehåller magsaft som är starkt sur. pH ligger ofta omkring **1–2**. Den sura miljön behövs
-bland annat för matsmältningen och för att döda många mikroorganismer som följer med maten.
+### Magsäcken är sur, och matstrupen är oskyddad
 
-### Matstrupen saknar magsäckens skydd
+Magsäcken innehåller magsaft som är starkt sur. pH ligger ofta omkring **1–2**. Den sura miljön behövs bland
+annat för matsmältningen och för att döda många mikroorganismer som följer med maten.
 
 Magsäcken har ett skyddande slemlager som gör att den klarar den sura miljön. Matstrupen har inte samma
-skydd. Om magsyra kommer upp i matstrupen kan det därför börja svida och bränna. Det kallas
-**halsbränna**.
+skydd.
+
+Om magsyra kommer upp i matstrupen kan det därför börja svida och bränna. Det kallas **halsbränna**.
+
+Det är alltså inte syran i sig som är problemet — den ska vara där. Problemet uppstår när den hamnar på
+fel ställe.
 
 ### Antacida reagerar kemiskt med syran
 
@@ -158,32 +166,32 @@ När de reagerar med syran minskar mängden oxoniumjoner och pH stiger.
 
 Antacida tar alltså inte bort syran genom att absorbera den. De reagerar kemiskt med den.
 
-### Bukspottet neutraliserar maten i tarmen
+Skillnaden är viktig. En svamp suger upp och kan vridas ur; ett antacidum förbrukas i reaktionen och kan
+inte återanvändas.
 
-När maten lämnar magsäcken och kommer till **tolvfingertarmen** är den fortfarande sur. Tarmen skulle
-kunna skadas om den sura blandningen inte förändrades.
+### Bukspottet och saliven neutraliserar också
 
-Bukspottkörteln avger därför bukspott som bland annat innehåller **vätekarbonatjoner, HCO₃⁻**.
-Vätekarbonat kan reagera med syran och höja pH.
+När maten lämnar magsäcken och kommer till **tolvfingertarmen** är den fortfarande sur. Tarmen skulle kunna
+skadas om den sura blandningen inte förändrades.
 
-Det är viktigt eftersom många av de enzymer som arbetar i tunntarmen fungerar bäst när miljön inte längre
-är starkt sur.
+Bukspottkörteln avger därför bukspott som bland annat innehåller **vätekarbonatjoner, HCO₃⁻**. Vätekarbonat
+kan reagera med syran och höja pH.
 
-Kroppen använder alltså syra-basreaktioner för att skapa rätt kemisk miljö på olika platser i
-matsmältningssystemet.
-
-### Saliven skyddar tänderna
+Det är viktigt eftersom många av de enzymer som arbetar i tunntarmen fungerar bäst när miljön inte längre är
+starkt sur.
 
 Neutralisation är också viktig i munnen. Bakterier i tandbeläggningar kan bryta ner socker och andra
 kolhydrater och samtidigt bilda **syror**. När pH nära tandytan sjunker kan mineraler börja lösas ut ur
 tandemaljen. Om detta sker ofta ökar risken för karies.
 
-**Saliven** hjälper till att motverka detta. Den innehåller bland annat vätekarbonat och andra ämnen som
-kan binda vätejoner och därmed minska surheten. Saliven hjälper på så sätt pH i munnen att återgå mot sitt
+**Saliven** hjälper till att motverka detta. Den innehåller bland annat vätekarbonat och andra ämnen som kan
+binda vätejoner och därmed minska surheten. Saliven hjälper på så sätt pH i munnen att återgå mot sitt
 normala värde efter att vi har ätit.
 
-Många tandkrämer innehåller också ämnen som bidrar till att hålla en miljö där syrornas angrepp på
-tänderna begränsas.
+Många tandkrämer innehåller också ämnen som bidrar till att hålla en miljö där syrornas angrepp på tänderna
+begränsas.
+
+Samma jon används alltså på två ställen i kroppen. Vätekarbonat neutraliserar både i tarmen och i munnen.
 
 ---
 
@@ -312,52 +320,56 @@ neutralisera den.** Spola med stora mängder vatten i stället.
 
 ### Kalk löses med syra, fett med bas
 
-Olika typer av smuts kräver olika rengöringsmedel. Kalkavlagringar består till stor del av ämnen som
-reagerar med syror. Därför används exempelvis citronsyra eller andra sura rengöringsmedel för att lösa
-kalk.
+Olika typer av smuts kräver olika rengöringsmedel. Kalkavlagringar består till stor del av ämnen som reagerar
+med syror. Därför används exempelvis citronsyra eller andra sura rengöringsmedel för att lösa kalk.
 
-Fett och organiska rester kan däremot angripas med basiska rengöringsmedel. Vissa propplösare innehåller
-till exempel den starka basen **natriumhydroxid**.
+Fett och organiska rester kan däremot angripas med basiska rengöringsmedel. Vissa propplösare innehåller till
+exempel den starka basen **natriumhydroxid**.
 
-### Blanda dem aldrig
+Valet av medel följer alltså av vad smutsen består av. Ett surt medel gör ingen nytta mot fett, och ett
+basiskt gör ingen nytta mot kalk.
 
-Man ska aldrig blanda starka sura och basiska rengöringsmedel. När de reagerar med varandra kan mycket
-värme utvecklas, vilket kan leda till kokning och stänk av frätande vätska.
+### Blanda aldrig surt och basiskt
+
+Man ska aldrig blanda starka sura och basiska rengöringsmedel. När de reagerar med varandra kan mycket värme
+utvecklas, vilket kan leda till kokning och stänk av frätande vätska.
 
 Dessutom förbrukar ämnena varandra och rengöringseffekten minskar.
 
+Två saker går alltså fel samtidigt. Blandningen blir farligare att hantera, och den blir sämre på att
+rengöra än något av medlen var för sig.
+
 Rengöringsmedel ska därför användas enligt anvisningarna och inte blandas.
 
-### Vattenrening kräver rätt pH
+### pH justeras vid vattenrening och i industrin
 
-pH är viktigt vid både dricksvattenproduktion och rening av avloppsvatten. Vatten som är alltför surt
-eller basiskt kan skada ledningar, påverka levande organismer och störa de kemiska och biologiska
-processerna i ett reningsverk.
+pH är viktigt vid både dricksvattenproduktion och rening av avloppsvatten. Vatten som är alltför surt eller
+basiskt kan skada ledningar, påverka levande organismer och störa de kemiska och biologiska processerna i ett
+reningsverk.
 
 Därför kan man tillsätta syror eller baser för att justera vattnets pH. Vilket ämne som används beror på
 vilken typ av vatten som behandlas och vilket pH man vill uppnå.
 
-### Industrin arbetar inom bestämda pH-områden
+Många industriella processer fungerar bara inom ett bestämt pH-område. Det gäller exempelvis tillverkning av
+livsmedel, läkemedel, papper och kemikalier.
 
-Många industriella processer fungerar bara inom ett bestämt pH-område. Det gäller exempelvis tillverkning
-av livsmedel, läkemedel, papper och kemikalier.
-
-Om en lösning är för sur kan ett basiskt ämne tillsättas. Är den för basisk kan en syra tillsättas. Genom
-att mäta pH och noggrant styra mängden syra eller bas kan processen hållas inom rätt område.
+Om en lösning är för sur kan ett basiskt ämne tillsättas. Är den för basisk kan en syra tillsättas. Genom att
+mäta pH och noggrant styra mängden syra eller bas kan processen hållas inom rätt område.
 
 Neutralisation används också för att behandla surt eller basiskt processvatten innan det går vidare till
 rening eller återanvändning.
 
-### Vid spill gäller särskilda rutiner
+### Vid spill gäller vatten, inte neutralisering
 
 Vid kemikaliespill kan neutraliserande material användas i laboratorier och industrier, men endast enligt
-särskilda säkerhetsrutiner. En stark syra neutraliseras inte genom att man på måfå häller en stark bas
-över den. Reaktionen kan utveckla mycket värme och göra situationen farligare.
+särskilda säkerhetsrutiner. En stark syra neutraliseras inte genom att man på måfå häller en stark bas över
+den. Reaktionen kan utveckla mycket värme och göra situationen farligare.
 
-### På hud gäller bara vatten
+Om en frätande syra eller bas hamnar **på huden eller i ögonen ska man inte försöka neutralisera den**. Då ska
+ämnet i stället omedelbart spolas bort med stora mängder vatten enligt gällande säkerhetsrutiner.
 
-Om en frätande syra eller bas hamnar **på huden eller i ögonen ska man inte försöka neutralisera den**. Då
-ska ämnet i stället omedelbart spolas bort med stora mängder vatten enligt gällande säkerhetsrutiner.
+Skälet är att neutralisationen utvecklar värme. På hud skulle man alltså lägga en brännskada till en
+frätskada.
 
 Neutralisation är alltså en användbar kemisk reaktion, men när koncentrerade syror och baser är inblandade
 måste den alltid ske under kontrollerade former.
