@@ -5,6 +5,9 @@
 > delkapitlet skrevs.
 >
 > Plus en jämförelsetabell i avsnitt 3, som föreslogs i genomgången.
+>
+> Byggt 2026-09-14. Joachims beslut: "alltså" i 3 A står kvar (binder ihop med den inskjutna ▸-meningen), och
+> meningen under tabellen är en tillagd ▸-mening som saknades i räkningen — elva tillagda meningar i hela genomgången, inte tio.
 
 ---
 
