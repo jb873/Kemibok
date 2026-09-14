@@ -20,6 +20,7 @@
 //   vatejon-och-oxoniumjon.svg          delkapitel Syror 1 B – H2O + H+ → H3O+ i tre lager (skrivs till delkapitel/syror/img/)
 //   ph-skalan.svg                       delkapitel Syror 2 A – skala 0–14 med exempel (syror/img/)
 //   fyra-kombinationerna.svg            delkapitel Syror 4 B – stark/svag × koncentrerad/utspädd (syror/img/)
+//   vatejonens-storlek, indikatorfarger, siv-regeln   delkapitel Syror 1 A, 2 B, 4 C (syror/img/), bildinventering 2026-09-14
 //   molekyl-mot-gitter, formelenhet, laddningsbalans, sammansatt-jon, saltbildning, havsvatten
 //                                       delkapitel Salter 1 B, 1 C, 2 A, 2 B, 4 A, 4 C (salter/img/)
 //
@@ -735,7 +736,110 @@ ${STOPP.filter(([p]) => p >= 3 && p <= 8).map(([ph, f]) => `      <stop offset="
   }
 }
 
-console.log('skrev 24 svg (8 repetition, 3 syror, 1 baser, 2 neutralisation, 4 försurning, 6 salter)', path.relative(path.join(__dirname, '..'), UT));
+
+// ---------- 25–27. Syror: tre SVG:er ur bildinventeringen (omarbetat-syror-1-3.md, Joachims beslut 2026-09-14) ----------
+// vatejonens-storlek (1 A), indikatorfarger (2 B), siv-regeln (4 C). farosymboler byggs inte (CLP-piktogram ritas inte fritt).
+// Färger föreslagna av Code 2026-09-14, se rapporten: joner natrium #9b7cc4 / klorid #6a9e4f / vätejon #C64B3A, elektroner #3D6BA8;
+// indikatorfärger röd #C0392B, rosa #d98aa8, lila #9b7cc4, blå #3D6BA8, grön #6a9e4f, gul #d4c04a; vatten #a8c4d8, kryss #C64B3A.
+{
+  const UT7 = path.join(__dirname, '..', 'kapitel', 'syror-och-baser', 'delkapitel', 'syror', 'img');
+  const NA = '#9b7cc4', CL = '#6a9e4f', HJ = '#C64B3A', EL = '#3D6BA8', VATSKA = '#a8c4d8';
+  const ROD = '#C0392B', ROSA = '#d98aa8', LILA = '#9b7cc4', BLA = '#3D6BA8', GRON = '#6a9e4f', GUL = '#d4c04a';
+  const txt = (x, y, t, extra = '') => `  <text x="${r2(x)}" y="${r2(y)}" fill="${INK}" ${/font-size=/.test(extra) ? '' : 'font-size="17"'} ${/text-anchor=/.test(extra) ? '' : 'text-anchor="middle"'} ${FONT} ${extra}>${t}</text>\n`;
+  const sup = (b, t) => `${b}<tspan font-size="0.7em" dy="-0.6em">${t}</tspan>`;
+
+  // ----- 25. vatejonens-storlek.svg: kloridjon, natriumjon och vätejon som schematiska modeller -----
+  {
+    const W = 760, H = 380, CY = 170;
+    let ut = '';
+    // jon med kärna (i jonens färg) och elektronskal (ringar i INK, elektroner i EL)
+    const jon = (cx, farg, skal, radier, rK) => {
+      let s = '';
+      radier.forEach(R => { s += `  <circle cx="${cx}" cy="${CY}" r="${R}" fill="none" stroke="${INK}" stroke-width="1.2" stroke-dasharray="3 3"/>\n`; });
+      s += `  <circle cx="${cx}" cy="${CY}" r="${rK}" fill="${farg}" stroke="${INK}" stroke-width="1.5"/>\n`;
+      skal.forEach((n, i) => { for (let k = 0; k < n; k++) { const v = (k / n) * 2 * Math.PI - Math.PI / 2; s += `  <circle cx="${r2(cx + radier[i] * Math.cos(v))}" cy="${r2(CY + radier[i] * Math.sin(v))}" r="5" fill="${EL}" stroke="#fff" stroke-width="1"/>\n`; } });
+      return s;
+    };
+    ut += jon(170, CL, [2, 8, 8], [34, 74, 114], 18);
+    ut += jon(430, NA, [2, 8], [30, 66], 16);
+    // vätejonen: en punkt med en tunn hänvisningsring så att den går att hitta
+    ut += `  <circle cx="620" cy="${CY}" r="4" fill="${HJ}"/>\n  <circle cx="620" cy="${CY}" r="16" fill="none" stroke="${INK}" stroke-width="1" stroke-dasharray="2 3"/>\n`;
+    ut += txt(170, 316, 'Kloridjon') + txt(170, 340, sup('Cl', '−'), 'font-size="19"');
+    ut += txt(430, 316, 'Natriumjon') + txt(430, 340, sup('Na', '+'), 'font-size="19"');
+    ut += txt(620, 316, 'Vätejon') + txt(620, 340, sup('H', '+'), 'font-size="19"');
+    ut += txt(W / 2, H - 8, 'Inte skalenlig — i verkligheten är skillnaden ännu större.', 'font-size="15" font-style="italic"');
+    fs.writeFileSync(path.join(UT7, 'vatejonens-storlek.svg'), svg(W, H,
+      'Tre joner bredvid varandra: en kloridjon med tre elektronskal, en natriumjon med två, och en vätejon som bara är en punkt utan skal. Bilden är inte skalenlig', ut));
+  }
+  // ----- 26. indikatorfarger.svg: lackmus, BTB och rödkål över pH-skalan 0–14 -----
+  {
+    const W = 760, H = 330, X0 = 130, X1 = 720, Y0 = 60, BH = 44, GAP = 30;
+    const px = ph => X0 + (X1 - X0) * ph / 14;
+    let ut = '  <defs>\n';
+    // färgstopp per indikator: [pH, färg] – övergångarna som gradient mellan stoppen
+    const band = [
+      ['Lackmus', [[0, ROD], [5, ROD], [8, BLA], [14, BLA]]],
+      ['BTB', [[0, GUL], [6, GUL], [6.8, GRON], [7.6, BLA], [14, BLA]]],
+      ['Rödkål', [[0, ROD], [2, ROD], [4, ROSA], [7, LILA], [9, BLA], [11.5, GRON], [14, GRON]]]
+    ];
+    band.forEach(([namn, stopp], i) => {
+      ut += `    <linearGradient id="g${i}" x1="0" x2="1" y1="0" y2="0">\n` + stopp.map(([ph, f]) => `      <stop offset="${r2(ph / 14 * 100)}%" stop-color="${f}"/>\n`).join('') + '    </linearGradient>\n';
+    });
+    ut += '  </defs>\n';
+    // pH-axel överst
+    for (let ph = 0; ph <= 14; ph++) {
+      ut += `  <line x1="${r2(px(ph))}" y1="${Y0 - 14}" x2="${r2(px(ph))}" y2="${Y0 - 6}" stroke="${INK}" stroke-width="1"/>\n` + txt(px(ph), Y0 - 20, String(ph), 'font-size="14"');
+    }
+    ut += txt(X0 - 16, Y0 - 20, 'pH', 'font-size="15" font-style="italic" text-anchor="end"');
+    band.forEach(([namn], i) => {
+      const y = Y0 + i * (BH + GAP);
+      ut += `  <rect x="${X0}" y="${y}" width="${X1 - X0}" height="${BH}" rx="6" fill="url(#g${i})" stroke="${INK}" stroke-width="1"/>\n`;
+      ut += txt(X0 - 16, y + BH / 2 + 6, namn, 'font-size="18" text-anchor="end"');
+    });
+    // markering av neutralt
+    ut += `  <line x1="${r2(px(7))}" y1="${Y0 - 4}" x2="${r2(px(7))}" y2="${Y0 + 3 * BH + 2 * GAP + 6}" stroke="${INK}" stroke-width="1" stroke-dasharray="4 4"/>\n`;
+    ut += txt(px(7), Y0 + 3 * BH + 2 * GAP + 26, 'neutralt', 'font-size="14" font-style="italic"');
+    ut += txt(px(1.5), Y0 + 3 * BH + 2 * GAP + 26, '← surare', 'font-size="14" font-style="italic"') + txt(px(12.5), Y0 + 3 * BH + 2 * GAP + 26, 'mer basiskt →', 'font-size="14" font-style="italic"');
+    fs.writeFileSync(path.join(UT7, 'indikatorfarger.svg'), svg(W, H,
+      'Tre färgband över pH-skalan 0 till 14: lackmus är rött i surt och blått i basiskt, BTB gult i surt, grönt vid neutralt och blått i basiskt, rödkål rött och rosa i surt, lila vid neutralt och blått till grönt i basiskt', ut));
+  }
+  // ----- 27. siv-regeln.svg: syra i vatten (rätt) mot vatten i syra (fel) -----
+  {
+    const W = 760, H = 360, MITT = 380;
+    let ut = `  <line x1="${MITT}" y1="20" x2="${MITT}" y2="${H - 50}" stroke="${INK}" stroke-width="2"/>\n`;
+    // bägarglas: kontur + vätska till nivå; returnerar inget
+    const glas = (x, y, b, h, niva, farg) => `  <path d="M${x + 3} ${y + h - niva}H${x + b - 3}V${y + h - 10}Q${x + b - 3} ${y + h - 3} ${x + b - 10} ${y + h - 3}H${x + 10}Q${x + 3} ${y + h - 3} ${x + 3} ${y + h - 10}Z" fill="${farg}"/>
+  <path d="M${x - 8} ${y + 6} L${x} ${y + 12} V${y + h - 12} Q${x} ${y + h} ${x + 12} ${y + h} H${x + b - 12} Q${x + b} ${y + h} ${x + b} ${y + h - 12} V${y + 12}" fill="none" stroke="${INK}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>\n`;
+    // litet kärl som häller: lutad bägare uppe till höger med en tunn stråle ner i glaset
+    const haller = (x, y, farg, etikett) => `  <g transform="rotate(-35 ${x} ${y})">
+  <path d="M${x - 22} ${y - 30} V${y + 6} Q${x - 22} ${y + 14} ${x - 14} ${y + 14} H${x + 14} Q${x + 22} ${y + 14} ${x + 22} ${y + 6} V${y - 30}" fill="none" stroke="${INK}" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="${x - 19}" y="${y - 12}" width="38" height="23" fill="${farg}"/>
+  </g>\n` + txt(x + 34, y - 26, etikett, 'font-size="14" font-style="italic" text-anchor="start"');
+    const strale = (x1, y1, x2, y2, farg) => `  <path d="M${x1} ${y1} Q${x1 + 6} ${(y1 + y2) / 2} ${x2} ${y2}" fill="none" stroke="${farg}" stroke-width="4" stroke-linecap="round"/>\n`;
+    // termometer med fyllnadsnivå 0–1
+    const termometer = (x, y, niva) => `  <rect x="${x - 5}" y="${y}" width="10" height="90" rx="5" fill="#fff" stroke="${INK}" stroke-width="1.5"/>
+  <rect x="${x - 3}" y="${r2(y + 88 - 80 * niva)}" width="6" height="${r2(80 * niva)}" fill="${HJ}"/>
+  <circle cx="${x}" cy="${y + 96}" r="9" fill="${HJ}" stroke="${INK}" stroke-width="1.5"/>\n`;
+    // vänster: mycket vatten, lite syra hälls i
+    ut += glas(80, 120, 170, 150, 110, VATSKA);
+    ut += haller(250, 70, '#e9d9a8', 'syra');
+    ut += strale(238, 96, 200, 160, '#e9d9a8');
+    ut += termometer(300, 150, 0.3);
+    ut += txt(165, 305, 'Syra i vatten', 'font-size="18" font-weight="bold"') + txt(165, 330, 'lite syra i mycket vatten', 'font-size="14" font-style="italic"');
+    // höger: lite koncentrerad syra, vatten hälls på – stänk, hög temperatur, kryss
+    ut += glas(460, 120, 170, 150, 50, '#e9d9a8');
+    ut += haller(630, 70, VATSKA, 'vatten');
+    ut += strale(618, 96, 580, 220, VATSKA);
+    [[500, 150], [530, 130], [560, 140], [590, 125], [610, 160], [480, 175]].forEach(([sx, sy]) => { ut += `  <circle cx="${sx}" cy="${sy}" r="4" fill="#e9d9a8" stroke="${INK}" stroke-width="1"/>\n`; });
+    ut += termometer(680, 150, 0.95);
+    ut += `  <line x1="440" y1="60" x2="720" y2="300" stroke="${HJ}" stroke-width="7" stroke-linecap="round" opacity="0.85"/>\n  <line x1="720" y1="60" x2="440" y2="300" stroke="${HJ}" stroke-width="7" stroke-linecap="round" opacity="0.85"/>\n`;
+    ut += txt(545, 305, 'Vatten i syra', 'font-size="18" font-weight="bold"') + txt(545, 330, 'kan koka och stänka', 'font-size="14" font-style="italic"');
+    fs.writeFileSync(path.join(UT7, 'siv-regeln.svg'), svg(W, H,
+      'Två halvor. Till vänster hälls lite syra i ett stort glas vatten och termometern visar måttlig temperatur. Till höger hälls vatten på koncentrerad syra, det stänker, termometern står högt och ett kryss täcker halvan', ut));
+  }
+}
+
+console.log('skrev 27 svg (8 repetition, 6 syror, 1 baser, 2 neutralisation, 4 försurning, 6 salter)', path.relative(path.join(__dirname, '..'), UT));
 
 
 // ---------- 19–24. Salter: sex SVG:er (leverans 2026-09-14, salter-avsnitt-1-2-komplett.md / -3-4-komplett.md) ----------

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-labelledby="t">
+  <title id="t">Tre joner bredvid varandra: en kloridjon med tre elektronskal, en natriumjon med två, och en vätejon som bara är en punkt utan skal. Bilden är inte skalenlig</title>
+  <circle cx="170" cy="170" r="34" fill="none" stroke="#2d4a35" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="170" cy="170" r="74" fill="none" stroke="#2d4a35" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="170" cy="170" r="114" fill="none" stroke="#2d4a35" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="170" cy="170" r="18" fill="#6a9e4f" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="170" cy="136" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="170" cy="204" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="170" cy="96" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="222.33" cy="117.67" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="244" cy="170" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="222.33" cy="222.33" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="170" cy="244" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="117.67" cy="222.33" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="96" cy="170" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="117.67" cy="117.67" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="170" cy="56" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="250.61" cy="89.39" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="284" cy="170" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="250.61" cy="250.61" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="170" cy="284" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="89.39" cy="250.61" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="56" cy="170" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="89.39" cy="89.39" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="430" cy="170" r="30" fill="none" stroke="#2d4a35" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="430" cy="170" r="66" fill="none" stroke="#2d4a35" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="430" cy="170" r="16" fill="#9b7cc4" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="430" cy="140" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="430" cy="200" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="430" cy="104" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="476.67" cy="123.33" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="496" cy="170" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="476.67" cy="216.67" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="430" cy="236" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="383.33" cy="216.67" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="364" cy="170" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="383.33" cy="123.33" r="5" fill="#3D6BA8" stroke="#fff" stroke-width="1"/>
+  <circle cx="620" cy="170" r="4" fill="#C64B3A"/>
+  <circle cx="620" cy="170" r="16" fill="none" stroke="#2d4a35" stroke-width="1" stroke-dasharray="2 3"/>
+  <text x="170" y="316" fill="#2d4a35" font-size="17" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" >Kloridjon</text>
+  <text x="170" y="340" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19">Cl<tspan font-size="0.7em" dy="-0.6em">−</tspan></text>
+  <text x="430" y="316" fill="#2d4a35" font-size="17" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" >Natriumjon</text>
+  <text x="430" y="340" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19">Na<tspan font-size="0.7em" dy="-0.6em">+</tspan></text>
+  <text x="620" y="316" fill="#2d4a35" font-size="17" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" >Vätejon</text>
+  <text x="620" y="340" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19">H<tspan font-size="0.7em" dy="-0.6em">+</tspan></text>
+  <text x="380" y="372" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">Inte skalenlig — i verkligheten är skillnaden ännu större.</text>
+</svg>
