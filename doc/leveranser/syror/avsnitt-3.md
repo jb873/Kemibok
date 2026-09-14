@@ -8,6 +8,9 @@
 > **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
 > påståenderubriker (###) och delade stycken enligt `reviderat-syror-1-3.md`. Tillagda meningar (där märkta ▸) ligger här
 > utan märke. Enkel och Fördjupning oförändrade.
+>
+> **Omarbetat 2026-09-14 (andra omgången):** Standard-blocken ersatta enligt `omarbetat-syror-1-3.md` (tre rubriker per
+> underdel, utbyggd text; ▸-meningar inlagda utan märke). Kärnpunkter, Enkel och Fördjupning orörda.
 
 ---
 
@@ -133,12 +136,8 @@ sina vätejoner när den kommer i kontakt med vatten.
 **Stark och svag beskriver hur lätt syran avger sina vätejoner — inte hur mycket syra som finns i
 lösningen.**
 
-### En stark syra avger nästan alla sina vätejoner
-
 En stark syra avger i princip alla vätejoner som den kan avge när den löses i vatten. Vätejonerna tas
 direkt upp av vattenmolekyler och bildar oxoniumjoner, H₃O⁺.
-
-### En svag syra avger bara en del
 
 En svag syra avger däremot bara en del av sina vätejoner. I lösningen finns därför både syramolekyler
 som fortfarande har kvar sin vätejon och partiklar som har avgett den.
@@ -150,10 +149,22 @@ avger vätejoner. Koncentrationen beskriver hur mycket syra som finns i en viss 
 
 En stark syra kan därför vara utspädd och en svag syra kan vara koncentrerad.
 
+Skillnaden går att tänka på så här: styrkan är en egenskap hos själva syran och kan inte ändras.
+Koncentrationen är något du kan ändra genom att hälla i mer vatten.
+
+Det betyder att två lösningar med lika mycket syra kan innehålla helt olika många vätejoner, beroende
+på vilken syra det är.
+
 ### Hur hårt vätejonen sitter avgör styrkan
 
 Vad som avgör hur lätt en syra avger sin vätejon beror på hur hårt vätejonen sitter fast i syrans
 partikel. Sitter den löst avges den lätt, och syran är stark.
+
+Hur hårt den sitter beror i sin tur på hur syrans partikel är byggd. Det är därför styrkan är
+förutsägbar för den som känner till molekylens uppbyggnad, men inte något man kan gissa sig till.
+
+Indelningen i starka och svaga syror är därför inte godtycklig. Den speglar en verklig egenskap som går
+att mäta, och som skiljer sig kraftigt mellan olika syror.
 
 ---
 
@@ -268,11 +279,11 @@ precis vad nästa avsnitt handlar om.
 
 ### Tre starka syror är särskilt viktiga
 
-Tre viktiga starka syror är saltsyra, svavelsyra och salpetersyra. Gemensamt för dem är att de
-reagerar mycket lätt med vatten och i princip fullständigt avger de vätejoner som kan avges i
-vattenlösningen.
+Tre viktiga starka syror är saltsyra, svavelsyra och salpetersyra. Gemensamt för dem är att de reagerar
+mycket lätt med vatten och i princip fullständigt avger de vätejoner som kan avges i vattenlösningen.
 
-### Saltsyra och salpetersyra avger en vätejon var
+Alla tre är dessutom centrala i industrin, vilket inte är någon slump — en syra som reagerar
+fullständigt är förutsägbar att arbeta med.
 
 **Saltsyra, HCl**, bildas när väteklorid löses i vatten. Vätekloriden avger sin vätejon till en
 vattenmolekyl. Då bildas en oxoniumjon och en kloridjon:
@@ -284,12 +295,10 @@ nitratjoner:
 
 **HNO₃ + H₂O → H₃O⁺ + NO₃⁻**
 
-### Svavelsyra kan avge två
+### Svavelsyra kan avge två vätejoner
 
 **Svavelsyra, H₂SO₄**, skiljer sig från de två andra genom att varje molekyl innehåller två vätejoner
 som kan avges. Den första avges mycket lätt, precis som hos saltsyra.
-
-### Den andra vätejonen sitter hårdare
 
 Den andra sitter hårdare, eftersom den ska lämna en partikel som redan har en negativ laddning — och en
 negativ laddning håller kvar den positiva vätejonen. Därför avges den andra vätejonen bara delvis.
@@ -299,8 +308,13 @@ praktiken räknas den ändå som en stark syra, eftersom det första steget ger 
 
 ### Hur lågt pH blir beror också på koncentrationen
 
-Starka syror kan ge upphov till en hög koncentration av oxoniumjoner och därmed ett lågt pH. Hur lågt
-pH blir beror dock också på hur koncentrerad syralösningen är.
+Starka syror kan ge upphov till en hög koncentration av oxoniumjoner och därmed ett lågt pH.
+
+Hur lågt pH blir beror dock också på hur koncentrerad syralösningen är. En stark syra som är kraftigt
+utspädd kan ha ett ganska måttligt pH, trots att varje syrapartikel avgett sin vätejon.
+
+Det är en av de vanligaste missuppfattningarna om syror: att stark automatiskt betyder farlig eller
+att lågt pH automatiskt betyder stark syra. Nästa avsnitt handlar om just den skillnaden.
 
 ---
 
@@ -408,24 +422,24 @@ vatten. Nästan alla betyder stark. Bara en del betyder svag.
 Många syror är svaga. Exempel är ättiksyra, citronsyra, kolsyra, mjölksyra och myrsyra. De förekommer
 bland annat i livsmedel, i naturen och i levande organismer.
 
-### Bara en del av molekylerna avger sin vätejon
+Det är ingen tillfällighet att de svaga syrorna är de vi möter i mat och kropp. En stark syra skulle
+skada vävnad, medan en svag kan finnas i en frukt utan att göra någon skada.
 
 När en svag syra blandas med vatten avger bara en del av syramolekylerna sina vätejoner. Resten finns
 fortfarande kvar som syramolekyler i lösningen.
 
-### Ättiksyra visar hur det ser ut
+### Reaktionen går åt båda hållen
 
 Ättiksyra kan användas som exempel. När en ättiksyramolekyl avger en vätejon till en vattenmolekyl
 bildas en oxoniumjon och en acetatjon:
 
 **CH₃COOH + H₂O ⇌ H₃O⁺ + CH₃COO⁻**
 
-### Pilen åt båda hållen betyder att reaktionen går båda vägarna
-
 Här används en dubbelriktad pil, ⇌, eftersom reaktionen kan gå åt båda hållen. Ättiksyramolekyler avger
 vätejoner, men samtidigt kan vätejoner överföras tillbaka så att ättiksyra återbildas.
 
-Efter en tid uppstår en balans mellan de båda reaktionerna.
+Efter en tid uppstår en balans mellan de båda reaktionerna. Det betyder inte att allt står stilla — båda
+reaktionerna pågår för fullt, men lika fort åt båda hållen.
 
 Det är detta som är grunden till att ättiksyra är en svag syra: bara en del av syramolekylerna har
 avgett sin vätejon vid en viss tidpunkt.
@@ -435,9 +449,12 @@ avgett sin vätejon vid en viss tidpunkt.
 Samma grundprincip gäller för andra svaga syror. De kan avge vätejoner, men reaktionen med vatten är
 inte fullständig.
 
+Andelen varierar mellan olika svaga syror. Hos ättiksyra har ungefär fyra promille av molekylerna
+avgett sin vätejon vid ett givet ögonblick — resten är hela.
+
 Skillnaden mellan starka och svaga syror handlar alltså inte om vilken syra som det finns mest av eller
-vilken lösning som har lägst pH. Den handlar om hur stor andel av syrans möjliga vätejoner som avges
-när syran reagerar med vatten.
+vilken lösning som har lägst pH. Den handlar om hur stor andel av syrans möjliga vätejoner som avges när
+syran reagerar med vatten.
 
 ---
 
