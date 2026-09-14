@@ -14,6 +14,9 @@
 > **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
 > påståenderubriker (###) och delade stycken enligt `reviderat-forsurning.md`. Tillagda meningar (där märkta ▸) ligger här
 > utan märke. Enkel och Fördjupning oförändrade.
+>
+> **Omarbetat 2026-09-14 (andra omgången):** Standard-blocken ersatta enligt `omarbetat-forsurning.md` (tre rubriker per
+> underdel, utbyggd text; ▸-meningar inlagda utan märke). Kärnpunkter, Enkel och Fördjupning orörda.
 
 ---
 
@@ -178,35 +181,45 @@ Talet 5,6 är en utgångspunkt, inte en exakt gräns.
 
 ### Rent regnvatten är inte neutralt
 
-Det är lätt att tänka att rent regnvatten borde ha pH 7 och alltså vara neutralt. Så är det inte.
-Redan naturligt regnvatten är vanligtvis svagt surt.
+Det är lätt att tänka att rent regnvatten borde ha pH 7 och alltså vara neutralt. Så är det inte. Redan
+naturligt regnvatten är vanligtvis svagt surt.
 
-### Luftens koldioxid bildar kolsyra
+Det gäller överallt på jorden, också långt från all mänsklig påverkan. Regn har varit surt så länge det
+funnits en atmosfär med koldioxid i.
 
 I atmosfären finns **koldioxid, CO₂**. När regndroppar bildas löser sig en del av luftens koldioxid i
 vattnet. Koldioxiden reagerar då med vatten och bildar **kolsyra**:
 
 **CO₂ + H₂O ⇌ H₂CO₃**
 
-Kolsyra är en svag syra. En liten del av kolsyramolekylerna avger vätejoner till vattenmolekyler, så
-att oxoniumjoner, H₃O⁺, bildas. Därför får regnvattnet ett pH under 7.
+Kolsyra är en svag syra. En liten del av kolsyramolekylerna avger vätejoner till vattenmolekyler, så att
+oxoniumjoner, H₃O⁺, bildas. Därför får regnvattnet ett pH under 7.
 
 ### Utgångspunkten är pH 5,6
 
-Som kemisk utgångspunkt brukar man ange att rent regnvatten i jämvikt med luftens koldioxid har ett pH
-på ungefär **5,6**.
+Som kemisk utgångspunkt brukar man ange att rent regnvatten i jämvikt med luftens koldioxid har ett pH på
+ungefär **5,6**.
+
+Talet är inte valt utan uträknat. Det följer av hur mycket koldioxid luften innehåller och hur svag
+kolsyran är.
 
 I verkligheten kan naturlig nederbörd ha både högre och lägre pH eftersom luften också innehåller
 exempelvis havssalt, stoft och naturliga organiska ämnen.
 
+Talet 5,6 är därför en referenspunkt att jämföra mot, inte en gräns som all naturlig nederbörd håller
+sig till.
+
 ### Försurning betyder surare än naturligt
 
-Det viktiga är därför inte att all nederbörd med ett pH under 7 skulle vara försurad. **Försurning
-innebär att mark eller vatten blir surare än sitt naturliga tillstånd**, exempelvis genom att människan
-tillför mer försurande ämnen än naturen hinner neutralisera.
+Det viktiga är därför inte att all nederbörd med ett pH under 7 skulle vara försurad. **Försurning innebär
+att mark eller vatten blir surare än sitt naturliga tillstånd**, exempelvis genom att människan tillför
+mer försurande ämnen än naturen hinner neutralisera.
 
 Skillnaden mellan pH 5,6 och pH 4,2 låter liten, men eftersom varje steg är tio gånger motsvarar den
 ungefär tjugofem gånger fler vätejoner.
+
+Uttrycket "surt regn" är därför något missvisande. Regn är alltid surt — det är när det blir betydligt
+surare än vanligt som det uppstår ett problem.
 
 ---
 
@@ -339,43 +352,43 @@ det stora problemet under 1900-talet.
 
 ## B — STANDARD
 
-### Svaveldioxid och kväveoxider är huvudorsakerna
+### Två ämnesgrupper orsakade försurningen
 
 Den kraftiga försurning som drabbade stora delar av Europa under 1900-talet orsakades framför allt av
 utsläpp av **svaveldioxid** och **kväveoxider**.
 
-### Svavlet finns i bränslet
+Båda bildas vid förbränning, men på helt olika sätt. Det ena kommer från bränslet, det andra från
+luften — och den skillnaden avgör hur lätt de går att minska.
+
+### Svavlet finns i bränslet från början
 
 Svaveldioxid, SO₂, bildas när bränslen som innehåller svavel förbränns. Framför allt kol och olja kan
 innehålla svavel. När bränslet förbränns reagerar svavlet med syre och bildar svaveldioxid.
 
-I atmosfären kan svaveldioxiden reagera vidare med syre, vatten och andra ämnen. Så småningom bildas
-bland annat **svavelsyra, H₂SO₄**, och sulfatpartiklar.
+Svavlet är inte tillsatt utan fanns i det organiska material som bränslet en gång bildades av.
 
-### Kvävet kommer från luften
+I atmosfären kan svaveldioxiden reagera vidare med syre, vatten och andra ämnen. Så småningom bildas bland
+annat **svavelsyra, H₂SO₄**, och sulfatpartiklar.
+
+### Kvävet kommer från luften och kräver hög temperatur
 
 Kväveoxider fungerar annorlunda. Luften består till nästan fyra femtedelar av kvävgas, N₂. Normalt är
 kvävgasen mycket reaktionströg eftersom de två kväveatomerna hålls ihop av en stark trippelbindning.
 
-### Hettan bryter trippelbindningen
+Vid de mycket höga temperaturer som uppstår i exempelvis förbränningsmotorer och kraftverk kan ändå kväve
+och syre börja reagera med varandra.
 
-Vid de mycket höga temperaturer som uppstår i exempelvis förbränningsmotorer och kraftverk kan ändå
-kväve och syre börja reagera med varandra.
+Det krävs över två tusen grader, vilket uppnås i det ögonblick bränslet antänds i en motor.
 
 Då bildas olika kväveoxider, framför allt kvävemonoxid, NO, och kvävedioxid, NO₂. De brukar tillsammans
 betecknas **NOₓ**.
 
-I atmosfären kan kväveoxiderna reagera vidare och bland annat bilda **salpetersyra, HNO₃**. När
-svavelsyra och salpetersyra når mark och vatten ökar mängden vätejoner och därmed försurningen.
+I atmosfären kan kväveoxiderna reagera vidare och bland annat bilda **salpetersyra, HNO₃**. När svavelsyra
+och salpetersyra når mark och vatten ökar mängden vätejoner och därmed försurningen.
 
-### Ammoniak från jordbruket bidrar också
-
-Det finns även andra ämnen som kan bidra till försurning. Ett viktigt exempel är **ammoniak**, som
-framför allt kommer från jordbruket. När ammoniak omvandlas i mark och vatten kan processerna bidra
-till försurning.
-
-I detta kapitel ligger dock tyngdpunkten på svaveldioxid och kväveoxider, eftersom de hade en central
-roll i det historiska problemet med surt nedfall i Sverige och övriga Europa.
+Det finns även andra ämnen som kan bidra till försurning. Ett viktigt exempel är **ammoniak**, som framför
+allt kommer från jordbruket. I detta kapitel ligger dock tyngdpunkten på svaveldioxid och kväveoxider,
+eftersom de hade en central roll i det historiska problemet.
 
 ---
 
@@ -501,35 +514,40 @@ det gick till får du läsa om i avsnitt 3.
 
 De försurande ämnena kan nå marken på två huvudsakliga sätt.
 
-### Vått nedfall följer med nederbörden
+Vid **vått nedfall** finns de försurande ämnena lösta i regn, snö eller annan nederbörd. Regndropparna tar
+med sig exempelvis sulfat och nitrat från atmosfären och transporterar dem till marken.
 
-Vid **vått nedfall** finns de försurande ämnena lösta i regn, snö eller annan nederbörd. Regndropparna
-tar med sig exempelvis sulfat och nitrat från atmosfären och transporterar dem till marken.
+Vid **torrt nedfall** fastnar gaser och små partiklar direkt på mark, vatten, växter och byggnader. När de
+senare kommer i kontakt med vatten kan de bidra till försurning.
 
-### Torrt nedfall blir surt först vid kontakt med fukt
+Båda vägarna leder till samma sak: fler vätejoner i mark och vatten. Skillnaden ligger bara i hur ämnena
+transporteras dit.
 
-Vid **torrt nedfall** fastnar gaser och små partiklar direkt på mark, vatten, växter och byggnader. När
-de senare kommer i kontakt med vatten kan de bidra till försurning.
-
-### Vindarna för dem hundratals kilometer
+### Luftföroreningar färdas långt
 
 En viktig egenskap hos luftföroreningar är att de kan transporteras mycket långt. Vindarna bryr sig inte
 om nationsgränser. Ett utsläpp från en fabrik, ett kraftverk eller ett fartyg kan därför orsaka nedfall
 hundratals kilometer från utsläppskällan.
 
-### Höga skorstenar spred problemet
+Det betyder att ett land kan drabbas hårt av försurning utan att själv släppa ut särskilt mycket. Precis
+så var det för Sverige under lång tid.
 
-Under 1900-talet byggdes allt högre industriskorstenar. Det minskade koncentrationen av luftföroreningar
-i närheten av fabrikerna, men utsläppen försvann inte. De spreds i stället över större områden.
+Under 1900-talet byggdes allt högre industriskorstenar. Det minskade koncentrationen av luftföroreningar i
+närheten av fabrikerna, men utsläppen försvann inte. De spreds i stället över större områden.
 
-Sverige tog under lång tid emot stora mängder försurande ämnen som hade släppts ut i andra länder. Även
-i dag kommer en stor del av svavelnedfallet över Sverige från utländska källor och internationell
-sjöfart.
+Tanken var god: högre skorsten gav renare luft runt fabriken. Men problemet flyttades bara längre bort,
+och blev därmed någon annans.
 
 ### Därför krävs samarbete mellan länder
 
-Försurning är därför ett **gränsöverskridande miljöproblem**. Det går inte att lösa genom att ett enda
-land minskar sina utsläpp.
+Sverige tog under lång tid emot stora mängder försurande ämnen som hade släppts ut i andra länder. Även i
+dag kommer en stor del av svavelnedfallet över Sverige från utländska källor och internationell sjöfart.
+
+Försurning är därför ett **gränsöverskridande miljöproblem**. Det går inte att lösa genom att ett enda land
+minskar sina utsläpp.
+
+Det gör försurningen till ett av få miljöproblem där kemin ledde direkt till internationell politik. Hur
+det gick till tas upp i avsnitt 3.
 
 ---
 

@@ -8,6 +8,9 @@
 > **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
 > påståenderubriker (###) och delade stycken enligt `reviderat-forsurning.md`. Tillagda meningar (där märkta ▸) ligger här
 > utan märke. Enkel och Fördjupning oförändrade.
+>
+> **Omarbetat 2026-09-14 (andra omgången):** Standard-blocken ersatta enligt `omarbetat-forsurning.md` (tre rubriker per
+> underdel, utbyggd text; ▸-meningar inlagda utan märke). Kärnpunkter, Enkel och Fördjupning orörda.
 
 ---
 
@@ -167,38 +170,41 @@ efteråt. Kalkning kan hålla en sjö vid liv, men bara minskade utsläpp kan g�
 
 ### Det viktigaste är att hindra utsläppen
 
-Den viktigaste åtgärden mot försurning är att hindra de försurande ämnena från att släppas ut från
-början.
+Den viktigaste åtgärden mot försurning är att hindra de försurande ämnena från att släppas ut från början.
 
-### Svavel kan renas ur bränsle och rökgas
+Allt annat är att lindra skador. Så länge surt nedfall fortsätter kommer problemet att finnas kvar,
+oavsett vilka motåtgärder som sätts in.
 
-Svavelutsläpp kan minskas på flera sätt. Man kan använda bränslen med låg svavelhalt och rena rökgaser
-från kraftverk och industrier.
+Svavelutsläpp kan minskas på flera sätt. Man kan använda bränslen med låg svavelhalt och rena rökgaser från
+kraftverk och industrier.
 
-Vid **rökgasavsvavling** kan exempelvis kalksten användas för att fånga upp svavelföreningar innan de
-lämnar skorstenen.
+Vid **rökgasavsvavling** kan exempelvis kalksten användas för att fånga upp svavelföreningar innan de lämnar
+skorstenen.
 
-### Kväveoxider renas i katalysatorer
+Det är samma neutralisationskemi som i en sjö, fast i en skorsten: en bas fångar upp en syra innan den
+kommer ut.
 
-Kväveoxider kan också minskas med teknisk rening. I bilars avgassystem används katalysatorer som
-omvandlar kväveoxider till andra ämnen.
+### Kväveoxider måste renas efteråt
+
+Kväveoxider kan också minskas med teknisk rening. I bilars avgassystem används katalysatorer som omvandlar
+kväveoxider till andra ämnen.
 
 I större dieselmotorer, kraftverk och industrier kan andra katalytiska reningsmetoder användas.
+
+Skillnaden mot svavel är att kvävet inte går att ta bort i förväg. Det kommer från luften motorn andas,
+så reningen måste ske efter förbränningen.
 
 ### Teknik räcker inte utan samarbete
 
 Men teknik vid enskilda utsläppskällor räcker inte. Eftersom luftföroreningarna kan färdas mellan länder
-krävs **internationellt samarbete**.
+krävs **internationellt samarbete**. Länderna i Europa har därför ingått avtal där de förbinder sig att
+minska sina utsläpp.
 
-Länderna i Europa har därför ingått avtal där de förbinder sig att minska sina utsläpp.
+Resultatet har varit tydligt. Naturvårdsverkets miljöövervakning visar att svavelnedfallet över Sverige har
+minskat med **mer än 80 procent**. Kvävenedfallet har också minskat, men betydligt mindre.
 
-### Resultatet har varit tydligt
-
-Resultatet har varit tydligt. Naturvårdsverkets miljöövervakning visar att svavelnedfallet över Sverige
-har minskat med **mer än 80 procent**. Kvävenedfallet har också minskat, men betydligt mindre.
-
-Det visar en viktig princip inom miljöarbetet: det effektivaste är att angripa **orsaken** till
-problemet, inte bara försöka reparera skadorna efteråt.
+Det visar en viktig princip inom miljöarbetet: det effektivaste är att angripa **orsaken** till problemet,
+inte bara försöka reparera skadorna efteråt.
 
 ---
 
@@ -322,48 +328,46 @@ långsamt återhämtar sig. Det ersätter inte minskade utsläpp.
 
 ## B — STANDARD
 
-### Kalk minskar skadorna i redan försurade vatten
+### Kalk neutraliserar syran i vattnet
 
 När en sjö eller ett vattendrag redan har försurats kan man minska skadorna genom **kalkning**.
 
-### Kalciumkarbonat reagerar med vätejoner
-
 I Sverige används framför allt finmalen kalksten som innehåller **kalciumkarbonat, CaCO₃**. När kalken
-kommer i kontakt med det sura vattnet reagerar karbonatet med vätejoner. Vätejoner förbrukas och
-pH-värdet stiger.
+kommer i kontakt med det sura vattnet reagerar karbonatet med vätejoner. Vätejoner förbrukas och pH-värdet
+stiger.
 
 Detta är samma neutralisationskemi som du tidigare har mött:
 
 **syra + bas → mindre sur lösning**
 
-### Buffertkapaciteten ökar också
+Karbonatjonen tar upp vätejoner och fungerar därmed som en bas, precis som när kalksten vittrar av sur
+nederbörd. Skillnaden är att reaktionen här är önskad.
+
+### Svårlösligheten ger långvarig effekt
 
 Kalkningen ökar dessutom vattnets förmåga att motstå nya tillskott av syra. Man säger att vattnets
 **buffertkapacitet** ökar.
 
-### Svårlösligheten ger långvarig effekt
+Kalciumkarbonat är relativt svårlösligt. Det gör att effekten blir mer långvarig än om man skulle tillsätta
+en mycket lättlöslig stark bas.
 
-Kalciumkarbonat är relativt svårlösligt. Det gör att effekten blir mer långvarig än om man skulle
-tillsätta en mycket lättlöslig stark bas.
+Överskottet lägger sig på botten och löser sig efterhand som det behövs. Kalken doserar därmed sig själv:
+är vattnet surt löser sig mer, närmar sig pH det normala löser sig mindre.
 
-Men mängden kalk måste ändå anpassas noggrant till sjön eller vattendraget. Målet är inte att göra
-vattnet basiskt utan att återställa en vattenkemi där de arter som naturligt hör hemma där kan överleva.
+Men mängden kalk måste ändå anpassas noggrant till sjön eller vattendraget. Målet är inte att göra vattnet
+basiskt utan att återställa en vattenkemi där de arter som naturligt hör hemma där kan överleva.
 
-### Orsaken finns kvar
+### Kalkning är en skyddsåtgärd, inte en lösning
 
-Kalkning tar däremot inte bort själva orsaken till försurningen. Om försurande ämnen fortsätter att
-tillföras förbrukas kalkens neutraliserande effekt, och kalkningen måste upprepas.
+Kalkning tar däremot inte bort själva orsaken till försurningen. Om försurande ämnen fortsätter att tillföras
+förbrukas kalkens neutraliserande effekt, och kalkningen måste upprepas.
 
-### Sverige har kalkat sedan 1977
+Sverige började med statligt stödd försökskalkning **1977**. Kalkning har sedan blivit en av landets största
+miljövårdsinsatser. Den sker bland annat genom spridning från båt eller helikopter och genom särskilda
+kalkdoserare i rinnande vatten. Många vatten behöver kalkas återkommande.
 
-Sverige började med statligt stödd försökskalkning **1977**. Kalkning har sedan blivit en av landets
-största miljövårdsinsatser. Den sker bland annat genom spridning från båt eller helikopter och genom
-särskilda kalkdoserare i rinnande vatten.
-
-Många vatten behöver kalkas återkommande.
-
-Kalkningen är därför bäst att se som en **skyddsåtgärd**. Den kan hålla ett skadat ekosystem vid liv
-medan naturen långsamt återhämtar sig, men den ersätter inte minskade utsläpp.
+Kalkningen är därför bäst att se som en **skyddsåtgärd**. Den kan hålla ett skadat ekosystem vid liv medan
+naturen långsamt återhämtar sig, men den ersätter inte minskade utsläpp.
 
 ---
 
@@ -495,20 +499,21 @@ att återställa.
 
 ## C — STANDARD
 
-### Ja, utvecklingen har vänt
+### Ja, utvecklingen har vänt tydligt
 
 Ja. Försurningen är ett miljöproblem där utvecklingen på många sätt har vänt åt rätt håll.
 
-### Svavelutsläppen är en tiondel av 1990 års nivå
+Utsläppen av svavel har minskat mycket kraftigt i Sverige och Europa. Sveriges utsläpp av svaveldioxid var
+2024 bara drygt en tiondel av nivån 1990.
 
-Utsläppen av svavel har minskat mycket kraftigt i Sverige och Europa. Sveriges utsläpp av svaveldioxid
-var 2024 bara drygt en tiondel av nivån 1990.
-
-Samtidigt har svavelnedfallet över Sverige minskat med mer än 80 procent och ligger nu nära
-förindustriella nivåer.
+Samtidigt har svavelnedfallet över Sverige minskat med mer än 80 procent och ligger nu nära förindustriella
+nivåer.
 
 Det har fått effekt i naturen. Antalet försurade sjöar och vattendrag har minskat och många vatten har
 börjat återhämta sig.
+
+Det är värt att stanna vid. Försurningen är ett av få stora miljöproblem där man kan peka på ett tydligt
+och mätbart resultat av de åtgärder som sattes in.
 
 ### Men marken återhämtar sig långsamt
 
@@ -518,26 +523,27 @@ många marker stora mängder neutraliserande ämnen.
 Dessa måste bland annat ersättas genom **vittring av mineral**, och vittring är en mycket långsam process.
 Därför kan marken förbli försurad långt efter att luftföroreningarna har minskat.
 
-### Skogsbruket påverkar balansen
+Luften blev renare på ett par decennier. Marken behöver betydligt längre tid, eftersom buffertförrådet
+byggs upp i den takt berggrunden vittrar.
 
 Även skogsbruket påverkar balansen. När träd, grenar och toppar förs bort från skogen följer näringsämnen
-och basiska ämnen med biomassan.
-
-Ett stort uttag kan därför bidra till att markens återhämtning går långsammare.
+och basiska ämnen med biomassan. Ett stort uttag kan därför bidra till att markens återhämtning går
+långsammare.
 
 ### Kvävet är svårare än svavlet
 
-Kvävet är dessutom ett mer svårlöst problem än svavlet. Utsläppen och nedfallet har minskat, men inte
-lika kraftigt som för svavel.
+Kvävet är dessutom ett mer svårlöst problem än svavlet. Utsläppen och nedfallet har minskat, men inte lika
+kraftigt som för svavel.
 
-Kväveoxider kommer bland annat från trafik, sjöfart och olika former av förbränning, medan ammoniak
-framför allt kommer från jordbruket.
+Kväveoxider kommer bland annat från trafik, sjöfart och olika former av förbränning, medan ammoniak framför
+allt kommer från jordbruket.
 
-### Miljöproblem går att påverka
+Skillnaden är att svavlet kom från ett fåtal stora anläggningar som gick att reglera, medan kvävet kommer
+från miljontals små källor.
 
 Försurningen är därför inte ett avslutat miljöproblem. Men utvecklingen visar samtidigt något viktigt:
-**miljöproblem går att påverka**. Genom forskning, teknisk utveckling, lagstiftning och internationella
-avtal har utsläppen minskat kraftigt och naturen har börjat återhämta sig.
+**miljöproblem går att påverka**. Genom forskning, teknisk utveckling, lagstiftning och internationella avtal
+har utsläppen minskat kraftigt och naturen har börjat återhämta sig.
 
 Det som tog några årtionden att försura kan däremot ta betydligt längre tid att återställa.
 

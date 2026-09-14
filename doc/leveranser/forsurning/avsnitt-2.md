@@ -8,6 +8,9 @@
 > **Reviderat 2026-09-14:** kärnpunkter (Standard) omskrivna som frågor och Standard-texterna försedda med
 > påståenderubriker (###) och delade stycken enligt `reviderat-forsurning.md`. Tillagda meningar (där märkta ▸) ligger här
 > utan märke. Enkel och Fördjupning oförändrade.
+>
+> **Omarbetat 2026-09-14 (andra omgången):** Standard-blocken ersatta enligt `omarbetat-forsurning.md` (tre rubriker per
+> underdel, utbyggd text; ▸-meningar inlagda utan märke). Kärnpunkter, Enkel och Fördjupning orörda.
 
 ---
 
@@ -202,33 +205,38 @@ tillgängliga och giftiga. Det är summan av detta som skadar naturen.
 Marken utsätts ständigt för syror, även från naturliga processer. Trots det förändras markens pH ofta
 långsamt. Orsaken är att marken har en **buffertförmåga**.
 
-En buffert kan ta upp tillsatta vätejoner och därmed motverka stora förändringar av pH. I marken sker
-detta bland annat genom vittring av mineral och genom reaktioner med olika basiska ämnen.
-
-### Kalkrika marker klarar sig bäst
+En buffert kan ta upp tillsatta vätejoner och därmed motverka stora förändringar av pH. I marken sker detta
+bland annat genom vittring av mineral och genom reaktioner med olika basiska ämnen.
 
 Jordar som innehåller mycket kalk har särskilt stor förmåga att neutralisera syra. Många svenska marker
 består däremot av svårvittrade bergarter och har därför betydligt sämre buffertförmåga.
 
+Det är en viktig del av förklaringen till varför just Sverige drabbades så hårt. Berggrunden består till
+stor del av granit och gnejs, som ger ifrån sig mycket lite.
+
 ### Näringsämnen sköljs ur marken
 
-När vätejoner tillförs marken under lång tid förbrukas en del av denna buffert. Samtidigt påverkas
-markens joner.
+När vätejoner tillförs marken under lång tid förbrukas en del av denna buffert. Samtidigt påverkas markens
+joner.
 
 Positivt laddade näringsjoner som **kalciumjoner, magnesiumjoner och kaliumjoner** kan trängas undan av
 vätejoner och följa med markvattnet nedåt. Detta kallas **urlakning**.
 
 Marken förlorar då ämnen som växterna behöver.
 
-### Aluminium frigörs vid lägre pH
+Näringsjonerna sitter normalt bundna till markpartiklarna, där växtrötterna kan hämta dem vid behov.
+Marken fungerar alltså som ett förråd — och urlakningen tömmer det.
 
-När pH sjunker ytterligare händer något annat viktigt. Aluminium finns naturligt bundet i markens
-mineral. Vid högre pH är mycket av aluminiumet relativt hårt bundet, men i surare mark ökar mängden
-lösliga former av aluminium.
+### Aluminium frigörs och blir giftigt
+
+När pH sjunker ytterligare händer något annat viktigt. Aluminium finns naturligt bundet i markens mineral.
+Vid högre pH är mycket av aluminiumet relativt hårt bundet, men i surare mark ökar mängden lösliga former
+av aluminium.
 
 Dessa kan skada växternas rötter och transporteras med markvattnet till bäckar, åar och sjöar.
 
-### Hela jonbalansen förändras
+Aluminium är ett av de vanligaste grundämnena i jordskorpan. Så länge det sitter bundet i mineral är det
+ofarligt — det är lösligheten som skapar problemet.
 
 Det betyder att försurning inte bara handlar om ett lägre pH-värde. **Hela markens jonbalans förändras.**
 Näringsämnen försvinner samtidigt som ämnen som aluminium blir mer tillgängliga.
@@ -361,40 +369,43 @@ Man kan alltså inte avgöra hur ett ekosystem mår genom att titta på hur klar
 En sjö påverkas av hela området som avvattnas till sjön, det så kallade **avrinningsområdet**. Därför
 kommer en stor del av försurningspåverkan via vatten som först har passerat genom marken.
 
-När markens buffertförmåga försämras kan surt vatten rinna vidare till bäckar, åar och sjöar. Samtidigt
-kan löst aluminium följa med.
+När markens buffertförmåga försämras kan surt vatten rinna vidare till bäckar, åar och sjöar. Samtidigt kan
+löst aluminium följa med.
 
-### Både pH och aluminium skadar
+Det betyder att en sjö kan försuras utan att regnet som faller direkt på den förändrats särskilt mycket.
+Det avgörande är vad som händer i marken runt omkring.
 
-Både ett lågt pH och förhöjda halter av vissa former av aluminium kan skada vattenlevande organismer.
-Fisk är särskilt känslig under vissa delar av livet, exempelvis när rom och yngel utvecklas.
+### Aluminium på gälarna skadar fisken
 
-### Aluminium fastnar på gälarna
+Både ett lågt pH och förhöjda halter av vissa former av aluminium kan skada vattenlevande organismer. Fisk
+är särskilt känslig under vissa delar av livet, exempelvis när rom och yngel utvecklas.
 
-Aluminium kan fastna på fiskarnas **gälar**. Där kan det störa fiskens förmåga att ta upp syre och
-reglera mängden salter i kroppen. Resultatet kan bli både syrebrist och störningar i fiskens
-saltbalans.
+Aluminium kan fastna på fiskarnas **gälar**. Där kan det störa fiskens förmåga att ta upp syre och reglera
+mängden salter i kroppen. Resultatet kan bli både syrebrist och störningar i fiskens saltbalans.
 
 Lax och mört är exempel på arter som är känsliga för försurning.
 
-### Klart vatten kan vara ett dåligt tecken
+Gälarna är byggda för maximal kontakt med vattnet, med tunna membran och stor yta. Det är precis vad som
+gör dem effektiva — och precis vad som gör dem sårbara.
+
+### Klart vatten och surstötar
 
 Även plankton, bottenlevande djur och andra arter påverkas. När känsliga arter försvinner förändras hela
 näringsväven.
 
-En försurad sjö kan därför se klar och ren ut samtidigt som den biologiska mångfalden har minskat
-kraftigt. Man kan alltså inte avgöra hur ett ekosystem mår bara genom att titta på hur klart vattnet är.
-
-### Snösmältningen ger en surstöt
+En försurad sjö kan därför se klar och ren ut samtidigt som den biologiska mångfalden har minskat kraftigt.
+Man kan alltså inte avgöra hur ett ekosystem mår bara genom att titta på hur klart vattnet är.
 
 Särskilt kraftiga förändringar kan inträffa under **snösmältningen på våren**. Då kommer stora mängder
-smältvatten ut i mark och vattendrag under kort tid.
+smältvatten ut i mark och vattendrag under kort tid. Smältvattnet innehåller få neutraliserande ämnen och
+kan föra med sig försurande ämnen från marken och snön.
 
-Smältvattnet innehåller få neutraliserande ämnen och kan föra med sig försurande ämnen från marken och
-snön. Under sådana perioder kan pH tillfälligt sjunka kraftigt. Detta brukar kallas en **surstöt**.
+Under sådana perioder kan pH tillfälligt sjunka kraftigt. Detta brukar kallas en **surstöt**.
 
-Problemet blir extra allvarligt eftersom våren samtidigt är en känslig period för många vattenlevande
-djur.
+Problemet blir extra allvarligt eftersom våren samtidigt är en känslig period för många vattenlevande djur.
+
+Vinterns nedfall lagras alltså i snön och släpps ut på några få dagar, precis när fiskens ägg och yngel
+är som mest känsliga.
 
 ---
 
@@ -499,11 +510,9 @@ föremål som är omöjliga att ersätta.
 
 ## C — STANDARD
 
-### Syror angriper också material
+### Sur nederbörd löser upp kalksten
 
 Försurningen påverkar inte bara levande organismer. Syror reagerar också med olika material.
-
-### Kalksten löses upp av vätejoner
 
 **Kalksten och marmor** består till stor del av kalciumkarbonat, CaCO₃. Kalciumkarbonat reagerar med
 vätejoner:
@@ -512,23 +521,33 @@ vätejoner:
 
 När kalksten utsätts för sur nederbörd löses därför små mängder av stenen upp.
 
-### Reaktionen är långsam men syns efter år
+Karbonatjonen fungerar som en bas — den tar upp vätejoner. Det är samma reaktion som gör att kalk löses i
+en avkalkningsmedelsflaska, och samma som gör kalkning av sjöar möjlig.
+
+### Reaktionen är långsam men syns efter årtionden
 
 Reaktionen går långsamt, men efter många år kan detaljer på statyer, byggnader, gravstenar och andra
 kulturföremål skadas.
 
-Samma grundläggande kemi används när man tar bort kalkavlagringar hemma med en syra. Skillnaden är
-framför allt hastigheten.
+Samma grundläggande kemi används när man tar bort kalkavlagringar hemma med en syra. Skillnaden är framför
+allt hastigheten.
+
+I en vattenkokare tar reaktionen några minuter med koncentrerad citronsyra. På en gravsten tar den
+decennier med regn som knappt är surare än naturligt.
+
+Resultatet blir att skarpa kanter rundas av, ristade bokstäver blir otydliga och ansikten på statyer
+suddas ut. Stenar från samma tid i torrare klimat är betydligt bättre bevarade.
 
 ### Metaller korroderar snabbare
 
 Även **metaller** påverkas. En sur miljö kan påskynda korrosion av vissa metaller. Broar, ledningar,
 järnvägsanläggningar och kulturföremål kan därför få kortare livslängd.
 
-### Därför ingår materialskador i miljömålen
+Sveriges miljömål om försurning omfattar därför inte bara naturen utan även skador på tekniska material och
+kulturföremål.
 
-Sveriges miljömål om försurning omfattar därför inte bara naturen utan även skador på tekniska material
-och kulturföremål.
+Det är alltså inte bara en fråga om skogar och sjöar. Försurningen kostar också pengar i form av
+byggnader som måste underhållas oftare.
 
 ---
 
