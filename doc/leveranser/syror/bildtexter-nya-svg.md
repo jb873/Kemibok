@@ -4,6 +4,7 @@
 > bildinventeringen i omarbetat-syror-1-3.md. Specblocken nedan är inlagda i avsnitt-1.md, avsnitt-2.md och
 > avsnitt-4.md (## BILDSPECIFIKATION) och ankarna i bygg-avsnitt-konfig.js; det är därifrån bygget läser.
 > ▸-meningen till 5 C är inlagd i avsnitt-5.md (Standard, stycket om farosymboler).
+> Rättelse (Joachim 2026-09-14): lackmus-meningen i alt-texten och bildguidens andra punkt ändrade; bilden oförändrad.
 
 > Alt-text, bildtexter och bildguider för `vatejonens-storlek`, `indikatorfarger` och `siv-regeln`.
 >
@@ -53,7 +54,7 @@ Utan den blir bilden missvisande, eftersom en korrekt skala skulle göra vätejo
 ### Alt-text
 
 > Tre vågräta färgband under varandra, ett för varje indikator, ritade längs en pH-skala från 3 till 11.
-> Lackmus går från rött till blått kring pH 6 till 7. BTB går från gult via grönt till blått mellan pH 6
+> Lackmus går gradvis från rött till blått mellan ungefär pH 5 och 8. BTB går från gult via grönt till blått mellan pH 6
 > och 7,6. Rödkål går gradvis från rött via rosa och lila till blått och grönt över hela skalan.
 
 ### Bildtext Enkel
@@ -68,7 +69,7 @@ Utan den blir bilden missvisande, eftersom en korrekt skala skulle göra vätejo
 ### Bildguide (endast Enkel)
 
 - Vilken färg har **BTB** vid pH 4?
-- Vid vilket pH slår **lackmus** om?
+- Hur brett är området där **lackmus** byter färg?
 - Vilken indikator ger **flest** olika färger?
 - Vilken skulle du välja om du vill veta om en lösning är nära neutral?
 

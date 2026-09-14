@@ -69,7 +69,7 @@ Ur bildinventeringen i omarbetat-syror-1-3.md; texter ur bildtexter-nya-svg.md (
 > omslagen som färgövergångar. Streckad linje vid pH 7.
 
 **Alt-text:** Tre vågräta färgband under varandra, ett för varje indikator, ritade längs en pH-skala från 3 till 11.
-Lackmus går från rött till blått kring pH 6 till 7. BTB går från gult via grönt till blått mellan pH 6
+Lackmus går gradvis från rött till blått mellan ungefär pH 5 och 8. BTB går från gult via grönt till blått mellan pH 6
 och 7,6. Rödkål går gradvis från rött via rosa och lila till blått och grönt över hela skalan.
 
 **Bildtext Enkel:** Tre indikatorer, samma pH-skala. Lackmus ger två färger, BTB tre, och rödkål ett helt spektrum.
@@ -80,7 +80,7 @@ undersökningar.
 ### Bildguide (endast Enkel)
 
 - Vilken färg har **BTB** vid pH 4?
-- Vid vilket pH slår **lackmus** om?
+- Hur brett är området där **lackmus** byter färg?
 - Vilken indikator ger **flest** olika färger?
 - Vilken skulle du välja om du vill veta om en lösning är nära neutral?
 
