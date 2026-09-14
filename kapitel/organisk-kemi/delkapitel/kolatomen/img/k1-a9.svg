@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-labelledby="t">
+  <title id="t">En cell som tar in glukos och syrgas. Ut går koldioxid, vatten och energi. Sex kolatomer följs från glukosen till koldioxiden</title>
+  <path d="M400 110 C470 100 520 150 515 210 C510 270 460 300 400 295 C340 290 285 250 290 200 C295 150 335 118 400 110Z" fill="#5a9668" fill-opacity="0.18" stroke="#5a9668" stroke-width="3"/>
+  <circle cx="420" cy="215" r="22" fill="#5a9668" fill-opacity="0.35" stroke="#5a9668" stroke-width="2"/>
+  <text x="400" y="135" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">cell</text>
+  <rect x="40" y="136" width="130" height="46" rx="6" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="105" y="156" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">C<tspan font-size="0.7em" dy="0.35em">6</tspan><tspan dy="-0.35em">H</tspan><tspan font-size="0.7em" dy="0.35em">12</tspan><tspan dy="-0.35em">O</tspan><tspan font-size="0.7em" dy="0.35em">6</tspan></text>
+  <circle cx="58" cy="171" r="4" fill="#3a3a3a"/>
+  <circle cx="77" cy="171" r="4" fill="#3a3a3a"/>
+  <circle cx="96" cy="171" r="4" fill="#3a3a3a"/>
+  <circle cx="115" cy="171" r="4" fill="#3a3a3a"/>
+  <circle cx="134" cy="171" r="4" fill="#3a3a3a"/>
+  <circle cx="153" cy="171" r="4" fill="#3a3a3a"/>
+  <polygon points="178,173 266.2,173 266.2,188.6 300,160 266.2,131.4 266.2,147 178,147" fill="#a8c4d8" stroke="#2d4a35" stroke-width="1.2" stroke-linejoin="round"/>
+  <circle cx="188.58" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="201.28" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="213.99" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="226.69" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="239.39" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="252.09" cy="160" r="4" fill="#3a3a3a"/>
+  <polygon points="120,251 271.4,251 271.4,264.2 300,240 271.4,215.8 271.4,229 120,229" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" stroke-linejoin="round"/>
+  <text x="80" y="246" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold">6 O<tspan font-size="0.7em" dy="0.35em">2</tspan></text>
+  <polygon points="510,173 656.2,173 656.2,188.6 690,160 656.2,131.4 656.2,147 510,147" fill="#a8c4d8" stroke="#2d4a35" stroke-width="1.2" stroke-linejoin="round"/>
+  <circle cx="527.54" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="548.6" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="569.65" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="590.7" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="611.76" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="632.81" cy="160" r="4" fill="#3a3a3a"/>
+  <text x="735" y="166" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold">6 CO<tspan font-size="0.7em" dy="0.35em">2</tspan></text>
+  <polygon points="510,251 661.4,251 661.4,264.2 690,240 661.4,215.8 661.4,229 510,229" fill="#a8c4d8" stroke="#2d4a35" stroke-width="1.2" stroke-linejoin="round"/>
+  <text x="735" y="246" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold">6 H<tspan font-size="0.7em" dy="0.35em">2</tspan><tspan dy="-0.35em">O</tspan></text>
+  <polygon points="450.81,301.19 506.91,357.29 495.88,368.32 540,372 536.32,327.88 525.29,338.91 469.19,282.81" fill="#e8c547" stroke="#2d4a35" stroke-width="1.2" stroke-linejoin="round"/>
+  <text x="600" y="380" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold" text-anchor="start">energi</text>
+</svg>

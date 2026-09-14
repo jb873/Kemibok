@@ -7,8 +7,8 @@
 > Innehållssessioner ser inte CSS — bara HTML. För att producera
 > fungerande markup måste de exakta klassnamnen vara dokumenterade.
 
-**Senast uppdaterad:** 2026-09-13 (v1.3)
-**Version:** 1.3 (Kemi)
+**Senast uppdaterad:** 2026-09-14 (v1.4)
+**Version:** 1.4 (Kemi)
 **DELAD-BAS:** v1.1 — måste matcha över alla ämnen
 **Ärvd från:** KOMPONENTER-INNEHALL-GEOGRAFI v1.6
 **Källa för alla mallar:** Geografis v1.6 (DOM-verifierad hero-banner) + Historias mappstruktur
@@ -1029,6 +1029,26 @@ i alla områden. Gul är upptaget av svavel — förslag: ljus blågrå prick me
 
 ---
 
+### 9.3 Grundfigurer som delas mellan delkapitel (v1.4)
+**🎨 ÄMNESEGET**
+
+Normalt hör en bild till ett delkapitel och ligger i dess `img/`. Undantag: en **grundfigur** som ett senare
+delkapitel bygger vidare på. Första fallet är `k1-a10.svg` (Organisk kemi 1, *Kolets snabba kretslopp*), där
+delkapitel 3 lägger till den geologiska slingan i den bleka pilens utrymme.
+
+Regler för en grundfigur:
+
+- Den genereras av ett verktyg (`verktyg/bilder-svg-kolatomen.js`), aldrig handredigerad, så att tillägg kan
+  göras ovanpå en identisk grund.
+- De återanvändbara delarna ligger i `<g>` med **stabila id:n** – i k1-a10: `atmosfar`, `vaxt`, `djur`, `mark`,
+  `pilar`, `utpil` (den bleka streckade pilen) – och en **tom, reserverad grupp** (`geologisk-slinga`) där
+  tillägget ska in. Id:n får inte bytas när figuren återanvänds.
+- Det senare delkapitlet skriver en **egen fil** (t.ex. `k3-a…svg`) genererad ur samma grund plus tillägget; det
+  ändrar inte grundfigurens fil, så att delkapitel 1 aldrig ritas om.
+- Detta är bildfiler, inte delad plattformskod: ingen 🔵-rad i PLATTFORMS-ANDRINGAR.md.
+
+---
+
 ## DEL 10 — Öva-fliken: tre arbetssätt, flipcards och kortsvar
 **🔗 flikrad och flipcards.js / 🎨 arbetssättsväljare, kortsvar, korttyper**
 
@@ -1201,6 +1221,8 @@ När osäker — kolla referensimplementationen **plus** CSS:n **plus** JS:n. **
 ## Revisionshistorik
 **🎨 boklokal**
 
+- **v1.4 (2026-09-14):** 9.3 – grundfigurer som delas mellan delkapitel (k1-a10 Kolets snabba kretslopp:
+  stabila id:n och reserverad grupp för delkapitel 3:s tillägg). Joachims arbetsorder k1 Kolatomen.
 - **v1.3 (2026-09-13):** 4.2 – ingen ram på brödtextbilder i kemi (kemi.css), bildbakgrund ska
   vara transparent, stående bilder via konfigflaggan staende (max-height 520 px); 9.0 – nya AI-bilder promptas med `#00ff00` som nycklas bort före leverans;
   de elva befintliga har benvit bakgrund och görs om först om de ska ligga på annan bakgrund.

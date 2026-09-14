@@ -26,13 +26,14 @@ const TIOPOTENS = /(?<![\p{L}\d])(?:(\d+(?:,\d+)?) · )?(\d+)(⁻?)([⁰¹²³�
 function arReaktion(s) {
   const t = s.trim();
   if (!/[→⇌]/.test(t)) { return false; }
-  return t.split(/\s+/).every(w => /^(\d+|\+|→|⇌|e⁻|(?:[A-Z][a-z]?[₀-₉]*|\((?:[A-Z][a-z]?[₀-₉]*)+\)[₀-₉]*)+(?:[²³]?[⁺⁻])?)$/.test(w));
+  return t.split(/\s+/).every(w => /^(\d+|\+|→|→\[[^\]]+\]|⇌|e⁻|(?:[A-Z][a-z]?[₀-₉]*|\((?:[A-Z][a-z]?[₀-₉]*)+\)[₀-₉]*)+(?:[²³]?[⁺⁻])?)$/.test(w));
 }
 // enskilda tokens med index/laddning → \(\ce{…}\); hela reaktionsrader hanteras av anroparen
 function formler(s) {
   s = s.replace(/\b([A-Z][a-z]?(?:O|H)?)ₓ/g, (_, b) => `\\(\\ce{${b}_x}\\)`);   // NOₓ, SOₓ – obestämt index x
   return s.replace(FORMELTOKEN, t => /[₀-₉⁺⁻]/.test(t) ? `\\(\\ce{${ceify(t)}}\\)` : t)
     .replace(TIOPOTENS, (_, mant, bas, minus, exp) => `\\(${mant ? mant.replace(',', '{,}') + ' \\cdot ' : ''}${bas}^{${minus ? '-' : ''}${[...exp].map(c => SUPD[c]).join('')}}\\)`)
+    .replace(/→\[([^\]]+)\]/g, (_, t) => `\\(\\ce{->[${t}]}\\)`)   // märkt pil, "→[ljus]" (fotosyntesen, kolatomen 3.1)
     .replace(/⇌/g, '\\(\\ce{<=>}\\)').replace(/→/g, '\\(\\rightarrow\\)');
 }
 // inversen för ett \ce-innehåll: H2O → H₂O, SO4^2- → SO₄²⁻, Li+ → Li⁺, -> → →

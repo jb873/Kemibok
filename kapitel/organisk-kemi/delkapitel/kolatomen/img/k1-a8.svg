@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-labelledby="t">
+  <title id="t">Ett blad som tar upp koldioxid från luften och vatten från marken, med ljusenergi uppifrån. Ut går syrgas. Inuti bladet bildas glukos. Sex kolatomer följs från koldioxiden in i glukosen</title>
+  <rect x="430" y="330" width="330" height="60" rx="6" fill="#8A8A8A" fill-opacity="0.35" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="700" y="372" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">mark</text>
+  <path d="M600 330 V240" stroke="#5a9668" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <path d="M600 240 C560 240 470 220 450 160 C520 130 640 130 720 175 C700 225 640 245 600 240Z" fill="#5a9668" fill-opacity="0.22" stroke="#5a9668" stroke-width="3"/>
+  <path d="M470 175 C540 165 640 170 700 185" stroke="#5a9668" stroke-width="1.5" fill="none" stroke-dasharray="4 4"/>
+  <rect x="530" y="176" width="130" height="46" rx="6" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="595" y="196" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">C<tspan font-size="0.7em" dy="0.35em">6</tspan><tspan dy="-0.35em">H</tspan><tspan font-size="0.7em" dy="0.35em">12</tspan><tspan dy="-0.35em">O</tspan><tspan font-size="0.7em" dy="0.35em">6</tspan></text>
+  <circle cx="548" cy="211" r="4" fill="#3a3a3a"/>
+  <circle cx="567" cy="211" r="4" fill="#3a3a3a"/>
+  <circle cx="586" cy="211" r="4" fill="#3a3a3a"/>
+  <circle cx="605" cy="211" r="4" fill="#3a3a3a"/>
+  <circle cx="624" cy="211" r="4" fill="#3a3a3a"/>
+  <circle cx="643" cy="211" r="4" fill="#3a3a3a"/>
+  <polygon points="120,173 411.2,173 411.2,188.6 445,160 411.2,131.4 411.2,147 120,147" fill="#a8c4d8" stroke="#2d4a35" stroke-width="1.2" stroke-linejoin="round"/>
+  <circle cx="154.94" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="196.88" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="238.81" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="280.74" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="322.68" cy="160" r="4" fill="#3a3a3a"/>
+  <circle cx="364.61" cy="160" r="4" fill="#3a3a3a"/>
+  <text x="80" y="166" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold">6 CO<tspan font-size="0.7em" dy="0.35em">2</tspan></text>
+  <text x="200" y="138" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">från luften</text>
+  <polygon points="571,340 571,280.6 584.2,280.6 560,252 535.8,280.6 549,280.6 549,340" fill="#a8c4d8" stroke="#2d4a35" stroke-width="1.2" stroke-linejoin="round"/>
+  <text x="500" y="300" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold">6 H<tspan font-size="0.7em" dy="0.35em">2</tspan><tspan dy="-0.35em">O</tspan></text>
+  <text x="500" y="320" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">från marken</text>
+  <polygon points="527,40 527,88.2 511.4,88.2 540,122 568.6,88.2 553,88.2 553,40" fill="#e8c547" stroke="#2d4a35" stroke-width="1.2" stroke-linejoin="round"/>
+  <text x="540" y="28" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold">ljusenergi</text>
+  <polygon points="707.78,157.78 747.55,118 756.89,127.34 760,90 722.66,93.11 732,102.45 692.22,142.22" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" stroke-linejoin="round"/>
+  <text x="760" y="74" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold">6 O<tspan font-size="0.7em" dy="0.35em">2</tspan></text>
+  <text x="400" y="408" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">6 kolatomer in → 6 kolatomer i glukosen.</text>
+</svg>

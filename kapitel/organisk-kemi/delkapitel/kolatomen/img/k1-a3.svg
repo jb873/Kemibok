@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" width="760" height="260" role="img" aria-labelledby="t">
+  <title id="t">Tre kolatomer med olika bindningar. Den första har fyra enkla streck, den andra två enkla och ett dubbelt, den tredje ett enkelt och ett trippelt. Vid varje står en uträkning som ger fyra</title>
+  <line x1="126.67" y1="100" x2="126.67" y2="48" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <circle cx="126.67" cy="48" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
+  <line x1="126.67" y1="100" x2="178.67" y2="100" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <circle cx="178.67" cy="100" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
+  <line x1="126.67" y1="100" x2="126.67" y2="152" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <circle cx="126.67" cy="152" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
+  <line x1="126.67" y1="100" x2="74.67" y2="100" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <circle cx="74.67" cy="100" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
+  <circle cx="126.67" cy="100" r="14" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <line x1="380" y1="100" x2="334.76" y2="74" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <circle cx="334.76" cy="74" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
+  <line x1="380" y1="100" x2="334.76" y2="126" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <circle cx="334.76" cy="126" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
+  <line x1="380" y1="97" x2="432" y2="97" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <line x1="380" y1="103" x2="432" y2="103" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <circle cx="432" cy="100" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
+  <circle cx="380" cy="100" r="14" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <line x1="633.33" y1="100" x2="581.33" y2="100" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <circle cx="581.33" cy="100" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
+  <line x1="633.33" y1="94" x2="685.33" y2="94" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <line x1="633.33" y1="100" x2="685.33" y2="100" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <line x1="633.33" y1="106" x2="685.33" y2="106" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <circle cx="685.33" cy="100" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
+  <circle cx="633.33" cy="100" r="14" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <rect x="68.66666666666667" y="182" width="116" height="30" rx="5" fill="none" stroke="#2d4a35" stroke-width="1.2"/>
+  <text x="126.67" y="203" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">1+1+1+1 = 4</text>
+  <rect x="322" y="182" width="116" height="30" rx="5" fill="none" stroke="#2d4a35" stroke-width="1.2"/>
+  <text x="380" y="203" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">1+1+2 = 4</text>
+  <rect x="575.3333333333334" y="182" width="116" height="30" rx="5" fill="none" stroke="#2d4a35" stroke-width="1.2"/>
+  <text x="633.33" y="203" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">1+3 = 4</text>
+  <text x="126.67" y="244" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">fyra enkelbindningar</text>
+  <text x="380" y="244" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">två enkla + en dubbel</text>
+  <text x="633.33" y="244" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">en enkel + en trippel</text>
+</svg>

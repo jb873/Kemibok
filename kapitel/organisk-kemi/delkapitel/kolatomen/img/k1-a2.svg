@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="720" height="300" role="img" aria-labelledby="t">
+  <title id="t">Metan visad som formeln CH4, som strukturformel med fyra streck från kolatomen till fyra väteatomer, och som modell med en stor mörk kula och fyra små ljusa</title>
+  <text x="120" y="130" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64">CH<tspan font-size="0.55em" dy="0.25em">4</tspan></text>
+  <line x1="360" y1="99.64" x2="360" y2="80.44" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <text x="360" y="74" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">H</text>
+  <line x1="375.36" y1="115" x2="394.56" y2="115" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <text x="408" y="122" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">H</text>
+  <line x1="360" y1="130.36" x2="360" y2="149.56" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <text x="360" y="170" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">H</text>
+  <line x1="344.64" y1="115" x2="325.44" y2="115" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <text x="312" y="122" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">H</text>
+  <rect x="346" y="101" width="28" height="28" fill="none"/>
+  <text x="360" y="123" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="bold">C</text>
+  <circle cx="600" cy="68" r="17" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="646" cy="138" r="17" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="554" cy="138" r="17" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="600" cy="118" r="34" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="600" cy="160" r="17" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="120" y="225" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic">Molekylformel</text>
+  <text x="360" y="225" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic">Strukturformel</text>
+  <text x="600" y="225" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic">Modell</text>
+  <line x1="30" y1="245" x2="690" y2="245" stroke="#2d4a35" stroke-width="1" stroke-linecap="round" />
+  <text x="360" y="280" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold">Samma molekyl, tre sätt att visa den.</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" width="760" height="250" role="img" aria-labelledby="t">
+  <title id="t">Tre strukturer av sex kolatomer vardera: en rak kedja, en grenad kedja och en ring. Över dem står att det är sex kolatomer i alla tre</title>
+  <text x="380" y="34" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold">Sex kolatomer, tre olika ämnen.</text>
+  <line x1="51.67" y1="146" x2="81.67" y2="114" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="81.67" y1="114" x2="111.67" y2="146" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="111.67" y1="146" x2="141.67" y2="114" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="141.67" y1="114" x2="171.67" y2="146" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="171.67" y1="146" x2="201.67" y2="114" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <circle cx="51.67" cy="146" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="81.67" cy="114" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="111.67" cy="146" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="141.67" cy="114" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="171.67" cy="146" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="201.67" cy="114" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <text x="126.67" y="200" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">rak kedja</text>
+  <line x1="320" y1="156" x2="350" y2="124" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="350" y1="124" x2="380" y2="156" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="380" y1="156" x2="410" y2="124" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="410" y1="124" x2="440" y2="156" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <circle cx="320" cy="156" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="350" cy="124" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="380" cy="156" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="410" cy="124" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="440" cy="156" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <line x1="380" y1="156" x2="380" y2="116" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <circle cx="380" cy="116" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <text x="380" y="200" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">grenad kedja</text>
+  <polygon points="666.24,149 633.33,168 600.42,149 600.42,111 633.33,92 666.24,111" fill="#5a9668" fill-opacity="0.18" stroke="none"/>
+  <line x1="666.24" y1="149" x2="633.33" y2="168" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="633.33" y1="168" x2="600.42" y2="149" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="600.42" y1="149" x2="600.42" y2="111" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="600.42" y1="111" x2="633.33" y2="92" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="633.33" y1="92" x2="666.24" y2="111" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="666.24" y1="111" x2="666.24" y2="149" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <circle cx="666.24" cy="149" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="633.33" cy="168" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="600.42" cy="149" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="600.42" cy="111" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="633.33" cy="92" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <circle cx="666.24" cy="111" r="9" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
+  <text x="633.33" y="200" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">ring</text>
+</svg>
