@@ -8,6 +8,7 @@
 > **Sammansatt av Code 2026-09-14** ur `salter-avsnitt-1-2-komplett.md` (huvud, bildspecifikationer, kärnpunkter (Enkel),
 > Enkel, Fördjupning) och `salter-standard-1-2-omarbetad.md` (kärnpunkter (Standard) och Standard-blocken, med påståenderubriker som ###).
 > Joachims order 2026-09-14: Standard kommer från de omarbetade filerna, Enkel och Fördjupning från de kompletta.
+> Tabellen "Från syra till salt" (2 C, Standard) levererad i chatten 2026-09-14: sist i underdelen, utan rubrik och bildtext.
 
 ---
 
@@ -507,6 +508,13 @@ medan den positiva jonen kommer från basen.
 Med hjälp av jonernas namn och laddningar går det därför ofta att förutsäga vilket salt som kommer att
 bildas. Saltsyra och natriumhydroxid ger klorid från syran och natrium från basen — alltså
 natriumklorid.
+
+| Syra | Anjon | Salten kallas | Exempel |
+|---|---|---|---|
+| Saltsyra | Klorid | Klorider | Natriumklorid |
+| Svavelsyra | Sulfat | Sulfater | Kalciumsulfat |
+| Salpetersyra | Nitrat | Nitrater | Kaliumnitrat |
+| Kolsyra | Karbonat | Karbonater | Kalciumkarbonat |
 
 ---
 
