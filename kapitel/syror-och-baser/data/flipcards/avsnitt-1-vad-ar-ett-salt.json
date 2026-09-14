@@ -1,0 +1,124 @@
+{
+  "avsnitt": 1,
+  "titel": "Vad är ett salt?",
+  "delkapitel": "salter",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 1 (Vad är ett salt?), delkapitel Salter. 9 begreppskort + 7 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/salter/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k1-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är ett salt?",
+      "svar": "En kemisk förening uppbyggd av **positiva och negativa joner**."
+    },
+    {
+      "id": "k1-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad kallas en positiv jon?",
+      "svar": "En **katjon**. Den bildas när en atom avger elektroner, oftast en metall."
+    },
+    {
+      "id": "k1-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad kallas en negativ jon?",
+      "svar": "En **anjon**. Den bildas när en atom tar upp elektroner, oftast en icke-metall."
+    },
+    {
+      "id": "k1-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är jonbindning?",
+      "svar": "Den elektriska **attraktionen** mellan positiva och negativa joner."
+    },
+    {
+      "id": "k1-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är ett jongitter?",
+      "svar": "Det regelbundna **tredimensionella mönster** som jonerna sitter i. Det upprepas genom hela kristallen."
+    },
+    {
+      "id": "k1-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en formelenhet?",
+      "svar": "Det **minsta heltalsförhållandet** mellan jonerna som ger neutral laddning. Den motsvarar ingen fristående partikel."
+    },
+    {
+      "id": "k1-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Betyder \\(\\ce{NaCl}\\) att det finns en partikel med en natriumjon och en kloridjon?",
+      "svar": "**Nej.** Det betyder att förhållandet mellan jonslagen är **ett till ett**."
+    },
+    {
+      "id": "k1-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är gitterenergi?",
+      "svar": "Den energi som krävs för att **slita isär hela gittret** till fria joner. För natriumklorid omkring 790 kJ/mol."
+    },
+    {
+      "id": "k1-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad menas med en icke-stökiometrisk förening?",
+      "svar": "Ett salt där förhållandet **inte är exakt heltal**, eftersom joner saknas på vissa gitterplatser. Järn(II)oxid är ett exempel."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k1-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad är den avgörande skillnaden mellan natriumklorid och vatten?",
+      "svar": "Vatten består av **avgränsade molekyler**. Natriumklorid är ett **sammanhängande gitter** utan naturliga gränser."
+    },
+    {
+      "id": "k1-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur många kloridjoner omger varje natriumjon i ett NaCl-gitter?",
+      "svar": "**Sex** — en åt vart och ett av kubens håll."
+    },
+    {
+      "id": "k1-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Ungefär hur många joner finns i ett saltkorn som knappt syns?",
+      "svar": "I storleksordningen **tusen biljoner**. Alla på sin plats i samma gitter."
+    },
+    {
+      "id": "k1-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur bildas en natriumjon?",
+      "svar": "Natriumatomen har elva protoner och elva elektroner. **Avger den en elektron** finns elva protoner och tio elektroner kvar, och jonen har laddningen plus ett."
+    },
+    {
+      "id": "k1-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför skriver man \\(\\ce{NaCl}\\) och inte \\(\\ce{Na2Cl2}\\)?",
+      "svar": "Formeln anger ett **förhållande**, inte ett antal. Då används alltid minsta möjliga tal."
+    },
+    {
+      "id": "k1-m6",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför kan \\(\\ce{H2O2}\\) inte förkortas till HO?",
+      "svar": "Väteperoxid är en **molekyl** med fyra atomer. Där är talen ett antal i en verklig partikel."
+    },
+    {
+      "id": "k1-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför är salter hårda, spröda och högsmältande på samma gång?",
+      "svar": "Alla tre följer av att jonerna måste sitta på **exakt rätt plats**. Krafterna är starka, och en förskjutning ställer lika laddningar mot varandra."
+    }
+  ]
+}

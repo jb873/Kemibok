@@ -8,7 +8,7 @@
 > **Sammansatt av Code 2026-09-14** ur `salter-avsnitt-1-2-komplett.md` (huvud, bildspecifikationer, kärnpunkter (Enkel),
 > Enkel, Fördjupning) och `salter-standard-1-2-omarbetad.md` (kärnpunkter (Standard) och Standard-blocken, med påståenderubriker som ###).
 > Joachims order 2026-09-14: Standard kommer från de omarbetade filerna, Enkel och Fördjupning från de kompletta.
-> Faktarutan i underdel C (molekyl mot formelenhet, alla nivåer) är inte levererad ännu – "skrivs separat" enligt komplett-filen.
+> Faktarutan i underdel C (molekyl och formelenhet, alla nivåer) levererades separat i chatten 2026-09-14 ("Faktarutan kommer här") och ligger sist i filen.
 
 ---
 
@@ -511,5 +511,23 @@ och bränsleceller.
 
 **Om modellen:** formelenheten är en utmärkt beskrivning av nästan alla salter. Men den förutsätter
 ett perfekt gitter, och verkliga kristaller har defekter.
+
+---
+
+## FAKTARUTA (underdel C, alla nivåer)
+
+**Rubrik:** Molekyl och formelenhet
+
+En molekyl är en verklig partikel. En vattenmolekyl består av en syreatom och två väteatomer, och den
+hänger ihop. Du kan peka på den.
+
+En formelenhet är ett förhållandetal. NaCl betyder att det går en natriumjon på varje kloridjon — men
+det finns ingen NaCl-partikel att peka på. I kristallen sitter jonerna i ett gitter utan gränser.
+
+Skillnaden syns i formlerna. H₂O₂ kan inte förkortas till HO, eftersom molekylen faktiskt innehåller
+fyra atomer. Na₂Cl₂ förkortas alltid till NaCl, eftersom det bara är förhållandet som betyder något.
+
+**Molekyl = en partikel**
+**Formelenhet = ett förhållande**
 
 ---

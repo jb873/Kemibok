@@ -1,0 +1,145 @@
+{
+  "avsnitt": 3,
+  "titel": "Salter i vatten",
+  "delkapitel": "salter",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 3 (Salter i vatten), delkapitel Salter, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/salter/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k3-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas ett svårlösligt salt som bildas när två lösningar blandas?",
+      "svar": [
+        "fällning"
+      ],
+      "forklaring": "Fällning. Den syns som grumlighet i lösningen."
+    },
+    {
+      "id": "k3-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas den reaktion där en fällning bildas?",
+      "svar": [
+        "fällningsreaktion"
+      ],
+      "forklaring": "Fällningsreaktion. Två av jonslagen bildar ett svårlösligt salt."
+    },
+    {
+      "id": "k3-s3",
+      "typ": "formel",
+      "fraga": "Skriv formeln för silverklorid.",
+      "svar": [
+        "AgCl"
+      ],
+      "forklaring": "\\(\\ce{AgCl}\\) — silverjoner och kloridjoner."
+    },
+    {
+      "id": "k3-s4",
+      "typ": "flerval",
+      "fraga": "Vad betyder beteckningen (aq)?",
+      "alternativ": [
+        "Att partikeln är löst i vatten",
+        "Att ämnet är en gas",
+        "Att ämnet är surt"
+      ],
+      "svar": 0,
+      "forklaring": "Löst i vatten. Från latinets *aqua*."
+    },
+    {
+      "id": "k3-s5",
+      "typ": "flerval",
+      "fraga": "Vad betyder beteckningen (s)?",
+      "alternativ": [
+        "Att ämnet är i fast form",
+        "Att ämnet är löst",
+        "Att ämnet är starkt"
+      ],
+      "svar": 0,
+      "forklaring": "Fast form. Från engelskans *solid*."
+    },
+    {
+      "id": "k3-s6",
+      "typ": "flerval",
+      "fraga": "Leder fast salt elektrisk ström?",
+      "alternativ": [
+        "Nej, jonerna är låsta i gittret",
+        "Ja, det innehåller joner",
+        "Bara om det är varmt"
+      ],
+      "svar": 0,
+      "forklaring": "Nej. Laddningarna finns där men kan inte röra sig."
+    },
+    {
+      "id": "k3-s7",
+      "typ": "flerval",
+      "fraga": "Varför leder saltlösning ström?",
+      "alternativ": [
+        "Jonerna kan röra sig genom vätskan",
+        "Vattnet leder ström",
+        "Saltet är metalliskt"
+      ],
+      "svar": 0,
+      "forklaring": "Jonerna är fria att röra sig och transporterar laddning genom vätskan."
+    },
+    {
+      "id": "k3-s8",
+      "typ": "flerval",
+      "fraga": "Leder smält salt ström?",
+      "alternativ": [
+        "Ja, gittret har brutits upp av värmen",
+        "Nej, det saknar vatten",
+        "Bara om man rör om"
+      ],
+      "svar": 0,
+      "forklaring": "Ja. Jonerna blir rörliga även utan vatten."
+    },
+    {
+      "id": "k3-s9",
+      "typ": "flerval",
+      "fraga": "Vad händer med jonerna när ett salt löses?",
+      "alternativ": [
+        "De finns kvar men är inte längre bundna",
+        "De försvinner",
+        "De blir till molekyler"
+      ],
+      "svar": 0,
+      "forklaring": "De finns kvar, exakt lika många. De är bara inte längre bundna i ett gitter."
+    },
+    {
+      "id": "k3-s10",
+      "typ": "flerval",
+      "fraga": "Varför kan vatten lösa salter?",
+      "alternativ": [
+        "Vattenmolekylen är polär",
+        "Vatten är flytande",
+        "Vatten är neutralt"
+      ],
+      "svar": 0,
+      "forklaring": "Vattenmolekylen är polär och kan vända rätt sida mot varje jon."
+    },
+    {
+      "id": "k3-s11",
+      "typ": "flerval",
+      "fraga": "Vad händer om vattnet avdunstar ur en saltlösning?",
+      "alternativ": [
+        "Saltet återbildas",
+        "Jonerna försvinner",
+        "Ingenting händer"
+      ],
+      "svar": 0,
+      "forklaring": "Saltet återbildas. Jonerna söker sig till varandra och bildar ett nytt gitter."
+    },
+    {
+      "id": "k3-s12",
+      "typ": "flerval",
+      "fraga": "Vad kan en fällningsreaktion användas till?",
+      "alternativ": [
+        "Att ta reda på vilka joner en lösning innehåller",
+        "Att rena vatten",
+        "Att mäta pH"
+      ],
+      "svar": 0,
+      "forklaring": "Att identifiera joner. En reaktion som syns avslöjar partiklar som inte syns."
+    }
+  ]
+}

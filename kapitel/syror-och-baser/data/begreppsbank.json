@@ -3,7 +3,7 @@
   "kapitel_titel": "Syror och baser",
   "version": 3,
   "skapad": "2026-09-13",
-  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Bakgrund och repetition 48 + Syror 33 + Baser 26 + Neutralisation 12 + Försurning 22 = 141.",
+  "kommentar": "Begreppsbank för kapitlet Syror och baser. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Bakgrund och repetition 48 + Syror 33 + Baser 26 + Neutralisation 12 + Försurning 22 + Salter 26 = 167.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -1277,6 +1277,240 @@
       "term": "internationella avtal",
       "expertdefinition": "Föroreningarna korsar gränser. Det krävs avtal mellan länder för att nedfallet ska minska.",
       "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-vad-man-kan-gora.json"
+    },
+    {
+      "id": "kSa1-b2",
+      "avsnitt": "20",
+      "avsnitt_titel": "Vad är ett salt?",
+      "delkapitel_titel": "Salter",
+      "term": "katjon",
+      "expertdefinition": "En katjon. Den bildas när en atom avger elektroner, oftast en metall.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-ett-salt.json"
+    },
+    {
+      "id": "kSa1-b3",
+      "avsnitt": "20",
+      "avsnitt_titel": "Vad är ett salt?",
+      "delkapitel_titel": "Salter",
+      "term": "anjon",
+      "expertdefinition": "En anjon. Den bildas när en atom tar upp elektroner, oftast en icke-metall.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-ett-salt.json"
+    },
+    {
+      "id": "kSa1-b5",
+      "avsnitt": "20",
+      "avsnitt_titel": "Vad är ett salt?",
+      "delkapitel_titel": "Salter",
+      "term": "jongitter",
+      "expertdefinition": "Det regelbundna tredimensionella mönster som jonerna sitter i. Det upprepas genom hela kristallen.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-ett-salt.json"
+    },
+    {
+      "id": "kSa1-b6",
+      "avsnitt": "20",
+      "avsnitt_titel": "Vad är ett salt?",
+      "delkapitel_titel": "Salter",
+      "term": "formelenhet",
+      "expertdefinition": "Det minsta heltalsförhållandet mellan jonerna som ger neutral laddning. Den motsvarar ingen fristående partikel.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-ett-salt.json"
+    },
+    {
+      "id": "kSa1-b7",
+      "avsnitt": "20",
+      "avsnitt_titel": "Vad är ett salt?",
+      "delkapitel_titel": "Salter",
+      "term": "vad nacl betyder",
+      "expertdefinition": "Nej. Det betyder att förhållandet mellan jonslagen är ett till ett.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-1-vad-ar-ett-salt.json"
+    },
+    {
+      "id": "kSa2-b1",
+      "avsnitt": "21",
+      "avsnitt_titel": "Formler och namn",
+      "delkapitel_titel": "Salter",
+      "term": "laddningsbalans",
+      "expertdefinition": "Den sammanlagda laddningen måste bli noll.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-formler-och-namn.json"
+    },
+    {
+      "id": "kSa2-b2",
+      "avsnitt": "21",
+      "avsnitt_titel": "Formler och namn",
+      "delkapitel_titel": "Salter",
+      "term": "kalciumklorid",
+      "expertdefinition": "Kalciumjonen har laddningen plus två. Det krävs två kloridjoner med minus ett vardera för att balansera.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-formler-och-namn.json"
+    },
+    {
+      "id": "kSa2-b3",
+      "avsnitt": "21",
+      "avsnitt_titel": "Formler och namn",
+      "delkapitel_titel": "Salter",
+      "term": "aluminiumoxid",
+      "expertdefinition": "Två aluminiumjoner ger plus sex, tre oxidjoner ger minus sex. Sex är minsta talet båda går jämnt upp i.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-formler-och-namn.json"
+    },
+    {
+      "id": "kSa2-b5",
+      "avsnitt": "21",
+      "avsnitt_titel": "Formler och namn",
+      "delkapitel_titel": "Salter",
+      "term": "fyra vanliga sammansatta joner",
+      "expertdefinition": "Sulfat, nitrat, karbonat och ammonium.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-formler-och-namn.json"
+    },
+    {
+      "id": "kSa2-b6",
+      "avsnitt": "21",
+      "avsnitt_titel": "Formler och namn",
+      "delkapitel_titel": "Salter",
+      "term": "parenteser",
+      "expertdefinition": "Att siffran gäller hela hydroxidjonen. Det finns två hela OH-grupper, inte två syreatomer.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-formler-och-namn.json"
+    },
+    {
+      "id": "kSa2-b7",
+      "avsnitt": "21",
+      "avsnitt_titel": "Formler och namn",
+      "delkapitel_titel": "Salter",
+      "term": "namnordningen",
+      "expertdefinition": "Positiv jon först, negativ sedan. Natriumklorid, kalciumnitrat.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-formler-och-namn.json"
+    },
+    {
+      "id": "kSa2-b8",
+      "avsnitt": "21",
+      "avsnitt_titel": "Formler och namn",
+      "delkapitel_titel": "Salter",
+      "term": "ändelsen -id",
+      "expertdefinition": "-id. Klor blir klorid, syre blir oxid, svavel blir sulfid.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-2-formler-och-namn.json"
+    },
+    {
+      "id": "kSa3-b1",
+      "avsnitt": "22",
+      "avsnitt_titel": "Salter i vatten",
+      "delkapitel_titel": "Salter",
+      "term": "vad (s) betyder",
+      "expertdefinition": "Att ämnet är i fast form. Från engelskans *solid*.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-salter-i-vatten.json"
+    },
+    {
+      "id": "kSa3-b2",
+      "avsnitt": "22",
+      "avsnitt_titel": "Salter i vatten",
+      "delkapitel_titel": "Salter",
+      "term": "vad (aq) betyder",
+      "expertdefinition": "Att partikeln är löst i vatten. Från latinets *aqua*.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-salter-i-vatten.json"
+    },
+    {
+      "id": "kSa3-b3",
+      "avsnitt": "22",
+      "avsnitt_titel": "Salter i vatten",
+      "delkapitel_titel": "Salter",
+      "term": "upplösning",
+      "expertdefinition": "Fast natriumklorid blir till fria natriumjoner och kloridjoner i vattenlösning.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-salter-i-vatten.json"
+    },
+    {
+      "id": "kSa3-b4",
+      "avsnitt": "22",
+      "avsnitt_titel": "Salter i vatten",
+      "delkapitel_titel": "Salter",
+      "term": "varför vatten löser salt",
+      "expertdefinition": "Vattenmolekylen är polär och kan vända rätt sida mot varje jon.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-salter-i-vatten.json"
+    },
+    {
+      "id": "kSa3-b5",
+      "avsnitt": "22",
+      "avsnitt_titel": "Salter i vatten",
+      "delkapitel_titel": "Salter",
+      "term": "fällning",
+      "expertdefinition": "Ett svårlösligt salt som bildas och faller ut som fast ämne när två lösningar blandas.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-salter-i-vatten.json"
+    },
+    {
+      "id": "kSa3-b6",
+      "avsnitt": "22",
+      "avsnitt_titel": "Salter i vatten",
+      "delkapitel_titel": "Salter",
+      "term": "silverklorid",
+      "expertdefinition": "Silverjoner och kloridjoner bildar fast silverklorid, som faller ut ur lösningen.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-salter-i-vatten.json"
+    },
+    {
+      "id": "kSa3-b7",
+      "avsnitt": "22",
+      "avsnitt_titel": "Salter i vatten",
+      "delkapitel_titel": "Salter",
+      "term": "fast salt och ström",
+      "expertdefinition": "Nej. Jonerna är låsta i gittret och kan inte transportera laddning.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-3-salter-i-vatten.json"
+    },
+    {
+      "id": "kSa4-b1",
+      "avsnitt": "23",
+      "avsnitt_titel": "Salternas egenskaper och betydelse",
+      "delkapitel_titel": "Salter",
+      "term": "salt från neutralisation",
+      "expertdefinition": "Natriumklorid. Kloriden kommer från syran, natriumet från basen.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-egenskaper-och-betydelse.json"
+    },
+    {
+      "id": "kSa4-b2",
+      "avsnitt": "23",
+      "avsnitt_titel": "Salternas egenskaper och betydelse",
+      "delkapitel_titel": "Salter",
+      "term": "natriumsulfat",
+      "expertdefinition": "Svavelsyra kan avge två vätejoner, så det krävs två natriumhydroxid per svavelsyra.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-egenskaper-och-betydelse.json"
+    },
+    {
+      "id": "kSa4-b3",
+      "avsnitt": "23",
+      "avsnitt_titel": "Salternas egenskaper och betydelse",
+      "delkapitel_titel": "Salter",
+      "term": "höga smältpunkter",
+      "expertdefinition": "Hela jongittret måste brytas upp, och krafterna mellan jonerna är starka. Natriumklorid smälter vid 801 °C.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-egenskaper-och-betydelse.json"
+    },
+    {
+      "id": "kSa4-b4",
+      "avsnitt": "23",
+      "avsnitt_titel": "Salternas egenskaper och betydelse",
+      "delkapitel_titel": "Salter",
+      "term": "elektriskt neutral",
+      "expertdefinition": "Att de positiva och negativa laddningarna tar ut varandra — summan är noll.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-egenskaper-och-betydelse.json"
+    },
+    {
+      "id": "kSa4-b5",
+      "avsnitt": "23",
+      "avsnitt_titel": "Salternas egenskaper och betydelse",
+      "delkapitel_titel": "Salter",
+      "term": "ph-neutral",
+      "expertdefinition": "Nej. En saltlösning kan vara sur, neutral eller basisk beroende på om jonerna reagerar med vatten.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-egenskaper-och-betydelse.json"
+    },
+    {
+      "id": "kSa4-b6",
+      "avsnitt": "23",
+      "avsnitt_titel": "Salternas egenskaper och betydelse",
+      "delkapitel_titel": "Salter",
+      "term": "havsvatten",
+      "expertdefinition": "Klorid och natrium, tillsammans drygt åtta tiondelar av det lösta saltet.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-egenskaper-och-betydelse.json"
+    },
+    {
+      "id": "kSa4-b7",
+      "avsnitt": "23",
+      "avsnitt_titel": "Salternas egenskaper och betydelse",
+      "delkapitel_titel": "Salter",
+      "term": "joner i kroppen",
+      "expertdefinition": "Natriumjoner och kaliumjoner.",
+      "kallfil": "kapitel/syror-och-baser/data/flipcards/avsnitt-4-egenskaper-och-betydelse.json"
     }
   ]
 }

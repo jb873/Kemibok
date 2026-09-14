@@ -1,0 +1,135 @@
+{
+  "avsnitt": 1,
+  "titel": "Vad är ett salt?",
+  "delkapitel": "salter",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 1 (Vad är ett salt?), delkapitel Salter, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/salter/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k1-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas en positiv jon?",
+      "svar": [
+        "katjon"
+      ],
+      "forklaring": "Katjon. Den bildas när en atom avger elektroner."
+    },
+    {
+      "id": "k1-s2",
+      "typ": "ord",
+      "fraga": "Vad kallas en negativ jon?",
+      "svar": [
+        "anjon"
+      ],
+      "forklaring": "Anjon. Den bildas när en atom tar upp elektroner."
+    },
+    {
+      "id": "k1-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas det regelbundna mönster som jonerna sitter i?",
+      "svar": [
+        "jongitter",
+        "jonkristall"
+      ],
+      "forklaring": "Jongitter, eller jonkristall. Mönstret upprepas genom hela kristallen."
+    },
+    {
+      "id": "k1-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas det minsta heltalsförhållandet mellan jonerna i ett salt?",
+      "svar": [
+        "formelenhet"
+      ],
+      "forklaring": "Formelenhet. Den motsvarar ingen fristående partikel i gittret."
+    },
+    {
+      "id": "k1-s5",
+      "typ": "tal",
+      "fraga": "Hur många kloridjoner omger varje natriumjon i ett NaCl-gitter?",
+      "svar": 6,
+      "forklaring": "Sex, en åt vart och ett av kubens håll."
+    },
+    {
+      "id": "k1-s6",
+      "typ": "formel",
+      "fraga": "Skriv formeln för koksalt.",
+      "svar": [
+        "NaCl"
+      ],
+      "forklaring": "\\(\\ce{NaCl}\\) — natriumjoner och kloridjoner i förhållandet ett till ett."
+    },
+    {
+      "id": "k1-s7",
+      "typ": "flerval",
+      "fraga": "Vad är den avgörande skillnaden mellan vatten och natriumklorid?",
+      "alternativ": [
+        "Vatten består av molekyler, natriumklorid av ett gitter",
+        "Natriumklorid är fast",
+        "Vatten är genomskinligt"
+      ],
+      "svar": 0,
+      "forklaring": "Vatten består av avgränsade molekyler; natriumklorid av ett sammanhängande gitter."
+    },
+    {
+      "id": "k1-s8",
+      "typ": "flerval",
+      "fraga": "Finns det NaCl-molekyler i ett saltkorn?",
+      "alternativ": [
+        "Nej, bara ett gitter av joner",
+        "Ja, en per formelenhet",
+        "Ja, men bara i lösning"
+      ],
+      "svar": 0,
+      "forklaring": "Nej. Formeln anger förhållandet mellan jonslagen, inte en partikel."
+    },
+    {
+      "id": "k1-s9",
+      "typ": "flerval",
+      "fraga": "Vad håller ihop jonerna i ett salt?",
+      "alternativ": [
+        "Elektrisk attraktion mellan olika laddningar",
+        "Delade elektronpar",
+        "Fria elektroner"
+      ],
+      "svar": 0,
+      "forklaring": "Elektrisk attraktion mellan positiva och negativa joner — jonbindning."
+    },
+    {
+      "id": "k1-s10",
+      "typ": "flerval",
+      "fraga": "Vilka atomslag bildar oftast katjoner?",
+      "alternativ": [
+        "Metaller",
+        "Icke-metaller",
+        "Ädelgaser"
+      ],
+      "svar": 0,
+      "forklaring": "Metaller. De har få valenselektroner och avger dem lätt."
+    },
+    {
+      "id": "k1-s11",
+      "typ": "flerval",
+      "fraga": "Varför skriver man NaCl och inte \\(\\ce{Na2Cl2}\\)?",
+      "alternativ": [
+        "Formeln anger ett förhållande, inte ett antal",
+        "Det är kortare",
+        "\\(\\ce{Na2Cl2}\\) är fel ämne"
+      ],
+      "svar": 0,
+      "forklaring": "Formeln anger ett förhållande. Då används alltid minsta möjliga tal."
+    },
+    {
+      "id": "k1-s12",
+      "typ": "flerval",
+      "fraga": "Vad händer med en natriumatom när den avger en elektron?",
+      "alternativ": [
+        "Den blir en positiv jon",
+        "Den blir en negativ jon",
+        "Den blir en molekyl"
+      ],
+      "svar": 0,
+      "forklaring": "Den blir en positiv jon, eftersom protonerna nu är fler än elektronerna."
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "avsnitt": 2,
+  "titel": "Formler och namn",
+  "delkapitel": "salter",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 2 (Formler och namn), delkapitel Salter, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/salter/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k2-s1",
+      "typ": "ord",
+      "fraga": "Vad kallas en grupp atomer som tillsammans har en laddning?",
+      "svar": [
+        "sammansatt jon"
+      ],
+      "forklaring": "Sammansatt jon. Sulfat, nitrat och ammonium är exempel."
+    },
+    {
+      "id": "k2-s2",
+      "typ": "ord",
+      "fraga": "Vilken ändelse får enkla icke-metalljoner i saltnamn?",
+      "svar": [
+        "-id",
+        "id"
+      ],
+      "forklaring": "Ändelsen -id. Klor blir klorid, syre blir oxid."
+    },
+    {
+      "id": "k2-s3",
+      "typ": "formel",
+      "fraga": "Skriv formeln för kalciumklorid.",
+      "svar": [
+        "CaCl2"
+      ],
+      "forklaring": "\\(\\ce{CaCl2}\\) — kalciumjonen är 2+, så det krävs två kloridjoner."
+    },
+    {
+      "id": "k2-s4",
+      "typ": "formel",
+      "fraga": "Skriv formeln för aluminiumoxid.",
+      "svar": [
+        "Al2O3"
+      ],
+      "forklaring": "\\(\\ce{Al2O3}\\) — två gånger plus tre mot tre gånger minus två."
+    },
+    {
+      "id": "k2-s5",
+      "typ": "formel",
+      "fraga": "Skriv formeln för sulfatjonen.",
+      "svar": [
+        "SO4^2-"
+      ],
+      "forklaring": "\\(\\ce{SO4^2-}\\) — en svavelatom, fyra syreatomer, laddningen minus två."
+    },
+    {
+      "id": "k2-s6",
+      "typ": "tal",
+      "fraga": "Hur många hydroxidjoner finns i en formelenhet \\(\\ce{Ca(OH)2}\\)?",
+      "svar": 2,
+      "forklaring": "Två. Parentesen visar att siffran gäller hela OH-gruppen."
+    },
+    {
+      "id": "k2-s7",
+      "typ": "flerval",
+      "fraga": "Vilken regel bestämmer ett salts formel?",
+      "alternativ": [
+        "Den sammanlagda laddningen ska bli noll",
+        "Antalet atomer ska vara lika",
+        "Metallen ska stå först"
+      ],
+      "svar": 0,
+      "forklaring": "Den sammanlagda laddningen ska bli noll. Saltet är elektriskt neutralt."
+    },
+    {
+      "id": "k2-s8",
+      "typ": "flerval",
+      "fraga": "Vilka bindningstyper finns i natriumsulfat?",
+      "alternativ": [
+        "Kovalenta inuti sulfatjonen, jonbindning mellan jonerna",
+        "Bara jonbindning",
+        "Bara kovalenta"
+      ],
+      "svar": 0,
+      "forklaring": "Kovalenta bindningar inuti sulfatjonen, jonbindning mellan sulfatjonen och natriumjonerna."
+    },
+    {
+      "id": "k2-s9",
+      "typ": "flerval",
+      "fraga": "Vad betyder parentesen i \\(\\ce{Ca(OH)2}\\)?",
+      "alternativ": [
+        "Att tvåan gäller hela hydroxidjonen",
+        "Att det finns två syreatomer",
+        "Att jonen är dubbelladdad"
+      ],
+      "svar": 0,
+      "forklaring": "Att tvåan gäller hela hydroxidjonen — två hela OH-grupper."
+    },
+    {
+      "id": "k2-s10",
+      "typ": "flerval",
+      "fraga": "I vilken ordning namnges jonerna i ett salt?",
+      "alternativ": [
+        "Positiv jon först",
+        "Negativ jon först",
+        "Efter storlek"
+      ],
+      "svar": 0,
+      "forklaring": "Positiv jon först, negativ sedan. Samma ordning som i formeln."
+    },
+    {
+      "id": "k2-s11",
+      "typ": "flerval",
+      "fraga": "Vilken jon i ett salt kommer från syran?",
+      "alternativ": [
+        "Den negativa",
+        "Den positiva",
+        "Båda"
+      ],
+      "svar": 0,
+      "forklaring": "Den negativa. Den positiva kommer från basen."
+    },
+    {
+      "id": "k2-s12",
+      "typ": "flerval",
+      "fraga": "Salpetersyra neutraliseras med kaliumhydroxid. Vilket salt bildas?",
+      "alternativ": [
+        "Kaliumnitrat",
+        "Natriumnitrat",
+        "Kaliumsulfat"
+      ],
+      "svar": 0,
+      "forklaring": "Kaliumnitrat. Nitrat från salpetersyran, kalium från kaliumhydroxiden."
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "avsnitt": 4,
+  "titel": "Salternas egenskaper och betydelse",
+  "delkapitel": "salter",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 4 (Salternas egenskaper och betydelse), delkapitel Salter, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/salter/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k4-s1",
+      "typ": "tal",
+      "fraga": "Vid vilken temperatur i celsius smälter natriumklorid?",
+      "svar": 801,
+      "forklaring": "801 grader. Krafterna i jongittret är starka."
+    },
+    {
+      "id": "k4-s2",
+      "typ": "formel",
+      "fraga": "Skriv formeln för natriumsulfat.",
+      "svar": [
+        "Na2SO4"
+      ],
+      "forklaring": "\\(\\ce{Na2SO4}\\) — två natriumjoner per sulfatjon, eftersom sulfat är 2−."
+    },
+    {
+      "id": "k4-s3",
+      "typ": "ord",
+      "fraga": "Vilka två joner dominerar i havsvatten? Nämn den negativa.",
+      "svar": [
+        "klorid",
+        "kloridjon"
+      ],
+      "forklaring": "Kloridjoner, tillsammans med natriumjoner drygt åtta tiondelar av det lösta saltet."
+    },
+    {
+      "id": "k4-s4",
+      "typ": "flerval",
+      "fraga": "Varför har salter höga smältpunkter?",
+      "alternativ": [
+        "Hela jongittret måste brytas upp",
+        "Jonerna är tunga",
+        "Salter är kristaller"
+      ],
+      "svar": 0,
+      "forklaring": "Hela gittret måste brytas upp så att jonerna kan röra sig fritt."
+    },
+    {
+      "id": "k4-s5",
+      "typ": "flerval",
+      "fraga": "Vad betyder att ett salt är elektriskt neutralt?",
+      "alternativ": [
+        "Att laddningarna tar ut varandra",
+        "Att lösningen har pH 7",
+        "Att saltet inte reagerar"
+      ],
+      "svar": 0,
+      "forklaring": "Att de positiva och negativa laddningarna tar ut varandra — summan är noll."
+    },
+    {
+      "id": "k4-s6",
+      "typ": "flerval",
+      "fraga": "Har alla saltlösningar pH 7?",
+      "alternativ": [
+        "Nej, de kan vara sura eller basiska",
+        "Ja, alltid",
+        "Bara om de är rena"
+      ],
+      "svar": 0,
+      "forklaring": "Nej. Det beror på om jonerna kan reagera med vatten."
+    },
+    {
+      "id": "k4-s7",
+      "typ": "flerval",
+      "fraga": "Natriumkarbonat löses i vatten. Hur blir lösningen?",
+      "alternativ": [
+        "Basisk",
+        "Sur",
+        "Neutral"
+      ],
+      "svar": 0,
+      "forklaring": "Basisk. Karbonatjonen tar upp vätejoner från vattnet."
+    },
+    {
+      "id": "k4-s8",
+      "typ": "flerval",
+      "fraga": "Varför spricker en saltkristall när man slår på den?",
+      "alternativ": [
+        "Lika laddningar hamnar mot varandra och repellerar",
+        "Kristallen är skör",
+        "Jonerna är små"
+      ],
+      "svar": 0,
+      "forklaring": "Lagren förskjuts, lika laddningar hamnar mot varandra, och repulsionen stöter isär kristallen."
+    },
+    {
+      "id": "k4-s9",
+      "typ": "flerval",
+      "fraga": "Svavelsyra neutraliseras med kaliumhydroxid. Vilket salt bildas?",
+      "alternativ": [
+        "Kaliumsulfat",
+        "Natriumsulfat",
+        "Kaliumklorid"
+      ],
+      "svar": 0,
+      "forklaring": "Kaliumsulfat. Sulfat från syran, kalium från basen."
+    },
+    {
+      "id": "k4-s10",
+      "typ": "flerval",
+      "fraga": "Hur har havet blivit salt?",
+      "alternativ": [
+        "Joner från berggrunden följer med floderna, vattnet avdunstar",
+        "Havet skapades salt",
+        "Fiskar producerar salt"
+      ],
+      "svar": 0,
+      "forklaring": "Regnvatten löser mineral ur berggrunden. Jonerna följer med ut i havet, vattnet avdunstar men jonerna blir kvar."
+    },
+    {
+      "id": "k4-s11",
+      "typ": "flerval",
+      "fraga": "Vilka joner är viktigast för nervsignaler?",
+      "alternativ": [
+        "Natrium och kalium",
+        "Kalcium och klorid",
+        "Järn och zink"
+      ],
+      "svar": 0,
+      "forklaring": "Natrium och kalium. Nervimpulser bygger på att de förflyttas genom cellmembran."
+    },
+    {
+      "id": "k4-s12",
+      "typ": "flerval",
+      "fraga": "Vilka två roller har kalciumjoner i kroppen?",
+      "alternativ": [
+        "Skelett och tänder, samt muskelsammandragningar",
+        "Nervsignaler och blodtryck",
+        "Matsmältning och andning"
+      ],
+      "svar": 0,
+      "forklaring": "De bygger upp skelett och tänder, och de utlöser muskelsammandragningar."
+    }
+  ]
+}

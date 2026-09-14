@@ -121,19 +121,20 @@ const AVSNITT_FORSURNING = {
 };
 // Salter (leverans 2026-09-14: salter-avsnitt-1-2-komplett.md, -3-4-komplett.md + omarbetade Standard-texter, sammansatta till
 // avsnitt-1..4.md). Sex SVG:er ur bilder-svg.js, två AI-bilder nycklade + beskurna. Alla tolv underdelar har fördjupning.
-// Faktarutan i 1 C (molekyl mot formelenhet, alla nivåer) är inte levererad ännu – ankare läggs till när texten kommer.
+// Faktarutan i 1 C (molekyl och formelenhet, alla nivåer) levererad i chatten 2026-09-14.
 const AVSNITT_SALTER = {
   1: { dd: [],
        bilder: {
          'molekyl-mot-gitter.svg': { aktiv: ['enkel', 'standard'], enkel: 'Mönstret kallas ett **jongitter**.', standard: 'gittret fortsätter tills kristallen tar slut' },
          'formelenhet.svg': { aktiv: ['enkel', 'standard'], enkel: 'Formeln säger ingenting om hur många', standard: 'sammansättningen, inte en beskrivning av något man kan plocka ut' }
-       } },
+       },
+       faktaruta: { enkel: 'bokföringsbegrepp, inte en partikel', standard: 'Hos salter finns ingen sådan partikel vars innehåll', fordjupning: 'formelenheten är en utmärkt beskrivning av nästan alla salter' } },   // levererad i chatten 2026-09-14
   2: { dd: [],
        bilder: {
          'laddningsbalans.svg': { aktiv: ['enkel', 'standard'], enkel: 'Summan blir noll, och formeln blir **Al₂O₃**', standard: 'Därför blir formeln för aluminiumoxid **Al₂O₃**' },
          'sammansatt-jon.svg': { aktiv: ['enkel', 'standard'], enkel: 'är ett viktigt undantag.', standard: 'utan är utspridd över hela jonen' }
        } },
-  3: { dd: [{ slug: 'fallningsreaktioner', titel: 'Fällningsreaktioner', ikon: '🌫️' }],   // Joachims text, fallningsreaktioner.md (3 C)
+  3: { dd: [{ slug: 'fallningsreaktioner', titel: 'Fällningsreaktioner', ikon: '⚗️' }],   // Joachims text, fallningsreaktioner.md (3 C); ikon ⚗️ enligt Joachim 2026-09-14
        bilder: {
          'leder-eller-inte.webp': { aktiv: ['enkel', 'standard'], enkel: 'Samma joner, samma laddningar — men nu rörliga.', standard: 'transporteras laddning genom vätskan, och lösningen leder ström' },
          'fallning.webp': { aktiv: ['enkel', 'standard'], enkel: 'grumlig, och efter en stund ligger ett vitt lager på botten', standard: 'lägger sig fällningen som ett vitt lager på botten' }
@@ -152,6 +153,9 @@ const DELKAPITEL = {
   baser: { titel: 'Baser', avsnitt: AVSNITT_BASER, bank: { idPrefix: 'B', avsnittOffset: 10 } },
   neutralisation: { titel: 'Neutralisation', avsnitt: AVSNITT_NEUTRALISATION, bank: { idPrefix: 'N', avsnittOffset: 14, uteslut: { 'neutralisation': 'finns redan i baser avsnitt 4, där eleven möter begreppet först (Joachim 2026-09-13)' } } },
   forsurning: { titel: 'Försurning', avsnitt: AVSNITT_FORSURNING, bank: { idPrefix: 'F', avsnittOffset: 16 } },
-  salter: { titel: 'Salter', avsnitt: AVSNITT_SALTER, bank: { idPrefix: 'Sa', avsnittOffset: 19 } }   // flipcards/kortsvar ej byggda ännu (ova-salter.md levererad 2026-09-14)
+  salter: { titel: 'Salter', avsnitt: AVSNITT_SALTER, bank: { idPrefix: 'Sa', avsnittOffset: 19, uteslut: {
+    'salt': 'finns redan i neutralisation avsnitt 1, där eleven möter begreppet först (Joachim 2026-09-14)',
+    'jonbindning': 'finns redan i repetition avsnitt 3, där eleven möter begreppet först (Joachim 2026-09-14)',
+    'sammansatt jon': 'finns redan i repetition avsnitt 1, där eleven möter begreppet först (Joachim 2026-09-14)' } } }
 };
 module.exports = { DELKAPITEL };

@@ -1,0 +1,124 @@
+{
+  "avsnitt": 3,
+  "titel": "Salter i vatten",
+  "delkapitel": "salter",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 3 (Salter i vatten), delkapitel Salter. 9 begreppskort + 7 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/salter/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k3-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder beteckningen (s) i en formel?",
+      "svar": "Att ämnet är i **fast form**. Från engelskans *solid*."
+    },
+    {
+      "id": "k3-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder beteckningen (aq)?",
+      "svar": "Att partikeln är **löst i vatten**. Från latinets *aqua*."
+    },
+    {
+      "id": "k3-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Skriv vad som händer när natriumklorid löses i vatten.",
+      "svar": "\\(\\ce{NaCl(s) -> Na+(aq) + Cl-(aq)}\\)"
+    },
+    {
+      "id": "k3-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Varför kan vatten lösa salter?",
+      "svar": "Vattenmolekylen är **polär** och kan vända rätt sida mot varje jon."
+    },
+    {
+      "id": "k3-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en fällning?",
+      "svar": "Ett **svårlösligt salt** som bildas och faller ut som fast ämne när två lösningar blandas."
+    },
+    {
+      "id": "k3-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Skriv reaktionen när silverjoner möter kloridjoner.",
+      "svar": "\\(\\ce{Ag+(aq) + Cl-(aq) -> AgCl(s)}\\)"
+    },
+    {
+      "id": "k3-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Leder fast salt elektrisk ström?",
+      "svar": "**Nej.** Jonerna är låsta i gittret och kan inte transportera laddning."
+    },
+    {
+      "id": "k3-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är hydratisering?",
+      "svar": "Att en jon i lösning omges av ett **skal av vattenmolekyler** som följer med den."
+    },
+    {
+      "id": "k3-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad är en elektrolyt?",
+      "svar": "Ett ämne som leder ström genom att **jonerna själva rör sig** — till skillnad från en metall, där elektroner rör sig."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k3-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad är skillnaden mellan fast salt och saltlösning, när det gäller ström?",
+      "svar": "Enbart **jonernas rörlighet**. Samma joner, samma laddningar — men i lösning kan de röra sig."
+    },
+    {
+      "id": "k3-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Leder smält salt ström?",
+      "svar": "**Ja.** Gittret har brutits upp av värmen, så jonerna är rörliga även utan vatten."
+    },
+    {
+      "id": "k3-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer med jonerna när ett salt löses?",
+      "svar": "De **finns kvar**, exakt lika många. De är bara inte längre bundna i ett gitter."
+    },
+    {
+      "id": "k3-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer om vattnet avdunstar ur en saltlösning?",
+      "svar": "Jonerna söker sig till varandra igen och **saltet återbildas**."
+    },
+    {
+      "id": "k3-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Två helt klara lösningar blandas och blir grumliga. Vad har hänt?",
+      "svar": "Joner från de två lösningarna har bildat ett **svårlösligt salt**, som fällts ut."
+    },
+    {
+      "id": "k3-m6",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur kan en fällning användas?",
+      "svar": "För att **ta reda på vilka joner** en okänd lösning innehåller. Reaktionen syns med blotta ögat."
+    },
+    {
+      "id": "k3-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför sker kemi i en elektrolyt men inte i en koppartråd?",
+      "svar": "I tråden rör sig **elektroner** och inget förändras. I elektrolyten vandrar **joner** till elektroderna och reagerar där."
+    }
+  ]
+}

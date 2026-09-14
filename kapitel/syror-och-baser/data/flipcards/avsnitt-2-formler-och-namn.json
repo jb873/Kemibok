@@ -1,0 +1,131 @@
+{
+  "avsnitt": 2,
+  "titel": "Formler och namn",
+  "delkapitel": "salter",
+  "version": "1.0",
+  "kort_totalt": 17,
+  "_kommentar": "Flipcards för avsnitt 2 (Formler och namn), delkapitel Salter. 10 begreppskort + 7 modellkort = 17 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/salter/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k2-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilken regel bestämmer ett salts formel?",
+      "svar": "Den sammanlagda laddningen måste bli **noll**."
+    },
+    {
+      "id": "k2-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Varför är formeln för kalciumklorid \\(\\ce{CaCl2}\\)?",
+      "svar": "Kalciumjonen har laddningen 2+. Det krävs **två** kloridjoner med 1− vardera för att balansera."
+    },
+    {
+      "id": "k2-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Varför blir aluminiumoxid \\(\\ce{Al2O3}\\)?",
+      "svar": "Två aluminiumjoner ger plus sex, tre oxidjoner ger minus sex. **Sex** är minsta talet båda går jämnt upp i."
+    },
+    {
+      "id": "k2-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad är en sammansatt jon?",
+      "svar": "En **grupp atomer** som sitter ihop och tillsammans har en laddning."
+    },
+    {
+      "id": "k2-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Ge exempel på sammansatta joner.",
+      "svar": "Sulfat \\(\\ce{SO4^2-}\\), nitrat \\(\\ce{NO3-}\\), karbonat \\(\\ce{CO3^2-}\\) och ammonium \\(\\ce{NH4+}\\)."
+    },
+    {
+      "id": "k2-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder parentesen i \\(\\ce{Ca(OH)2}\\)?",
+      "svar": "Att tvåan gäller **hela hydroxidjonen**. Det finns två hela OH-grupper, inte två syreatomer."
+    },
+    {
+      "id": "k2-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "I vilken ordning namnges jonerna i ett salt?",
+      "svar": "**Positiv jon först**, negativ sedan. Natriumklorid, kalciumnitrat."
+    },
+    {
+      "id": "k2-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilken ändelse får enkla icke-metalljoner?",
+      "svar": "**-id**. Klor blir klorid, syre blir oxid, svavel blir sulfid."
+    },
+    {
+      "id": "k2-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Var sitter laddningen i en sulfatjon?",
+      "svar": "Den är **utspridd** över hela jonen. Alla fyra syreatomerna är likvärdiga."
+    },
+    {
+      "id": "k2-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Varför heter det järn(II)klorid?",
+      "svar": "Järn kan bilda både \\(\\ce{Fe^2+}\\) och \\(\\ce{Fe^3+}\\). Siffran anger **vilken laddning** jonen har."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k2-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilka bindningstyper finns i natriumsulfat?",
+      "svar": "**Kovalenta** inuti sulfatjonen, **jonbindning** mellan sulfatjonen och natriumjonerna."
+    },
+    {
+      "id": "k2-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Kalium bildar \\(\\ce{K+}\\) och syre bildar \\(\\ce{O^2-}\\). Vilken formel får kaliumoxid?",
+      "svar": "\\(\\ce{K2O}\\). Två kaliumjoner behövs för att balansera en oxidjon."
+    },
+    {
+      "id": "k2-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Ett atomslag står i grupp 2. Vilken laddning får dess jon?",
+      "svar": "**Plus två.** Gruppnumret anger antalet valenselektroner som avges."
+    },
+    {
+      "id": "k2-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad heter saltet som består av kaliumjoner och nitratjoner?",
+      "svar": "**Kaliumnitrat.**"
+    },
+    {
+      "id": "k2-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilken jon i saltet kommer från syran, och vilken från basen?",
+      "svar": "Den **negativa** från syran, den **positiva** från basen."
+    },
+    {
+      "id": "k2-m6",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Salpetersyra neutraliseras med kaliumhydroxid. Vilket salt bildas?",
+      "svar": "**Kaliumnitrat.** Nitrat från syran, kalium från basen."
+    },
+    {
+      "id": "k2-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför är nitratsalter praktiskt taget alltid lösliga?",
+      "svar": "Nitratjonen är stor med **utspridd laddning**, vilket ger svag attraktion i gittret och låg gitterenergi."
+    }
+  ]
+}

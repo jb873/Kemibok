@@ -1,0 +1,124 @@
+{
+  "avsnitt": 4,
+  "titel": "Salternas egenskaper och betydelse",
+  "delkapitel": "salter",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 4 (Salternas egenskaper och betydelse), delkapitel Salter. 9 begreppskort + 7 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/salter/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k4-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilket salt bildas när saltsyra neutraliseras med natriumhydroxid?",
+      "svar": "**Natriumklorid.** \\(\\ce{HCl + NaOH -> NaCl + H2O}\\)"
+    },
+    {
+      "id": "k4-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Varför behövs två natriumhydroxid per svavelsyra?",
+      "svar": "Svavelsyra kan avge **två** vätejoner. \\(\\ce{H2SO4 + 2 NaOH -> Na2SO4 + 2 H2O}\\)"
+    },
+    {
+      "id": "k4-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Varför har salter höga smältpunkter?",
+      "svar": "Hela **jongittret** måste brytas upp, och krafterna mellan jonerna är starka. Natriumklorid smälter vid 801 °C."
+    },
+    {
+      "id": "k4-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vad betyder att ett salt är elektriskt neutralt?",
+      "svar": "Att de positiva och negativa laddningarna **tar ut varandra** — summan är noll."
+    },
+    {
+      "id": "k4-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Har alla saltlösningar pH 7?",
+      "svar": "**Nej.** En saltlösning kan vara sur, neutral eller basisk beroende på om jonerna reagerar med vatten."
+    },
+    {
+      "id": "k4-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilka joner dominerar i havsvatten?",
+      "svar": "**Klorid** och **natrium**, tillsammans drygt åtta tiondelar av det lösta saltet."
+    },
+    {
+      "id": "k4-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vilka joner är viktigast för nervsignaler?",
+      "svar": "**Natriumjoner** och **kaliumjoner**."
+    },
+    {
+      "id": "k4-b8",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad gör natrium-kaliumpumpen?",
+      "svar": "Flyttar tre natriumjoner ut och två kaliumjoner in genom cellmembranet, **mot** gradienten. Det kräver energi."
+    },
+    {
+      "id": "k4-b9",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vad avgör om en saltlösning blir sur eller basisk?",
+      "svar": "Om saltet kommer från en **svag syra** blir lösningen basisk. Från en **svag bas** blir den sur."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k4-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilket salt bildas när svavelsyra möter kaliumhydroxid?",
+      "svar": "**Kaliumsulfat.** Sulfat från syran, kalium från basen."
+    },
+    {
+      "id": "k4-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför spricker en saltkristall när man slår på den?",
+      "svar": "Lagren förskjuts, **lika laddningar** hamnar mot varandra, och repulsionen stöter isär kristallen."
+    },
+    {
+      "id": "k4-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur kan ett ämne vara både hårt och sprött?",
+      "svar": "Båda följer av att jonerna måste sitta på exakt rätt plats. Hårdhet är motståndet mot att flytta dem; sprödhet är vad som händer när man lyckas."
+    },
+    {
+      "id": "k4-m4",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Natriumkarbonat löses i vatten. Blir lösningen sur, neutral eller basisk?",
+      "svar": "**Basisk.** Karbonatjonen kan ta upp vätejoner från vattnet."
+    },
+    {
+      "id": "k4-m5",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur har havet blivit salt?",
+      "svar": "Regnvatten löser mineral ur berggrunden. Jonerna följer med floderna ut i havet, **vattnet avdunstar men jonerna blir kvar**."
+    },
+    {
+      "id": "k4-m6",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilka två roller har kalciumjoner i kroppen?",
+      "svar": "De bygger upp **skelett och tänder**, och de utlöser **muskelsammandragningar**."
+    },
+    {
+      "id": "k4-m7",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Ungefär hur stor del av kroppens energi i vila går åt till jonpumpar?",
+      "svar": "**En femtedel till en fjärdedel.** I nervceller ännu mer."
+    }
+  ]
+}
