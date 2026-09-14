@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 240" width="760" height="240" role="img" aria-labelledby="t">
+  <title id="t">Överst jonerna: vätejon och kloridjon från syran, natriumjon och hydroxidjon från basen; efter pilen bildar natrium och klorid salt och väte och hydroxid vatten. Under står reaktionsformeln HCl + NaOH → NaCl + H2O</title>
+  <circle cx="70" cy="70" r="22" fill="#C64B3A" stroke="#fff" stroke-width="1.5"/>
+  <text x="70" y="77.04" fill="#fff" font-size="19.8" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">H<tspan font-size="0.7em" dy="-0.6em">+</tspan></text>
+  <circle cx="124" cy="70" r="22" fill="#6a9e4f" stroke="#fff" stroke-width="1.5"/>
+  <text x="124" y="77.04" fill="#fff" font-size="19.8" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">Cl<tspan font-size="0.7em" dy="-0.6em">−</tspan></text>
+  <path d="M48 96V104H146V96" fill="none" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="97" y="126" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">syra</text>
+  <text x="178" y="79" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28">+</text>
+  <circle cx="232" cy="70" r="22" fill="#9b7cc4" stroke="#fff" stroke-width="1.5"/>
+  <text x="232" y="77.04" fill="#fff" font-size="19.8" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">Na<tspan font-size="0.7em" dy="-0.6em">+</tspan></text>
+  <circle cx="286" cy="70" r="22" fill="#3D6BA8" stroke="#fff" stroke-width="1.5"/>
+  <text x="286" y="77.04" fill="#fff" font-size="19.8" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">OH<tspan font-size="0.7em" dy="-0.6em">−</tspan></text>
+  <path d="M210 96V104H308V96" fill="none" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="259" y="126" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">bas</text>
+  <line x1="330" y1="70" x2="382" y2="70" stroke="#2d4a35" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="394,70 382,76 382,64" fill="#2d4a35"/>
+  <circle cx="430" cy="70" r="22" fill="#9b7cc4" stroke="#fff" stroke-width="1.5"/>
+  <text x="430" y="77.04" fill="#fff" font-size="19.8" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">Na<tspan font-size="0.7em" dy="-0.6em">+</tspan></text>
+  <circle cx="484" cy="70" r="22" fill="#6a9e4f" stroke="#fff" stroke-width="1.5"/>
+  <text x="484" y="77.04" fill="#fff" font-size="19.8" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">Cl<tspan font-size="0.7em" dy="-0.6em">−</tspan></text>
+  <path d="M408 96V104H506V96" fill="none" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="457" y="126" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">salt</text>
+  <text x="542" y="79" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28">+</text>
+  <line x1="610" y1="62" x2="587.79" y2="79.05" stroke="#8A8A8A" stroke-width="4" stroke-linecap="round"/>
+  <line x1="610" y1="62" x2="632.21" y2="79.05" stroke="#8A8A8A" stroke-width="4" stroke-linecap="round"/>
+  <circle class="syre" cx="610" cy="62" r="19" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="vate" cx="587.79" cy="79.05" r="12" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle class="vate" cx="632.21" cy="79.05" r="12" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="97" y="205" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">HCl</text>
+  <text x="178" y="205" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">+</text>
+  <text x="259" y="205" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">NaOH</text>
+  <text x="362" y="205" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">→</text>
+  <text x="457" y="205" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">NaCl</text>
+  <text x="542" y="205" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">+</text>
+  <text x="610" y="205" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">H<tspan font-size="0.7em" dy="0.35em">2</tspan><tspan dy="-0.35em">O</tspan></text>
+</svg>

@@ -13,11 +13,13 @@ const SUP = { '2': '²', '3': '³' };
 const SUPD = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9' };
 
 function ceify(s) {
+  // decimalindex med komma (icke-stökiometrisk formel, salter 1 C: Fe₀,₉₅O) → explicit index med {,} utan mellanrum
+  s = s.replace(/([₀-₉]+),([₀-₉]+)/g, (_, a, b) => '_{' + [...a].map(c => SUB[c]).join('') + '{,}' + [...b].map(c => SUB[c]).join('') + '}');
   return s.replace(/[₀-₉]/g, c => SUB[c]).replace(/²([⁺⁻])/g, '^2$1').replace(/³([⁺⁻])/g, '^3$1')
     .replace(/⁺/g, '+').replace(/⁻/g, '-').replace(/→/g, '->').replace(/⇌/g, '<=>').replace(/\s+/g, ' ').trim();
 }
 // element med index, ev. parentesgrupper (Ca(OH)₂), ev. laddning; samt elektronen e⁻
-const FORMELTOKEN = /(?:[A-Z][a-z]?[₀-₉]*|\((?:[A-Z][a-z]?[₀-₉]*)+\)[₀-₉]+)+(?:[²³]?[⁺⁻])?|\be[⁺⁻]/g;
+const FORMELTOKEN = /(?:[A-Z][a-z]?(?:[₀-₉]+(?:,[₀-₉]+)?)?|\((?:[A-Z][a-z]?[₀-₉]*)+\)[₀-₉]+)+(?:[²³]?[⁺⁻])?|\be[⁺⁻]/g;   // index får vara decimalt med komma (Fe₀,₉₅O)
 // tiopotens med valfri mantissa: "6,02 · 10²³", "1 · 10⁻⁷", "10⁻¹⁴"; inte föregånget av bokstav/siffra (dm³ lämnas)
 const TIOPOTENS = /(?<![\p{L}\d])(?:(\d+(?:,\d+)?) · )?(\d+)(⁻?)([⁰¹²³⁴-⁹]+)/gu;
 // en reaktion: bara formeltokens, koefficienter, +, →/⇌ och parenteser – "HCl + H₂O → H₃O⁺ + Cl⁻"

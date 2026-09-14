@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 380" width="420" height="380" role="img" aria-labelledby="t">
+  <title id="t">Ett jongitter av violetta och gröna joner; en violett och en grön jon intill varandra är inramade med en streckad ram och märkta som en formelenhet</title>
+  <circle cx="120" cy="60" r="25" fill="#9b7cc4" stroke="#fff" stroke-width="1.5"/>
+  <path d="M107.5 60H132.5M120 47.5V72.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="180" cy="60" r="25" fill="#6a9e4f" stroke="#fff" stroke-width="1.5"/>
+  <path d="M167.5 60H192.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="240" cy="60" r="25" fill="#9b7cc4" stroke="#fff" stroke-width="1.5"/>
+  <path d="M227.5 60H252.5M240 47.5V72.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="300" cy="60" r="25" fill="#6a9e4f" stroke="#fff" stroke-width="1.5"/>
+  <path d="M287.5 60H312.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="120" cy="120" r="25" fill="#6a9e4f" stroke="#fff" stroke-width="1.5"/>
+  <path d="M107.5 120H132.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="180" cy="120" r="25" fill="#9b7cc4" stroke="#fff" stroke-width="1.5"/>
+  <path d="M167.5 120H192.5M180 107.5V132.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="240" cy="120" r="25" fill="#6a9e4f" stroke="#fff" stroke-width="1.5"/>
+  <path d="M227.5 120H252.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="300" cy="120" r="25" fill="#9b7cc4" stroke="#fff" stroke-width="1.5"/>
+  <path d="M287.5 120H312.5M300 107.5V132.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="120" cy="180" r="25" fill="#9b7cc4" stroke="#fff" stroke-width="1.5"/>
+  <path d="M107.5 180H132.5M120 167.5V192.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="180" cy="180" r="25" fill="#6a9e4f" stroke="#fff" stroke-width="1.5"/>
+  <path d="M167.5 180H192.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="240" cy="180" r="25" fill="#9b7cc4" stroke="#fff" stroke-width="1.5"/>
+  <path d="M227.5 180H252.5M240 167.5V192.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="300" cy="180" r="25" fill="#6a9e4f" stroke="#fff" stroke-width="1.5"/>
+  <path d="M287.5 180H312.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="120" cy="240" r="25" fill="#6a9e4f" stroke="#fff" stroke-width="1.5"/>
+  <path d="M107.5 240H132.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="180" cy="240" r="25" fill="#9b7cc4" stroke="#fff" stroke-width="1.5"/>
+  <path d="M167.5 240H192.5M180 227.5V252.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="240" cy="240" r="25" fill="#6a9e4f" stroke="#fff" stroke-width="1.5"/>
+  <path d="M227.5 240H252.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="300" cy="240" r="25" fill="#9b7cc4" stroke="#fff" stroke-width="1.5"/>
+  <path d="M287.5 240H312.5M300 227.5V252.5" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <rect x="148" y="88" width="124" height="64" rx="8" fill="none" stroke="#2d4a35" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="210" y="312" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20">En formelenhet: NaCl</text>
+  <text x="210" y="342" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">förhållandet 1:1</text>
+</svg>

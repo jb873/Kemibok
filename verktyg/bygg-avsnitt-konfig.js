@@ -119,6 +119,31 @@ const AVSNITT_FORSURNING = {
          'svavelutslapp-diagram.svg': { aktiv: ['enkel', 'standard'], enkel: 'nära nivåerna före', standard: '80 procent och ligger nu nära' }
        } }
 };
+// Salter (leverans 2026-09-14: salter-avsnitt-1-2-komplett.md, -3-4-komplett.md + omarbetade Standard-texter, sammansatta till
+// avsnitt-1..4.md). Sex SVG:er ur bilder-svg.js, två AI-bilder nycklade + beskurna. Alla tolv underdelar har fördjupning.
+// Faktarutan i 1 C (molekyl mot formelenhet, alla nivåer) är inte levererad ännu – ankare läggs till när texten kommer.
+const AVSNITT_SALTER = {
+  1: { dd: [],
+       bilder: {
+         'molekyl-mot-gitter.svg': { aktiv: ['enkel', 'standard'], enkel: 'Mönstret kallas ett **jongitter**.', standard: 'gittret fortsätter tills kristallen tar slut' },
+         'formelenhet.svg': { aktiv: ['enkel', 'standard'], enkel: 'Formeln säger ingenting om hur många', standard: 'sammansättningen, inte en beskrivning av något man kan plocka ut' }
+       } },
+  2: { dd: [],
+       bilder: {
+         'laddningsbalans.svg': { aktiv: ['enkel', 'standard'], enkel: 'Summan blir noll, och formeln blir **Al₂O₃**', standard: 'Därför blir formeln för aluminiumoxid **Al₂O₃**' },
+         'sammansatt-jon.svg': { aktiv: ['enkel', 'standard'], enkel: 'är ett viktigt undantag.', standard: 'utan är utspridd över hela jonen' }
+       } },
+  3: { dd: [{ slug: 'fallningsreaktioner', titel: 'Fällningsreaktioner', ikon: '🌫️' }],   // Joachims text, fallningsreaktioner.md (3 C)
+       bilder: {
+         'leder-eller-inte.webp': { aktiv: ['enkel', 'standard'], enkel: 'Samma joner, samma laddningar — men nu rörliga.', standard: 'transporteras laddning genom vätskan, och lösningen leder ström' },
+         'fallning.webp': { aktiv: ['enkel', 'standard'], enkel: 'grumlig, och efter en stund ligger ett vitt lager på botten', standard: 'lägger sig fällningen som ett vitt lager på botten' }
+       } },
+  4: { dd: [],
+       bilder: {
+         'saltbildning.svg': { aktiv: ['enkel', 'standard'], enkel: 'HCl + NaOH → NaCl + H₂O', standard: 'HCl + NaOH → NaCl + H₂O' },   // efter reaktionsraden
+         'havsvatten.svg': { aktiv: ['enkel', 'standard'], enkel: 'Räknar man alla lösta salter tillsammans', standard: 'Därutöver finns bland annat sulfatjoner, magnesiumjoner, kalciumjoner och' }
+       } }
+};
 const DELKAPITEL = {
   // bank: id-prefix och avsnittsoffset i kapitlets begreppsbank (en fil per kapitel; id/avsnitt unika över delkapitlen)
   repetition: { titel: 'Bakgrund och repetition', avsnitt: AVSNITT_REPETITION, bank: { idPrefix: '', avsnittOffset: 0 } },
@@ -126,6 +151,7 @@ const DELKAPITEL = {
   syror: { titel: 'Syror', avsnitt: AVSNITT_SYROR, bank: { idPrefix: 'S', avsnittOffset: 5, uteslut: { 'koncentration': 'finns redan i repetition avsnitt 5, där eleven möter begreppet först (Joachim 2026-09-13)' } } },
   baser: { titel: 'Baser', avsnitt: AVSNITT_BASER, bank: { idPrefix: 'B', avsnittOffset: 10 } },
   neutralisation: { titel: 'Neutralisation', avsnitt: AVSNITT_NEUTRALISATION, bank: { idPrefix: 'N', avsnittOffset: 14, uteslut: { 'neutralisation': 'finns redan i baser avsnitt 4, där eleven möter begreppet först (Joachim 2026-09-13)' } } },
-  forsurning: { titel: 'Försurning', avsnitt: AVSNITT_FORSURNING, bank: { idPrefix: 'F', avsnittOffset: 16 } }
+  forsurning: { titel: 'Försurning', avsnitt: AVSNITT_FORSURNING, bank: { idPrefix: 'F', avsnittOffset: 16 } },
+  salter: { titel: 'Salter', avsnitt: AVSNITT_SALTER, bank: { idPrefix: 'Sa', avsnittOffset: 19 } }   // flipcards/kortsvar ej byggda ännu (ova-salter.md levererad 2026-09-14)
 };
 module.exports = { DELKAPITEL };

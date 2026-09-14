@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salter i vatten – Salter – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Salter</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">3. Salter i vatten</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 3</span>
+      <h1>Salter i vatten</h1>
+      <p class="subtitel">— när gittret löses upp —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">När saltet löses</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Saltlösningar leder ström</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Löslighet och fällning</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-salter-i-vatten">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — När saltet löses ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vattenmolekylerna <strong>drar isär</strong> jonerna i gittret</li>
+              <li>Det fungerar eftersom vatten är <strong>polärt</strong></li>
+              <li>Jonerna blir <strong>fria</strong> i lösningen</li>
+              <li>De försvinner inte — de är bara inte längre bundna</li>
+              <li><strong>(s)</strong> betyder fast ämne, <strong>(aq)</strong> betyder löst i vatten</li>
+            </ul>
+          </div>
+
+          <p>Du vet redan hur salt löses i vatten — det kom i repetitionens sista avsnitt. Här repeterar vi det snabbt och lägger till ett nytt skrivsätt.</p>
+          <h2>Vattenmolekylerna vänder rätt sida till</h2>
+          <p>Vattenmolekylen är <strong>polär</strong>. Den har en svagt negativ sida vid syreatomen och svagt positiva sidor vid väteatomerna.</p>
+          <p>Det betyder att den kan vända rätt sida mot varje jon. Mot en positiv jon vänder den syresidan, mot en negativ vänder den vätesidorna.</p>
+          <h2>Många drar samtidigt</h2>
+          <p>En ensam vattenmolekyl skulle inte kunna göra något. Men runt varje jon i saltkristallens yta samlas flera vattenmolekyler, och de drar alla åt samma håll.</p>
+          <p>Blir dragningen starkare än den attraktion som håller kvar jonen i gittret, lossnar jonen och glider ut i vattnet.</p>
+          <h2>Jonerna finns kvar</h2>
+          <p>Här är det viktigt att inte missförstå vad som hänt.</p>
+          <p>Saltet har inte förvandlats till något annat. Jonerna finns kvar, exakt lika många som förut. Skillnaden är att de inte längre sitter fast i ett gitter — de rör sig fritt, var och en omgiven av vattenmolekyler.</p>
+          <h2>Ett nytt skrivsätt</h2>
+          <p>När man skriver upplösningen som en formel används två beteckningar du inte sett förut:</p>
+          <p><strong>NaCl(s) \(\rightarrow\) \(\ce{Na+}\)(aq) + \(\ce{Cl-}\)(aq)</strong></p>
+          <p><strong>(s)</strong> står för <em>solid</em> och betyder att ämnet är i fast form.</p>
+          <p><strong>(aq)</strong> står för <em>aqua</em> och betyder att partikeln är löst i vatten.</p>
+          <p>Formeln säger alltså: fast natriumklorid blir till fria natriumjoner och kloridjoner i vattenlösning.</p>
+          <p>Du kommer att se de här beteckningarna igen, särskilt i delkapitlet om elektrokemi.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad gör vattenmolekylerna med jongittret?</li>
+              <li>Varför fungerar just vatten så bra?</li>
+              <li>Vad händer med jonerna?</li>
+              <li>Vad betyder (s) och (aq)?</li>
+              <li>Försvinner jonerna när saltet löses?</li>
+            </ul>
+          </div>
+
+          <h2>Vattenmolekylernas polaritet drar isär gittret</h2>
+          <p class="inledning">När ett salt läggs i vatten påverkas jonerna i gittret av vattenmolekylerna. Vattenmolekylen är <strong>polär</strong> och har en svagt negativ sida vid syreatomen och svagt positiva sidor vid väteatomerna.</p>
+          <p>Det gör att vattenmolekyler kan orientera sig efter jonernas laddning. Syresidan vänds mot positiva joner och vätesidorna mot negativa joner. Runt varje jon i kristallens yta samlas därför flera vattenmolekyler, alla vända åt samma håll.</p>
+          <p>Deras sammanlagda attraktion kan bli tillräckligt stor för att övervinna de krafter som håller jonen kvar i gittret. Jonen lossnar då och sprids ut i lösningen, omgiven av ett skal av vattenmolekyler som följer med den.</p>
+          <p>Processen fortsätter lager för lager, från kristallens yta och inåt, tills allt salt är löst eller lösningen blivit mättad.</p>
+          <h2>Jonerna finns kvar men är inte längre bundna</h2>
+          <p>Det är viktigt att notera att jonerna inte försvinner när saltet löses. De finns kvar i lösningen, exakt lika många som i kristallen, men är inte längre bundna till varandra i ett gitter.</p>
+          <p>Skillnaden är alltså inte att något nytt ämne bildats, utan att partiklarna blivit fria att röra sig. Låter man vattnet avdunsta kommer jonerna att söka sig till varandra igen och bilda ett nytt jongitter. Saltet återbildas.</p>
+          <p>Det är därför upplösning av salt räknas som en <strong>fysikalisk</strong> förändring snarare än en kemisk. Inga bindningar inuti partiklarna har brutits, bara de krafter som höll dem samlade.</p>
+          <h2>Beteckningarna (s) och (aq) visar i vilken form ämnet finns</h2>
+          <p>Upplösningen kan skrivas som en reaktionsformel:</p>
+          <p><strong>NaCl(s) \(\rightarrow\) \(\ce{Na+}\)(aq) + \(\ce{Cl-}\)(aq)</strong></p>
+          <p>Beteckningen <strong>(s)</strong> kommer av engelskans <em>solid</em> och anger att ämnet är i fast form. Beteckningen <strong>(aq)</strong> kommer av latinets <em>aqua</em> och anger att partikeln är löst i vatten.</p>
+          <p>Sådana <strong>tillståndsbeteckningar</strong> används när det är viktigt att visa i vilken form ett ämne finns. De förekommer också som (l) för vätska och (g) för gas.</p>
+          <p>Formeln ovan säger alltså: fast natriumklorid övergår till fria natriumjoner och kloridjoner i vattenlösning. Tillståndsbeteckningarna kommer att användas genomgående i delkapitlet om elektrokemi.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Vad (aq) egentligen döljer</h2>
+          <p>Standardtexten säger att (aq) betyder löst i vatten. Det är korrekt men undanhåller något.</p>
+          <p>En jon i lösning är inte ensam. Den är omgiven av ett skal av vattenmolekyler som orienterat sig efter dess laddning och följer med den när den rör sig. Fenomenet kallas <strong>hydratisering</strong>.</p>
+          <p>Skalets storlek beror på jonens laddning och storlek. En liten jon med hög laddning drar till sig fler vattenmolekyler och binder dem hårdare.</p>
+          <p>Det leder till något oväntat: <strong>litiumjonen är den minsta alkalimetalljonen men den största i lösning</strong>, eftersom den drar till sig det tjockaste vattenskalet. I en lösning rör sig litiumjoner därför långsammare än kaliumjoner, trots att litiumatomen är mindre.</p>
+          <h2>Varför vissa upplösningar kyler och andra värmer</h2>
+          <p>Hydratiseringen förklarar också energibalansen du mötte i repetitionsavsnitt 5.</p>
+          <p>Att bryta upp gittret kostar energi — det är gitterenergin från avsnitt 1. Att hydratisera jonerna frigör energi, eftersom nya attraktioner bildas mellan joner och vattenmolekyler.</p>
+          <p>Är hydratiseringsenergin större än gitterenergin blir lösningen <strong>varm</strong>. Är den mindre blir lösningen <strong>kall</strong>, eftersom skillnaden tas från omgivningen.</p>
+          <p>Natriumhydroxid har små joner med stark hydratisering och blir därför mycket varm. Ammoniumnitrat har stora joner med svag hydratisering och blir kall — vilket är precis vad kylpåsar utnyttjar.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskriver upplösning som att vattenmolekyler drar loss joner. Med hydratiseringen blir det en energiräkning med två poster, och utfallet avgör både om ämnet löser sig och om det blir varmt eller kallt.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Saltlösningar leder ström ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Fast salt leder <strong>inte</strong> ström</li>
+              <li>Saltlösning gör det</li>
+              <li>Skillnaden är att jonerna kan <strong>röra sig</strong></li>
+              <li>Laddningarna finns i båda fallen</li>
+              <li>Även <strong>smält</strong> salt leder ström</li>
+            </ul>
+          </div>
+
+          <p>Du vet sedan tidigare att saltlösning leder ström. Nu ska vi titta på <strong>varför inte fast salt gör det</strong> — och svaret är enklare än man tror.</p>
+          <h2>Laddningarna finns där hela tiden</h2>
+          <p>Ett saltkorn är fullt av laddningar. Miljarder positiva och negativa joner, tätt packade.</p>
+          <p>Ändå leder det inte ström. Ett torrt saltkorn mellan två sladdar får ingen lampa att lysa.</p>
+          <h2>Rörelsen är det som saknas</h2>
+          <p>Anledningen är att jonerna sitter <strong>fast</strong>. Varje jon har sin bestämda plats i gittret och hålls där av krafterna från alla sina grannar.</p>
+          <p>Elektrisk ström är <strong>laddning som rör sig</strong>. Finns laddningarna men kan inte flytta sig, blir det ingen ström.</p>
+          <h2>Löser man saltet ändras allt</h2>
+          <p>Häll saltet i vatten och jonerna lossnar från gittret. Nu kan de simma fritt genom vätskan.</p>
+          <p>Koppla in strömmen, och de positiva jonerna börjar röra sig åt ena hållet och de negativa åt andra. Laddning transporteras genom lösningen, och lampan lyser.</p>
+          <p>Samma joner, samma laddningar — men nu rörliga.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vad som finns i det vänstra glaset</li>
+              <li>Vad som finns i det högra</li>
+              <li>Vilken lampa som lyser</li>
+              <li>Om jonerna finns i båda glasen</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/leder-eller-inte.webp" alt="Två identiska elektriska kretsar med batteri, lampa och två metallstavar i ett bägarglas. Till vänster innehåller glaset torrt salt och lampan är släckt. Till höger innehåller det saltlösning och lampan lyser.">
+            <figcaption>Fast salt leder inte ström. Löses saltet i vatten börjar lampan lysa.</figcaption>
+          </figure>
+          <h2>Smält salt fungerar också</h2>
+          <p>Det finns ett andra sätt att göra jonerna rörliga: <strong>värma saltet tills det smälter.</strong></p>
+          <p>I en saltsmälta finns inget vatten alls, men jonerna rör sig fritt eftersom gittret brutits upp av värmen. En sådan smälta leder ström lika bra som en lösning.</p>
+          <p>Det blir viktigt i delkapitlet om elektrokemi, där man använder både lösningar och smältor för att driva kemiska reaktioner med elektricitet.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Varför leder inte fast salt ström?</li>
+              <li>Vad ändras när saltet löses?</li>
+              <li>Vad krävs för att något ska leda ström?</li>
+              <li>Leder smält salt ström?</li>
+              <li>Vad har detta med elektrokemi att göra?</li>
+            </ul>
+          </div>
+
+          <h2>Fast salt leder inte ström trots att det består av joner</h2>
+          <p class="inledning">Ett salt i fast form leder inte elektrisk ström, trots att det helt och hållet består av laddade partiklar. Ett torrt saltkorn placerat mellan två elektroder får ingen lampa att lysa.</p>
+          <p>Orsaken är att jonerna sitter fast på bestämda platser i jongittret. Varje jon hålls där av krafterna från alla sina grannar, och den kan inte flytta sig ur sitt läge.</p>
+          <p>Laddningarna finns alltså där, i mycket stort antal, men de är låsta.</p>
+          <h2>Ström innebär att laddning transporteras</h2>
+          <p>Elektrisk ström innebär att laddning förflyttas genom ett material. För att ett ämne ska leda ström krävs därför att det innehåller laddningar som kan röra sig.</p>
+          <p>I en metalltråd är det elektronerna som rör sig. I en saltlösning är det i stället <strong>jonerna själva</strong> som vandrar genom vätskan.</p>
+          <p>När saltet löses i vatten frigörs jonerna från gittret och kan röra sig fritt. Kopplas en spänning till lösningen vandrar de positiva jonerna mot den ena elektroden och de negativa mot den andra. På så sätt transporteras laddning genom vätskan, och lösningen leder ström.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/leder-eller-inte.webp" alt="Två identiska elektriska kretsar med batteri, lampa och två metallstavar i ett bägarglas. Till vänster innehåller glaset torrt salt och lampan är släckt. Till höger innehåller det saltlösning och lampan lyser.">
+            <figcaption>I kristallen sitter jonerna fast på sina platser. Först när de blir rörliga kan de transportera laddning.</figcaption>
+          </figure>
+          <p>Ju fler rörliga joner lösningen innehåller, desto bättre leder den.</p>
+          <h2>Smält salt leder också, och det utnyttjas inom elektrokemin</h2>
+          <p>Samma sak gäller om saltet i stället smälts. I en saltsmälta har jongittret brutits upp av värmen, och jonerna kan röra sig fritt även utan att något vatten är inblandat.</p>
+          <p>En saltsmälta leder därför elektrisk ström lika väl som en lösning gör.</p>
+          <p>Skillnaden mellan fast salt och löst eller smält salt är alltså framför allt <strong>jonernas möjlighet att röra sig</strong>. Ämnet är detsamma, jonerna är desamma, och antalet laddningar är detsamma. Det enda som ändrats är rörligheten.</p>
+          <p>Detta har stor betydelse inom <strong>elektrokemin</strong>, där både saltlösningar och saltsmältor används för att driva kemiska reaktioner med hjälp av elektrisk ström.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Elektronledare och jonledare</h2>
+          <p>Standardtexten säger att ström kräver rörliga laddningar. Men laddningarna kan vara av två helt olika slag, och skillnaden är grundläggande.</p>
+          <p>I en <strong>metalltråd</strong> är det <strong>elektroner</strong> som rör sig. Jonerna sitter stilla i gittret, precis som i ett salt, men elektronhavet är fritt. Sådana material kallas elektronledare.</p>
+          <p>I en <strong>saltlösning</strong> är det <strong>jonerna själva</strong> som rör sig. Hela partiklar med sin massa vandrar genom vätskan. Sådana material kallas jonledare, eller elektrolyter.</p>
+          <p>Skillnaden får praktiska följder. En metall leder ström utan att förändras — koppartråden är likadan efteråt. En elektrolyt förändras däremot: jonerna samlas vid elektroderna och reagerar där.</p>
+          <h2>Därför sker kemi i en elektrolyt</h2>
+          <p>Det är precis det som gör elektrokemin möjlig.</p>
+          <p>Skickar man ström genom en koppartråd händer ingenting kemiskt. Skickar man ström genom en saltlösning händer det något vid varje elektrod: joner tar upp eller avger elektroner och omvandlas till nya ämnen.</p>
+          <p>En elektrolyt är alltså inte bara en ledare utan en plats där reaktioner sker.</p>
+          <h2>Varför rent vatten leder dåligt</h2>
+          <p>En sista sak som förklarar en vanlig observation.</p>
+          <p>Rent vatten leder ström mycket dåligt, men inte alls. Som du såg i syrornas fördjupning innehåller vatten små mängder oxonium- och hydroxidjoner från sin egen reaktion — omkring en molekyl av en halv miljard.</p>
+          <p>Det räcker för en svag ledningsförmåga, men bara en svag. Kranvatten leder betydligt bättre, eftersom det innehåller lösta salter från marken det passerat.</p>
+          <p><strong>Om modellen:</strong> standardtexten behandlar ledningsförmåga som en egenskap ett ämne har eller inte har. Med skillnaden mellan elektron- och jonledning blir det två olika fenomen — och bara det ena kan driva kemi.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Löslighet och fällning ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Olika salter löser sig <strong>olika bra</strong></li>
+              <li>Vissa löser sig knappt alls</li>
+              <li>Blandar man två lösningar kan ett <strong>svårlösligt</strong> salt bildas</li>
+              <li>Det faller ut som fast ämne — en <strong>fällning</strong></li>
+              <li>Fällningar kan användas för att <strong>ta reda på</strong> vilka joner som finns</li>
+            </ul>
+          </div>
+
+          <p>Alla salter löser sig inte lika bra. Det mötte du redan i repetitionen — koksalt löser sig utmärkt, kalk knappt alls.</p>
+          <h2>Löslighet varierar kraftigt</h2>
+          <p>Vissa salter är <strong>lättlösliga</strong>. Nästan allt du häller i går i lösning, och det krävs mycket innan lösningen blir mättad.</p>
+          <p>Andra är <strong>svårlösliga</strong>. Bara en försvinnande liten mängd löser sig, och resten ligger kvar som ett pulver på botten.</p>
+          <p>Skillnaden kan vara enorm. I en liter vatten löser sig ungefär trehundrafemtio gram koksalt — men bara någon tusendels gram silverklorid.</p>
+          <h2>När två lösningar möts</h2>
+          <p>Här kommer det som är nytt.</p>
+          <p>Tänk dig att du har två olika saltlösningar, båda helt klara. I den ena finns silverjoner, i den andra kloridjoner.</p>
+          <p>Häller du ihop dem finns plötsligt båda jonslagen i samma vätska. Och silverjoner och kloridjoner bildar tillsammans <strong>silverklorid</strong>, som knappt löser sig alls.</p>
+          <p>Jonerna söker sig då till varandra och bildar ett fast ämne som faller ut ur lösningen. Vätskan blir grumlig, och efter en stund ligger ett vitt lager på botten.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Hur vätskan ser ut i första steget</li>
+              <li>Vad som händer i andra steget</li>
+              <li>Vad som syns på botten i tredje steget</li>
+              <li>Om något nytt har tillförts utifrån</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/fallning.webp" alt="Tre steg. Först ett glas med klar vätska, sedan hälls en andra klar vätska i, och till sist är blandningen grumlig med ett vitt lager på botten.">
+            <figcaption>Två klara lösningar kan ge något fast när de blandas. Det kallas en fällning.</figcaption>
+          </figure>
+          <h2>Det kallas en fällning</h2>
+          <p>Det fasta ämnet som bildas kallas en <strong>fällning</strong>, och reaktionen kallas en <strong>fällningsreaktion</strong>.</p>
+          <p>Reaktionen kan skrivas så här:</p>
+          <p><strong>\(\ce{Ag+}\)(aq) + \(\ce{Cl-}\)(aq) \(\rightarrow\) AgCl(s)</strong></p>
+          <p>Lägg märke till beteckningarna. Jonerna är lösta i vatten, (aq), och det som bildas är fast, (s).</p>
+          <h2>Fällningar kan avslöja joner</h2>
+          <p>Och här blir det användbart.</p>
+          <p>Har du en okänd lösning kan du ta reda på vad den innehåller genom att tillsätta olika ämnen och se vad som händer. Bildas en vit fällning när du tillsätter silverjoner innehöll lösningen troligen kloridjoner.</p>
+          <p>Det är ett sätt att få information om partiklar som är alldeles för små för att se — genom en reaktion som syns med blotta ögat.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Löser sig alla salter lika bra?</li>
+              <li>Vad händer när två saltlösningar blandas?</li>
+              <li>Vad är en fällning?</li>
+              <li>Hur skrivs en fällningsreaktion?</li>
+              <li>Vad kan fällningar användas till?</li>
+            </ul>
+          </div>
+
+          <h2>Salter löser sig olika bra i vatten</h2>
+          <p class="inledning">Alla salter är inte lika lättlösliga. Vissa löses lätt och finns då som fria joner i lösningen. Andra är svårlösliga och löser sig bara i mycket små mängder.</p>
+          <p>Skillnaderna är stora. I en liter vatten kan omkring 350 gram natriumklorid lösas, medan silverklorid bara löser sig i storleksordningen tusendels gram.</p>
+          <p>Lösligheten beror på förhållandet mellan två saker: hur starkt jonerna hålls samman i gittret, och hur starkt vattenmolekylerna attraherar dem. Är gitterkrafterna starkare än vattnets dragning löser sig ämnet dåligt.</p>
+          <p>Salter med <strong>tvåvärda eller trevärda joner</strong> har ofta starkare gitter och är därför oftare svårlösliga än salter med envärda joner.</p>
+          <h2>När två lösningar blandas kan ett svårlösligt salt bildas</h2>
+          <p>När två olika saltlösningar blandas finns flera jonslag i samma lösning samtidigt. I vissa fall kan två av dessa joner tillsammans bilda ett salt som är svårlösligt.</p>
+          <p>Jonerna förenas då och bildar ett fast ämne som avskiljs ur lösningen. Detta kallas en <strong>fällning</strong>, och reaktionen kallas en <strong>fällningsreaktion</strong>.</p>
+          <p>Ett tydligt exempel är när silverjoner möter kloridjoner. Tillsammans bildar de det mycket svårlösliga saltet silverklorid:</p>
+          <p><strong>\(\ce{Ag+}\)(aq) + \(\ce{Cl-}\)(aq) \(\rightarrow\) AgCl(s)</strong></p>
+          <p>Beteckningen (aq) visar att jonerna är lösta i vatten, medan (s) visar att silverkloriden är ett fast ämne. Lösningen blir grumlig, och efter en stund lägger sig fällningen som ett vitt lager på botten.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/fallning.webp" alt="Tre steg. Först ett glas med klar vätska, sedan hälls en andra klar vätska i, och till sist är blandningen grumlig med ett vitt lager på botten.">
+            <figcaption>När två saltlösningar blandas kan joner från de olika lösningarna bilda ett svårlösligt salt, som fälls ut ur lösningen.</figcaption>
+          </figure>
+          <p>Lägg märke till att bara två av de fyra jonslagen deltar. De övriga finns kvar lösta i vätskan, på samma sätt som åskådarjonerna vid en neutralisation.</p>
+          <h2>Fällningar kan användas för att identifiera joner</h2>
+          <p>Fällningsreaktioner kan användas för att undersöka vilka joner en lösning innehåller. Om tillsatsen av en viss lösning ger en karakteristisk fällning ger det information om det ursprungliga provets sammansättning.</p>
+          <p>Metoden bygger på att olika fällningar ser olika ut. Silverklorid är vit, silverjodid är gulaktig, och flera metallhydroxider har egna färger.</p>
+          <p>På så sätt kan en reaktion som syns för ögat användas för att dra slutsatser om partiklar som är alldeles för små att se. Det är ett av de äldsta analysverktygen inom kemin, och det används fortfarande i skollaboratorier och inom vattenanalys.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Vilka salter är lösliga?</h2>
+          <p>Standardtexten säger att salter löser sig olika bra. Det finns mönster i det, och de är användbara nog att vara värda att lära sig.</p>
+          <p><strong>Nästan alltid lösliga:</strong> salter med natrium, kalium eller ammonium som positiv jon. Också nitrater.</p>
+          <p><strong>Nästan alltid svårlösliga:</strong> karbonater, fosfater och sulfider — <strong>utom</strong> när den positiva jonen är någon av de nyss nämnda.</p>
+          <p><strong>Oftast lösliga men med undantag:</strong> klorider är lösliga utom med silver och bly. Sulfater är lösliga utom med barium, bly och kalcium.</p>
+          <p>Med de här reglerna kan man <strong>förutsäga</strong> om en fällning bildas. Blandar man natriumklorid och kaliumnitrat händer ingenting — alla fyra kombinationer är lösliga. Blandar man silvernitrat och natriumklorid faller silverklorid ut.</p>
+          <h2>Varför nitrater alltid löser sig</h2>
+          <p>Regeln har en förklaring, och den knyter till sammansatta joner från avsnitt 2.</p>
+          <p>Nitratjonen är stor och har sin negativa laddning <strong>utspridd</strong> över flera atomer. Det ger låg laddningstäthet, och därmed svag attraktion till den positiva jonen i gittret.</p>
+          <p>Gitterenergin blir alltså låg, och hydratiseringen räcker för att övervinna den. Nitrater löser sig därför i praktiken alltid.</p>
+          <p>Karbonatjonen har också utspridd laddning — men den är <strong>tvåvärd</strong>, och dubbla laddningen ger mycket starkare gitter. Därför är karbonater tvärtom oftast svårlösliga.</p>
+          <h2>Varför fällningar är skarpa</h2>
+          <p>En sista sak som förklarar varför metoden fungerar så bra för identifiering.</p>
+          <p>När en fällning bildas händer det <strong>plötsligt</strong>. Lösningen är klar, man tillsätter en droppe, och grumligheten uppstår omedelbart.</p>
+          <p>Det beror på att jonerna redan finns utspridda i lösningen och bara behöver mötas. Ingen energibarriär behöver övervinnas, ingen upphettning krävs. Reaktionen sker så fort partiklarna kolliderar.</p>
+          <p>Det är därför fällningsreaktioner är ett så pålitligt analysverktyg: resultatet syns direkt, och det är entydigt.</p>
+          <p><strong>Om modellen:</strong> standardtexten konstaterar att vissa salter är svårlösliga. Med löslighetsreglerna blir det något man kan förutsäga, och med laddningstätheten blir reglerna själva förklarade.</p>
+        </div>
+
+      </div>
+
+      <!-- DJUPDYKNINGAR -->
+      <section class="djupdykningar">
+        <span class="sektion-label">Vill du veta mer?</span>
+        <div class="fordj-kort-grid">
+          <a class="fordj-kort" href="djupdykning-fallningsreaktioner.html">
+            <span class="fordj-kort-ikon" aria-hidden="true">🌫️</span>
+            <span class="fordj-kort-text">
+              <span class="fordj-kort-titel">Fällningsreaktioner</span>
+              <span class="fordj-kort-sammanfattning">Blanda två genomskinliga lösningar och något fast kan plötsligt bildas. Fällningar kan dessutom användas för att ta reda på vilka joner en okänd lösning innehåller.</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-3-salter-i-vatten.json"
+           data-avsnitt="a3_salter-i-vatten">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-3-salter-i-vatten.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a3_salter-i-vatten';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'salter';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

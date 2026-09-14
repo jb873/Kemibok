@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" width="720" height="250" role="img" aria-labelledby="t">
+  <title id="t">En vågrät stapel med andelen av olika joner i havsvattnets lösta salter: kloridjoner 55 procent, natriumjoner 31, sulfatjoner 8, magnesiumjoner 4 och övriga 2</title>
+  <rect x="40" y="36" width="352" height="60" fill="#6a9e4f" stroke="#2d4a35" stroke-width="1"/>
+  <text x="216" y="72" fill="#fff" font-size="17" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">55 %</text>
+  <rect x="392" y="36" width="198.4" height="60" fill="#9b7cc4" stroke="#2d4a35" stroke-width="1"/>
+  <text x="491.2" y="72" fill="#fff" font-size="17" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">31 %</text>
+  <rect x="590.4" y="36" width="51.2" height="60" fill="#d4c04a" stroke="#2d4a35" stroke-width="1"/>
+  <text x="616" y="72" fill="#fff" font-size="17" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">8 %</text>
+  <rect x="641.6" y="36" width="25.6" height="60" fill="#d9944a" stroke="#2d4a35" stroke-width="1"/>
+  <rect x="667.2" y="36" width="12.8" height="60" fill="#8A8A8A" stroke="#2d4a35" stroke-width="1"/>
+  <rect x="40" y="124" width="14" height="14" fill="#6a9e4f" stroke="#2d4a35" stroke-width="1"/>
+  <text x="60" y="136" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="14" text-anchor="start">Kloridjoner 55 %</text>
+  <rect x="255" y="124" width="14" height="14" fill="#9b7cc4" stroke="#2d4a35" stroke-width="1"/>
+  <text x="275" y="136" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="14" text-anchor="start">Natriumjoner 31 %</text>
+  <rect x="470" y="124" width="14" height="14" fill="#d4c04a" stroke="#2d4a35" stroke-width="1"/>
+  <text x="490" y="136" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="14" text-anchor="start">Sulfatjoner 8 %</text>
+  <rect x="40" y="152" width="14" height="14" fill="#d9944a" stroke="#2d4a35" stroke-width="1"/>
+  <text x="60" y="164" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="14" text-anchor="start">Magnesiumjoner 4 %</text>
+  <rect x="255" y="152" width="14" height="14" fill="#8A8A8A" stroke="#2d4a35" stroke-width="1"/>
+  <text x="275" y="164" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="14" text-anchor="start">Övriga 2 %</text>
+  <text x="360" y="236" fill="#2d4a35" font-size="17" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic">Andel av de lösta salterna i havsvatten</text>
+</svg>

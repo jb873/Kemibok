@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vad är ett salt? – Salter – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Salter</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">1. Vad är ett salt?</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 1</span>
+      <h1>Vad är ett salt?</h1>
+      <p class="subtitel">— joner i ett regelbundet mönster —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Joner och jonbindning</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Jongittret</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Formelenheten</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-vad-ar-ett-salt">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Joner och jonbindning ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Ett <strong>salt</strong> är uppbyggt av <strong>joner</strong>, inte av molekyler</li>
+              <li><strong>Positiva</strong> joner kallas katjoner, <strong>negativa</strong> kallas anjoner</li>
+              <li>Attraktionen mellan dem kallas <strong>jonbindning</strong></li>
+              <li>Salter bildas oftast mellan en <strong>metall</strong> och en <strong>icke-metall</strong></li>
+              <li>Koksalt är bara ett av tusentals salter</li>
+            </ul>
+          </div>
+
+          <p>Du har mött salter flera gånger redan, men nu ska vi titta ordentligt på vad de faktiskt är.</p>
+          <h2>Inte molekyler</h2>
+          <p>De flesta ämnen du arbetat med består av <strong>molekyler</strong>. Vatten är molekyler, koldioxid är molekyler, syrgas är molekyler.</p>
+          <p>Ett salt är något annat. Ett salt är uppbyggt av <strong>joner</strong> — laddade partiklar.</p>
+          <p>Och det är inte bara koksalt som räknas. Ordet salt betyder inom kemin en hel grupp ämnen, och det finns tusentals av dem. Koksaltet i saltkaret är bara det mest kända.</p>
+          <h2>Två sorters joner</h2>
+          <p>I ett salt finns alltid båda sorterna.</p>
+          <p><strong>Positiva joner</strong> kallas <strong>katjoner</strong>. De bildas oftast av metaller, som avger en eller flera elektroner. Natriumjonen \(\ce{Na+}\) och kalciumjonen \(\ce{Ca^2+}\) är exempel.</p>
+          <p><strong>Negativa joner</strong> kallas <strong>anjoner</strong>. De bildas oftast av icke-metaller, som tar upp elektroner. Kloridjonen \(\ce{Cl-}\) och oxidjonen \(\ce{O^2-}\) är exempel.</p>
+          <p>Du känner igen mönstret från periodiska systemet: metaller till vänster ger bort, icke-metaller till höger tar emot.</p>
+          <h2>Vad som håller ihop dem</h2>
+          <p>Nu kommer det du redan vet från repetitionen: <strong>olika laddningar attraherar varandra.</strong></p>
+          <p>Den positiva jonen och den negativa dras till varandra, och den dragningen är vad vi kallar <strong>jonbindning</strong>.</p>
+          <p>Lägg märke till att det inte är någon särskild sorts lim mellan dem. Bindningen <strong>är</strong> attraktionen mellan laddningarna — samma kraft som fick natrium och klor att hålla ihop i avsnitt 3 av repetitionen.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad är ett salt?</li>
+              <li>Hur bildas positiva och negativa joner?</li>
+              <li>Vad kallas de två sorterna?</li>
+              <li>Vad är jonbindning?</li>
+              <li>Vilka atomslag bildar vilken sorts jon?</li>
+            </ul>
+          </div>
+
+          <h2>Salter är uppbyggda av joner, inte av molekyler</h2>
+          <p class="inledning"><strong>Salter</strong> är kemiska föreningar som är uppbyggda av joner. De skiljer sig därför från molekylära ämnen som vatten eller koldioxid, där ämnet består av avgränsade partiklar.</p>
+          <p>I vardagligt tal menar man ofta natriumklorid, NaCl, när man säger salt. Inom kemin är salt ett <strong>samlingsnamn</strong> för en mycket stor grupp föreningar. Kalciumkarbonat i kalksten, kaliumnitrat i gödselmedel och kopparsulfat är också salter.</p>
+          <p>Gemensamt för dem alla är att de innehåller positiva och negativa joner som hålls samman av elektriska krafter.</p>
+          <h2>Joner bildas när atomer avger eller tar upp elektroner</h2>
+          <p>En atom är elektriskt neutral när den innehåller lika många protoner som elektroner. Avger eller tar atomen upp elektroner förändras balansen och den blir en <strong>jon</strong>.</p>
+          <p>En atom som <strong>avger</strong> elektroner får fler protoner än elektroner och blir positivt laddad. En sådan jon kallas <strong>katjon</strong>.</p>
+          <p>En atom som <strong>tar upp</strong> elektroner får fler elektroner än protoner och blir negativt laddad. En sådan jon kallas <strong>anjon</strong>.</p>
+          <p>Natrium är ett exempel. En natriumatom har elva protoner och elva elektroner. Avger den sin yttersta elektron finns elva protoner kvar men bara tio elektroner, och natriumjonen \(\ce{Na+}\) har bildats. En kloratom kan i stället ta upp en elektron och bilda kloridjonen \(\ce{Cl-}\).</p>
+          <h2>Jonbindning är attraktionen mellan laddningarna</h2>
+          <p>Eftersom joner med olika laddning attraherar varandra dras natriumjonen och kloridjonen mot varandra. Den elektriska attraktionskraften mellan positiva och negativa joner kallas <strong>jonbindning</strong>.</p>
+          <p>Jonbindningen är alltså inte en bindning mellan två bestämda partiklar på samma sätt som en kovalent bindning. Den är resultatet av elektriska krafter som verkar mellan många joner samtidigt.</p>
+          <p>Katjoner bildas oftast av <strong>metaller</strong>, som har få valenselektroner och lätt avger dem. Anjoner bildas oftast av <strong>icke-metaller</strong>, som saknar några elektroner för fullt yttersta skal. Det är därför salter vanligen uppstår när en metall reagerar med en icke-metall.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Var går gränsen mot kovalent bindning?</h2>
+          <p>Standardtexten säger att salter bildas mellan metaller och icke-metaller. Det är en användbar regel, men i repetitionsavsnitt 3 såg du att gränsen mellan jonbindning och kovalent bindning är glidande.</p>
+          <p><strong>Elektronegativitetsskillnaden</strong> avgör. Är den mycket stor, som mellan natrium och klor, dras elektronen så långt över att man rimligen kan säga att den bytt ägare. Är den liten delas elektronerna ungefär lika.</p>
+          <p>Som tumregel brukar man säga att en skillnad över ungefär 1,7 ger en bindning som beter sig som jonbindning. Men det är en konvention, inte en naturlag.</p>
+          <h2>Ämnen som ligger mitt emellan</h2>
+          <p>Några ämnen visar hur oskarp gränsen är.</p>
+          <p>Aluminiumklorid består av en metall och en icke-metall, så enligt regeln borde det vara ett salt. Men aluminiumjonen har laddningen 3+ och är liten, vilket gör att den drar tillbaka elektroner från kloridjonerna. Resultatet är att aluminiumklorid i vissa former beter sig mer som en molekylförening än som ett salt — den smälter vid låg temperatur och leder ström dåligt.</p>
+          <p>Zinksulfid är ett annat gränsfall.</p>
+          <p><strong>Om modellen:</strong> att salter bildas mellan metall och icke-metall är en regel som fungerar för nästan alla salter du kommer att möta. Men den beskriver ett utfall, inte en orsak — orsaken är elektronegativitetsskillnaden, och den varierar i steglösa grader.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Jongittret ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Ett salt är inte uppbyggt av enskilda partiklar</li>
+              <li>Jonerna sitter i ett <strong>regelbundet mönster</strong> som kallas <strong>jongitter</strong></li>
+              <li>Varje positiv jon omges av <strong>negativa</strong> joner, och tvärtom</li>
+              <li>Mönstret fortsätter i <strong>alla riktningar</strong></li>
+              <li>Ett saltkorn innehåller ofattbart många joner</li>
+            </ul>
+          </div>
+
+          <p>Nu kommer den svåraste delen i hela avsnittet, och den är värd att läsa långsamt.</p>
+          <h2>Ingen partikel att peka på</h2>
+          <p>När du tänker på vatten tänker du på en molekyl — en syreatom med två väteatomer. Du kan peka på den och säga: <em>det där är en vattenmolekyl.</em></p>
+          <p>Med salt går det inte.</p>
+          <p>I ett saltkorn finns inga enskilda saltpartiklar. Det finns bara joner, ofantligt många, och de sitter i ett regelbundet mönster som fortsätter åt alla håll.</p>
+          <p>Mönstret kallas ett <strong>jongitter</strong>.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Hur många partiklar det finns i den vänstra halvan</li>
+              <li>Om du kan räkna partiklarna i den högra</li>
+              <li>Vad som händer med jonerna vid bildens kant</li>
+              <li>Om de violetta och gröna jonerna ligger slumpmässigt eller i ett mönster</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/molekyl-mot-gitter.svg" alt="Till vänster en enskild vattenmolekyl med en syreatom och två väteatomer. Till höger ett utsnitt av ett jongitter där violetta och gröna joner omväxlar i ett rutmönster som fortsätter utanför bildens kanter.">
+            <figcaption>En vattenmolekyl är en enskild partikel. Ett salt är inte det — där sitter jonerna i ett mönster som fortsätter i alla riktningar.</figcaption>
+          </figure>
+          <h2>Hur mönstret ser ut</h2>
+          <p>I natriumklorid ligger jonerna som i ett schackmönster, fast i tre dimensioner.</p>
+          <p>Varje natriumjon omges av <strong>sex</strong> kloridjoner — en åt vart och ett av kubens sex håll. Och varje kloridjon omges på samma sätt av sex natriumjoner.</p>
+          <p>Aldrig ligger två positiva bredvid varandra, aldrig två negativa. Det är därför mönstret är så regelbundet.</p>
+          <h2>Hur många?</h2>
+          <p>Talen är svåra att ta in.</p>
+          <p>Ett saltkorn som knappt syns med blotta ögat innehåller i storleksordningen <strong>tusen biljoner</strong> joner. Alla sitter på sin plats i samma sammanhängande mönster.</p>
+          <p>Det är därför man inte kan säga var en "saltpartikel" slutar och nästa börjar. Hela kornet är i någon mening en enda struktur.</p>
+          <h2>Krafterna verkar åt alla håll</h2>
+          <p>Och här är poängen med hela underdelen.</p>
+          <p>Jonbindningen sitter inte mellan två bestämda joner. Varje jon dras mot <strong>alla</strong> sina grannar samtidigt, och de dras i sin tur mot sina grannar.</p>
+          <p>Det är summan av alla dessa krafter som håller ihop kristallen — och det är därför salter är så hårda och har så höga smältpunkter.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Hur är jonerna ordnade i ett fast salt?</li>
+              <li>Vad omger varje jon?</li>
+              <li>Finns det enskilda saltpartiklar?</li>
+              <li>Hur många joner innehåller ett saltkorn?</li>
+              <li>Vad håller ihop kristallen?</li>
+            </ul>
+          </div>
+
+          <h2>Jonerna sitter i ett regelbundet tredimensionellt mönster</h2>
+          <p class="inledning">Ett fast salt består inte av enskilda molekyler på samma sätt som exempelvis vatten eller koldioxid. I stället är ett mycket stort antal positiva och negativa joner ordnade i ett regelbundet tredimensionellt mönster.</p>
+          <p>Ett sådant mönster kallas ett <strong>jongitter</strong> eller en <strong>jonkristall</strong>.</p>
+          <p>Mönstret upprepas i alla tre riktningar genom hela kristallen. Det finns ingen naturlig gräns där en enhet slutar och nästa börjar — gittret fortsätter tills kristallen tar slut.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/molekyl-mot-gitter.svg" alt="Till vänster en enskild vattenmolekyl med en syreatom och två väteatomer. Till höger ett utsnitt av ett jongitter där violetta och gröna joner omväxlar i ett rutmönster som fortsätter utanför bildens kanter.">
+            <figcaption>Molekylära ämnen består av avgränsade partiklar. Jonföreningar består av ett sammanhängande gitter utan naturliga gränser.</figcaption>
+          </figure>
+          <h2>Varje jon omges av joner med motsatt laddning</h2>
+          <p>I jongittret sitter jonerna så att positiva och negativa omväxlar. Varje natriumjon i en kristall av natriumklorid omges av kloridjoner, och varje kloridjon omges av natriumjoner.</p>
+          <p>I natriumklorid har varje jon <strong>sex</strong> närmaste grannar, en åt vart och ett av kubens håll. Aldrig ligger två joner med samma laddning intill varandra. Det är den ordningen som gör mönstret så regelbundet.</p>
+          <p>Hur många grannar varje jon har varierar mellan olika salter, beroende på hur stora jonerna är i förhållande till varandra.</p>
+          <h2>Krafterna verkar åt alla håll samtidigt</h2>
+          <p>Hela kristallen hålls samman av den elektriska attraktionen mellan motsatt laddade joner. Varje jon dras mot alla sina grannar samtidigt, och de i sin tur mot sina.</p>
+          <p>Det är summan av alla dessa krafter som håller strukturen på plats, och de är sammantaget mycket starka.</p>
+          <p>Antalen är svåra att föreställa sig. Ett saltkorn som knappt syns med blotta ögat innehåller i storleksordningen tusen biljoner joner, alla på sin bestämda plats i samma sammanhängande gitter.</p>
+          <p>Det betyder att man inte kan peka ut var en enskild saltpartikel börjar och slutar. Hela kornet är i någon mening en enda sammanhållen struktur.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Gitterenergi</h2>
+          <p>Standardtexten säger att krafterna håller ihop kristallen. Det finns ett mått på hur starkt: den energi som skulle krävas för att slita isär hela gittret till fria joner kallas <strong>gitterenergi</strong>.</p>
+          <p>För natriumklorid är den omkring 790 kilojoule per mol. Det är mycket — jämför med en enskild kovalent bindning, som ofta ligger kring 300 till 400.</p>
+          <p>Gitterenergin beror på två saker. <strong>Laddningarnas storlek</strong>, eftersom attraktionen växer med dem, och <strong>avståndet mellan jonerna</strong>, eftersom attraktionen avtar med det.</p>
+          <p>Magnesiumoxid har dubbla laddningar på båda jonerna och små joner. Dess gitterenergi är omkring 3800 kilojoule per mol, alltså nästan fem gånger natriumkloridens.</p>
+          <h2>Tre egenskaper ur samma sak</h2>
+          <p>Nu faller flera saker på plats samtidigt.</p>
+          <p><strong>Höga smältpunkter</strong> beror på att smältning kräver att jonerna kan röra sig fritt, vilket innebär att gittret måste brytas upp. Natriumklorid smälter vid 801 grader, magnesiumoxid vid 2852 — precis den skillnad gitterenergin förutsäger.</p>
+          <p><strong>Hårdhet</strong> beror på samma sak. Att repa en kristall innebär att förskjuta joner ur sina lägen, och det motverkas av krafterna.</p>
+          <p><strong>Sprödhet</strong> är mer överraskande. Ett salt är hårt men går lätt att slå sönder, och det mötte du i repetitionsavsnitt 3: förskjuts ett lager joner ett steg hamnar lika laddningar bredvid varandra, attraktionen blir repulsion, och kristallen stöts isär av sina egna krafter.</p>
+          <p>Hårt och sprött samtidigt är alltså inte en motsägelse. Båda följer av att jonerna måste sitta på exakt rätt plats.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskriver gittret som en struktur. Med gitterenergin blir det något mätbart — och tre egenskaper som verkar olika visar sig vara samma sak sedd från tre håll.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Formelenheten ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>NaCl betyder <strong>inte</strong> en partikel med två atomer</li>
+              <li>Det betyder <strong>förhållandet</strong> mellan jonslagen</li>
+              <li>En natriumjon på varje kloridjon</li>
+              <li>Den minsta gruppen som ger rätt förhållande kallas <strong>formelenhet</strong></li>
+              <li>Salter skrivs alltid med minsta möjliga tal</li>
+            </ul>
+          </div>
+
+          <p>Nu kommer konsekvensen av det du just läste, och den är den vanligaste missuppfattningen om salter.</p>
+          <h2>Vad NaCl faktiskt betyder</h2>
+          <p>Du har sett formeln NaCl många gånger. Och du har lärt dig att \(\ce{H2O}\) betyder en molekyl med två väteatomer och en syreatom.</p>
+          <p>Det är därför naturligt att tro att NaCl betyder en partikel med en natriumatom och en kloratom.</p>
+          <p><strong>Det gör den inte.</strong></p>
+          <p>I ett saltkorn finns inga NaCl-partiklar. Det finns bara ett gitter av joner. Formeln beskriver något annat: <strong>förhållandet</strong> mellan jonslagen.</p>
+          <h2>Ett förhållande, inte ett antal</h2>
+          <p>NaCl betyder att det går <strong>en natriumjon på varje kloridjon</strong>. Ett till ett.</p>
+          <p>Är det en miljon natriumjoner i kornet finns det en miljon kloridjoner. Är det tusen biljoner finns det tusen biljoner av varje.</p>
+          <p>Formeln säger ingenting om hur många — bara hur de förhåller sig till varandra.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Hur många joner som ligger inom den streckade ramen</li>
+              <li>Om den ramen sitter runt något som är avgränsat från resten</li>
+              <li>Var du skulle kunna rita ramen i stället</li>
+              <li>Hur många violetta respektive gröna joner det finns totalt</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/formelenhet.svg" alt="Ett jongitter av violetta och gröna joner. En violett och en grön jon intill varandra är inramade med en streckad ram, märkt som en formelenhet.">
+            <figcaption>NaCl betyder inte en partikel med två atomer. Det betyder att det går en natriumjon på varje kloridjon.</figcaption>
+          </figure>
+          <h2>Kalciumklorid är tydligare</h2>
+          <p>Ta ett annat exempel där förhållandet inte är ett till ett.</p>
+          <p>Kalciumklorid skrivs \(\ce{CaCl2}\). Kalciumjonen har laddningen plus två, kloridjonen minus ett. För att laddningarna ska ta ut varandra behövs <strong>två</strong> kloridjoner på varje kalciumjon.</p>
+          <p>\(\ce{CaCl2}\) betyder alltså: två kloridjoner per kalciumjon. Inte att det finns en partikel med tre atomer.</p>
+          <h2>Ordet för det</h2>
+          <p>Den minsta grupp joner som ger rätt förhållande och en neutral laddning kallas en <strong>formelenhet</strong>.</p>
+          <p>En formelenhet är alltså ett bokföringsbegrepp, inte en partikel. Du kan inte plocka ut en ur kristallen och titta på den — du skulle bara riva ut två joner ur ett mönster som fortsätter runt omkring.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad betyder formeln NaCl?</li>
+              <li>Finns det NaCl-molekyler?</li>
+              <li>Vad är en formelenhet?</li>
+              <li>Hur skrivs formeln för kalciumklorid?</li>
+              <li>Varför skrivs salter alltid med minsta möjliga tal?</li>
+            </ul>
+          </div>
+
+          <h2>Formeln anger ett förhållande, inte en partikel</h2>
+          <p class="inledning">Eftersom salter inte består av enskilda molekyler betyder ett salts formel något annat än en molekyls formel.</p>
+          <p>Formeln <strong>NaCl</strong> står inte för en NaCl-molekyl bestående av en natriumjon och en kloridjon. Det finns inga sådana partiklar i ett saltkorn.</p>
+          <p>Formeln visar i stället <strong>förhållandet mellan jonerna</strong> i kristallen. I natriumklorid finns lika många natriumjoner som kloridjoner, alltså förhållandet 1:1. En natriumjon har laddningen +1 och en kloridjon laddningen −1, vilket gör att laddningarna tillsammans blir noll.</p>
+          <h2>Formelenheten är det minsta förhållandet som ger neutral laddning</h2>
+          <p>För salter använder man därför begreppet <strong>formelenhet</strong>. En formelenhet visar det minsta heltalsförhållandet mellan de positiva och negativa jonerna som gör saltet elektriskt neutralt.</p>
+          <p>I NaCl är förhållandet en natriumjon till en kloridjon. I kalciumklorid, \(\ce{CaCl2}\), är förhållandet i stället en kalciumjon till två kloridjoner, eftersom kalciumjonen har laddningen +2 och varje kloridjon −1.</p>
+          <p>Formelenheten motsvarar alltså ingen fristående partikel i gittret. Den är ett sätt att ange sammansättningen, inte en beskrivning av något man kan plocka ut och titta på.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/formelenhet.svg" alt="Ett jongitter av violetta och gröna joner. En violett och en grön jon intill varandra är inramade med en streckad ram, märkt som en formelenhet.">
+            <figcaption>Formelenheten anger det minsta förhållandet mellan jonslagen som ger neutral laddning. Den motsvarar ingen fristående partikel i gittret.</figcaption>
+          </figure>
+          <h2>Salter skrivs alltid med minsta möjliga heltal</h2>
+          <p>Eftersom formeln anger ett förhållande och inte ett antal skrivs den alltid med de minsta tal som fungerar.</p>
+          <p>Man skriver NaCl, inte \(\ce{Na2Cl2}\), trots att båda beskriver samma förhållande mellan jonslagen.</p>
+          <p>Här finns en tydlig skillnad mot molekylära ämnen. Väteperoxid skrivs \(\ce{H2O2}\) och inte HO, eftersom molekylen faktiskt innehåller två väteatomer och två syreatomer. Där är talen ett <strong>antal</strong> i en verklig partikel, och de kan inte förkortas.</p>
+          <p>Hos salter finns ingen sådan partikel vars innehåll formeln måste beskriva. Därför är minsta möjliga tal alltid det riktiga.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför just det förhållandet</h2>
+          <p>Standardtexten säger att formelenheten ger neutral total laddning. Det är hela förklaringen, men den har en konsekvens värd att dra ut.</p>
+          <p>Eftersom förhållandet bestäms av laddningarna, och laddningarna bestäms av var atomslaget står i periodiska systemet, går det att <strong>räkna ut</strong> formeln för ett salt man aldrig sett.</p>
+          <p>Kalium står i grupp 1 och bildar \(\ce{K+}\). Syre bildar \(\ce{O^2-}\). För neutral laddning krävs två kaliumjoner per oxidjon, alltså \(\ce{K2O}\).</p>
+          <p>Aluminium bildar \(\ce{Al^3+}\), syre \(\ce{O^2-}\). Minsta gemensamma nämnare är sex: två aluminiumjoner ger plus sex, tre oxidjoner ger minus sex. Formeln blir \(\ce{Al2O3}\).</p>
+          <h2>Jämför med molekylformler</h2>
+          <p>Kontrasten mot molekylära ämnen gör skillnaden tydlig.</p>
+          <p>Väteperoxid har formeln \(\ce{H2O2}\). Skulle man skriva den med minsta möjliga tal blev det HO — men det vore fel, eftersom väteperoxidmolekylen faktiskt innehåller två väteatomer och två syreatomer. Talen är ett <strong>antal</strong>, inte ett förhållande.</p>
+          <p>Etan är \(\ce{C2H6}\) av samma skäl, inte \(\ce{CH3}\).</p>
+          <p>Hos salter finns ingen sådan begränsning. Det finns ingen partikel vars innehåll formeln måste beskriva, så minsta möjliga tal är alltid rätt.</p>
+          <h2>Icke-heltalsförhållanden</h2>
+          <p>En sista sak, som visar att också formelenheten är en modell.</p>
+          <p>Vissa jonföreningar har inte exakt heltalsförhållanden. Järn(II)oxid skrivs FeO, men verkliga prover har ofta sammansättningar närmare \(\ce{Fe_{0{,}95}O}\) — det saknas järnjoner på vissa gitterplatser, och några av de kvarvarande har laddningen 3+ i stället för 2+ för att kompensera.</p>
+          <p>Sådana föreningar kallas <strong>icke-stökiometriska</strong>, och de är vanligare än man skulle tro. De är dessutom tekniskt viktiga, eftersom tomrummen i gittret gör att joner kan röra sig — vilket används i batterier och bränsleceller.</p>
+          <p><strong>Om modellen:</strong> formelenheten är en utmärkt beskrivning av nästan alla salter. Men den förutsätter ett perfekt gitter, och verkliga kristaller har defekter.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-1-vad-ar-ett-salt.json"
+           data-avsnitt="a1_vad-ar-ett-salt">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-1-vad-ar-ett-salt.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a1_vad-ar-ett-salt';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'salter';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

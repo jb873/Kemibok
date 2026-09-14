@@ -1,7 +1,7 @@
 # Djupdykningar — delkapitel Salter
 
-> Delkapitlet är inte byggt ännu; djupdykningen byggs när det finns (bygg-djupdykning.js salter kräver
-> konfiguration i bygg-avsnitt-konfig.js). Placering ur djupdykningar-placeringar-2026-09-13.md.
+> Byggd 2026-09-14 med delkapitlet (`node verktyg/bygg-djupdykning.js salter`), länkad från avsnitt 3 (kortet
+> ligger sist på avsnittssidan). Placering ur djupdykningar-placeringar-2026-09-13.md.
 
 ---
 

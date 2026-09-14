@@ -20,6 +20,8 @@
 //   vatejon-och-oxoniumjon.svg          delkapitel Syror 1 B – H2O + H+ → H3O+ i tre lager (skrivs till delkapitel/syror/img/)
 //   ph-skalan.svg                       delkapitel Syror 2 A – skala 0–14 med exempel (syror/img/)
 //   fyra-kombinationerna.svg            delkapitel Syror 4 B – stark/svag × koncentrerad/utspädd (syror/img/)
+//   molekyl-mot-gitter, formelenhet, laddningsbalans, sammansatt-jon, saltbildning, havsvatten
+//                                       delkapitel Salter 1 B, 1 C, 2 A, 2 B, 4 A, 4 C (salter/img/)
 //
 // Färger: linjer/text #2d4a35, rutor/väte #f5f0e4, syre #C0392B, proton #C64B3A,
 // neutron #8A8A8A, elektron #3D6BA8. Transparent bakgrund. Typsnitt: Georgia-fallback
@@ -733,4 +735,146 @@ ${STOPP.filter(([p]) => p >= 3 && p <= 8).map(([ph, f]) => `      <stop offset="
   }
 }
 
-console.log('skrev 18 svg (8 repetition, 3 syror, 1 baser, 2 neutralisation, 4 försurning)', path.relative(path.join(__dirname, '..'), UT));
+console.log('skrev 24 svg (8 repetition, 3 syror, 1 baser, 2 neutralisation, 4 försurning, 6 salter)', path.relative(path.join(__dirname, '..'), UT));
+
+
+// ---------- 19–24. Salter: sex SVG:er (leverans 2026-09-14, salter-avsnitt-1-2-komplett.md / -3-4-komplett.md) ----------
+// Joner: natrium #9b7cc4, klorid #6a9e4f, kalcium #d9944a, aluminium #7d8fa8, oxid/syre #C0392B, vätejon #C64B3A,
+// hydroxid #3D6BA8, svavel #d4c04a, sulfat #d4c04a, magnesium #d9944a, övriga #8A8A8A. Text/konturer INK. Transparent bakgrund.
+{
+  const UT6 = path.join(__dirname, '..', 'kapitel', 'syror-och-baser', 'delkapitel', 'salter', 'img');
+  fs.mkdirSync(UT6, { recursive: true });
+  const NA = '#9b7cc4', CL = '#6a9e4f', CA = '#d9944a', AL = '#7d8fa8', OX = '#C0392B', HJ = '#C64B3A', OH = '#3D6BA8', SV = '#d4c04a', MG = '#d9944a', OVR = '#8A8A8A';
+  const txt = (x, y, t, extra = '') => `  <text x="${r2(x)}" y="${r2(y)}" fill="${INK}" ${/font-size=/.test(extra) ? '' : 'font-size="17"'} ${/text-anchor=/.test(extra) ? '' : 'text-anchor="middle"'} ${FONT} ${extra}>${t}</text>\n`;
+  // formel i Unicode (H₂O, Na⁺, O²⁻, Al₂O₃) → tspans; texten efter ett index läggs i en tspan som återställer dy
+  const SUBT = { '₀': '0', '₁': '1', '₂': '2', '₃': '3', '₄': '4' }, SUPT = { '⁺': '+', '⁻': '−', '²': '2', '³': '3' };
+  const formel = s => {
+    let ut = '', kvar = s;
+    while (kvar) {
+      const m = kvar.match(/^([₀-₄]+|[⁺⁻²³]+)/);
+      if (m) {
+        const arSub = /[₀-₄]/.test(m[1]), t = [...m[1]].map(c => SUBT[c] || SUPT[c]).join('');
+        ut += `<tspan font-size="0.7em" dy="${arSub ? '0.35em' : '-0.6em'}">${t}</tspan>`;
+        kvar = kvar.slice(m[1].length);
+        const rest = kvar.match(/^[^₀-₄⁺⁻²³]+/);
+        if (rest) { ut += `<tspan dy="${arSub ? '-0.35em' : '0.6em'}">${rest[0]}</tspan>`; kvar = kvar.slice(rest[0].length); }
+      } else { const rest = kvar.match(/^[^₀-₄⁺⁻²³]+/); ut += rest[0]; kvar = kvar.slice(rest[0].length); }
+    }
+    return ut;
+  };
+  // jon: cirkel med tecken (+/−) eller etikett (t.ex. Na⁺) i vit text
+  const jon = (x, y, r, farg, inner) => `  <circle cx="${r2(x)}" cy="${r2(y)}" r="${r}" fill="${farg}" stroke="#fff" stroke-width="1.5"/>\n` +
+    (inner === '+' ? `  <path d="M${r2(x - r * 0.5)} ${r2(y)}H${r2(x + r * 0.5)}M${r2(x)} ${r2(y - r * 0.5)}V${r2(y + r * 0.5)}" stroke="#fff" stroke-width="${r2(r * 0.18)}" stroke-linecap="round"/>\n`
+      : inner === '−' ? `  <path d="M${r2(x - r * 0.5)} ${r2(y)}H${r2(x + r * 0.5)}" stroke="#fff" stroke-width="${r2(r * 0.18)}" stroke-linecap="round"/>\n`
+      : inner ? `  <text x="${r2(x)}" y="${r2(y + r * 0.32)}" fill="#fff" font-size="${r2(r * 0.9)}" font-weight="bold" text-anchor="middle" ${FONT}>${inner}</text>\n` : '');
+  const vattenStav = (cx, cy, rO, rH, avst) => vatten(cx, cy, rO, rH, avst, { farg: '#8A8A8A', bredd: 4 }).ut;
+  // schackmönster av joner; klipps mot en rektangel om clip anges
+  const gitter = (x0, y0, kol, rad, steg, r, clip) => {
+    let ut = clip ? `  <g clip-path="url(#${clip})">\n` : '';
+    for (let i = 0; i < rad; i++) { for (let j = 0; j < kol; j++) { const pos = (i + j) % 2 === 0; ut += jon(x0 + j * steg, y0 + i * steg, r, pos ? NA : CL, pos ? '+' : '−'); } }
+    return ut + (clip ? '  </g>\n' : '');
+  };
+
+  // ----- 19. molekyl-mot-gitter.svg (avsnitt 1 B) -----
+  {
+    const W = 640, H = 310, MITT = 320;
+    let ut = `  <line x1="${MITT}" y1="16" x2="${MITT}" y2="${H - 16}" stroke="${INK}" stroke-width="2"/>\n`;
+    ut += vattenStav(160, 120, 30, 19, 46);
+    ut += txt(160, 232, 'En vattenmolekyl', 'font-style="italic"') + txt(160, 264, formel("H₂O"), 'font-size="22"');
+    // gitter ritat 5×5 och klippt så att de yttre jonerna kapas vid kanten (fortsätter utanför bilden)
+    const cx = 480, cy = 114, steg = 50, r = 21;   // 3×3 hela joner, de yttre kapade på mitten
+    ut += `  <defs><clipPath id="klipp"><rect x="${cx - 2 * steg}" y="${cy - 2 * steg}" width="${4 * steg}" height="${4 * steg}"/></clipPath></defs>\n`;
+    ut += gitter(cx - 2 * steg, cy - 2 * steg, 5, 5, steg, r, 'klipp');
+    ut += txt(cx, 232, 'En del av ett jongitter', 'font-style="italic"') + txt(cx, 264, 'NaCl', 'font-size="22"');
+    fs.writeFileSync(path.join(UT6, 'molekyl-mot-gitter.svg'), svg(W, H,
+      'Till vänster en enskild vattenmolekyl, till höger ett utsnitt av ett jongitter där violetta och gröna joner omväxlar och klipps av vid kanten', ut));
+  }
+  // ----- 20. formelenhet.svg (avsnitt 1 C) -----
+  {
+    const W = 420, H = 380, steg = 60, r = 25, x0 = 120, y0 = 60;
+    let ut = gitter(x0, y0, 4, 4, steg, r);
+    // streckad ram runt jonerna (rad 1, kol 1) och (rad 1, kol 2): violett + grön intill varandra
+    const fx = x0 + 1 * steg - r - 7, fy = y0 + 1 * steg - r - 7;
+    ut += `  <rect x="${fx}" y="${fy}" width="${steg + 2 * r + 14}" height="${2 * r + 14}" rx="8" fill="none" stroke="${INK}" stroke-width="2" stroke-dasharray="7 5"/>\n`;
+    ut += txt(W / 2, 312, 'En formelenhet: NaCl', 'font-size="20"') + txt(W / 2, 342, 'förhållandet 1:1', 'font-size="15" font-style="italic"');
+    fs.writeFileSync(path.join(UT6, 'formelenhet.svg'), svg(W, H,
+      'Ett jongitter av violetta och gröna joner; en violett och en grön jon intill varandra är inramade med en streckad ram och märkta som en formelenhet', ut));
+  }
+  // ----- 21. laddningsbalans.svg (avsnitt 2 A) -----
+  {
+    const W = 780, H = 250, B = W / 3, r = 24;
+    let ut = '';
+    [B, 2 * B].forEach(x => { ut += `  <line x1="${x}" y1="20" x2="${x}" y2="${H - 50}" stroke="${INK}" stroke-width="1"/>\n`; });
+    const rad = (px, joner, under, formel) => {
+      const tot = joner.length, mellan = 2 * r + 10, start = px + B / 2 - ((tot - 1) * mellan) / 2;
+      joner.forEach(([farg, etikett], i) => { ut += jon(start + i * mellan, 78, r, farg, etikett); });
+      ut += txt(px + B / 2, 140, under, 'font-size="15" font-style="italic"') + txt(px + B / 2, 178, formel, 'font-size="24" font-weight="bold"');
+    };
+    const na = [NA, formel("Na⁺")], cl = [CL, formel("Cl⁻")], ca = [CA, formel("Ca²⁺")], al = [AL, formel("Al³⁺")], o = [OX, formel("O²⁻")];
+    rad(0, [na, cl], '+1 och −1', 'NaCl');
+    rad(B, [ca, cl, cl], '+2 och två gånger −1', formel("CaCl₂"));
+    rad(2 * B, [al, al, o, o, o], 'två gånger +3 och tre gånger −2', formel("Al₂O₃"));
+    ut += `  <line x1="40" y1="${H - 38}" x2="${W - 40}" y2="${H - 38}" stroke="${INK}" stroke-width="1"/>\n` + txt(W / 2, H - 12, 'Summan är alltid noll', 'font-size="17" font-style="italic"');
+    fs.writeFileSync(path.join(UT6, 'laddningsbalans.svg'), svg(W, H,
+      'Tre exempel på laddningsbalans: natriumklorid, kalciumklorid och aluminiumoxid; under alla tre står att summan alltid är noll', ut));
+  }
+  // ----- 22. sammansatt-jon.svg (avsnitt 2 B) -----
+  {
+    const W = 400, H = 350, cx = 190, cy = 140, d = 74;
+    let ut = '';
+    const O = [45, 135, 225, 315].map(g => [cx + d * Math.cos(g * Math.PI / 180), cy + d * Math.sin(g * Math.PI / 180)]);
+    O.forEach(([x, y]) => { ut += `  <line x1="${cx}" y1="${cy}" x2="${r2(x)}" y2="${r2(y)}" stroke="#8A8A8A" stroke-width="5" stroke-linecap="round"/>\n`; });
+    ut += `  <circle cx="${cx}" cy="${cy}" r="27" fill="${SV}" stroke="${INK}" stroke-width="1.5"/>\n`;
+    O.forEach(([x, y]) => { ut += `  <circle cx="${r2(x)}" cy="${r2(y)}" r="21" fill="${OX}" stroke="${INK}" stroke-width="1.5"/>\n`; });
+    // hakparentes runt gruppen
+    const L = cx - d - 40, R = cx + d + 40, T = cy - d - 34, Bm = cy + d + 34;
+    ut += `  <path d="M${L + 14} ${T}H${L}V${Bm}H${L + 14}" fill="none" stroke="${INK}" stroke-width="2"/>\n  <path d="M${R - 14} ${T}H${R}V${Bm}H${R - 14}" fill="none" stroke="${INK}" stroke-width="2"/>\n`;
+    ut += txt(R + 20, T + 10, '2−', 'font-size="22" font-weight="bold"');
+    ut += txt(W / 2, 290, 'Inuti: kovalenta bindningar', 'font-style="italic"') + txt(W / 2, 320, 'Utåt: en jon med laddningen 2−', 'font-style="italic"');
+    fs.writeFileSync(path.join(UT6, 'sammansatt-jon.svg'), svg(W, H,
+      'En sulfatjon: gul svavelatom i mitten med fyra röda syreatomer runt sig, hela gruppen inom en hakparentes med laddningen två minus', ut));
+  }
+  // ----- 23. saltbildning.svg (avsnitt 4 A) -----
+  {
+    const W = 760, H = 240, r = 22, Y = 70, YF = 205;
+    let ut = '';
+    // klammer under en grupp: tunn linje med ändhakar och etikett
+    const klammer = (x1, x2, y, namn) => `  <path d="M${x1} ${y - 8}V${y}H${x2}V${y - 8}" fill="none" stroke="${INK}" stroke-width="1.5"/>\n` + txt((x1 + x2) / 2, y + 22, namn, 'font-size="15" font-style="italic"');
+    const kol = { h: 70, cl: 124, plus1: 178, na: 232, oh: 286, pil: 350, na2: 430, cl2: 484, plus2: 542, h2o: 610 };
+    ut += jon(kol.h, Y, r, HJ, formel("H⁺")) + jon(kol.cl, Y, r, CL, formel("Cl⁻")) + klammer(kol.h - r, kol.cl + r, Y + r + 12, 'syra');
+    ut += txt(kol.plus1, Y + 9, '+', 'font-size="28"');
+    ut += jon(kol.na, Y, r, NA, formel("Na⁺")) + jon(kol.oh, Y, r, OH, formel("OH⁻")) + klammer(kol.na - r, kol.oh + r, Y + r + 12, 'bas');
+    ut += pil(kol.pil - 20, Y, kol.pil + 44, Y, INK, 3);
+    ut += jon(kol.na2, Y, r, NA, formel("Na⁺")) + jon(kol.cl2, Y, r, CL, formel("Cl⁻")) + klammer(kol.na2 - r, kol.cl2 + r, Y + r + 12, 'salt');
+    ut += txt(kol.plus2, Y + 9, '+', 'font-size="28"');
+    ut += vattenStav(kol.h2o, Y - 8, 19, 12, 28);
+    // formelraden, linjerad mot kolumnerna
+    const f = (x, t) => txt(x, YF, t, 'font-size="22"');
+    ut += f((kol.h + kol.cl) / 2, 'HCl') + f(kol.plus1, '+') + f((kol.na + kol.oh) / 2, 'NaOH') + f(kol.pil + 12, '→') + f((kol.na2 + kol.cl2) / 2, 'NaCl') + f(kol.plus2, '+') + f(kol.h2o, formel("H₂O"));
+    fs.writeFileSync(path.join(UT6, 'saltbildning.svg'), svg(W, H,
+      'Överst jonerna: vätejon och kloridjon från syran, natriumjon och hydroxidjon från basen; efter pilen bildar natrium och klorid salt och väte och hydroxid vatten. Under står reaktionsformeln HCl + NaOH → NaCl + H2O', ut));
+  }
+  // ----- 24. havsvatten.svg (avsnitt 4 C) -----
+  {
+    const W = 720, H = 250, X0 = 40, BW = 640, Y = 36, BH = 60;
+    const falt = [["Kloridjoner", 55, CL], ["Natriumjoner", 31, NA], ["Sulfatjoner", 8, SV], ["Magnesiumjoner", 4, MG], ["Övriga", 2, OVR]];
+    let ut = "", x = X0;
+    falt.forEach(([namn, p, farg]) => {
+      const w = BW * p / 100;
+      ut += `  <rect x="${r2(x)}" y="${Y}" width="${r2(w)}" height="${BH}" fill="${farg}" stroke="${INK}" stroke-width="1"/>
+`;
+      if (p >= 8) { ut += `  <text x="${r2(x + w / 2)}" y="${Y + BH / 2 + 6}" fill="#fff" font-size="17" font-weight="bold" text-anchor="middle" ${FONT}>${p} %</text>
+`; }
+      x += w;
+    });
+    // teckenförklaring i två rader under stapeln (tre + två poster)
+    falt.forEach(([namn, p, farg], i) => {
+      const rad = i < 3 ? 0 : 1, kol = i < 3 ? i : i - 3, lx = X0 + kol * 215, ly = Y + BH + 28 + rad * 28;
+      ut += `  <rect x="${lx}" y="${ly}" width="14" height="14" fill="${farg}" stroke="${INK}" stroke-width="1"/>
+` + txt(lx + 20, ly + 12, `${namn} ${p} %`, "font-size=\"14\" text-anchor=\"start\"");
+    });
+    ut += txt(W / 2, H - 14, "Andel av de lösta salterna i havsvatten", "font-style=\"italic\"");
+    fs.writeFileSync(path.join(UT6, "havsvatten.svg"), svg(W, H,
+      "En vågrät stapel med andelen av olika joner i havsvattnets lösta salter: kloridjoner 55 procent, natriumjoner 31, sulfatjoner 8, magnesiumjoner 4 och övriga 2", ut));
+  }
+}

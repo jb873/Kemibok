@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formler och namn – Salter – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Salter</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">2. Formler och namn</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 2</span>
+      <h1>Formler och namn</h1>
+      <p class="subtitel">— att skriva och läsa saltformler —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Laddningsbalans</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Sammansatta joner</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Namn på salter</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-formler-och-namn">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Laddningsbalans ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Summan av alla laddningar i ett salt måste vara <strong>noll</strong></li>
+              <li>Antalet joner väljs så att plus och minus tar ut varandra</li>
+              <li><strong>NaCl:</strong> en plus mot en minus</li>
+              <li><strong>\(\ce{CaCl2}\):</strong> en plus två mot två gånger minus ett</li>
+              <li><strong>\(\ce{Al2O3}\):</strong> två gånger plus tre mot tre gånger minus två</li>
+            </ul>
+          </div>
+
+          <p>Nu ska du lära dig skriva formler för salter själv. Regeln är en enda, och den är enkel.</p>
+          <h2>Allt måste gå jämnt ut</h2>
+          <p><strong>Den totala laddningen i ett salt måste vara noll.</strong></p>
+          <p>Det är hela regeln. Antalet joner av varje slag väljs så att plus och minus tar ut varandra exakt.</p>
+          <p>Tänk på det som en balansvåg. Positiva laddningar på ena sidan, negativa på andra. Vågen måste stå rakt.</p>
+          <h2>Enklaste fallet</h2>
+          <p>Natrium bildar \(\ce{Na+}\) med laddningen <strong>plus ett</strong>. Klor bildar \(\ce{Cl-}\) med laddningen <strong>minus ett</strong>.</p>
+          <p>En av varje ger plus ett och minus ett. Summan blir noll.</p>
+          <p>Formeln blir <strong>NaCl</strong>.</p>
+          <h2>När det inte går jämnt ut direkt</h2>
+          <p>Kalcium bildar \(\ce{Ca^2+}\) med laddningen <strong>plus två</strong>. Klorid har fortfarande <strong>minus ett</strong>.</p>
+          <p>En kalciumjon och en kloridjon skulle ge plus två och minus ett. Det blir plus ett över, alltså inte noll.</p>
+          <p>Vad gör man? Man tar <strong>två</strong> kloridjoner. Två gånger minus ett blir minus två, och det tar ut plus två.</p>
+          <p>Formeln blir <strong>\(\ce{CaCl2}\)</strong>. Tvåan står efter Cl eftersom det är kloriden det finns två av.</p>
+          <h2>Ett svårare exempel</h2>
+          <p>Aluminium bildar \(\ce{Al^3+}\) med laddningen <strong>plus tre</strong>. Syre bildar \(\ce{O^2-}\) med <strong>minus två</strong>.</p>
+          <p>Nu går det inte jämnt ut med små tal. Prova:</p>
+          <p>En av varje: plus tre och minus två. Blir plus ett över. En aluminium och två oxid: plus tre och minus fyra. Blir minus ett över.</p>
+          <p>Man måste hitta ett tal som både tre och två går jämnt upp i. Det är <strong>sex</strong>.</p>
+          <p><strong>Två</strong> aluminiumjoner ger två gånger plus tre, alltså plus sex. <strong>Tre</strong> oxidjoner ger tre gånger minus två, alltså minus sex.</p>
+          <p>Summan blir noll, och formeln blir <strong>\(\ce{Al2O3}\)</strong>.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna ihop laddningarna i det <strong>första</strong> exemplet</li>
+              <li>Räkna ihop dem i det <strong>andra</strong></li>
+              <li>Räkna ihop dem i det <strong>tredje</strong></li>
+              <li>Vad alla tre har gemensamt</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/laddningsbalans.svg" alt="Tre exempel på laddningsbalans. Natriumklorid med en plusladdning mot en minusladdning. Kalciumklorid med en tvåfaldig plusladdning mot två minusladdningar. Aluminiumoxid med två trefaldiga plusladdningar mot tre tvåfaldiga minusladdningar. Under alla tre står att summan alltid är noll.">
+            <figcaption>Antalet joner väljs så att plus och minus tar ut varandra exakt.</figcaption>
+          </figure>
+          <h2>Minsta möjliga tal</h2>
+          <p>En sista regel. Formeln skrivs alltid med de <strong>minsta</strong> tal som fungerar.</p>
+          <p>\(\ce{Na2Cl2}\) skulle också gå jämnt ut, men det skriver man aldrig. Det är NaCl som gäller, eftersom förhållandet är detsamma och talen är mindre.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilken regel bestämmer ett salts formel?</li>
+              <li>Hur får man fram formeln för natriumklorid?</li>
+              <li>Varför blir kalciumklorid \(\ce{CaCl2}\)?</li>
+              <li>Hur räknar man ut \(\ce{Al2O3}\)?</li>
+              <li>Var kommer jonladdningarna ifrån?</li>
+            </ul>
+          </div>
+
+          <h2>Den sammanlagda laddningen måste bli noll</h2>
+          <p class="inledning">När man skriver formeln för ett salt måste den sammanlagda positiva och negativa laddningen bli noll. Saltet ska som helhet vara <strong>elektriskt neutralt</strong>.</p>
+          <p>Det är hela regeln, och den bestämmer hur många joner av varje slag som ingår.</p>
+          <p>För natriumklorid är detta enkelt. Natriumjonen har laddningen +1 och kloridjonen −1. En jon av varje ger därför summan noll, och formeln blir <strong>NaCl</strong>.</p>
+          <h2>Är laddningarna olika stora behövs olika många joner</h2>
+          <p>Kalciumjonen har laddningen +2. Eftersom varje kloridjon har laddningen −1 behövs två kloridjoner för att balansera en kalciumjon. Formeln blir därför <strong>\(\ce{CaCl2}\)</strong>.</p>
+          <p>Siffran skrivs efter den jon det finns flera av, och den anger hur många.</p>
+          <p>Samma princip gäller även när båda laddningarna är större än ett. Aluminiumjonen har laddningen +3 och oxidjonen laddningen −2. Här går det inte jämnt ut med en av varje.</p>
+          <p>Man söker då det minsta tal som båda laddningarna går jämnt upp i, vilket är sex. Två aluminiumjoner ger tillsammans +6 och tre oxidjoner ger −6. Därför blir formeln för aluminiumoxid <strong>\(\ce{Al2O3}\)</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/laddningsbalans.svg" alt="Tre exempel på laddningsbalans. Natriumklorid med en plusladdning mot en minusladdning. Kalciumklorid med en tvåfaldig plusladdning mot två minusladdningar. Aluminiumoxid med två trefaldiga plusladdningar mot tre tvåfaldiga minusladdningar. Under alla tre står att summan alltid är noll.">
+            <figcaption>Formeln för ett salt bestäms av kravet att den totala laddningen ska vara noll.</figcaption>
+          </figure>
+          <h2>Jonladdningen följer av platsen i periodiska systemet</h2>
+          <p>Det är alltså jonernas laddningar som bestämmer hur många av varje jon som behövs. Och laddningarna går i de flesta fall att läsa ur det periodiska systemet.</p>
+          <p>Atomslag i grupp 1 bildar joner med laddningen 1+, grupp 2 ger 2+ och grupp 13 ger 3+. Åt andra hållet ger grupp 17 laddningen 1−, grupp 16 ger 2− och grupp 15 ger 3−.</p>
+          <p>Det betyder att man kan räkna ut formeln för ett salt man aldrig arbetat med, bara genom att se var atomslagen står. Magnesium i grupp 2 och kväve i grupp 15 ger till exempel \(\ce{Mg3N2}\).</p>
+          <p>Siffrorna i saltets formel anger alltså antalsförhållandet mellan jonerna, inte antalet atomer i en molekyl.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Jonladdningen går att läsa ur systemet</h2>
+          <p>Standardtexten anger laddningarna som givna. Men de flesta av dem går att räkna ut, och det är precis vad avsnitt 2 i repetitionen handlade om.</p>
+          <p>Atomslag i <strong>grupp 1</strong> har en valenselektron att avge och bildar joner med laddningen 1+. Grupp 2 har två och bildar 2+. Grupp 13 har tre och bildar 3+.</p>
+          <p>Åt andra hållet: <strong>grupp 17</strong> saknar en elektron och bildar 1−. Grupp 16 saknar två och bildar 2−. Grupp 15 saknar tre och bildar 3−.</p>
+          <p>Mönstret är alltså symmetriskt kring mitten. Det betyder att du kan förutsäga formeln för ett salt mellan två atomslag du aldrig arbetat med, bara genom att se var de står.</p>
+          <p>Magnesium står i grupp 2 och bildar \(\ce{Mg^2+}\). Kväve står i grupp 15 och bildar \(\ce{N^3-}\). Minsta gemensamma nämnare är sex, alltså tre magnesiumjoner mot två nitridjoner: \(\ce{Mg3N2}\).</p>
+          <h2>Där regeln inte räcker</h2>
+          <p>Övergångsmetallerna i systemets mitt följer inte mönstret.</p>
+          <p>Järn kan bilda både \(\ce{Fe^2+}\) och \(\ce{Fe^3+}\). Koppar kan bilda \(\ce{Cu+}\) och \(\ce{Cu^2+}\). Vilken laddning som uppstår beror på förhållandena, och det går inte att läsa ur gruppnumret.</p>
+          <p>Skälet ligger i d-orbitalerna, som du mötte i fördjupningen om periodiska systemets form. Hos övergångsmetallerna ligger flera energinivåer så nära varandra att olika antal elektroner kan avges utan stor skillnad i energikostnad.</p>
+          <p>Det är därför sådana salter kräver romerska siffror i namnet, vilket underdel C tar upp.</p>
+          <p><strong>Om modellen:</strong> att laddningen följer av gruppnumret är en regel som fungerar för huvudgrupperna och alltså för de flesta salter i skolkemin. Övergångsmetallerna är inte undantag från regeln — de ligger utanför dess giltighetsområde.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Sammansatta joner ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>En <strong>sammansatt jon</strong> består av flera atomer med en gemensam laddning</li>
+              <li>Inuti sitter atomerna ihop med <strong>kovalenta</strong> bindningar</li>
+              <li>Utåt fungerar gruppen som <strong>en enda jon</strong></li>
+              <li>Sulfat, nitrat, karbonat och ammonium är vanliga exempel</li>
+              <li>Behövs flera sammansatta joner används <strong>parenteser</strong></li>
+            </ul>
+          </div>
+
+          <p>Alla joner består inte av en enda atom. Du mötte det redan i repetitionen, men nu blir det viktigt på allvar.</p>
+          <h2>Flera atomer, en laddning</h2>
+          <p>En <strong>sammansatt jon</strong> är en grupp atomer som sitter ihop och tillsammans bär en laddning.</p>
+          <p>Sulfatjonen \(\ce{SO4^2-}\) är ett exempel. Den består av en svavelatom och fyra syreatomer — fem atomer sammanlagt — och hela gruppen har laddningen minus två.</p>
+          <p>Andra vanliga är <strong>nitratjonen</strong> \(\ce{NO3-}\), <strong>karbonatjonen</strong> \(\ce{CO3^2-}\) och <strong>ammoniumjonen</strong> \(\ce{NH4+}\).</p>
+          <p>Lägg märke till den sista: den är <strong>positiv</strong>. De flesta sammansatta joner är negativa, men ammonium är ett viktigt undantag.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Hur många atomer som finns innanför hakparentesen</li>
+              <li>Var laddningen står skriven</li>
+              <li>Om laddningen hör till en enskild atom eller till hela gruppen</li>
+              <li>Vilken sorts bindningar som finns inuti</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/sammansatt-jon.svg" alt="En sulfatjon med en gul svavelatom i mitten och fyra röda syreatomer runt sig, sammanbundna med stavar. Hela gruppen omges av en hakparentes med laddningen två minus utanför.">
+            <figcaption>Inuti jonen sitter atomerna ihop genom att dela elektroner. Utåt fungerar hela gruppen som en enda jon.</figcaption>
+          </figure>
+          <h2>Två bindningstyper i samma ämne</h2>
+          <p>Här kommer något som är kemiskt elegant.</p>
+          <p><strong>Inuti</strong> den sammansatta jonen sitter atomerna ihop med <strong>kovalenta bindningar</strong> — de delar elektroner, precis som atomerna i en vattenmolekyl.</p>
+          <p><strong>Utåt</strong> fungerar hela gruppen som en enda jon, och den binder till andra joner med <strong>jonbindning</strong>.</p>
+          <p>Ett salt som natriumsulfat innehåller alltså båda bindningstyperna samtidigt. Kovalenta inuti sulfatjonen, jonbindning mellan sulfatjonen och natriumjonerna.</p>
+          <h2>Parenteser</h2>
+          <p>När ett salt innehåller flera sammansatta joner behövs parenteser, och de betyder något viktigt.</p>
+          <p>Kalciumhydroxid skrivs <strong>\(\ce{Ca(OH)2}\)</strong>.</p>
+          <p>Tvåan står utanför parentesen. Det betyder att det finns <strong>två hela hydroxidjoner</strong>, alltså två syre och två väte.</p>
+          <p>Utan parentes skulle \(\ce{CaOH2}\) betyda något helt annat: en syreatom och två väteatomer. Det vore inte hydroxid alls.</p>
+          <p>Parenteserna är alltså inte pynt. De avgör vad formeln betyder.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad är en sammansatt jon?</li>
+              <li>Vilka är de vanligaste?</li>
+              <li>Vilken sorts bindningar finns inuti dem?</li>
+              <li>Varför behövs parenteser i vissa formler?</li>
+              <li>Vad betyder \(\ce{Ca(OH)2}\)?</li>
+            </ul>
+          </div>
+
+          <h2>Vissa joner består av flera atomer</h2>
+          <p class="inledning">Alla joner består inte av en enda atom. Det finns också <strong>sammansatta joner</strong>, där flera atomer sitter ihop men där hela gruppen tillsammans har en laddning.</p>
+          <p>Viktiga exempel är hydroxidjonen \(\ce{OH-}\), nitratjonen \(\ce{NO3-}\), sulfatjonen \(\ce{SO4^2-}\), karbonatjonen \(\ce{CO3^2-}\) och ammoniumjonen \(\ce{NH4+}\).</p>
+          <p>De flesta sammansatta joner är negativa. Ammoniumjonen är ett viktigt undantag — den är positiv och fungerar därför som katjon i salter.</p>
+          <h2>Två bindningstyper finns i samma ämne</h2>
+          <p>Atomerna inne i en sammansatt jon sitter ihop med <strong>kovalenta bindningar</strong>. De delar elektroner med varandra, precis som atomerna i en vattenmolekyl gör.</p>
+          <p>Gruppen som helhet bär däremot en laddning och deltar i <strong>jonbindningar</strong> med andra joner.</p>
+          <p>Ett ämne som natriumsulfat innehåller därför båda bindningstyperna samtidigt: kovalenta bindningar inuti sulfatjonen, och jonbindning mellan sulfatjonen och natriumjonerna.</p>
+          <p>Att laddningen tillhör hela gruppen och inte en enskild atom är viktigt. Sulfatjonens fyra syreatomer är likvärdiga — laddningen sitter inte på någon av dem utan är utspridd över hela jonen.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/sammansatt-jon.svg" alt="En sulfatjon med en gul svavelatom i mitten och fyra röda syreatomer runt sig, sammanbundna med stavar. Hela gruppen omges av en hakparentes med laddningen två minus utanför.">
+            <figcaption>I en sammansatt jon hålls atomerna samman av kovalenta bindningar, medan gruppen som helhet bär en laddning och deltar i jonbindningar.</figcaption>
+          </figure>
+          <h2>Parenteser visar att siffran gäller hela jonen</h2>
+          <p>När ett salt innehåller flera sammansatta joner används <strong>parenteser</strong> i formeln.</p>
+          <p>Kalciumhydroxid skrivs <strong>\(\ce{Ca(OH)2}\)</strong>. Kalciumjonen har laddningen +2 och varje hydroxidjon −1, så det behövs två hydroxidjoner.</p>
+          <p>Parentesen visar att tvåan gäller hela gruppen OH. Formeln innehåller alltså två hela hydroxidjoner, tillsammans två syreatomer och två väteatomer.</p>
+          <p>Utan parentes skulle formeln betyda något annat. \(\ce{CaOH2}\) skulle läsas som en syreatom och två väteatomer, vilket inte är hydroxid alls. Parenteserna är därför inte en formsak utan avgör vad formeln betyder.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför laddningen inte sitter på en atom</h2>
+          <p>Standardtexten säger att gruppen som helhet bär en laddning. Var sitter den då?</p>
+          <p>Svaret är att den inte sitter någonstans bestämt — den är <strong>utspridd</strong> över hela jonen.</p>
+          <p>I sulfatjonen är alla fyra syreatomerna likvärdiga. Man skulle kunna tro att två av dem bär varsin minusladdning och att de andra två är neutrala, men mätningar visar att alla fyra är identiska. Bindningarna till svavlet är lika långa och lika starka.</p>
+          <p>Fenomenet kallas att laddningen är <strong>delokaliserad</strong>. Elektronerna hör inte till en bestämd atom utan rör sig över hela gruppen.</p>
+          <h2>Därför är de stabila</h2>
+          <p>Utspridningen förklarar varför sammansatta joner håller ihop så bra.</p>
+          <p>En koncentrerad laddning är energimässigt dyr — det mötte du i syrornas fördjupning, där vätejonens höga laddningstäthet gjorde den extremt reaktiv. Sprids laddningen över flera atomer blir tätheten lägre och jonen stabilare.</p>
+          <p>Det är också därför syror som lämnar efter sig en sådan jon ofta är starka. Sulfatjonen och nitratjonen är mycket stabila, och därför avger svavelsyra och salpetersyra sina protoner gärna.</p>
+          <h2>Karbonatjonen och kalksten</h2>
+          <p>En koppling bakåt som knyter ihop mycket.</p>
+          <p>Karbonatjonen \(\ce{CO3^2-}\) är en sammansatt jon med samma delokaliserade laddning. Den finns i kalksten, i havets karbonatsystem, i bikarbonat och i kalkning av sjöar.</p>
+          <p>Att den är en <strong>bas</strong> — den tar upp protoner — är vad som gör kalksten löslig i syra, vad som gör bikarbonat användbart mot halsbränna, och vad som gör kalkning möjlig.</p>
+          <p>En och samma jon förklarar alltså vittrade gravstenar, brustabletter och helikoptrar över svenska sjöar.</p>
+          <p><strong>Om modellen:</strong> standardtexten behandlar sammansatta joner som byggstenar med en given laddning. Delokaliseringen förklarar varför de är stabila nog att fungera som byggstenar över huvud taget.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Namn på salter ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Den <strong>positiva</strong> jonen namnges först, den <strong>negativa</strong> sedan</li>
+              <li>Metallen behåller sitt namn: natrium, kalcium, kalium</li>
+              <li>Icke-metallen får ändelsen <strong>-id</strong>: klorid, oxid, sulfid</li>
+              <li>Sammansatta joner har egna namn: sulfat, nitrat, karbonat</li>
+              <li>Den negativa jonen kommer från <strong>syran</strong>, den positiva från <strong>basen</strong></li>
+            </ul>
+          </div>
+
+          <p>Namn på salter följer regler som är ovanligt förutsägbara. Kan du dem kan du namnge nästan vilket salt som helst.</p>
+          <h2>Positiv först, negativ sedan</h2>
+          <p>Grundregeln: <strong>den positiva jonen namnges först, den negativa sedan.</strong></p>
+          <p>Natriumjon plus kloridjon blir <strong>natriumklorid</strong>. Kalciumjon plus kloridjon blir <strong>kalciumklorid</strong>. Kaliumjon plus nitratjon blir <strong>kaliumnitrat</strong>.</p>
+          <p>Det är samma ordning som i formeln — den positiva jonen skrivs först där också.</p>
+          <h2>Metallen behåller sitt namn</h2>
+          <p>Den positiva jonen heter oftast precis som grundämnet.</p>
+          <p>Natrium blir natrium. Kalcium blir kalcium. Kalium blir kalium.</p>
+          <p>Inget krångel där.</p>
+          <h2>Icke-metallen får -id</h2>
+          <p>Den negativa jonen ändrar däremot ändelse. Den får <strong>-id</strong> på slutet.</p>
+          <p>Klor blir <strong>klorid</strong>. Syre blir <strong>oxid</strong>. Svavel blir <strong>sulfid</strong>. Fluor blir <strong>fluorid</strong>.</p>
+          <p>Så natrium plus klor blir natriumklorid, inte natriumklor.</p>
+          <h2>Sammansatta joner har egna namn</h2>
+          <p>De sammansatta jonerna följer inte -id-regeln utan har egna namn du får lära dig.</p>
+          <p>Sulfat, nitrat, karbonat, fosfat, hydroxid.</p>
+          <p>Natriumjon plus sulfatjon blir <strong>natriumsulfat</strong>. Kalciumjon plus karbonatjon blir <strong>kalciumkarbonat</strong>.</p>
+          <h2>Var jonerna kommer ifrån</h2>
+          <p>Här kommer en koppling som gör namnen begripliga i stället för att bara vara regler.</p>
+          <p>Den <strong>negativa</strong> jonen kommer från en syra:</p>
+          <p>Saltsyra ger <strong>klorider</strong>. Svavelsyra ger <strong>sulfater</strong>. Salpetersyra ger <strong>nitrater</strong>. Kolsyra ger <strong>karbonater</strong>.</p>
+          <p>Den <strong>positiva</strong> jonen kommer från en bas:</p>
+          <p>Natriumhydroxid ger <strong>natrium</strong>salter. Kalciumhydroxid ger <strong>kalcium</strong>salter.</p>
+          <p>Det betyder att du kan räkna ut vilket salt en neutralisation ger. Saltsyra och natriumhydroxid ger klorid från syran och natrium från basen — alltså natriumklorid.</p>
+          <p>Vi använder det i avsnitt 4.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>I vilken ordning namnges jonerna?</li>
+              <li>Vilken ändelse får icke-metalljoner?</li>
+              <li>Vad heter de sammansatta jonerna?</li>
+              <li>Varifrån kommer saltets två joner?</li>
+              <li>Kan man förutsäga vilket salt en neutralisation ger?</li>
+            </ul>
+          </div>
+
+          <h2>Katjonen först, anjonen sedan</h2>
+          <p class="inledning">Namn på salter följer bestämda regler, och de är ovanligt förutsägbara.</p>
+          <p>Namnet består vanligtvis av <strong>katjonens namn följt av anjonens namn</strong>. Natriumklorid består av natriumjoner och kloridjoner. Kalciumklorid består av kalciumjoner och kloridjoner. Kaliumnitrat består av kaliumjoner och nitratjoner.</p>
+          <p>Det är samma ordning som i formeln, där den positiva jonen skrivs först.</p>
+          <h2>Icke-metalljoner får ändelsen -id</h2>
+          <p>Den positiva jonen heter oftast precis som grundämnet. Natrium blir natrium, kalcium blir kalcium.</p>
+          <p>Enkla joner av icke-metaller ändrar däremot ändelse och får <strong>-id</strong>. Klor bildar kloridjoner, syre bildar oxidjoner och svavel bildar sulfidjoner.</p>
+          <p>Sammansatta joner behåller sina egna namn, till exempel sulfat, nitrat, karbonat och fosfat. De följer alltså inte -id-regeln.</p>
+          <p>Namnet anger <strong>vilka joner som ingår</strong>, medan formeln anger i vilket antalsförhållande de förekommer. Natriumklorid och kalciumklorid innehåller båda kloridjoner, men i olika antal per katjon.</p>
+          <h2>Anjonen kommer från syran och katjonen från basen</h2>
+          <p>Här finns en tydlig koppling till de syror och baser vi tidigare har arbetat med.</p>
+          <p>Saltsyra kan ge <strong>klorider</strong>, salpetersyra <strong>nitrater</strong>, svavelsyra <strong>sulfater</strong> och kolsyra <strong>karbonater</strong>. Natriumhydroxid ger natriumsalter, kaliumhydroxid kaliumsalter och kalciumhydroxid kalciumsalter.</p>
+          <p>När en syra reagerar med en bas vid en neutralisation kommer den negativa delen av saltet från syran, medan den positiva jonen kommer från basen.</p>
+          <p>Med hjälp av jonernas namn och laddningar går det därför ofta att förutsäga vilket salt som kommer att bildas. Saltsyra och natriumhydroxid ger klorid från syran och natrium från basen — alltså natriumklorid.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>När metallen kan ha flera laddningar</h2>
+          <p>Standardtexten säger att katjonen heter som grundämnet. För huvudgruppernas metaller stämmer det alltid, eftersom de bara bildar en sorts jon.</p>
+          <p>Övergångsmetallerna är annorlunda, som du såg i fördjupningen till underdel A. Järn kan bilda både \(\ce{Fe^2+}\) och \(\ce{Fe^3+}\).</p>
+          <p>Det ger ett problem. "Järnklorid" är tvetydigt — det kan betyda \(\ce{FeCl2}\) eller \(\ce{FeCl3}\), som är två olika ämnen med olika färg och olika egenskaper.</p>
+          <p>Lösningen är <strong>romerska siffror</strong> som anger jonens laddning:</p>
+          <p><strong>Järn(II)klorid</strong> är \(\ce{FeCl2}\), med \(\ce{Fe^2+}\). <strong>Järn(III)klorid</strong> är \(\ce{FeCl3}\), med \(\ce{Fe^3+}\).</p>
+          <p>Siffran står inom parentes direkt efter metallens namn och uttalas som ett tal: järn-två-klorid.</p>
+          <p>Samma system används för koppar(I) och koppar(II), för bly(II) och bly(IV), och för alla andra metaller som kan bilda flera joner.</p>
+          <h2>Äldre namn som lever kvar</h2>
+          <p>Innan romerska siffror infördes användes latinska namn med ändelser.</p>
+          <p>Den lägre laddningen fick <strong>-o</strong>, den högre <strong>-i</strong>. Ferroklorid var \(\ce{FeCl2}\) och ferriklorid var \(\ce{FeCl3}\). Kuprosulfat och kuprisulfat på samma sätt.</p>
+          <p>Systemet var svårt att använda, eftersom det bara angav vilken av två som avsågs — inte vilken laddningen faktiskt var. Det övergavs därför, men namnen dyker fortfarande upp i äldre litteratur och i vissa branscher.</p>
+          <p>Ordet <strong>ferrit</strong> i magnetiska material och <strong>ferritin</strong> i kroppens järnlager kommer från samma latinska rot.</p>
+          <h2>Trivialnamn</h2>
+          <p>En sista kategori: namn som inte följer några regler alls.</p>
+          <p>Koksalt, bordssalt, kalk, släckt kalk, soda, bikarbonat, salmiak, gips — alla är salter, och inget av namnen säger vilka joner som ingår.</p>
+          <p>De lever kvar för att ämnena användes långt innan kemin kunde beskriva dem. Att veta både trivialnamnet och det systematiska är praktiskt: det första används i butiken, det andra i laboratoriet.</p>
+          <p><strong>Om modellen:</strong> namngivningsreglerna är byggda för att namnet ska kunna översättas till en formel och tillbaka. Trivialnamnen fungerar tvärtom — de säger vad ämnet används till, inte vad det består av.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-2-formler-och-namn.json"
+           data-avsnitt="a2_formler-och-namn">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-2-formler-och-namn.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a2_formler-och-namn';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'salter';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

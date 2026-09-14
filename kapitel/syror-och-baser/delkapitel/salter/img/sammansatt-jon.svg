@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" width="400" height="350" role="img" aria-labelledby="t">
+  <title id="t">En sulfatjon: gul svavelatom i mitten med fyra röda syreatomer runt sig, hela gruppen inom en hakparentes med laddningen två minus</title>
+  <line x1="190" y1="140" x2="242.33" y2="192.33" stroke="#8A8A8A" stroke-width="5" stroke-linecap="round"/>
+  <line x1="190" y1="140" x2="137.67" y2="192.33" stroke="#8A8A8A" stroke-width="5" stroke-linecap="round"/>
+  <line x1="190" y1="140" x2="137.67" y2="87.67" stroke="#8A8A8A" stroke-width="5" stroke-linecap="round"/>
+  <line x1="190" y1="140" x2="242.33" y2="87.67" stroke="#8A8A8A" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="190" cy="140" r="27" fill="#d4c04a" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="242.33" cy="192.33" r="21" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="137.67" cy="192.33" r="21" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="137.67" cy="87.67" r="21" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+  <circle cx="242.33" cy="87.67" r="21" fill="#C0392B" stroke="#2d4a35" stroke-width="1.5"/>
+  <path d="M90 32H76V248H90" fill="none" stroke="#2d4a35" stroke-width="2"/>
+  <path d="M290 32H304V248H290" fill="none" stroke="#2d4a35" stroke-width="2"/>
+  <text x="324" y="42" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="bold">2−</text>
+  <text x="200" y="290" fill="#2d4a35" font-size="17" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic">Inuti: kovalenta bindningar</text>
+  <text x="200" y="320" fill="#2d4a35" font-size="17" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic">Utåt: en jon med laddningen 2−</text>
+</svg>

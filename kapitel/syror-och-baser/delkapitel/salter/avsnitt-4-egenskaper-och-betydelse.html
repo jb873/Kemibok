@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salternas egenskaper och betydelse – Salter – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Syror och baser</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Salter</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">4. Salternas egenskaper och betydelse</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 4</span>
+      <h1>Salternas egenskaper och betydelse</h1>
+      <p class="subtitel">— var salterna kommer ifrån och vad de gör —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Hur salter bildas</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Egenskaper</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Salter i naturen och kroppen</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-syror-och-baser-egenskaper-och-betydelse">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Hur salter bildas ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Salter bildas ofta vid <strong>neutralisation</strong></li>
+              <li>Syran ger den <strong>negativa</strong> jonen</li>
+              <li>Basen ger den <strong>positiva</strong></li>
+              <li>Vilket salt som bildas går att <strong>förutsäga</strong></li>
+              <li>Koefficienterna visar mängdförhållandet</li>
+            </ul>
+          </div>
+
+          <p>Du vet redan att neutralisation ger salt och vatten. Nu kan du dessutom räkna ut <strong>vilket</strong> salt.</p>
+          <h2>Var jonerna kommer ifrån</h2>
+          <p>När en syra och en bas neutraliserar varandra reagerar vätejonerna med hydroxidjonerna och bildar vatten.</p>
+          <p>Kvar blir två joner som inte deltog: <strong>en negativ från syran</strong> och <strong>en positiv från basen</strong>. De två bildar saltet.</p>
+          <p>Det betyder att du kan förutsäga resultatet om du vet vilken syra och vilken bas som använts.</p>
+          <h2>Ett första exempel</h2>
+          <p>Ta saltsyra och natriumhydroxid.</p>
+          <p>Från saltsyran kommer <strong>kloridjoner</strong>. Från natriumhydroxiden kommer <strong>natriumjoner</strong>.</p>
+          <p>Saltet blir alltså natriumjoner plus kloridjoner — <strong>natriumklorid</strong>, vanligt koksalt.</p>
+          <div class="formel">\[\ce{HCl + NaOH -> NaCl + H2O}\]</div>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vilka två joner som kommer från syran</li>
+              <li>Vilka två som kommer från basen</li>
+              <li>Vilka två som bildar vatten</li>
+              <li>Vilka två som blir kvar som salt</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/saltbildning.svg" alt="Överst visas jonerna: en vätejon och en kloridjon från syran, en natriumjon och en hydroxidjon från basen. Efter pilen har natriumjonen och kloridjonen bildat ett salt, medan vätejonen och hydroxidjonen bildat vatten. Under står reaktionsformeln.">
+            <figcaption>Två av jonerna bildar vatten. De andra två blir kvar och bildar saltet.</figcaption>
+          </figure>
+          <h2>Ett exempel med tvåa</h2>
+          <p>Nu ett där det inte går jämnt ut direkt.</p>
+          <p>Svavelsyra kan avge <strong>två</strong> vätejoner, medan natriumhydroxid bara ger <strong>en</strong> hydroxidjon. För att alla vätejoner ska neutraliseras behövs därför två natriumhydroxid på varje svavelsyra.</p>
+          <div class="formel">\[\ce{H2SO4 + 2 NaOH -> Na2SO4 + 2 H2O}\]</div>
+          <p>Tvåan framför NaOH visar att det behövs två. Och tvåan i \(\ce{Na2SO4}\) kommer av att sulfatjonen har laddningen minus två — det krävs två natriumjoner för att balansera den.</p>
+          <p>Saltet heter <strong>natriumsulfat</strong>.</p>
+          <h2>Andra sätt</h2>
+          <p>Neutralisation är det vanligaste sättet men inte det enda.</p>
+          <p>Salter kan också bildas när en metall reagerar direkt med en icke-metall — natrium och klor som bildar koksalt är exemplet från repetitionen. Och de finns naturligt i berggrund och havsvatten.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Hur bildas salter?</li>
+              <li>Vilken jon kommer från syran, och vilken från basen?</li>
+              <li>Går det att förutsäga vilket salt som bildas?</li>
+              <li>Varför står det en tvåa i vissa formler?</li>
+              <li>Finns det andra sätt salter kan bildas på?</li>
+            </ul>
+          </div>
+
+          <h2>Vid neutralisation bildas salt och vatten</h2>
+          <p class="inledning">Ett vanligt sätt att bilda salter är genom <strong>neutralisation</strong>. När en syra reagerar med en bas bildas vatten och ett salt.</p>
+          <p>Vid reaktionen reagerar vätejonerna från syran med hydroxidjonerna från basen och bildar vatten. De övriga jonerna deltar inte utan finns kvar i lösningen.</p>
+          <p>Den <strong>negativa jonen</strong> kommer därför från syran och den <strong>positiva jonen</strong> från basen. Tillsammans utgör de saltet. Avdunstar vattnet blir de kvar som en fast jonförening.</p>
+          <p>Reaktionen sammanfattas som <strong>syra + bas \(\rightarrow\) salt + vatten</strong>.</p>
+          <h2>Vilket salt som bildas går att förutsäga</h2>
+          <p>Eftersom man vet vilken jon varje syra respektive bas bidrar med går det att räkna ut vilket salt en viss neutralisation ger.</p>
+          <p>Saltsyra bidrar med kloridjoner och ger därför <strong>klorider</strong>. Svavelsyra ger <strong>sulfater</strong>, salpetersyra ger <strong>nitrater</strong> och kolsyra ger <strong>karbonater</strong>. Natriumhydroxid ger natriumsalter, kaliumhydroxid ger kaliumsalter och kalciumhydroxid ger kalciumsalter.</p>
+          <p>När saltsyra reagerar med natriumhydroxid bildas alltså natriumklorid:</p>
+          <div class="formel">\[\ce{HCl + NaOH -> NaCl + H2O}\]</div>
+          <figure class="brodtext-bild standard">
+            <img src="img/saltbildning.svg" alt="Överst visas jonerna: en vätejon och en kloridjon från syran, en natriumjon och en hydroxidjon från basen. Efter pilen har natriumjonen och kloridjonen bildat ett salt, medan vätejonen och hydroxidjonen bildat vatten. Under står reaktionsformeln.">
+            <figcaption>Vid neutralisation bildas vatten av syrans och basens joner. Saltet består av de joner som inte deltog i reaktionen.</figcaption>
+          </figure>
+          <p>Med samma resonemang ger salpetersyra och kaliumhydroxid kaliumnitrat, och svavelsyra och kalciumhydroxid ger kalciumsulfat.</p>
+          <h2>Koefficienterna visar mängdförhållandet</h2>
+          <p>Alla neutralisationer sker inte i förhållandet ett till ett. Svavelsyra kan avge två vätejoner, medan natriumhydroxid bara bidrar med en hydroxidjon. Det behövs därför två formelenheter natriumhydroxid per molekyl svavelsyra:</p>
+          <div class="formel">\[\ce{H2SO4 + 2 NaOH -> Na2SO4 + 2 H2O}\]</div>
+          <p>Saltet blir natriumsulfat, \(\ce{Na2SO4}\). Tvåan i formeln beror på att sulfatjonen har laddningen 2−, vilket kräver två natriumjoner för att ge en neutral förening.</p>
+          <p>Koefficienterna framför ämnena i reaktionsformeln visar alltså i vilka mängdförhållanden ämnena reagerar, medan siffrorna i formlerna visar jonernas antalsförhållande i saltet.</p>
+          <p>Salter kan också bildas på andra sätt, till exempel när en metall reagerar direkt med en icke-metall. Många salter förekommer dessutom naturligt i berggrund och havsvatten.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Fyra sorters salter beroende på ursprung</h2>
+          <p>Standardtexten säger att syran ger anjonen och basen katjonen. Det leder till en indelning som förklarar något du mötte i baserna: att salter inte alltid ger neutrala lösningar.</p>
+          <p>Kombinationerna är fyra:</p>
+          <p><strong>Stark syra och stark bas</strong> ger ett salt vars lösning är <strong>neutral</strong>. Natriumklorid är exemplet — varken natriumjonen eller kloridjonen reagerar nämnvärt med vatten.</p>
+          <p><strong>Svag syra och stark bas</strong> ger en <strong>basisk</strong> lösning. Natriumacetat är exemplet: acetatjonen kan ta tillbaka en proton från vattnet, och då bildas hydroxidjoner.</p>
+          <p><strong>Stark syra och svag bas</strong> ger en <strong>sur</strong> lösning. Ammoniumklorid är exemplet: ammoniumjonen kan avge en proton till vattnet.</p>
+          <p><strong>Svag syra och svag bas</strong> ger ett utfall som beror på vilken av dem som är starkast.</p>
+          <h2>Regeln bakom</h2>
+          <p>Mönstret har en enkel formulering: <strong>den svaga partnern sätter tonen.</strong></p>
+          <p>En stark syra lämnar efter sig en anjon som är en mycket svag bas — den vill inte ha tillbaka sin proton. En svag syra lämnar efter sig en anjon som är en märkbar bas, och den reagerar med vattnet.</p>
+          <p>Samma sak åt andra hållet för baser.</p>
+          <p>Det är därför en titrering av en svag syra med en stark bas hamnar över pH 7 vid ekvivalenspunkten, vilket du mötte i neutralisationens djupdykning.</p>
+          <p><strong>Om modellen:</strong> standardtexten beskriver hur saltet bildas. Vilken pH lösningen sedan får avgörs av om de ingående jonerna själva kan reagera med vatten — och det följer direkt av syrans och basens styrka.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Egenskaper ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Salter har <strong>höga smältpunkter</strong></li>
+              <li>Det beror på att jongittret är starkt bundet</li>
+              <li>Många är <strong>hårda men spröda</strong></li>
+              <li><strong>Elektriskt neutral</strong> är inte samma sak som <strong>pH-neutral</strong></li>
+              <li>Vissa saltlösningar är sura eller basiska</li>
+            </ul>
+          </div>
+
+          <p>Salternas egenskaper följer nästan alla av samma sak: att jonerna sitter i ett gitter.</p>
+          <h2>De smälter vid hög temperatur</h2>
+          <p>För att smälta ett ämne måste partiklarna kunna röra sig fritt. I ett salt betyder det att <strong>hela gittret måste brytas upp</strong>.</p>
+          <p>Varje jon hålls på plats av krafter från alla sina grannar, och de krafterna är starka. Det krävs därför mycket energi.</p>
+          <p>Natriumklorid smälter först vid <strong>801 grader</strong>. Jämför med is, som smälter vid noll.</p>
+          <h2>De är hårda men spröda</h2>
+          <p>Salter är hårda — det är svårt att repa en saltkristall.</p>
+          <p>Men de är samtidigt <strong>spröda</strong>. Slår du på en saltkristall spricker den, rent och längs en plan yta.</p>
+          <p>Det verkar motsägelsefullt men följer av samma sak. Jonerna måste sitta på exakt rätt plats. Förskjuter du ett lager hamnar lika laddningar bredvid varandra, de repellerar, och kristallen stöts isär.</p>
+          <h2>Neutral betyder två olika saker</h2>
+          <p>Här kommer något som förvirrar många, och det är värt att vara noga med.</p>
+          <p>Ett salt är <strong>elektriskt neutralt</strong>. Det betyder att de positiva och negativa laddningarna tar ut varandra — summan är noll.</p>
+          <p>Men det betyder <strong>inte</strong> att en saltlösning har pH 7.</p>
+          <h2>Vissa saltlösningar är sura eller basiska</h2>
+          <p>En lösning av koksalt är faktiskt neutral, pH nära 7.</p>
+          <p>Men löser du natriumkarbonat blir lösningen <strong>basisk</strong>. Och löser du ammoniumklorid blir den <strong>sur</strong>.</p>
+          <p>Anledningen är att vissa joner själva kan reagera med vattnet. Karbonatjonen tar upp vätejoner, och då blir det fler hydroxidjoner kvar — lösningen blir basisk.</p>
+          <p>Att ett salt är elektriskt neutralt säger alltså ingenting om vilket pH dess lösning får.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Varför har salter höga smältpunkter?</li>
+              <li>Varför är de hårda men spröda?</li>
+              <li>Vad betyder elektriskt neutral?</li>
+              <li>Är alla saltlösningar neutrala i pH-mening?</li>
+              <li>Vad avgör vilket pH en saltlösning får?</li>
+            </ul>
+          </div>
+
+          <h2>Höga smältpunkter beror på jongittrets styrka</h2>
+          <p class="inledning">Salter har ofta höga smältpunkter. Orsaken är att de elektriska krafterna mellan jonerna i gittret är starka, och att varje jon påverkas av flera grannar samtidigt.</p>
+          <p>För att smälta ett salt måste hela gitterstrukturen brytas upp så att jonerna kan röra sig fritt i förhållande till varandra. Det kräver betydligt mer energi än att smälta ett ämne som består av molekyler, där bara de svagare krafterna mellan molekylerna behöver övervinnas.</p>
+          <p>Natriumklorid smälter vid omkring 801 °C. Magnesiumoxid, där båda jonerna är tvåvärda, smälter först vid 2852 °C — ett direkt uttryck för att starkare laddningar ger starkare gitter.</p>
+          <h2>Salter är hårda men spröda, och båda beror på samma sak</h2>
+          <p>Salter är också ofta hårda men samtidigt spröda. Hårdheten beror på att jonerna hålls på plats av starka krafter och inte lätt kan förskjutas ur sina lägen.</p>
+          <p>Sprödheten beror på vad som händer om man ändå lyckas förskjuta dem. När ett jonlager glider ett steg i förhållande till lagret under hamnar laddningar med samma tecken mitt emot varandra. Attraktionen blir då till repulsion, och kristallen stöts isär längs ett plan.</p>
+          <p>Det är skillnaden mot en metall, där elektronhavet håller ihop strukturen oavsett var jonerna hamnar. Metaller kan därför bucklas medan salter spricker.</p>
+          <h2>Elektriskt neutral är inte samma sak som pH-neutral</h2>
+          <p>Ett salt är alltid <strong>elektriskt neutralt</strong>. Det betyder att den sammanlagda laddningen är noll, eftersom de positiva och negativa jonerna balanserar varandra.</p>
+          <p>Det betyder däremot inte att en saltlösning har <strong>pH 7</strong>. En lösning av ett salt kan vara sur, neutral eller basisk beroende på om de ingående jonerna kan reagera med vatten.</p>
+          <p>En lösning av natriumklorid är i praktiken neutral, eftersom varken natriumjoner eller kloridjoner reagerar nämnvärt med vatten. En lösning av natriumkarbonat blir däremot basisk, eftersom karbonatjoner kan ta upp vätejoner från vattnet. En lösning av ammoniumklorid blir sur, eftersom ammoniumjoner kan avge vätejoner.</p>
+          <p>Begreppet elektriskt neutral ska därför inte blandas ihop med neutral i pH-mening. Det första handlar om laddningsbalans i ämnet, det andra om balansen mellan joner i lösningen.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Vad som gör en jon reaktiv mot vatten</h2>
+          <p>Standardtexten säger att vissa joner reagerar med vatten och andra inte. Mönstret går att förutsäga, och det bygger på syra–basparen från baserna.</p>
+          <p><strong>En anjon reagerar som bas</strong> om den kommer från en svag syra. Acetatjonen kommer från ättiksyra, som är svag, och kan därför ta tillbaka en proton. Kloridjonen kommer från saltsyra, som är stark, och tar inte tillbaka någonting.</p>
+          <p><strong>En katjon reagerar som syra</strong> om den kommer från en svag bas. Ammoniumjonen kommer från ammoniak, som är svag, och kan avge en proton. Natriumjonen kommer från natriumhydroxid, som är stark, och gör ingenting.</p>
+          <p>Reglerna är alltså spegelbilder av varandra.</p>
+          <h2>Metalljoner som gör lösningen sur</h2>
+          <p>Det finns ett fall till som är mindre uppenbart.</p>
+          <p>Små metalljoner med hög laddning kan göra en lösning sur, trots att de inte kommer från någon bas i vanlig mening. Aluminiumjonen är exemplet.</p>
+          <p>\(\ce{Al^3+}\) är liten och trevärd, alltså med extremt hög laddningstäthet. De vattenmolekyler som hydratiserar den dras så hårt att bindningen mellan syre och väte försvagas, och en proton kan lossna.</p>
+          <p>En lösning av aluminiumsulfat är därför märkbart sur.</p>
+          <p>Det knyter ihop med försurningen: aluminium i sur mark är inte bara ett offer för låg pH utan bidrar själv till surheten.</p>
+          <h2>Därför är sprödheten och hårdheten samma sak</h2>
+          <p>Ett sista resonemang som knyter ihop underdelen.</p>
+          <p>Både hårdhet och sprödhet följer av att jonerna måste sitta på exakt rätt plats. Hårdhet är motståndet mot att flytta dem lite. Sprödhet är vad som händer när man ändå lyckas.</p>
+          <p>En metall har inget sådant krav — elektronhavet fungerar oavsett var jonerna hamnar. Därför är metaller mjukare men segare.</p>
+          <p><strong>Om modellen:</strong> standardtexten ger tre egenskaper och tre förklaringar. Alla tre är i själva verket samma förklaring: jonernas position i gittret är avgörande, och allt som rubbar den får konsekvenser.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Salter i naturen och kroppen ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Havsvatten innehåller <strong>många olika</strong> salter</li>
+              <li>Natrium och klorid är de vanligaste</li>
+              <li>Kroppen behöver joner för att fungera</li>
+              <li><strong>Natrium och kalium</strong> styr nervsignaler</li>
+              <li><strong>Kalcium</strong> behövs för skelett och muskler</li>
+            </ul>
+          </div>
+
+          <p>Salter är inte bara laboratoriekemi. De finns i havet, i berggrunden och i varje cell i din kropp.</p>
+          <h2>Havet innehåller mer än koksalt</h2>
+          <p>Havsvatten smakar salt, och det beror mest på natriumklorid.</p>
+          <p>Men det är långt ifrån det enda som finns där. Havet innehåller också sulfat, magnesium, kalcium, kalium och en mängd andra joner i mindre mängder.</p>
+          <p>Räknar man alla lösta salter tillsammans utgör natrium och klorid ungefär åtta tiondelar. Resten är något annat.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vilken jon som har det största fältet</li>
+              <li>Vilken som har det näst största</li>
+              <li>Hur stor del som är <strong>något annat</strong> än natrium och klorid</li>
+              <li>Om de två vanligaste tillsammans bildar koksalt</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/havsvatten.svg" alt="En vågrät stapel som visar andelen av olika joner i havsvattnets lösta salter. Kloridjoner utgör drygt hälften, natriumjoner knappt en tredjedel, och sulfat, magnesium och övriga resten.">
+            <figcaption>Havsvatten innehåller mycket mer än koksalt. Men natrium och klorid är de vanligaste.</figcaption>
+          </figure>
+          <h2>Varifrån saltet kommer</h2>
+          <p>Salterna i havet kommer framför allt från <strong>berggrunden</strong>.</p>
+          <p>Regnvatten är svagt surt och löser långsamt upp mineral. De frigjorda jonerna följer med bäckar och floder ut i havet.</p>
+          <p>Vattnet avdunstar sedan och bildar nya moln — men <strong>jonerna följer inte med</strong>. De blir kvar. Över miljontals år har havet därför blivit alltmer salt.</p>
+          <h2>Kroppen behöver joner</h2>
+          <p>I din kropp finns salter lösta i allt vatten — i blodet, i cellerna, i vävnadsvätskan.</p>
+          <p>De är inte överflödiga. Utan rätt joner i rätt mängder skulle kroppen sluta fungera på några minuter.</p>
+          <h2>Natrium och kalium styr nervsignaler</h2>
+          <p><strong>Natriumjoner och kaliumjoner</strong> är avgörande för nerver och muskler.</p>
+          <p>En nervsignal är i grunden en snabb förflyttning av joner in och ut genom cellens yta. Utan skillnad i jonhalt mellan insidan och utsidan kan ingen signal skickas.</p>
+          <p>Det är därför både för lite och för mycket salt är farligt.</p>
+          <h2>Kalcium bygger och styr</h2>
+          <p><strong>Kalciumjoner</strong> har två roller.</p>
+          <p>De bygger upp <strong>skelett och tänder</strong>, där kalcium ingår i den hårda vävnaden.</p>
+          <p>Och de styr <strong>muskelsammandragningar</strong>. Varje gång en muskel spänns är det kalciumjoner som utlöser det.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad innehåller havsvatten?</li>
+              <li>Varifrån kommer salterna i havet?</li>
+              <li>Vilka joner behöver kroppen?</li>
+              <li>Vad gör natrium och kalium?</li>
+              <li>Vad gör kalcium?</li>
+            </ul>
+          </div>
+
+          <h2>Havsvatten innehåller många olika salter</h2>
+          <p class="inledning">Salter är vanliga i naturen. Havsvatten innehåller stora mängder lösta salter, framför allt natriumklorid men även många andra.</p>
+          <p>Bland de vanligaste jonerna finns kloridjoner och natriumjoner, som tillsammans utgör drygt åtta tiondelar av det lösta saltet. Därutöver finns bland annat sulfatjoner, magnesiumjoner, kalciumjoner och kaliumjoner.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/havsvatten.svg" alt="En vågrät stapel som visar andelen av olika joner i havsvattnets lösta salter. Kloridjoner utgör drygt hälften, natriumjoner knappt en tredjedel, och sulfat, magnesium och övriga resten.">
+            <figcaption>Klorid och natrium dominerar, men havsvattnet innehåller ett stort antal andra joner som tillsammans utgör drygt en tiondel.</figcaption>
+          </figure>
+          <p>Salterna kommer till stor del från <strong>vittring av berggrunden</strong>. Regnvatten är svagt surt och löser långsamt upp mineral. De frigjorda jonerna transporteras med bäckar och floder ut i havet.</p>
+          <p>Eftersom vattnet sedan avdunstar medan jonerna blir kvar har havet blivit alltmer salt under mycket lång tid. Salter finns också bundna i bergarter och mineral — kalciumkarbonat i kalksten är ett exempel.</p>
+          <h2>Kroppen är beroende av rätt halter av joner</h2>
+          <p>Salter har stor betydelse också i levande organismer. I kroppen finns joner lösta i blod, cellvätska och vävnadsvätska.</p>
+          <p>När ett salt finns löst i kroppens vätskor finns det inte kvar som kristaller. Det är uppdelat i sina joner. När vi får i oss natriumklorid är det därför natriumjoner och kloridjoner som transporteras och används.</p>
+          <p>Rätt halter av olika joner är nödvändiga för att kroppen ska fungera. Både för låga och för höga halter kan ge allvarliga störningar, och kroppen har flera system — framför allt njurarna — som håller halterna stabila.</p>
+          <h2>Natrium, kalium och kalcium har särskilda uppgifter</h2>
+          <p><strong>Natriumjoner</strong> och <strong>kaliumjoner</strong> har avgörande betydelse för nervsignaler och muskelfunktion. En nervimpuls bygger på att joner snabbt förflyttas genom cellmembran, vilket kräver att halterna skiljer sig mellan cellens insida och utsida.</p>
+          <p><strong>Kalciumjoner</strong> har två viktiga roller. De ingår i den hårda vävnaden i skelett och tänder, och de utlöser muskelsammandragningar. Varje gång en muskel spänns är det kalciumjoner som startar förloppet.</p>
+          <p><strong>Kloridjoner</strong> bidrar tillsammans med övriga joner till att reglera kroppens vätskebalans och elektriska balans.</p>
+          <p>Salterna i kroppen är alltså inte bara närvarande — de är förutsättningen för att nerver, muskler och vätskebalans ska fungera.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Natrium-kaliumpumpen</h2>
+          <p>Standardtexten säger att halterna måste skilja sig mellan cellens insida och utsida. Att upprätthålla en sådan skillnad går emot naturens tendens till utjämning — det kräver arbete.</p>
+          <p>I varje cellmembran sitter miljontals <strong>jonpumpar</strong> som gör det jobbet. Den viktigaste kallas natrium-kaliumpumpen.</p>
+          <p>Den flyttar <strong>tre natriumjoner ut</strong> ur cellen och <strong>två kaliumjoner in</strong>, mot koncentrationsgradienten i båda fallen. Eftersom det inte sker spontant måste energi tillföras, och det sker genom att en energibärande molekyl bryts ner för varje pumpcykel.</p>
+          <h2>Det kostar en femtedel av din energi</h2>
+          <p>Räknar man ihop alla celler i kroppen är detta en av de största enskilda energiposterna.</p>
+          <p>Uppskattningar pekar på att <strong>20 till 25 procent</strong> av kroppens energiförbrukning i vila går åt till jonpumpar. Nervceller är särskilt krävande — i hjärnan kan andelen vara ännu högre.</p>
+          <p>Du förbrukar alltså en betydande del av din mat på att hålla joner på fel sida om ett membran.</p>
+          <h2>Och därför är balansen kritisk</h2>
+          <p>Nu blir det begripligt varför både för lite och för mycket salt är farligt.</p>
+          <p>Pumparna arbetar mot en gradient. Ändras jonhalterna utanför cellen förändras gradienten, och pumparnas arbete blir antingen otillräckligt eller överdrivet.</p>
+          <p>Rubbningar i natrium- eller kaliumhalt påverkar därför direkt hjärtats rytm och nervernas funktion, och kraftiga avvikelser är livshotande. Det är också därför kroppen har flera system som håller halterna stabila — njurarna är det viktigaste.</p>
+          <p><strong>Om modellen:</strong> standardtexten konstaterar att kroppen behöver rätt jonhalter. Med pumparna blir det tydligt att "rätt halter" inte är ett tillstånd utan ett arbete som pågår i varje cell, varje sekund, hela livet.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-4-egenskaper-och-betydelse.json"
+           data-avsnitt="a4_egenskaper-och-betydelse">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-4-egenskaper-och-betydelse.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a4_egenskaper-och-betydelse';
+    const KAPITEL_ID = 'syror-och-baser';
+    const DELKAPITEL_ID = 'salter';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 250" width="780" height="250" role="img" aria-labelledby="t">
+  <title id="t">Tre exempel på laddningsbalans: natriumklorid, kalciumklorid och aluminiumoxid; under alla tre står att summan alltid är noll</title>
+  <line x1="260" y1="20" x2="260" y2="200" stroke="#2d4a35" stroke-width="1"/>
+  <line x1="520" y1="20" x2="520" y2="200" stroke="#2d4a35" stroke-width="1"/>
+  <circle cx="101" cy="78" r="24" fill="#9b7cc4" stroke="#fff" stroke-width="1.5"/>
+  <text x="101" y="85.68" fill="#fff" font-size="21.6" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">Na<tspan font-size="0.7em" dy="-0.6em">+</tspan></text>
+  <circle cx="159" cy="78" r="24" fill="#6a9e4f" stroke="#fff" stroke-width="1.5"/>
+  <text x="159" y="85.68" fill="#fff" font-size="21.6" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">Cl<tspan font-size="0.7em" dy="-0.6em">−</tspan></text>
+  <text x="130" y="140" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">+1 och −1</text>
+  <text x="130" y="178" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="bold">NaCl</text>
+  <circle cx="332" cy="78" r="24" fill="#d9944a" stroke="#fff" stroke-width="1.5"/>
+  <text x="332" y="85.68" fill="#fff" font-size="21.6" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">Ca<tspan font-size="0.7em" dy="-0.6em">2+</tspan></text>
+  <circle cx="390" cy="78" r="24" fill="#6a9e4f" stroke="#fff" stroke-width="1.5"/>
+  <text x="390" y="85.68" fill="#fff" font-size="21.6" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">Cl<tspan font-size="0.7em" dy="-0.6em">−</tspan></text>
+  <circle cx="448" cy="78" r="24" fill="#6a9e4f" stroke="#fff" stroke-width="1.5"/>
+  <text x="448" y="85.68" fill="#fff" font-size="21.6" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">Cl<tspan font-size="0.7em" dy="-0.6em">−</tspan></text>
+  <text x="390" y="140" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">+2 och två gånger −1</text>
+  <text x="390" y="178" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="bold">CaCl<tspan font-size="0.7em" dy="0.35em">2</tspan></text>
+  <circle cx="534" cy="78" r="24" fill="#7d8fa8" stroke="#fff" stroke-width="1.5"/>
+  <text x="534" y="85.68" fill="#fff" font-size="21.6" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">Al<tspan font-size="0.7em" dy="-0.6em">3+</tspan></text>
+  <circle cx="592" cy="78" r="24" fill="#7d8fa8" stroke="#fff" stroke-width="1.5"/>
+  <text x="592" y="85.68" fill="#fff" font-size="21.6" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">Al<tspan font-size="0.7em" dy="-0.6em">3+</tspan></text>
+  <circle cx="650" cy="78" r="24" fill="#C0392B" stroke="#fff" stroke-width="1.5"/>
+  <text x="650" y="85.68" fill="#fff" font-size="21.6" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">O<tspan font-size="0.7em" dy="-0.6em">2−</tspan></text>
+  <circle cx="708" cy="78" r="24" fill="#C0392B" stroke="#fff" stroke-width="1.5"/>
+  <text x="708" y="85.68" fill="#fff" font-size="21.6" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">O<tspan font-size="0.7em" dy="-0.6em">2−</tspan></text>
+  <circle cx="766" cy="78" r="24" fill="#C0392B" stroke="#fff" stroke-width="1.5"/>
+  <text x="766" y="85.68" fill="#fff" font-size="21.6" font-weight="bold" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">O<tspan font-size="0.7em" dy="-0.6em">2−</tspan></text>
+  <text x="650" y="140" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">två gånger +3 och tre gånger −2</text>
+  <text x="650" y="178" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="bold">Al<tspan font-size="0.7em" dy="0.35em">2</tspan><tspan dy="-0.35em">O</tspan><tspan font-size="0.7em" dy="0.35em">3</tspan></text>
+  <line x1="40" y1="212" x2="740" y2="212" stroke="#2d4a35" stroke-width="1"/>
+  <text x="390" y="238" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic">Summan är alltid noll</text>
+</svg>
