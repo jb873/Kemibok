@@ -3,7 +3,7 @@
   "kapitel_titel": "Organisk kemi",
   "version": 3,
   "skapad": "2026-09-13",
-  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 25 = 25.",
+  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 26 = 26.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -33,7 +33,16 @@
       "avsnitt_titel": "Kol bildar fler föreningar än något annat grundämne",
       "delkapitel_titel": "Kolatomen",
       "term": "elektronparbindning",
-      "expertdefinition": "En bindning där två atomer delar på ett elektronpar och använder det tillsammans.",
+      "expertdefinition": "En bindning där två atomer delar på ett elektronpar och använder det tillsammans. Kallas också kovalent bindning.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kol-bildar-fler-foreningar.json"
+    },
+    {
+      "id": "k1-b4",
+      "avsnitt": "1",
+      "avsnitt_titel": "Kol bildar fler föreningar än något annat grundämne",
+      "delkapitel_titel": "Kolatomen",
+      "term": "metan",
+      "expertdefinition": "Den enklaste kolföreningen. En kolatom bunden till fyra väteatomer.",
       "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kol-bildar-fler-foreningar.json"
     },
     {

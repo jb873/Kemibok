@@ -193,7 +193,6 @@ const DELKAPITEL = {
     // egen begreppsbank per kapitel (kapitel/organisk-kemi/data/). uteslut: kapitelöverskridande dubbletter mot Syror och baser
     // (repetition avsnitt 3) – Joachims regel 2026-09-15: lägg inte in en andra version, skriv inte om den befintliga
     bank: { idPrefix: '', avsnittOffset: 0, uteslut: {
-      'kovalent bindning': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)',
       'dubbelbindning': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)',
       'trippelbindning': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)',
       'strukturformel': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)' } } }

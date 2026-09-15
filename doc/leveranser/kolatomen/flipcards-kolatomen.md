@@ -1,5 +1,9 @@
 # Flipcards — delkapitel 1 "Kolatomen"
 
+> Rättelser (Joachim 2026-09-15, efter arbetsorder 3): kort 3 ny baksida ("Kallas också kovalent bindning"), kort 4
+> Kovalent bindning ersatt av Metan (grundläggande begreppskort), [formel]-märkningen borttagen på kort 9 och 35 – bara
+> kort 23 (C₆₀) är formelkort. Antalen oförändrade. Inlagt av Code i leveransfilen på Joachims uppdrag.
+
 48 kort, 16 per avsnitt.
 
 ## Kontrollräkning, båda hållen
@@ -40,10 +44,11 @@ Ett ämne som innehåller kol. Nästan alla innehåller också väte, och många
 kväve.
 
 **3. Elektronparbindning**
-En bindning där två atomer delar på ett elektronpar och använder det tillsammans.
+En bindning där två atomer delar på ett elektronpar och använder det tillsammans. Kallas också
+kovalent bindning.
 
-**4. Kovalent bindning**
-Ett annat namn på elektronparbindning. Används från Standardnivå och uppåt.
+**4. Metan**
+Den enklaste kolföreningen. En kolatom bunden till fyra väteatomer.
 
 **5. Dubbelbindning**
 En bindning där två atomer delar på två elektronpar. Räknas som två av kolatomens fyra
@@ -63,7 +68,6 @@ En bild där bindningarna mellan atomerna ritas som streck. Ett streck är ett d
 **9. Förenklad strukturformel**
 Ett kortare skrivsätt där varje kolatom skrivs tillsammans med sina väteatomer, i stället för
 att bindningarna ritas ut.
-**[formel]**
 
 **10. Kolkedja**
 Flera kolatomer bundna efter varandra. Kan vara några få atomer lång eller innehålla tusentals.
@@ -187,7 +191,6 @@ frigörs.
 
 **35. Druvsocker**
 Det socker som bildas vid fotosyntesen. Kallas också glukos och innehåller sex kolatomer.
-**[formel]**
 *Bankformulering:* **Druvsocker (glukos)** — det socker som bildas vid fotosyntesen och som
 cellandningen bryter ner. Innehåller sex kolatomer.
 

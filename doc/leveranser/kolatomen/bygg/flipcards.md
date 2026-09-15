@@ -20,11 +20,11 @@ S: Ett ämne som innehåller kol. Nästan alla innehåller också väte, och må
 
 **Elektronparbindning**
 F: Elektronparbindning
-S: En bindning där två atomer delar på ett elektronpar och använder det tillsammans.
+S: En bindning där två atomer delar på ett elektronpar och använder det tillsammans. Kallas också kovalent bindning.
 
-**Kovalent bindning**
-F: Kovalent bindning
-S: Ett annat namn på elektronparbindning. Används från Standardnivå och uppåt.
+**Metan**
+F: Metan
+S: Den enklaste kolföreningen. En kolatom bunden till fyra väteatomer.
 
 **Dubbelbindning**
 F: Dubbelbindning
@@ -42,7 +42,7 @@ S: En formel som visar vilka atomslag som ingår och hur många av varje. Den vi
 F: Strukturformel
 S: En bild där bindningarna mellan atomerna ritas som streck. Ett streck är ett delat elektronpar.
 
-**Förenklad strukturformel** [formel]
+**Förenklad strukturformel**
 F: Förenklad strukturformel
 S: Ett kortare skrivsätt där varje kolatom skrivs tillsammans med sina väteatomer, i stället för att bindningarna ritas ut.
 
@@ -180,7 +180,7 @@ S: Den process där en växt med hjälp av ljusenergi bygger druvsocker av koldi
 F: Cellandning
 S: Den process där glukos reagerar med syrgas så att koldioxid och vatten bildas och energi frigörs.
 
-**Druvsocker** [formel]
+**Druvsocker**
 F: Druvsocker
 S: Det socker som bildas vid fotosyntesen. Kallas också glukos och innehåller sex kolatomer.
 

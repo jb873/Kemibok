@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Begreppsbank – Organisk kemi – Kemi</title>
+  <link rel="stylesheet" href="../../css/geografi.css">
+  <link rel="stylesheet" href="../../css/kemi.css">
+  <link rel="stylesheet" href="../../css/fonts.css">
+</head>
+<body>
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">Begreppsbank</span>
+      </nav>
+      <span class="avsnitt-label">Kapitelverktyg</span>
+      <h1>Begreppsbank – Organisk kemi</h1>
+      <p class="subtitel">— skriv egna definitioner och lås upp expertförklaringarna —</p>
+    </div>
+  </header>
+
+  <main class="sida kapitel-vy begreppsbank-sida">
+
+<div id="kapitel-begreppsbank-verktyg"></div>
+
+    <div class="kelev-sokrad">
+      <input type="search" id="kapitel-begreppsbank-sok" class="kelev-sok"
+             placeholder="Sök begrepp …" aria-label="Sök begrepp">
+    </div>
+
+    <div class="kelev-layout">
+      <nav class="kelev-nav-wrap" aria-label="Innehåll">
+        <div id="kapitel-begreppsbank-nav" class="kelev-nav"></div>
+      </nav>
+      <div id="kapitel-begreppsbank-innehall" class="kelev-innehall begreppsbank-innehall"></div>
+    </div>
+
+  </main>
+
+  <script>
+    const DELKAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_TITEL = 'Organisk kemi';
+    // Kemi har en samlad begreppsbank per kapitel (data/begreppsbank.json),
+    // inte data/begreppsbank-{delkapitel}.json som JS:en defaultar till.
+    window.BEGREPP_URL = 'data/begreppsbank.json';
+  </script>
+  <script src="../../js/avsnitt.js"></script>
+  <script src="../../js/elevdata-overforing.js" defer></script>
+  <script src="../../js/kapitel-begreppsbank.js" defer></script>
+  <script src="../../js/elevfeedback.js" defer></script>
+</body>
+</html>
