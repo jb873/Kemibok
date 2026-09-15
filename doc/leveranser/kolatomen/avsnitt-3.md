@@ -1,6 +1,6 @@
 # Avsnitt 3 — Kol rör sig mellan luften och det levande
 
-> Ljuspilen i fotosyntesformeln (rad 32) skriven som `→[ljus]` av Code 2026-09-15 på Joachims godkännande –
+> Ljuspilen i fotosyntesformeln (rad 35) skriven som `→[ljus]` av Code 2026-09-15 på Joachims godkännande –
 > lib-notation gör den till `ce{->[ljus]}`. I övrigt oförändrad leverans.
 
 Kol finns inte bara bundet i bergarter, bränslen och olika material. Det rör sig också hela tiden
