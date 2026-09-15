@@ -56,8 +56,8 @@ function ritaStruktur(m, o = {}) {
   for (const b of m.bind) {
     const A = m.atomer[b.a], B = m.atomer[b.b], dx = B.x - A.x, dy = B.y - A.y, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L;
     const k = b.typ === 'C-C' ? 13 : HB, e = b.typ === 'C-C' ? 13 : HE;
-    const markH = o.mark && b.typ === 'C-H' && o.mark(B), farg = markH ? SIGN : (b.typ === 'C-C' ? fCC : fCH);
-    s += linje(A.x + ux * k, A.y + uy * k, b.typ === 'C-C' ? B.x - ux * e : A.x + ux * e, b.typ === 'C-C' ? B.y - uy * e : A.y + uy * e, farg, 2.2, `data-bind="${b.typ}" ${tag}`);
+    const markS = o.mark && o.mark(B) && (b.typ === 'C-H' || B.typ === 'C'), farg = markS ? SIGN : (b.typ === 'C-C' ? fCC : fCH);
+    s += linje(A.x + ux * k, A.y + uy * k, b.typ === 'C-C' ? B.x - ux * e : A.x + ux * e, b.typ === 'C-C' ? B.y - uy * e : A.y + uy * e, farg, 2.2, `data-bind="${b.typ}" ${markS ? 'data-mark="1" ' : ''}${tag}`);
   }
   for (const a of m.atomer) {
     const mark = o.mark && o.mark(a);
@@ -109,25 +109,23 @@ function modell(n, cx, cy, o = {}) {
   skriv('k2-b1.svg', W, HH, 'Metan och butan som strukturformler. Kolatomerna och strecken mellan dem är gröna, väteatomerna gråa. Under varje kolatom i butan står hur många väteatomer den bär: tre, två, två, tre', ut);
 }
 
-// ---------- B2. Alkanserien som trappa ----------
+// ---------- B2. Alkanserien som trappa (omritad efter rättelse 2026-09-15, doc/leveranser/kolvaten/rattelse-b2.md) ----------
+// Strukturformlerna ritas med samma rutin och samma värden som B3 (alkan(): DX 46, ritaStruktur(): fontsize 19). Den
+// tillkomna kolatomen, dess två väten och de tre strecken som hör till dem i signaturfärg – ingen ruta, ingen platta.
+// Tre kolumner: namn, strukturformel, molekylformel. Ingen "+ CH₂", ingen fetad rad. Metanraden utan markering.
 {
-  const W = 760, RH = 92, HH = 4 * RH + 40;
+  const W = 760, RH = 92, HH = 4 * RH + 16;
   let ut = '';
   const namn = ['metan', 'etan', 'propan', 'butan'], form = ['CH₄', 'C₂H₆', 'C₃H₈', 'C₄H₁₀'];
   for (let r = 0; r < 4; r++) {
     const n = r + 1, y = 50 + r * RH, x0 = 250;
     const m = alkan(n, x0, y);
-    // markering: den tillkomna (sista) kolatomen med sina två väten upp och ner – inte i översta raden
-    const sista = n - 1;
+    const sista = n - 1;   // den tillkomna kolatomen med sina två väten upp och ner
     const arMark = a => r > 0 && ((a.typ === 'C' && a.c === sista) || (a.typ === 'H' && a.c === sista && a.x === m.atomer[sista].x));
-    if (r > 0) { const cx = m.atomer[sista].x; ut += `  <rect x="${cx - 17}" y="${y - DY - 14}" width="34" height="${2 * DY + 28}" rx="8" fill="${SIGN}" fill-opacity="0.16" stroke="${SIGN}" stroke-width="1.2" data-markruta="${r}"/>\n`; }
-    ut += ritaStruktur(m, { tag: `data-rad="${r}"`, mark: arMark });
+    ut += ritaStruktur(m, { tag: `data-rad="${r}"`, mark: arMark, fontsize: 19 });
     ut += txt(150, y + 7, namn[r], 'font-size="18" text-anchor="end"');
     ut += txt(W - 60, y + 7, formel(form[r]), 'font-size="22" text-anchor="end"');
-    if (r > 0) ut += txt(W - 60, y + 28, '+ ' + formel('CH₂'), `font-size="13" fill="${SIGN}" text-anchor="end"`);
   }
-  ut += linje(40, HH - 26, W - 40, HH - 26, INK, 1);
-  ut += txt(W / 2, HH - 8, 'Varje steg i serien: en kolatom och två väteatomer till.', 'font-size="16" font-weight="bold"');
   skriv('k2-b2.svg', W, HH, 'Fyra strukturformler under varandra som en trappa: metan, etan, propan, butan. I varje rad utom den översta är den tillkomna kolatomen med sina två väteatomer markerad med grönt. Till höger står molekylformlerna', ut);
 }
 
@@ -176,7 +174,7 @@ function modell(n, cx, cy, o = {}) {
 
 // ---------- kontroll mot de skrivna filerna (ordern §3) ----------
 const las = f => fs.readFileSync(path.join(UT, f), 'utf8');
-const element = (s, filter) => [...s.matchAll(/<(text|circle|line|rect)\b([^>]*)>/g)].map(m => { const at = {}; for (const a of m[2].matchAll(/([a-z-]+)="([^"]*)"/g)) at[a[1]] = a[2]; at._tag = m[1]; return at; }).filter(filter);
+const element = (s, filter) => [...s.matchAll(/<(text|circle|line|rect)\b([^>]*)>/g)].map(m => { const at = {}; for (const a of m[2].matchAll(/([a-z0-9-]+)="([^"]*)"/g)) at[a[1]] = a[2]; at._tag = m[1]; return at; }).filter(filter);
 const antalAtom = (els, typ) => els.filter(e => e['data-atom'] === typ).length;
 const rapport = [];
 function kolla(namn, villkor, text) { rapport.push(`${villkor ? 'OK ' : 'FEL'} ${namn}: ${text}`); if (!villkor) process.exitCode = 1; }
@@ -200,10 +198,16 @@ function kolla(namn, villkor, text) { rapport.push(`${villkor ? 'OK ' : 'FEL'} $
   for (let r = 0; r < 4; r++) {
     const els = element(s, e => e['data-rad'] === String(r));
     kolla(`B2 rad ${r + 1}`, antalAtom(els, 'C') === r + 1 && antalAtom(els, 'H') === 2 * (r + 1) + 2, `${antalAtom(els, 'C')} C + ${antalAtom(els, 'H')} H`);
-    const mark = els.filter(e => e['data-mark'] === '1');
-    const ruta = element(s, e => e['data-markruta'] === String(r)).length;
-    kolla(`B2 markering rad ${r + 1}`, r === 0 ? (mark.length === 0 && ruta === 0) : (antalAtom(mark, 'C') === 1 && antalAtom(mark, 'H') === 2 && ruta === 1), r === 0 ? `ingen markering (${mark.length} atomer, ${ruta} rutor)` : `${antalAtom(mark, 'C')} C + ${antalAtom(mark, 'H')} H i markeringen`);
+    const mark = els.filter(e => e['data-mark'] === '1'), markStreck = mark.filter(e => e['data-bind']).length;
+    kolla(`B2 markering rad ${r + 1}`, r === 0 ? mark.length === 0 : (antalAtom(mark, 'C') === 1 && antalAtom(mark, 'H') === 2 && markStreck === 3), r === 0 ? `ingen markering (${mark.length} gröna element)` : `${antalAtom(mark, 'C')} C + ${antalAtom(mark, 'H')} H + ${markStreck} streck i grönt`);
   }
+  kolla('B2 inga rutor/plattor', element(s, e => e._tag === 'rect').length === 0, `${element(s, e => e._tag === 'rect').length} rect-element`);
+  kolla('B2 ingen + CH₂, ingen fetad rad', !/\+ <tspan|\+ CH|Varje steg/.test(s), 'text i filen: namn, formler och atombokstäver');
+  // samma ritvärden som B3: teckengrad på C och H, C–C-streckens längd
+  const s3 = las('k2-b3.svg');
+  const varden = t => { const e = element(t, x => (x['data-atom'] || x['data-bind'] === 'C-C') && x['data-kolumn'] !== 'modell'); return { C: [...new Set(e.filter(x => x['data-atom'] === 'C' && x._tag === 'text').map(x => x['font-size']))], H: [...new Set(e.filter(x => x['data-atom'] === 'H' && x._tag === 'text').map(x => x['font-size']))], CC: [...new Set(e.filter(x => x['data-bind'] === 'C-C' && x._tag === 'line').map(x => Math.round(Math.hypot(+x.x2 - +x.x1, +x.y2 - +x.y1))))] }; };
+  const v2 = varden(s), v3 = varden(s3);
+  kolla('B2 = B3 teckengrad och bindningslängd', JSON.stringify(v2) === JSON.stringify(v3), `B2 ${JSON.stringify(v2)} / B3 ${JSON.stringify(v3)}`);
 }
 { // B3
   const s = las('k2-b3.svg');

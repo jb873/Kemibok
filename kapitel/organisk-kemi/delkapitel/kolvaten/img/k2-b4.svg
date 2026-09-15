@@ -33,16 +33,16 @@
   <line x1="500.5" y1="128" x2="520.5" y2="128" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-ruta="3"/>
   <line x1="546.5" y1="128" x2="566.5" y2="128" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-ruta="3"/>
   <line x1="592.5" y1="128" x2="612.5" y2="128" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-ruta="3"/>
-  <line x1="487.5" y1="117" x2="487.5" y2="105" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-ruta="3"/>
-  <line x1="487.5" y1="139" x2="487.5" y2="151" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-ruta="3"/>
-  <line x1="476.5" y1="128" x2="464.5" y2="128" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-ruta="3"/>
-  <line x1="533.5" y1="117" x2="533.5" y2="105" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-ruta="3"/>
-  <line x1="533.5" y1="139" x2="533.5" y2="151" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-ruta="3"/>
-  <line x1="579.5" y1="117" x2="579.5" y2="105" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-ruta="3"/>
-  <line x1="579.5" y1="139" x2="579.5" y2="151" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-ruta="3"/>
-  <line x1="625.5" y1="117" x2="625.5" y2="105" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-ruta="3"/>
-  <line x1="625.5" y1="139" x2="625.5" y2="151" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-ruta="3"/>
-  <line x1="636.5" y1="128" x2="648.5" y2="128" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-ruta="3"/>
+  <line x1="487.5" y1="117" x2="487.5" y2="105" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-mark="1" data-ruta="3"/>
+  <line x1="487.5" y1="139" x2="487.5" y2="151" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-mark="1" data-ruta="3"/>
+  <line x1="476.5" y1="128" x2="464.5" y2="128" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-mark="1" data-ruta="3"/>
+  <line x1="533.5" y1="117" x2="533.5" y2="105" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-mark="1" data-ruta="3"/>
+  <line x1="533.5" y1="139" x2="533.5" y2="151" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-mark="1" data-ruta="3"/>
+  <line x1="579.5" y1="117" x2="579.5" y2="105" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-mark="1" data-ruta="3"/>
+  <line x1="579.5" y1="139" x2="579.5" y2="151" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-mark="1" data-ruta="3"/>
+  <line x1="625.5" y1="117" x2="625.5" y2="105" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-mark="1" data-ruta="3"/>
+  <line x1="625.5" y1="139" x2="625.5" y2="151" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-mark="1" data-ruta="3"/>
+  <line x1="636.5" y1="128" x2="648.5" y2="128" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-mark="1" data-ruta="3"/>
   <text x="487.5" y="135.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#2d4a35" font-weight="bold" data-atom="C"  data-ruta="3">C</text>
   <text x="533.5" y="135.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#2d4a35" font-weight="bold" data-atom="C"  data-ruta="3">C</text>
   <text x="579.5" y="135.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#2d4a35" font-weight="bold" data-atom="C"  data-ruta="3">C</text>
