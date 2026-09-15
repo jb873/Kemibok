@@ -197,6 +197,12 @@ const AVSNITT_KOLVATEN = {
          'k2-c1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Ämnen som har samma molekylformel men olika strukturformel kallas' },
          'k2-c2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Alla tre ämnena har två kolatomer, men olika molekylformler.' },
          'k2-c3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'hur många väteatomer som ryms.' }
+       } },
+  4: { dd: [],   // arbetsorder 4 Kolväten (2026-09-15): tre SVG, specade i bildrutorna
+       bilder: {
+         'k2-d1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'kopplade efter varandra blir en mycket lång kedja, och det är den kedjan som är polymermolekylen.' },
+         'k2-d2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Processen kallas **polymerisation**.' },
+         'k2-d3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'fibrer. Skillnaden ligger i monomeren.' }
        } }
 };
 const DELKAPITEL = {

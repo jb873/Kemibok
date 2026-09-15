@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polymerer – Kolväten – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Kolväten</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">4. Polymerer</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 4</span>
+      <h1>Polymerer</h1>
+      <p class="subtitel">— hur små molekyler kopplas samman till plast och andra jättemolekyler —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Många små molekyler kan kopplas ihop till en lång kedja</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Polymerisation kräver dubbelbindningar</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Polyeten och andra vanliga polymerer</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-polymerer">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Många små molekyler kan kopplas ihop till en lång kedja ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <p class="inledning">Plast, gummi, nylon och de flesta material vi kallar syntetiska bygger på samma idé: <strong>många små molekyler kopplas samman till mycket stora</strong>. De stora molekylerna kan bestå av tusentals upprepade delar.</p>
+          <p>Polymerer är den sista konsekvensen av den egenskap vi följt genom hela kapitlet. Kolatomer kan binda starkt till varandra. Först såg vi korta och långa kolkedjor. Nu ska vi se hur hela molekyler kopplas samman så att kedjorna blir enorma.</p>
+          <h2>En polymer är en kedja av upprepade enheter</h2>
+          <p>En liten molekyl som kan byggas ihop till en stor kallas en <strong>monomer</strong>. <em>Mono</em> betyder en. När många monomerer kopplas samman bildas en <strong>polymer</strong>, och <em>poly</em> betyder många.</p>
+          <p>En polymer är alltså en mycket stor molekyl som består av ett stort antal <strong>upprepade enheter</strong>. Kedjan kan innehålla tusentals sådana enheter.</p>
+          <p>Man kan tänka på monomererna som länkar. En ensam länk är liten. Tusentals likadana länkar kopplade efter varandra blir en mycket lång kedja, och det är den kedjan som är polymermolekylen.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k2-d1.svg" alt="Överst fem likadana fristående enheter med lediga bindningar åt sidorna, märkta monomerer. Under dem samma fem enheter sammankopplade till en kedja som fortsätter åt höger, märkt polymer.">
+            <figcaption>Monomererna är byggstenarna, och den långa kedjan de bildar är polymeren.</figcaption>
+          </figure>
+          <h2>Polymerer finns också i naturen</h2>
+          <p>Polymerer är inte en mänsklig uppfinning. Naturen byggde stora molekyler av upprepade enheter långt innan människan framställde plast.</p>
+          <p><strong>Cellulosa</strong>, som bygger upp växternas cellväggar, består av ett mycket stort antal glukosenheter kopplade till långa kedjor. <strong>Stärkelse</strong> är också uppbyggd av glukosenheter, men sammanbundna på ett annat sätt — och därför får de två ämnena olika egenskaper trots samma byggsten.</p>
+          <p><strong>Proteiner</strong> är också polymerer. Där är byggstenarna inte glukos utan <strong>aminosyror</strong>, som kan kopplas samman i långa kedjor och sedan veckas till olika former.</p>
+          <p>Kemisterna använde alltså en princip som redan fanns i levande organismer. Naturens stora molekyler återkommer vi till längre fram.</p>
+          <h2>Den långa kedjan ger materialet dess egenskaper</h2>
+          <p>En liten molekyl kan lätt röra sig förbi sina grannar. En lång polymermolekyl har kontakt med många andra molekyler längs hela sin kedja. Kedjorna ligger intill varandra, trasslar in sig och håller fast vid varandra.</p>
+          <p>Det gör att polymermaterial blir <strong>sega, formbara och tåliga</strong>.</p>
+          <p>Det är samma princip som när vi jämförde kolväten: längre molekyler hålls fast bättre av sina grannar, och därför har de högre kokpunkt. Hos polymererna har molekylerna blivit så stora att principen inte bara avgör kokpunkten, utan hela materialets karaktär.</p>
+          <p>---</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Polymerisation kräver dubbelbindningar ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Dubbelbindningen öppnas och blir två nya bindningar</h2>
+          <p class="inledning">Ett viktigt sätt att framställa polymerer är att utgå från molekyler med en <strong>dubbelbindning mellan två kolatomer</strong>.</p>
+          <p>Ta <strong>eten, \(\ce{C2H4}\)</strong>. De två kolatomerna sitter ihop med en dubbelbindning, och varje kolatom bär dessutom två väteatomer.</p>
+          <p>När eten polymeriserar <strong>öppnas</strong> en del av dubbelbindningen, så att bindningen mellan kolatomerna blir enkel. Då har varje kolatom en bindning över, och den används till att gripa tag i en kolatom i nästa etenmolekyl.</p>
+          <p>När många etenmolekyler gör samma sak kopplas de samman efter varandra till en lång kedja.</p>
+          <p>Kolatomerna får inte fler än fyra bindningar. Varje kolatom har fortfarande <strong>fyra sammanlagt</strong> — det som ändras är hur de är fördelade.</p>
+          <p>Processen kallas <strong>polymerisation</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k2-d2.svg" alt="Överst tre etenmolekyler, var och en med en dubbelbindning där det ena strecket är grönt. Under dem samma tre molekyler sammankopplade till en kedja, där de gröna strecken nu sitter mellan molekylerna i stället för inom dem.">
+            <figcaption>Den bindning som ingick i dubbelbindningen används nu till att koppla samman molekylerna.</figcaption>
+          </figure>
+          <h2>Därför är det omättade kolväten som polymeriserar</h2>
+          <p>Här får begreppet <strong>omättad</strong> sin användning.</p>
+          <p>Alkanerna är mättade. De har bara enkelbindningar och så många väteatomer som får plats, och de har därför inga bindningar över.</p>
+          <p>Alkenerna är omättade. Dubbelbindningen gör att molekylen kan reagera på ett sätt en alkan inte kan: en del av bindningen kan öppnas och användas till nya bindningar mellan molekyler.</p>
+          <p>Att ett kolväte är omättat påverkar alltså inte bara dess formel. Det gör molekylen <strong>mer reaktiv och möjlig att koppla samman med andra</strong>.</p>
+          <h2>Eten blir polyeten</h2>
+          <p>När många etenmolekyler kopplas samman bildas <strong>polyeten</strong>. Eten är monomeren, polyeten är polymeren, och prefixet <strong>poly-</strong> talar om att materialet består av många sammankopplade enheter.</p>
+          <p>Polyeten är en av världens mest använda plaster. Den finns i <strong>plastpåsar, flaskor, dunkar, förpackningar och plastfilm</strong>.</p>
+          <p>Det som började som en gas har alltså blivit ett fast material. Atomerna är desamma — det är molekylernas storlek som ändrats.</p>
+          <p>---</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Polyeten och andra vanliga polymerer ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Olika monomerer ger olika plaster</h2>
+          <p class="inledning">Polyeten är bara en av många syntetiska polymerer. Med olika monomerer får man polymerer med olika struktur och därmed olika egenskaper.</p>
+          <p><strong>Polyeten</strong> tillverkas av eten, <strong>polypropen</strong> av propen och <strong>polystyren</strong> av styren. <strong>PVC</strong> framställs av vinylklorid och skiljer sig från de övriga genom att det också innehåller <strong>kloratomer</strong>.</p>
+          <p>En plast kan vara mjuk och böjlig, en annan styv och hård, en tredje möjlig att dra ut till fibrer. Skillnaden ligger i monomeren.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k2-d3.svg" alt="En tabell med fyra plaster. För varje plast står förkortningen, vilken monomer den tillverkas av, och vad den används till. PVC-raden är markerad och innehåller även klor.">
+            <figcaption>Olika monomerer ger polymerer med olika egenskaper och olika användningsområden.</figcaption>
+          </figure>
+          <h2>Termoplaster mjuknar vid uppvärmning</h2>
+          <p>Plaster skiljer sig också åt i hur kedjorna är kopplade till varandra.</p>
+          <p>I en <strong>termoplast</strong> ligger kedjorna bredvid varandra utan att vara fast bundna. Vid uppvärmning glider de lättare förbi varandra, plasten mjuknar och kan formas om. När den kyls blir den fast igen. Polyeten, polypropen och polystyren är termoplaster, och de kan därför smältas om.</p>
+          <p>I en <strong>härdplast</strong> är kedjorna sammanbundna med många bindningar till ett tredimensionellt nätverk. Kedjorna kan inte glida fritt, och plasten smälter därför inte — vid kraftig uppvärmning bryts den i stället ner.</p>
+          <h2>Långa kedjor bryts ner långsamt</h2>
+          <p>Många syntetiska polymerer är mycket hållbara. Det är en fördel i en produkt som ska hålla länge, och ett problem när produkten kastas.</p>
+          <p>Naturens nedbrytare använder enzymer som angriper bestämda kemiska bindningar, och de är anpassade till ämnen som förekommer naturligt. Stärkelse, cellulosa och proteiner kan därför brytas ner av organismer som har rätt enzymer.</p>
+          <p>Många syntetiska polymerer har en struktur som enzymerna inte kan angripa. Molekylerna är långa, vattenavstötande och byggda av starka bindningar. Därför kan plast finnas kvar i miljön mycket länge.</p>
+          <p>Att plasten bryts ner långsamt betyder inte att den är oförändrad. Solljus, värme och slitage kan dela den i mindre bitar. Vad som händer med plasten i miljön återkommer vi till.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-4-polymerer.json"
+           data-avsnitt="a4_polymerer">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-4-polymerer.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a4_polymerer';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'kolvaten';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

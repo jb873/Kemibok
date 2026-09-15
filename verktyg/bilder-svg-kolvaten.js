@@ -1,4 +1,4 @@
-// bilder-svg-kolvaten.js – SVG-bilderna till Organisk kemi, delkapitel 2 "Kolväten" (avsnitt 1: B1–B4, avsnitt 2: B6–B7, avsnitt 3: C1–C3)
+// bilder-svg-kolvaten.js – SVG-bilderna till Organisk kemi, delkapitel 2 "Kolväten" (avsnitt 1: B1–B4, avsnitt 2: B6–B7, avsnitt 3: C1–C3, avsnitt 4: D1–D3)
 // (arbetsorder 1 Kolväten, 2026-09-15; ritade efter bildrutorna i doc/leveranser/kolvaten/avsnitt-1.md – specfilen
 // dk2-avsnitt-1-bildspecar.md fanns inte i leveransen). Skriver till kapitel/organisk-kemi/delkapitel/kolvaten/img/k2-b{n}.svg.
 // Kör: node verktyg/bilder-svg-kolvaten.js
@@ -7,6 +7,7 @@
 //   k2-b2  Alkanserien som trappa           1.2    k2-b4  Så ritar du en strukturformel      1.3
 //   k2-b6  Butan i en tändare               2.2    k2-b7  Kokpunkten stiger med kedjans längd 2.3   (k2-b5 kärret: AI-bild, nyckla-gron.js)
 //   k2-c1  n-butan och isobutan            3.1    k2-c2  Etan, eten och etyn (ur k1-a3)     3.2    k2-c3  Tre serier kolväten  3.3
+//   k2-d1  Monomer och polymer              4.1    k2-d2  Eten polymeriserar                 4.2    k2-d3  Fyra vanliga plaster 4.3
 //
 // Palett enligt ordern: konturer/text #2d4a35, signaturfärg #5a9668, kol #3a3a3a, väte #f5f0e4 med kontur, grått #8A8A8A.
 // Papper #ece2c8 ritas inte (transparent bakgrund, som Kolatomens bilder). Typsnitt: Georgia-fallback.
@@ -321,6 +322,93 @@ function isobutan(x0, y) {
   skriv('k2-c3.svg', W, HH, 'En tabell med tre rader för alkaner, alkener och alkyner. Kolumnerna visar namnändelse, bindningen mellan kolatomerna ritad som ett, två eller tre streck, den allmänna formeln, och ett exempel med två kolatomer', ut);
 }
 
+// ---------- D1. Monomer och polymer (avsnitt 4, arbetsorder 4 2026-09-15; spec i bildrutan) ----------
+// Ingen kemi: fem identiska rundade sexkanter (ritade ur EN mall via <use>) med lediga bindningar åt sidorna; nedre raden
+// sammankopplad, tre punkter till höger, grå pil mellan raderna.
+{
+  const W = 760, HH = 270, EB = 64, R = 26, B = 22, Y1 = 78, Y2 = 200;   // enhetsbredd, sexkantens radie, bindningslängd
+  let ut = '';
+  // mall: rundad sexkant (spets uppåt/nedåt) centrerad i origo
+  const P = [0, 1, 2, 3, 4, 5].map(i => [r2(R * Math.cos(Math.PI / 6 + i * Math.PI / 3)), r2(R * Math.sin(Math.PI / 6 + i * Math.PI / 3))]);
+  ut += `  <defs><path id="enhet" d="M${P.map(p => p.join(' ')).join(' L')} Z" fill="${SIGN}" stroke="${INK}" stroke-width="1.6" stroke-linejoin="round"/></defs>\n`;
+  // övre raden: fristående, med lediga bindningar åt båda håll
+  const G1 = EB + 2 * B + 16, X0 = W / 2 - 2 * G1 + 64;   // steg mellan fristående enheter; raden centrerad (etiketten till vänster)
+  for (let i = 0; i < 5; i++) {
+    const x = X0 + i * G1;
+    ut += linje(x - R - B, Y1, x - R, Y1, INK, 2.2, `data-bindning="ledig" data-rad="1"`) + linje(x + R, Y1, x + R + B, Y1, INK, 2.2, `data-bindning="ledig" data-rad="1"`);
+    ut += `  <use href="#enhet" x="${x}" y="${Y1}" data-enhet="${i + 1}" data-rad="1"/>\n`;
+  }
+  ut += txt(X0 - R - B - 24, Y1 + 6, 'monomerer', 'font-size="17" font-weight="bold" text-anchor="end"');
+  // pil nedåt
+  ut += linje(W / 2, Y1 + 46, W / 2, Y2 - 46, GRA, 2, 'data-pil="ner"') + `  <polygon points="${W / 2},${Y2 - 38} ${W / 2 - 6},${Y2 - 48} ${W / 2 + 6},${Y2 - 48}" fill="${GRA}" data-pil="ner"/>\n`;
+  // nedre raden: sammankopplade – de lediga bindningarna möts, ett streck mellan varje par; ledig i vardera änden; …
+  const G2 = 2 * R + B, X2 = W / 2 - 2 * G2 + 64;   // steg så att ett streck av längd B binder ihop grannarna
+  for (let i = 0; i < 5; i++) {
+    const x = X2 + i * G2;
+    if (i === 0) ut += linje(x - R - B, Y2, x - R, Y2, INK, 2.2, `data-bindning="ledig" data-rad="2"`);
+    if (i < 4) ut += linje(x + R, Y2, x + R + B, Y2, INK, 2.2, `data-bindning="mellan" data-rad="2"`);
+    else ut += linje(x + R, Y2, x + R + B, Y2, INK, 2.2, `data-bindning="ledig" data-rad="2"`);
+    ut += `  <use href="#enhet" x="${x}" y="${Y2}" data-enhet="${i + 1}" data-rad="2"/>\n`;
+  }
+  ut += txt(X2 + 4 * G2 + R + B + 18, Y2 + 6, '…', 'font-size="22" text-anchor="start"');
+  ut += txt(X2 - R - B - 24, Y2 + 6, 'polymer', 'font-size="17" font-weight="bold" text-anchor="end"');
+  skriv('k2-d1.svg', W, HH, 'Överst fem likadana fristående enheter med lediga bindningar åt sidorna, märkta monomerer. Under dem samma fem enheter sammankopplade till en kedja som fortsätter åt höger, märkt polymer', ut);
+}
+
+// ---------- D2. Eten polymeriserar (avsnitt 4; avsnittets viktigaste bild) ----------
+// Övre raden: tre etenmolekyler, dubbelbindning där det ena strecket är grönt. Nedre raden: samma sex kolatomer i en kedja,
+// enkelstreck inom molekylerna, GRÖNA streck mellan dem och en grön ledig bindning i vänster ände (3 + 3 gröna). Samma
+// teckengrad (19) och bindningslängd (DX 46) som C1/C2. Molekylerna byggs som data så att bindningarna per kolatom räknas.
+{
+  const W = 760, HH = 400, Y1 = 96, Y2 = 296, FS = 19;
+  let ut = '';
+  const bokstav = (x, y, t, tag) => txt(x, y + FS * 0.35, t, `font-size="${t === 'C' ? FS : FS * 0.86}" ${t === 'C' ? 'font-weight="bold"' : ''} data-atom="${t}" ${tag}`);
+  const CH = (cx, cy, dy, tag) => linje(cx, cy + Math.sign(dy) * HB, cx, cy + Math.sign(dy) * HE, INK, 2.2, `data-bind="C-H" ${tag}`) + bokstav(cx, cy + dy, 'H', tag);
+  const CC = (x1, x2, y, farg, tag, off = 0) => linje(x1 + 13, y + off, x2 - 13, y + off, farg, 2.2, `data-bind="C-C" ${farg === SIGN ? 'data-gron="1"' : ''} ${tag}`);
+  const GAP = 3.6;   // dubbelstreckets halva mellanrum (7,2 px mellan centrumlinjerna ≥ streckbredden 2,2)
+  // övre raden: tre fristående molekyler
+  const T1 = 'data-rad="1"', AV1 = 2 * DX + 38, X1 = W / 2 - AV1 - DX / 2;
+  for (let m = 0; m < 3; m++) {
+    const xa = X1 + m * AV1, xb = xa + DX;
+    ut += CC(xa, xb, Y1, INK, T1, -GAP) + CC(xa, xb, Y1, SIGN, T1, GAP);
+    for (const x of [xa, xb]) { ut += CH(x, Y1, -DY, T1) + CH(x, Y1, DY, T1) + bokstav(x, Y1, 'C', T1); }
+  }
+  ut += txt(W / 2, Y1 - 62, 'tre etenmolekyler', 'font-size="16" font-weight="bold"');
+  // pil nedåt med text
+  ut += linje(W / 2, Y1 + 62, W / 2, Y2 - 70, GRA, 2, 'data-pil="ner"') + `  <polygon points="${W / 2},${Y2 - 62} ${W / 2 - 6},${Y2 - 72} ${W / 2 + 6},${Y2 - 72}" fill="${GRA}" data-pil="ner"/>\n`;
+  ut += txt(W / 2 + 14, (Y1 + Y2) / 2 + 2, 'dubbelbindningen öppnas', 'font-size="14" font-style="italic" text-anchor="start"');
+  // nedre raden: sex kolatomer i rad
+  const T2 = 'data-rad="2"', X2 = W / 2 - 2.5 * DX;
+  for (let i = 0; i < 6; i++) {
+    const x = X2 + i * DX;
+    if (i < 5) ut += CC(x, x + DX, Y2, i % 2 === 0 ? INK : SIGN, T2);   // inom molekylen (0–1, 2–3, 4–5) svart, mellan molekylerna grönt
+    ut += CH(x, Y2, -DY, T2) + CH(x, Y2, DY, T2) + bokstav(x, Y2, 'C', T2);
+  }
+  ut += linje(X2 - 13, Y2, X2 - DX + 13, Y2, SIGN, 2.2, `data-bind="ledig" data-gron="1" ${T2}`) + txt(X2 - DX - 2, Y2 + 7, '…', 'font-size="22" text-anchor="end"');
+  ut += linje(X2 + 5 * DX + 13, Y2, X2 + 6 * DX - 13, Y2, INK, 2.2, `data-bind="ledig" ${T2}`) + txt(X2 + 6 * DX + 2, Y2 + 7, '…', 'font-size="22" text-anchor="start"');
+  ut += txt(W / 2, Y2 + 74, 'en bit av en polyetenkedja', 'font-size="16" font-weight="bold"');
+  skriv('k2-d2.svg', W, HH, 'Överst tre etenmolekyler, var och en med en dubbelbindning där det ena strecket är grönt. Under dem samma tre molekyler sammankopplade till en kedja, där de gröna strecken nu sitter mellan molekylerna i stället för inom dem', ut);
+}
+
+// ---------- D3. Fyra vanliga plaster (avsnitt 4; tabell, ren text) ----------
+{
+  const KOLX = [0, 175, 275, 395, 760], W = KOLX[4], RH = 44, TOP = 46, HH = TOP + 4 * RH + 44;
+  let ut = '';
+  const mitt = i => (KOLX[i] + KOLX[i + 1]) / 2;
+  ['Plast', 'Förkortning', 'Monomer', 'Används till'].forEach((t, i) => { ut += txt(i === 3 ? KOLX[3] + 12 : mitt(i), 28, t, `font-size="14" font-style="italic" fill="${SIGN}" ${i === 3 ? 'text-anchor="start"' : ''}`); });
+  ut += linje(16, TOP - 8, W - 16, TOP - 8, INK, 1.4);
+  const rader = [['Polyeten', 'PE', 'eten', 'plastpåsar, flaskor, plastfilm, förpackningar'], ['Polypropen', 'PP', 'propen', 'matförpackningar, plastlådor, rep, textilfibrer'], ['Polystyren', 'PS', 'styren', 'engångsprodukter, isolering, skyddsförpackningar'], ['Polyvinylklorid', 'PVC', 'vinylklorid', 'rör, golv, kabelisolering']];
+  rader.forEach(([plast, fk, mono, anv], r) => {
+    const y = TOP + r * RH + RH / 2, tag = `data-rad="${r + 1}"`;
+    if (fk === 'PVC') ut += `  <rect x="16" y="${TOP + r * RH + 3}" width="${W - 32}" height="${RH - 6}" rx="4" fill="${SIGN}" fill-opacity="0.10" stroke="none" data-markering="pvc"/>\n` + linje(19, TOP + r * RH + 4, 19, TOP + (r + 1) * RH - 4, SIGN, 3, 'data-markering="pvc"');
+    ut += txt(mitt(0), y + 6, plast, `font-size="16" data-kolumn="plast" ${tag}`) + txt(mitt(1), y + 6, fk, `font-size="16" data-kolumn="forkortning" ${tag}`) + txt(mitt(2), y + 6, mono, `font-size="16" data-kolumn="monomer" ${tag}`) + txt(KOLX[3] + 12, y + 6, anv, `font-size="14" text-anchor="start" data-kolumn="anvands" ${tag}`);
+    if (r < 3) ut += linje(16, TOP + (r + 1) * RH, W - 16, TOP + (r + 1) * RH, INK, 0.8);
+  });
+  ut += linje(16, TOP + 4 * RH, W - 16, TOP + 4 * RH, INK, 1.4);
+  ut += txt(30, TOP + 4 * RH + 26, 'PVC innehåller även klor.', `font-size="13" font-style="italic" fill="${SIGN}" text-anchor="start" data-not="klor"`);
+  skriv('k2-d3.svg', W, HH, 'En tabell med fyra plaster. För varje plast står förkortningen, vilken monomer den tillverkas av, och vad den används till. PVC-raden är markerad och innehåller även klor', ut);
+}
+
 // ---------- kontroll mot de skrivna filerna (ordern §3) ----------
 const las = f => fs.readFileSync(path.join(UT, f), 'utf8');
 const element = (s, filter) => [...s.matchAll(/<(text|circle|line|rect|path)\b([^>]*)>/g)].map(m => { const at = {}; for (const a of m[2].matchAll(/([a-z0-9-]+)="([^"]*)"/g)) at[a[1]] = a[2]; at._tag = m[1]; return at; }).filter(filter);
@@ -437,6 +525,36 @@ function kolla(namn, villkor, text) { rapport.push(`${villkor ? 'OK ' : 'FEL'} $
   // samma synliga strecklängd som A3/C2: enkel 56, dubbel/trippel 48
   const L = r => element(s, e => e['data-rad'] === String(r) && e['data-bind'] === 'C-C' && e._tag === 'line').map(e => Math.round(+e.x2 - +e.x1));
   kolla('C3 strecklängd som C2', L(1)[0] === 56 && L(2).every(x => x === 48) && L(3).every(x => x === 48), `enkel ${L(1)}, dubbel ${L(2)}, trippel ${L(3)} px (A3/C2: 56 / 48)`);
+}
+{ // D1: fem enheter per rad ur samma mall, lediga/mellan-bindningar, ingen kemi
+  const s = las('k2-d1.svg');
+  const use = [...s.matchAll(/<use href="#enhet"[^>]*data-rad="(\d)"/g)].map(m => m[1]);
+  const mall = (s.match(/<path id="enhet"[^>]*>/g) || []).length;
+  kolla('D1 enheter', use.filter(r => r === '1').length === 5 && use.filter(r => r === '2').length === 5 && mall === 1, `5 + 5 enheter, alla ritade med <use> ur en och samma mall (${mall} <path id="enhet">) – identisk form och mått`);
+  const b = (rad, typ) => element(s, e => e['data-rad'] === rad && e['data-bindning'] === typ).length;
+  kolla('D1 bindningar', b('1', 'ledig') === 10 && b('1', 'mellan') === 0 && b('2', 'mellan') === 4 && b('2', 'ledig') === 2, `övre raden ${b('1', 'ledig')} lediga, 0 anslutna; nedre raden ${b('2', 'mellan')} mellan enheterna + ${b('2', 'ledig')} lediga i ändarna`);
+  kolla('D1 ingen kemi', !/data-atom|[₀-₉]|>C<|>H</.test(s), 'inga atomer, formler eller bokstäver i enheterna');
+}
+{ // D2: 6 C + 12 H per rad, 3 gröna streck per rad, fyra bindningar per kolatom
+  const s = las('k2-d2.svg');
+  for (const r of ['1', '2']) {
+    const e = element(s, x => x['data-rad'] === r), gron = e.filter(x => x['data-gron'] === '1').length;
+    const C = e.filter(x => x['data-atom'] === 'C'), H = e.filter(x => x['data-atom'] === 'H').length;
+    const cc = e.filter(x => x['data-bind'] === 'C-C').length, ledig = e.filter(x => x['data-bind'] === 'ledig').length;
+    // bindningar per kolatom: C–H med samma x, C–C-streck vars ändar ligger vid kolatomen (x±13), lediga likaså
+    const per = C.map(c => { const x = +c.x; return e.filter(x1 => x1['data-bind'] === 'C-H' && +x1.x1 === x).length + e.filter(l => (l['data-bind'] === 'C-C' || l['data-bind'] === 'ledig') && (Math.abs(+l.x1 - x) === 13 || Math.abs(+l.x2 - x) === 13)).length; });
+    kolla(`D2 rad ${r}`, C.length === 6 && H === 12 && gron === 3 && per.every(p => p === 4) && (r === '1' ? cc === 6 : cc === 5 && ledig === 2), `6 C, ${H} H, ${gron} gröna streck; ${r === '1' ? cc / 2 + ' dubbelbindningar' : cc + ' C–C-streck + ' + ledig + ' lediga'}; bindningar per kolatom ${per.join(', ')}`);
+  }
+  const g1 = element(s, x => x['data-rad'] === '1' && x['data-gron'] === '1').length, g2 = element(s, x => x['data-rad'] === '2' && x['data-gron'] === '1').length;
+  kolla('D2 gröna streck lika många', g1 === g2, `övre raden ${g1}, nedre raden ${g2}`);
+}
+{ // D3: fyra rader, monomer- och förkortningskolumnerna, PVC markerad + not
+  const s = las('k2-d3.svg');
+  const kol = k => [1, 2, 3, 4].map(r => (s.match(new RegExp(`<text[^>]*data-kolumn="${k}" data-rad="${r}"[^>]*>([^<]*)<`)) || [])[1]);
+  kolla('D3 rader', element(s, e => e['data-kolumn'] === 'plast').length === 4, `${element(s, e => e['data-kolumn'] === 'plast').length} rader: ${kol('plast').join(', ')}`);
+  kolla('D3 monomer', kol('monomer').join(',') === 'eten,propen,styren,vinylklorid', kol('monomer').join(', '));
+  kolla('D3 förkortning', kol('forkortning').join(',') === 'PE,PP,PS,PVC', kol('forkortning').join(', '));
+  kolla('D3 PVC markerad', element(s, e => e['data-markering'] === 'pvc').length === 2 && /data-not="klor"[^>]*>PVC innehåller även klor\./.test(s), 'markering (platta + kant i signaturfärg) på rad 4, not under tabellen');
 }
 console.log(`${antal} SVG skrivna till ${path.relative(path.join(__dirname, '..'), UT)}`);
 console.log(rapport.join('\n'));
