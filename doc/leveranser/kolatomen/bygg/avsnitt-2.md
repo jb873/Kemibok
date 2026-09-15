@@ -58,6 +58,22 @@ Fulleren, nanorör och grafen. Placering enligt bildrutan i avsnitt-2.md.
 
 # UNDERDEL A — Samma atomer, olika ämnen
 
+## Kärnpunkter (Enkel)
+
+- Vad menas med att ett grundämne kan finnas i flera former?
+- Vilka egenskaper skiljer diamant från grafit?
+- Hur skiljer sig en kolatom i diamant från en kolatom i grafit?
+- Vad är det då som avgör ämnenas egenskaper?
+- Varför är detta en viktig princip även utanför kolkemin?
+
+## Kärnpunkter (Standard)
+
+- Vad menas med att ett grundämne kan finnas i flera former?
+- Vilka egenskaper skiljer diamant från grafit?
+- Hur skiljer sig en kolatom i diamant från en kolatom i grafit?
+- Vad är det då som avgör ämnenas egenskaper?
+- Varför är detta en viktig princip även utanför kolkemin?
+
 ---
 
 ## A — ENKEL
@@ -180,6 +196,22 @@ kolets vilotillstånd, den andra ett tillstånd som råkat bli fast.
 ---
 
 # UNDERDEL B — Diamant och grafit
+
+## Kärnpunkter (Enkel)
+
+- Hur många andra kolatomer binder varje kolatom till i diamant?
+- Varför räcker det inte att bryta några få bindningar för att repa en diamant?
+- Vad används diamantens hårdhet till?
+- Hur är kolatomerna ordnade i grafit?
+- Varför lossnar grafit när man drar det mot ett papper?
+
+## Kärnpunkter (Standard)
+
+- Hur många andra kolatomer binder varje kolatom till i diamant?
+- Varför räcker det inte att bryta några få bindningar för att repa en diamant?
+- Vad används diamantens hårdhet till?
+- Hur är kolatomerna ordnade i grafit?
+- Varför lossnar grafit när man drar det mot ett papper?
 
 ---
 
@@ -310,6 +342,22 @@ tre följder.
 ---
 
 # UNDERDEL C — Kolets övriga former
+
+## Kärnpunkter (Enkel)
+
+- Vad betyder det att ett material är amorft?
+- Vad är det hos aktivt kol som gör det användbart?
+- Var används aktivt kol?
+- Vilken form har en fulleren, och hur många kolatomer har den vanligaste?
+- Hur tjockt är grafen, och vad klarar materialet trots det?
+
+## Kärnpunkter (Standard)
+
+- Vad betyder det att ett material är amorft?
+- Vad är det hos aktivt kol som gör det användbart?
+- Var används aktivt kol?
+- Vilken form har en fulleren, och hur många kolatomer har den vanligaste?
+- Hur tjockt är grafen, och vad klarar materialet trots det?
 
 ---
 

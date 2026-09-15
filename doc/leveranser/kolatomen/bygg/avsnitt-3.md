@@ -58,6 +58,22 @@ Kolets snabba kretslopp. Placering enligt bildrutan i avsnitt-3.md.
 
 # UNDERDEL A — Fotosyntesen
 
+## Kärnpunkter (Enkel)
+
+- Varifrån hämtar växten sina två råvaror?
+- Vilken roll spelar solljuset?
+- Vad bildas vid fotosyntesen förutom druvsocker?
+- Hur många kolatomer finns på vardera sidan av reaktionen?
+- Hur förs kolet vidare från växten till djuren?
+
+## Kärnpunkter (Standard)
+
+- Varifrån hämtar växten sina två råvaror?
+- Vilken roll spelar solljuset?
+- Vad bildas vid fotosyntesen förutom druvsocker?
+- Hur många kolatomer finns på vardera sidan av reaktionen?
+- Hur förs kolet vidare från växten till djuren?
+
 ---
 
 ## A — ENKEL
@@ -213,6 +229,22 @@ syret kommer måste man öppna de två skedena.
 
 # UNDERDEL B — Cellandningen
 
+## Kärnpunkter (Enkel)
+
+- Vad behöver cellerna energin till?
+- Vilka två ämnen reagerar med varandra vid cellandningen?
+- Varifrån kommer den energi som frigörs?
+- Var hamnar glukosmolekylens sex kolatomer?
+- Vilka organismer har cellandning?
+
+## Kärnpunkter (Standard)
+
+- Vad behöver cellerna energin till?
+- Vilka två ämnen reagerar med varandra vid cellandningen?
+- Varifrån kommer den energi som frigörs?
+- Var hamnar glukosmolekylens sex kolatomer?
+- Vilka organismer har cellandning?
+
 ---
 
 ## B — ENKEL
@@ -355,6 +387,22 @@ stegvis.
 ---
 
 # UNDERDEL C — Kolets kretslopp
+
+## Kärnpunkter (Enkel)
+
+- Vad är råvaror och vad är produkter i de två processerna?
+- Varför kallas de för motsatta processer?
+- Vad menas med kolets kretslopp?
+- På vilket sätt är de två processerna ändå inte varandras spegelbilder?
+- När är kretsloppet i balans?
+
+## Kärnpunkter (Standard)
+
+- Vad är råvaror och vad är produkter i de två processerna?
+- Varför kallas de för motsatta processer?
+- Vad menas med kolets kretslopp?
+- På vilket sätt är de två processerna ändå inte varandras spegelbilder?
+- När är kretsloppet i balans?
 
 ---
 

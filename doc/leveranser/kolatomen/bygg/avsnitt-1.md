@@ -73,6 +73,22 @@ Kedja, gren och ring. Placering enligt bildrutan i avsnitt-1.md.
 
 # UNDERDEL A — Vad organisk kemi är
 
+## Kärnpunkter (Enkel)
+
+- Vad betydde ordet organiskt från början?
+- Vad var livskraften, och varför övergav kemisterna tanken?
+- Vad handlar organisk kemi om i dag?
+- Vilka grundämnen brukar ingå i organiska ämnen?
+- Varför räknas inte koldioxid som ett organiskt ämne?
+
+## Kärnpunkter (Standard)
+
+- Vad betydde ordet organiskt från början?
+- Vad var livskraften, och varför övergav kemisterna tanken?
+- Vad handlar organisk kemi om i dag?
+- Vilka grundämnen brukar ingå i organiska ämnen?
+- Varför räknas inte koldioxid som ett organiskt ämne?
+
 ---
 
 ## A — ENKEL
@@ -197,6 +213,22 @@ bindningar.
 ---
 
 # UNDERDEL B — Fyra bindningar
+
+## Kärnpunkter (Enkel)
+
+- Hur många elektroner har kolatomen i sitt yttersta skal?
+- Vad händer när två atomer delar på ett elektronpar?
+- Hur kan en kolatom ha fyra bindningar men färre än fyra grannar?
+- Vad visar en strukturformel som en molekylformel inte visar?
+- När behövs en förenklad strukturformel?
+
+## Kärnpunkter (Standard)
+
+- Hur många elektroner har kolatomen i sitt yttersta skal?
+- Vad händer när två atomer delar på ett elektronpar?
+- Hur kan en kolatom ha fyra bindningar men färre än fyra grannar?
+- Vad visar en strukturformel som en molekylformel inte visar?
+- När behövs en förenklad strukturformel?
 
 ---
 
@@ -323,6 +355,22 @@ många kolföreningar är det just formen som avgör hur de fungerar.
 ---
 
 # UNDERDEL C — Kedjor och ringar
+
+## Kärnpunkter (Enkel)
+
+- Vad gör kol speciellt utöver förmågan att bilda fyra bindningar?
+- Hur långa kan kolkedjor bli?
+- Vad skiljer en grenad kedja från en rak?
+- Hur kan samma antal kolatomer ge upphov till olika ämnen?
+- Vad händer med ämnets egenskaper när andra atomslag kopplas till kedjan?
+
+## Kärnpunkter (Standard)
+
+- Vad gör kol speciellt utöver förmågan att bilda fyra bindningar?
+- Hur långa kan kolkedjor bli?
+- Vad skiljer en grenad kedja från en rak?
+- Hur kan samma antal kolatomer ge upphov till olika ämnen?
+- Vad händer med ämnets egenskaper när andra atomslag kopplas till kedjan?
 
 ---
 

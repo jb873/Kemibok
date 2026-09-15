@@ -4,7 +4,7 @@
 // → doc/leveranser/kolatomen/bygg/avsnitt-N.md i bygg-avsnitt.js-format (UNDERDEL / X — ENKEL / STANDARD / FÖRDJUPNING
 //   + BILDSPECIFIKATIONER ur bildrutorna). Leveransfilerna rörs inte. Kör: node verktyg/satt-ihop-kolatomen.js, sedan
 //   node verktyg/bygg-avsnitt.js kolatomen N.
-// Regler (arbetsorder 2, 2026-09-15): kärnpunkter saknas tills order 3 (byggaren utelämnar blocket); Enkel behåller sina
+// Regler (arbetsorder 2, 2026-09-15): kärnpunkter ur karnpunkter.md (2026-09-15) på Enkel och Standard, inga på Fördjupning; Enkel behåller sina
 // fler mellanrubriker; Fördjupningens egen underdelsrubrik blir första mellanrubrik; "**Om modellen.**" är ett vanligt
 // stycke med fet inledning (samma som Syror och baser); anteckningsrader (*ca N ord*, *…undantaget…*, "Djupdykning
 // härifrån", blockcitat-noter "> …") tas bort; avsnittets inledning (före "## N.1") läggs som Standard-inledning i underdel A (rapporterat).
@@ -24,6 +24,13 @@ const SUB = Object.fromEntries([...KI.matchAll(/^\| (\d) \| ([^|]+) \|$/gm)].map
 const INGRESS = Object.fromEntries([...KI.matchAll(/### Avsnitt (\d)\n\n([\s\S]*?)(?=\n\n###|\n\n## |$)/g)].map(m => [m[1], m[2].trim()]));
 if (Object.keys(KORT).length !== 9 || Object.keys(SUB).length !== 3 || Object.keys(INGRESS).length !== 3) throw new Error(`knapptitlar-och-ingresser.md: ${Object.keys(KORT).length} knapptitlar, ${Object.keys(SUB).length} underrubriker, ${Object.keys(INGRESS).length} ingresser`);
 const BOK = ['A', 'B', 'C'];
+// kärnpunkter (karnpunkter.md, Joachim 2026-09-15): fem frågor per underdel, samma lista för Enkel och Standard; inga på Fördjupning
+const KP = {};
+if (fs.existsSync(path.join(R, 'karnpunkter.md'))) {
+  for (const m of norm('karnpunkter.md').matchAll(/\n### (\d)\.(\d) [^\n]+\n\n((?:- [^\n]+\n)+)/g)) { KP[m[1] + '.' + m[2]] = m[3].trim(); }
+  const n = Object.values(KP).reduce((a, l) => a + l.split('\n').length, 0);
+  if (Object.keys(KP).length !== 9 || n !== 45) throw new Error(`karnpunkter.md: ${Object.keys(KP).length} underdelar, ${n} punkter`);
+}
 const rensa = t => t.split('\n').filter(l => !/^> /.test(l) && !/^\*ca \d+ ord\*$/.test(l.trim()) && !/^\*[^*]+undantaget[^*]*\*$/.test(l.trim()) && !/^\*\*Djupdykning härifrån:\*\*/.test(l)).join('\n')
   .replace(/\n{3,}/g, '\n\n').trim();
 // fristående reaktionsrad (egen paragraf, ingen fetstil) → **…** så att bygg-avsnitt gör en display-formel
@@ -87,7 +94,8 @@ for (const N of [1, 2, 3]) {
     const stdText = (i === 0 && intro ? intro + '\n\n' : '') + '### ' + u.titel + '\n\n' + u.text;
     const enkelText = (i === 0 ? INGRESS[String(N)] + '\n\n' : '') + '### ' + e.titel + '\n\n' + e.text;
     const kort = KORT[N + '.' + u.nr]; if (!kort) throw new Error('knapptitel saknas för ' + N + '.' + u.nr);
-    ut += `\n# UNDERDEL ${X} — ${kort}\n\n---\n\n## ${X} — ENKEL\n\n${fetaReaktioner(enkelText)}\n\n---\n\n## ${X} — STANDARD\n\n${fetaReaktioner(stdText)}\n\n---\n\n## ${X} — FÖRDJUPNING\n\n### ${fd.titel}\n\n${fetaReaktioner(fd.text)}\n\n---\n`;
+    const kp = KP[N + '.' + u.nr] ? `## Kärnpunkter (Enkel)\n\n${KP[N + '.' + u.nr]}\n\n## Kärnpunkter (Standard)\n\n${KP[N + '.' + u.nr]}\n\n` : '';
+    ut += `\n# UNDERDEL ${X} — ${kort}\n\n${kp}---\n\n## ${X} — ENKEL\n\n${fetaReaktioner(enkelText)}\n\n---\n\n## ${X} — STANDARD\n\n${fetaReaktioner(stdText)}\n\n---\n\n## ${X} — FÖRDJUPNING\n\n### ${fd.titel}\n\n${fetaReaktioner(fd.text)}\n\n---\n`;
   }
   fs.writeFileSync(path.join(UT, `avsnitt-${N}.md`), ut);
   console.log(`bygg/avsnitt-${N}.md: ${titel} | underdelar ${under.map(u => u.titel.slice(0, 30) + '…').join(' / ')} | bilder ${specar.map(s => s.fil + '@' + s.underdel).join(', ')}`);
