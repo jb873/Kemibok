@@ -56,11 +56,17 @@ Kolets snabba kretslopp. Placering enligt bildrutan i avsnitt-3.md.
 
 ---
 
-# UNDERDEL A — Fotosyntesen bygger socker av koldioxid och vatten
+# UNDERDEL A — Fotosyntesen
 
 ---
 
 ## A — ENKEL
+
+Kol finns inte bara bundet i sten och material. Det rör sig hela tiden mellan luften och det levande. Växter
+tar upp kol ur luften, kolet förs vidare när djur äter, och till slut kommer det tillbaka till luften. Två
+processer sköter den rörelsen: fotosyntesen och cellandningen.
+
+### Fotosyntesen bygger socker av koldioxid och vatten
 
 ### Växten hämtar två råvaror från två håll
 
@@ -128,6 +134,8 @@ näringskedjor och återvänder så småningom till atmosfären.
 
 Två processer är särskilt viktiga för denna rörelse: **fotosyntesen** och **cellandningen**. Genom
 fotosyntesen byggs energirika organiska ämnen upp. Genom cellandningen bryts de ner igen.
+
+### Fotosyntesen bygger socker av koldioxid och vatten
 
 ### Växten hämtar koldioxid ur luften och vatten ur marken
 
@@ -203,11 +211,13 @@ syret kommer måste man öppna de två skedena.
 
 ---
 
-# UNDERDEL B — Cellandningen bryter ner socker och frigör energi
+# UNDERDEL B — Cellandningen
 
 ---
 
 ## B — ENKEL
+
+### Cellandningen bryter ner socker och frigör energi
 
 ### Alla celler behöver energi
 
@@ -270,6 +280,8 @@ Så återvänder kolet från döda organismer till luften.
 ---
 
 ## B — STANDARD
+
+### Cellandningen bryter ner socker och frigör energi
 
 ### Cellerna behöver energi och får den ur glukosen
 
@@ -342,11 +354,13 @@ stegvis.
 
 ---
 
-# UNDERDEL C — Fotosyntes och cellandning är varandras motsatser
+# UNDERDEL C — Kolets kretslopp
 
 ---
 
 ## C — ENKEL
+
+### Fotosyntes och cellandning är varandras motsatser
 
 ### Det ena bygger upp, det andra bryter ner
 
@@ -397,6 +411,8 @@ undersöka längre fram.**
 ---
 
 ## C — STANDARD
+
+### Fotosyntes och cellandning är varandras motsatser
 
 ### Produkterna i den ena processen är råvaror i den andra
 

@@ -16,12 +16,13 @@ const R = path.join(__dirname, '..', 'doc', 'leveranser', 'kolatomen');
 const UT = path.join(R, 'bygg');
 fs.mkdirSync(UT, { recursive: true });
 const norm = f => fs.readFileSync(path.join(R, f), 'utf8').replace(/\r\n/g, '\n');
-// slug och hero-underrubrik per avsnitt (ordern anger inga; förslag av Code 2026-09-15, rapporterade)
-const HUVUD = {
-  1: { slug: 'kol-bildar-fler-foreningar', sub: 'varför kol är kemins mångsidigaste grundämne' },
-  2: { slug: 'samma-kolatomer-olika-amnen', sub: 'diamant, grafit och kolets andra former' },
-  3: { slug: 'kol-mellan-luften-och-det-levande', sub: 'fotosyntes, cellandning och kolets kretslopp' }
-};
+// slug per avsnitt (Code, godkända 2026-09-15); hero-underrubriker, knapptitlar och Enkel-ingresser ur knapptitlar-och-ingresser.md (Joachim)
+const SLUG = { 1: 'kol-bildar-fler-foreningar', 2: 'samma-kolatomer-olika-amnen', 3: 'kol-mellan-luften-och-det-levande' };
+const KI = norm('knapptitlar-och-ingresser.md');
+const KORT = Object.fromEntries([...KI.matchAll(/^\| (\d)\.(\d) \| ([^|]+) \|$/gm)].map(m => [m[1] + '.' + m[2], m[3].trim()]));
+const SUB = Object.fromEntries([...KI.matchAll(/^\| (\d) \| ([^|]+) \|$/gm)].map(m => [m[1], m[2].trim()]));
+const INGRESS = Object.fromEntries([...KI.matchAll(/### Avsnitt (\d)\n\n([\s\S]*?)(?=\n\n###|\n\n## |$)/g)].map(m => [m[1], m[2].trim()]));
+if (Object.keys(KORT).length !== 9 || Object.keys(SUB).length !== 3 || Object.keys(INGRESS).length !== 3) throw new Error(`knapptitlar-och-ingresser.md: ${Object.keys(KORT).length} knapptitlar, ${Object.keys(SUB).length} underrubriker, ${Object.keys(INGRESS).length} ingresser`);
 const BOK = ['A', 'B', 'C'];
 const rensa = t => t.split('\n').filter(l => !/^> /.test(l) && !/^\*ca \d+ ord\*$/.test(l.trim()) && !/^\*[^*]+undantaget[^*]*\*$/.test(l.trim()) && !/^\*\*Djupdykning härifrån:\*\*/.test(l)).join('\n')
   .replace(/\n{3,}/g, '\n\n').trim();
@@ -66,9 +67,9 @@ for (const N of [1, 2, 3]) {
   let ut = `# Kolatomen, avsnitt ${N} — ${titel}
 ## Byggfil, sammansatt av verktyg/satt-ihop-kolatomen.js ur avsnitt-${N}.md och avsnitt-${N}-enkel-fordjupning.md – redigera inte här
 
-**Sökväg:** \`kapitel/organisk-kemi/delkapitel/kolatomen/avsnitt-${N}-${HUVUD[N].slug}.html\`
-**AVSNITT_ID:** \`a${N}_${HUVUD[N].slug}\`
-**Underrubrik i hero:** ${HUVUD[N].sub}
+**Sökväg:** \`kapitel/organisk-kemi/delkapitel/kolatomen/avsnitt-${N}-${SLUG[N]}.html\`
+**AVSNITT_ID:** \`a${N}_${SLUG[N]}\`
+**Underrubrik i hero:** ${SUB[N]}
 
 ---
 
@@ -82,8 +83,11 @@ for (const N of [1, 2, 3]) {
   for (let i = 0; i < 3; i++) {
     const X = BOK[i], u = under[i], e = enkel[i], fd = fordj[i];
     if (e.nr !== u.nr || fd.nr !== u.nr) throw new Error('underdelsnummer stämmer inte');
-    const stdText = (i === 0 && intro ? intro + '\n\n' : '') + u.text;
-    ut += `\n# UNDERDEL ${X} — ${u.titel}\n\n---\n\n## ${X} — ENKEL\n\n${fetaReaktioner(e.text)}\n\n---\n\n## ${X} — STANDARD\n\n${fetaReaktioner(stdText)}\n\n---\n\n## ${X} — FÖRDJUPNING\n\n### ${fd.titel}\n\n${fetaReaktioner(fd.text)}\n\n---\n`;
+    // ingress (bara underdel A: Standard ur avsnitt-N.md, Enkel ur Joachims leverans), sedan den långa rubriken som första mellanrubrik
+    const stdText = (i === 0 && intro ? intro + '\n\n' : '') + '### ' + u.titel + '\n\n' + u.text;
+    const enkelText = (i === 0 ? INGRESS[String(N)] + '\n\n' : '') + '### ' + e.titel + '\n\n' + e.text;
+    const kort = KORT[N + '.' + u.nr]; if (!kort) throw new Error('knapptitel saknas för ' + N + '.' + u.nr);
+    ut += `\n# UNDERDEL ${X} — ${kort}\n\n---\n\n## ${X} — ENKEL\n\n${fetaReaktioner(enkelText)}\n\n---\n\n## ${X} — STANDARD\n\n${fetaReaktioner(stdText)}\n\n---\n\n## ${X} — FÖRDJUPNING\n\n### ${fd.titel}\n\n${fetaReaktioner(fd.text)}\n\n---\n`;
   }
   fs.writeFileSync(path.join(UT, `avsnitt-${N}.md`), ut);
   console.log(`bygg/avsnitt-${N}.md: ${titel} | underdelar ${under.map(u => u.titel.slice(0, 30) + '…').join(' / ')} | bilder ${specar.map(s => s.fil + '@' + s.underdel).join(', ')}`);

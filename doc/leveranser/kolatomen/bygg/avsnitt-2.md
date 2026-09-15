@@ -56,11 +56,17 @@ Fulleren, nanorör och grafen. Placering enligt bildrutan i avsnitt-2.md.
 
 ---
 
-# UNDERDEL A — Rent kol finns i flera former med olika egenskaper
+# UNDERDEL A — Samma atomer, olika ämnen
 
 ---
 
 ## A — ENKEL
+
+När atomer av olika grundämnen binds samman bildas nya ämnen. Men även atomer av samma grundämne kan sitta
+ihop på olika sätt och ge ämnen med helt olika egenskaper. Kol är det tydligaste exemplet. Rent kol kan
+finnas som diamant, grafit, grafen och fullerener — alla består bara av kolatomer.
+
+### Rent kol finns i flera former med olika egenskaper
 
 ### Ett grundämne kan finnas i flera olika former
 
@@ -113,6 +119,8 @@ olika egenskaper. Kol är ett tydligt exempel på detta.
 Rent kol kan bland annat förekomma som diamant, grafit, grafen och fullerener. Alla består enbart
 av kolatomer. Det som skiljer dem åt är alltså inte vilka atomer de innehåller, utan **hur
 kolatomerna är bundna till varandra och hur de är ordnade**.
+
+### Rent kol finns i flera former med olika egenskaper
 
 ### Samma grundämne kan förekomma i flera former
 
@@ -171,11 +179,13 @@ kolets vilotillstånd, den andra ett tillstånd som råkat bli fast.
 
 ---
 
-# UNDERDEL B — Diamant är hårt och grafit är mjukt av samma skäl: bindningarnas mönster
+# UNDERDEL B — Diamant och grafit
 
 ---
 
 ## B — ENKEL
+
+### Diamant är hårt och grafit är mjukt av samma skäl: bindningarnas mönster
 
 ### I diamant binder varje kolatom till fyra andra
 
@@ -231,6 +241,8 @@ sitter i mönstret.
 ---
 
 ## B — STANDARD
+
+### Diamant är hårt och grafit är mjukt av samma skäl: bindningarnas mönster
 
 ### I diamant binder varje kolatom till fyra andra
 
@@ -297,11 +309,13 @@ tre följder.
 
 ---
 
-# UNDERDEL C — Amorft kol, fullerener och grafen är kolets övriga former
+# UNDERDEL C — Kolets övriga former
 
 ---
 
 ## C — ENKEL
+
+### Amorft kol, fullerener och grafen är kolets övriga former
 
 ### Amorft kol har inget regelbundet mönster
 
@@ -349,6 +363,8 @@ genomskinligt och går att böja, och det leder både ström och värme mycket b
 ---
 
 ## C — STANDARD
+
+### Amorft kol, fullerener och grafen är kolets övriga former
 
 ### Amorft kol saknar regelbunden struktur
 

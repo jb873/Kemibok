@@ -3,7 +3,7 @@
 
 **Sökväg:** `kapitel/organisk-kemi/delkapitel/kolatomen/avsnitt-1-kol-bildar-fler-foreningar.html`
 **AVSNITT_ID:** `a1_kol-bildar-fler-foreningar`
-**Underrubrik i hero:** varför kol är kemins mångsidigaste grundämne
+**Underrubrik i hero:** varför kol bildar fler föreningar än något annat grundämne
 
 ---
 
@@ -71,11 +71,17 @@ Kedja, gren och ring. Placering enligt bildrutan i avsnitt-1.md.
 
 ---
 
-# UNDERDEL A — Organisk kemi handlar om kolföreningar, inte om liv
+# UNDERDEL A — Vad organisk kemi är
 
 ---
 
 ## A — ENKEL
+
+Kol är ett ovanligt grundämne. Kolatomer kan sitta ihop med varandra på många olika sätt, och samtidigt
+binda till andra atomer som väte, syre och kväve. Därför finns det fler ämnen som innehåller kol än ämnen av
+något annat grundämne. Den del av kemin som handlar om dem kallas organisk kemi.
+
+### Organisk kemi handlar om kolföreningar, inte om liv
 
 ### Förr trodde man att vissa ämnen bara kunde bildas i levande saker
 
@@ -126,6 +132,8 @@ samtidigt binda till andra atomslag, till exempel väte, syre och kväve. Därf�
 mycket stort antal olika kemiska föreningar. Det finns faktiskt fler kända föreningar som
 innehåller kol än föreningar av något annat grundämne. Den del av kemin som framför allt handlar
 om dessa ämnen kallas **organisk kemi**.
+
+### Organisk kemi handlar om kolföreningar, inte om liv
 
 ### Namnet kommer från tron att vissa ämnen krävde liv
 
@@ -188,11 +196,13 @@ bindningar.
 
 ---
 
-# UNDERDEL B — Kolatomen bildar fyra bindningar som kan skrivas på flera sätt
+# UNDERDEL B — Fyra bindningar
 
 ---
 
 ## B — ENKEL
+
+### Kolatomen bildar fyra bindningar som kan skrivas på flera sätt
 
 ### Kolatomen har fyra elektroner ytterst
 
@@ -244,6 +254,8 @@ Propan blir CH₃CH₂CH₃.
 ---
 
 ## B — STANDARD
+
+### Kolatomen bildar fyra bindningar som kan skrivas på flera sätt
 
 ### Kolatomen har fyra elektroner i sitt yttersta skal
 
@@ -310,11 +322,13 @@ många kolföreningar är det just formen som avgör hur de fungerar.
 
 ---
 
-# UNDERDEL C — Kolatomer binder till varandra i kedjor, grenar och ringar
+# UNDERDEL C — Kedjor och ringar
 
 ---
 
 ## C — ENKEL
+
+### Kolatomer binder till varandra i kedjor, grenar och ringar
 
 ### Kolatomer kan sitta ihop med varandra
 
@@ -364,6 +378,8 @@ Tillsammans gör detta att ett litet antal atomslag kan byggas ihop till ett eno
 ---
 
 ## C — STANDARD
+
+### Kolatomer binder till varandra i kedjor, grenar och ringar
 
 ### Kolatomer binder starkt till varandra
 
