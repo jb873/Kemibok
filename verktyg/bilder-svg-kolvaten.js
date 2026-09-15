@@ -1,10 +1,11 @@
-// bilder-svg-kolvaten.js – de fyra SVG-bilderna till Organisk kemi, delkapitel 2 "Kolväten", avsnitt 1
+// bilder-svg-kolvaten.js – SVG-bilderna till Organisk kemi, delkapitel 2 "Kolväten" (avsnitt 1: B1–B4, avsnitt 2: B6–B7)
 // (arbetsorder 1 Kolväten, 2026-09-15; ritade efter bildrutorna i doc/leveranser/kolvaten/avsnitt-1.md – specfilen
 // dk2-avsnitt-1-bildspecar.md fanns inte i leveransen). Skriver till kapitel/organisk-kemi/delkapitel/kolvaten/img/k2-b{n}.svg.
 // Kör: node verktyg/bilder-svg-kolvaten.js
 //
 //   k2-b1  Kolstommen och väteatomerna      1.1    k2-b3  Fyra sätt att visa samma kolväte   1.3
 //   k2-b2  Alkanserien som trappa           1.2    k2-b4  Så ritar du en strukturformel      1.3
+//   k2-b6  Butan i en tändare               2.2    k2-b7  Kokpunkten stiger med kedjans längd 2.3   (k2-b5 kärret: AI-bild, nyckla-gron.js)
 //
 // Palett enligt ordern: konturer/text #2d4a35, signaturfärg #5a9668, kol #3a3a3a, väte #f5f0e4 med kontur, grått #8A8A8A.
 // Papper #ece2c8 ritas inte (transparent bakgrund, som Kolatomens bilder). Typsnitt: Georgia-fallback.
@@ -172,9 +173,77 @@ function modell(n, cx, cy, o = {}) {
   skriv('k2-b4.svg', W, HH, 'Fyra numrerade rutor. Ett: fyra kolatomer i rad. Två: streck mellan dem. Tre: gröna väteatomer på alla lediga platser, tio stycken. Fyra: molekylformeln C4H10', ut);
 }
 
+// ---------- B6. Butan i en tändare (avsnitt 2, arbetsorder 2 2026-09-15) ----------
+// Genomskinlig tändare i genomskärning: flytande butan nedtill (ljusblå vätska #a8c4d8, som i Kolatomens palett), gas
+// ovanför (pappret), små pilar vid vätskeytan (förångning) och en pil upptill genom ventilen. Ingen låga (ordern §4).
+const VATSKA = '#a8c4d8';
+const tunnPil = (x1, y1, x2, y2, farg, bredd = 1.4, extra = '') => {   // smal konturpil: streck + öppet V-huvud
+  const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L, h = 6;
+  return linje(x1, y1, x2, y2, farg, bredd, extra) + linje(x2, y2, x2 - ux * h - uy * h * 0.6, y2 - uy * h + ux * h * 0.6, farg, bredd, extra) + linje(x2, y2, x2 - ux * h + uy * h * 0.6, y2 - uy * h - ux * h * 0.6, farg, bredd, extra);
+};
+{
+  const W = 520, HH = 340, X = 190, BW = 120, TOP = 78, BOT = 312, YTA = 196;   // tändarkroppen och vätskeytan
+  let ut = '';
+  // vätska (under den vågiga ytan) – ritas först, kroppen klipps med rundade hörn via clipPath
+  ut += `  <defs><clipPath id="kropp"><rect x="${X}" y="${TOP}" width="${BW}" height="${BOT - TOP}" rx="14"/></clipPath></defs>\n`;
+  ut += `  <path d="M${X} ${YTA + 4} C${X + 25} ${YTA - 4} ${X + 45} ${YTA + 8} ${X + 65} ${YTA + 1} C${X + 85} ${YTA - 6} ${X + 105} ${YTA + 6} ${X + BW} ${YTA} L${X + BW} ${BOT} L${X} ${BOT} Z" fill="${VATSKA}" stroke="none" clip-path="url(#kropp)" data-del="vatska"/>\n`;
+  ut += `  <path d="M${X} ${YTA + 4} C${X + 25} ${YTA - 4} ${X + 45} ${YTA + 8} ${X + 65} ${YTA + 1} C${X + 85} ${YTA - 6} ${X + 105} ${YTA + 6} ${X + BW} ${YTA}" fill="none" stroke="${INK}" stroke-width="1.4" data-del="yta"/>\n`;
+  // kroppen (genomskinlig): kontur
+  ut += `  <rect x="${X}" y="${TOP}" width="${BW}" height="${BOT - TOP}" rx="14" fill="none" stroke="${INK}" stroke-width="2.2" data-del="kropp"/>\n`;
+  // ventil och munstycke upptill
+  ut += `  <rect x="${X + BW / 2 - 14}" y="${TOP - 22}" width="28" height="22" rx="3" fill="${GRA}" fill-opacity="0.35" stroke="${INK}" stroke-width="1.6" data-del="ventil"/>\n`;
+  ut += `  <rect x="${X + BW / 2 + 16}" y="${TOP - 14}" width="34" height="10" rx="3" fill="none" stroke="${INK}" stroke-width="1.4"/>\n`;   // tryckspak
+  // gas som strömmar ut genom ventilen
+  ut += tunnPil(X + BW / 2, TOP - 4, X + BW / 2, TOP - 44, INK, 1.6, 'data-pil="ut"') + txt(X + BW / 2 - 22, TOP - 40, 'gas ut', 'font-size="13" font-style="italic" text-anchor="end"');
+  // förångning: små pilar från vätskeytan uppåt
+  [X + 22, X + 60, X + 98].forEach(x => { ut += tunnPil(x, YTA - 8, x, YTA - 30, INK, 1.2, 'data-pil="forangning"'); });
+  // etiketter
+  ut += txt(X + BW + 24, 140, 'gas', 'font-size="15" text-anchor="start"') + linje(X + BW + 2, 140, X + BW + 18, 140, GRA, 1);
+  ut += txt(X + BW + 24, 186, 'vätska förångas', 'font-size="12" font-style="italic" text-anchor="start"') + linje(X + BW + 2, 176, X + BW + 18, 182, GRA, 1);
+  ut += txt(X + BW + 24, 258, 'flytande butan', 'font-size="15" text-anchor="start"') + linje(X + BW + 2, 258, X + BW + 18, 258, GRA, 1);
+  ut += txt(X - 14, TOP - 8, 'ventil', 'font-size="12" font-style="italic" text-anchor="end"') + linje(X - 10, TOP - 12, X + BW / 2 - 16, TOP - 12, GRA, 1);
+  skriv('k2-b6.svg', W, HH, 'En genomskinlig tändare i genomskärning. Nedre delen är fylld med flytande butan, övre delen med gas. Små pilar vid vätskeytan visar att vätska förångas, och en pil upptill visar gas som strömmar ut genom ventilen', ut);
+}
+
+// ---------- B7. Kokpunkten stiger med kedjans längd (avsnitt 2, arbetsorder 2 2026-09-15) ----------
+// Tio kokpunkter (ordern §4, tabellen), rumstemperaturlinje 20 °C mellan butan och pentan, färgfält gas 1–4 /
+// vätska 5–10 / fast "18 och uppåt" (utan punkt). Varje punkt bär data-amne/data-c/data-kp så att värdena läses ur filen.
+const KOKPUNKTER = [['metan', -162], ['etan', -89], ['propan', -42], ['butan', -0.5], ['pentan', 36], ['hexan', 69], ['heptan', 98], ['oktan', 126], ['nonan', 151], ['dekan', 174]];
+{
+  const W = 780, HH = 400, X0 = 96, DXP = 54, XF = X0 + 10 * DXP + 40, YT = 36, YB = 318, TMIN = -190, TMAX = 200;
+  const px = i => X0 + (i - 1) * DXP, py = t => YB - (t - TMIN) * (YB - YT) / (TMAX - TMIN);
+  const tal = t => String(t).replace('-', '−').replace('.', ',');
+  let ut = '';
+  // färgfält under axeln: gas (grått), vätska (ljusblå), fast (kol, svag)
+  const FY = YB + 30, FH = 24;
+  ut += `  <rect x="${px(1) - 24}" y="${FY}" width="${px(4) - px(1) + 48}" height="${FH}" rx="4" fill="${GRA}" fill-opacity="0.22" stroke="none" data-falt="gas"/>\n` + txt((px(1) + px(4)) / 2, FY + 17, 'gas', 'font-size="13" font-style="italic"');
+  ut += `  <rect x="${px(5) - 24}" y="${FY}" width="${px(10) - px(5) + 48}" height="${FH}" rx="4" fill="${VATSKA}" fill-opacity="0.5" stroke="none" data-falt="vatska"/>\n` + txt((px(5) + px(10)) / 2, FY + 17, 'vätska', 'font-size="13" font-style="italic"');
+  ut += `  <rect x="${XF - 30}" y="${FY}" width="60" height="${FH}" rx="4" fill="${KOL}" fill-opacity="0.22" stroke="none" data-falt="fast"/>\n` + txt(XF, FY + 17, 'fast', 'font-size="13" font-style="italic"');
+  // axlar, y-skala
+  ut += linje(X0 - 40, YB, XF + 34, YB, INK, 1.4) + linje(X0 - 40, YT - 6, X0 - 40, YB, INK, 1.4);
+  for (let t = -150; t <= 150; t += 50) { ut += linje(X0 - 44, py(t), X0 - 40, py(t), INK, 1) + txt(X0 - 48, py(t) + 4, tal(t) + ' °C', 'font-size="11" text-anchor="end"'); }
+  ut += txt(X0 - 40, YT - 14, 'kokpunkt', 'font-size="13" font-style="italic"');
+  // avbrott mellan dekan och "18 och uppåt"
+  ut += `  <path d="M${px(10) + 30} ${YB + 6} l6 -12 l6 12" fill="none" stroke="${INK}" stroke-width="1.2"/>\n` + `  <path d="M${px(10) + 42} ${YB + 6} l6 -12 l6 12" fill="none" stroke="${INK}" stroke-width="1.2"/>\n`;
+  // rumstemperatur 20 °C – streckad linje över hela plottytan
+  ut += linje(X0 - 40, py(20), XF + 34, py(20), INK, 1.2, `stroke-dasharray="6 5" data-rumstemperatur="20"`) + txt(XF + 34, py(20) - 6, 'rumstemperatur 20 °C', 'font-size="12" font-style="italic" text-anchor="end"');
+  // kurva och punkter
+  ut += `  <polyline points="${KOKPUNKTER.map(([, t], i) => `${r2(px(i + 1))},${r2(py(t))}`).join(' ')}" fill="none" stroke="${SIGN}" stroke-width="2.2" stroke-linejoin="round"/>\n`;
+  KOKPUNKTER.forEach(([namn, t], i) => {
+    const x = px(i + 1), y = py(t);
+    ut += cirkel(x, y, 5, SIGN, INK, 1.2, `data-amne="${namn}" data-c="${i + 1}" data-kp="${t}"`);
+    ut += txt(x + (i < 4 ? 10 : 0), y - (i < 4 ? -4 : 11), tal(t), `font-size="11" ${i < 4 ? 'text-anchor="start"' : ''}`);
+    ut += txt(x, YB + 16, namn, 'font-size="12"') + linje(x, YB, x, YB + 4, INK, 1);
+    ut += txt(x, YB - 8, String(i + 1), `font-size="10" fill="${GRA}"`);
+  });
+  ut += txt(XF, YB + 16, '18 och uppåt', 'font-size="12"') + linje(XF, YB, XF, YB + 4, INK, 1) + txt(XF, YB - 8, '18+', `font-size="10" fill="${GRA}"`);
+  ut += txt((px(1) + XF) / 2, HH - 6, 'antal kolatomer', 'font-size="13" font-style="italic"');
+  skriv('k2-b7.svg', W, HH, 'En kurva som visar kokpunkten för de tio första alkanerna. Kokpunkten stiger stadigt från metan vid minus 162 grader till dekan vid 174 grader. En streckad linje vid 20 grader markerar rumstemperatur. Under axeln visar färgfält att de fyra första är gaser och de följande vätskor, och längst till höger att alkaner med arton kolatomer eller fler är fasta', ut);
+}
+
 // ---------- kontroll mot de skrivna filerna (ordern §3) ----------
 const las = f => fs.readFileSync(path.join(UT, f), 'utf8');
-const element = (s, filter) => [...s.matchAll(/<(text|circle|line|rect)\b([^>]*)>/g)].map(m => { const at = {}; for (const a of m[2].matchAll(/([a-z0-9-]+)="([^"]*)"/g)) at[a[1]] = a[2]; at._tag = m[1]; return at; }).filter(filter);
+const element = (s, filter) => [...s.matchAll(/<(text|circle|line|rect|path)\b([^>]*)>/g)].map(m => { const at = {}; for (const a of m[2].matchAll(/([a-z0-9-]+)="([^"]*)"/g)) at[a[1]] = a[2]; at._tag = m[1]; return at; }).filter(filter);
 const antalAtom = (els, typ) => els.filter(e => e['data-atom'] === typ).length;
 const rapport = [];
 function kolla(namn, villkor, text) { rapport.push(`${villkor ? 'OK ' : 'FEL'} ${namn}: ${text}`); if (!villkor) process.exitCode = 1; }
@@ -233,6 +302,26 @@ function kolla(namn, villkor, text) { rapport.push(`${villkor ? 'OK ' : 'FEL'} $
   kolla('B4 ruta 4', r4 === 'C4H10', `formeln läser "${r4}"`);
   kolla('B4 ruta 1', antalAtom(element(s, e => e['data-ruta'] === '1'), 'C') === 4 && element(s, e => e['data-ruta'] === '1' && e['data-bind']).length === 0, 'fyra C, inga streck');
   kolla('B4 ruta 2', element(s, e => e['data-ruta'] === '2' && e['data-bind'] === 'C-C').length === 3 && antalAtom(element(s, e => e['data-ruta'] === '2'), 'H') === 0, 'tre C–C-streck, inga väten');
+}
+{ // B6: ingen låga, vätska + yta + ventil + pilar
+  const s = las('k2-b6.svg');
+  kolla('B6 ingen låga', !/låga|flame|#e8c547|#C0392B/i.test(s), 'ingen lågform, ingen gul/röd färg i filen');
+  const delar = element(s, e => e['data-del']).map(e => e['data-del']);
+  kolla('B6 delar', ['vatska', 'yta', 'kropp', 'ventil'].every(d => delar.includes(d)) && element(s, e => e['data-pil'] === 'forangning').length === 9 && element(s, e => e['data-pil'] === 'ut').length === 3, `vätska, yta, kropp, ventil; 3 förångningspilar, 1 pil ut`);
+}
+{ // B7: tio kokpunkter ur filen, rumstemperaturlinjen mellan butan och pentan, fälten 1–4 och 5–10, "18 och uppåt" utan punkt
+  const s = las('k2-b7.svg');
+  const p = element(s, e => e['data-amne']).map(e => ({ amne: e['data-amne'], c: +e['data-c'], kp: +e['data-kp'], cx: +e.cx, cy: +e.cy }));
+  const facit = [['metan', 1, -162], ['etan', 2, -89], ['propan', 3, -42], ['butan', 4, -0.5], ['pentan', 5, 36], ['hexan', 6, 69], ['heptan', 7, 98], ['oktan', 8, 126], ['nonan', 9, 151], ['dekan', 10, 174]];
+  kolla('B7 tio kokpunkter', p.length === 10 && facit.every(([a, c, t], i) => p[i].amne === a && p[i].c === c && p[i].kp === t), p.map(x => `${x.amne} ${x.c} ${String(x.kp).replace('-', '−').replace('.', ',')}`).join(', '));
+  const rum = element(s, e => e['data-rumstemperatur'] === '20')[0], yr = +rum.y1;
+  const butan = p.find(x => x.amne === 'butan'), pentan = p.find(x => x.amne === 'pentan');
+  kolla('B7 rumstemperaturlinjen mellan butan och pentan', butan.cy > yr && yr > pentan.cy && p.slice(0, 4).every(x => x.cy > yr) && p.slice(4).every(x => x.cy < yr), `y: butan ${butan.cy} (under), linje ${yr}, pentan ${pentan.cy} (över); alla 1–4 under, 5–10 över`);
+  const falt = n => element(s, e => e['data-falt'] === n)[0];
+  const inom = (f, x) => +f.x <= x && x <= +f.x + +f.width;
+  const gas = falt('gas'), vat = falt('vatska'), fast = falt('fast');
+  kolla('B7 gasfält 1–4, vätskefält 5–10', p.slice(0, 4).every(x => inom(gas, x.cx) && !inom(vat, x.cx)) && p.slice(4).every(x => inom(vat, x.cx) && !inom(gas, x.cx)) && p.every(x => !inom(fast, x.cx)), `gas x ${gas.x}–${+gas.x + +gas.width} täcker ${p.slice(0, 4).map(x => x.c).join(',')}; vätska x ${vat.x}–${+vat.x + +vat.width} täcker ${p.slice(4).map(x => x.c).join(',')}`);
+  kolla('B7 "18 och uppåt" utan punkt', />18 och uppåt</.test(s) && !p.some(x => x.c >= 18) && !element(s, e => e['data-amne']).some(e => inom(fast, +e.cx)), 'etikett finns, ingen punkt i fast-fältet');
 }
 console.log(`${antal} SVG skrivna till ${path.relative(path.join(__dirname, '..'), UT)}`);
 console.log(rapport.join('\n'));

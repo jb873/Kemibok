@@ -25,7 +25,8 @@ const norm = f => fs.readFileSync(path.join(R, f), 'utf8').replace(/\r\n/g, '\n'
 // slug och hero-underrubrik per avsnitt (ordern anger inga; förslag av Code 2026-09-15, rapporterade – ersätts av
 // knapptitlar-och-ingresser.md när Joachim beslutar, som för Kolatomen)
 const HUVUD = {
-  1: { slug: 'kolvaten-bestar-av-kol-och-vate', sub: 'alkanerna, molekylformeln och tre sätt att visa en molekyl' }
+  1: { slug: 'kolvaten-bestar-av-kol-och-vate', sub: 'alkanerna, molekylformeln och tre sätt att visa en molekyl' },
+  2: { slug: 'de-forsta-kolvatena', sub: 'metan, etan, propan och butan – och varför kedjans längd avgör' }
 };
 const BOK = ['A', 'B', 'C'];
 let KORT = {}, SUB = {}, INGRESS = {};

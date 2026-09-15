@@ -185,6 +185,12 @@ const AVSNITT_KOLVATEN = {
          'k2-b2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'är hela tiden densamma.' },
          'k2-b3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Det undersöker vi i avsnitt 3.' },
          'k2-b4.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'kolatomer du börjar med.' }
+       } },
+  2: { dd: [],   // arbetsorder 2 Kolväten (2026-09-15): k2-b5 AI-bild (nycklad), k2-b6 och k2-b7 SVG
+       bilder: {
+         'k2-b5.webp': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'från luften, genom fotosyntesen.' },
+         'k2-b6.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'gas ut, och ny vätska förångas för att ersätta den.' },
+         'k2-b7.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'formeln utan också ämnets egenskaper.' }
        } }
 };
 const DELKAPITEL = {

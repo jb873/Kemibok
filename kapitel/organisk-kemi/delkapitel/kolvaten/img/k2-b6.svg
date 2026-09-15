@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340" width="520" height="340" role="img" aria-labelledby="t">
+  <title id="t">En genomskinlig tändare i genomskärning. Nedre delen är fylld med flytande butan, övre delen med gas. Små pilar vid vätskeytan visar att vätska förångas, och en pil upptill visar gas som strömmar ut genom ventilen</title>
+  <defs><clipPath id="kropp"><rect x="190" y="78" width="120" height="234" rx="14"/></clipPath></defs>
+  <path d="M190 200 C215 192 235 204 255 197 C275 190 295 202 310 196 L310 312 L190 312 Z" fill="#a8c4d8" stroke="none" clip-path="url(#kropp)" data-del="vatska"/>
+  <path d="M190 200 C215 192 235 204 255 197 C275 190 295 202 310 196" fill="none" stroke="#2d4a35" stroke-width="1.4" data-del="yta"/>
+  <rect x="190" y="78" width="120" height="234" rx="14" fill="none" stroke="#2d4a35" stroke-width="2.2" data-del="kropp"/>
+  <rect x="236" y="56" width="28" height="22" rx="3" fill="#8A8A8A" fill-opacity="0.35" stroke="#2d4a35" stroke-width="1.6" data-del="ventil"/>
+  <rect x="266" y="64" width="34" height="10" rx="3" fill="none" stroke="#2d4a35" stroke-width="1.4"/>
+  <line x1="250" y1="74" x2="250" y2="34" stroke="#2d4a35" stroke-width="1.6" stroke-linecap="round" data-pil="ut"/>
+  <line x1="250" y1="34" x2="253.6" y2="40" stroke="#2d4a35" stroke-width="1.6" stroke-linecap="round" data-pil="ut"/>
+  <line x1="250" y1="34" x2="246.4" y2="40" stroke="#2d4a35" stroke-width="1.6" stroke-linecap="round" data-pil="ut"/>
+  <text x="228" y="38" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" text-anchor="end">gas ut</text>
+  <line x1="212" y1="188" x2="212" y2="166" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" data-pil="forangning"/>
+  <line x1="212" y1="166" x2="215.6" y2="172" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" data-pil="forangning"/>
+  <line x1="212" y1="166" x2="208.4" y2="172" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" data-pil="forangning"/>
+  <line x1="250" y1="188" x2="250" y2="166" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" data-pil="forangning"/>
+  <line x1="250" y1="166" x2="253.6" y2="172" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" data-pil="forangning"/>
+  <line x1="250" y1="166" x2="246.4" y2="172" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" data-pil="forangning"/>
+  <line x1="288" y1="188" x2="288" y2="166" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" data-pil="forangning"/>
+  <line x1="288" y1="166" x2="291.6" y2="172" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" data-pil="forangning"/>
+  <line x1="288" y1="166" x2="284.4" y2="172" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" data-pil="forangning"/>
+  <text x="334" y="140" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start">gas</text>
+  <line x1="312" y1="140" x2="328" y2="140" stroke="#8A8A8A" stroke-width="1" stroke-linecap="round" />
+  <text x="334" y="186" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start">vätska förångas</text>
+  <line x1="312" y1="176" x2="328" y2="182" stroke="#8A8A8A" stroke-width="1" stroke-linecap="round" />
+  <text x="334" y="258" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start">flytande butan</text>
+  <line x1="312" y1="258" x2="328" y2="258" stroke="#8A8A8A" stroke-width="1" stroke-linecap="round" />
+  <text x="176" y="70" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="end">ventil</text>
+  <line x1="180" y1="66" x2="234" y2="66" stroke="#8A8A8A" stroke-width="1" stroke-linecap="round" />
+</svg>

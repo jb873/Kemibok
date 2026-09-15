@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De första kolvätena och vad de används till – Kolväten – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Kolväten</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">2. De första kolvätena och vad de används till</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 2</span>
+      <h1>De första kolvätena och vad de används till</h1>
+      <p class="subtitel">— metan, etan, propan och butan – och varför kedjans längd avgör —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Metan är det enklaste kolvätet</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Etan, propan och butan används som bränslen</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Kedjans längd avgör om kolvätet är gas, vätska eller fast</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-de-forsta-kolvatena">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Metan är det enklaste kolvätet ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <p class="inledning">De fyra första alkanerna — <strong>metan, etan, propan och butan</strong> — är de kolväten man oftast möter först. Alla fyra är <strong>gaser vid rumstemperatur</strong>, men de används på olika sätt. Skillnaden mellan dem är bara en kolatom i taget, och ändå får det betydelse för hur ämnena bildas, hur de lagras och vad de används till.</p>
+          <h2>Metan har en enda kolatom</h2>
+          <p>Metan är det enklaste av alla kolväten. Molekylformeln är <strong>\(\ce{CH4}\)</strong>: en kolatom och fyra väteatomer. Kolatomen använder alla sina fyra bindningar till väte.</p>
+          <p>Något enklare kolväte finns inte, och därför står metan först i alkanserien.</p>
+          <h2>Metan bildas där syret tagit slut</h2>
+          <p>Metan bildas när organiskt material bryts ner i miljöer med lite eller inget syre. Döda växtdelar, gödsel och annat organiskt material bryts då ner av mikroorganismer på ett sätt som ger metan. Därför kallas gasen ibland <strong>sumpgas</strong>.</p>
+          <p>Sådana syrefria miljöer finns i <strong>kärr, mossar, bottenslam, risfält och soptippar</strong>. Bubblor som stiger ur ett gyttjigt kärr innehåller ofta metan. Kolatomerna i den metanen kom en gång från luften, genom fotosyntesen.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k2-b5.webp" alt="Ett kärr i genomskärning. Ur det mörka bottenslammet stiger små bubblor i strängar upp genom vattnet och spricker vid ytan. Vass växer upp genom vattnet.">
+            <figcaption>I syrefritt bottenslam bryts dött växtmaterial ner så att metan bildas.</figcaption>
+          </figure>
+          <p>Metan finns också i berggrunden. I <strong>kolflötser</strong> kan gasen vara instängd och frigöras vid brytning. Då kallas den <strong>gruvgas</strong>. Blandningar av metan och luft kan explodera, och gruvgas har historiskt orsakat många olyckor. Gruvarbetare använde <strong>kanariefåglar</strong> som varning, eftersom fåglarna reagerade tidigt, och särskilda lampor som avslöjade farliga gaser.</p>
+          <p>En tredje källa är <strong>idisslare</strong>. I kornas och fårens matsmältning bryts växtmaterial ner av mikroorganismer, och metan bildas.</p>
+          <h2>Metan är huvudbeståndsdelen i naturgas och biogas</h2>
+          <p><strong>Naturgas</strong> kommer ur berggrunden och har bildats under mycket lång tid av organiskt material djupt nere i marken. <strong>Biogas</strong> bildas i stället i <strong>rötkammare</strong>, där matavfall, gödsel eller avloppsslam bryts ner i syrefri miljö och gasen samlas in.</p>
+          <p>Båda används till <strong>uppvärmning, matlagning och som fordonsbränsle</strong>.</p>
+          <p>Metan som släpps ut utan att förbrännas påverkar dessutom klimatet kraftigt. Varför det är så återkommer vi till i nästa delkapitel.</p>
+          <p>---</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Etan, propan och butan används som bränslen ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Etan finns i naturgas och används i industrin</h2>
+          <p class="inledning">Det näst enklaste kolvätet är <strong>etan, \(\ce{C2H6}\)</strong>. Det finns ofta tillsammans med metan i naturgas.</p>
+          <p>Etan används sällan som bränsle i vardagen. I stället är det en viktig <strong>råvara i industrin</strong>, där ämnet byggs om till andra kolföreningar — bland annat <strong>eten</strong>, som används vid tillverkning av plast.</p>
+          <p>Etan är alltså viktigt inte för att vi eldar med det, utan för att det är en utgångspunkt för annan kemisk industri.</p>
+          <h2>Propan och butan blir gasol</h2>
+          <p>Efter etan kommer <strong>propan, \(\ce{C3H8}\)</strong>, och <strong>butan, \(\ce{C4H10}\)</strong>. Båda är gaser vid vanligt tryck, men de har en egenskap som gör dem användbara: de övergår till <strong>vätska under måttligt tryck</strong>.</p>
+          <p>Det är hela idén med <strong>gasol</strong>, som består av propan, butan eller en blandning. I en gasolbehållare är mycket av innehållet flytande, och därför ryms <strong>mycket bränsle i liten volym</strong>. Det gör tuberna praktiska att bära och transportera.</p>
+          <p>Gasol används i <strong>grillar, campingkök, gasolvärmare och gasolsvetsar</strong>. I en genomskinlig cigarettändare syns butanen som vätska längst ner och gas ovanför. När ventilen öppnas strömmar gas ut, och ny vätska förångas för att ersätta den.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k2-b6.svg" alt="En genomskinlig tändare i genomskärning. Nedre delen är fylld med flytande butan, övre delen med gas. Små pilar vid vätskeytan visar att vätska förångas, och en pil upptill visar gas som strömmar ut genom ventilen.">
+            <figcaption>Under tryck är butan flytande. När ventilen öppnas strömmar gas ut, och ny vätska förångas för att ersätta den.</figcaption>
+          </figure>
+          <h2>Alla tre brinner och ger energi</h2>
+          <p>Etan, propan och butan är brännbara. Vid fullständig förbränning med syrgas bildas <strong>koldioxid och vatten</strong>, och energi frigörs.</p>
+          <p>Förbränningen av metan kan skrivas:</p>
+          <div class="formel">\[\ce{CH4 + 2 O2 -> CO2 + 2 H2O}\]</div>
+          <p>Detta gäller inte bara de fyra första alkanerna utan <strong>alla kolväten</strong>. Här räcker huvudidén: kolväten ger energi när de förbränns. Vad som händer vid förbränningen, och varför olika kolväten passar till olika bränslen, undersöker vi i nästa delkapitel.</p>
+          <p>---</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Kedjans längd avgör om kolvätet är gas, vätska eller fast ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Kokpunkten stiger med kedjans längd</h2>
+          <p class="inledning">Jämför man de första alkanerna syns ett tydligt mönster: <strong>kokpunkten stiger när kolkedjan blir längre</strong>.</p>
+          <p>Metan kokar vid ungefär −162 °C. Butan kokar vid ungefär −0,5 °C, alltså nära rumstemperatur. Pentan, med bara en kolatom till, är redan en vätska när du håller den i handen.</p>
+          <p>Mönstret är lika regelbundet som mönstret i molekylformlerna. När kedjan växer ändras inte bara formeln utan också ämnets egenskaper.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k2-b7.svg" alt="En kurva som visar kokpunkten för de tio första alkanerna. Kokpunkten stiger stadigt från metan vid minus 162 grader till dekan vid 174 grader. En streckad linje vid 20 grader markerar rumstemperatur. Under axeln visar färgfält att de fyra första är gaser och de följande vätskor, och längst till höger att alkaner med arton kolatomer eller fler är fasta.">
+            <figcaption>Kokpunkten stiger regelbundet med kedjelängden, och det är därför de kortaste alkanerna är gaser medan de längre är vätskor eller fasta ämnen.</figcaption>
+          </figure>
+          <h2>Därför är korta kolväten gaser och långa fasta</h2>
+          <p>Vid rumstemperatur gäller en tumregel: alkaner med ungefär <strong>en till fyra kolatomer</strong> är gaser, <strong>fem till sjutton</strong> är vätskor, och <strong>arton eller fler</strong> är fasta ämnen.</p>
+          <p>Det är därför metan, etan, propan och butan är gaser, medan kolvätena i <strong>bensin och fotogen</strong> är vätskor. Ännu längre kolväten bildar fasta ämnen som <strong>paraffin</strong> och ingår i <strong>asfalt</strong>.</p>
+          <p>Kedjelängden förklarar alltså varför olika bränslen ser så olika ut. De består alla av kolväten, men av kolväten med olika långa kedjor.</p>
+          <h2>Längre molekyler hänger ihop bättre</h2>
+          <p>Att koka ett ämne betyder att molekylerna får så mycket energi att de lämnar vätskan och blir gas.</p>
+          <p>Större molekyler dras till varandra starkare än mindre. Ju längre en kolvätemolekyl är, desto bättre <strong>fastnar den vid sina grannar</strong>, och desto mer energi krävs för att slita loss den.</p>
+          <p>Därför har längre kolväten högre kokpunkt. De små molekylerna lossnar lätt och blir gaser, medan de större hålls kvar och blir vätskor eller fasta ämnen.</p>
+          <p>Vilken sorts attraktion det handlar om återkommer vi till.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-2-de-forsta-kolvatena.json"
+           data-avsnitt="a2_de-forsta-kolvatena">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-2-de-forsta-kolvatena.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a2_de-forsta-kolvatena';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'kolvaten';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>
