@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kol rör sig mellan luften och det levande – Kolatomen – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Kolatomen</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">3. Kol rör sig mellan luften och det levande</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 3</span>
+      <h1>Kol rör sig mellan luften och det levande</h1>
+      <p class="subtitel">— fotosyntes, cellandning och kolets kretslopp —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Fotosyntesen bygger socker av koldioxid och vatten</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Cellandningen bryter ner socker och frigör energi</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Fotosyntes och cellandning är varandras motsatser</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-kol-mellan-luften-och-det-levande">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Fotosyntesen bygger socker av koldioxid och vatten ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Växten hämtar två råvaror från två håll</h2>
+          <p>Luften omkring oss innehåller koldioxid, \(\ce{CO2}\). Det är inte mycket — ungefär fyra molekyler av tiotusen — men det räcker.</p>
+          <p>Varje koldioxidmolekyl innehåller <strong>en kolatom</strong>. Det är den kolatomen som allt handlar om.</p>
+          <p>Växten tar in koldioxid genom små öppningar på bladens undersida. Öppningarna kallas klyvöppningar och kan öppnas och stängas.</p>
+          <p>Samtidigt tar växtens rötter upp vatten ur marken. Vattnet transporteras upp genom stammen till bladen.</p>
+          <p>Nu har växten sina två råvaror: koldioxid från luften och vatten från marken.</p>
+          <h2>Solljuset driver reaktionen</h2>
+          <p>Koldioxid och vatten reagerar inte med varandra av sig själva. Det behövs energi.</p>
+          <p>Den energin kommer från solljuset. Med hjälp av ljusenergin kan växten bygga ihop koldioxid och vatten till <strong>druvsocker</strong>, som också kallas glukos. Samtidigt bildas syrgas.</p>
+          <p>Så här kan man skriva det:</p>
+          <p>koldioxid + vatten + ljusenergi \(\rightarrow\) druvsocker + syrgas</p>
+          <p>Med kemiska formler:</p>
+          <div class="formel">\[\ce{6 CO2 + 6 H2O ->[ljus] C6H12O6 + 6 O2}\]</div>
+          <p>Läs formeln långsamt. Till vänster står sex koldioxidmolekyler. Varje sådan har en kolatom, alltså sex kolatomer totalt. Till höger står en glukosmolekyl, \(\ce{C6H12O6}\), som innehåller sex kolatomer.</p>
+          <p>Sex in, sex ut. Inga kolatomer försvinner. De har bara flyttat.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Följ de mörka prickarna från pilen in i bladet. Var hamnar de?</li>
+              <li>Vad kommer in från marken, och vad kommer in från luften?</li>
+              <li>Många tror att en trädstam är byggd av ämnen från jorden. Vad i bilden säger något annat?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k1-a8.svg" alt="Ett blad som tar upp koldioxid från luften och vatten från marken, med ljusenergi uppifrån. Ut går syrgas. Inuti bladet bildas glukos. Sex kolatomer följs från koldioxiden in i glukosen.">
+            <figcaption>Kolet i växten kommer från luften, inte från jorden. Följ de mörka prickarna.</figcaption>
+          </figure>
+          <h2>Kolet i växten kommer från luften</h2>
+          <p>Här finns något som lätt blir fel. Många tror att ett träd är byggt av ämnen som rötterna hämtat ur jorden.</p>
+          <p>Så är det inte. Nästan allt kol i en trädstam kommer från <strong>luften</strong>, genom bladen. Ett stort träd har alltså till stor del byggts av koldioxid.</p>
+          <h2>Kolet förs vidare i näringskedjan</h2>
+          <p>Växten kan använda glukosen som energi direkt. Men den kan också bygga om glukosen till andra ämnen: stärkelse, cellulosa, fett och proteiner.</p>
+          <p>Kolatomerna hamnar då i bladen, stammen, rötterna, fröna och frukterna.</p>
+          <p>När ett djur äter växten följer kolatomerna med in i djuret. Äter sedan ett annat djur upp det djuret följer kolet med ännu ett steg.</p>
+          <p>Fotosyntesen är alltså den väg som kolet tar från luften in i allt levande.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <p class="inledning">Kol finns inte bara bundet i bergarter, bränslen och olika material. Det rör sig också hela tiden mellan atmosfären och levande organismer. Växter tar upp kol ur luften, kolet förs vidare genom näringskedjor och återvänder så småningom till atmosfären.</p>
+          <p>Två processer är särskilt viktiga för denna rörelse: <strong>fotosyntesen</strong> och <strong>cellandningen</strong>. Genom fotosyntesen byggs energirika organiska ämnen upp. Genom cellandningen bryts de ner igen.</p>
+          <h2>Växten hämtar koldioxid ur luften och vatten ur marken</h2>
+          <p>Luften omkring oss innehåller koldioxid, \(\ce{CO2}\). Varje koldioxidmolekyl innehåller en kolatom. Växter tar upp koldioxid genom små öppningar i bladen, som kallas klyvöppningar. Samtidigt tar växtens rötter upp vatten ur marken. Koldioxiden och vattnet är växtens råvaror. Det betyder att kolet i en växt kommer från luften, inte från jorden.</p>
+          <h2>Solljusets energi gör att druvsocker kan bildas</h2>
+          <p>Med hjälp av energi från solljuset kan växten använda koldioxid och vatten för att bygga <strong>druvsocker, glukos</strong>. Vid reaktionen bildas också syrgas.</p>
+          <p>Fotosyntesen kan sammanfattas:</p>
+          <p>koldioxid + vatten + ljusenergi \(\rightarrow\) druvsocker + syrgas</p>
+          <p>Med kemiska formler skrivs reaktionen:</p>
+          <div class="formel">\[\ce{6 CO2 + 6 H2O ->[ljus] C6H12O6 + 6 O2}\]</div>
+          <p>Räkna kolatomerna: sex koldioxidmolekyler innehåller sex kolatomer, och glukosmolekylen innehåller också sex. Inga kolatomer försvinner på vägen.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k1-a8.svg" alt="Ett blad som tar upp koldioxid från luften och vatten från marken, med ljusenergi uppifrån. Ut går syrgas. Inuti bladet bildas glukos. Sex kolatomer följs från koldioxiden in i glukosen.">
+            <figcaption>Vid fotosyntesen förs kolatomerna från luftens koldioxid in i glukosen.</figcaption>
+          </figure>
+          <h2>Kolet från luften byggs in i växten och förs vidare</h2>
+          <p>Kolatomer som först fanns i luftens koldioxid sitter nu i glukosmolekyler. Kolet har alltså förflyttats från atmosfären till ett organiskt ämne.</p>
+          <p>Växten kan använda glukosen direkt som energikälla, men också bygga om den till andra organiska ämnen. Kolatomerna kan hamna i exempelvis stärkelse, cellulosa, fett och proteiner. På så sätt blir kolet en del av växtens blad, stam, rötter, frön och frukter.</p>
+          <p>När ett djur äter en växt förs kolatomerna vidare till djuret. När ett djur äter ett annat djur kan kolet föras vidare ännu en gång. <strong>Fotosyntesen är därför den viktigaste vägen för kol från atmosfären in i levande organismer och näringskedjor.</strong></p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Syret kommer från vattnet, inte från koldioxiden</h2>
+          <p>Standardtexten skriver fotosyntesen som en enda reaktion:</p>
+          <div class="formel">\[\ce{6 CO2 + 6 H2O ->[ljus] C6H12O6 + 6 O2}\]</div>
+          <p>Det är korrekt som bokföring — atomerna stämmer på båda sidor. Men formeln säger ingenting om vad som faktiskt händer, och den inbjuder till en felaktig slutsats.</p>
+          <p>Läser man formeln naivt ser det ut som att koldioxiden delas: kolet blir socker och syret blir syrgas. Det är inte vad som sker. <strong>Syrgasen kommer från vattenmolekylerna.</strong></p>
+          <p>Det går att visa experimentellt. Om man ger en växt vatten där syreatomerna är av en tyngre sort än vanligt dyker de tyngre atomerna upp i syrgasen som växten avger. Ger man i stället tyngre syre i koldioxiden hamnar det i sockret, inte i syrgasen.</p>
+          <p>Anledningen är att fotosyntesen består av två skeden. I det första används ljusenergin till att slita isär vattenmolekyler. Syret därifrån blir över och avges som syrgas. Det som tas till vara är elektronerna och energin.</p>
+          <p>I det andra skedet används den energin till att bygga in koldioxidens kolatomer i en sockermolekyl. Det skedet behöver inget ljus alls — det behöver bara energin från det första.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k1-a8.svg" alt="Ett blad som tar upp koldioxid från luften och vatten från marken, med ljusenergi uppifrån. Ut går syrgas. Inuti bladet bildas glukos. Sex kolatomer följs från koldioxiden in i glukosen.">
+            <figcaption>Vid fotosyntesen förs kolatomerna från luftens koldioxid in i glukosen.</figcaption>
+          </figure>
+          <p>Sammanlagt rör det sig om tiotals delreaktioner, var och en med sitt eget enzym.</p>
+          <p><strong>Om modellen.</strong> Sammanfattningsformeln är inte fel, den är en summering. Den visar vad som går in och vad som kommer ut, och den duger utmärkt för att följa kolatomerna — vilket är precis vad avsnittet ska göra. Men en summering kan inte visa vägen. Vill man veta varifrån syret kommer måste man öppna de två skedena.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Cellandningen bryter ner socker och frigör energi ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Alla celler behöver energi</h2>
+          <p>Levande celler behöver energi hela tiden.</p>
+          <p>En växt behöver energi för att växa, flytta ämnen inom sig och bygga nya celler. Ett djur behöver energi till att röra sig, hålla värmen och få cellerna att fungera.</p>
+          <p>Energin finns lagrad i glukosmolekylen. Frågan är hur cellen får ut den.</p>
+          <h2>Glukos reagerar med syrgas</h2>
+          <p>Svaret är <strong>cellandningen</strong>.</p>
+          <p>Vid cellandningen reagerar glukos med syrgas. Glukosmolekylen bryts ner, och det bildas koldioxid och vatten.</p>
+          <p>druvsocker + syrgas \(\rightarrow\) koldioxid + vatten + energi</p>
+          <p>Med kemiska formler:</p>
+          <p>\(\ce{C6H12O6}\) + 6 \(\ce{O2}\) \(\rightarrow\) 6 \(\ce{CO2}\) + 6 \(\ce{H2O}\) + energi</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Följ de mörka prickarna genom cellen. Var hamnar de den här gången?</li>
+              <li>Jämför pilarna med förra bilden. Vilka pilar har bytt riktning?</li>
+              <li>Energipilen pekar ut ur cellen. Varifrån kom den energin från början?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k1-a9.svg" alt="En cell som tar in glukos och syrgas. Ut går koldioxid, vatten och energi. Sex kolatomer följs från glukosen till koldioxiden.">
+            <figcaption>Vid cellandningen hamnar kolatomerna från sockret i koldioxid igen.</figcaption>
+          </figure>
+          <h2>Energin skapas inte, den frigörs</h2>
+          <p>Det är lätt att tro att cellandningen tillverkar energi. Det gör den inte.</p>
+          <p>Energin fanns redan där, lagrad inuti glukosmolekylen. När molekylen bryts ner och nya ämnen bildas kan en del av den energin frigöras och användas.</p>
+          <p>Och varifrån kom energin från början? Från solen. Det var solljuset som en gång tillförde energin när växten byggde glukosen.</p>
+          <p>Energin i din kropp just nu är alltså solenergi som tagit en omväg.</p>
+          <h2>Kolatomerna går tillbaka till luften</h2>
+          <p>Följ kolatomerna igen. Glukosmolekylen innehöll sex kolatomer. Efter cellandningen sitter de sex kolatomerna i sex koldioxidmolekyler.</p>
+          <p>Koldioxiden andas ut, och kolet är tillbaka i luften.</p>
+          <h2>Både växter och djur har cellandning</h2>
+          <p>Här gör många fel. Man tror att växter har fotosyntes och djur har cellandning, som om de delade upp arbetet mellan sig.</p>
+          <p>Så är det inte. <strong>Växter har både fotosyntes och cellandning.</strong> Fotosyntesen bygger upp glukosen, och cellandningen gör att växtens egna celler kan använda energin i den.</p>
+          <h2>Även döda organismer lämnar tillbaka sitt kol</h2>
+          <p>När en växt eller ett djur dör finns kolet kvar i kroppen.</p>
+          <p>Då tar nedbrytarna vid — framför allt bakterier och svampar. De bryter ner det döda materialet och använder energin i det. Även de har cellandning, och även de avger koldioxid.</p>
+          <p>Så återvänder kolet från döda organismer till luften.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Cellerna behöver energi och får den ur glukosen</h2>
+          <p class="inledning">Levande celler behöver energi. Växter behöver energi för att växa, transportera ämnen och bygga nya celler. Djur behöver energi till rörelse, kroppsvärme och cellernas arbete.</p>
+          <p>Energin kan frigöras genom <strong>cellandningen</strong>. Vid cellandningen reagerar glukos med syrgas. Glukosmolekylen bryts ner och det bildas koldioxid och vatten.</p>
+          <p>Cellandningen kan sammanfattas:</p>
+          <p>druvsocker + syrgas \(\rightarrow\) koldioxid + vatten + energi</p>
+          <p>Med kemiska formler skrivs reaktionen:</p>
+          <p>\(\ce{C6H12O6}\) + 6 \(\ce{O2}\) \(\rightarrow\) 6 \(\ce{CO2}\) + 6 \(\ce{H2O}\) + energi</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k1-a9.svg" alt="En cell som tar in glukos och syrgas. Ut går koldioxid, vatten och energi. Sex kolatomer följs från glukosen till koldioxiden.">
+            <figcaption>Cellandningen frigör den energi som lagrades vid fotosyntesen, och kolatomerna återgår till koldioxid.</figcaption>
+          </figure>
+          <h2>Energin skapas inte i cellandningen, den frigörs</h2>
+          <p>Energin fanns lagrad som <strong>kemisk energi</strong> i glukosmolekylen. När glukosen reagerar med syrgas och nya ämnen bildas kan en del av denna energi frigöras och användas av cellen. Det var solljuset som en gång tillförde energin, vid fotosyntesen.</p>
+          <p>Samtidigt händer något viktigt med kolatomerna. De sex kolatomer som fanns i glukosmolekylen hamnar i sex koldioxidmolekyler. Kolet kan därefter återvända till atmosfären.</p>
+          <h2>Både växter och djur har cellandning</h2>
+          <p>Det är alltså fel att tänka att växter bara utför fotosyntes medan djur utför cellandning. <strong>Växter utför båda.</strong> Fotosyntesen bygger upp energirika organiska ämnen, medan cellandningen gör att växtens celler kan använda den energi som finns lagrad i dem.</p>
+          <p>När organismer dör finns mycket av deras kol fortfarande kvar i kroppen. Nedbrytare, framför allt bakterier och svampar, bryter då ner det organiska materialet. Även de har cellandning och avger därför koldioxid. På så sätt återförs kol från döda organismer till atmosfären.</p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Energin kommer inte i ett svep</h2>
+          <p>Standardtexten säger att cellandningen frigör energi som cellen kan använda. Det stämmer, men formuleringen döljer ett problem som cellen måste lösa.</p>
+          <p>En glukosmolekyl innehåller mycket energi. Skulle den frigöras på en gång, som när socker brinner i en låga, blev det mest värme — och en cell som får all sin energi som en plötslig värmepuls skadas i stället för att fungera.</p>
+          <p>Cellen bryter därför ner glukosen <strong>i många små steg</strong>. Vid varje steg frigörs en liten del av energin, och den fångas upp direkt.</p>
+          <p>Det som fångar upp den är en molekyl som heter <strong>ATP</strong>. Man kan se ATP som cellens uppladdningsbara batteri. Energin från nedbrytningen laddar ATP, och när cellen ska göra något — dra ihop en muskel, bygga ett protein, flytta ett ämne genom ett cellmembran — används ATP.</p>
+          <p>En glukosmolekyl räcker till ungefär 30 ATP-molekyler.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k1-a9.svg" alt="En cell som tar in glukos och syrgas. Ut går koldioxid, vatten och energi. Sex kolatomer följs från glukosen till koldioxiden.">
+            <figcaption>Cellandningen frigör den energi som lagrades vid fotosyntesen, och kolatomerna återgår till koldioxid.</figcaption>
+          </figure>
+          <p>Syrgasens roll är dessutom inte den man gissar. Syret deltar inte i början, när glukosen börjar brytas ner, utan allra sist. Det tar emot elektronerna i slutet av kedjan och blir vatten. Utan syre stannar hela kedjan upp, och därför dör celler som inte får syre — inte för att glukosen tar slut, utan för att det saknas något att lämna elektronerna till.</p>
+          <p><strong>Om modellen.</strong> Standardnivåns formel stämmer i sin bokföring: glukos och syre in, koldioxid och vatten ut. Ordet "energi" på högerkanten är däremot ingen produkt, utan en påminnelse. I cellen finns aldrig någon lös energi — det finns laddade ATP-molekyler, och de tillverkas stegvis.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Fotosyntes och cellandning är varandras motsatser ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Det ena bygger upp, det andra bryter ner</h2>
+          <p>Ställ de två processerna bredvid varandra.</p>
+          <p>Fotosyntesen tar <strong>koldioxid och vatten</strong> och bygger glukos och syrgas. Den behöver energi från solljuset.</p>
+          <p>Cellandningen tar <strong>glukos och syrgas</strong> och bildar koldioxid och vatten. Den frigör energi.</p>
+          <p>Titta på orden. Det som är råvaror i den ena processen är produkter i den andra, och tvärtom. Därför kallas de motsatta processer.</p>
+          <h2>Tillsammans blir de ett kretslopp</h2>
+          <p>Eftersom de två processerna hakar i varandra kan samma kolatomer användas om och om igen.</p>
+          <p>En kolatom sitter i luftens koldioxid. Fotosyntesen för in den i en glukosmolekyl i ett blad. Ett djur äter bladet, och kolatomen hamnar i djurets kropp. Djurets cellandning bryter ner sockret, och kolatomen hamnar i en koldioxidmolekyl som andas ut.</p>
+          <p>Nu är kolatomen tillbaka där den började, redo att tas upp av en växt igen.</p>
+          <p>Det här kallas <strong>kolets kretslopp</strong>.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Följ en kolatom hela varvet runt. Hur många pilar passerar du?</li>
+              <li>Vilka pilar går uppåt, mot atmosfären? Vad har de gemensamt?</li>
+              <li>Den bleka pilen har ingen text. Vart tror du kolet tar vägen där?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k1-a10.svg" alt="En sluten cirkel där kol går från atmosfären till växter genom fotosyntes, vidare till djur genom näringskedjan, och tillbaka till atmosfären genom cellandning och nedbrytning. En blek streckad pil pekar ut ur cirkeln.">
+            <figcaption>Kolet går runt i en cirkel mellan luften och det levande. Den bleka pilen leder någon annanstans.</figcaption>
+          </figure>
+          <h2>Processerna är ändå inte varandras spegelbilder</h2>
+          <p>En sak är värd att notera. Fotosyntesen behöver ljus och sker bara i gröna växtdelar. Den stannar av på natten.</p>
+          <p>Cellandningen pågår hela tiden, i varje cell, dygnet runt. En växt andas alltså även när det är mörkt.</p>
+          <p>De är motsatser i vad de gör med ämnena, men de körs inte lika ofta.</p>
+          <h2>Kretsloppet kan vara i balans</h2>
+          <p>Så länge ungefär lika mycket kol tas upp ur luften som lämnas tillbaka är kretsloppet i balans. Mängden koldioxid i luften håller sig då ungefär lika stor.</p>
+          <p>Hur länge en enskild kolatom är borta från luften varierar mycket. Sitter den i ett löv kan den vara tillbaka inom ett år. Sitter den i en trädstam kan den bli kvar i hundra år.</p>
+          <p>Men allt kol går inte runt så här. <strong>En del kol lämnar det snabba kretsloppet och blir liggande i mycket lång tid. Hur det går till, och vad som händer när det kolet kommer tillbaka, ska vi undersöka längre fram.</strong></p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Produkterna i den ena processen är råvaror i den andra</h2>
+          <p class="inledning">Vid fotosyntesen används <strong>koldioxid och vatten</strong> för att bygga glukos och syrgas. Energi från solljuset måste tillföras. Vid cellandningen används <strong>glukos och syrgas</strong>, och det bildas koldioxid och vatten. Samtidigt frigörs energi som cellerna kan använda.</p>
+          <p>Produkterna från den ena processen är alltså råvaror i den andra. Därför kan fotosyntesen och cellandningen beskrivas som <strong>motsatta processer</strong>.</p>
+          <h2>Tillsammans bildar processerna kolets kretslopp</h2>
+          <p>Genom dessa båda processer rör sig kol hela tiden mellan atmosfären och levande organismer. Växterna tar upp koldioxid och bygger in kolet i organiska ämnen. Kolet förs vidare genom näringskedjor och kan sedan återföras till atmosfären genom cellandning och nedbrytning.</p>
+          <p>Detta är en viktig del av <strong>kolets kretslopp</strong>.</p>
+          <p>Processerna är ändå inte varandras spegelbilder i allt. Fotosyntesen kräver ljus och sker bara i gröna växtdelar, medan cellandningen pågår i alla celler dygnet runt.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k1-a10.svg" alt="En sluten cirkel där kol går från atmosfären till växter genom fotosyntes, vidare till djur genom näringskedjan, och tillbaka till atmosfären genom cellandning och nedbrytning. En blek streckad pil pekar ut ur cirkeln.">
+            <figcaption>I det snabba kretsloppet balanserar upptaget mot återföringen. En del kol lämnar ändå cirkeln.</figcaption>
+          </figure>
+          <h2>Kretsloppet är i balans så länge upptag och återföring är lika stora</h2>
+          <p>Kretsloppet är i balans så länge ungefär lika mycket kol tas upp från atmosfären som återförs till den. Hur länge en enskild kolatom stannar utanför luften varierar mycket: den kan vara tillbaka inom ett år om den sitter i ett löv, men stanna i hundra år i en trädstam.</p>
+          <p>Men allt kol cirkulerar inte snabbt mellan luften och det levande. <strong>En del kol lämnar det snabba kretsloppet och lagras under mycket lång tid. Hur det sker, och vad som händer när detta kol återförs till atmosfären, kommer vi att undersöka längre fram.</strong></p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Kolet går runt, men energin gör det inte</h2>
+          <p>Standardtexten kallar fotosyntes och cellandning för motsatta processer och visar att de tillsammans bildar ett kretslopp. Det gäller för <strong>kolatomerna</strong>. För energin gäller något annat.</p>
+          <p>Följ de två formlerna igen. Kolatomerna som lämnar luften kommer tillbaka till luften. Samma atomer, om och om igen, i det oändliga.</p>
+          <p>Energin gör inte det. Solljus kommer in i systemet, en del av det lagras i glukos, och vid varje steg därefter går en del förlorad som värme. Värmen strålar ut i rymden och kommer aldrig tillbaka.</p>
+          <p>Det syns tydligt i en näringskedja. Av energin i en växt hamnar bara omkring en tiondel i djuret som äter den. Resten har blivit värme. Därför kan näringskedjor inte vara hur långa som helst.</p>
+          <p>Energin <strong>flödar</strong> alltså rakt igenom systemet, från solen till rymden. Materia cirkulerar, energi passerar. Det är en av ekologins mest grundläggande regler, och den gäller inte bara kol utan varje grundämne som ingår i levande material.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k1-a10.svg" alt="En sluten cirkel där kol går från atmosfären till växter genom fotosyntes, vidare till djur genom näringskedjan, och tillbaka till atmosfären genom cellandning och nedbrytning. En blek streckad pil pekar ut ur cirkeln.">
+            <figcaption>I det snabba kretsloppet balanserar upptaget mot återföringen. En del kol lämnar ändå cirkeln.</figcaption>
+          </figure>
+          <p>Det förklarar också varför jorden behöver solen kontinuerligt. Om solen slocknade skulle kolatomerna finnas kvar precis som förut — men ingenting skulle kunna drivas med dem.</p>
+          <p><strong>Om modellen.</strong> Standardnivån skriver energi i båda reaktionsformlerna, som om den gick åt det ena hållet och tillbaka igen. Det är en bekväm symmetri, och den gör formlerna lätta att jämföra. Men energin tar aldrig samma väg tillbaka. Kretsloppet är ett kretslopp för materia — aldrig för energi.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-3-kol-mellan-luften-och-det-levande.json"
+           data-avsnitt="a3_kol-mellan-luften-och-det-levande">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-3-kol-mellan-luften-och-det-levande.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a3_kol-mellan-luften-och-det-levande';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'kolatomen';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

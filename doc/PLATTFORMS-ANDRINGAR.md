@@ -45,6 +45,8 @@
 
 | 2026-09-13 | B | Kemibok, avsnitt 3 C (flerradiga bildtexter) | `figcaption` i `.brodtext-bild` är centrerad (ärver `text-align:center`), kursiv, 0.9 rem och `--muted` (5.5:1 på paper – klarar AA). Över två rader hoppar vänsterkanten och texten blir svårläst; de tre dämpningarna (mindre, kursiv, ljusare) samverkar. Samma i Geografi och Historia. | **Kandidat för 🟡.** Rekommenderad lösning: `.brodtext-bild figcaption { display:inline-block; text-align:left; }` – enradiga bildtexter krymper till innehållet och centreras av figuren, flerradiga fyller bredden och vänsterställs; kursiven behålls. Färgen (`--muted`) ändras **inte**: kontrasten klarar kravet (5.5:1), och en mörkare bildtext suddar ut skillnaden mot brödtexten. Plattformsvärde – ändras i alla böcker samtidigt. |
 
+| 2026-09-15 | B | Kemibok, Organisk kemi 1 Kolatomen (fotosyntesformeln) | `verktyg/lib-notation.js` (Unicode → mhchem, delad av alla kemins byggverktyg) har fått stöd för **märkt pil** `→[text]` → `\ce{->[text]}`, t.ex. `→[ljus]`; `arReaktion()` godtar den i fristående reaktionsrader så att de blir display-formler. Ombygge av alla 23 sidor i Syror och baser efter ändringen gav **noll diff**. | Konventionen `→[etikett]` i leveranser dokumenteras i KEMI-TILLAGG §1 vid nästa revision; samma skrivsätt kan användas för andra reaktionsvillkor (värme, katalysator). |
+
 *(Tom rad ovan är till för nya poster — fyll på underifrån)*
 
 ### Exempel på hur en post fylls i:

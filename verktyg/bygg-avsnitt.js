@@ -33,11 +33,13 @@ const { DELKAPITEL } = require('./bygg-avsnitt-konfig.js');   // per-avsnitt kon
 if (!DELKAPITEL[DKID]) { console.error('okänt delkapitel ' + DKID); process.exit(2); }
 const K = DELKAPITEL[DKID].avsnitt[N];
 if (!K) { console.error('ingen konfiguration för avsnitt ' + N); process.exit(2); }
-const KAP = { id: 'syror-och-baser', titel: 'Syror och baser' }, DK = { id: DKID, titel: DELKAPITEL[DKID].titel };
+// kapitel ur konfigurationen (DELKAPITEL[dk].kapitel), standard Syror och baser; leveransmappen kan vara en undermapp
+// (DELKAPITEL[dk].byggmapp, t.ex. 'bygg' för kolatomen där ett verktyg sätter ihop byggfilen ur leveransens egna filer)
+const KAP = DELKAPITEL[DKID].kapitel || { id: 'syror-och-baser', titel: 'Syror och baser' }, DK = { id: DKID, titel: DELKAPITEL[DKID].titel };
 const B4 = '../../../../';
 
 // ---------- läs och dela upp leveransen ----------
-const LEV = path.join(ROT, 'doc', 'leveranser', DK.id);   // leveransfiler per delkapitel
+const LEV = path.join(ROT, 'doc', 'leveranser', DK.id, DELKAPITEL[DKID].byggmapp || '');   // leveransfiler per delkapitel (ev. undermapp)
 const md = fs.readFileSync(path.join(LEV, `avsnitt-${N}.md`), 'utf8').replace(/\r\n/g, '\n');
 const stopp = md.search(/\n# (Volym|Vad jag ändrat|Vad jag gjort|Djupdykningar|Repetitionsdelkapitlet|Anmärkningar|Om nivåuppdelningen|Att bestämma|Delkapitlet|Bearbetningar)/);
 const kropp = stopp > 0 ? md.slice(0, stopp) : md;

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samma kolatomer kan bygga helt olika ämnen – Kolatomen – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Kolatomen</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">2. Samma kolatomer kan bygga helt olika ämnen</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 2</span>
+      <h1>Samma kolatomer kan bygga helt olika ämnen</h1>
+      <p class="subtitel">— diamant, grafit och kolets andra former —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Rent kol finns i flera former med olika egenskaper</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Diamant är hårt och grafit är mjukt av samma skäl: bindningarnas mönster</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Amorft kol, fullerener och grafen är kolets övriga former</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-samma-kolatomer-olika-amnen">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Rent kol finns i flera former med olika egenskaper ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Ett grundämne kan finnas i flera olika former</h2>
+          <p>Vanligtvis tänker man sig att ett grundämne är en enda sak. Järn är järn, syre är syre.</p>
+          <p>Men det stämmer inte alltid. Ibland kan atomerna av samma grundämne sitta ihop på flera olika sätt. Då bildas flera olika ämnen, fast alla består av exakt samma sorts atomer.</p>
+          <p>Kol är det tydligaste exemplet. Rent kol kan finnas som diamant, som grafit, som grafen och som fullerener.</p>
+          <h2>Diamant och grafit är varandras motsatser</h2>
+          <p>Diamant är genomskinligt. Det är det hårdaste ämne vi känner till. Det leder inte elektrisk ström.</p>
+          <p>Grafit är mörkt och matt. Det är så mjukt att det lossnar om man drar det mot ett papper. Det leder elektrisk ström.</p>
+          <p>Två ämnen kan knappast vara mer olika. Ändå innehåller båda bara kolatomer, och ingenting annat.</p>
+          <h2>Skillnaden sitter inte i atomerna</h2>
+          <p>Här är det lätt att tänka fel. Man kan tro att det måste vara något särskilt med kolatomerna i en diamant — att de på något sätt är finare eller hårdare.</p>
+          <p>Så är det inte. En kolatom i en diamant är exakt likadan som en kolatom i ett blyertsstift. Det går inte att se någon skillnad på dem.</p>
+          <h2>Det är mönstret som avgör</h2>
+          <p>Skillnaden ligger i <strong>hur atomerna sitter ihop</strong>. Samma byggstenar kan sättas samman på olika sätt, och då får man material med helt olika egenskaper.</p>
+          <p>Tänk på legobitar. Samma låda kan bli ett torn eller en platt platta. Bitarna är desamma, men det du byggt är inte det.</p>
+          <p>Det här är en av kemins viktigaste tankar: ett ämnes egenskaper beror både på <strong>vilka atomer</strong> det innehåller och på <strong>hur atomerna är bundna till varandra</strong>.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <p class="inledning">När atomer av olika grundämnen binds samman kan nya ämnen med nya egenskaper bildas. Men även atomer av <strong>samma grundämne</strong> kan ibland ordnas på olika sätt och på så sätt bilda ämnen med helt olika egenskaper. Kol är ett tydligt exempel på detta.</p>
+          <p>Rent kol kan bland annat förekomma som diamant, grafit, grafen och fullerener. Alla består enbart av kolatomer. Det som skiljer dem åt är alltså inte vilka atomer de innehåller, utan <strong>hur kolatomerna är bundna till varandra och hur de är ordnade</strong>.</p>
+          <h2>Samma grundämne kan förekomma i flera former</h2>
+          <p>När samma grundämne kan förekomma i flera olika former brukar formerna kallas <strong>allotroper</strong>. Diamant och grafit är två av kolets mest välkända allotroper. Kol har fler allotroper än de flesta andra grundämnen.</p>
+          <h2>Diamant och grafit har helt olika egenskaper</h2>
+          <p>Både diamant och grafit består enbart av kolatomer, men deras egenskaper är mycket olika. Diamant är genomskinligt, hårt och leder inte ström. Grafit är mörkt, mjukt, leder ström och går lätt att gnida av mot ett papper.</p>
+          <p>Det finns inget i atomerna som förklarar skillnaden. En kolatom i en diamant är exakt likadan som en kolatom i grafit.</p>
+          <h2>Det är ordningen mellan atomerna som avgör</h2>
+          <p>Förklaringen finns i hur kolatomerna sitter ihop. <strong>Ett ämnes egenskaper bestäms alltså inte bara av vilka atomslag som ingår, utan också av hur atomerna är bundna och ordnade.</strong></p>
+          <p>Detta är en viktig princip inom kemin, och den gäller långt utanför kolets värld. Samma slags byggstenar kan ge mycket olika material om de sätts samman på olika sätt. Det är också skälet till att kemister ritar strukturformler och inte nöjer sig med molekylformler.</p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Diamanter är inte för evigt</h2>
+          <p>Standardtexten ställer diamant och grafit sida vid sida som två likvärdiga former av kol. Det är en rimlig bild, men den döljer något överraskande: de två formerna är inte lika stabila.</p>
+          <p>Vid vanligt tryck och vanlig temperatur är <strong>grafit</strong> den form som kol helst antar. Diamanten ligger högre i energi. Det betyder att en diamant, kemiskt sett, långsamt borde omvandlas till grafit.</p>
+          <p>Att det inte märks beror inte på att omvandlingen är omöjlig, utan på att den är extremt långsam. För att komma igång måste ett stort antal bindningar brytas samtidigt, och den tröskeln passeras i princip aldrig vid rumstemperatur. Omvandlingen tar längre tid än jordens ålder.</p>
+          <p>Diamanter bildas därför inte där de är stabila, utan där trycket är så högt att förhållandet kastas om — djupt nere i jordens mantel. De diamanter vi hittar har förts upp till ytan av vulkanisk aktivitet och sitter sedan fast i sin form.</p>
+          <p>Ett ämne som ligger kvar i en form som inte är den mest stabila kallas <strong>metastabilt</strong>.</p>
+          <p><strong>Om modellen.</strong> Standardnivån behandlar diamant och grafit som två jämbördiga alternativ, och till det avsnittet handlar om — att struktur ger egenskaper — fungerar det fint. Men "olika former av samma grundämne" antyder att formerna vore likvärdiga. Det är de inte. Den ena är kolets vilotillstånd, den andra ett tillstånd som råkat bli fast.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Diamant är hårt och grafit är mjukt av samma skäl: bindningarnas mönster ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>I diamant binder varje kolatom till fyra andra</h2>
+          <p>I en diamant sitter varje kolatom ihop med fyra andra kolatomer. Bindningarna går åt fyra olika håll i rummet, ungefär som strålar från en mittpunkt.</p>
+          <p>Nästa kolatom binder på samma sätt till fyra nya. Och nästa. Så fortsätter det genom hela kristallen.</p>
+          <p>Resultatet är ett enda stort nätverk. Man kan säga att hela diamanten är en enda molekyl.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Välj en kolatom i vänstra bilden och räkna strecken från den. Gör samma sak till höger.</li>
+              <li>Leta efter de prickade linjerna. Var i bilden finns de?</li>
+              <li>Grafit går att gnida av mot ett papper, men inte diamant. Vilken del av bilden förklarar det?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k1-a5.svg" alt="Till vänster diamantens nätverk där varje kolatom binder åt fyra håll. Till höger grafitens skikt av sexkantiga ringar med prickade linjer mellan skikten som visar svaga krafter.">
+            <figcaption>Samma sorts atomer, två helt olika mönster. Det är mönstret som gör diamanten hård och grafiten mjuk.</figcaption>
+          </figure>
+          <h2>Därför är diamant så hårt</h2>
+          <p>För att repa eller bryta en diamant räcker det inte att lossa på några få atomer. Man måste bryta ett stort antal starka bindningar samtidigt, och bindningarna håller åt alla håll.</p>
+          <p>Det finns ingen svag riktning att attackera. Därför är diamant det hårdaste ämne vi känner till.</p>
+          <p>Hårdheten är användbar. Diamanter sitter i borrkronor och i verktyg som skär i glas och sten. Slipade diamanter används också i smycken.</p>
+          <p>Diamanter behöver inte komma ur marken. De går att tillverka genom att kol utsätts för mycket högt tryck och hög temperatur.</p>
+          <h2>I grafit binder varje kolatom till bara tre andra</h2>
+          <p>I grafit sitter varje kolatom ihop med tre andra kolatomer i stället för fyra. De bildar sexkantiga ringar som ligger sida vid sida, som ett platt nät.</p>
+          <p>Näten ligger staplade ovanpå varandra i tunna skikt.</p>
+          <h2>Därför är grafit mjukt</h2>
+          <p>Inne i ett skikt är bindningarna starka. Men <strong>mellan</strong> skikten är krafterna svaga.</p>
+          <p>Det betyder att skikten kan glida över varandra, ungefär som kortlekens kort. Ett skikt kan också lossna helt.</p>
+          <p>Det är precis det som händer i en blyertspenna. Stiftet är grafit. När du drar det mot pappret lossnar skikt som blir kvar som ett mörkt streck.</p>
+          <p>Grafit leder dessutom elektrisk ström, vilket diamant inte gör.</p>
+          <h2>Samma atomer, olika mönster</h2>
+          <p>Det är alltså samma kolatomer i båda materialen. I diamant bildar de ett starkt nätverk åt alla håll. I grafit bildar de starka skikt som hålls ihop svagt.</p>
+          <p>Hela skillnaden mellan det hårdaste ämnet vi känner till och något som lossnar mot ett papper sitter i mönstret.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>I diamant binder varje kolatom till fyra andra</h2>
+          <p class="inledning">I diamant binder varje kolatom till <strong>fyra andra kolatomer</strong>. Bindningarna går åt olika håll och bildar ett stort tredimensionellt nätverk. Hela diamantkristallen kan ses som en enda sammanhängande struktur av starka kovalenta bindningar.</p>
+          <p>För att repa eller deformera diamanten måste många av dessa bindningar brytas. Därför är diamant det hårdaste ämne vi känner till. Just hårdheten används: diamanter sitter i borrkronor och i verktyg för att skära glas och sten. Slipade diamanter används också i smycken. Diamanter kan dessutom tillverkas på konstgjord väg, genom att kol utsätts för mycket högt tryck och hög temperatur.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k1-a5.svg" alt="Till vänster diamantens nätverk där varje kolatom binder åt fyra håll. Till höger grafitens skikt av sexkantiga ringar med prickade linjer mellan skikten som visar svaga krafter.">
+            <figcaption>I diamant går bindningarna åt alla håll. I grafit är de starka inom skiktet men svaga mellan skikten.</figcaption>
+          </figure>
+          <h2>I grafit binder varje kolatom till tre andra</h2>
+          <p>I grafit binder varje kolatom till <strong>tre andra kolatomer</strong> och bildar platta nätverk av sexkantiga ringar. Nätverken ligger ovanpå varandra som tunna skikt.</p>
+          <p>Inne i varje skikt är bindningarna starka. Mellan skikten är krafterna däremot mycket svagare. Skikten kan därför glida över varandra och lossna lätt. Det är den egenskapen man använder i blyertspennan: stiftet består av grafit, och när det dras mot papperet lossnar skikt som blir kvar som ett mörkt streck.</p>
+          <p>Grafit leder också elektrisk ström. När varje kolatom bildat tre bindningar finns elektroner kvar som kan röra sig över skiktet.</p>
+          <h2>Skillnaden ligger i mönstret, inte i atomerna</h2>
+          <p>Det är samma kolatomer i båda materialen. I diamant bildar de ett starkt nätverk i alla riktningar. I grafit bildar de starka skikt som hålls samman svagt med varandra.</p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Den fjärde elektronen förklarar varför grafit leder ström</h2>
+          <p>Standardtexten säger att grafit leder ström eftersom det finns elektroner som kan röra sig. Det är sant men ofullständigt, och frågan <em>varför</em> de kan röra sig har ett tydligt svar.</p>
+          <p>En kolatom har fyra elektroner att binda med. I diamant används alla fyra till bindningar mot fyra grannar. Varje elektron sitter låst i en bindning, och ingen är fri att förflytta sig. Därför leder diamant inte ström.</p>
+          <p>I grafit binder varje kolatom till bara tre grannar. Tre elektroner går åt till det. <strong>Den fjärde blir över.</strong> De överblivna elektronerna hör inte till någon enskild bindning utan rör sig fritt över hela skiktet. När man lägger på en spänning vandrar de, och det är elektrisk ström.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k1-a5.svg" alt="Till vänster diamantens nätverk där varje kolatom binder åt fyra håll. Till höger grafitens skikt av sexkantiga ringar med prickade linjer mellan skikten som visar svaga krafter.">
+            <figcaption>I diamant går bindningarna åt alla håll. I grafit är de starka inom skiktet men svaga mellan skikten.</figcaption>
+          </figure>
+          <p>Detta förklarar också en annan skillnad. Grafit leder ström <strong>längs</strong> skikten men mycket sämre tvärs igenom dem, eftersom elektronerna rör sig inuti ett skikt och inte hoppar mellan dem. Grafit leder alltså olika bra i olika riktningar.</p>
+          <p>Samma överblivna elektroner ger grafen dess ledningsförmåga, och de gör också att grafit är mörkt: elektronerna absorberar ljus av alla våglängder. Diamant, där alla elektroner sitter låsta, släpper igenom ljuset och är genomskinlig.</p>
+          <p><strong>Om modellen.</strong> Standardnivån säger "det finns elektroner som kan röra sig" och stannar där. Den fjärde elektronen är det som binder ihop grafitens tre mest kända egenskaper — att den leder ström, att den är mörk och att den leder olika bra åt olika håll. En och samma orsak, tre följder.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Amorft kol, fullerener och grafen är kolets övriga former ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Amorft kol har inget regelbundet mönster</h2>
+          <p>Diamant och grafit har båda ett tydligt mönster som upprepas.</p>
+          <p>Men kol kan också finnas utan något sådant mönster. Då kallas det <strong>amorft kol</strong>. Ordet amorf betyder ungefär formlös.</p>
+          <p>Sot och träkol innehåller mycket amorft kol. Där finns små områden som liknar grafit, men de ligger huller om buller och bildar ingen stor sammanhängande kristall.</p>
+          <h2>Aktivt kol är fullt av hålrum</h2>
+          <p>Om man behandlar träkol på rätt sätt blir det fullt av små hålrum och kanaler. Då kallas det <strong>aktivt kol</strong>.</p>
+          <p>Hålrummen gör att materialet får en väldigt stor yta. Ett enda gram aktivt kol kan ha lika stor yta som en fotbollsplan, eftersom ytan finns inuti alla små hål.</p>
+          <p>Ämnen som passerar förbi fastnar på den ytan. Det gör aktivt kol användbart. Det sitter i filter i gasmasker, och används inom sjukvården vid vissa förgiftningar, där det binder giftet i magen innan kroppen hinner ta upp det.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Följ en av kanalerna från ytan och in i materialet.</li>
+              <li>Var i bilden ligger de röda partiklarna — i själva kolet eller i hålrummen?</li>
+              <li>Ett gram aktivt kol kan ha lika stor yta som en fotbollsplan. Vad i bilden gör det möjligt?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k1-a6.webp" alt="Ett stycke träkol i genomskärning, fullt av porer och kanaler. I några av porerna ligger små röda partiklar.">
+            <figcaption>Aktivt kol är fullt av små hålrum. Ämnen som passerar fastnar på ytan inne i hålrummen.</figcaption>
+          </figure>
+          <h2>Fullerener är burar av kolatomer</h2>
+          <p>I en <strong>fulleren</strong> sitter kolatomerna ihop i en sluten form, som ett skal utan innehåll.</p>
+          <p>Den mest kända fullerenen består av 60 kolatomer och skrivs \(\ce{C60}\). Den är byggd av femkantiga och sexkantiga ringar och ser nästan ut som en liten fotboll.</p>
+          <p>Kolatomer kan också bilda långa rör, <strong>nanorör</strong>. De är mycket starka för sin vikt och leder elektrisk ström. De används i elektronik och i nya material.</p>
+          <h2>Grafen är ett enda skikt grafit</h2>
+          <p>Grafit består av skikt som ligger på varandra. Om man tar loss ett enda av de skikten får man <strong>grafen</strong>.</p>
+          <p>Grafen är alltså ett nät av sexkantiga ringar som bara är <strong>en atom tjockt</strong>. Tunnare än så kan ett material inte bli.</p>
+          <p>Trots att det är så tunt är grafen ungefär 200 gånger starkare än stål. Det är dessutom genomskinligt och går att böja, och det leder både ström och värme mycket bra.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna femkanterna i fullerenen. Sitter två femkanter någonsin bredvid varandra?</li>
+              <li>Jämför nätet i grafen med ett av skikten i förra bilden.</li>
+              <li>Vad skulle hända med arket längst till höger om man rullade ihop det?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k1-a7.svg" alt="Tre former av kol. En klotformad bur av fem- och sexkanter märkt \(\ce{C60}\), ett rör av sexkantigt nät, och ett plant ark av sexkanter märkt ett atomlager tjockt.">
+            <figcaption>Tre former av rent kol som upptäckts sent. Alla består bara av kolatomer.</figcaption>
+          </figure>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Amorft kol saknar regelbunden struktur</h2>
+          <p class="inledning">En form av kol kallas <strong>amorft kol</strong>. Ordet amorf betyder att materialet saknar ett regelbundet mönster över längre avstånd. Sot och träkol innehåller stora mängder sådant kol. Strukturen kan innehålla små områden som liknar grafit, men de ligger oregelbundet och bildar ingen stor kristall.</p>
+          <h2>Aktivt kol har en mycket stor yta</h2>
+          <p>Behandlas träkol så att det blir fullt av porer får man <strong>aktivt kol</strong>. Porerna gör att materialet får en enorm yta i förhållande till sin vikt. Ämnen som passerar fastnar på den ytan. Därför används aktivt kol i filter i gasmasker, och inom sjukvården vid vissa förgiftningar, där det binder giftet i magen innan kroppen hinner ta upp det.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k1-a6.webp" alt="Ett stycke träkol i genomskärning, fullt av porer och kanaler. I några av porerna ligger små röda partiklar.">
+            <figcaption>Porerna ger aktivt kol en mycket stor yta i förhållande till vikten, och det är på ytan ämnena fastnar.</figcaption>
+          </figure>
+          <h2>Fullerener är slutna burar av kolatomer</h2>
+          <p>I <strong>fullerener</strong> sitter kolatomerna ihop i slutna strukturer. Det mest kända exemplet består av 60 kolatomer, \(\ce{C60}\), och har formen av en nästan klotformad bur av femkantiga och sexkantiga ringar — ungefär som en fotboll. Kolatomer kan också bilda långa <strong>nanorör</strong>, som är mycket starka för sin vikt och leder elektrisk ström. De används i elektronik och i nya material.</p>
+          <h2>Grafen är ett enda skikt grafit</h2>
+          <p><strong>Grafen</strong> är ett enda lager av grafit: ett nät av sexkantiga ringar som bara är en atom tjockt. Trots det är grafen omkring 200 gånger starkare än stål. Det är dessutom genomskinligt och böjligt, och leder både ström och värme mycket bra.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k1-a7.svg" alt="Tre former av kol. En klotformad bur av fem- och sexkanter märkt \(\ce{C60}\), ett rör av sexkantigt nät, och ett plant ark av sexkanter märkt ett atomlager tjockt.">
+            <figcaption>Fullerenens bur, nanorörets cylinder och grafenets enda skikt är tre sätt att ordna sexkantiga nät av kolatomer.</figcaption>
+          </figure>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Aktivt kol tar inte upp ämnen, det fångar dem på ytan</h2>
+          <p>Standardtexten säger att ämnen "fastnar på ytan" i aktivt kol. Formuleringen är vald med avsikt, för det är lätt att tro något annat: att kolet suger upp giftet ungefär som en svamp suger upp vatten.</p>
+          <p>Det är två olika saker, och de har olika namn.</p>
+          <p>När ett ämne tas upp <strong>i</strong> ett material och fördelar sig genom hela dess volym kallas det <strong>absorption</strong>. Svampen som suger upp vatten absorberar. Tarmen som tar upp näringsämnen absorberar.</p>
+          <p>När ett ämne i stället fastnar <strong>på</strong> en yta och stannar där kallas det <strong>adsorption</strong>. Det är vad aktivt kol gör. Molekylerna binder till porernas insida och tränger aldrig in i själva kolet.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k1-a6.webp" alt="Ett stycke träkol i genomskärning, fullt av porer och kanaler. I några av porerna ligger små röda partiklar.">
+            <figcaption>Porerna ger aktivt kol en mycket stor yta i förhållande till vikten, och det är på ytan ämnena fastnar.</figcaption>
+          </figure>
+          <p>Skillnaden är inte bara språklig. Vid absorption avgörs kapaciteten av materialets <strong>volym</strong> — en större svamp rymmer mer vatten. Vid adsorption avgörs den av materialets <strong>yta</strong>.</p>
+          <p>Och det förklarar varför aktivt kol tillverkas som det gör. Porerna tillför ingen massa, de tillför yta. Ett gram kan nå flera hundra kvadratmeter. Ett massivt kolstycke med samma vikt skulle ha en yta på några kvadratcentimeter och vore i stort sett verkningslöst.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k1-a7.svg" alt="Tre former av kol. En klotformad bur av fem- och sexkanter märkt \(\ce{C60}\), ett rör av sexkantigt nät, och ett plant ark av sexkanter märkt ett atomlager tjockt.">
+            <figcaption>Fullerenens bur, nanorörets cylinder och grafenets enda skikt är tre sätt att ordna sexkantiga nät av kolatomer.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> "Fastnar på ytan" är inte en förenkling av adsorption, utan en korrekt beskrivning av den. Det som saknas på Standardnivå är begreppet och kontrasten mot absorption. Skillnaden blir viktig längre fram i boken, när kroppens upptag av vitaminer och mineraler behandlas — där handlar det om absorption, och det är inte samma sak.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-2-samma-kolatomer-olika-amnen.json"
+           data-avsnitt="a2_samma-kolatomer-olika-amnen">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-2-samma-kolatomer-olika-amnen.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a2_samma-kolatomer-olika-amnen';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'kolatomen';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

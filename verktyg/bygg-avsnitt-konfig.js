@@ -151,6 +151,31 @@ const AVSNITT_SALTER = {
          'havsvatten.svg': { aktiv: ['enkel', 'standard'], enkel: 'Räknar man alla lösta salter tillsammans', standard: 'Därutöver finns bland annat sulfatjoner, magnesiumjoner, kalciumjoner och' }
        } }
 };
+// Organisk kemi 1 Kolatomen (arbetsorder 1–2, 2026-09-14/15). Byggfilerna sätts ihop av verktyg/satt-ihop-kolatomen.js
+// (doc/leveranser/kolatomen/bygg/) ur leveransens Standard-, Enkel/Fördjupnings- och bildrutor. Ankare per nivå: Standard =
+// stycket före bildrutan i avsnitt-N.md, Enkel/Fördjupning = motsvarande ställe i respektive text (Code, ordern säger
+// "samma placering på alla tre nivåerna"). Inga kärnpunkter/Öva förrän order 3.
+const AVSNITT_KOLATOMEN = {
+  1: { dd: [],
+       bilder: {
+         'k1-a1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'och att indelningen blev kvar.', standard: 'utan på hur kemin historiskt har', fordjupning: 'reaktionsmönster kemisterna tyckte hörde ihop.' },
+         'k1-a3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Den kan ha en enkel och en trippel.', standard: 'enkelbindning och en trippelbindning.', fordjupning: 'I tre dimensioner går det att komma längre isär än så.' },
+         'k1-a2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Propan blir CH₃CH₂CH₃.', standard: 'i stället för att ritas ut med tio streck.', fordjupning: 'bindningarna riktar sig.' },
+         'k1-a4.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'utan också hur de sitter.', standard: 'olika ämnen med olika egenskaper.', fordjupning: 'är större och kärnorna hamnar längre ifrån varandra.' }
+       } },
+  2: { dd: [],
+       bilder: {
+         'k1-a5.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Man kan säga att hela diamanten är en enda molekyl.', standard: 'genom att kol utsätts för mycket högt tryck och hög', fordjupning: 'När man lägger på en spänning vandrar de, och det är elektrisk' },
+         'k1-a6.webp': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'i magen innan kroppen hinner ta upp det.', standard: 'binder giftet i magen innan kroppen hinner ta upp det.', fordjupning: 'Molekylerna binder till porernas insida och tränger aldrig in i själva' },
+         'k1-a7.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'och det leder både ström och värme mycket bra.', standard: 'böjligt, och leder både ström och värme mycket bra.', fordjupning: 'skulle ha en yta på några kvadratcentimeter och vore i stort sett verkningslöst.' }
+       } },
+  3: { dd: [],
+       bilder: {
+         'k1-a8.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Sex in, sex ut. Inga kolatomer försvinner. De har bara flyttat.', standard: 'också sex. Inga kolatomer försvinner på vägen.', fordjupning: 'det behöver bara energin från det första.' },
+         'k1-a9.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + energi', standard: 'C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + energi', fordjupning: 'En glukosmolekyl räcker till ungefär 30 ATP-molekyler.' },
+         'k1-a10.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Det här kallas **kolets kretslopp**.', standard: 'medan cellandningen pågår i alla celler dygnet runt.', fordjupning: 'kol utan varje grundämne som ingår i levande material.' }
+       } }
+};
 const DELKAPITEL = {
   // bank: id-prefix och avsnittsoffset i kapitlets begreppsbank (en fil per kapitel; id/avsnitt unika över delkapitlen)
   repetition: { titel: 'Bakgrund och repetition', avsnitt: AVSNITT_REPETITION, bank: { idPrefix: '', avsnittOffset: 0 } },
@@ -162,6 +187,8 @@ const DELKAPITEL = {
   salter: { titel: 'Salter', avsnitt: AVSNITT_SALTER, bank: { idPrefix: 'Sa', avsnittOffset: 19, uteslut: {
     'salt': 'finns redan i neutralisation avsnitt 1, där eleven möter begreppet först (Joachim 2026-09-14)',
     'jonbindning': 'finns redan i repetition avsnitt 3, där eleven möter begreppet först (Joachim 2026-09-14)',
-    'sammansatt jon': 'finns redan i repetition avsnitt 1, där eleven möter begreppet först (Joachim 2026-09-14)' } } }
+    'sammansatt jon': 'finns redan i repetition avsnitt 1, där eleven möter begreppet först (Joachim 2026-09-14)' } } },
+  // Organisk kemi: eget kapitel (kapitel/organisk-kemi/), byggfiler i undermappen bygg/; bank läggs till i order 3
+  kolatomen: { titel: 'Kolatomen', kapitel: { id: 'organisk-kemi', titel: 'Organisk kemi' }, byggmapp: 'bygg', avsnitt: AVSNITT_KOLATOMEN, bank: { idPrefix: 'K1', avsnittOffset: 0 } }
 };
 module.exports = { DELKAPITEL };
