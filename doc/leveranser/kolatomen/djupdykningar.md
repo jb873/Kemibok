@@ -5,8 +5,9 @@
 > oförändrad – leveransen djupdykning-diamanten.md; dess huvud före första --- är metadata och skalas bort vid bygget).
 > Bygg: `node verktyg/bygg-djupdykning.js kolatomen`, kortet via `dd` i bygg-avsnitt-konfig.js (avsnitt 2).
 >
-> **Saknas i leveransen (fylls i av Joachim):** Korttext (1–2 meningar till kortet) och Underrubrik (hero). Platshållaren
-> nedan syns på kortet tills texten kommer.
+> Korttext och underrubrik levererade av Joachim 2026-09-15 (svar på rapporten). Ikon 💎 (Codes förslag, behållen).
+> Avslutningen "Om du vill veta mer" är avsiktlig (utgångspunkter för nästa djupdykning) och sätts som h3, plattformens
+> svagare rubriknivå, inte som en avdelning i texten.
 
 ---
 
@@ -15,6 +16,9 @@
 **Länkas från:** avsnitt 2, underdel B
 **Filnamn:** `djupdykning-diamanten.html`
 
-**Korttext:** {{Korttext saknas i leveransen – 1–2 meningar till kortet, levereras av Joachim.}}
+**Underrubrik:** *varför diamanter finns där de finns*
+
+**Korttext:** En diamant är samma grundämne som ett blyertsstift. Det som skiljer dem åt är ett tryck som bara finns
+femton mil ner i jorden — och ett vulkanutbrott som hade bråttom.
 
 **Brödtext:** djupdykning-diamanten.md

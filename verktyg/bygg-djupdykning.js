@@ -47,6 +47,7 @@ for (const [N, K] of Object.entries(DELKAPITEL[DKID].avsnitt)) {
     const block = lev.text.split(/\n\s*\n/).map(b => b.trim()).filter(b => b && b !== '---');   // --- (avdelare i leveransen) ritas inte
     const enstaka = [];
     const html = block.map(b => {
+      if (/^#{2,3} Om du vill veta mer$/.test(b)) { return `      <h3>Om du vill veta mer</h3>`; }   // avslutande frågor (Joachim 2026-09-15): plattformens svagare rubriknivå, ingen avdelning
       if (/^#{2,3} /.test(b)) { return `      <h2>${inline(b.replace(/^#{2,3} /, ''))}</h2>`; }   // ## (kolatomen) eller ### (repetition) → h2
       if (/^- /.test(b)) { return `      <ul>\n${b.split(/\n(?=- )/).map(l => `        <li>${inline(l.replace(/^- /, '').replace(/\n\s+/g, ' '))}</li>`).join('\n')}\n      </ul>`; }   // punktlista ("Om du vill veta mer")
       const p = b.replace(/\n/g, ' ');

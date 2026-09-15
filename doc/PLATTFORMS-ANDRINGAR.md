@@ -47,6 +47,8 @@
 
 | 2026-09-15 | B | Kemibok, Organisk kemi 1 Kolatomen (fotosyntesformeln) | `verktyg/lib-notation.js` (Unicode → mhchem, delad av alla kemins byggverktyg) har fått stöd för **märkt pil** `→[text]` → `\ce{->[text]}`, t.ex. `→[ljus]`; `arReaktion()` godtar den i fristående reaktionsrader så att de blir display-formler. Ombygge av alla 23 sidor i Syror och baser efter ändringen gav **noll diff**. | Konventionen `→[etikett]` i leveranser dokumenteras i KEMI-TILLAGG §1 vid nästa revision; samma skrivsätt kan användas för andra reaktionsvillkor (värme, katalysator). |
 
+| 2026-09-15 | B | Kemibok, Organisk kemi 1 Kolatomen (djupdykningen Diamanten) | `verktyg/bygg-djupdykning.js` (delad byggkod för alla kemins djupdykningar) sätter nu **tusentalsgrupper** (`1 200`, `100 000`, Avogadros tal) med `&nbsp;` så att de inte bryts över radslut – tidigare kunde "1" och "200" hamna på olika rader. Byggaren tar också kapitlet ur konfigurationen, tolkar `##`-rubriker, punktlistor och `---`, och sätter den avslutande rubriken *Om du vill veta mer* som h3. Ombygge av Syror och basers tretton djupdykningar: **identiska frånsett `&nbsp;`** (tre sidor berörda: starka-och-svaga, mol, ph-och-mol). | Samma regel bör gälla brödtext i avsnittssidorna (`bygg-avsnitt.js`) och i andra böcker – kandidat för plattformens byggverktyg när de delas. |
+
 *(Tom rad ovan är till för nya poster — fyll på underifrån)*
 
 ### Exempel på hur en post fylls i:
