@@ -26,7 +26,8 @@ const norm = f => fs.readFileSync(path.join(R, f), 'utf8').replace(/\r\n/g, '\n'
 // knapptitlar-och-ingresser.md när Joachim beslutar, som för Kolatomen)
 const HUVUD = {
   1: { slug: 'kolvaten-bestar-av-kol-och-vate', sub: 'alkanerna, molekylformeln och tre sätt att visa en molekyl' },
-  2: { slug: 'de-forsta-kolvatena', sub: 'metan, etan, propan och butan – och varför kedjans längd avgör' }
+  2: { slug: 'de-forsta-kolvatena', sub: 'metan, etan, propan och butan – och varför kedjans längd avgör' },
+  3: { slug: 'samma-formel-olika-struktur', sub: 'isomerer, dubbel- och trippelbindningar, alkener och alkyner' }
 };
 const BOK = ['A', 'B', 'C'];
 let KORT = {}, SUB = {}, INGRESS = {};
@@ -40,7 +41,7 @@ const KP = {};
 if (finns('karnpunkter.md')) {
   for (const m of norm('karnpunkter.md').matchAll(/\n### (\d)\.(\d) [^\n]+\n\n((?:- [^\n]+\n)+)/g)) { KP[m[1] + '.' + m[2]] = m[3].trim(); }
 }
-const rensa = t => t.split('\n').filter(l => !/^> /.test(l) && !/^\*ca \d+ ord\*$/.test(l.trim()) && !/^\*[^*]+undantaget[^*]*\*$/.test(l.trim()) && !/^\*\*Djupdykning härifrån:\*\*/.test(l)).join('\n')
+const rensa = t => t.split('\n').filter(l => !/^> /.test(l) && !/^\*ca \d+ ord\*$/.test(l.trim()) && !/^\*[^*]+undantaget[^*]*\*$/.test(l.trim()) && !/^\*{1,2}Djupdykning härifrån:/.test(l) && !/^Bildspecarna ligger inbakade i bildrutorna/.test(l)).join('\n')   // även kursiv djupdykningsrad (avsnitt 3, djupdykningen inte skriven) och leveransnoten om bildspecar
   .replace(/\n{3,}/g, '\n\n').trim();
 const fetaReaktioner = t => t.split(/\n\n+/).map(p => (!/\n/.test(p) && !/\*\*/.test(p) && arReaktion(p.trim())) ? `**${p.trim()}**` : p).join('\n\n');
 
@@ -50,18 +51,19 @@ for (const N of AVSNITT) {
   if (!HUVUD[N]) throw new Error(`avsnitt ${N}: slug/underrubrik saknas i HUVUD`);
   const std = norm(`avsnitt-${N}.md`);
   const titel = std.match(/^# Avsnitt \d — ([^\n]+)/)[1].trim();
-  const intro = rensa(std.slice(std.indexOf('\n') + 1, std.search(/\n---\n/)));
+  const intro = rensa(std.slice(std.indexOf('\n') + 1, std.search(/\n## \d\.1 /)).replace(/^---\s*$/gm, ''));   // allt före ## N.1; --- och leveransnot tas bort
   const under = [...std.matchAll(/\n## (\d)\.(\d) ([^\n]+)\n([\s\S]*?)(?=\n## \d\.\d |$)/g)].map(m => ({ nr: +m[2], titel: m[3].trim(), text: m[4] }));
   if (under.length !== 3) throw new Error(`avsnitt ${N}: ${under.length} underdelar i Standard`);
   // bildrutor → bildspec + ankare (sista raden i stycket före rutan)
   const specar = [];
   for (const u of under) {
-    const delar = u.text.split(/\n(?=> \*\*Bild [A-Z]\d+)/);
+    // bildrutor i två format: "> **Bild B1 — Namn** (SVG)" (avsnitt 1–2) och "> ### Bild C1 — Namn" + "> **SVG · placering: …**" (avsnitt 3, specen inbakad)
+    const delar = u.text.split(/\n(?=> (?:\*\*|### )Bild [A-Z]\d+)/);
     let text = delar[0];
     for (const d of delar.slice(1)) {
       const ruta = d.match(/^((?:>[^\n]*\n?)+)/)[1]; const rest = d.slice(ruta.length);
       const k = ruta.split('\n').map(l => l.replace(/^> ?/, '')).join('\n');
-      const h = k.match(/^\*\*Bild ([A-Z]\d+) — ([^*]+)\*\* \(([^)]+)\)/);
+      const h = k.match(/^\*\*Bild ([A-Z]\d+) — ([^*]+)\*\* \(([^)]+)\)/) || k.match(/^### Bild ([A-Z]\d+) — ([^\n]+)\n\*\*(SVG|AI)[^*]*\*\*/);
       const f = (rub) => { const x = k.match(new RegExp('\\*\\*' + rub + ':\\*\\* ([\\s\\S]*?)(?=\\n\\n|\\n\\*\\*|$)')); return x[1].replace(/\s*\n\s*/g, ' ').trim(); };
       const punkter = [...k.matchAll(/^- (.+)$/gm)].map(x => x[1].trim());
       const fil = 'k2-' + h[1].toLowerCase() + (h[3].startsWith('AI') ? '.webp' : '.svg');

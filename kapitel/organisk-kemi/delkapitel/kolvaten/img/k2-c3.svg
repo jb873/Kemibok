@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" width="760" height="250" role="img" aria-labelledby="t">
+  <title id="t">En tabell med tre rader för alkaner, alkener och alkyner. Kolumnerna visar namnändelse, bindningen mellan kolatomerna ritad som ett, två eller tre streck, den allmänna formeln, och ett exempel med två kolatomer</title>
+  <text x="65" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Serie</text>
+  <text x="180" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Ändelse</text>
+  <text x="305" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Bindning mellan kolatomerna</text>
+  <text x="460" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Allmän formel</text>
+  <text x="650" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Exempel, två kolatomer</text>
+  <line x1="16" y1="38" x2="744" y2="38" stroke="#2d4a35" stroke-width="1.4" stroke-linecap="round" />
+  <line x1="716" y1="44" x2="716" y2="232" stroke="#5a9668" stroke-width="1.2" stroke-linecap="round" data-markering="vate"/>
+  <text x="65" y="84" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="1">Alkaner</text>
+  <text x="180" y="84" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="1">-an</text>
+  <line x1="277" y1="78" x2="333" y2="78" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-C" data-rad="1"/>
+  <circle cx="271" cy="78" r="6" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1" data-bind="C-C" data-rad="1"/>
+  <circle cx="339" cy="78" r="6" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1" data-bind="C-C" data-rad="1"/>
+  <text x="460" y="84" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" data-allman="2n+2" data-rad="1">C<tspan font-size="0.7em" dy="0.3em" font-style="italic">n</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">2<tspan font-style="italic">n</tspan>+2</tspan></text>
+  <text x="646" y="84" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="17" text-anchor="end" data-rad="1">etan,</text>
+  <text x="660" y="84" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="20" text-anchor="start" data-exempel="etan" data-h="6" data-rad="1">C<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.75em" dy="0.3em" font-weight="bold">6</tspan></text>
+  <line x1="16" y1="110" x2="744" y2="110" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="65" y="148" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="2">Alkener</text>
+  <text x="180" y="148" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="2">-en</text>
+  <line x1="281" y1="138.3" x2="329" y2="138.3" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-C" data-rad="2"/>
+  <line x1="281" y1="145.7" x2="329" y2="145.7" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-C" data-rad="2"/>
+  <circle cx="271" cy="142" r="6" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1" data-bind="C-C" data-rad="2"/>
+  <circle cx="339" cy="142" r="6" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1" data-bind="C-C" data-rad="2"/>
+  <text x="460" y="148" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" data-allman="2n" data-rad="2">C<tspan font-size="0.7em" dy="0.3em" font-style="italic">n</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">2<tspan font-style="italic">n</tspan></tspan></text>
+  <text x="646" y="148" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="17" text-anchor="end" data-rad="2">eten,</text>
+  <text x="660" y="148" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="20" text-anchor="start" data-exempel="eten" data-h="4" data-rad="2">C<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.75em" dy="0.3em" font-weight="bold">4</tspan></text>
+  <line x1="16" y1="174" x2="744" y2="174" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="65" y="212" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="3">Alkyner</text>
+  <text x="180" y="212" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="3">-yn</text>
+  <line x1="281" y1="198.6" x2="329" y2="198.6" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-C" data-rad="3"/>
+  <line x1="281" y1="206" x2="329" y2="206" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-C" data-rad="3"/>
+  <line x1="281" y1="213.4" x2="329" y2="213.4" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-C" data-rad="3"/>
+  <circle cx="271" cy="206" r="6" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1" data-bind="C-C" data-rad="3"/>
+  <circle cx="339" cy="206" r="6" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1" data-bind="C-C" data-rad="3"/>
+  <text x="460" y="212" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" data-allman="2n−2" data-rad="3">C<tspan font-size="0.7em" dy="0.3em" font-style="italic">n</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">2<tspan font-style="italic">n</tspan>−2</tspan></text>
+  <text x="646" y="212" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="17" text-anchor="end" data-rad="3">etyn,</text>
+  <text x="660" y="212" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="20" text-anchor="start" data-exempel="etyn" data-h="2" data-rad="3">C<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.75em" dy="0.3em" font-weight="bold">2</tspan></text>
+</svg>

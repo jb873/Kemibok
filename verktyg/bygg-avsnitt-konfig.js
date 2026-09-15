@@ -191,6 +191,12 @@ const AVSNITT_KOLVATEN = {
          'k2-b5.webp': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'från luften, genom fotosyntesen.' },
          'k2-b6.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'gas ut, och ny vätska förångas för att ersätta den.' },
          'k2-b7.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'formeln utan också ämnets egenskaper.' }
+       } },
+  3: { dd: [],   // arbetsorder 3 Kolväten (2026-09-15): tre SVG, specade i bildrutorna. Djupdykningen om namngivning (3.2) är inte skriven – ingen dd ännu
+       bilder: {
+         'k2-c1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Ämnen som har samma molekylformel men olika strukturformel kallas' },
+         'k2-c2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Alla tre ämnena har två kolatomer, men olika molekylformler.' },
+         'k2-c3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'hur många väteatomer som ryms.' }
        } }
 };
 const DELKAPITEL = {

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" role="img" aria-labelledby="t">
+  <title id="t">Två strukturformler. Till vänster butan som en rak kedja av fyra kolatomer, till höger som en grenad kedja där den fjärde kolatomen sitter som en gren på mitten. Under båda står molekylformeln C4H10</title>
+  <line x1="134" y1="168" x2="154" y2="168" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-molekyl="n-butan"/>
+  <line x1="180" y1="168" x2="200" y2="168" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-molekyl="n-butan"/>
+  <line x1="226" y1="168" x2="246" y2="168" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-molekyl="n-butan"/>
+  <line x1="121" y1="157" x2="121" y2="145" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="n-butan"/>
+  <line x1="121" y1="179" x2="121" y2="191" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="n-butan"/>
+  <line x1="110" y1="168" x2="98" y2="168" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="n-butan"/>
+  <line x1="167" y1="157" x2="167" y2="145" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="n-butan"/>
+  <line x1="167" y1="179" x2="167" y2="191" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="n-butan"/>
+  <line x1="213" y1="157" x2="213" y2="145" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="n-butan"/>
+  <line x1="213" y1="179" x2="213" y2="191" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="n-butan"/>
+  <line x1="259" y1="157" x2="259" y2="145" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="n-butan"/>
+  <line x1="259" y1="179" x2="259" y2="191" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="n-butan"/>
+  <line x1="270" y1="168" x2="282" y2="168" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="n-butan"/>
+  <text x="121" y="174.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="n-butan">C</text>
+  <text x="167" y="174.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="n-butan">C</text>
+  <text x="213" y="174.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="n-butan">C</text>
+  <text x="259" y="174.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="n-butan">C</text>
+  <text x="121" y="140.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="n-butan">H</text>
+  <text x="121" y="208.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="n-butan">H</text>
+  <text x="75" y="174.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="n-butan">H</text>
+  <text x="167" y="140.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="n-butan">H</text>
+  <text x="167" y="208.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="n-butan">H</text>
+  <text x="213" y="140.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="n-butan">H</text>
+  <text x="213" y="208.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="n-butan">H</text>
+  <text x="259" y="140.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="n-butan">H</text>
+  <text x="259" y="208.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="n-butan">H</text>
+  <text x="305" y="174.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="n-butan">H</text>
+  <line x1="537" y1="168" x2="557" y2="168" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-molekyl="isobutan"/>
+  <line x1="583" y1="168" x2="603" y2="168" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-molekyl="isobutan"/>
+  <line x1="570" y1="155" x2="570" y2="113" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-molekyl="isobutan"/>
+  <line x1="524" y1="157" x2="524" y2="145" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="isobutan"/>
+  <line x1="524" y1="179" x2="524" y2="191" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="isobutan"/>
+  <line x1="513" y1="168" x2="501" y2="168" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="isobutan"/>
+  <line x1="570" y1="179" x2="570" y2="191" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="isobutan"/>
+  <line x1="616" y1="157" x2="616" y2="145" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="isobutan"/>
+  <line x1="616" y1="179" x2="616" y2="191" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="isobutan"/>
+  <line x1="627" y1="168" x2="639" y2="168" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="isobutan"/>
+  <line x1="570" y1="89" x2="570" y2="77" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="isobutan"/>
+  <line x1="559" y1="100" x2="547" y2="100" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="isobutan"/>
+  <line x1="581" y1="100" x2="593" y2="100" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="isobutan"/>
+  <text x="524" y="174.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="isobutan">C</text>
+  <text x="570" y="174.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="isobutan">C</text>
+  <text x="616" y="174.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="isobutan">C</text>
+  <text x="570" y="106.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="isobutan">C</text>
+  <text x="524" y="140.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="isobutan">H</text>
+  <text x="524" y="208.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="isobutan">H</text>
+  <text x="478" y="174.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="isobutan">H</text>
+  <text x="570" y="208.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="isobutan">H</text>
+  <text x="616" y="140.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="isobutan">H</text>
+  <text x="616" y="208.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="isobutan">H</text>
+  <text x="662" y="174.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="isobutan">H</text>
+  <text x="570" y="72.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="isobutan">H</text>
+  <text x="524" y="106.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="isobutan">H</text>
+  <text x="616" y="106.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="isobutan">H</text>
+  <line x1="380" y1="30" x2="380" y2="320" stroke="#5a9668" stroke-width="1.2" stroke-linecap="round" data-skiljelinje="1"/>
+  <text x="190" y="246"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold" fill="#5a9668" data-etikett="n-butan">n-butan</text>
+  <text x="190" y="280" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" data-formel="n-butan">C<tspan font-size="0.7em" dy="0.3em">4</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">10</tspan></text>
+  <text x="190" y="310" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" data-kokpunkt="n-butan">kokpunkt 0 °C</text>
+  <text x="570" y="246"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold" fill="#5a9668" data-etikett="isobutan">isobutan</text>
+  <text x="570" y="280" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" data-formel="isobutan">C<tspan font-size="0.7em" dy="0.3em">4</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">10</tspan></text>
+  <text x="570" y="310" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" data-kokpunkt="isobutan">kokpunkt −12 °C</text>
+</svg>

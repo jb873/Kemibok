@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kolväten kan se olika ut fast de har samma formel – Kolväten – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Kolväten</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">3. Kolväten kan se olika ut fast de har samma formel</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 3</span>
+      <h1>Kolväten kan se olika ut fast de har samma formel</h1>
+      <p class="subtitel">— isomerer, dubbel- och trippelbindningar, alkener och alkyner —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Isomerer har samma molekylformel men olika strukturformel</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Kolatomer kan binda med dubbel- och trippelbindningar</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Alkener och alkyner har namn som slutar på -en och -yn</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-samma-formel-olika-struktur">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Isomerer har samma molekylformel men olika strukturformel ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <p class="inledning">Hittills har vi mött alkaner som raka kedjor med enkelbindningar mellan kolatomerna. Det mönstret kan brytas på två sätt.</p>
+          <p>Samma antal atomer kan sitta ihop i <strong>olika ordning</strong>, så att kedjan blir rak eller grenad. Och kolatomerna kan bindas till varandra på <strong>olika sätt</strong>, med dubbel- eller trippelbindningar i stället för enkla. I båda fallen bildas nya ämnen av samma slags atomer.</p>
+          <h2>Fyra kolatomer kan sitta ihop på två sätt</h2>
+          <p>Med fyra kolatomer finns för första gången mer än ett sätt att koppla ihop kedjan.</p>
+          <p><strong>Butan</strong> kan byggas som en <strong>rak kedja</strong>, där alla fyra kolatomer sitter efter varandra. Den formen kallas <strong>n-butan</strong>, där n står för normal.</p>
+          <p>Samma fyra kolatomer kan också sättas ihop som en <strong>grenad kedja</strong>: tre kolatomer på rad och den fjärde som en sidogren. Den formen kallas <strong>isobutan</strong>.</p>
+          <p>Båda innehåller fyra kolatomer och tio väteatomer, alltså <strong>\(\ce{C4H10}\)</strong>. Molekylformeln är densamma, men strukturformlerna är olika.</p>
+          <p>Ämnen som har samma molekylformel men olika strukturformel kallas <strong>isomerer</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k2-c1.svg" alt="Två strukturformler. Till vänster butan som en rak kedja av fyra kolatomer, till höger som en grenad kedja där den fjärde kolatomen sitter som en gren på mitten. Under båda står molekylformeln \(\ce{C4H10}\).">
+            <figcaption>n-butan och isobutan har samma molekylformel men olika strukturformel. De är isomerer.</figcaption>
+          </figure>
+          <h2>Olika form ger olika egenskaper</h2>
+          <p>Isomerer är inte samma ämne. n-butan kokar vid ungefär <strong>0 °C</strong>, isobutan vid ungefär <strong>−12 °C</strong>. Isobutan övergår alltså lättare till gas.</p>
+          <p>Förklaringen är densamma som när vi jämförde korta och långa kolkedjor. Den raka molekylen kan ligga <strong>tätare intill sina grannar</strong>, och attraktionen mellan molekylerna blir starkare. Den grenade molekylen är rundare och mer kompakt. Den kommer inte lika nära, attraktionen blir svagare, och det krävs mindre energi för att skilja molekylerna åt.</p>
+          <p>Samma atomslag och samma antal atomer räcker alltså inte för att två ämnen ska vara lika. Också <strong>formen</strong> spelar roll.</p>
+          <h2>Ju längre kedjan är, desto fler isomerer finns det</h2>
+          <p>Metan, etan och propan har inga isomerer — det finns bara ett sätt att koppla ihop dem.</p>
+          <p>Butan har två. Pentan har tre. Oktan har arton.</p>
+          <p>Antalet växer snabbt när molekylerna blir större, och det är en av förklaringarna till att det finns så många olika organiska ämnen.</p>
+          <p>---</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Kolatomer kan binda med dubbel- och trippelbindningar ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>En dubbelbindning binder samman två kolatomer med två elektronpar</h2>
+          <p class="inledning">Två kolatomer kan bindas samman med mer än ett elektronpar.</p>
+          <p>I en <strong>dubbelbindning</strong> delar de <strong>två elektronpar</strong>, och bindningen ritas med <strong>två streck</strong>. I en <strong>trippelbindning</strong> delar de tre par, ritade med tre streck.</p>
+          <p>Kolatomen ska fortfarande ha <strong>fyra bindningar sammanlagt</strong>. Går två av dem till samma grannatom finns färre kvar till andra atomer.</p>
+          <h2>Färre väteatomer får plats</h2>
+          <p>Det är den begränsningen som avgör hur många väteatomer som ryms.</p>
+          <p>Sitter två kolatomer ihop med en enkelbindning har varje kolatom tre bindningar kvar till väte. Ämnet blir <strong>etan, \(\ce{C2H6}\)</strong>.</p>
+          <p>Med en dubbelbindning går två bindningar åt mellan kolatomerna, och bara två återstår till väte på varje. Ämnet blir <strong>eten, \(\ce{C2H4}\)</strong>.</p>
+          <p>Med en trippelbindning återstår en bindning till väte på varje kolatom. Ämnet blir <strong>etyn, \(\ce{C2H2}\)</strong>.</p>
+          <p>Principen är alltså: <strong>ju fler bindningar mellan kolatomerna, desto färre väteatomer får plats.</strong> Alla tre ämnena har två kolatomer, men olika molekylformler.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k2-c2.svg" alt="Tre molekyler med två kolatomer vardera. Etan har ett streck mellan kolatomerna och tre väteatomer på var, eten har två streck och två väteatomer, etyn har tre streck och en väteatom. Under varje molekyl står namnet och molekylformeln.">
+            <figcaption>Varje extra bindning mellan kolatomerna tar en bindning som annars hade gått till väte.</figcaption>
+          </figure>
+          <h2>Dubbelbindningen kan sitta på olika ställen</h2>
+          <p>I en längre kedja kan dubbelbindningen sitta på olika platser. I en kedja med fyra kolatomer kan den sitta mellan första och andra kolatomen, eller mellan andra och tredje.</p>
+          <p>Då får man <strong>1-buten</strong> och <strong>2-buten</strong>. Siffran talar om efter vilken kolatom dubbelbindningen sitter.</p>
+          <p>Båda har molekylformeln <strong>\(\ce{C4H8}\)</strong>, men strukturformlerna är olika. Det är alltså en ny sorts isomeri: i 3.1 handlade skillnaden om rak eller grenad kedja, här om var dubbelbindningen sitter.</p>
+          <p>---</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Alkener och alkyner har namn som slutar på -en och -yn ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Kolväten med dubbelbindning kallas alkener</h2>
+          <p class="inledning">Kolväten med minst en <strong>dubbelbindning</strong> mellan kolatomerna kallas <strong>alkener</strong>, och namnen slutar på <strong>-en</strong>: eten, propen, buten.</p>
+          <p>Namnen bildas från samma stammar som alkanerna. Eten hör ihop med etan, propen med propan.</p>
+          <p>Gruppen kallas <strong>alkenserien</strong>, och för en alken med en dubbelbindning i en öppen kedja gäller:</p>
+          <div class="formel">\[\mathrm{C}_{n}\mathrm{H}_{2n}\]</div>
+          <h2>Kolväten med trippelbindning kallas alkyner</h2>
+          <p>Kolväten med minst en <strong>trippelbindning</strong> kallas <strong>alkyner</strong>, med ändelsen <strong>-yn</strong>: etyn, propyn, butyn. Serien kallas <strong>alkynserien</strong>:</p>
+          <div class="formel">\[\mathrm{C}_{n}\mathrm{H}_{2n-2}\]</div>
+          <p>Etyn är också känt som <strong>acetylen</strong>. Det brinner med mycket het låga och används vid <strong>gassvetsning</strong>.</p>
+          <h2>Mättade kolväten har bara enkelbindningar</h2>
+          <p>Alkanerna har bara enkelbindningar och innehåller så många väteatomer som får plats. De kallas därför <strong>mättade kolväten</strong>.</p>
+          <p>Alkener och alkyner har dubbel- eller trippelbindningar och därmed färre väteatomer. De kallas <strong>omättade</strong>.</p>
+          <p>Att ett kolväte är omättat betyder att det inte är fullt av väte. I kemiska reaktioner kan det därför <strong>ta upp fler atomer</strong> och omvandlas till andra ämnen. Den egenskapen är förutsättningen för avsnitt 4.</p>
+          <p>Ett exempel är <strong>eten</strong>, som används för att påskynda mognaden hos frukt under transport.</p>
+          <h2>Tre serier med tre formler</h2>
+          <p>Skillnaden mellan en alkan och en alken med lika många kolatomer är alltid två väteatomer. Mellan en alken och en alkyn är den också två.</p>
+          <p>Ändelsen i namnet visar vilken sorts bindning som finns mellan kolatomerna, och formeln visar hur många väteatomer som ryms.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k2-c3.svg" alt="En tabell med tre rader för alkaner, alkener och alkyner. Kolumnerna visar namnändelse, bindningen mellan kolatomerna ritad som ett, två eller tre streck, den allmänna formeln, och ett exempel med två kolatomer.">
+            <figcaption>Ändelsen visar bindningen, och formeln visar hur många väteatomer som ryms.</figcaption>
+          </figure>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-3-samma-formel-olika-struktur.json"
+           data-avsnitt="a3_samma-formel-olika-struktur">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-3-samma-formel-olika-struktur.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a3_samma-formel-olika-struktur';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'kolvaten';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>
