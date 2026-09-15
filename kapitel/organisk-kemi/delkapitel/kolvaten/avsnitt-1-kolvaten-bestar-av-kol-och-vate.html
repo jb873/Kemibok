@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kolväten består av kol och väte – Kolväten – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Kolväten</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">1. Kolväten består av kol och väte</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 1</span>
+      <h1>Kolväten består av kol och väte</h1>
+      <p class="subtitel">— alkanerna, molekylformeln och tre sätt att visa en molekyl —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Ett kolväte innehåller bara kolatomer och väteatomer</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Alkanserien växer med en kolatom i taget</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Samma kolväte kan visas på tre sätt</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-kolvaten-bestar-av-kol-och-vate">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Ett kolväte innehåller bara kolatomer och väteatomer ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <p class="inledning">Kolväten finns runt omkring oss i många av de bränslen vi använder. Diesel driver bussar och lastbilar, fotogen används som flygbränsle, gasol i grillar och campingkök, och bensin driver fortfarande många bilar. Kolväten har haft avgörande betydelse för industrins och transporternas utveckling sedan 1800-talet.</p>
+          <p>Trots att det finns mycket många olika kolväten är de uppbyggda av bara <strong>två sorters atomer: kol och väte</strong>. Det som skiljer dem åt är hur många kolatomer de innehåller och hur kolatomerna är bundna till varandra.</p>
+          <h2>Kolväten är den enklaste sortens kolförening</h2>
+          <p>Ett <strong>kolväte</strong> är en kolförening som bara innehåller <strong>kolatomer och väteatomer</strong>. Det finns alltså inga syreatomer, kväveatomer eller andra atomslag i ett rent kolväte.</p>
+          <p>En kolatom kan bilda fyra bindningar. En väteatom kan bara bilda en. Det är hela byggsatsen: kolatomer kan binda till varandra och till väte, medan varje väteatom bara kan sitta fast på ett enda ställe.</p>
+          <p>Det enklaste kolvätet är <strong>metan, \(\ce{CH4}\)</strong>, där kolatomen använder alla sina fyra bindningar till var sin väteatom.</p>
+          <h2>Väteatomerna sitter där kolkedjan inte binder till sig själv</h2>
+          <p>I ett kolväte kan man se kolatomerna som molekylens <strong>stomme</strong>. De sitter efter varandra i en kedja, och väteatomerna sitter runt om.</p>
+          <p>Varje kolatom ska sammanlagt ha fyra bindningar. Binder den till en annan kolatom har den använt en av dem, och tre återstår till väte.</p>
+          <p>I etan sitter två kolatomer ihop. Varje kolatom använder en bindning till den andra och har tre kvar till väte. Molekylen får sex väteatomer, och molekylformeln blir <strong>\(\ce{C2H6}\)</strong>.</p>
+          <p>En kolatom mitt i en längre kedja binder åt två håll och har bara två bindningar kvar till väte.</p>
+          <p><strong>Väteatomerna fyller alltså ut de bindningar som inte används mellan kolatomerna.</strong> Den principen gör att man kan räkna ut hur många väteatomer ett kolväte ska innehålla, om man vet hur kolatomerna sitter ihop.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k2-b1.svg" alt="Metan och butan ritade som strukturformler. Kolatomerna och bindningarna mellan dem är markerade i grönt som en stomme, väteatomerna i grått runt omkring. Vid varje kolatom i butan står hur många väteatomer den bär.">
+            <figcaption>Kolatomerna i ändarna binder till en granne och bär tre väteatomer. De i mitten binder åt två håll och bär två.</figcaption>
+          </figure>
+          <h2>Kolväten finns i bränslen vi använder dagligen</h2>
+          <p>Många vanliga bränslen består till största delen av kolväten. Naturgas är mest metan, och gasol innehåller framför allt propan och butan.</p>
+          <p>Men <strong>bensin och diesel är inte ett enda kemiskt ämne.</strong> De är blandningar av flera olika kolväten, med olika långa kolkedjor och därför olika egenskaper.</p>
+          <p>Vilka kolväten ett bränsle innehåller påverkar hur lätt det avdunstar och vid vilken temperatur det kokar. Hur blandningarna framställs undersöker vi längre fram.</p>
+          <p>---</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Alkanserien växer med en kolatom i taget ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Det finns en serie kolväten där varje nytt har en kolatom mer</h2>
+          <p class="inledning">En viktig grupp av kolväten kallas <strong>alkaner</strong>. De kan ordnas i en serie där varje nytt ämne innehåller <strong>en kolatom mer</strong> än det föregående:</p>
+          <p><strong>metan – etan – propan – butan – pentan – hexan – heptan – oktan</strong></p>
+          <p>Från pentan och framåt känns räkneprefixen igen. <strong>Pent-</strong> betyder fem, <strong>hex-</strong> sex, <strong>hept-</strong> sju och <strong>okt-</strong> åtta. De fyra första har äldre namn som behållits, och följer därför inte mönstret.</p>
+          <p>Serien fortsätter långt efter oktan. Det finns alkaner med tjugo kolatomer och fler. Principen är hela tiden densamma.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k2-b2.svg" alt="Fyra molekyler under varandra som en trappa: metan, etan, propan och butan. I varje rad är den tillkomna kolatomen med sina två väteatomer markerad i grönt. Till höger står molekylformlerna.">
+            <figcaption>Skillnaden mellan två grannar i alkanserien är alltid \(\ce{CH2}\).</figcaption>
+          </figure>
+          <h2>För varje kolatom tillkommer två väteatomer</h2>
+          <p>Jämför man molekylformlerna syns ett mönster. Från metan till etan tillkommer en kolatom och två väteatomer. Samma sak från etan till propan, och från propan till butan.</p>
+          <p>Skillnaden mellan två grannar i serien är alltså alltid <strong>\(\ce{CH2}\)</strong>. Det betyder inte att en \(\ce{CH2}\)-molekyl fästs på — \(\ce{CH2}\) beskriver bara skillnaden.</p>
+          <p>Mönstret kan skrivas som en regel. En alkan med <strong>n</strong> kolatomer har molekylformeln:</p>
+          <div class="formel">\[\mathrm{C}_{n}\mathrm{H}_{2n+2}\]</div>
+          <p>Med fem kolatomer blir det \(\ce{C5H12}\). Med åtta blir det \(\ce{C8H18}\).</p>
+          <p>Ju fler kolatomer i kedjan, desto fler väteatomer behövs för att alla kolatomer ska få sina fyra bindningar.</p>
+          <h2>Alla alkaner har bara enkelbindningar</h2>
+          <p>Det som kännetecknar en <strong>alkan</strong> är att alla bindningar mellan kolatomerna är <strong>enkelbindningar</strong>.</p>
+          <p>En enkelbindning består av ett gemensamt elektronpar och ritas som <strong>ett streck</strong>.</p>
+          <p>I etan finns en enkelbindning mellan kolatomerna, i propan två och i butan tre. Antalet bindningar mellan kolatomerna är alltid en mindre än antalet kolatomer.</p>
+          <p>Gruppen av sådana ämnen kallas <strong>alkanserien</strong>.</p>
+          <p>Senare möter vi kolväten där det finns dubbelbindningar eller trippelbindningar mellan kolatomerna. De tillhör andra grupper och får andra namn.</p>
+          <p>---</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Samma kolväte kan visas på tre sätt ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <p class="inledning">Kemister beskriver molekyler på olika sätt beroende på vad de vill visa. Ett kolväte kan representeras med <strong>molekylformel, strukturformel och molekylmodell</strong>. De visar olika saker om samma molekyl.</p>
+          <h2>Molekylformeln räknar atomerna</h2>
+          <p>En <strong>molekylformel</strong> visar vilka atomslag som finns och hur många atomer det finns av varje slag. Butan har molekylformeln <strong>\(\ce{C4H10}\)</strong> — fyra kolatomer och tio väteatomer.</p>
+          <p>Molekylformeln visar däremot inte hur atomerna sitter bundna till varandra.</p>
+          <p>Det spelar roll när molekylerna blir större, eftersom samma molekylformel ibland kan motsvara flera olika molekyler. Det undersöker vi i avsnitt 3.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k2-b3.svg" alt="En tabell med fyra rader för metan, etan, propan och butan. Kolumnerna visar namn, molekylformel, strukturformel med streck, och molekylmodell med kulor.">
+            <figcaption>Molekylformeln räknar atomerna, strukturformeln visar bindningarna och modellen visar formen.</figcaption>
+          </figure>
+          <h2>Strukturformeln visar bindningarna</h2>
+          <p>En <strong>strukturformel</strong> visar hur atomerna är bundna till varandra. Bindningarna ritas som streck.</p>
+          <p>När man ritar eller granskar en strukturformel gäller en enkel regel:</p>
+          <p><strong>Varje kolatom ska ha sammanlagt fyra bindningar och varje väteatom en.</strong></p>
+          <p>Strukturformeln går därför att kontrollräkna. Titta på en kolatom i taget och räkna strecken runt den.</p>
+          <h2>Molekylmodellen visar formen</h2>
+          <p>En <strong>molekylmodell</strong> visar molekylen som en tredimensionell struktur. Atomerna ritas som kulor: kol som mörka och större, väte som ljusare och mindre. Färgerna är en överenskommelse — riktiga atomer har inte några färger.</p>
+          <p>Modellen visar något som en strukturformel på papper döljer: <strong>molekylen är inte platt.</strong> Bindningarna från en kolatom pekar åt olika håll i rummet. En kolkedja som ritas rak på pappret är i verkligheten vinklad.</p>
+          <h2>Så ritar du en strukturformel</h2>
+          <p>Med butan som exempel går det i fyra steg: rita kolatomerna utifrån namnet, sätt ut bindningarna mellan dem, fyll på med väteatomer där bindningar saknas, och räkna ihop till en molekylformel.</p>
+          <p>Samma metod fungerar för alla alkaner, hur långa de än är. Det enda som ändras är hur många kolatomer du börjar med.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k2-b4.svg" alt="Fyra numrerade steg för att rita butans strukturformel: först fyra kolatomer, sedan bindningarna, sedan väteatomerna, sist molekylformeln \(\ce{C4H10}\).">
+            <figcaption>Metoden fungerar för alla alkaner. Det enda som ändras är hur många kolatomer du börjar med.</figcaption>
+          </figure>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-1-kolvaten-bestar-av-kol-och-vate.json"
+           data-avsnitt="a1_kolvaten-bestar-av-kol-och-vate">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-1-kolvaten-bestar-av-kol-och-vate.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a1_kolvaten-bestar-av-kol-och-vate';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'kolvaten';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 454" width="780" height="454" role="img" aria-labelledby="t">
+  <title id="t">Tabell med fyra rader: metan, etan, propan och butan. Kolumnerna visar namn, molekylformel, strukturformel med streck och molekylmodell med kulor, där kolkedjan är vinklad</title>
+  <text x="55" y="28" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">Namn</text>
+  <text x="175" y="28" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">Molekylformel</text>
+  <text x="370" y="28" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">Strukturformel</text>
+  <text x="640" y="28" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">Molekylmodell</text>
+  <line x1="20" y1="38" x2="760" y2="38" stroke="#2d4a35" stroke-width="1.4" stroke-linecap="round" />
+  <text x="55" y="100" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18">metan</text>
+  <text x="175" y="101" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">CH<tspan font-size="0.7em" dy="0.3em">4</tspan></text>
+  <line x1="370" y1="83" x2="370" y2="71" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="0" data-kolumn="struktur"/>
+  <line x1="370" y1="105" x2="370" y2="117" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="0" data-kolumn="struktur"/>
+  <line x1="359" y1="94" x2="347" y2="94" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="0" data-kolumn="struktur"/>
+  <line x1="381" y1="94" x2="393" y2="94" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="0" data-kolumn="struktur"/>
+  <text x="370" y="100.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="0" data-kolumn="struktur">C</text>
+  <text x="370" y="66.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="0" data-kolumn="struktur">H</text>
+  <text x="370" y="134.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="0" data-kolumn="struktur">H</text>
+  <text x="324" y="100.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="0" data-kolumn="struktur">H</text>
+  <text x="416" y="100.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="0" data-kolumn="struktur">H</text>
+  <circle cx="640" cy="66" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="0" data-kolumn="modell"/>
+  <circle cx="664.25" cy="108" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="0" data-kolumn="modell"/>
+  <circle cx="640" cy="94" r="15" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-rad="0" data-kolumn="modell"/>
+  <circle cx="615.75" cy="108" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="0" data-kolumn="modell"/>
+  <circle cx="630.4" cy="120.3" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="0" data-kolumn="modell"/>
+  <line x1="20" y1="144" x2="760" y2="144" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="55" y="200" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18">etan</text>
+  <text x="175" y="201" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">C<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">6</tspan></text>
+  <line x1="360" y1="194" x2="380" y2="194" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-rad="1" data-kolumn="struktur"/>
+  <line x1="347" y1="183" x2="347" y2="171" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="1" data-kolumn="struktur"/>
+  <line x1="347" y1="205" x2="347" y2="217" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="1" data-kolumn="struktur"/>
+  <line x1="336" y1="194" x2="324" y2="194" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="1" data-kolumn="struktur"/>
+  <line x1="393" y1="183" x2="393" y2="171" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="1" data-kolumn="struktur"/>
+  <line x1="393" y1="205" x2="393" y2="217" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="1" data-kolumn="struktur"/>
+  <line x1="404" y1="194" x2="416" y2="194" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="1" data-kolumn="struktur"/>
+  <text x="347" y="200.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="1" data-kolumn="struktur">C</text>
+  <text x="393" y="200.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="1" data-kolumn="struktur">C</text>
+  <text x="347" y="166.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="1" data-kolumn="struktur">H</text>
+  <text x="347" y="234.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="1" data-kolumn="struktur">H</text>
+  <text x="301" y="200.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="1" data-kolumn="struktur">H</text>
+  <text x="393" y="166.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="1" data-kolumn="struktur">H</text>
+  <text x="393" y="234.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="1" data-kolumn="struktur">H</text>
+  <text x="439" y="200.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="1" data-kolumn="struktur">H</text>
+  <circle cx="632.88" cy="234.67" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="1" data-kolumn="modell"/>
+  <circle cx="603.5" cy="226.67" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="1" data-kolumn="modell"/>
+  <circle cx="598.79" cy="196.59" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="1" data-kolumn="modell"/>
+  <circle cx="647.12" cy="153.33" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="1" data-kolumn="modell"/>
+  <circle cx="676.5" cy="161.33" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="1" data-kolumn="modell"/>
+  <circle cx="681.21" cy="191.41" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="1" data-kolumn="modell"/>
+  <line x1="624.36" y1="208" x2="655.64" y2="180" stroke="#2d4a35" stroke-width="3" stroke-linecap="round" data-bind="C-C" data-rad="1" data-kolumn="modell"/>
+  <circle cx="624.36" cy="208" r="15" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-rad="1" data-kolumn="modell"/>
+  <circle cx="655.64" cy="180" r="15" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-rad="1" data-kolumn="modell"/>
+  <line x1="20" y1="244" x2="760" y2="244" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="55" y="300" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18">propan</text>
+  <text x="175" y="301" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">C<tspan font-size="0.7em" dy="0.3em">3</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">8</tspan></text>
+  <line x1="337" y1="294" x2="357" y2="294" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-rad="2" data-kolumn="struktur"/>
+  <line x1="383" y1="294" x2="403" y2="294" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-rad="2" data-kolumn="struktur"/>
+  <line x1="324" y1="283" x2="324" y2="271" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2" data-kolumn="struktur"/>
+  <line x1="324" y1="305" x2="324" y2="317" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2" data-kolumn="struktur"/>
+  <line x1="313" y1="294" x2="301" y2="294" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2" data-kolumn="struktur"/>
+  <line x1="370" y1="283" x2="370" y2="271" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2" data-kolumn="struktur"/>
+  <line x1="370" y1="305" x2="370" y2="317" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2" data-kolumn="struktur"/>
+  <line x1="416" y1="283" x2="416" y2="271" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2" data-kolumn="struktur"/>
+  <line x1="416" y1="305" x2="416" y2="317" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2" data-kolumn="struktur"/>
+  <line x1="427" y1="294" x2="439" y2="294" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2" data-kolumn="struktur"/>
+  <text x="324" y="300.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="2" data-kolumn="struktur">C</text>
+  <text x="370" y="300.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="2" data-kolumn="struktur">C</text>
+  <text x="416" y="300.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="2" data-kolumn="struktur">C</text>
+  <text x="324" y="266.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="2" data-kolumn="struktur">H</text>
+  <text x="324" y="334.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="2" data-kolumn="struktur">H</text>
+  <text x="278" y="300.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="2" data-kolumn="struktur">H</text>
+  <text x="370" y="266.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="2" data-kolumn="struktur">H</text>
+  <text x="370" y="334.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="2" data-kolumn="struktur">H</text>
+  <text x="416" y="266.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="2" data-kolumn="struktur">H</text>
+  <text x="416" y="334.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="2" data-kolumn="struktur">H</text>
+  <text x="462" y="300.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="2" data-kolumn="struktur">H</text>
+  <circle cx="617.24" cy="334.67" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="2" data-kolumn="modell"/>
+  <circle cx="587.86" cy="326.67" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="2" data-kolumn="modell"/>
+  <circle cx="583.15" cy="296.59" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="2" data-kolumn="modell"/>
+  <circle cx="620.91" cy="259.51" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="2" data-kolumn="modell"/>
+  <circle cx="659.09" cy="259.51" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="2" data-kolumn="modell"/>
+  <circle cx="696.85" cy="296.59" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="2" data-kolumn="modell"/>
+  <circle cx="692.14" cy="326.67" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="2" data-kolumn="modell"/>
+  <circle cx="662.76" cy="334.67" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="2" data-kolumn="modell"/>
+  <line x1="608.72" y1="308" x2="640" y2="280" stroke="#2d4a35" stroke-width="3" stroke-linecap="round" data-bind="C-C" data-rad="2" data-kolumn="modell"/>
+  <line x1="640" y1="280" x2="671.28" y2="308" stroke="#2d4a35" stroke-width="3" stroke-linecap="round" data-bind="C-C" data-rad="2" data-kolumn="modell"/>
+  <circle cx="608.72" cy="308" r="15" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-rad="2" data-kolumn="modell"/>
+  <circle cx="640" cy="280" r="15" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-rad="2" data-kolumn="modell"/>
+  <circle cx="671.28" cy="308" r="15" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-rad="2" data-kolumn="modell"/>
+  <line x1="20" y1="344" x2="760" y2="344" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="55" y="400" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18">butan</text>
+  <text x="175" y="401" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22">C<tspan font-size="0.7em" dy="0.3em">4</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">10</tspan></text>
+  <line x1="314" y1="394" x2="334" y2="394" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-rad="3" data-kolumn="struktur"/>
+  <line x1="360" y1="394" x2="380" y2="394" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-rad="3" data-kolumn="struktur"/>
+  <line x1="406" y1="394" x2="426" y2="394" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-rad="3" data-kolumn="struktur"/>
+  <line x1="301" y1="383" x2="301" y2="371" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3" data-kolumn="struktur"/>
+  <line x1="301" y1="405" x2="301" y2="417" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3" data-kolumn="struktur"/>
+  <line x1="290" y1="394" x2="278" y2="394" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3" data-kolumn="struktur"/>
+  <line x1="347" y1="383" x2="347" y2="371" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3" data-kolumn="struktur"/>
+  <line x1="347" y1="405" x2="347" y2="417" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3" data-kolumn="struktur"/>
+  <line x1="393" y1="383" x2="393" y2="371" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3" data-kolumn="struktur"/>
+  <line x1="393" y1="405" x2="393" y2="417" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3" data-kolumn="struktur"/>
+  <line x1="439" y1="383" x2="439" y2="371" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3" data-kolumn="struktur"/>
+  <line x1="439" y1="405" x2="439" y2="417" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3" data-kolumn="struktur"/>
+  <line x1="450" y1="394" x2="462" y2="394" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3" data-kolumn="struktur"/>
+  <text x="301" y="400.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="3" data-kolumn="struktur">C</text>
+  <text x="347" y="400.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="3" data-kolumn="struktur">C</text>
+  <text x="393" y="400.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="3" data-kolumn="struktur">C</text>
+  <text x="439" y="400.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="3" data-kolumn="struktur">C</text>
+  <text x="301" y="366.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="3" data-kolumn="struktur">H</text>
+  <text x="301" y="434.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="3" data-kolumn="struktur">H</text>
+  <text x="255" y="400.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="3" data-kolumn="struktur">H</text>
+  <text x="347" y="366.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="3" data-kolumn="struktur">H</text>
+  <text x="347" y="434.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="3" data-kolumn="struktur">H</text>
+  <text x="393" y="366.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="3" data-kolumn="struktur">H</text>
+  <text x="393" y="434.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="3" data-kolumn="struktur">H</text>
+  <text x="439" y="366.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="3" data-kolumn="struktur">H</text>
+  <text x="439" y="434.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="3" data-kolumn="struktur">H</text>
+  <text x="485" y="400.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-rad="3" data-kolumn="struktur">H</text>
+  <circle cx="601.6" cy="434.67" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="3" data-kolumn="modell"/>
+  <circle cx="572.22" cy="426.67" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="3" data-kolumn="modell"/>
+  <circle cx="567.51" cy="396.59" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="3" data-kolumn="modell"/>
+  <circle cx="605.27" cy="359.51" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="3" data-kolumn="modell"/>
+  <circle cx="643.45" cy="359.51" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="3" data-kolumn="modell"/>
+  <circle cx="674.73" cy="428.49" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="3" data-kolumn="modell"/>
+  <circle cx="636.55" cy="428.49" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="3" data-kolumn="modell"/>
+  <circle cx="678.4" cy="353.33" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="3" data-kolumn="modell"/>
+  <circle cx="707.78" cy="361.33" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="3" data-kolumn="modell"/>
+  <circle cx="712.49" cy="391.41" r="9.5" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-rad="3" data-kolumn="modell"/>
+  <line x1="593.08" y1="408" x2="624.36" y2="380" stroke="#2d4a35" stroke-width="3" stroke-linecap="round" data-bind="C-C" data-rad="3" data-kolumn="modell"/>
+  <line x1="624.36" y1="380" x2="655.64" y2="408" stroke="#2d4a35" stroke-width="3" stroke-linecap="round" data-bind="C-C" data-rad="3" data-kolumn="modell"/>
+  <line x1="655.64" y1="408" x2="686.92" y2="380" stroke="#2d4a35" stroke-width="3" stroke-linecap="round" data-bind="C-C" data-rad="3" data-kolumn="modell"/>
+  <circle cx="593.08" cy="408" r="15" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-rad="3" data-kolumn="modell"/>
+  <circle cx="624.36" cy="380" r="15" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-rad="3" data-kolumn="modell"/>
+  <circle cx="655.64" cy="408" r="15" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-rad="3" data-kolumn="modell"/>
+  <circle cx="686.92" cy="380" r="15" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-rad="3" data-kolumn="modell"/>
+</svg>

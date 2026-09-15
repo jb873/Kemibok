@@ -176,6 +176,17 @@ const AVSNITT_KOLATOMEN = {
          'k1-a10.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Det här kallas **kolets kretslopp**.', standard: 'medan cellandningen pågår i alla celler dygnet runt.', fordjupning: 'kol utan varje grundämne som ingår i levande material.' }
        } }
 };
+// Kolväten (Organisk kemi 2, förhandsbygge av avsnitt 1, arbetsorder 1 2026-09-15): bara Standard levererad, så bara
+// standard-ankare; enkel/fordjupning läggs till när texterna kommer. aktiv på alla nivåer så att inget behöver ändras då.
+const AVSNITT_KOLVATEN = {
+  1: { dd: [],
+       bilder: {
+         'k2-b1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'hur kolatomerna sitter ihop.' },
+         'k2-b2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'är hela tiden densamma.' },
+         'k2-b3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Det undersöker vi i avsnitt 3.' },
+         'k2-b4.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'kolatomer du börjar med.' }
+       } }
+};
 const DELKAPITEL = {
   // bank: id-prefix och avsnittsoffset i kapitlets begreppsbank (en fil per kapitel; id/avsnitt unika över delkapitlen)
   repetition: { titel: 'Bakgrund och repetition', avsnitt: AVSNITT_REPETITION, bank: { idPrefix: '', avsnittOffset: 0 } },
@@ -195,6 +206,8 @@ const DELKAPITEL = {
     bank: { idPrefix: '', avsnittOffset: 0, uteslut: {
       'dubbelbindning': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)',
       'trippelbindning': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)',
-      'strukturformel': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)' } } }
+      'strukturformel': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)' } } },
+  kolvaten: { titel: 'Kolväten', kapitel: { id: 'organisk-kemi', titel: 'Organisk kemi' }, byggmapp: 'bygg', avsnitt: AVSNITT_KOLVATEN,
+    bank: { idPrefix: '', avsnittOffset: 3, uteslut: {} } }   // Öva ingår inte i förhandsbygget; banken delas med Kolatomen (kapitlets)
 };
 module.exports = { DELKAPITEL };

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 408" width="760" height="408" role="img" aria-labelledby="t">
+  <title id="t">Fyra strukturformler under varandra som en trappa: metan, etan, propan, butan. I varje rad utom den översta är den tillkomna kolatomen med sina två väteatomer markerad med grönt. Till höger står molekylformlerna</title>
+  <line x1="250" y1="39" x2="250" y2="27" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="0"/>
+  <line x1="250" y1="61" x2="250" y2="73" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="0"/>
+  <line x1="239" y1="50" x2="227" y2="50" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="0"/>
+  <line x1="261" y1="50" x2="273" y2="50" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="0"/>
+  <text x="250" y="57.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="0">C</text>
+  <text x="250" y="23.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="0">H</text>
+  <text x="250" y="91.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="0">H</text>
+  <text x="204" y="57.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="0">H</text>
+  <text x="296" y="57.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="0">H</text>
+  <text x="150" y="57" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="18" text-anchor="end">metan</text>
+  <text x="700" y="57" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="22" text-anchor="end">CH<tspan font-size="0.7em" dy="0.3em">4</tspan></text>
+  <rect x="279" y="94" width="34" height="96" rx="8" fill="#5a9668" fill-opacity="0.16" stroke="#5a9668" stroke-width="1.2" data-markruta="1"/>
+  <line x1="263" y1="142" x2="283" y2="142" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-rad="1"/>
+  <line x1="250" y1="131" x2="250" y2="119" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="1"/>
+  <line x1="250" y1="153" x2="250" y2="165" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="1"/>
+  <line x1="239" y1="142" x2="227" y2="142" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="1"/>
+  <line x1="296" y1="131" x2="296" y2="119" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="1"/>
+  <line x1="296" y1="153" x2="296" y2="165" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="1"/>
+  <line x1="307" y1="142" x2="319" y2="142" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="1"/>
+  <text x="250" y="149.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="1">C</text>
+  <text x="296" y="149.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#5a9668" font-weight="bold" data-atom="C" data-mark="1" data-rad="1">C</text>
+  <text x="250" y="115.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="1">H</text>
+  <text x="250" y="183.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="1">H</text>
+  <text x="204" y="149.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="1">H</text>
+  <text x="296" y="115.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#5a9668"  data-atom="H" data-mark="1" data-rad="1">H</text>
+  <text x="296" y="183.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#5a9668"  data-atom="H" data-mark="1" data-rad="1">H</text>
+  <text x="342" y="149.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="1">H</text>
+  <text x="150" y="149" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="18" text-anchor="end">etan</text>
+  <text x="700" y="149" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="22" text-anchor="end">C<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">6</tspan></text>
+  <text x="700" y="170"    font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5a9668" text-anchor="end">+ CH<tspan font-size="0.7em" dy="0.3em">2</tspan></text>
+  <rect x="325" y="186" width="34" height="96" rx="8" fill="#5a9668" fill-opacity="0.16" stroke="#5a9668" stroke-width="1.2" data-markruta="2"/>
+  <line x1="263" y1="234" x2="283" y2="234" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-rad="2"/>
+  <line x1="309" y1="234" x2="329" y2="234" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-rad="2"/>
+  <line x1="250" y1="223" x2="250" y2="211" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2"/>
+  <line x1="250" y1="245" x2="250" y2="257" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2"/>
+  <line x1="239" y1="234" x2="227" y2="234" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2"/>
+  <line x1="296" y1="223" x2="296" y2="211" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2"/>
+  <line x1="296" y1="245" x2="296" y2="257" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2"/>
+  <line x1="342" y1="223" x2="342" y2="211" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2"/>
+  <line x1="342" y1="245" x2="342" y2="257" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2"/>
+  <line x1="353" y1="234" x2="365" y2="234" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="2"/>
+  <text x="250" y="241.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="2">C</text>
+  <text x="296" y="241.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="2">C</text>
+  <text x="342" y="241.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#5a9668" font-weight="bold" data-atom="C" data-mark="1" data-rad="2">C</text>
+  <text x="250" y="207.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="2">H</text>
+  <text x="250" y="275.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="2">H</text>
+  <text x="204" y="241.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="2">H</text>
+  <text x="296" y="207.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="2">H</text>
+  <text x="296" y="275.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="2">H</text>
+  <text x="342" y="207.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#5a9668"  data-atom="H" data-mark="1" data-rad="2">H</text>
+  <text x="342" y="275.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#5a9668"  data-atom="H" data-mark="1" data-rad="2">H</text>
+  <text x="388" y="241.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="2">H</text>
+  <text x="150" y="241" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="18" text-anchor="end">propan</text>
+  <text x="700" y="241" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="22" text-anchor="end">C<tspan font-size="0.7em" dy="0.3em">3</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">8</tspan></text>
+  <text x="700" y="262"    font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5a9668" text-anchor="end">+ CH<tspan font-size="0.7em" dy="0.3em">2</tspan></text>
+  <rect x="371" y="278" width="34" height="96" rx="8" fill="#5a9668" fill-opacity="0.16" stroke="#5a9668" stroke-width="1.2" data-markruta="3"/>
+  <line x1="263" y1="326" x2="283" y2="326" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-rad="3"/>
+  <line x1="309" y1="326" x2="329" y2="326" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-rad="3"/>
+  <line x1="355" y1="326" x2="375" y2="326" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-rad="3"/>
+  <line x1="250" y1="315" x2="250" y2="303" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3"/>
+  <line x1="250" y1="337" x2="250" y2="349" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3"/>
+  <line x1="239" y1="326" x2="227" y2="326" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3"/>
+  <line x1="296" y1="315" x2="296" y2="303" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3"/>
+  <line x1="296" y1="337" x2="296" y2="349" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3"/>
+  <line x1="342" y1="315" x2="342" y2="303" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3"/>
+  <line x1="342" y1="337" x2="342" y2="349" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3"/>
+  <line x1="388" y1="315" x2="388" y2="303" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3"/>
+  <line x1="388" y1="337" x2="388" y2="349" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3"/>
+  <line x1="399" y1="326" x2="411" y2="326" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-rad="3"/>
+  <text x="250" y="333.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="3">C</text>
+  <text x="296" y="333.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="3">C</text>
+  <text x="342" y="333.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#2d4a35" font-weight="bold" data-atom="C"  data-rad="3">C</text>
+  <text x="388" y="333.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#5a9668" font-weight="bold" data-atom="C" data-mark="1" data-rad="3">C</text>
+  <text x="250" y="299.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="3">H</text>
+  <text x="250" y="367.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="3">H</text>
+  <text x="204" y="333.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="3">H</text>
+  <text x="296" y="299.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="3">H</text>
+  <text x="296" y="367.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="3">H</text>
+  <text x="342" y="299.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="3">H</text>
+  <text x="342" y="367.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="3">H</text>
+  <text x="388" y="299.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#5a9668"  data-atom="H" data-mark="1" data-rad="3">H</text>
+  <text x="388" y="367.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#5a9668"  data-atom="H" data-mark="1" data-rad="3">H</text>
+  <text x="434" y="333.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#2d4a35"  data-atom="H"  data-rad="3">H</text>
+  <text x="150" y="333" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="18" text-anchor="end">butan</text>
+  <text x="700" y="333" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="22" text-anchor="end">C<tspan font-size="0.7em" dy="0.3em">4</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">10</tspan></text>
+  <text x="700" y="354"    font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5a9668" text-anchor="end">+ CH<tspan font-size="0.7em" dy="0.3em">2</tspan></text>
+  <line x1="40" y1="382" x2="720" y2="382" stroke="#2d4a35" stroke-width="1" stroke-linecap="round" />
+  <text x="380" y="400" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold">Varje steg i serien: en kolatom och två väteatomer till.</text>
+</svg>

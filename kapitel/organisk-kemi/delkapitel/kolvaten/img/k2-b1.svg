@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" width="760" height="260" role="img" aria-labelledby="t">
+  <title id="t">Metan och butan som strukturformler. Kolatomerna och strecken mellan dem är gröna, väteatomerna gråa. Under varje kolatom i butan står hur många väteatomer den bär: tre, två, två, tre</title>
+  <line x1="120" y1="99" x2="120" y2="87" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="metan"/>
+  <line x1="120" y1="121" x2="120" y2="133" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="metan"/>
+  <line x1="109" y1="110" x2="97" y2="110" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="metan"/>
+  <line x1="131" y1="110" x2="143" y2="110" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="metan"/>
+  <text x="120" y="117.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#5a9668" font-weight="bold" data-atom="C"  data-molekyl="metan">C</text>
+  <text x="120" y="83.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="metan">H</text>
+  <text x="120" y="151.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="metan">H</text>
+  <text x="74" y="117.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="metan">H</text>
+  <text x="166" y="117.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="metan">H</text>
+  <line x1="343" y1="110" x2="363" y2="110" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-molekyl="butan"/>
+  <line x1="389" y1="110" x2="409" y2="110" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-molekyl="butan"/>
+  <line x1="435" y1="110" x2="455" y2="110" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-C" data-molekyl="butan"/>
+  <line x1="330" y1="99" x2="330" y2="87" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="butan"/>
+  <line x1="330" y1="121" x2="330" y2="133" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="butan"/>
+  <line x1="319" y1="110" x2="307" y2="110" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="butan"/>
+  <line x1="376" y1="99" x2="376" y2="87" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="butan"/>
+  <line x1="376" y1="121" x2="376" y2="133" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="butan"/>
+  <line x1="422" y1="99" x2="422" y2="87" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="butan"/>
+  <line x1="422" y1="121" x2="422" y2="133" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="butan"/>
+  <line x1="468" y1="99" x2="468" y2="87" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="butan"/>
+  <line x1="468" y1="121" x2="468" y2="133" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="butan"/>
+  <line x1="479" y1="110" x2="491" y2="110" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-molekyl="butan"/>
+  <text x="330" y="117.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#5a9668" font-weight="bold" data-atom="C"  data-molekyl="butan">C</text>
+  <text x="376" y="117.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#5a9668" font-weight="bold" data-atom="C"  data-molekyl="butan">C</text>
+  <text x="422" y="117.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#5a9668" font-weight="bold" data-atom="C"  data-molekyl="butan">C</text>
+  <text x="468" y="117.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#5a9668" font-weight="bold" data-atom="C"  data-molekyl="butan">C</text>
+  <text x="330" y="83.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="butan">H</text>
+  <text x="330" y="151.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="butan">H</text>
+  <text x="284" y="117.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="butan">H</text>
+  <text x="376" y="83.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="butan">H</text>
+  <text x="376" y="151.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="butan">H</text>
+  <text x="422" y="83.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="butan">H</text>
+  <text x="422" y="151.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="butan">H</text>
+  <text x="468" y="83.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="butan">H</text>
+  <text x="468" y="151.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="butan">H</text>
+  <text x="514" y="117.7"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.919999999999998" fill="#8A8A8A"  data-atom="H"  data-molekyl="butan">H</text>
+  <rect x="319" y="154" width="22" height="22" rx="4" fill="#5a9668" fill-opacity="0.15" stroke="none"/>
+  <text x="330" y="170"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5a9668" font-weight="bold" data-antal="3">3</text>
+  <rect x="365" y="154" width="22" height="22" rx="4" fill="#5a9668" fill-opacity="0.15" stroke="none"/>
+  <text x="376" y="170"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5a9668" font-weight="bold" data-antal="2">2</text>
+  <rect x="411" y="154" width="22" height="22" rx="4" fill="#5a9668" fill-opacity="0.15" stroke="none"/>
+  <text x="422" y="170"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5a9668" font-weight="bold" data-antal="2">2</text>
+  <rect x="457" y="154" width="22" height="22" rx="4" fill="#5a9668" fill-opacity="0.15" stroke="none"/>
+  <text x="468" y="170"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5a9668" font-weight="bold" data-antal="3">3</text>
+  <text x="120" y="200" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17">metan, CH<tspan font-size="0.7em" dy="0.3em">4</tspan></text>
+  <text x="399" y="200" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17">butan, C<tspan font-size="0.7em" dy="0.3em">4</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">10</tspan></text>
+  <text x="380" y="242" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">Grön stomme av kol – grått väte fyller ut de bindningar som blir över.</text>
+</svg>

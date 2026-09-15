@@ -29,7 +29,14 @@ function arReaktion(s) {
   return t.split(/\s+/).every(w => /^(\d+|\+|→|→\[[^\]]+\]|⇌|e⁻|(?:[A-Z][a-z]?[₀-₉]*|\((?:[A-Z][a-z]?[₀-₉]*)+\)[₀-₉]*)+(?:[²³]?[⁺⁻])?)$/.test(w));
 }
 // enskilda tokens med index/laddning → \(\ce{…}\); hela reaktionsrader hanteras av anroparen
+// allmän formel med n som variabel (CₙH₂ₙ₊₂, kolväten 1.2, ordern 2026-09-15): ett matematiskt uttryck med (mathrm{…}),
+// inte ce{} – "n" är en variabel, inte ett index. Index: ₙ → n, ₊ → +, siffror som vanligt.
+const SUBN = Object.assign({ 'ₙ': 'n', '₊': '+', '₋': '-' }, SUB);
+const ALLMANTOKEN = /(?:[A-Z][a-z]?[₀-₉ₙ₊₋]*)*[A-Z][a-z]?[₀-₉₊₋]*ₙ[₀-₉ₙ₊₋]*(?:[A-Z][a-z]?[₀-₉ₙ₊₋]*)*/g;
+function arAllmanFormel(s) { const m = s.trim().match(ALLMANTOKEN); return !!m && m[0] === s.trim(); }
+function allmanTex(t) { return t.replace(/([A-Z][a-z]?)([₀-₉ₙ₊₋]*)/g, (_, el, ix) => `\\mathrm{${el}}` + (ix ? `_{${[...ix].map(c => SUBN[c]).join('')}}` : '')); }
 function formler(s) {
+  s = s.replace(ALLMANTOKEN, t => `\\(${allmanTex(t)}\\)`);
   s = s.replace(/\b([A-Z][a-z]?(?:O|H)?)ₓ/g, (_, b) => `\\(\\ce{${b}_x}\\)`);   // NOₓ, SOₓ – obestämt index x
   return s.replace(FORMELTOKEN, t => /[₀-₉⁺⁻]/.test(t) ? `\\(\\ce{${ceify(t)}}\\)` : t)
     .replace(TIOPOTENS, (_, mant, bas, minus, exp) => `\\(${mant ? mant.replace(',', '{,}') + ' \\cdot ' : ''}${bas}^{${minus ? '-' : ''}${[...exp].map(c => SUPD[c]).join('')}}\\)`)
@@ -44,4 +51,4 @@ function unicodeCe(x) {
 }
 function unicode(s) { return s.replace(/\\\(\\ce\{([^}]*)\}\\\)/g, (_, x) => unicodeCe(x)); }
 
-module.exports = { ceify, formler, unicode, unicodeCe, arReaktion, FORMELTOKEN };
+module.exports = { ceify, formler, unicode, unicodeCe, arReaktion, arAllmanFormel, allmanTex, FORMELTOKEN };

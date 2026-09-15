@@ -115,7 +115,7 @@ for (const m of kropp.matchAll(/\n# UNDERDEL ([A-D]) — ([^\n]+)\n([\s\S]*?)(?=
 if (!underdelar.length) { throw new Error('inga underdelar hittade'); }
 
 // ---------- inline-konvertering ----------
-const { ceify, formler, arReaktion } = require('./lib-notation.js');   // Unicode → \ce (tokens, tiopotenser, ⇌); reaktionsrader via ceify
+const { ceify, formler, arReaktion, arAllmanFormel, allmanTex } = require('./lib-notation.js');   // Unicode → \ce (tokens, tiopotenser, ⇌); reaktionsrader via ceify
 function inline(s) {
   let t = s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
   // fet reaktion i löptext → ett enda \(\ce{…}\) (lib-notation.arReaktion); övrig fetstil → <strong>
@@ -136,6 +136,10 @@ function nivaHtml(text, niva) {
     // fristående fetstilt reaktionsrad → display-formel
     if (rader.length === 1 && /^\*\*[^*]+\*\*$/.test(b) && arReaktion(b.replace(/\*\*/g, ''))) {
       ut.push({ typ: 'formel', html: `<div class="formel">\\[\\ce{${ceify(b.replace(/\*\*/g, ''))}}\\]</div>`, kalla: b }); continue;
+    }
+    // fristående fetstilt allmän formel med n (CₙH₂ₙ₊₂, kolväten 1.2) → display-uttryck i vanlig MathJax, inte \ce
+    if (rader.length === 1 && /^\*\*[^*]+\*\*$/.test(b) && arAllmanFormel(b.replace(/\*\*/g, ''))) {
+      ut.push({ typ: 'formel', html: `<div class="formel">\\[${allmanTex(b.replace(/\*\*/g, ''))}\\]</div>`, kalla: b }); continue;
     }
     // punktlista → <ul> (plattformens .brodtext ul); tabell → <table class="brodtext-tabell"> (kemi.css)
     if (rader.every(r => /^- /.test(r))) {
