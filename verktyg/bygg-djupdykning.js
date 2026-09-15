@@ -18,10 +18,10 @@ const { formler, ceify, arReaktion } = require('./lib-notation.js');
 const ROT = path.join(__dirname, '..');
 const DKID = process.argv[2] && !process.argv[2].startsWith('--') ? process.argv[2] : 'repetition';
 const TORR = process.argv.includes('--torr');
-const KAP = { id: 'syror-och-baser', titel: 'Syror och baser' };
 const { tolkaDjupdykningar } = require('./lib-djupdykningar.js');
 const { DELKAPITEL } = require('./bygg-avsnitt-konfig.js');
 if (!DELKAPITEL[DKID]) { console.error('okänt delkapitel ' + DKID); process.exit(2); }
+const KAP = DELKAPITEL[DKID].kapitel || { id: 'syror-och-baser', titel: 'Syror och baser' };   // kapitel ur konfigurationen (Organisk kemi: kolatomen, kolvaten)
 const DK = { id: DKID, titel: DELKAPITEL[DKID].titel };
 const B4 = '../../../../';
 const alla = tolkaDjupdykningar(path.join(ROT, 'doc', 'leveranser', DK.id, 'djupdykningar.md'));
@@ -31,22 +31,24 @@ function inline(s) {
   let t = s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
   t = t.replace(/\*\*([^*]+)\*\*/g, (m, x) => arReaktion(x) ? `§§${ceify(x)}§§` : m);
   t = formler(t).replace(/§§([^§]*)§§/g, '\\(\\ce{$1}\\)');
+  t = t.replace(/\d(?: \d{3})+(?!\d)/g, m => m.replace(/ /g, '&nbsp;'));   // tusentalsmellanslag ("1 200 grader", "100 000") får inte brytas över radslut
   return t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/(^|[\s(])\*([^*\n]+)\*(?=[\s.,;:)]|$)/g, '$1<em>$2</em>');
 }
 
 let antal = 0;
 for (const [N, K] of Object.entries(DELKAPITEL[DKID].avsnitt)) {
-  if (!K.slug) { require('./lib-leveranshuvud.js').fyllHuvud(K, path.join(ROT, 'doc', 'leveranser', DK.id, `avsnitt-${N}.md`)); }
+  if (!K.slug) { require('./lib-leveranshuvud.js').fyllHuvud(K, path.join(ROT, 'doc', 'leveranser', DK.id, DELKAPITEL[DKID].byggmapp || '', `avsnitt-${N}.md`)); }   // huvudet ligger i byggfilen när en byggmapp finns
   for (const d of K.dd) {
     const lev = alla.find(x => x.titel.startsWith(d.titel));
     if (!lev) { console.log(`  ${d.slug}: ingen text i leveransen – sidan lämnas orörd`); continue; }
     if (lev.avsnitt !== +N) { throw new Error(`${d.slug}: leveransen säger avsnitt ${lev.avsnitt}, konfigurationen avsnitt ${N}`); }
     if (lev.slug && lev.slug !== d.slug) { throw new Error(`${d.slug}: leveransen anger filnamnet djupdykning-${lev.slug}.html`); }
     if (lev.annatDelkapitel) { throw new Error(`${d.slug}: leveransen placerar texten i delkapitlet ${lev.annatDelkapitel}`); }
-    const block = lev.text.split(/\n\s*\n/).map(b => b.trim()).filter(Boolean);
+    const block = lev.text.split(/\n\s*\n/).map(b => b.trim()).filter(b => b && b !== '---');   // --- (avdelare i leveransen) ritas inte
     const enstaka = [];
     const html = block.map(b => {
-      if (/^### /.test(b)) { return `      <h2>${inline(b.replace(/^### /, ''))}</h2>`; }
+      if (/^#{2,3} /.test(b)) { return `      <h2>${inline(b.replace(/^#{2,3} /, ''))}</h2>`; }   // ## (kolatomen) eller ### (repetition) → h2
+      if (/^- /.test(b)) { return `      <ul>\n${b.split(/\n(?=- )/).map(l => `        <li>${inline(l.replace(/^- /, '').replace(/\n\s+/g, ' '))}</li>`).join('\n')}\n      </ul>`; }   // punktlista ("Om du vill veta mer")
       const p = b.replace(/\n/g, ' ');
       // fristående fet reaktionsrad → display-formel (som i avsnittssidorna)
       if (/^\*\*[^*]+\*\*$/.test(p) && arReaktion(p.replace(/\*\*/g, ''))) { return `      <div class="formel">\\[\\ce{${ceify(p.replace(/\*\*/g, ''))}}\\]</div>`; }
@@ -114,7 +116,7 @@ ${html}
     if (!TORR) { fs.writeFileSync(ut, sida); }
     antal++;
     const ord = lev.text.replace(/[#*]/g, '').split(/\s+/).filter(Boolean).length;
-    console.log(`${TORR ? '(torr) ' : 'skrev '}${path.basename(ut)}: "${lev.titel}" – ${block.filter(b => !/^### /.test(b)).length} stycken, ${block.filter(b => /^### /.test(b)).length} h2, ~${ord} ord`);
+    console.log(`${TORR ? '(torr) ' : 'skrev '}${path.basename(ut)}: "${lev.titel}" – ${block.filter(b => !/^#{2,3} /.test(b) && !/^- /.test(b)).length} stycken, ${block.filter(b => /^#{2,3} /.test(b)).length} h2, ${block.filter(b => /^- /.test(b)).length} listor, ~${ord} ord`);
     if (enstaka.length) { console.log(`  §7.1 – stycken med en mening, rapporteras men är inte fel i djupdykningar (${enstaka.length}): ${enstaka.map(e => '"' + e + '…"').join(' | ')}`); }
   }
 }

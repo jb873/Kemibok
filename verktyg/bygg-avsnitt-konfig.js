@@ -163,7 +163,7 @@ const AVSNITT_KOLATOMEN = {
          'k1-a2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Propan blir CH₃CH₂CH₃.', standard: 'i stället för att ritas ut med tio streck.', fordjupning: 'bindningarna riktar sig.' },
          'k1-a4.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'utan också hur de sitter.', standard: 'olika ämnen med olika egenskaper.', fordjupning: 'är större och kärnorna hamnar längre ifrån varandra.' }
        } },
-  2: { dd: [],
+  2: { dd: [{ slug: 'diamanten', titel: 'Diamanten som kom upp ur djupet', ikon: '💎' }],   // djupdykning från 2.2 (arbetsorder 2026-09-15); ikonen är Codes förslag
        bilder: {
          'k1-a5.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Man kan säga att hela diamanten är en enda molekyl.', standard: 'genom att kol utsätts för mycket högt tryck och hög', fordjupning: 'När man lägger på en spänning vandrar de, och det är elektrisk' },
          'k1-a6.webp': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'i magen innan kroppen hinner ta upp det.', standard: 'binder giftet i magen innan kroppen hinner ta upp det.', fordjupning: 'Molekylerna binder till porernas insida och tränger aldrig in i själva' },

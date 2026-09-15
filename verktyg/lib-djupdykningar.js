@@ -38,7 +38,11 @@ function tolkaDjupdykningar(fil) {
     else if (brod) {
       d.textFil = path.resolve(path.dirname(fil), brod);
       if (!fs.existsSync(d.textFil)) { throw new Error(`djupdykning "${titel}": brödtextfilen ${brod} saknas`); }
-      d.text = fs.readFileSync(d.textFil, 'utf8').replace(/\r\n/g, '\n').replace(/^# [^\n]+\n+/, '').trim();
+      let t = fs.readFileSync(d.textFil, 'utf8').replace(/\r\n/g, '\n').replace(/^# [^\n]+\n+/, '');
+      // leveranshuvud före första rubriken (kolatomen: "**Delkapitel 1 … · länkas från 2.2**" + not, avslutat med ---) skalas bort
+      const hr = t.indexOf('\n---\n'), h2 = t.search(/\n## /);
+      if (hr >= 0 && h2 > hr && t.slice(0, hr).trim().split(/\n\s*\n/).length <= 2) { t = t.slice(hr + 5); }
+      d.text = t.trim();
     }
     ut.push(d);
   }

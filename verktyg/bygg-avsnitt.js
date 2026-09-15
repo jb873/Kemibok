@@ -274,7 +274,8 @@ const knappar = underdelar.map((u, i) => `        <button type="button" class="u
           <span class="underdel-titel">${u.titel}</span>
         </button>`).join('\n');
 // korttexter ur doc/leveranser/{dk}/djupdykningar.md (lib-djupdykningar.js); saknas texten står platshållaren kvar
-const djup = require('./lib-djupdykningar.js').tolkaDjupdykningar(path.join(LEV, 'djupdykningar.md'));
+const djupFil = [path.join(LEV, 'djupdykningar.md'), path.join(ROT, 'doc', 'leveranser', DK.id, 'djupdykningar.md')].find(f => fs.existsSync(f)) || path.join(LEV, 'djupdykningar.md');   // byggmappen, annars leveransens rot (kolatomen)
+const djup = require('./lib-djupdykningar.js').tolkaDjupdykningar(djupFil);
 const korttext = d => { const x = djup.find(y => y.titel.startsWith(d.titel)); return x ? inline(x.korttext) : '{{1-2 meningar.}}'; };
 const dd = K.dd.length ? `
       <!-- DJUPDYKNINGAR -->
