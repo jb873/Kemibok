@@ -82,8 +82,6 @@ Kol finns inte bara bundet i sten och material. Det rör sig hela tiden mellan l
 tar upp kol ur luften, kolet förs vidare när djur äter, och till slut kommer det tillbaka till luften. Två
 processer sköter den rörelsen: fotosyntesen och cellandningen.
 
-### Fotosyntesen bygger socker av koldioxid och vatten
-
 ### Växten hämtar två råvaror från två håll
 
 Luften omkring oss innehåller koldioxid, CO₂. Det är inte mycket — ungefär fyra molekyler av
@@ -150,8 +148,6 @@ näringskedjor och återvänder så småningom till atmosfären.
 
 Två processer är särskilt viktiga för denna rörelse: **fotosyntesen** och **cellandningen**. Genom
 fotosyntesen byggs energirika organiska ämnen upp. Genom cellandningen bryts de ner igen.
-
-### Fotosyntesen bygger socker av koldioxid och vatten
 
 ### Växten hämtar koldioxid ur luften och vatten ur marken
 
@@ -249,8 +245,6 @@ syret kommer måste man öppna de två skedena.
 
 ## B — ENKEL
 
-### Cellandningen bryter ner socker och frigör energi
-
 ### Alla celler behöver energi
 
 Levande celler behöver energi hela tiden.
@@ -312,8 +306,6 @@ Så återvänder kolet från döda organismer till luften.
 ---
 
 ## B — STANDARD
-
-### Cellandningen bryter ner socker och frigör energi
 
 ### Cellerna behöver energi och får den ur glukosen
 
@@ -408,8 +400,6 @@ stegvis.
 
 ## C — ENKEL
 
-### Fotosyntes och cellandning är varandras motsatser
-
 ### Det ena bygger upp, det andra bryter ner
 
 Ställ de två processerna bredvid varandra.
@@ -459,8 +449,6 @@ undersöka längre fram.**
 ---
 
 ## C — STANDARD
-
-### Fotosyntes och cellandning är varandras motsatser
 
 ### Produkterna i den ena processen är råvaror i den andra
 

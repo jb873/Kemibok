@@ -1,0 +1,133 @@
+{
+  "avsnitt": 3,
+  "titel": "Kol rör sig mellan luften och det levande",
+  "delkapitel": "kolatomen",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 3 (Kol rör sig mellan luften och det levande), delkapitel Kolatomen, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/kolatomen/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k3-s1",
+      "typ": "tal",
+      "fraga": "Hur många koldioxidmolekyler går åt när en glukosmolekyl bildas vid fotosyntesen?",
+      "svar": 6,
+      "forklaring": "Varje koldioxidmolekyl bidrar med en kolatom, och glukosmolekylen innehåller sex kolatomer."
+    },
+    {
+      "id": "k3-s2",
+      "typ": "tal",
+      "fraga": "Hur många kolatomer finns i en koldioxidmolekyl?",
+      "svar": 1,
+      "forklaring": "Molekylen består av en kolatom och två syreatomer. Det är den kolatomen som förs in i sockret vid fotosyntesen."
+    },
+    {
+      "id": "k3-s3",
+      "typ": "tal",
+      "fraga": "Hur många syrgasmolekyler bildas när växten bygger en glukosmolekyl?",
+      "svar": 6,
+      "forklaring": "Reaktionsformeln ger sex syrgasmolekyler på högersidan, lika många som antalet koldioxidmolekyler som gick åt."
+    },
+    {
+      "id": "k3-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas de små öppningarna på bladets undersida där växten tar in koldioxid?",
+      "svar": [
+        "klyvöppningar"
+      ],
+      "forklaring": "De kan öppnas och stängas, vilket gör att växten kan styra hur mycket som släpps in och ut."
+    },
+    {
+      "id": "k3-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas de bakterier och svampar som bryter ner döda växter och djur?",
+      "svar": [
+        "nedbrytare"
+      ],
+      "forklaring": "De har cellandning som andra organismer och avger därför koldioxid. På så sätt återförs kolet från döda organismer till luften."
+    },
+    {
+      "id": "k3-s6",
+      "typ": "ord",
+      "fraga": "Vilket socker byggs upp vid fotosyntesen?",
+      "svar": [
+        "druvsocker",
+        "glukos"
+      ],
+      "forklaring": "Båda namnen används om samma ämne. Molekylen innehåller sex kolatomer."
+    },
+    {
+      "id": "k3-s7",
+      "typ": "formel",
+      "fraga": "Skriv reaktionsformeln för fotosyntesen.",
+      "svar": [
+        "6 CO2 + 6 H2O ->[ljus] C6H12O6 + 6 O2",
+        "6 CO2 + 6 H2O -> C6H12O6 + 6 O2",
+        "6 CO2 + 6 H2O → C6H12O6 + 6 O2",
+        "6 CO2 + 6 H2O →[ljus] C6H12O6 + 6 O2"
+      ],
+      "forklaring": "Sex kolatomer går in med koldioxiden och sex kommer ut i glukosen. Ljuset tillför den energi som behövs."
+    },
+    {
+      "id": "k3-s8",
+      "typ": "formel",
+      "fraga": "Skriv reaktionsformeln för cellandningen.",
+      "svar": [
+        "C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O",
+        "C6H12O6 + 6 O2 → 6 CO2 + 6 H2O"
+      ],
+      "forklaring": "Samma ämnen som i fotosyntesen, fast åt andra hållet. Energin som frigörs skrivs inte som ett ämne i formeln."
+    },
+    {
+      "id": "k3-s9",
+      "typ": "flerval",
+      "fraga": "Varifrån kommer nästan allt kol i en trädstam?",
+      "alternativ": [
+        "från jorden via rötterna",
+        "från luften via bladen",
+        "från vattnet i marken",
+        "från solljuset"
+      ],
+      "svar": 1,
+      "forklaring": "Rötterna hämtar vatten, inte kol. Kolatomerna kommer från luftens koldioxid och byggs in i sockret vid fotosyntesen."
+    },
+    {
+      "id": "k3-s10",
+      "typ": "flerval",
+      "fraga": "Vilka organismer har cellandning?",
+      "alternativ": [
+        "bara djur",
+        "bara växter",
+        "både växter och djur",
+        "bara nedbrytare"
+      ],
+      "svar": 2,
+      "forklaring": "Växter har både fotosyntes och cellandning. Fotosyntesen bygger upp glukosen, cellandningen gör att växtens celler kan använda energin i den."
+    },
+    {
+      "id": "k3-s11",
+      "typ": "flerval",
+      "fraga": "Vad händer med energin vid cellandningen?",
+      "alternativ": [
+        "den skapas i cellen",
+        "den frigörs från glukosmolekylen",
+        "den kommer från syrgasen",
+        "den bildas när koldioxid avges"
+      ],
+      "svar": 1,
+      "forklaring": "Energin fanns redan lagrad i glukosen. Ytterst kommer den från solljuset, som tillförde den när växten byggde sockret."
+    },
+    {
+      "id": "k3-s12",
+      "typ": "flerval",
+      "fraga": "När är kolets kretslopp i balans?",
+      "alternativ": [
+        "när alla växter har lika mycket kol",
+        "när ungefär lika mycket kol tas upp som återförs",
+        "när cellandningen upphör",
+        "när allt kol finns i atmosfären"
+      ],
+      "svar": 1,
+      "forklaring": "Då håller sig mängden koldioxid i luften ungefär lika stor över tid."
+    }
+  ]
+}

@@ -91,8 +91,9 @@ for (const N of [1, 2, 3]) {
     const X = BOK[i], u = under[i], e = enkel[i], fd = fordj[i];
     if (e.nr !== u.nr || fd.nr !== u.nr) throw new Error('underdelsnummer stämmer inte');
     // ingress (bara underdel A: Standard ur avsnitt-N.md, Enkel ur Joachims leverans), sedan den långa rubriken som första mellanrubrik
-    const stdText = (i === 0 && intro ? intro + '\n\n' : '') + '### ' + u.titel + '\n\n' + u.text;
-    const enkelText = (i === 0 ? INGRESS[String(N)] + '\n\n' : '') + '### ' + e.titel + '\n\n' + e.text;
+    // den långa underdelsrubriken visas inte i texten (arbetsorder 3: som i Syror och baser lever den i knappen)
+    const stdText = (i === 0 && intro ? intro + '\n\n' : '') + u.text;
+    const enkelText = (i === 0 ? INGRESS[String(N)] + '\n\n' : '') + e.text;
     const kort = KORT[N + '.' + u.nr]; if (!kort) throw new Error('knapptitel saknas för ' + N + '.' + u.nr);
     const kp = KP[N + '.' + u.nr] ? `## Kärnpunkter (Enkel)\n\n${KP[N + '.' + u.nr]}\n\n## Kärnpunkter (Standard)\n\n${KP[N + '.' + u.nr]}\n\n` : '';
     ut += `\n# UNDERDEL ${X} — ${kort}\n\n${kp}---\n\n## ${X} — ENKEL\n\n${fetaReaktioner(enkelText)}\n\n---\n\n## ${X} — STANDARD\n\n${fetaReaktioner(stdText)}\n\n---\n\n## ${X} — FÖRDJUPNING\n\n### ${fd.titel}\n\n${fetaReaktioner(fd.text)}\n\n---\n`;
@@ -102,3 +103,64 @@ for (const N of [1, 2, 3]) {
   specar.forEach(s => console.log(`   ${s.fil} standard-ankare: "${s.ankareStandard.slice(0, 70)}"`));
 }
 console.log(`Enkel ${totalt.enkel} + Fördjupning ${totalt.fordj} = ${totalt.enkel + totalt.fordj} texter | "Om modellen" ${totalt.omModellen} | bilder ${totalt.bilder}`);
+
+// ---------- Öva (arbetsorder 3, 2026-09-15): flipcards-kolatomen.md → bygg/flipcards.md, kortsvar-kolatomen.md → bygg/kortsvar.md ----------
+// Flipcards: "**N. Term**" + definition (+ "**[formel]**", "*Bankformulering:* **Bankterm** — text") under
+// "## Begreppskort, grundlaggande" osv. → standardformatet (# AVSNITT / ## Begreppskort — grundläggande / **Term** [formel]
+// / F: / S:). Begreppskortens framsida = termen (leveransen har ingen egen fråga), baksida = definitionen.
+// Kortsvar: "**N.** `typ`" + fråga + ev. "A) … D) …" + "**Svar:**" + "*Förklaring:*" → blockform (## kN-sn · typ, F/A/S/E),
+// formel-svar som \ce-inmatning (ceify), reaktioner med accepterade varianter (märkt pil, vanlig pil), ord med "(x)" → alternativ.
+{
+  const { ceify } = require('./lib-notation.js');
+  const TITLAR = {};
+  for (const N of [1, 2, 3]) { TITLAR[N] = norm(`avsnitt-${N}.md`).match(/^# Avsnitt \d — ([^\n]+)/)[1].trim(); }
+  // ---- flipcards ----
+  const fc = norm('flipcards-kolatomen.md');
+  let fut = `# Flipcards — delkapitel Kolatomen (byggfil)\n\n> Sammansatt av verktyg/satt-ihop-kolatomen.js ur flipcards-kolatomen.md – redigera inte här.\n> Framsidan på begreppskorten är termen; baksidan definitionen. Bankformuleringar under Begreppsbanken.\n`;
+  const bankRader = []; let fcAntal = { b: 0, m: 0, bg: 0, bf: 0, mg: 0, mf: 0, formel: 0 };
+  for (const a of fc.matchAll(/\n# Avsnitt (\d)\n([\s\S]*?)(?=\n# Avsnitt |\n---\n\n## Att kontrollera|$)/g)) {
+    const N = +a[1]; let ut = ''; let nb = 0, nm = 0;
+    for (const s of a[2].matchAll(/\n## (Begreppskort|Modellkort), (grundlaggande|fordjupning)\n([\s\S]*?)(?=\n## |\n---|$)/g)) {
+      const typ = s[1], niva = s[2] === 'grundlaggande' ? 'grundläggande' : 'fördjupning';
+      ut += `\n## ${typ} — ${niva}\n\n`;
+      for (const k of s[3].matchAll(/\*\*(\d+)\. ([^*]+)\*\*\n([\s\S]*?)(?=\n\n\*\*\d+\. |\n*$(?![\s\S]))/g)) {
+        const nr = +k[1], titel = k[2].replace(/\n/g, ' ').trim(); let kropp = k[3].trim();
+        const formel = /\*\*\[formel\]\*\*/.test(kropp); kropp = kropp.replace(/\n?\*\*\[formel\]\*\*/, '');
+        const bm = kropp.match(/\n?\*Bankformulering:\* \*\*([^*]+)\*\* — ([\s\S]*)$/);
+        if (bm) { kropp = kropp.slice(0, bm.index).trim(); bankRader.push({ titel, term: bm[1].trim(), def: bm[2].replace(/\s*\n\s*/g, ' ').trim() }); }
+        const svar = kropp.replace(/\s*\n\s*/g, ' ').trim();
+        if (typ === 'Begreppskort') { nb++; fcAntal.b++; fcAntal[s[2] === 'grundlaggande' ? 'bg' : 'bf']++; } else { nm++; fcAntal.m++; fcAntal[s[2] === 'grundlaggande' ? 'mg' : 'mf']++; }
+        if (formel) fcAntal.formel++;
+        ut += `**${titel}**${formel ? ' [formel]' : ''}\nF: ${typ === 'Begreppskort' ? titel : titel}\nS: ${svar}\n\n`;
+      }
+    }
+    fut += `\n---\n\n# AVSNITT ${N} — ${TITLAR[N]}\n**${nb + nm} kort:** ${nb} begreppskort, ${nm} modellkort\n${ut}`;
+  }
+  fut += `\n---\n\n## Begreppsbanken\n\nEndast grundläggande begreppskort. Bankformuleringar (kortets term → bankterm) ur leveransen:\n\n`;
+  for (const b of bankRader) { fut += `**${b.titel}** → **${b.term}** — ${b.def}\n\n`; }
+  fs.writeFileSync(path.join(UT, 'flipcards.md'), fut);
+  console.log(`bygg/flipcards.md: ${fcAntal.b + fcAntal.m} kort = begrepp ${fcAntal.b} (grund ${fcAntal.bg}, fördj ${fcAntal.bf}) + modell ${fcAntal.m} (grund ${fcAntal.mg}, fördj ${fcAntal.mf}); [formel] ${fcAntal.formel}; bankformuleringar ${bankRader.length}`);
+  // ---- kortsvar ----
+  const ks = norm('kortsvar-kolatomen.md');
+  let kut = `# Kortsvar — delkapitel Kolatomen (byggfil)\n\n> Sammansatt av verktyg/satt-ihop-kolatomen.js ur kortsvar-kolatomen.md – redigera inte här. Blockform (KEMI-TILLAGG §8).\n`;
+  const ksAntal = {};
+  for (const a of ks.matchAll(/\n# Avsnitt (\d)\n([\s\S]*?)(?=\n# Avsnitt |\n---\n\n## Att kontrollera|$)/g)) {
+    const N = +a[1]; let n = 0;
+    kut += `\n---\n\n# AVSNITT ${N} — ${TITLAR[N]}\nantal_per_omgang: 10\n`;
+    for (const q of a[2].matchAll(/\*\*(\d+)\.\*\* `([a-z-]+)`\n([\s\S]*?)\n\*\*Svar:\*\* ([^\n]+)\n\*Förklaring:\* ([\s\S]*?)(?=\n\n\*\*\d+\.\*\*|\n*$(?![\s\S]))/g)) {
+      n++; const typ = q[2], svarRaa = q[4].trim(), forkl = q[5].replace(/\s*\n\s*/g, ' ').trim();
+      let ftext = q[3].replace(/\s*\n\s*/g, ' ').trim(); let alt = null;
+      if (typ === 'flerval') { const i = ftext.search(/\sA\) /); if (i < 0) throw new Error(`fråga ${q[1]}: alternativ saknas`); alt = ftext.slice(i).trim().split(/\s*[A-D]\)\s*/).filter(Boolean).map(x => x.trim()); ftext = ftext.slice(0, i).trim(); if (alt.length !== 4) throw new Error(`fråga ${q[1]}: ${alt.length} alternativ`); }
+      let S;
+      if (typ === 'flerval') { S = String('ABCD'.indexOf(svarRaa)); if (S === '-1') throw new Error(`fråga ${q[1]}: svar ${svarRaa}`); }
+      else if (typ === 'formel') { const c = ceify(svarRaa); S = /->/.test(c) ? [...new Set([c, c.replace(/->\[[^\]]+\]/, '->'), c.replace(/->\[[^\]]+\]|->/, '→'), c.replace(/->(\[[^\]]+\])/, '→$1')])].join(' | ') : c; }   // reaktioner: märkt pil, ->, → godtas
+      else if (typ === 'ord') { const m = svarRaa.match(/^(.+?) \((.+)\)$/); S = m ? `${m[1]} | ${m[2]}` : svarRaa; }
+      else { S = svarRaa; }
+      ksAntal[typ] = (ksAntal[typ] || 0) + 1;
+      kut += `\n## k${N}-s${n} · ${typ}\nF: ${ftext}\n${alt ? 'A: ' + alt.join(' | ') + '\n' : ''}S: ${S}\nE: ${forkl}\n`;
+    }
+    if (n !== 12) throw new Error(`kortsvar avsnitt ${N}: ${n} frågor`);
+  }
+  fs.writeFileSync(path.join(UT, 'kortsvar.md'), kut);
+  console.log('bygg/kortsvar.md: 36 frågor', JSON.stringify(ksAntal));
+}

@@ -1,0 +1,124 @@
+{
+  "avsnitt": 1,
+  "titel": "Kol bildar fler föreningar än något annat grundämne",
+  "delkapitel": "kolatomen",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 1 (Kol bildar fler föreningar än något annat grundämne), delkapitel Kolatomen. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/kolatomen/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k1-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Organisk kemi",
+      "svar": "Den del av kemin som handlar om kolföreningar. Namnet kommer från en äldre tid och har ingenting med liv att göra."
+    },
+    {
+      "id": "k1-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kolförening",
+      "svar": "Ett ämne som innehåller kol. Nästan alla innehåller också väte, och många dessutom syre eller kväve."
+    },
+    {
+      "id": "k1-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Elektronparbindning",
+      "svar": "En bindning där två atomer delar på ett elektronpar och använder det tillsammans."
+    },
+    {
+      "id": "k1-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kovalent bindning",
+      "svar": "Ett annat namn på elektronparbindning. Används från Standardnivå och uppåt."
+    },
+    {
+      "id": "k1-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Dubbelbindning",
+      "svar": "En bindning där två atomer delar på två elektronpar. Räknas som två av kolatomens fyra bindningar och ritas med två streck."
+    },
+    {
+      "id": "k1-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Trippelbindning",
+      "svar": "En bindning där två atomer delar på tre elektronpar. Räknas som tre bindningar och ritas med tre streck."
+    },
+    {
+      "id": "k1-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Molekylformel",
+      "svar": "En formel som visar vilka atomslag som ingår och hur många av varje. Den visar inte hur atomerna sitter ihop."
+    },
+    {
+      "id": "k1-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Strukturformel",
+      "svar": "En bild där bindningarna mellan atomerna ritas som streck. Ett streck är ett delat elektronpar."
+    },
+    {
+      "id": "k1-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Förenklad strukturformel",
+      "svar": "Ett kortare skrivsätt där varje kolatom skrivs tillsammans med sina väteatomer, i stället för att bindningarna ritas ut."
+    },
+    {
+      "id": "k1-b10",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kolkedja",
+      "svar": "Flera kolatomer bundna efter varandra. Kan vara några få atomer lång eller innehålla tusentals."
+    },
+    {
+      "id": "k1-b11",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kolring",
+      "svar": "En kolkedja som slutits, så att sista kolatomen binder till den första."
+    },
+    {
+      "id": "k1-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Tetraeder",
+      "svar": "Den form metanmolekylen har i verkligheten: kolatomen i mitten och de fyra väteatomerna i hörnen av en tresidig pyramid, med ungefär 109,5 grader mellan bindningarna."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k1-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför kan en kolatom bilda just fyra bindningar?",
+      "svar": "Kolatomen har fyra elektroner i sitt yttersta skal och saknar fyra för att skalet ska bli fullt. Genom att dela ett elektronpar med vardera fyra atomer får den dem."
+    },
+    {
+      "id": "k1-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Sex kolatomer kan ge tre olika ämnen. Hur går det till?",
+      "svar": "De kan sitta i en rak kedja, i en kedja med en gren, eller slutas till en ring. Lika många atomer, olika mönster, olika ämnen."
+    },
+    {
+      "id": "k1-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Strukturformeln för metan ritas platt. Varför är molekylen ändå inte platt?",
+      "svar": "Elektronparen är negativt laddade och stöter bort varandra. I tre dimensioner kommer de längre isär än i ett plan, så bindningarna riktar sig mot hörnen av en tetraeder."
+    },
+    {
+      "id": "k1-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Kisel har också fyra bindningar. Varför bildar kisel ändå inga långa kedjor?",
+      "svar": "Kiselatomen är större, så kärnorna hamnar längre isär och bindningen mellan två kiselatomer blir svagare. Kiselkedjor reagerar dessutom lätt med syre och vatten och faller sönder."
+    }
+  ]
+}

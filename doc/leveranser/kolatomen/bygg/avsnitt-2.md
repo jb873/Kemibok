@@ -82,8 +82,6 @@ När atomer av olika grundämnen binds samman bildas nya ämnen. Men även atome
 ihop på olika sätt och ge ämnen med helt olika egenskaper. Kol är det tydligaste exemplet. Rent kol kan
 finnas som diamant, grafit, grafen och fullerener — alla består bara av kolatomer.
 
-### Rent kol finns i flera former med olika egenskaper
-
 ### Ett grundämne kan finnas i flera olika former
 
 Vanligtvis tänker man sig att ett grundämne är en enda sak. Järn är järn, syre är syre.
@@ -135,8 +133,6 @@ olika egenskaper. Kol är ett tydligt exempel på detta.
 Rent kol kan bland annat förekomma som diamant, grafit, grafen och fullerener. Alla består enbart
 av kolatomer. Det som skiljer dem åt är alltså inte vilka atomer de innehåller, utan **hur
 kolatomerna är bundna till varandra och hur de är ordnade**.
-
-### Rent kol finns i flera former med olika egenskaper
 
 ### Samma grundämne kan förekomma i flera former
 
@@ -217,8 +213,6 @@ kolets vilotillstånd, den andra ett tillstånd som råkat bli fast.
 
 ## B — ENKEL
 
-### Diamant är hårt och grafit är mjukt av samma skäl: bindningarnas mönster
-
 ### I diamant binder varje kolatom till fyra andra
 
 I en diamant sitter varje kolatom ihop med fyra andra kolatomer. Bindningarna går åt fyra
@@ -273,8 +267,6 @@ sitter i mönstret.
 ---
 
 ## B — STANDARD
-
-### Diamant är hårt och grafit är mjukt av samma skäl: bindningarnas mönster
 
 ### I diamant binder varje kolatom till fyra andra
 
@@ -363,8 +355,6 @@ tre följder.
 
 ## C — ENKEL
 
-### Amorft kol, fullerener och grafen är kolets övriga former
-
 ### Amorft kol har inget regelbundet mönster
 
 Diamant och grafit har båda ett tydligt mönster som upprepas.
@@ -411,8 +401,6 @@ genomskinligt och går att böja, och det leder både ström och värme mycket b
 ---
 
 ## C — STANDARD
-
-### Amorft kol, fullerener och grafen är kolets övriga former
 
 ### Amorft kol saknar regelbunden struktur
 

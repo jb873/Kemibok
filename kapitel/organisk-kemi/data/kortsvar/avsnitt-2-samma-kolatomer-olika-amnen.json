@@ -1,0 +1,134 @@
+{
+  "avsnitt": 2,
+  "titel": "Samma kolatomer kan bygga helt olika ämnen",
+  "delkapitel": "kolatomen",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 2 (Samma kolatomer kan bygga helt olika ämnen), delkapitel Kolatomen, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/kolatomen/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k2-s1",
+      "typ": "tal",
+      "fraga": "Hur många andra kolatomer binder varje kolatom till i grafit?",
+      "svar": 3,
+      "forklaring": "Tre bindningar ger platta nätverk av sexkantiga ringar. I diamant är det fyra, vilket ger ett nätverk i alla riktningar."
+    },
+    {
+      "id": "k2-s2",
+      "typ": "tal",
+      "fraga": "Hur många kolatomer består den mest kända fullerenen av?",
+      "svar": 60,
+      "forklaring": "Den bildar en nästan klotformad bur av femkantiga och sexkantiga ringar, ungefär som en fotboll."
+    },
+    {
+      "id": "k2-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas de olika former som ett och samma grundämne kan förekomma i?",
+      "svar": [
+        "allotroper"
+      ],
+      "forklaring": "Diamant, grafit, grafen och fullerener är allotroper av kol. Alla består bara av kolatomer, men atomerna är ordnade olika."
+    },
+    {
+      "id": "k2-s4",
+      "typ": "ord",
+      "fraga": "Vilken form av kol saknar ett regelbundet mönster över längre avstånd?",
+      "svar": [
+        "amorft kol"
+      ],
+      "forklaring": "Sot och träkol innehåller mycket amorft kol. Det finns små områden som liknar grafit, men de ligger oregelbundet."
+    },
+    {
+      "id": "k2-s5",
+      "typ": "ord",
+      "fraga": "Vilket material är bara en atom tjockt och ungefär 200 gånger starkare än stål?",
+      "svar": [
+        "grafen"
+      ],
+      "forklaring": "Grafen är ett enda skikt grafit. Det är dessutom genomskinligt, böjligt och leder både ström och värme."
+    },
+    {
+      "id": "k2-s6",
+      "typ": "ord",
+      "fraga": "Vilken form av kol finns i ett blyertsstift?",
+      "svar": [
+        "grafit"
+      ],
+      "forklaring": "Grafitens skikt glider mot varandra och lossnar när stiftet dras mot pappret. Det som blir kvar på pappret är lossnade skikt."
+    },
+    {
+      "id": "k2-s7",
+      "typ": "formel",
+      "fraga": "Skriv formeln för den mest kända fullerenen.",
+      "svar": [
+        "C60"
+      ],
+      "forklaring": "Sextio kolatomer i en sluten bur med tolv femkanter och tjugo sexkanter."
+    },
+    {
+      "id": "k2-s8",
+      "typ": "flerval",
+      "fraga": "Vad gör diamant till det hårdaste ämne vi känner till?",
+      "alternativ": [
+        "kolatomerna är extra tunga",
+        "bindningarna går åt alla håll i ett sammanhängande nätverk",
+        "atomerna ligger i skikt som är hårt pressade",
+        "materialet innehåller inga elektroner"
+      ],
+      "svar": 1,
+      "forklaring": "Det finns ingen svag riktning att angripa. För att repa diamanten måste många starka bindningar brytas samtidigt."
+    },
+    {
+      "id": "k2-s9",
+      "typ": "flerval",
+      "fraga": "Varför kan grafit lämna märken på ett papper?",
+      "alternativ": [
+        "skikten hålls ihop svagt och kan lossna",
+        "bindningarna inom skikten är svaga",
+        "grafit är mjukt hela vägen igenom",
+        "grafit löser sig i pappret"
+      ],
+      "svar": 0,
+      "forklaring": "Inom varje skikt är bindningarna starka. Det är krafterna mellan skikten som är svaga, så skikten glider och lossnar."
+    },
+    {
+      "id": "k2-s10",
+      "typ": "flerval",
+      "fraga": "Vad är det hos aktivt kol som gör att ämnen fastnar i det?",
+      "alternativ": [
+        "att det är hårt",
+        "att det leder ström",
+        "att porerna ger en mycket stor yta",
+        "att det är amorft"
+      ],
+      "svar": 2,
+      "forklaring": "Ämnena fastnar på ytan inne i porerna. Ett gram aktivt kol kan ha lika stor yta som en fotbollsplan."
+    },
+    {
+      "id": "k2-s11",
+      "typ": "flerval",
+      "fraga": "Diamant och grafit innehåller exakt samma sorts atomer. Vad avgör då skillnaden i egenskaper?",
+      "alternativ": [
+        "hur rent materialet är",
+        "hur atomerna är bundna och ordnade",
+        "hur gamla materialen är",
+        "hur många elektronskal atomerna har"
+      ],
+      "svar": 1,
+      "forklaring": "En kolatom i diamant är likadan som en i grafit. Hela skillnaden sitter i mönstret."
+    },
+    {
+      "id": "k2-s12",
+      "typ": "flerval",
+      "fraga": "Var används kolnanorör?",
+      "alternativ": [
+        "i blyertspennor",
+        "i smycken",
+        "i elektronik och nya material",
+        "i gasmasker"
+      ],
+      "svar": 2,
+      "forklaring": "Nanorör är mycket starka för sin vikt och leder elektrisk ström, vilket gör dem användbara i elektronik. ---"
+    }
+  ]
+}

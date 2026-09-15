@@ -18,10 +18,10 @@ const { formler } = require('./lib-notation.js');
 const { DELKAPITEL } = require('./bygg-avsnitt-konfig.js');
 const { fyllHuvud } = require('./lib-leveranshuvud.js');
 const ROT = path.join(__dirname, '..');
-const KAP = 'syror-och-baser';
 const DKID = process.argv[2] && !process.argv[2].startsWith('--') ? process.argv[2] : 'repetition';
 if (!DELKAPITEL[DKID]) { console.error('okänt delkapitel ' + DKID); process.exit(2); }
-const LEV = path.join(ROT, 'doc', 'leveranser', DKID);
+const KAP = (DELKAPITEL[DKID].kapitel || { id: 'syror-och-baser' }).id;   // kapitel ur konfigurationen
+const LEV = path.join(ROT, 'doc', 'leveranser', DKID, DELKAPITEL[DKID].byggmapp || '');   // ev. undermapp med sammansatta byggfiler
 const md = fs.readFileSync(path.join(LEV, 'kortsvar.md'), 'utf8').replace(/\r\n/g, '\n');
 
 const ce = s => s.replace(/`\\ce\{([^}]*)\}`/g, (_, x) => '\\(\\ce{' + x + '}\\)');
@@ -120,6 +120,7 @@ for (const a of md.matchAll(/\n# AVSNITT (\d) — ([^\n]+)\n([\s\S]*?)(?=\n# AVS
     if (traff.length) { console.log(`  ⚠ ${f.id} (${f.typ}): facit "${traff[0]}" förekommer i frågetexten – "${f.fraga}"`); }
   });
   const ut = path.join(ROT, 'kapitel', KAP, 'data', 'kortsvar', `avsnitt-${N}-${K.slug}.json`);
+  fs.mkdirSync(path.dirname(ut), { recursive: true });
   fs.writeFileSync(ut, JSON.stringify(data, null, 2) + '\n');
   const typer = fragor.reduce((a, f) => (a[f.typ] = (a[f.typ] || 0) + 1, a), {});
   console.log(`${DKID} avsnitt ${N}: ${fragor.length} frågor`, JSON.stringify(typer), `| formler i förklaringar: ${fragor.filter(f => /\\ce\{/.test(f.forklaring)).length}${utkast ? ' | UTKAST' : ''}`);

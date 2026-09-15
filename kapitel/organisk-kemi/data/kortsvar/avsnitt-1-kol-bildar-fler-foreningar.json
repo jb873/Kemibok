@@ -1,0 +1,128 @@
+{
+  "avsnitt": 1,
+  "titel": "Kol bildar fler föreningar än något annat grundämne",
+  "delkapitel": "kolatomen",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 1 (Kol bildar fler föreningar än något annat grundämne), delkapitel Kolatomen, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/kolatomen/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k1-s1",
+      "typ": "tal",
+      "fraga": "Hur många elektroner har en kolatom i sitt yttersta skal?",
+      "svar": 4,
+      "forklaring": "Kolatomen har sex elektroner totalt. Två ligger i det innersta skalet och fyra i det yttersta. Det är de fyra som kan bilda bindningar."
+    },
+    {
+      "id": "k1-s2",
+      "typ": "tal",
+      "fraga": "Hur många elektronpar delar två atomer på i en trippelbindning?",
+      "svar": 3,
+      "forklaring": "Enkelbindning ett par, dubbelbindning två par, trippelbindning tre par. Varje par ritas som ett streck."
+    },
+    {
+      "id": "k1-s3",
+      "typ": "tal",
+      "fraga": "En kolatom har en dubbelbindning och två enkelbindningar. Till hur många andra atomer är den bunden?",
+      "svar": 3,
+      "forklaring": "Bindningarna blir 2 + 1 + 1 = 4, men dubbelbindningen går till en enda atom. Grannarna blir därför tre."
+    },
+    {
+      "id": "k1-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas den del av kemin som studerar kolföreningar?",
+      "svar": [
+        "organisk kemi"
+      ],
+      "forklaring": "Namnet kommer från en tid då man trodde att ämnena bara kunde bildas i levande organismer. Det stämde inte, men namnet blev kvar."
+    },
+    {
+      "id": "k1-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas en kolkedja som slutits, så att den sista kolatomen binder till den första?",
+      "svar": [
+        "ring"
+      ],
+      "forklaring": "Kolkedjor kan vara raka, grenade eller slutna till ringar. Ringen är den tredje grundformen."
+    },
+    {
+      "id": "k1-s6",
+      "typ": "ord",
+      "fraga": "Vilket ämne består av en kolatom och fyra väteatomer?",
+      "svar": [
+        "metan"
+      ],
+      "forklaring": "Metan är den enklaste kolföreningen. Kolatomen får sina fyra bindningar genom att binda till fyra väteatomer."
+    },
+    {
+      "id": "k1-s7",
+      "typ": "formel",
+      "fraga": "Skriv molekylformeln för metan.",
+      "svar": [
+        "CH4"
+      ],
+      "forklaring": "En kolatom och fyra väteatomer. Formeln visar antalet atomer, men inte hur de sitter ihop."
+    },
+    {
+      "id": "k1-s8",
+      "typ": "formel",
+      "fraga": "Skriv den förenklade strukturformeln för propan, som har tre kolatomer i en rak kedja.",
+      "svar": [
+        "CH3CH2CH3"
+      ],
+      "forklaring": "Varje kolatom skrivs med sina väteatomer direkt efter sig. Kolatomerna i ändarna har tre väteatomer var, den i mitten har två."
+    },
+    {
+      "id": "k1-s9",
+      "typ": "flerval",
+      "fraga": "Vilket av dessa ämnen räknas **inte** som organiskt?",
+      "alternativ": [
+        "etanol",
+        "koldioxid",
+        "metan",
+        "matolja"
+      ],
+      "svar": 1,
+      "forklaring": "Koldioxid innehåller kol men räknas traditionellt till den oorganiska kemin. Gränsen bygger på hur kemin delats in, inte på molekylen i sig."
+    },
+    {
+      "id": "k1-s10",
+      "typ": "flerval",
+      "fraga": "Vad visar en strukturformel som en molekylformel inte visar?",
+      "alternativ": [
+        "vilka atomslag som ingår",
+        "hur många atomer av varje slag",
+        "hur atomerna sitter ihop",
+        "ämnets kokpunkt"
+      ],
+      "svar": 2,
+      "forklaring": "Molekylformeln räknar atomerna. Strukturformeln ritar bindningarna mellan dem som streck."
+    },
+    {
+      "id": "k1-s11",
+      "typ": "flerval",
+      "fraga": "Varför kan en kolatom bilda just fyra bindningar?",
+      "alternativ": [
+        "den har fyra elektronskal",
+        "den saknar fyra elektroner för att fylla yttersta skalet",
+        "den har fyra protoner",
+        "den är fyra gånger större än väteatomen"
+      ],
+      "svar": 1,
+      "forklaring": "Yttersta skalet rymmer åtta elektroner. Kolatomen har fyra där och delar ett elektronpar med vardera fyra atomer för att nå åtta."
+    },
+    {
+      "id": "k1-s12",
+      "typ": "flerval",
+      "fraga": "Två ämnen innehåller lika många kolatomer och lika många väteatomer. Vad kan ändå skilja dem åt?",
+      "alternativ": [
+        "atomernas storlek",
+        "antalet elektronskal",
+        "hur atomerna är sammanbundna",
+        "vilket grundämne kolet är"
+      ],
+      "svar": 2,
+      "forklaring": "Samma atomer kan sitta i en rak kedja, en grenad kedja eller en ring. Olika mönster ger olika ämnen med olika egenskaper. ---"
+    }
+  ]
+}

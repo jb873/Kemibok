@@ -1,0 +1,238 @@
+{
+  "kapitel_id": "organisk-kemi",
+  "kapitel_titel": "Organisk kemi",
+  "version": 3,
+  "skapad": "2026-09-13",
+  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 25 = 25.",
+  "upplasning": {
+    "min_ord": 8,
+    "anvand_nyckelord": false
+  },
+  "begrepp": [
+    {
+      "id": "k1-b1",
+      "avsnitt": "1",
+      "avsnitt_titel": "Kol bildar fler föreningar än något annat grundämne",
+      "delkapitel_titel": "Kolatomen",
+      "term": "organisk kemi",
+      "expertdefinition": "Den del av kemin som handlar om kolföreningar. Namnet kommer från en äldre tid och har ingenting med liv att göra.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kol-bildar-fler-foreningar.json"
+    },
+    {
+      "id": "k1-b2",
+      "avsnitt": "1",
+      "avsnitt_titel": "Kol bildar fler föreningar än något annat grundämne",
+      "delkapitel_titel": "Kolatomen",
+      "term": "kolförening",
+      "expertdefinition": "Ett ämne som innehåller kol. Nästan alla innehåller också väte, och många dessutom syre eller kväve.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kol-bildar-fler-foreningar.json"
+    },
+    {
+      "id": "k1-b3",
+      "avsnitt": "1",
+      "avsnitt_titel": "Kol bildar fler föreningar än något annat grundämne",
+      "delkapitel_titel": "Kolatomen",
+      "term": "elektronparbindning",
+      "expertdefinition": "En bindning där två atomer delar på ett elektronpar och använder det tillsammans.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kol-bildar-fler-foreningar.json"
+    },
+    {
+      "id": "k1-b7",
+      "avsnitt": "1",
+      "avsnitt_titel": "Kol bildar fler föreningar än något annat grundämne",
+      "delkapitel_titel": "Kolatomen",
+      "term": "molekylformel",
+      "expertdefinition": "En formel som visar vilka atomslag som ingår och hur många av varje. Den visar inte hur atomerna sitter ihop.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kol-bildar-fler-foreningar.json"
+    },
+    {
+      "id": "k1-b9",
+      "avsnitt": "1",
+      "avsnitt_titel": "Kol bildar fler föreningar än något annat grundämne",
+      "delkapitel_titel": "Kolatomen",
+      "term": "förenklad strukturformel",
+      "expertdefinition": "Ett kortare skrivsätt där varje kolatom skrivs tillsammans med sina väteatomer, i stället för att bindningarna ritas ut.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kol-bildar-fler-foreningar.json"
+    },
+    {
+      "id": "k1-b10",
+      "avsnitt": "1",
+      "avsnitt_titel": "Kol bildar fler föreningar än något annat grundämne",
+      "delkapitel_titel": "Kolatomen",
+      "term": "kolkedja",
+      "expertdefinition": "Flera kolatomer bundna efter varandra. Kan vara några få atomer lång eller innehålla tusentals.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kol-bildar-fler-foreningar.json"
+    },
+    {
+      "id": "k1-b11",
+      "avsnitt": "1",
+      "avsnitt_titel": "Kol bildar fler föreningar än något annat grundämne",
+      "delkapitel_titel": "Kolatomen",
+      "term": "kolring",
+      "expertdefinition": "En kolkedja som slutits, så att sista kolatomen binder till den första.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kol-bildar-fler-foreningar.json"
+    },
+    {
+      "id": "k2-b1",
+      "avsnitt": "2",
+      "avsnitt_titel": "Samma kolatomer kan bygga helt olika ämnen",
+      "delkapitel_titel": "Kolatomen",
+      "term": "allotrop",
+      "expertdefinition": "En av flera former som samma grundämne kan förekomma i, beroende på hur atomerna är ordnade.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-samma-kolatomer-olika-amnen.json"
+    },
+    {
+      "id": "k2-b2",
+      "avsnitt": "2",
+      "avsnitt_titel": "Samma kolatomer kan bygga helt olika ämnen",
+      "delkapitel_titel": "Kolatomen",
+      "term": "diamant",
+      "expertdefinition": "Kol där varje kolatom binder till fyra andra i ett tredimensionellt nätverk. Genomskinligt, hårdast av alla ämnen, leder inte ström.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-samma-kolatomer-olika-amnen.json"
+    },
+    {
+      "id": "k2-b3",
+      "avsnitt": "2",
+      "avsnitt_titel": "Samma kolatomer kan bygga helt olika ämnen",
+      "delkapitel_titel": "Kolatomen",
+      "term": "grafit",
+      "expertdefinition": "Kol där varje kolatom binder till tre andra i platta skikt. Mörkt, mjukt och leder ström.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-samma-kolatomer-olika-amnen.json"
+    },
+    {
+      "id": "k2-b4",
+      "avsnitt": "2",
+      "avsnitt_titel": "Samma kolatomer kan bygga helt olika ämnen",
+      "delkapitel_titel": "Kolatomen",
+      "term": "amorft kol",
+      "expertdefinition": "Kol utan regelbundet mönster över längre avstånd. Finns i sot och träkol.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-samma-kolatomer-olika-amnen.json"
+    },
+    {
+      "id": "k2-b5",
+      "avsnitt": "2",
+      "avsnitt_titel": "Samma kolatomer kan bygga helt olika ämnen",
+      "delkapitel_titel": "Kolatomen",
+      "term": "aktivt kol",
+      "expertdefinition": "Träkol som behandlats så att det blivit fullt av porer. Den stora ytan gör att ämnen fastnar på den.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-samma-kolatomer-olika-amnen.json"
+    },
+    {
+      "id": "k2-b6",
+      "avsnitt": "2",
+      "avsnitt_titel": "Samma kolatomer kan bygga helt olika ämnen",
+      "delkapitel_titel": "Kolatomen",
+      "term": "fulleren",
+      "expertdefinition": "Kol där atomerna bildar en sluten bur av fem- och sexkantiga ringar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-samma-kolatomer-olika-amnen.json"
+    },
+    {
+      "id": "k2-b7",
+      "avsnitt": "2",
+      "avsnitt_titel": "Samma kolatomer kan bygga helt olika ämnen",
+      "delkapitel_titel": "Kolatomen",
+      "term": "buckminsterfulleren",
+      "expertdefinition": "den mest kända fullerenen, en bur av sextio kolatomer som påminner om en fotboll.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-samma-kolatomer-olika-amnen.json"
+    },
+    {
+      "id": "k2-b8",
+      "avsnitt": "2",
+      "avsnitt_titel": "Samma kolatomer kan bygga helt olika ämnen",
+      "delkapitel_titel": "Kolatomen",
+      "term": "nanorör",
+      "expertdefinition": "Kolatomer ordnade som ett långt rör av sexkantiga ringar. Mycket starkt för sin vikt och leder ström.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-samma-kolatomer-olika-amnen.json"
+    },
+    {
+      "id": "k2-b9",
+      "avsnitt": "2",
+      "avsnitt_titel": "Samma kolatomer kan bygga helt olika ämnen",
+      "delkapitel_titel": "Kolatomen",
+      "term": "grafen",
+      "expertdefinition": "Ett enda skikt grafit, ett atomlager tjockt. Starkare än stål, genomskinligt, böjligt och ledande.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-samma-kolatomer-olika-amnen.json"
+    },
+    {
+      "id": "k3-b1",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kol rör sig mellan luften och det levande",
+      "delkapitel_titel": "Kolatomen",
+      "term": "fotosyntes",
+      "expertdefinition": "Den process där en växt med hjälp av ljusenergi bygger druvsocker av koldioxid och vatten. Syrgas bildas samtidigt.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-mellan-luften-och-det-levande.json"
+    },
+    {
+      "id": "k3-b2",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kol rör sig mellan luften och det levande",
+      "delkapitel_titel": "Kolatomen",
+      "term": "cellandning",
+      "expertdefinition": "Den process där glukos reagerar med syrgas så att koldioxid och vatten bildas och energi frigörs.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-mellan-luften-och-det-levande.json"
+    },
+    {
+      "id": "k3-b3",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kol rör sig mellan luften och det levande",
+      "delkapitel_titel": "Kolatomen",
+      "term": "druvsocker (glukos)",
+      "expertdefinition": "det socker som bildas vid fotosyntesen och som cellandningen bryter ner. Innehåller sex kolatomer.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-mellan-luften-och-det-levande.json"
+    },
+    {
+      "id": "k3-b4",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kol rör sig mellan luften och det levande",
+      "delkapitel_titel": "Kolatomen",
+      "term": "klyvöppning",
+      "expertdefinition": "En liten öppning på bladets undersida där växten tar in koldioxid. Kan öppnas och stängas.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-mellan-luften-och-det-levande.json"
+    },
+    {
+      "id": "k3-b5",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kol rör sig mellan luften och det levande",
+      "delkapitel_titel": "Kolatomen",
+      "term": "nedbrytare",
+      "expertdefinition": "Bakterier och svampar som bryter ner döda växter och djur. De har cellandning och avger därför koldioxid.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-mellan-luften-och-det-levande.json"
+    },
+    {
+      "id": "k3-b6",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kol rör sig mellan luften och det levande",
+      "delkapitel_titel": "Kolatomen",
+      "term": "näringskedja",
+      "expertdefinition": "Vägen som ämnen och energi tar när en organism äter en annan.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-mellan-luften-och-det-levande.json"
+    },
+    {
+      "id": "k3-b7",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kol rör sig mellan luften och det levande",
+      "delkapitel_titel": "Kolatomen",
+      "term": "kemisk energi",
+      "expertdefinition": "Energi som finns lagrad i ett ämnes bindningar och kan frigöras när ämnet reagerar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-mellan-luften-och-det-levande.json"
+    },
+    {
+      "id": "k3-b8",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kol rör sig mellan luften och det levande",
+      "delkapitel_titel": "Kolatomen",
+      "term": "kolets kretslopp",
+      "expertdefinition": "Kolets rörelse mellan atmosfären och levande organismer, driven av fotosyntes, cellandning och nedbrytning.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-mellan-luften-och-det-levande.json"
+    },
+    {
+      "id": "k3-b9",
+      "avsnitt": "3",
+      "avsnitt_titel": "Kol rör sig mellan luften och det levande",
+      "delkapitel_titel": "Kolatomen",
+      "term": "det snabba kretsloppet",
+      "expertdefinition": "Den del av kolets kretslopp där kolet rör sig mellan luften och det levande på timmar till årtionden.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-mellan-luften-och-det-levande.json"
+    }
+  ]
+}

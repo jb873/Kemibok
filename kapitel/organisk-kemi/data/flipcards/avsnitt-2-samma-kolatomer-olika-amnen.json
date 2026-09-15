@@ -1,0 +1,124 @@
+{
+  "avsnitt": 2,
+  "titel": "Samma kolatomer kan bygga helt olika ämnen",
+  "delkapitel": "kolatomen",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 2 (Samma kolatomer kan bygga helt olika ämnen), delkapitel Kolatomen. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/kolatomen/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k2-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Allotrop",
+      "svar": "En av flera former som samma grundämne kan förekomma i, beroende på hur atomerna är ordnade."
+    },
+    {
+      "id": "k2-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Diamant",
+      "svar": "Kol där varje kolatom binder till fyra andra i ett tredimensionellt nätverk. Genomskinligt, hårdast av alla ämnen, leder inte ström."
+    },
+    {
+      "id": "k2-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Grafit",
+      "svar": "Kol där varje kolatom binder till tre andra i platta skikt. Mörkt, mjukt och leder ström."
+    },
+    {
+      "id": "k2-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Amorft kol",
+      "svar": "Kol utan regelbundet mönster över längre avstånd. Finns i sot och träkol."
+    },
+    {
+      "id": "k2-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Aktivt kol",
+      "svar": "Träkol som behandlats så att det blivit fullt av porer. Den stora ytan gör att ämnen fastnar på den."
+    },
+    {
+      "id": "k2-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fulleren",
+      "svar": "Kol där atomerna bildar en sluten bur av fem- och sexkantiga ringar."
+    },
+    {
+      "id": "k2-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "\\(\\ce{C60}\\)",
+      "svar": "Den mest kända fullerenen, en bur av 60 kolatomer med tolv femkanter och tjugo sexkanter."
+    },
+    {
+      "id": "k2-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Nanorör",
+      "svar": "Kolatomer ordnade som ett långt rör av sexkantiga ringar. Mycket starkt för sin vikt och leder ström."
+    },
+    {
+      "id": "k2-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Grafen",
+      "svar": "Ett enda skikt grafit, ett atomlager tjockt. Starkare än stål, genomskinligt, böjligt och ledande."
+    },
+    {
+      "id": "k2-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Metastabil",
+      "svar": "Ett tillstånd som inte är det mest stabila, men som ändå blir kvar därför att omvandlingen går oerhört långsamt. Diamant är metastabil vid rumstemperatur."
+    },
+    {
+      "id": "k2-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Adsorption",
+      "svar": "När ett ämne fastnar på en yta och stannar där. Kapaciteten avgörs av hur stor ytan är. Det är så aktivt kol fungerar."
+    },
+    {
+      "id": "k2-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Absorption",
+      "svar": "När ett ämne tas upp i ett material och fördelar sig genom hela volymen. Kapaciteten avgörs av volymen. En svamp som suger vatten absorberar."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k2-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad gör diamant så hårt?",
+      "svar": "Varje kolatom binder till fyra andra, och bindningarna går åt alla håll. Det finns ingen svag riktning, så ett stort antal starka bindningar måste brytas samtidigt."
+    },
+    {
+      "id": "k2-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför lossnar grafit mot ett papper?",
+      "svar": "Bindningarna inom varje skikt är starka, men krafterna mellan skikten är svaga. Skikten glider över varandra och kan lossna."
+    },
+    {
+      "id": "k2-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför leder grafit ström när diamant inte gör det?",
+      "svar": "I diamant används alla fyra elektronerna till bindningar. I grafit binder varje kolatom till bara tre grannar, så den fjärde elektronen blir över och kan röra sig fritt över skiktet."
+    },
+    {
+      "id": "k2-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför tillverkas aktivt kol med så många porer?",
+      "svar": "Ämnena fastnar på ytan, inte inuti materialet. Porerna tillför ingen massa men enormt mycket yta — ett gram kan nå flera hundra kvadratmeter."
+    }
+  ]
+}

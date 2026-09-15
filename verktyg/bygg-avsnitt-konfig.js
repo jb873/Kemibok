@@ -189,6 +189,13 @@ const DELKAPITEL = {
     'jonbindning': 'finns redan i repetition avsnitt 3, där eleven möter begreppet först (Joachim 2026-09-14)',
     'sammansatt jon': 'finns redan i repetition avsnitt 1, där eleven möter begreppet först (Joachim 2026-09-14)' } } },
   // Organisk kemi: eget kapitel (kapitel/organisk-kemi/), byggfiler i undermappen bygg/; bank läggs till i order 3
-  kolatomen: { titel: 'Kolatomen', kapitel: { id: 'organisk-kemi', titel: 'Organisk kemi' }, byggmapp: 'bygg', avsnitt: AVSNITT_KOLATOMEN, bank: { idPrefix: 'K1', avsnittOffset: 0 } }
+  kolatomen: { titel: 'Kolatomen', kapitel: { id: 'organisk-kemi', titel: 'Organisk kemi' }, byggmapp: 'bygg', avsnitt: AVSNITT_KOLATOMEN,
+    // egen begreppsbank per kapitel (kapitel/organisk-kemi/data/). uteslut: kapitelöverskridande dubbletter mot Syror och baser
+    // (repetition avsnitt 3) – Joachims regel 2026-09-15: lägg inte in en andra version, skriv inte om den befintliga
+    bank: { idPrefix: '', avsnittOffset: 0, uteslut: {
+      'kovalent bindning': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)',
+      'dubbelbindning': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)',
+      'trippelbindning': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)',
+      'strukturformel': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)' } } }
 };
 module.exports = { DELKAPITEL };
