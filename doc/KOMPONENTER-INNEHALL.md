@@ -7,8 +7,8 @@
 > Innehållssessioner ser inte CSS — bara HTML. För att producera
 > fungerande markup måste de exakta klassnamnen vara dokumenterade.
 
-**Senast uppdaterad:** 2026-09-15 (v1.4)
-**Version:** 1.4 (Kemi)
+**Senast uppdaterad:** 2026-09-15 (v1.5)
+**Version:** 1.5 (Kemi)
 **DELAD-BAS:** v1.1 — måste matcha över alla ämnen
 **Ärvd från:** KOMPONENTER-INNEHALL-GEOGRAFI v1.6
 **Källa för alla mallar:** Geografis v1.6 (DOM-verifierad hero-banner) + Historias mappstruktur
@@ -1061,6 +1061,24 @@ atommodeller) och får inte betyda något annat än energi/ljus. Pilar och fält
 
 ---
 
+### 9.5 Ritsätt för molekyler och allmänna formler i SVG (v1.5)
+**🎨 ÄMNESEGET**
+
+**Ett ritsätt per delkapitel.** Organisk kemi 2 *Kolväten* använder **bokstavsstil** genomgående: kolatomer som
+bokstaven C, väteatomer som H, bindningar som streck mellan bokstäverna (k2-b1–b4, c1–c2, d2; ritrutinen i
+`verktyg/bilder-svg-kolvaten.js`, DX 46, teckengrad 19). **Cirkelstilen** – fyllda kolcirklar och väteringar med H
+(k1-a3) – hör till Organisk kemi 1 *Kolatomen* och används inte i delkapitel 2. Samma molekyl ska inte ritas på två
+sätt inom ett delkapitel; ska en figur återanvändas mellan delkapitlen ritas den om i det mottagande delkapitlets stil
+(C2 etan/eten/etyn, Joachim 2026-09-15). Kulmodeller (k2-b3, modellkolumnen) är en tredje representation och ingen
+ritstil för strukturformler.
+
+**Allmänna formler i SVG.** CₙH₂ₙ₊₂, CₙH₂ₙ, CₙH₂ₙ₋₂ o.d. sätts i **löptext** som matematiska uttryck med `(...)`
+(`lib-notation.js`: `mathrm{C}_nmathrm{H}_{2n+2}`, aldrig `ce{}`). **Inuti en SVG** når MathJax inte in: där
+sätts de som SVG-text med nedsänkta index (`<tspan>`) och **kursivt n**, så att de ser ut som i löptexten (k2-c3).
+En bildspec ska inte be om `(...)` i en bild.
+
+---
+
 ## DEL 10 — Öva-fliken: tre arbetssätt, flipcards och kortsvar
 **🔗 flikrad och flipcards.js / 🎨 arbetssättsväljare, kortsvar, korttyper**
 
@@ -1233,6 +1251,9 @@ När osäker — kolla referensimplementationen **plus** CSS:n **plus** JS:n. **
 ## Revisionshistorik
 **🎨 boklokal**
 
+- **v1.5 (2026-09-15):** 9.5 – ett ritsätt för molekyler per delkapitel (bokstavsstil i Kolväten, cirkelstil i
+  Kolatomen) och allmänna formler i SVG som SVG-text med nedsänkta index och kursivt n; (...) endast i löptext
+  (Joachim 2026-09-15, efter arbetsorder 3–4 Kolväten).
 - **v1.4 (2026-09-14/15):** 9.3 – grundfigurer som delas mellan delkapitel (k1-a10 Kolets snabba kretslopp:
   stabila id:n och reserverad grupp för delkapitel 3:s tillägg); 9.4 – `#e8c547` som kemins accentfärg för
   energi och ljus (Joachim 2026-09-15). Joachims arbetsorder k1 Kolatomen.

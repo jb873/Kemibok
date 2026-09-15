@@ -3,7 +3,7 @@
 
 **Sökväg:** `kapitel/organisk-kemi/delkapitel/kolvaten/avsnitt-4-polymerer.html`
 **AVSNITT_ID:** `a4_polymerer`
-**Underrubrik i hero:** hur små molekyler kopplas samman till plast och andra jättemolekyler
+**Underrubrik i hero:** när små molekyler byggs ihop till mycket stora
 
 ---
 
@@ -56,7 +56,7 @@ Fyra vanliga plaster. Placering enligt bildrutan i avsnitt-4.md.
 
 ---
 
-# UNDERDEL A — Många små molekyler kan kopplas ihop till en lång kedja
+# UNDERDEL A — Monomer och polymer
 
 ---
 
@@ -113,7 +113,7 @@ principen inte bara avgör kokpunkten, utan hela materialets karaktär.
 
 ---
 
-# UNDERDEL B — Polymerisation kräver dubbelbindningar
+# UNDERDEL B — Polymerisation
 
 ---
 
@@ -166,7 +166,7 @@ molekylernas storlek som ändrats.
 
 ---
 
-# UNDERDEL C — Polyeten och andra vanliga polymerer
+# UNDERDEL C — Vanliga plaster
 
 ---
 

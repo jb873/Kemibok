@@ -3,7 +3,7 @@
 
 **Sökväg:** `kapitel/organisk-kemi/delkapitel/kolvaten/avsnitt-3-samma-formel-olika-struktur.html`
 **AVSNITT_ID:** `a3_samma-formel-olika-struktur`
-**Underrubrik i hero:** isomerer, dubbel- och trippelbindningar, alkener och alkyner
+**Underrubrik i hero:** när samma formel kan betyda olika ämnen
 
 ---
 
@@ -37,7 +37,6 @@ Etan, eten och etyn. Placering enligt bildrutan i avsnitt-3.md.
 ### Bildguide (endast Enkel)
 - Räkna strecken mellan de mörka kolatomerna i varje molekyl.
 - Följ väteatomerna från vänster till höger. Hur ändras antalet?
-- Jämför med bilden i förra delkapitlet. Känner du igen molekylerna?
 
 ### `k2-c3.svg` — underdel C, alla nivåer
 
@@ -56,7 +55,7 @@ Tre serier kolväten. Placering enligt bildrutan i avsnitt-3.md.
 
 ---
 
-# UNDERDEL A — Isomerer har samma molekylformel men olika strukturformel
+# UNDERDEL A — Isomerer
 
 ---
 
@@ -110,7 +109,7 @@ finns så många olika organiska ämnen.
 
 ---
 
-# UNDERDEL B — Kolatomer kan binda med dubbel- och trippelbindningar
+# UNDERDEL B — Dubbel- och trippelbindningar
 
 ---
 
@@ -158,7 +157,7 @@ sitter.
 
 ---
 
-# UNDERDEL C — Alkener och alkyner har namn som slutar på -en och -yn
+# UNDERDEL C — Alkener och alkyner
 
 ---
 

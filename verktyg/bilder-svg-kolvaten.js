@@ -6,7 +6,7 @@
 //   k2-b1  Kolstommen och väteatomerna      1.1    k2-b3  Fyra sätt att visa samma kolväte   1.3
 //   k2-b2  Alkanserien som trappa           1.2    k2-b4  Så ritar du en strukturformel      1.3
 //   k2-b6  Butan i en tändare               2.2    k2-b7  Kokpunkten stiger med kedjans längd 2.3   (k2-b5 kärret: AI-bild, nyckla-gron.js)
-//   k2-c1  n-butan och isobutan            3.1    k2-c2  Etan, eten och etyn (ur k1-a3)     3.2    k2-c3  Tre serier kolväten  3.3
+//   k2-c1  n-butan och isobutan            3.1    k2-c2  Etan, eten och etyn (bokstavsstil) 3.2    k2-c3  Tre serier kolväten  3.3
 //   k2-d1  Monomer och polymer              4.1    k2-d2  Eten polymeriserar                 4.2    k2-d3  Fyra vanliga plaster 4.3
 //
 // Palett enligt ordern: konturer/text #2d4a35, signaturfärg #5a9668, kol #3a3a3a, väte #f5f0e4 med kontur, grått #8A8A8A.
@@ -273,18 +273,28 @@ function isobutan(x0, y) {
   skriv('k2-c1.svg', W, HH, 'Två strukturformler. Till vänster butan som en rak kedja av fyra kolatomer, till höger som en grenad kedja där den fjärde kolatomen sitter som en gren på mitten. Under båda står molekylformeln C4H10', ut);
 }
 
-// ---------- C2. Etan, eten och etyn (avsnitt 3; samma figur som den rättade A3 i Kolatomen) ----------
-// Återanvänder FILEN kapitel/organisk-kemi/delkapitel/kolatomen/img/k1-a3.svg: molekylerna (allt med data-molekyl) kopieras
-// oförändrade; räknerutorna, deras texter, kursivetiketterna och markeringsringarna tas bort; namn och molekylformel läggs till.
+// ---------- C2. Etan, eten och etyn (avsnitt 3; omritad i bokstavsstil, Joachim 2026-09-15) ----------
+// Delkapitel 2 använder bokstavsstil genomgående (C och H som bokstäver, streck som bindningar) – KOMPONENTER 9.5;
+// cirkelstilen (A3) hör till delkapitel 1. Samma teckengrad (19) och bindningslängd (DX 46) som C1/D2. Enkel-, dubbel- och
+// trippelstreck med 7,2 px mellan centrumlinjerna. Molekylerna byggs som data så att bindningarna per kolatom kan räknas.
 {
-  const a3 = fs.readFileSync(path.join(UT, '..', '..', 'kolatomen', 'img', 'k1-a3.svg'), 'utf8').replace(/\r\n/g, '\n');
-  if (!/data-molekyl="1"/.test(a3) || !/data-markering/.test(a3)) throw new Error('k1-a3.svg är inte den rättade versionen (2026-09-15) – bygg om A3 först');
-  const molekyler = a3.split('\n').filter(l => /data-molekyl=/.test(l)).join('\n') + '\n';
-  const W = 760, HH = 260, K = W / 3;
-  let ut = molekyler;
-  [['etan', 'C₂H₆'], ['eten', 'C₂H₄'], ['etyn', 'C₂H₂']].forEach(([namn, f], i) => {
-    const x = K * (i + 0.5);
-    ut += txt(x, 200, namn, `font-size="18" font-weight="bold" data-namn="${namn}"`) + txt(x, 232, formel(f), `font-size="20" data-formel="${namn}" data-h="${f.match(/H([₀-₉]+)/)[1].replace(/[₀-₉]/g, c => SUBT[c])}"`);
+  const W = 760, HH = 260, K = W / 3, Y = 96, FS = 19, GAP = 7.2;
+  let ut = '';
+  const bokstav = (x, y, t, tag) => txt(x, y + FS * 0.35, t, `font-size="${t === 'C' ? FS : FS * 0.86}" ${t === 'C' ? 'font-weight="bold"' : ''} data-atom="${t}" ${tag}`);
+  [['etan', 'C₂H₆', 1], ['eten', 'C₂H₄', 2], ['etyn', 'C₂H₂', 3]].forEach(([namn, f, n], i) => {
+    const tag = `data-molekyl="${i + 1}"`, xa = K * (i + 0.5) - DX / 2, xb = xa + DX;
+    // n streck mellan kolatomerna, jämnt fördelade kring mittlinjen
+    for (let k = 0; k < n; k++) { const o = (k - (n - 1) / 2) * GAP; ut += linje(xa + 13, Y + o, xb - 13, Y + o, INK, 2.2, `data-bind="C-C" ${tag}`); }
+    // väten: 4 − n per kolatom – upp/ner först, sedan utåt
+    for (const [x, ut_] of [[xa, -1], [xb, 1]]) {
+      const platser = [[0, -DY], [0, DY], [ut_ * DX, 0]].slice(n === 3 ? 2 : 0, n === 3 ? 3 : 4 - n);
+      for (const [dx, dy] of platser) {
+        const L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L;
+        ut += linje(x + ux * HB, Y + uy * HB, x + ux * HE, Y + uy * HE, INK, 2.2, `data-bind="C-H" data-c="${r2(x)}" ${tag}`) + bokstav(x + dx, Y + dy, 'H', tag);
+      }
+      ut += bokstav(x, Y, 'C', tag);
+    }
+    ut += txt(K * (i + 0.5), 200, namn, `font-size="18" font-weight="bold" data-namn="${namn}"`) + txt(K * (i + 0.5), 232, formel(f), `font-size="20" data-formel="${namn}" data-h="${f.match(/H([₀-₉]+)/)[1].replace(/[₀-₉]/g, c => SUBT[c])}"`);
   });
   skriv('k2-c2.svg', W, HH, 'Tre molekyler med två kolatomer vardera. Etan har ett streck mellan kolatomerna och tre väteatomer på var, eten har två streck och två väteatomer, etyn har tre streck och en väteatom. Under varje molekyl står namnet och molekylformeln', ut);
 }
@@ -503,16 +513,15 @@ function kolla(namn, villkor, text) { rapport.push(`${villkor ? 'OK ' : 'FEL'} $
   kolla('C1 grenkolatom', granne === 1 && gren.x === rad[1].x && rad[1].x > rad[0].x && rad[1].x < rad[2].x, `grenen bunden till kolatom ${granne + 1} av 3 (mitten), rakt ovanför den (x ${gren.x} = ${rad[1].x}); mittenkolatomen bär ${iso.atomer.filter(a => a.typ === 'H' && a.c === 1).length} H`);
   kolla('C1 etiketter', /data-etikett="n-butan"/.test(s) && /data-etikett="isobutan"/.test(s) && (s.match(/data-formel=/g) || []).length === 2 && /−12 °C/.test(s) && /0 °C/.test(s), 'n-butan, isobutan, två C₄H₁₀, kokpunkter 0 °C och −12 °C (U+2212)');
 }
-{ // C2: molekylerna kopierade ur A3, räknerutor borta, namn + formel
-  const s = las('k2-c2.svg'), a3 = fs.readFileSync(path.join(UT, '..', '..', 'kolatomen', 'img', 'k1-a3.svg'), 'utf8').replace(/\r\n/g, '\n');
-  const molA3 = a3.split('\n').filter(l => /data-molekyl=/.test(l)), molC2 = s.split('\n').filter(l => /data-molekyl=/.test(l));
-  kolla('C2 molekyler = A3', molA3.length === molC2.length && molA3.every((l, i) => l === molC2[i]), `${molC2.length} element med data-molekyl, byte-identiska med k1-a3.svg`);
+{ // C2: bokstavsstil – 2 C + 6/4/2 H, 1/2/3 streck, fyra bindningar per kolatom, namn + formel; ingen koppling till A3
+  const s = las('k2-c2.svg');
   for (let i = 1; i <= 3; i++) {
     const m = element(s, e => e['data-molekyl'] === String(i)), cc = m.filter(e => e['data-bind'] === 'C-C').length, h = antalAtom(m, 'H');
+    const per = m.filter(e => e['data-atom'] === 'C' && e._tag === 'text').map(c => m.filter(l => l['data-bind'] === 'C-H' && l['data-c'] === c.x).length + cc);
     const f = element(s, e => e['data-formel'] && +e['data-h'] === h).length;
-    kolla(`C2 molekyl ${i}`, antalAtom(m, 'C') === 2 && h === 8 - 2 * i && cc === i && f === 1, `2 C + ${h} H + ${cc} streck; formeln under visar H${h}`);
+    kolla(`C2 molekyl ${i}`, antalAtom(m, 'C') === 2 && h === 8 - 2 * i && cc === i && per.every(p => p === 4) && f === 1, `2 C + ${h} H + ${cc} streck; bindningar per kolatom ${per.join(', ')}; formeln under visar H${h}`);
   }
-  kolla('C2 räknerutor borta', element(s, e => e._tag === 'rect').length === 0 && !/data-markering|= 4</.test(s), '0 rect, ingen markeringsring, ingen uträkning');
+  kolla('C2 bokstavsstil', element(s, e => e['data-atom'] && e._tag === 'text').length === 18 && element(s, e => e['data-atom'] && e._tag === 'circle').length === 0 && element(s, e => e._tag === 'rect').length === 0, '18 atombokstäver, inga cirklar, inga rutor');
 }
 { // C3: tre rader, 1/2/3 streck i bindningskolumnen, 6/4/2 väten i exempelkolumnen, tre allmänna formler med kursivt n
   const s = las('k2-c3.svg');
@@ -524,7 +533,7 @@ function kolla(namn, villkor, text) { rapport.push(`${villkor ? 'OK ' : 'FEL'} $
   kolla('C3 allmänna formler', allm.join(' ') === '2n+2 2n 2n−2' && (s.match(/font-style="italic">n<\/tspan>/g) || []).length === 6, `C_n H_${allm.join(', C_n H_')}; n kursivt (6 förekomster)`);
   // samma synliga strecklängd som A3/C2: enkel 56, dubbel/trippel 48
   const L = r => element(s, e => e['data-rad'] === String(r) && e['data-bind'] === 'C-C' && e._tag === 'line').map(e => Math.round(+e.x2 - +e.x1));
-  kolla('C3 strecklängd som C2', L(1)[0] === 56 && L(2).every(x => x === 48) && L(3).every(x => x === 48), `enkel ${L(1)}, dubbel ${L(2)}, trippel ${L(3)} px (A3/C2: 56 / 48)`);
+  kolla('C3 strecklängd (cirkelstilen, som A3)', L(1)[0] === 56 && L(2).every(x => x === 48) && L(3).every(x => x === 48), `enkel ${L(1)}, dubbel ${L(2)}, trippel ${L(3)} px (A3/C2: 56 / 48)`);
 }
 { // D1: fem enheter per rad ur samma mall, lediga/mellan-bindningar, ingen kemi
   const s = las('k2-d1.svg');

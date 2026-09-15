@@ -127,6 +127,9 @@ plats.** Alla tre ämnena har två kolatomer, men olika molekylformler.
 > **Detta är samma figur som den rättade A3 i delkapitel 1.** Återanvänd den filen och lägg
 > till namn och molekylformler. Rita inte om molekylerna.
 >
+> *(Ändrat 2026-09-15: C2 ritas i bokstavsstil som C1, D2 och tabellerna – delkapitel 2:s enda ritsätt. A3 behåller
+> cirkelstilen och är orörd. Molekylerna, atomantalen och namnen/formlerna nedan gäller oförändrat.)*
+>
 > **Motiv.** Tre molekyler i rad, alla med två kolatomer:
 >
 > | Position | Bindning mellan kolatomerna | H per kolatom | Totalt H |
@@ -162,7 +165,8 @@ plats.** Alla tre ämnena har två kolatomer, men olika molekylformler.
 > **Titta efter (endast Enkel):**
 > - Räkna strecken mellan de mörka kolatomerna i varje molekyl.
 > - Följ väteatomerna från vänster till höger. Hur ändras antalet?
-> - Jämför med bilden i förra delkapitlet. Känner du igen molekylerna?
+>
+> *(Tredje punkten – "Jämför med bilden i förra delkapitlet. Känner du igen molekylerna?" – struken 2026-09-15: C2 ritas i bokstavsstil och är inte längre samma figur som A3.)*
 
 ### Dubbelbindningen kan sitta på olika ställen
 
