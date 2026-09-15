@@ -1,35 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" width="760" height="260" role="img" aria-labelledby="t">
-  <title id="t">Tre kolatomer med olika bindningar. Den första har fyra enkla streck, den andra två enkla och ett dubbelt, den tredje ett enkelt och ett trippelt. Vid varje står en uträkning som ger fyra</title>
-  <line x1="126.67" y1="100" x2="126.67" y2="48" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
-  <circle cx="126.67" cy="48" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
-  <line x1="126.67" y1="100" x2="178.67" y2="100" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
-  <circle cx="178.67" cy="100" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
-  <line x1="126.67" y1="100" x2="126.67" y2="152" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
-  <circle cx="126.67" cy="152" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
-  <line x1="126.67" y1="100" x2="74.67" y2="100" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
-  <circle cx="74.67" cy="100" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
-  <circle cx="126.67" cy="100" r="14" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
-  <line x1="380" y1="100" x2="334.76" y2="74" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
-  <circle cx="334.76" cy="74" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
-  <line x1="380" y1="100" x2="334.76" y2="126" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
-  <circle cx="334.76" cy="126" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
-  <line x1="380" y1="97" x2="432" y2="97" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
-  <line x1="380" y1="103" x2="432" y2="103" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
-  <circle cx="432" cy="100" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
-  <circle cx="380" cy="100" r="14" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
-  <line x1="633.33" y1="100" x2="581.33" y2="100" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
-  <circle cx="581.33" cy="100" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
-  <line x1="633.33" y1="94" x2="685.33" y2="94" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
-  <line x1="633.33" y1="100" x2="685.33" y2="100" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
-  <line x1="633.33" y1="106" x2="685.33" y2="106" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
-  <circle cx="685.33" cy="100" r="9" fill="none" stroke="#2d4a35" stroke-width="1.8"/>
-  <circle cx="633.33" cy="100" r="14" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2"/>
-  <rect x="68.66666666666667" y="182" width="116" height="30" rx="5" fill="none" stroke="#2d4a35" stroke-width="1.2"/>
-  <text x="126.67" y="203" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">1+1+1+1 = 4</text>
-  <rect x="322" y="182" width="116" height="30" rx="5" fill="none" stroke="#2d4a35" stroke-width="1.2"/>
-  <text x="380" y="203" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">1+1+2 = 4</text>
-  <rect x="575.3333333333334" y="182" width="116" height="30" rx="5" fill="none" stroke="#2d4a35" stroke-width="1.2"/>
-  <text x="633.33" y="203" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">1+3 = 4</text>
+  <title id="t">Tre molekyler med två kolatomer vardera. I den första sitter kolatomerna ihop med ett streck och bär tre väteatomer var, i den andra med två streck och två väteatomer var, i den tredje med tre streck och en väteatom var. Vid varje molekyl står en uträkning som ger fyra</title>
+  <line x1="98.67" y1="102" x2="154.67" y2="102" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-C" data-molekyl="1"/>
+  <line x1="79.88" y1="115.16" x2="72.35" y2="135.83" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-H" data-c="v" data-molekyl="1"/>
+  <circle cx="68.93" cy="145.23" r="10" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-c="v" data-molekyl="1"/>
+  <text x="68.93" y="149.73" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" data-molekyl="1">H</text>
+  <line x1="70.67" y1="102" x2="48.67" y2="102" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-H" data-c="v" data-molekyl="1"/>
+  <circle cx="38.67" cy="102" r="10" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-c="v" data-molekyl="1"/>
+  <text x="38.67" y="106.5" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" data-molekyl="1">H</text>
+  <line x1="79.88" y1="88.84" x2="72.35" y2="68.17" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-H" data-c="v" data-molekyl="1"/>
+  <circle cx="68.93" cy="58.77" r="10" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-c="v" data-molekyl="1"/>
+  <text x="68.93" y="63.27" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" data-molekyl="1">H</text>
+  <line x1="173.45" y1="88.84" x2="180.98" y2="68.17" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-H" data-c="h" data-molekyl="1"/>
+  <circle cx="184.4" cy="58.77" r="10" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-c="h" data-molekyl="1"/>
+  <text x="184.4" y="63.27" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" data-molekyl="1">H</text>
+  <line x1="182.67" y1="102" x2="204.67" y2="102" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-H" data-c="h" data-molekyl="1"/>
+  <circle cx="214.67" cy="102" r="10" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-c="h" data-molekyl="1"/>
+  <text x="214.67" y="106.5" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" data-molekyl="1">H</text>
+  <line x1="173.45" y1="115.16" x2="180.98" y2="135.83" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-H" data-c="h" data-molekyl="1"/>
+  <circle cx="184.4" cy="145.23" r="10" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-c="h" data-molekyl="1"/>
+  <text x="184.4" y="149.73" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" data-molekyl="1">H</text>
+  <circle cx="84.67" cy="102" r="19" fill="none" stroke="#5a9668" stroke-width="1.4" data-markering="1"/>
+  <circle cx="84.67" cy="102" r="14" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-c="v" data-molekyl="1"/>
+  <circle cx="168.67" cy="102" r="14" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-c="h" data-molekyl="1"/>
+  <line x1="356" y1="98.3" x2="404" y2="98.3" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-C" data-molekyl="2"/>
+  <line x1="356" y1="105.7" x2="404" y2="105.7" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-C" data-molekyl="2"/>
+  <line x1="331" y1="114.12" x2="320" y2="133.18" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-H" data-c="v" data-molekyl="2"/>
+  <circle cx="315" cy="141.84" r="10" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-c="v" data-molekyl="2"/>
+  <text x="315" y="146.34" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" data-molekyl="2">H</text>
+  <line x1="331" y1="89.88" x2="320" y2="70.82" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-H" data-c="v" data-molekyl="2"/>
+  <circle cx="315" cy="62.16" r="10" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-c="v" data-molekyl="2"/>
+  <text x="315" y="66.66" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" data-molekyl="2">H</text>
+  <line x1="429" y1="89.88" x2="440" y2="70.82" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-H" data-c="h" data-molekyl="2"/>
+  <circle cx="445" cy="62.16" r="10" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-c="h" data-molekyl="2"/>
+  <text x="445" y="66.66" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" data-molekyl="2">H</text>
+  <line x1="429" y1="114.12" x2="440" y2="133.18" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-H" data-c="h" data-molekyl="2"/>
+  <circle cx="445" cy="141.84" r="10" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-c="h" data-molekyl="2"/>
+  <text x="445" y="146.34" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" data-molekyl="2">H</text>
+  <circle cx="338" cy="102" r="19" fill="none" stroke="#5a9668" stroke-width="1.4" data-markering="2"/>
+  <circle cx="338" cy="102" r="14" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-c="v" data-molekyl="2"/>
+  <circle cx="422" cy="102" r="14" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-c="h" data-molekyl="2"/>
+  <line x1="609.33" y1="94.6" x2="657.33" y2="94.6" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-C" data-molekyl="3"/>
+  <line x1="609.33" y1="102" x2="657.33" y2="102" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-C" data-molekyl="3"/>
+  <line x1="609.33" y1="109.4" x2="657.33" y2="109.4" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-C" data-molekyl="3"/>
+  <line x1="577.33" y1="102" x2="555.33" y2="102" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-H" data-c="v" data-molekyl="3"/>
+  <circle cx="545.33" cy="102" r="10" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-c="v" data-molekyl="3"/>
+  <text x="545.33" y="106.5" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" data-molekyl="3">H</text>
+  <line x1="689.33" y1="102" x2="711.33" y2="102" stroke="#2d4a35" stroke-width="2.4" stroke-linecap="round" data-bind="C-H" data-c="h" data-molekyl="3"/>
+  <circle cx="721.33" cy="102" r="10" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atom="H" data-c="h" data-molekyl="3"/>
+  <text x="721.33" y="106.5" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" data-molekyl="3">H</text>
+  <circle cx="591.33" cy="102" r="19" fill="none" stroke="#5a9668" stroke-width="1.4" data-markering="3"/>
+  <circle cx="591.33" cy="102" r="14" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-c="v" data-molekyl="3"/>
+  <circle cx="675.33" cy="102" r="14" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atom="C" data-c="h" data-molekyl="3"/>
+  <rect x="68.66666666666667" y="184" width="116" height="30" rx="5" fill="none" stroke="#5a9668" stroke-width="1.2"/>
+  <text x="126.67" y="205" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">1+1+1+1 = 4</text>
+  <rect x="322" y="184" width="116" height="30" rx="5" fill="none" stroke="#5a9668" stroke-width="1.2"/>
+  <text x="380" y="205" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">1+1+2 = 4</text>
+  <rect x="575.3333333333334" y="184" width="116" height="30" rx="5" fill="none" stroke="#5a9668" stroke-width="1.2"/>
+  <text x="633.33" y="205" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">1+3 = 4</text>
   <text x="126.67" y="244" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">fyra enkelbindningar</text>
   <text x="380" y="244" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">två enkla + en dubbel</text>
   <text x="633.33" y="244" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">en enkel + en trippel</text>

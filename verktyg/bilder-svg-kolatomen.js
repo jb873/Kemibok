@@ -40,7 +40,7 @@ const formel = s => {
   return ut;
 };
 const linje = (x1, y1, x2, y2, farg = INK, bredd = 2, extra = '') => `  <line x1="${r2(x1)}" y1="${r2(y1)}" x2="${r2(x2)}" y2="${r2(y2)}" stroke="${farg}" stroke-width="${bredd}" stroke-linecap="round" ${extra}/>\n`;
-const cirkel = (x, y, r, fyll, kontur = INK, bredd = 1.5) => `  <circle cx="${r2(x)}" cy="${r2(y)}" r="${r}" fill="${fyll}" stroke="${kontur}" stroke-width="${bredd}"/>\n`;
+const cirkel = (x, y, r, fyll, kontur = INK, bredd = 1.5, extra = '') => `  <circle cx="${r2(x)}" cy="${r2(y)}" r="${r}" fill="${fyll}" stroke="${kontur}" stroke-width="${bredd}"${extra ? ' ' + extra : ''}/>\n`;
 const pil = (x1, y1, x2, y2, farg = INK, bredd = 2.5, extra = '') => {
   const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L, s = bredd * 4, bx = x2 - ux * s, by = y2 - uy * s;
   return `  <line x1="${r2(x1)}" y1="${r2(y1)}" x2="${r2(bx)}" y2="${r2(by)}" stroke="${farg}" stroke-width="${bredd}" stroke-linecap="round" ${extra}/>
@@ -109,21 +109,70 @@ const skriv = (fil, w, h, titel, inneh) => { fs.writeFileSync(path.join(UT, fil)
   skriv('k1-a2.svg', W, HH, 'Metan visad som formeln CH4, som strukturformel med fyra streck från kolatomen till fyra väteatomer, och som modell med en stor mörk kula och fyra små ljusa', ut);
 }
 
-// ---------- A3. Fyra bindningar kan fördelas olika ----------
+// ---------- A3. Fyra bindningar kan fördelas olika (omritad efter rättelse 2026-09-15, doc/leveranser/kolatomen/rattelse-a3.md) ----------
+// Tre molekyler med två kolatomer vardera: enkel-, dubbel- och trippelbindning mellan dem, 3/2/1 väten per kolatom.
+// Kol som fyllda cirklar, väte som små ringar med H. Bindningsvinklar 120° (enkel/dubbel) och 180° (trippel) – aldrig 90°.
+// Dubbel-/trippelstreck: parallella, mellanrum ≥ streckbredden, något kortare än enkelstrecket. Ämnena namnges inte
+// (alkener/alkyner införs i delkapitel 2 avsnitt 3). Räknerutan gäller den vänstra kolatomen, markerad med ring i signaturfärg.
+// Varje atom/streck bär data-attribut; kontrollen sist i filen räknar ur den skrivna SVG:n.
 {
-  const W = 760, HH = 260, K = W / 3, cy = 100, L = 52;
+  const W = 760, HH = 260, K = W / 3, cy = 102, CC = 84, CH = 46, rC = 14, rH = 10, SB = 2.4;
   let ut = '';
-  const tom = (x, y) => cirkel(x, y, 9, 'none', INK, 1.8);
-  const multi = (cx, cy, dx, dy, n) => { let s = ''; const nx = -dy / L * 5, ny = dx / L * 5; for (let k = 0; k < n; k++) { const off = (k - (n - 1) / 2); s += linje(cx + nx * off * 1.2, cy + ny * off * 1.2, cx + dx + nx * off * 1.2, cy + dy + ny * off * 1.2, INK, 2.2); } return s; };
-  // 1: fyra enkla
-  { const cx = K * 0.5; [[0, -L], [L, 0], [0, L], [-L, 0]].forEach(([dx, dy]) => { ut += multi(cx, cy, dx, dy, 1) + tom(cx + dx, cy + dy); }); ut += C(cx, cy, 14); }
-  // 2: två enkla + en dubbel
-  { const cx = K * 1.5; ut += multi(cx, cy, -L * 0.87, -L * 0.5, 1) + tom(cx - L * 0.87, cy - L * 0.5) + multi(cx, cy, -L * 0.87, L * 0.5, 1) + tom(cx - L * 0.87, cy + L * 0.5) + multi(cx, cy, L, 0, 2) + tom(cx + L, cy); ut += C(cx, cy, 14); }
-  // 3: en enkel + en trippel
-  { const cx = K * 2.5; ut += multi(cx, cy, -L, 0, 1) + tom(cx - L, cy) + multi(cx, cy, L, 0, 3) + tom(cx + L, cy); ut += C(cx, cy, 14); }
-  ['1+1+1+1 = 4', '1+1+2 = 4', '1+3 = 4'].forEach((t, i) => { const x = K * (i + 0.5); ut += `  <rect x="${x - 58}" y="182" width="116" height="30" rx="5" fill="none" stroke="${INK}" stroke-width="1.2"/>\n` + txt(x, 203, t, 'font-size="16"'); });
+  // n parallella streck mellan (x1,y1) och (x2,y2), kortade med `in` från vardera cirkelkanten, sidoförskjutning `gap`
+  const streck = (x1, y1, x2, y2, n, r1, r2, tag) => {
+    const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L, nx = -uy, ny = ux;
+    const inn = n > 1 ? 4 : 0, gap = SB + 5;   // mellanrum mellan strecken = 5 px ≥ streckbredden 2,4; dubbel/trippel 4 px kortare i vardera änden
+    let s = '';
+    for (let k = 0; k < n; k++) { const o = (k - (n - 1) / 2) * gap; s += linje(x1 + ux * (r1 + inn) + nx * o, y1 + uy * (r1 + inn) + ny * o, x2 - ux * (r2 + inn) + nx * o, y2 - uy * (r2 + inn) + ny * o, INK, SB, tag); }
+    return s;
+  };
+  const molekyl = (i, n) => {   // i = kolumn, n = antal streck mellan kolatomerna; väten per kolatom = 4 − n
+    const cx = K * (i + 0.5), xl = cx - CC / 2, xr = cx + CC / 2, tag = `data-molekyl="${i + 1}"`;
+    let s = streck(xl, cy, xr, cy, n, rC, rC, `data-bind="C-C" ${tag}`);
+    // tre väten: 110°/180°/250° från kolgrannen (C–C–H ≈ 110°, som tetraedervinkeln 109,5° i fördjupningen 1.2; H–C–H 70° – i ett plan kan inte alla fyra vinklar vara trubbiga), två väten: 120°/240°, ett väte: 180°
+    const vink = { 3: [110, 180, 250], 2: [120, 240], 1: [180] }[4 - n];
+    for (const [x, sida, riktning] of [[xl, 'v', 180], [xr, 'h', 0]]) {   // riktning = vinkel mot kolgrannen
+      for (const v of vink) {
+        const a = (riktning + 180 + v) * Math.PI / 180;   // vänster C: 120°, 180°, 240°; höger C: −60°, 0°, 60° – trubbiga vinklar, aldrig 90°
+        const hx = x + Math.cos(a) * CH, hy = cy + Math.sin(a) * CH;
+        s += streck(x, cy, hx, hy, 1, rC, rH, `data-bind="C-H" data-c="${sida}" ${tag}`) + cirkel(hx, hy, rH, VATE, INK, 1.2, `data-atom="H" data-c="${sida}" ${tag}`) + txt(hx, hy + 4.5, 'H', `font-size="12" ${tag}`);
+      }
+    }
+    s += cirkel(xl, cy, rC + 5, 'none', SIGN, 1.4, `data-markering="${i + 1}"`);   // ring: den kolatom räknerutan gäller
+    s += cirkel(xl, cy, rC, KOL, INK, 1.2, `data-atom="C" data-c="v" ${tag}`) + cirkel(xr, cy, rC, KOL, INK, 1.2, `data-atom="C" data-c="h" ${tag}`);
+    return s;
+  };
+  ut += molekyl(0, 1) + molekyl(1, 2) + molekyl(2, 3);
+  ['1+1+1+1 = 4', '1+1+2 = 4', '1+3 = 4'].forEach((t, i) => { const x = K * (i + 0.5); ut += `  <rect x="${x - 58}" y="184" width="116" height="30" rx="5" fill="none" stroke="${SIGN}" stroke-width="1.2"/>\n` + txt(x, 205, t, 'font-size="16"'); });
   ['fyra enkelbindningar', 'två enkla + en dubbel', 'en enkel + en trippel'].forEach((t, i) => { ut += txt(K * (i + 0.5), HH - 16, t, 'font-size="14" font-style="italic"'); });
-  skriv('k1-a3.svg', W, HH, 'Tre kolatomer med olika bindningar. Den första har fyra enkla streck, den andra två enkla och ett dubbelt, den tredje ett enkelt och ett trippelt. Vid varje står en uträkning som ger fyra', ut);
+  skriv('k1-a3.svg', W, HH, 'Tre molekyler med två kolatomer vardera. I den första sitter kolatomerna ihop med ett streck och bär tre väteatomer var, i den andra med två streck och två väteatomer var, i den tredje med tre streck och en väteatom var. Vid varje molekyl står en uträkning som ger fyra', ut);
+}
+
+// kontroll av k1-a3.svg mot rättelsen (2026-09-15): atomer, streck, fyra bindningar per kolatom, inga 90°-vinklar, inga ämnesnamn
+{
+  const s = fs.readFileSync(path.join(UT, 'k1-a3.svg'), 'utf8');
+  const el = [...s.matchAll(/<(line|circle|text)\b([^>]*)>/g)].map(m => { const at = { _tag: m[1] }; for (const a of m[2].matchAll(/([a-z0-9-]+)="([^"]*)"/g)) at[a[1]] = a[2]; return at; });
+  const rader = [];
+  const kolla = (ok, t) => { rader.push(`${ok ? 'OK ' : 'FEL'} A3 ${t}`); if (!ok) process.exitCode = 1; };
+  for (let i = 1; i <= 3; i++) {
+    const m = el.filter(e => e['data-molekyl'] === String(i));
+    const C = m.filter(e => e['data-atom'] === 'C'), Hn = m.filter(e => e['data-atom'] === 'H').length, cc = m.filter(e => e['data-bind'] === 'C-C').length;
+    kolla(C.length === 2 && Hn === 8 - 2 * i && cc === i, `molekyl ${i}: ${C.length} C, ${Hn} H, ${cc} streck mellan kolatomerna`);
+    for (const c of C) {
+      const sida = c['data-c'], cx = +c.cx, cy = +c.cy;
+      const ch = m.filter(e => e['data-bind'] === 'C-H' && e['data-c'] === sida);
+      kolla(ch.length + cc === 4, `molekyl ${i}, ${sida === 'v' ? 'vänster' : 'höger'} kolatom: ${ch.length} + ${cc} = ${ch.length + cc} bindningar`);
+      // riktningar: C–H-strecken från kolatomen, C–C-riktningen mot den andra kolatomen
+      const annan = C.find(o => o !== c);
+      const rikt = ch.map(l => Math.atan2(+l.y2 - cy, +l.x2 - cx)).concat([Math.atan2(+annan.cy - cy, +annan.cx - cx)]);
+      const vinklar = [];
+      for (let a = 0; a < rikt.length; a++) for (let b = a + 1; b < rikt.length; b++) { let d = Math.abs(rikt[a] - rikt[b]) * 180 / Math.PI; if (d > 180) d = 360 - d; vinklar.push(Math.round(d)); }
+      kolla(vinklar.every(v => Math.abs(v - 90) > 5), `molekyl ${i}, ${sida === 'v' ? 'vänster' : 'höger'} kolatom: vinklar ${vinklar.join('°, ')}°`);
+    }
+    kolla(el.some(e => e['data-markering'] === String(i)), `molekyl ${i}: ring runt vänster kolatom`);
+  }
+  kolla(!/etan|eten|etyn|alkan|alken|alkyn/i.test(s), 'inga ämnesnamn i filen');
+  console.log(rader.join('\n'));
 }
 
 // ---------- A4. Kedja, gren och ring ----------

@@ -29,19 +29,19 @@
 
 ## A3 — Fyra bindningar kan fördelas olika — `k1-a3.svg`
 
-**Placering:** 1.2, vid andra rubriken (SVG).
+**Placering:** 1.2, vid andra rubriken (SVG). *Texter enligt rattelse-a3.md (Joachim 2026-09-15).*
 
-**Alt-text:** Tre kolatomer med olika bindningar. Den första har fyra enkla streck, den andra två enkla och ett dubbelt, den tredje ett enkelt och ett trippelt. Vid varje står en uträkning som ger fyra.
+**Alt-text:** Tre molekyler med två kolatomer vardera. I den första sitter kolatomerna ihop med ett streck och bär tre väteatomer var, i den andra med två streck och två väteatomer var, i den tredje med tre streck och en väteatom var. Vid varje molekyl står en uträkning som ger fyra.
 
-**Bildtext Enkel:** Kolatomen har alltid fyra bindningar. Men de kan fördelas på olika sätt.
+**Bildtext Enkel:** Samma två kolatomer, tre sorters bindning. Kolatomen har alltid fyra bindningar — men de kan fördelas olika.
 
 **Bildtext Standard:** Ett dubbelstreck räknas som två bindningar och ett trippelstreck som tre. Summan blir alltid fyra.
 
 **Titta efter (endast Enkel):**
 
-- Räkna strecken vid varje kolatom, och räkna sedan bindningarna.
-- Hur många atomer binder kolatomen till i det tredje exemplet?
-- Varför blir antalet grannar färre när bindningarna blir dubbla eller trippla?
+- Räkna strecken mellan de två mörka kolatomerna i varje molekyl.
+- Följ väteatomerna från vänster till höger. Hur ändras antalet?
+- Varför blir det färre väteatomer när bindningen mellan kolatomerna blir dubbel eller trippel?
 
 ## A2 — Metan skriven på tre sätt — `k1-a2.svg`
 
