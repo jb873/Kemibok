@@ -13,14 +13,14 @@
 
 Fotosyntesen. Placering enligt bildrutan i avsnitt-3.md.
 
-**Alt-text:** Ett blad som tar upp koldioxid från luften och vatten från marken, med ljusenergi uppifrån. Ut går syrgas. Inuti bladet bildas glukos. Sex kolatomer följs från koldioxiden in i glukosen.
+**Alt-text:** En växt med blad, stjälk och rötter i marken. Sex mörka prickar följer en väg från koldioxid i luften, in genom ett blad, till en glukosmolekyl i stjälken. Tunnare pilar visar vatten upp från marken, ljus in uppifrån och syrgas ut.
 
-**Bildtext Enkel:** Kolet i växten kommer från luften, inte från jorden. Följ de mörka prickarna.
+**Bildtext Enkel:** Följ de sex prickarna. Kolet i växten kommer från luften, inte från jorden.
 
 **Bildtext Standard:** Vid fotosyntesen förs kolatomerna från luftens koldioxid in i glukosen.
 
 ### Bildguide (endast Enkel)
-- Följ de mörka prickarna från pilen in i bladet. Var hamnar de?
+- Följ den prickade linjen från luften in i växten. Var slutar den?
 - Vad kommer in från marken, och vad kommer in från luften?
 - Många tror att en trädstam är byggd av ämnen från jorden. Vad i bilden säger något annat?
 

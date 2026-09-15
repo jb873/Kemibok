@@ -314,29 +314,60 @@ function honeycomb(a, kolumner, rader) {
   skriv('k1-a7.svg', W, HH, 'Tre former av kol. En klotformad bur av fem- och sexkanter märkt C60, ett rör av sexkantigt nät, och ett plant ark av sexkanter märkt ett atomlager tjockt', ut);
 }
 
-// ---------- A8. Fotosyntesen ----------
+// ---------- A8. Fotosyntesen (omritad efter rättelse 2026-09-15, doc/leveranser/kolatomen/rattelse-a8.md) ----------
+// Frågan bilden svarar på: vart tar kolatomerna vägen? En hel växt (stjälk, fyra blad, rötter i ett grått markband) som
+// kontur i signaturfärg. Kolvägen är det enda framträdande: sex prickar i luften (6 CO₂), en prickad hjälplinje in i ett
+// blad och ner till en glukosruta i stjälken med samma sex prickar – samma radie, samma avstånd, samma (transparenta)
+// bakgrund (stjälkens kontur är bruten där rutan sitter). Vatten, ljus och syrgas som smala konturpilar.
+// Ingen räknerad, ingen marketikett. Kontrollen sist i filen läser värdena ur den skrivna SVG:n.
+const tunnPil = (x1, y1, x2, y2, farg, bredd = 1.4, extra = '') => {   // smal konturpil: streck + öppet V-huvud
+  const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L, h = 7;
+  return linje(x1, y1, x2, y2, farg, bredd, extra) + linje(x2, y2, x2 - ux * h - uy * h * 0.6, y2 - uy * h + ux * h * 0.6, farg, bredd, extra) + linje(x2, y2, x2 - ux * h + uy * h * 0.6, y2 - uy * h - ux * h * 0.6, farg, bredd, extra);
+};
 {
-  const W = 800, HH = 420;
+  const W = 800, HH = 420, SX = 520, R = 5, AV = 16;   // stjälkens x, prickarnas radie och inbördes avstånd
   let ut = '';
-  // markfält
-  ut += `  <rect x="430" y="330" width="330" height="60" rx="6" fill="${GRA}" fill-opacity="0.35" stroke="${GRA}" stroke-width="1"/>\n` + txt(700, 372, 'mark', 'font-size="14" font-style="italic"');
-  // stam och blad i genomskärning
-  ut += `  <path d="M600 330 V240" stroke="${SIGN}" stroke-width="10" stroke-linecap="round" fill="none"/>\n`;
-  ut += `  <path d="M600 240 C560 240 470 220 450 160 C520 130 640 130 720 175 C700 225 640 245 600 240Z" fill="${SIGN}" fill-opacity="0.22" stroke="${SIGN}" stroke-width="3"/>\n`;
-  ut += `  <path d="M470 175 C540 165 640 170 700 185" stroke="${SIGN}" stroke-width="1.5" fill="none" stroke-dasharray="4 4"/>\n`;
-  // glukosruta inne i bladet med sex kolprickar
-  ut += `  <rect x="530" y="176" width="130" height="46" rx="6" fill="${VATE}" stroke="${INK}" stroke-width="1.5"/>\n` + txt(595, 196, formel('C₆H₁₂O₆'), 'font-size="17" font-weight="bold"');
-  for (let i = 0; i < 6; i++) ut += `  <circle cx="${548 + i * 19}" cy="211" r="4" fill="${KOL}"/>\n`;
-  // pil in: 6 CO2 från luften (vänster) med sex prickar
-  ut += bredPil(120, 160, 445, 160, 26, VATSKA, 6) + txt(80, 166, formel('6 CO₂'), 'font-size="18" font-weight="bold"') + txt(200, 138, 'från luften', 'font-size="13" font-style="italic"');
-  // pil in: 6 H2O från marken upp genom stammen
-  ut += bredPil(560, 340, 560, 252, 22, VATSKA) + txt(500, 300, formel('6 H₂O'), 'font-size="18" font-weight="bold"') + txt(500, 320, 'från marken', 'font-size="13" font-style="italic"');
-  // ljusenergi uppifrån
-  ut += bredPil(540, 40, 540, 122, 26, GUL) + txt(540, 28, 'ljusenergi', 'font-size="16" font-weight="bold"');
-  // pil ut: 6 O2
-  ut += bredPil(700, 150, 760, 90, 22, VATE) + txt(760, 74, formel('6 O₂'), 'font-size="18" font-weight="bold"');
-  ut += txt(W / 2, HH - 12, '6 kolatomer in → 6 kolatomer i glukosen.', 'font-size="17" font-weight="bold"');
-  skriv('k1-a8.svg', W, HH, 'Ett blad som tar upp koldioxid från luften och vatten från marken, med ljusenergi uppifrån. Ut går syrgas. Inuti bladet bildas glukos. Sex kolatomer följs från koldioxiden in i glukosen', ut);
+  // markband, utan etikett
+  ut += `  <rect x="0" y="335" width="${W}" height="${HH - 335}" fill="${GRA}" fill-opacity="0.18" stroke="none"/>\n`;
+  // rötter
+  ut += `  <path d="M${SX} 335 C${SX - 20} 360 ${SX - 60} 370 ${SX - 90} 395 M${SX} 335 C${SX + 10} 365 ${SX + 50} 375 ${SX + 70} 400 M${SX} 335 C${SX - 5} 370 ${SX - 15} 385 ${SX - 20} 405 M${SX} 335 C${SX + 25} 350 ${SX + 45} 352 ${SX + 95} 370" stroke="${SIGN}" stroke-width="2.2" fill="none" stroke-linecap="round"/>\n`;
+  // stjälk som kontur (två linjer), bruten där glukosrutan sitter så att rutans bakgrund är pappret
+  const BY = 232, BH = 44, BW = 116;
+  ut += `  <path d="M${SX - 7} 335 L${SX - 7} ${BY + BH} M${SX + 7} 335 L${SX + 7} ${BY + BH} M${SX - 7} ${BY} L${SX - 7} 150 C${SX - 7} 130 ${SX - 2} 118 ${SX} 108 M${SX + 7} ${BY} L${SX + 7} 150 C${SX + 7} 130 ${SX + 2} 118 ${SX} 108" stroke="${SIGN}" stroke-width="2.2" fill="none" stroke-linecap="round"/>\n`;
+  // fyra blad (konturer med svag fyllning): höger nere, vänster (tar emot kolvägen), höger uppe, vänster uppe – inget över glukosrutan
+  const blad = (x, y, sida, l) => { const s = sida === 'v' ? -1 : 1; return `  <path d="M${x} ${y} C${x + s * l * 0.35} ${y - l * 0.35} ${x + s * l * 0.85} ${y - l * 0.45} ${x + s * l} ${y - l * 0.25} C${x + s * l * 0.8} ${y + l * 0.05} ${x + s * l * 0.35} ${y + l * 0.08} ${x} ${y}Z M${x} ${y} L${x + s * l * 0.9} ${y - l * 0.2}" stroke="${SIGN}" stroke-width="2.2" fill="${SIGN}" fill-opacity="0.12" stroke-linejoin="round"/>\n`; };
+  ut += blad(SX + 7, 320, 'h', 95) + blad(SX - 7, 200, 'v', 105) + blad(SX + 7, 165, 'h', 90) + blad(SX - 7, 138, 'v', 70);
+  // glukosruta i stjälken: ingen fyllning (pappret bakom prickarna, som i luften)
+  ut += `  <rect x="${SX - BW / 2}" y="${BY}" width="${BW}" height="${BH}" rx="6" fill="none" stroke="${INK}" stroke-width="1.3" data-ruta="glukos"/>\n` + txt(SX, BY + 17, formel('C₆H₁₂O₆'), 'font-size="15" font-weight="bold"');
+  // kolvägen: sex prickar i luften, prickad hjälplinje in i det övre vänstra bladet och ner i stjälken, sex prickar i rutan
+  const LX = 118, LY = 92;
+  ut += `  <path d="M${LX + 5 * AV + R + 4} ${LY} C300 92 400 120 ${SX - 7 - 95 * 0.7} ${200 - 105 * 0.28} C${SX - 60} 190 ${SX - 30} 205 ${SX} ${BY - 4}" stroke="${GRA}" stroke-width="1.8" stroke-dasharray="1.5 5" stroke-linecap="round" fill="none" data-hjalplinje="kol"/>\n`;
+  for (let i = 0; i < 6; i++) ut += `  <circle cx="${LX + i * AV}" cy="${LY}" r="${R}" fill="${KOL}" data-kol="luft"/>\n`;
+  for (let i = 0; i < 6; i++) ut += `  <circle cx="${SX - 2.5 * AV + i * AV}" cy="${BY + 32}" r="${R}" fill="${KOL}" data-kol="glukos"/>\n`;
+  ut += txt(LX + 2.5 * AV, LY - 22, formel('6 CO₂'), 'font-size="18" font-weight="bold"') + txt(LX + 2.5 * AV, LY + 26, 'från luften', 'font-size="13" font-style="italic"');
+  // diskreta konturpilar: vatten upp genom stjälken från marken, ljus in uppifrån, syrgas ut från bladet
+  ut += tunnPil(SX, 392, SX, 292, VATSKA, 1.4, 'data-pil="vatten"') + txt(SX - 14, 318, formel('6 H₂O'), 'font-size="13" text-anchor="end"');
+  ut += tunnPil(SX - 48, 30, SX - 10, 104, GUL, 1.4, 'data-pil="ljus"') + txt(SX - 56, 24, 'ljusenergi', 'font-size="13" font-style="italic"');
+  ut += tunnPil(SX + 7 + 90 * 0.85, 165 - 90 * 0.42, SX + 160, 78, GRA, 1.4, 'data-pil="syrgas"') + txt(SX + 166, 70, formel('6 O₂'), 'font-size="13" text-anchor="start"');
+  skriv('k1-a8.svg', W, HH, 'En växt med blad, stjälk och rötter i marken. Sex mörka prickar följer en väg från koldioxid i luften, in genom ett blad, till en glukosmolekyl i stjälken. Tunnare pilar visar vatten upp från marken, ljus in uppifrån och syrgas ut', ut);
+}
+// kontroll av k1-a8.svg mot rättelsen: sex + sex prickar, samma radie och avstånd, samma bakgrund, pilarna smalare än hjälplinjen, ingen räknerad/marketikett
+{
+  const s = fs.readFileSync(path.join(UT, 'k1-a8.svg'), 'utf8');
+  const el = [...s.matchAll(/<(line|circle|text|rect|path)\b([^>]*)>/g)].map(m => { const at = { _tag: m[1] }; for (const a of m[2].matchAll(/([a-z0-9-]+)="([^"]*)"/g)) at[a[1]] = a[2]; return at; });
+  const rader = []; const kolla = (ok, t) => { rader.push(`${ok ? 'OK ' : 'FEL'} A8 ${t}`); if (!ok) process.exitCode = 1; };
+  const luft = el.filter(e => e['data-kol'] === 'luft'), glu = el.filter(e => e['data-kol'] === 'glukos');
+  kolla(luft.length === 6 && glu.length === 6, `prickar: ${luft.length} i luften, ${glu.length} i glukosrutan`);
+  const avst = g => g.slice(1).map((p, i) => +p.cx - +g[i].cx);
+  kolla(new Set([...luft, ...glu].map(p => p.r)).size === 1 && new Set([...avst(luft), ...avst(glu)]).size === 1 && new Set([...luft, ...glu].map(p => p.fill)).size === 1, `radie ${[...new Set([...luft, ...glu].map(p => p.r))].join('/')}, avstånd ${[...new Set([...avst(luft), ...avst(glu)])].join('/')}, färg ${[...new Set([...luft, ...glu].map(p => p.fill))].join('/')}`);
+  const ruta = el.find(e => e['data-ruta'] === 'glukos');
+  const inuti = (x, y) => el.filter(e => e.fill && e.fill !== 'none' && e._tag === 'rect' && +e.x <= x && x <= +e.x + +e.width && +e.y <= y && y <= +e.y + +e.height);
+  kolla(ruta.fill === 'none' && inuti(+luft[0].cx, +luft[0].cy).length === 0 && inuti(+glu[0].cx, +glu[0].cy).length === 0, `bakgrund: rutan fill="${ruta.fill}", inga fyllda rektanglar bakom prickarna (pappret på båda ställena)`);
+  const hj = el.find(e => e['data-hjalplinje'] === 'kol'), pilar = el.filter(e => e['data-pil']);
+  kolla(pilar.every(p => +p['stroke-width'] < +hj['stroke-width']), `pilar ${[...new Set(pilar.map(p => p['data-pil'] + ' ' + p['stroke-width']))].join(', ')} < hjälplinje ${hj['stroke-width']}`);
+  const texter = el.filter(e => e._tag === 'text').length;
+  kolla(!/kolatomer in|>mark</.test(s), `ingen räknerad, ingen marketikett (${texter} textelement: 6 CO₂, från luften, C₆H₁₂O₆, 6 H₂O, ljusenergi, 6 O₂)`);
+  console.log(rader.join('\n'));
 }
 
 // ---------- A9. Cellandningen – spegelvänd A8 ----------
