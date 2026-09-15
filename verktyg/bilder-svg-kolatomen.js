@@ -10,8 +10,7 @@
 //
 // Palett enligt ordern: konturer/text #2d4a35, signaturfärg #5a9668, kol #3a3a3a, syre #C0392B, väte #f5f0e4
 // med kontur, kväve #3D6BA8, grått #8A8A8A, ljusblå vätska #a8c4d8. Papper #ece2c8 ritas inte (transparent bakgrund).
-// Avvikelse: den varma gula tonen för ljusenergi/energi i A8–A9 finns inte i paletten – #e8c547 (samma som lampan i
-// leder-eller-inte-specen), rapporterad till Joachim. Typsnitt: Georgia-fallback (extern SVG når inte sidans webbfonter).
+// Varm gul #e8c547 för ljusenergi/energi i A8–A9 är kemins accentfärg för energi och ljus (KOMPONENTER 9.4, Joachim 2026-09-15). Typsnitt: Georgia-fallback (extern SVG når inte sidans webbfonter).
 // k1-a10 är en grundfigur: delarna ligger i grupper med stabila id:n (atmosfar, vaxt, djur, mark, pilar, utpil) och en
 // tom grupp geologisk-slinga där delkapitel 3 kan lägga till sin del utan att grundfiguren ritas om (KOMPONENTER DEL 9.1).
 'use strict';
@@ -163,8 +162,8 @@ function honeycomb(a, kolumner, rader) {
   const W = 820, HH = 400, MITT = 410;
   let ut = linje(MITT, 20, MITT, HH - 20, SIGN, 2);
   ut += txt(MITT / 2, 38, 'Diamant', 'font-size="20" font-weight="bold"') + txt((MITT + W) / 2, 38, 'Grafit', 'font-size="20" font-weight="bold"');
-  // diamant: kluster ur diamantgittret – centrum, fyra grannar, tre yttre per granne = 17 atomer (en mer än ordern's 12–16,
-  // rapporterat: med 16 får en av grannarna bara tre bindningar; med 17 har alla fem inre atomer fyra); sned projektion
+  // diamant: kluster ur diamantgittret – centrum, fyra grannar, tre yttre per granne = 17 atomer (ordern sa 12–16; Joachim
+  // 2026-09-15: behåll 17, med 16 får en granne bara tre bindningar och bildens poäng är fyra per atom); sned projektion
   {
     const t = [[1, 1, 1], [1, -1, -1], [-1, 1, -1], [-1, -1, 1]];
     const atomer = [[0, 0, 0]], bindn = [], inre = [0];

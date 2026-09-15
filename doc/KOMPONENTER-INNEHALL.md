@@ -7,7 +7,7 @@
 > Innehållssessioner ser inte CSS — bara HTML. För att producera
 > fungerande markup måste de exakta klassnamnen vara dokumenterade.
 
-**Senast uppdaterad:** 2026-09-14 (v1.4)
+**Senast uppdaterad:** 2026-09-15 (v1.4)
 **Version:** 1.4 (Kemi)
 **DELAD-BAS:** v1.1 — måste matcha över alla ämnen
 **Ärvd från:** KOMPONENTER-INNEHALL-GEOGRAFI v1.6
@@ -1049,6 +1049,18 @@ Regler för en grundfigur:
 
 ---
 
+### 9.4 Energi och ljus — kemins accentfärg (v1.4)
+**🎨 ÄMNESEGET**
+
+Energi och ljus är, liksom laddning, osynliga och behöver en egen, konsekvent färg. **Varm gul `#e8c547`**
+används för ljusenergi, frigjord energi och lysande föremål i alla kemins bilder – första gången i
+leder-eller-inte (Salter 3 B, lampan), sedan i k1-a8/k1-a9 (ljusenergi in i fotosyntesen, energi ut ur
+cellandningen). Den är inte en ämnesfärg (svavel har CPK-gult `#FFFF30`, som inte används i figurer utan
+atommodeller) och får inte betyda något annat än energi/ljus. Pilar och fält i den färgen får konturer i
+`#2d4a35` som allt annat.
+
+---
+
 ## DEL 10 — Öva-fliken: tre arbetssätt, flipcards och kortsvar
 **🔗 flikrad och flipcards.js / 🎨 arbetssättsväljare, kortsvar, korttyper**
 
@@ -1221,8 +1233,9 @@ När osäker — kolla referensimplementationen **plus** CSS:n **plus** JS:n. **
 ## Revisionshistorik
 **🎨 boklokal**
 
-- **v1.4 (2026-09-14):** 9.3 – grundfigurer som delas mellan delkapitel (k1-a10 Kolets snabba kretslopp:
-  stabila id:n och reserverad grupp för delkapitel 3:s tillägg). Joachims arbetsorder k1 Kolatomen.
+- **v1.4 (2026-09-14/15):** 9.3 – grundfigurer som delas mellan delkapitel (k1-a10 Kolets snabba kretslopp:
+  stabila id:n och reserverad grupp för delkapitel 3:s tillägg); 9.4 – `#e8c547` som kemins accentfärg för
+  energi och ljus (Joachim 2026-09-15). Joachims arbetsorder k1 Kolatomen.
 - **v1.3 (2026-09-13):** 4.2 – ingen ram på brödtextbilder i kemi (kemi.css), bildbakgrund ska
   vara transparent, stående bilder via konfigflaggan staende (max-height 520 px); 9.0 – nya AI-bilder promptas med `#00ff00` som nycklas bort före leverans;
   de elva befintliga har benvit bakgrund och görs om först om de ska ligga på annan bakgrund.

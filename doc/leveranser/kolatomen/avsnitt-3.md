@@ -1,5 +1,8 @@
 # Avsnitt 3 — Kol rör sig mellan luften och det levande
 
+> Ljuspilen i fotosyntesformeln (rad 32) skriven som `→[ljus]` av Code 2026-09-15 på Joachims godkännande –
+> lib-notation gör den till `ce{->[ljus]}`. I övrigt oförändrad leverans.
+
 Kol finns inte bara bundet i bergarter, bränslen och olika material. Det rör sig också hela tiden
 mellan atmosfären och levande organismer. Växter tar upp kol ur luften, kolet förs vidare genom
 näringskedjor och återvänder så småningom till atmosfären.
@@ -29,7 +32,7 @@ koldioxid + vatten + ljusenergi → druvsocker + syrgas
 
 Med kemiska formler skrivs reaktionen:
 
-6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂
+6 CO₂ + 6 H₂O →[ljus] C₆H₁₂O₆ + 6 O₂
 
 Räkna kolatomerna: sex koldioxidmolekyler innehåller sex kolatomer, och glukosmolekylen innehåller
 också sex. Inga kolatomer försvinner på vägen.
