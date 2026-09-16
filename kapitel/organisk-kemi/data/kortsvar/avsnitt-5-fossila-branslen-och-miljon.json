@@ -1,0 +1,134 @@
+{
+  "avsnitt": 5,
+  "titel": "Fossila bränslen och miljön",
+  "delkapitel": "fossila-branslen",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 5 (Fossila bränslen och miljön), delkapitel Fossila bränslen och förbränning, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/fossila-branslen/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k5-s1",
+      "typ": "tal",
+      "fraga": "Ungefär hur många år stannar en metanmolekyl i atmosfären innan den bryts ner?",
+      "svar": 10,
+      "forklaring": "Metan är starkare än koldioxid men kortlivad. Koldioxid kan påverka klimatet i mycket lång tid."
+    },
+    {
+      "id": "k5-s2",
+      "typ": "tal",
+      "fraga": "Hur många tungmetaller tas upp i avsnittet?",
+      "svar": 4,
+      "forklaring": "Kvicksilver, bly, kadmium och arsenik. Alla finns i kol, och två av dem också i torv."
+    },
+    {
+      "id": "k5-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas den strålning som jordytan sänder ut när den värmts av solen?",
+      "svar": [
+        "värmestrålning"
+      ],
+      "forklaring": "Det är infraröd strålning. Det är den växthusgaserna kan ta upp — inte solstrålningen."
+    },
+    {
+      "id": "k5-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas en gas som kan ta upp värmestrålning?",
+      "svar": [
+        "växthusgas"
+      ],
+      "forklaring": "Vattenånga, koldioxid och metan är de viktigaste. Kvävgas och syrgas är det inte."
+    },
+    {
+      "id": "k5-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas det när ett ekosystem tillförs mer näring än det är anpassat till?",
+      "svar": [
+        "övergödning"
+      ],
+      "forklaring": "Arter som utnyttjar näringen snabbt tränger undan de andra, och i vatten kan det leda till syrebrist."
+    },
+    {
+      "id": "k5-s6",
+      "typ": "ord",
+      "fraga": "Vilken metall har den kemiska beteckningen Hg?",
+      "svar": [
+        "kvicksilver"
+      ],
+      "forklaring": "Den finns i både kol och torv, är giftig i små mängder och samlas upp i näringskedjorna."
+    },
+    {
+      "id": "k5-s7",
+      "typ": "formel",
+      "fraga": "Skriv formeln för svaveldioxid.",
+      "svar": [
+        "SO2"
+      ],
+      "forklaring": "Den bildas när svavel i bränslet reagerar med syre, och kan spridas hundratals kilometer med vinden."
+    },
+    {
+      "id": "k5-s8",
+      "typ": "flerval",
+      "fraga": "Växthuseffekten är nödvändig. Vad är det då som är problemet?",
+      "alternativ": [
+        "att den finns",
+        "att den förstärks",
+        "att solen blir varmare",
+        "att atmosfären blir tunnare"
+      ],
+      "svar": 1,
+      "forklaring": "Utan växthuseffekten skulle jorden vara långt under fryspunkten. Problemet är att mängden växthusgaser ökar."
+    },
+    {
+      "id": "k5-s9",
+      "typ": "flerval",
+      "fraga": "Vad händer med värmestrålningen som en växthusgas tagit upp?",
+      "alternativ": [
+        "den försvinner",
+        "den studsar tillbaka mot jorden",
+        "den sänds ut igen åt alla håll",
+        "den blir till solstrålning"
+      ],
+      "svar": 2,
+      "forklaring": "Molekylen strålar ut energi i olika riktningar. En del går mot rymden, en del tillbaka mot jordytan. Den studsar inte mot något tak."
+    },
+    {
+      "id": "k5-s10",
+      "typ": "flerval",
+      "fraga": "Varför orsakar kväveutsläpp två olika miljöproblem?",
+      "alternativ": [
+        "kväve finns i två former",
+        "kväve bildar syror men är också näring",
+        "kväve reagerar med svavel",
+        "kväve bryts ner långsamt"
+      ],
+      "svar": 1,
+      "forklaring": "Kväveoxiderna bildar salpetersyra och bidrar till försurning. Samtidigt är kväve ett näringsämne, så nedfallet gödslar."
+    },
+    {
+      "id": "k5-s11",
+      "typ": "flerval",
+      "fraga": "Varför blir tungmetaller kvar i naturen?",
+      "alternativ": [
+        "de är för tunga för att spridas",
+        "grundämnen kan inte brytas ner",
+        "de löser sig inte i vatten",
+        "de fastnar alltid i askan"
+      ],
+      "svar": 1,
+      "forklaring": "En kvicksilveratom förblir en kvicksilveratom. Den kan byta kemisk form och flytta sig, men den försvinner inte."
+    },
+    {
+      "id": "k5-s12",
+      "typ": "flerval",
+      "fraga": "Vad kan rökgasrening inte ta bort?",
+      "alternativ": [
+        "svaveldioxid",
+        "stoft och aska",
+        "koldioxid",
+        "en del av metallerna"
+      ],
+      "svar": 2,
+      "forklaring": "Vid fullständig förbränning ska kolatomerna bli koldioxid. Ett filter kan inte fånga in det som reaktionen är till för att skapa."
+    }
+  ]
+}

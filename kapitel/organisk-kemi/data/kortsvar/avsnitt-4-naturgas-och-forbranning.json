@@ -1,0 +1,133 @@
+{
+  "avsnitt": 4,
+  "titel": "Naturgas och förbränning",
+  "delkapitel": "fossila-branslen",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 4 (Naturgas och förbränning), delkapitel Fossila bränslen och förbränning, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/fossila-branslen/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k4-s1",
+      "typ": "tal",
+      "fraga": "Vid hur många minusgrader blir metan vätska?",
+      "svar": 162,
+      "forklaring": "Metan kan inte pressas till vätska vid rumstemperatur, bara kylas. Därför fraktas flytande naturgas i specialbyggda fartyg."
+    },
+    {
+      "id": "k4-s2",
+      "typ": "tal",
+      "fraga": "Hur många syrgasmolekyler går åt när en metanmolekyl förbränns?",
+      "svar": 2,
+      "forklaring": "Det bildas en koldioxidmolekyl och två vattenmolekyler, och till det krävs två syrgasmolekyler."
+    },
+    {
+      "id": "k4-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas den gas som bildas när syret inte räcker vid förbränning?",
+      "svar": [
+        "kolmonoxid"
+      ],
+      "forklaring": "Den har bara en syreatom per kolatom, är färglös och luktfri, och är livsfarlig att andas in."
+    },
+    {
+      "id": "k4-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas det kol som inte reagerat alls vid förbränningen?",
+      "svar": [
+        "sot"
+      ],
+      "forklaring": "Sotet ger lågan dess gula färg. Energin som sitter kvar i sotet frigörs aldrig."
+    },
+    {
+      "id": "k4-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas ett ämne som får en reaktion att ske snabbare utan att själv förbrukas?",
+      "svar": [
+        "katalysator"
+      ],
+      "forklaring": "I en bil sitter den i avgasröret och omvandlar kolmonoxid och kväveoxider till mindre farliga ämnen."
+    },
+    {
+      "id": "k4-s6",
+      "typ": "ord",
+      "fraga": "Hur transporteras naturgas oftast mellan länder?",
+      "svar": [
+        "i rörledning",
+        "rörledning"
+      ],
+      "forklaring": "En gas tar mycket större plats än en vätska och går inte att lasta på en vanlig båt. Alternativet är att kyla den till vätska."
+    },
+    {
+      "id": "k4-s7",
+      "typ": "formel",
+      "fraga": "Skriv reaktionsformeln för fullständig förbränning av metan.",
+      "svar": [
+        "CH4 + 2 O2 -> CO2 + 2 H2O",
+        "CH4 + 2 O2 → CO2 + 2 H2O"
+      ],
+      "forklaring": "Kolatomen blir koldioxid och de fyra väteatomerna blir två vattenmolekyler."
+    },
+    {
+      "id": "k4-s8",
+      "typ": "formel",
+      "fraga": "Skriv reaktionsformeln för förbränning av rent kol.",
+      "svar": [
+        "C + O2 -> CO2",
+        "C + O2 → CO2"
+      ],
+      "forklaring": "Rent kol innehåller inget väte, så det bildas inget vatten — bara koldioxid."
+    },
+    {
+      "id": "k4-s9",
+      "typ": "flerval",
+      "fraga": "Vilken färg har lågan vid fullständig förbränning?",
+      "alternativ": [
+        "gul",
+        "blå",
+        "röd",
+        "grön"
+      ],
+      "svar": 1,
+      "forklaring": "En blå låga betyder gott om syre. En gul, sotande låga betyder syrebrist och är dessutom kallare."
+    },
+    {
+      "id": "k4-s10",
+      "typ": "flerval",
+      "fraga": "Varför är kolmonoxid så farlig?",
+      "alternativ": [
+        "den är frätande",
+        "den tar syrets plats i blodet",
+        "den är brandfarlig",
+        "den luktar illa"
+      ],
+      "svar": 1,
+      "forklaring": "Den binder på samma ställe som syret, men mycket hårdare. Blodet kan då inte transportera syre, och man märker ingenting."
+    },
+    {
+      "id": "k4-s11",
+      "typ": "flerval",
+      "fraga": "Vad kan en katalysator inte göra?",
+      "alternativ": [
+        "omvandla kolmonoxid",
+        "omvandla kväveoxider",
+        "ta bort koldioxiden",
+        "fungera utan att förbrukas"
+      ],
+      "svar": 2,
+      "forklaring": "Koldioxid är det förbränningen är till för att skapa. Katalysatorn tar bort de giftiga ämnena, inte den gas reaktionen syftar till."
+    },
+    {
+      "id": "k4-s12",
+      "typ": "flerval",
+      "fraga": "Varför används så lite naturgas i Sverige?",
+      "alternativ": [
+        "det finns ingen naturgas i Europa",
+        "vi har aldrig byggt ut något rörnät",
+        "det är förbjudet",
+        "den ger för mycket koldioxid"
+      ],
+      "svar": 1,
+      "forklaring": "Naturgas står för bara 1 till 3 procent av energin i Sverige, eftersom infrastrukturen saknas. ---"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "avsnitt": 2,
+  "titel": "Olja",
+  "delkapitel": "fossila-branslen",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 2 (Olja), delkapitel Fossila bränslen och förbränning, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/fossila-branslen/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k2-s1",
+      "typ": "tal",
+      "fraga": "Till ungefär hur många grader värms råoljan i fraktioneringstornet?",
+      "svar": 400,
+      "forklaring": "Vid den temperaturen förångas det mesta av blandningen och stiger uppåt i tornet."
+    },
+    {
+      "id": "k2-s2",
+      "typ": "tal",
+      "fraga": "Hur många kolatomer har kolvätena i bensin, som minst?",
+      "svar": 5,
+      "forklaring": "Bensin består av kolväten med fem till tio kolatomer. Kortare kedjor är gaser."
+    },
+    {
+      "id": "k2-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas oljan som pumpas upp ur berggrunden, innan den delats upp?",
+      "svar": [
+        "råolja",
+        "petroleum"
+      ],
+      "forklaring": "Det är en blandning av hundratals olika kolväten och går inte att använda som den är."
+    },
+    {
+      "id": "k2-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas metoden att dela upp råolja efter kokpunkt?",
+      "svar": [
+        "fraktionerad destillation"
+      ],
+      "forklaring": "Den bygger på att kolväten med olika långa kedjor kokar vid olika temperatur."
+    },
+    {
+      "id": "k2-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas en del av råoljan som samlats upp på en viss nivå i tornet?",
+      "svar": [
+        "fraktion"
+      ],
+      "forklaring": "Varje fraktion innehåller kolväten med ungefär samma kokpunkt, och därmed ungefär lika långa kedjor."
+    },
+    {
+      "id": "k2-s6",
+      "typ": "ord",
+      "fraga": "Vad kallas det när långa kolvätekedjor slås sönder till kortare?",
+      "svar": [
+        "krackning"
+      ],
+      "forklaring": "Det görs för att få mer bensin än vad råoljan naturligt ger."
+    },
+    {
+      "id": "k2-s7",
+      "typ": "formel",
+      "fraga": "Skriv den allmänna formeln för en alkan med n kolatomer.",
+      "svar": [
+        "C_{$n$}H_{$2n+2$}",
+        "CnH2n+2"
+      ],
+      "forklaring": "Kolvätena i råoljan är till stor del alkaner. Formeln ger antalet väteatomer om man vet antalet kolatomer."
+    },
+    {
+      "id": "k2-s8",
+      "typ": "flerval",
+      "fraga": "Varför ligger naturgasen ovanför oljan i en fyndighet?",
+      "alternativ": [
+        "den bildades senare",
+        "den är lättare",
+        "den är varmare",
+        "den är kemiskt bunden till berget"
+      ],
+      "svar": 1,
+      "forklaring": "Ämnena ordnar sig efter densitet. Gasen överst, oljan i mitten, vattnet underst."
+    },
+    {
+      "id": "k2-s9",
+      "typ": "flerval",
+      "fraga": "Var i fraktioneringstornet tas asfalten ut?",
+      "alternativ": [
+        "högst upp",
+        "i mitten",
+        "i botten",
+        "den tas inte ut ur tornet"
+      ],
+      "svar": 2,
+      "forklaring": "Asfalt består av de längsta kolvätena. De har högst kokpunkt och förångas knappt alls."
+    },
+    {
+      "id": "k2-s10",
+      "typ": "flerval",
+      "fraga": "Hur sitter oljan i berggrunden?",
+      "alternativ": [
+        "i stora underjordiska sjöar",
+        "i små hålrum och sprickor",
+        "kemiskt bunden till bergarten",
+        "i lager mellan bergarterna"
+      ],
+      "svar": 1,
+      "forklaring": "Den porösa bergarten fungerar ungefär som en tvättsvamp. Oljan finns i mellanrummen mellan kornen."
+    },
+    {
+      "id": "k2-s11",
+      "typ": "flerval",
+      "fraga": "Vad är det som stoppar oljan från att fortsätta uppåt genom berggrunden?",
+      "alternativ": [
+        "trycket underifrån",
+        "ett tätt berglager",
+        "vattnet ovanför",
+        "att den stelnar"
+      ],
+      "svar": 1,
+      "forklaring": "Olja är lättare än vatten och rör sig uppåt tills den möter ett lager som inte släpper igenom. Där bildas en oljefälla."
+    },
+    {
+      "id": "k2-s12",
+      "typ": "flerval",
+      "fraga": "Vad används olja till förutom som bränsle?",
+      "alternativ": [
+        "gödsel",
+        "plaster, färger och läkemedel",
+        "betong",
+        "glastillverkning"
+      ],
+      "svar": 1,
+      "forklaring": "Den lilla del av oljan som inte förbränns är råvara för kemisk industri. Etenen som blir polyeten kommer härifrån. ---"
+    }
+  ]
+}

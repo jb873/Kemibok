@@ -1,0 +1,133 @@
+{
+  "avsnitt": 1,
+  "titel": "Kolet som blev kvar",
+  "delkapitel": "fossila-branslen",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 1 (Kolet som blev kvar), delkapitel Fossila bränslen och förbränning, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/fossila-branslen/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k1-s1",
+      "typ": "tal",
+      "fraga": "Ungefär hur stor andel av världens energi kommer från fossila bränslen, i procent?",
+      "svar": 80,
+      "forklaring": "Olja står för 30–35 procent, kol för ungefär 25 och naturgas för 23–25. Tillsammans ungefär fyra femtedelar."
+    },
+    {
+      "id": "k1-s2",
+      "typ": "tal",
+      "fraga": "Hur många fossila bränslen finns det?",
+      "svar": 3,
+      "forklaring": "Olja, kol och naturgas. Olja och naturgas bildades i havet, kol av växter på land."
+    },
+    {
+      "id": "k1-s3",
+      "typ": "tal",
+      "fraga": "Ungefär hur många grader varmt blir det när olja bildas, som lägst?",
+      "svar": 60,
+      "forklaring": "Omvandlingen sker mellan ungefär 60 och 120 grader. Blir det varmare bildas mer naturgas i stället."
+    },
+    {
+      "id": "k1-s4",
+      "typ": "ord",
+      "fraga": "Vad betyder ordet fossil?",
+      "svar": [
+        "uppgrävd"
+      ],
+      "forklaring": "Det kommer av latinets *fossus*. Namnet passar, eftersom bränslena hämtas ur berggrunden."
+    },
+    {
+      "id": "k1-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas de lager av lera och sand som lägger sig ovanpå det begravda materialet?",
+      "svar": [
+        "sediment"
+      ],
+      "forklaring": "Lager efter lager samlas ovanpå, och materialet hamnar allt djupare ner där trycket och temperaturen är högre."
+    },
+    {
+      "id": "k1-s6",
+      "typ": "ord",
+      "fraga": "Vad kallas en resurs som bildas så långsamt att den inte hinner ersättas?",
+      "svar": [
+        "ändlig",
+        "icke förnybar"
+      ],
+      "forklaring": "Fossila bränslen bildas på miljontals år men förbrukas på årtionden."
+    },
+    {
+      "id": "k1-s7",
+      "typ": "formel",
+      "fraga": "Skriv formeln för den gas som bildas när fossilt kol förbränns.",
+      "svar": [
+        "CO2"
+      ],
+      "forklaring": "Kolatomerna i bränslet binder till syre. Det är samma gas som bildas vid cellandning, men här kommer kolet från berggrunden."
+    },
+    {
+      "id": "k1-s8",
+      "typ": "flerval",
+      "fraga": "Varför bröts inte det organiska materialet ner som allt annat dött?",
+      "alternativ": [
+        "det var för kallt",
+        "syret tog slut där det låg",
+        "det innehöll giftiga ämnen",
+        "nedbrytarna fanns inte då"
+      ],
+      "svar": 1,
+      "forklaring": "Nedbrytarna behöver syre. I bottenslam och sumpmarker tog syret slut, och materialet blev liggande."
+    },
+    {
+      "id": "k1-s9",
+      "typ": "flerval",
+      "fraga": "Hur lång tid tar ett varv i det snabba kolkretsloppet?",
+      "alternativ": [
+        "timmar till dagar",
+        "år till årtionden",
+        "tusentals år",
+        "miljontals år"
+      ],
+      "svar": 1,
+      "forklaring": "En kolatom i ett löv kan vara tillbaka i luften inom ett år, i en trädstam efter hundra. Det långa kretsloppet tar miljontals år."
+    },
+    {
+      "id": "k1-s10",
+      "typ": "flerval",
+      "fraga": "Vad är skillnaden mellan att elda ved och att elda olja?",
+      "alternativ": [
+        "veden ger mindre energi",
+        "oljan innehåller mer kol",
+        "vedens kol kom ur luften nyligen",
+        "veden brinner renare"
+      ],
+      "svar": 2,
+      "forklaring": "Trädet tog upp sitt kol ur luften för några årtionden sedan. Oljans kol har varit borta ur atmosfären i miljontals år."
+    },
+    {
+      "id": "k1-s11",
+      "typ": "flerval",
+      "fraga": "Vilket fossilt bränsle bildades av växter på land?",
+      "alternativ": [
+        "olja",
+        "naturgas",
+        "kol",
+        "alla tre"
+      ],
+      "svar": 2,
+      "forklaring": "Kol bildades i sumpmarker på land. Olja och naturgas bildades av plankton i havet."
+    },
+    {
+      "id": "k1-s12",
+      "typ": "flerval",
+      "fraga": "Varför ger kol mer koldioxid än naturgas för samma mängd energi?",
+      "alternativ": [
+        "kol innehåller mer energi",
+        "naturgas har mycket väte som blir vatten",
+        "kol brinner långsammare",
+        "naturgas innehåller inget kol"
+      ],
+      "svar": 1,
+      "forklaring": "Metan har fyra väteatomer per kolatom. Väteatomerna blir vatten, inte koldioxid. Kol har nästan inget väte alls. ---"
+    }
+  ]
+}
