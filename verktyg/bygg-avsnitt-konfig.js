@@ -192,7 +192,7 @@ const AVSNITT_KOLVATEN = {
          'k2-b6.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'vätskan och ersätter gasen som försvann.', standard: 'gas ut, och ny vätska förångas för att ersätta den.', fordjupning: 'vårdag kan det.' },
          'k2-b7.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'När kedjan växer ändras både formeln och', standard: 'formeln utan också ämnets egenskaper.', fordjupning: 'lika mycket attraktion.' }
        } },
-  3: { dd: [],   // arbetsorder 3 Kolväten (2026-09-15): tre SVG, specade i bildrutorna. Djupdykningen om namngivning (3.2) är inte skriven – ingen dd ännu
+  3: { dd: [{ slug: 'namnsystemet', titel: 'Språket som kemisterna byggde', ikon: '📖' }],   // djupdykning från 3.2 (arbetsorder 8, 2026-09-16); tre SVG specade i bildrutorna
        bilder: {
          'k2-c1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Ämnen som har samma molekylformel men olika strukturformel kallas **isomerer**.', standard: 'Ämnen som har samma molekylformel men olika strukturformel kallas', fordjupning: 'klotformad, och ett klot har den minsta möjliga ytan för sin storlek.' },
          'k2-c2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Alla tre ämnena har två kolatomer. De har ändå olika formler.', standard: 'Alla tre ämnena har två kolatomer, men olika molekylformler.', fordjupning: 'Molekylen är alltså **låst** kring sin dubbelbindning.' },
