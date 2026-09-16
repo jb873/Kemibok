@@ -176,33 +176,33 @@ const AVSNITT_KOLATOMEN = {
          'k1-a10.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Det här kallas **kolets kretslopp**.', standard: 'medan cellandningen pågår i alla celler dygnet runt.', fordjupning: 'kol utan varje grundämne som ingår i levande material.' }
        } }
 };
-// Kolväten (Organisk kemi 2, förhandsbygge av avsnitt 1, arbetsorder 1 2026-09-15): bara Standard levererad, så bara
-// standard-ankare; enkel/fordjupning läggs till när texterna kommer. aktiv på alla nivåer så att inget behöver ändras då.
+// Kolväten (Organisk kemi 2). Ankare per nivå: standard = sista raden i stycket före bildrutan i avsnitt-N.md (satt-ihop-kolvaten.js
+// rapporterar dem), enkel/fordjupning valda av Code ur avsnitt-N-enkel-fordjupning.md (arbetsorder 5, 2026-09-16) – rapporterade.
 const AVSNITT_KOLVATEN = {
   1: { dd: [],
        bilder: {
-         'k2-b1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'hur kolatomerna sitter ihop.' },
-         'k2-b2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'är hela tiden densamma.' },
-         'k2-b3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Det undersöker vi i avsnitt 3.' },
-         'k2-b4.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'kolatomer du börjar med.' }
+         'k2-b1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'hur många väteatomer molekylen har.', standard: 'hur kolatomerna sitter ihop.', fordjupning: 'på kolatomerna, inte på vätet.' },
+         'k2-b2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Det finns alkaner med tjugo kolatomer, och betydligt fler än så.', standard: 'är hela tiden densamma.', fordjupning: 'Regeln stämmer: 2 × 6 + 2 = 14.' },
+         'k2-b3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Den räknar, den ritar inte.', standard: 'Det undersöker vi i avsnitt 3.', fordjupning: 'oavsett hur den ritas.' },
+         'k2-b4.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Det enda som ändras är hur många kolatomer du börjar med.', standard: 'kolatomer du börjar med.', fordjupning: 'det handlar om två olika ämnen.' }
        } },
   2: { dd: [],   // arbetsorder 2 Kolväten (2026-09-15): k2-b5 AI-bild (nycklad), k2-b6 och k2-b7 SVG
        bilder: {
-         'k2-b5.webp': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'från luften, genom fotosyntesen.' },
-         'k2-b6.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'gas ut, och ny vätska förångas för att ersätta den.' },
-         'k2-b7.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'formeln utan också ämnets egenskaper.' }
+         'k2-b5.webp': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'växten dog, och nu är kolet på väg', standard: 'från luften, genom fotosyntesen.', fordjupning: 'varit ur cirkulation.' },
+         'k2-b6.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'vätskan och ersätter gasen som försvann.', standard: 'gas ut, och ny vätska förångas för att ersätta den.', fordjupning: 'vårdag kan det.' },
+         'k2-b7.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'När kedjan växer ändras både formeln och', standard: 'formeln utan också ämnets egenskaper.', fordjupning: 'lika mycket attraktion.' }
        } },
   3: { dd: [],   // arbetsorder 3 Kolväten (2026-09-15): tre SVG, specade i bildrutorna. Djupdykningen om namngivning (3.2) är inte skriven – ingen dd ännu
        bilder: {
-         'k2-c1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Ämnen som har samma molekylformel men olika strukturformel kallas' },
-         'k2-c2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Alla tre ämnena har två kolatomer, men olika molekylformler.' },
-         'k2-c3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'hur många väteatomer som ryms.' }
+         'k2-c1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Ämnen som har samma molekylformel men olika strukturformel kallas **isomerer**.', standard: 'Ämnen som har samma molekylformel men olika strukturformel kallas', fordjupning: 'klotformad, och ett klot har den minsta möjliga ytan för sin storlek.' },
+         'k2-c2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Alla tre ämnena har två kolatomer. De har ändå olika formler.', standard: 'Alla tre ämnena har två kolatomer, men olika molekylformler.', fordjupning: 'Molekylen är alltså **låst** kring sin dubbelbindning.' },
+         'k2-c3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'bindningen kan du räkna ut hur många väteatomer som ryms.', standard: 'hur många väteatomer som ryms.', fordjupning: 'Först från **pent-** och uppåt är namnen rena räkneord.' }
        } },
   4: { dd: [],   // arbetsorder 4 Kolväten (2026-09-15): tre SVG, specade i bildrutorna
        bilder: {
-         'k2-d1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'kopplade efter varandra blir en mycket lång kedja, och det är den kedjan som är polymermolekylen.' },
-         'k2-d2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Processen kallas **polymerisation**.' },
-         'k2-d3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'fibrer. Skillnaden ligger i monomeren.' }
+         'k2-d1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'som gör det till en polymer.', standard: 'kopplade efter varandra blir en mycket lång kedja, och det är den kedjan som är polymermolekylen.', fordjupning: 'medellängd och en spridning.' },
+         'k2-d2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Processen kallas **polymerisation**.', standard: 'Processen kallas **polymerisation**.', fordjupning: 'En enda initiatormolekyl kan ge upphov till en kedja med tiotusentals enheter.' },
+         'k2-d3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Skillnaden sitter i monomeren.', standard: 'fibrer. Skillnaden ligger i monomeren.', fordjupning: 'Samma monomer. Samma bindningar. Samma polymer, kemiskt sett. Skillnaden är hur kedjorna ligger.' }
        } }
 };
 const DELKAPITEL = {
