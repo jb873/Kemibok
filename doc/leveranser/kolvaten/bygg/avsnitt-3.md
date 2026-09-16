@@ -57,6 +57,22 @@ Tre serier kolväten. Placering enligt bildrutan i avsnitt-3.md.
 
 # UNDERDEL A — Isomerer
 
+## Kärnpunkter (Enkel)
+
+- Vid hur många kolatomer finns det för första gången mer än ett sätt att bygga kedjan?
+- Vad är skillnaden mellan n-butan och isobutan?
+- Hur många kolatomer och väteatomer har de båda?
+- Varför kokar den ena vid lägre temperatur än den andra?
+- Vad händer med antalet isomerer när molekylen blir större?
+
+## Kärnpunkter (Standard)
+
+- Vid hur många kolatomer finns det för första gången mer än ett sätt att bygga kedjan?
+- Vad är skillnaden mellan n-butan och isobutan?
+- Hur många kolatomer och väteatomer har de båda?
+- Varför kokar den ena vid lägre temperatur än den andra?
+- Vad händer med antalet isomerer när molekylen blir större?
+
 ---
 
 ## A — ENKEL
@@ -195,6 +211,22 @@ molekylen ser ut, utan hur mycket av den som kan röra en annan molekyl på en g
 
 # UNDERDEL B — Dubbel- och trippelbindningar
 
+## Kärnpunkter (Enkel)
+
+- Hur många elektronpar delar två kolatomer på i en dubbelbindning?
+- Vad händer med antalet väteatomer när bindningen mellan kolatomerna blir dubbel?
+- Hur många väteatomer har etan, eten respektive etyn?
+- Hur många bindningar har varje kolatom i etyn, sammanlagt?
+- På vilket sätt kan två molekyler med samma formel ändå skilja sig åt när de har en
+
+## Kärnpunkter (Standard)
+
+- Hur många elektronpar delar två kolatomer på i en dubbelbindning?
+- Vad händer med antalet väteatomer när bindningen mellan kolatomerna blir dubbel?
+- Hur många väteatomer har etan, eten respektive etyn?
+- Hur många bindningar har varje kolatom i etyn, sammanlagt?
+- På vilket sätt kan två molekyler med samma formel ändå skilja sig åt när de har en
+
 ---
 
 ## B — ENKEL
@@ -324,6 +356,22 @@ atomer som får plats — den bestämmer molekylens form.
 ---
 
 # UNDERDEL C — Alkener och alkyner
+
+## Kärnpunkter (Enkel)
+
+- Vilken ändelse har namnen på kolväten med dubbelbindning?
+- Hur hänger namnen på alkenerna ihop med namnen på alkanerna?
+- Vad används etyn till, och varför?
+- Vad betyder det att ett kolväte är mättat?
+- Hur stor är skillnaden i antal väteatomer mellan en alkan och en alken med lika många
+
+## Kärnpunkter (Standard)
+
+- Vilken ändelse har namnen på kolväten med dubbelbindning?
+- Hur hänger namnen på alkenerna ihop med namnen på alkanerna?
+- Vad används etyn till, och varför?
+- Vad betyder det att ett kolväte är mättat?
+- Hur stor är skillnaden i antal väteatomer mellan en alkan och en alken med lika många
 
 ---
 

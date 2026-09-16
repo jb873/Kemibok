@@ -226,6 +226,9 @@ const DELKAPITEL = {
       'trippelbindning': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)',
       'strukturformel': 'finns redan i Syror och baser, repetition avsnitt 3 (Joachim 2026-09-15)' } } },
   kolvaten: { titel: 'Kolväten', kapitel: { id: 'organisk-kemi', titel: 'Organisk kemi' }, byggmapp: 'bygg', avsnitt: AVSNITT_KOLVATEN,
-    bank: { idPrefix: '', avsnittOffset: 3, uteslut: {} } }   // Öva ingår inte i förhandsbygget; banken delas med Kolatomen (kapitlets)
+    // kapitlets bank delas med Kolatomen: id-prefix v (kv1-b1 …) och avsnitt 4–7 så att id/avsnitt är unika. uteslut: dubblett mot
+    // Syror och baser (Joachims regel 2026-09-15: lägg inte in en andra version). Kontroll 2026-09-16: 38 kandidater mot 26 + 167 – en träff.
+    bank: { idPrefix: 'v', avsnittOffset: 3, uteslut: {
+      'enkelbindning': 'finns redan i Syror och baser, repetition avsnitt 3 (arbetsorder 6 Kolväten, 2026-09-16)' } } }
 };
 module.exports = { DELKAPITEL };

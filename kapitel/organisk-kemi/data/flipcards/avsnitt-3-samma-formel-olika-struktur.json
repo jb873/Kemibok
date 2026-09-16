@@ -1,0 +1,124 @@
+{
+  "avsnitt": 3,
+  "titel": "Kolväten kan se olika ut fast de har samma formel",
+  "delkapitel": "kolvaten",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 3 (Kolväten kan se olika ut fast de har samma formel), delkapitel Kolväten. 11 begreppskort + 5 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/kolvaten/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k3-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Isomerer",
+      "svar": "Ämnen som har samma molekylformel men olika strukturformel."
+    },
+    {
+      "id": "k3-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "n-butan",
+      "svar": "Butan med rak kolkedja, där alla fyra kolatomer sitter efter varandra. Kokar vid ungefär 0 °C."
+    },
+    {
+      "id": "k3-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Isobutan",
+      "svar": "Butan med grenad kolkedja, där den fjärde kolatomen sitter som en gren på mittenkolatomen. Kokar vid ungefär −12 °C."
+    },
+    {
+      "id": "k3-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Alken",
+      "svar": "Ett kolväte med minst en dubbelbindning mellan kolatomerna. Namnet slutar på -en."
+    },
+    {
+      "id": "k3-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Alkyn",
+      "svar": "Ett kolväte med minst en trippelbindning mellan kolatomerna. Namnet slutar på -yn."
+    },
+    {
+      "id": "k3-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Alkenserien",
+      "svar": "Serien av alkener: eten, propen, buten och så vidare."
+    },
+    {
+      "id": "k3-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Alkynserien",
+      "svar": "Serien av alkyner: etyn, propyn, butyn och så vidare."
+    },
+    {
+      "id": "k3-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Mättat kolväte",
+      "svar": "Ett kolväte som innehåller så många väteatomer som får plats. Alla bindningar mellan kolatomerna är enkla."
+    },
+    {
+      "id": "k3-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Omättat kolväte",
+      "svar": "Ett kolväte med dubbel- eller trippelbindning, och därför färre väteatomer än ett mättat med lika många kolatomer."
+    },
+    {
+      "id": "k3-b10",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Acetylen",
+      "svar": "Ett äldre namn på etyn. Brinner med mycket het låga och används vid gassvetsning."
+    },
+    {
+      "id": "k3-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Cis och trans",
+      "svar": "Två former av samma molekyl, där det som sitter på kolatomerna hamnar på samma sida om dubbelbindningen eller på var sin sida. Eftersom dubbelbindningen inte går att vrida är de olika ämnen."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k3-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför har eten färre väteatomer än etan?",
+      "svar": "Båda har två kolatomer. I eten går två bindningar åt mellan kolatomerna i stället för en, så det finns färre bindningar kvar till väte."
+    },
+    {
+      "id": "k3-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Ett kolväte heter propen. Vad kan du säga om det utan att se formeln?",
+      "svar": "Ändelsen -en betyder att det finns en dubbelbindning mellan kolatomerna, och prop- betyder tre kolatomer. Ämnet är alltså omättat."
+    },
+    {
+      "id": "k3-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför kokar isobutan vid lägre temperatur än n-butan?",
+      "svar": "Den raka molekylen kan ligga tätt intill sina grannar längs hela sin längd. Den grenade är rundare och kommer inte lika nära, så attraktionen blir svagare."
+    },
+    {
+      "id": "k3-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför går en dubbelbindning inte att vrida på?",
+      "svar": "Det ena elektronparet ligger i två områden, ett ovanför och ett under molekylens plan. Att vrida bindningen skulle slita isär dem, och det kräver för mycket energi."
+    },
+    {
+      "id": "k3-m5",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Tre isomerer av pentan kokar vid 36, 28 och 10 grader. Vad avgör ordningen?",
+      "svar": "Hur kompakt molekylen är. Ju rundare den är, desto mindre yta får kontakt med grannarna, desto svagare attraktion och desto lägre kokpunkt."
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "kapitel_titel": "Organisk kemi",
   "version": 3,
   "skapad": "2026-09-13",
-  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 26 = 26.",
+  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 26 + Kolväten 37 = 63.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -242,6 +242,339 @@
       "term": "det snabba kretsloppet",
       "expertdefinition": "Den del av kolets kretslopp där kolet rör sig mellan luften och det levande på timmar till årtionden.",
       "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-mellan-luften-och-det-levande.json"
+    },
+    {
+      "id": "kv1-b1",
+      "avsnitt": "4",
+      "avsnitt_titel": "Kolväten består av kol och väte",
+      "delkapitel_titel": "Kolväten",
+      "term": "kolväte",
+      "expertdefinition": "En kolförening som bara innehåller kolatomer och väteatomer, inga andra atomslag.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolvaten-bestar-av-kol-och-vate.json"
+    },
+    {
+      "id": "kv1-b2",
+      "avsnitt": "4",
+      "avsnitt_titel": "Kolväten består av kol och väte",
+      "delkapitel_titel": "Kolväten",
+      "term": "alkan",
+      "expertdefinition": "Ett kolväte där alla bindningar mellan kolatomerna är enkelbindningar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolvaten-bestar-av-kol-och-vate.json"
+    },
+    {
+      "id": "kv1-b3",
+      "avsnitt": "4",
+      "avsnitt_titel": "Kolväten består av kol och väte",
+      "delkapitel_titel": "Kolväten",
+      "term": "alkanserien",
+      "expertdefinition": "Serien av alkaner, där varje nytt ämne har en kolatom mer än det föregående: metan, etan, propan, butan och så vidare.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolvaten-bestar-av-kol-och-vate.json"
+    },
+    {
+      "id": "kv1-b5",
+      "avsnitt": "4",
+      "avsnitt_titel": "Kolväten består av kol och väte",
+      "delkapitel_titel": "Kolväten",
+      "term": "etan",
+      "expertdefinition": "Alkanen med två kolatomer. Formeln är C₂H₆.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolvaten-bestar-av-kol-och-vate.json"
+    },
+    {
+      "id": "kv1-b6",
+      "avsnitt": "4",
+      "avsnitt_titel": "Kolväten består av kol och väte",
+      "delkapitel_titel": "Kolväten",
+      "term": "propan",
+      "expertdefinition": "Alkanen med tre kolatomer. Formeln är C₃H₈. Ingår i gasol.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolvaten-bestar-av-kol-och-vate.json"
+    },
+    {
+      "id": "kv1-b7",
+      "avsnitt": "4",
+      "avsnitt_titel": "Kolväten består av kol och väte",
+      "delkapitel_titel": "Kolväten",
+      "term": "butan",
+      "expertdefinition": "Alkanen med fyra kolatomer. Formeln är C₄H₁₀. Ingår i gasol och i tändare.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolvaten-bestar-av-kol-och-vate.json"
+    },
+    {
+      "id": "kv1-b8",
+      "avsnitt": "4",
+      "avsnitt_titel": "Kolväten består av kol och väte",
+      "delkapitel_titel": "Kolväten",
+      "term": "molekylmodell",
+      "expertdefinition": "En bild av en molekyl där atomerna visas som kulor, så att molekylens form framgår.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolvaten-bestar-av-kol-och-vate.json"
+    },
+    {
+      "id": "kv1-b9",
+      "avsnitt": "4",
+      "avsnitt_titel": "Kolväten består av kol och väte",
+      "delkapitel_titel": "Kolväten",
+      "term": "allmän formel för alkaner",
+      "expertdefinition": "en regel som ger antalet väteatomer i en alkan om man vet antalet kolatomer.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolvaten-bestar-av-kol-och-vate.json"
+    },
+    {
+      "id": "kv2-b1",
+      "avsnitt": "5",
+      "avsnitt_titel": "De första kolvätena och vad de används till",
+      "delkapitel_titel": "Kolväten",
+      "term": "sumpgas",
+      "expertdefinition": "Metan som bildas när organiskt material bryts ner i syrefria miljöer, till exempel i bottenslam och kärr.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-de-forsta-kolvatena.json"
+    },
+    {
+      "id": "kv2-b2",
+      "avsnitt": "5",
+      "avsnitt_titel": "De första kolvätena och vad de används till",
+      "delkapitel_titel": "Kolväten",
+      "term": "gruvgas",
+      "expertdefinition": "Metan som varit instängd i berggrunden och frigörs vid kolbrytning. Blandad med luft kan den explodera.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-de-forsta-kolvatena.json"
+    },
+    {
+      "id": "kv2-b3",
+      "avsnitt": "5",
+      "avsnitt_titel": "De första kolvätena och vad de används till",
+      "delkapitel_titel": "Kolväten",
+      "term": "naturgas",
+      "expertdefinition": "Ett bränsle som till största delen består av metan och som utvunnits ur berggrunden.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-de-forsta-kolvatena.json"
+    },
+    {
+      "id": "kv2-b4",
+      "avsnitt": "5",
+      "avsnitt_titel": "De första kolvätena och vad de används till",
+      "delkapitel_titel": "Kolväten",
+      "term": "biogas",
+      "expertdefinition": "Ett bränsle som till största delen består av metan och som framställs ur organiskt avfall i en syrefri behållare.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-de-forsta-kolvatena.json"
+    },
+    {
+      "id": "kv2-b5",
+      "avsnitt": "5",
+      "avsnitt_titel": "De första kolvätena och vad de används till",
+      "delkapitel_titel": "Kolväten",
+      "term": "rötkammare",
+      "expertdefinition": "En sluten behållare utan syre där matavfall, gödsel eller avloppsslam bryts ner så att biogas bildas.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-de-forsta-kolvatena.json"
+    },
+    {
+      "id": "kv2-b6",
+      "avsnitt": "5",
+      "avsnitt_titel": "De första kolvätena och vad de används till",
+      "delkapitel_titel": "Kolväten",
+      "term": "gasol",
+      "expertdefinition": "Ett bränsle som består av propan, butan eller en blandning av dem, lagrat som vätska under tryck.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-de-forsta-kolvatena.json"
+    },
+    {
+      "id": "kv2-b7",
+      "avsnitt": "5",
+      "avsnitt_titel": "De första kolvätena och vad de används till",
+      "delkapitel_titel": "Kolväten",
+      "term": "paraffin",
+      "expertdefinition": "Ett fast material som består av kolväten med långa kolkedjor. Stearinljus görs av det.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-de-forsta-kolvatena.json"
+    },
+    {
+      "id": "kv2-b8",
+      "avsnitt": "5",
+      "avsnitt_titel": "De första kolvätena och vad de används till",
+      "delkapitel_titel": "Kolväten",
+      "term": "fullständig förbränning",
+      "expertdefinition": "En förbränning där det finns tillräckligt med syre, så att det bara bildas koldioxid och vatten.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-de-forsta-kolvatena.json"
+    },
+    {
+      "id": "kv2-b9",
+      "avsnitt": "5",
+      "avsnitt_titel": "De första kolvätena och vad de används till",
+      "delkapitel_titel": "Kolväten",
+      "term": "kokpunkt",
+      "expertdefinition": "Den temperatur då ett ämne övergår från vätska till gas.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-de-forsta-kolvatena.json"
+    },
+    {
+      "id": "kv3-b1",
+      "avsnitt": "6",
+      "avsnitt_titel": "Kolväten kan se olika ut fast de har samma formel",
+      "delkapitel_titel": "Kolväten",
+      "term": "isomerer",
+      "expertdefinition": "Ämnen som har samma molekylformel men olika strukturformel.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-samma-formel-olika-struktur.json"
+    },
+    {
+      "id": "kv3-b2",
+      "avsnitt": "6",
+      "avsnitt_titel": "Kolväten kan se olika ut fast de har samma formel",
+      "delkapitel_titel": "Kolväten",
+      "term": "n-butan",
+      "expertdefinition": "Butan med rak kolkedja, där alla fyra kolatomer sitter efter varandra. Kokar vid ungefär 0 °C.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-samma-formel-olika-struktur.json"
+    },
+    {
+      "id": "kv3-b3",
+      "avsnitt": "6",
+      "avsnitt_titel": "Kolväten kan se olika ut fast de har samma formel",
+      "delkapitel_titel": "Kolväten",
+      "term": "isobutan",
+      "expertdefinition": "Butan med grenad kolkedja, där den fjärde kolatomen sitter som en gren på mittenkolatomen. Kokar vid ungefär −12 °C.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-samma-formel-olika-struktur.json"
+    },
+    {
+      "id": "kv3-b4",
+      "avsnitt": "6",
+      "avsnitt_titel": "Kolväten kan se olika ut fast de har samma formel",
+      "delkapitel_titel": "Kolväten",
+      "term": "alken",
+      "expertdefinition": "Ett kolväte med minst en dubbelbindning mellan kolatomerna. Namnet slutar på -en.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-samma-formel-olika-struktur.json"
+    },
+    {
+      "id": "kv3-b5",
+      "avsnitt": "6",
+      "avsnitt_titel": "Kolväten kan se olika ut fast de har samma formel",
+      "delkapitel_titel": "Kolväten",
+      "term": "alkyn",
+      "expertdefinition": "Ett kolväte med minst en trippelbindning mellan kolatomerna. Namnet slutar på -yn.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-samma-formel-olika-struktur.json"
+    },
+    {
+      "id": "kv3-b6",
+      "avsnitt": "6",
+      "avsnitt_titel": "Kolväten kan se olika ut fast de har samma formel",
+      "delkapitel_titel": "Kolväten",
+      "term": "alkenserien",
+      "expertdefinition": "Serien av alkener: eten, propen, buten och så vidare.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-samma-formel-olika-struktur.json"
+    },
+    {
+      "id": "kv3-b7",
+      "avsnitt": "6",
+      "avsnitt_titel": "Kolväten kan se olika ut fast de har samma formel",
+      "delkapitel_titel": "Kolväten",
+      "term": "alkynserien",
+      "expertdefinition": "Serien av alkyner: etyn, propyn, butyn och så vidare.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-samma-formel-olika-struktur.json"
+    },
+    {
+      "id": "kv3-b8",
+      "avsnitt": "6",
+      "avsnitt_titel": "Kolväten kan se olika ut fast de har samma formel",
+      "delkapitel_titel": "Kolväten",
+      "term": "mättat kolväte",
+      "expertdefinition": "Ett kolväte som innehåller så många väteatomer som får plats. Alla bindningar mellan kolatomerna är enkla.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-samma-formel-olika-struktur.json"
+    },
+    {
+      "id": "kv3-b9",
+      "avsnitt": "6",
+      "avsnitt_titel": "Kolväten kan se olika ut fast de har samma formel",
+      "delkapitel_titel": "Kolväten",
+      "term": "omättat kolväte",
+      "expertdefinition": "Ett kolväte med dubbel- eller trippelbindning, och därför färre väteatomer än ett mättat med lika många kolatomer.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-samma-formel-olika-struktur.json"
+    },
+    {
+      "id": "kv3-b10",
+      "avsnitt": "6",
+      "avsnitt_titel": "Kolväten kan se olika ut fast de har samma formel",
+      "delkapitel_titel": "Kolväten",
+      "term": "acetylen",
+      "expertdefinition": "Ett äldre namn på etyn. Brinner med mycket het låga och används vid gassvetsning.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-samma-formel-olika-struktur.json"
+    },
+    {
+      "id": "kv4-b1",
+      "avsnitt": "7",
+      "avsnitt_titel": "Polymerer",
+      "delkapitel_titel": "Kolväten",
+      "term": "monomer",
+      "expertdefinition": "En liten molekyl som kan kopplas samman med många likadana till en polymer.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-polymerer.json"
+    },
+    {
+      "id": "kv4-b2",
+      "avsnitt": "7",
+      "avsnitt_titel": "Polymerer",
+      "delkapitel_titel": "Kolväten",
+      "term": "polymer",
+      "expertdefinition": "En mycket stor molekyl som består av ett stort antal upprepade enheter.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-polymerer.json"
+    },
+    {
+      "id": "kv4-b3",
+      "avsnitt": "7",
+      "avsnitt_titel": "Polymerer",
+      "delkapitel_titel": "Kolväten",
+      "term": "polymerisation",
+      "expertdefinition": "Processen där många monomerer kopplas samman till en polymer.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-polymerer.json"
+    },
+    {
+      "id": "kv4-b4",
+      "avsnitt": "7",
+      "avsnitt_titel": "Polymerer",
+      "delkapitel_titel": "Kolväten",
+      "term": "polyeten",
+      "expertdefinition": "Plasten som bildas när många etenmolekyler kopplas samman. Används i plastpåsar, flaskor och plastfilm.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-polymerer.json"
+    },
+    {
+      "id": "kv4-b5",
+      "avsnitt": "7",
+      "avsnitt_titel": "Polymerer",
+      "delkapitel_titel": "Kolväten",
+      "term": "polypropen",
+      "expertdefinition": "Plast som tillverkas av propen. Används i matförpackningar, plastlådor, rep och textilfibrer.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-polymerer.json"
+    },
+    {
+      "id": "kv4-b6",
+      "avsnitt": "7",
+      "avsnitt_titel": "Polymerer",
+      "delkapitel_titel": "Kolväten",
+      "term": "polystyren",
+      "expertdefinition": "Plast som tillverkas av styren. Används i engångsprodukter, isolering och skyddsförpackningar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-polymerer.json"
+    },
+    {
+      "id": "kv4-b7",
+      "avsnitt": "7",
+      "avsnitt_titel": "Polymerer",
+      "delkapitel_titel": "Kolväten",
+      "term": "pvc",
+      "expertdefinition": "Polyvinylklorid, en plast som tillverkas av vinylklorid. Innehåller också kloratomer, till skillnad från de övriga vanliga plasterna.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-polymerer.json"
+    },
+    {
+      "id": "kv4-b8",
+      "avsnitt": "7",
+      "avsnitt_titel": "Polymerer",
+      "delkapitel_titel": "Kolväten",
+      "term": "termoplast",
+      "expertdefinition": "En plast där kedjorna inte är fastbundna vid varandra. Den mjuknar vid uppvärmning och går att forma om.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-polymerer.json"
+    },
+    {
+      "id": "kv4-b9",
+      "avsnitt": "7",
+      "avsnitt_titel": "Polymerer",
+      "delkapitel_titel": "Kolväten",
+      "term": "härdplast",
+      "expertdefinition": "En plast där kedjorna är sammanbundna till ett nätverk. Den mjuknar inte vid uppvärmning utan bryts ner.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-polymerer.json"
+    },
+    {
+      "id": "kv4-b10",
+      "avsnitt": "7",
+      "avsnitt_titel": "Polymerer",
+      "delkapitel_titel": "Kolväten",
+      "term": "cellulosa",
+      "expertdefinition": "En naturlig polymer som bygger upp växternas cellväggar. Byggstenen är glukos.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-polymerer.json"
     }
   ]
 }

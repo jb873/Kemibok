@@ -73,6 +73,22 @@ Så ritar du en strukturformel. Placering enligt bildrutan i avsnitt-1.md.
 
 # UNDERDEL A — Ett kolväte innehåller bara kolatomer och väteatomer
 
+## Kärnpunkter (Enkel)
+
+- Vilka atomslag får finnas i ett kolväte?
+- Hur många bindningar kan en kolatom bilda, och hur många kan en väteatom bilda?
+- Vad menas med att kolatomerna bildar molekylens stomme?
+- Hur många väteatomer bär en kolatom som sitter mitt i en kedja?
+- Varför är bensin inte ett enda kemiskt ämne?
+
+## Kärnpunkter (Standard)
+
+- Vilka atomslag får finnas i ett kolväte?
+- Hur många bindningar kan en kolatom bilda, och hur många kan en väteatom bilda?
+- Vad menas med att kolatomerna bildar molekylens stomme?
+- Hur många väteatomer bär en kolatom som sitter mitt i en kedja?
+- Varför är bensin inte ett enda kemiskt ämne?
+
 ---
 
 ## A — ENKEL
@@ -213,6 +229,22 @@ bindningar, och den mellan kol och väte hör till de starkare.
 ---
 
 # UNDERDEL B — Alkanserien växer med en kolatom i taget
+
+## Kärnpunkter (Enkel)
+
+- Vad är det som växer för varje steg i alkanserien?
+- Varför följer inte metan, etan, propan och butan namnmönstret?
+- Vad är skillnaden mellan två grannar i serien?
+- Hur räknar du ut molekylformeln för en alkan om du vet antalet kolatomer?
+- Vad kännetecknar bindningarna mellan kolatomerna i en alkan?
+
+## Kärnpunkter (Standard)
+
+- Vad är det som växer för varje steg i alkanserien?
+- Varför följer inte metan, etan, propan och butan namnmönstret?
+- Vad är skillnaden mellan två grannar i serien?
+- Hur räknar du ut molekylformeln för en alkan om du vet antalet kolatomer?
+- Vad kännetecknar bindningarna mellan kolatomerna i en alkan?
 
 ---
 
@@ -359,6 +391,22 @@ till varje gång du möter en regel i kemin: fråga vad den förutsätter.
 ---
 
 # UNDERDEL C — Samma kolväte kan visas på tre sätt
+
+## Kärnpunkter (Enkel)
+
+- Vad visar en molekylformel, och vad visar den inte?
+- Hur kan du kontrollera att en strukturformel är riktigt ritad?
+- Vad visar molekylmodellen som de andra två inte gör?
+- Varför har kolatomerna och väteatomerna olika färg i en modell?
+- I vilken ordning gör du de fyra stegen när du ritar en strukturformel?
+
+## Kärnpunkter (Standard)
+
+- Vad visar en molekylformel, och vad visar den inte?
+- Hur kan du kontrollera att en strukturformel är riktigt ritad?
+- Vad visar molekylmodellen som de andra två inte gör?
+- Varför har kolatomerna och väteatomerna olika färg i en modell?
+- I vilken ordning gör du de fyra stegen när du ritar en strukturformel?
 
 ---
 

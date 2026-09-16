@@ -1,0 +1,124 @@
+{
+  "avsnitt": 4,
+  "titel": "Polymerer",
+  "delkapitel": "kolvaten",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 4 (Polymerer), delkapitel Kolväten. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/kolvaten/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k4-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Monomer",
+      "svar": "En liten molekyl som kan kopplas samman med många likadana till en polymer."
+    },
+    {
+      "id": "k4-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Polymer",
+      "svar": "En mycket stor molekyl som består av ett stort antal upprepade enheter."
+    },
+    {
+      "id": "k4-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Polymerisation",
+      "svar": "Processen där många monomerer kopplas samman till en polymer."
+    },
+    {
+      "id": "k4-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Polyeten",
+      "svar": "Plasten som bildas när många etenmolekyler kopplas samman. Används i plastpåsar, flaskor och plastfilm."
+    },
+    {
+      "id": "k4-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Polypropen",
+      "svar": "Plast som tillverkas av propen. Används i matförpackningar, plastlådor, rep och textilfibrer."
+    },
+    {
+      "id": "k4-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Polystyren",
+      "svar": "Plast som tillverkas av styren. Används i engångsprodukter, isolering och skyddsförpackningar."
+    },
+    {
+      "id": "k4-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "PVC",
+      "svar": "Polyvinylklorid, en plast som tillverkas av vinylklorid. Innehåller också kloratomer, till skillnad från de övriga vanliga plasterna."
+    },
+    {
+      "id": "k4-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Termoplast",
+      "svar": "En plast där kedjorna inte är fastbundna vid varandra. Den mjuknar vid uppvärmning och går att forma om."
+    },
+    {
+      "id": "k4-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Härdplast",
+      "svar": "En plast där kedjorna är sammanbundna till ett nätverk. Den mjuknar inte vid uppvärmning utan bryts ner."
+    },
+    {
+      "id": "k4-b10",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Cellulosa",
+      "svar": "En naturlig polymer som bygger upp växternas cellväggar. Byggstenen är glukos."
+    },
+    {
+      "id": "k4-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Fri radikal",
+      "svar": "En partikel med en oparad elektron. Den är mycket reaktiv och är det som startar polymerisationen."
+    },
+    {
+      "id": "k4-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Initiator",
+      "svar": "En molekyl som lätt går sönder och då bildar fria radikaler, vilket sätter igång polymerisationen."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k4-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför kan inte en alkan polymerisera på samma sätt som en alken?",
+      "svar": "Alkanen är mättad. Alla bindningar är upptagna, och den har ingenting över att koppla ihop sig med. Alkenens dubbelbindning kan öppnas."
+    },
+    {
+      "id": "k4-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför bryts plast ner så långsamt i naturen?",
+      "svar": "Nedbrytarnas enzymer är anpassade till ämnen som funnits länge. Syntetiska plaster har funnits i ungefär hundra år, och nästan ingen organism har enzymer som angriper dem."
+    },
+    {
+      "id": "k4-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför är polymerkedjorna i en bit plast olika långa?",
+      "svar": "Varje kedja börjar och slutar växa vid sin egen tidpunkt. Reaktionen avslutas när två radikaländar råkar mötas, och det sker slumpmässigt."
+    },
+    {
+      "id": "k4-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Polyeten kan vara både mjuk plastfilm och styv dunk. Hur går det ihop?",
+      "svar": "Det beror på hur ordnat kedjorna ligger. Ogrenade kedjor packar sig tätt och ger ett styvt material; grenade kedjor kommer i vägen för varandra och ger ett mjukt."
+    }
+  ]
+}

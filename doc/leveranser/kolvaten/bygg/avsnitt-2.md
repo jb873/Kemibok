@@ -58,6 +58,22 @@ Kokpunkten stiger med kedjans längd. Placering enligt bildrutan i avsnitt-2.md.
 
 # UNDERDEL A — Metan är det enklaste kolvätet
 
+## Kärnpunkter (Enkel)
+
+- Varför kan det inte finnas något enklare kolväte än metan?
+- Vad är det för särskilt med de miljöer där metan bildas?
+- Varifrån kommer kolatomerna i bubblorna som stiger ur ett kärr?
+- Varför var gruvgas farligt, och hur varnades gruvarbetarna?
+- Vad är skillnaden mellan naturgas och biogas?
+
+## Kärnpunkter (Standard)
+
+- Varför kan det inte finnas något enklare kolväte än metan?
+- Vad är det för särskilt med de miljöer där metan bildas?
+- Varifrån kommer kolatomerna i bubblorna som stiger ur ett kärr?
+- Varför var gruvgas farligt, och hur varnades gruvarbetarna?
+- Vad är skillnaden mellan naturgas och biogas?
+
 ---
 
 ## A — ENKEL
@@ -200,6 +216,22 @@ besvara genom att titta på ämnet.
 
 # UNDERDEL B — Etan, propan och butan används som bränslen
 
+## Kärnpunkter (Enkel)
+
+- Varför eldar vi sällan med etan?
+- Vad händer med propan och butan när de utsätts för tryck?
+- Varför får det plats så mycket bränsle i en gasoltub?
+- Vad händer inne i tändaren när du öppnar ventilen?
+- Vilka ämnen bildas när ett kolväte brinner fullständigt?
+
+## Kärnpunkter (Standard)
+
+- Varför eldar vi sällan med etan?
+- Vad händer med propan och butan när de utsätts för tryck?
+- Varför får det plats så mycket bränsle i en gasoltub?
+- Vad händer inne i tändaren när du öppnar ventilen?
+- Vilka ämnen bildas när ett kolväte brinner fullständigt?
+
 ---
 
 ## B — ENKEL
@@ -332,6 +364,22 @@ på ett visst sätt "under tryck" är det värt att fråga vid vilken temperatur
 ---
 
 # UNDERDEL C — Kedjans längd avgör om kolvätet är gas, vätska eller fast
+
+## Kärnpunkter (Enkel)
+
+- Hur ändras kokpunkten när kolkedjan blir längre?
+- Ungefär hur många kolatomer har de kolväten som är gaser vid rumstemperatur?
+- Varför är kolvätena i bensin vätskor medan de i naturgas är gaser?
+- Vad betyder det att ett ämne kokar?
+- Varför krävs det mer energi för att koka en lång molekyl än en kort?
+
+## Kärnpunkter (Standard)
+
+- Hur ändras kokpunkten när kolkedjan blir längre?
+- Ungefär hur många kolatomer har de kolväten som är gaser vid rumstemperatur?
+- Varför är kolvätena i bensin vätskor medan de i naturgas är gaser?
+- Vad betyder det att ett ämne kokar?
+- Varför krävs det mer energi för att koka en lång molekyl än en kort?
 
 ---
 

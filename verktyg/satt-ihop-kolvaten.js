@@ -41,6 +41,9 @@ if (finns('knapptitlar-och-ingresser.md')) {
 const KP = {};
 if (finns('karnpunkter.md')) {
   for (const m of norm('karnpunkter.md').matchAll(/\n### (\d)\.(\d) [^\n]+\n\n((?:- [^\n]+\n)+)/g)) { KP[m[1] + '.' + m[2]] = m[3].trim(); }
+  const n = Object.values(KP).reduce((x, l) => x + l.split('\n').length, 0);   // arbetsorder 6: 12 underdelar × 5 = 60
+  if (Object.keys(KP).length !== 12 || n !== 60) throw new Error(`karnpunkter.md: ${Object.keys(KP).length} underdelar, ${n} punkter (väntat 12 × 5 = 60)`);
+  console.log(`karnpunkter.md: ${Object.keys(KP).length} underdelar × 5 = ${n} frågor`);
 }
 const rensa = t => t.split('\n').filter(l => !/^> /.test(l) && !/^\*ca \d+ ord\*$/.test(l.trim()) && !/^\*[^*]+undantaget[^*]*\*$/.test(l.trim()) && !/^\*{1,2}Djupdykning härifrån:/.test(l) && !/^Bildspecarna ligger inbakade i bildrutorna/.test(l)).join('\n')   // även kursiv djupdykningsrad (avsnitt 3, djupdykningen inte skriven) och leveransnoten om bildspecar
   .replace(/\n{3,}/g, '\n\n').trim();
@@ -126,4 +129,41 @@ for (const N of AVSNITT) {
   console.log(`bygg/avsnitt-${N}.md: ${titel} | nivåer: ${enkel ? 'Enkel + ' : ''}Standard${fordj ? ' + Fördjupning' : ''} | kärnpunkter: ${Object.keys(KP).length ? 'ja' : 'nej'} | knapptitlar: ${Object.keys(KORT).length ? 'ur knapptitlar-och-ingresser.md' : 'långa rubriker (provisoriskt)'}`);
   console.log(`   underdelar ${under.length} | mellanrubriker ${perU.reduce((a, b) => a + b, 0)} (${perU.join(' + ')}) | bilder ${specar.length} (${bilderPerU.join(' + ')}) = ${svg} SVG + ${specar.length - svg} AI`);
   specar.forEach(s => console.log(`   ${s.fil} (${s.underdel}) standard-ankare: "${s.ankareStandard.slice(0, 70)}"`));
+}
+
+// ---------- Öva (arbetsorder 6, 2026-09-16): flipcards.md → bygg/flipcards.md; kortsvar.md → bygg/kortsvar.md när den finns ----------
+// Samma leveransformat som Kolatomen (satt-ihop-kolatomen.js): "# Avsnitt N — Titel", "## Begreppskort, grundlaggande" osv.,
+// "**N. Term**" + definition (+ "**[formel]**", "*Bankformulering:* **Bankterm** — text"). Leveransens italic-noter
+// "*Kontrollera mot banken …*" tas bort. Begreppskortens framsida = termen, baksida = definitionen.
+if (finns('flipcards.md')) {
+  const fc = norm('flipcards.md');
+  const TITLAR = {}; for (const N of [1, 2, 3, 4]) { if (finns(`avsnitt-${N}.md`)) TITLAR[N] = norm(`avsnitt-${N}.md`).match(/^# Avsnitt \d — ([^\n]+)/)[1].trim(); }
+  let fut = `# Flipcards — delkapitel Kolväten (byggfil)\n\n> Sammansatt av verktyg/satt-ihop-kolvaten.js ur flipcards.md – redigera inte här.\n> Framsidan på begreppskorten är termen; baksidan definitionen. Bankformuleringar under Begreppsbanken.\n`;
+  const bankRader = []; const fcAntal = { b: 0, m: 0, bg: 0, bf: 0, mg: 0, mf: 0, formel: 0 }; const perAvsnitt = {};
+  for (const a of fc.matchAll(/\n# Avsnitt (\d)(?: — [^\n]*)?\n([\s\S]*?)(?=\n# Avsnitt |\n---\n\n## Att kontrollera|$)/g)) {
+    const N = +a[1]; let ut = ''; let nb = 0, nm = 0; perAvsnitt[N] = { bg: 0, bf: 0, mg: 0, mf: 0 };
+    for (const s of a[2].matchAll(/\n## (Begreppskort|Modellkort), (grundlaggande|fordjupning)\n([\s\S]*?)(?=\n## |\n---|$)/g)) {
+      const typ = s[1], niva = s[2] === 'grundlaggande' ? 'grundläggande' : 'fördjupning';
+      ut += `\n## ${typ} — ${niva}\n\n`;
+      const block = s[3].replace(/^\*Kontrollera mot banken[^\n]*\*\s*$/gm, '');
+      for (const k of block.matchAll(/\*\*(\d+)\. ([^*]+)\*\*\n([\s\S]*?)(?=\n\n\*\*\d+\. |\n*$(?![\s\S]))/g)) {
+        const titel = k[2].replace(/\n/g, ' ').trim(); let kropp = k[3].trim();
+        const formel = /\*\*\[formel\]\*\*/.test(kropp); kropp = kropp.replace(/\n?\*\*\[formel\]\*\*/, '');
+        const bm = kropp.match(/\n?\*Bankformulering:\* \*\*([^*]+)\*\* — ([\s\S]*)$/);
+        if (bm) { kropp = kropp.slice(0, bm.index).trim(); bankRader.push({ titel, term: bm[1].trim(), def: bm[2].replace(/\s*\n\s*/g, ' ').trim() }); }
+        const svar = kropp.replace(/\s*\n\s*/g, ' ').trim();
+        const nyckel = (typ === 'Begreppskort' ? 'b' : 'm') + (s[2] === 'grundlaggande' ? 'g' : 'f');
+        if (typ === 'Begreppskort') { nb++; fcAntal.b++; } else { nm++; fcAntal.m++; }
+        fcAntal[nyckel]++; perAvsnitt[N][nyckel]++;
+        if (formel) fcAntal.formel++;
+        ut += `**${titel}**${formel ? ' [formel]' : ''}\nF: ${titel}\nS: ${svar}\n\n`;
+      }
+    }
+    fut += `\n---\n\n# AVSNITT ${N} — ${TITLAR[N]}\n**${nb + nm} kort:** ${nb} begreppskort, ${nm} modellkort\n${ut}`;
+  }
+  fut += `\n---\n\n## Begreppsbanken\n\nEndast grundläggande begreppskort. Bankformuleringar (kortets term → bankterm) ur leveransen:\n\n`;
+  for (const b of bankRader) { fut += `**${b.titel}** → **${b.term}** — ${b.def}\n\n`; }
+  fs.writeFileSync(path.join(UT, 'flipcards.md'), fut);
+  console.log(`bygg/flipcards.md: ${fcAntal.b + fcAntal.m} kort = begrepp ${fcAntal.b} (grund ${fcAntal.bg}, fördj ${fcAntal.bf}) + modell ${fcAntal.m} (grund ${fcAntal.mg}, fördj ${fcAntal.mf}); [formel] ${fcAntal.formel}; bankformuleringar ${bankRader.length}`);
+  console.log('   per avsnitt: ' + Object.entries(perAvsnitt).map(([N, p]) => `A${N} ${p.bg}+${p.bf}+${p.mg}+${p.mf}=${p.bg + p.bf + p.mg + p.mf}`).join(' | '));
 }

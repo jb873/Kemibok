@@ -1,0 +1,124 @@
+{
+  "avsnitt": 1,
+  "titel": "Kolväten består av kol och väte",
+  "delkapitel": "kolvaten",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 1 (Kolväten består av kol och väte), delkapitel Kolväten. 10 begreppskort + 6 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/kolvaten/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k1-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kolväte",
+      "svar": "En kolförening som bara innehåller kolatomer och väteatomer, inga andra atomslag."
+    },
+    {
+      "id": "k1-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Alkan",
+      "svar": "Ett kolväte där alla bindningar mellan kolatomerna är enkelbindningar."
+    },
+    {
+      "id": "k1-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Alkanserien",
+      "svar": "Serien av alkaner, där varje nytt ämne har en kolatom mer än det föregående: metan, etan, propan, butan och så vidare."
+    },
+    {
+      "id": "k1-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Enkelbindning",
+      "svar": "En bindning där två atomer delar på ett elektronpar. Ritas som ett streck."
+    },
+    {
+      "id": "k1-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Etan",
+      "svar": "Alkanen med två kolatomer. Formeln är \\(\\ce{C2H6}\\)."
+    },
+    {
+      "id": "k1-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Propan",
+      "svar": "Alkanen med tre kolatomer. Formeln är \\(\\ce{C3H8}\\). Ingår i gasol."
+    },
+    {
+      "id": "k1-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Butan",
+      "svar": "Alkanen med fyra kolatomer. Formeln är \\(\\ce{C4H10}\\). Ingår i gasol och i tändare."
+    },
+    {
+      "id": "k1-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Molekylmodell",
+      "svar": "En bild av en molekyl där atomerna visas som kulor, så att molekylens form framgår."
+    },
+    {
+      "id": "k1-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Allmän formel för alkaner",
+      "svar": "\\(\\mathrm{C}_{n}\\mathrm{H}_{2n+2}\\). Med n kolatomer i en öppen kedja blir antalet väteatomer två gånger n plus två."
+    },
+    {
+      "id": "k1-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Cyklohexan",
+      "svar": "En kolväteföreningen där sex kolatomer bildar en sluten ring. Formeln är \\(\\ce{C6H12}\\) — två väteatomer färre än om kedjan varit öppen."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k1-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur räknar du ut hur många väteatomer en alkan har?",
+      "svar": "Varje kolatom ska ha fyra bindningar. De som går till andra kolatomer är upptagna; resten fylls med väte. Med n kolatomer i en rak kedja blir det 2n + 2 väteatomer."
+    },
+    {
+      "id": "k1-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför bär en kolatom mitt i en kedja färre väteatomer än en i änden?",
+      "svar": "Den mitt i binder åt två håll och har bara två bindningar kvar. Den i änden binder åt ett håll och har tre kvar."
+    },
+    {
+      "id": "k1-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad visar en molekylmodell som en strukturformel inte gör?",
+      "svar": "Formen. Strukturformeln ritas platt på pappret, men bindningarna pekar åt olika håll i rummet, så kedjan är i verkligheten vinklad."
+    },
+    {
+      "id": "k1-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför gäller \\(\\mathrm{C}_{n}\\mathrm{H}_{2n+2}\\) inte för en kolväteföreningen med ring?",
+      "svar": "Regeln förutsätter en öppen kedja med två ändar. Sluts kedjan till en ring försvinner ändarna, och med dem de två väteatomer som satt där."
+    },
+    {
+      "id": "k1-m5",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Vilken bindning är starkast, den mellan två kolatomer eller den mellan kol och väte?",
+      "svar": "C–H-bindningen är något starkare. Att vi ändå ritar kolkedjan som en stomme beror på att det är kolatomerna som varierar mellan olika ämnen, inte vätet."
+    },
+    {
+      "id": "k1-m6",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Två strukturformler ser olika ut. När är det ändå samma ämne?",
+      "svar": "När man kan komma från den ena till den andra bara genom att vrida kring enkelbindningar. Först när en bindning måste brytas är det två olika ämnen."
+    }
+  ]
+}

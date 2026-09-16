@@ -58,7 +58,7 @@ function lasLeverans(dk) {
         const titel = k[1].trim(), markning = k[2] || '', formel = /\[formel\]/.test(markning);
         const fraga = ce(k[3].replace(/\n/g, ' ').trim()), svar = ce(k[4].replace(/\n/g, ' ').trim());
         const harCe = /\\ce\{/.test(fraga + svar), harMath = /\\\(/.test(fraga + svar);
-        if (formel && !harCe) { varningar.push(`"${titel}" är märkt [formel] men innehåller ingen formel – byggt som vanligt kort`); }   // det byggda är sanningen (kolatomen 9, 35)
+        if (formel && !harCe && !harMath) { varningar.push(`"${titel}" är märkt [formel] men innehåller ingen formel – byggt som vanligt kort`); }   // det byggda är sanningen (kolatomen 9, 35); allmän formel \(\mathrm…\) räknas (kolväten 9)
         if (!formel && harCe) { varningar.push(`"${titel}" har \\ce{} utan [formel]-märkning – byggt som formelkort`); }
         if (!formel && !harCe && harMath) { varningar.push(`"${titel}": Unicode-tiopotens/pil konverterad till MathJax`); }
         const lista = typ === 'begrepp' ? kort.begreppskort : kort.modellkort;

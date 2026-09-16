@@ -1,0 +1,124 @@
+{
+  "avsnitt": 2,
+  "titel": "De första kolvätena och vad de används till",
+  "delkapitel": "kolvaten",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 2 (De första kolvätena och vad de används till), delkapitel Kolväten. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/kolvaten/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k2-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Sumpgas",
+      "svar": "Metan som bildas när organiskt material bryts ner i syrefria miljöer, till exempel i bottenslam och kärr."
+    },
+    {
+      "id": "k2-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Gruvgas",
+      "svar": "Metan som varit instängd i berggrunden och frigörs vid kolbrytning. Blandad med luft kan den explodera."
+    },
+    {
+      "id": "k2-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Naturgas",
+      "svar": "Ett bränsle som till största delen består av metan och som utvunnits ur berggrunden."
+    },
+    {
+      "id": "k2-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Biogas",
+      "svar": "Ett bränsle som till största delen består av metan och som framställs ur organiskt avfall i en syrefri behållare."
+    },
+    {
+      "id": "k2-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Rötkammare",
+      "svar": "En sluten behållare utan syre där matavfall, gödsel eller avloppsslam bryts ner så att biogas bildas."
+    },
+    {
+      "id": "k2-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Gasol",
+      "svar": "Ett bränsle som består av propan, butan eller en blandning av dem, lagrat som vätska under tryck."
+    },
+    {
+      "id": "k2-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Paraffin",
+      "svar": "Ett fast material som består av kolväten med långa kolkedjor. Stearinljus görs av det."
+    },
+    {
+      "id": "k2-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fullständig förbränning",
+      "svar": "En förbränning där det finns tillräckligt med syre, så att det bara bildas koldioxid och vatten."
+    },
+    {
+      "id": "k2-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kokpunkt",
+      "svar": "Den temperatur då ett ämne övergår från vätska till gas."
+    },
+    {
+      "id": "k2-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Kritisk temperatur",
+      "svar": "Den temperatur över vilken ett ämne inte går att pressa till vätska, hur högt trycket än är."
+    },
+    {
+      "id": "k2-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Van der Waals-krafter",
+      "svar": "Den svaga attraktion mellan molekyler som uppstår av att elektronerna rör sig och tillfälligt ligger ojämnt fördelade."
+    },
+    {
+      "id": "k2-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Flytande naturgas",
+      "svar": "Metan som kylts till −162 °C för att bli vätska, eftersom den inte går att pressa till vätska vid rumstemperatur."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k2-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför är metan och butan gaser medan pentan är vätska?",
+      "svar": "Kokpunkten stiger med kedjelängden. Metan kokar vid −162 °C och butan vid ungefär −0,5 °C, båda under rumstemperatur. Pentan kokar vid +36 °C och är därför vätska."
+    },
+    {
+      "id": "k2-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför får det plats mer bränsle i en gasoltub när innehållet är vätska?",
+      "svar": "En gas tar mycket större plats än samma mängd vätska. Under tryck blir propan och butan flytande, och då ryms långt mer i samma behållare."
+    },
+    {
+      "id": "k2-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför går metan inte att pressa till vätska vid rumstemperatur?",
+      "svar": "Metans kritiska temperatur är −82 °C. Över den rör sig molekylerna för snabbt för att hållas samman som vätska, oavsett tryck. Metan måste därför kylas i stället."
+    },
+    {
+      "id": "k2-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Kolet i biogas och naturgas är samma grundämne. Vad skiljer dem åt?",
+      "svar": "Tiden. Kolet i biogas lämnade luften för något år sedan och går tillbaka dit. Kolet i naturgas har legat inlåst i berggrunden i hundratals miljoner år."
+    }
+  ]
+}

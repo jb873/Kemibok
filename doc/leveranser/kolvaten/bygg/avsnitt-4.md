@@ -58,6 +58,22 @@ Fyra vanliga plaster. Placering enligt bildrutan i avsnitt-4.md.
 
 # UNDERDEL A — Monomer och polymer
 
+## Kärnpunkter (Enkel)
+
+- Vad är skillnaden mellan en monomer och en polymer?
+- Vad betyder förleden mono- och poly-?
+- Vilka polymerer finns i naturen, och vad är de byggda av?
+- Hur kan stärkelse och cellulosa vara så olika när de byggs av samma byggsten?
+- Varför blir material av långa molekyler sega och tåliga?
+
+## Kärnpunkter (Standard)
+
+- Vad är skillnaden mellan en monomer och en polymer?
+- Vad betyder förleden mono- och poly-?
+- Vilka polymerer finns i naturen, och vad är de byggda av?
+- Hur kan stärkelse och cellulosa vara så olika när de byggs av samma byggsten?
+- Varför blir material av långa molekyler sega och tåliga?
+
 ---
 
 ## A — ENKEL
@@ -202,6 +218,22 @@ det är därför tillverkaren kan styra materialets egenskaper utan att ändra k
 
 # UNDERDEL B — Polymerisation
 
+## Kärnpunkter (Enkel)
+
+- Vad händer med dubbelbindningen när eten polymeriserar?
+- Hur många bindningar har varje kolatom före och efter polymerisationen?
+- Varför kan inte en alkan polymerisera på samma sätt?
+- Vad kallas processen där många monomerer kopplas samman?
+- Vad har ändrats när eten har blivit polyeten, och vad har inte ändrats?
+
+## Kärnpunkter (Standard)
+
+- Vad händer med dubbelbindningen när eten polymeriserar?
+- Hur många bindningar har varje kolatom före och efter polymerisationen?
+- Varför kan inte en alkan polymerisera på samma sätt?
+- Vad kallas processen där många monomerer kopplas samman?
+- Vad har ändrats när eten har blivit polyeten, och vad har inte ändrats?
+
 ---
 
 ## B — ENKEL
@@ -338,6 +370,22 @@ som startade den, och i det här fallet är det en molekyl med en ensam elektron
 ---
 
 # UNDERDEL C — Vanliga plaster
+
+## Kärnpunkter (Enkel)
+
+- Vad avgör vilka egenskaper en plast får?
+- Vilken av de vanliga plasterna innehåller ett annat atomslag än kol och väte?
+- Vad händer med en termoplast när den värms upp?
+- Varför smälter inte en härdplast?
+- Varför kan naturens nedbrytare bryta ner cellulosa men inte polyeten?
+
+## Kärnpunkter (Standard)
+
+- Vad avgör vilka egenskaper en plast får?
+- Vilken av de vanliga plasterna innehåller ett annat atomslag än kol och väte?
+- Vad händer med en termoplast när den värms upp?
+- Varför smälter inte en härdplast?
+- Varför kan naturens nedbrytare bryta ner cellulosa men inte polyeten?
 
 ---
 
