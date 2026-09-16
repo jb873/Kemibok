@@ -1,0 +1,129 @@
+{
+  "avsnitt": 2,
+  "titel": "De första kolvätena och vad de används till",
+  "delkapitel": "kolvaten",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 2 (De första kolvätena och vad de används till), delkapitel Kolväten, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/kolvaten/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k2-s1",
+      "typ": "tal",
+      "fraga": "Hur många kolatomer har det längsta kolväte som är gas vid rumstemperatur?",
+      "svar": 4,
+      "forklaring": "Tumregeln säger att en till fyra kolatomer ger gas. Butan har fyra och kokar strax under noll grader."
+    },
+    {
+      "id": "k2-s2",
+      "typ": "tal",
+      "fraga": "Hur många syrgasmolekyler går åt när en metanmolekyl förbränns fullständigt?",
+      "svar": 2,
+      "forklaring": "Reaktionen ger en koldioxidmolekyl och två vattenmolekyler, och till det behövs två syrgasmolekyler."
+    },
+    {
+      "id": "k2-s3",
+      "typ": "tal",
+      "fraga": "Ungefär hur många grader kokar metan vid, i minusgrader räknat?",
+      "svar": 162,
+      "forklaring": "Metan kokar vid ungefär −162 °C och måste alltså kylas kraftigt för att bli vätska."
+    },
+    {
+      "id": "k2-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas metan som bildas i syrefritt bottenslam?",
+      "svar": [
+        "sumpgas"
+      ],
+      "forklaring": "Dött växtmaterial bryts ner utan syre, och då bildas metan i stället för koldioxid."
+    },
+    {
+      "id": "k2-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas metan som varit instängd i berggrunden och frigörs vid kolbrytning?",
+      "svar": [
+        "gruvgas"
+      ],
+      "forklaring": "Blandad med luft kan den explodera, och den har orsakat många gruvolyckor."
+    },
+    {
+      "id": "k2-s6",
+      "typ": "ord",
+      "fraga": "Vad kallas den slutna behållaren utan syre där biogas framställs?",
+      "svar": [
+        "rötkammare"
+      ],
+      "forklaring": "Matavfall, gödsel eller avloppsslam bryts ner av mikroorganismer, och gasen samlas upp."
+    },
+    {
+      "id": "k2-s7",
+      "typ": "ord",
+      "fraga": "Vilket fasta material består av kolväten med mycket långa kedjor och används i stearinljus?",
+      "svar": [
+        "paraffin"
+      ],
+      "forklaring": "Kolväten med arton kolatomer eller fler är fasta vid rumstemperatur."
+    },
+    {
+      "id": "k2-s8",
+      "typ": "formel",
+      "fraga": "Skriv reaktionsformeln för fullständig förbränning av metan.",
+      "svar": [
+        "CH4 + 2 O2 -> CO2 + 2 H2O",
+        "CH4 + 2 O2 → CO2 + 2 H2O"
+      ],
+      "forklaring": "Alla kolväten ger koldioxid och vatten när de brinner fullständigt. Kolatomen hamnar i koldioxiden och väteatomerna i vattnet."
+    },
+    {
+      "id": "k2-s9",
+      "typ": "flerval",
+      "fraga": "Vad används etan framför allt till?",
+      "alternativ": [
+        "bränsle i bilar",
+        "råvara i industrin",
+        "uppvärmning av hus",
+        "gasol i grillar"
+      ],
+      "svar": 1,
+      "forklaring": "Etan byggs om till eten, som i sin tur används vid tillverkning av plast."
+    },
+    {
+      "id": "k2-s10",
+      "typ": "flerval",
+      "fraga": "Varför är innehållet i en gasoltub flytande?",
+      "alternativ": [
+        "det är kylt",
+        "det står under tryck",
+        "det är blandat med vatten",
+        "propan är alltid vätska"
+      ],
+      "svar": 1,
+      "forklaring": "Propan och butan blir vätska under måttligt tryck, och därför ryms mycket bränsle i liten volym."
+    },
+    {
+      "id": "k2-s11",
+      "typ": "flerval",
+      "fraga": "Ett kolväte har tolv kolatomer. Vilken form har det vid rumstemperatur?",
+      "alternativ": [
+        "gas",
+        "vätska",
+        "fast",
+        "det går inte att avgöra"
+      ],
+      "svar": 1,
+      "forklaring": "Tumregeln säger att fem till sjutton kolatomer ger vätska. Kolväten i bensin och fotogen ligger i det intervallet."
+    },
+    {
+      "id": "k2-s12",
+      "typ": "flerval",
+      "fraga": "Varför är paraffin fast medan butan är gas?",
+      "alternativ": [
+        "paraffin innehåller andra atomslag",
+        "paraffin har mycket längre kolkedjor",
+        "butan är lättare att antända",
+        "paraffin är en blandning"
+      ],
+      "svar": 1,
+      "forklaring": "Längre molekyler håller fast vid varandra längs större yta, och det krävs mer energi för att slita loss dem. ---"
+    }
+  ]
+}

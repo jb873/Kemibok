@@ -1,0 +1,128 @@
+{
+  "avsnitt": 1,
+  "titel": "Kolväten består av kol och väte",
+  "delkapitel": "kolvaten",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 1 (Kolväten består av kol och väte), delkapitel Kolväten, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/kolvaten/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k1-s1",
+      "typ": "tal",
+      "fraga": "Hur många väteatomer finns i en butanmolekyl?",
+      "svar": 10,
+      "forklaring": "Butan har fyra kolatomer. De två i ändarna bär tre väteatomer var, de två i mitten två var. Formeln blir \\(\\ce{C4H10}\\)."
+    },
+    {
+      "id": "k1-s2",
+      "typ": "tal",
+      "fraga": "Hur många kolatomer finns i en propanmolekyl?",
+      "svar": 3,
+      "forklaring": "Propan är tredje ämnet i alkanserien. Metan har en kolatom, etan två, propan tre."
+    },
+    {
+      "id": "k1-s3",
+      "typ": "tal",
+      "fraga": "En alkan har sju kolatomer. Hur många väteatomer har den?",
+      "svar": 16,
+      "forklaring": "Antalet väteatomer blir två gånger antalet kolatomer plus två: 2 × 7 + 2 = 16. Ämnet heter heptan."
+    },
+    {
+      "id": "k1-s4",
+      "typ": "ord",
+      "fraga": "Vilket är det enklaste kolväte som finns?",
+      "svar": [
+        "metan"
+      ],
+      "forklaring": "En kolatom med fyra väteatomer. Det går inte att bygga ett kolväte med färre atomer, och därför står metan först i alkanserien."
+    },
+    {
+      "id": "k1-s5",
+      "typ": "ord",
+      "fraga": "Vilket kolväte kommer direkt efter etan i alkanserien?",
+      "svar": [
+        "propan"
+      ],
+      "forklaring": "Varje nytt ämne i serien har en kolatom mer än det föregående. Etan har två, propan tre."
+    },
+    {
+      "id": "k1-s6",
+      "typ": "ord",
+      "fraga": "Vad kallas serien metan, etan, propan, butan och så vidare?",
+      "svar": [
+        "alkanserien"
+      ],
+      "forklaring": "Alla ämnen i serien har bara enkelbindningar mellan kolatomerna."
+    },
+    {
+      "id": "k1-s7",
+      "typ": "formel",
+      "fraga": "Skriv molekylformeln för propan.",
+      "svar": [
+        "C3H8"
+      ],
+      "forklaring": "Tre kolatomer. Ändkolatomerna bär tre väteatomer var och den i mitten två, alltså åtta väteatomer."
+    },
+    {
+      "id": "k1-s8",
+      "typ": "formel",
+      "fraga": "Skriv molekylformeln för etan.",
+      "svar": [
+        "C2H6"
+      ],
+      "forklaring": "Två kolatomer som binder till varandra. Varje kolatom har tre bindningar kvar och bär tre väteatomer."
+    },
+    {
+      "id": "k1-s9",
+      "typ": "flerval",
+      "fraga": "Vilket ämne har molekylformeln \\(\\ce{C4H10}\\)?",
+      "alternativ": [
+        "metan",
+        "etan",
+        "propan",
+        "butan"
+      ],
+      "svar": 3,
+      "forklaring": "Fyra kolatomer betyder fjärde ämnet i serien. Antalet väteatomer stämmer med 2 × 4 + 2 = 10."
+    },
+    {
+      "id": "k1-s10",
+      "typ": "flerval",
+      "fraga": "Ett kolväte innehåller åtta väteatomer och bara enkelbindningar. Vilket är det?",
+      "alternativ": [
+        "metan",
+        "etan",
+        "propan",
+        "butan"
+      ],
+      "svar": 2,
+      "forklaring": "Metan har fyra väteatomer, etan sex, propan åtta och butan tio. Antalet ökar med två för varje steg i serien."
+    },
+    {
+      "id": "k1-s11",
+      "typ": "flerval",
+      "fraga": "Vilket av dessa ämnen är inte ett kolväte?",
+      "alternativ": [
+        "etan",
+        "propan",
+        "etanol",
+        "butan"
+      ],
+      "svar": 2,
+      "forklaring": "Etanol innehåller också en syreatom. Ett kolväte får bara innehålla kol och väte."
+    },
+    {
+      "id": "k1-s12",
+      "typ": "flerval",
+      "fraga": "Vad visar en molekylmodell som en strukturformel på papper inte gör?",
+      "alternativ": [
+        "antalet atomer",
+        "vilka atomer som sitter ihop",
+        "molekylens form i rummet",
+        "ämnets namn"
+      ],
+      "svar": 2,
+      "forklaring": "Bindningarna från en kolatom pekar åt olika håll, så kedjan är i verkligheten vinklad och inte rak. ---"
+    }
+  ]
+}

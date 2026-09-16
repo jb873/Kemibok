@@ -1,0 +1,134 @@
+{
+  "avsnitt": 4,
+  "titel": "Polymerer",
+  "delkapitel": "kolvaten",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 4 (Polymerer), delkapitel Kolväten, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/kolvaten/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k4-s1",
+      "typ": "tal",
+      "fraga": "Hur många bindningar har varje kolatom i en polyetenkedja?",
+      "svar": 4,
+      "forklaring": "Antalet ändras aldrig. Vid polymerisationen ändras bara vart bindningarna pekar."
+    },
+    {
+      "id": "k4-s2",
+      "typ": "tal",
+      "fraga": "Hur många kolatomer bidrar varje etenmolekyl med till polyetenkedjan?",
+      "svar": 2,
+      "forklaring": "Hela monomeren byggs in i kedjan. Ingenting faller bort vid polymerisationen."
+    },
+    {
+      "id": "k4-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas den lilla molekyl som byggs ihop med många likadana till en mycket stor molekyl?",
+      "svar": [
+        "monomer"
+      ],
+      "forklaring": "Förleden mono- betyder en. Den stora molekylen som bildas kallas polymer."
+    },
+    {
+      "id": "k4-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas processen där många små molekyler kopplas samman till en lång kedja?",
+      "svar": [
+        "polymerisation"
+      ],
+      "forklaring": "Vid polymerisation av eten öppnas dubbelbindningen och molekylerna griper tag i varandra."
+    },
+    {
+      "id": "k4-s5",
+      "typ": "ord",
+      "fraga": "Vilken naturlig polymer bygger upp växternas cellväggar?",
+      "svar": [
+        "cellulosa"
+      ],
+      "forklaring": "Byggstenen är glukos, samma socker som bildas vid fotosyntesen."
+    },
+    {
+      "id": "k4-s6",
+      "typ": "ord",
+      "fraga": "Vad kallas en plast som mjuknar vid uppvärmning och går att forma om?",
+      "svar": [
+        "termoplast"
+      ],
+      "forklaring": "Kedjorna är inte fastbundna vid varandra och kan glida när värmen ökar."
+    },
+    {
+      "id": "k4-s7",
+      "typ": "formel",
+      "fraga": "Skriv molekylformeln för eten.",
+      "svar": [
+        "C2H4"
+      ],
+      "forklaring": "Eten är monomeren som bildar polyeten. Dubbelbindningen mellan kolatomerna är det som gör polymerisationen möjlig."
+    },
+    {
+      "id": "k4-s8",
+      "typ": "flerval",
+      "fraga": "Varför kan inte etan polymerisera på samma sätt som eten?",
+      "alternativ": [
+        "etan är för litet",
+        "etan är mättat och har inga bindningar över",
+        "etan är en vätska",
+        "etan innehåller för mycket väte"
+      ],
+      "svar": 1,
+      "forklaring": "Alla bindningar är upptagna. Etenens dubbelbindning kan öppnas och ge varje kolatom en ledig bindning."
+    },
+    {
+      "id": "k4-s9",
+      "typ": "flerval",
+      "fraga": "Vilken av dessa plaster innehåller ett annat atomslag än kol och väte?",
+      "alternativ": [
+        "polyeten",
+        "polypropen",
+        "polystyren",
+        "PVC"
+      ],
+      "svar": 3,
+      "forklaring": "PVC innehåller också kloratomer, eftersom monomeren vinylklorid gör det."
+    },
+    {
+      "id": "k4-s10",
+      "typ": "flerval",
+      "fraga": "Vad händer med en härdplast vid kraftig uppvärmning?",
+      "alternativ": [
+        "den smälter",
+        "den mjuknar och går att forma om",
+        "den bryts ner",
+        "den blir genomskinlig"
+      ],
+      "svar": 2,
+      "forklaring": "Kedjorna sitter fast i ett nätverk och kan inte glida. Plasten mjuknar därför inte utan går sönder."
+    },
+    {
+      "id": "k4-s11",
+      "typ": "flerval",
+      "fraga": "Varför bryts syntetiska plaster ner så långsamt i naturen?",
+      "alternativ": [
+        "de är för hårda",
+        "nedbrytarna saknar enzymer som angriper dem",
+        "de innehåller gift",
+        "de flyter på vatten"
+      ],
+      "svar": 1,
+      "forklaring": "Enzymer är anpassade till bestämda bindningar. Plaster har funnits i ungefär hundra år, och nästan ingen organism har verktyg för dem."
+    },
+    {
+      "id": "k4-s12",
+      "typ": "flerval",
+      "fraga": "Eten är en gas och polyeten är ett fast material. Vad har ändrats?",
+      "alternativ": [
+        "atomslagen",
+        "molekylernas storlek",
+        "temperaturen",
+        "antalet bindningar per kolatom"
+      ],
+      "svar": 1,
+      "forklaring": "Samma sorts atomer, samma fyra bindningar per kolatom. Det enda som skiljer är att molekylerna blivit enormt mycket större."
+    }
+  ]
+}

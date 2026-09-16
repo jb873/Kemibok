@@ -75,7 +75,7 @@
     {
       "id": "k1-s9",
       "typ": "flerval",
-      "fraga": "Vilket av dessa ämnen räknas **inte** som organiskt?",
+      "fraga": "Vilket av dessa ämnen räknas inte som organiskt?",
       "alternativ": [
         "etanol",
         "koldioxid",

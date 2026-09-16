@@ -25,7 +25,7 @@ const LEV = path.join(ROT, 'doc', 'leveranser', DKID, DELKAPITEL[DKID].byggmapp 
 const md = fs.readFileSync(path.join(LEV, 'kortsvar.md'), 'utf8').replace(/\r\n/g, '\n');
 
 const ce = s => s.replace(/`\\ce\{([^}]*)\}`/g, (_, x) => '\\(\\ce{' + x + '}\\)');
-const text = s => formler(ce(s.replace(/\s*\n\s*/g, ' ').trim()));
+const text = s => formler(ce(s.replace(/\s*\n\s*/g, ' ').trim())).replace(/\*\*([^*]+)\*\*/g, '$1');   // kortsvar.js sätter texten som textContent: fetstil kan inte återges, markörerna tas bort ("**inte**", kolatomen/kolväten)
 const talet = (id, s) => { const n = Number(String(s).replace(',', '.')); if (Number.isNaN(n)) { throw new Error(`${id}: svar "${s}" är inte ett tal`); } return n; };
 
 // ---------- blockform ----------
@@ -60,7 +60,7 @@ function tolkaTabell(N, inneh) {
   // radbrutna förklaringar/alternativ: avsluta bara vid nästa post, tom rad eller filslut – inte vid radslut
   if (fBlock) { for (const m of fBlock[1].matchAll(/^(\d+)\. ([\s\S]*?)(?=\n\d+\. |\n\n|\n\*\*|(?![\s\S]))/gm)) { forkl[+m[1]] = m[2]; } }
   const alt = {};
-  for (const m of inneh.matchAll(/^\*\*Flerval (\d+):\*\* ([\s\S]*?)(?=\n\*\*Flerval|\n\n|\n---|(?![\s\S]))/gm)) { alt[+m[1]] = m[2].replace(/\s*\n\s*/g, ' ').split(' · ').map(x => x.trim()); }   // radbrytning först, sedan dela vid ·
+  for (const m of inneh.matchAll(/^\*\*Flerval (\d+):\*\* ([\s\S]*?)(?=\n\*\*Flerval|\n\*\*Tolerans|\n\n|\n---|(?![\s\S]))/gm)) { alt[+m[1]] = m[2].replace(/\s*\n\s*/g, ' ').split(' · ').map(x => x.trim()); }   // radbrytning först, sedan dela vid ·
   const tol = {};
   for (const m of inneh.matchAll(/^\*\*Tolerans (\d+):\*\* ([\d.,]+)/gm)) { tol[+m[1]] = Number(m[2].replace(',', '.')); }
   // eller "**Tolerans A:N:** x" var som helst i filen (försurning: i Räkning-avsnittet), A = avsnitt

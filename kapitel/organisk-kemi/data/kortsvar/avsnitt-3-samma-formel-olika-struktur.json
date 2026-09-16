@@ -1,0 +1,129 @@
+{
+  "avsnitt": 3,
+  "titel": "Kolväten kan se olika ut fast de har samma formel",
+  "delkapitel": "kolvaten",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 3 (Kolväten kan se olika ut fast de har samma formel), delkapitel Kolväten, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/kolvaten/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k3-s1",
+      "typ": "tal",
+      "fraga": "Hur många väteatomer finns i en etenmolekyl?",
+      "svar": 4,
+      "forklaring": "Dubbelbindningen tar två av varje kolatoms fyra bindningar, så två återstår till väte på varje."
+    },
+    {
+      "id": "k3-s2",
+      "typ": "tal",
+      "fraga": "Hur många isomerer har butan?",
+      "svar": 2,
+      "forklaring": "Fyra kolatomer kan sitta i en rak kedja eller i en grenad. Det är första gången mer än ett sätt finns."
+    },
+    {
+      "id": "k3-s3",
+      "typ": "tal",
+      "fraga": "Hur många isomerer har oktan?",
+      "svar": 18,
+      "forklaring": "Antalet växer snabbt med kedjelängden, vilket är en av förklaringarna till att det finns så många kolföreningar."
+    },
+    {
+      "id": "k3-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas ämnen som har samma molekylformel men olika strukturformel?",
+      "svar": [
+        "isomerer"
+      ],
+      "forklaring": "De är olika ämnen med olika egenskaper, trots att de innehåller lika många atomer av varje slag."
+    },
+    {
+      "id": "k3-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas ett kolväte med minst en dubbelbindning mellan kolatomerna?",
+      "svar": [
+        "alken"
+      ],
+      "forklaring": "Namnen på alkener slutar på -en: eten, propen, buten."
+    },
+    {
+      "id": "k3-s6",
+      "typ": "ord",
+      "fraga": "Vad kallas ett kolväte som innehåller så många väteatomer som över huvud taget får plats?",
+      "svar": [
+        "mättat"
+      ],
+      "forklaring": "Alla alkaner är mättade. Alkener och alkyner är omättade och har plats över."
+    },
+    {
+      "id": "k3-s7",
+      "typ": "formel",
+      "fraga": "Skriv molekylformeln för etyn.",
+      "svar": [
+        "C2H2"
+      ],
+      "forklaring": "Trippelbindningen tar tre av varje kolatoms bindningar, så bara en återstår till väte på varje."
+    },
+    {
+      "id": "k3-s8",
+      "typ": "formel",
+      "fraga": "Skriv den allmänna formeln för alkener, där n är antalet kolatomer.",
+      "svar": [
+        "C_{$n$}H_{$2n$}",
+        "CnH2n"
+      ],
+      "forklaring": "En alken har två väteatomer färre än motsvarande alkan, eftersom dubbelbindningen tar en extra bindning från varje kolatom."
+    },
+    {
+      "id": "k3-s9",
+      "typ": "flerval",
+      "fraga": "Vilken ändelse har namnen på kolväten med trippelbindning?",
+      "alternativ": [
+        "-an",
+        "-en",
+        "-yn",
+        "-ol"
+      ],
+      "svar": 2,
+      "forklaring": "Etyn, propyn och butyn. Ändelsen -en hör till alkenerna och -an till alkanerna."
+    },
+    {
+      "id": "k3-s10",
+      "typ": "flerval",
+      "fraga": "Vad är skillnaden mellan n-butan och isobutan?",
+      "alternativ": [
+        "antalet kolatomer",
+        "antalet väteatomer",
+        "hur kolatomerna sitter ihop",
+        "vilka atomslag som ingår"
+      ],
+      "svar": 2,
+      "forklaring": "Båda har fyra kolatomer och tio väteatomer. Den ena har rak kedja, den andra grenad."
+    },
+    {
+      "id": "k3-s11",
+      "typ": "flerval",
+      "fraga": "Varför har eten färre väteatomer än etan?",
+      "alternativ": [
+        "eten har färre kolatomer",
+        "två bindningar går åt mellan kolatomerna",
+        "eten är mättat",
+        "väteatomerna har fallit av"
+      ],
+      "svar": 1,
+      "forklaring": "Varje extra bindning mellan kolatomerna tar en bindning som annars hade gått till väte."
+    },
+    {
+      "id": "k3-s12",
+      "typ": "flerval",
+      "fraga": "Vad används etyn till?",
+      "alternativ": [
+        "att få frukt att mogna",
+        "gassvetsning",
+        "tillverkning av plastpåsar",
+        "bränsle i grillar"
+      ],
+      "svar": 1,
+      "forklaring": "Etyn, som också kallas acetylen, brinner med mycket het låga och kan därför smälta metall. ---"
+    }
+  ]
+}

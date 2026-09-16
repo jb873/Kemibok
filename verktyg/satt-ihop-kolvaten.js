@@ -167,3 +167,40 @@ if (finns('flipcards.md')) {
   console.log(`bygg/flipcards.md: ${fcAntal.b + fcAntal.m} kort = begrepp ${fcAntal.b} (grund ${fcAntal.bg}, fördj ${fcAntal.bf}) + modell ${fcAntal.m} (grund ${fcAntal.mg}, fördj ${fcAntal.mf}); [formel] ${fcAntal.formel}; bankformuleringar ${bankRader.length}`);
   console.log('   per avsnitt: ' + Object.entries(perAvsnitt).map(([N, p]) => `A${N} ${p.bg}+${p.bf}+${p.mg}+${p.mf}=${p.bg + p.bf + p.mg + p.mf}`).join(' | '));
 }
+
+// ---------- kortsvar (arbetsorder 7, 2026-09-16): kortsvar.md → bygg/kortsvar.md, blockform (KEMI-TILLAGG §8) ----------
+// "**N.** `typ`" + fråga (+ "A) … D) …") + "**Svar:**" + "*Förklaring:*" → "## kN-sn · typ" med F/A/S/E. Formelsvar som
+// \ce-inmatning (ceify); reaktioner godtar samma varianter som Kolatomen (->, →, märkt pil); ord med "(x)" → alternativ.
+// Allmän formel som svar (fråga 32, CₙH₂ₙ): första alternativet är mhchem-formen C_{$n$}H_{$2n$} (facit renderar 2n nedsänkt
+// med kursivt n – kontrollerat 2026-09-16), andra alternativet den skrivbara formen CnH2n som rättningen jämför mot.
+if (finns('kortsvar.md')) {
+  const { ceify, arAllmanFormel } = require('./lib-notation.js');
+  const SUBN = { '₀': '0', '₁': '1', '₂': '2', '₃': '3', '₄': '4', '₅': '5', '₆': '6', '₇': '7', '₈': '8', '₉': '9', 'ₙ': 'n', '₊': '+', '₋': '-' };
+  const allmanCe = t => t.replace(/([A-Z][a-z]?)([₀-₉ₙ₊₋]*)/g, (_, el, ix) => el + (ix ? `_{$${[...ix].map(c => SUBN[c]).join('')}$}` : ''));
+  const allmanPlain = t => t.replace(/[₀-₉ₙ₊₋]/g, c => SUBN[c]);
+  const ks = norm('kortsvar.md');
+  const TITLAR = {}; for (const N of [1, 2, 3, 4]) { if (finns(`avsnitt-${N}.md`)) TITLAR[N] = norm(`avsnitt-${N}.md`).match(/^# Avsnitt \d — ([^\n]+)/)[1].trim(); }
+  let kut = `# Kortsvar — delkapitel Kolväten (byggfil)\n\n> Sammansatt av verktyg/satt-ihop-kolvaten.js ur kortsvar.md – redigera inte här. Blockform (KEMI-TILLAGG §8).\n`;
+  const ksAntal = {}, perAvsnitt = {};
+  for (const a of ks.matchAll(/\n# Avsnitt (\d)(?: — [^\n]*)?\n([\s\S]*?)(?=\n# Avsnitt |\n---\n\n## Att kontrollera|$)/g)) {
+    const N = +a[1]; let n = 0; perAvsnitt[N] = {};
+    kut += `\n---\n\n# AVSNITT ${N} — ${TITLAR[N]}\nantal_per_omgang: 10\n`;
+    for (const q of a[2].matchAll(/\*\*(\d+)\.\*\* `([a-z-]+)`\n([\s\S]*?)\n\*\*Svar:\*\* ([^\n]+)\n\*Förklaring:\* ([\s\S]*?)(?=\n\n\*\*\d+\.\*\*|\n*$(?![\s\S]))/g)) {
+      n++; const typ = q[2], svarRaa = q[4].trim(), forkl = q[5].replace(/\s*\n\s*/g, ' ').trim();
+      let ftext = q[3].replace(/\s*\n\s*/g, ' ').trim(); let alt = null;
+      if (typ === 'flerval') { const i = ftext.search(/\sA\) /); if (i < 0) throw new Error(`fråga ${q[1]}: alternativ saknas`); alt = ftext.slice(i).trim().split(/\s*[A-D]\)\s*/).filter(Boolean).map(x => x.trim()); ftext = ftext.slice(0, i).trim(); if (alt.length !== 4) throw new Error(`fråga ${q[1]}: ${alt.length} alternativ`); }
+      let S;
+      if (typ === 'flerval') { S = String('ABCD'.indexOf(svarRaa)); if (S === '-1') throw new Error(`fråga ${q[1]}: svar ${svarRaa}`); }
+      else if (typ === 'formel' && arAllmanFormel(svarRaa)) { S = `${allmanCe(svarRaa)} | ${allmanPlain(svarRaa)}`; }
+      else if (typ === 'formel') { const c = ceify(svarRaa); S = /->/.test(c) ? [...new Set([c, c.replace(/->\[[^\]]+\]/, '->'), c.replace(/->\[[^\]]+\]|->/, '→'), c.replace(/->(\[[^\]]+\])/, '→$1')])].join(' | ') : c; }
+      else if (typ === 'ord') { const m = svarRaa.match(/^(.+?) \((.+)\)$/); S = m ? `${m[1]} | ${m[2]}` : svarRaa; }
+      else { S = svarRaa; }
+      ksAntal[typ] = (ksAntal[typ] || 0) + 1; perAvsnitt[N][typ] = (perAvsnitt[N][typ] || 0) + 1;
+      kut += `\n## k${N}-s${n} · ${typ}\nF: ${ftext}\n${alt ? 'A: ' + alt.join(' | ') + '\n' : ''}S: ${S}\nE: ${forkl}\n`;
+    }
+    if (n !== 12) throw new Error(`kortsvar avsnitt ${N}: ${n} frågor`);
+  }
+  fs.writeFileSync(path.join(UT, 'kortsvar.md'), kut);
+  const tot = Object.values(ksAntal).reduce((a, b) => a + b, 0);
+  console.log(`bygg/kortsvar.md: ${tot} frågor ${JSON.stringify(ksAntal)} | per avsnitt: ${Object.entries(perAvsnitt).map(([N, p]) => `A${N} ${Object.values(p).reduce((a, b) => a + b, 0)} (${['tal', 'ord', 'formel', 'flerval'].map(t => p[t] || 0).join('/')})`).join(', ')}`);
+}
