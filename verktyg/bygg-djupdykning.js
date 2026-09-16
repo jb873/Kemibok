@@ -29,6 +29,7 @@ const alla = tolkaDjupdykningar(path.join(ROT, 'doc', 'leveranser', DK.id, 'djup
 function inline(s) {
   // fet reaktion i löptext ("**HCl + H₂O → H₃O⁺ + Cl⁻**") → ett enda \(\ce{…}\); övrig fetstil → <strong>
   let t = s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  t = t.replace(/\$(\\ce\{[^}]*\})\$/g, '\\($1\\)');   // "$\ce{Fe2O3}$" i löptext (grönt stål) → \(\ce{…}\); $ är inte en avgränsare i mathjax-config
   t = t.replace(/\*\*([^*]+)\*\*/g, (m, x) => arReaktion(x) ? `§§${ceify(x)}§§` : m);
   t = formler(t).replace(/§§([^§]*)§§/g, '\\(\\ce{$1}\\)');
   t = t.replace(/\d(?: \d{3})+(?!\d)/g, m => m.replace(/ /g, '&nbsp;'));   // tusentalsmellanslag ("1 200 grader", "100 000") får inte brytas över radslut
@@ -53,6 +54,8 @@ for (const [N, K] of Object.entries(DELKAPITEL[DKID].avsnitt)) {
       const p = b.replace(/\n/g, ' ');
       // fristående fet reaktionsrad → display-formel (som i avsnittssidorna)
       if (/^\*\*[^*]+\*\*$/.test(p) && arReaktion(p.replace(/\*\*/g, ''))) { return `      <div class="formel">\\[\\ce{${ceify(p.replace(/\*\*/g, ''))}}\\]</div>`; }
+      // "$$\ce{…}$$" som eget stycke (fossila bränslen: grönt stål) → samma display-formel; $$ är inte en avgränsare i mathjax-config
+      if (/^\$\$[\s\S]+\$\$$/.test(p)) { const inre = p.replace(/^\$\$|\$\$$/g, '').trim(); return `      <div class="formel">\\[${/\\ce\{/.test(inre) ? inre : '\\ce{' + inre + '}'}\\]</div>`; }
       if ((p.replace(/\*\*/g, '').match(/[.!?](\s|$)/g) || []).length <= 1) { enstaka.push(p.slice(0, 60)); }
       return `      <p>${inline(p)}</p>`;
     }).join('\n');

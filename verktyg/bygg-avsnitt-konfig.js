@@ -221,13 +221,13 @@ const AVSNITT_FOSSILA = {
          'k3-f2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Varje sådan del kallas en **fraktion**.', standard: 'Varje sådan uppsamlad del kallas en **fraktion**.', fordjupning: 'inte av vad den innehåller.' },
          'k3-f3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'råoljan bestämma.', standard: 'efter vad råoljan råkar innehålla.', fordjupning: 'just för att vi krackar olja.' }
        } },
-  3: { dd: [],
+  3: { dd: [{ slug: 'gront-stal', titel: 'Stålet som inte får ryka', ikon: '🔥' }],   // djupdykning från 3.2 (arbetsorder 2026-09-16)
        bilder: {
          'k3-g1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'är ju samma kol som brinner.', standard: 'det är samma kol som brinner.', fordjupning: 'lämnar kolet.' },
          'k3-g2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'flyktiga ämnena redan är borta.', standard: 'ämnena redan är borta.', fordjupning: 'en gas möter allt.' },
          'k3-g3.webp': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'släpper ifrån sig det kol den lagrat.', standard: 'släpper ifrån sig det kol den lagrat.', fordjupning: 'framför allt för skogsbruk och jordbruk.' }
        } },
-  4: { dd: [],
+  4: { dd: [{ slug: 'gasledningar', titel: 'Gas går bara dit röret går', ikon: '🗺️' }],   // djupdykning från 4.1
        bilder: {
          'k3-h1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'byggt något rörnät som täcker landet.', standard: 'rörnät som täcker landet.', fordjupning: 'än vad industrin själv rapporterat.' },
          'k3-h2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'CH₄ + 2 O₂ → CO₂ + 2 H₂O', standard: 'CH₄ + 2 O₂ → CO₂ + 2 H₂O', fordjupning: 'så att reaktionen kan ske vid lägre temperatur.' },
