@@ -61,6 +61,9 @@ Tre serier kolväten. Placering enligt bildrutan i avsnitt-3.md.
 
 ## A — ENKEL
 
+Hittills har kolatomerna suttit på rad, med ett streck mellan varje. Men det finns andra sätt. Atomerna kan sitta i
+en annan ordning, och de kan hålla ihop med fler än ett streck. Då blir det nya ämnen — av precis samma atomer.
+
 ### Med fyra kolatomer finns det två sätt
 
 Så länge en kolkedja har en, två eller tre kolatomer finns det bara ett sätt att sätta ihop den.

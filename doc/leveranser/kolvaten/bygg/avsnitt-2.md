@@ -62,6 +62,9 @@ Kokpunkten stiger med kedjans längd. Placering enligt bildrutan i avsnitt-2.md.
 
 ## A — ENKEL
 
+De fyra första kolvätena heter metan, etan, propan och butan. Alla fyra är gaser, och de skiljer sig bara med en
+kolatom i taget. Ändå bildas de på olika sätt, lagras på olika sätt och används till olika saker.
+
 ### En kolatom och fyra väteatomer
 
 Metan är det enklaste kolväte som finns. Molekylformeln är **CH₄**.

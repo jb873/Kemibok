@@ -77,6 +77,10 @@ Så ritar du en strukturformel. Placering enligt bildrutan i avsnitt-1.md.
 
 ## A — ENKEL
 
+Kolväten finns i nästan alla bränslen vi använder. Diesel i bussen, gasol i grillen, bensin i bilen. Trots att det
+finns mycket många olika kolväten är de byggda av bara två sorters atomer: kol och väte. Det som skiljer dem åt är
+hur många kolatomer de har, och hur kolatomerna sitter ihop.
+
 ### Två atomslag, inget mer
 
 Ett **kolväte** är ett ämne som bara innehåller två sorters atomer: **kol och väte**.

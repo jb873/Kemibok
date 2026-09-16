@@ -62,6 +62,9 @@ Fyra vanliga plaster. Placering enligt bildrutan i avsnitt-4.md.
 
 ## A — ENKEL
 
+Plast, gummi och nylon bygger på samma idé: många små molekyler kopplas ihop till en enda mycket stor. Det är det
+sista och största som kolatomens förmåga att binda till sig själv gör möjligt.
+
 ### En liten molekyl och en väldigt stor
 
 En **monomer** är en liten molekyl som går att bygga ihop med andra likadana. Ordet *mono*
