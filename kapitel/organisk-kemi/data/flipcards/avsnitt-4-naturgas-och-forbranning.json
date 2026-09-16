@@ -1,0 +1,124 @@
+{
+  "avsnitt": 4,
+  "titel": "Naturgas och förbränning",
+  "delkapitel": "fossila-branslen",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 4 (Naturgas och förbränning), delkapitel Fossila bränslen och förbränning. 11 begreppskort + 5 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/fossila-branslen/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k4-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Naturgas",
+      "svar": "Ett fossilt bränsle som till största delen består av metan. Finns i håligheter i berggrunden, ofta ovanför olja."
+    },
+    {
+      "id": "k4-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Gasfält",
+      "svar": "En fyndighet där det finns naturgas men ingen olja."
+    },
+    {
+      "id": "k4-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Rörledning",
+      "svar": "Långt rör som gas trycks genom. Går bara mellan två bestämda punkter och kan inte flyttas."
+    },
+    {
+      "id": "k4-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Flytande naturgas",
+      "svar": "Metan som kylts till −162 °C för att bli vätska och kunna fraktas på fartyg."
+    },
+    {
+      "id": "k4-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Förbränning",
+      "svar": "En reaktion där ett ämne reagerar med syre och energi frigörs."
+    },
+    {
+      "id": "k4-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Ofullständig förbränning",
+      "svar": "Förbränning där syret inte räcker till. Då bildas kolmonoxid och sot i stället för bara koldioxid."
+    },
+    {
+      "id": "k4-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kolmonoxid",
+      "svar": "En färglös och luktfri gas som bildas vid ofullständig förbränning. Livsfarlig att andas in."
+    },
+    {
+      "id": "k4-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Sot",
+      "svar": "Kol som inte reagerat alls vid förbränningen. Ger en gul, sotande låga."
+    },
+    {
+      "id": "k4-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Katalysator",
+      "svar": "Ett ämne som får en reaktion att ske snabbare eller vid lägre temperatur, utan att själv förbrukas."
+    },
+    {
+      "id": "k4-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Aktiveringsenergi",
+      "svar": "Den energi som måste tillföras för att en reaktion ska komma igång, även om den sedan frigör mer energi än den behövde."
+    },
+    {
+      "id": "k4-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Hemoglobin",
+      "svar": "Proteinet i blodet som transporterar syre. Mitt i det sitter en järnatom, och det är där syret binder — och där kolmonoxiden tar plats."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k4-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför ger naturgas minst koldioxid av de fossila bränslena?",
+      "svar": "Metan har fyra väteatomer per kolatom. Väteatomerna blir vatten, inte koldioxid, så en stor del av energin kommer från vätet."
+    },
+    {
+      "id": "k4-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur ser du på lågan om förbränningen är fullständig?",
+      "svar": "En blå låga betyder gott om syre. En gul, sotande låga betyder syrebrist — och den är dessutom kallare."
+    },
+    {
+      "id": "k4-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad kan en katalysator inte göra?",
+      "svar": "Den kan inte ta bort koldioxiden. Katalysatorn omvandlar de giftiga ämnena, men koldioxid är det förbränningen är till för att skapa."
+    },
+    {
+      "id": "k4-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Om förbränning frigör energi — varför brinner inte bensindunken av sig själv?",
+      "svar": "Bindningarna måste brytas innan de nya kan bildas, och det kostar energi. Den kostnaden kallas aktiveringsenergi och måste betalas i förskott."
+    },
+    {
+      "id": "k4-m5",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför är kolmonoxid livsfarlig trots att den inte förstör något?",
+      "svar": "Den binder till samma järnatom i blodet som syret ska sitta på, men ungefär tvåhundra gånger starkare. Platsen är upptagen och blodet kan inte transportera syre."
+    }
+  ]
+}

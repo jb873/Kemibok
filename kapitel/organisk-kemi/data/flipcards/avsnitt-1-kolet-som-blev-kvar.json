@@ -1,0 +1,124 @@
+{
+  "avsnitt": 1,
+  "titel": "Kolet som blev kvar",
+  "delkapitel": "fossila-branslen",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 1 (Kolet som blev kvar), delkapitel Fossila bränslen och förbränning. 11 begreppskort + 5 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/fossila-branslen/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k1-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fossilt bränsle",
+      "svar": "Kol, olja eller naturgas — bränslen som bildats av organismer som begravdes och omvandlades under miljontals år."
+    },
+    {
+      "id": "k1-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Sediment",
+      "svar": "Lager av lera, sand och annat material som avsätts på en botten och begraver det som ligger under."
+    },
+    {
+      "id": "k1-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Plankton",
+      "svar": "Små växter och djur som lever fritt i vattnet. Deras rester blev till olja och naturgas."
+    },
+    {
+      "id": "k1-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Det snabba kretsloppet",
+      "svar": "Kolets rörelse mellan atmosfären, växter, djur och mark. Ett varv tar år till årtionden."
+    },
+    {
+      "id": "k1-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Det långsamma kretsloppet",
+      "svar": "Kolets rörelse genom berggrunden, via begravning, vittring och vulkanism. Ett varv tar hundratusentals till miljontals år."
+    },
+    {
+      "id": "k1-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fossilt kol",
+      "svar": "Kol som legat lagrat utanför det snabba kretsloppet under geologisk tid."
+    },
+    {
+      "id": "k1-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Geologisk tid",
+      "svar": "Tidsskalor på miljontals år, som de processer i jordskorpan pågår på."
+    },
+    {
+      "id": "k1-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Ändlig resurs",
+      "svar": "En resurs som bildas så långsamt att den i praktiken inte ersätts i den takt den används. Kallas också icke förnybar."
+    },
+    {
+      "id": "k1-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kolhalt",
+      "svar": "Hur stor andel av ett bränsles vikt som är kol. Ju högre kolhalt, desto mer koldioxid per energienhet."
+    },
+    {
+      "id": "k1-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Kerogen",
+      "svar": "Det sega, olösliga mellanstadiet mellan begravt organiskt material och olja. Först när det hettas upp tillräckligt avger det kolväten."
+    },
+    {
+      "id": "k1-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Karbonatberg",
+      "svar": "Bergarter som kalksten, uppbyggda av kol bundet till syre och kalcium. De innehåller ungefär tusen gånger mer kol än alla fossila bränslen tillsammans, men brinner inte."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k1-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför bröts inte materialet ner som allt annat dött?",
+      "svar": "Nedbrytarna behöver syre. I bottenslam, kärr och sumpmarker tog syret slut, och då blev en del av materialet kvar och begravdes."
+    },
+    {
+      "id": "k1-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför räknas det olika att elda ved och att elda olja?",
+      "svar": "Vedens kol togs upp ur luften för några årtionden sedan och går tillbaka dit. Oljans kol har varit borta ur atmosfären i miljontals år."
+    },
+    {
+      "id": "k1-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför ger kol mer koldioxid än naturgas för samma mängd energi?",
+      "svar": "Naturgas är metan, med fyra väteatomer per kolatom. Väteatomerna blir vatten. Kol har nästan inget väte alls, så nästan all energi kommer från kolet."
+    },
+    {
+      "id": "k1-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Hur stor del av allt organiskt material har blivit fossilt bränsle?",
+      "svar": "Mindre än en tiondels procent. Det normala var alltid att materialet bröts ner — fossila bränslen är resultatet av en läcka, inte av en process som fungerade."
+    },
+    {
+      "id": "k1-m5",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför ändras siffrorna för hur länge oljan räcker?",
+      "svar": "Det som rapporteras är reserver, alltså det som går att utvinna med vinst vid dagens pris. Stiger priset växer reserverna, utan att en enda liter olja tillkommit."
+    }
+  ]
+}

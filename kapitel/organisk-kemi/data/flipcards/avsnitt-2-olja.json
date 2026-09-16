@@ -1,0 +1,124 @@
+{
+  "avsnitt": 2,
+  "titel": "Olja",
+  "delkapitel": "fossila-branslen",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 2 (Olja), delkapitel Fossila bränslen och förbränning. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/fossila-branslen/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k2-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Råolja",
+      "svar": "Den olja som pumpas upp ur berggrunden, en blandning av hundratals olika kolväten. Kallas också petroleum."
+    },
+    {
+      "id": "k2-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Oljefälla",
+      "svar": "En plats i berggrunden där olja och gas stoppats av ett tätt berglager och samlats. Gasen ligger överst, oljan i mitten, vattnet underst."
+    },
+    {
+      "id": "k2-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Raffinering",
+      "svar": "Att dela upp råolja i användbara delar."
+    },
+    {
+      "id": "k2-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fraktionerad destillation",
+      "svar": "Metoden att dela upp råolja genom att utnyttja att kolväten med olika långa kedjor har olika kokpunkt."
+    },
+    {
+      "id": "k2-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fraktioneringstorn",
+      "svar": "Tornet där uppdelningen sker. Råoljan värms till ungefär 400 grader nedtill, och tornet blir svalare uppåt."
+    },
+    {
+      "id": "k2-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fraktion",
+      "svar": "En del av råoljan som samlats upp på en viss nivå i tornet, alltså kolväten med ungefär samma kokpunkt."
+    },
+    {
+      "id": "k2-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Krackning",
+      "svar": "Att slå sönder långa kolvätekedjor till kortare, för att få mer bensin än råoljan naturligt ger."
+    },
+    {
+      "id": "k2-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Bensin",
+      "svar": "Den fraktion som består av kolväten med fem till tio kolatomer."
+    },
+    {
+      "id": "k2-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fotogen",
+      "svar": "Fraktionen mellan bensin och diesel. Används bland annat som flygbränsle."
+    },
+    {
+      "id": "k2-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Oljefönstret",
+      "svar": "Temperaturintervallet mellan ungefär 60 och 150 grader, där olja bildas. Kallare ger kerogen som aldrig mognar, varmare krackar oljan till gas."
+    },
+    {
+      "id": "k2-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Oktantal",
+      "svar": "Ett mått på hur väl ett bränsle motstår att självantända under tryck i en motor. Grenade kolväten klarar det bättre än raka."
+    },
+    {
+      "id": "k2-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Ångkrackning",
+      "svar": "Krackning med vattenånga vid över 800 grader, gjord med avsikt att få ut alkener. Världens största källa till eten."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k2-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför ligger gasen ovanför oljan i en fyndighet?",
+      "svar": "De ordnar sig efter densitet. Gas är lättast, sedan olja, och vatten är tyngst och hamnar underst."
+    },
+    {
+      "id": "k2-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför hamnar asfalten i botten av tornet och gaserna högst upp?",
+      "svar": "Kokpunkten stiger med kedjelängden. De kortaste kolvätena har lägst kokpunkt och hinner därför högst upp innan de kondenserar."
+    },
+    {
+      "id": "k2-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Vad händer med olja som hamnar djupare än oljefönstret?",
+      "svar": "Den krackas av värmen. Långa kedjor slås sönder till allt kortare, och till slut återstår mest metan. Naturgas på stort djup är ofta olja som gått för långt."
+    },
+    {
+      "id": "k2-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför kan två tankar bensin ha helt olika innehåll?",
+      "svar": "Bensin är ingen molekyl utan en specifikation — allt som kokar i rätt intervall och klarar rätt oktantal. Vilka kolväten det består av kan variera."
+    }
+  ]
+}

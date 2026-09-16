@@ -1,0 +1,124 @@
+{
+  "avsnitt": 5,
+  "titel": "Fossila bränslen och miljön",
+  "delkapitel": "fossila-branslen",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 5 (Fossila bränslen och miljön), delkapitel Fossila bränslen och förbränning. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/fossila-branslen/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k5-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Växthuseffekten",
+      "svar": "Att växthusgaser i atmosfären tar upp värmestrålning från jordytan och strålar ut den igen åt alla håll, så att en del stannar kvar."
+    },
+    {
+      "id": "k5-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Växthusgas",
+      "svar": "En gas som kan ta upp värmestrålning. Vattenånga, koldioxid och metan är de viktigaste."
+    },
+    {
+      "id": "k5-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Värmestrålning",
+      "svar": "Den infraröda strålning en varm yta sänder ut. Det är den växthusgaserna tar upp."
+    },
+    {
+      "id": "k5-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Svaveldioxid",
+      "svar": "Gasen som bildas när svavel i ett bränsle reagerar med syre. Kan spridas långt med vinden."
+    },
+    {
+      "id": "k5-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Svavelsyra",
+      "svar": "Syran som svaveldioxid till slut bildar i atmosfären, och som gör nederbörden sur."
+    },
+    {
+      "id": "k5-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kväveoxider",
+      "svar": "Föreningar av kväve och syre som bildas vid höga temperaturer. Bidrar både till försurning och till övergödning."
+    },
+    {
+      "id": "k5-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Försurning",
+      "svar": "Att pH-värdet i mark och vatten sjunker på grund av surt nedfall."
+    },
+    {
+      "id": "k5-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Övergödning",
+      "svar": "Att ett ekosystem tillförs mer näring än det är anpassat till, så att artsammansättningen ändras och syrebrist kan uppstå."
+    },
+    {
+      "id": "k5-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Tungmetall",
+      "svar": "Metall som kvicksilver, bly eller kadmium. De är giftiga i små mängder och kan inte brytas ner."
+    },
+    {
+      "id": "k5-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Kritisk belastning",
+      "svar": "Den mängd nedfall ett område tål per år utan att ta skada. Den är olika på olika platser och beror på berggrunden."
+    },
+    {
+      "id": "k5-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Metylkvicksilver",
+      "svar": "Kvicksilver med en kolgrupp bunden till sig, bildat av bakterier i syrefattiga bottnar. Löser sig i fett och tas därför lätt upp av levande celler."
+    },
+    {
+      "id": "k5-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Biomagnifikation",
+      "svar": "Att halten av ett ämne mångdubblas för varje steg uppåt i näringskedjan."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k5-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Växthuseffekten är nödvändig. Vad är det då som är problemet?",
+      "svar": "Att den förstärks. Ju fler växthusgaser i luften, desto mer av värmestrålningen tas upp och desto mindre försvinner ut i rymden."
+    },
+    {
+      "id": "k5-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför orsakar kväveutsläpp två olika miljöproblem?",
+      "svar": "Kväveoxiderna bildar syror och bidrar till försurning. Men kväve är samtidigt ett näringsämne, och därför blir nedfallet också gödsel."
+    },
+    {
+      "id": "k5-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför är koldioxid en växthusgas men inte kvävgas?",
+      "svar": "En molekyl kan ta upp strålning bara om den kan vibrera så att den elektriska fördelningen ändras. Kvävgas består av två lika atomer och förblir symmetrisk. Koldioxid kan böja sig."
+    },
+    {
+      "id": "k5-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför drabbades Sverige och Norge hårdast av försurningen?",
+      "svar": "Berggrunden här är sur och neutraliserar inte syran. I kalkrika områden tar berget hand om samma nedfall utan att pH rör sig."
+    }
+  ]
+}

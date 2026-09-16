@@ -1,0 +1,124 @@
+{
+  "avsnitt": 3,
+  "titel": "Kol, koks och torv",
+  "delkapitel": "fossila-branslen",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 3 (Kol, koks och torv), delkapitel Fossila bränslen och förbränning. 11 begreppskort + 5 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/fossila-branslen/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k3-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Stenkol",
+      "svar": "Kol som bildades av landväxter för 300 till 350 miljoner år sedan. Kolhalt 75 till 90 procent."
+    },
+    {
+      "id": "k3-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Brunkol",
+      "svar": "Kol som bildades för 2 till 65 miljoner år sedan. Kolhalt 60 till 70 procent, och det innehåller mycket vatten."
+    },
+    {
+      "id": "k3-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Karbon",
+      "svar": "Den period för 300 till 350 miljoner år sedan då stenkolet bildades. Namnet kommer av det latinska ordet för kol."
+    },
+    {
+      "id": "k3-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Torv",
+      "svar": "Delvis nedbrutna växtdelar som samlats i syrefattiga våtmarker. Det första steget mot kol."
+    },
+    {
+      "id": "k3-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Torvmark",
+      "svar": "Våtmark där torv bildas. Ungefär 15 procent av Sveriges yta."
+    },
+    {
+      "id": "k3-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Förkolning",
+      "svar": "Processen där vatten, syre och väte gradvis pressas ut ur organiskt material medan kolet blir kvar."
+    },
+    {
+      "id": "k3-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Torrdestillation",
+      "svar": "Att hetta upp stenkol till ungefär 1000 grader utan tillgång till luft, så att tjära och gaser drivs ut."
+    },
+    {
+      "id": "k3-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Koks",
+      "svar": "Det poröst, nästan rena kolmaterial som blir kvar efter torrdestillation. Används vid järnframställning."
+    },
+    {
+      "id": "k3-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Järnmalm",
+      "svar": "Bergart där järn sitter bundet till syre. Måste befrias från syret för att ge användbart järn."
+    },
+    {
+      "id": "k3-b10",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Masugn",
+      "svar": "Ugnen där järnmalm och koks möts och järnet frigörs från sitt syre."
+    },
+    {
+      "id": "k3-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Antracit",
+      "svar": "Det mest förkolnade kolet, med över 90 procent kol. Brinner nästan utan låga, eftersom de flyktiga ämnena är borta."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k3-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför har brunkol lägre kolhalt än stenkol?",
+      "svar": "Omvandlingen har pågått kortare tid. Mindre vatten och andra ämnen har hunnit pressas ut, så andelen kol är lägre."
+    },
+    {
+      "id": "k3-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför hettas stenkolet utan tillgång till luft när koks framställs?",
+      "svar": "Utan syre kan kolet inte brinna. I stället drivs bara de flyktiga ämnena ut, och kolet blir kvar."
+    },
+    {
+      "id": "k3-m3",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför ger ståltillverkning så stora koldioxidutsläpp?",
+      "svar": "Syret i järnmalmen måste ta vägen någonstans, och det binds till kolet. Koldioxiden är en del av reaktionen, inte ett spill som kan renas bort."
+    },
+    {
+      "id": "k3-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför är det kolmonoxid och inte koksen själv som tar syret ur malmen?",
+      "svar": "Kolmonoxid är en gas och kan tränga in i varje por i malmen. Fast koks kan bara röra malmen där bitarna ligger mot varandra."
+    },
+    {
+      "id": "k3-m5",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "När blir en torvmark en kolkälla i stället för en kolsänka?",
+      "svar": "När den dikas ut. Då når syre ner i torven, nedbrytarna kan arbeta, och kol som lagrats under tusentals år blir koldioxid på årtionden."
+    }
+  ]
+}

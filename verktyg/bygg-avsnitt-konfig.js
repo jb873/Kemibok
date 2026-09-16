@@ -266,6 +266,15 @@ const DELKAPITEL = {
     bank: { idPrefix: 'v', avsnittOffset: 3, uteslut: {
       'enkelbindning': 'finns redan i Syror och baser, repetition avsnitt 3 (arbetsorder 6 Kolväten, 2026-09-16)' } } },
   'fossila-branslen': { titel: 'Fossila bränslen och förbränning', kapitel: { id: 'organisk-kemi', titel: 'Organisk kemi' }, byggmapp: 'bygg', avsnitt: AVSNITT_FOSSILA,
-    bank: { idPrefix: 'f', avsnittOffset: 7, uteslut: {} } }   // Öva kommer i en senare order; kapitlets bank delas (avsnitt 8–12)
+    // kapitlets bank delas med Kolatomen och Kolväten: id-prefix f, avsnitt 8–12. Dubblettkontroll 2026-09-16 (arbetsorder flipcards
+    // delkapitel 3): 46 kandidater mot 63 + 167 – sju träffar, uteslutna enligt Joachims regel (lägg inte in en andra version)
+    bank: { idPrefix: 'f', avsnittOffset: 7, uteslut: {
+      'det snabba kretsloppet': 'finns redan i Kolatomen avsnitt 3 (kapitlets bank)',
+      'naturgas': 'finns redan i Kolväten avsnitt 2 (kapitlets bank)',
+      'katalysator': 'finns redan i Syror och baser, försurning avsnitt 3',
+      'svaveldioxid': 'finns redan i Syror och baser, försurning avsnitt 1',
+      'svavelsyra': 'finns redan i Syror och baser, syror avsnitt 5',
+      'kväveoxider': 'finns redan i Syror och baser, försurning avsnitt 1',
+      'försurning': 'finns redan i Syror och baser, försurning avsnitt 1' } } }
 };
 module.exports = { DELKAPITEL };

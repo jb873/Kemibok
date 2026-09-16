@@ -3,7 +3,7 @@
   "kapitel_titel": "Organisk kemi",
   "version": 3,
   "skapad": "2026-09-13",
-  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 26 + Kolväten 37 = 63.",
+  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 26 + Kolväten 37 + Fossila bränslen och förbränning 39 = 102.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -575,6 +575,357 @@
       "term": "cellulosa",
       "expertdefinition": "En naturlig polymer som bygger upp växternas cellväggar. Byggstenen är glukos.",
       "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-polymerer.json"
+    },
+    {
+      "id": "kf1-b1",
+      "avsnitt": "8",
+      "avsnitt_titel": "Kolet som blev kvar",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "fossilt bränsle",
+      "expertdefinition": "Kol, olja eller naturgas — bränslen som bildats av organismer som begravdes och omvandlades under miljontals år.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolet-som-blev-kvar.json"
+    },
+    {
+      "id": "kf1-b2",
+      "avsnitt": "8",
+      "avsnitt_titel": "Kolet som blev kvar",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "sediment",
+      "expertdefinition": "Lager av lera, sand och annat material som avsätts på en botten och begraver det som ligger under.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolet-som-blev-kvar.json"
+    },
+    {
+      "id": "kf1-b3",
+      "avsnitt": "8",
+      "avsnitt_titel": "Kolet som blev kvar",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "plankton",
+      "expertdefinition": "Små växter och djur som lever fritt i vattnet. Deras rester blev till olja och naturgas.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolet-som-blev-kvar.json"
+    },
+    {
+      "id": "kf1-b5",
+      "avsnitt": "8",
+      "avsnitt_titel": "Kolet som blev kvar",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "det långsamma kretsloppet",
+      "expertdefinition": "Kolets rörelse genom berggrunden, via begravning, vittring och vulkanism. Ett varv tar hundratusentals till miljontals år.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolet-som-blev-kvar.json"
+    },
+    {
+      "id": "kf1-b6",
+      "avsnitt": "8",
+      "avsnitt_titel": "Kolet som blev kvar",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "fossilt kol",
+      "expertdefinition": "Kol som legat lagrat utanför det snabba kretsloppet under geologisk tid.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolet-som-blev-kvar.json"
+    },
+    {
+      "id": "kf1-b7",
+      "avsnitt": "8",
+      "avsnitt_titel": "Kolet som blev kvar",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "geologisk tid",
+      "expertdefinition": "Tidsskalor på miljontals år, som de processer i jordskorpan pågår på.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolet-som-blev-kvar.json"
+    },
+    {
+      "id": "kf1-b8",
+      "avsnitt": "8",
+      "avsnitt_titel": "Kolet som blev kvar",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "ändlig resurs",
+      "expertdefinition": "En resurs som bildas så långsamt att den i praktiken inte ersätts i den takt den används. Kallas också icke förnybar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolet-som-blev-kvar.json"
+    },
+    {
+      "id": "kf1-b9",
+      "avsnitt": "8",
+      "avsnitt_titel": "Kolet som blev kvar",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "kolhalt",
+      "expertdefinition": "Hur stor andel av ett bränsles vikt som är kol. Ju högre kolhalt, desto mer koldioxid per energienhet.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolet-som-blev-kvar.json"
+    },
+    {
+      "id": "kf2-b1",
+      "avsnitt": "9",
+      "avsnitt_titel": "Olja",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "råolja",
+      "expertdefinition": "Den olja som pumpas upp ur berggrunden, en blandning av hundratals olika kolväten. Kallas också petroleum.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-olja.json"
+    },
+    {
+      "id": "kf2-b2",
+      "avsnitt": "9",
+      "avsnitt_titel": "Olja",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "oljefälla",
+      "expertdefinition": "En plats i berggrunden där olja och gas stoppats av ett tätt berglager och samlats. Gasen ligger överst, oljan i mitten, vattnet underst.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-olja.json"
+    },
+    {
+      "id": "kf2-b3",
+      "avsnitt": "9",
+      "avsnitt_titel": "Olja",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "raffinering",
+      "expertdefinition": "Att dela upp råolja i användbara delar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-olja.json"
+    },
+    {
+      "id": "kf2-b4",
+      "avsnitt": "9",
+      "avsnitt_titel": "Olja",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "fraktionerad destillation",
+      "expertdefinition": "Metoden att dela upp råolja genom att utnyttja att kolväten med olika långa kedjor har olika kokpunkt.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-olja.json"
+    },
+    {
+      "id": "kf2-b5",
+      "avsnitt": "9",
+      "avsnitt_titel": "Olja",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "fraktioneringstorn",
+      "expertdefinition": "Tornet där uppdelningen sker. Råoljan värms till ungefär 400 grader nedtill, och tornet blir svalare uppåt.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-olja.json"
+    },
+    {
+      "id": "kf2-b6",
+      "avsnitt": "9",
+      "avsnitt_titel": "Olja",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "fraktion",
+      "expertdefinition": "En del av råoljan som samlats upp på en viss nivå i tornet, alltså kolväten med ungefär samma kokpunkt.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-olja.json"
+    },
+    {
+      "id": "kf2-b7",
+      "avsnitt": "9",
+      "avsnitt_titel": "Olja",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "krackning",
+      "expertdefinition": "Att slå sönder långa kolvätekedjor till kortare, för att få mer bensin än råoljan naturligt ger.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-olja.json"
+    },
+    {
+      "id": "kf2-b8",
+      "avsnitt": "9",
+      "avsnitt_titel": "Olja",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "bensin",
+      "expertdefinition": "Den fraktion som består av kolväten med fem till tio kolatomer.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-olja.json"
+    },
+    {
+      "id": "kf2-b9",
+      "avsnitt": "9",
+      "avsnitt_titel": "Olja",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "fotogen",
+      "expertdefinition": "Fraktionen mellan bensin och diesel. Används bland annat som flygbränsle.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-olja.json"
+    },
+    {
+      "id": "kf3-b1",
+      "avsnitt": "10",
+      "avsnitt_titel": "Kol, koks och torv",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "stenkol",
+      "expertdefinition": "Kol som bildades av landväxter för 300 till 350 miljoner år sedan. Kolhalt 75 till 90 procent.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-koks-och-torv.json"
+    },
+    {
+      "id": "kf3-b2",
+      "avsnitt": "10",
+      "avsnitt_titel": "Kol, koks och torv",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "brunkol",
+      "expertdefinition": "Kol som bildades för 2 till 65 miljoner år sedan. Kolhalt 60 till 70 procent, och det innehåller mycket vatten.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-koks-och-torv.json"
+    },
+    {
+      "id": "kf3-b3",
+      "avsnitt": "10",
+      "avsnitt_titel": "Kol, koks och torv",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "karbon",
+      "expertdefinition": "Den period för 300 till 350 miljoner år sedan då stenkolet bildades. Namnet kommer av det latinska ordet för kol.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-koks-och-torv.json"
+    },
+    {
+      "id": "kf3-b4",
+      "avsnitt": "10",
+      "avsnitt_titel": "Kol, koks och torv",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "torv",
+      "expertdefinition": "Delvis nedbrutna växtdelar som samlats i syrefattiga våtmarker. Det första steget mot kol.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-koks-och-torv.json"
+    },
+    {
+      "id": "kf3-b5",
+      "avsnitt": "10",
+      "avsnitt_titel": "Kol, koks och torv",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "torvmark",
+      "expertdefinition": "Våtmark där torv bildas. Ungefär 15 procent av Sveriges yta.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-koks-och-torv.json"
+    },
+    {
+      "id": "kf3-b6",
+      "avsnitt": "10",
+      "avsnitt_titel": "Kol, koks och torv",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "förkolning",
+      "expertdefinition": "Processen där vatten, syre och väte gradvis pressas ut ur organiskt material medan kolet blir kvar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-koks-och-torv.json"
+    },
+    {
+      "id": "kf3-b7",
+      "avsnitt": "10",
+      "avsnitt_titel": "Kol, koks och torv",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "torrdestillation",
+      "expertdefinition": "Att hetta upp stenkol till ungefär 1000 grader utan tillgång till luft, så att tjära och gaser drivs ut.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-koks-och-torv.json"
+    },
+    {
+      "id": "kf3-b8",
+      "avsnitt": "10",
+      "avsnitt_titel": "Kol, koks och torv",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "koks",
+      "expertdefinition": "Det poröst, nästan rena kolmaterial som blir kvar efter torrdestillation. Används vid järnframställning.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-koks-och-torv.json"
+    },
+    {
+      "id": "kf3-b9",
+      "avsnitt": "10",
+      "avsnitt_titel": "Kol, koks och torv",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "järnmalm",
+      "expertdefinition": "Bergart där järn sitter bundet till syre. Måste befrias från syret för att ge användbart järn.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-koks-och-torv.json"
+    },
+    {
+      "id": "kf3-b10",
+      "avsnitt": "10",
+      "avsnitt_titel": "Kol, koks och torv",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "masugn",
+      "expertdefinition": "Ugnen där järnmalm och koks möts och järnet frigörs från sitt syre.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-kol-koks-och-torv.json"
+    },
+    {
+      "id": "kf4-b2",
+      "avsnitt": "11",
+      "avsnitt_titel": "Naturgas och förbränning",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "gasfält",
+      "expertdefinition": "En fyndighet där det finns naturgas men ingen olja.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-naturgas-och-forbranning.json"
+    },
+    {
+      "id": "kf4-b3",
+      "avsnitt": "11",
+      "avsnitt_titel": "Naturgas och förbränning",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "rörledning",
+      "expertdefinition": "Långt rör som gas trycks genom. Går bara mellan två bestämda punkter och kan inte flyttas.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-naturgas-och-forbranning.json"
+    },
+    {
+      "id": "kf4-b4",
+      "avsnitt": "11",
+      "avsnitt_titel": "Naturgas och förbränning",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "flytande naturgas",
+      "expertdefinition": "Metan som kylts till −162 °C för att bli vätska och kunna fraktas på fartyg.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-naturgas-och-forbranning.json"
+    },
+    {
+      "id": "kf4-b5",
+      "avsnitt": "11",
+      "avsnitt_titel": "Naturgas och förbränning",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "förbränning",
+      "expertdefinition": "En reaktion där ett ämne reagerar med syre och energi frigörs.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-naturgas-och-forbranning.json"
+    },
+    {
+      "id": "kf4-b6",
+      "avsnitt": "11",
+      "avsnitt_titel": "Naturgas och förbränning",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "ofullständig förbränning",
+      "expertdefinition": "Förbränning där syret inte räcker till. Då bildas kolmonoxid och sot i stället för bara koldioxid.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-naturgas-och-forbranning.json"
+    },
+    {
+      "id": "kf4-b7",
+      "avsnitt": "11",
+      "avsnitt_titel": "Naturgas och förbränning",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "kolmonoxid",
+      "expertdefinition": "En färglös och luktfri gas som bildas vid ofullständig förbränning. Livsfarlig att andas in.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-naturgas-och-forbranning.json"
+    },
+    {
+      "id": "kf4-b8",
+      "avsnitt": "11",
+      "avsnitt_titel": "Naturgas och förbränning",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "sot",
+      "expertdefinition": "Kol som inte reagerat alls vid förbränningen. Ger en gul, sotande låga.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-naturgas-och-forbranning.json"
+    },
+    {
+      "id": "kf5-b1",
+      "avsnitt": "12",
+      "avsnitt_titel": "Fossila bränslen och miljön",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "växthuseffekten",
+      "expertdefinition": "Att växthusgaser i atmosfären tar upp värmestrålning från jordytan och strålar ut den igen åt alla håll, så att en del stannar kvar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-5-fossila-branslen-och-miljon.json"
+    },
+    {
+      "id": "kf5-b2",
+      "avsnitt": "12",
+      "avsnitt_titel": "Fossila bränslen och miljön",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "växthusgas",
+      "expertdefinition": "En gas som kan ta upp värmestrålning. Vattenånga, koldioxid och metan är de viktigaste.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-5-fossila-branslen-och-miljon.json"
+    },
+    {
+      "id": "kf5-b3",
+      "avsnitt": "12",
+      "avsnitt_titel": "Fossila bränslen och miljön",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "värmestrålning",
+      "expertdefinition": "Den infraröda strålning en varm yta sänder ut. Det är den växthusgaserna tar upp.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-5-fossila-branslen-och-miljon.json"
+    },
+    {
+      "id": "kf5-b8",
+      "avsnitt": "12",
+      "avsnitt_titel": "Fossila bränslen och miljön",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "övergödning",
+      "expertdefinition": "Att ett ekosystem tillförs mer näring än det är anpassat till, så att artsammansättningen ändras och syrebrist kan uppstå.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-5-fossila-branslen-och-miljon.json"
+    },
+    {
+      "id": "kf5-b9",
+      "avsnitt": "12",
+      "avsnitt_titel": "Fossila bränslen och miljön",
+      "delkapitel_titel": "Fossila bränslen och förbränning",
+      "term": "tungmetall",
+      "expertdefinition": "Metall som kvicksilver, bly eller kadmium. De är giftiga i små mängder och kan inte brytas ner.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-5-fossila-branslen-och-miljon.json"
     }
   ]
 }
