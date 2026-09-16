@@ -4,6 +4,8 @@
 
 Fristående text. Förutsätter inte att man läst 4.1, men knyter an till den.
 
+*(Tabellen med fyra kritiska temperaturer inlagd 2026-09-16 på Joachims order, efter stycket om metans kritiska temperatur.)*
+
 ---
 
 ## Olja går att lasta på vilken båt som helst
@@ -31,6 +33,13 @@ Det går inte. Metan har en **kritisk temperatur** på −82 °C. Över den temp
 molekylerna för snabbt för att hållas samman som vätska, hur högt trycket än är. Propan och butan
 har kritiska temperaturer långt över rumstemperatur och blir därför vätska under måttligt tryck —
 det är hela idén med en gasoltub. Metan kan det inte.
+
+| Ämne | Kritisk temperatur |
+|---|---|
+| Metan | −82 °C |
+| Etan | 32 °C |
+| Propan | 97 °C |
+| Butan | 152 °C |
 
 Det finns bara två vägar kvar.
 

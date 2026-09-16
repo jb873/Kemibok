@@ -51,6 +51,13 @@ for (const [N, K] of Object.entries(DELKAPITEL[DKID].avsnitt)) {
       if (/^#{2,3} Om du vill veta mer$/.test(b)) { return `      <h3>Om du vill veta mer</h3>`; }   // avslutande frågor (Joachim 2026-09-15): plattformens svagare rubriknivå, ingen avdelning
       if (/^#{2,3} /.test(b)) { return `      <h2>${inline(b.replace(/^#{2,3} /, ''))}</h2>`; }   // ## (kolatomen) eller ### (repetition) → h2
       if (/^- /.test(b)) { return `      <ul>\n${b.split(/\n(?=- )/).map(l => `        <li>${inline(l.replace(/^- /, '').replace(/\n\s+/g, ' '))}</li>`).join('\n')}\n      </ul>`; }   // punktlista ("Om du vill veta mer")
+      // tabell "| … |" → <table class="brodtext-tabell"> i tabell-ram (som bygg-avsnitt.js; gasledningar 2026-09-16)
+      if (b.split('\n').every(r => /^\|/.test(r))) {
+        const rader = b.split('\n'), celler = r => r.replace(/^\|\s*|\s*\|$/g, '').split(/\s*\|\s*/);
+        const just = celler(rader[1]).map(c => /:$/.test(c) && !/^:/.test(c) ? ' class="hoger"' : '');
+        const rad = (r, tag) => '<tr>' + celler(r).map((c, i) => `<${tag}${just[i] || ''}>${inline(c)}</${tag}>`).join('') + '</tr>';
+        return `      <div class="tabell-ram"><table class="brodtext-tabell"><thead>${rad(rader[0], 'th')}</thead><tbody>${rader.slice(2).map(r => rad(r, 'td')).join('')}</tbody></table></div>`;
+      }
       const p = b.replace(/\n/g, ' ');
       // fristående fet reaktionsrad → display-formel (som i avsnittssidorna)
       if (/^\*\*[^*]+\*\*$/.test(p) && arReaktion(p.replace(/\*\*/g, ''))) { return `      <div class="formel">\\[\\ce{${ceify(p.replace(/\*\*/g, ''))}}\\]</div>`; }
