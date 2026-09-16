@@ -4,7 +4,7 @@
 
 Fristående text. Förutsätter inte att man läst 4.1, men knyter an till den.
 
-*(Tabellen med fyra kritiska temperaturer inlagd 2026-09-16 på Joachims order, efter stycket om metans kritiska temperatur.)*
+*(Tabellen med fyra kritiska temperaturer inlagd 2026-09-16 på Joachims order, efter stycket om metans kritiska temperatur; inledande och avslutande mening till tabellen levererade samma dag.)*
 
 ---
 
@@ -34,12 +34,16 @@ molekylerna för snabbt för att hållas samman som vätska, hur högt trycket �
 har kritiska temperaturer långt över rumstemperatur och blir därför vätska under måttligt tryck —
 det är hela idén med en gasoltub. Metan kan det inte.
 
+Skillnaden syns tydligast i en jämförelse.
+
 | Ämne | Kritisk temperatur |
 |---|---|
 | Metan | −82 °C |
 | Etan | 32 °C |
 | Propan | 97 °C |
 | Butan | 152 °C |
+
+Rumstemperatur ligger kring 20 °C. Propan och butan ligger långt över den, metan hundra grader under.
 
 Det finns bara två vägar kvar.
 
