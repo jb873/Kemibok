@@ -205,6 +205,41 @@ const AVSNITT_KOLVATEN = {
          'k2-d3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Skillnaden sitter i monomeren.', standard: 'fibrer. Skillnaden ligger i monomeren.', fordjupning: 'Samma monomer. Samma bindningar. Samma polymer, kemiskt sett. Skillnaden är hur kedjorna ligger.' }
        } }
 };
+// Fossila bränslen och förbränning (Organisk kemi 3, arbetsorder 2026-09-16, hela delkapitlet). Bildspecar i
+// doc/leveranser/fossila-branslen/original/dk3-bildspecar.md; standard-ankare = slutet av det stycke som specens
+// "vid N:e rubriken" pekar på (F3, H2 och J1 efter innehållet i stället – rapporterat), enkel/fordjupning valda av Code.
+const AVSNITT_FOSSILA = {
+  1: { dd: [],
+       bilder: {
+         'k3-e1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: '**torv** och sedan **kol**.', standard: 'miljontals år.', fordjupning: 'börjar det avge kolväten.' },
+         'k3-e2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Det är **tiden**.', standard: 'det långsamma i miljoner år.', fordjupning: 'fyndigheter vi kallar fossila bränslen.' },
+         'k3-e3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Kol kommer från **växter på land**.', standard: 'ungefär som vatten i en tvättsvamp.', fordjupning: 'reserver följer priset.' }
+       } },
+  2: { dd: [],
+       bilder: {
+         'k3-f1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'ungefär som vatten inuti en tvättsvamp.', standard: 'ungefär som vatten i en tvättsvamp.', fordjupning: 'Grundare ger kerogen som aldrig mognat.' },
+         'k3-f2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Varje sådan del kallas en **fraktion**.', standard: 'Varje sådan uppsamlad del kallas en **fraktion**.', fordjupning: 'inte av vad den innehåller.' },
+         'k3-f3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'råoljan bestämma.', standard: 'efter vad råoljan råkar innehålla.', fordjupning: 'just för att vi krackar olja.' }
+       } },
+  3: { dd: [],
+       bilder: {
+         'k3-g1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'är ju samma kol som brinner.', standard: 'det är samma kol som brinner.', fordjupning: 'lämnar kolet.' },
+         'k3-g2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'flyktiga ämnena redan är borta.', standard: 'ämnena redan är borta.', fordjupning: 'en gas möter allt.' },
+         'k3-g3.webp': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'släpper ifrån sig det kol den lagrat.', standard: 'släpper ifrån sig det kol den lagrat.', fordjupning: 'framför allt för skogsbruk och jordbruk.' }
+       } },
+  4: { dd: [],
+       bilder: {
+         'k3-h1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'byggt något rörnät som täcker landet.', standard: 'rörnät som täcker landet.', fordjupning: 'än vad industrin själv rapporterat.' },
+         'k3-h2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'CH₄ + 2 O₂ → CO₂ + 2 H₂O', standard: 'CH₄ + 2 O₂ → CO₂ + 2 H₂O', fordjupning: 'så att reaktionen kan ske vid lägre temperatur.' },
+         'k3-h3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'kolmonoxiden och sotet.', standard: 'energin aldrig frigörs.', fordjupning: 'om platsen släpper kolmonoxiden till slut.' }
+       } },
+  5: { dd: [],
+       bilder: {
+         'k3-j1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Jorden blir varmare än den annars hade varit.', standard: 'ökar och effekten **förstärks**.', fordjupning: 'därför spelar det roll vilken gas som tillförs.' },
+         'k3-j2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'näringsämnen sköljs ur marken.', standard: 'och pH-värdet sjunker.', fordjupning: 'Men det botar inte orsaken, och måste upprepas.' },
+         'k3-j3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Många av dem är giftiga redan i mycket små mängder.', standard: 'får betydelse om de pågår länge.', fordjupning: 'sjövattnet i sig inte är farligt att dricka.' }
+       } }
+};
 const DELKAPITEL = {
   // bank: id-prefix och avsnittsoffset i kapitlets begreppsbank (en fil per kapitel; id/avsnitt unika över delkapitlen)
   repetition: { titel: 'Bakgrund och repetition', avsnitt: AVSNITT_REPETITION, bank: { idPrefix: '', avsnittOffset: 0 } },
@@ -229,6 +264,8 @@ const DELKAPITEL = {
     // kapitlets bank delas med Kolatomen: id-prefix v (kv1-b1 …) och avsnitt 4–7 så att id/avsnitt är unika. uteslut: dubblett mot
     // Syror och baser (Joachims regel 2026-09-15: lägg inte in en andra version). Kontroll 2026-09-16: 38 kandidater mot 26 + 167 – en träff.
     bank: { idPrefix: 'v', avsnittOffset: 3, uteslut: {
-      'enkelbindning': 'finns redan i Syror och baser, repetition avsnitt 3 (arbetsorder 6 Kolväten, 2026-09-16)' } } }
+      'enkelbindning': 'finns redan i Syror och baser, repetition avsnitt 3 (arbetsorder 6 Kolväten, 2026-09-16)' } } },
+  'fossila-branslen': { titel: 'Fossila bränslen och förbränning', kapitel: { id: 'organisk-kemi', titel: 'Organisk kemi' }, byggmapp: 'bygg', avsnitt: AVSNITT_FOSSILA,
+    bank: { idPrefix: 'f', avsnittOffset: 7, uteslut: {} } }   // Öva kommer i en senare order; kapitlets bank delas (avsnitt 8–12)
 };
 module.exports = { DELKAPITEL };

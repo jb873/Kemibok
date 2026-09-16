@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 670" width="800" height="670" role="img" aria-labelledby="t">
+  <title id="t">Kolets kretslopp med två slingor. Den inre snabba slingan går mellan atmosfär, växter, djur och nedbrytare på år till årtionden. En yttre slinga går ner i berggrunden där kol, olja och naturgas finns, och tillbaka upp genom förbränning</title>
+  <g id="atmosfar">
+  <rect x="200" y="24" width="400" height="64" rx="12" fill="#a8c4d8" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="400" y="52" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold">atmosfären</text>
+  <text x="400" y="74" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">koldioxid</text>
+  </g>
+  <g id="vaxt">
+  <path d="M150 330 V230" stroke="#5a9668" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M150 280 C110 270 95 240 100 215 C130 220 150 245 150 280Z" fill="#5a9668" fill-opacity="0.35" stroke="#5a9668" stroke-width="2.5"/>
+  <path d="M150 255 C190 245 205 215 200 190 C170 195 150 220 150 255Z" fill="#5a9668" fill-opacity="0.35" stroke="#5a9668" stroke-width="2.5"/>
+  <text x="150" y="356" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold">växt</text>
+  </g>
+  <g id="djur">
+  <ellipse cx="640" cy="270" rx="58" ry="30" fill="#2d4a35"/>
+  <circle cx="700" cy="245" r="18" fill="#2d4a35"/>
+  <path d="M598 292 V330 M626 296 V330 M654 296 V330 M682 292 V330" stroke="#2d4a35" stroke-width="6" stroke-linecap="round"/>
+  <path d="M582 262 C560 255 555 275 575 285" stroke="#2d4a35" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="650" y="356" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold">djur</text>
+  </g>
+  <g id="mark">
+  <rect x="200" y="410" width="400" height="70" rx="8" fill="#8A8A8A" fill-opacity="0.35" stroke="#8A8A8A" stroke-width="1"/>
+  <rect x="300" y="422" width="200" height="46" rx="6" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.5"/>
+  <text x="400" y="441" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">nedbrytare</text>
+  <text x="400" y="460" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">svamp och bakterier</text>
+  </g>
+  <g id="pilar">
+  <line x1="250" y1="88" x2="172.05" y2="195.29" stroke="#5a9668" stroke-width="3" stroke-linecap="round" />
+  <polygon points="165,205 167.2,191.77 176.91,198.82" fill="#5a9668" />
+  <text x="170" y="140" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" text-anchor="end">fotosyntes</text>
+  <line x1="215" y1="300" x2="558" y2="300" stroke="#5a9668" stroke-width="3" stroke-linecap="round" />
+  <polygon points="570,300 558,306 558,294" fill="#5a9668" />
+  <text x="392" y="292" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">näringskedja</text>
+  <line x1="215" y1="220" x2="293.36" y2="102" stroke="#5a9668" stroke-width="3" stroke-linecap="round" />
+  <polygon points="300,92 298.36,105.32 288.36,98.68" fill="#5a9668" />
+  <text x="300" y="150" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" text-anchor="start">cellandning</text>
+  <line x1="620" y1="232" x2="526.97" y2="101.76" stroke="#5a9668" stroke-width="3" stroke-linecap="round" />
+  <polygon points="520,92 531.86,98.28 522.09,105.25" fill="#5a9668" />
+  <text x="590" y="150" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" text-anchor="start">cellandning</text>
+  <line x1="180" y1="340" x2="290.21" y2="418.06" stroke="#5a9668" stroke-width="3" stroke-linecap="round" />
+  <polygon points="300,425 286.74,422.96 293.68,413.17" fill="#5a9668" />
+  <line x1="620" y1="340" x2="509.79" y2="418.06" stroke="#5a9668" stroke-width="3" stroke-linecap="round" />
+  <polygon points="500,425 506.32,413.17 513.26,422.96" fill="#5a9668" />
+  <line x1="400" y1="410" x2="400" y2="104" stroke="#5a9668" stroke-width="3" stroke-linecap="round" stroke-dasharray="none"/>
+  <polygon points="400,92 406,104 394,104" fill="#5a9668" stroke-dasharray="none"/>
+  <text x="414" y="380" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" text-anchor="start">nedbrytning</text>
+  </g>
+  <g id="utpil">
+  <line x1="640" y1="445" x2="729.71" y2="498.83" stroke="#5a9668" stroke-width="3" stroke-linecap="round" />
+  <polygon points="740,505 726.62,503.97 732.8,493.68" fill="#5a9668" />
+  <text x="722" y="470" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" text-anchor="start">begravning</text>
+  </g>
+  <g id="geologisk-slinga">
+  <rect x="200" y="560" width="400" height="70" fill="#8A8A8A" fill-opacity="0.45" stroke="#8A8A8A" stroke-width="1" rx="8" data-del="berggrund"/>
+  <text x="400" y="583" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">berggrund</text>
+  <rect x="218" y="592" width="88" height="28" fill="#3a3a3a" rx="5" data-del="kol"/>
+  <text x="262" y="611"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#f5f0e4">kol</text>
+  <rect x="356" y="592" width="88" height="28" fill="#3a3a3a" rx="5" data-del="olja"/>
+  <text x="400" y="611"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#f5f0e4">olja</text>
+  <rect x="494" y="592" width="88" height="28" fill="#3a3a3a" rx="5" data-del="naturgas"/>
+  <text x="538" y="611"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#f5f0e4">naturgas</text>
+  <line x1="740" y1="505" x2="649.37" y2="577.5" stroke="#5a9668" stroke-width="3" stroke-linecap="round" data-pil="ner"/>
+  <polygon points="640,585 645.62,572.82 653.12,582.19" fill="#5a9668" data-pil="ner"/>
+  <path d="M200 598 L60 598 L60 56 L186 56" fill="none" stroke="#5a9668" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" data-pil="forbranning"/>
+  <line x1="186" y1="56" x2="178" y2="56" stroke="#5a9668" stroke-width="5" stroke-linecap="round" data-pil="forbranning"/>
+  <polygon points="198,56 178,66 178,46" fill="#5a9668" data-pil="forbranning"/>
+  <text x="72" y="478" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold" text-anchor="start">förbränning</text>
+  <text x="400" y="650" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">miljontals år</text>
+  <text x="400" y="400" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">år till årtionden</text>
+  </g>
+</svg>

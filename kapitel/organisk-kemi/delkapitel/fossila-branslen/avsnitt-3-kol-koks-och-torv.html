@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kol, koks och torv – Fossila bränslen och förbränning – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Fossila bränslen och förbränning</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">3. Kol, koks och torv</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 3</span>
+      <h1>Kol, koks och torv</h1>
+      <p class="subtitel">— tre stadier av samma förkolning – och vägen till stål —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Stenkol och brunkol bildades av sumpskogar</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Koks framställs ur stenkol och används till järn</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Torv är på väg att bli kol</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-kol-koks-och-torv">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Stenkol och brunkol bildades av sumpskogar ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Kol är inte rent kol</h2>
+          <p>Det man bryter i en kolgruva är inte grundämnet kol i ren form.</p>
+          <p>Det är ett material som <strong>mest</strong> består av kol, men som också innehåller kolväten, vatten, svavel och olika mineralämnen.</p>
+          <p>Hur stor andelen rent kol är varierar mellan olika sorter. Och det är just den andelen som avgör hur bra bränslet är.</p>
+          <h2>Stenkol bildades under karbon</h2>
+          <p><strong>Stenkol</strong> bildades av växter som levde för <strong>300 till 350 miljoner år sedan</strong>.</p>
+          <p>Den perioden kallas karbon — namnet kommer av det latinska ordet för kol, eftersom det var då kolet bildades.</p>
+          <p>På den tiden fanns enorma sumpskogar med ormbunksträd och andra stora växter. När de dog sjönk de ner i syrefattiga träsk. Nedbrytningen blev ofullständig, och lager på lager av växtmaterial pressades samman under högt tryck.</p>
+          <p>Stenkol innehåller <strong>75 till 90 procent kol</strong>. Ju äldre kolet är, desto högre är andelen.</p>
+          <p>Stenkol drev ångmaskinerna under industrialiseringen. I dag används det mest till stålproduktion och elproduktion.</p>
+          <h2>Brunkol är yngre och blötare</h2>
+          <p><strong>Brunkol</strong> bildades betydligt senare, för <strong>2 till 65 miljoner år sedan</strong>.</p>
+          <p>Eftersom omvandlingen har pågått kortare tid är kolhalten lägre — <strong>60 till 70 procent</strong>. Det är därför materialet är brunt och inte svart.</p>
+          <p>Brunkol innehåller också mycket vatten och måste torkas innan det kan användas. Efter torkningen ligger kolhalten på ungefär 75 procent, men energivärdet är ändå <strong>lägre</strong> än stenkolets.</p>
+          <h2>Kolhalten avgör kvaliteten</h2>
+          <p>De olika sorterna bildar en serie: <strong>torv, brunkol, stenkol</strong>.</p>
+          <p>Ju längre omvandlingen har gått, desto mer vatten och andra ämnen har pressats ut. Och desto högre blir kolhalten.</p>
+          <p>Hög kolhalt betyder mer energi per kilo. Men det betyder också <strong>mer koldioxid per kilo</strong> — det är ju samma kol som brinner.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Hur ändras staplarna när du går uppför trappan?</li>
+              <li>Vad försvinner ur materialet på vägen?</li>
+              <li>Vilket steg pågår fortfarande i Sverige i dag?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-g1.svg" alt="Fyra steg i en trappa: torv, brunkol, stenkol och ett fjärde ännu mer förkolnat steg. För varje steg visas kolhalten som en stapel, och den ökar uppåt.">
+            <figcaption>Samma material i olika stadier. Ju längre processen gått, desto mer kol.</figcaption>
+          </figure>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <p class="inledning">Kol är det fossila bränsle som har använts längst och som ger mest koldioxid per energienhet. Ungefär <strong>25 procent</strong> av världens energi kommer från förbränning av kol.</p>
+          <p>Men "kol" är inte ett enda ämne. Det finns flera sorter, bildade under olika tidsperioder och med olika mycket kol i sig. Och kolet används inte bara som bränsle — utan koks skulle vi inte ha något stål.</p>
+          <h2>Kol är inte rent kol</h2>
+          <p>Det man bryter i en kolgruva är inte grundämnet kol i ren form.</p>
+          <p>Det är ett material som till stor del består av kol, men som också innehåller <strong>kolväten</strong>, vatten, svavel och olika mineralämnen. Hur stor andelen rent kol är varierar mellan olika sorter, och det är just den andelen som avgör kvaliteten.</p>
+          <h2>Stenkol bildades under karbon</h2>
+          <p><strong>Stenkol</strong> bildades av landväxter som levde för <strong>300 till 350 miljoner år sedan</strong>, under en period som kallas karbon — namnet kommer av att det var då kolet bildades.</p>
+          <p>Då fanns enorma sumpskogar med ormbunksträd och andra växter. När de dog sjönk de ner i syrefattiga träsk, där nedbrytningen blev ofullständig. Lager på lager av växtmaterial pressades samman under högt tryck.</p>
+          <p>Stenkol innehåller <strong>75 till 90 procent kol</strong>. Ju äldre kolet är, desto högre är andelen.</p>
+          <p>Stenkol drev ångmaskinerna under industrialiseringen. I dag används det framför allt i stålproduktion och elproduktion.</p>
+          <h2>Brunkol är yngre och blötare</h2>
+          <p><strong>Brunkol</strong> bildades betydligt senare, för <strong>2 till 65 miljoner år sedan</strong>.</p>
+          <p>Eftersom omvandlingen pågått kortare tid är kolhalten lägre, <strong>60 till 70 procent</strong>. Det är därför materialet är brunt i stället för svart.</p>
+          <p>Brunkol innehåller dessutom mycket vatten och måste torkas innan det kan användas. Efter torkning ligger kolhalten på ungefär 75 procent, men <strong>energivärdet är ändå lägre</strong> än stenkolets.</p>
+          <h2>Kolhalten avgör kvaliteten</h2>
+          <p>De olika sorterna bildar en serie: torv, brunkol, stenkol.</p>
+          <p>Ju längre omvandlingen har gått, desto mer vatten och andra ämnen har pressats ut, och desto högre är kolhalten. Och ju högre kolhalt, desto mer energi per kilo.</p>
+          <p>Men också desto mer koldioxid per kilo — det är samma kol som brinner.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-g1.svg" alt="Fyra steg i en trappa: torv, brunkol, stenkol och ett fjärde ännu mer förkolnat steg. För varje steg visas kolhalten som en stapel, och den ökar uppåt.">
+            <figcaption>Torv, brunkol och stenkol är inte olika ämnen utan olika långt kommen förkolning.</figcaption>
+          </figure>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Kolserien är en enda process som avbrutits vid olika punkter</h2>
+          <p>Standardtexten presenterar torv, brunkol och stenkol som tre sorters kol med olika kolhalt. Det är korrekt, men uppdelningen är skarpare i texten än i verkligheten.</p>
+          <p>De tre är inte tre ämnen. De är <strong>samma material i tre stadier</strong> av en process som aldrig är avslutad.</p>
+          <p>Processen heter förkolning och innebär att vatten, syre och väte gradvis pressas och drivs ut ur det organiska materialet, medan kolet blir kvar. Ju längre den gått, desto mindre av allt annat finns kvar.</p>
+          <p>Det finns ett fjärde stadium som texten inte nämner: <strong>antracit</strong>, med över 90 procent kol. Antracit är så förkolnat att det knappt ryker när det brinner, och det brinner med nästan ingen låga alls — de flyktiga ämnena som ger en låga är borta.</p>
+          <p>Vad som avgör var ett kolfält hamnar i serien är inte bara ålder, utan hur djupt det begravts och hur varmt det blivit. Ett ungt kol som hamnat djupt kan vara mer förkolnat än ett gammalt som legat nära ytan.</p>
+          <p>Det förklarar också varför koks liknar antracit. Torrdestillationen gör på några timmar vid 1000 grader det som naturen gör på miljontals år: driver ut allt flyktigt och lämnar kolet.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-g1.svg" alt="Fyra steg i en trappa: torv, brunkol, stenkol och ett fjärde ännu mer förkolnat steg. För varje steg visas kolhalten som en stapel, och den ökar uppåt.">
+            <figcaption>Torv, brunkol och stenkol är inte olika ämnen utan olika långt kommen förkolning.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> Att dela in kol i sorter är praktiskt, och gränserna används i handeln med kol. Men naturen ritar inga gränser. Mellan brunkol och stenkol finns allt däremellan, och vilken etikett ett kolfält får är delvis en fråga om var någon valt att dra linjen.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Koks framställs ur stenkol och används till järn ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Upphettning utan luft</h2>
+          <p>Stenkol går bra att elda med. Men för att framställa järn duger det inte — då behövs ett renare material.</p>
+          <p>Det får man genom <strong>torrdestillation</strong>.</p>
+          <p>Stenkol hettas upp till ungefär <strong>1000 grader utan tillgång till luft</strong>. Eftersom det inte finns något syre kan kolet inte brinna. I stället drivs de ämnen ut som förångas lätt.</p>
+          <p>Det som avgår är <strong>tjära och gaser</strong>, framför allt metan och koloxid. Gaserna kan användas som bränsle.</p>
+          <h2>Det som blir kvar är koks</h2>
+          <p>Kvar i ugnen ligger <strong>koks</strong> — ett poröst material som är nästan rent kol.</p>
+          <p>Koks är lättare än stenkol och ryker inte lika mycket när det brinner. Det beror på att de flyktiga ämnena redan är borta.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vilken av de två ugnarna får luft, och vilken får det inte?</li>
+              <li>Vad kommer ut upptill ur masugnen?</li>
+              <li>Var tar syret från järnmalmen vägen?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-g2.svg" alt="Till vänster en sluten ugn där stenkol hettas till 1000 grader utan luft, så att tjära och gaser drivs ut och koks blir kvar. Till höger en masugn där koks och järnmalm går in, luft blåses in nedtill, smält järn kommer ut i botten och koldioxid upptill.">
+            <figcaption>Först drivs det flyktiga ut ur stenkolet. Sedan använder man koksen för att få syret ur järnmalmen.</figcaption>
+          </figure>
+          <h2>Koks används för att framställa järn</h2>
+          <p>Järn finns inte som järn i marken.</p>
+          <p>Det man bryter är <strong>järnmalm</strong>, där järnet sitter bundet till syre. För att få användbart järn måste syret bort.</p>
+          <p>Det är där koksen kommer in. Kol binder syre <strong>hellre</strong> än järn gör. I masugnen tar kolet syret från järnmalmen, och kvar blir smält järn.</p>
+          <p>Men syret försvinner inte. Det följer med kolet och bildar <strong>koldioxid</strong>.</p>
+          <p>Det är därför ståltillverkning ger så stora utsläpp. Koldioxiden är inte ett spill som kan renas bort — den är en del av själva reaktionen. Syret måste ta vägen någonstans.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Torrdestillation driver ut det flyktiga</h2>
+          <p class="inledning">Stenkol går att använda direkt som bränsle, men för järnframställning duger det inte. Då krävs ett renare material.</p>
+          <p>Det framställs genom <strong>torrdestillation</strong>. Stenkol hettas upp till ungefär <strong>1000 grader utan tillgång till luft</strong>. Eftersom det inte finns något syre kan kolet inte brinna. I stället drivs de flyktiga ämnena ut.</p>
+          <p>Det som avgår är <strong>tjära och gaser</strong>, framför allt metan och koloxid. Gaserna kan i sin tur användas som bränsle.</p>
+          <h2>Det som blir kvar är koks</h2>
+          <p>Kvar i ugnen ligger <strong>koks</strong> — ett poröst, nästan rent kolmaterial.</p>
+          <p>Koks är lättare än stenkol och ryker inte lika mycket när det brinner, eftersom de flyktiga ämnena redan är borta.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-g2.svg" alt="Till vänster en sluten ugn där stenkol hettas till 1000 grader utan luft, så att tjära och gaser drivs ut och koks blir kvar. Till höger en masugn där koks och järnmalm går in, luft blåses in nedtill, smält järn kommer ut i botten och koldioxid upptill.">
+            <figcaption>Torrdestillationen sker utan luft, masugnen med. Skillnaden avgör vad som händer med kolet.</figcaption>
+          </figure>
+          <h2>Koks används för att framställa järn</h2>
+          <p>Järn finns inte som järn i marken. Det sitter bundet till syre i <strong>järnmalm</strong>.</p>
+          <p>För att få fram järn måste syret bort, och det är där koksen kommer in. Kolet binder syret hellre än järnet gör. I masugnen tar kolet syret från järnmalmen, och kvar blir smält järn.</p>
+          <p>Men syret måste ta vägen någonstans, och det gör det: det bildas <strong>koldioxid</strong>.</p>
+          <p>Det är därför ståltillverkning ger så stora utsläpp. Koldioxiden är inte ett spill som kan renas bort — den är en del av själva reaktionen.</p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Kolet reagerar inte direkt med järnmalmen</h2>
+          <p>Standardtexten säger att kolet i masugnen tar syret från järnmalmen. Det är rätt i sak, men det sker inte som texten antyder — det är inte koksen själv som möter malmen.</p>
+          <p>I masugnen sker det i två steg.</p>
+          <p>Först reagerar koksen med syre från den inblåsta luften. Vid de höga temperaturerna bildas inte koldioxid utan <strong>kolmonoxid</strong>, CO — samma ämne som annars är en farlig biprodukt.</p>
+          <p>Det är kolmonoxiden som gör arbetet. Den stiger uppåt genom malmen och tar syret ur järnoxiden:</p>
+          <div class="formel">\[\ce{Fe2O3 + 3 CO -> 2 Fe + 3 CO2}\]</div>
+          <p>Varför gör man så? Därför att kolmonoxid är en gas. En gas kan tränga in i varje por i malmen och nå järnoxiden överallt. Fast koks kan bara röra malmen där bitarna råkar ligga mot varandra.</p>
+          <p>Det är alltså kontaktytan som avgör. Samma princip som gjorde aktivt kol användbart i delkapitel 1: en reaktion sker där ämnena möts, och en gas möter allt.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-g2.svg" alt="Till vänster en sluten ugn där stenkol hettas till 1000 grader utan luft, så att tjära och gaser drivs ut och koks blir kvar. Till höger en masugn där koks och järnmalm går in, luft blåses in nedtill, smält järn kommer ut i botten och koldioxid upptill.">
+            <figcaption>Torrdestillationen sker utan luft, masugnen med. Skillnaden avgör vad som händer med kolet.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> "Kolet tar syret från järnet" stämmer om man ser på vad som går in och vad som kommer ut. Men mellan dem finns ett steg, och det steget förklarar varför masugnen är byggd som den är — hög, med luft som blåses in nedtill och gas som stiger genom malmen ovanför.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Torv är på väg att bli kol ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Torv är halvt förmultnade växter</h2>
+          <p><strong>Torv</strong> bildas i syrefattiga våtmarker — i mossar och kärr.</p>
+          <p>Där dör växter varje år, men syrebristen gör att de bara delvis bryts ner. Materialet samlas på hög, år efter år, och blir till torv.</p>
+          <p>Torv är alltså det <strong>första steget</strong>. Om torven begravs under sediment och utsätts för tryck under miljontals år blir den så småningom brunkol.</p>
+          <h2>Torvmarker täcker en sjundedel av Sverige</h2>
+          <p>Ungefär <strong>15 procent</strong> av Sveriges yta är torvmark. Det är alltså ingen liten företeelse — det är en stor del av landet.</p>
+          <p>Torvmarkerna gör flera viktiga saker.</p>
+          <p>De <strong>lagrar kol</strong>. All den halvt nedbrutna växtmassan är kol som inte finns i luften.</p>
+          <p>De <strong>håller kvar vatten</strong> i landskapet och påverkar hur vatten rör sig mellan mark och vattendrag.</p>
+          <p>Och de är livsmiljö för <strong>arter som inte finns någon annanstans</strong>.</p>
+          <p>En torvmark som dikas ut eller bryts släpper ifrån sig det kol den lagrat.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Kan du se rester av växtdelar i torvlagret?</li>
+              <li>Var i bilden finns vattnet?</li>
+              <li>Vad tror du händer med torven om marken dikas ut och vattnet försvinner?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-g3.webp" alt="En torvmark i genomskärning. Överst växer mossa och tuvull. Under ytan ligger ett tjockt lager mörkbrun torv där man fortfarande kan se rester av växtdelar. Vatten står kvar i torven.">
+            <figcaption>Torv är växter som bara delvis brutits ner. Vattnet är det som håller nedbrytningen borta.</figcaption>
+          </figure>
+          <h2>Som bränsle är torv marginellt</h2>
+          <p>I Sverige står torv för ungefär <strong>0,5 procent</strong> av bränsleanvändningen. Det är nästan ingenting.</p>
+          <p>Skälet är att torv är besvärligt. Råtorv innehåller <strong>80 till 90 procent vatten</strong>. Den måste torkas, och torkning kostar både tid och energi.</p>
+          <p>Efter torkning ligger kolhalten på 55 till 60 procent — alltså lägre än i brunkol.</p>
+          <p>Torv innehåller dessutom <strong>svavel och giftiga ämnen</strong>, precis som kol, och de frigörs vid förbränning.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Torv är delvis förmultnade växtdelar</h2>
+          <p class="inledning"><strong>Torv</strong> bildas i syrefattiga våtmarker — i mossar och kärr.</p>
+          <p>Där dör växter varje år, men syrebristen gör att de bara delvis bryts ner. Materialet samlas på hög, år efter år, och blir till torv.</p>
+          <p>Torv är alltså det första steget. Begravs den under sediment och utsätts för tryck under miljontals år blir den så småningom <strong>brunkol</strong>.</p>
+          <h2>Torvmarker täcker en sjundedel av Sverige</h2>
+          <p>Ungefär <strong>15 procent</strong> av Sveriges yta är torvmark. Det är en stor del av landet.</p>
+          <p>Torvmarkerna har flera viktiga funktioner. De <strong>lagrar stora mängder kol</strong>, de påverkar vattenbalansen i landskapet genom att hålla kvar vatten, och de är livsmiljö för arter som inte finns någon annanstans.</p>
+          <p>En torvmark som dikas ut eller bryts släpper ifrån sig det kol den lagrat.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-g3.webp" alt="En torvmark i genomskärning. Överst växer mossa och tuvull. Under ytan ligger ett tjockt lager mörkbrun torv där man fortfarande kan se rester av växtdelar. Vatten står kvar i torven.">
+            <figcaption>I den vattenmättade torven når inget syre ner, och därför fortsätter lagret att växa.</figcaption>
+          </figure>
+          <h2>Som bränsle är torv marginellt</h2>
+          <p>I Sverige står torv för ungefär <strong>0,5 procent</strong> av bränsleanvändningen.</p>
+          <p>Skälet är att torv är besvärligt. Råtorv innehåller <strong>80 till 90 procent vatten</strong> och måste torkas, vilket kostar både tid och energi. Efter torkning ligger kolhalten på 55 till 60 procent, alltså lägre än brunkolets.</p>
+          <p>Torv innehåller dessutom, precis som kol, <strong>svavel och giftiga ämnen</strong> som frigörs vid förbränning.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>En våtmark som dikas ut byter sida</h2>
+          <p>Standardtexten säger att en torvmark som dikas ut släpper ifrån sig det kol den lagrat. Det låter som att kolet rinner ut. Det gör det inte — det bryts ner, och det är dräneringen som gör det möjligt.</p>
+          <p>Så länge torven ligger under vatten når inget syre ner. Nedbrytarna arbetar långsamt och ofullständigt, och därför fortsätter torven att växa. En växande torvmark <strong>tar upp</strong> kol ur atmosfären, år efter år.</p>
+          <p>Dikas marken ut sjunker vattennivån och syre når ner i torven. Nu kan nedbrytarna arbeta som vanligt, och den torv som byggts upp under tusentals år bryts ner på årtionden. Kolet blir koldioxid.</p>
+          <p>En och samma torvmark kan alltså vara antingen en <strong>kolsänka</strong> eller en <strong>kolkälla</strong>. Vad som avgör är vattnet.</p>
+          <p>Det är därför utdikade torvmarker räknas med i länders utsläpp, och därför man på senare år börjat lägga igen diken för att låta gamla våtmarker återvätas. Sverige har ungefär en fjärdedel av sina torvmarker utdikade, framför allt för skogsbruk och jordbruk.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-g3.webp" alt="En torvmark i genomskärning. Överst växer mossa och tuvull. Under ytan ligger ett tjockt lager mörkbrun torv där man fortfarande kan se rester av växtdelar. Vatten står kvar i torven.">
+            <figcaption>I den vattenmättade torven når inget syre ner, och därför fortsätter lagret att växa.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> Standardnivån behandlar torvmarken som ett lager — något som innehåller kol. Det är sant, men det viktigare är att den är en <strong>process</strong>. Den pågår åt ett håll eller åt det andra, och människan bestämmer åt vilket genom att styra vattnet.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <!-- Testa dig själv utelämnad: kortsvars-JSON saknas (kapitel/organisk-kemi/data/kortsvar/avsnitt-3-kol-koks-och-torv.json) – knappen kommer tillbaka när filen byggts -->
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-3-kol-koks-och-torv.json"
+           data-avsnitt="a3_kol-koks-och-torv">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-3-kol-koks-och-torv.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a3_kol-koks-och-torv';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'fossila-branslen';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

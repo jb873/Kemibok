@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 274" width="760" height="274" role="img" aria-labelledby="t">
+  <title id="t">En tabell med olja, naturgas och kol. För varje bränsle står vad det bildades av, var det bildades, och hur stor andel av världens energi det står för, visat som en stapel</title>
+  <text x="65" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668" >Bränsle</text>
+  <text x="195" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668" >Bildades av</text>
+  <text x="330" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668" >Bildades i</text>
+  <text x="412" y="28"    font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668" text-anchor="start">Andel av världens energi</text>
+  <line x1="16" y1="38" x2="744" y2="38" stroke="#2d4a35" stroke-width="1.4" stroke-linecap="round" />
+  <text x="65" y="80" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">Olja</text>
+  <text x="195" y="80" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">plankton</text>
+  <text x="330" y="80" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">havet</text>
+  <rect x="412" y="63" width="219.38" height="22" fill="#5a9668" rx="3" data-andel="32.5"/>
+  <text x="639.38" y="79" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" text-anchor="start">30–35 %</text>
+  <line x1="16" y1="102" x2="744" y2="102" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="65" y="136" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">Naturgas</text>
+  <text x="195" y="136" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">plankton</text>
+  <text x="330" y="136" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">havet</text>
+  <rect x="412" y="119" width="162" height="22" fill="#5a9668" rx="3" data-andel="24"/>
+  <text x="582" y="135" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" text-anchor="start">23–25 %</text>
+  <line x1="16" y1="158" x2="744" y2="158" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="65" y="192" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">Kol</text>
+  <text x="195" y="192" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">landväxter</text>
+  <text x="330" y="192" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16">sumpmarker</text>
+  <rect x="412" y="175" width="168.75" height="22" fill="#5a9668" rx="3" data-andel="25"/>
+  <text x="588.75" y="191" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" text-anchor="start">ungefär 25 %</text>
+  <line x1="16" y1="214" x2="744" y2="214" stroke="#2d4a35" stroke-width="1.4" stroke-linecap="round" />
+  <text x="380" y="248" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">tillsammans ungefär fyra femtedelar av all energi</text>
+</svg>

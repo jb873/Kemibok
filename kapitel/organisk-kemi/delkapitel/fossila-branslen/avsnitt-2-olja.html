@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olja – Fossila bränslen och förbränning – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Fossila bränslen och förbränning</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">2. Olja</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 2</span>
+      <h1>Olja</h1>
+      <p class="subtitel">— från råolja i berggrunden till bensin, plast och asfalt —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Råolja bildades av havets organismer</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Fraktionerad destillation delar upp råoljan</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Krackning och oljan som råvara</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-olja">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Råolja bildades av havets organismer ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Plankton på havets botten</h2>
+          <p>Olja bildades av <strong>plankton</strong> — små växter och djur som levde i havet.</p>
+          <p>När de dog sjönk de till botten. Där täcktes de av lera. Bottenslammet var syrefattigt, så nedbrytarna kunde inte bryta ner materialet.</p>
+          <p>En del av kolet blev kvar och begravdes.</p>
+          <h2>Temperaturen avgjorde vad det blev</h2>
+          <p>Ju djupare materialet hamnade, desto varmare blev det.</p>
+          <p>Mellan ungefär <strong>60 och 120 grader</strong> omvandlas materialet långsamt till de kolväten som bildar <strong>råolja</strong>. Det tar miljontals år.</p>
+          <p>Men blir det varmare än så händer något annat. Då bildas i stället mer <strong>naturgas</strong>.</p>
+          <p>Det är alltså djupet och värmen som avgör vad man hittar. Svalare lager ger olja, varmare ger gas. Därför hittar man ofta båda på samma ställe, fast i olika lager.</p>
+          <h2>Oljan samlas i fällor</h2>
+          <p>Oljan stannar inte där den bildades.</p>
+          <p>Olja är <strong>lättare än vatten</strong> och rör sig långsamt uppåt genom sprickor och porer i berget. Den fortsätter så länge berget släpper igenom.</p>
+          <p>Till slut stöter den på ett lager som är tätt. Där stannar den, och samlas i en <strong>oljefälla</strong>.</p>
+          <p>I fällan ordnar sig ämnena efter vikt: gasen överst, oljan i mitten, vattnet underst.</p>
+          <p>Men det finns ingen underjordisk sjö av olja. Oljan sitter i <strong>små hålrum och sprickor i berget</strong>, ungefär som vatten inuti en tvättsvamp.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>I vilken ordning ligger gas, olja och vatten? Varför just så?</li>
+              <li>Vad är det som hindrar oljan från att fortsätta uppåt?</li>
+              <li>Titta på förstoringen. Var finns oljan egentligen?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-f1.svg" alt="Genomskärning av berggrund. Under ett tätt berglager ligger naturgas överst, olja i mitten och vatten underst. En detaljförstoring visar att oljan sitter i små hålrum mellan bergkorn.">
+            <figcaption>Gasen överst, oljan i mitten, vattnet underst — de ordnar sig efter vikt.</figcaption>
+          </figure>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <p class="inledning">Olja är det fossila bränsle vi använder mest. Ungefär <strong>30–35 procent</strong> av världens energi kommer från förbränning av olja.</p>
+          <p>Men råoljan som pumpas upp går inte att använda som den är. Den är en blandning av hundratals olika kolväten, och först när blandningen delas upp blir den användbar — som bensin, diesel, fotogen, asfalt och mycket annat.</p>
+          <p>I det här avsnittet följer vi oljan från havsbotten till bensinmack.</p>
+          <h2>Plankton sjönk till syrefattiga bottnar</h2>
+          <p>Olja bildades av <strong>små växter och djur som levde i havet</strong> — framför allt plankton.</p>
+          <p>När organismerna dog sjönk de till botten. Där täcktes de av lera och andra sediment. I bottenslammet var det syrefattigt, och nedbrytarna kunde inte bryta ner materialet fullständigt. En del av kolet blev därför kvar.</p>
+          <p>Det är samma sak som hände i kärret, men med en annan följd: här blev materialet begravt i stället för att avgå som gas.</p>
+          <h2>Temperaturen avgjorde vad det blev</h2>
+          <p>Ju djupare materialet begravdes, desto varmare blev det.</p>
+          <p>Vid temperaturer mellan ungefär <strong>60 och 120 grader</strong> omvandlades det organiska materialet långsamt till de kolväten som bildar råolja. Processen tog miljontals år.</p>
+          <p>Blir det varmare än så bildas i stället mer <strong>naturgas</strong>. Djupet och temperaturen avgör alltså vilket bränsle som bildas — olja i det svalare intervallet, gas i det varmare.</p>
+          <p>Det är en förklaring till att olja och naturgas ofta hittas på samma ställen, men i olika lager.</p>
+          <h2>Oljan samlas i fällor</h2>
+          <p>Olja och gas stannar inte där de bildades.</p>
+          <p>Olja är <strong>lättare än vatten</strong> och rör sig långsamt uppåt genom porer och sprickor i berggrunden. Så länge berget är poröst fortsätter den, tills den når ett lager som är tätt. Där stannar den och samlas i en <strong>oljefälla</strong>.</p>
+          <p>I en sådan fälla ligger gasen överst, oljan i mitten och vattnet underst — de tre ordnar sig efter densitet.</p>
+          <p>Men det finns inga underjordiska sjöar av olja. Oljan sitter i <strong>små hålrum och sprickor i porösa bergarter</strong>, ungefär som vatten i en tvättsvamp.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-f1.svg" alt="Genomskärning av berggrund. Under ett tätt berglager ligger naturgas överst, olja i mitten och vatten underst. En detaljförstoring visar att oljan sitter i små hålrum mellan bergkorn.">
+            <figcaption>Oljan rör sig uppåt genom poröst berg tills den stoppas av ett tätt lager.</figcaption>
+          </figure>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Oljefönstret har både ett golv och ett tak</h2>
+          <p>Standardtexten säger att olja bildas mellan 60 och 120 grader och att det blir mer gas när det är varmare. Det är rätt, och intervallet har ett namn: <strong>oljefönstret</strong>.</p>
+          <p>Men fönstret har två kanter, och båda beror på samma sak.</p>
+          <p><strong>Under ungefär 60 grader</strong> är det för kallt. Kerogenet ligger stilla och bryts inte ner till mindre molekyler. Materialet blir kvar som kerogen — det är vad oljeskiffer är.</p>
+          <p><strong>Över ungefär 150 grader</strong> är det för varmt. Nu bryts inte bara kerogenet ner, utan även oljemolekylerna som redan bildats. Långa kedjor slås sönder till allt kortare, och till slut återstår mest metan.</p>
+          <p>Det är alltså samma process som i ett raffinaderi. Krackningen som beskrivs i 2.3 är exakt vad naturen gör med olja som hamnar för djupt — fast långsammare och utan katalysator.</p>
+          <p>Djupet avgör därför vad man hittar. Ungefär två till fyra kilometers djup ger olja. Djupare än så ger gas. Grundare ger kerogen som aldrig mognat.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-f1.svg" alt="Genomskärning av berggrund. Under ett tätt berglager ligger naturgas överst, olja i mitten och vatten underst. En detaljförstoring visar att oljan sitter i små hålrum mellan bergkorn.">
+            <figcaption>Oljan rör sig uppåt genom poröst berg tills den stoppas av ett tätt lager.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> Standardnivån säger att varmare ger mer gas, vilket kan låta som att gasen bildas i stället för oljan. Den bildas ofta <strong>av</strong> oljan. Naturgas på stort djup är inte ett annat spår — det är olja som gått för långt.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Fraktionerad destillation delar upp råoljan ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Råolja går inte att använda</h2>
+          <p>Oljan som pumpas upp kallas <strong>råolja</strong> eller <strong>petroleum</strong>. Ungefär 80 procent av dess vikt är kol.</p>
+          <p>Råolja är ingen enhetlig vätska. Den är en <strong>blandning</strong> av hundratals olika kolväten — korta kedjor som är gaser, medellånga som är vätskor, och långa som nästan är fasta.</p>
+          <p>Ingen bil går på råolja. För att blandningen ska bli användbar måste den delas upp. Det kallas att oljan <strong>raffineras</strong>.</p>
+          <h2>Kokpunkterna gör uppdelningen möjlig</h2>
+          <p>Uppdelningen bygger på något vi redan kan: <strong>kolväten med olika långa kedjor kokar vid olika temperatur</strong>.</p>
+          <p>Metoden kallas <strong>fraktionerad destillation</strong> och sker i ett <strong>fraktioneringstorn</strong>.</p>
+          <p>Råoljan hettas upp till ungefär <strong>400 grader</strong> och leds in längst ner i tornet. Det mesta förångas och stiger uppåt.</p>
+          <p>Tornet är kallast högst upp. När en gas kommer till en nivå där det är kallare än dess kokpunkt blir den vätska igen och samlas upp.</p>
+          <p>De kortaste kolvätena har lägst kokpunkt och hinner därför högst upp. De längsta blir vätska nästan direkt.</p>
+          <p>Varje sådan del kallas en <strong>fraktion</strong>.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Var i tornet är det varmast, och var är det kallast?</li>
+              <li>Jämför kedjelängderna vid uttagen. Hur ändras de nedåt?</li>
+              <li>Varför hamnar asfalten i botten och inte högst upp?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-f2.svg" alt="Ett fraktioneringstorn i genomskärning. Råolja värms till 400 grader och leds in nedtill. Uppåt i tornet blir det kallare, och olika fraktioner tas ut på olika nivåer — gaser högst upp, sedan bensin, fotogen, diesel, smörjoljor, och asfalt i botten.">
+            <figcaption>Ju kortare kolkedja, desto högre upp i tornet hamnar ämnet.</figcaption>
+          </figure>
+          <h2>Varje fraktion har sin användning</h2>
+          <p><strong>Högst upp:</strong> gaser. Metan blir naturgas, etan blir råvara till plast, propan och butan blir gasol.</p>
+          <p><strong>Sedan:</strong> bensin, med fem till tio kolatomer.</p>
+          <p><strong>Därefter:</strong> fotogen, som används som flygbränsle.</p>
+          <p><strong>Längre ner:</strong> dieselolja med tio till tjugotvå kolatomer, och sedan tjockolja och smörjmedel.</p>
+          <p><strong>I botten:</strong> det som aldrig förångades. Det blir asfalt till vägar och takpapp.</p>
+          <p>Lägg märke till ordningen. Den följer exakt kedjelängden — precis som kokpunktskurvan i förra delkapitlet.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Råolja går inte att använda som den är</h2>
+          <p class="inledning">Den olja som pumpas upp kallas <strong>råolja</strong> eller <strong>petroleum</strong>. Ungefär 80 procent av dess vikt är kol.</p>
+          <p>Råolja är ingen enhetlig vätska utan en blandning av mycket olika kolväten — från de allra kortaste, som är gaser, till mycket långa kedjor som är nästan fasta.</p>
+          <p>För att blandningen ska bli användbar måste den delas upp i sina beståndsdelar. Det kallas att oljan <strong>raffineras</strong>.</p>
+          <h2>Kolvätenas olika kokpunkter gör uppdelningen möjlig</h2>
+          <p>Uppdelningen bygger på något vi redan känner till: <strong>kolväten med olika långa kedjor har olika kokpunkt</strong>.</p>
+          <p>Metoden kallas <strong>fraktionerad destillation</strong> och sker i ett <strong>fraktioneringstorn</strong>.</p>
+          <p>Råoljan hettas upp till ungefär <strong>400 grader</strong> och leds in nedtill i tornet. De flesta kolvätena förångas. Gasen stiger uppåt, och tornet blir svalare ju högre upp man kommer.</p>
+          <p>När en gas når en nivå där temperaturen ligger under dess kokpunkt kondenserar den och samlas upp. De kortaste kolvätena har lägst kokpunkt och stiger därför högst innan de blir vätska. De längsta kondenserar nästan direkt.</p>
+          <p>Varje sådan uppsamlad del kallas en <strong>fraktion</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-f2.svg" alt="Ett fraktioneringstorn i genomskärning. Råolja värms till 400 grader och leds in nedtill. Uppåt i tornet blir det kallare, och olika fraktioner tas ut på olika nivåer — gaser högst upp, sedan bensin, fotogen, diesel, smörjoljor, och asfalt i botten.">
+            <figcaption>Fraktioneringen sorterar kolvätena efter kokpunkt, och kokpunkten följer kedjelängden.</figcaption>
+          </figure>
+          <h2>Varje fraktion har sin användning</h2>
+          <p>Högst upp samlas <strong>gaserna</strong>. Metan används som naturgas, etan blir råvara för plast, och propan och butan blir gasol till tändare och campingkök.</p>
+          <p>Därunder kommer <strong>bensin</strong>, med fem till tio kolatomer, och sedan <strong>fotogen</strong>, som bland annat används som flygbränsle.</p>
+          <p>Längre ner samlas <strong>dieselolja</strong> med tio till tjugotvå kolatomer, och därefter tjockolja och <strong>smörjmedel</strong>.</p>
+          <p>Det som inte förångas alls blir kvar i botten. Det används till <strong>asfalt</strong> på vägar och till takpapp.</p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Fraktionerna är fortfarande blandningar</h2>
+          <p>Standardtexten beskriver hur destillationen delar upp råoljan i fraktioner. Det kan låta som att man till slut får rena ämnen ut ur tornet. Det gör man inte.</p>
+          <p>En fraktion är inte ett ämne utan en <strong>grupp ämnen med ungefär samma kokpunkt</strong>. Bensin är inte en molekyl; det är allt som kokar mellan ungefär 40 och 200 grader — hundratals olika kolväten med fem till tio kolatomer, raka, grenade och ringformade.</p>
+          <p>Det gör "bensin" till något annat än ett kemiskt namn. Det är en <strong>specifikation</strong>: en beskrivning av vad en blandning ska klara, inte av vad den innehåller.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-f2.svg" alt="Ett fraktioneringstorn i genomskärning. Råolja värms till 400 grader och leds in nedtill. Uppåt i tornet blir det kallare, och olika fraktioner tas ut på olika nivåer — gaser högst upp, sedan bensin, fotogen, diesel, smörjoljor, och asfalt i botten.">
+            <figcaption>Fraktioneringen sorterar kolvätena efter kokpunkt, och kokpunkten följer kedjelängden.</figcaption>
+          </figure>
+          <p>Den viktigaste egenskapen kallas oktantal. Det mäter hur väl bränslet motstår att självantända under tryck i motorn. Grenade kolväten klarar det bättre än raka, och därför blandar raffinaderiet medvetet in dem.</p>
+          <p>Två tankar bensin från olika länder kan alltså ha helt olika kemisk sammansättning och ändå vara samma vara.</p>
+          <p><strong>Om modellen.</strong> Destillationen sorterar efter en enda egenskap: kokpunkten. Allt som råkar koka vid samma temperatur hamnar tillsammans, oavsett hur molekylerna ser ut. Det är därför metoden är så användbar — och därför resultatet aldrig blir rent.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Krackning och oljan som råvara ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Bensinen räcker inte</h2>
+          <p>Fraktioneringen ger en viss mängd av varje fraktion. Hur mycket beror på vad just den råoljan innehåller.</p>
+          <p>Problemet är att vi inte vill ha det i den fördelningen. Vi vill ha mycket mer <strong>bensin</strong> än vad oljan ger, och mindre av de tyngsta fraktionerna.</p>
+          <h2>Krackning slår sönder kedjorna</h2>
+          <p>Lösningen kallas <strong>krackning</strong>.</p>
+          <p>Långa kolvätekedjor värms upp kraftigt, oftast med hjälp av en katalysator. Värmen gör att kedjorna <strong>slås sönder</strong> på mitten.</p>
+          <p>Ur en lång molekyl blir det två kortare. Fortsätter man får man kedjor med fem till tio kolatomer — alltså bensin.</p>
+          <p>Krackning gör det möjligt att bestämma vad raffinaderiet ska producera, i stället för att låta råoljan bestämma.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna kolatomerna i den övre raden och i de två nedre. Stämmer det?</li>
+              <li>Vad har hänt vid den gröna markeringen?</li>
+              <li>Vilken av de två nya molekylerna skulle kunna bli plast?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-f3.svg" alt="En lång kolvätekedja som delas i två kortare. Den vänstra delen är bensin. I den högra delens brottände har det bildats en dubbelbindning.">
+            <figcaption>Vid krackning slås en lång kedja sönder till två kortare.</figcaption>
+          </figure>
+          <h2>Olja är ett bra bränsle</h2>
+          <p>Olja är svår att ersätta som bränsle, och det finns skäl till det.</p>
+          <p>Den innehåller <strong>mycket energi per kilo</strong>. Den är <strong>vätska</strong>, vilket gör den lätt att pumpa, lagra och frakta. Och den går att dela upp i fraktioner som passar olika saker.</p>
+          <p>Olja används därför till el, uppvärmning och framför allt som <strong>motorbränsle</strong>. I fordon renas avgaserna av en <strong>katalysator</strong>, som vi kommer till i nästa avsnitt.</p>
+          <h2>Men det mesta av nyttan syns inte</h2>
+          <p>Nästan all olja förbränns. Men en liten del används till något helt annat.</p>
+          <p>Olja är råvara för <strong>plaster, färger, lösningsmedel och läkemedel</strong>.</p>
+          <p>Kommer du ihåg etenen som blev polyeten i förra delkapitlet? Den kom härifrån. Etenen framställs ur etan, och etanen kom ur råoljan.</p>
+          <p>En plastpåse och en tank bensin har alltså samma ursprung. Skillnaden är bara vad man valde att göra med kolvätena.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Krackning gör bensin av längre kedjor</h2>
+          <p class="inledning">Fraktioneringen ger en viss mängd av varje fraktion, bestämd av vad råoljan råkar innehålla.</p>
+          <p>Problemet är att efterfrågan inte ser likadan ut. Vi vill ha mycket mer <strong>bensin</strong> än vad råoljan naturligt ger, och mindre av de tyngsta fraktionerna.</p>
+          <p>Lösningen kallas <strong>krackning</strong>. Längre kolvätekedjor värms upp, ofta med hjälp av en katalysator, så att de <strong>slås sönder</strong> till kortare kedjor.</p>
+          <p>Ur långa molekyler får man på så sätt kedjor med fem till tio kolatomer — alltså bensin.</p>
+          <p>Krackning gör det möjligt att anpassa raffinaderiets produktion efter vad som behövs, i stället för efter vad råoljan råkar innehålla.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-f3.svg" alt="En lång kolvätekedja som delas i två kortare. Den vänstra delen är bensin. I den högra delens brottände har det bildats en dubbelbindning.">
+            <figcaption>Ur en lång molekyl blir kortare kedjor — och i brottytan bildas ofta en dubbelbindning.</figcaption>
+          </figure>
+          <h2>Olja är ett bra bränsle</h2>
+          <p>Olja har egenskaper som gör den svår att ersätta som bränsle.</p>
+          <p>Den innehåller <strong>mycket energi per kilo</strong>. Den är <strong>vätska</strong>, vilket gör den lätt att pumpa, lagra och transportera med tankbil, tåg eller fartyg. Och den går att dela upp i fraktioner som passar olika ändamål.</p>
+          <p>Olja används därför till elproduktion, uppvärmning och framför allt som <strong>motorbränsle</strong>.</p>
+          <p>I fordon renas avgaserna med en <strong>katalysator</strong>, som vi återkommer till i nästa avsnitt.</p>
+          <h2>Men den största nyttan är kanske inte bränslet</h2>
+          <p>Ungefär nittio procent av all olja förbränns. Den sista tiondelen används till något annat — och det är den delen som är svårast att ersätta.</p>
+          <p>Olja är nämligen råvara för <strong>plaster, färger, lösningsmedel och läkemedel</strong>.</p>
+          <p>Etenen som blev polyeten i förra delkapitlet kom härifrån. Den framställdes ur etan, som i sin tur kom ur råoljan.</p>
+          <p>Det betyder att en plastpåse och en tank bensin har samma ursprung. Skillnaden är bara vad man valde att göra med kolvätena.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Krackning ger inte bara bensin</h2>
+          <p>Standardtexten beskriver krackning som ett sätt att göra bensin av längre kedjor. Det är den viktigaste användningen, men det är inte allt som händer.</p>
+          <p>När en lång kedja slås sönder finns det inte alltid tillräckligt med väte för att båda bitarna ska bli mättade alkaner. Resultatet blir att en av bitarna får en <strong>dubbelbindning</strong> — alltså en alken.</p>
+          <p>Krackning producerar därför stora mängder <strong>eten och propen</strong> som biprodukter.</p>
+          <p>Och de biprodukterna är råvaran till plastindustrin. Etenen som blir polyeten kommer nästan alltid från krackning.</p>
+          <p>Det finns en variant av processen som utnyttjar detta med avsikt. I <strong>ångkrackning</strong> hettas kolväten upp med vattenånga till över 800 grader, just för att få ut så mycket alkener som möjligt. Den processen är i dag världens största enskilda källa till eten.</p>
+          <p>Här sluts alltså en cirkel från förra delkapitlet. Polymererna byggdes av omättade molekyler, eftersom bara de kan öppna sin dubbelbindning. Och de omättade molekylerna finns i stor skala just för att vi krackar olja.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-f3.svg" alt="En lång kolvätekedja som delas i två kortare. Den vänstra delen är bensin. I den högra delens brottände har det bildats en dubbelbindning.">
+            <figcaption>Ur en lång molekyl blir kortare kedjor — och i brottytan bildas ofta en dubbelbindning.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> Standardnivån behandlar krackning som en metod för att få mer bensin. Det är rätt i volym räknat. Men samma process är också förutsättningen för nästan all plast — och det är inte en bieffekt någon råkade upptäcka, utan något industrin i dag gör med avsikt.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <!-- Testa dig själv utelämnad: kortsvars-JSON saknas (kapitel/organisk-kemi/data/kortsvar/avsnitt-2-olja.json) – knappen kommer tillbaka när filen byggts -->
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-2-olja.json"
+           data-avsnitt="a2_olja">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-2-olja.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a2_olja';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'fossila-branslen';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

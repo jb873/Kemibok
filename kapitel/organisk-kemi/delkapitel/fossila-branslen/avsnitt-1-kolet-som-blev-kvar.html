@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kolet som blev kvar – Fossila bränslen och förbränning – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Fossila bränslen och förbränning</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">1. Kolet som blev kvar</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 1</span>
+      <h1>Kolet som blev kvar</h1>
+      <p class="subtitel">— hur döda organismer blev olja, kol och naturgas —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Fossila bränslen bildades av organismer som inte bröts ner</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Kolet lämnade det snabba kretsloppet</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Olja, kol och naturgas bildades på olika sätt</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-kolet-som-blev-kvar">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Fossila bränslen bildades av organismer som inte bröts ner ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Vanligtvis försvinner allt</h2>
+          <p>När en växt eller ett djur dör kommer nedbrytarna. Bakterier och svampar bryter ner materialet, och kolet i kroppen blir koldioxid som går tillbaka till luften.</p>
+          <p>Det är vad som händer med nästan allt levande. Kolet lånas och lämnas tillbaka.</p>
+          <h2>Utan syre stannar nedbrytningen</h2>
+          <p>Men nedbrytarna behöver <strong>syre</strong> för att arbeta.</p>
+          <p>På vissa ställen tar syret slut. I bottenslammet på en havsbotten, i ett kärr, i en sumpmark. Där finns så mycket dött material och så lite syre att nedbrytarna inte hinner med.</p>
+          <p>Då blir en del av materialet <strong>kvar</strong>. Det bryts inte ner, utan ligger på botten och begravs av lera och sand.</p>
+          <p>Det är samma sorts miljöer där metan bildas. Men här är det inte gasen som är intressant — det är det som blir liggande.</p>
+          <h2>Tryck och värme under miljontals år</h2>
+          <p>År efter år lägger sig nya lager av sediment ovanpå. Materialet hamnar allt djupare ner.</p>
+          <p>Djupt ner i berggrunden är trycket högt och temperaturen hög. Under <strong>miljontals år</strong> förändras det gamla organiska materialet långsamt.</p>
+          <p>Ur material från havet bildas <strong>olja och naturgas</strong>. Ur växter från sumpmarker bildas först <strong>torv</strong> och sedan <strong>kol</strong>.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Följ det gröna lagret genom alla tre bilderna. Vad händer med det?</li>
+              <li>Hur många sedimentlager finns i den första bilden jämfört med den sista?</li>
+              <li>Varför blir det varmare ju djupare materialet hamnar?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-e1.svg" alt="Tre bilder i genomskärning av en havsbotten. I den första sjunker dött material till botten. I den andra har sediment lagt sig ovanpå. I den tredje ligger materialet djupt ner och utsätts för tryck och värme.">
+            <figcaption>Materialet som inte bröts ner begravdes, och trycket och värmen gjorde resten.</figcaption>
+          </figure>
+          <p>Fossila bränslen bildades alltså inte snabbt. De tog längre tid att bli till än vad människan har funnits.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <p class="inledning">Kol, olja och naturgas kallas <strong>fossila bränslen</strong>. Ordet <em>fossil</em> kommer av latinets <em>fossus</em>, som betyder uppgrävd — och namnet passar, eftersom bränslena hämtas ur berggrunden.</p>
+          <p>Olja och naturgas består till stor del av <strong>kolväten</strong>, alltså samma sorts ämnen som förra delkapitlet handlade om. Kol är uppbyggt annorlunda och är ett mer komplicerat, mycket kolrikt material. Gemensamt för alla tre är att kolet en gång ingick i <strong>levande organismer</strong>.</p>
+          <p>Fossila bränslen står i dag för ungefär <strong>fyra femtedelar</strong> av världens energianvändning.</p>
+          <p>För att förstå hur de kunde bildas måste vi tillbaka till kolets kretslopp och ställa en fråga: vad händer om döda organismer <strong>inte</strong> bryts ner?</p>
+          <h2>Normalt återförs kolet till kretsloppet</h2>
+          <p>När växter och djur dör bryter <strong>nedbrytarna</strong> ner det organiska materialet. De har cellandning som alla andra organismer, och kolet återförs till atmosfären som koldioxid.</p>
+          <p>Det är det normala förloppet. Kol tas upp genom fotosyntesen, förs vidare genom näringskedjan och återvänder genom cellandning och nedbrytning. Samma kolatomer används om och om igen.</p>
+          <p>Men ibland bryts inte allt ner.</p>
+          <h2>I syrefria miljöer stannar nedbrytningen upp</h2>
+          <p>Nedbrytning kräver oftast syre. På vissa platser förbrukas syret snabbare än nytt hinner tillföras — i <strong>bottenslam på havs- och sjöbottnar, i kärr och i sumpmarker</strong>.</p>
+          <p>När syret tar slut går nedbrytningen mycket långsammare och blir ofullständig. Vissa mikroorganismer klarar sig utan syre, men en del av materialet blir kvar och begravs.</p>
+          <p>Vi har mött de här miljöerna förut. Det var där metan bildades och bubblade upp ur kärret. Nu är det en annan del av samma händelse som är viktig: <strong>allt kol försvinner inte som gas. En del blir kvar i sedimentet.</strong></p>
+          <h2>Tryck och värme gjorde resten under miljontals år</h2>
+          <p>Materialet som blev kvar täcktes efter hand av nya lager av <strong>lera, sand och andra sediment</strong>. Lager efter lager samlades ovanpå.</p>
+          <p>Ju djupare det begravdes, desto högre blev trycket — och temperaturen steg med djupet. Under <strong>tiotals till hundratals miljoner år</strong> utsattes materialet för värme, tryck och kemiska förändringar.</p>
+          <p>Stora organiska molekyler omvandlades långsamt till kolväten, och därmed till <strong>olja och naturgas</strong>. Växtmaterial i sumpmarker blev först <strong>torv</strong> och sedan, under fortsatt tryck och värme, <strong>kol</strong>.</p>
+          <p>Fossila bränslen bildades alltså inte snabbt. De är resultatet av processer som pågått under miljontals år.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-e1.svg" alt="Tre bilder i genomskärning av en havsbotten. I den första sjunker dött material till botten. I den andra har sediment lagt sig ovanpå. I den tredje ligger materialet djupt ner och utsätts för tryck och värme.">
+            <figcaption>Under miljontals år omvandlades det begravda organiska materialet till kolväten.</figcaption>
+          </figure>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Nästan allt bröts ner ändå</h2>
+          <p>Standardtexten beskriver hur organiskt material undgick nedbrytning och blev fossila bränslen. Det låter som en process som skedde regelbundet under miljontals år. Det gjorde den inte.</p>
+          <p>Det normala var alltid att materialet bröts ner. Uppskattningsvis <strong>mindre än en tiondels procent</strong> av allt organiskt material som någonsin bildats har undgått nedbrytning tillräckligt länge för att bli fossilt bränsle.</p>
+          <p>Fossila bränslen är alltså inte resultatet av en process som fungerade. De är resultatet av en läcka.</p>
+          <p>Det förklarar varför de är så ojämnt fördelade över jorden. Olja finns inte överallt, utan där mycket speciella villkor råkade uppfyllas samtidigt: hög produktion av plankton, syrefri botten, snabb begravning, rätt temperatur på rätt djup, och ett tätt berglager ovanför som höll kvar den. Fattas ett enda av villkoren blev det ingenting.</p>
+          <p>Mellansteget mellan organiskt material och olja har ett namn: <strong>kerogen</strong>. Det är ett segt, olösligt material som bildas när det begravda organiska materialet omvandlas under de första miljonerna åren. Först när kerogenet hettas upp tillräckligt börjar det avge kolväten.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-e1.svg" alt="Tre bilder i genomskärning av en havsbotten. I den första sjunker dött material till botten. I den andra har sediment lagt sig ovanpå. I den tredje ligger materialet djupt ner och utsätts för tryck och värme.">
+            <figcaption>Under miljontals år omvandlades det begravda organiska materialet till kolväten.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> Standardnivån beskriver hur fossila bränslen bildades. Det är korrekt, men det utelämnar hur osannolikt det var. Att bränslena är ändliga beror inte bara på att bildningen är långsam — utan på att den nästan aldrig lyckas.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Kolet lämnade det snabba kretsloppet ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Det snabba kretsloppet</h2>
+          <p>I delkapitel 1 följde vi en kolatom runt ett kretslopp. Den togs upp av en växt, hamnade i ett blad, åts kanske av ett djur, och kom till slut tillbaka till luften.</p>
+          <p>Det kan gå fort. En kolatom i ett löv kan vara tillbaka i luften inom ett år. Sitter den i en trädstam kan det dröja hundra år.</p>
+          <p>Men det handlar om år och årtionden. Därför kallas det <strong>det snabba kretsloppet</strong>.</p>
+          <h2>Det långa kretsloppet</h2>
+          <p>Kolet som begravdes i sedimenten gjorde inte den resan.</p>
+          <p>Det slutade cirkulera. Det blev liggande, först i bottenslam och sedan djupt nere i berggrunden, och där stannade det i <strong>miljontals år</strong>.</p>
+          <p>Också det kolet rör sig, men oerhört långsamt. Berg vittrar, kontinenter rör sig, vulkaner får utbrott. Ett varv i det <strong>långa kretsloppet</strong> kan ta hundratusentals eller miljontals år.</p>
+          <p>Skillnaden mellan de två kretsloppen är alltså inte vägen. Det är <strong>tiden</strong>.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Känner du igen den inre cirkeln från förra delkapitlet?</li>
+              <li>Hur lång tid tar ett varv i den inre slingan jämfört med den yttre?</li>
+              <li>Vilken pil är den enda som människan har skapat?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-e2.svg" alt="Kolets kretslopp med två slingor. Den inre snabba slingan går mellan atmosfär, växter, djur och nedbrytare på år till årtionden. En yttre slinga går ner i berggrunden där kol, olja och naturgas finns, och tillbaka upp genom förbränning.">
+            <figcaption>Den bleka pilen från förra delkapitlet har nu fått sin fortsättning.</figcaption>
+          </figure>
+          <h2>Förbränning flyttar kol mellan dem</h2>
+          <p>Nu händer något som naturen inte gör.</p>
+          <p>Vi borrar, gräver och pumpar upp kolet som legat stilla i miljontals år. Sedan eldar vi det. Kolet reagerar med syre, blir koldioxid och hamnar i luften.</p>
+          <p>Det tar några ögonblick.</p>
+          <p>Här finns skillnaden mellan att elda ved och att elda olja. Ett träd tog upp sitt kol ur luften för några årtionden sedan. När veden brinner går kolet tillbaka dit det kom ifrån — det stannar i det snabba kretsloppet.</p>
+          <p>Fossila bränslen gör något annat. De tillför luften kol som varit <strong>borta i miljontals år</strong>.</p>
+          <p>Vad det betyder tittar vi på i avsnitt 5.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Det snabba kretsloppet går på år till årtionden</h2>
+          <p class="inledning">Det kretslopp vi såg i delkapitel 1 kan kallas det <strong>snabba kolkretsloppet</strong>.</p>
+          <p>En kolatom tas upp av en växt, byggs in i ett blad, äts av ett djur eller faller till marken, och återvänder till atmosfären genom cellandning eller nedbrytning.</p>
+          <p>Det kan gå fort. Kol som binds in under en växtsäsong kan vara tillbaka i luften samma år. Sitter det i en trädstam kan det dröja ett sekel. Men tidsskalan är år till årtionden.</p>
+          <h2>Det långa kretsloppet går på miljontals år</h2>
+          <p>Kolet som begravdes i sedimenten följde en annan väg. Det slutade cirkulera och blev liggande i marken och berggrunden.</p>
+          <p>Där kan det stanna i <strong>miljontals år</strong>.</p>
+          <p>Det betyder inte att kolet lämnat kretsloppet för alltid. Det finns ett <strong>långsamt kretslopp</strong> också, där kol lagras i bergarter, förs ner i jordskorpan och återförs genom vittring och vulkanisk aktivitet.</p>
+          <p>Skillnaden mellan de två kretsloppen är alltså inte vägen, utan <strong>tiden</strong>. Det snabba mäts i år, det långsamma i miljoner år.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-e2.svg" alt="Kolets kretslopp med två slingor. Den inre snabba slingan går mellan atmosfär, växter, djur och nedbrytare på år till årtionden. En yttre slinga går ner i berggrunden där kol, olja och naturgas finns, och tillbaka upp genom förbränning.">
+            <figcaption>Förbränning av fossila bränslen kopplar ihop det långsamma kretsloppet med det snabba.</figcaption>
+          </figure>
+          <h2>Förbränning flyttar kol mellan kretsloppen</h2>
+          <p>När vi bryter kol, pumpar upp olja eller utvinner naturgas händer något som naturen inte gör.</p>
+          <p>Vi tar fram kol som varit borta ur cirkulation i miljontals år, och <strong>förbränner det</strong>. Kolet reagerar med syre, bildar koldioxid och hamnar i atmosfären.</p>
+          <p>Det tar några ögonblick.</p>
+          <p>Här ligger skillnaden mellan fossilt kol och kol från ved. Ett träd som brinner avger kol som det själv tog upp ur luften för några årtionden sedan — kolet stannar i det snabba kretsloppet. Fossila bränslen tillför i stället kol som varit <strong>borta under geologisk tid</strong>.</p>
+          <p>Vad det gör med atmosfärens koldioxidhalt undersöker vi i avsnitt 4.</p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Det mesta kolet sitter i sten, inte i bränslen</h2>
+          <p>Standardtexten ställer det snabba kretsloppet mot det långa och placerar fossila bränslen i det långa. Det stämmer. Men det ger intrycket att fossila bränslen är det stora kollagret under våra fötter, och det är de inte.</p>
+          <p>Det största kollagret på jorden är <strong>karbonatberg</strong> — kalksten och liknande bergarter, som till stor del byggts upp av skal och skelett från havslevande organismer.</p>
+          <p>Kalksten innehåller ungefär <strong>tusen gånger mer kol</strong> än alla fossila bränslen tillsammans.</p>
+          <p>Varför är det inte ett problem? Därför att kolet där sitter bundet till syre och kalcium, inte till väte. Kalksten brinner inte. Den kan avge koldioxid, men bara genom långsamma geologiska processer eller vid mycket hög temperatur — vilket är exakt vad som sker i en cementugn, och därför är cementtillverkning en av de stora koldioxidkällorna.</p>
+          <p>Det långa kretsloppet är alltså inte ett kretslopp utan flera, med mycket olika lager: kalksten i särklass störst, sedan spritt organiskt kol i skiffrar, och först därefter de koncentrerade fyndigheter vi kallar fossila bränslen.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-e2.svg" alt="Kolets kretslopp med två slingor. Den inre snabba slingan går mellan atmosfär, växter, djur och nedbrytare på år till årtionden. En yttre slinga går ner i berggrunden där kol, olja och naturgas finns, och tillbaka upp genom förbränning.">
+            <figcaption>Förbränning av fossila bränslen kopplar ihop det långsamma kretsloppet med det snabba.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> Uppdelningen i två kretslopp fungerar för det avsnittet handlar om. Men "det långsamma kretsloppet" är ett samlingsnamn för processer som skiljer sig enormt i storlek och hastighet. Att fossila bränslen ligger där gör dem inte till lagrets huvuddel — bara till den del som råkar brinna.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Olja, kol och naturgas bildades på olika sätt ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>De delar upp världens energi mellan sig</h2>
+          <p>Olja, kol och naturgas står tillsammans för ungefär <strong>fyra femtedelar</strong> av all energi som används i världen.</p>
+          <p>Olja är störst med <strong>30 till 35 procent</strong>. Kol ligger på ungefär <strong>25 procent</strong> och naturgas på <strong>23 till 25 procent</strong>.</p>
+          <p>Alla tre bildades av levande organismer, men inte av samma sorts organismer och inte på samma plats. Olja och naturgas kommer från <strong>havet</strong>. Kol kommer från <strong>växter på land</strong>.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vilka två bränslen har samma ursprung?</li>
+              <li>Jämför staplarnas längd. Vilket bränsle är störst?</li>
+              <li>Om staplarna läggs ihop, hur stor del av hela raden fylls då?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-e3.svg" alt="En tabell med olja, naturgas och kol. För varje bränsle står vad det bildades av, var det bildades, och hur stor andel av världens energi det står för, visat som en stapel.">
+            <figcaption>Tre bränslen, två ursprung. Tillsammans står de för fyra femtedelar av all energi vi använder.</figcaption>
+          </figure>
+          <h2>Alla tre är ändliga</h2>
+          <p>Fossila bränslen bildas fortfarande. Problemet är hastigheten.</p>
+          <p>Det tog miljontals år att bilda den olja vi använder. Vi förbränner den på några årtionden. Nya fyndigheter hinner alltså inte bildas i närheten av samma takt som vi använder dem.</p>
+          <p>Därför kallas fossila bränslen <strong>ändliga</strong> eller <strong>icke förnybara</strong>.</p>
+          <p>Det går inte att säga exakt vilket år de tar slut. Hur mycket som räknas som möjligt att utvinna ändras hela tiden — nya fyndigheter hittas, och ny teknik gör det möjligt att komma åt sådant som förut var omöjligt.</p>
+          <p>För olja och naturgas brukar man tala om <strong>årtionden</strong>. Kolet räcker betydligt längre.</p>
+          <h2>Ju mer kol, desto mer koldioxid</h2>
+          <p>De tre bränslena är inte lika smutsiga.</p>
+          <p>Alla innehåller kol och väte, men i olika proportioner. När bränslet brinner blir kolatomerna koldioxid och väteatomerna vatten.</p>
+          <p>Ett bränsle med mycket väte och lite kol ger därför mindre koldioxid för varje enhet energi man får ut.</p>
+          <p><strong>Naturgas</strong> har mest väte i förhållande till kol och ger minst koldioxid. <strong>Kol</strong> har nästan inget väte alls och ger mest. <strong>Olja</strong> hamnar mitt emellan.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Olja och naturgas kommer från hav och sjöar</h2>
+          <p class="inledning">Olja och naturgas har sitt ursprung i <strong>små organismer</strong>, framför allt plankton, som levde i gamla hav och sjöar.</p>
+          <p>När de dog sjönk de till botten. I syrefattig bottenmiljö undgick en del av materialet nedbrytning och begravdes under sediment. Med ökande djup steg temperaturen, och materialet omvandlades långsamt till olja och naturgas.</p>
+          <p>Ämnena kan sedan röra sig genom porer och sprickor i berggrunden tills de fastnar under ett tätt berglager. Där samlas de i en <strong>fyndighet</strong>. Eftersom naturgas är lättare än olja lägger sig gasen ovanpå.</p>
+          <p>Men det finns inga underjordiska sjöar av olja. Oljan sitter i <strong>små hålrum och sprickor i porösa bergarter</strong>, ungefär som vatten i en tvättsvamp.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-e3.svg" alt="En tabell med olja, naturgas och kol. För varje bränsle står vad det bildades av, var det bildades, och hur stor andel av världens energi det står för, visat som en stapel.">
+            <figcaption>Olja och naturgas bildades i havet, kol på land — men alla tre av levande organismer.</figcaption>
+          </figure>
+          <h2>Kol kommer från landväxter i sumpmarker</h2>
+          <p>Stenkol har ett annat ursprung. Det bildades av <strong>landväxter</strong> i gamla sumpmarker.</p>
+          <p>Under vissa perioder i jordens historia fanns enorma sumpskogar med träd och stora ormbunksliknande växter. När de dog hamnade de i vattenmättad mark, där syrebristen hindrade nedbrytningen. Materialet samlades på hög och blev <strong>torv</strong>.</p>
+          <p>Begravdes torven under sediment pressades vatten och andra ämnen ut, och materialet blev allt rikare på kol. Ju längre omvandlingen gick, desto kolrikare blev det.</p>
+          <p>Det har en följd. Ju mer kol ett bränsle innehåller i förhållande till sitt väteinnehåll, desto mer koldioxid bildas per enhet energi. Kol ger därför mest koldioxid, naturgas minst, och olja hamnar mittemellan.</p>
+          <h2>Alla tre är ändliga</h2>
+          <p>Fossila bränslen nybildas fortfarande. Problemet är hastigheten.</p>
+          <p>Det tar miljontals år att bilda användbara mängder — och vi förbränner dem på timmar. Därför kallas de <strong>ändliga</strong> eller <strong>icke förnybara</strong>.</p>
+          <p>Det går inte att ange ett år då oljan tar slut. Hur mycket som räknas som utvinningsbart ändras när nya fyndigheter hittas och tekniken förbättras. Uppskattningarna är alltså ingen nedräkningsklocka.</p>
+          <p>Storleksordningen brukar anges i <strong>årtionden</strong> för olja och naturgas, och betydligt längre för kol.</p>
+          <p>Det viktiga är ändå inte antalet år, utan tidsskillnaden: fossila bränslen bildas på geologisk tid och förbrukas på mänsklig.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Reserver är en ekonomisk uppgift, inte en geologisk</h2>
+          <p>Standardtexten säger att uppskattningar av hur länge bränslena räcker ändras när nya fyndigheter hittas och tekniken förbättras. Det stämmer, men det finns en viktigare orsak som texten inte nämner.</p>
+          <p>Inom oljeindustrin skiljer man på två begrepp.</p>
+          <p><strong>Resurser</strong> är allt som finns i berggrunden, oavsett om det går att komma åt.</p>
+          <p><strong>Reserver</strong> är den del som går att utvinna med dagens teknik <strong>och med vinst vid dagens pris</strong>.</p>
+          <p>Det är reserverna som rapporteras, och det är de siffrorna som används när någon räknar ut hur många år oljan räcker.</p>
+          <p>Det betyder att reservsiffran kan ändras utan att en enda liter olja tillkommit eller försvunnit. Stiger oljepriset blir svåråtkomliga fyndigheter lönsamma, och reserverna växer över en natt. Faller priset krymper de lika snabbt.</p>
+          <p>Under hela 1900-talet förutspåddes oljan ta slut inom ett par årtionden, och varje gång sköts tidpunkten fram. Inte för att geologerna räknade fel, utan för att de räknade på reserver — och reserver följer priset.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-e3.svg" alt="En tabell med olja, naturgas och kol. För varje bränsle står vad det bildades av, var det bildades, och hur stor andel av världens energi det står för, visat som en stapel.">
+            <figcaption>Olja och naturgas bildades i havet, kol på land — men alla tre av levande organismer.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> "Hur länge räcker oljan" låter som en geologisk fråga med ett bestämt svar. Den är i själva verket en ekonomisk fråga med ett rörligt svar. Det är också därför den frågan är mindre viktig än den som avsnitt 5 ställer: inte hur mycket som finns, utan hur mycket som kan brännas.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <!-- Testa dig själv utelämnad: kortsvars-JSON saknas (kapitel/organisk-kemi/data/kortsvar/avsnitt-1-kolet-som-blev-kvar.json) – knappen kommer tillbaka när filen byggts -->
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-1-kolet-som-blev-kvar.json"
+           data-avsnitt="a1_kolet-som-blev-kvar">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-1-kolet-som-blev-kvar.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a1_kolet-som-blev-kvar';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'fossila-branslen';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

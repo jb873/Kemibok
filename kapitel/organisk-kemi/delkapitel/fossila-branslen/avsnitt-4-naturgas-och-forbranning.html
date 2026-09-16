@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naturgas och förbränning – Fossila bränslen och förbränning – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Fossila bränslen och förbränning</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">4. Naturgas och förbränning</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 4</span>
+      <h1>Naturgas och förbränning</h1>
+      <p class="subtitel">— vad som händer när ett bränsle brinner, och när syret inte räcker —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Naturgas är det renaste fossila bränslet</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Fullständig förbränning ger koldioxid och vatten</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Ofullständig förbränning och katalysatorn</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-naturgas-och-forbranning">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Naturgas är det renaste fossila bränslet ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Naturgas bildades som oljan</h2>
+          <p>Naturgas bildades av <strong>växtplankton, djurplankton och andra organismer</strong> som levde i havet.</p>
+          <p>De täcktes av lera, hamnade i syrefri miljö och utsattes för högt tryck och hög temperatur.</p>
+          <p>Det är samma historia som oljans. Skillnaden är temperaturen: blir det tillräckligt varmt bildas gas i stället för olja.</p>
+          <p>Naturgas finns i <strong>håligheter i berggrunden</strong>, både under havsbotten och på land. Ofta ligger den ovanpå olja, eftersom gas är lättare. Men det finns också <strong>rena gasfält</strong> där ingen olja finns.</p>
+          <h2>Gasen måste transporteras i rör</h2>
+          <p>En gas tar mycket större plats än en vätska. Naturgas går därför inte att lasta på en vanlig båt som olja.</p>
+          <p>I stället byggs <strong>rörledningar</strong>, ofta mycket långa. Nord Stream genom Östersjön är ett exempel — den byggdes för att föra rysk naturgas till Tyskland.</p>
+          <p>Naturgas används till <strong>uppvärmning, elproduktion och som motorbränsle</strong>.</p>
+          <p>I Sverige används mycket lite, bara <strong>1 till 3 procent</strong> av energin. Det beror på att vi aldrig byggt något rörnät som täcker landet.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vilken av de två vägarna kan ändra destination efter att transporten börjat?</li>
+              <li>Vad måste hända med gasen innan den lastas på fartyget?</li>
+              <li>Varför går det inte att frakta naturgas som gas i en vanlig tank?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-h1.svg" alt="Till vänster en rörledning över en havsbotten mellan två landmassor. Till höger en anläggning som kyler gasen till minus 162 grader, ett fartyg som fraktar den, och en mottagningsanläggning.">
+            <figcaption>Gas går inte att lasta på vilken båt som helst. Antingen ett rör, eller extrem kyla.</figcaption>
+          </figure>
+          <h2>Naturgas belastar miljön mindre</h2>
+          <p>Naturgas är nästan bara metan, <strong>\(\ce{CH4}\)</strong>. Molekylen har en kolatom och fyra väteatomer — alltså mycket väte i förhållande till kol.</p>
+          <p>När den brinner blir väteatomerna vatten och kolatomen koldioxid. Eftersom det finns så mycket väte kommer en stor del av energin från väteförbränningen.</p>
+          <p>Därför ger naturgas <strong>mindre koldioxid per energienhet</strong> än olja, och betydligt mindre än kol. Den innehåller dessutom mindre svavel och tungmetaller.</p>
+          <p>Men den är fortfarande fossil. Kolet kommer ur det långa kretsloppet och når atmosfären lika säkert som kolets.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <p class="inledning">Naturgas är det fossila bränsle som ger minst utsläpp per energienhet. Ungefär <strong>23 till 25 procent</strong> av världens energi kommer därifrån.</p>
+          <p>I det här avsnittet tittar vi först på naturgasen, och sedan på vad som faktiskt händer när ett bränsle brinner — både när det går bra och när det går dåligt.</p>
+          <h2>Naturgas bildades som oljan men lättare</h2>
+          <p>Naturgas bildades av <strong>växtplankton, djurplankton och andra organismer som levde i havet</strong>. De täcktes av lera, hamnade i syrefri miljö och utsattes för högt tryck och hög temperatur.</p>
+          <p>Det är samma historia som oljans. Skillnaden är temperaturen: blir det tillräckligt varmt bildas gas i stället för olja.</p>
+          <p>Naturgas finns i <strong>håligheter i berggrunden</strong>, både under havsbotten och på land. Ofta ligger den ovanpå en oljefyndighet, eftersom gas är lättare än olja. Men det finns också <strong>rena gasfält</strong> där ingen olja finns.</p>
+          <h2>Gasen måste transporteras i rör</h2>
+          <p>En gas tar mycket större plats än en vätska. Naturgas går därför inte att lasta på en vanlig båt som olja.</p>
+          <p>I stället byggs <strong>rörledningar</strong>, ofta mycket långa. Nord Stream genom Östersjön är ett exempel — byggd för att föra rysk naturgas till Tyskland.</p>
+          <p>Naturgas används till <strong>uppvärmning, elproduktion och som motorbränsle</strong>. I Sverige är användningen liten, ungefär <strong>1 till 3 procent</strong> av energin, eftersom vi aldrig byggt ut något rörnät som täcker landet.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-h1.svg" alt="Till vänster en rörledning över en havsbotten mellan två landmassor. Till höger en anläggning som kyler gasen till minus 162 grader, ett fartyg som fraktar den, och en mottagningsanläggning.">
+            <figcaption>Rörledningen är billigare men går bara mellan två punkter. Flytande naturgas är dyrare men kan gå vart som helst.</figcaption>
+          </figure>
+          <h2>Naturgas belastar miljön mindre än olja och kol</h2>
+          <p>Naturgas är till största delen metan, \(\ce{CH4}\). Molekylen innehåller en kolatom och fyra väteatomer, alltså mycket väte i förhållande till kol.</p>
+          <p>Det gör att naturgas ger <strong>mindre koldioxid per energienhet</strong> än olja och betydligt mindre än kol. Den innehåller dessutom <strong>mindre svavel och tungmetaller</strong>.</p>
+          <p>Men den är fortfarande ett fossilt bränsle. Kolet kommer ur det långa kretsloppet, och det når atmosfären lika säkert som kolets.</p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Att bränna gas i stället för kol räcker inte</h2>
+          <p>Standardtexten säger att naturgas ger mindre koldioxid per energienhet än olja och kol. Det stämmer, och skillnaden är stor — ungefär hälften så mycket koldioxid som kol för samma mängd energi.</p>
+          <p>Det har fått naturgas att kallas ett bränsle för övergången: något man går över till på vägen bort från kolet.</p>
+          <p>Men jämförelsen har en svaghet, och den handlar om <strong>metanet som aldrig brinner</strong>.</p>
+          <p>Naturgas läcker. Den läcker vid borrhålet, i rörledningar, vid pumpstationer och i ledningsnätet under städerna. Och metan är en mycket kraftigare växthusgas än koldioxid — räknat över tjugo år omkring åttio gånger kraftigare per kilo.</p>
+          <p>Det betyder att läckaget inte behöver vara stort för att äta upp vinsten. Läcker mer än några få procent av gasen ut oförbränd blir naturgas inte bättre än kol ur klimatsynpunkt.</p>
+          <p>Hur stort läckaget faktiskt är har varit svårt att mäta. Mätningar från flygplan och satellit har under senare år visat högre siffror än vad industrin själv rapporterat.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-h1.svg" alt="Till vänster en rörledning över en havsbotten mellan två landmassor. Till höger en anläggning som kyler gasen till minus 162 grader, ett fartyg som fraktar den, och en mottagningsanläggning.">
+            <figcaption>Rörledningen är billigare men går bara mellan två punkter. Flytande naturgas är dyrare men kan gå vart som helst.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> "Naturgas är renare" är sant om man bara räknar vad som kommer ut ur skorstenen. Men ett bränsles klimatpåverkan börjar inte i lågan — den börjar i marken där gasen hämtas. En jämförelse som bara tittar på förbränningen missar hela frågan om vad som hände på vägen.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Fullständig förbränning ger koldioxid och vatten ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Att brinna är att reagera med syre</h2>
+          <p>Att något brinner betyder att det <strong>reagerar med syre</strong> och att energi frigörs.</p>
+          <p>Vad som bildas beror helt på vad bränslet innehåller.</p>
+          <h2>Tre exempel visar mönstret</h2>
+          <p><strong>Vätgas</strong> innehåller bara väte. När den brinner bildas bara vatten:</p>
+          <div class="formel">\[\ce{2 H2 + O2 -> 2 H2O}\]</div>
+          <p><strong>Rent kol</strong> innehåller bara kol. När det brinner bildas bara koldioxid:</p>
+          <div class="formel">\[\ce{C + O2 -> CO2}\]</div>
+          <p><strong>Metan</strong> innehåller både kol och väte. Därför bildas båda:</p>
+          <div class="formel">\[\ce{CH4 + 2 O2 -> CO2 + 2 H2O}\]</div>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Följ kolatomen i rad tre. Var hamnar den?</li>
+              <li>Vilken rad ger ingen koldioxid alls?</li>
+              <li>Varför ger metan mindre koldioxid per energienhet än rent kol?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-h2.svg" alt="Tre reaktioner under varandra. Vätgas plus syre ger bara vatten. Kol plus syre ger bara koldioxid. Metan plus syre ger både koldioxid och vatten. Kolatomer och väteatomer är färgmarkerade så att de går att följa.">
+            <figcaption>Följ atomerna. Kolet blir alltid koldioxid, vätet blir alltid vatten.</figcaption>
+          </figure>
+          <p>Titta på mönstret. Kolet tar två syreatomer och blir koldioxid. Vätet tar en halv och blir vatten.</p>
+          <h2>Alla kolväten följer samma regel</h2>
+          <p>Det som gäller metan gäller alla kolväten:</p>
+          <p><strong>Kolatomerna blir koldioxid. Väteatomerna blir vatten.</strong></p>
+          <p>Det förklarar skillnaden mellan bränslen. Ju mer väte ett bränsle har i förhållande till kol, desto större del av energin kommer från vätet — och desto mindre koldioxid bildas.</p>
+          <p>Metan har fyra väteatomer per kolatom. Kol har nästan inget väte alls. Däremellan ligger oljan.</p>
+          <h2>Energin kommer från bindningarna</h2>
+          <p>Var kommer energin ifrån?</p>
+          <p>Vid förbränningen bryts bindningarna i bränslet och i syrgasen. Sedan bildas nya bindningar, i koldioxiden och i vattnet.</p>
+          <p>De nya bindningarna är <strong>starkare</strong> än de gamla. Skillnaden frigörs som energi — värme och ljus.</p>
+          <p>Det är samma slags reaktion som cellandningen i delkapitel 1. Där reagerade socker med syre och gav koldioxid, vatten och energi. Skillnaden är hastigheten: i cellen sker det i många små steg, i en låga på en gång.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Förbränning är en reaktion med syre</h2>
+          <p class="inledning">Att något brinner betyder att det reagerar med <strong>syre</strong> och att energi frigörs.</p>
+          <p>Vad som bildas beror på vad bränslet innehåller. Tre exempel visar mönstret:</p>
+          <p><strong>Vätgas</strong> innehåller bara väte. Vid förbränning bildas bara vatten:</p>
+          <div class="formel">\[\ce{2 H2 + O2 -> 2 H2O}\]</div>
+          <p><strong>Rent kol</strong> innehåller bara kol. Vid förbränning bildas bara koldioxid:</p>
+          <div class="formel">\[\ce{C + O2 -> CO2}\]</div>
+          <p><strong>Metan</strong> innehåller både kol och väte. Därför bildas båda:</p>
+          <div class="formel">\[\ce{CH4 + 2 O2 -> CO2 + 2 H2O}\]</div>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-h2.svg" alt="Tre reaktioner under varandra. Vätgas plus syre ger bara vatten. Kol plus syre ger bara koldioxid. Metan plus syre ger både koldioxid och vatten. Kolatomer och väteatomer är färgmarkerade så att de går att följa.">
+            <figcaption>Vad ett bränsle ger vid förbränning bestäms helt av vad det innehåller.</figcaption>
+          </figure>
+          <h2>Kolvätenas förbränning följer samma mönster</h2>
+          <p>Det som gäller metan gäller alla kolväten.</p>
+          <p><strong>Kolatomerna blir koldioxid. Väteatomerna blir vatten.</strong></p>
+          <p>Ju mer väte ett bränsle innehåller i förhållande till kol, desto mer av energin kommer från väteförbränningen, och desto mindre koldioxid bildas per energienhet.</p>
+          <p>Det är därför naturgas ger mindre koldioxid än kol. Metan har fyra väteatomer per kolatom; i kol finns nästan inget väte alls.</p>
+          <h2>Energin kommer från bindningarna</h2>
+          <p>Vid förbränningen bryts bindningar i bränslet och i syrgasen, och nya bindningar bildas i koldioxiden och vattnet.</p>
+          <p>De nya bindningarna är starkare än de gamla. Skillnaden frigörs som <strong>energi</strong> — värme och ljus.</p>
+          <p>Det är samma slags reaktion som cellandningen i delkapitel 1. Skillnaden är hastigheten: i cellen sker den i många små steg, i en låga på en gång.</p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Reaktionen vill ske men kommer inte igång</h2>
+          <p>Standardtexten säger att energi frigörs vid förbränning, eftersom de nya bindningarna är starkare än de gamla. Det är rätt. Men då uppstår en fråga texten inte ställer:</p>
+          <p>Om reaktionen frigör energi — varför börjar den inte av sig själv?</p>
+          <p>En bensindunk står i garaget utan att brinna, trots att den omges av syre. Ett hus av trä står i hundra år i luft. Ändå skulle båda frigöra energi om de brann.</p>
+          <p>Svaret är att bindningarna måste <strong>brytas först</strong>, innan de nya kan bildas. Att bryta dem kostar energi, och den kostnaden måste betalas i förskott.</p>
+          <p>Den energi som krävs för att komma igång kallas <strong>aktiveringsenergi</strong>. Det är den en tändsticka levererar.</p>
+          <p>När reaktionen väl startat frigör den mer energi än den behövde för att starta. Överskottet värmer upp bränslet bredvid, som då också kommer över tröskeln. Därför fortsätter en eld av sig själv.</p>
+          <p>Det förklarar också varför en katalysator fungerar. Den ändrar inte hur mycket energi reaktionen ger — den <strong>sänker tröskeln</strong>, så att reaktionen kan ske vid lägre temperatur.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-h2.svg" alt="Tre reaktioner under varandra. Vätgas plus syre ger bara vatten. Kol plus syre ger bara koldioxid. Metan plus syre ger både koldioxid och vatten. Kolatomer och väteatomer är färgmarkerade så att de går att följa.">
+            <figcaption>Vad ett bränsle ger vid förbränning bestäms helt av vad det innehåller.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> Att räkna på bindningsenergier säger vad en reaktion <strong>ger</strong>. Det säger ingenting om huruvida den <strong>sker</strong>. Två frågor, två olika svar — och det är därför en diamant kan vara brännbar utan att någon diamant någonsin fattat eld.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Ofullständig förbränning och katalysatorn ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>När syret inte räcker</h2>
+          <p>Fullständig förbränning kräver tillräckligt med syre.</p>
+          <p>Räcker inte syret hinner inte alla kolatomer få tag i två syreatomer var. Då bildas <strong>kolmonoxid, CO</strong>, med bara en syreatom. Eller så reagerar kolet inte alls, och det blir <strong>sot</strong>.</p>
+          <p>Det kallas <strong>ofullständig förbränning</strong>.</p>
+          <p>Du kan se skillnaden i en låga. En <strong>blå</strong> låga betyder gott om syre och fullständig förbränning. En <strong>gul, sotande</strong> låga betyder att syret inte räcker till.</p>
+          <p>Den gula lågan är dessutom kallare, eftersom en del av energin aldrig frigörs — den sitter kvar i kolmonoxiden och sotet.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vilken låga är hetast, och hur syns det?</li>
+              <li>Vad kommer ut ur den gula lågan som inte kommer ut ur den blå?</li>
+              <li>Varför ger den gula lågan mindre energi?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-h3.svg" alt="Två lågor. Den vänstra är blå, har gott om syre och ger koldioxid och vatten. Den högra är gul och sotande, har för lite syre och ger kolmonoxid, sot och koldioxid.">
+            <figcaption>Samma bränsle, men olika mycket syre. Färgen på lågan avslöjar vilket det är.</figcaption>
+          </figure>
+          <h2>Kolmonoxid är livsfarlig</h2>
+          <p>Kolmonoxid är <strong>färglös och luktfri</strong>. Du kan inte känna den.</p>
+          <p>I kroppen fäster den på samma ställe i blodet som syret ska sitta, men den håller sig kvar mycket hårdare. Blodet kan då inte transportera syre, och man får syrebrist utan att märka något.</p>
+          <p>Det är därför man aldrig ska använda gasolkök inomhus utan ventilation, eller låta en bilmotor gå i ett stängt garage.</p>
+          <h2>Katalysatorn städar avgaserna</h2>
+          <p>I en bils avgaser finns kolmonoxid, kväveoxider och kolväten som inte hunnit brinna.</p>
+          <p>En <strong>katalysator</strong> i avgasröret får dem att reagera vidare. Kolmonoxid och kolväten blir koldioxid och vatten. Kväveoxider blir vanlig kvävgas.</p>
+          <p>En katalysator förbrukas inte. Den deltar inte i reaktionen, utan får den bara att ske snabbare och vid lägre temperatur än den annars skulle.</p>
+          <p>Men det finns en gräns för vad den kan göra.</p>
+          <p>Katalysatorn tar bort de <strong>giftiga</strong> ämnena. Den kan inte ta bort <strong>koldioxiden</strong> — för koldioxid är det förbränningen är till för att skapa.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>När syret inte räcker bildas andra ämnen</h2>
+          <p class="inledning">Full förbränning kräver att det finns tillräckligt med syre.</p>
+          <p>Räcker inte syret hinner inte alla kolatomer binda två syreatomer var. Då bildas <strong>kolmonoxid, CO</strong>, med bara en syreatom — eller rent <strong>sot</strong>, alltså kol som inte reagerat alls.</p>
+          <p>Det kallas <strong>ofullständig förbränning</strong>.</p>
+          <p>Man kan se skillnaden. En blå låga betyder god syretillförsel och fullständig förbränning. En gul, sotande låga betyder att syret inte räcker. Den gula lågan är dessutom kallare, eftersom en del av energin aldrig frigörs.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-h3.svg" alt="Två lågor. Den vänstra är blå, har gott om syre och ger koldioxid och vatten. Den högra är gul och sotande, har för lite syre och ger kolmonoxid, sot och koldioxid.">
+            <figcaption>Vid syrebrist hinner inte alla kolatomer binda två syreatomer, och då bildas kolmonoxid och sot.</figcaption>
+          </figure>
+          <h2>Kolmonoxid är livsfarlig</h2>
+          <p>Kolmonoxid är <strong>färglös och luktfri</strong>. Den går inte att upptäcka med sinnena.</p>
+          <p>I kroppen binder den till de röda blodkropparna på samma plats som syret, men mycket hårdare. Den som andas in kolmonoxid får därför syrebrist utan att märka det.</p>
+          <p>Det är därför man aldrig ska använda gasolkök inomhus utan ventilation, eller låta en motor gå i ett stängt garage.</p>
+          <h2>Katalysatorn städar avgaserna</h2>
+          <p>I en bils avgaser finns kolmonoxid, kväveoxider och kolväten som inte hunnit brinna.</p>
+          <p>En <strong>katalysator</strong> i avgasröret får dessa ämnen att reagera vidare. Kolmonoxid och kolväten omvandlas till koldioxid och vatten, och kväveoxider till vanlig kvävgas.</p>
+          <p>En katalysator förbrukas inte i reaktionen — den får den bara att ske snabbare och vid lägre temperatur.</p>
+          <p>Men det finns en gräns för vad den kan göra. Katalysatorn tar bort de <strong>giftiga</strong> ämnena. Den kan inte ta bort <strong>koldioxiden</strong>, eftersom koldioxid är det förbränningen är till för att skapa.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Kolmonoxiden sitter tvåhundra gånger hårdare</h2>
+          <p>Standardtexten säger att kolmonoxid fäster där syret ska sitta i blodet, och håller sig kvar hårdare. Här är vad som faktiskt händer.</p>
+          <p>Syre transporteras i blodet av ett protein som heter <strong>hemoglobin</strong>. Mitt i det sitter en järnatom, och det är till järnet syremolekylen binder. Bindningen är avsiktligt svag: syret ska kunna släppa igen när blodet når en cell som behöver det.</p>
+          <p>Kolmonoxid binder till samma järnatom. Men den binder ungefär <strong>tvåhundra gånger starkare</strong> än syret gör.</p>
+          <p>Följden är att kolmonoxiden inte släpper. Hemoglobinet är fortfarande helt, men platsen är upptagen, och blodet kan inte längre transportera syre.</p>
+          <p>Det är därför en låg halt räcker för att vara farlig. Redan några tiondels promille kolmonoxid i luften kan blockera en stor del av blodets syretransport, och personen känner bara trötthet och huvudvärk innan det blir allvarligt.</p>
+          <p>Behandlingen följer direkt av kemin: ren syrgas, i så hög koncentration som möjligt. Konkurrerar tillräckligt många syremolekyler om platsen släpper kolmonoxiden till slut.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-h3.svg" alt="Två lågor. Den vänstra är blå, har gott om syre och ger koldioxid och vatten. Den högra är gul och sotande, har för lite syre och ger kolmonoxid, sot och koldioxid.">
+            <figcaption>Vid syrebrist hinner inte alla kolatomer binda två syreatomer, och då bildas kolmonoxid och sot.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> "Kolmonoxid är giftig" säger att den skadar. Men den är inte giftig på det sätt många ämnen är — den förstör ingenting. Den sätter sig bara på rätt plats och vägrar flytta på sig. Det är en fråga om vem som binder hårdast.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <!-- Testa dig själv utelämnad: kortsvars-JSON saknas (kapitel/organisk-kemi/data/kortsvar/avsnitt-4-naturgas-och-forbranning.json) – knappen kommer tillbaka när filen byggts -->
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-4-naturgas-och-forbranning.json"
+           data-avsnitt="a4_naturgas-och-forbranning">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-4-naturgas-och-forbranning.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a4_naturgas-och-forbranning';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'fossila-branslen';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

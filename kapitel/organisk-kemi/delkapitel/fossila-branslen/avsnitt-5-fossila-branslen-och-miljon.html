@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fossila bränslen och miljön – Fossila bränslen och förbränning – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Fossila bränslen och förbränning</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">5. Fossila bränslen och miljön</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 5</span>
+      <h1>Fossila bränslen och miljön</h1>
+      <p class="subtitel">— växthuseffekten, försurningen och metallerna som aldrig försvinner —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Koldioxid förstärker växthuseffekten</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Svavel ger försurning och kväve bidrar till både försurning och övergödning</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Tungmetaller och vägen framåt</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-fossila-branslen-och-miljon">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Koldioxid förstärker växthuseffekten ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Solen värmer, jorden strålar tillbaka</h2>
+          <p>Solen skickar ut strålning åt alla håll, och en del av den träffar jorden.</p>
+          <p>Det mesta av strålningen går rakt igenom atmosfären och tas upp av mark och hav. Jordytan blir varm.</p>
+          <p>Men en varm yta står inte still. Den skickar i sin tur ut energi — inte som synligt ljus, utan som <strong>värmestrålning</strong>. Det är samma sorts strålning du känner från ett element eller från en asfaltsväg en sommarkväll.</p>
+          <h2>Växthusgaserna släpper inte ut all värme</h2>
+          <p>Om all värmestrålning försvann rakt ut i rymden skulle jorden vara iskall.</p>
+          <p>Men i atmosfären finns <strong>växthusgaser</strong>: vattenånga, koldioxid och metan. De har en egenskap som de flesta andra gaser saknar — de kan <strong>ta upp värmestrålning</strong>.</p>
+          <p>En växthusgas som tagit upp energi skickar sedan ut den igen, men åt alla håll. En del går uppåt mot rymden, en del går nedåt mot jorden igen.</p>
+          <p>Resultatet är att en del av värmen stannar kvar. Jorden blir varmare än den annars hade varit.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Jämför de gula och de röda pilarna. Vad är det för skillnad på dem?</li>
+              <li>Hur många pilar går ut från en molekyl som tagit upp strålning?</li>
+              <li>Vad skulle hända om det fanns fler molekyler i bilden?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-j1.svg" alt="Solstrålning passerar genom atmosfären och värmer jordytan. Jordytan sänder ut värmestrålning uppåt. En del av den tas upp av växthusgasmolekyler, som sedan sänder ut strålning åt alla håll — en del uppåt mot rymden och en del tillbaka mot jorden. Annan värmestrålning lämnar atmosfären utan att tas upp.">
+            <figcaption>Växthusgaserna tar upp värmen och skickar ut den igen åt alla håll. En del kommer tillbaka ner.</figcaption>
+          </figure>
+          <h2>Det är förstärkningen som är problemet</h2>
+          <p>Utan växthuseffekten skulle medeltemperaturen på jorden ligga långt under nollstrecket. Den naturliga växthuseffekten är alltså <strong>nödvändig</strong> för att det ska gå att leva här.</p>
+          <p>Problemet är inte att den finns.</p>
+          <p>Problemet är att mängden växthusgaser ökar. Ju fler växthusgaser i luften, desto mer av värmestrålningen tas upp, och desto mindre försvinner ut i rymden.</p>
+          <p>Växthuseffekten blir alltså <strong>förstärkt</strong>. Det är det som gör att klimatet ändras.</p>
+          <h2>Fossilt kol tillför något nytt</h2>
+          <p>Här kommer kretsloppen tillbaka.</p>
+          <p>När ved brinner går kolet tillbaka till luften — men det kom därifrån för några årtionden sedan. Ingen ny koldioxid tillförs.</p>
+          <p>När fossila bränslen brinner är det annorlunda. Kolet har legat i berggrunden i miljontals år. På några sekunder är det tillbaka i luften.</p>
+          <p>Hav och växter tar upp en del av det, men inte lika snabbt som vi tillför det. Därför <strong>ökar</strong> mängden koldioxid i luften.</p>
+          <h2>Metan är starkare men kortlivad</h2>
+          <p>Metan är också en växthusgas, och en mycket starkare sådan än koldioxid. En metanmolekyl tar upp värmestrålning mycket effektivare.</p>
+          <p>Metan läcker ut när naturgas och olja utvinns och transporteras. Den bildas också naturligt i våtmarker och hos kor.</p>
+          <p>Men metan och koldioxid beter sig olika. Metan bryts ner i luften på ungefär tio år. Koldioxid har inget lika enkelt slut — en del blir kvar och påverkar klimatet mycket länge.</p>
+          <p>Metan är alltså <strong>starkt men kortlivat</strong>. Koldioxid är svagare men stannar kvar.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <p class="inledning">Fossila bränslen har gett människan tillgång till stora mängder energi. Men när kol, olja och naturgas utvinns och förbränns påverkas också miljön.</p>
+          <p>En del av påverkan beror på <strong>kolet</strong> i bränslet. Andra problem orsakas av ämnen som följer med kolet eller bildas under förbränningen.</p>
+          <p>Det är värt att hålla isär dem: <strong>koldioxid och metan påverkar klimatet, svavel- och kväveföreningar påverkar mark och vatten, och vissa metaller är giftiga för levande organismer.</strong></p>
+          <h2>Växthuseffekten är nödvändig</h2>
+          <p>Solens strålning passerar genom atmosfären och absorberas av mark och hav. Jordytan värms upp och skickar ut energi igen, men som <strong>värmestrålning</strong> — infraröd strålning med längre våglängd.</p>
+          <p>All den värmen försvinner inte ut i rymden. I atmosfären finns <strong>växthusgaser</strong>: vattenånga, koldioxid och metan. De absorberar en del av värmestrålningen och strålar ut energi i olika riktningar, varav en del tillbaka mot jordytan.</p>
+          <p>Därför är jorden varmare än den annars vore. Utan den naturliga växthuseffekten skulle medeltemperaturen ligga långt under fryspunkten.</p>
+          <p>Problemet är alltså inte att växthuseffekten finns. Problemet uppstår när mängden växthusgaser ökar och effekten <strong>förstärks</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-j1.svg" alt="Solstrålning passerar genom atmosfären och värmer jordytan. Jordytan sänder ut värmestrålning uppåt. En del av den tas upp av växthusgasmolekyler, som sedan sänder ut strålning åt alla håll — en del uppåt mot rymden och en del tillbaka mot jorden. Annan värmestrålning lämnar atmosfären utan att tas upp.">
+            <figcaption>Värmestrålningen studsar inte mot ett tak — den absorberas av molekyler som sedan strålar ut energi i alla riktningar.</figcaption>
+          </figure>
+          <h2>Fossilt kol tillför något nytt</h2>
+          <p>När fossila bränslen förbränns reagerar kolet med syre och bildar koldioxid. På några sekunder kan en kolatom som varit borta ur atmosfären i hundratals miljoner år vara tillbaka.</p>
+          <p>Det är ett <strong>tillskott</strong> till det snabba kretsloppet. Hav och växtlighet tar upp en del av den extra koldioxiden, men inte lika snabbt som vi tillför den. Därför ökar halten i atmosfären.</p>
+          <p>Och när halten ökar absorberas mer av jordens värmestrålning. Växthuseffekten förstärks, och mer energi stannar kvar.</p>
+          <p>Det centrala är alltså inte bara att koldioxid bildas. <strong>Det är att kol flyttas från ett långsamt geologiskt lager till atmosfären mycket snabbare än det kan föras tillbaka.</strong></p>
+          <h2>Metan är en kraftigare växthusgas än koldioxid</h2>
+          <p>Metan är också en växthusgas, och en betydligt starkare sådan. Räknat per molekyl absorberar metan värmestrålning mycket effektivare än koldioxid.</p>
+          <p>Metan läcker ut när naturgas och olja utvinns och transporteras, och bildas dessutom naturligt i våtmarker och hos idisslare.</p>
+          <p>Men de två gaserna beter sig olika i atmosfären. Metan bryts ner genom kemiska reaktioner inom ungefär ett årtionde. Koldioxid har inget lika enkelt slut — en del tas upp av hav och växter, men en del påverkar klimatet under mycket lång tid.</p>
+          <p>Metan är alltså <strong>starkt men kortlivat</strong>, koldioxid <strong>svagare men långvarigt</strong>. Det är därför minskade metanutsläpp ger snabb effekt, medan koldioxidutsläpp fortsätter verka långt efter att de upphört.</p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Växthusgaserna är de molekyler som kan vibrera</h2>
+          <p>Standardtexten säger att växthusgaser kan ta upp värmestrålning och att de flesta andra gaser inte kan det. Det stämmer — men varför just de?</p>
+          <p>Luften består till 99 procent av <strong>kvävgas</strong> och <strong>syrgas</strong>. Ingen av dem är växthusgas. Samtidigt är koldioxid en växthusgas trots att den utgör mindre än en halv promille av luften. Skillnaden måste sitta i molekylerna.</p>
+          <p>Det gör den.</p>
+          <p>En molekyl kan ta upp strålning bara om den kan <strong>vibrera på ett sätt som ändrar molekylens elektriska fördelning</strong>. En kvävgasmolekyl består av två likadana atomer. När den sträcks och trycks ihop förblir den symmetrisk, och den kan därför inte ta upp värmestrålning.</p>
+          <p>Koldioxid är också symmetrisk i vila — en kolatom med en syreatom på var sida. Men den kan böja sig. När molekylen viker sig i mitten blir den för ett ögonblick osymmetrisk, och just då kan den ta upp strålning.</p>
+          <p>Metan har fyra väteatomer runt en kolatom och kan vibrera på ännu fler sätt. Det är en av anledningarna till att den är kraftigare per molekyl.</p>
+          <p>Varje molekyl tar dessutom bara upp strålning av bestämda <strong>våglängder</strong> — de som råkar passa dess vibrationer. Därför lämnar olika växthusgaser olika "hål" öppna i det våglängdsområde jorden strålar i, och därför spelar det roll vilken gas som tillförs.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-j1.svg" alt="Solstrålning passerar genom atmosfären och värmer jordytan. Jordytan sänder ut värmestrålning uppåt. En del av den tas upp av växthusgasmolekyler, som sedan sänder ut strålning åt alla håll — en del uppåt mot rymden och en del tillbaka mot jorden. Annan värmestrålning lämnar atmosfären utan att tas upp.">
+            <figcaption>Värmestrålningen studsar inte mot ett tak — den absorberas av molekyler som sedan strålar ut energi i alla riktningar.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> Att kalla vissa gaser växthusgaser låter som en egenskap hos gasen i stort. Det är i själva verket en egenskap hos molekylens <strong>form och rörelser</strong>. Det är samma slags förklaring som när molekylens form avgjorde kokpunkten — formen bestämmer beteendet, här också.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Svavel ger försurning och kväve bidrar till både försurning och övergödning ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Bränslet innehåller mer än kol och väte</h2>
+          <p>Fossila bränslen är inga rena ämnen.</p>
+          <p>Naturgas är nästan bara metan. Men kol och olja är blandningar, och förutom kol och väte innehåller de <strong>svavel, kväve och olika mineralämnen</strong>.</p>
+          <p>När bränslet brinner reagerar också de ämnena med syre.</p>
+          <p>Dessutom händer något med luften. Luften består till största delen av <strong>kvävgas, \(\ce{N2}\)</strong>. I en motor eller en eldstad blir det så varmt att även luftens eget kväve kan reagera med syre. Då bildas <strong>kväveoxider</strong>.</p>
+          <p>Vad som kommer ut ur skorstenen beror alltså både på vad bränslet innehåller <strong>och</strong> på hur varmt det blev.</p>
+          <h2>Svavel blir svaveldioxid och sedan svavelsyra</h2>
+          <p>Svavel i bränslet reagerar med syre. Då bildas <strong>svaveldioxid, \(\ce{SO2}\)</strong>.</p>
+          <p>Svaveldioxiden följer med vinden och kan spridas mycket långt — över landsgränser. I luften reagerar den vidare med syre och vatten och blir till slut <strong>svavelsyra, \(\ce{H2SO4}\)</strong>.</p>
+          <p>Kedjan ser ut så här:</p>
+          <p><strong>svavel i bränslet \(\rightarrow\) svaveldioxid \(\rightarrow\) svavelsyra \(\rightarrow\) surt regn \(\rightarrow\) försurning</strong></p>
+          <p>När det sura regnet når mark och sjöar sjunker pH-värdet. Känsliga organismer klarar sig inte, och viktiga näringsämnen sköljs ur marken.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Hur många steg tar svavlet från bränslet till sjön?</li>
+              <li>Var i kedjan bildas syran?</li>
+              <li>Varför kan ett land drabbas av utsläpp från ett annat?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-j2.svg" alt="Fem steg i rad. Svavel i bränslet blir svaveldioxid i skorstenen, sprids med vinden, reagerar i molnet till svavelsyra, faller som surt regn och sänker pH-värdet i en sjö.">
+            <figcaption>Svavlet i bränslet hamnar till slut i en sjö, som syra.</figcaption>
+          </figure>
+          <p>Försurningen gör dessutom att vissa metaller <strong>löser sig lättare</strong> i vattnet. Då kan de tas upp av växter och djur.</p>
+          <h2>Kväveoxiderna gör samma sak</h2>
+          <p>Kväveoxiderna reagerar också vidare i luften. De bildar bland annat <strong>salpetersyra, \(\ce{HNO3}\)</strong>.</p>
+          <p>Följer den med regnet ner bidrar den till försurning, precis som svavelsyran.</p>
+          <h2>Men kväve är också näring</h2>
+          <p>Här skiljer sig kvävet från svavlet.</p>
+          <p>Kväve är ett <strong>näringsämne</strong> som växter behöver för att växa. När kväveföreningar faller ner på mark eller i vatten får ekosystemet alltså gödsel på köpet.</p>
+          <p>Det låter bra, men är det inte.</p>
+          <p>I många naturliga miljöer finns det lite kväve, och arterna där är anpassade till det. Kommer det plötsligt mycket kväve växer de arter som kan utnyttja det snabbast, och de tränger undan de andra.</p>
+          <p>I vatten blir det kraftig tillväxt av <strong>alger</strong>. När algerna dör bryts de ner av bakterier, och nedbrytningen förbrukar syre. Då kan det bli <strong>syrebrist</strong> i bottenvattnet.</p>
+          <p>Samma utsläpp orsakar alltså två olika problem: försurning och <strong>övergödning</strong>.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Bränslet innehåller mer än kol och väte</h2>
+          <p class="inledning">Fossila bränslen är inte rena ämnen. Naturgas är till största delen metan, men kol och olja är komplicerade blandningar som förutom kol och väte innehåller <strong>svavel, kväve och olika mineralämnen</strong>.</p>
+          <p>När bränslet förbränns reagerar även dessa ämnen med syre.</p>
+          <p>Dessutom består luften till största delen av <strong>kvävgas, \(\ce{N2}\)</strong>. Vid de höga temperaturerna i en motor eller en eldstad kan luftens eget kväve reagera med syre och bilda <strong>kväveoxider</strong>, som sammanfattas \(\ce{NO_x}\).</p>
+          <p>Utsläppen bestäms alltså både av vad bränslet innehåller och av vad som händer med luften under förbränningen.</p>
+          <h2>Svavel blir svaveldioxid och kan bilda svavelsyra</h2>
+          <p>Svavel i bränslet reagerar med syre och bildar <strong>svaveldioxid, \(\ce{SO2}\)</strong>.</p>
+          <p>Svaveldioxiden sprids långt med vinden. I atmosfären reagerar den vidare med syre och vatten och bildar till slut <strong>svavelsyra, \(\ce{H2SO4}\)</strong>.</p>
+          <p>Här finns en direkt koppling till kapitlet om syror och baser. När syran hamnar i molndroppar och nederbörd ökar mängden oxoniumjoner, och pH-värdet sjunker.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-j2.svg" alt="Fem steg i rad. Svavel i bränslet blir svaveldioxid i skorstenen, sprids med vinden, reagerar i molnet till svavelsyra, faller som surt regn och sänker pH-värdet i en sjö.">
+            <figcaption>Svaveldioxiden kan spridas långt innan den blir svavelsyra och faller ner.</figcaption>
+          </figure>
+          <p>Kedjan blir:</p>
+          <p><strong>svavel i bränslet \(\rightarrow\) svaveldioxid \(\rightarrow\) svavelsyra \(\rightarrow\) surare nederbörd \(\rightarrow\) försurning</strong></p>
+          <p>När sådan nederbörd når mark och sjöar kan pH sjunka, känsliga organismer påverkas och ämnen lakas ur marken. Försurningen gör dessutom vissa metaller mer lösliga, och därmed lättare att ta upp för levande organismer.</p>
+          <h2>Kväveoxider bidrar också till försurning</h2>
+          <p>Kväveoxiderna — främst <strong>NO</strong> och <strong>\(\ce{NO2}\)</strong> — reagerar vidare i atmosfären och bildar bland annat <strong>salpetersyra, \(\ce{HNO3}\)</strong>.</p>
+          <p>Följer den med nederbörden bidrar den till försurning på samma sätt som svavelsyran.</p>
+          <h2>Kväve är också näring, och därför blir det övergödning</h2>
+          <p>Men kväve har en effekt till, och den är motsatt.</p>
+          <p>Kväve är ett <strong>näringsämne</strong> som växter behöver. När kväveföreningar faller ner på mark eller i vatten tillförs ekosystemet alltså näring på köpet.</p>
+          <p>I många ekosystem är tillgången på kväve begränsad, och arterna är anpassade efter det. Kommer det plötsligt mer kväve växer de arter som kan utnyttja det snabbast, och tränger undan de andra.</p>
+          <p>I vatten ökar tillväxten av <strong>alger och växtplankton</strong>. När algerna dör bryts de ner av bakterier, och nedbrytningen förbrukar syre. Resultatet kan bli syrebrist i bottenvattnet.</p>
+          <p>Samma utsläpp orsakar alltså två olika problem. Kvävets väg genom naturen undersöker vi närmare i delkapitel 7.</p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Naturen tål en viss mängd, men inte hur mycket som helst</h2>
+          <p>Standardtexten beskriver försurning och övergödning som följder av utsläpp. Det ger intrycket att varje utsläpp gör lika stor skada var det än hamnar. Det gör det inte.</p>
+          <p>Marken och vattnet har ett <strong>motstånd</strong> mot försurning. I områden med kalkrik berggrund neutraliserar berget syran allteftersom den kommer. pH-värdet rör sig knappt, hur mycket surt regn som än faller.</p>
+          <p>I områden med granit och gnejs finns nästan ingenting som neutraliserar. Där slår samma nedfall igenom direkt.</p>
+          <p>Det är därför försurningen blev ett så stort problem i just Sverige, Norge och Finland — berggrunden här är gammal och sur, medan utsläppen kom med vinden från kolkraftverk i mellersta Europa.</p>
+          <p>Forskare talar därför om <strong>kritisk belastning</strong>: den mängd nedfall ett område tål per år utan att ta skada. Den är olika på olika platser, och den är inte något man kan se på utsläppet utan bara på marken som tar emot det.</p>
+          <p>Samma tänkande används för övergödning. En näringsfattig skogssjö tål mycket lite extra kväve. En näringsrik slättsjö tål mer innan den märkbart förändras.</p>
+          <p>Det förklarar också varför kalkning fungerar som åtgärd mot försurade sjöar. Man tillför det berggrunden saknar. Men det botar inte orsaken, och måste upprepas.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-j2.svg" alt="Fem steg i rad. Svavel i bränslet blir svaveldioxid i skorstenen, sprids med vinden, reagerar i molnet till svavelsyra, faller som surt regn och sänker pH-värdet i en sjö.">
+            <figcaption>Svaveldioxiden kan spridas långt innan den blir svavelsyra och faller ner.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> Att räkna utsläpp i ton säger hur mycket som släpps ut. Det säger ingenting om vad det leder till. Effekten avgörs av var det landar — och därför kan två länder med samma utsläpp få helt olika skador.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Tungmetaller och vägen framåt ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <h2>Kol och torv innehåller giftiga metaller</h2>
+          <p>Kol och torv bildades av organiskt material som också samlade på sig mineralämnen från omgivningen.</p>
+          <p>Därför innehåller de små mängder av ämnen som <strong>kvicksilver (Hg), bly (Pb), kadmium (Cd) och arsenik (As)</strong>.</p>
+          <p>Många av dem är giftiga redan i mycket små mängder.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vilka två metaller finns i både kol och torv?</li>
+              <li>Vad händer med antalet prickar när du går uppåt i trappan?</li>
+              <li>Varför spelar det roll att metallerna inte kan brytas ner?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k3-j3.svg" alt="En tabell med kvicksilver, bly, kadmium och arsenik, deras kemiska beteckningar och vilka bränslen de finns i. Bredvid visar en trappa hur halten ökar uppåt i näringskedjan.">
+            <figcaption>Metallerna försvinner inte. De samlas i stället upp uppåt i näringskedjan.</figcaption>
+          </figure>
+          <h2>Metallerna försvinner inte</h2>
+          <p>När kol brinner försvinner inte metallerna. En del stannar kvar i askan, en del följer med rökgaserna ut som mycket små partiklar.</p>
+          <p>Och de kan inte brytas ner.</p>
+          <p>Det är en viktig skillnad mot andra föroreningar. Ett organiskt ämne kan brytas ner till andra ämnen. Ett <strong>grundämne</strong> kan inte det. En kvicksilveratom förblir en kvicksilveratom, för alltid.</p>
+          <p>Den kan byta kemisk form och flytta sig mellan luft, vatten, mark och levande varelser — men den finns kvar.</p>
+          <p>Vissa av metallerna <strong>samlas dessutom upp</strong> i näringskedjorna. Därför kan även små utsläpp få betydelse om de pågår länge.</p>
+          <h2>Reningen har blivit mycket bättre</h2>
+          <p>Moderna kraftverk renar rökgaserna innan de släpps ut.</p>
+          <p><strong>Stoftfilter</strong> fångar upp partiklar och aska. Annan rening tar bort det mesta av svaveldioxiden. Ytterligare teknik minskar kväveoxiderna. En del av metallerna fastnar också på vägen.</p>
+          <p>Det här har fungerat. Utsläppen av svavel i Europa är i dag en bråkdel av vad de var på 1970-talet, och många försurade sjöar har återhämtat sig.</p>
+          <h2>Men koldioxiden blir kvar</h2>
+          <p>Reningen förändrar inte vad som händer med <strong>kolet</strong>.</p>
+          <p>Vid fullständig förbränning <strong>ska</strong> kolatomerna bli koldioxid. Det är hela poängen med reaktionen. Ett filter kan inte fånga in det som reaktionen är till för att skapa.</p>
+          <p>Att rena bort svavel, sot och metaller löser alltså viktiga problem — men det tar inte bort den fossila koldioxiden.</p>
+          <h2>Frågan är inte när bränslena tar slut</h2>
+          <p>Det är lätt att tro att den viktigaste frågan är när oljan tar slut.</p>
+          <p>Men ur klimatsynpunkt finns en viktigare fråga: <strong>hur mycket fossilt kol förs från berggrunden till atmosfären?</strong></p>
+          <p>Det spelar mindre roll om reserverna räcker i femtio eller femhundra år. Att det finns kvar fossilt bränsle i marken betyder inte att det går att bränna utan att luften påverkas.</p>
+          <p>Det finns alltså två olika gränser. Den ena är <strong>geologisk</strong>: hur mycket som finns. Den andra handlar om <strong>klimatet</strong>: hur mycket som kan brännas.</p>
+          <p>Den andra gränsen nås långt före den första.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <h2>Kol och torv innehåller giftiga metaller</h2>
+          <p class="inledning">Kol och torv bildades av organiskt material som under bildningen också samlade på sig mineralämnen. Därför innehåller de små mängder <strong>kvicksilver (Hg), bly (Pb), kadmium (Cd) och arsenik (As)</strong>.</p>
+          <p>Många av dem är giftiga redan i mycket små mängder.</p>
+          <p>Vid förbränning försvinner de inte. En del stannar i askan, en del följer med rökgaserna som små partiklar eller i gasform.</p>
+          <p>Och de kan inte brytas ner. Ett grundämne förblir samma grundämne — det kan byta kemisk form och flytta sig mellan luft, vatten, mark och organismer, men atomerna finns kvar. Vissa av dem ansamlas dessutom i näringskedjorna, så även små utsläpp får betydelse om de pågår länge.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k3-j3.svg" alt="En tabell med kvicksilver, bly, kadmium och arsenik, deras kemiska beteckningar och vilka bränslen de finns i. Bredvid visar en trappa hur halten ökar uppåt i näringskedjan.">
+            <figcaption>Grundämnen kan byta kemisk form men inte brytas ner, och vissa ansamlas i levande organismer.</figcaption>
+          </figure>
+          <h2>Reningen har blivit bättre men löser inte allt</h2>
+          <p>Moderna kraftverk renar rökgaserna. <strong>Stoftfilter</strong> fångar partiklar och aska, rökgasrening avlägsnar en stor del av svaveldioxiden, och andra tekniker minskar kväveoxiderna. En del av metallerna fastnar också.</p>
+          <p>Det har kraftigt minskat flera slags luftföroreningar.</p>
+          <p>Men reningen förändrar inte vad som händer med <strong>kolet</strong>. Vid fullständig förbränning ska kolatomerna bilda koldioxid — det är själva reaktionen. Ett partikelfilter kan inte få koldioxiden att försvinna.</p>
+          <p>Det finns teknik som fångar in koldioxid från stora utsläppskällor och lagrar den i berggrunden, men det är något helt annat än rökgasrening.</p>
+          <h2>Frågan är inte när bränslena tar slut</h2>
+          <p>Det är lätt att tro att den viktigaste frågan är när oljan tar slut.</p>
+          <p>Ur klimatsynpunkt är en annan fråga mer grundläggande: <strong>hur mycket fossilt kol förs från berggrunden till atmosfären?</strong></p>
+          <p>Det spelar mindre roll om reserverna räcker i femtio eller femhundra år. Att det finns fossilt bränsle kvar i marken betyder inte att det kan förbrännas utan att atmosfären påverkas.</p>
+          <p>Det finns alltså två olika gränser. Den ena är <strong>geologisk</strong> — mängden i jordskorpan är begränsad. Den andra handlar om <strong>klimatet</strong> — hur mycket som kan flyttas till atmosfären utan att halten fortsätter stiga.</p>
+          <p>Den andra gränsen nås långt före den första.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Kvicksilvret blir farligt först när bakterier ändrar det</h2>
+          <p>Standardtexten säger att tungmetaller inte kan brytas ner och att de samlas upp i näringskedjorna. Båda delarna stämmer, men den andra behöver en förklaring — för metallen i sig gör det inte.</p>
+          <p>Kvicksilver som faller ner från luften hamnar mest i marken och i bottensediment. I den formen är det svårlösligt och tas upp dåligt av levande organismer. Det ligger mest bara där.</p>
+          <p>Men i syrefattiga bottnar finns bakterier som omvandlar kvicksilvret till <strong>metylkvicksilver</strong> — en kvicksilveratom med en kolgrupp bunden till sig.</p>
+          <p>Det ändrar allt. Metylkvicksilver löser sig i fett och tas därför upp mycket lätt av levande celler. Och det som tas upp i fett stannar kvar, eftersom kroppen gör sig av med det långsamt.</p>
+          <p>Nu kommer effekten som kallas <strong>biomagnifikation</strong>. Växtplankton tar upp lite. Djurplankton äter tusentals växtplankton och får deras samlade innehåll. Småfisk äter djurplankton. Stor rovfisk äter småfisk under många år.</p>
+          <p>Vid varje steg mångdubblas halten. En gädda kan ha hundratusentals gånger högre halt än vattnet den simmar i.</p>
+          <p>Det är därför kostråden om insjöfisk finns, trots att sjövattnet i sig inte är farligt att dricka.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k3-j3.svg" alt="En tabell med kvicksilver, bly, kadmium och arsenik, deras kemiska beteckningar och vilka bränslen de finns i. Bredvid visar en trappa hur halten ökar uppåt i näringskedjan.">
+            <figcaption>Grundämnen kan byta kemisk form men inte brytas ner, och vissa ansamlas i levande organismer.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> "Tungmetaller är giftiga och bryts inte ner" är sant men förklarar inte mönstret. Det avgörande steget är kemiskt: en bakterie sätter en kolgrupp på metallen och gör den fettlöslig. Utan den reaktionen skulle kvicksilvret ligga kvar i sedimentet — och just den reaktionen sker i precis samma syrefria miljöer som en gång bildade våra fossila bränslen.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <!-- Testa dig själv utelämnad: kortsvars-JSON saknas (kapitel/organisk-kemi/data/kortsvar/avsnitt-5-fossila-branslen-och-miljon.json) – knappen kommer tillbaka när filen byggts -->
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-5-fossila-branslen-och-miljon.json"
+           data-avsnitt="a5_fossila-branslen-och-miljon">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-5-fossila-branslen-och-miljon.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a5_fossila-branslen-och-miljon';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'fossila-branslen';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

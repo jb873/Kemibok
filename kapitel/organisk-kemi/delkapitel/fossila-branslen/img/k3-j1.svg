@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-labelledby="t">
+  <title id="t">Solstrålning passerar genom atmosfären och värmer jordytan. Jordytan sänder ut värmestrålning uppåt. En del av den tas upp av växthusgasmolekyler, som sedan sänder ut strålning åt alla håll – en del uppåt mot rymden och en del tillbaka mot jorden. Annan värmestrålning lämnar atmosfären utan att tas upp</title>
+  <defs><linearGradient id="atm" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#a8c4d8" stop-opacity="0"/><stop offset="0.55" stop-color="#a8c4d8" stop-opacity="0.35"/><stop offset="1" stop-color="#a8c4d8" stop-opacity="0.5"/></linearGradient></defs>
+  <rect x="0" y="60" width="800" height="340" fill="url(#atm)" stroke="none" data-del="atmosfar"/>
+  <path d="M0 400 Q200 386 400 400 T800 400 L800 480 L0 480 Z" fill="#5a9668" data-del="jordyta"/>
+  <rect x="0" y="440" width="800" height="40" fill="#8A8A8A" fill-opacity="0.6"/>
+  <text x="400" y="468" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">jordytan värms och strålar ut värme</text>
+  <text x="60" y="30"    font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8A8A8A" text-anchor="start">rymden</text>
+  <line x1="40" y1="20" x2="166.04" y2="380.67" stroke="#e8c547" stroke-width="3" stroke-linecap="round" data-stralning="sol"/>
+  <polygon points="170,392 160.38,382.65 171.71,378.69" fill="#e8c547" data-stralning="sol"/>
+  <line x1="110" y1="20" x2="236.04" y2="380.67" stroke="#e8c547" stroke-width="3" stroke-linecap="round" data-stralning="sol"/>
+  <polygon points="240,392 230.38,382.65 241.71,378.69" fill="#e8c547" data-stralning="sol"/>
+  <line x1="180" y1="20" x2="306.04" y2="380.67" stroke="#e8c547" stroke-width="3" stroke-linecap="round" data-stralning="sol"/>
+  <polygon points="310,392 300.38,382.65 311.71,378.69" fill="#e8c547" data-stralning="sol"/>
+  <text x="70" y="130"    font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" text-anchor="start" fill="#2d4a35">solstrålning passerar</text>
+  <path d="M380 394 L384 381.94 L376 369.87 L384 357.81 L376 345.74 L384 333.68 L376 321.61 L384 309.55 L376 297.48 L384 285.42 L376 273.35 L384 261.29 L376 249.23 L384 237.16 L376 225.1 L384 213.03 L376 200.97 L384 188.9 L376 176.84 L384 164.77 L376 152.71 L384 140.65 L376 128.58 L384 116.52 L376 104.45 L384 92.39 L376 80.32 L384 68.26 L376 56.19 L384 44.13 L376 32.06 L380 20" fill="none" stroke="#C0392B" stroke-width="2" stroke-linejoin="round" data-stralning="varme" data-traff="ingen"/>
+  <polygon points="380,16 376,28 384,28" fill="#C0392B" data-stralning="varme" data-traff="ingen"/>
+  <path d="M740 394 L744 381.94 L736 369.87 L744 357.81 L736 345.74 L744 333.68 L736 321.61 L744 309.55 L736 297.48 L744 285.42 L736 273.35 L744 261.29 L736 249.23 L744 237.16 L736 225.1 L744 213.03 L736 200.97 L744 188.9 L736 176.84 L744 164.77 L736 152.71 L744 140.65 L736 128.58 L744 116.52 L736 104.45 L744 92.39 L736 80.32 L744 68.26 L736 56.19 L744 44.13 L736 32.06 L740 20" fill="none" stroke="#C0392B" stroke-width="2" stroke-linejoin="round" data-stralning="varme" data-traff="ingen"/>
+  <polygon points="740,16 736,28 744,28" fill="#C0392B" data-stralning="varme" data-traff="ingen"/>
+  <path d="M455 394 L457.62 381.41 L448.31 370.16 L454.9 357.13 L445.6 345.87 L452.19 332.84 L442.88 321.59 L449.48 308.56 L440.17 297.3 L446.76 284.27 L437.45 273.02 L444.05 259.98 L434.74 248.73 L441.33 235.7 L436 224" fill="none" stroke="#C0392B" stroke-width="2" stroke-linejoin="round" data-stralning="varme" data-traff="1"/>
+  <polygon points="435.56,220.02 432.91,232.39 440.86,231.51" fill="#C0392B" data-stralning="varme" data-traff="1"/>
+  <path d="M610 394 L616.32 382.78 L610.88 369.22 L621.12 358.78 L615.68 345.22 L625.92 334.78 L620.48 321.22 L630.72 310.78 L625.28 297.22 L635.52 286.78 L634 274" fill="none" stroke="#C0392B" stroke-width="2" stroke-linejoin="round" data-stralning="varme" data-traff="2"/>
+  <polygon points="634.78,270.08 628.51,281.06 636.35,282.63" fill="#C0392B" data-stralning="varme" data-traff="2"/>
+  <rect x="396" y="184" width="68" height="32" rx="8" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.4" data-molekyl="1"/>
+  <text x="430" y="206" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">CO<tspan font-size="0.7em" dy="0.3em">2</tspan></text>
+  <path d="M430 180 L434 168.8 L426 157.6 L434 146.4 L426 135.2 L430 124" fill="none" stroke="#C0392B" stroke-width="1.6" stroke-linejoin="round" data-ut="1" data-riktning="upp" data-molekyl="1"/>
+  <polygon points="430,120 426,132 434,132" fill="#C0392B" data-ut="1" data-riktning="upp" data-molekyl="1"/>
+  <path d="M430 220 L426 231.2 L434 242.4 L426 253.6 L434 264.8 L430 276" fill="none" stroke="#C0392B" stroke-width="1.6" stroke-linejoin="round" data-ut="1" data-riktning="ner" data-molekyl="1"/>
+  <polygon points="430,280 434,268 426,268" fill="#C0392B" data-ut="1" data-riktning="ner" data-molekyl="1"/>
+  <path d="M396.57 192.57 L389.13 183.84 L375.84 185.58 L370.35 173.35 L359.01 171.6" fill="none" stroke="#C0392B" stroke-width="1.6" stroke-linejoin="round" data-ut="1" data-riktning="upp" data-molekyl="1"/>
+  <polygon points="355.51,169.65 364.04,178.99 367.94,172.01" fill="#C0392B" data-ut="1" data-riktning="upp" data-molekyl="1"/>
+  <path d="M462.2 208.94 L469.02 218.57 L482.69 218.34 L487.22 231.25 L498.61 234.3" fill="none" stroke="#C0392B" stroke-width="1.6" stroke-linejoin="round" data-ut="1" data-riktning="ner" data-molekyl="1"/>
+  <polygon points="501.89,236.59 494.33,226.45 489.76,233.01" fill="#C0392B" data-ut="1" data-riktning="ner" data-molekyl="1"/>
+  <path d="M455.46 185.86 L465.92 178.15 L466.63 163.45 L480.34 158.07 L484.3 145.7" fill="none" stroke="#C0392B" stroke-width="1.6" stroke-linejoin="round" data-ut="1" data-riktning="upp" data-molekyl="1"/>
+  <polygon points="486.63,142.45 476.38,149.87 482.88,154.53" fill="#C0392B" data-ut="1" data-riktning="upp" data-molekyl="1"/>
+  <rect x="606" y="234" width="68" height="32" rx="8" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.4" data-molekyl="2"/>
+  <text x="640" y="256" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">CH<tspan font-size="0.7em" dy="0.3em">4</tspan></text>
+  <path d="M640 230 L644 218.8 L636 207.6 L644 196.4 L636 185.2 L640 174" fill="none" stroke="#C0392B" stroke-width="1.6" stroke-linejoin="round" data-ut="1" data-riktning="upp" data-molekyl="2"/>
+  <polygon points="640,170 636,182 644,182" fill="#C0392B" data-ut="1" data-riktning="upp" data-molekyl="2"/>
+  <path d="M640 270 L636 281.2 L644 292.4 L636 303.6 L644 314.8 L640 326" fill="none" stroke="#C0392B" stroke-width="1.6" stroke-linejoin="round" data-ut="1" data-riktning="ner" data-molekyl="2"/>
+  <polygon points="640,330 644,318 636,318" fill="#C0392B" data-ut="1" data-riktning="ner" data-molekyl="2"/>
+  <path d="M606.57 242.57 L599.13 233.84 L585.84 235.58 L580.35 223.35 L569.01 221.6" fill="none" stroke="#C0392B" stroke-width="1.6" stroke-linejoin="round" data-ut="1" data-riktning="upp" data-molekyl="2"/>
+  <polygon points="565.51,219.65 574.04,228.99 577.94,222.01" fill="#C0392B" data-ut="1" data-riktning="upp" data-molekyl="2"/>
+  <path d="M672.2 258.94 L679.02 268.57 L692.69 268.34 L697.22 281.25 L708.61 284.3" fill="none" stroke="#C0392B" stroke-width="1.6" stroke-linejoin="round" data-ut="1" data-riktning="ner" data-molekyl="2"/>
+  <polygon points="711.89,286.59 704.33,276.45 699.76,283.01" fill="#C0392B" data-ut="1" data-riktning="ner" data-molekyl="2"/>
+  <path d="M665.46 235.86 L675.92 228.15 L676.63 213.45 L690.34 208.07 L694.3 195.7" fill="none" stroke="#C0392B" stroke-width="1.6" stroke-linejoin="round" data-ut="1" data-riktning="upp" data-molekyl="2"/>
+  <polygon points="696.63,192.45 686.38,199.87 692.88,204.53" fill="#C0392B" data-ut="1" data-riktning="upp" data-molekyl="2"/>
+  <text x="540" y="130" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" text-anchor="start">växthusgaser tar upp värmestrålning</text>
+  <text x="540" y="148" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" text-anchor="start">och sänder ut den åt alla håll</text>
+</svg>

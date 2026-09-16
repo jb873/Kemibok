@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="780" height="330" role="img" aria-labelledby="t">
+  <title id="t">Tre bilder i genomskärning av en havsbotten. I den första sjunker dött material till botten. I den andra har sediment lagt sig ovanpå. I den tredje ligger materialet djupt ner och utsätts för tryck och värme</title>
+  <text x="132" y="38" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">I dag</text>
+  <rect x="16" y="50" width="232" height="42" fill="#a8c4d8" data-del="vatten" data-panel="1"/>
+  <rect x="16" y="92" width="232" height="158" fill="#3a3a3a" data-del="botten" data-panel="1"/>
+  <rect x="16" y="92" width="232" height="14" fill="#5a9668" data-del="organiskt" data-panel="1"/>
+  <ellipse cx="28" cy="99" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="1"/>
+  <ellipse cx="46.91" cy="99" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="1"/>
+  <ellipse cx="65.82" cy="99" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="1"/>
+  <ellipse cx="84.73" cy="99" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="1"/>
+  <ellipse cx="103.64" cy="99" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="1"/>
+  <ellipse cx="122.55" cy="99" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="1"/>
+  <ellipse cx="141.45" cy="99" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="1"/>
+  <ellipse cx="160.36" cy="99" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="1"/>
+  <ellipse cx="179.27" cy="99" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="1"/>
+  <ellipse cx="198.18" cy="99" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="1"/>
+  <ellipse cx="217.09" cy="99" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="1"/>
+  <ellipse cx="236" cy="99" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="1"/>
+  <rect x="16" y="50" width="232" height="200" fill="none" stroke="#2d4a35" stroke-width="1.4" data-panel="1"/>
+  <text x="132" y="270" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">dött material sjunker till botten</text>
+  <text x="386" y="38" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">Efter tusentals år</text>
+  <rect x="270" y="50" width="232" height="42" fill="#a8c4d8" data-del="vatten" data-panel="2"/>
+  <rect x="270" y="92" width="232" height="158" fill="#3a3a3a" data-del="botten" data-panel="2"/>
+  <rect x="270" y="92" width="232" height="14" fill="#8A8A8A" data-del="sediment" data-panel="2"/>
+  <rect x="270" y="106" width="232" height="14" fill="#9a9a9a" data-del="sediment" data-panel="2"/>
+  <rect x="270" y="120" width="232" height="14" fill="#7c7c7c" data-del="sediment" data-panel="2"/>
+  <rect x="270" y="134" width="232" height="14" fill="#a6a6a6" data-del="sediment" data-panel="2"/>
+  <rect x="270" y="148" width="232" height="9" fill="#5a9668" data-del="organiskt" data-panel="2"/>
+  <ellipse cx="282" cy="152.5" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="2"/>
+  <ellipse cx="308" cy="152.5" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="2"/>
+  <ellipse cx="334" cy="152.5" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="2"/>
+  <ellipse cx="360" cy="152.5" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="2"/>
+  <ellipse cx="386" cy="152.5" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="2"/>
+  <ellipse cx="412" cy="152.5" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="2"/>
+  <ellipse cx="438" cy="152.5" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="2"/>
+  <ellipse cx="464" cy="152.5" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="2"/>
+  <ellipse cx="490" cy="152.5" rx="7" ry="3" fill="#5a9668" stroke="#2d4a35" stroke-width="0.8" data-panel="2"/>
+  <rect x="270" y="50" width="232" height="200" fill="none" stroke="#2d4a35" stroke-width="1.4" data-panel="2"/>
+  <text x="386" y="270" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">sediment täcker materialet</text>
+  <text x="640" y="38" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">Efter miljontals år</text>
+  <rect x="524" y="50" width="232" height="42" fill="#a8c4d8" data-del="vatten" data-panel="3"/>
+  <rect x="524" y="92" width="232" height="158" fill="#3a3a3a" data-del="botten" data-panel="3"/>
+  <rect x="524" y="92" width="232" height="12" fill="#8A8A8A" data-del="sediment" data-panel="3"/>
+  <rect x="524" y="104" width="232" height="12" fill="#9a9a9a" data-del="sediment" data-panel="3"/>
+  <rect x="524" y="116" width="232" height="12" fill="#7c7c7c" data-del="sediment" data-panel="3"/>
+  <rect x="524" y="128" width="232" height="12" fill="#a6a6a6" data-del="sediment" data-panel="3"/>
+  <rect x="524" y="140" width="232" height="12" fill="#8A8A8A" data-del="sediment" data-panel="3"/>
+  <rect x="524" y="152" width="232" height="12" fill="#9a9a9a" data-del="sediment" data-panel="3"/>
+  <rect x="524" y="164" width="232" height="12" fill="#7c7c7c" data-del="sediment" data-panel="3"/>
+  <rect x="524" y="176" width="232" height="12" fill="#a6a6a6" data-del="sediment" data-panel="3"/>
+  <rect x="524" y="188" width="232" height="12" fill="#8A8A8A" data-del="sediment" data-panel="3"/>
+  <rect x="524" y="200" width="232" height="10" fill="#1f2a22" data-del="organiskt" stroke="#5a9668" stroke-width="1.2" data-panel="3"/>
+  <line x1="532" y1="205" x2="558" y2="205" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" data-panel="3"/>
+  <polygon points="568,205 558,210 558,200" fill="#2d4a35" data-panel="3"/>
+  <line x1="748" y1="205" x2="722" y2="205" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" data-panel="3"/>
+  <polygon points="712,205 722,200 722,210" fill="#2d4a35" data-panel="3"/>
+  <text x="550" y="194" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-weight="bold">tryck</text>
+  <text x="730" y="194" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-weight="bold">tryck</text>
+  <path d="M584 232 q10 -8 20 0 t20 0 t20 0 t20 0 t20 0 t20 0" fill="none" stroke="#e8c547" stroke-width="2.4" data-panel="3"/>
+  <text x="640" y="250"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-weight="bold" fill="#e8c547">värme</text>
+  <rect x="524" y="50" width="232" height="200" fill="none" stroke="#2d4a35" stroke-width="1.4" data-panel="3"/>
+  <text x="640" y="270" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">kolväten bildas</text>
+  <line x1="16" y1="304" x2="757.6" y2="304" stroke="#2d4a35" stroke-width="1.6" stroke-linecap="round" />
+  <polygon points="764,304 757.6,307.2 757.6,300.8" fill="#2d4a35" />
+  <line x1="132" y1="298" x2="132" y2="310" stroke="#2d4a35" stroke-width="1.4" stroke-linecap="round" />
+  <text x="132" y="322" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">i dag</text>
+  <line x1="386" y1="298" x2="386" y2="310" stroke="#2d4a35" stroke-width="1.4" stroke-linecap="round" />
+  <text x="386" y="322" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">efter tusentals år</text>
+  <line x1="640" y1="298" x2="640" y2="310" stroke="#2d4a35" stroke-width="1.4" stroke-linecap="round" />
+  <text x="640" y="322" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">efter miljontals år</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-labelledby="t">
+  <title id="t">Genomskärning av berggrund. Under ett tätt berglager ligger naturgas överst, olja i mitten och vatten underst. En detaljförstoring visar att oljan sitter i små hålrum mellan bergkorn</title>
+  <rect x="20" y="90" width="500" height="270" fill="#8A8A8A" fill-opacity="0.35" data-del="porost"/>
+  <pattern id="porer" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.3" fill="#2d4a35" fill-opacity="0.35"/><circle cx="11" cy="10" r="1.3" fill="#2d4a35" fill-opacity="0.35"/></pattern>
+  <rect x="20" y="90" width="500" height="270" fill="url(#porer)" />
+  <clipPath id="lins"><path d="M120 250 Q270 110 420 250 Z"/></clipPath>
+  <path d="M120 250 Q270 110 420 250 Z" fill="#a8c4d8" data-fas="vatten" data-ordning="3"/>
+  <rect x="100" y="120" width="340" height="82" fill="#3a3a3a" clip-path="url(#lins)" data-fas="olja" data-ordning="2"/>
+  <rect x="100" y="100" width="340" height="70" fill="#f5f0e4" clip-path="url(#lins)" data-fas="naturgas" data-ordning="1"/>
+  <circle cx="200" cy="150" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <circle cx="220" cy="150" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <circle cx="240" cy="150" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <circle cx="260" cy="150" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <circle cx="280" cy="150" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <circle cx="300" cy="150" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <circle cx="320" cy="150" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <circle cx="210" cy="160" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <circle cx="230" cy="160" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <circle cx="250" cy="160" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <circle cx="270" cy="160" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <circle cx="290" cy="160" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <circle cx="310" cy="160" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <circle cx="330" cy="160" r="1.6" fill="#2d4a35" stroke="none" stroke-width="0" clip-path="url(#lins)"/>
+  <path d="M60 300 Q270 60 480 300" fill="none" stroke="#5a5a5a" stroke-width="16" stroke-linecap="round" data-del="tatt"/>
+  <text x="270" y="84" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">tätt berglager</text>
+  <line x1="330" y1="140" x2="554" y2="130" stroke="#2d4a35" stroke-width="1" stroke-linecap="round" />
+  <text x="560" y="135" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" text-anchor="start">naturgas</text>
+  <line x1="330" y1="195" x2="554" y2="190" stroke="#2d4a35" stroke-width="1" stroke-linecap="round" />
+  <text x="560" y="195" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" text-anchor="start">olja</text>
+  <line x1="330" y1="238" x2="554" y2="245" stroke="#2d4a35" stroke-width="1" stroke-linecap="round" />
+  <text x="560" y="250" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" text-anchor="start">vatten</text>
+  <line x1="270" y1="345" x2="270" y2="268.4" stroke="#2d4a35" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+  <polygon points="270,262 273.2,268.4 266.8,268.4" fill="#2d4a35" stroke-dasharray="5 4"/>
+  <text x="286" y="320" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start">oljan rör sig uppåt</text>
+  <circle cx="650" cy="300" r="62" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.4" data-del="forstoring"/>
+  <clipPath id="lupp"><circle cx="650" cy="300" r="61"/></clipPath>
+  <rect x="588" y="238" width="124" height="124" fill="#3a3a3a" clip-path="url(#lupp)"/>
+  <circle cx="622" cy="274" r="17" fill="#8A8A8A" stroke="#2d4a35" stroke-width="1" clip-path="url(#lupp)" data-korn="1"/>
+  <circle cx="660" cy="266" r="15" fill="#8A8A8A" stroke="#2d4a35" stroke-width="1" clip-path="url(#lupp)" data-korn="1"/>
+  <circle cx="694" cy="292" r="16" fill="#8A8A8A" stroke="#2d4a35" stroke-width="1" clip-path="url(#lupp)" data-korn="1"/>
+  <circle cx="606" cy="310" r="14" fill="#8A8A8A" stroke="#2d4a35" stroke-width="1" clip-path="url(#lupp)" data-korn="1"/>
+  <circle cx="644" cy="306" r="15" fill="#8A8A8A" stroke="#2d4a35" stroke-width="1" clip-path="url(#lupp)" data-korn="1"/>
+  <circle cx="678" cy="328" r="15" fill="#8A8A8A" stroke="#2d4a35" stroke-width="1" clip-path="url(#lupp)" data-korn="1"/>
+  <circle cx="626" cy="342" r="16" fill="#8A8A8A" stroke="#2d4a35" stroke-width="1" clip-path="url(#lupp)" data-korn="1"/>
+  <circle cx="666" cy="352" r="13" fill="#8A8A8A" stroke="#2d4a35" stroke-width="1" clip-path="url(#lupp)" data-korn="1"/>
+  <circle cx="700" cy="322" r="10" fill="#8A8A8A" stroke="#2d4a35" stroke-width="1" clip-path="url(#lupp)" data-korn="1"/>
+  <line x1="590" y1="258" x2="470" y2="200" stroke="#2d4a35" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3"/>
+  <text x="650" y="378" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic">inga underjordiska sjöar</text>
+</svg>

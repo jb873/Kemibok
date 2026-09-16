@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300" role="img" aria-labelledby="t">
+  <title id="t">En tabell med kvicksilver, bly, kadmium och arsenik, deras kemiska beteckningar och vilka bränslen de finns i. Bredvid visar en trappa hur halten ökar uppåt i näringskedjan</title>
+  <text x="65" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Ämne</text>
+  <text x="190" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Beteckning</text>
+  <text x="325" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Finns i</text>
+  <line x1="16" y1="38" x2="410" y2="38" stroke="#2d4a35" stroke-width="1.4" stroke-linecap="round" />
+  <text x="65" y="72" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" data-kolumn="amne" data-rad="1">Kvicksilver</text>
+  <text x="190" y="72" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold" data-kolumn="beteckning" data-rad="1">Hg</text>
+  <text x="325" y="72" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" data-kolumn="finns" data-rad="1">kol, torv</text>
+  <line x1="16" y1="86" x2="410" y2="86" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="65" y="112" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" data-kolumn="amne" data-rad="2">Bly</text>
+  <text x="190" y="112" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold" data-kolumn="beteckning" data-rad="2">Pb</text>
+  <text x="325" y="112" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" data-kolumn="finns" data-rad="2">kol</text>
+  <line x1="16" y1="126" x2="410" y2="126" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="65" y="152" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" data-kolumn="amne" data-rad="3">Kadmium</text>
+  <text x="190" y="152" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold" data-kolumn="beteckning" data-rad="3">Cd</text>
+  <text x="325" y="152" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" data-kolumn="finns" data-rad="3">kol, torv</text>
+  <line x1="16" y1="166" x2="410" y2="166" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="65" y="192" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" data-kolumn="amne" data-rad="4">Arsenik</text>
+  <text x="190" y="192" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold" data-kolumn="beteckning" data-rad="4">As</text>
+  <text x="325" y="192" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" data-kolumn="finns" data-rad="4">kol</text>
+  <line x1="16" y1="206" x2="410" y2="206" stroke="#2d4a35" stroke-width="1.4" stroke-linecap="round" />
+  <rect x="16" y="220" width="394" height="30" fill="#5a9668" rx="5" data-del="markerad-rad"/>
+  <text x="205" y="240"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#f5f0e4">kan inte brytas ner — atomerna finns kvar för alltid</text>
+  <rect x="460" y="230" width="70" height="20" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-trappsteg="1" data-prickar="1"/>
+  <circle cx="472" cy="242" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="1"/>
+  <text x="495" y="268" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">plankton</text>
+  <rect x="540" y="186" width="70" height="64" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-trappsteg="2" data-prickar="3"/>
+  <circle cx="552" cy="198" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="2"/>
+  <circle cx="567" cy="198" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="2"/>
+  <circle cx="582" cy="198" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="2"/>
+  <text x="575" y="268" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">småfisk</text>
+  <rect x="620" y="142" width="70" height="108" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-trappsteg="3" data-prickar="6"/>
+  <circle cx="632" cy="154" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="3"/>
+  <circle cx="647" cy="154" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="3"/>
+  <circle cx="662" cy="154" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="3"/>
+  <circle cx="677" cy="154" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="3"/>
+  <circle cx="632" cy="166" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="3"/>
+  <circle cx="647" cy="166" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="3"/>
+  <text x="655" y="268" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">större fisk</text>
+  <rect x="700" y="98" width="70" height="152" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-trappsteg="4" data-prickar="10"/>
+  <circle cx="712" cy="110" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="4"/>
+  <circle cx="727" cy="110" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="4"/>
+  <circle cx="742" cy="110" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="4"/>
+  <circle cx="757" cy="110" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="4"/>
+  <circle cx="712" cy="122" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="4"/>
+  <circle cx="727" cy="122" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="4"/>
+  <circle cx="742" cy="122" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="4"/>
+  <circle cx="757" cy="122" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="4"/>
+  <circle cx="712" cy="134" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="4"/>
+  <circle cx="727" cy="134" r="3.2" fill="#3a3a3a" stroke="none" stroke-width="0" data-prick="4"/>
+  <text x="735" y="268" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">rovfågel</text>
+  <text x="620" y="290" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">halten ökar uppåt i näringskedjan</text>
+</svg>

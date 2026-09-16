@@ -121,6 +121,7 @@ function inline(s) {
   // fet reaktion i löptext → ett enda \(\ce{…}\) (lib-notation.arReaktion); övrig fetstil → <strong>
   t = t.replace(/\*\*([^*]+)\*\*/g, (m, x) => arReaktion(x) ? `§§${ceify(x)}§§` : m);
   t = formler(t).replace(/§§([^§]*)§§/g, '\\(\\ce{$1}\\)');
+  t = t.replace(/\d(?: \d{3})+(?!\d)/g, m => m.replace(/ /g, '&nbsp;'));   // tusentalsmellanslag ("1 500 grader") får inte brytas över radslut (som bygg-djupdykning.js); årtal utan mellanslag rörs inte
   t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/(^|[\s(])\*([^*\n]+)\*(?=[\s.,;:)]|$)/g, '$1<em>$2</em>');
   return t;
 }
@@ -136,6 +137,11 @@ function nivaHtml(text, niva) {
     // fristående fetstilt reaktionsrad → display-formel
     if (rader.length === 1 && /^\*\*[^*]+\*\*$/.test(b) && arReaktion(b.replace(/\*\*/g, ''))) {
       ut.push({ typ: 'formel', html: `<div class="formel">\\[\\ce{${ceify(b.replace(/\*\*/g, ''))}}\\]</div>`, kalla: b }); continue;
+    }
+    // "$$\ce{…}$$" som eget stycke (fossila bränslen, fördjupning 3.2) → samma display-formel; $$ är inte en avgränsare i mathjax-config
+    if (rader.length === 1 && /^\$\$[\s\S]+\$\$$/.test(b)) {
+      const inre = b.replace(/^\$\$|\$\$$/g, '').trim();
+      ut.push({ typ: 'formel', html: `<div class="formel">\\[${/\\ce\{/.test(inre) ? inre : '\\ce{' + inre + '}'}\\]</div>`, kalla: b }); continue;
     }
     // fristående fetstilt allmän formel med n (CₙH₂ₙ₊₂, kolväten 1.2) → display-uttryck i vanlig MathJax, inte \ce
     if (rader.length === 1 && /^\*\*[^*]+\*\*$/.test(b) && arAllmanFormel(b.replace(/\*\*/g, ''))) {

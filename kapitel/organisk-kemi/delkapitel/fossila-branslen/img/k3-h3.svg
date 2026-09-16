@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-labelledby="t">
+  <title id="t">Två lågor. Den vänstra är blå, har gott om syre och ger koldioxid och vatten. Den högra är gul och sotande, har för lite syre och ger kolmonoxid, sot och koldioxid</title>
+  <path d="M230 240 C186 200 190 150 224 100 C234 130 252 140 244 160 C270 180 270 220 230 240 Z" fill="#a8c4d8" stroke="#2d4a35" stroke-width="2" data-laga="bla"/>
+  <rect x="200" y="240" width="60" height="10" fill="#8A8A8A" rx="3"/>
+  <text x="230" y="268" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">gott om syre</text>
+  <text x="282" y="120" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">het</text>
+  <line x1="120" y1="245" x2="182" y2="245" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-in="bransle" data-laga="bla"/>
+  <polygon points="190,245 182,249 182,241" fill="#2d4a35" data-in="bransle" data-laga="bla"/>
+  <text x="118" y="250" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" text-anchor="end">bränsle</text>
+  <line x1="120" y1="215" x2="178.15" y2="226.45" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-in="syre" data-laga="bla"/>
+  <polygon points="186,228 177.38,230.38 178.92,222.53" fill="#2d4a35" data-in="syre" data-laga="bla"/>
+  <text x="118" y="212" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" text-anchor="end">syre (gott om)</text>
+  <line x1="220" y1="100" x2="194.18" y2="63.86" stroke="#2d4a35" stroke-width="1.8" stroke-linecap="round" data-ut="CO₂" data-laga="bla"/>
+  <polygon points="190,58 197.11,61.77 191.26,65.95" fill="#2d4a35" data-ut="CO₂" data-laga="bla"/>
+  <text x="190" y="46" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold">CO<tspan font-size="0.7em" dy="0.3em">2</tspan></text>
+  <line x1="228" y1="100" x2="229.66" y2="65.19" stroke="#2d4a35" stroke-width="1.8" stroke-linecap="round" data-ut="H₂O" data-laga="bla"/>
+  <polygon points="230,58 233.25,65.36 226.06,65.02" fill="#2d4a35" data-ut="H₂O" data-laga="bla"/>
+  <text x="230" y="46" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold">H<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">O</tspan></text>
+  <path d="M610 240 C566 200 570 150 604 100 C614 130 632 140 624 160 C650 180 650 220 610 240 Z" fill="#e8c547" stroke="#2d4a35" stroke-width="2" data-laga="gul"/>
+  <rect x="580" y="240" width="60" height="10" fill="#8A8A8A" rx="3"/>
+  <text x="610" y="268" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">för lite syre</text>
+  <text x="662" y="120" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">svalare</text>
+  <line x1="500" y1="245" x2="562" y2="245" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-in="bransle" data-laga="gul"/>
+  <polygon points="570,245 562,249 562,241" fill="#2d4a35" data-in="bransle" data-laga="gul"/>
+  <text x="498" y="250" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" text-anchor="end">bränsle</text>
+  <line x1="500" y1="215" x2="558.15" y2="226.45" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-in="syre" data-laga="gul"/>
+  <polygon points="566,228 557.38,230.38 558.92,222.53" fill="#2d4a35" data-in="syre" data-laga="gul"/>
+  <text x="498" y="212" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" text-anchor="end">syre (för lite)</text>
+  <line x1="600" y1="100" x2="574.18" y2="63.86" stroke="#2d4a35" stroke-width="1.8" stroke-linecap="round" data-ut="CO" data-laga="gul"/>
+  <polygon points="570,58 577.11,61.77 571.26,65.95" fill="#2d4a35" data-ut="CO" data-laga="gul"/>
+  <text x="570" y="46" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold">CO</text>
+  <line x1="608" y1="100" x2="609.66" y2="65.19" stroke="#2d4a35" stroke-width="1.8" stroke-linecap="round" data-ut="sot" data-laga="gul"/>
+  <polygon points="610,58 613.25,65.36 606.06,65.02" fill="#2d4a35" data-ut="sot" data-laga="gul"/>
+  <text x="610" y="46" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold">sot</text>
+  <line x1="616" y1="100" x2="645.47" y2="63.6" stroke="#2d4a35" stroke-width="1.8" stroke-linecap="round" data-ut="CO₂" data-laga="gul"/>
+  <polygon points="650,58 648.27,65.86 642.67,61.33" fill="#2d4a35" data-ut="CO₂" data-laga="gul"/>
+  <text x="650" y="46" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold">CO<tspan font-size="0.7em" dy="0.3em">2</tspan></text>
+  <circle cx="590" cy="80" r="3" fill="#3a3a3a" stroke="none" stroke-width="0" data-sot="1" data-laga="gul"/>
+  <circle cx="620" cy="70" r="3" fill="#3a3a3a" stroke="none" stroke-width="0" data-sot="1" data-laga="gul"/>
+  <circle cx="636" cy="92" r="3" fill="#3a3a3a" stroke="none" stroke-width="0" data-sot="1" data-laga="gul"/>
+  <circle cx="606" cy="62" r="3" fill="#3a3a3a" stroke="none" stroke-width="0" data-sot="1" data-laga="gul"/>
+  <text x="230" y="300" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">fullständig förbränning</text>
+  <text x="610" y="300" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">ofullständig förbränning</text>
+  <line x1="60" y1="318" x2="700" y2="318" stroke="#2d4a35" stroke-width="1" stroke-linecap="round" />
+  <text x="380" y="340" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">samma bränsle, olika mycket syre</text>
+</svg>

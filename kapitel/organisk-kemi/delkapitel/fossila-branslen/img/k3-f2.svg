@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 620" width="720" height="620" role="img" aria-labelledby="t">
+  <title id="t">Ett fraktioneringstorn i genomskärning. Råolja värms till 400 grader och leds in nedtill. Uppåt i tornet blir det kallare, och olika fraktioner tas ut på olika nivåer – gaser högst upp, sedan bensin, fotogen, diesel, smörjoljor, och asfalt i botten</title>
+  <rect x="250" y="50" width="150" height="450" rx="40" fill="#f5f0e4" stroke="#2d4a35" stroke-width="2.2" data-del="torn"/>
+  <rect x="270" y="520" width="110" height="50" fill="#e8c547" rx="6" stroke="#2d4a35" stroke-width="1.6" data-del="ugn"/>
+  <text x="325" y="550" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">400 °C</text>
+  <line x1="325" y1="520" x2="325" y2="508" stroke="#C0392B" stroke-width="3" stroke-linecap="round" />
+  <polygon points="325,496 331,508 319,508" fill="#C0392B" />
+  <line x1="90" y1="545" x2="258" y2="545" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <polygon points="268,545 258,550 258,540" fill="#2d4a35" />
+  <text x="88" y="532" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" text-anchor="end">råolja</text>
+  <line x1="262" y1="122" x2="388" y2="122" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="400" y1="90" x2="437.2" y2="90" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-uttag="1"/>
+  <polygon points="446,90 437.2,94.4 437.2,85.6" fill="#2d4a35" data-uttag="1"/>
+  <text x="456" y="95" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" text-anchor="start">gaser</text>
+  <text x="456" y="111" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start">1–4 kolatomer</text>
+  <path d="M636 92 l7 -6" fill="none" stroke="#3a3a3a" stroke-width="2" stroke-linejoin="round" data-kedja="1"/>
+  <line x1="244" y1="90" x2="250" y2="90" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" />
+  <text x="238" y="95" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" text-anchor="end" data-temp="25">25 °C</text>
+  <line x1="262" y1="198" x2="388" y2="198" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="400" y1="166" x2="437.2" y2="166" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-uttag="2"/>
+  <polygon points="446,166 437.2,170.4 437.2,161.6" fill="#2d4a35" data-uttag="2"/>
+  <text x="456" y="171" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" text-anchor="start">bensin</text>
+  <text x="456" y="187" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start">5–10 kolatomer</text>
+  <path d="M636 168 l7 -6 l7 6" fill="none" stroke="#3a3a3a" stroke-width="2" stroke-linejoin="round" data-kedja="2"/>
+  <line x1="244" y1="166" x2="250" y2="166" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" />
+  <text x="238" y="171" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" text-anchor="end" data-temp="70">70 °C</text>
+  <line x1="262" y1="274" x2="388" y2="274" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="400" y1="242" x2="437.2" y2="242" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-uttag="3"/>
+  <polygon points="446,242 437.2,246.4 437.2,237.6" fill="#2d4a35" data-uttag="3"/>
+  <text x="456" y="247" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" text-anchor="start">fotogen</text>
+  <text x="456" y="263" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start">10–16 kolatomer</text>
+  <path d="M636 244 l7 -6 l7 6 l7 -6" fill="none" stroke="#3a3a3a" stroke-width="2" stroke-linejoin="round" data-kedja="3"/>
+  <line x1="244" y1="242" x2="250" y2="242" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" />
+  <text x="238" y="247" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" text-anchor="end" data-temp="150">150 °C</text>
+  <line x1="262" y1="350" x2="388" y2="350" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="400" y1="318" x2="437.2" y2="318" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-uttag="4"/>
+  <polygon points="446,318 437.2,322.4 437.2,313.6" fill="#2d4a35" data-uttag="4"/>
+  <text x="456" y="323" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" text-anchor="start">diesel</text>
+  <text x="456" y="339" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start">10–22 kolatomer</text>
+  <path d="M636 320 l7 -6 l7 6 l7 -6 l7 6" fill="none" stroke="#3a3a3a" stroke-width="2" stroke-linejoin="round" data-kedja="4"/>
+  <line x1="244" y1="318" x2="250" y2="318" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" />
+  <text x="238" y="323" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" text-anchor="end" data-temp="220">220 °C</text>
+  <line x1="262" y1="426" x2="388" y2="426" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="400" y1="394" x2="437.2" y2="394" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-uttag="5"/>
+  <polygon points="446,394 437.2,398.4 437.2,389.6" fill="#2d4a35" data-uttag="5"/>
+  <text x="456" y="399" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" text-anchor="start">smörjolja och tjockolja</text>
+  <text x="456" y="415" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start">20–70 kolatomer</text>
+  <path d="M636 396 l7 -6 l7 6 l7 -6 l7 6 l7 -6 l7 6" fill="none" stroke="#3a3a3a" stroke-width="2" stroke-linejoin="round" data-kedja="6"/>
+  <line x1="244" y1="394" x2="250" y2="394" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" />
+  <text x="238" y="399" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" text-anchor="end" data-temp="300">300 °C</text>
+  <line x1="400" y1="470" x2="437.2" y2="470" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-uttag="6"/>
+  <polygon points="446,470 437.2,474.4 437.2,465.6" fill="#2d4a35" data-uttag="6"/>
+  <text x="456" y="475" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" text-anchor="start">asfalt</text>
+  <text x="456" y="491" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start">över 70 kolatomer</text>
+  <path d="M636 472 l7 -6 l7 6 l7 -6 l7 6 l7 -6 l7 6 l7 -6 l7 6 l7 -6" fill="none" stroke="#3a3a3a" stroke-width="2" stroke-linejoin="round" data-kedja="9"/>
+  <line x1="244" y1="470" x2="250" y2="470" stroke="#2d4a35" stroke-width="1.2" stroke-linecap="round" />
+  <text x="238" y="475" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" text-anchor="end" data-temp="380">380 °C</text>
+  <text x="190" y="36" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic">svalare</text>
+  <text x="190" y="508" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic">varmare</text>
+  <line x1="190" y1="490" x2="190" y2="59.6" stroke="#8A8A8A" stroke-width="1.4" stroke-linecap="round" />
+  <polygon points="190,54 192.8,59.6 187.2,59.6" fill="#8A8A8A" />
+  <text x="662" y="36" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic">kedjelängd</text>
+</svg>
