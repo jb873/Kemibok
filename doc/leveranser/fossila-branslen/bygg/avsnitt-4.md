@@ -58,6 +58,22 @@ Fullständig och ofullständig förbränning. Placering: första rubriken (dk3-b
 
 # UNDERDEL A — Naturgas är det renaste fossila bränslet
 
+## Kärnpunkter (Enkel)
+
+- Vad bildades naturgasen av?
+- Varför ligger naturgasen ofta ovanför oljan?
+- Varför måste naturgas transporteras i rör?
+- Hur stor del av Sveriges energi kommer från naturgas?
+- Varför ger naturgas mindre koldioxid än de andra fossila bränslena?
+
+## Kärnpunkter (Standard)
+
+- Vad bildades naturgasen av?
+- Varför ligger naturgasen ofta ovanför oljan?
+- Varför måste naturgas transporteras i rör?
+- Hur stor del av Sveriges energi kommer från naturgas?
+- Varför ger naturgas mindre koldioxid än de andra fossila bränslena?
+
 ---
 
 ## A — ENKEL
@@ -180,6 +196,22 @@ jämförelse som bara tittar på förbränningen missar hela frågan om vad som 
 ---
 
 # UNDERDEL B — Fullständig förbränning ger koldioxid och vatten
+
+## Kärnpunkter (Enkel)
+
+- Vad betyder det att något brinner?
+- Vad bildas när vätgas brinner, och vad bildas när rent kol brinner?
+- Vad händer med kolatomerna och väteatomerna i ett kolväte?
+- Varifrån kommer energin som frigörs?
+- Vad har förbränning och cellandning gemensamt?
+
+## Kärnpunkter (Standard)
+
+- Vad betyder det att något brinner?
+- Vad bildas när vätgas brinner, och vad bildas när rent kol brinner?
+- Vad händer med kolatomerna och väteatomerna i ett kolväte?
+- Varifrån kommer energin som frigörs?
+- Vad har förbränning och cellandning gemensamt?
 
 ---
 
@@ -311,6 +343,22 @@ brännbar utan att någon diamant någonsin fattat eld.
 ---
 
 # UNDERDEL C — Ofullständig förbränning och katalysatorn
+
+## Kärnpunkter (Enkel)
+
+- Vad krävs för att förbränningen ska bli fullständig?
+- Vilka ämnen bildas när syret inte räcker?
+- Hur ser du på lågan vilken sorts förbränning det är?
+- Varför märker man inte att man andas in kolmonoxid?
+- Vad gör en katalysator, och vad kan den inte göra?
+
+## Kärnpunkter (Standard)
+
+- Vad krävs för att förbränningen ska bli fullständig?
+- Vilka ämnen bildas när syret inte räcker?
+- Hur ser du på lågan vilken sorts förbränning det är?
+- Varför märker man inte att man andas in kolmonoxid?
+- Vad gör en katalysator, och vad kan den inte göra?
 
 ---
 

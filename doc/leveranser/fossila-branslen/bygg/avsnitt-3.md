@@ -58,6 +58,22 @@ Torvmarken. Placering: andra rubriken (dk3-bildspecar.md); ankare per nivå i by
 
 # UNDERDEL A — Stenkol och brunkol bildades av sumpskogar
 
+## Kärnpunkter (Enkel)
+
+- Vad mer än kol innehåller det man bryter i en kolgruva?
+- När och av vad bildades stenkolet?
+- Vad skiljer brunkol från stenkol?
+- Varför måste brunkol torkas?
+- Vad händer med kolhalten ju längre omvandlingen går?
+
+## Kärnpunkter (Standard)
+
+- Vad mer än kol innehåller det man bryter i en kolgruva?
+- När och av vad bildades stenkolet?
+- Vad skiljer brunkol från stenkol?
+- Varför måste brunkol torkas?
+- Vad händer med kolhalten ju längre omvandlingen går?
+
 ---
 
 ## A — ENKEL
@@ -197,6 +213,22 @@ etikett ett kolfält får är delvis en fråga om var någon valt att dra linjen
 
 # UNDERDEL B — Koks framställs ur stenkol och används till järn
 
+## Kärnpunkter (Enkel)
+
+- Varför hettas stenkolet utan tillgång till luft?
+- Vad drivs ut ur stenkolet, och vad blir kvar?
+- I vilken form finns järnet i berggrunden?
+- Vad är det koksen gör i masugnen?
+- Varför kan koldioxiden från ståltillverkning inte renas bort?
+
+## Kärnpunkter (Standard)
+
+- Varför hettas stenkolet utan tillgång till luft?
+- Vad drivs ut ur stenkolet, och vad blir kvar?
+- I vilken form finns järnet i berggrunden?
+- Vad är det koksen gör i masugnen?
+- Varför kan koldioxiden från ståltillverkning inte renas bort?
+
 ---
 
 ## B — ENKEL
@@ -304,6 +336,22 @@ den är — hög, med luft som blåses in nedtill och gas som stiger genom malme
 ---
 
 # UNDERDEL C — Torv är på väg att bli kol
+
+## Kärnpunkter (Enkel)
+
+- Var bildas torv, och varför just där?
+- Vad blir torven av om den begravs?
+- Hur stor del av Sveriges yta är torvmark?
+- Vilka funktioner har torvmarkerna utöver att lagra kol?
+- Varför används så lite torv som bränsle?
+
+## Kärnpunkter (Standard)
+
+- Var bildas torv, och varför just där?
+- Vad blir torven av om den begravs?
+- Hur stor del av Sveriges yta är torvmark?
+- Vilka funktioner har torvmarkerna utöver att lagra kol?
+- Varför används så lite torv som bränsle?
 
 ---
 

@@ -58,6 +58,22 @@ Tungmetallerna. Placering: första rubriken (dk3-bildspecar.md); ankare per niv�
 
 # UNDERDEL A — Koldioxid förstärker växthuseffekten
 
+## Kärnpunkter (Enkel)
+
+- Vad händer med solstrålningen som träffar jorden?
+- Vad är det växthusgaserna gör med värmestrålningen?
+- Varför är växthuseffekten nödvändig?
+- Vad är det då som är problemet?
+- Hur skiljer sig metan från koldioxid som växthusgas?
+
+## Kärnpunkter (Standard)
+
+- Vad händer med solstrålningen som träffar jorden?
+- Vad är det växthusgaserna gör med värmestrålningen?
+- Varför är växthuseffekten nödvändig?
+- Vad är det då som är problemet?
+- Hur skiljer sig metan från koldioxid som växthusgas?
+
 ---
 
 ## A — ENKEL
@@ -221,6 +237,22 @@ som när molekylens form avgjorde kokpunkten — formen bestämmer beteendet, h�
 
 # UNDERDEL B — Svavel ger försurning och kväve bidrar till både försurning och övergödning
 
+## Kärnpunkter (Enkel)
+
+- Vilka ämnen förutom kol och väte finns i fossila bränslen?
+- Varifrån kommer kvävet i kväveoxiderna?
+- Vilka steg tar svavlet från bränslet till en försurad sjö?
+- Vad händer i marken och i sjöarna när pH sjunker?
+- Varför orsakar kväveutsläpp två olika problem?
+
+## Kärnpunkter (Standard)
+
+- Vilka ämnen förutom kol och väte finns i fossila bränslen?
+- Varifrån kommer kvävet i kväveoxiderna?
+- Vilka steg tar svavlet från bränslet till en försurad sjö?
+- Vad händer i marken och i sjöarna när pH sjunker?
+- Varför orsakar kväveutsläpp två olika problem?
+
 ---
 
 ## B — ENKEL
@@ -379,6 +411,22 @@ utsläpp få helt olika skador.
 ---
 
 # UNDERDEL C — Tungmetaller och vägen framåt
+
+## Kärnpunkter (Enkel)
+
+- Vilka metaller finns i kol och torv?
+- Vad händer med metallerna när bränslet förbränns?
+- Varför kan de inte brytas ner?
+- Vad kan rökgasreningen göra, och vad kan den inte?
+- Vilken fråga är viktigare än när bränslena tar slut?
+
+## Kärnpunkter (Standard)
+
+- Vilka metaller finns i kol och torv?
+- Vad händer med metallerna när bränslet förbränns?
+- Varför kan de inte brytas ner?
+- Vad kan rökgasreningen göra, och vad kan den inte?
+- Vilken fråga är viktigare än när bränslena tar slut?
 
 ---
 

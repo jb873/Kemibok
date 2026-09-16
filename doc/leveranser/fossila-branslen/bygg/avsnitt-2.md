@@ -58,6 +58,22 @@ Krackning. Placering: andra rubriken (dk3-bildspecar.md); ankare per nivå i byg
 
 # UNDERDEL A — Råolja bildades av havets organismer
 
+## Kärnpunkter (Enkel)
+
+- Vilka organismer bildade oljan?
+- Vad var det med bottenmiljön som gjorde att materialet blev kvar?
+- Vad avgör om det bildas olja eller naturgas?
+- Varför rör sig oljan uppåt genom berggrunden?
+- I vilken ordning ligger gas, olja och vatten i en fyndighet?
+
+## Kärnpunkter (Standard)
+
+- Vilka organismer bildade oljan?
+- Vad var det med bottenmiljön som gjorde att materialet blev kvar?
+- Vad avgör om det bildas olja eller naturgas?
+- Varför rör sig oljan uppåt genom berggrunden?
+- I vilken ordning ligger gas, olja och vatten i en fyndighet?
+
 ---
 
 ## A — ENKEL
@@ -180,6 +196,22 @@ det är olja som gått för långt.
 ---
 
 # UNDERDEL B — Fraktionerad destillation delar upp råoljan
+
+## Kärnpunkter (Enkel)
+
+- Varför går det inte att använda råolja som den är?
+- Vilken egenskap hos kolvätena gör uppdelningen möjlig?
+- Vad händer med råoljan längst ner i tornet?
+- Varför hamnar olika ämnen på olika nivåer?
+- Vilken fraktion tas ut högst upp, och vilken i botten?
+
+## Kärnpunkter (Standard)
+
+- Varför går det inte att använda råolja som den är?
+- Vilken egenskap hos kolvätena gör uppdelningen möjlig?
+- Vad händer med råoljan längst ner i tornet?
+- Varför hamnar olika ämnen på olika nivåer?
+- Vilken fraktion tas ut högst upp, och vilken i botten?
 
 ---
 
@@ -307,6 +339,22 @@ så användbar — och därför resultatet aldrig blir rent.
 ---
 
 # UNDERDEL C — Krackning och oljan som råvara
+
+## Kärnpunkter (Enkel)
+
+- Varför räcker inte den bensin som fraktioneringen ger?
+- Vad händer med kolvätekedjorna vid krackning?
+- Vilka egenskaper gör olja till ett bra bränsle?
+- Vad används olja till förutom som bränsle?
+- Varifrån kom etenen som blev polyeten?
+
+## Kärnpunkter (Standard)
+
+- Varför räcker inte den bensin som fraktioneringen ger?
+- Vad händer med kolvätekedjorna vid krackning?
+- Vilka egenskaper gör olja till ett bra bränsle?
+- Vad används olja till förutom som bränsle?
+- Varifrån kom etenen som blev polyeten?
 
 ---
 

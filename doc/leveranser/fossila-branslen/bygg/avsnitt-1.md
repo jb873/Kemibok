@@ -58,6 +58,22 @@ De tre fossila bränslena. Placering: första rubriken (dk3-bildspecar.md); anka
 
 # UNDERDEL A — Fossila bränslen bildades av organismer som inte bröts ner
 
+## Kärnpunkter (Enkel)
+
+- Vad händer normalt med kolet i en död växt eller ett dött djur?
+- Vad krävs för att nedbrytningen ska stanna upp?
+- Var finns sådana miljöer?
+- Vad händer med materialet som blir kvar?
+- Hur lång tid tog omvandlingen till olja och kol?
+
+## Kärnpunkter (Standard)
+
+- Vad händer normalt med kolet i en död växt eller ett dött djur?
+- Vad krävs för att nedbrytningen ska stanna upp?
+- Var finns sådana miljöer?
+- Vad händer med materialet som blir kvar?
+- Hur lång tid tog omvandlingen till olja och kol?
+
 ---
 
 ## A — ENKEL
@@ -184,6 +200,22 @@ långsam — utan på att den nästan aldrig lyckas.
 
 # UNDERDEL B — Kolet lämnade det snabba kretsloppet
 
+## Kärnpunkter (Enkel)
+
+- Hur lång tid tar ett varv i det snabba kretsloppet?
+- Vad hände med det kol som begravdes i sedimenten?
+- Vad är det som skiljer det långa kretsloppet från det snabba?
+- Vad gör förbränningen av fossila bränslen med kolet?
+- Varför räknas ved annorlunda än olja?
+
+## Kärnpunkter (Standard)
+
+- Hur lång tid tar ett varv i det snabba kretsloppet?
+- Vad hände med det kol som begravdes i sedimenten?
+- Vad är det som skiljer det långa kretsloppet från det snabba?
+- Vad gör förbränningen av fossila bränslen med kolet?
+- Varför räknas ved annorlunda än olja?
+
 ---
 
 ## B — ENKEL
@@ -304,6 +336,22 @@ som råkar brinna.
 ---
 
 # UNDERDEL C — Olja, kol och naturgas bildades på olika sätt
+
+## Kärnpunkter (Enkel)
+
+- Hur stor del av världens energi kommer från fossila bränslen?
+- Vilka två av de tre bildades i havet?
+- Varför kallas fossila bränslen ändliga?
+- Varför går det inte att säga exakt när oljan tar slut?
+- Vad är det som avgör hur mycket koldioxid ett bränsle ger?
+
+## Kärnpunkter (Standard)
+
+- Hur stor del av världens energi kommer från fossila bränslen?
+- Vilka två av de tre bildades i havet?
+- Varför kallas fossila bränslen ändliga?
+- Varför går det inte att säga exakt när oljan tar slut?
+- Vad är det som avgör hur mycket koldioxid ett bränsle ger?
 
 ---
 
