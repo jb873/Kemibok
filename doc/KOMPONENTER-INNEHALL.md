@@ -1115,6 +1115,13 @@ med `formel` (Unicode-index och laddningar normaliseras: H₂O = H2O, SO₄²⁻
 tolerans, enhet och alternativa svar. `ord` är skiftlägesokänslig (Jon = jon); `formel` är **skiftlägeskänslig** (CO ≠ Co); ett svar som
 är rätt bortsett från skiftläge räknas som fel men får en egen förklaring om stor bokstav först.
 
+**Allmänna formler som kortsvarsfacit** (v1.5, Joachim 2026-09-16, Kolväten fråga 32): `ce{CₙH₂ₙ}` renderar fel i
+mhchem (bara 2:an nedsänkt, n upprätt), så ett `formel`-svar med n som variabel byggs med **två alternativ**: först
+mhchem i matematikläge, `C_{$n$}H_{$2n$}` – det är facit-visningen (`(ce{…})`) och ger *2n* helt nedsänkt med
+kursivt n – och sedan **den skrivbara formen utan nedsänkning**, `CnH2n`, som rättningen godkänner (första alternativet
+går inte att skriva in). `satt-ihop-kolvaten.js` gör detta automatiskt för varje svar som `lib-notation.arAllmanFormel()`
+känner igen (CₙH₂ₙ₊₂, CₙH₂ₙ, CₙH₂ₙ₋₂ …). I löptext och flipcards gäller `(mathrm{C}_nmathrm{H}_{2n})` (9.5).
+
 Leveransschemat för kortsvarsfiler står i `LEVERANSGUIDE-KEMI-TILLAGG.md` §8. Kemi har **inte**
 matematikbokens övningsmotor (inventerad 2026-09-13: generatorbaserad, ramberoende – bara
 graderaren återanvändes).
@@ -1257,7 +1264,8 @@ När osäker — kolla referensimplementationen **plus** CSS:n **plus** JS:n. **
 ## Revisionshistorik
 **🎨 boklokal**
 
-- **v1.5 (2026-09-15/16):** DEL 10 – `[formel]`-märkningen är informativ (byggaren upptäcker formler själv); 9.5 – ett ritsätt för molekyler per delkapitel (bokstavsstil i Kolväten, cirkelstil i
+- **v1.5 (2026-09-15/16):** DEL 10 – `[formel]`-märkningen är informativ (byggaren upptäcker formler själv); allmänna formler
+  som kortsvarsfacit (mhchem i matematikläge + skrivbar form); 9.5 – ett ritsätt för molekyler per delkapitel (bokstavsstil i Kolväten, cirkelstil i
   Kolatomen) och allmänna formler i SVG som SVG-text med nedsänkta index och kursivt n; (...) endast i löptext
   (Joachim 2026-09-15, efter arbetsorder 3–4 Kolväten).
 - **v1.4 (2026-09-14/15):** 9.3 – grundfigurer som delas mellan delkapitel (k1-a10 Kolets snabba kretslopp:
