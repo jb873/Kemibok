@@ -1,5 +1,7 @@
 # Flipcards — delkapitel 2 "Kolväten"
 
+> Rättelser 2026-09-16 (Joachim): kort 9 bankformulering med versal ("En regel …"), kort 10 "En kolväteförening".
+
 64 kort, 16 per avsnitt.
 
 ## Kontrollräkning, båda hållen
@@ -60,13 +62,13 @@ En bild av en molekyl där atomerna visas som kulor, så att molekylens form fra
 **9. Allmän formel för alkaner**
 CₙH₂ₙ₊₂. Med n kolatomer i en öppen kedja blir antalet väteatomer två gånger n plus två.
 **[formel]**
-*Bankformulering:* **Allmän formel för alkaner** — en regel som ger antalet väteatomer i en
+*Bankformulering:* **Allmän formel för alkaner** — En regel som ger antalet väteatomer i en
 alkan om man vet antalet kolatomer.
 
 ## Begreppskort, fordjupning
 
 **10. Cyklohexan**
-En kolväteföreningen där sex kolatomer bildar en sluten ring. Formeln är C₆H₁₂ — två väteatomer
+En kolväteförening där sex kolatomer bildar en sluten ring. Formeln är C₆H₁₂ — två väteatomer
 färre än om kedjan varit öppen.
 
 ## Modellkort, grundlaggande

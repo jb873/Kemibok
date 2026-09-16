@@ -293,6 +293,18 @@ ${K.dd.map(d => `          <a class="fordj-kort" href="djupdykning-${d.slug}.htm
       </section>
 ` : '';
 
+// Testa dig själv (kortsvar) utelämnas när avsnittets kortsvars-JSON saknas (Joachim 2026-09-16): utan data visar
+// ova-arbetssatt.js bara ett meddelande och väljaren kommer aldrig tillbaka – en återvändsgränd för eleven. Regeln tar bort
+// sig själv när filen finns (bygg om avsnittet). Ingen platshållare.
+const kortsvarFil = path.join(ROT, 'kapitel', KAP.id, 'data', 'kortsvar', `avsnitt-${N}-${K.slug}.json`);
+const kortsvarKnapp = fs.existsSync(kortsvarFil) ? `        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+` : `        <!-- Testa dig själv utelämnad: kortsvars-JSON saknas (${path.relative(ROT, kortsvarFil).replace(/\\/g, '/')}) – knappen kommer tillbaka när filen byggts -->
+`;
+if (!fs.existsSync(kortsvarFil)) { rapport.nivaer.push('Öva: Testa dig själv UTELÄMNAD (kortsvars-JSON saknas)'); }
 const html = `<!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -368,12 +380,7 @@ ${underdelar.map(underdelHtml).join('\n')}${dd}
           <span class="ova-kort-titel">Plugga begrepp</span>
           <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
         </button>
-        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
-          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
-          <span class="ova-kort-titel">Testa dig själv</span>
-          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
-        </button>
-        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+${kortsvarKnapp}        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
           <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
           <span class="ova-kort-titel">Tillämpa</span>
           <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>

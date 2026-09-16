@@ -51,7 +51,7 @@ S: CₙH₂ₙ₊₂. Med n kolatomer i en öppen kedja blir antalet väteatomer
 
 **Cyklohexan**
 F: Cyklohexan
-S: En kolväteföreningen där sex kolatomer bildar en sluten ring. Formeln är C₆H₁₂ — två väteatomer färre än om kedjan varit öppen.
+S: En kolväteförening där sex kolatomer bildar en sluten ring. Formeln är C₆H₁₂ — två väteatomer färre än om kedjan varit öppen.
 
 
 ## Modellkort — grundläggande
@@ -333,5 +333,5 @@ S: Det beror på hur ordnat kedjorna ligger. Ogrenade kedjor packar sig tätt oc
 
 Endast grundläggande begreppskort. Bankformuleringar (kortets term → bankterm) ur leveransen:
 
-**Allmän formel för alkaner** → **Allmän formel för alkaner** — en regel som ger antalet väteatomer i en alkan om man vet antalet kolatomer.
+**Allmän formel för alkaner** → **Allmän formel för alkaner** — En regel som ger antalet väteatomer i en alkan om man vet antalet kolatomer.
 

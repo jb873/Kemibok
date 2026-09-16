@@ -1123,6 +1123,12 @@ graderaren återanvändes).
 
 Flipcards är det eleverna kommer använda mest i kemi.
 
+**`[formel]`-märkningen i leveranserna är informativ, inte styrande** (v1.5, Joachim 2026-09-16). Byggaren
+(`verktyg/bygg-flipcards.js`) upptäcker själv formler i fråga och svar – `ce{}` efter konvertering av Unicode-formler,
+eller ett `(…)`-uttryck som CₙH₂ₙ₊₂ – och bygger kortet därefter. Märkningen behöver därför inte vara komplett eller
+exakt; byggaren varnar när den och innehållet inte stämmer överens, men det byggda följer innehållet. Alla kort typsätts
+med MathJax efter vändning (KemiFormler-hooken), oavsett märkning. Lägg ingen tid på märkningen i nästa leverans.
+
 ### Fråga och svar — inget skrivande
 
 **Kemins flipcards är rena fråga/svar-kort.** Ingen skrivyta, ingen inmatning från eleven.
@@ -1251,7 +1257,7 @@ När osäker — kolla referensimplementationen **plus** CSS:n **plus** JS:n. **
 ## Revisionshistorik
 **🎨 boklokal**
 
-- **v1.5 (2026-09-15):** 9.5 – ett ritsätt för molekyler per delkapitel (bokstavsstil i Kolväten, cirkelstil i
+- **v1.5 (2026-09-15/16):** DEL 10 – `[formel]`-märkningen är informativ (byggaren upptäcker formler själv); 9.5 – ett ritsätt för molekyler per delkapitel (bokstavsstil i Kolväten, cirkelstil i
   Kolatomen) och allmänna formler i SVG som SVG-text med nedsänkta index och kursivt n; (...) endast i löptext
   (Joachim 2026-09-15, efter arbetsorder 3–4 Kolväten).
 - **v1.4 (2026-09-14/15):** 9.3 – grundfigurer som delas mellan delkapitel (k1-a10 Kolets snabba kretslopp:
