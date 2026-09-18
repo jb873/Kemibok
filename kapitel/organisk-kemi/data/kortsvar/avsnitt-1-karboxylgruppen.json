@@ -1,0 +1,128 @@
+{
+  "avsnitt": 1,
+  "titel": "Karboxylgruppen",
+  "delkapitel": "syror-och-estrar",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 1 (Karboxylgruppen), delkapitel Organiska syror och estrar, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/syror-och-estrar/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k1-s1",
+      "typ": "tal",
+      "fraga": "Hur många syreatomer finns i en karboxylgrupp?",
+      "svar": 2,
+      "forklaring": "En är dubbelbunden till kolatomen, den andra ingår i hydroxylgruppen."
+    },
+    {
+      "id": "k1-s2",
+      "typ": "tal",
+      "fraga": "Hur många bindningar från karboxylgruppens kolatom går till syre?",
+      "svar": 3,
+      "forklaring": "Två i dubbelbindningen och en till hydroxylgruppen. Den fjärde går till resten av molekylen."
+    },
+    {
+      "id": "k1-s3",
+      "typ": "tal",
+      "fraga": "Hur många syreatomer har etanol, och hur många har etansyra? Ange skillnaden.",
+      "svar": 1,
+      "forklaring": "Etanol har en syreatom och etansyra två. Vid oxidationen tas en syreatom upp."
+    },
+    {
+      "id": "k1-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas den funktionella grupp som gör ett ämne till en organisk syra?",
+      "svar": [
+        "karboxylgrupp"
+      ],
+      "forklaring": "Den består av en kolatom med en dubbelbunden syreatom och en hydroxylgrupp, och skrivs –COOH."
+    },
+    {
+      "id": "k1-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas det när ett ämne tar upp syre eller avger väte?",
+      "svar": [
+        "oxidation"
+      ],
+      "forklaring": "När etanol blir ättiksyra sker båda sakerna samtidigt."
+    },
+    {
+      "id": "k1-s6",
+      "typ": "ord",
+      "fraga": "Vilket ord betyder surt vin?",
+      "svar": [
+        "vinäger"
+      ],
+      "forklaring": "Ordet beskriver den kemiska förändringen: etanolen i vinet har oxiderats till ättiksyra."
+    },
+    {
+      "id": "k1-s7",
+      "typ": "formel",
+      "fraga": "Skriv formeln för etansyra.",
+      "svar": [
+        "CH3COOH"
+      ],
+      "forklaring": "Två kolatomer — en i kolkedjan och en i karboxylgruppen."
+    },
+    {
+      "id": "k1-s8",
+      "typ": "formel",
+      "fraga": "Skriv formeln för jonen som blir kvar när etansyra avgett sin vätejon.",
+      "svar": [
+        "CH3COO-"
+      ],
+      "forklaring": "Väteatomen från hydroxylgruppen har lämnat, och jonen har därför en negativ laddning."
+    },
+    {
+      "id": "k1-s9",
+      "typ": "flerval",
+      "fraga": "Varför är en alkohol inte en syra trots att den har en OH-grupp?",
+      "alternativ": [
+        "OH-gruppen sitter fel",
+        "det saknas en dubbelbunden syreatom på samma kolatom",
+        "alkoholen har för få kolatomer",
+        "OH-gruppen är laddad"
+      ],
+      "svar": 1,
+      "forklaring": "Det är kombinationen av dubbelbunden syreatom och hydroxylgrupp som gör ämnet surt."
+    },
+    {
+      "id": "k1-s10",
+      "typ": "flerval",
+      "fraga": "Vad bildas när en organisk syra avger sin vätejon till en vattenmolekyl?",
+      "alternativ": [
+        "en hydroxidjon",
+        "en oxoniumjon",
+        "en väteatom",
+        "en vätemolekyl"
+      ],
+      "svar": 1,
+      "forklaring": "Oxoniumjonerna gör lösningen sur och sänker pH."
+    },
+    {
+      "id": "k1-s11",
+      "typ": "flerval",
+      "fraga": "Vad betyder det att en syra är svag?",
+      "alternativ": [
+        "att den är utspädd",
+        "att den är ofarlig",
+        "att bara en del av molekylerna avger sin vätejon",
+        "att den har lågt pH"
+      ],
+      "svar": 2,
+      "forklaring": "En koncentrerad svag syra kan vara frätande. Svag beskriver andelen molekyler, inte farligheten."
+    },
+    {
+      "id": "k1-s12",
+      "typ": "flerval",
+      "fraga": "Varför blir omogen frukt sötare när den mognar?",
+      "alternativ": [
+        "syrorna avdunstar",
+        "sockret ökar och syrorna minskar",
+        "frukten tar upp socker ur marken",
+        "syrorna omvandlas till socker"
+      ],
+      "svar": 1,
+      "forklaring": "Frukten blir god precis när fröna är färdiga, så att djur äter den och sprider dem. ---"
+    }
+  ]
+}

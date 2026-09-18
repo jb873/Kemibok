@@ -1,0 +1,131 @@
+{
+  "avsnitt": 2,
+  "titel": "Organiska syror omkring oss",
+  "delkapitel": "syror-och-estrar",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 2 (Organiska syror omkring oss), delkapitel Organiska syror och estrar, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/syror-och-estrar/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k2-s1",
+      "typ": "tal",
+      "fraga": "Hur många kolatomer har myrsyra?",
+      "svar": 1,
+      "forklaring": "Den enda kolatomen sitter i karboxylgruppen. Det finns ingen kolkedja utanför."
+    },
+    {
+      "id": "k2-s2",
+      "typ": "tal",
+      "fraga": "Hur många kolatomer har stearinsyra?",
+      "svar": 18,
+      "forklaring": "Den långa kedjan gör att ämnet är fast vid rumstemperatur."
+    },
+    {
+      "id": "k2-s3",
+      "typ": "tal",
+      "fraga": "Ungefär hur många procent ättiksyra innehåller vanlig vinäger?",
+      "svar": 6,
+      "forklaring": "Resten är vatten. Ungefär fem till sex procent är det vanliga.",
+      "tolerans": {
+        "abs": 1
+      }
+    },
+    {
+      "id": "k2-s4",
+      "typ": "ord",
+      "fraga": "Vilken organisk syra finns i myrors försvar och i nässlornas brännhår?",
+      "svar": [
+        "myrsyra"
+      ],
+      "forklaring": "Den är starkast av de enkla organiska syrorna, men räknas ändå som en svag syra."
+    },
+    {
+      "id": "k2-s5",
+      "typ": "ord",
+      "fraga": "Vilken syra används som mögelhämmare i bröd och djurfoder?",
+      "svar": [
+        "propansyra"
+      ],
+      "forklaring": "Den bildas också naturligt av bakterier i surdeg."
+    },
+    {
+      "id": "k2-s6",
+      "typ": "ord",
+      "fraga": "Vad kallas organiska syror med mycket långa kolkedjor?",
+      "svar": [
+        "fettsyror"
+      ],
+      "forklaring": "De är byggstenar i fett, vilket avsnitt 3 handlar om."
+    },
+    {
+      "id": "k2-s7",
+      "typ": "ord",
+      "fraga": "Vad kallas de delar av växtmaterial som kroppen inte kan bryta ner själv?",
+      "svar": [
+        "fibrer"
+      ],
+      "forklaring": "Tarmbakterierna kan däremot bryta ner dem, och då bildas bland annat smörsyra."
+    },
+    {
+      "id": "k2-s8",
+      "typ": "formel",
+      "fraga": "Skriv formeln för myrsyra.",
+      "svar": [
+        "HCOOH"
+      ],
+      "forklaring": "En kolatom, två väteatomer och två syreatomer. Den ena väteatomen sitter på kolet, den andra på syret."
+    },
+    {
+      "id": "k2-s9",
+      "typ": "flerval",
+      "fraga": "Varför håller inlagda livsmedel längre?",
+      "alternativ": [
+        "syran dödar allt liv omedelbart",
+        "den sura miljön gör det svårt för mikroorganismer att växa",
+        "syran tätar förpackningen",
+        "syran gör maten torrare"
+      ],
+      "svar": 1,
+      "forklaring": "Samma princip gäller för propansyra i bröd."
+    },
+    {
+      "id": "k2-s10",
+      "typ": "flerval",
+      "fraga": "Varför är stearinsyra fast medan ättiksyra är flytande?",
+      "alternativ": [
+        "stearinsyra har en annan funktionell grupp",
+        "stearinsyra har mycket längre kolkedja",
+        "ättiksyra är en starkare syra",
+        "stearinsyra innehåller mer syre"
+      ],
+      "svar": 1,
+      "forklaring": "Längre kedja betyder starkare krafter mellan molekylerna och högre smältpunkt — samma samband som hos kolvätena."
+    },
+    {
+      "id": "k2-s11",
+      "typ": "flerval",
+      "fraga": "Var bildas smörsyra i kroppen?",
+      "alternativ": [
+        "i magsäcken",
+        "i levern",
+        "i tjocktarmen",
+        "i musklerna"
+      ],
+      "svar": 2,
+      "forklaring": "Tarmbakterierna bildar den när de bryter ner fibrer, och slemhinnans celler använder den som energi."
+    },
+    {
+      "id": "k2-s12",
+      "typ": "flerval",
+      "fraga": "Vad har smörsyran i härsket smör och smörsyran i tarmen gemensamt?",
+      "alternativ": [
+        "de bildas på samma sätt",
+        "det är samma molekyl",
+        "de luktar likadant i båda fallen",
+        "ingenting"
+      ],
+      "svar": 1,
+      "forklaring": "Samma ämne kan betyda helt olika saker beroende på var det finns. ---"
+    }
+  ]
+}

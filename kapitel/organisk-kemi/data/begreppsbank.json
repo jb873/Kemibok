@@ -3,7 +3,7 @@
   "kapitel_titel": "Organisk kemi",
   "version": 3,
   "skapad": "2026-09-13",
-  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 26 + Kolväten 37 + Fossila bränslen och förbränning 39 = 102.",
+  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 26 + Kolväten 37 + Fossila bränslen och förbränning 39 + Organiska syror och estrar 23 = 125.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -926,6 +926,213 @@
       "term": "tungmetall",
       "expertdefinition": "Metall som kvicksilver, bly eller kadmium. De är giftiga i små mängder och kan inte brytas ner.",
       "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-5-fossila-branslen-och-miljon.json"
+    },
+    {
+      "id": "ke1-b1",
+      "avsnitt": "16",
+      "avsnitt_titel": "Karboxylgruppen",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "organisk syra",
+      "expertdefinition": "En kolförening med en karboxylgrupp. Kallas också karboxylsyra.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-karboxylgruppen.json"
+    },
+    {
+      "id": "ke1-b2",
+      "avsnitt": "16",
+      "avsnitt_titel": "Karboxylgruppen",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "karboxylgrupp",
+      "expertdefinition": "Den funktionella grupp som gör ett ämne till en organisk syra: en kolatom med en dubbelbunden syreatom och en hydroxylgrupp. Skrivs –COOH.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-karboxylgruppen.json"
+    },
+    {
+      "id": "ke1-b3",
+      "avsnitt": "16",
+      "avsnitt_titel": "Karboxylgruppen",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "metansyra",
+      "expertdefinition": "Den enklaste organiska syran. Kallas oftast myrsyra.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-karboxylgruppen.json"
+    },
+    {
+      "id": "ke1-b4",
+      "avsnitt": "16",
+      "avsnitt_titel": "Karboxylgruppen",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "etansyra",
+      "expertdefinition": "Organisk syra med två kolatomer. Kallas oftast ättiksyra.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-karboxylgruppen.json"
+    },
+    {
+      "id": "ke1-b5",
+      "avsnitt": "16",
+      "avsnitt_titel": "Karboxylgruppen",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "oxidation",
+      "expertdefinition": "Att ett ämne tar upp syre eller avger väte.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-karboxylgruppen.json"
+    },
+    {
+      "id": "ke1-b6",
+      "avsnitt": "16",
+      "avsnitt_titel": "Karboxylgruppen",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "ättiksyrabakterier",
+      "expertdefinition": "Bakterier som oxiderar etanol till ättiksyra. Det är så vinäger bildas.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-karboxylgruppen.json"
+    },
+    {
+      "id": "ke1-b7",
+      "avsnitt": "16",
+      "avsnitt_titel": "Karboxylgruppen",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "vinäger",
+      "expertdefinition": "Utspädd ättiksyra. Ordet betyder surt vin.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-karboxylgruppen.json"
+    },
+    {
+      "id": "ke1-b8",
+      "avsnitt": "16",
+      "avsnitt_titel": "Karboxylgruppen",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "etanoatjon",
+      "expertdefinition": "Jonen som blir kvar när etansyra avgett sin vätejon. Kallas oftare acetatjon.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-karboxylgruppen.json"
+    },
+    {
+      "id": "ke2-b3",
+      "avsnitt": "17",
+      "avsnitt_titel": "Organiska syror omkring oss",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "propansyra",
+      "expertdefinition": "Organisk syra med tre kolatomer. Hämmar mögel och används i bröd och djurfoder.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-organiska-syror-omkring-oss.json"
+    },
+    {
+      "id": "ke2-b4",
+      "avsnitt": "17",
+      "avsnitt_titel": "Organiska syror omkring oss",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "smörsyra",
+      "expertdefinition": "Organisk syra med fyra kolatomer. Ger härsket smör dess lukt, men bildas också i tjocktarmen.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-organiska-syror-omkring-oss.json"
+    },
+    {
+      "id": "ke2-b5",
+      "avsnitt": "17",
+      "avsnitt_titel": "Organiska syror omkring oss",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "acetylsalicylsyra",
+      "expertdefinition": "Organisk syra med nio kolatomer. Används som smärtstillande och febernedsättande läkemedel.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-organiska-syror-omkring-oss.json"
+    },
+    {
+      "id": "ke2-b6",
+      "avsnitt": "17",
+      "avsnitt_titel": "Organiska syror omkring oss",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "stearinsyra",
+      "expertdefinition": "Organisk syra med arton kolatomer. Fast vid rumstemperatur och används i stearinljus.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-organiska-syror-omkring-oss.json"
+    },
+    {
+      "id": "ke2-b7",
+      "avsnitt": "17",
+      "avsnitt_titel": "Organiska syror omkring oss",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "fettsyra",
+      "expertdefinition": "En organisk syra med lång kolkedja. Byggsten i fett.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-organiska-syror-omkring-oss.json"
+    },
+    {
+      "id": "ke2-b9",
+      "avsnitt": "17",
+      "avsnitt_titel": "Organiska syror omkring oss",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "mjölksyra",
+      "expertdefinition": "Organisk syra som bildas i musklerna vid hårt arbete när syret inte räcker till.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-organiska-syror-omkring-oss.json"
+    },
+    {
+      "id": "ke2-b10",
+      "avsnitt": "17",
+      "avsnitt_titel": "Organiska syror omkring oss",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "fibrer",
+      "expertdefinition": "Delar av växtmaterial som kroppen inte kan bryta ner själv, men som tarmbakterier kan använda.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-organiska-syror-omkring-oss.json"
+    },
+    {
+      "id": "ke3-b1",
+      "avsnitt": "18",
+      "avsnitt_titel": "Estrar",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "ester",
+      "expertdefinition": "Ett ämne som bildas när en alkohol och en organisk syra reagerar med varandra.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-estrar.json"
+    },
+    {
+      "id": "ke3-b2",
+      "avsnitt": "18",
+      "avsnitt_titel": "Estrar",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "esterbindning",
+      "expertdefinition": "Kopplingen mellan syrans kolatom och alkoholens syreatom i en ester.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-estrar.json"
+    },
+    {
+      "id": "ke3-b3",
+      "avsnitt": "18",
+      "avsnitt_titel": "Estrar",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "esterbildning",
+      "expertdefinition": "Reaktionen där en alkohol och en organisk syra bildar en ester och en vattenmolekyl. Kallas också förestring.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-estrar.json"
+    },
+    {
+      "id": "ke3-b4",
+      "avsnitt": "18",
+      "avsnitt_titel": "Estrar",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "etylacetat",
+      "expertdefinition": "En vanlig ester som bildas av etanol och etansyra. Används som lösningsmedel i lack och lim.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-estrar.json"
+    },
+    {
+      "id": "ke3-b6",
+      "avsnitt": "18",
+      "avsnitt_titel": "Estrar",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "glycerol",
+      "expertdefinition": "Trevärd alkohol med tre hydroxylgrupper. Sitter i mitten av varje fettmolekyl.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-estrar.json"
+    },
+    {
+      "id": "ke3-b7",
+      "avsnitt": "18",
+      "avsnitt_titel": "Estrar",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "fett",
+      "expertdefinition": "En ester av glycerol och tre fettsyror, alltså en molekyl med tre esterbindningar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-estrar.json"
+    },
+    {
+      "id": "ke3-b8",
+      "avsnitt": "18",
+      "avsnitt_titel": "Estrar",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "enzym",
+      "expertdefinition": "Kroppens verktyg för att få bestämda reaktioner att ske, till exempel att bryta esterbindningar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-estrar.json"
+    },
+    {
+      "id": "ke3-b9",
+      "avsnitt": "18",
+      "avsnitt_titel": "Estrar",
+      "delkapitel_titel": "Organiska syror och estrar",
+      "term": "arom",
+      "expertdefinition": "Ett doft- eller smakämne. Många aromer är estrar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-estrar.json"
     }
   ]
 }

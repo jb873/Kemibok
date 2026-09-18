@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrar – Organiska syror och estrar – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Organiska syror och estrar</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">3. Estrar</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 3</span>
+      <h1>Estrar</h1>
+      <p class="subtitel">— när en alkohol och en syra möts —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Estrar ger doft och smak</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">En ester bildas av en alkohol och en syra</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Estrar finns överallt i naturen</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-estrar">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Estrar ger doft och smak ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad är det egentligen som når näsan när du känner doften av en frukt?</li>
+              <li>Varför luktar en riktig banan annorlunda än bananarom?</li>
+              <li>Vad avgör om två molekyler är samma ämne?</li>
+              <li>Var används estrar förutom som doftämnen?</li>
+              <li>Varför är det en fördel att etylacetat avdunstar lätt?</li>
+            </ul>
+          </div>
+
+          <p>Nu känner du <strong>två</strong> funktionella grupper.</p>
+          <p>Alkoholer har <strong>hydroxylgruppen</strong>, –OH. Organiska syror har <strong>karboxylgruppen</strong>, –COOH.</p>
+          <p>I det här avsnittet ska vi se vad som händer när de två <strong>möts</strong>.</p>
+          <p>Då bildas en helt ny sorts ämne: en <strong>ester</strong>.</p>
+          <p>Estrar finns överallt omkring dig. De ger frukter och parfymer deras doft, de används som lösningsmedel — och de finns i allt fett du äter.</p>
+          <h2>Doft är molekyler som lämnat frukten</h2>
+          <p>När du känner doften av en banan är det inte något magiskt som når dig.</p>
+          <p>Det är <strong>molekyler</strong>. De har lämnat frukten, spridits genom luften och landat i ditt luktsinne.</p>
+          <p>Många av de molekylerna är <strong>estrar</strong>.</p>
+          <h2>Olika estrar luktar olika</h2>
+          <p>Vissa estrar har mycket tydliga fruktiga dofter.</p>
+          <p>En viss ester påminner starkt om banan. En annan om päron. En tredje om ananas.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Ser du något mönster i esternamnens ändelser?</li>
+              <li>Vilken ester finns i något som inte är en frukt?</li>
+              <li>Varför smakar konstgjord bananarom inte exakt som banan?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k5-l8.svg" alt="En tabell med sex estrar, vad deras doft påminner om och var de finns naturligt.">
+            <figcaption>Varje ester har sin egen doft. En frukt innehåller många av dem.</figcaption>
+          </figure>
+          <p>Det är samma sorts molekyl i alla tre — det som skiljer dem är hur många kolatomer de har och hur de sitter ihop.</p>
+          <h2>Men en riktig frukt luktar mer än så</h2>
+          <p>En banan innehåller inte bara <strong>en</strong> ester.</p>
+          <p>Doften är en <strong>blandning</strong> av många olika ämnen, och det är kombinationen som gör att en riktig banan luktar sammansatt.</p>
+          <p>Bananarom innehåller ofta bara en eller några få av dem.</p>
+          <p>Därför kan ett smakämne smaka tydligt av banan utan att smaka <strong>som</strong> en banan. Det saknas molekyler.</p>
+          <h2>Konstgjorda doftämnen är samma molekyler</h2>
+          <p>Estrar bildas av levande organismer, men de kan också tillverkas i en fabrik.</p>
+          <p>Här är en viktig sak att förstå.</p>
+          <p>Har två molekyler exakt samma atomer bundna på exakt samma sätt är de <strong>samma ämne</strong> — oavsett var de kom ifrån.</p>
+          <p>En ester tillverkad i en fabrik är alltså <strong>identisk</strong> med samma ester i en frukt. Det finns ingen kemisk skillnad.</p>
+          <p>Sådana ämnen används i läsk, godis, glass, parfym och kosmetika.</p>
+          <p>Skillnaden mellan en naturlig fruktdoft och en enkel arom ligger alltså i <strong>antalet</strong> molekyler, inte i att någon enskild molekyl skulle vara annorlunda.</p>
+          <h2>Estrar är också lösningsmedel</h2>
+          <p>Många estrar löser andra ämnen bra, och används därför i färg, lack och lim.</p>
+          <p>Ett vanligt exempel är <strong>etylacetat</strong>. Det avdunstar lätt, vilket gör det användbart: det löser ämnena medan man arbetar och försvinner sedan när produkten torkar.</p>
+          <p>Lukten av nagellack och lim kommer ofta därifrån.</p>
+          <p>Det är alltså samma ämnesgrupp som ger frukten sin doft.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad är det egentligen som når näsan när du känner doften av en frukt?</li>
+              <li>Varför luktar en riktig banan annorlunda än bananarom?</li>
+              <li>Vad avgör om två molekyler är samma ämne?</li>
+              <li>Var används estrar förutom som doftämnen?</li>
+              <li>Varför är det en fördel att etylacetat avdunstar lätt?</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Vi känner nu två funktionella grupper. Alkoholer har hydroxylgruppen, –OH. Organiska syror har karboxylgruppen, –COOH.</p>
+          <p>Nu ska vi se vad som händer när de <strong>möts</strong>. Då kan det bildas en helt ny sorts ämne: en <strong>ester</strong>.</p>
+          <p>Estrar finns på många håll omkring oss. De ger frukter och parfymer sin doft, de används som lösningsmedel — och de finns i allt fett.</p>
+          <h2>Frukternas doft kommer bland annat från estrar</h2>
+          <p>När du känner doften av en banan, ett päron eller en ananas är det molekyler som lämnat frukten, spridits genom luften och nått ditt luktsinne.</p>
+          <p>Många av dem är <strong>estrar</strong>.</p>
+          <p>Vissa estrar har mycket tydliga fruktiga dofter. En viss ester påminner starkt om banan, en annan om päron.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k5-l8.svg" alt="En tabell med sex estrar, vad deras doft påminner om och var de finns naturligt.">
+            <figcaption>Enskilda estrar har tydliga dofter, men en naturlig fruktdoft är alltid en blandning.</figcaption>
+          </figure>
+          <p>Men en riktig frukt innehåller inte bara en ester. Doften är en <strong>blandning</strong> av många ämnen, och det är kombinationen som gör att en riktig banan luktar mer sammansatt än bananarom.</p>
+          <p>Därför kan ett smakämne smaka tydligt av banan utan att smaka som en banan.</p>
+          <h2>Konstgjorda doftämnen är samma molekyler</h2>
+          <p>Estrar bildas av levande organismer, men kan också tillverkas i fabrik.</p>
+          <p>Har två molekyler exakt samma atomer bundna på samma sätt är de <strong>samma ämne</strong>, oavsett var de bildats.</p>
+          <p>En ester tillverkad i en fabrik är alltså identisk med samma ester i en frukt.</p>
+          <p>Sådana ämnen används som smak- och doftämnen i läsk, godis, glass, parfym och kosmetika.</p>
+          <p>Skillnaden mellan en naturlig fruktdoft och en enkel arom ligger alltså i <strong>antalet molekyler</strong>, inte i att någon enskild molekyl skulle vara annorlunda.</p>
+          <h2>Estrar är också lösningsmedel</h2>
+          <p>Många estrar fungerar bra som lösningsmedel och används i färg, lack och lim.</p>
+          <p>Ett vanligt exempel är <strong>etylacetat</strong>. Det avdunstar lätt, vilket gör att det kan lösa andra ämnen medan produkten används och sedan försvinna när den torkar.</p>
+          <p>Lukten av nagellack och lim kommer ofta därifrån. Det är alltså samma ämnesgrupp som ger frukten sin doft.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Näsan är ett kemiskt instrument med orimlig känslighet</h2>
+          <p>Standardtexten säger att doft är molekyler som lämnat frukten och nått luktsinnet. Det stämmer, men det säger inget om hur lite som räcker.</p>
+          <p>För de flesta estrar behöver du ungefär en <strong>miljarddels gram per liter luft</strong> för att känna lukten. För några ämnen räcker betydligt mindre än så.</p>
+          <p>Den nivån kallas <strong>tröskelvärde</strong>, och den varierar enormt mellan olika molekyler. Etylacetat märks först vid förhållandevis hög halt. Vissa svavelföreningar märks vid en tusendel av det.</p>
+          <p>Det förklarar något viktigt om fruktdofter. En doft består sällan av det ämne som finns <strong>mest</strong> av. Den består av de ämnen som har <strong>lägst tröskelvärde</strong> — de som näsan råkar vara känsligast för.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k5-l8.svg" alt="En tabell med sex estrar, vad deras doft påminner om och var de finns naturligt.">
+            <figcaption>Enskilda estrar har tydliga dofter, men en naturlig fruktdoft är alltid en blandning.</figcaption>
+          </figure>
+          <p>En banan innehåller hundratals flyktiga ämnen, men bara ungefär tjugo av dem bidrar märkbart till doften. Ett par av dem finns i så små mängder att de knappt går att mäta, och ändå avgör de hur frukten luktar.</p>
+          <p>Det är därför konstgjorda aromer är svåra att få perfekta. Man kan analysera en frukt och hitta alla ämnen, men det räcker inte att blanda dem i rätt proportioner. Man måste också veta vilka näsan bryr sig om.</p>
+          <p>Och det förklarar en sak till. Två molekyler som skiljer sig mycket lite — samma atomer, spegelvänd form — kan lukta helt olika. Näsans receptorer känner igen molekylens form, inte dess formel.</p>
+          <p><strong>Om modellen.</strong> "Doft är molekyler som når näsan" är korrekt men gör lukt till en fråga om mängder. Den är i själva verket en fråga om <strong>igenkänning</strong>. Näsan är inte en detektor som mäter hur mycket som finns — den är en uppsättning lås som passar för vissa former.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — En ester bildas av en alkohol och en syra ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilka två ämnen behövs för att bilda en ester?</li>
+              <li>Vilken del lämnar syran, och vilken del lämnar alkoholen?</li>
+              <li>Vad bildas av de två delar som lämnar?</li>
+              <li>Vad kallas den nya kopplingen som blir kvar?</li>
+              <li>Vad gör svavelsyran i reaktionen?</li>
+            </ul>
+          </div>
+
+          <h2>De två delarna möts</h2>
+          <p>En <strong>alkohol</strong> har en hydroxylgrupp, –OH.</p>
+          <p>En <strong>organisk syra</strong> har en karboxylgrupp, –COOH.</p>
+          <p>När de reagerar med varandra bildas en <strong>ester</strong>.</p>
+          <p>Med ord:</p>
+          <p><strong>alkohol + organisk syra \(\ce{<=>}\) ester + vatten</strong></p>
+          <p>Ta etanol och etansyra som exempel. Då bildas estern <strong>etyletanoat</strong>, och vatten.</p>
+          <p>Produkten är varken en alkohol eller en syra längre. Atomerna har kopplats samman på ett nytt sätt, och ett helt nytt ämne har bildats.</p>
+          <h2>En vattenmolekyl lämnar</h2>
+          <p>Nu till det viktigaste i hela avsnittet. Ta det långsamt.</p>
+          <p>När estern bildas kopplas alkoholen och syran ihop — samtidigt som en vattenmolekyl lämnar.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vilken molekyl lämnar OH, och vilken lämnar H?</li>
+              <li>Vad bildas av de två gula delarna tillsammans?</li>
+              <li>Räkna atomerna i steg ett och i steg tre. Stämmer de?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k5-l9.svg" alt="Esterbildningen i tre steg. Först etansyra och etanol med de delar markerade som ska lämna: en OH-grupp från syran och en väteatom från alkoholen. Sedan bildar de tillsammans en vattenmolekyl som lämnar. Sist sitter molekylerna ihop med en esterbindning.">
+            <figcaption>Följ de gula delarna. Syran lämnar OH, alkoholen lämnar H — tillsammans blir det vatten.</figcaption>
+          </figure>
+          <p>Tre steg:</p>
+          <p><strong>Steg 1.</strong> Från <strong>syrans</strong> karboxylgrupp lämnar en <strong>OH-del</strong>.</p>
+          <p><strong>Steg 2.</strong> Från <strong>alkoholens</strong> hydroxylgrupp lämnar en <strong>väteatom, H</strong>.</p>
+          <p><strong>Steg 3.</strong> OH och H sätter sig ihop och bildar <strong>\(\ce{H2O}\)</strong> — en vattenmolekyl.</p>
+          <p>Lägg märke till vem som lämnar vad. Syran lämnar OH. Alkoholen lämnar H. Tillsammans blir det vatten.</p>
+          <h2>Esterbindningen blir kvar</h2>
+          <p>När vattnet har lämnat finns två lediga platser: en på syrans kolatom och en på alkoholens syreatom.</p>
+          <p>De binder till varandra.</p>
+          <p>Den nya kopplingen kallas <strong>esterbindning</strong>.</p>
+          <p>Estern av etansyra och etanol skrivs:</p>
+          <p><strong>\(\ce{CH3-COO-CH2-CH3}\)</strong></p>
+          <p>Reaktionen kallas <strong>esterbildning</strong> eller <strong>förestring</strong>.</p>
+          <h2>Svavelsyra skyndar på reaktionen</h2>
+          <p>Blandar man bara en alkohol och en organisk syra går reaktionen <strong>mycket långsamt</strong>.</p>
+          <p>Därför tillsätter man ofta <strong>svavelsyra</strong> som <strong>katalysator</strong>.</p>
+          <p>En katalysator får reaktionen att gå snabbare utan att själv förbrukas. Det är samma princip som i bilens katalysator, som du mötte i delkapitel 3.</p>
+          <p>Svavelsyran får alltså inte någon annan reaktion att ske. Den hjälper bara den vanliga esterbildningen på traven.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilka två ämnen behövs för att bilda en ester?</li>
+              <li>Vilken del lämnar syran, och vilken del lämnar alkoholen?</li>
+              <li>Vad bildas av de två delar som lämnar?</li>
+              <li>Vad kallas den nya kopplingen som blir kvar?</li>
+              <li>Vad gör svavelsyran i reaktionen?</li>
+            </ul>
+          </div>
+
+          <h2>De två delarna möts</h2>
+          <p class="inledning">En <strong>alkohol</strong> innehåller en hydroxylgrupp, –OH. En <strong>organisk syra</strong> innehåller en karboxylgrupp, –COOH.</p>
+          <p>När de reagerar med varandra bildas en <strong>ester</strong>.</p>
+          <p>Reaktionen kan skrivas med ord:</p>
+          <p><strong>alkohol + organisk syra \(\ce{<=>}\) ester + vatten</strong></p>
+          <p>Som exempel kan etanol reagera med etansyra. Då bildas <strong>etyletanoat</strong> och vatten.</p>
+          <p>Produkten är alltså varken en alkohol eller en syra längre. Atomerna har kopplats samman på ett nytt sätt, och ett ämne med nya egenskaper har bildats.</p>
+          <h2>En vattenmolekyl lämnar</h2>
+          <p>När estern bildas kopplas alkoholen och syran samman samtidigt som en vattenmolekyl lämnar.</p>
+          <p>Tre steg:</p>
+          <ol><li>Från syrans karboxylgrupp lämnar en <strong>OH-del</strong>.</li><li>Från alkoholens hydroxylgrupp lämnar en <strong>väteatom</strong>.</li><li>OH och H bildar tillsammans <strong>\(\ce{H2O}\)</strong>.</li></ol>
+          <figure class="brodtext-bild standard">
+            <img src="img/k5-l9.svg" alt="Esterbildningen i tre steg. Först etansyra och etanol med de delar markerade som ska lämna: en OH-grupp från syran och en väteatom från alkoholen. Sedan bildar de tillsammans en vattenmolekyl som lämnar. Sist sitter molekylerna ihop med en esterbindning.">
+            <figcaption>När vattnet lämnat binds syrans kolatom till alkoholens syreatom. Den kopplingen är esterbindningen.</figcaption>
+          </figure>
+          <p>När vattnet lämnat binds syrans kolatom samman med syreatomen från alkoholen. Den nya kopplingen kallas <strong>esterbindning</strong>.</p>
+          <p>Estern av etansyra och etanol skrivs:</p>
+          <p><strong>\(\ce{CH3-COO-CH2-CH3}\)</strong></p>
+          <p>Reaktionen kallas <strong>esterbildning</strong> eller <strong>förestring</strong>.</p>
+          <h2>Svavelsyra skyndar på reaktionen</h2>
+          <p>Blandar man bara en alkohol och en organisk syra går esterbildningen långsamt.</p>
+          <p>Därför tillsätts ofta <strong>svavelsyra</strong> som <strong>katalysator</strong>.</p>
+          <p>En katalysator får reaktionen att gå snabbare utan att själv förbrukas — samma princip som i bilens katalysator.</p>
+          <p>Svavelsyran får alltså inte en annan reaktion att ske. Den hjälper den vanliga esterbildningen på traven.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Reaktionen tar aldrig slut</h2>
+          <p>Standardtexten skriver esterbildningen med en dubbelpil och säger att svavelsyra gör den snabbare. Båda delarna stämmer, men dubbelpilen betyder mer än det ser ut.</p>
+          <p>Blandar du lika mängder etanol och etansyra och väntar tillräckligt länge händer följande: ungefär <strong>två tredjedelar</strong> omvandlas till ester, och där stannar det.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k5-l9.svg" alt="Esterbildningen i tre steg. Först etansyra och etanol med de delar markerade som ska lämna: en OH-grupp från syran och en väteatom från alkoholen. Sedan bildar de tillsammans en vattenmolekyl som lämnar. Sist sitter molekylerna ihop med en esterbindning.">
+            <figcaption>När vattnet lämnat binds syrans kolatom till alkoholens syreatom. Den kopplingen är esterbindningen.</figcaption>
+          </figure>
+          <p>Inte för att syran tar slut. Den finns kvar. Reaktionen fortsätter — men lika fort åt andra hållet.</p>
+          <p>Det är <strong>jämvikt</strong>. Ester bildas och bryts ner i samma takt, och därför ändras ingenting mätbart även om allt fortfarande pågår.</p>
+          <p>Det får en praktisk följd. Vill man få ut mer ester måste man rubba jämvikten, och det görs på två sätt.</p>
+          <p><strong>Ta bort vattnet.</strong> Utan vatten kan reaktionen inte gå baklänges, och mer ester bildas. Det är därför svavelsyra är så användbar — den är inte bara katalysator utan binder också vatten.</p>
+          <p><strong>Tillsätt mer av ett utgångsämne.</strong> Har man gott om alkohol trycks jämvikten mot estersidan.</p>
+          <p>Katalysatorn gör däremot <strong>ingenting</strong> åt jämviktsläget. Den får bara reaktionen att nå dit snabbare — åt båda hållen lika mycket.</p>
+          <p><strong>Om modellen.</strong> Att skriva en pil mellan utgångsämnen och produkter antyder att reaktionen går från vänster till höger och sedan är färdig. De flesta organiska reaktioner gör inte det. De når ett läge där båda riktningarna pågår, och kemistens arbete består ofta i att flytta det läget — inte i att få reaktionen att ske.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Estrar finns överallt i naturen ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad berättar en esters namn?</li>
+              <li>Hur många hydroxylgrupper har glycerol, och vad betyder det?</li>
+              <li>Vad består en fettmolekyl av?</li>
+              <li>Vad händer med esterbindningen när en ester möter vatten?</li>
+              <li>Varför måste fett brytas ner innan kroppen kan ta upp det?</li>
+            </ul>
+          </div>
+
+          <h2>Namnet berättar vilka delar som ingår</h2>
+          <p>En esters namn visar vilka två ämnen den bildats av.</p>
+          <p>När <strong>etanol</strong> reagerar med <strong>etansyra</strong> bildas <strong>etyletanoat</strong>.</p>
+          <p>Läs namnet i delar. <strong>Etyl-</strong> kommer från etanol. <strong>-etanoat</strong> kommer från etansyra.</p>
+          <p>Ämnet kallas också <strong>etylacetat</strong>, efter det äldre namnet på syrans jon.</p>
+          <p>Du behöver inte kunna namnge alla estrar. Principen räcker: <strong>namnet visar vilka två delar som kopplats samman.</strong></p>
+          <h2>Fetter är estrar</h2>
+          <p>En av biologins viktigaste alkoholer är <strong>glycerol</strong>.</p>
+          <p>Kommer du ihåg den från förra delkapitlet? Den hade <strong>tre</strong> hydroxylgrupper.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna ringarna. Hur många esterbindningar finns det?</li>
+              <li>Varför är det just tre, och inte två eller fyra?</li>
+              <li>Är de tre fettsyrorna lika långa?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k5-l10.svg" alt="En fettmolekyl schematiskt. Glycerolen till vänster med tre bindningar ut, och tre fettsyror av olika längd till höger. De tre esterbindningarna är inringade.">
+            <figcaption>Ett fett är glycerol med tre fettsyror. Tre OH-grupper gav tre platser.</figcaption>
+          </figure>
+          <p>Tre hydroxylgrupper betyder <strong>tre platser</strong> där esterbindningar kan bildas.</p>
+          <p>Reagerar glycerol med tre långa organiska syror — <strong>fettsyror</strong> — bildas tre esterbindningar samtidigt.</p>
+          <p>Resultatet är en <strong>fettmolekyl</strong>.</p>
+          <p><strong>glycerol + tre fettsyror \(\rightarrow\) fett + vatten</strong></p>
+          <p>Ett fett är alltså i grunden en ester. Fast med tre bindningar i stället för en.</p>
+          <p>Det är därför just glycerol sitter i mitten av varje fettmolekyl. Den har exakt tre platser att binda till.</p>
+          <p>Fetterna undersöker vi närmare i nästa delkapitel.</p>
+          <h2>Esterbindningen kan brytas igen</h2>
+          <p>Esterbildningen går <strong>åt båda hållen</strong>.</p>
+          <p>Möter en ester vatten kan bindningen brytas, och molekylen delas upp i en alkohol och en organisk syra igen:</p>
+          <p><strong>ester + vatten \(\ce{<=>}\) alkohol + organisk syra</strong></p>
+          <p>I kroppen sker det med hjälp av <strong>enzymer</strong> — kroppens egna verktyg för att bryta bindningar.</p>
+          <h2>Därför måste fett smältas</h2>
+          <p>När du äter fett kan kroppen inte ta upp molekylerna som de är. De är för stora.</p>
+          <p>Först måste esterbindningarna mellan glycerolen och fettsyrorna <strong>brytas</strong>. Då faller fettmolekylen isär i sina fyra delar — glycerolen och de tre fettsyrorna — och de kan tas upp var för sig.</p>
+          <h2>En bindning, två världar</h2>
+          <p>Här möts två delar av kemin som verkar ha lite med varandra att göra.</p>
+          <p><strong>Samma esterbindning som ger frukten sin doft byggs och bryts när kroppen smälter maten.</strong></p>
+          <p>En enda bindningstyp. Två helt olika sammanhang.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad berättar en esters namn?</li>
+              <li>Hur många hydroxylgrupper har glycerol, och vad betyder det?</li>
+              <li>Vad består en fettmolekyl av?</li>
+              <li>Vad händer med esterbindningen när en ester möter vatten?</li>
+              <li>Varför måste fett brytas ner innan kroppen kan ta upp det?</li>
+            </ul>
+          </div>
+
+          <h2>Namnet berättar vilka delar som ingår</h2>
+          <p class="inledning">En esters namn visar vilka ämnen den bildats av.</p>
+          <p>När etanol reagerar med etansyra bildas <strong>etyletanoat</strong>. Första delen, <strong>etyl-</strong>, kommer från etanol. Andra delen, <strong>-etanoat</strong>, kommer från etansyra.</p>
+          <p>Ämnet kallas också <strong>etylacetat</strong>, efter det äldre namnet på syrans jon.</p>
+          <p>Vi behöver inte kunna namnge alla estrar. Principen räcker: <strong>namnet visar vilka två delar som kopplats samman.</strong></p>
+          <h2>Fetter är estrar</h2>
+          <p>En av biologins viktigaste alkoholer är <strong>glycerol</strong>.</p>
+          <p>Glycerol har tre hydroxylgrupper. Det betyder tre platser där esterbindningar kan bildas.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k5-l10.svg" alt="En fettmolekyl schematiskt. Glycerolen till vänster med tre bindningar ut, och tre fettsyror av olika längd till höger. De tre esterbindningarna är inringade.">
+            <figcaption>Varje esterbindning bildades genom att en vattenmolekyl lämnade. Tre bindningar betyder tre vattenmolekyler.</figcaption>
+          </figure>
+          <p>Reagerar glycerol med tre långa organiska syror — <strong>fettsyror</strong> — bildas tre esterbindningar samtidigt. Resultatet är en <strong>fettmolekyl</strong>.</p>
+          <p><strong>glycerol + tre fettsyror \(\rightarrow\) fett + vatten</strong></p>
+          <p>Ett fett är alltså i grunden en ester med tre esterbindningar.</p>
+          <p>Det är därför just glycerol sitter i mitten av varje fettmolekyl: den har exakt tre platser att binda till.</p>
+          <p>Fetterna undersöker vi närmare i nästa delkapitel.</p>
+          <h2>Esterbindningen kan brytas igen</h2>
+          <p>Esterbildningen går <strong>åt båda hållen</strong>.</p>
+          <p>Möter en ester vatten kan bindningen brytas, och molekylen delas upp i en alkohol och en organisk syra igen:</p>
+          <p><strong>ester + vatten \(\ce{<=>}\) alkohol + organisk syra</strong></p>
+          <p>I kroppen sker det med hjälp av <strong>enzymer</strong>.</p>
+          <p>När du äter fett måste de stora molekylerna först brytas ner. Esterbindningarna mellan glycerolen och fettsyrorna spjälkas, så att delarna kan tas upp.</p>
+          <p>Här möts två delar av kemin som verkar ha lite med varandra att göra. <strong>Samma esterbindning som ger frukten sin doft byggs och bryts när kroppen smälter maten.</strong></p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Dubbelbindningen avgör om fettet är flytande</h2>
+          <p>Standardtexten säger att ett fett är glycerol med tre fettsyror. Det stämmer, och det räcker för att förstå vad ett fett är. Men det förklarar inte varför olivolja är flytande och smör fast — båda är ju fetter.</p>
+          <p>Skillnaden sitter i fettsyrorna, och närmare bestämt i deras <strong>dubbelbindningar</strong>.</p>
+          <p>I delkapitel 2 mötte du begreppen mättat och omättat. En <strong>mättad</strong> fettsyra har bara enkelbindningar mellan kolatomerna. En <strong>omättad</strong> har minst en dubbelbindning.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k5-l10.svg" alt="En fettmolekyl schematiskt. Glycerolen till vänster med tre bindningar ut, och tre fettsyror av olika längd till höger. De tre esterbindningarna är inringade.">
+            <figcaption>Varje esterbindning bildades genom att en vattenmolekyl lämnade. Tre bindningar betyder tre vattenmolekyler.</figcaption>
+          </figure>
+          <p>Och i fördjupningen till 3.2 i det delkapitlet såg du att en dubbelbindning <strong>inte går att vrida på</strong>.</p>
+          <p>Där möts de två sakerna.</p>
+          <p>En mättad fettsyra är en rak kedja. Raka kedjor kan ligga tätt intill varandra, packa sig hårt och hålla fast med van der Waals-krafter längs hela längden. Ämnet blir <strong>fast</strong>.</p>
+          <p>En omättad fettsyra har en <strong>knyck</strong> där dubbelbindningen sitter, och knycken går inte att räta ut. Molekylerna kan inte packa sig lika tätt, attraktionen blir svagare, och ämnet blir <strong>flytande</strong>.</p>
+          <p>Det är hela skillnaden mellan smör och olivolja. Samma sorts molekyl, samma esterbindningar — men en knyck på rätt ställe.</p>
+          <p>Det förklarar också varför fleromättade fetter är ännu mer flytande, och varför fiskolja som kommer från kalla vatten är flytande också i kylskåp.</p>
+          <p><strong>Om modellen.</strong> Standardnivån behandlar fett som en enda sorts ämne definierad av esterbindningarna. Det är rätt kemiskt. Men alla egenskaper man faktiskt märker av — konsistens, smältpunkt, hur ett fett beter sig i en stekpanna — bestäms av något annat: formen på de tre kedjorna som hänger av från glycerolen.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-3-estrar.json"
+           data-avsnitt="a3_estrar">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-3-estrar.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a3_estrar';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'syror-och-estrar';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

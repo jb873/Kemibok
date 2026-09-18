@@ -1,0 +1,124 @@
+{
+  "avsnitt": 2,
+  "titel": "Organiska syror omkring oss",
+  "delkapitel": "syror-och-estrar",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 2 (Organiska syror omkring oss), delkapitel Organiska syror och estrar. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/syror-och-estrar/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k2-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Myrsyra",
+      "svar": "Den enklaste organiska syran, HCOOH. Finns i myrors försvarssekret och i nässlornas brännhår. Starkast av de enkla organiska syrorna."
+    },
+    {
+      "id": "k2-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Ättiksyra",
+      "svar": "Organisk syra med två kolatomer, \\(\\ce{CH3COOH}\\). Ger vinäger dess smak och används för att konservera."
+    },
+    {
+      "id": "k2-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Propansyra",
+      "svar": "Organisk syra med tre kolatomer. Hämmar mögel och används i bröd och djurfoder."
+    },
+    {
+      "id": "k2-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Smörsyra",
+      "svar": "Organisk syra med fyra kolatomer. Ger härsket smör dess lukt, men bildas också i tjocktarmen."
+    },
+    {
+      "id": "k2-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Acetylsalicylsyra",
+      "svar": "Organisk syra med nio kolatomer. Används som smärtstillande och febernedsättande läkemedel."
+    },
+    {
+      "id": "k2-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Stearinsyra",
+      "svar": "Organisk syra med arton kolatomer. Fast vid rumstemperatur och används i stearinljus."
+    },
+    {
+      "id": "k2-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fettsyra",
+      "svar": "En organisk syra med lång kolkedja. Byggsten i fett."
+    },
+    {
+      "id": "k2-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Citronsyra",
+      "svar": "Organisk syra som finns i citrusfrukter och som har en roll i cellernas energiomsättning."
+    },
+    {
+      "id": "k2-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Mjölksyra",
+      "svar": "Organisk syra som bildas i musklerna vid hårt arbete när syret inte räcker till."
+    },
+    {
+      "id": "k2-b10",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fibrer",
+      "svar": "Delar av växtmaterial som kroppen inte kan bryta ner själv, men som tarmbakterier kan använda."
+    },
+    {
+      "id": "k2-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Induktiv effekt",
+      "svar": "Att en atomgrupp drar eller skjuter elektroner längs kolkedjan och därmed påverkar syrans styrka."
+    },
+    {
+      "id": "k2-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Kortkedjiga fettsyror",
+      "svar": "Organiska syror med få kolatomer som bildas av tarmbakterier. Smörsyra är en av dem."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k2-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför är stearinsyra fast medan ättiksyra är flytande?",
+      "svar": "Stearinsyra har arton kolatomer. Den långa kolkedjan gör att molekylerna håller fast hårt vid varandra, precis som hos långa kolväten."
+    },
+    {
+      "id": "k2-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför luktar härsket smör illa, och vad är poängen med det?",
+      "svar": "Lukten kommer från smörsyra som bildats när fettet brutits ner. Luktsinnet varnar för att organiskt material håller på att förstöras."
+    },
+    {
+      "id": "k2-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför blir en syra svagare när kolkedjan blir längre?",
+      "svar": "Kolkedjan skjuter ifrån sig elektroner och trycker laddningen tillbaka mot syreatomerna. Jonen blir mindre stabil, och syran något svagare."
+    },
+    {
+      "id": "k2-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför äter tarmcellerna smörsyra i stället för glukos?",
+      "svar": "Smörsyran finns på plats. Den bildas av bakterierna precis utanför cellerna, medan glukos måste hämtas ur blodet på andra sidan tarmväggen."
+    }
+  ]
+}

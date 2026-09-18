@@ -132,6 +132,7 @@ function nivaHtml(text, niva) {
   const block = text.split(/\n\s*\n/).map(b => b.trim()).filter(Boolean);
   const ut = []; let forsta = true;
   for (const b of block) {
+    if (/^-{3,}$/.test(b)) { continue; }   // leveransens avdelare (---) i slutet av en underdel är ingen text (syntes som "<p>---</p>" i Kolväten–Alkoholer, upptäckt 2026-09-18)
     if (/^### /.test(b)) { ut.push({ typ: 'h2', html: `<h2>${inline(b.replace(/^### /, ''))}</h2>` }); continue; }
     const rader = b.split('\n');
     // fristående fetstilt reaktionsrad → display-formel
@@ -150,6 +151,10 @@ function nivaHtml(text, niva) {
     // punktlista → <ul> (plattformens .brodtext ul); tabell → <table class="brodtext-tabell"> (kemi.css)
     if (rader.every(r => /^- /.test(r))) {
       ut.push({ typ: 'lista', html: '<ul>' + rader.map(r => '<li>' + inline(r.replace(/^- /, '')) + '</li>').join('') + '</ul>', kalla: b }); continue;
+    }
+    // numrerad lista ("1. …" på varje rad, syror och estrar 3.2 "Tre steg") → <ol> (geografi.css .brodtext ol)
+    if (rader.length > 1 && rader.every(r => /^\d+\. /.test(r))) {
+      ut.push({ typ: 'lista', html: '<ol>' + rader.map(r => '<li>' + inline(r.replace(/^\d+\. /, '')) + '</li>').join('') + '</ol>', kalla: b }); continue;
     }
     if (rader.every(r => /^\|/.test(r))) {
       const celler = r => r.replace(/^\|\s*|\s*\|$/g, '').split(/\s*\|\s*/);

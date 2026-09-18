@@ -1,0 +1,137 @@
+{
+  "avsnitt": 3,
+  "titel": "Estrar",
+  "delkapitel": "syror-och-estrar",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 3 (Estrar), delkapitel Organiska syror och estrar, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/syror-och-estrar/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k3-s1",
+      "typ": "tal",
+      "fraga": "Hur många esterbindningar finns i en fettmolekyl?",
+      "svar": 3,
+      "forklaring": "Glycerol har tre hydroxylgrupper, och varje grupp kan bilda en esterbindning."
+    },
+    {
+      "id": "k3-s2",
+      "typ": "tal",
+      "fraga": "Hur många vattenmolekyler lämnar när ett fett bildas av glycerol och tre fettsyror?",
+      "svar": 3,
+      "forklaring": "En vattenmolekyl per esterbindning."
+    },
+    {
+      "id": "k3-s3",
+      "typ": "ord",
+      "fraga": "Vad kallas ämnet som bildas när en alkohol och en organisk syra reagerar?",
+      "svar": [
+        "ester"
+      ],
+      "forklaring": "Samtidigt bildas en vattenmolekyl som lämnar."
+    },
+    {
+      "id": "k3-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas kopplingen mellan syrans kolatom och alkoholens syreatom?",
+      "svar": [
+        "esterbindning"
+      ],
+      "forklaring": "Den bildas när vattenmolekylen lämnat och två lediga bindningar möts."
+    },
+    {
+      "id": "k3-s5",
+      "typ": "ord",
+      "fraga": "Vilket ämne används ofta som katalysator vid esterbildning?",
+      "svar": [
+        "svavelsyra"
+      ],
+      "forklaring": "Den får reaktionen att gå snabbare utan att själv förbrukas."
+    },
+    {
+      "id": "k3-s6",
+      "typ": "ord",
+      "fraga": "Vilken alkohol sitter i mitten av varje fettmolekyl?",
+      "svar": [
+        "glycerol"
+      ],
+      "forklaring": "Den har tre hydroxylgrupper, och därför precis tre platser att binda fettsyror till."
+    },
+    {
+      "id": "k3-s7",
+      "typ": "formel",
+      "fraga": "Skriv formeln för estern som bildas av etansyra och etanol.",
+      "svar": [
+        "CH3COOCH2CH3",
+        "CH3-COO-CH2-CH3",
+        "etylacetat",
+        "Etylacetat"
+      ],
+      "forklaring": "Fyra kolatomer, åtta väteatomer och två syreatomer. Ämnet kallas etylacetat."
+    },
+    {
+      "id": "k3-s8",
+      "typ": "flerval",
+      "fraga": "Vilken del lämnar syran när en ester bildas?",
+      "alternativ": [
+        "en väteatom",
+        "en OH-grupp",
+        "hela karboxylgruppen",
+        "en syreatom"
+      ],
+      "svar": 1,
+      "forklaring": "Alkoholen lämnar en väteatom. Tillsammans bildar de en vattenmolekyl."
+    },
+    {
+      "id": "k3-s9",
+      "typ": "flerval",
+      "fraga": "Vad är skillnaden mellan en ester som bildats i en frukt och samma ester tillverkad i en fabrik?",
+      "alternativ": [
+        "fabrikens har färre atomer",
+        "ingen skillnad alls",
+        "fruktens är renare",
+        "fabrikens luktar svagare"
+      ],
+      "svar": 1,
+      "forklaring": "Har två molekyler samma atomer bundna på samma sätt är de samma ämne, oavsett ursprung."
+    },
+    {
+      "id": "k3-s10",
+      "typ": "flerval",
+      "fraga": "Varför luktar en riktig banan annorlunda än bananarom?",
+      "alternativ": [
+        "frukten innehåller mer av samma ester",
+        "frukten innehåller många olika estrar samtidigt",
+        "aromen är kemiskt annorlunda",
+        "frukten är färskare"
+      ],
+      "svar": 1,
+      "forklaring": "Doften är en blandning, och det är kombinationen som gör den sammansatt."
+    },
+    {
+      "id": "k3-s11",
+      "typ": "flerval",
+      "fraga": "Vad händer med en ester som möter vatten?",
+      "alternativ": [
+        "ingenting",
+        "esterbindningen kan brytas",
+        "den bildar en ny ester",
+        "den blir en alkohol bara"
+      ],
+      "svar": 1,
+      "forklaring": "Reaktionen går åt båda hållen. Molekylen kan delas upp i en alkohol och en organisk syra igen."
+    },
+    {
+      "id": "k3-s12",
+      "typ": "flerval",
+      "fraga": "Varför måste fett brytas ner innan kroppen kan ta upp det?",
+      "alternativ": [
+        "fettet är giftigt",
+        "molekylerna är för stora",
+        "fettet är surt",
+        "fettet innehåller vatten"
+      ],
+      "svar": 1,
+      "forklaring": "Esterbindningarna spjälkas med hjälp av enzymer, och då kan glycerolen och fettsyrorna tas upp var för sig."
+    }
+  ]
+}

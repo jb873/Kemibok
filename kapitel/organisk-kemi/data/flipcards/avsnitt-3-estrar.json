@@ -1,0 +1,124 @@
+{
+  "avsnitt": 3,
+  "titel": "Estrar",
+  "delkapitel": "syror-och-estrar",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 3 (Estrar), delkapitel Organiska syror och estrar. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/syror-och-estrar/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k3-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Ester",
+      "svar": "Ett ämne som bildas när en alkohol och en organisk syra reagerar med varandra."
+    },
+    {
+      "id": "k3-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Esterbindning",
+      "svar": "Kopplingen mellan syrans kolatom och alkoholens syreatom i en ester."
+    },
+    {
+      "id": "k3-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Esterbildning",
+      "svar": "Reaktionen där en alkohol och en organisk syra bildar en ester och en vattenmolekyl. Kallas också förestring."
+    },
+    {
+      "id": "k3-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Etylacetat",
+      "svar": "En vanlig ester som bildas av etanol och etansyra. Används som lösningsmedel i lack och lim."
+    },
+    {
+      "id": "k3-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Katalysator",
+      "svar": "Ett ämne som får en reaktion att gå snabbare utan att själv förbrukas. Vid esterbildning används ofta svavelsyra."
+    },
+    {
+      "id": "k3-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Glycerol",
+      "svar": "Trevärd alkohol med tre hydroxylgrupper. Sitter i mitten av varje fettmolekyl."
+    },
+    {
+      "id": "k3-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fett",
+      "svar": "En ester av glycerol och tre fettsyror, alltså en molekyl med tre esterbindningar."
+    },
+    {
+      "id": "k3-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Enzym",
+      "svar": "Kroppens verktyg för att få bestämda reaktioner att ske, till exempel att bryta esterbindningar."
+    },
+    {
+      "id": "k3-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Arom",
+      "svar": "Ett doft- eller smakämne. Många aromer är estrar."
+    },
+    {
+      "id": "k3-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Jämvikt",
+      "svar": "Ett läge där en reaktion pågår lika fort åt båda hållen, så att mängderna inte ändras."
+    },
+    {
+      "id": "k3-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Hydrolys",
+      "svar": "Att en bindning bryts genom reaktion med vatten. Esterbindningen bryts så när fett smälts."
+    },
+    {
+      "id": "k3-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Tröskelvärde",
+      "svar": "Den lägsta halt av ett ämne som näsan kan känna. Den varierar enormt mellan olika molekyler."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k3-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vilken del lämnar syran och vilken lämnar alkoholen när en ester bildas?",
+      "svar": "Syran lämnar en OH-grupp och alkoholen lämnar en väteatom. Tillsammans bildar de en vattenmolekyl."
+    },
+    {
+      "id": "k3-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför har en fettmolekyl just tre fettsyror?",
+      "svar": "För att glycerol har tre hydroxylgrupper, och varje grupp kan bilda en esterbindning."
+    },
+    {
+      "id": "k3-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför tar esterbildningen aldrig slut?",
+      "svar": "Reaktionen går åt båda hållen. Ester bildas och bryts ner i samma takt, och därför ändras ingenting mätbart trots att allt fortfarande pågår."
+    },
+    {
+      "id": "k3-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför är olivolja flytande medan smör är fast?",
+      "svar": "Olivoljans fettsyror har dubbelbindningar som ger kedjan en knyck. Knyckiga kedjor kan inte packas lika tätt, och attraktionen mellan molekylerna blir svagare."
+    }
+  ]
+}

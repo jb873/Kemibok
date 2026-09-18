@@ -1,0 +1,124 @@
+{
+  "avsnitt": 1,
+  "titel": "Karboxylgruppen",
+  "delkapitel": "syror-och-estrar",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 1 (Karboxylgruppen), delkapitel Organiska syror och estrar. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/syror-och-estrar/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k1-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Organisk syra",
+      "svar": "En kolförening med en karboxylgrupp. Kallas också karboxylsyra."
+    },
+    {
+      "id": "k1-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Karboxylgrupp",
+      "svar": "Den funktionella grupp som gör ett ämne till en organisk syra: en kolatom med en dubbelbunden syreatom och en hydroxylgrupp. Skrivs –COOH."
+    },
+    {
+      "id": "k1-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Metansyra",
+      "svar": "Den enklaste organiska syran. Kallas oftast myrsyra."
+    },
+    {
+      "id": "k1-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Etansyra",
+      "svar": "Organisk syra med två kolatomer. Kallas oftast ättiksyra."
+    },
+    {
+      "id": "k1-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Oxidation",
+      "svar": "Att ett ämne tar upp syre eller avger väte."
+    },
+    {
+      "id": "k1-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Ättiksyrabakterier",
+      "svar": "Bakterier som oxiderar etanol till ättiksyra. Det är så vinäger bildas."
+    },
+    {
+      "id": "k1-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vinäger",
+      "svar": "Utspädd ättiksyra. Ordet betyder surt vin."
+    },
+    {
+      "id": "k1-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Etanoatjon",
+      "svar": "Jonen som blir kvar när etansyra avgett sin vätejon. Kallas oftare acetatjon."
+    },
+    {
+      "id": "k1-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Svag syra",
+      "svar": "En syra där bara en del av molekylerna avger sin vätejon i vatten."
+    },
+    {
+      "id": "k1-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Resonans",
+      "svar": "Att en laddning fördelar sig över flera atomer i stället för att sitta på en enda. Det gör jonen stabilare."
+    },
+    {
+      "id": "k1-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Aldehyd",
+      "svar": "Mellansteget när en alkohol oxideras till en syra. Kolatomen har en dubbelbunden syreatom men ingen hydroxylgrupp."
+    },
+    {
+      "id": "k1-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "pKa",
+      "svar": "Ett tal som anger hur stark en syra är. Ju lägre tal, desto starkare syra."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k1-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför räcker inte en OH-grupp för att göra ett ämne till en syra?",
+      "svar": "Alkoholer har också en OH-grupp. Det speciella hos syran är kombinationen: en dubbelbunden syreatom och en hydroxylgrupp på samma kolatom."
+    },
+    {
+      "id": "k1-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför sitter karboxylgruppen alltid i änden av kolkedjan?",
+      "svar": "Kolatomen i gruppen använder redan tre av sina fyra bindningar till syre. Bara en är kvar, och den går till resten av molekylen."
+    },
+    {
+      "id": "k1-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför är en karboxylsyra sur när en alkohol inte är det?",
+      "svar": "Det avgörs av jonen som blir kvar. Hos syran fördelas den negativa laddningen över två syreatomer och jonen blir stabil. Hos alkoholen sitter laddningen på en enda atom."
+    },
+    {
+      "id": "k1-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Hur stor del av molekylerna i vanlig ättiksyra har avgett sin vätejon?",
+      "svar": "Ungefär en av hundra. I saltsyra av samma styrka har praktiskt taget alla gjort det."
+    }
+  ]
+}

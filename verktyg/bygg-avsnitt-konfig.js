@@ -264,6 +264,31 @@ const AVSNITT_ALKOHOLER = {
          'k4-k9.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: '**etanol 78 °C · glykol 197 °C · glycerol 290 °C**', enkel: 'Ju fler grupper, desto fler platser på molekylen som kan samverka med vattenmolekyler.', fordjupning: 'och därav glycerolens kokpunkt på 290 grader.' }
        } }
 };
+// Organisk kemi 5 "Organiska syror och estrar" (arbetsorder 2026-09-18). Placering enligt bildspecen ("vid N:e rubriken",
+// dk5-bildspecar.md), på alla nivåer efter det stycke som bär bildens innehåll (samma princip som Fossila och Alkoholer).
+// Avvikelser från rubriknumret (rapporterade): L2 under Standard-rubrik 2 (gruppen och dess fyra bindningar), inte 3 (namnen);
+// L7 under 2.3:s tredje rubrik (2.3 har tre, specen säger fjärde); L8 under Standard-rubrik 1 (esternas dofter), inte 2.
+const AVSNITT_SYROR_ESTRAR = {
+  1: { dd: [],
+       bilder: {
+         'k5-l1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Ställ tre ämnen bredvid varandra.', enkel: 'Titta på tre ämnen som alla har två kolatomer.', fordjupning: 'Etanol är inte en syra.' },
+         'k5-l2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Den fjärde går till resten av molekylen.', enkel: 'sitter **alltid i änden** av kolkedjan', fordjupning: 'och en resonansstabiliserad jon är betydligt mer stabil.' },
+         'k5-l3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'precis som definitionen säger.', enkel: 'Oxideras den blir det **etansyra, CH₃COOH**', fordjupning: 'Det är en **karboxylsyra**.' },
+         'k5-l4.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Många molekyler finns kvar oförändrade i lösningen.', enkel: 'Det handlar om **hur stor andel** av molekylerna som faktiskt', fordjupning: 'De övriga nittionio är hela.' }
+       } },
+  2: { dd: [{ slug: 'aspirin', titel: 'Barken som blev en tablett', ikon: '💊' }],   // djupdykning från 2.2 (ordern 2026-09-18)
+       bilder: {
+         'k5-l5.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'och den sitter i karboxylgruppen. Det finns alltså ingen', enkel: 'Formeln är **HCOOH**.', fordjupning: 'Myrsyra har ingen kedja alls och är därför starkast av dem.' },
+         'k5-l6.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'är ämnet **fast vid rumstemperatur**.', enkel: '**fast** vid rumstemperatur.', fordjupning: 'Det som ändras är hur stor del av molekylen den utgör.' },
+         'k5-l7.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'När bakterierna bryter ner fibrerna bildas bland annat **smörsyra**.', enkel: 'Det är alltså **exakt samma molekyl** som luktar härsket smör.', fordjupning: 'Smörsyra är en av dem.' }
+       } },
+  3: { dd: [],
+       bilder: {
+         'k5-l8.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'påminner starkt om banan', enkel: 'En tredje om ananas.', fordjupning: 'de som näsan råkar vara känsligast för.' },
+         'k5-l9.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'OH och H bildar tillsammans **H₂O**.', enkel: 'kopplas alkoholen och syran ihop', fordjupning: 'omvandlas till ester, och där stannar det.' },
+         'k5-l10.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Det betyder tre platser där esterbindningar kan bildas.', enkel: 'Den hade **tre** hydroxylgrupper.', fordjupning: 'En **omättad** har minst en dubbelbindning.' }
+       } }
+};
 const DELKAPITEL = {
   // bank: id-prefix och avsnittsoffset i kapitlets begreppsbank (en fil per kapitel; id/avsnitt unika över delkapitlen)
   repetition: { titel: 'Bakgrund och repetition', avsnitt: AVSNITT_REPETITION, bank: { idPrefix: '', avsnittOffset: 0 } },
@@ -303,6 +328,16 @@ const DELKAPITEL = {
   alkoholer: { titel: 'Alkoholer', kapitel: { id: 'organisk-kemi', titel: 'Organisk kemi' }, byggmapp: 'bygg', avsnitt: AVSNITT_ALKOHOLER,
     // kapitlets bank delas med Kolatomen, Kolväten och Fossila bränslen: id-prefix a, avsnitt 13–15. Öva ingår inte i ordern
     // 2026-09-18 (flipcards/kortsvar kommer senare); uteslut fylls på vid dubblettkontrollen då.
-    bank: { idPrefix: 'a', avsnittOffset: 12, uteslut: {} } }
+    bank: { idPrefix: 'a', avsnittOffset: 12, uteslut: {} } },
+  'syror-och-estrar': { titel: 'Organiska syror och estrar', kapitel: { id: 'organisk-kemi', titel: 'Organisk kemi' }, byggmapp: 'bygg', avsnitt: AVSNITT_SYROR_ESTRAR,
+    // kapitlets bank delas med de fyra tidigare delkapitlen: id-prefix e, avsnitt 16–18. uteslut fylls av dubblettkontrollen
+    // (arbetsorder 2026-09-18 §4: alla 28 kandidater mot kapitelbanken och Syror och basers 167).
+    // Dubblettkontroll 2026-09-18: 28 kandidater mot 102 + 167 – fem träffar, alla i Syror och baser
+    bank: { idPrefix: 'e', avsnittOffset: 15, uteslut: {
+      'svag syra': 'finns redan i Syror och baser, syror avsnitt 3',
+      'myrsyra': 'finns redan i Syror och baser, syror avsnitt 5',
+      'ättiksyra': 'finns redan i Syror och baser, syror avsnitt 5',
+      'citronsyra': 'finns redan i Syror och baser, syror avsnitt 5',
+      'katalysator': 'finns redan i Syror och baser, försurning avsnitt 3' } } }
 };
 module.exports = { DELKAPITEL };

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-labelledby="t">
+  <title id="t">Karboxylgruppen förstorad. Kolatomen har två streck upp till en syreatom, ett streck till en hydroxylgrupp och ett streck till resten av molekylen</title>
+  <rect x="261" y="168" width="96" height="44" fill="#f5f0e4" rx="6" stroke="#8A8A8A" stroke-width="1.4" data-del="rest"/>
+  <text x="309" y="188"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#8A8A8A">resten av</text>
+  <text x="309" y="203"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#8A8A8A">molekylen</text>
+  <line x1="396.4" y1="177" x2="396.4" y2="152" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="karboxyl"/>
+  <line x1="403.6" y1="177" x2="403.6" y2="152" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="karboxyl"/>
+  <line x1="413" y1="190" x2="456" y2="190" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="karboxyl"/>
+  <line x1="482" y1="190" x2="529" y2="190" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"   data-molekyl="karboxyl"/>
+  <line x1="387" y1="190" x2="344" y2="190" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-R"   data-molekyl="karboxyl"/>
+  <text x="400" y="199.31"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26.599999999999998" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="karboxyl">C</text>
+  <text x="400" y="148.31"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26.599999999999998" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="karboxyl">O</text>
+  <text x="469" y="199.31"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26.599999999999998" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="karboxyl">O</text>
+  <text x="538" y="199.31"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22.875999999999998" fill="#2d4a35"  data-atom="H"  data-molekyl="karboxyl">H</text>
+    <ellipse cx="458.65" cy="167.05" rx="100.05" ry="63.75" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="karboxyl"/>
+  <line x1="420" y1="133" x2="520" y2="99" stroke="#8A8A8A" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3"/>
+  <text x="526" y="95" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" text-anchor="start">dubbelbunden syreatom</text>
+  <line x1="503.5" y1="208" x2="533.5" y2="260" stroke="#8A8A8A" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3"/>
+  <text x="537.5" y="274" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" text-anchor="start">hydroxylgrupp</text>
+  <text x="380" y="252"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#5a9668" data-raknare="4">2 + 1 + 1 = 4 bindningar</text>
+  <text x="380" y="366" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">alla fyra bindningarna är upptagna – därför sitter gruppen alltid i änden</text>
+</svg>

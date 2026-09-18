@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" width="960" height="470" role="img" aria-labelledby="t">
+  <title id="t">En fettmolekyl schematiskt. Glycerolen till vänster med tre bindningar ut, och tre fettsyror av olika längd till höger. De tre esterbindningarna är inringade</title>
+  <line x1="140" y1="103" x2="140" y2="167" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"   data-molekyl="glycerol"/>
+  <line x1="140" y1="193" x2="140" y2="257" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"   data-molekyl="glycerol"/>
+  <line x1="127" y1="90" x2="103" y2="90" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="glycerol"/>
+  <line x1="140" y1="77" x2="140" y2="65" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="glycerol"/>
+  <line x1="127" y1="180" x2="103" y2="180" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="glycerol"/>
+  <line x1="127" y1="270" x2="103" y2="270" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="glycerol"/>
+  <line x1="140" y1="283" x2="140" y2="295" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="glycerol"/>
+  <line x1="153" y1="90" x2="173" y2="90" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="glycerol"/>
+  <line x1="153" y1="180" x2="173" y2="180" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="glycerol"/>
+  <line x1="153" y1="270" x2="173" y2="270" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="glycerol"/>
+  <text x="140" y="96.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="glycerol">C</text>
+  <text x="140" y="186.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="glycerol">C</text>
+  <text x="140" y="276.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="glycerol">C</text>
+  <text x="94" y="96.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="140" y="62.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="94" y="186.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="94" y="276.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="140" y="310.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="186" y="96.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="glycerol">O</text>
+  <text x="186" y="186.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="glycerol">O</text>
+  <text x="186" y="276.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="glycerol">O</text>
+  <text x="130" y="380" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">glycerol</text>
+  <text x="130" y="404" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic">tre hydroxylgrupper,</text>
+  <text x="130" y="420" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic">tre platser att binda på</text>
+  <line x1="199" y1="90" x2="219" y2="90" stroke="#5a9668" stroke-width="3.2" stroke-linecap="round" data-bind="O-C" data-mark="esterbindning" data-fettsyra="1"/>
+  <line x1="228.4" y1="77" x2="228.4" y2="69" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-fettsyra="1"/>
+  <line x1="235.6" y1="77" x2="235.6" y2="69" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-fettsyra="1"/>
+  <text x="232" y="96.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-fettsyra="1">C</text>
+  <text x="232" y="62.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-fettsyra="1">O</text>
+  <path d="M246 90 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10" fill="none" stroke="#3a3a3a" stroke-width="2.4" stroke-linejoin="round" data-kedja="1" data-kol="15"/>
+  <ellipse cx="209" cy="86" rx="46" ry="30" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="esterbindning" data-fettsyra="1"/>
+  <text x="562" y="95" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" text-anchor="start">fettsyra 1</text>
+  <line x1="199" y1="180" x2="219" y2="180" stroke="#5a9668" stroke-width="3.2" stroke-linecap="round" data-bind="O-C" data-mark="esterbindning" data-fettsyra="2"/>
+  <line x1="228.4" y1="167" x2="228.4" y2="159" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-fettsyra="2"/>
+  <line x1="235.6" y1="167" x2="235.6" y2="159" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-fettsyra="2"/>
+  <text x="232" y="186.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-fettsyra="2">C</text>
+  <text x="232" y="152.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-fettsyra="2">O</text>
+  <path d="M246 180 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10" fill="none" stroke="#3a3a3a" stroke-width="2.4" stroke-linejoin="round" data-kedja="2" data-kol="11"/>
+  <ellipse cx="209" cy="176" rx="46" ry="30" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="esterbindning" data-fettsyra="2"/>
+  <text x="474" y="185" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" text-anchor="start">fettsyra 2</text>
+  <line x1="199" y1="270" x2="219" y2="270" stroke="#5a9668" stroke-width="3.2" stroke-linecap="round" data-bind="O-C" data-mark="esterbindning" data-fettsyra="3"/>
+  <line x1="228.4" y1="257" x2="228.4" y2="249" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-fettsyra="3"/>
+  <line x1="235.6" y1="257" x2="235.6" y2="249" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-fettsyra="3"/>
+  <text x="232" y="276.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-fettsyra="3">C</text>
+  <text x="232" y="242.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-fettsyra="3">O</text>
+  <path d="M246 270 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10 l22 -10 l22 10 l22 -10" fill="none" stroke="#3a3a3a" stroke-width="2.4" stroke-linejoin="round" data-kedja="3" data-kol="18"/>
+  <ellipse cx="209" cy="266" rx="46" ry="30" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="esterbindning" data-fettsyra="3"/>
+  <text x="628" y="275" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" text-anchor="start">fettsyra 3</text>
+  <text x="232" y="332"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" fill="#5a9668">tre esterbindningar</text>
+  <text x="480" y="430" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">glycerol + tre fettsyror → fett + vatten</text>
+  <text x="480" y="452"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" fill="#8A8A8A">tre vattenmolekyler lämnar, en per bindning</text>
+</svg>

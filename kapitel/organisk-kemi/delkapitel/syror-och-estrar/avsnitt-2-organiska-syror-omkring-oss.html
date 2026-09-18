@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organiska syror omkring oss – Organiska syror och estrar – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Organiska syror och estrar</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">2. Organiska syror omkring oss</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 2</span>
+      <h1>Organiska syror omkring oss</h1>
+      <p class="subtitel">— från myrans försvar till stearinljuset —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Myrsyra och ättiksyra är de enklaste</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Längre syror har andra användningar</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Syror i kroppen</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-organiska-syror-omkring-oss">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Myrsyra och ättiksyra är de enklaste ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Hur många kolatomer har myrsyra, och var sitter den?</li>
+              <li>Varför heter myrsyra som den gör?</li>
+              <li>Hur mycket ättiksyra innehåller vanlig vinäger?</li>
+              <li>Varför håller inlagda livsmedel längre?</li>
+              <li>Vad händer med syrans egenskaper när kolkedjan blir längre?</li>
+            </ul>
+          </div>
+
+          <p>Alla organiska syror har samma funktionella grupp: <strong>karboxylgruppen, –COOH</strong>.</p>
+          <p>Det som skiljer dem åt är resten av molekylen.</p>
+          <p>Hos den enklaste syran finns ingen kolkedja alls utanför gruppen. Andra har mycket långa kedjor — upp till arton kolatomer.</p>
+          <p>Därför kan ämnen i samma grupp bete sig helt olika. Några smakar surt och löser sig i vatten. Andra är oljiga eller till och med fasta. De används till allt från konservering och läkemedel till stearinljus.</p>
+          <h2>Metansyra kallas myrsyra</h2>
+          <p>Den enklaste organiska syran heter <strong>metansyra</strong>, men nästan alla säger <strong>myrsyra</strong>.</p>
+          <p>Formeln är <strong>HCOOH</strong>.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Hur många kolatomer finns innanför den gröna ringen i varje molekyl?</li>
+              <li>Vad finns utanför ringen till höger?</li>
+              <li>Var sitter de två väteatomerna i myrsyra?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k5-l5.svg" alt="Myrsyra till vänster med en enda kolatom som helt ligger inom den inringade karboxylgruppen. Ättiksyra till höger där en kolatom ligger utanför ringen.">
+            <figcaption>Myrsyra är bara karboxylgruppen. Ättiksyra har en kolatom till.</figcaption>
+          </figure>
+          <p>Titta på den. Molekylen innehåller bara <strong>en</strong> kolatom, och den sitter i själva karboxylgruppen. Det finns alltså ingen kolkedja utanför gruppen — syran är bara gruppen och ingenting annat.</p>
+          <h2>Varför den heter myrsyra</h2>
+          <p>Namnet kommer av att vissa myror sprutar syran som försvar. Den ger en brännande känsla på huden.</p>
+          <p>Nässlornas brännhår innehåller också myrsyra. Det är delvis därför nässlor bränns.</p>
+          <p>Koncentrerad myrsyra är <strong>frätande</strong> och kan skada hud och ögon.</p>
+          <p>Myrsyra är den <strong>starkaste</strong> av de enkla organiska syrorna — men den räknas fortfarande som en svag syra.</p>
+          <h2>Etansyra kallas ättiksyra</h2>
+          <p>Nästa syra i serien heter <strong>etansyra</strong>, och kallas nästan alltid <strong>ättiksyra</strong>.</p>
+          <p>Formeln är <strong>\(\ce{CH3COOH}\)</strong>.</p>
+          <p>Här finns två kolatomer: en i karboxylgruppen och en i kedjan.</p>
+          <p>Ättiksyra är det som ger <strong>vinäger</strong> dess sura smak och skarpa lukt. Vanlig vinäger innehåller ungefär fem till sex procent ättiksyra — resten är vatten.</p>
+          <h2>Ättiksyra konserverar mat</h2>
+          <p>Syran gör miljön sur, och många bakterier och mögelsvampar har svårt att växa i surt.</p>
+          <p>Det är därför inlagda gurkor, rödbetor och sill håller sig länge.</p>
+          <p>Ättiksyra används också som råvara när man tillverkar plast och lim.</p>
+          <h2>Längre kedja, svagare syra</h2>
+          <p>Karboxylgruppen är exakt likadan i alla organiska syror. Det är <strong>kolkedjan</strong> som skiljer dem.</p>
+          <p>Myrsyra, som saknar kedja helt, är något starkare än ättiksyra. Men skillnaden blir liten när kedjan fortsätter växa.</p>
+          <p>Det som ändras mest är i stället <strong>de andra egenskaperna</strong>.</p>
+          <p>Stearinsyra har arton kolatomer och beter sig inte alls som vinäger. Den är fast vid rumstemperatur och smakar inte surt.</p>
+          <p>Ju längre kedjan blir, desto mer bestämmer kolvätedelen hur ämnet beter sig — och desto mindre märks syran.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Hur många kolatomer har myrsyra, och var sitter den?</li>
+              <li>Varför heter myrsyra som den gör?</li>
+              <li>Hur mycket ättiksyra innehåller vanlig vinäger?</li>
+              <li>Varför håller inlagda livsmedel längre?</li>
+              <li>Vad händer med syrans egenskaper när kolkedjan blir längre?</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Alla organiska syror innehåller samma funktionella grupp: karboxylgruppen, –COOH. Det som varierar är resten av molekylen.</p>
+          <p>Hos den enklaste syran finns ingen kolkedja alls utanför gruppen. Andra har mycket långa kedjor.</p>
+          <p>Därför kan ämnen i samma grupp få helt olika egenskaper. Några smakar surt och löser sig i vatten. Andra är oljiga eller fasta. De används till allt från konservering och läkemedel till stearinljus.</p>
+          <h2>Metansyra kallas myrsyra</h2>
+          <p>Den enklaste organiska syran heter <strong>metansyra</strong> men kallas oftast <strong>myrsyra</strong>. Formeln är <strong>HCOOH</strong>.</p>
+          <p>Molekylen innehåller bara en kolatom, och den sitter i karboxylgruppen. Det finns alltså ingen kolkedja alls utanför gruppen.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k5-l5.svg" alt="Myrsyra till vänster med en enda kolatom som helt ligger inom den inringade karboxylgruppen. Ättiksyra till höger där en kolatom ligger utanför ringen.">
+            <figcaption>Hos myrsyra är kolatomen i karboxylgruppen molekylens enda kolatom.</figcaption>
+          </figure>
+          <p>Namnet kommer av att vissa myror sprutar syran som försvar. Den ger en brännande känsla, och koncentrerad myrsyra är frätande på hud och ögon. Nässlornas brännhår innehåller också myrsyra.</p>
+          <p>Myrsyra är den starkaste av de enkla organiska syrorna — men den räknas fortfarande som en svag syra.</p>
+          <h2>Etansyra kallas ättiksyra</h2>
+          <p>Nästa syra i serien är <strong>etansyra</strong>, som oftast kallas <strong>ättiksyra</strong>. Formeln är <strong>\(\ce{CH3COOH}\)</strong>.</p>
+          <p>Molekylen har två kolatomer: en i karboxylgruppen och en i kedjan.</p>
+          <p>Ättiksyra är det som ger vinäger dess sura smak och lukt. Vanlig vinäger innehåller ungefär fem till sex procent ättiksyra.</p>
+          <p>Syran används för att <strong>konservera</strong> mat. Många mikroorganismer har svårt att växa när miljön blir tillräckligt sur, och det är därför inlagda livsmedel håller längre.</p>
+          <p>Ättiksyra är också råvara vid tillverkning av plast och lim.</p>
+          <h2>Kolkedjan påverkar syrans styrka</h2>
+          <p>Karboxylgruppen är densamma i alla organiska syror. Det som ändras är kolkedjan.</p>
+          <p>Myrsyra, som saknar kedja helt, är något starkare än ättiksyra och de följande syrorna. Men skillnaden blir liten när kedjan fortsätter växa.</p>
+          <p>Det som förändras mest är i stället <strong>de andra egenskaperna</strong>. Stearinsyra med arton kolatomer beter sig inte alls som vinäger — den är fast vid rumstemperatur och smakar inte surt.</p>
+          <p>Ju längre kedjan blir, desto mer bestämmer kolvätedelen hur ämnet beter sig.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Syrastyrkan avgörs av vad som drar i laddningen</h2>
+          <p>Standardtexten säger att myrsyra är något starkare än ättiksyra, och att skillnaden blir liten när kedjan fortsätter växa. Båda delarna stämmer. Men varför kedjan alls spelar roll är värt att veta, eftersom förklaringen förutsäger mycket mer än de här två syrorna.</p>
+          <p>I fördjupningen till 1.1 såg du att en syras styrka avgörs av hur stabil <strong>jonen</strong> är. Ju bättre den negativa laddningen kan spridas ut, desto lättare avger syran sin vätejon.</p>
+          <p>En kolkedja gör motsatsen. Kol och väte <strong>skjuter ifrån sig</strong> elektroner en aning, och det trycker laddningen tillbaka mot syreatomerna i stället för bort från dem. Jonen blir en aning mindre stabil, och syran en aning svagare.</p>
+          <p>Myrsyra har ingen kedja alls och är därför starkast av dem.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k5-l5.svg" alt="Myrsyra till vänster med en enda kolatom som helt ligger inom den inringade karboxylgruppen. Ättiksyra till höger där en kolatom ligger utanför ringen.">
+            <figcaption>Hos myrsyra är kolatomen i karboxylgruppen molekylens enda kolatom.</figcaption>
+          </figure>
+          <p>Effekten heter <strong>induktiv effekt</strong> och avtar snabbt med avståndet. Redan vid tredje kolatomen märks den knappt, vilket är precis vad Standardtexten konstaterar.</p>
+          <p>Men effekten kan också gå åt andra hållet. Sätter man en <strong>kloratom</strong> på kolkedjan händer motsatsen — klor drar åt sig elektroner i stället, laddningen sprids bättre, och syran blir starkare.</p>
+          <p>Det går att räkna på. Ättiksyra har pKa 4,8. Byter man en väteatom mot klor sjunker det till 2,9. Med tre kloratomer hamnar det på 0,7 — en syra nästan lika stark som saltsyra, byggd av samma karboxylgrupp.</p>
+          <p><strong>Om modellen.</strong> Standardnivån säger att kolkedjan gör syran svagare. Det stämmer, men den verkliga regeln är mer användbar: allt som drar elektroner <strong>från</strong> karboxylgruppen gör syran starkare, och allt som skjuter elektroner <strong>mot</strong> den gör den svagare. Kolkedjan är bara ett exempel på det andra.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Längre syror har andra användningar ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Var används propansyra, och varför?</li>
+              <li>Vilken syra känner man igen på lukten, och var finns den?</li>
+              <li>Varför reagerar vi så starkt på den lukten?</li>
+              <li>Varför är stearinsyra fast vid rumstemperatur?</li>
+              <li>Vad kallas de allra längsta organiska syrorna?</li>
+            </ul>
+          </div>
+
+          <h2>Propansyra hindrar mögel</h2>
+          <p><strong>Propansyra</strong> har tre kolatomer.</p>
+          <p>Den hämmar mögel och vissa bakterier. Därför används den som konserveringsmedel i bröd och i djurfoder.</p>
+          <p>Propansyra bildas också naturligt av bakterier i <strong>surdeg</strong>. Det är en av anledningarna till att surdegsbröd möglar långsammare än vanligt bröd.</p>
+          <p>Principen är densamma som hos ättiksyra: en organisk syra skapar en miljö där mikroorganismer har svårt att föröka sig.</p>
+          <h2>Smörsyra luktar illa</h2>
+          <p><strong>Butansyra</strong> har fyra kolatomer och kallas oftast <strong>smörsyra</strong>.</p>
+          <p>Lukten är stark och omöjlig att ta miste på. Det är den du känner i härsket smör, och den finns också i svett.</p>
+          <h2>Varför illalukt är nyttigt</h2>
+          <p>Att vi reagerar så starkt på den lukten har en funktion.</p>
+          <p>Lukten betyder att organiskt material håller på att brytas ner. Luktsinnet fungerar alltså som ett <strong>kemiskt varningssystem</strong> — precis som den sura smaken varnar för omogen frukt.</p>
+          <p>Men ett ämne är inte dåligt bara för att det luktar illa. Samma molekyl möter vi snart igen i kroppen, och där gör den nytta.</p>
+          <h2>Acetylsalicylsyra är ett läkemedel</h2>
+          <p><strong>Acetylsalicylsyra</strong> är en mycket större organisk syra med <strong>nio</strong> kolatomer.</p>
+          <p>Den används i läkemedel som är smärtstillande och febernedsättande.</p>
+          <p>Ämnet har en lång och märklig historia. Du kan läsa om den i djupdykningen.</p>
+          <h2>Stearinsyra är fast</h2>
+          <p><strong>Stearinsyra</strong> har <strong>arton</strong> kolatomer.</p>
+          <p>Den långa kolkedjan gör att molekylerna håller fast hårt vid varandra. Därför är stearinsyra <strong>fast</strong> vid rumstemperatur.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Jämför de gröna ringarna. Ser de likadana ut i alla fem?</li>
+              <li>Vid vilken syra byter tillståndsraden färg?</li>
+              <li>Varför finns det ett avbrott i skalan?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k5-l6.svg" alt="Fem organiska syror ordnade efter kedjelängd, från myrsyra med en kolatom till stearinsyra med arton. Karboxylgruppen ser likadan ut i alla fem, medan kolkedjan blir allt längre.">
+            <figcaption>Samma grupp i alla fem. Det är kedjan som växer.</figcaption>
+          </figure>
+          <p>Det är samma samband som hos kolvätena i delkapitel 2: längre kedja betyder starkare krafter mellan molekylerna, och det betyder högre smältpunkt.</p>
+          <p>Stearinljus tillverkas av stearinsyra tillsammans med <strong>palmitinsyra</strong>, som har sexton kolatomer.</p>
+          <p>Så långa organiska syror kallas <strong>fettsyror</strong>. De kommer tillbaka i nästa avsnitt, eftersom de är byggstenar i fett.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Var används propansyra, och varför?</li>
+              <li>Vilken syra känner man igen på lukten, och var finns den?</li>
+              <li>Varför reagerar vi så starkt på den lukten?</li>
+              <li>Varför är stearinsyra fast vid rumstemperatur?</li>
+              <li>Vad kallas de allra längsta organiska syrorna?</li>
+            </ul>
+          </div>
+
+          <h2>Propansyra hindrar mögel</h2>
+          <p class="inledning"><strong>Propansyra</strong> innehåller tre kolatomer.</p>
+          <p>Den hämmar tillväxten av mögel och vissa bakterier, och används därför som konserveringsmedel i bröd och i djurfoder.</p>
+          <p>Propansyra bildas också naturligt av bakterier i <strong>surdeg</strong>. Det bidrar till att surdegsbröd möglar långsammare.</p>
+          <p>Det är samma princip som hos ättiksyra: en organisk syra skapar en miljö där mikroorganismer har svårt att föröka sig.</p>
+          <h2>Smörsyra luktar</h2>
+          <p><strong>Butansyra</strong> innehåller fyra kolatomer och kallas oftast <strong>smörsyra</strong>.</p>
+          <p>Ämnet har en mycket stark och lätt igenkännlig lukt. Det är en av de syror som ger härsket smör dess lukt, och det finns också i svett.</p>
+          <p>Att vi reagerar så starkt på sådana lukter har en funktion. Lukten signalerar att organiskt material håller på att brytas ner. Luktsinnet fungerar alltså som ett <strong>kemiskt varningssystem</strong> — precis som den sura smaken.</p>
+          <p>Men ett ämne är inte dåligt bara för att det luktar illa. Samma molekyl möter vi snart igen i kroppen, i en helt annan roll.</p>
+          <h2>Acetylsalicylsyra är ett läkemedel</h2>
+          <p><strong>Acetylsalicylsyra</strong> är en betydligt större organisk syra med nio kolatomer.</p>
+          <p>Den används i läkemedel som är smärtstillande och febernedsättande.</p>
+          <p>Ämnet har en lång och märklig historia, som du kan läsa om i djupdykningen.</p>
+          <h2>Stearinsyra är fast</h2>
+          <p><strong>Stearinsyra</strong> innehåller arton kolatomer. Den långa kolkedjan gör att molekylerna håller fast hårt vid varandra, och därför är ämnet <strong>fast vid rumstemperatur</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k5-l6.svg" alt="Fem organiska syror ordnade efter kedjelängd, från myrsyra med en kolatom till stearinsyra med arton. Karboxylgruppen ser likadan ut i alla fem, medan kolkedjan blir allt längre.">
+            <figcaption>När kolkedjan blir längre ändras ämnets egenskaper, medan karboxylgruppen förblir densamma.</figcaption>
+          </figure>
+          <p>Det är samma samband som hos kolvätena: längre kedja, starkare krafter mellan molekylerna, högre smältpunkt.</p>
+          <p>Stearinljus tillverkas av stearinsyra tillsammans med <strong>palmitinsyra</strong>, som har sexton kolatomer.</p>
+          <p>Så långa organiska syror kallas <strong>fettsyror</strong>. De kommer tillbaka i nästa avsnitt, eftersom de är byggstenar i fett.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Kedjelängden avgör mer än smältpunkten</h2>
+          <p>Standardtexten ordnar syrorna efter kedjelängd och konstaterar att de långa är fasta. Det är rätt, men mönstret är starkare än så — nästan allt hos en organisk syra följer kedjelängden.</p>
+          <p><strong>Lukten</strong> gör det. Myrsyra och ättiksyra luktar skarpt och surt. Smörsyra med fyra kolatomer luktar härsket. Vid ungefär tio kolatomer slutar syrorna lukta alls, eftersom molekylerna blivit för tunga för att lämna vätskan och nå näsan.</p>
+          <p><strong>Lösligheten</strong> gör det. Myrsyra och ättiksyra blandar sig med vatten i alla förhållanden. Smörsyra löser sig fortfarande. Vid sex kolatomer börjar det bli trögt, och stearinsyra löser sig i praktiken inte alls. Det är samma dragkamp som hos alkoholerna i delkapitel 4: karboxylgruppen är vattenvänlig, kolkedjan inte.</p>
+          <p><strong>Smaken</strong> gör det. De korta smakar surt. De långa smakar ingenting alls — stearinsyra går att äta utan att man märker det.</p>
+          <p>De korta syrorna kallas därför ofta <strong>kortkedjiga fettsyror</strong>, och de beter sig som syror. De långa beter sig som fett. Gränsen går någonstans kring sex till tio kolatomer, och den är glidande.</p>
+          <p>Karboxylgruppen är hela tiden densamma. Det som ändras är hur stor del av molekylen den utgör.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k5-l6.svg" alt="Fem organiska syror ordnade efter kedjelängd, från myrsyra med en kolatom till stearinsyra med arton. Karboxylgruppen ser likadan ut i alla fem, medan kolkedjan blir allt längre.">
+            <figcaption>När kolkedjan blir längre ändras ämnets egenskaper, medan karboxylgruppen förblir densamma.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> Standardnivån behandlar kedjelängden som en förklaring till varför stearinsyra är fast. Men samma tal förklarar också lukten, lösligheten och smaken. När en enda variabel förklarar fyra egenskaper är det värt att lägga märke till — det betyder att man hittat något som verkligen styr.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Syror i kroppen ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Var finns citronsyra, förutom i citrusfrukter?</li>
+              <li>När bildas mjölksyra i musklerna?</li>
+              <li>Vad bildas när kroppen brutit ner etanol färdigt?</li>
+              <li>Vilka äter fibrerna som du själv inte kan bryta ner?</li>
+              <li>Vad använder tjocktarmens celler smörsyran till?</li>
+            </ul>
+          </div>
+
+          <h2>Syror finns också inuti oss</h2>
+          <p>Organiska syror finns inte bara i mat och i kemiska produkter.</p>
+          <p>De ingår också i kroppens egen <strong>ämnesomsättning</strong> — alltså i de reaktioner som pågår i cellerna hela tiden.</p>
+          <h2>Citronsyra och mjölksyra</h2>
+          <p><strong>Citronsyra</strong> finns naturligt i citrusfrukter och ger dem deras sura smak. Men den finns också i dina egna celler, där den har en viktig roll när energi utvinns ur maten.</p>
+          <p><strong>Mjölksyra</strong> bildas i musklerna vid mycket hårt arbete, när syret inte räcker till.</p>
+          <p>Det påminner om <strong>jäsningen</strong> du mötte i förra delkapitlet. Cellen fortsätter få fram energi trots att syret tryter — men slutprodukten blir en annan än vid vanlig cellandning.</p>
+          <h2>Ättiksyra bildas när kroppen bryter ner etanol</h2>
+          <p>När kroppen bryter ner etanol bildas till slut <strong>ättiksyra</strong>.</p>
+          <p>Den kan sedan användas vidare i ämnesomsättningen, ungefär som vilken näring som helst.</p>
+          <p>En alkohol kan alltså omvandlas till en organisk syra genom oxidation — precis som i 1.2, fast inuti kroppen i stället för i ett glas vin.</p>
+          <h2>Smörsyra bildas i tarmen</h2>
+          <p>Nu kommer smörsyran tillbaka.</p>
+          <p>Du kan inte själv bryta ner alla <strong>fibrer</strong> som finns i fullkorn, baljväxter och grönsaker. De passerar magsäcken och tunntarmen nästan oförändrade.</p>
+          <p>Men när fibrerna når <strong>tjocktarmen</strong> möter de bakterier. Och de kan bryta ner fibrerna och använda dem som näring.</p>
+          <p>När bakterierna gör det bildas bland annat <strong>smörsyra</strong>.</p>
+          <h2>Samma molekyl, två helt olika roller</h2>
+          <p>Smörsyran används sedan som <strong>energikälla</strong> av cellerna i tjocktarmens slemhinna. Den påverkar också tarmmiljön och immunförsvaret.</p>
+          <p>Det är alltså <strong>exakt samma molekyl</strong> som luktar härsket smör.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Hur många molekyler finns i bilden?</li>
+              <li>Jämför de två pilarna. Är någon av dem kraftigare?</li>
+              <li>Var kommer smörsyran i tjocktarmen ifrån?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k5-l7.svg" alt="Smörsyramolekylen i mitten med två lika stora pilar ut. Den vänstra leder till härsket smör, den högra till tjocktarmens slemhinna.">
+            <figcaption>Samma molekyl. Om den är äcklig eller nyttig beror bara på var den finns.</figcaption>
+          </figure>
+          <p>Utanför kroppen är lukten en varning om att något brutits ner. I tjocktarmen är smörsyran i stället en nyttig produkt av bakteriernas arbete.</p>
+          <p>Samma ämne kan betyda helt olika saker beroende på var det finns.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Var finns citronsyra, förutom i citrusfrukter?</li>
+              <li>När bildas mjölksyra i musklerna?</li>
+              <li>Vad bildas när kroppen brutit ner etanol färdigt?</li>
+              <li>Vilka äter fibrerna som du själv inte kan bryta ner?</li>
+              <li>Vad använder tjocktarmens celler smörsyran till?</li>
+            </ul>
+          </div>
+
+          <h2>Citronsyra och mjölksyra</h2>
+          <p class="inledning">Organiska syror finns inte bara i mat och kemiska produkter. De ingår också i kroppens egen ämnesomsättning.</p>
+          <p><strong>Citronsyra</strong> finns naturligt i citrusfrukter och ger dem deras sura smak. Den har också en viktig roll i cellernas energiomsättning.</p>
+          <p><strong>Mjölksyra</strong> bildas i musklerna vid mycket hårt arbete, när syret inte räcker till.</p>
+          <p>Det påminner om jäsningen: cellen fortsätter få fram energi trots att syret tryter, men slutprodukten blir en annan än vid vanlig cellandning.</p>
+          <h2>Ättiksyra bildas när kroppen bryter ner etanol</h2>
+          <p>När kroppen bryter ner etanol bildas till slut <strong>ättiksyra</strong>, som kan användas vidare i ämnesomsättningen.</p>
+          <p>En alkohol kan alltså genom oxidation omvandlas till en organisk syra — precis som i 1.2, fast inuti kroppen.</p>
+          <h2>Smörsyra bildas i tarmen</h2>
+          <p>Människan kan inte själv bryta ner alla <strong>fibrer</strong> i fullkorn, baljväxter och grönsaker. När fibrerna når tjocktarmen kan bakterierna där använda dem som näring i stället.</p>
+          <p>När bakterierna bryter ner fibrerna bildas bland annat <strong>smörsyra</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k5-l7.svg" alt="Smörsyramolekylen i mitten med två lika stora pilar ut. Den vänstra leder till härsket smör, den högra till tjocktarmens slemhinna.">
+            <figcaption>Smörsyra är en varningssignal utanför kroppen och en energikälla inuti den.</figcaption>
+          </figure>
+          <p>Smörsyran används sedan som energikälla av cellerna i tjocktarmens slemhinna. Den påverkar också tarmmiljön och immunförsvaret.</p>
+          <p>Det är alltså <strong>exakt samma molekyl</strong> som vi nyss mötte i härsket smör.</p>
+          <p>Utanför kroppen är lukten en varningssignal om nedbrytning. I tjocktarmen är smörsyran i stället en nyttig produkt av bakteriernas arbete.</p>
+          <p>Samma ämne kan alltså betyda helt olika saker beroende på var det finns.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Tarmbakterierna gör något kroppen inte kan</h2>
+          <p>Standardtexten säger att tarmbakterierna bildar smörsyra av fibrer, och att smörsyran blir energi åt tarmslemhinnans celler. Det stämmer. Men det märkliga med arrangemanget är lätt att missa.</p>
+          <p>Fibrer är till stor del <strong>cellulosa</strong> och liknande långa kolhydratkedjor. Du mötte dem i delkapitel 2 — cellulosa är en polymer av glukos.</p>
+          <p>Glukos är den bästa energikälla kroppen har. Fibrerna är alltså gjorda av precis det din kropp helst vill ha.</p>
+          <p>Ändå kan du inte komma åt det. Kroppen saknar enzym som klipper de bindningar som håller ihop cellulosans glukosenheter. Maten passerar orörd genom magsäck och tunntarm.</p>
+          <p>I tjocktarmen finns däremot bakterier som har enzymet. De bryter ner fibrerna, använder energin — och lämnar ifrån sig <strong>kortkedjiga fettsyror</strong> som avfall. Smörsyra är en av dem.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k5-l7.svg" alt="Smörsyramolekylen i mitten med två lika stora pilar ut. Den vänstra leder till härsket smör, den högra till tjocktarmens slemhinna.">
+            <figcaption>Smörsyra är en varningssignal utanför kroppen och en energikälla inuti den.</figcaption>
+          </figure>
+          <p>Och det avfallet är precis vad tarmslemhinnans celler lever av. De cellerna tar ungefär <strong>sjuttio procent</strong> av sin energi från smörsyra, inte från blodets glukos.</p>
+          <p>Det är alltså ett utbyte. Du ger bakterierna mat du inte kan smälta. De ger dig tillbaka något du kan använda.</p>
+          <p>Att slemhinnans celler valt just smörsyra är rimligt av en enkel anledning: den finns på plats. En cell som sitter i tarmväggen har smörsyra utanför sig hela tiden, medan glukos måste hämtas ur blodet på andra sidan.</p>
+          <p><strong>Om modellen.</strong> "Bakterierna bildar smörsyra som vi har nytta av" låter som en biprodukt vi råkar utnyttja. Förhållandet är äldre och tätare än så. Tarmcellerna har anpassat sig till en energikälla som bara finns om bakterierna är där — och därför är fibrer i maten inte näring åt dig, utan åt dem.</p>
+        </div>
+
+      </div>
+
+      <!-- DJUPDYKNINGAR -->
+      <section class="djupdykningar">
+        <span class="sektion-label">Vill du veta mer?</span>
+        <div class="fordj-kort-grid">
+          <a class="fordj-kort" href="djupdykning-aspirin.html">
+            <span class="fordj-kort-ikon" aria-hidden="true">💊</span>
+            <span class="fordj-kort-text">
+              <span class="fordj-kort-titel">Barken som blev en tablett</span>
+              <span class="fordj-kort-sammanfattning">Pilbark har använts mot värk i fyra tusen år. När kemisterna till slut fick fram det verksamma ämnet visade det sig förstöra magen — tills någon förestrade det. Och sedan tog det sjuttio år att förstå varför det fungerade.</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-2-organiska-syror-omkring-oss.json"
+           data-avsnitt="a2_organiska-syror-omkring-oss">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-2-organiska-syror-omkring-oss.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a2_organiska-syror-omkring-oss';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'syror-och-estrar';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

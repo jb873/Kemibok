@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 330" width="860" height="330" role="img" aria-labelledby="t">
+  <title id="t">Myrsyra till vänster med en enda kolatom som helt ligger inom den inringade karboxylgruppen. Ättiksyra till höger där en kolatom ligger utanför ringen</title>
+  <line x1="187" y1="130" x2="163" y2="130" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="myrsyra"/>
+  <line x1="196.4" y1="117" x2="196.4" y2="109" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="myrsyra"/>
+  <line x1="203.6" y1="117" x2="203.6" y2="109" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="myrsyra"/>
+  <line x1="213" y1="130" x2="233" y2="130" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="myrsyra"/>
+  <line x1="259" y1="130" x2="283" y2="130" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"   data-molekyl="myrsyra"/>
+  <text x="200" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="myrsyra">C</text>
+  <text x="154" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="myrsyra">H</text>
+  <text x="200" y="102.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="myrsyra">O</text>
+  <text x="246" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="myrsyra">O</text>
+  <text x="292" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="myrsyra">H</text>
+  <ellipse cx="223" cy="114.7" rx="96.6" ry="49.3" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="karboxyl" data-molekyl="myrsyra"/>
+  <line x1="573" y1="130" x2="593" y2="130" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"   data-molekyl="attiksyra"/>
+  <line x1="560" y1="117" x2="560" y2="105" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="attiksyra"/>
+  <line x1="560" y1="143" x2="560" y2="155" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="attiksyra"/>
+  <line x1="547" y1="130" x2="523" y2="130" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="attiksyra"/>
+  <line x1="602.4" y1="117" x2="602.4" y2="109" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="attiksyra"/>
+  <line x1="609.6" y1="117" x2="609.6" y2="109" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="attiksyra"/>
+  <line x1="619" y1="130" x2="639" y2="130" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="attiksyra"/>
+  <line x1="665" y1="130" x2="689" y2="130" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"   data-molekyl="attiksyra"/>
+  <text x="560" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="attiksyra">C</text>
+  <text x="606" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="attiksyra">C</text>
+  <text x="560" y="102.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="attiksyra">H</text>
+  <text x="560" y="170.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="attiksyra">H</text>
+  <text x="514" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="attiksyra">H</text>
+  <text x="606" y="102.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="attiksyra">O</text>
+  <text x="652" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="attiksyra">O</text>
+  <text x="698" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="attiksyra">H</text>
+  <ellipse cx="652" cy="114.7" rx="66.7" ry="45.9" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="karboxyl" data-molekyl="attiksyra"/>
+  <ellipse cx="554" cy="130" rx="42.32" ry="47.599999999999994" fill="none" stroke="#8A8A8A" stroke-width="1.2" stroke-dasharray="5 4" data-ring="kolkedja"/>
+  <text x="550.8" y="195.6"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" fill="#8A8A8A">kolkedja</text>
+  <text x="220" y="232" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">metansyra</text>
+  <text x="220" y="254" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15">myrsyra · HC<tspan fill="#C0392B">OOH</tspan></text>
+  <text x="583" y="232" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">etansyra</text>
+  <text x="583" y="254" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15">ättiksyra · <tspan>CH</tspan><tspan font-size="0.7em" dy="0.3em">3</tspan><tspan dy="-0.3em">C</tspan><tspan fill="#C0392B" data-o="1">OOH</tspan></text>
+  <text x="430" y="316" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">hos myrsyra finns ingen kolkedja alls</text>
+</svg>

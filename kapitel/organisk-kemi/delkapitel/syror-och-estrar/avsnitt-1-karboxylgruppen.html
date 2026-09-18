@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karboxylgruppen – Organiska syror och estrar – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Organiska syror och estrar</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">1. Karboxylgruppen</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 1</span>
+      <h1>Karboxylgruppen</h1>
+      <p class="subtitel">— gruppen som gör en molekyl sur —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">En organisk syra har en karboxylgrupp</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Organiska syror kan bildas när alkoholer oxideras</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Organiska syror är svaga syror</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-karboxylgruppen">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — En organisk syra har en karboxylgrupp ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad skiljer etan, etanol och etansyra åt?</li>
+              <li>Varför räcker det inte med en OH-grupp för att ett ämne ska vara en syra?</li>
+              <li>Vilka atomer ingår i karboxylgruppen?</li>
+              <li>Varför sitter karboxylgruppen alltid i änden av kolkedjan?</li>
+              <li>Vad berättar ändelsen -syra?</li>
+            </ul>
+          </div>
+
+          <p>I förra delkapitlet fick alkoholerna sina egenskaper från <strong>hydroxylgruppen</strong>, –OH.</p>
+          <p>Den var en <strong>funktionell grupp</strong> — en bestämd samling atomer som avgör hur ämnet beter sig.</p>
+          <p>Nu kommer nästa grupp: <strong>karboxylgruppen</strong>. Ämnen som har den kallas <strong>organiska syror</strong>.</p>
+          <p>Karboxylgruppen gör att molekylen kan avge en vätejon. Och avger ett ämne vätejoner blir det surt. Här möts alltså organisk kemi och allt du redan kan om syror och pH.</p>
+          <h2>Tre ämnen i rad</h2>
+          <p>Titta på tre ämnen som alla har två kolatomer.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna syreatomerna i varje molekyl.</li>
+              <li>Vad är det som är inringat i den mellersta och den högra molekylen?</li>
+              <li>Hur många streck går från kolatomen till syret i den högra molekylen?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k5-l1.svg" alt="Tre molekyler i rad med två kolatomer vardera. Etan utan syre, etanol med en OH-grupp inringad, etansyra med en karboxylgrupp inringad där en syreatom är dubbelbunden.">
+            <figcaption>Samma två kolatomer i alla tre. Det som skiljer dem är hur mycket syre som sitter på.</figcaption>
+          </figure>
+          <p><strong>Etan</strong> är ett kolväte. På kolatomerna sitter bara väte.</p>
+          <p><strong>Etanol</strong> är en alkohol. En väteatom har bytts mot en <strong>OH-grupp</strong>.</p>
+          <p><strong>Etansyra</strong> är en organisk syra. Nu har det gått ett steg till.</p>
+          <h2>Vad som är nytt i syran</h2>
+          <p>I etansyra sitter det <strong>två</strong> syreatomer på samma kolatom.</p>
+          <p>Den ena sitter i en <strong>hydroxylgrupp</strong>, precis som i alkoholen. Den andra är <strong>dubbelbunden</strong> direkt till kolatomen.</p>
+          <p>Det är alltså inte nog med en OH-grupp för att ämnet ska bli en syra — alkoholer har ju också det.</p>
+          <p>Det som gör syran till en syra är <strong>kombinationen</strong>: en dubbelbunden syreatom och en hydroxylgrupp på samma kolatom.</p>
+          <p>Den kombinationen kallas <strong>karboxylgrupp</strong>.</p>
+          <h2>Karboxylgruppen skrivs –COOH</h2>
+          <p>Gruppen skrivs <strong>–COOH</strong>. Bokstäverna räknar upp vad som finns i den: en kolatom, två syreatomer och en väteatom.</p>
+          <p>Karboxylgruppen sitter <strong>alltid i änden</strong> av kolkedjan. Det finns ett skäl.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna strecken från kolatomen i mitten.</li>
+              <li>Var sitter väteatomen — på kolet eller på syret?</li>
+              <li>Varför kan den här gruppen inte sitta mitt i en kedja?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k5-l2.svg" alt="Karboxylgruppen förstorad. Kolatomen har två streck upp till en syreatom, ett streck till en hydroxylgrupp och ett streck till resten av molekylen.">
+            <figcaption>Fyra bindningar, alla upptagna. Tre går till syre, en till resten av molekylen.</figcaption>
+          </figure>
+          <p>Räkna kolatomens bindningar. Två går till den dubbelbundna syreatomen. En går till hydroxylgruppen. Det är tre.</p>
+          <p>Då finns bara <strong>en</strong> bindning kvar, och den går till resten av molekylen. Kolatomen har helt enkelt inte plats att sitta mitt i en kedja.</p>
+          <p>Du kan tänka på en organisk syra som två delar: <strong>kolkedja + karboxylgrupp</strong>.</p>
+          <h2>Namnet slutar på -syra</h2>
+          <p>Namnen bygger på samma stammar som förut:</p>
+          <p><strong>metan \(\rightarrow\) metanol \(\rightarrow\) metansyra</strong> <strong>etan \(\rightarrow\) etanol \(\rightarrow\) etansyra</strong></p>
+          <p>Sedan följer propansyra och butansyra. Ändelsen <strong>-syra</strong> talar om att det är en organisk syra.</p>
+          <p>De enklaste syrorna har dessutom äldre namn, som används oftare i vardagen:</p>
+          <p><strong>metansyra = myrsyra</strong> <strong>etansyra = ättiksyra</strong> <strong>butansyra = smörsyra</strong></p>
+          <p>Lär dig båda. Du kommer att möta dem om vartannat.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad skiljer etan, etanol och etansyra åt?</li>
+              <li>Varför räcker det inte med en OH-grupp för att ett ämne ska vara en syra?</li>
+              <li>Vilka atomer ingår i karboxylgruppen?</li>
+              <li>Varför sitter karboxylgruppen alltid i änden av kolkedjan?</li>
+              <li>Vad berättar ändelsen -syra?</li>
+            </ul>
+          </div>
+
+          <p class="inledning">I förra delkapitlet fick alkoholerna sina egenskaper från hydroxylgruppen, –OH. Den var en <strong>funktionell grupp</strong> — en bestämd grupp atomer som avgör hur ämnet beter sig.</p>
+          <p>Nu möter vi nästa: <strong>karboxylgruppen</strong>. Ämnen som innehåller den kallas <strong>organiska syror</strong>.</p>
+          <p>Karboxylgruppen gör att molekylen kan avge en vätejon, och därför blir ämnet surt. Här möts alltså den organiska kemin och det du redan kan om syror, oxoniumjoner och pH.</p>
+          <h2>Kolväte, alkohol och organisk syra</h2>
+          <p>Ställ tre ämnen bredvid varandra.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k5-l1.svg" alt="Tre molekyler i rad med två kolatomer vardera. Etan utan syre, etanol med en OH-grupp inringad, etansyra med en karboxylgrupp inringad där en syreatom är dubbelbunden.">
+            <figcaption>Kolväte, alkohol och organisk syra — tre grupper på samma kolskelett.</figcaption>
+          </figure>
+          <p>I ett <strong>kolväte</strong> sitter bara väte på kolatomerna. Metan, \(\ce{CH4}\), är det enklaste.</p>
+          <p>I en <strong>alkohol</strong> har en väteatom ersatts av en hydroxylgrupp. Metan blir metanol, \(\ce{CH3OH}\).</p>
+          <p>I en <strong>organisk syra</strong> har det gått ett steg till. Samma kolatom är nu både bunden till en hydroxylgrupp <strong>och</strong> dubbelbunden till en syreatom.</p>
+          <p>Det räcker alltså inte att en molekyl har en OH-grupp. Alkoholer har också det. Det speciella är <strong>kombinationen</strong> — en dubbelbunden syreatom och en hydroxylgrupp på samma kolatom.</p>
+          <h2>Karboxylgruppen skrivs –COOH</h2>
+          <p>Gruppen skrivs <strong>–COOH</strong>. Bokstäverna visar uppbyggnaden: en kolatom, två syreatomer och en väteatom.</p>
+          <p>Karboxylgruppen sitter alltid <strong>i änden</strong> av kolkedjan, och det finns ett skäl. Kolatomen i gruppen använder redan tre av sina fyra bindningar till syre — två i dubbelbindningen och en till hydroxylgruppen. Den fjärde går till resten av molekylen.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k5-l2.svg" alt="Karboxylgruppen förstorad. Kolatomen har två streck upp till en syreatom, ett streck till en hydroxylgrupp och ett streck till resten av molekylen.">
+            <figcaption>Karboxylgruppen kan bara sitta i änden av kolkedjan, eftersom kolatomen inte har fler bindningar att ge.</figcaption>
+          </figure>
+          <p>Man kan därför tänka på en organisk syra som två delar: <strong>kolkedja + karboxylgrupp</strong>.</p>
+          <p>Precis som hydroxylgruppen gjorde alkoholen till en alkohol är det karboxylgruppen som gör syran till en syra.</p>
+          <h2>Namnet slutar på -syra</h2>
+          <p>Namnen bygger på samma stammar som alkanerna och alkoholerna:</p>
+          <p><strong>metan \(\rightarrow\) metanol \(\rightarrow\) metansyra</strong> <strong>etan \(\rightarrow\) etanol \(\rightarrow\) etansyra</strong></p>
+          <p>Sedan följer propansyra och butansyra. Ändelsen <strong>-syra</strong> visar att ämnet är en organisk syra.</p>
+          <p>Flera av de enklaste har också äldre namn som används oftare:</p>
+          <p><strong>metansyra kallas myrsyra · etansyra kallas ättiksyra · butansyra kallas smörsyra</strong></p>
+          <p>Det är värt att lära sig båda, eftersom du kommer att möta dem om vartannat.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Varför just den kombinationen gör ämnet surt</h2>
+          <p>Standardtexten säger att det är kombinationen av en dubbelbunden syreatom och en hydroxylgrupp som gör ämnet surt. Det stämmer, men det förklarar inte <strong>varför</strong> kombinationen fungerar.</p>
+          <p>Frågan är rimlig. En alkohol har också en OH-grupp, och den kan i princip också lämna ifrån sig sin väteatom. Men den gör det nästan aldrig. Etanol är inte en syra.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k5-l1.svg" alt="Tre molekyler i rad med två kolatomer vardera. Etan utan syre, etanol med en OH-grupp inringad, etansyra med en karboxylgrupp inringad där en syreatom är dubbelbunden.">
+            <figcaption>Kolväte, alkohol och organisk syra — tre grupper på samma kolskelett.</figcaption>
+          </figure>
+          <p>Skillnaden ligger inte i molekylen före reaktionen, utan i <strong>jonen som blir kvar efteråt</strong>.</p>
+          <p>När en alkohol avger sin väteatom sitter den negativa laddningen kvar på en enda syreatom. Den sitter trångt, jonen är instabil, och reaktionen går därför i praktiken baklänges nästan direkt.</p>
+          <p>När en karboxylsyra avger sin väteatom finns <strong>två</strong> syreatomer, och de sitter bredvid varandra. Laddningen fördelar sig över båda. Den blir inte längre en laddning på ett ställe utan en halv laddning på två.</p>
+          <p>Det fenomenet kallas <strong>resonans</strong>, och en resonansstabiliserad jon är betydligt mer stabil.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k5-l2.svg" alt="Karboxylgruppen förstorad. Kolatomen har två streck upp till en syreatom, ett streck till en hydroxylgrupp och ett streck till resten av molekylen.">
+            <figcaption>Karboxylgruppen kan bara sitta i änden av kolkedjan, eftersom kolatomen inte har fler bindningar att ge.</figcaption>
+          </figure>
+          <p>Och stabilitet hos produkten avgör om en reaktion sker. Är jonen stabil stannar den kvar som jon — alltså har syran avgett sin proton.</p>
+          <p>Samma princip förklarar mer än så. Fenol, som är en alkohol bunden till en ring av kolatomer, är surare än vanliga alkoholer eftersom ringen kan ta emot en del av laddningen. Ju fler platser laddningen kan spridas över, desto surare blir ämnet.</p>
+          <p><strong>Om modellen.</strong> Standardnivån beskriver vilken grupp som gör ett ämne surt. Det räcker för att känna igen syror. Men frågan om <strong>varför</strong> har ett svar som inte handlar om syran alls — det handlar om jonen den lämnar efter sig. Kemin avgörs ofta av vad som blir kvar, inte av vad man började med.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Organiska syror kan bildas när alkoholer oxideras ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Hur känner man igen en oxidation i organisk kemi?</li>
+              <li>Vad händer med antalet syre- och väteatomer när etanol blir ättiksyra?</li>
+              <li>Vad gör ättiksyrabakterierna med vin som står framme?</li>
+              <li>Vad betyder ordet vinäger?</li>
+              <li>Varför bildar växter organiska syror?</li>
+            </ul>
+          </div>
+
+          <h2>Vad oxidation betyder</h2>
+          <p>Du har mött <strong>oxidation</strong> förut.</p>
+          <p>Det tydligaste exemplet är rost. Järn reagerar med syre och bildar järnoxid.</p>
+          <p>I organisk kemi känner man igen en oxidation på att molekylen <strong>tar upp syre</strong> eller <strong>avger väte</strong>. Ofta händer båda sakerna.</p>
+          <h2>Etanol blir ättiksyra</h2>
+          <p>Etanol har formeln <strong>\(\ce{C2H5OH}\)</strong>.</p>
+          <p>Oxideras den blir det <strong>etansyra, \(\ce{CH3COOH}\)</strong> — alltså ättiksyra.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Hur många syreatomer finns i varje molekyl?</li>
+              <li>Vilka atomer är streckade i den vänstra molekylen, och varför?</li>
+              <li>Vad heter ämnet till höger i vardagsspråk?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k5-l3.svg" alt="Etanol till vänster och etansyra till höger, med en pil märkt oxidation emellan. Den tillkomna syreatomen och de två väteatomer som försvinner är markerade.">
+            <figcaption>Följ syret och vätet. Ett syre kommer till, två väten försvinner.</figcaption>
+          </figure>
+          <p>Räkna atomerna och se vad som hänt.</p>
+          <p>Etanol har <strong>en</strong> syreatom. Ättiksyra har <strong>två</strong>. Molekylen har alltså tagit upp syre.</p>
+          <p>Etanol har <strong>sex</strong> väteatomer. Ättiksyra har <strong>fyra</strong>. Molekylen har alltså avgett väte.</p>
+          <p>Båda sakerna har hänt samtidigt — precis som definitionen säger.</p>
+          <p>Samma omvandling sker i levern när kroppen bryter ner etanol.</p>
+          <h2>Därför heter vinäger vinäger</h2>
+          <p>Ställ ett glas vin framme tillräckligt länge så händer något.</p>
+          <p>I luften finns <strong>ättiksyrabakterier</strong>. De använder etanolen i vinet och oxiderar den till ättiksyra. Vätskan blir surare och surare.</p>
+          <p>Det är precis så vinäger tillverkas.</p>
+          <p>Och ordet vinäger betyder just <strong>surt vin</strong>. Namnet beskriver alltså inte bara produkten utan den kemiska förändringen: etanolen har blivit ättiksyra.</p>
+          <h2>Växter använder syror som försvar</h2>
+          <p>Organiska syror finns i många växter, och de fyller en uppgift.</p>
+          <p>En sur miljö är obehaglig för många bakterier och svampar. Syran är därför en del av växtens <strong>kemiska försvar</strong>.</p>
+          <p>Den sura smaken påverkar också vilka djur som vill äta växten.</p>
+          <p>Tänk på omogen frukt. Den innehåller mycket syra och lite socker, och smakar därför surt. När frukten mognar minskar syrorna och sockret ökar.</p>
+          <p>Det är ingen slump. <strong>Frukten blir god precis när fröna är färdiga.</strong> Då vill djuren äta den, och fröna sprids vidare.</p>
+          <p>Det du uppfattar som smak har alltså en biologisk uppgift.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Hur känner man igen en oxidation i organisk kemi?</li>
+              <li>Vad händer med antalet syre- och väteatomer när etanol blir ättiksyra?</li>
+              <li>Vad gör ättiksyrabakterierna med vin som står framme?</li>
+              <li>Vad betyder ordet vinäger?</li>
+              <li>Varför bildar växter organiska syror?</li>
+            </ul>
+          </div>
+
+          <h2>Oxidation betyder att ämnet tar upp syre eller avger väte</h2>
+          <p class="inledning">Du har mött <strong>oxidation</strong> förut. Det enklaste kännetecknet är att ett ämne reagerar med syre — när järn rostar tar järnet upp syre och bildar järnoxid.</p>
+          <p>I organisk kemi känns en oxidation igen på att molekylen <strong>tar upp syre eller avger väte</strong>.</p>
+          <p>När en alkohol blir en organisk syra sker båda sakerna samtidigt: molekylen får mer syre och mindre väte.</p>
+          <h2>Etanol kan oxideras till ättiksyra</h2>
+          <p>Etanol har formeln \(\ce{C2H5OH}\). Oxideras den blir det <strong>etansyra, \(\ce{CH3COOH}\)</strong> — alltså ättiksyra.</p>
+          <p>Räkna atomerna. Etanol har en syreatom, ättiksyra har två. Etanol har sex väteatomer, ättiksyra har fyra. Molekylen har tagit upp syre och avgett väte, precis som definitionen säger.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k5-l3.svg" alt="Etanol till vänster och etansyra till höger, med en pil märkt oxidation emellan. Den tillkomna syreatomen och de två väteatomer som försvinner är markerade.">
+            <figcaption>Oxidation i organisk kemi känns igen på att molekylen tar upp syre eller avger väte. Här sker båda.</figcaption>
+          </figure>
+          <p>Det är samma omvandling som sker i levern när kroppen bryter ner etanol.</p>
+          <h2>Därför heter vinäger vinäger</h2>
+          <p>Samma sak händer när vin står framme.</p>
+          <p>I luften finns <strong>ättiksyrabakterier</strong>. De använder etanolen i vinet och oxiderar den till ättiksyra. Vätskan blir allt surare.</p>
+          <p>Det är så vinäger tillverkas — och ordet betyder just <strong>surt vin</strong>.</p>
+          <p>Namnet beskriver alltså inte bara produkten utan den kemiska förändring som skett: etanolen har blivit ättiksyra.</p>
+          <h2>Syrorna finns i naturen av ett skäl</h2>
+          <p>Organiska syror finns i många växter, och de fyller en funktion.</p>
+          <p>En sur miljö är ogynnsam för många bakterier och svampar. Syran är därför en del av växtens <strong>kemiska försvar</strong>. Den sura smaken påverkar också vilka djur som vill äta växten.</p>
+          <p>Omogen frukt innehåller mycket syra och lite socker, och smakar därför surt. När frukten mognar minskar syrorna och sockret ökar.</p>
+          <p>Det är ingen slump. <strong>När fröna är färdiga blir frukten samtidigt god</strong>, och djuret som äter den sprider fröna vidare.</p>
+          <p>Det vi uppfattar som smak har alltså en biologisk uppgift.</p>
+          <p><em>ca 330 ord, fyra rubriker</em></p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Oxidationen är en trappa med bestämda steg</h2>
+          <p>Standardtexten säger att etanol kan oxideras till ättiksyra. Det stämmer, men det utelämnar att omvandlingen sker i <strong>två steg</strong>, och att det finns ett mellanläge med eget namn.</p>
+          <p>Trappan ser ut så här. Utgå från en kolatom som bär en OH-grupp och minst en väteatom.</p>
+          <p><strong>Steg ett:</strong> molekylen avger två väteatomer. Kvar blir en kolatom med en <strong>dubbelbunden</strong> syreatom. Ämnet kallas en <strong>aldehyd</strong>. Ur etanol blir det acetaldehyd — samma ämne som gör att man mår illa dagen efter.</p>
+          <p><strong>Steg två:</strong> molekylen tar upp en syreatom. Nu har kolatomen både en dubbelbunden syreatom och en hydroxylgrupp. Det är en <strong>karboxylsyra</strong>.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k5-l3.svg" alt="Etanol till vänster och etansyra till höger, med en pil märkt oxidation emellan. Den tillkomna syreatomen och de två väteatomer som försvinner är markerade.">
+            <figcaption>Oxidation i organisk kemi känns igen på att molekylen tar upp syre eller avger väte. Här sker båda.</figcaption>
+          </figure>
+          <p>Trappan kan inte gå längre. En tredje oxidation skulle kräva att kolatomen bar ytterligare en väteatom, och det gör den inte.</p>
+          <p>Här kommer något du mötte i delkapitel 4. En <strong>primär</strong> alkohol har OH-gruppen på en ändkolatom, och den bär då två väteatomer. Den kan gå hela trappan.</p>
+          <p>En <strong>sekundär</strong> alkohol har OH-gruppen mitt i kedjan, och den kolatomen bär bara en väteatom. Den kan ta steg ett, men inte steg två. Produkten kallas en <strong>keton</strong> — aceton är den enklaste.</p>
+          <p>En <strong>tertiär</strong> alkohol har ingen väteatom alls på den kolatomen. Den kan inte oxideras.</p>
+          <p><strong>Om modellen.</strong> "Etanol oxideras till ättiksyra" är ett korrekt slutresultat. Men oxidation i organisk kemi är inte en sak som händer eller inte händer — det är en trappa, och hur högt en molekyl kan klättra bestäms av hur många väteatomer som sitter på rätt kolatom.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Organiska syror är svaga syror ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilken av karboxylgruppens atomer kan lossna?</li>
+              <li>Vad bildas när vätejonen tas upp av en vattenmolekyl?</li>
+              <li>Vad betyder det att en syra är svag?</li>
+              <li>Vad betyder pilen som pekar åt två håll?</li>
+              <li>Vad blir kvar av molekylen när vätejonen lämnat?</li>
+            </ul>
+          </div>
+
+          <h2>Vätejonen kan lossna</h2>
+          <p>En <strong>syra</strong> är ett ämne som kan avge en <strong>vätejon</strong>.</p>
+          <p>I en organisk syra är det väteatomen i karboxylgruppens OH-del som kan lossna.</p>
+          <p>Möter etansyran en vattenmolekyl kan den lämna ifrån sig sin vätejon. Då bildas en <strong>oxoniumjon</strong>:</p>
+          <div class="formel">\[\ce{CH3COOH + H2O <=> CH3COO- + H3O+}\]</div>
+          <p>Oxoniumjonerna är det som gör lösningen sur och sänker pH.</p>
+          <p>Karboxylgruppen är alltså den del av molekylen där syrligheten sitter.</p>
+          <h2>Men bara en del av molekylerna gör det</h2>
+          <p>De flesta organiska syror är <strong>svaga</strong> syror.</p>
+          <p>Svag betyder inte lite. Det handlar om <strong>hur stor andel</strong> av molekylerna som faktiskt avger sin vätejon.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna de hela molekylerna och jonerna. Hur många är det av varje?</li>
+              <li>Vad saknas hos jonen jämfört med molekylen?</li>
+              <li>Vad betyder pilen som pekar åt två håll?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k5-l4.svg" alt="Ett bägarglas med ättiksyra i vatten. Tjugo hela syramolekyler simmar omkring, och bara en har avgett sin vätejon. Bredvid står reaktionsformeln med dubbelpil.">
+            <figcaption>Bara en av tjugo molekyler har avgett sin vätejon. Resten är hela.</figcaption>
+          </figure>
+          <p>I en svag syra gör bara några få det. De allra flesta molekylerna simmar omkring hela och oförändrade.</p>
+          <p>I en <strong>stark</strong> syra som saltsyra gör nästan alla det.</p>
+          <h2>Pilen som pekar åt två håll</h2>
+          <p>Lägg märke till pilen i formeln: \(\ce{<=>}\)</p>
+          <p>Den betyder att reaktionen går <strong>åt båda hållen samtidigt</strong>.</p>
+          <p>Vissa molekyler lämnar ifrån sig sin vätejon i just detta ögonblick. Andra tar tillbaka den. Det pågår hela tiden, och det är därför bara en del av molekylerna är joner vid varje tillfälle.</p>
+          <p>En vanlig pil, \(\rightarrow\), hade betytt att reaktionen gick färdigt åt ett håll. Det gör den inte här.</p>
+          <h2>Svag är inte samma sak som ofarlig</h2>
+          <p>Det är därför citronsyra och ättiksyra kan finnas i mat medan saltsyra inte kan det.</p>
+          <p>Men var försiktig med ordet svag. <strong>En tillräckligt koncentrerad svag syra är frätande.</strong> Koncentrerad ättiksyra ger brännskador.</p>
+          <p>Svag beskriver hur många molekyler som avger sin vätejon — inte hur farligt ämnet är.</p>
+          <h2>Kvar blir en negativ jon</h2>
+          <p>När etansyran lämnat ifrån sig sin vätejon är molekylen inte längre neutral. Kvar finns:</p>
+          <p><strong>\(\ce{CH3COO-}\)</strong></p>
+          <p>Jonen har en negativ laddning och kallas <strong>etanoatjon</strong>. Det äldre namnet, som används oftare, är <strong>acetatjon</strong>.</p>
+          <p>Andra organiska syror bildar sina egna joner på samma sätt.</p>
+          <p>Jonerna blir viktiga längre fram, när organiska syror bildar salter och när estrar bildas.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilken av karboxylgruppens atomer kan lossna?</li>
+              <li>Vad bildas när vätejonen tas upp av en vattenmolekyl?</li>
+              <li>Vad betyder det att en syra är svag?</li>
+              <li>Vad betyder pilen som pekar åt två håll?</li>
+              <li>Vad blir kvar av molekylen när vätejonen lämnat?</li>
+            </ul>
+          </div>
+
+          <h2>Väteatomen i karboxylgruppen kan avges</h2>
+          <p class="inledning">En syra är ett ämne som kan avge en <strong>vätejon</strong>.</p>
+          <p>Hos en organisk syra är det väteatomen i karboxylgruppens OH-del som lossnar. Möter etansyran en vattenmolekyl kan den lämna ifrån sig sin vätejon, och då bildas en <strong>oxoniumjon</strong>:</p>
+          <div class="formel">\[\ce{CH3COOH + H2O <=> CH3COO- + H3O+}\]</div>
+          <p>Oxoniumjonerna gör lösningen sur och sänker pH.</p>
+          <p>Karboxylgruppen är alltså den del av molekylen där syrligheten sitter.</p>
+          <h2>Bara en del av molekylerna avger sin vätejon</h2>
+          <p>De flesta organiska syror är <strong>svaga</strong> syror.</p>
+          <p>Det handlar om hur stor <strong>andel</strong> av molekylerna som avger sin vätejon. I en svag syra gör bara en del det. Många molekyler finns kvar oförändrade i lösningen.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k5-l4.svg" alt="Ett bägarglas med ättiksyra i vatten. Tjugo hela syramolekyler simmar omkring, och bara en har avgett sin vätejon. Bredvid står reaktionsformeln med dubbelpil.">
+            <figcaption>I en svag syra är de flesta molekylerna oförändrade vid varje given tidpunkt.</figcaption>
+          </figure>
+          <p>Därför skrivs reaktionen med en <strong>dubbelpil, \(\ce{<=>}\)</strong>. Den betyder att reaktionen går åt båda hållen samtidigt — vissa molekyler avger sin vätejon medan andra tar tillbaka den.</p>
+          <p>Det skiljer organiska syror från en stark syra som saltsyra, där nästan alla molekyler avger sin vätejon.</p>
+          <p>Det är därför citronsyra och ättiksyra kan finnas i mat, medan saltsyra inte kan det.</p>
+          <p>Men <strong>svag syra betyder inte ofarlig syra</strong>. En tillräckligt koncentrerad svag syra är frätande.</p>
+          <h2>Kvar blir en negativ jon</h2>
+          <p>När etansyran lämnat ifrån sig sin vätejon är molekylen inte längre neutral. Kvar finns:</p>
+          <p><strong>\(\ce{CH3COO-}\)</strong></p>
+          <p>Jonen har en negativ laddning och kallas <strong>etanoatjon</strong>. Det äldre namnet, som används oftare, är <strong>acetatjon</strong>.</p>
+          <p>Andra organiska syror bildar sina egna joner på samma sätt.</p>
+          <p>Jonerna blir viktiga längre fram, när organiska syror bildar salter och när vi ser hur estrar bildas.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Hur svag är en svag syra, mätt i tal?</h2>
+          <p>Standardtexten säger att bara en del av molekylerna avger sin vätejon. Det är rätt, men "en del" är vagt. Hur stor del?</p>
+          <p>Ta vanlig ättiksyra i den styrka man har hemma. I den lösningen har ungefär <strong>en molekyl av hundra</strong> avgett sin vätejon. De övriga nittionio är hela.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k5-l4.svg" alt="Ett bägarglas med ättiksyra i vatten. Tjugo hela syramolekyler simmar omkring, och bara en har avgett sin vätejon. Bredvid står reaktionsformeln med dubbelpil.">
+            <figcaption>I en svag syra är de flesta molekylerna oförändrade vid varje given tidpunkt.</figcaption>
+          </figure>
+          <p>I en saltsyralösning av samma styrka har praktiskt taget <strong>alla</strong> avgett sin.</p>
+          <p>Skillnaden är alltså inte liten. Den är hundrafaldig.</p>
+          <p>Men det är viktigt att förstå vad som pågår i lösningen. De nittionio molekylerna är inte <em>samma</em> nittionio hela tiden. Reaktionen går åt båda hållen oavbrutet — molekyler avger sin vätejon, joner tar tillbaka en, och det sker miljardtals gånger i sekunden.</p>
+          <p>Det som är konstant är inte vilka molekyler som är joner, utan <strong>hur många</strong>. Det tillståndet kallas <strong>jämvikt</strong>, och det är vad dubbelpilen betyder.</p>
+          <p>Kemister anger syrastyrka med ett tal som kallas <strong>pKa</strong>. Ju lägre tal, desto starkare syra. Saltsyra ligger på ungefär −6, myrsyra på 3,8, ättiksyra på 4,8 och etanol på omkring 16.</p>
+          <p>Skalan är logaritmisk, precis som pH. Ett steg betyder tio gånger. Att ättiksyra ligger elva steg under etanol betyder att den avger sin vätejon hundra miljarder gånger lättare.</p>
+          <p><strong>Om modellen.</strong> "Svag syra" låter som en egenskap med två lägen — antingen är en syra stark eller svag. I själva verket är det en glidande skala som spänner över tjugotvå tiopotenser, och gränsen mellan stark och svag är en överenskommelse, inte en naturlag.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-1-karboxylgruppen.json"
+           data-avsnitt="a1_karboxylgruppen">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-1-karboxylgruppen.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a1_karboxylgruppen';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'syror-och-estrar';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

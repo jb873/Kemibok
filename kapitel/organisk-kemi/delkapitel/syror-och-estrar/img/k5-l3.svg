@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360" role="img" aria-labelledby="t">
+  <title id="t">Etanol till vänster och etansyra till höger, med en pil märkt oxidation emellan. Den tillkomna syreatomen och de två väteatomer som försvinner är markerade</title>
+  <line x1="163" y1="150" x2="183" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"   data-molekyl="etanol"/>
+  <line x1="150" y1="137" x2="150" y2="125" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="etanol"/>
+  <line x1="150" y1="163" x2="150" y2="175" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="etanol"/>
+  <line x1="137" y1="150" x2="113" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="etanol"/>
+  <line x1="196" y1="137" x2="196" y2="125" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-mark="bort" stroke-dasharray="4 3" data-molekyl="etanol"/>
+  <line x1="196" y1="163" x2="196" y2="175" stroke="#8A8A8A" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-mark="bort" stroke-dasharray="4 3" data-molekyl="etanol"/>
+  <line x1="209" y1="150" x2="229" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="etanol"/>
+  <line x1="255" y1="150" x2="279" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"   data-molekyl="etanol"/>
+  <text x="150" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="etanol">C</text>
+  <text x="196" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="etanol">C</text>
+  <text x="150" y="122.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etanol">H</text>
+  <text x="150" y="190.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etanol">H</text>
+  <text x="104" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etanol">H</text>
+  <text x="196" y="122.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#8A8A8A"  data-atom="H" data-mark="bort" data-molekyl="etanol">H</text>
+  <text x="196" y="190.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#8A8A8A"  data-atom="H" data-mark="bort" data-molekyl="etanol">H</text>
+  <text x="242" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="etanol">O</text>
+  <text x="288" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etanol">H</text>
+  <circle cx="196" cy="116" r="13" fill="none" stroke="#8A8A8A" stroke-width="1" stroke-dasharray="3 2"/>
+  <circle cx="196" cy="184" r="13" fill="none" stroke="#8A8A8A" stroke-width="1" stroke-dasharray="3 2"/>
+  <text x="226" y="190"    font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8A8A8A" text-anchor="start">− väte</text>
+  <line x1="330" y1="150" x2="460" y2="150" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <polygon points="470,150 460,155 460,145" fill="#2d4a35" />
+  <text x="400" y="136" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">oxidation</text>
+  <line x1="613" y1="150" x2="633" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"   data-molekyl="etansyra"/>
+  <line x1="600" y1="137" x2="600" y2="125" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="etansyra"/>
+  <line x1="600" y1="163" x2="600" y2="175" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="etansyra"/>
+  <line x1="587" y1="150" x2="563" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="etansyra"/>
+  <line x1="642.4" y1="137" x2="642.4" y2="129" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="etansyra"/>
+  <line x1="649.6" y1="137" x2="649.6" y2="129" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="etansyra"/>
+  <line x1="659" y1="150" x2="679" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="etansyra"/>
+  <line x1="705" y1="150" x2="729" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"   data-molekyl="etansyra"/>
+  <text x="600" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="etansyra">C</text>
+  <text x="646" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="etansyra">C</text>
+  <text x="600" y="122.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etansyra">H</text>
+  <text x="600" y="190.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etansyra">H</text>
+  <text x="554" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etansyra">H</text>
+  <circle cx="646" cy="116" r="15" fill="#e8c547" stroke="none" stroke-width="0" fill-opacity="0.6" data-ny="syre"/>
+  <text x="646" y="122.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="etansyra">O</text>
+  <text x="692" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="etansyra">O</text>
+  <text x="738" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etansyra">H</text>
+  <text x="670" y="112"    font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" fill="#C0392B" text-anchor="start">+ syre</text>
+  <text x="196" y="262" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" data-rad="etanol">1 syre, 6 väte</text>
+  <text x="646" y="262" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" data-rad="etansyra">2 syre, 4 väte</text>
+  <text x="196" y="286" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15">etanol, <tspan>C</tspan><tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">5</tspan><tspan dy="-0.3em" fill="#C0392B" data-o="1">OH</tspan></text>
+  <text x="646" y="286" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15">etansyra (ättiksyra), <tspan>CH</tspan><tspan font-size="0.7em" dy="0.3em">3</tspan><tspan dy="-0.3em">C</tspan><tspan fill="#C0392B" data-o="1">OOH</tspan></text>
+  <text x="450" y="346" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">molekylen tar upp syre och avger väte – båda sakerna samtidigt</text>
+</svg>
