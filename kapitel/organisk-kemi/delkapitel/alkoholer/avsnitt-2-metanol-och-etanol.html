@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metanol och etanol – Alkoholer – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Alkoholer</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">2. Metanol och etanol</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 2</span>
+      <h1>Metanol och etanol</h1>
+      <p class="subtitel">— två molekyler, två helt olika öden —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Metanol</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Jäsning</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Etanolens användning</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-metanol-och-etanol">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Metanol ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Hur många atomer av varje slag finns i en metanolmolekyl?</li>
+              <li>Varför fick metanol namnet träsprit?</li>
+              <li>Vad bildas när metanol förbränns fullständigt?</li>
+              <li>Vad omvandlar kroppen metanol till?</li>
+              <li>Varför är det farligt att metanol liknar etanol?</li>
+            </ul>
+          </div>
+
+          <p>De två enklaste alkoholerna är <strong>metanol</strong> och <strong>etanol</strong>.</p>
+          <p>Molekylerna skiljer sig knappt åt. Etanol har en kolatom och två väteatomer mer än metanol. Det är allt.</p>
+          <p>Båda är färglösa vätskor. Båda brinner. Båda används i industrin.</p>
+          <p>Ändå är skillnaden för människan enorm. Etanol finns i alkoholhaltiga drycker. Metanol är mycket giftigt och kan ge allvarliga skador redan i små mängder.</p>
+          <h2>En kolatom och en OH-grupp</h2>
+          <p>Metanol har formeln <strong>\(\ce{CH3OH}\)</strong>.</p>
+          <p>Räkna atomerna: en kolatom, fyra väteatomer och en syreatom. Tre av väteatomerna sitter direkt på kolatomen. Den fjärde sitter i hydroxylgruppen, fast på syret.</p>
+          <p>Du kan se metanol som metan, \(\ce{CH4}\), där en väteatom bytts mot en OH-grupp.</p>
+          <h2>Därför heter det träsprit</h2>
+          <p>Förr framställdes metanol genom att hetta upp trä kraftigt <strong>utan luft</strong>.</p>
+          <p>Det låter bekant. Det är samma metod som används för att göra koks av stenkol, och som du mötte i förra delkapitlet. Utan syre kan materialet inte brinna — i stället drivs ämnen ut ur det.</p>
+          <p>Ur trä drevs bland annat metanol ut. Därför fick ämnet det gamla svenska namnet <strong>träsprit</strong>.</p>
+          <p>I dag framställs metanol industriellt ur enklare gaser.</p>
+          <h2>Metanol används som bränsle och lösningsmedel</h2>
+          <p>Metanol är en viktig <strong>råvara</strong> i industrin. Den används när man tillverkar andra kemiska ämnen och material.</p>
+          <p>Den löser också många ämnen och används därför som <strong>lösningsmedel</strong>.</p>
+          <p>Och den brinner:</p>
+          <div class="formel">\[\ce{2 CH3OH + 3 O2 -> 2 CO2 + 4 H2O}\]</div>
+          <p>Precis som för andra ämnen med kol och väte blir det koldioxid och vatten. Därför används metanol som bränsle i vissa motorer och maskiner.</p>
+          <h2>Metanol är giftig</h2>
+          <p>Metanol ser ut som etanol och luktar ungefär som etanol. Men den är mycket giftigare.</p>
+          <p>Det farliga är inte metanolen i sig. <strong>Det farliga är vad kroppen gör med den.</strong></p>
+          <p>I levern bryts metanol ner till <strong>myrsyra</strong>. Myrsyran stör cellernas arbete, och allra känsligast är <strong>synnerven och näthinnan</strong> i ögat.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Hur många syreatomer finns i den första molekylen, och hur många i den andra?</li>
+              <li>Vad är det som händer i levern?</li>
+              <li>Varför är det farligt att metanol luktar som etanol?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k4-k5.svg" alt="Tre steg. Metanolmolekylen, en pil märkt i levern, myrsyramolekylen, och sist ett öga där synnerven är markerad.">
+            <figcaption>Det farliga är inte metanolen själv, utan vad kroppen gör med den.</figcaption>
+          </figure>
+          <p>Metanolförgiftning kan därför ge synskador, och i svåra fall bestående blindhet. Allvarlig förgiftning kan leda till döden.</p>
+          <p>Det värsta är att man inte kan känna skillnaden. Metanol och etanol går inte att skilja åt genom att titta eller lukta.</p>
+          <p>Det säger något viktigt om kemi: <strong>två ämnen kan se likadana ut och ändå göra helt olika saker i kroppen.</strong></p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Hur många atomer av varje slag finns i en metanolmolekyl?</li>
+              <li>Varför fick metanol namnet träsprit?</li>
+              <li>Vad bildas när metanol förbränns fullständigt?</li>
+              <li>Vad omvandlar kroppen metanol till?</li>
+              <li>Varför är det farligt att metanol liknar etanol?</li>
+            </ul>
+          </div>
+
+          <p class="inledning">De två enklaste alkoholerna är <strong>metanol</strong> och <strong>etanol</strong>. Molekylerna skiljer sig bara med en kolatom och två väteatomer.</p>
+          <p>Båda är färglösa vätskor, båda brinner, båda används i industrin. Ändå är skillnaden för människan enorm: etanol finns i alkoholhaltiga drycker, medan metanol är mycket giftigt och kan ge allvarliga skador i små mängder.</p>
+          <h2>En kolatom och en hydroxylgrupp</h2>
+          <p>Metanol har formeln <strong>\(\ce{CH3OH}\)</strong> — en kolatom, fyra väteatomer och en syreatom. Tre av väteatomerna sitter på kolatomen, den fjärde i hydroxylgruppen.</p>
+          <p>Metanol kan alltså ses som metan där en väteatom bytts mot en OH-grupp.</p>
+          <p>Förr framställdes metanol genom kraftig upphettning av trä utan luft, och fick därför det äldre namnet <strong>träsprit</strong>. I dag framställs den industriellt ur enklare gaser.</p>
+          <h2>Metanol används som bränsle och lösningsmedel</h2>
+          <p>Metanol är en viktig industriråvara vid framställning av andra ämnen och material. Den löser också många ämnen och används därför som lösningsmedel.</p>
+          <p>Metanol brinner:</p>
+          <div class="formel">\[\ce{2 CH3OH + 3 O2 -> 2 CO2 + 4 H2O}\]</div>
+          <p>Vid fullständig förbränning bildas koldioxid och vatten, precis som för andra ämnen med kol och väte.</p>
+          <p>Därför används metanol som bränsle i vissa motorer och industriella processer.</p>
+          <h2>Metanol är giftig</h2>
+          <p>Metanol liknar etanol till utseende och lukt, men är betydligt giftigare.</p>
+          <p>Det farligaste är inte metanolen själv utan vad kroppen gör med den. I levern bryts metanol ner till <strong>myrsyra</strong>, som stör cellernas funktion. Särskilt känsliga är <strong>synnerven och näthinnan</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k4-k5.svg" alt="Tre steg. Metanolmolekylen, en pil märkt i levern, myrsyramolekylen, och sist ett öga där synnerven är markerad.">
+            <figcaption>I levern omvandlas metanol till myrsyra, som skadar synnerven och näthinnan.</figcaption>
+          </figure>
+          <p>Metanolförgiftning kan därför ge synskador och i svåra fall bestående blindhet. Allvarlig förgiftning kan leda till döden.</p>
+          <p>En särskild fara är att metanol och etanol inte går att skilja åt med sinnena. Man kan inte se eller lukta vilken vätska man har framför sig.</p>
+          <p>Det visar något viktigt: <strong>två ämnen kan likna varandra utanpå och ändå påverka kroppen helt olika.</strong></p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Det är mellanprodukten som gör metanol farlig</h2>
+          <p>Standardtexten säger att metanol bryts ner till myrsyra i levern. Det stämmer, men steget däremellan är utelämnat — och det är det steget som förklarar varför förgiftningen ser ut som den gör.</p>
+          <p>Nedbrytningen sker i två steg, och båda utförs av samma <strong>enzymer</strong> som normalt tar hand om etanol.</p>
+          <p>Först oxideras metanol till <strong>formaldehyd</strong>. Det är ett mycket reaktivt ämne som binder till proteiner och skadar celler snabbt.</p>
+          <p>Sedan oxideras formaldehyden vidare till <strong>myrsyra</strong>, som i kroppens miljö föreligger som jonen <strong>formiat</strong>.</p>
+          <p>Det är formiatet som gör den egentliga skadan, och det gör den på ett specifikt sätt: det blockerar ett av de enzymer cellerna använder för att utvinna energi ur syre. Celler med hög energiförbrukning drabbas först — och synnerven är en av kroppens mest energikrävande vävnader.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k4-k5.svg" alt="Tre steg. Metanolmolekylen, en pil märkt i levern, myrsyramolekylen, och sist ett öga där synnerven är markerad.">
+            <figcaption>I levern omvandlas metanol till myrsyra, som skadar synnerven och näthinnan.</figcaption>
+          </figure>
+          <p>Förloppet förklarar också ett obehagligt drag hos metanolförgiftning: den kommer <strong>försenat</strong>. De första timmarna märks bara något som liknar vanlig berusning, eftersom metanolen ännu inte hunnit brytas ner. Symtomen kommer efter tolv till tjugofyra timmar, när formiatet hunnit byggas upp.</p>
+          <p>Behandlingen följer direkt av kemin. Ger man patienten <strong>etanol</strong> upptar den samma enzymer, och metanolen hinner inte omvandlas utan lämnar kroppen oförändrad. I dag används oftare ett läkemedel som blockerar enzymet helt, men principen är densamma.</p>
+          <p><strong>Om modellen.</strong> "Metanol är giftig" är sant men missvisande. Metanolmolekylen i sig är ungefär lika harmlös som etanol. Giftet tillverkas i kroppen, av kroppens egna enzymer, och botemedlet är att hindra kroppen från att göra det.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Jäsning ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad använder jästsvampen som energikälla?</li>
+              <li>Under vilka förhållanden bildas etanol i stället för koldioxid och vatten?</li>
+              <li>Vad bildas av en enda glukosmolekyl?</li>
+              <li>Vilken av produkterna vill man åt när man bakar?</li>
+              <li>Varför stannar jäsningen av sig själv?</li>
+            </ul>
+          </div>
+
+          <h2>Jästsvampar äter socker</h2>
+          <p>Etanol kan bildas på biologisk väg. Processen kallas <strong>jäsning</strong>.</p>
+          <p>Jäst är en svamp. Som alla organismer behöver den energi, och den får sin energi ur <strong>glukos</strong> — samma druvsocker som växterna bildar vid fotosyntesen.</p>
+          <p>När det finns gott om syre använder jästen syret, precis som du gör. Men <strong>när syret tar slut</strong> gör den något annat: den bryter ner glukosen ändå, fast bara en bit på vägen, och det som blir över är etanol och koldioxid.</p>
+          <div class="formel">\[\ce{C6H12O6 -> 2 C2H5OH + 2 CO2 + energi}\]</div>
+          <p>En glukosmolekyl ger alltså <strong>två</strong> etanolmolekyler och <strong>två</strong> koldioxidmolekyler.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna prickarna som går in och de som kommer ut.</li>
+              <li>Hur många etanolmolekyler bildas av en glukosmolekyl?</li>
+              <li>Vad är det som gör att jästen bildar etanol i stället för koldioxid och vatten?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k4-k6.svg" alt="En jästcell som tar in en glukosmolekyl och avger två etanolmolekyler, två koldioxidmolekyler och energi. Sex kolatomer följs som mörka prickar från glukosen till produkterna.">
+            <figcaption>Följ de sex kolatomerna. Fyra hamnar i etanolen, två i koldioxiden.</figcaption>
+          </figure>
+          <p>Du har mött en syrefri nedbrytning förut: metanbildningen i kärret. Där gav andra mikroorganismer ett annat resultat. Hos jäst blir det etanol.</p>
+          <h2>I degen vill man åt koldioxiden</h2>
+          <p>När du bakar tillsätter du jäst i degen. Jästen hittar socker i mjölet och sätter igång.</p>
+          <p>Det du är ute efter är <strong>koldioxiden</strong>. Gasen bildar små bubblor som fastnar i degen, och därför jäser den och blir luftig.</p>
+          <p>Etanolen som bildas samtidigt vill du inte ha. Men det löser sig av sig självt — när brödet gräddas avdunstar nästan all etanol.</p>
+          <h2>I vin och öl vill man åt etanolen</h2>
+          <p>Vid framställning av vin och öl är det tvärtom.</p>
+          <p>Där är <strong>etanolen</strong> det man är ute efter, och koldioxiden är oftast biprodukten. I vissa drycker vill man behålla en del av koldioxiden ändå — det är den som ger bubblorna.</p>
+          <p>Samma kemiska process alltså, men två olika ändamål. Vilken produkt du vill ha avgör hur du gör.</p>
+          <h2>Jäsningen tar slut av sig själv</h2>
+          <p>Jästsvampar tål inte hur mycket etanol som helst. Etanolen är giftig även för dem.</p>
+          <p>När halten stiger blir miljön allt sämre för jästcellerna, och vid ungefär <strong>12 till 15 procent</strong> stannar jäsningen helt.</p>
+          <p>Det sätter en naturlig gräns. En dryck kan inte bli starkare än så bara genom jäsning.</p>
+          <p>Vill man ha högre halt måste etanolen skiljas från vattnet. Det görs genom <strong>destillation</strong>.</p>
+          <p>Etanol kokar vid 78 °C och vatten vid 100 °C. Värmer man blandningen kommer alltså mer etanol än vatten att förångas, och ångan blir starkare än vätskan den kom ifrån.</p>
+          <p>Det är samma princip som i fraktioneringstornet i förra delkapitlet: ämnen med olika kokpunkt kan separeras.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad använder jästsvampen som energikälla?</li>
+              <li>Under vilka förhållanden bildas etanol i stället för koldioxid och vatten?</li>
+              <li>Vad bildas av en enda glukosmolekyl?</li>
+              <li>Vilken av produkterna vill man åt när man bakar?</li>
+              <li>Varför stannar jäsningen av sig själv?</li>
+            </ul>
+          </div>
+
+          <h2>Jäst omvandlar socker till etanol</h2>
+          <p class="inledning">Etanol kan bildas genom en biologisk process som kallas <strong>jäsning</strong>.</p>
+          <p>Jästsvampar använder glukos som energikälla. När det finns ont om syre omvandlar de glukosen till etanol och koldioxid:</p>
+          <div class="formel">\[\ce{C6H12O6 -> 2 C2H5OH + 2 CO2 + energi}\]</div>
+          <figure class="brodtext-bild standard">
+            <img src="img/k4-k6.svg" alt="En jästcell som tar in en glukosmolekyl och avger två etanolmolekyler, två koldioxidmolekyler och energi. Sex kolatomer följs som mörka prickar från glukosen till produkterna.">
+            <figcaption>Jästsvampen bryter ner glukos utan syre och bildar etanol och koldioxid.</figcaption>
+          </figure>
+          <p>En glukosmolekyl ger alltså två etanolmolekyler och två koldioxidmolekyler.</p>
+          <p>Vi har mött en syrefri nedbrytning förut — metanbildningen i kärr och bottenslam. Där gav andra mikroorganismer en annan slutprodukt. Hos jäst blir det etanol.</p>
+          <h2>Jäsningen används i bakning och i drycker</h2>
+          <p>I en deg är det <strong>koldioxiden</strong> man vill åt. Gasen bildar bubblor som fastnar i degen och får den att jäsa. Etanolen som bildas samtidigt avdunstar till största delen vid gräddningen.</p>
+          <p>I vin och öl är det tvärtom: där är <strong>etanolen</strong> den önskade produkten.</p>
+          <p>Samma process, två olika ändamål — beroende på vilken produkt man är ute efter.</p>
+          <h2>Jäsningen stannar av sig själv</h2>
+          <p>Jästsvampar tål inte hur mycket etanol som helst. När halten stiger blir miljön allt sämre för dem, och vid ungefär <strong>12 till 15 procent</strong> stannar jäsningen.</p>
+          <p>Det sätter en naturlig gräns för hur stark en dryck kan bli enbart genom jäsning.</p>
+          <p>Vill man högre måste etanolen skiljas från vattnet, och det görs genom <strong>destillation</strong>. Etanol kokar vid 78 °C och vatten vid 100 °C, så ångan blir rikare på etanol än vätskan den kom ifrån.</p>
+          <p>Det är samma princip som i fraktioneringstornet i förra delkapitlet: ämnen med olika kokpunkt kan separeras.</p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Jäsningen är cellandning som stannat halvvägs</h2>
+          <p>Standardtexten beskriver jäsning som en process där jästen bryter ner glukos utan syre. Det stämmer, men formuleringen antyder att det är en annan process än cellandning. Det är det inte — det är samma process, avbruten.</p>
+          <p>Både cellandning och jäsning börjar likadant. Glukosmolekylen med sina sex kolatomer klyvs i två delar med tre kolatomer var, i en serie steg som inte kräver syre alls. Redan där frigörs lite energi.</p>
+          <p>Sedan skiljs vägarna.</p>
+          <p>Med syre fortsätter nedbrytningen hela vägen. Kolatomerna blir koldioxid, väteatomerna blir vatten, och cellen får ut ungefär <strong>30 ATP</strong> per glukosmolekyl.</p>
+          <p>Utan syre går det inte. Kedjan stannar, och cellen sitter kvar med halvfärdiga molekyler som måste tas om hand. Jästens lösning är att omvandla dem till etanol och koldioxid och släppa ut dem.</p>
+          <p>Utbytet blir <strong>2 ATP</strong> per glukosmolekyl. Ungefär en femtondel.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k4-k6.svg" alt="En jästcell som tar in en glukosmolekyl och avger två etanolmolekyler, två koldioxidmolekyler och energi. Sex kolatomer följs som mörka prickar från glukosen till produkterna.">
+            <figcaption>Jästsvampen bryter ner glukos utan syre och bildar etanol och koldioxid.</figcaption>
+          </figure>
+          <p>Etanolen är alltså inte en produkt jästen vill ha. Det är <strong>avfall</strong> — något cellen gör sig av med för att kunna fortsätta arbeta.</p>
+          <p>Det förklarar varför jäsningen stannar vid femton procent. Jästen förgiftas långsamt av sitt eget avfall, i en miljö där det inte kan spädas ut.</p>
+          <p>Samma sak händer i dina muskler vid hård ansträngning. När syret inte räcker till gör muskelcellen samma sak som jästen — fast slutprodukten blir <strong>mjölksyra</strong> i stället för etanol.</p>
+          <p><strong>Om modellen.</strong> Att beskriva jäsning som "nedbrytning utan syre" är korrekt men gör den till ett eget fenomen. Den är i själva verket samma nedbrytning som cellandningen, avbruten där syret skulle ha tagit vid. Och priset för avbrottet är att nästan all energi lämnas kvar i etanolen — vilket förresten är exakt därför etanol brinner så bra.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Etanolens användning ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilka två delar består etanolmolekylen av?</li>
+              <li>Varför kan etanol lösa så många olika ämnen?</li>
+              <li>Vad menas med att etanol kan framställas ur biomassa?</li>
+              <li>Varför räknas kolet i etanol annorlunda än kolet i bensin?</li>
+              <li>Vad omvandlas etanol till i levern?</li>
+            </ul>
+          </div>
+
+          <h2>Molekylen har två olika ändar</h2>
+          <p>Etanol är ett ovanligt bra lösningsmedel, och skälet är molekylens form.</p>
+          <p><strong>Ena änden</strong> är hydroxylgruppen. Den samverkar starkt med vatten — den delen är vattenvänlig.</p>
+          <p><strong>Andra änden</strong> är två kolatomer med sina väteatomer. Den liknar ett litet kolväte, och den samverkar med ämnen som inte löser sig i vatten — fett, oljor, lacker.</p>
+          <p>De flesta lösningsmedel kan bara det ena. Etanol kan båda.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vilken del av molekylen dras vattenmolekylerna mot?</li>
+              <li>Var går den streckade linjen?</li>
+              <li>Vad skulle hända om kolvätedelen var mycket längre?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k4-k7.svg" alt="En etanolmolekyl delad av en streckad linje. Till vänster kolvätedelen mot grått fält, till höger hydroxylgruppen mot blått fält, med vattenmolekyler som dras mot den.">
+            <figcaption>Ena änden gillar vatten, andra änden gillar fett. Därför löser etanol så mycket.</figcaption>
+          </figure>
+          <h2>Därför finns etanol i så många produkter</h2>
+          <p>Eftersom etanol löser både vattenlösliga och fettlösliga ämnen används den i mängder av sammanhang.</p>
+          <p>Parfym. Färger och lacker. Rengöringsmedel. Läkemedel. Krämer och andra kosmetiska produkter.</p>
+          <p>I många av dem är etanolen inte det man vill ha — den är det som får de andra ämnena att hålla sig blandade.</p>
+          <h2>Etanol kan användas som bränsle</h2>
+          <p>Etanol brinner:</p>
+          <div class="formel">\[\ce{C2H5OH + 3 O2 -> 2 CO2 + 3 H2O}\]</div>
+          <p>Den används i motorbränslen, i T-röd och i spolarvätska.</p>
+          <p>Här finns en viktig skillnad mot bensin och diesel. Etanol kan framställas ur <strong>biomassa</strong> — växter som innehåller socker eller stärkelse.</p>
+          <p>Växterna tog upp sitt kol ur luften genom fotosyntesen för något år sedan. När etanolen brinner går kolet tillbaka dit. Kolet stannar alltså i <strong>det snabba kretsloppet</strong>.</p>
+          <p>Fossilt kol har varit borta i miljontals år. Det är hela skillnaden.</p>
+          <p>Men det betyder inte att etanol automatiskt är klimatneutral. Odling, gödsel, transporter och framställning kräver också energi. Det som skiljer är kolatomernas ursprung.</p>
+          <h2>Etanol är också giftigt</h2>
+          <p>Att etanol finns i drycker betyder inte att ämnet är ofarligt.</p>
+          <p>Etanol påverkar hjärnan och nervsystemet. Kroppen arbetar därför för att bli av med det.</p>
+          <p>Nedbrytningen sker i <strong>levern</strong>. Där omvandlas etanol till <strong>ättiksyra</strong>, som kroppen kan använda vidare i sin ämnesomsättning.</p>
+          <p>Levern klarar bara en viss mängd per timme. Kommer det etanol snabbare än den hinner brytas ner stiger halten i blodet.</p>
+          <h2>Två molekyler, två helt olika slut</h2>
+          <p>Jämför metanol och etanol en sista gång.</p>
+          <p>Skillnaden mellan molekylerna är <strong>en kolatom och två väteatomer</strong>.</p>
+          <p>Men kroppen bryter ner dem olika, och resultatet blir helt olika. Metanol blir myrsyra som angriper synen. Etanol blir ättiksyra som kroppen kan använda.</p>
+          <p>Så små skillnader i en molekyl kan alltså ge så stora skillnader i vad som händer i kroppen.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilka två delar består etanolmolekylen av?</li>
+              <li>Varför kan etanol lösa så många olika ämnen?</li>
+              <li>Vad menas med att etanol kan framställas ur biomassa?</li>
+              <li>Varför räknas kolet i etanol annorlunda än kolet i bensin?</li>
+              <li>Vad omvandlas etanol till i levern?</li>
+            </ul>
+          </div>
+
+          <h2>Etanol är ett bra lösningsmedel</h2>
+          <p class="inledning">Etanol är ovanligt användbar som lösningsmedel, eftersom molekylen har <strong>två delar med olika egenskaper</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k4-k7.svg" alt="En etanolmolekyl delad av en streckad linje. Till vänster kolvätedelen mot grått fält, till höger hydroxylgruppen mot blått fält, med vattenmolekyler som dras mot den.">
+            <figcaption>Hydroxylgruppen samverkar med vatten, kolvätedelen med opolära ämnen.</figcaption>
+          </figure>
+          <p>Hydroxylgruppen samverkar starkt med vatten — den delen är vattenvänlig. Resten av molekylen liknar ett litet kolväte och samverkar med ämnen som inte löser sig i vatten.</p>
+          <p>Därför kan etanol lösa både vattenlösliga ämnen och sådana som vatten löser dåligt.</p>
+          <p>Det gör etanol användbar i parfym, färger, lacker, rengöringsmedel, läkemedel och kosmetika.</p>
+          <h2>Etanol kan användas som bränsle</h2>
+          <p>Etanol brinner:</p>
+          <div class="formel">\[\ce{C2H5OH + 3 O2 -> 2 CO2 + 3 H2O}\]</div>
+          <p>Den används i motorbränslen och i tekniska produkter som T-röd och spolarvätska.</p>
+          <p>En viktig skillnad mot fossila bränslen är att etanol kan framställas ur <strong>biomassa</strong> — växter som innehåller socker eller stärkelse. Växterna tog nyligen upp sitt kol ur luften genom fotosyntesen, och när etanolen brinner går kolet tillbaka dit.</p>
+          <p>Kolet ligger alltså i <strong>det snabba kretsloppet</strong>, till skillnad från kolet i bensin och naturgas.</p>
+          <p>Det betyder inte att etanol automatiskt är klimatneutral. Odling, gödsel och transporter kräver också energi. Men kolatomernas ursprung är ett annat.</p>
+          <h2>Etanol är också giftigt</h2>
+          <p>Att etanol finns i drycker betyder inte att ämnet är ofarligt.</p>
+          <p>Etanol påverkar hjärnan och nervsystemet, och kroppen arbetar för att bryta ner det. Nedbrytningen sker i <strong>levern</strong>, där etanol omvandlas till <strong>ättiksyra</strong> som kroppen kan använda vidare.</p>
+          <p>Kroppen klarar bara en begränsad mängd per timme. Tillförs etanol snabbare än den bryts ner stiger halten i blodet.</p>
+          <p>Metanol och etanol visar tillsammans något viktigt: molekylerna skiljer sig med en enda kolatom, men kroppen bryter ner dem på olika sätt och resultatet blir helt olika.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Levern har en flaskhals, och den sitter i mitten</h2>
+          <p>Standardtexten säger att etanol bryts ner till ättiksyra i levern och att levern bara klarar en viss mängd per timme. Båda delarna stämmer. Men var flaskhalsen sitter, och varför, är mer upplysande.</p>
+          <p>Nedbrytningen sker i två steg, precis som för metanol.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k4-k7.svg" alt="En etanolmolekyl delad av en streckad linje. Till vänster kolvätedelen mot grått fält, till höger hydroxylgruppen mot blått fält, med vattenmolekyler som dras mot den.">
+            <figcaption>Hydroxylgruppen samverkar med vatten, kolvätedelen med opolära ämnen.</figcaption>
+          </figure>
+          <p>Först omvandlas etanol till <strong>acetaldehyd</strong>, av samma enzym som annars tar hand om metanol. Acetaldehyd är reaktivt och giftigt — det är det som ger huvudvärk och illamående dagen efter.</p>
+          <p>Sedan omvandlas acetaldehyden till <strong>ättiksyra</strong>, som i kroppen föreligger som acetat. Det ämnet är ofarligt och går rakt in i ämnesomsättningen.</p>
+          <p>Flaskhalsen sitter i <strong>det första steget</strong>. Enzymet arbetar med ungefär konstant hastighet oavsett hur mycket etanol som finns — det är redan fullbelagt vid låga halter. Därför bryts etanol ner med en jämn takt på ungefär en standardglas i timmen, oberoende av hur mycket man druckit.</p>
+          <p>Det skiljer sig från hur de flesta ämnen bryts ner, där hastigheten stiger med koncentrationen.</p>
+          <p>Andra steget går däremot fort hos de flesta. Men inte hos alla: ungefär en tredjedel av världens befolkning, framför allt i östra Asien, har en variant av det andra enzymet som arbetar långsamt. Då hopar sig acetaldehyden, och personen blir röd i ansiktet och mår illa redan av små mängder.</p>
+          <p><strong>Om modellen.</strong> "Levern bryter ner etanol" är sant men döljer att det är två olika enzymer med olika hastigheter, och att det är skillnaden mellan dem som avgör hur någon mår. Det förklarar både varför nedbrytningen har en fast takt och varför människor reagerar så olika.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <!-- Testa dig själv utelämnad: kortsvars-JSON saknas (kapitel/organisk-kemi/data/kortsvar/avsnitt-2-metanol-och-etanol.json) – knappen kommer tillbaka när filen byggts -->
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-2-metanol-och-etanol.json"
+           data-avsnitt="a2_metanol-och-etanol">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-2-metanol-och-etanol.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a2_metanol-och-etanol';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'alkoholer';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

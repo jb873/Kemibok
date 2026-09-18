@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alkoholer med flera hydroxylgrupper – Alkoholer – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Alkoholer</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">3. Alkoholer med flera hydroxylgrupper</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 3</span>
+      <h1>Alkoholer med flera hydroxylgrupper</h1>
+      <p class="subtitel">— när en grupp inte räcker —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Glykol</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Glycerol</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Fler OH-grupper</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-alkoholer-med-flera-hydroxylgrupper">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Glykol ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad betyder delarna i namnet etandiol?</li>
+              <li>Vad kallas en alkohol med två hydroxylgrupper?</li>
+              <li>Vad måste vattenmolekylerna göra för att det ska bli is?</li>
+              <li>Hur hindrar glykolen det?</li>
+              <li>Varför är glykol särskilt farlig för djur?</li>
+            </ul>
+          </div>
+
+          <p>Hittills har alla alkoholer haft <strong>en</strong> hydroxylgrupp. Men det finns ingen regel som säger att det måste vara så.</p>
+          <p>En molekyl kan ha två OH-grupper. Eller tre. Eller fler.</p>
+          <p>Och när antalet ökar ändras egenskaperna — ordentligt. Molekylerna håller hårdare i vatten och i varandra, vilket påverkar både hur de löser sig och när de kokar.</p>
+          <p>Vi tittar på två exempel: <strong>glykol</strong> med två hydroxylgrupper, och <strong>glycerol</strong> med tre.</p>
+          <h2>Namnet berättar uppbyggnaden</h2>
+          <p>Ämnet som i vardagsspråk kallas glykol heter egentligen <strong>etandiol</strong>.</p>
+          <p>Läs namnet i delar:</p>
+          <p><strong>etan-</strong> betyder två kolatomer <strong>di-</strong> betyder två <strong>-ol</strong> betyder alkohol</p>
+          <p>Alltså: en alkohol med två kolatomer och två hydroxylgrupper.</p>
+          <p>Formeln skrivs <strong>\(\ce{HO-CH2-CH2-OH}\)</strong>. En OH-grupp i vardera änden, med två kolatomer emellan.</p>
+          <p>En alkohol med två hydroxylgrupper kallas <strong>tvåvärd</strong>.</p>
+          <h2>Jämför med etanol</h2>
+          <p>Etanol har också två kolatomer. Men bara <strong>en</strong> OH-grupp.</p>
+          <p>Det är hela skillnaden mellan ämnena — en enda grupp till. Och ändå beter de sig olika nog för att användas till helt olika saker.</p>
+          <h2>Glykol sänker fryspunkten</h2>
+          <p>Glykolens viktigaste användning är i <strong>kylarvätska</strong> i bilmotorer.</p>
+          <p>Vatten är utmärkt på att transportera bort värme, och det är precis vad ett kylsystem ska göra. Problemet är att vatten fryser vid 0 °C. En bil som står ute en vinternatt får sönderfrusen motor.</p>
+          <p>Blandar man i glykol ändras det.</p>
+          <p>Tänk på hur is bildas. Vattenmolekylerna måste ordna sig i ett bestämt, regelbundet mönster — ett kristallmönster. Först då blir det is.</p>
+          <p>Glykolmolekylerna lägger sig mellan vattenmolekylerna och <strong>kommer i vägen</strong>. Mönstret blir svårare att bilda, och blandningen måste kylas mycket mer innan den fryser.</p>
+          <p>Det kallas <strong>fryspunktsnedsättning</strong>.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Jämför mönstren i de två panelerna. Vad är skillnaden?</li>
+              <li>Hur många OH-grupper har varje glykolmolekyl?</li>
+              <li>Varför fryser blandningen först vid en lägre temperatur?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k4-k8.svg" alt="Till vänster vattenmolekyler ordnade i ett regelbundet mönster som bildar is. Till höger samma molekyler med glykolmolekyler emellan, så att mönstret bryts.">
+            <figcaption>Glykolen lägger sig i vägen så att vattnet inte kan bli is.</figcaption>
+          </figure>
+          <p>Glykolblandningen höjer dessutom kokpunkten, vilket är lika viktigt i en motor som blir het.</p>
+          <h2>Glykol är mycket giftig</h2>
+          <p>Etandiol är giftigt, och precis som för metanol är det mest nedbrytningen i kroppen som är farlig.</p>
+          <p>När kroppen bryter ner glykol bildas ämnen som skadar <strong>njurarna</strong> och stör kroppens syra-basbalans. Förgiftning kan bli livshotande.</p>
+          <p>En särskild fara: glykol smakar <strong>sött</strong>. Djur som hittar utspilld kylarvätska kan därför lockas att dricka den.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad betyder delarna i namnet etandiol?</li>
+              <li>Vad kallas en alkohol med två hydroxylgrupper?</li>
+              <li>Vad måste vattenmolekylerna göra för att det ska bli is?</li>
+              <li>Hur hindrar glykolen det?</li>
+              <li>Varför är glykol särskilt farlig för djur?</li>
+            </ul>
+          </div>
+
+          <p class="inledning">En alkohol behöver inte ha bara en hydroxylgrupp. En molekyl kan innehålla två, tre eller fler.</p>
+          <p>När antalet ökar förändras egenskaperna. Molekylerna samverkar starkare med vatten och med varandra, vilket påverkar löslighet, kokpunkt och användning.</p>
+          <p>Två viktiga exempel är <strong>glykol</strong> med två hydroxylgrupper och <strong>glycerol</strong> med tre.</p>
+          <h2>Etandiol kallas glykol</h2>
+          <p>Det ämne som i vardagsspråk kallas glykol heter egentligen <strong>etandiol</strong>.</p>
+          <p>Molekylen har två kolatomer med en hydroxylgrupp på vardera:</p>
+          <p><strong>\(\ce{HO-CH2-CH2-OH}\)</strong></p>
+          <p>Ändelsen berättar uppbyggnaden. <strong>di-</strong> betyder två och <strong>-ol</strong> att det är en alkohol. En alkohol med två hydroxylgrupper kallas <strong>tvåvärd</strong>.</p>
+          <p>Jämför med etanol: samma antal kolatomer, men bara en OH-grupp. Det räcker för att ämnena ska bli olika.</p>
+          <h2>Glykol sänker fryspunkten</h2>
+          <p>Glykolens viktigaste användning är i <strong>kylarvätska</strong>.</p>
+          <p>Vatten transporterar värme mycket bra och passar därför i ett kylsystem. Problemet är att det fryser vid 0 °C.</p>
+          <p>Blandas glykol i ändras det. Glykolmolekylerna hamnar mellan vattenmolekylerna och stör deras möjlighet att ordna sig i det regelbundna mönster som is kräver. Blandningen måste därför kylas betydligt mer innan den fryser.</p>
+          <p>Det kallas <strong>fryspunktsnedsättning</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k4-k8.svg" alt="Till vänster vattenmolekyler ordnade i ett regelbundet mönster som bildar is. Till höger samma molekyler med glykolmolekyler emellan, så att mönstret bryts.">
+            <figcaption>Iskristallen kräver ett regelbundet mönster. Glykolmolekylerna stör det, och därför sjunker fryspunkten.</figcaption>
+          </figure>
+          <p>Glykolblandningen höjer dessutom kokpunkten, vilket är lika viktigt i en varm motor.</p>
+          <h2>Glykol är mycket giftig</h2>
+          <p>Etandiol är giftigt, och det mesta av faran uppstår när kroppen bryter ner ämnet. Då bildas nedbrytningsprodukter som skadar <strong>njurarna</strong> och stör kroppens syra-basbalans. Förgiftning kan bli livshotande.</p>
+          <p>Ämnet har dessutom en <strong>sötaktig smak</strong>. Det gör det särskilt farligt för djur, som kan lockas att dricka utspilld kylarvätska.</p>
+          <p>---</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Det spelar ingen roll vad man löser i vattnet</h2>
+          <p>Standardtexten förklarar fryspunktsnedsättningen med att glykolmolekylerna kommer i vägen för iskristallens mönster. Det är rätt bild, och den fungerar. Men den antyder något som inte stämmer: att det skulle vara just glykol som har den förmågan.</p>
+          <p>Det har den inte. <strong>Vilket löst ämne som helst</strong> sänker fryspunkten.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k4-k8.svg" alt="Till vänster vattenmolekyler ordnade i ett regelbundet mönster som bildar is. Till höger samma molekyler med glykolmolekyler emellan, så att mönstret bryts.">
+            <figcaption>Iskristallen kräver ett regelbundet mönster. Glykolmolekylerna stör det, och därför sjunker fryspunkten.</figcaption>
+          </figure>
+          <p>Salt gör det — det är därför man saltar vägar. Socker gör det — det är därför glass inte fryser stenhård. Etanol gör det. Glykol gör det.</p>
+          <p>Och mer överraskande: hur mycket fryspunkten sjunker beror inte på <strong>vilket</strong> ämne som lösts, utan på <strong>hur många partiklar</strong> som finns i lösningen. En sockermolekyl och en glykolmolekyl sänker fryspunkten exakt lika mycket.</p>
+          <p>Egenskaper som bara beror på antalet partiklar kallas <strong>kolligativa</strong>. Fryspunktsnedsättning är en, och kokpunktshöjning är en annan — det är därför glykolblandningen både fryser lägre och kokar högre.</p>
+          <p>Salt är extra effektivt av ett kemiskt skäl: varje formelenhet NaCl delar upp sig i <strong>två</strong> joner i vattnet, och därmed räknas den som två partiklar.</p>
+          <p>Varför används då glykol och inte socker i kylare? Inte för att kemin är bättre, utan för att glykol är flytande, inte korroderar metallen, inte blir klibbigt och tål motorns temperaturer. Valet är praktiskt, inte kemiskt.</p>
+          <p><strong>Om modellen.</strong> Att glykolen "kommer i vägen" är en användbar bild av vad som händer i vätskan. Men det viktiga är att effekten är <strong>allmän</strong> — den hör till lösningar, inte till glykol. Och en regel som gäller allmänt är alltid mer värd att kunna än ett specialfall.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Glycerol ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad betyder delarna i namnet propantriol?</li>
+              <li>Vad är skillnaden mellan ett streck och en parentes i en formel?</li>
+              <li>Varför binder glycerol vatten så bra?</li>
+              <li>Var används glycerol, och varför just där?</li>
+              <li>Vad gjorde Alfred Nobel med nitroglycerinet?</li>
+            </ul>
+          </div>
+
+          <h2>Namnet berättar uppbyggnaden här också</h2>
+          <p>En alkohol med tre hydroxylgrupper är <strong>glycerol</strong>. Det systematiska namnet är <strong>propantriol</strong>.</p>
+          <p>Läs det i delar, precis som förut:</p>
+          <p><strong>propan-</strong> betyder tre kolatomer <strong>tri-</strong> betyder tre <strong>-ol</strong> betyder alkohol</p>
+          <p>Glycerol kallas därför <strong>trevärd</strong> alkohol.</p>
+          <h2>Parentesen visar en grupp som sitter på sidan</h2>
+          <p>Glykol skrevs <strong>\(\ce{HO-CH2-CH2-OH}\)</strong>. Den formeln går att läsa rakt igenom, från ena änden till den andra.</p>
+          <p>Glycerol går inte att skriva så. Skälet är att den <strong>mellersta</strong> kolatomen bär en OH-grupp som inte sitter i kedjan utan <strong>på sidan av den</strong>.</p>
+          <p>Då används en parentes:</p>
+          <p><strong>\(\ce{HO-CH2-CH(OH)-CH2-OH}\)</strong></p>
+          <p>Läs långsamt. Först en hydroxylgrupp. Sedan en kolatom med två väten. Sedan mittenkolatomen — och parentesen <strong>(OH)</strong> betyder att en hydroxylgrupp hänger av från just den. Sedan en kolatom till med två väten, och sist en tredje hydroxylgrupp.</p>
+          <p>Regeln är enkel:</p>
+          <p><strong>Ett streck går vidare i kedjan. En parentes går ut åt sidan.</strong></p>
+          <p>Du ser molekylen utritad i bilden i nästa underdel.</p>
+          <h2>Glycerol binder vatten</h2>
+          <p>Glycerol är en färglös, trögflytande vätska — den rinner långsamt, ungefär som sirap.</p>
+          <p>Den är mycket bra på att dra till sig och hålla kvar vatten.</p>
+          <p>Det beror på de tre OH-grupperna. Varje grupp kan samverka med vattenmolekyler omkring sig. Med tre grupper får molekylen många sådana möjligheter, och den håller hårt.</p>
+          <p>Därför används glycerol som <strong>fuktighetsbevarande</strong> ämne. I hudkrämer håller det kvar vatten i huden så att den inte torkar. I livsmedel håller det produkter mjuka.</p>
+          <h2>Glycerol är råvara till nitroglycerin</h2>
+          <p>Glycerol kan reagera med salpetersyra. Då bildas <strong>nitroglycerin</strong> — ett mycket energirikt ämne som kan sönderfalla explosionsartat.</p>
+          <p>Nitroglycerin var länge nästan omöjligt att använda, eftersom det kunde explodera av en stöt.</p>
+          <p><strong>Alfred Nobel</strong> hittade ett sätt att göra det hanterbart, och tog 1867 patent på resultatet: <strong>dynamit</strong>.</p>
+          <p>Samma ämne har en helt annan användning. I mycket små doser vidgar nitroglycerin blodkärlen, och används därför som medicin vid <strong>kärlkramp</strong>.</p>
+          <p>Ett ämne är alltså varken bra eller dåligt i sig. Dosen och sammanhanget avgör.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad betyder delarna i namnet propantriol?</li>
+              <li>Vad är skillnaden mellan ett streck och en parentes i en formel?</li>
+              <li>Varför binder glycerol vatten så bra?</li>
+              <li>Var används glycerol, och varför just där?</li>
+              <li>Vad gjorde Alfred Nobel med nitroglycerinet?</li>
+            </ul>
+          </div>
+
+          <h2>Propantriol kallas glycerol</h2>
+          <p class="inledning">En alkohol med tre hydroxylgrupper är <strong>glycerol</strong>. Det systematiska namnet är <strong>propantriol</strong>, och namnet avslöjar uppbyggnaden: propan- betyder tre kolatomer, tri- betyder tre, och -ol att det är en alkohol.</p>
+          <p>Glycerol kallas därför <strong>trevärd</strong> alkohol.</p>
+          <h2>Parentesen visar en grupp som sitter på sidan</h2>
+          <p>Glykol skrevs <strong>\(\ce{HO-CH2-CH2-OH}\)</strong>. Kedjan gick att läsa rakt igenom, från ena änden till den andra.</p>
+          <p>Glycerol går inte att skriva så, och skälet är att den mellersta kolatomen bär en OH-grupp som inte sitter i kedjan utan <strong>på sidan av den</strong>.</p>
+          <p>Då används en parentes:</p>
+          <p><strong>\(\ce{HO-CH2-CH(OH)-CH2-OH}\)</strong></p>
+          <p>Läs den långsamt. Först en hydroxylgrupp. Sedan en kolatom med två väten. Sedan mittenkolatomen — och parentesen <strong>(OH)</strong> betyder att en hydroxylgrupp hänger av från just den. Sedan ytterligare en kolatom med två väten, och sist en tredje hydroxylgrupp.</p>
+          <p>Parentesen betyder alltså något annat än strecken. <strong>Ett streck går vidare i kedjan. En parentes går ut åt sidan.</strong></p>
+          <p>Du ser molekylen utritad i bilden i nästa underdel.</p>
+          <h2>Glycerol binder vatten</h2>
+          <p>Glycerol är en färglös, trögflytande vätska som är mycket bra på att dra till sig och hålla kvar vatten.</p>
+          <p>Det beror på de tre OH-grupperna. Varje grupp kan samverka med vattenmolekyler omkring sig, och med tre får molekylen många sådana möjligheter.</p>
+          <p>Därför används glycerol som <strong>fuktighetsbevarande</strong> ämne — i hudkrämer, där det håller kvar vatten i huden, och i livsmedel, där det håller produkter mjuka.</p>
+          <p>Samma kemiska egenskap ligger alltså bakom flera helt olika användningar.</p>
+          <h2>Glycerol är råvara till nitroglycerin</h2>
+          <p>Glycerol kan reagera med salpetersyra och bilda <strong>nitroglycerin</strong> — ett mycket energirikt ämne som kan sönderfalla explosionsartat.</p>
+          <p>Det var svårhanterligt tills <strong>Alfred Nobel</strong> hittade ett sätt att göra det stabilt. År 1867 tog han patent på resultatet: <strong>dynamit</strong>.</p>
+          <p>Samma ämne har en helt annan användning inom medicinen. I mycket små doser vidgar nitroglycerin blodkärlen och används vid <strong>kärlkramp</strong>.</p>
+          <p>Ett ämne är alltså varken bra eller dåligt i sig. Dosen och sammanhanget avgör.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Glycerol drar vatten ur allt — också ur bakterier</h2>
+          <p>Standardtexten säger att glycerol håller kvar vatten och därför används i hudkrämer. Det stämmer, men det beskriver bara halva egenskapen.</p>
+          <p>Ett ämne som drar till sig vatten ur omgivningen kallas <strong>hygroskopiskt</strong>. Glycerol är ett av de mest hygroskopiska ämnen som är ofarliga nog att användas i mat och på hud.</p>
+          <p>Det betyder att glycerol inte bara <strong>behåller</strong> vatten som redan finns. Den <strong>tar</strong> vatten från det som ligger runt omkring.</p>
+          <p>I en hudkräm är det önskat — glycerolen drar fukt ur luften och ur hudens djupare lager och håller den vid ytan. I hög koncentration blir samma egenskap ett problem: ren glycerol på huden torkar ut den i stället, eftersom den drar mer vatten än den ger.</p>
+          <p>Samma egenskap gör glycerol <strong>konserverande</strong>. En bakterie som hamnar i en tillräckligt koncentrerad glycerollösning förlorar sitt vatten till omgivningen och kan inte fungera. Det är samma princip som gör att honung, sylt och saltad fisk håller sig — vattnet är inte borta, men det är upptaget.</p>
+          <p>Därför används glycerol i läkemedel och kosmetika inte bara för fuktens skull, utan också för att hålla produkterna fria från mikroorganismer.</p>
+          <p><strong>Om modellen.</strong> "Glycerol binder vatten" låter som en egenskap hos glycerolen ensam. Det handlar i själva verket om ett <strong>förhållande</strong> mellan glycerolen och det som finns runt omkring. Är omgivningen fuktigare drar glycerolen till sig vatten. Är den torrare ger den ifrån sig. Riktningen bestäms inte av ämnet utan av skillnaden.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Fler OH-grupper ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Hur många hydroxylgrupper har etanol, glykol och glycerol?</li>
+              <li>Vad händer med samverkan med vatten när antalet grupper ökar?</li>
+              <li>Vad mer än antalet OH-grupper påverkar hur vattenlöst ett ämne är?</li>
+              <li>Vad har kylarvätska och hudkräm gemensamt?</li>
+              <li>Hur ändras kokpunkten när molekylen får fler hydroxylgrupper?</li>
+            </ul>
+          </div>
+
+          <h2>Ställ de tre bredvid varandra</h2>
+          <p>Nu har du mött tre alkoholer med olika många hydroxylgrupper:</p>
+          <p><strong>etanol</strong> har en <strong>glykol</strong> har två <strong>glycerol</strong> har tre</p>
+          <p>Ju fler grupper, desto fler platser på molekylen som kan samverka med vattenmolekyler.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna de markerade grupperna i varje molekyl.</li>
+              <li>Följ kokpunkterna. Hur ändras de?</li>
+              <li>Titta på den mellersta kolatomen i glycerol. Hur syns den i formeln under?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k4-k9.svg" alt="Tre alkoholer i rad — etanol med en OH-grupp, glykol med två och glycerol med tre. Under varje står den skrivna formeln, antalet OH-grupper och kokpunkten.">
+            <figcaption>Fler OH-grupper, högre kokpunkt. Följ ringarna.</figcaption>
+          </figure>
+          <p>Sambandet är rakt:</p>
+          <p><strong>fler hydroxylgrupper \(\rightarrow\) starkare samverkan med vatten</strong></p>
+          <h2>Men kolkedjan spelar också roll</h2>
+          <p>Antalet OH-grupper är inte allt.</p>
+          <p>Kom ihåg dragkampen från 1.3. Hydroxylgruppen gör molekylen vattenvänlig, kolvätedelen gör den vattenskyende.</p>
+          <p>I en stor molekyl med en lång kolvätedel kan några få OH-grupper inte väga upp. Då blir ämnet ändå inte vattenlösligt.</p>
+          <p>Etanol, glykol och glycerol är alla <strong>små</strong> molekyler. Hos dem dominerar OH-grupperna, och därför syns sambandet så tydligt.</p>
+          <h2>Därför fungerar kylarvätska och hudkräm</h2>
+          <p>En bilmotor och en hudkräm har inte mycket gemensamt.</p>
+          <p>Kemiskt bygger de på <strong>samma egenskap</strong>.</p>
+          <p>Glykolen samverkar starkt med vatten och stör vattenmolekylernas möjlighet att bilda iskristaller. Därför sjunker fryspunkten, och kylaren fryser inte sönder.</p>
+          <p>Glycerolen samverkar ännu starkare och håller kvar vattenmolekyler omkring sig. Därför torkar inte huden.</p>
+          <p>Två helt olika produkter. En och samma kemi.</p>
+          <h2>Kokpunkten stiger också</h2>
+          <p>Hydroxylgrupperna får inte bara molekylerna att dras till vatten. De får dem också att dras till <strong>varandra</strong>.</p>
+          <p>Det syns direkt på kokpunkterna:</p>
+          <p><strong>etanol 78 °C</strong> <strong>glykol 197 °C</strong> <strong>glycerol 290 °C</strong></p>
+          <p>Fler hydroxylgrupper betyder starkare attraktion mellan molekylerna. Och starkare attraktion betyder att det krävs mer energi för att slita loss dem — alltså högre temperatur.</p>
+          <h2>Det här är vad hela delkapitlet handlar om</h2>
+          <p>Titta på kedjan:</p>
+          <p><strong>molekylens struktur \(\rightarrow\) krafterna mellan molekylerna \(\rightarrow\) ämnets egenskaper</strong></p>
+          <p>Hydroxylgruppen förklarar både alkoholernas höga kokpunkter och deras samverkan med vatten. En enda liten grupp, och så mycket följer av den.</p>
+          <p>Det är därför funktionella grupper är så viktiga. Vet du vilken grupp en molekyl har, kan du redan börja gissa hur ämnet beter sig.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Hur många hydroxylgrupper har etanol, glykol och glycerol?</li>
+              <li>Vad händer med samverkan med vatten när antalet grupper ökar?</li>
+              <li>Vad mer än antalet OH-grupper påverkar hur vattenlöst ett ämne är?</li>
+              <li>Vad har kylarvätska och hudkräm gemensamt?</li>
+              <li>Hur ändras kokpunkten när molekylen får fler hydroxylgrupper?</li>
+            </ul>
+          </div>
+
+          <h2>Antalet OH-grupper påverkar egenskaperna</h2>
+          <p class="inledning">Ställ de tre alkoholerna bredvid varandra. Etanol har en hydroxylgrupp, glykol två, glycerol tre.</p>
+          <p>Ju fler grupper, desto fler platser som kan samverka med vattenmolekyler. Sambandet är tydligt:</p>
+          <p><strong>fler hydroxylgrupper \(\rightarrow\) starkare samverkan med vatten</strong></p>
+          <p>Men antalet är inte allt. Kolkedjans storlek spelar också roll — i en stor molekyl kan en lång kolvätedel motverka effekten av några få OH-grupper. Hos etanol, glykol och glycerol är molekylerna små, och därför syns sambandet så klart.</p>
+          <h2>Därför fungerar kylarvätska och hudkräm</h2>
+          <p>En bilmotor och en hudkräm har inte mycket gemensamt. Kemiskt bygger de på samma egenskap.</p>
+          <p>Glykolen stör vattnets möjlighet att bilda iskristaller, och därför sjunker fryspunkten. Glycerolen håller kvar vattenmolekyler omkring sig, och därför torkar inte huden.</p>
+          <p>I båda fallen är det hydroxylgruppernas samverkan med vatten som avgör.</p>
+          <h2>Kokpunkten stiger också</h2>
+          <p>Hydroxylgrupperna får inte bara molekylerna att dras till vatten. De får dem också att dras till varandra.</p>
+          <p>Det syns på kokpunkterna:</p>
+          <p><strong>etanol 78 °C · glykol 197 °C · glycerol 290 °C</strong></p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k4-k9.svg" alt="Tre alkoholer i rad — etanol med en OH-grupp, glykol med två och glycerol med tre. Under varje står den skrivna formeln, antalet OH-grupper och kokpunkten.">
+            <figcaption>Antalet hydroxylgrupper avgör både kokpunkten och hur starkt ämnet samverkar med vatten.</figcaption>
+          </figure>
+          <p>Fler hydroxylgrupper betyder starkare attraktion mellan molekylerna. Då krävs mer energi för att skilja dem åt.</p>
+          <p>Här möts flera delar av kemin: <strong>molekylens struktur \(\rightarrow\) krafterna mellan molekylerna \(\rightarrow\) ämnets egenskaper</strong>.</p>
+          <p>Det är därför funktionella grupper är så viktiga. Vet man vilken grupp en molekyl innehåller kan man börja förutsäga hur ämnet beter sig.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Antalet grupper är inte hela sanningen</h2>
+          <p>Standardtexten ger sambandet: fler hydroxylgrupper ger starkare samverkan med vatten och högre kokpunkt. Det stämmer för etanol, glykol och glycerol, och det är rätt slutsats att dra av de tre exemplen.</p>
+          <p>Men det finns ett villkor som texten nämner i förbigående och som är värt att ta på allvar: <strong>grupperna måste kunna nå varandra</strong>.</p>
+          <p>En hydroxylgrupp bildar vätebindningar åt två håll — den kan ge sin väteatom till en annan molekyl, och ta emot en väteatom på sitt syre. Med tre grupper på en liten molekyl blir det många möjliga bindningar, och därav glycerolens kokpunkt på 290 grader.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k4-k9.svg" alt="Tre alkoholer i rad — etanol med en OH-grupp, glykol med två och glycerol med tre. Under varje står den skrivna formeln, antalet OH-grupper och kokpunkten.">
+            <figcaption>Antalet hydroxylgrupper avgör både kokpunkten och hur starkt ämnet samverkar med vatten.</figcaption>
+          </figure>
+          <p>Men grupperna kan också binda <strong>inom samma molekyl</strong>. Sitter två OH-grupper nära varandra på rätt sätt kan de ta varandra i stället för att binda till grannmolekylerna. Då blir attraktionen mellan molekylerna svagare än antalet grupper antyder.</p>
+          <p>Det är därför två ämnen med lika många hydroxylgrupper kan ha olika kokpunkt beroende på var grupperna sitter.</p>
+          <p>Och det förklarar en sak till. Socker är fulla av hydroxylgrupper — glukos har fem. Enligt regeln borde socker koka vid en enorm temperatur. I stället <strong>sönderfaller</strong> det innan det hinner koka. Vätebindningarna har blivit så många och så starka att molekylen går sönder före den slipper loss.</p>
+          <p><strong>Om modellen.</strong> "Fler grupper, starkare samverkan" är en bra tumregel och håller för de molekyler du mött. Men den förutsätter att grupperna är vända utåt och kan nå grannarna. Struktur handlar inte bara om vad en molekyl innehåller, utan om hur den är formad — och det gäller varje regel du kommer att möta i organisk kemi.</p>
+        </div>
+
+      </div>
+
+      <!-- DJUPDYKNINGAR -->
+      <section class="djupdykningar">
+        <span class="sektion-label">Vill du veta mer?</span>
+        <div class="fordj-kort-grid">
+          <a class="fordj-kort" href="djupdykning-nobel.html">
+            <span class="fordj-kort-ikon" aria-hidden="true">🧨</span>
+            <span class="fordj-kort-text">
+              <span class="fordj-kort-titel">Mannen som gjorde sprängämnet säkert</span>
+              <span class="fordj-kort-sammanfattning">Nitroglycerin var så instabilt att det knappt gick att använda. Alfred Nobel ändrade inte molekylen — han ändrade vad den låg i. Och samma ämne som spränger berg finns i dag som tablett mot kärlkramp.</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <!-- Testa dig själv utelämnad: kortsvars-JSON saknas (kapitel/organisk-kemi/data/kortsvar/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json) – knappen kommer tillbaka när filen byggts -->
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json"
+           data-avsnitt="a3_alkoholer-med-flera-hydroxylgrupper">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a3_alkoholer-med-flera-hydroxylgrupper';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'alkoholer';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

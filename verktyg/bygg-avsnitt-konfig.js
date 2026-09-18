@@ -242,26 +242,26 @@ const AVSNITT_FOSSILA = {
 };
 // Organisk kemi 4 "Alkoholer" (arbetsorder 2026-09-18). Placering enligt bildspecen ("vid N:e rubriken", dk4-omskrivet-och-
 // bildspecar.md): på Standard efter första stycket under den rubriken; på Enkel/Fördjupning efter det stycke som bär samma
-// innehåll (samma princip som Fossila bränslen). Standard-ankarna sätts när dk4-bearbetade-texter.md levererats (saknades
-// 2026-09-18) – tills dess utelämnas bilderna på Standard (ank[n] saknas → ingen infogning).
+// innehåll (samma princip som Fossila bränslen). Standard-texten levererades i chatten 2026-09-18 (dk4-bearbetade-texter.md);
+// på Standard följer K4, K5, K8 innehållet (stycket som nämner det bilden visar) i stället för första stycket under rubriken.
 const AVSNITT_ALKOHOLER = {
   1: { dd: [],
        bilder: {
-         'k4-k1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'har formeln **CH₃OH**.', fordjupning: 'kolatom lika väl som en sockermolekyl med sex.' },
-         'k4-k2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Ändelsen **-ol** säger att det finns en', fordjupning: 'namn. Ämnena beter sig olika.' },
-         'k4-k3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Alla tre är samma molekyl. Skillnaden är hur mycket de visar.', fordjupning: 'inte har någon väteatom kvar att avge.' },
-         'k4-k4.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Etan kokar vid ungefär **−89 °C**. Etanol kokar vid **+78 °C**.', fordjupning: 'gånger starkare** än van der Waals-krafterna.' }
+         'k4-k1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Gruppen –OH kallas **hydroxylgrupp**.', enkel: 'har formeln **CH₃OH**.', fordjupning: 'kolatom lika väl som en sockermolekyl med sex.' },
+         'k4-k2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: '**metan → metanol · etan → etanol · propan → propanol · butan → butanol**', enkel: 'Ändelsen **-ol** säger att det finns en', fordjupning: 'namn. Ämnena beter sig olika.' },
+         'k4-k3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'ytterligare ett skrivsätt, som ligger mitt emellan', enkel: 'Alla tre är samma molekyl. Skillnaden är hur mycket de visar.', fordjupning: 'inte har någon väteatom kvar att avge.' },
+         'k4-k4.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Samma mönster hos etan och etanol: **−89 °C** mot **+78 °C**.', enkel: 'Etan kokar vid ungefär **−89 °C**. Etanol kokar vid **+78 °C**.', fordjupning: 'gånger starkare** än van der Waals-krafterna.' }
        } },
   2: { dd: [],
        bilder: {
-         'k4-k5.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'är **synnerven och näthinnan** i ögat.', fordjupning: 'synnerven är en av kroppens mest energikrävande vävnader.' },
-         'k4-k6.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'En glukosmolekyl ger alltså **två** etanolmolekyler och **två** koldioxidmolekyler.', fordjupning: 'Utbytet blir **2 ATP** per glukosmolekyl. Ungefär en femtondel.' },
-         'k4-k7.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'De flesta lösningsmedel kan bara det ena. Etanol kan båda.', fordjupning: 'Nedbrytningen sker i två steg, precis som för metanol.' }
+         'k4-k5.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Särskilt känsliga är **synnerven och näthinnan**.', enkel: 'är **synnerven och näthinnan** i ögat.', fordjupning: 'synnerven är en av kroppens mest energikrävande vävnader.' },
+         'k4-k6.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: '**C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂ + energi**', enkel: 'En glukosmolekyl ger alltså **två** etanolmolekyler och **två** koldioxidmolekyler.', fordjupning: 'Utbytet blir **2 ATP** per glukosmolekyl. Ungefär en femtondel.' },
+         'k4-k7.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Etanol är ovanligt användbar som lösningsmedel', enkel: 'De flesta lösningsmedel kan bara det ena. Etanol kan båda.', fordjupning: 'Nedbrytningen sker i två steg, precis som för metanol.' }
        } },
   3: { dd: [{ slug: 'nobel', titel: 'Mannen som gjorde sprängämnet säkert', ikon: '🧨' }],   // djupdykning från 3.2 (ordern 2026-09-18)
        bilder: {
-         'k4-k8.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Det kallas **fryspunktsnedsättning**.', fordjupning: 'Det har den inte. **Vilket löst ämne som helst** sänker fryspunkten.' },
-         'k4-k9.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Ju fler grupper, desto fler platser på molekylen som kan samverka med vattenmolekyler.', fordjupning: 'och därav glycerolens kokpunkt på 290 grader.' }
+         'k4-k8.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Det kallas **fryspunktsnedsättning**.', enkel: 'Det kallas **fryspunktsnedsättning**.', fordjupning: 'Det har den inte. **Vilket löst ämne som helst** sänker fryspunkten.' },
+         'k4-k9.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: '**etanol 78 °C · glykol 197 °C · glycerol 290 °C**', enkel: 'Ju fler grupper, desto fler platser på molekylen som kan samverka med vattenmolekyler.', fordjupning: 'och därav glycerolens kokpunkt på 290 grader.' }
        } }
 };
 const DELKAPITEL = {
