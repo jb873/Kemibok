@@ -27,6 +27,7 @@ const md = fs.readFileSync(path.join(LEV, 'kortsvar.md'), 'utf8').replace(/\r\n/
 const ce = s => s.replace(/`\\ce\{([^}]*)\}`/g, (_, x) => '\\(\\ce{' + x + '}\\)');
 const text = s => formler(ce(s.replace(/\s*\n\s*/g, ' ').trim())).replace(/\*\*([^*]+)\*\*/g, '$1');   // kortsvar.js sätter texten som textContent: fetstil kan inte återges, markörerna tas bort ("**inte**", kolatomen/kolväten)
 const talet = (id, s) => { const n = Number(String(s).replace(',', '.')); if (Number.isNaN(n)) { throw new Error(`${id}: svar "${s}" är inte ett tal`); } return n; };
+const talen = (id, s) => { const l = String(s).split('|').map(x => talet(id, x.trim())); return l.length === 1 ? l[0] : l; };   // "15 | 12": flera exakt godkända värden (kortsvar-gradering tal-lista, 2026-09-18)
 
 // ---------- blockform ----------
 function tolkaBlock(id, typ, rader) {
@@ -42,7 +43,7 @@ function tolkaBlock(id, typ, rader) {
   if (falt.A) { f.alternativ = falt.A.split(' | ').map(x => text(x)); }
   const S = falt.S;
   switch (typ) {
-    case 'tal': case 'flerval': f.svar = talet(id, S); break;
+    case 'tal': case 'flerval': f.svar = talen(id, S); break;
     case 'tal-par': case 'markera': f.svar = S.split(',').map(x => talet(id, x.trim())); break;
     case 'ord': case 'formel': f.svar = S.split(' | ').map(x => x.trim()); break;
     default: throw new Error(`${id}: okänd typ "${typ}"`);
@@ -70,7 +71,7 @@ function tolkaTabell(N, inneh) {
     if (!forkl[r.nr]) { throw new Error(`${id}: förklaring saknas`); }
     const f = { id, typ: r.typ, fraga: text(r.fraga) };
     switch (r.typ) {
-      case 'tal': f.svar = talet(id, r.svar); if (tol[r.nr] !== undefined) { f.tolerans = { abs: tol[r.nr] }; } break;
+      case 'tal': f.svar = talen(id, r.svar); if (tol[r.nr] !== undefined) { f.tolerans = { abs: tol[r.nr] }; } break;
       case 'ord': f.svar = r.svar.split(',').map(x => x.trim()); break;
       case 'formel': f.svar = [r.svar]; break;
       case 'flerval': {
@@ -109,7 +110,7 @@ for (const a of md.matchAll(/\n# AVSNITT (\d) — ([^\n]+)\n([\s\S]*?)(?=\n# AVS
   const fel = G.validera(data);
   if (fel.length) { throw new Error(`avsnitt ${N}: ${fel.join('; ')}`); }
   // facit-självtest: rätt svar ska ge ratt
-  const RATT = { tal: f => String(f.svar), flerval: f => String(f.svar), ord: f => f.svar[0], formel: f => f.svar[0],
+  const RATT = { tal: f => String(Array.isArray(f.svar) ? f.svar[0] : f.svar), flerval: f => String(f.svar), ord: f => f.svar[0], formel: f => f.svar[0],
     'tal-par': f => f.svar.map(String), markera: f => f.svar };
   fragor.forEach(f => { if (G.gradera(f, RATT[f.typ](f)).status !== 'ratt') { throw new Error(`avsnitt ${N} ${f.id}: facit rättas inte som rätt`); } });
   // §8: facit i frågetexten?

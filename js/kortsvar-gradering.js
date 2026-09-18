@@ -6,7 +6,8 @@
 // gradera(fraga, svar) → { status: 'ratt' | 'fel' | 'tomt', given, facit, forklaring, skiftlage }
 //
 // Typer och fält i frågan (alla har id, typ, fraga, forklaring – forklaring är obligatorisk):
-//   tal      svar: 6            tolerans?: {abs: 0.1} | {rel: 0.02}   enhet?: 'strippa' (default) | 'mol/dm³' (krävs)
+//   tal      svar: 6 | [15, 12]  tolerans?: {abs: 0.1} | {rel: 0.02}   enhet?: 'strippa' (default) | 'mol/dm³' (krävs)
+//            (lista = flera exakt godkända värden, "tolv till femton procent"; facit visar det första – alkoholer 2026-09-18)
 //   tal-par  svar: [1, 6]       oordnad?: true
 //   flerval  alternativ: [...]  svar: index
 //   markera  alternativ: [...]  svar: [index, ...]   (exakt mängd: alla rätta, inga fel)
@@ -42,13 +43,15 @@
     var text = String(svar);
     var v = tillTal(text);
     var enhetKrav = (f.enhet && f.enhet !== 'strippa') ? f.enhet : null;
-    var facitText = String(f.svar).replace('.', ',') + (enhetKrav ? ' ' + enhetKrav : '');
+    var facitLista = Array.isArray(f.svar) ? f.svar : [f.svar];
+    var facitText = String(facitLista[0]).replace('.', ',') + (enhetKrav ? ' ' + enhetKrav : '');
     if (isNaN(v)) { return res('fel', text, facitText, f.forklaring); }
     if (enhetKrav) {
       var rest = text.replace(/[−–—]/g, '-').replace(/^\s*-?\d+(?:[.,]\d+)?(?:[eE]-?\d+)?/, '');
       if (normEnhet(rest) !== normEnhet(enhetKrav)) { return res('fel', text, facitText, f.forklaring); }
     }
-    return res(talOk(v, Number(f.svar), f.tolerans) ? 'ratt' : 'fel', text, facitText, f.forklaring);
+    var ok = facitLista.some(function (x) { return talOk(v, Number(x), f.tolerans); });
+    return res(ok ? 'ratt' : 'fel', text, facitText, f.forklaring);
   }
 
   // ---- tal-par ----
@@ -134,12 +137,12 @@
       if (!f.fraga) { fel.push(id + ': fraga saknas'); }
       if (!f.forklaring || !String(f.forklaring).trim()) { fel.push(id + ': forklaring saknas (obligatorisk)'); }
       if (f.svar === undefined || f.svar === null) { fel.push(id + ': svar saknas'); }
+      if (f.typ === 'tal' && !(Array.isArray(f.svar) ? f.svar.length && f.svar.every(function (x) { return typeof x === 'number'; }) : typeof f.svar === 'number')) { fel.push(id + ': svar ska vara ett tal eller en lista med tal'); }
       if ((f.typ === 'flerval' || f.typ === 'markera') && !(Array.isArray(f.alternativ) && f.alternativ.length >= 2)) { fel.push(id + ': alternativ[] saknas'); }
       if (f.typ === 'flerval' && f.alternativ && !(Number.isInteger(f.svar) && f.svar >= 0 && f.svar < f.alternativ.length)) { fel.push(id + ': svar ska vara ett index i alternativ'); }
       if (f.typ === 'markera' && !Array.isArray(f.svar)) { fel.push(id + ': svar ska vara en lista med index'); }
       if ((f.typ === 'ord' || f.typ === 'formel') && !(Array.isArray(f.svar) && f.svar.length)) { fel.push(id + ': svar ska vara en lista med accepterade svar'); }
       if (f.typ === 'tal-par' && !(Array.isArray(f.svar) && f.svar.length === 2)) { fel.push(id + ': svar ska vara två tal'); }
-      if (f.typ === 'tal' && typeof f.svar !== 'number') { fel.push(id + ': svar ska vara ett tal'); }
     });
     return fel;
   }

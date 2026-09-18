@@ -200,9 +200,10 @@ if (finns('kortsvar.md')) {
       else if (typ === 'ord') { const m = svarRaa.match(/^(.+?) \((.+)\)$/); S = m ? `${m[1]} | ${m[2]}` : svarRaa; const p = svarRaa.match(/^(i|en|ett|på) (.+)$/); if (p) { S += ` | ${p[2]}`; } }   // "i rörledning" (fråga 42): även ordet utan preposition godkänns
       else { S = svarRaa; }
       // undantag ur leveransens "Att kontrollera" (ordern 2026-09-18 §5): fråga 31 tre godkända skrivsätt (formel med och utan
-      // tankstreck samt ordsvaret etylacetat, även med versal); fråga 15 svar 6 men 5 ska godkännas → tolerans ±1 (rapporterat)
+      // tankstreck samt ordsvaret etylacetat, även med versal); fråga 15 svar 6 men 5 ska godkännas → lista med exakta värden (kortsvar-gradering tal-lista)
       if (typ === 'formel' && q[1] === '31') { S = [S, 'CH3-COO-CH2-CH3', 'etylacetat', 'Etylacetat'].join(' | '); }
-      const O = (typ === 'tal' && q[1] === '15') ? '\nO: {"tolerans":{"abs":1}}' : '';
+      if (typ === 'tal' && q[1] === '15') { S = '6 | 5'; }
+      const O = '';
       ksAntal[typ] = (ksAntal[typ] || 0) + 1; perAvsnitt[N][typ] = (perAvsnitt[N][typ] || 0) + 1;
       kut += `\n## k${N}-s${n} · ${typ}\nF: ${ftext}\n${alt ? 'A: ' + alt.join(' | ') + '\n' : ''}S: ${S}\nE: ${forkl}${O}\n`;
     }

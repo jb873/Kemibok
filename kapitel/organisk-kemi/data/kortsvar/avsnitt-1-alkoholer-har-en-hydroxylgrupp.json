@@ -1,0 +1,129 @@
+{
+  "avsnitt": 1,
+  "titel": "Alkoholer har en hydroxylgrupp",
+  "delkapitel": "alkoholer",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 1 (Alkoholer har en hydroxylgrupp), delkapitel Alkoholer, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/alkoholer/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k1-s1",
+      "typ": "tal",
+      "fraga": "Hur många atomslag finns i en alkohol?",
+      "svar": 3,
+      "forklaring": "Kol, väte och syre. Kolvätena hade bara två."
+    },
+    {
+      "id": "k1-s2",
+      "typ": "tal",
+      "fraga": "Hur många kolatomer har propanol?",
+      "svar": 3,
+      "forklaring": "Stammen propan- betyder tre kolatomer, precis som hos alkanerna."
+    },
+    {
+      "id": "k1-s3",
+      "typ": "tal",
+      "fraga": "En alkohol har fyra kolatomer. Hur många väteatomer har den?",
+      "svar": 10,
+      "forklaring": "Regeln \\(\\mathrm{C}_{n}\\mathrm{H}_{2n+1}\\mathrm{O}\\mathrm{H}\\) ger 2 × 4 + 1 = 9 väteatomer på kolkedjan, plus en i hydroxylgruppen."
+    },
+    {
+      "id": "k1-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas gruppen –OH i en alkohol?",
+      "svar": [
+        "hydroxylgrupp"
+      ],
+      "forklaring": "Den är alkoholernas funktionella grupp och avgör hur ämnet beter sig."
+    },
+    {
+      "id": "k1-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas en grupp atomer som ger en molekyl många av dess egenskaper?",
+      "svar": [
+        "funktionell grupp"
+      ],
+      "forklaring": "Hydroxylgruppen är den första du mött. Fler kommer i nästa delkapitel."
+    },
+    {
+      "id": "k1-s6",
+      "typ": "ord",
+      "fraga": "Vilken ändelse har namnen på alkoholer?",
+      "svar": [
+        "-ol"
+      ],
+      "forklaring": "Metan blir metanol, etan blir etanol. Stammen berättar antalet kolatomer."
+    },
+    {
+      "id": "k1-s7",
+      "typ": "formel",
+      "fraga": "Skriv formeln för metanol.",
+      "svar": [
+        "CH3OH"
+      ],
+      "forklaring": "Metan, \\(\\ce{CH4}\\), där en väteatom bytts mot en hydroxylgrupp."
+    },
+    {
+      "id": "k1-s8",
+      "typ": "formel",
+      "fraga": "Skriv den allmänna formeln för en alkohol med en hydroxylgrupp.",
+      "svar": [
+        "C_{$n$}H_{$2n+1$}OH",
+        "CnH2n+1OH"
+      ],
+      "forklaring": "Här är n antalet kolatomer. Med två kolatomer blir det \\(\\ce{C2H5OH}\\)."
+    },
+    {
+      "id": "k1-s9",
+      "typ": "flerval",
+      "fraga": "Vad skiljer en hydroxylgrupp från en hydroxidjon?",
+      "alternativ": [
+        "antalet atomer",
+        "hydroxylgruppen är inte laddad",
+        "hydroxidjonen innehåller kol",
+        "ingenting"
+      ],
+      "svar": 1,
+      "forklaring": "Hydroxylgruppen sitter fast i en neutral molekyl. Hydroxidjonen har en negativ laddning och finns fritt i lösningen."
+    },
+    {
+      "id": "k1-s10",
+      "typ": "flerval",
+      "fraga": "Varför liknar metanol och etanol varandra mer än metan och metanol gör?",
+      "alternativ": [
+        "de har lika många kolatomer",
+        "de har samma funktionella grupp",
+        "de är lika stora",
+        "de har samma kokpunkt"
+      ],
+      "svar": 1,
+      "forklaring": "Det är gruppen och inte kolkedjans längd som bestämmer mest av egenskaperna."
+    },
+    {
+      "id": "k1-s11",
+      "typ": "flerval",
+      "fraga": "Varför har alkoholer fler isomerer än motsvarande alkaner?",
+      "alternativ": [
+        "de har fler atomer",
+        "hydroxylgruppen kan sitta på olika kolatomer",
+        "de har längre kedjor",
+        "de kan bilda ringar"
+      ],
+      "svar": 1,
+      "forklaring": "Både kedjans form och gruppens placering kan variera."
+    },
+    {
+      "id": "k1-s12",
+      "typ": "flerval",
+      "fraga": "Varför minskar alkoholens löslighet i vatten när kolkedjan blir längre?",
+      "alternativ": [
+        "hydroxylgruppen försvinner",
+        "kolvätedelen tar över",
+        "molekylen blir för tung",
+        "syret binder sämre"
+      ],
+      "svar": 1,
+      "forklaring": "Hydroxylgruppen är vattenvänlig, kolvätedelen inte. Blir kedjan lång vinner den dragkampen. ---"
+    }
+  ]
+}

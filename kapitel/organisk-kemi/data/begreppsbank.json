@@ -3,7 +3,7 @@
   "kapitel_titel": "Organisk kemi",
   "version": 3,
   "skapad": "2026-09-13",
-  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 26 + Kolväten 37 + Fossila bränslen och förbränning 39 + Organiska syror och estrar 23 = 125.",
+  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 26 + Kolväten 37 + Fossila bränslen och förbränning 39 + Alkoholer 26 + Organiska syror och estrar 23 = 151.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -926,6 +926,240 @@
       "term": "tungmetall",
       "expertdefinition": "Metall som kvicksilver, bly eller kadmium. De är giftiga i små mängder och kan inte brytas ner.",
       "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-5-fossila-branslen-och-miljon.json"
+    },
+    {
+      "id": "ka1-b1",
+      "avsnitt": "13",
+      "avsnitt_titel": "Alkoholer har en hydroxylgrupp",
+      "delkapitel_titel": "Alkoholer",
+      "term": "alkohol",
+      "expertdefinition": "En kolförening där en väteatom ersatts av en hydroxylgrupp.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-alkoholer-har-en-hydroxylgrupp.json"
+    },
+    {
+      "id": "ka1-b2",
+      "avsnitt": "13",
+      "avsnitt_titel": "Alkoholer har en hydroxylgrupp",
+      "delkapitel_titel": "Alkoholer",
+      "term": "hydroxylgrupp",
+      "expertdefinition": "Gruppen –OH. Alkoholernas funktionella grupp.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-alkoholer-har-en-hydroxylgrupp.json"
+    },
+    {
+      "id": "ka1-b3",
+      "avsnitt": "13",
+      "avsnitt_titel": "Alkoholer har en hydroxylgrupp",
+      "delkapitel_titel": "Alkoholer",
+      "term": "funktionell grupp",
+      "expertdefinition": "En bestämd grupp atomer som ger en organisk molekyl många av dess egenskaper.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-alkoholer-har-en-hydroxylgrupp.json"
+    },
+    {
+      "id": "ka1-b4",
+      "avsnitt": "13",
+      "avsnitt_titel": "Alkoholer har en hydroxylgrupp",
+      "delkapitel_titel": "Alkoholer",
+      "term": "metanol",
+      "expertdefinition": "Den enklaste alkoholen, CH₃OH. En kolatom och en hydroxylgrupp.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-alkoholer-har-en-hydroxylgrupp.json"
+    },
+    {
+      "id": "ka1-b5",
+      "avsnitt": "13",
+      "avsnitt_titel": "Alkoholer har en hydroxylgrupp",
+      "delkapitel_titel": "Alkoholer",
+      "term": "etanol",
+      "expertdefinition": "Alkoholen med två kolatomer, C₂H₅OH. Finns i alkoholhaltiga drycker.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-alkoholer-har-en-hydroxylgrupp.json"
+    },
+    {
+      "id": "ka1-b6",
+      "avsnitt": "13",
+      "avsnitt_titel": "Alkoholer har en hydroxylgrupp",
+      "delkapitel_titel": "Alkoholer",
+      "term": "propanol",
+      "expertdefinition": "Alkoholen med tre kolatomer, C₃H₇OH.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-alkoholer-har-en-hydroxylgrupp.json"
+    },
+    {
+      "id": "ka1-b7",
+      "avsnitt": "13",
+      "avsnitt_titel": "Alkoholer har en hydroxylgrupp",
+      "delkapitel_titel": "Alkoholer",
+      "term": "isobutanol",
+      "expertdefinition": "En alkohol med fyra kolatomer och grenad kolkedja.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-alkoholer-har-en-hydroxylgrupp.json"
+    },
+    {
+      "id": "ka1-b8",
+      "avsnitt": "13",
+      "avsnitt_titel": "Alkoholer har en hydroxylgrupp",
+      "delkapitel_titel": "Alkoholer",
+      "term": "kondenserad formel",
+      "expertdefinition": "Ett skrivsätt där den funktionella gruppen skrivs för sig, till exempel C₂H₅OH.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-alkoholer-har-en-hydroxylgrupp.json"
+    },
+    {
+      "id": "ka1-b9",
+      "avsnitt": "13",
+      "avsnitt_titel": "Alkoholer har en hydroxylgrupp",
+      "delkapitel_titel": "Alkoholer",
+      "term": "utskriven formel",
+      "expertdefinition": "Ett skrivsätt med streck mellan delarna, till exempel CH₃–CH₂–OH. Visar ordningen mellan atomerna.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-alkoholer-har-en-hydroxylgrupp.json"
+    },
+    {
+      "id": "ka2-b1",
+      "avsnitt": "14",
+      "avsnitt_titel": "Metanol och etanol",
+      "delkapitel_titel": "Alkoholer",
+      "term": "träsprit",
+      "expertdefinition": "Äldre namn på metanol. Kommer av att ämnet framställdes genom upphettning av trä utan luft.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-metanol-och-etanol.json"
+    },
+    {
+      "id": "ka2-b3",
+      "avsnitt": "14",
+      "avsnitt_titel": "Metanol och etanol",
+      "delkapitel_titel": "Alkoholer",
+      "term": "jäsning",
+      "expertdefinition": "Process där jästsvampar bryter ner glukos utan syre och bildar etanol och koldioxid.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-metanol-och-etanol.json"
+    },
+    {
+      "id": "ka2-b4",
+      "avsnitt": "14",
+      "avsnitt_titel": "Metanol och etanol",
+      "delkapitel_titel": "Alkoholer",
+      "term": "jäst",
+      "expertdefinition": "En svamp som använder glukos som energikälla och bildar etanol och koldioxid när syret tryter.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-metanol-och-etanol.json"
+    },
+    {
+      "id": "ka2-b5",
+      "avsnitt": "14",
+      "avsnitt_titel": "Metanol och etanol",
+      "delkapitel_titel": "Alkoholer",
+      "term": "glukos",
+      "expertdefinition": "Druvsocker. Jästens energikälla vid jäsning.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-metanol-och-etanol.json"
+    },
+    {
+      "id": "ka2-b6",
+      "avsnitt": "14",
+      "avsnitt_titel": "Metanol och etanol",
+      "delkapitel_titel": "Alkoholer",
+      "term": "destillation",
+      "expertdefinition": "Metod att skilja ämnen åt genom att utnyttja att de har olika kokpunkt.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-metanol-och-etanol.json"
+    },
+    {
+      "id": "ka2-b7",
+      "avsnitt": "14",
+      "avsnitt_titel": "Metanol och etanol",
+      "delkapitel_titel": "Alkoholer",
+      "term": "t-röd",
+      "expertdefinition": "Etanol som gjorts odrickbar och används som bränsle och lösningsmedel.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-metanol-och-etanol.json"
+    },
+    {
+      "id": "ka2-b8",
+      "avsnitt": "14",
+      "avsnitt_titel": "Metanol och etanol",
+      "delkapitel_titel": "Alkoholer",
+      "term": "biomassa",
+      "expertdefinition": "Växtmaterial som kan användas för att framställa bränsle, till exempel etanol.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-metanol-och-etanol.json"
+    },
+    {
+      "id": "ka2-b9",
+      "avsnitt": "14",
+      "avsnitt_titel": "Metanol och etanol",
+      "delkapitel_titel": "Alkoholer",
+      "term": "lever",
+      "expertdefinition": "Det organ där kroppen bryter ner etanol och metanol.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-metanol-och-etanol.json"
+    },
+    {
+      "id": "ka3-b1",
+      "avsnitt": "15",
+      "avsnitt_titel": "Alkoholer med flera hydroxylgrupper",
+      "delkapitel_titel": "Alkoholer",
+      "term": "glykol",
+      "expertdefinition": "Vardagsnamn på etandiol, en alkohol med två hydroxylgrupper.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json"
+    },
+    {
+      "id": "ka3-b2",
+      "avsnitt": "15",
+      "avsnitt_titel": "Alkoholer med flera hydroxylgrupper",
+      "delkapitel_titel": "Alkoholer",
+      "term": "etandiol",
+      "expertdefinition": "Det systematiska namnet på glykol. Två kolatomer, två hydroxylgrupper.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json"
+    },
+    {
+      "id": "ka3-b3",
+      "avsnitt": "15",
+      "avsnitt_titel": "Alkoholer med flera hydroxylgrupper",
+      "delkapitel_titel": "Alkoholer",
+      "term": "tvåvärd alkohol",
+      "expertdefinition": "Alkohol med två hydroxylgrupper.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json"
+    },
+    {
+      "id": "ka3-b5",
+      "avsnitt": "15",
+      "avsnitt_titel": "Alkoholer med flera hydroxylgrupper",
+      "delkapitel_titel": "Alkoholer",
+      "term": "propantriol",
+      "expertdefinition": "Det systematiska namnet på glycerol.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json"
+    },
+    {
+      "id": "ka3-b6",
+      "avsnitt": "15",
+      "avsnitt_titel": "Alkoholer med flera hydroxylgrupper",
+      "delkapitel_titel": "Alkoholer",
+      "term": "trevärd alkohol",
+      "expertdefinition": "Alkohol med tre hydroxylgrupper.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json"
+    },
+    {
+      "id": "ka3-b7",
+      "avsnitt": "15",
+      "avsnitt_titel": "Alkoholer med flera hydroxylgrupper",
+      "delkapitel_titel": "Alkoholer",
+      "term": "fryspunktsnedsättning",
+      "expertdefinition": "Att fryspunkten sjunker när ett ämne löses i en vätska. Det är därför glykol används i kylarvätska.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json"
+    },
+    {
+      "id": "ka3-b8",
+      "avsnitt": "15",
+      "avsnitt_titel": "Alkoholer med flera hydroxylgrupper",
+      "delkapitel_titel": "Alkoholer",
+      "term": "kylarvätska",
+      "expertdefinition": "Blandning av vatten och glykol som används i bilmotorer. Fryser vid betydligt lägre temperatur än rent vatten.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json"
+    },
+    {
+      "id": "ka3-b9",
+      "avsnitt": "15",
+      "avsnitt_titel": "Alkoholer med flera hydroxylgrupper",
+      "delkapitel_titel": "Alkoholer",
+      "term": "nitroglycerin",
+      "expertdefinition": "Ämne som bildas när glycerol reagerar med salpetersyra. Används i dynamit och som medicin vid kärlkramp.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json"
+    },
+    {
+      "id": "ka3-b10",
+      "avsnitt": "15",
+      "avsnitt_titel": "Alkoholer med flera hydroxylgrupper",
+      "delkapitel_titel": "Alkoholer",
+      "term": "dynamit",
+      "expertdefinition": "Nitroglycerin uppsuget i ett poröst material, vilket gör det hanterbart. Patenterat av Alfred Nobel 1867.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json"
     },
     {
       "id": "ke1-b1",

@@ -326,9 +326,11 @@ const DELKAPITEL = {
       'kväveoxider': 'finns redan i Syror och baser, försurning avsnitt 1',
       'försurning': 'finns redan i Syror och baser, försurning avsnitt 1' } } },
   alkoholer: { titel: 'Alkoholer', kapitel: { id: 'organisk-kemi', titel: 'Organisk kemi' }, byggmapp: 'bygg', avsnitt: AVSNITT_ALKOHOLER,
-    // kapitlets bank delas med Kolatomen, Kolväten och Fossila bränslen: id-prefix a, avsnitt 13–15. Öva ingår inte i ordern
-    // 2026-09-18 (flipcards/kortsvar kommer senare); uteslut fylls på vid dubblettkontrollen då.
-    bank: { idPrefix: 'a', avsnittOffset: 12, uteslut: {} } },
+    // kapitlets bank delas med de övriga delkapitlen: id-prefix a, avsnitt 13–15. Dubblettkontroll 2026-09-18 (Öva-ordern):
+    // 28 kandidater mot 125 + 167 – två träffar (glycerol lades in av Organiska syror och estrar, som byggdes först samma dag)
+    bank: { idPrefix: 'a', avsnittOffset: 12, uteslut: {
+      'myrsyra': 'finns redan i Syror och baser, syror avsnitt 5',
+      'glycerol': 'finns redan i Organiska syror och estrar avsnitt 3 (kapitlets bank)' } } },
   'syror-och-estrar': { titel: 'Organiska syror och estrar', kapitel: { id: 'organisk-kemi', titel: 'Organisk kemi' }, byggmapp: 'bygg', avsnitt: AVSNITT_SYROR_ESTRAR,
     // kapitlets bank delas med de fyra tidigare delkapitlen: id-prefix e, avsnitt 16–18. uteslut fylls av dubblettkontrollen
     // (arbetsorder 2026-09-18 §4: alla 28 kandidater mot kapitelbanken och Syror och basers 167).

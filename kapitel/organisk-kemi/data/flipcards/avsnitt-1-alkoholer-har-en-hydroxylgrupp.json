@@ -1,0 +1,124 @@
+{
+  "avsnitt": 1,
+  "titel": "Alkoholer har en hydroxylgrupp",
+  "delkapitel": "alkoholer",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 1 (Alkoholer har en hydroxylgrupp), delkapitel Alkoholer. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/alkoholer/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k1-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Alkohol",
+      "svar": "En kolförening där en väteatom ersatts av en hydroxylgrupp."
+    },
+    {
+      "id": "k1-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Hydroxylgrupp",
+      "svar": "Gruppen –OH. Alkoholernas funktionella grupp."
+    },
+    {
+      "id": "k1-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Funktionell grupp",
+      "svar": "En bestämd grupp atomer som ger en organisk molekyl många av dess egenskaper."
+    },
+    {
+      "id": "k1-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Metanol",
+      "svar": "Den enklaste alkoholen, \\(\\ce{CH3OH}\\). En kolatom och en hydroxylgrupp."
+    },
+    {
+      "id": "k1-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Etanol",
+      "svar": "Alkoholen med två kolatomer, \\(\\ce{C2H5OH}\\). Finns i alkoholhaltiga drycker."
+    },
+    {
+      "id": "k1-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Propanol",
+      "svar": "Alkoholen med tre kolatomer, \\(\\ce{C3H7OH}\\)."
+    },
+    {
+      "id": "k1-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Isobutanol",
+      "svar": "En alkohol med fyra kolatomer och grenad kolkedja."
+    },
+    {
+      "id": "k1-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kondenserad formel",
+      "svar": "Ett skrivsätt där den funktionella gruppen skrivs för sig, till exempel \\(\\ce{C2H5OH}\\)."
+    },
+    {
+      "id": "k1-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Utskriven formel",
+      "svar": "Ett skrivsätt med streck mellan delarna, till exempel \\(\\ce{CH3-CH2-OH}\\). Visar ordningen mellan atomerna."
+    },
+    {
+      "id": "k1-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Vätebindning",
+      "svar": "En särskild sorts attraktion som uppstår när en väteatom sitter bunden till syre, kväve eller fluor. Ungefär tio gånger starkare än van der Waals-krafter."
+    },
+    {
+      "id": "k1-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Primär alkohol",
+      "svar": "Alkohol där hydroxylgruppen sitter på en kolatom i änden av kedjan. Kan oxideras hela vägen till en syra."
+    },
+    {
+      "id": "k1-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Tertiär alkohol",
+      "svar": "Alkohol där kolatomen med hydroxylgruppen har tre kolgrannar och ingen väteatom. Kan inte oxideras."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k1-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför är metanol en vätska när metan är en gas?",
+      "svar": "Hydroxylgruppen gör att molekylerna dras mycket starkare till varandra. Det krävs därför mer energi för att slita loss dem."
+    },
+    {
+      "id": "k1-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför löser sig etanol i vatten men inte bensin?",
+      "svar": "Etanol har en hydroxylgrupp som vattenmolekylerna dras till. Bensin består bara av kolväten och har ingen sådan grupp."
+    },
+    {
+      "id": "k1-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför skiljer det över tvåhundra grader mellan metan och metanol?",
+      "svar": "Kolvätet hålls bara ihop av van der Waals-krafter. Alkoholen hålls dessutom ihop av vätebindningar, som är mycket starkare."
+    },
+    {
+      "id": "k1-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför behövs begreppet funktionell grupp?",
+      "svar": "Antalet kolföreningar är för stort för att lära sig var för sig. En grupp beter sig ungefär likadant oavsett vilken molekyl den sitter på, och därför kan man förutsäga egenskaper utan att känna ämnet."
+    }
+  ]
+}

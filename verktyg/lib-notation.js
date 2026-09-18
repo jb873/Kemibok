@@ -16,7 +16,7 @@ function ceify(s) {
   // decimalindex med komma (icke-stökiometrisk formel, salter 1 C: Fe₀,₉₅O) → explicit index med {,} utan mellanrum
   s = s.replace(/([₀-₉]+),([₀-₉]+)/g, (_, a, b) => '_{' + [...a].map(c => SUB[c]).join('') + '{,}' + [...b].map(c => SUB[c]).join('') + '}');
   return s.replace(/[₀-₉]/g, c => SUB[c]).replace(/²([⁺⁻])/g, '^2$1').replace(/³([⁺⁻])/g, '^3$1')
-    .replace(/⁺/g, '+').replace(/⁻/g, '-').replace(/→/g, '->').replace(/⇌/g, '<=>').replace(/\s+/g, ' ').trim();
+    .replace(/⁺/g, '+').replace(/⁻/g, '-').replace(/–/g, '-').replace(/→/g, '->').replace(/⇌/g, '<=>').replace(/\s+/g, ' ').trim();
 }
 // element med index, ev. parentesgrupper (Ca(OH)₂), ev. laddning; samt elektronen e⁻
 const FORMELTOKEN = /(?:[A-Z][a-z]?(?:[₀-₉]+(?:,[₀-₉]+)?)?|\((?:[A-Z][a-z]?[₀-₉]*)+\)[₀-₉]+)+(?:[²³]?[⁺⁻])?|\be[⁺⁻]/g;   // index får vara decimalt med komma (Fe₀,₉₅O)

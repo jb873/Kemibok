@@ -1,0 +1,132 @@
+{
+  "avsnitt": 2,
+  "titel": "Metanol och etanol",
+  "delkapitel": "alkoholer",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 2 (Metanol och etanol), delkapitel Alkoholer, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/alkoholer/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k2-s1",
+      "typ": "tal",
+      "fraga": "Hur många väteatomer finns i en metanolmolekyl?",
+      "svar": 4,
+      "forklaring": "Tre sitter på kolatomen och en i hydroxylgruppen, på syret."
+    },
+    {
+      "id": "k2-s2",
+      "typ": "tal",
+      "fraga": "Hur många etanolmolekyler bildas av en glukosmolekyl vid jäsning?",
+      "svar": 2,
+      "forklaring": "Samtidigt bildas två koldioxidmolekyler."
+    },
+    {
+      "id": "k2-s3",
+      "typ": "tal",
+      "fraga": "Ungefär hur många procent alkohol tål jästsvamparna innan jäsningen stannar?",
+      "svar": [
+        15,
+        12
+      ],
+      "forklaring": "Gränsen ligger kring tolv till femton procent. Starkare drycker kräver destillation."
+    },
+    {
+      "id": "k2-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas metanol med ett äldre svenskt namn?",
+      "svar": [
+        "träsprit"
+      ],
+      "forklaring": "Namnet kommer av att ämnet framställdes genom upphettning av trä utan luft."
+    },
+    {
+      "id": "k2-s5",
+      "typ": "ord",
+      "fraga": "Vilket ämne omvandlas metanol till i levern?",
+      "svar": [
+        "myrsyra"
+      ],
+      "forklaring": "Myrsyran skadar synnerven och näthinnan, och kan ge bestående blindhet."
+    },
+    {
+      "id": "k2-s6",
+      "typ": "ord",
+      "fraga": "Vad kallas processen där jäst omvandlar socker till etanol och koldioxid?",
+      "svar": [
+        "jäsning"
+      ],
+      "forklaring": "Den sker när det finns ont om syre."
+    },
+    {
+      "id": "k2-s7",
+      "typ": "ord",
+      "fraga": "Vilken metod används för att få högre alkoholhalt än jäsningen ger?",
+      "svar": [
+        "destillation"
+      ],
+      "forklaring": "Etanol kokar vid 78 °C och vatten vid 100 °C, så ångan blir rikare på etanol."
+    },
+    {
+      "id": "k2-s8",
+      "typ": "formel",
+      "fraga": "Skriv reaktionsformeln för fullständig förbränning av metanol.",
+      "svar": [
+        "2 CH3OH + 3 O2 -> 2 CO2 + 4 H2O",
+        "2 CH3OH + 3 O2 → 2 CO2 + 4 H2O"
+      ],
+      "forklaring": "Kolatomerna blir koldioxid och väteatomerna blir vatten, precis som för kolväten."
+    },
+    {
+      "id": "k2-s9",
+      "typ": "flerval",
+      "fraga": "Varför är metanol farligare än etanol trots att molekylerna liknar varandra?",
+      "alternativ": [
+        "metanol är starkare",
+        "kroppen omvandlar den till ett ämne som skadar synen",
+        "metanol brinner lättare",
+        "metanol luktar annorlunda"
+      ],
+      "svar": 1,
+      "forklaring": "Det farliga är inte metanolen själv utan myrsyran som bildas i levern."
+    },
+    {
+      "id": "k2-s10",
+      "typ": "flerval",
+      "fraga": "Vad är man ute efter när man tillsätter jäst i en bröddeg?",
+      "alternativ": [
+        "etanolen",
+        "koldioxiden",
+        "värmen",
+        "smaken av jäst"
+      ],
+      "svar": 1,
+      "forklaring": "Koldioxiden bildar bubblor som får degen att jäsa. Etanolen avdunstar vid gräddningen."
+    },
+    {
+      "id": "k2-s11",
+      "typ": "flerval",
+      "fraga": "Varför är etanol ett så användbart lösningsmedel?",
+      "alternativ": [
+        "den är billig",
+        "molekylen har en vattenvänlig och en fettvänlig del",
+        "den avdunstar snabbt",
+        "den är ofarlig"
+      ],
+      "svar": 1,
+      "forklaring": "Därför kan den lösa både vattenlösliga och fettlösliga ämnen."
+    },
+    {
+      "id": "k2-s12",
+      "typ": "flerval",
+      "fraga": "Varför räknas kolet i etanol från biomassa annorlunda än kolet i bensin?",
+      "alternativ": [
+        "det är en annan sorts kol",
+        "det kom nyligen ur luften genom fotosyntesen",
+        "etanol brinner renare",
+        "bensin innehåller mer kol"
+      ],
+      "svar": 1,
+      "forklaring": "Kolet stannar i det snabba kretsloppet. Fossilt kol har varit borta i miljontals år. ---"
+    }
+  ]
+}

@@ -88,9 +88,8 @@ E: Den långa kedjan gör att ämnet är fast vid rumstemperatur.
 
 ## k2-s3 · tal
 F: Ungefär hur många procent ättiksyra innehåller vanlig vinäger?
-S: 6
+S: 6 | 5
 E: Resten är vatten. Ungefär fem till sex procent är det vanliga.
-O: {"tolerans":{"abs":1}}
 
 ## k2-s4 · ord
 F: Vilken organisk syra finns i myrors försvar och i nässlornas brännhår?

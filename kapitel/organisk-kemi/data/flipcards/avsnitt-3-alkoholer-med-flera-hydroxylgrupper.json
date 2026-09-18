@@ -1,0 +1,124 @@
+{
+  "avsnitt": 3,
+  "titel": "Alkoholer med flera hydroxylgrupper",
+  "delkapitel": "alkoholer",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 3 (Alkoholer med flera hydroxylgrupper), delkapitel Alkoholer. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/alkoholer/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k3-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Glykol",
+      "svar": "Vardagsnamn på etandiol, en alkohol med två hydroxylgrupper."
+    },
+    {
+      "id": "k3-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Etandiol",
+      "svar": "Det systematiska namnet på glykol. Två kolatomer, två hydroxylgrupper."
+    },
+    {
+      "id": "k3-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Tvåvärd alkohol",
+      "svar": "Alkohol med två hydroxylgrupper."
+    },
+    {
+      "id": "k3-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Glycerol",
+      "svar": "Alkohol med tre kolatomer och tre hydroxylgrupper. Trögflytande och starkt vattenbindande."
+    },
+    {
+      "id": "k3-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Propantriol",
+      "svar": "Det systematiska namnet på glycerol."
+    },
+    {
+      "id": "k3-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Trevärd alkohol",
+      "svar": "Alkohol med tre hydroxylgrupper."
+    },
+    {
+      "id": "k3-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fryspunktsnedsättning",
+      "svar": "Att fryspunkten sjunker när ett ämne löses i en vätska. Det är därför glykol används i kylarvätska."
+    },
+    {
+      "id": "k3-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kylarvätska",
+      "svar": "Blandning av vatten och glykol som används i bilmotorer. Fryser vid betydligt lägre temperatur än rent vatten."
+    },
+    {
+      "id": "k3-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Nitroglycerin",
+      "svar": "Ämne som bildas när glycerol reagerar med salpetersyra. Används i dynamit och som medicin vid kärlkramp."
+    },
+    {
+      "id": "k3-b10",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Dynamit",
+      "svar": "Nitroglycerin uppsuget i ett poröst material, vilket gör det hanterbart. Patenterat av Alfred Nobel 1867."
+    },
+    {
+      "id": "k3-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Kolligativ egenskap",
+      "svar": "En egenskap som bara beror på hur många partiklar som lösts i en vätska, inte på vilka de är. Fryspunktsnedsättning är en sådan."
+    },
+    {
+      "id": "k3-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Hygroskopisk",
+      "svar": "Om ett ämne som drar till sig vatten ur omgivningen. Glycerol är starkt hygroskopiskt."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k3-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Hur hindrar glykolen vattnet från att frysa?",
+      "svar": "Glykolmolekylerna lägger sig mellan vattenmolekylerna och stör det regelbundna mönster som en iskristall kräver."
+    },
+    {
+      "id": "k3-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför används glycerol i hudkrämer?",
+      "svar": "De tre hydroxylgrupperna binder vattenmolekyler. Därför håller glycerolen kvar fukt i huden."
+    },
+    {
+      "id": "k3-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför sänker även salt och socker fryspunkten?",
+      "svar": "Effekten beror inte på vilket ämne som lösts, utan på hur många partiklar som finns i lösningen. Glykol är inte kemiskt bättre — bara praktiskt lämpligare."
+    },
+    {
+      "id": "k3-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför kan glycerol både fukta och torka ut huden?",
+      "svar": "Den drar vatten från det som är fuktigare mot det som är torrare. Är glycerolen tillräckligt koncentrerad tar den mer vatten ur huden än den ger."
+    }
+  ]
+}

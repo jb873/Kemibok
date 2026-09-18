@@ -24,11 +24,11 @@
       "id": "k2-s3",
       "typ": "tal",
       "fraga": "Ungefär hur många procent ättiksyra innehåller vanlig vinäger?",
-      "svar": 6,
-      "forklaring": "Resten är vatten. Ungefär fem till sex procent är det vanliga.",
-      "tolerans": {
-        "abs": 1
-      }
+      "svar": [
+        6,
+        5
+      ],
+      "forklaring": "Resten är vatten. Ungefär fem till sex procent är det vanliga."
     },
     {
       "id": "k2-s4",

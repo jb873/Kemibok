@@ -1,0 +1,128 @@
+{
+  "avsnitt": 3,
+  "titel": "Alkoholer med flera hydroxylgrupper",
+  "delkapitel": "alkoholer",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 3 (Alkoholer med flera hydroxylgrupper), delkapitel Alkoholer, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/alkoholer/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k3-s1",
+      "typ": "tal",
+      "fraga": "Hur många hydroxylgrupper har glykol?",
+      "svar": 2,
+      "forklaring": "Därför kallas den en tvåvärd alkohol. Namnet etandiol berättar samma sak."
+    },
+    {
+      "id": "k3-s2",
+      "typ": "tal",
+      "fraga": "Hur många hydroxylgrupper har glycerol?",
+      "svar": 3,
+      "forklaring": "Därför kallas den trevärd. Det är också därför den sitter i mitten av varje fettmolekyl."
+    },
+    {
+      "id": "k3-s3",
+      "typ": "tal",
+      "fraga": "Vid vilken temperatur fryser rent vatten, i grader Celsius?",
+      "svar": 0,
+      "forklaring": "Blandas glykol i sjunker fryspunkten betydligt."
+    },
+    {
+      "id": "k3-s4",
+      "typ": "ord",
+      "fraga": "Vad heter glykol med sitt systematiska namn?",
+      "svar": [
+        "etandiol"
+      ],
+      "forklaring": "Etan- betyder två kolatomer, di- betyder två och -ol att det är en alkohol."
+    },
+    {
+      "id": "k3-s5",
+      "typ": "ord",
+      "fraga": "Vad heter glycerol med sitt systematiska namn?",
+      "svar": [
+        "propantriol"
+      ],
+      "forklaring": "Propan- betyder tre kolatomer, tri- betyder tre."
+    },
+    {
+      "id": "k3-s6",
+      "typ": "ord",
+      "fraga": "Vad kallas det när fryspunkten sjunker för att något lösts i vätskan?",
+      "svar": [
+        "fryspunktsnedsättning"
+      ],
+      "forklaring": "Det är därför kylarvätska inte fryser sönder motorn på vintern."
+    },
+    {
+      "id": "k3-s7",
+      "typ": "ord",
+      "fraga": "Vad kallas det sprängämne som Alfred Nobel patenterade 1867?",
+      "svar": [
+        "dynamit"
+      ],
+      "forklaring": "Det är nitroglycerin uppsuget i ett poröst material, vilket gjorde det hanterbart."
+    },
+    {
+      "id": "k3-s8",
+      "typ": "formel",
+      "fraga": "Skriv den utskrivna formeln för glykol.",
+      "svar": [
+        "HO-CH2-CH2-OH"
+      ],
+      "forklaring": "En hydroxylgrupp i vardera änden, med två kolatomer emellan."
+    },
+    {
+      "id": "k3-s9",
+      "typ": "flerval",
+      "fraga": "Hur hindrar glykolen vattnet från att frysa?",
+      "alternativ": [
+        "den värmer vattnet",
+        "den stör iskristallens regelbundna mönster",
+        "den binder syret",
+        "den gör vattnet tyngre"
+      ],
+      "svar": 1,
+      "forklaring": "Vattenmolekylerna måste ordna sig regelbundet för att bilda is. Glykolen kommer i vägen."
+    },
+    {
+      "id": "k3-s10",
+      "typ": "flerval",
+      "fraga": "Varför används glycerol i hudkrämer?",
+      "alternativ": [
+        "den luktar gott",
+        "den binder och håller kvar vatten",
+        "den dödar bakterier",
+        "den gör krämen tjockare"
+      ],
+      "svar": 1,
+      "forklaring": "De tre hydroxylgrupperna samverkar med vattenmolekyler och håller kvar dem."
+    },
+    {
+      "id": "k3-s11",
+      "typ": "flerval",
+      "fraga": "Varför är glykol särskilt farlig för djur?",
+      "alternativ": [
+        "den luktar gott",
+        "den smakar sött",
+        "den är osynlig",
+        "djur tål mindre än människor"
+      ],
+      "svar": 1,
+      "forklaring": "Den söta smaken gör att djur kan lockas att dricka utspilld kylarvätska."
+    },
+    {
+      "id": "k3-s12",
+      "typ": "flerval",
+      "fraga": "Vad händer med kokpunkten när en alkohol får fler hydroxylgrupper?",
+      "alternativ": [
+        "den sjunker",
+        "den stiger",
+        "den ändras inte",
+        "den beror bara på kolkedjan"
+      ],
+      "svar": 1,
+      "forklaring": "Etanol kokar vid 78 °C, glykol vid 197 °C och glycerol vid 290 °C. Fler grupper betyder starkare attraktion mellan molekylerna."
+    }
+  ]
+}

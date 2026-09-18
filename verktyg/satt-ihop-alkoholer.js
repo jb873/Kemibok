@@ -201,6 +201,8 @@ if (finns('kortsvar.md')) {
       else if (typ === 'formel') { const c = ceify(svarRaa); S = /->/.test(c) ? [...new Set([c, c.replace(/->\[[^\]]+\]/, '->'), c.replace(/->\[[^\]]+\]|->/, '→'), c.replace(/->(\[[^\]]+\])/, '→$1')])].join(' | ') : c; }
       else if (typ === 'ord') { const m = svarRaa.match(/^(.+?) \((.+)\)$/); S = m ? `${m[1]} | ${m[2]}` : svarRaa; const p = svarRaa.match(/^(i|en|ett|på) (.+)$/); if (p) { S += ` | ${p[2]}`; } }   // "i rörledning" (fråga 42): även ordet utan preposition godkänns
       else { S = svarRaa; }
+      // undantag ur leveransens "Att kontrollera" (Öva-ordern Alkoholer 2026-09-18 §2): fråga 15 svar 15 men 12 ska godkännas → lista
+      if (typ === 'tal' && q[1] === '15') { S = '15 | 12'; }
       ksAntal[typ] = (ksAntal[typ] || 0) + 1; perAvsnitt[N][typ] = (perAvsnitt[N][typ] || 0) + 1;
       kut += `\n## k${N}-s${n} · ${typ}\nF: ${ftext}\n${alt ? 'A: ' + alt.join(' | ') + '\n' : ''}S: ${S}\nE: ${forkl}\n`;
     }

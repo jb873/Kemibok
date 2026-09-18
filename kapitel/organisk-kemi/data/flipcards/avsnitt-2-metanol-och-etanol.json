@@ -1,0 +1,124 @@
+{
+  "avsnitt": 2,
+  "titel": "Metanol och etanol",
+  "delkapitel": "alkoholer",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 2 (Metanol och etanol), delkapitel Alkoholer. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/alkoholer/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k2-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Träsprit",
+      "svar": "Äldre namn på metanol. Kommer av att ämnet framställdes genom upphettning av trä utan luft."
+    },
+    {
+      "id": "k2-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Myrsyra",
+      "svar": "Ämnet som metanol omvandlas till i levern. Det är myrsyran som skadar synnerven."
+    },
+    {
+      "id": "k2-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Jäsning",
+      "svar": "Process där jästsvampar bryter ner glukos utan syre och bildar etanol och koldioxid."
+    },
+    {
+      "id": "k2-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Jäst",
+      "svar": "En svamp som använder glukos som energikälla och bildar etanol och koldioxid när syret tryter."
+    },
+    {
+      "id": "k2-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Glukos",
+      "svar": "Druvsocker. Jästens energikälla vid jäsning."
+    },
+    {
+      "id": "k2-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Destillation",
+      "svar": "Metod att skilja ämnen åt genom att utnyttja att de har olika kokpunkt."
+    },
+    {
+      "id": "k2-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "T-röd",
+      "svar": "Etanol som gjorts odrickbar och används som bränsle och lösningsmedel."
+    },
+    {
+      "id": "k2-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Biomassa",
+      "svar": "Växtmaterial som kan användas för att framställa bränsle, till exempel etanol."
+    },
+    {
+      "id": "k2-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Lever",
+      "svar": "Det organ där kroppen bryter ner etanol och metanol."
+    },
+    {
+      "id": "k2-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Formaldehyd",
+      "svar": "Mellansteget när metanol bryts ner i kroppen, innan myrsyra bildas. Mycket reaktivt."
+    },
+    {
+      "id": "k2-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Acetaldehyd",
+      "svar": "Mellansteget när etanol bryts ner i kroppen. Det är detta ämne som ger illamående dagen efter."
+    },
+    {
+      "id": "k2-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "ATP",
+      "svar": "Cellens energibärare. Jäsning ger 2 ATP per glukosmolekyl, cellandning ungefär 30."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k2-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför är metanol så mycket farligare än etanol?",
+      "svar": "Kroppen omvandlar metanol till myrsyra, som skadar synnerven och näthinnan. Etanol omvandlas till ättiksyra, som kroppen kan använda."
+    },
+    {
+      "id": "k2-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför stannar jäsningen vid ungefär femton procent?",
+      "svar": "Etanolen är giftig även för jästsvamparna. När halten stiger blir miljön för dålig för dem."
+    },
+    {
+      "id": "k2-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför kommer metanolförgiftning försenat?",
+      "svar": "Metanolen i sig är förhållandevis harmlös. Skadan orsakas av nedbrytningsprodukten, och den måste först hinna bildas i levern."
+    },
+    {
+      "id": "k2-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför bryts etanol ner i jämn takt oavsett hur mycket man druckit?",
+      "svar": "Enzymet i första steget är redan fullbelagt vid låga halter och kan inte arbeta snabbare. Det blir en flaskhals med konstant hastighet."
+    }
+  ]
+}
