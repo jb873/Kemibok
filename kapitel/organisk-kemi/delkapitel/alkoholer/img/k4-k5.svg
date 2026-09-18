@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" width="820" height="300" role="img" aria-labelledby="t">
+  <title id="t">Tre steg. Metanolmolekylen, en pil märkt i levern, myrsyramolekylen, och sist ett öga där synnerven är markerad</title>
+  <line x1="120" y1="143" x2="120" y2="155" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="metanol"/>
+  <line x1="107" y1="130" x2="83" y2="130" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="metanol"/>
+  <line x1="133" y1="130" x2="157" y2="130" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="metanol"/>
+  <line x1="120" y1="117" x2="120" y2="109" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"  data-molekyl="metanol"/>
+  <line x1="120" y1="83" x2="120" y2="71" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"  data-molekyl="metanol"/>
+  <text x="120" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="metanol">C</text>
+  <text x="120" y="170.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="metanol">H</text>
+  <text x="74" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="metanol">H</text>
+  <text x="166" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="metanol">H</text>
+  <text x="120" y="102.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="metanol">O</text>
+  <text x="120" y="68.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="metanol">H</text>
+  <text x="120" y="232" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">metanol, CH<tspan font-size="0.7em" dy="0.3em">3</tspan><tspan fill="#C0392B" data-oh="1">OH</tspan></text>
+  <line x1="215" y1="130" x2="290" y2="130" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <polygon points="300,130 290,135 290,125" fill="#2d4a35" />
+  <text x="257" y="116" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">i levern</text>
+  <line x1="387" y1="130" x2="363" y2="130" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="myrsyra"/>
+  <line x1="396.4" y1="117" x2="396.4" y2="109" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"  data-molekyl="myrsyra"/>
+  <line x1="403.6" y1="117" x2="403.6" y2="109" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"  data-molekyl="myrsyra"/>
+  <line x1="413" y1="130" x2="433" y2="130" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"  data-molekyl="myrsyra"/>
+  <line x1="459" y1="130" x2="483" y2="130" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"  data-molekyl="myrsyra"/>
+  <text x="400" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="myrsyra">C</text>
+  <text x="354" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="myrsyra">H</text>
+  <text x="400" y="102.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="myrsyra">O</text>
+  <text x="446" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="myrsyra">O</text>
+  <text x="492" y="136.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="myrsyra">H</text>
+  <text x="420" y="232" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">myrsyra, HCOOH</text>
+  <line x1="520" y1="130" x2="590" y2="130" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <polygon points="600,130 590,135 590,125" fill="#2d4a35" />
+  <text x="560" y="116" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">angriper</text>
+  <path d="M640 130 Q700 84 760 130 Q700 176 640 130 Z" fill="#f5f0e4" stroke="#2d4a35" stroke-width="2" data-del="oga"/>
+  <circle cx="700" cy="130" r="17" fill="#a8c4d8" stroke="#2d4a35" stroke-width="1.6" />
+  <circle cx="700" cy="130" r="8" fill="#3a3a3a" stroke="none" stroke-width="0" />
+  <path d="M760 130 q20 8 34 30" fill="none" stroke="#5a9668" stroke-width="5" stroke-linecap="round" data-del="synnerv"/>
+  <text x="700" y="232" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">synnerven och näthinnan</text>
+  <text x="410" y="286"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#C0392B">metanol och etanol går inte att skilja åt med lukt eller syn</text>
+</svg>

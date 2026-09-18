@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" role="img" aria-labelledby="t">
+  <title id="t">Till vänster metan med fyra väteatomer, varav en är markerad. Till höger metanol, där den markerade väteatomen ersatts av en OH-grupp med syreatomen i rött</title>
+  <line x1="170" y1="163" x2="170" y2="175" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="metan"/>
+  <line x1="157" y1="150" x2="133" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="metan"/>
+  <line x1="183" y1="150" x2="207" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="metan"/>
+  <line x1="170" y1="137" x2="170" y2="125" stroke="#5a9668" stroke-width="2.2" stroke-linecap="round" data-bind="C-H" data-mark="1" data-molekyl="metan"/>
+  <text x="170" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="metan">C</text>
+  <text x="170" y="190.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="metan">H</text>
+  <text x="124" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="metan">H</text>
+  <text x="216" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="metan">H</text>
+  <text x="170" y="122.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#5a9668"  data-atom="H" data-mark="1" data-molekyl="metan">H</text>
+  <circle cx="170" cy="116" r="15" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="1" data-molekyl="metan"/>
+  <text x="170" y="232" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">metan, CH<tspan font-size="0.7em" dy="0.3em">4</tspan></text>
+  <line x1="300" y1="150" x2="410" y2="150" stroke="#2d4a35" stroke-width="2.5" stroke-linecap="round" />
+  <polygon points="420,150 410,155 410,145" fill="#2d4a35" />
+  <text x="360" y="136" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">en väteatom byts ut</text>
+  <line x1="560" y1="163" x2="560" y2="175" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="metanol"/>
+  <line x1="547" y1="150" x2="523" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="metanol"/>
+  <line x1="573" y1="150" x2="597" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="metanol"/>
+  <line x1="560" y1="137" x2="560" y2="129" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"  data-molekyl="metanol"/>
+  <line x1="560" y1="103" x2="560" y2="91" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"  data-molekyl="metanol"/>
+  <text x="560" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="metanol">C</text>
+  <text x="560" y="190.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="metanol">H</text>
+  <text x="514" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="metanol">H</text>
+  <text x="606" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="metanol">H</text>
+  <text x="560" y="122.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="metanol">O</text>
+  <text x="560" y="88.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="metanol">H</text>
+  <ellipse cx="560" cy="99" rx="26" ry="40" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="1" data-molekyl="metanol"/>
+  <text x="560" y="232" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">metanol, CH<tspan font-size="0.7em" dy="0.3em">3</tspan><tspan fill="#C0392B" data-oh="1">OH</tspan></text>
+  <text x="380" y="284" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">hydroxylgruppen sitter där en väteatom suttit</text>
+</svg>

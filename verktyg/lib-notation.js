@@ -23,9 +23,13 @@ const FORMELTOKEN = /(?:[A-Z][a-z]?(?:[₀-₉]+(?:,[₀-₉]+)?)?|\((?:[A-Z][a-
 // tiopotens med valfri mantissa: "6,02 · 10²³", "1 · 10⁻⁷", "10⁻¹⁴"; inte föregånget av bokstav/siffra (dm³ lämnas)
 const TIOPOTENS = /(?<![\p{L}\d])(?:(\d+(?:,\d+)?) · )?(\d+)(⁻?)([⁰¹²³⁴-⁹]+)/gu;
 // en reaktion: bara formeltokens, koefficienter, +, →/⇌ och parenteser – "HCl + H₂O → H₃O⁺ + Cl⁻"
-function arReaktion(s) {
-  const t = s.trim();
+// opt.energi (alkoholer 2.2, ordern 2026-09-18): "… + 2 CO₂ + energi" godtas som sista term – mhchem sätter ordet upprätt
+// (kontrollerat i Chromium, samma utseende som \text{energi}). Bara för fristående fetstilta rader, så att Kolatomens
+// oformaterade cellandningsrad ("… + 6 H₂O + energi", löptext) inte byter utseende.
+function arReaktion(s, opt = {}) {
+  let t = s.trim();
   if (!/[→⇌]/.test(t)) { return false; }
+  if (opt.energi) { t = t.replace(/ \+ energi$/, ''); }
   return t.split(/\s+/).every(w => /^(\d+|\+|→|→\[[^\]]+\]|⇌|e⁻|(?:[A-Z][a-z]?[₀-₉]*|\((?:[A-Z][a-z]?[₀-₉]*)+\)[₀-₉]*)+(?:[²³]?[⁺⁻])?)$/.test(w));
 }
 // enskilda tokens med index/laddning → \(\ce{…}\); hela reaktionsrader hanteras av anroparen
@@ -38,6 +42,9 @@ function allmanTex(t) { return t.replace(/([A-Z][a-z]?)([₀-₉ₙ₊₋]*)/g, 
 function formler(s) {
   s = s.replace(ALLMANTOKEN, t => `\\(${allmanTex(t)}\\)`);
   s = s.replace(/\b([A-Z][a-z]?(?:O|H)?)ₓ/g, (_, b) => `\\(\\ce{${b}_x}\\)`);   // NOₓ, SOₓ – obestämt index x
+  // utskriven formel med tankstreck (alkoholer 1.2, 3.2): "CH₃–CH₂–OH", "HO–CH₂–CH(OH)–CH₂–OH" → ETT \ce med bindestreck som
+  // bindning; parentesgrupp (OH) följer med. Tankstrecket är U+2013 i leveransen.
+  s = s.replace(/(?:(?:[A-Z][a-z]?[₀-₉]*|\((?:[A-Z][a-z]?[₀-₉]*)+\))+)(?:–(?:(?:[A-Z][a-z]?[₀-₉]*|\((?:[A-Z][a-z]?[₀-₉]*)+\))+))+/g, t => /[₀-₉]/.test(t) ? `\\(\\ce{${t.split('–').map(ceify).join('-')}}\\)` : t);   // kräver ett index: "C–H-bindning" (kolväten) lämnas som text
   return s.replace(FORMELTOKEN, t => /[₀-₉⁺⁻]/.test(t) ? `\\(\\ce{${ceify(t)}}\\)` : t)
     .replace(TIOPOTENS, (_, mant, bas, minus, exp) => `\\(${mant ? mant.replace(',', '{,}') + ' \\cdot ' : ''}${bas}^{${minus ? '-' : ''}${[...exp].map(c => SUPD[c]).join('')}}\\)`)
     .replace(/→\[([^\]]+)\]/g, (_, t) => `\\(\\ce{->[${t}]}\\)`)   // märkt pil, "→[ljus]" (fotosyntesen, kolatomen 3.1)

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 266" width="640" height="266" role="img" aria-labelledby="t">
+  <title id="t">En tabell med de fyra första alkanerna till vänster och motsvarande alkoholer till höger. I alkoholnamnen är ändelsen -ol markerad och i formlerna är OH-gruppen markerad i rött</title>
+  <text x="75" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Alkan</text>
+  <text x="225" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Formel</text>
+  <text x="385" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Alkohol</text>
+  <text x="555" y="28"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Formel</text>
+  <line x1="16" y1="38" x2="624" y2="38" stroke="#2d4a35" stroke-width="1.4" stroke-linecap="round" />
+  <line x1="300" y1="36" x2="300" y2="224" stroke="#5a9668" stroke-width="1.6" stroke-linecap="round" data-skiljelinje="1"/>
+  <text x="75" y="74" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="1" data-kolumn="alkan">metan</text>
+  <text x="225" y="74" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" data-rad="1" data-kolumn="alkanformel">CH<tspan font-size="0.7em" dy="0.3em">4</tspan></text>
+  <text x="385" y="74" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="1" data-kolumn="alkohol">metan<tspan fill="#5a9668" data-ol="1">ol</tspan></text>
+  <text x="555" y="74" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" data-rad="1" data-kolumn="alkoholformel">CH<tspan font-size="0.7em" dy="0.3em">3</tspan><tspan fill="#C0392B" data-oh="1">OH</tspan></text>
+  <line x1="16" y1="90" x2="624" y2="90" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="75" y="118" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="2" data-kolumn="alkan">etan</text>
+  <text x="225" y="118" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" data-rad="2" data-kolumn="alkanformel">C<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">6</tspan></text>
+  <text x="385" y="118" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="2" data-kolumn="alkohol">etan<tspan fill="#5a9668" data-ol="1">ol</tspan></text>
+  <text x="555" y="118" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" data-rad="2" data-kolumn="alkoholformel">C<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">5</tspan><tspan fill="#C0392B" data-oh="1">OH</tspan></text>
+  <line x1="16" y1="134" x2="624" y2="134" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="75" y="162" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="3" data-kolumn="alkan">propan</text>
+  <text x="225" y="162" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" data-rad="3" data-kolumn="alkanformel">C<tspan font-size="0.7em" dy="0.3em">3</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">8</tspan></text>
+  <text x="385" y="162" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="3" data-kolumn="alkohol">propan<tspan fill="#5a9668" data-ol="1">ol</tspan></text>
+  <text x="555" y="162" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" data-rad="3" data-kolumn="alkoholformel">C<tspan font-size="0.7em" dy="0.3em">3</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">7</tspan><tspan fill="#C0392B" data-oh="1">OH</tspan></text>
+  <line x1="16" y1="178" x2="624" y2="178" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="75" y="206" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="4" data-kolumn="alkan">butan</text>
+  <text x="225" y="206" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" data-rad="4" data-kolumn="alkanformel">C<tspan font-size="0.7em" dy="0.3em">4</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">10</tspan></text>
+  <text x="385" y="206" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" data-rad="4" data-kolumn="alkohol">butan<tspan fill="#5a9668" data-ol="1">ol</tspan></text>
+  <text x="555" y="206" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" data-rad="4" data-kolumn="alkoholformel">C<tspan font-size="0.7em" dy="0.3em">4</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">9</tspan><tspan fill="#C0392B" data-oh="1">OH</tspan></text>
+  <line x1="16" y1="222" x2="624" y2="222" stroke="#2d4a35" stroke-width="1.4" stroke-linecap="round" />
+  <text x="320" y="252" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">samma stam, ny ändelse, en OH-grupp</text>
+</svg>

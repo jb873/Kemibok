@@ -135,7 +135,7 @@ function nivaHtml(text, niva) {
     if (/^### /.test(b)) { ut.push({ typ: 'h2', html: `<h2>${inline(b.replace(/^### /, ''))}</h2>` }); continue; }
     const rader = b.split('\n');
     // fristående fetstilt reaktionsrad → display-formel
-    if (rader.length === 1 && /^\*\*[^*]+\*\*$/.test(b) && arReaktion(b.replace(/\*\*/g, ''))) {
+    if (rader.length === 1 && /^\*\*[^*]+\*\*$/.test(b) && arReaktion(b.replace(/\*\*/g, ''), { energi: true })) {   // "+ energi" som sista term godtas (alkoholer 2.2)
       ut.push({ typ: 'formel', html: `<div class="formel">\\[\\ce{${ceify(b.replace(/\*\*/g, ''))}}\\]</div>`, kalla: b }); continue;
     }
     // "$$\ce{…}$$" som eget stycke (fossila bränslen, fördjupning 3.2) → samma display-formel; $$ är inte en avgränsare i mathjax-config

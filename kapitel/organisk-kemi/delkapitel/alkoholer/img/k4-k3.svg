@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 340" width="780" height="340" role="img" aria-labelledby="t">
+  <title id="t">Etanol visad på fyra sätt: molekylformeln C2H6O, den kondenserade formeln C2H5OH, den utskrivna formeln CH3–CH2–OH, och längst ner den fullständiga strukturformeln utritad med alla atomer</title>
+  <text x="130" y="34"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Molekylformel</text>
+  <text x="130" y="90" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" data-skrivsatt="1">C<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">6</tspan><tspan dy="-0.3em">O</tspan></text>
+  <text x="130" y="122" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">räknar atomerna</text>
+  <text x="390" y="34"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Kondenserad formel</text>
+  <text x="390" y="90" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" data-skrivsatt="2">C<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">5</tspan><tspan fill="#C0392B" data-oh="1">OH</tspan></text>
+  <text x="390" y="122" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">visar gruppen</text>
+  <text x="650" y="34"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Utskriven formel</text>
+  <text x="650" y="90" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" data-skrivsatt="3">CH<tspan font-size="0.7em" dy="0.3em">3</tspan>–CH<tspan font-size="0.7em" dy="0.3em">2</tspan>–<tspan fill="#C0392B" data-oh="1">OH</tspan></text>
+  <text x="650" y="122" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">visar ordningen</text>
+  <line x1="40" y1="150" x2="740" y2="150" stroke="#2d4a35" stroke-width="1" stroke-linecap="round" />
+  <line x1="334" y1="232" x2="354" y2="232" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"  data-skrivsatt="4"/>
+  <line x1="321" y1="219" x2="321" y2="207" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-skrivsatt="4"/>
+  <line x1="321" y1="245" x2="321" y2="257" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-skrivsatt="4"/>
+  <line x1="308" y1="232" x2="284" y2="232" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-skrivsatt="4"/>
+  <line x1="367" y1="219" x2="367" y2="207" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-skrivsatt="4"/>
+  <line x1="367" y1="245" x2="367" y2="257" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-skrivsatt="4"/>
+  <line x1="380" y1="232" x2="400" y2="232" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"  data-skrivsatt="4"/>
+  <line x1="426" y1="232" x2="450" y2="232" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"  data-skrivsatt="4"/>
+  <text x="321" y="238.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-skrivsatt="4">C</text>
+  <text x="367" y="238.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-skrivsatt="4">C</text>
+  <text x="321" y="204.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-skrivsatt="4">H</text>
+  <text x="321" y="272.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-skrivsatt="4">H</text>
+  <text x="275" y="238.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-skrivsatt="4">H</text>
+  <text x="367" y="204.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-skrivsatt="4">H</text>
+  <text x="367" y="272.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-skrivsatt="4">H</text>
+  <text x="413" y="238.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-skrivsatt="4">O</text>
+  <text x="459" y="238.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-skrivsatt="4">H</text>
+  <text x="390" y="178"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668">Strukturformel</text>
+  <text x="390" y="316" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">och så här ser den ut utritad – alla atomer och alla bindningar</text>
+</svg>

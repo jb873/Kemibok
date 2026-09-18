@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 400" width="940" height="400" role="img" aria-labelledby="t">
+  <title id="t">Tre alkoholer i rad – etanol med en OH-grupp, glykol med två och glycerol med tre. Under varje står den skrivna formeln, antalet OH-grupper och kokpunkten</title>
+  <line x1="123.67" y1="150" x2="143.67" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"  data-molekyl="etanol"/>
+  <line x1="110.67" y1="137" x2="110.67" y2="125" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="etanol"/>
+  <line x1="110.67" y1="163" x2="110.67" y2="175" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="etanol"/>
+  <line x1="97.67" y1="150" x2="73.67" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="etanol"/>
+  <line x1="156.67" y1="137" x2="156.67" y2="125" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="etanol"/>
+  <line x1="156.67" y1="163" x2="156.67" y2="175" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="etanol"/>
+  <line x1="169.67" y1="150" x2="189.67" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"  data-molekyl="etanol"/>
+  <line x1="215.67" y1="150" x2="239.67" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"  data-molekyl="etanol"/>
+  <text x="110.67" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="etanol">C</text>
+  <text x="156.67" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="etanol">C</text>
+  <text x="110.67" y="122.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etanol">H</text>
+  <text x="110.67" y="190.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etanol">H</text>
+  <text x="64.67" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etanol">H</text>
+  <text x="156.67" y="122.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etanol">H</text>
+  <text x="156.67" y="190.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etanol">H</text>
+  <text x="202.67" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="etanol">O</text>
+  <text x="248.67" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="etanol">H</text>
+  <ellipse cx="225.67" cy="150" rx="40" ry="16" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="1" data-molekyl="etanol"/>
+  <text x="156.67" y="262" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" data-formel="etanol">CH<tspan font-size="0.7em" dy="0.3em">3</tspan>–CH<tspan font-size="0.7em" dy="0.3em">2</tspan>–<tspan fill="#C0392B">OH</tspan></text>
+  <text x="156.67" y="296" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">etanol</text>
+  <text x="156.67" y="326" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" data-antal-oh="1">1 OH-grupp</text>
+  <text x="156.67" y="350" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">kokpunkt 78 °C</text>
+  <line x1="460" y1="150" x2="480" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"  data-molekyl="glykol"/>
+  <line x1="447" y1="137" x2="447" y2="125" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="glykol"/>
+  <line x1="447" y1="163" x2="447" y2="175" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="glykol"/>
+  <line x1="434" y1="150" x2="414" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"  data-molekyl="glykol"/>
+  <line x1="388" y1="150" x2="364" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"  data-molekyl="glykol"/>
+  <line x1="493" y1="137" x2="493" y2="125" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="glykol"/>
+  <line x1="493" y1="163" x2="493" y2="175" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="glykol"/>
+  <line x1="506" y1="150" x2="526" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"  data-molekyl="glykol"/>
+  <line x1="552" y1="150" x2="576" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"  data-molekyl="glykol"/>
+  <text x="447" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="glykol">C</text>
+  <text x="493" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="glykol">C</text>
+  <text x="447" y="122.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glykol">H</text>
+  <text x="447" y="190.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glykol">H</text>
+  <text x="401" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="glykol">O</text>
+  <text x="355" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glykol">H</text>
+  <text x="493" y="122.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glykol">H</text>
+  <text x="493" y="190.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glykol">H</text>
+  <text x="539" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="glykol">O</text>
+  <text x="585" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glykol">H</text>
+  <ellipse cx="378" cy="150" rx="40" ry="16" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="1" data-molekyl="glykol"/>
+  <ellipse cx="562" cy="150" rx="40" ry="16" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="1" data-molekyl="glykol"/>
+  <text x="470" y="262" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" data-formel="glykol"><tspan fill="#C0392B">HO</tspan>–CH<tspan font-size="0.7em" dy="0.3em">2</tspan>–CH<tspan font-size="0.7em" dy="0.3em">2</tspan>–<tspan fill="#C0392B">OH</tspan></text>
+  <text x="470" y="296" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">glykol</text>
+  <text x="470" y="326" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" data-antal-oh="2">2 OH-grupper</text>
+  <text x="470" y="350" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">kokpunkt 197 °C</text>
+  <line x1="750.33" y1="150" x2="770.33" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"  data-molekyl="glycerol"/>
+  <line x1="796.33" y1="150" x2="816.33" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"  data-molekyl="glycerol"/>
+  <line x1="737.33" y1="137" x2="737.33" y2="125" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="glycerol"/>
+  <line x1="737.33" y1="163" x2="737.33" y2="175" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="glycerol"/>
+  <line x1="724.33" y1="150" x2="704.33" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"  data-molekyl="glycerol"/>
+  <line x1="678.33" y1="150" x2="654.33" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"  data-molekyl="glycerol"/>
+  <line x1="783.33" y1="163" x2="783.33" y2="175" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="glycerol"/>
+  <line x1="783.33" y1="137" x2="783.33" y2="129" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"  data-molekyl="glycerol"/>
+  <line x1="783.33" y1="103" x2="783.33" y2="91" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"  data-molekyl="glycerol"/>
+  <line x1="829.33" y1="137" x2="829.33" y2="125" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="glycerol"/>
+  <line x1="829.33" y1="163" x2="829.33" y2="175" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"  data-molekyl="glycerol"/>
+  <line x1="842.33" y1="150" x2="862.33" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"  data-molekyl="glycerol"/>
+  <line x1="888.33" y1="150" x2="912.33" y2="150" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"  data-molekyl="glycerol"/>
+  <text x="737.33" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="glycerol">C</text>
+  <text x="783.33" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="glycerol">C</text>
+  <text x="829.33" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="glycerol">C</text>
+  <text x="737.33" y="122.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="737.33" y="190.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="691.33" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="glycerol">O</text>
+  <text x="645.33" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="783.33" y="190.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="783.33" y="122.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="glycerol">O</text>
+  <text x="783.33" y="88.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="829.33" y="122.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="829.33" y="190.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="875.33" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="glycerol">O</text>
+  <text x="921.33" y="156.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <ellipse cx="668.33" cy="150" rx="40" ry="16" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="1" data-molekyl="glycerol"/>
+  <ellipse cx="783.33" cy="99" rx="18" ry="36" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="1" data-molekyl="glycerol"/>
+  <ellipse cx="898.33" cy="150" rx="40" ry="16" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="1" data-molekyl="glycerol"/>
+  <text x="783.33" y="262" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" data-formel="glycerol"><tspan fill="#C0392B">HO</tspan>–CH<tspan font-size="0.7em" dy="0.3em">2</tspan>–CH(<tspan fill="#C0392B">OH</tspan>)–CH<tspan font-size="0.7em" dy="0.3em">2</tspan>–<tspan fill="#C0392B">OH</tspan></text>
+  <text x="783.33" y="296" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold">glycerol</text>
+  <text x="783.33" y="326" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" data-antal-oh="3">3 OH-grupper</text>
+  <text x="783.33" y="350" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">kokpunkt 290 °C</text>
+  <text x="470" y="386" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">fler OH-grupper, högre kokpunkt</text>
+</svg>

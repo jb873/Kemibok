@@ -240,6 +240,30 @@ const AVSNITT_FOSSILA = {
          'k3-j3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Många av dem är giftiga redan i mycket små mängder.', standard: 'får betydelse om de pågår länge.', fordjupning: 'sjövattnet i sig inte är farligt att dricka.' }
        } }
 };
+// Organisk kemi 4 "Alkoholer" (arbetsorder 2026-09-18). Placering enligt bildspecen ("vid N:e rubriken", dk4-omskrivet-och-
+// bildspecar.md): på Standard efter första stycket under den rubriken; på Enkel/Fördjupning efter det stycke som bär samma
+// innehåll (samma princip som Fossila bränslen). Standard-ankarna sätts när dk4-bearbetade-texter.md levererats (saknades
+// 2026-09-18) – tills dess utelämnas bilderna på Standard (ank[n] saknas → ingen infogning).
+const AVSNITT_ALKOHOLER = {
+  1: { dd: [],
+       bilder: {
+         'k4-k1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'har formeln **CH₃OH**.', fordjupning: 'kolatom lika väl som en sockermolekyl med sex.' },
+         'k4-k2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Ändelsen **-ol** säger att det finns en', fordjupning: 'namn. Ämnena beter sig olika.' },
+         'k4-k3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Alla tre är samma molekyl. Skillnaden är hur mycket de visar.', fordjupning: 'inte har någon väteatom kvar att avge.' },
+         'k4-k4.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Etan kokar vid ungefär **−89 °C**. Etanol kokar vid **+78 °C**.', fordjupning: 'gånger starkare** än van der Waals-krafterna.' }
+       } },
+  2: { dd: [],
+       bilder: {
+         'k4-k5.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'är **synnerven och näthinnan** i ögat.', fordjupning: 'synnerven är en av kroppens mest energikrävande vävnader.' },
+         'k4-k6.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'En glukosmolekyl ger alltså **två** etanolmolekyler och **två** koldioxidmolekyler.', fordjupning: 'Utbytet blir **2 ATP** per glukosmolekyl. Ungefär en femtondel.' },
+         'k4-k7.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'De flesta lösningsmedel kan bara det ena. Etanol kan båda.', fordjupning: 'Nedbrytningen sker i två steg, precis som för metanol.' }
+       } },
+  3: { dd: [{ slug: 'nobel', titel: 'Mannen som gjorde sprängämnet säkert', ikon: '🧨' }],   // djupdykning från 3.2 (ordern 2026-09-18)
+       bilder: {
+         'k4-k8.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Det kallas **fryspunktsnedsättning**.', fordjupning: 'Det har den inte. **Vilket löst ämne som helst** sänker fryspunkten.' },
+         'k4-k9.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], enkel: 'Ju fler grupper, desto fler platser på molekylen som kan samverka med vattenmolekyler.', fordjupning: 'och därav glycerolens kokpunkt på 290 grader.' }
+       } }
+};
 const DELKAPITEL = {
   // bank: id-prefix och avsnittsoffset i kapitlets begreppsbank (en fil per kapitel; id/avsnitt unika över delkapitlen)
   repetition: { titel: 'Bakgrund och repetition', avsnitt: AVSNITT_REPETITION, bank: { idPrefix: '', avsnittOffset: 0 } },
@@ -275,6 +299,10 @@ const DELKAPITEL = {
       'svaveldioxid': 'finns redan i Syror och baser, försurning avsnitt 1',
       'svavelsyra': 'finns redan i Syror och baser, syror avsnitt 5',
       'kväveoxider': 'finns redan i Syror och baser, försurning avsnitt 1',
-      'försurning': 'finns redan i Syror och baser, försurning avsnitt 1' } } }
+      'försurning': 'finns redan i Syror och baser, försurning avsnitt 1' } } },
+  alkoholer: { titel: 'Alkoholer', kapitel: { id: 'organisk-kemi', titel: 'Organisk kemi' }, byggmapp: 'bygg', avsnitt: AVSNITT_ALKOHOLER,
+    // kapitlets bank delas med Kolatomen, Kolväten och Fossila bränslen: id-prefix a, avsnitt 13–15. Öva ingår inte i ordern
+    // 2026-09-18 (flipcards/kortsvar kommer senare); uteslut fylls på vid dubblettkontrollen då.
+    bank: { idPrefix: 'a', avsnittOffset: 12, uteslut: {} } }
 };
 module.exports = { DELKAPITEL };

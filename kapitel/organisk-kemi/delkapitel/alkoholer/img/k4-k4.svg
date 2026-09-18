@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" width="820" height="430" role="img" aria-labelledby="t">
+  <title id="t">Fyra stapelpar som jämför kokpunkten hos en alkan och motsvarande alkohol. Alla alkaner ligger under noll grader, alla alkoholer långt över</title>
+  <line x1="40" y1="234" x2="780" y2="234" stroke="#8A8A8A" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="6 5" data-rumstemperatur="20"/>
+  <text x="776" y="228"    font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="end" fill="#8A8A8A">rumstemperatur 20 °C</text>
+  <rect x="70" y="250" width="40" height="129.6" fill="#8A8A8A" data-alkan="metan" data-kp="-162"/>
+  <text x="90" y="395.6" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">−162</text>
+  <text x="90" y="411.6" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold">metan</text>
+  <rect x="118" y="198" width="40" height="52" fill="#5a9668" data-alkohol="metanol" data-kp="65"/>
+  <text x="138" y="190" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">65</text>
+  <text x="138" y="174" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold">metanol</text>
+  <rect x="210" y="250" width="40" height="71.2" fill="#8A8A8A" data-alkan="etan" data-kp="-89"/>
+  <text x="230" y="337.2" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">−89</text>
+  <text x="230" y="353.2" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold">etan</text>
+  <rect x="258" y="187.6" width="40" height="62.4" fill="#5a9668" data-alkohol="etanol" data-kp="78"/>
+  <text x="278" y="179.6" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">78</text>
+  <text x="278" y="163.6" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold">etanol</text>
+  <rect x="350" y="250" width="40" height="33.6" fill="#8A8A8A" data-alkan="propan" data-kp="-42"/>
+  <text x="370" y="299.6" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">−42</text>
+  <text x="370" y="315.6" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold">propan</text>
+  <rect x="398" y="172.4" width="40" height="77.6" fill="#5a9668" data-alkohol="propanol" data-kp="97"/>
+  <text x="418" y="164.4" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">97</text>
+  <text x="418" y="148.4" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold">propanol</text>
+  <rect x="490" y="250" width="40" height="0.4" fill="#8A8A8A" data-alkan="butan" data-kp="-0.5"/>
+  <text x="510" y="266.4" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">−0,5</text>
+  <text x="510" y="282.4" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold">butan</text>
+  <rect x="538" y="155.6" width="40" height="94.4" fill="#5a9668" data-alkohol="butanol" data-kp="118"/>
+  <text x="558" y="147.6" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12">118</text>
+  <text x="558" y="131.6" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold">butanol</text>
+  <line x1="40" y1="250" x2="780" y2="250" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-nollinje="1"/>
+  <text x="44" y="244" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" text-anchor="start">0 °C</text>
+  <text x="410" y="418" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">kokpunkt: alkan (grå) och alkohol (grön) med lika många kolatomer</text>
+</svg>
