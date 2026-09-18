@@ -3,7 +3,7 @@
   "kapitel_titel": "Organisk kemi",
   "version": 3,
   "skapad": "2026-09-13",
-  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 26 + Kolväten 37 + Fossila bränslen och förbränning 39 + Alkoholer 26 + Organiska syror och estrar 23 = 151.",
+  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 26 + Kolväten 37 + Fossila bränslen och förbränning 39 + Alkoholer 27 + Organiska syror och estrar 22 = 151.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -1108,6 +1108,15 @@
       "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json"
     },
     {
+      "id": "ka3-b4",
+      "avsnitt": "15",
+      "avsnitt_titel": "Alkoholer med flera hydroxylgrupper",
+      "delkapitel_titel": "Alkoholer",
+      "term": "glycerol",
+      "expertdefinition": "Alkohol med tre kolatomer och tre hydroxylgrupper. Trögflytande och starkt vattenbindande.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-alkoholer-med-flera-hydroxylgrupper.json"
+    },
+    {
       "id": "ka3-b5",
       "avsnitt": "15",
       "avsnitt_titel": "Alkoholer med flera hydroxylgrupper",
@@ -1330,15 +1339,6 @@
       "delkapitel_titel": "Organiska syror och estrar",
       "term": "etylacetat",
       "expertdefinition": "En vanlig ester som bildas av etanol och etansyra. Används som lösningsmedel i lack och lim.",
-      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-estrar.json"
-    },
-    {
-      "id": "ke3-b6",
-      "avsnitt": "18",
-      "avsnitt_titel": "Estrar",
-      "delkapitel_titel": "Organiska syror och estrar",
-      "term": "glycerol",
-      "expertdefinition": "Trevärd alkohol med tre hydroxylgrupper. Sitter i mitten av varje fettmolekyl.",
       "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-estrar.json"
     },
     {

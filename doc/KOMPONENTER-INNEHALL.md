@@ -7,8 +7,8 @@
 > Innehållssessioner ser inte CSS — bara HTML. För att producera
 > fungerande markup måste de exakta klassnamnen vara dokumenterade.
 
-**Senast uppdaterad:** 2026-09-15 (v1.5)
-**Version:** 1.5 (Kemi)
+**Senast uppdaterad:** 2026-09-18 (v1.6)
+**Version:** 1.6 (Kemi)
 **DELAD-BAS:** v1.1 — måste matcha över alla ämnen
 **Ärvd från:** KOMPONENTER-INNEHALL-GEOGRAFI v1.6
 **Källa för alla mallar:** Geografis v1.6 (DOM-verifierad hero-banner) + Historias mappstruktur
@@ -1161,6 +1161,13 @@ köras om. Utan det står `\ce{}` som rå text på kortet.
 Konventionen är att begreppsbanken härleds **1:1 ur flipcardsens `begreppskort`-id:n**, med
 `kallfil` som enda sanningskälla. Kemins begrepp är många och täta — den kopplingen kommer
 bära mer vikt här än i geografi. Skapa aldrig en definition på två ställen.
+
+**Banken klarar formelkort utan omformulering** (v1.6, Joachim 2026-09-18). Regeln från Kolatomen – att formler inte
+renderar i banken och att varje begreppskort med formel i texten behöver en *Bankformulering* – gäller inte längre
+generellt. Bankens definition är kortets råtext i Unicode (CH₃OH, C₂H₅OH, CH₃–CH₂–OH), och Unicode-index renderar
+som text. Byggaren stoppar fortfarande om en definition skulle innehålla `ce{}` eller `(…)` efter konvertering, men
+det inträffar inte för vanliga formler. Kontrollerat i Alkoholer (korten 4, 5, 6, 8, 9 – alla formelkort, inga
+bankformuleringar). Lägg ingen tid på bankformuleringar i kommande leveranser; skriv en bara om byggaren stannar.
 
 ---
 
