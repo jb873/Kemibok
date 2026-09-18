@@ -112,7 +112,7 @@ Regeln är enkel:
 
 **Ett streck går vidare i kedjan. En parentes går ut åt sidan.**
 
-Titta på bilden så ser du samma molekyl utritad.
+Du ser molekylen utritad i bilden i nästa underdel.
 
 ### Glycerol binder vatten
 

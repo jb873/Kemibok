@@ -16,12 +16,12 @@ const UT = path.join(R, 'bygg');
 fs.mkdirSync(UT, { recursive: true });
 const finns = f => fs.existsSync(path.join(R, f));
 const norm = f => fs.readFileSync(path.join(R, f), 'utf8').replace(/\r\n/g, '\n');
-// slug och hero-underrubrik per avsnitt (ordern 2026-09-18: knapptitlar och hero-underrubriker levereras senare; förslag av
-// Code, rapporterade – ersätts av knapptitlar-och-ingresser.md när Joachim beslutar, som för Kolatomen)
+// slug per avsnitt (Code-förslag, Joachim 2026-09-18: "Behåll dina tre"). Hero-underrubriker och knapptitlar ur
+// knapptitlar-och-ingresser.md (Joachims beslut samma dag); sub här är bara reserv om filen saknas.
 const HUVUD = {
-  1: { slug: 'alkoholer-har-en-hydroxylgrupp', sub: 'en enda grupp som förändrar allt' },
-  2: { slug: 'metanol-och-etanol', sub: 'de två enklaste alkoholerna – och varför de inte får förväxlas' },
-  3: { slug: 'alkoholer-med-flera-hydroxylgrupper', sub: 'glykol, glycerol och vad fler OH-grupper gör' }
+  1: { slug: 'alkoholer-har-en-hydroxylgrupp', sub: 'gruppen som ändrar allt' },
+  2: { slug: 'metanol-och-etanol', sub: 'två molekyler, två helt olika öden' },
+  3: { slug: 'alkoholer-med-flera-hydroxylgrupper', sub: 'när en grupp inte räcker' }
 };
 const BOK = ['A', 'B', 'C'];
 let KORT = {}, SUB = {}, INGRESS = {};

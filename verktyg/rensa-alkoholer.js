@@ -17,11 +17,17 @@ const las = f => fs.readFileSync(path.join(O, f), 'utf8').replace(/\r\n/g, '\n')
 const STOPP = /\n# (Vad som ströks|Vad som flyttades till bild|Anteckningar|▸-tillägg|Bilder som avsnittet behöver|En anmärkning)/;
 const ord = t => t.replace(/^#+ .*$/gm, '').replace(/[*_▸|]/g, '').split(/\s+/).filter(Boolean).length;
 const rad = [];
+// rättelse-k9-hanvisning.md (Joachim 2026-09-18): K9 ligger i 3.3 och syns inte från 3.2 – meningen byts, ingen tionde bild.
+// Enkel 3.2 har ordernas exakta mening; den omskrivna Standard-texten 3.2 har en variant – samma ersättning (rapporterad).
+const K9_NY = 'Du ser molekylen utritad i bilden i nästa underdel.';
+const K9_GAMLA = [/Titta på bilden så ser du samma molekyl utritad\./, /Bilden bredvid visar samma molekyl utritad, så att du kan jämföra\./];
+let k9Traffar = 0;
+const k9 = t => t.replace(K9_GAMLA[0], () => { k9Traffar++; return K9_NY; }).replace(K9_GAMLA[1], () => { k9Traffar++; return K9_NY; });
 // ---- omskrivna underdelar (1.2, 3.2) ----
 const OM = las('dk4-omskrivet-och-bildspecar.md');
 const omskrivna = {};
 for (const m of OM.matchAll(/\n# Omskriven: (\d)\.(\d) ([^\n]+)\n([\s\S]*?)(?=\n---\n)/g)) {
-  const kropp = m[4].replace(/^\*Fyra rubriker[^\n]*\*\s*$/gm, '').replace(/^\*ca \d+ ord[^\n]*\*\s*$/gm, '').replace(/▸\s?/g, '').replace(/\n{3,}/g, '\n\n').trim();
+  const kropp = k9(m[4]).replace(/^\*Fyra rubriker[^\n]*\*\s*$/gm, '').replace(/^\*ca \d+ ord[^\n]*\*\s*$/gm, '').replace(/▸\s?/g, '').replace(/\n{3,}/g, '\n\n').trim();
   omskrivna[m[1] + '.' + m[2]] = { titel: m[3].trim(), kropp };
 }
 if (Object.keys(omskrivna).length !== 2) throw new Error(`omskrivna underdelar: ${Object.keys(omskrivna).join(', ')} (väntat 1.2 och 3.2)`);
@@ -60,7 +66,7 @@ for (const N of [1, 2, 3]) {
   const t = las(f);
   const enkel = t.match(/\n# 📗 ENKEL\n([\s\S]*?)\n# 📕 FÖRDJUPNING\n/)[1], fordj = t.match(/\n# 📕 FÖRDJUPNING\n([\s\S]*)$/)[1];
   const ing = enkel.match(/## Avsnittsingress\n([\s\S]*?)\n---\n/);
-  const dela = del => [...del.matchAll(/\n## (\d)\.(\d) ([^\n]+)\n([\s\S]*?)(?=\n## \d\.\d |$)/g)].map(m => ({ N: +m[1], nr: +m[2], titel: m[3].trim(), text: m[4].replace(/\n---\s*$/, '').replace(/▸\s?/g, '').trim() }));
+  const dela = del => [...del.matchAll(/\n## (\d)\.(\d) ([^\n]+)\n([\s\S]*?)(?=\n## \d\.\d |$)/g)].map(m => ({ N: +m[1], nr: +m[2], titel: m[3].trim(), text: k9(m[4]).replace(/\n---\s*$/, '').replace(/▸\s?/g, '').trim() }));
   const E = dela(enkel), F = dela(fordj);
   if (E.length !== 3 || F.length !== 3 || E.some(x => x.N !== N) || F.some(x => x.N !== N)) throw new Error(`${f}: ${E.length} Enkel, ${F.length} Fördjupning`);
   let ut = `# Alkoholer, avsnitt ${N} — Enkel och Fördjupning\n\n> Ur ${f} (verktyg/rensa-alkoholer.js): huvudet skalat. Avsnittsingressen under ENKEL är Enkel-ingressen (levererad i samma fil).\n\n---\n\n# 📗 ENKEL\n\n`;
@@ -106,5 +112,6 @@ if (finns('djupdykning-nobel.md')) {
 // ordantal per underdel och nivå
 const tab = {};
 for (const r of rad) { const [u, n, o] = r.split(' '); (tab[u] = tab[u] || {})[n] = +o; }
+console.log(`K9-hänvisningen: ${k9Traffar} mening(ar) ersatta (väntat 2: Enkel 3.2 och omskriven Standard 3.2)`);
 console.log('underdel  Enkel  Standard  Fördjupning');
 for (const u of Object.keys(tab).sort()) { console.log(`${u}       ${String(tab[u].Enkel || tab[u]['Enkel-ingress'] && `(ingress ${tab[u]['Enkel-ingress']})` || '-').padStart(5)}  ${String(tab[u].Standard || '-').padStart(8)}  ${String(tab[u]['Fördjupning'] || '-').padStart(11)}`); }

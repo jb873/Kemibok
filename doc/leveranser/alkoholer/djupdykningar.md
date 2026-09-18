@@ -13,4 +13,5 @@
 **Underrubrik:** *samma molekyl, tre öden*
 
 **Korttext:** Nitroglycerin var så instabilt att det knappt gick att använda. Alfred Nobel ändrade inte molekylen — han ändrade vad den låg i. Och samma ämne som spränger berg finns i dag som tablett mot kärlkramp.
+
 **Brödtext:** djupdykning-nobel.md
