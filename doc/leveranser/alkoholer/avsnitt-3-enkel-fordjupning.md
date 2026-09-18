@@ -105,7 +105,7 @@ Då används en parentes:
 **HO–CH₂–CH(OH)–CH₂–OH**
 
 Läs långsamt. Först en hydroxylgrupp. Sedan en kolatom med två väten. Sedan mittenkolatomen — och
-parentesen **(OH)** betyder att en hydroxylgrupp hänger av från just den. Sedan en kolatom till
+parentesen (OH) betyder att en hydroxylgrupp hänger av från just den. Sedan en kolatom till
 med två väten, och sist en tredje hydroxylgrupp.
 
 Regeln är enkel:

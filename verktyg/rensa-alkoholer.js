@@ -23,7 +23,7 @@ const K9_NY = 'Du ser molekylen utritad i bilden i nästa underdel.';
 const K9_GAMLA = [/Titta på bilden så ser du samma molekyl utritad\./, /Bilden bredvid visar samma molekyl utritad, så att du kan jämföra\./];
 let k9Traffar = 0;
 const k9 = t => t.replace(K9_GAMLA[0], () => { k9Traffar++; return K9_NY; }).replace(K9_GAMLA[1], () => { k9Traffar++; return K9_NY; })
-  .replace(/`\(OH\)`/g, '**(OH)**');   // omskriven Standard 3.2 skriver parentesen som kodspann (`(OH)`); byggverktyget saknar kodspann, Enkel skriver **(OH)** – samma här (rapporterat 2026-09-18)
+  .replace(/`\(OH\)`|\*\*\(OH\)\*\*/g, '(OH)');   // parentesen i löptexten 3.2 som vanlig text (Joachim 2026-09-18: "fetstil är fel"); leveransen har kodspann på Standard och fetstil på Enkel – båda blir vanlig text så nivåerna skriver samma sak
 // ---- omskrivna underdelar (1.2, 3.2) ----
 const OM = las('dk4-omskrivet-och-bildspecar.md');
 const omskrivna = {};

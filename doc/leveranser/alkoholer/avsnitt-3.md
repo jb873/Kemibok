@@ -77,7 +77,7 @@ Då används en parentes:
 **HO–CH₂–CH(OH)–CH₂–OH**
 
 Läs den långsamt. Först en hydroxylgrupp. Sedan en kolatom med två väten. Sedan mittenkolatomen —
-och parentesen **(OH)** betyder att en hydroxylgrupp hänger av från just den. Sedan ytterligare en
+och parentesen (OH) betyder att en hydroxylgrupp hänger av från just den. Sedan ytterligare en
 kolatom med två väten, och sist en tredje hydroxylgrupp.
 
 Parentesen betyder alltså något annat än strecken. **Ett streck går vidare i kedjan. En parentes

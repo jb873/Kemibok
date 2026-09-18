@@ -25,3 +25,13 @@
 | 1 | gruppen som ändrar allt |
 | 2 | två molekyler, två helt olika öden |
 | 3 | när en grupp inte räcker |
+
+## Delkapitelkort på kapitelindex
+
+> Joachim 2026-09-18 (svar på byggrapporten), ordagrant.
+
+Gruppen som gör en alkohol till en alkohol — och vad som händer när molekylen får två eller tre av den.
+
+## Kapitel-intro på delkapitelindex
+
+En enda väteatom byts mot en syreatom och en väteatom. Det räcker för att en gas ska bli en vätska, och för att ett ämne ska gå från oblandbart med vatten till fullständigt blandbart.
