@@ -3,7 +3,7 @@
 
 **Sökväg:** `kapitel/organisk-kemi/delkapitel/livets-molekyler/avsnitt-4-kvavet-vitaminerna-och-mineralerna.html`
 **AVSNITT_ID:** `a4_kvavet-vitaminerna-och-mineralerna`
-**Underrubrik i hero:** det som inte blir koldioxid och vatten
+**Underrubrik i hero:** det kroppen inte kan göra
 
 ---
 
@@ -41,7 +41,7 @@ Fem grupper jämförda. Placering: tredje rubriken (dk6-bildspecar.md); ankare p
 
 ---
 
-# UNDERDEL A — Proteinnedbrytning ger ett problem som fett och socker inte har
+# UNDERDEL A — Kvävets problem
 
 ## Kärnpunkter (Enkel)
 
@@ -228,7 +228,7 @@ av hur mycket vatten det har råd att göra av med.
 
 ---
 
-# UNDERDEL B — Vitaminer är organiska molekyler som behövs i små mängder
+# UNDERDEL B — Vitaminer
 
 ## Kärnpunkter (Enkel)
 
@@ -390,7 +390,7 @@ en reaktion som drivs av ljus, vilket nästan ingenting annat i kroppen är.
 
 ---
 
-# UNDERDEL C — Mineralämnen är inte organiska
+# UNDERDEL C — Mineralämnen
 
 ## Kärnpunkter (Enkel)
 

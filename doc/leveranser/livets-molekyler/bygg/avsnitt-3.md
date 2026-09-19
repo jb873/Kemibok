@@ -3,7 +3,7 @@
 
 **Sökväg:** `kapitel/organisk-kemi/delkapitel/livets-molekyler/avsnitt-3-proteiner.html`
 **AVSNITT_ID:** `a3_proteiner`
-**Underrubrik i hero:** kedjor av aminosyror som viks till en form
+**Underrubrik i hero:** kedjan, formen och funktionen
 
 ---
 
@@ -71,7 +71,7 @@ Denaturering. Placering: första rubriken (dk6-bildspecar.md); ankare per nivå 
 
 ---
 
-# UNDERDEL A — En aminosyra har två funktionella grupper
+# UNDERDEL A — Aminosyran
 
 ## Kärnpunkter (Enkel)
 
@@ -245,7 +245,7 @@ aminosyror beter sig som salter snarare än som de organiska molekyler de är.
 
 ---
 
-# UNDERDEL B — Aminosyror kopplas ihop till kedjor
+# UNDERDEL B — Kedjan
 
 ## Kärnpunkter (Enkel)
 
@@ -411,7 +411,7 @@ på en tiondels sekund, varje gång, är förklaringen till att liv över huvud 
 
 ---
 
-# UNDERDEL C — Formen kan förstöras
+# UNDERDEL C — Denaturering
 
 ## Kärnpunkter (Enkel)
 

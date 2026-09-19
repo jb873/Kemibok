@@ -1,6 +1,6 @@
 // lib-kondensation.js – den gemensamma uppställningen för kondensationsbilderna: L9 esterbindning (Organiska syror och estrar),
 // M3 glykosidbindning och M7 peptidbindning (Livets molekyler). Ordern 2026-09-19: "M3, M7 och L9 ska ha identisk uppställning …
-// Samma antal steg, i samma ordning, med samma stegetiketter. Samma placering av de två utgångsämnena – det som lämnar OH till
+// Samma antal steg, i samma ordning, med samma stegetiketter (steg 3-rubriken undantagen – den namnger bindningen, Joachim 2026-09-19). Samma placering av de två utgångsämnena – det som lämnar OH till
 // vänster, det som lämnar H till höger. Samma gula markering på de delar som ska lämna. Samma ruta för vattenmolekylen, på samma
 // plats. Samma grön markering på den nya bindningen i sista steget. Samma bildbredd och samma höjd per steg."
 //

@@ -3,7 +3,7 @@
 
 **Sökväg:** `kapitel/organisk-kemi/delkapitel/livets-molekyler/avsnitt-1-kolhydrater.html`
 **AVSNITT_ID:** `a1_kolhydrater`
-**Underrubrik i hero:** sockerringar, ensamma och i kedjor
+**Underrubrik i hero:** samma byggsten, olika vända
 
 ---
 
@@ -71,7 +71,7 @@ Stärkelse och cellulosa. Placering: andra rubriken (dk6-bildspecar.md); ankare 
 
 ---
 
-# UNDERDEL A — En monosackarid är en ring av kol och syre
+# UNDERDEL A — Sockerringen
 
 ## Kärnpunkter (Enkel)
 
@@ -254,7 +254,7 @@ stilla är förutsättningen för att två olika former alls ska kunna finnas.
 
 ---
 
-# UNDERDEL B — Två sockerringar kan kopplas ihop
+# UNDERDEL B — Två ringar ihop
 
 ## Kärnpunkter (Enkel)
 
@@ -409,7 +409,7 @@ byggt av bindningar som borde brytas men som inte hinner.
 
 ---
 
-# UNDERDEL C — Stärkelse och cellulosa är samma byggsten vänd åt olika håll
+# UNDERDEL C — Stärkelse och cellulosa
 
 ## Kärnpunkter (Enkel)
 

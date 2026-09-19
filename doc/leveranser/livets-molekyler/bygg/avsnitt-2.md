@@ -3,7 +3,7 @@
 
 **Sökväg:** `kapitel/organisk-kemi/delkapitel/livets-molekyler/avsnitt-2-fetter.html`
 **AVSNITT_ID:** `a2_fetter`
-**Underrubrik i hero:** glycerol, tre fettsyror och en knyck som avgör
+**Underrubrik i hero:** varför smör är fast och olja flytande
 
 ---
 
@@ -41,7 +41,7 @@ Raka och knyckiga kedjor. Placering: andra rubriken (dk6-bildspecar.md); ankare 
 
 ---
 
-# UNDERDEL A — Ett fett är glycerol med tre fettsyror
+# UNDERDEL A — Fettets uppbyggnad
 
 ## Kärnpunkter (Enkel)
 
@@ -203,7 +203,7 @@ vattenskyende del är ofta viktigare än vilka atomer den innehåller.
 
 ---
 
-# UNDERDEL B — Mättat och omättat avgör om fettet är fast
+# UNDERDEL B — Mättat och omättat
 
 ## Kärnpunkter (Enkel)
 
@@ -388,7 +388,7 @@ kedjan fortsätter på. Samma bindning, två geometrier, två helt olika materia
 
 ---
 
-# UNDERDEL C — Fett byggs och bryts med samma reaktion
+# UNDERDEL C — Nedbrytning
 
 ## Kärnpunkter (Enkel)
 

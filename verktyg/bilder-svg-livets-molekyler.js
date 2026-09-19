@@ -462,7 +462,9 @@ const rapport = []; function kolla(n, ok, t) { rapport.push(`${ok ? 'OK ' : 'FEL
 { // gemensam uppställning M3 / M7 / L9
   const j = KOND.jamfor({ L9: fs.readFileSync(path.join(ROT, 'kapitel', 'organisk-kemi', 'delkapitel', 'syror-och-estrar', 'img', 'k5-l9.svg'), 'utf8'), M3: las('k6-m3.svg'), M7: las('k6-m7.svg') });
   for (const r of j.res) kolla(`uppställning ${r.namn}`, r.ok, `${r.storlek}; ${j.rader} mallrader (stegrubriker 1–2, "dessa två lämnar", vattenrutan med molekyl, pil och text, dubbelpilen) ordagrant på plats${r.saknas.length ? ' – SAKNAS: ' + r.saknas.length : ''}; steg: ${r.steg.join(' | ')}`);
-  const st3 = j.res.map(r => r.steg[2]); kolla('uppställning stegetiketter', new Set(st3).size === 1, `steg 3-etiketten: ${st3.join(' / ')}`);
+  // steg 3-rubriken får skilja sig (Joachim 2026-09-19, beslut b): bilden ska lära ut vad bindningen heter – esterbindning,
+  // glykosidbindning, peptidbindning. Likheten bärs av allt annat. Rapporteras, kontrolleras inte.
+  rapport.push(`--  uppställning steg 3-rubriker (avsiktligt olika): ${j.res.map(r => r.steg[2]).join(' / ')}`);
 }
 console.log(`${SK.antal} SVG skrivna till ${path.relative(ROT, UT)}`);
 console.log(rapport.join('\n'));
