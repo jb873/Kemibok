@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="960" height="480" role="img" aria-labelledby="t">
+  <title id="t">Två kedjor av fyra sockerringar. I den övre är alla ringar vända åt samma håll. I den nedre är varannan ring vänd ett halvt varv, och kedjan blir rakare</title>
+  <path d="M253 120 L234 87.09 L196 87.09 L177 120 L196 152.91 L234 152.91 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-kedja="starkelse" data-enhet="1"/>
+  <circle cx="234" cy="87.09" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="234" y="92.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="upp" data-kedja="starkelse" data-enhet="1">O</text>
+  <line x1="234" y1="156.91" x2="234" y2="172.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-kedja="starkelse" data-enhet="1"/>
+  <ellipse cx="234" cy="190.91" rx="26" ry="16" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="hydroxyl" data-gron="C2-OH" data-kedja="starkelse" data-enhet="1"/>
+  <text x="234" y="187.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-kedja="starkelse" data-enhet="1">O</text>
+  <line x1="234" y1="192.91" x2="234" y2="197.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-kedja="starkelse" data-enhet="1"/>
+  <text x="234" y="208.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-kedja="starkelse" data-enhet="1">H</text>
+  <line x1="196" y1="156.91" x2="196" y2="172.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-kedja="starkelse" data-enhet="1"/>
+  <text x="196" y="187.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-kedja="starkelse" data-enhet="1">O</text>
+  <line x1="196" y1="192.91" x2="196" y2="197.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-kedja="starkelse" data-enhet="1"/>
+  <text x="196" y="208.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-kedja="starkelse" data-enhet="1">H</text>
+  <line x1="173" y1="120" x2="157" y2="120" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C4-OH" data-kedja="starkelse" data-enhet="1"/>
+  <text x="147" y="125"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C4-OH" data-kedja="starkelse" data-enhet="1">O</text>
+  <line x1="137" y1="120" x2="132" y2="120" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C4-OH" data-kedja="starkelse" data-enhet="1"/>
+  <text x="125" y="124"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C4-OH" data-kedja="starkelse" data-enhet="1">H</text>
+  <line x1="193.2" y1="84.29" x2="184.8" y2="75.89" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-kedja="starkelse" data-enhet="1"/>
+  <text x="166.6" y="62.69" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-kedja="starkelse" data-enhet="1">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <line x1="257" y1="120" x2="287" y2="116" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-kedja="starkelse"/>
+  <line x1="311" y1="116" x2="341" y2="112" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-C" data-kedja="starkelse"/>
+  <text x="299" y="121"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-brygga="1" data-kedja="starkelse">O</text>
+  <path d="M421 112 L402 79.09 L364 79.09 L345 112 L364 144.91 L402 144.91 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-kedja="starkelse" data-enhet="2"/>
+  <circle cx="402" cy="79.09" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="402" y="84.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="upp" data-kedja="starkelse" data-enhet="2">O</text>
+  <line x1="402" y1="148.91" x2="402" y2="164.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-kedja="starkelse" data-enhet="2"/>
+  <ellipse cx="402" cy="182.91" rx="26" ry="16" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="hydroxyl" data-gron="C2-OH" data-kedja="starkelse" data-enhet="2"/>
+  <text x="402" y="179.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-kedja="starkelse" data-enhet="2">O</text>
+  <line x1="402" y1="184.91" x2="402" y2="189.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-kedja="starkelse" data-enhet="2"/>
+  <text x="402" y="200.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-kedja="starkelse" data-enhet="2">H</text>
+  <line x1="364" y1="148.91" x2="364" y2="164.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-kedja="starkelse" data-enhet="2"/>
+  <text x="364" y="179.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-kedja="starkelse" data-enhet="2">O</text>
+  <line x1="364" y1="184.91" x2="364" y2="189.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-kedja="starkelse" data-enhet="2"/>
+  <text x="364" y="200.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-kedja="starkelse" data-enhet="2">H</text>
+  <line x1="361.2" y1="76.29" x2="352.8" y2="67.89" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-kedja="starkelse" data-enhet="2"/>
+  <text x="334.6" y="54.69" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-kedja="starkelse" data-enhet="2">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <line x1="425" y1="112" x2="455" y2="112" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-kedja="starkelse"/>
+  <line x1="479" y1="112" x2="509" y2="112" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-C" data-kedja="starkelse"/>
+  <text x="467" y="117"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-brygga="1" data-kedja="starkelse">O</text>
+  <path d="M589 112 L570 79.09 L532 79.09 L513 112 L532 144.91 L570 144.91 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-kedja="starkelse" data-enhet="3"/>
+  <circle cx="570" cy="79.09" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="570" y="84.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="upp" data-kedja="starkelse" data-enhet="3">O</text>
+  <line x1="570" y1="148.91" x2="570" y2="164.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-kedja="starkelse" data-enhet="3"/>
+  <ellipse cx="570" cy="182.91" rx="26" ry="16" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="hydroxyl" data-gron="C2-OH" data-kedja="starkelse" data-enhet="3"/>
+  <text x="570" y="179.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-kedja="starkelse" data-enhet="3">O</text>
+  <line x1="570" y1="184.91" x2="570" y2="189.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-kedja="starkelse" data-enhet="3"/>
+  <text x="570" y="200.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-kedja="starkelse" data-enhet="3">H</text>
+  <line x1="532" y1="148.91" x2="532" y2="164.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-kedja="starkelse" data-enhet="3"/>
+  <text x="532" y="179.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-kedja="starkelse" data-enhet="3">O</text>
+  <line x1="532" y1="184.91" x2="532" y2="189.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-kedja="starkelse" data-enhet="3"/>
+  <text x="532" y="200.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-kedja="starkelse" data-enhet="3">H</text>
+  <line x1="529.2" y1="76.29" x2="520.8" y2="67.89" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-kedja="starkelse" data-enhet="3"/>
+  <text x="502.6" y="54.69" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-kedja="starkelse" data-enhet="3">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <line x1="593" y1="112" x2="623" y2="116" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-kedja="starkelse"/>
+  <line x1="647" y1="116" x2="677" y2="120" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-C" data-kedja="starkelse"/>
+  <text x="635" y="121"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-brygga="1" data-kedja="starkelse">O</text>
+  <path d="M757 120 L738 87.09 L700 87.09 L681 120 L700 152.91 L738 152.91 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-kedja="starkelse" data-enhet="4"/>
+  <circle cx="738" cy="87.09" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="738" y="92.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="upp" data-kedja="starkelse" data-enhet="4">O</text>
+  <line x1="761" y1="120" x2="777" y2="120" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C1-OH" data-kedja="starkelse" data-enhet="4"/>
+  <text x="787" y="125"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C1-OH" data-kedja="starkelse" data-enhet="4">O</text>
+  <line x1="797" y1="120" x2="802" y2="120" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C1-OH" data-kedja="starkelse" data-enhet="4"/>
+  <text x="809" y="124"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C1-OH" data-kedja="starkelse" data-enhet="4">H</text>
+  <line x1="738" y1="156.91" x2="738" y2="172.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-kedja="starkelse" data-enhet="4"/>
+  <ellipse cx="738" cy="190.91" rx="26" ry="16" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="hydroxyl" data-gron="C2-OH" data-kedja="starkelse" data-enhet="4"/>
+  <text x="738" y="187.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-kedja="starkelse" data-enhet="4">O</text>
+  <line x1="738" y1="192.91" x2="738" y2="197.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-kedja="starkelse" data-enhet="4"/>
+  <text x="738" y="208.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-kedja="starkelse" data-enhet="4">H</text>
+  <line x1="700" y1="156.91" x2="700" y2="172.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-kedja="starkelse" data-enhet="4"/>
+  <text x="700" y="187.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-kedja="starkelse" data-enhet="4">O</text>
+  <line x1="700" y1="192.91" x2="700" y2="197.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-kedja="starkelse" data-enhet="4"/>
+  <text x="700" y="208.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-kedja="starkelse" data-enhet="4">H</text>
+  <line x1="697.2" y1="84.29" x2="688.8" y2="75.89" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-kedja="starkelse" data-enhet="4"/>
+  <text x="670.6" y="62.69" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-kedja="starkelse" data-enhet="4">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <path d="M253 320 L234 287.09 L196 287.09 L177 320 L196 352.91 L234 352.91 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-kedja="cellulosa" data-enhet="1"/>
+  <circle cx="234" cy="287.09" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="234" y="292.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="upp" data-kedja="cellulosa" data-enhet="1">O</text>
+  <line x1="234" y1="356.91" x2="234" y2="372.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="1"/>
+  <ellipse cx="234" cy="390.91" rx="26" ry="16" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="hydroxyl" data-gron="C2-OH" data-kedja="cellulosa" data-enhet="1"/>
+  <text x="234" y="387.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="1">O</text>
+  <line x1="234" y1="392.91" x2="234" y2="397.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="1"/>
+  <text x="234" y="408.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="1">H</text>
+  <line x1="196" y1="356.91" x2="196" y2="372.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="1"/>
+  <text x="196" y="387.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="1">O</text>
+  <line x1="196" y1="392.91" x2="196" y2="397.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="1"/>
+  <text x="196" y="408.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="1">H</text>
+  <line x1="173" y1="320" x2="157" y2="320" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C4-OH" data-kedja="cellulosa" data-enhet="1"/>
+  <text x="147" y="325"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C4-OH" data-kedja="cellulosa" data-enhet="1">O</text>
+  <line x1="137" y1="320" x2="132" y2="320" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C4-OH" data-kedja="cellulosa" data-enhet="1"/>
+  <text x="125" y="324"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C4-OH" data-kedja="cellulosa" data-enhet="1">H</text>
+  <line x1="193.2" y1="284.29" x2="184.8" y2="275.89" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-kedja="cellulosa" data-enhet="1"/>
+  <text x="166.6" y="262.69" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-kedja="cellulosa" data-enhet="1">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <line x1="257" y1="320" x2="287" y2="320" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-kedja="cellulosa"/>
+  <line x1="311" y1="320" x2="341" y2="320" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-C" data-kedja="cellulosa"/>
+  <text x="299" y="325"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-brygga="1" data-kedja="cellulosa">O</text>
+  <path d="M421 320 L402 352.91 L364 352.91 L345 320 L364 287.09 L402 287.09 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-kedja="cellulosa" data-enhet="2"/>
+  <circle cx="402" cy="352.91" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="402" y="357.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="ner" data-kedja="cellulosa" data-enhet="2">O</text>
+  <line x1="402" y1="283.09" x2="402" y2="267.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="2"/>
+  <ellipse cx="402" cy="249.09" rx="26" ry="16" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="hydroxyl" data-gron="C2-OH" data-kedja="cellulosa" data-enhet="2"/>
+  <text x="402" y="262.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="2">O</text>
+  <line x1="402" y1="247.09" x2="402" y2="242.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="2"/>
+  <text x="402" y="239.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="2">H</text>
+  <line x1="364" y1="283.09" x2="364" y2="267.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="2"/>
+  <text x="364" y="262.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="2">O</text>
+  <line x1="364" y1="247.09" x2="364" y2="242.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="2"/>
+  <text x="364" y="239.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="2">H</text>
+  <line x1="361.2" y1="355.71" x2="352.8" y2="364.11" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-kedja="cellulosa" data-enhet="2"/>
+  <text x="334.6" y="387.31" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-kedja="cellulosa" data-enhet="2">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <line x1="425" y1="320" x2="455" y2="320" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-kedja="cellulosa"/>
+  <line x1="479" y1="320" x2="509" y2="320" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-C" data-kedja="cellulosa"/>
+  <text x="467" y="325"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-brygga="1" data-kedja="cellulosa">O</text>
+  <path d="M589 320 L570 287.09 L532 287.09 L513 320 L532 352.91 L570 352.91 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-kedja="cellulosa" data-enhet="3"/>
+  <circle cx="570" cy="287.09" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="570" y="292.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="upp" data-kedja="cellulosa" data-enhet="3">O</text>
+  <line x1="570" y1="356.91" x2="570" y2="372.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="3"/>
+  <ellipse cx="570" cy="390.91" rx="26" ry="16" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="hydroxyl" data-gron="C2-OH" data-kedja="cellulosa" data-enhet="3"/>
+  <text x="570" y="387.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="3">O</text>
+  <line x1="570" y1="392.91" x2="570" y2="397.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="3"/>
+  <text x="570" y="408.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="3">H</text>
+  <line x1="532" y1="356.91" x2="532" y2="372.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="3"/>
+  <text x="532" y="387.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="3">O</text>
+  <line x1="532" y1="392.91" x2="532" y2="397.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="3"/>
+  <text x="532" y="408.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="3">H</text>
+  <line x1="529.2" y1="284.29" x2="520.8" y2="275.89" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-kedja="cellulosa" data-enhet="3"/>
+  <text x="502.6" y="262.69" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-kedja="cellulosa" data-enhet="3">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <line x1="593" y1="320" x2="623" y2="320" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-kedja="cellulosa"/>
+  <line x1="647" y1="320" x2="677" y2="320" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-C" data-kedja="cellulosa"/>
+  <text x="635" y="325"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-brygga="1" data-kedja="cellulosa">O</text>
+  <path d="M757 320 L738 352.91 L700 352.91 L681 320 L700 287.09 L738 287.09 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-kedja="cellulosa" data-enhet="4"/>
+  <circle cx="738" cy="352.91" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="738" y="357.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="ner" data-kedja="cellulosa" data-enhet="4">O</text>
+  <line x1="761" y1="320" x2="777" y2="320" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C1-OH" data-kedja="cellulosa" data-enhet="4"/>
+  <text x="787" y="325"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C1-OH" data-kedja="cellulosa" data-enhet="4">O</text>
+  <line x1="797" y1="320" x2="802" y2="320" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C1-OH" data-kedja="cellulosa" data-enhet="4"/>
+  <text x="809" y="324"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C1-OH" data-kedja="cellulosa" data-enhet="4">H</text>
+  <line x1="738" y1="283.09" x2="738" y2="267.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="4"/>
+  <ellipse cx="738" cy="249.09" rx="26" ry="16" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="hydroxyl" data-gron="C2-OH" data-kedja="cellulosa" data-enhet="4"/>
+  <text x="738" y="262.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="4">O</text>
+  <line x1="738" y1="247.09" x2="738" y2="242.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="4"/>
+  <text x="738" y="239.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-kedja="cellulosa" data-enhet="4">H</text>
+  <line x1="700" y1="283.09" x2="700" y2="267.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="4"/>
+  <text x="700" y="262.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="4">O</text>
+  <line x1="700" y1="247.09" x2="700" y2="242.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="4"/>
+  <text x="700" y="239.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-kedja="cellulosa" data-enhet="4">H</text>
+  <line x1="697.2" y1="355.71" x2="688.8" y2="364.11" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-kedja="cellulosa" data-enhet="4"/>
+  <text x="670.6" y="387.31" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-kedja="cellulosa" data-enhet="4">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <text x="24" y="112" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold" text-anchor="start">stärkelse</text>
+  <text x="24" y="130" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start">alla ringar</text>
+  <text x="24" y="145" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start">åt samma håll</text>
+  <text x="24" y="312" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold" text-anchor="start">cellulosa</text>
+  <text x="24" y="330" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start">varannan</text>
+  <text x="24" y="345" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start">ring vänd</text>
+  <line x1="319" y1="404" x2="319" y2="440" stroke="#8A8A8A" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="4 4" data-vatebindning="1"/>
+  <line x1="487" y1="404" x2="487" y2="440" stroke="#8A8A8A" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="4 4" data-vatebindning="1"/>
+  <line x1="655" y1="404" x2="655" y2="440" stroke="#8A8A8A" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="4 4" data-vatebindning="1"/>
+  <text x="487" y="458"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" fill="#8A8A8A">kedjorna kan ligga tätt</text>
+  <text x="930" y="466"    font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="end" fill="#8A8A8A">röd = ringens syreatom · grön ring = samma OH-grupp i varje ring</text>
+</svg>

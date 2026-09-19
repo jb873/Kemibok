@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="960" height="440" role="img" aria-labelledby="t">
+  <title id="t">Till vänster sex raka fettsyrekedjor som ligger tätt packade med många attraktionslinjer mellan sig. Till höger sex kedjor med en knyck var, som inte kan packas lika tätt och har färre attraktionslinjer</title>
+  <rect x="40" y="40" width="430" height="270" fill="#f5f0e4" rx="8" stroke="#2d4a35" stroke-width="1.2" data-panel="mattade"/>
+  <path d="M70 84 L92 77 L114 84 L136 77 L158 84 L180 77 L202 84 L224 77 L246 84 L268 77 L290 84 L312 77 L334 84 L356 77 L378 84 L400 77 L422 84" fill="none" stroke="#3a3a3a" stroke-width="2.2" stroke-linejoin="round" data-kedja="1" data-panel="mattade"/>
+  <path d="M70 112 L92 105 L114 112 L136 105 L158 112 L180 105 L202 112 L224 105 L246 112 L268 105 L290 112 L312 105 L334 112 L356 105 L378 112 L400 105 L422 112" fill="none" stroke="#3a3a3a" stroke-width="2.2" stroke-linejoin="round" data-kedja="2" data-panel="mattade"/>
+  <path d="M70 140 L92 133 L114 140 L136 133 L158 140 L180 133 L202 140 L224 133 L246 140 L268 133 L290 140 L312 133 L334 140 L356 133 L378 140 L400 133 L422 140" fill="none" stroke="#3a3a3a" stroke-width="2.2" stroke-linejoin="round" data-kedja="3" data-panel="mattade"/>
+  <path d="M70 168 L92 161 L114 168 L136 161 L158 168 L180 161 L202 168 L224 161 L246 168 L268 161 L290 168 L312 161 L334 168 L356 161 L378 168 L400 161 L422 168" fill="none" stroke="#3a3a3a" stroke-width="2.2" stroke-linejoin="round" data-kedja="4" data-panel="mattade"/>
+  <path d="M70 196 L92 189 L114 196 L136 189 L158 196 L180 189 L202 196 L224 189 L246 196 L268 189 L290 196 L312 189 L334 196 L356 189 L378 196 L400 189 L422 196" fill="none" stroke="#3a3a3a" stroke-width="2.2" stroke-linejoin="round" data-kedja="5" data-panel="mattade"/>
+  <path d="M70 224 L92 217 L114 224 L136 217 L158 224 L180 217 L202 224 L224 217 L246 224 L268 217 L290 224 L312 217 L334 224 L356 217 L378 224 L400 217 L422 224" fill="none" stroke="#3a3a3a" stroke-width="2.2" stroke-linejoin="round" data-kedja="6" data-panel="mattade"/>
+  <line x1="92" y1="81" x2="92" y2="101" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="136" y1="81" x2="136" y2="101" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="180" y1="81" x2="180" y2="101" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="224" y1="81" x2="224" y2="101" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="268" y1="81" x2="268" y2="101" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="312" y1="81" x2="312" y2="101" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="356" y1="81" x2="356" y2="101" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="400" y1="81" x2="400" y2="101" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="92" y1="109" x2="92" y2="129" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="136" y1="109" x2="136" y2="129" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="180" y1="109" x2="180" y2="129" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="224" y1="109" x2="224" y2="129" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="268" y1="109" x2="268" y2="129" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="312" y1="109" x2="312" y2="129" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="356" y1="109" x2="356" y2="129" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="400" y1="109" x2="400" y2="129" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="92" y1="137" x2="92" y2="157" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="136" y1="137" x2="136" y2="157" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="180" y1="137" x2="180" y2="157" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="224" y1="137" x2="224" y2="157" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="268" y1="137" x2="268" y2="157" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="312" y1="137" x2="312" y2="157" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="356" y1="137" x2="356" y2="157" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="400" y1="137" x2="400" y2="157" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="92" y1="165" x2="92" y2="185" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="136" y1="165" x2="136" y2="185" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="180" y1="165" x2="180" y2="185" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="224" y1="165" x2="224" y2="185" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="268" y1="165" x2="268" y2="185" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="312" y1="165" x2="312" y2="185" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="356" y1="165" x2="356" y2="185" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="400" y1="165" x2="400" y2="185" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="92" y1="193" x2="92" y2="213" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="136" y1="193" x2="136" y2="213" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="180" y1="193" x2="180" y2="213" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="224" y1="193" x2="224" y2="213" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="268" y1="193" x2="268" y2="213" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="312" y1="193" x2="312" y2="213" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="356" y1="193" x2="356" y2="213" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <line x1="400" y1="193" x2="400" y2="213" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="mattade"/>
+  <rect x="490" y="40" width="430" height="270" fill="#f5f0e4" rx="8" stroke="#2d4a35" stroke-width="1.2" data-panel="omattade"/>
+  <line x1="691" y1="66" x2="701" y2="66" stroke="#5a9668" stroke-width="2.2" data-dubbel="1" data-panel="omattade"/>
+  <path d="M520 60 L542 53 L564 60 L586 53 L608 60 L630 53 L652 60 L674 53 L696 60 L719.09 60.28 L737.77 73.84 L760.85 74.12 L779.53 87.68 L802.62 87.96 L821.3 101.52 L844.38 101.8 L863.07 115.36" fill="none" stroke="#3a3a3a" stroke-width="2.2" stroke-linejoin="round" data-kedja="1" data-panel="omattade"/>
+  <line x1="669" y1="88" x2="679" y2="88" stroke="#5a9668" stroke-width="2.2" data-dubbel="1" data-panel="omattade"/>
+  <path d="M520 89 L542 82 L564 89 L586 82 L608 89 L630 82 L652 89 L674 82 L692.68 95.57 L715.77 95.84 L734.45 109.41 L757.53 109.68 L776.21 123.25 L799.3 123.52 L817.98 137.09 L841.07 137.36 L859.75 150.93" fill="none" stroke="#3a3a3a" stroke-width="2.2" stroke-linejoin="round" data-kedja="2" data-panel="omattade"/>
+  <line x1="647" y1="124" x2="657" y2="124" stroke="#5a9668" stroke-width="2.2" data-dubbel="1" data-panel="omattade"/>
+  <path d="M520 118 L542 111 L564 118 L586 111 L608 118 L630 111 L652 118 L675.09 118.28 L693.77 131.84 L716.85 132.12 L735.53 145.68 L758.62 145.96 L777.3 159.52 L800.38 159.8 L819.07 173.36 L842.15 173.64 L860.83 187.2" fill="none" stroke="#3a3a3a" stroke-width="2.2" stroke-linejoin="round" data-kedja="3" data-panel="omattade"/>
+  <line x1="625" y1="146" x2="635" y2="146" stroke="#5a9668" stroke-width="2.2" data-dubbel="1" data-panel="omattade"/>
+  <path d="M520 147 L542 140 L564 147 L586 140 L608 147 L630 140 L648.68 153.57 L671.77 153.84 L690.45 167.41 L713.53 167.68 L732.21 181.25 L755.3 181.52 L773.98 195.09 L797.07 195.36 L815.75 208.93 L838.83 209.2 L857.51 222.77" fill="none" stroke="#3a3a3a" stroke-width="2.2" stroke-linejoin="round" data-kedja="4" data-panel="omattade"/>
+  <line x1="603" y1="182" x2="613" y2="182" stroke="#5a9668" stroke-width="2.2" data-dubbel="1" data-panel="omattade"/>
+  <path d="M520 176 L542 169 L564 176 L586 169 L608 176 L631.09 176.28 L649.77 189.84 L672.85 190.12 L691.53 203.68 L714.62 203.96 L733.3 217.52 L756.38 217.8 L775.07 231.36 L798.15 231.64 L816.83 245.2 L839.92 245.48 L858.6 259.05" fill="none" stroke="#3a3a3a" stroke-width="2.2" stroke-linejoin="round" data-kedja="5" data-panel="omattade"/>
+  <line x1="581" y1="204" x2="591" y2="204" stroke="#5a9668" stroke-width="2.2" data-dubbel="1" data-panel="omattade"/>
+  <path d="M520 205 L542 198 L564 205 L586 198 L604.68 211.57 L627.77 211.84 L646.45 225.41 L669.53 225.68 L688.21 239.25 L711.3 239.52 L729.98 253.09 L753.07 253.36 L771.75 266.93 L794.83 267.2 L813.51 280.77 L836.6 281.05 L855.28 294.61" fill="none" stroke="#3a3a3a" stroke-width="2.2" stroke-linejoin="round" data-kedja="6" data-panel="omattade"/>
+  <line x1="542" y1="57" x2="542" y2="78" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <line x1="586" y1="57" x2="586" y2="78" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <line x1="630" y1="57" x2="630" y2="78" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <line x1="674" y1="57" x2="674" y2="78" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <line x1="542" y1="86" x2="542" y2="107" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <line x1="586" y1="86" x2="586" y2="107" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <line x1="630" y1="86" x2="630" y2="107" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <line x1="542" y1="115" x2="542" y2="136" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <line x1="586" y1="115" x2="586" y2="136" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <line x1="630" y1="115" x2="630" y2="136" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <line x1="542" y1="144" x2="542" y2="165" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <line x1="586" y1="144" x2="586" y2="165" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <line x1="542" y1="173" x2="542" y2="194" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <line x1="586" y1="173" x2="586" y2="194" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" data-vdw="1" data-panel="omattade"/>
+  <text x="255" y="340" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold">mättade</text>
+  <text x="255" y="360" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">raka kedjor, packas tätt</text>
+  <text x="255" y="384"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#8A8A8A">fast vid rumstemperatur</text>
+  <text x="705" y="340" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold">omättade</text>
+  <text x="705" y="360" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">knyckiga kedjor, packas glest</text>
+  <text x="705" y="384"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#a8c4d8">flytande vid rumstemperatur</text>
+  <text x="480" y="426" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">fler kontaktpunkter betyder starkare attraktion och högre smältpunkt</text>
+</svg>

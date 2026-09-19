@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 350" width="940" height="350" role="img" aria-labelledby="t">
+  <title id="t">En tabell med fem grupper av näringsämnen. Kolhydrater, fetter och proteiner byggs av enheter med varsin bindningstyp. Vitaminer varierar. Mineralämnen består av enskilda atomer, har inga bindningar och innehåller inget kol</title>
+  <rect x="40" y="30" width="860" height="40" fill="#5a9668" data-del="rubrikrad"/>
+  <text x="54" y="56"    font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="start">Grupp</text>
+  <text x="254" y="56"    font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="start">Byggd av</text>
+  <text x="484" y="56"    font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="start">Bindning</text>
+  <text x="714" y="56"    font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="start">Innehåller kol</text>
+  <line x1="40" y1="110" x2="900" y2="110" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="54" y="96" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="1" data-kolumn="1">Kolhydrater</text>
+  <text x="254" y="96" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="1" data-kolumn="2">sockerenheter</text>
+  <text x="484" y="96" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="1" data-kolumn="3">glykosidbindning</text>
+  <text x="714" y="96" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="1" data-kolumn="4">ja</text>
+  <line x1="40" y1="150" x2="900" y2="150" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="54" y="136" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="2" data-kolumn="1">Fetter</text>
+  <text x="254" y="136" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="2" data-kolumn="2">glycerol + fettsyror</text>
+  <text x="484" y="136" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="2" data-kolumn="3">esterbindning</text>
+  <text x="714" y="136" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="2" data-kolumn="4">ja</text>
+  <line x1="40" y1="190" x2="900" y2="190" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="54" y="176" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="3" data-kolumn="1">Proteiner</text>
+  <text x="254" y="176" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="3" data-kolumn="2">aminosyror</text>
+  <text x="484" y="176" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="3" data-kolumn="3">peptidbindning</text>
+  <text x="714" y="176" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="3" data-kolumn="4">ja</text>
+  <line x1="40" y1="230" x2="900" y2="230" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="54" y="216" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="4" data-kolumn="1">Vitaminer</text>
+  <text x="254" y="216" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="4" data-kolumn="2">varierande</text>
+  <text x="484" y="216" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="4" data-kolumn="3">varierande</text>
+  <text x="714" y="216" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="4" data-kolumn="4">ja</text>
+  <rect x="40" y="230" width="860" height="40" fill="#8A8A8A" fill-opacity="0.22" data-del="mineralrad"/>
+  <line x1="40" y1="270" x2="900" y2="270" stroke="#2d4a35" stroke-width="0.8" stroke-linecap="round" />
+  <text x="54" y="256" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start"  data-rad="5" data-kolumn="1">Mineralämnen</text>
+  <text x="254" y="256" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start" font-weight="bold" data-rad="5" data-kolumn="2">enskilda atomer</text>
+  <text x="484" y="256" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start" font-weight="bold" data-rad="5" data-kolumn="3">inga</text>
+  <text x="714" y="256" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="start" font-weight="bold" data-rad="5" data-kolumn="4">nej</text>
+  <line x1="474" y1="74" x2="474" y2="186" stroke="#5a9668" stroke-width="2.4" stroke-linecap="round" data-del="kondensation"/>
+  <text x="482" y="202" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="1"></text>
+  <line x1="40" y1="30" x2="40" y2="270" stroke="#2d4a35" stroke-width="1" stroke-linecap="round" />
+  <line x1="900" y1="30" x2="900" y2="270" stroke="#2d4a35" stroke-width="1" stroke-linecap="round" />
+  <text x="470" y="300" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">de fyra översta byggs och bryts ner</text>
+  <text x="470" y="322" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">den nedersta ska bara finnas på plats</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="960" height="400" role="img" aria-labelledby="t">
+  <title id="t">Tre rader som visar hur kolhydrat, fett och protein bryts ner. De två första ger koldioxid och vatten. Proteinet innehåller dessutom kväve och ger därför också urea, som lämnar med urinen</title>
+  <text x="60" y="85" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold" text-anchor="start" data-rad="1">kolhydrat</text>
+  <circle cx="200" cy="80" r="12" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atomslag="C" data-rad="1"/>
+  <text x="200" y="85"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#fff" data-rad="1">C</text>
+  <circle cx="234" cy="80" r="12" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atomslag="H" data-rad="1"/>
+  <text x="234" y="85"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2d4a35" data-rad="1">H</text>
+  <circle cx="268" cy="80" r="12" fill="#C0392B" stroke="#2d4a35" stroke-width="1.2" data-atomslag="O" data-rad="1"/>
+  <text x="268" y="85"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#fff" data-rad="1">O</text>
+  <line x1="340" y1="68" x2="412" y2="68" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-pil="co2" data-rad="1"/>
+  <polygon points="420,68 412,72 412,64" fill="#2d4a35" data-pil="co2" data-rad="1"/>
+  <text x="432" y="73" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" text-anchor="start" data-rad="1"><tspan>C</tspan><tspan fill="#C0392B" data-o="1">O</tspan><tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">​</tspan></text>
+  <line x1="340" y1="92" x2="412" y2="92" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-pil="h2o" data-rad="1"/>
+  <polygon points="420,92 412,96 412,88" fill="#2d4a35" data-pil="h2o" data-rad="1"/>
+  <text x="432" y="97" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" text-anchor="start" data-rad="1"><tspan>H</tspan><tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em" fill="#C0392B" data-o="1">O</tspan></text>
+  <text x="60" y="185" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold" text-anchor="start" data-rad="2">fett</text>
+  <circle cx="200" cy="180" r="12" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atomslag="C" data-rad="2"/>
+  <text x="200" y="185"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#fff" data-rad="2">C</text>
+  <circle cx="234" cy="180" r="12" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atomslag="H" data-rad="2"/>
+  <text x="234" y="185"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2d4a35" data-rad="2">H</text>
+  <circle cx="268" cy="180" r="12" fill="#C0392B" stroke="#2d4a35" stroke-width="1.2" data-atomslag="O" data-rad="2"/>
+  <text x="268" y="185"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#fff" data-rad="2">O</text>
+  <line x1="340" y1="168" x2="412" y2="168" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-pil="co2" data-rad="2"/>
+  <polygon points="420,168 412,172 412,164" fill="#2d4a35" data-pil="co2" data-rad="2"/>
+  <text x="432" y="173" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" text-anchor="start" data-rad="2"><tspan>C</tspan><tspan fill="#C0392B" data-o="1">O</tspan><tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">​</tspan></text>
+  <line x1="340" y1="192" x2="412" y2="192" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-pil="h2o" data-rad="2"/>
+  <polygon points="420,192 412,196 412,188" fill="#2d4a35" data-pil="h2o" data-rad="2"/>
+  <text x="432" y="197" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" text-anchor="start" data-rad="2"><tspan>H</tspan><tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em" fill="#C0392B" data-o="1">O</tspan></text>
+  <text x="60" y="285" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold" text-anchor="start" data-rad="3">protein</text>
+  <circle cx="200" cy="280" r="12" fill="#3a3a3a" stroke="#2d4a35" stroke-width="1.2" data-atomslag="C" data-rad="3"/>
+  <text x="200" y="285"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#fff" data-rad="3">C</text>
+  <circle cx="234" cy="280" r="12" fill="#f5f0e4" stroke="#2d4a35" stroke-width="1.2" data-atomslag="H" data-rad="3"/>
+  <text x="234" y="285"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2d4a35" data-rad="3">H</text>
+  <circle cx="268" cy="280" r="12" fill="#C0392B" stroke="#2d4a35" stroke-width="1.2" data-atomslag="O" data-rad="3"/>
+  <text x="268" y="285"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#fff" data-rad="3">O</text>
+  <circle cx="302" cy="280" r="12" fill="#3D6BA8" stroke="#2d4a35" stroke-width="1.2" data-atomslag="N" data-rad="3"/>
+  <text x="302" y="285"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#fff" data-rad="3">N</text>
+  <line x1="340" y1="268" x2="412" y2="268" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-pil="co2" data-rad="3"/>
+  <polygon points="420,268 412,272 412,264" fill="#2d4a35" data-pil="co2" data-rad="3"/>
+  <text x="432" y="273" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" text-anchor="start" data-rad="3"><tspan>C</tspan><tspan fill="#C0392B" data-o="1">O</tspan><tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">​</tspan></text>
+  <line x1="340" y1="292" x2="412" y2="292" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-pil="h2o" data-rad="3"/>
+  <polygon points="420,292 412,296 412,288" fill="#2d4a35" data-pil="h2o" data-rad="3"/>
+  <text x="432" y="297" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" text-anchor="start" data-rad="3"><tspan>H</tspan><tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em" fill="#C0392B" data-o="1">O</tspan></text>
+  <line x1="340" y1="320" x2="466.4" y2="320" stroke="#5a9668" stroke-width="3.4" stroke-linecap="round" data-pil="urea" data-rad="3"/>
+  <polygon points="480,320 466.4,326.8 466.4,313.2" fill="#5a9668" data-pil="urea" data-rad="3"/>
+  <text x="492" y="325" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="bold" text-anchor="start" data-rad="3">urea, <tspan>C</tspan><tspan fill="#C0392B" data-o="1">O</tspan><tspan>(</tspan><tspan fill="#3D6BA8" data-n="1">N</tspan><tspan>H</tspan><tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">)</tspan><tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em">​</tspan></text>
+  <text x="492" y="343" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start" data-rad="3">lämnar med urinen</text>
+  <line x1="302" y1="292" x2="290" y2="330" stroke="#8A8A8A" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3"/>
+  <text x="200" y="346" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic" text-anchor="start">kan varken bli koldioxid eller vatten</text>
+  <text x="480" y="386" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">kvävet behöver en egen väg ut</text>
+</svg>

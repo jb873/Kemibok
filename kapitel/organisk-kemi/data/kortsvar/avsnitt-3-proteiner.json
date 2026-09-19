@@ -1,0 +1,134 @@
+{
+  "avsnitt": 3,
+  "titel": "Proteiner är kedjor av aminosyror",
+  "delkapitel": "livets-molekyler",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 3 (Proteiner är kedjor av aminosyror), delkapitel Livets molekyler, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/livets-molekyler/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k3-s1",
+      "typ": "tal",
+      "fraga": "Hur många olika aminosyror används för att bygga proteiner?",
+      "svar": 20,
+      "forklaring": "Alla har samma grundstruktur. Det enda som skiljer dem är sidokedjan."
+    },
+    {
+      "id": "k3-s2",
+      "typ": "tal",
+      "fraga": "Hur många bindningar går ut från kolatomen i mitten av en aminosyra?",
+      "svar": 4,
+      "forklaring": "En till karboxylgruppen, en till aminogruppen, en till en väteatom och en till sidokedjan."
+    },
+    {
+      "id": "k3-s3",
+      "typ": "ord",
+      "fraga": "Vilket atomslag skiljer proteiner från kolhydrater och fetter?",
+      "svar": [
+        "kväve"
+      ],
+      "forklaring": "Det sitter i aminogruppen. Ibland finns också svavel."
+    },
+    {
+      "id": "k3-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas gruppen –\\(\\ce{NH2}\\)?",
+      "svar": [
+        "aminogrupp"
+      ],
+      "forklaring": "Den kan ta upp en vätejon och fungerar därför basiskt."
+    },
+    {
+      "id": "k3-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas bindningen mellan två aminosyror?",
+      "svar": [
+        "peptidbindning"
+      ],
+      "forklaring": "Den bildas mellan karboxylgruppens kolatom och aminogruppens kväveatom."
+    },
+    {
+      "id": "k3-s6",
+      "typ": "ord",
+      "fraga": "Vad kallas det när ett protein förlorar sin veckade form?",
+      "svar": [
+        "denaturering"
+      ],
+      "forklaring": "Kedjan är hel — det är formen som går sönder."
+    },
+    {
+      "id": "k3-s7",
+      "typ": "formel",
+      "fraga": "Skriv formeln för aminogruppen.",
+      "svar": [
+        "NH2"
+      ],
+      "forklaring": "En kväveatom med två väteatomer. Kvävet kan ta upp en vätejon till."
+    },
+    {
+      "id": "k3-s8",
+      "typ": "flerval",
+      "fraga": "Varför kan aminosyror kopplas ihop till kedjor?",
+      "alternativ": [
+        "de är laddade",
+        "de har en sur och en basisk grupp som passar ihop",
+        "de innehåller kväve",
+        "de är små"
+      ],
+      "svar": 1,
+      "forklaring": "Karboxylgruppen kan avge en vätejon, aminogruppen kan ta upp en."
+    },
+    {
+      "id": "k3-s9",
+      "typ": "flerval",
+      "fraga": "Vad avgör vilket protein en kedja blir?",
+      "alternativ": [
+        "hur lång den är",
+        "ordningen mellan aminosyrorna",
+        "hur många kväveatomer den har",
+        "var den bildas"
+      ],
+      "svar": 1,
+      "forklaring": "Samma aminosyror i en annan ordning ger ett helt annat protein."
+    },
+    {
+      "id": "k3-s10",
+      "typ": "flerval",
+      "fraga": "Vad styr hur en proteinkedja viks?",
+      "alternativ": [
+        "temperaturen",
+        "sidokedjorna",
+        "peptidbindningarna",
+        "antalet aminosyror"
+      ],
+      "svar": 1,
+      "forklaring": "Några dras till vatten, andra undviker det, och några bildar bindningar med varandra."
+    },
+    {
+      "id": "k3-s11",
+      "typ": "flerval",
+      "fraga": "Vad händer med peptidkedjan vid denaturering?",
+      "alternativ": [
+        "den klipps av",
+        "den förblir hel",
+        "den blir kortare",
+        "den byter ordning"
+      ],
+      "svar": 1,
+      "forklaring": "Det är de svaga bindningarna som håller veckningen som ger vika, inte peptidbindningarna."
+    },
+    {
+      "id": "k3-s12",
+      "typ": "flerval",
+      "fraga": "Hur använder kroppen denaturering med flit?",
+      "alternativ": [
+        "i levern",
+        "i magsäcken, med saltsyra",
+        "i njurarna",
+        "i blodet"
+      ],
+      "svar": 1,
+      "forklaring": "Saltsyran vecklar upp proteinerna i maten så att enzymerna kommer åt att bryta kedjan. ---"
+    }
+  ]
+}

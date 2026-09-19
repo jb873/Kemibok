@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetter är estrar – Livets molekyler – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Livets molekyler</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">2. Fetter är estrar</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 2</span>
+      <h1>Fetter är estrar</h1>
+      <p class="subtitel">— glycerol, tre fettsyror och en knyck som avgör —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">Ett fett är glycerol med tre fettsyror</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Mättat och omättat avgör om fettet är fast</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Fett byggs och bryts med samma reaktion</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-fetter">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — Ett fett är glycerol med tre fettsyror ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Hur många esterbindningar finns i en fettmolekyl, och varför just så många?</li>
+              <li>Hur många vattenmolekyler lämnar när ett fett bildas?</li>
+              <li>Hur många kolatomer har en vanlig fettsyra?</li>
+              <li>Är de tre fettsyrorna i ett fett likadana?</li>
+              <li>Vilken del av fettmolekylen är alltid densamma?</li>
+            </ul>
+          </div>
+
+          <p>Fetter kan se väldigt olika ut.</p>
+          <p>Smör är fast. Olivolja är flytande. Ändå är de byggda efter exakt samma grundmodell: <strong>glycerol och tre fettsyror</strong>, sammankopplade med esterbindningar.</p>
+          <p>Så varför är det ena fast och det andra flytande?</p>
+          <p>Svaret finns i fettsyrorna — i hur långa de är och om de har dubbelbindningar.</p>
+          <h2>Repetition: så bildas en ester</h2>
+          <p>I förra delkapitlet såg du hur en <strong>alkohol</strong> och en <strong>organisk syra</strong> kan reagera.</p>
+          <p>Syran lämnar en OH-grupp. Alkoholen lämnar en väteatom. Tillsammans blir det vatten, och kvar blir en <strong>esterbindning</strong>.</p>
+          <h2>Ett fett är tre estrar på en gång</h2>
+          <p>Ett fett bildas på precis samma sätt. Men tre gånger.</p>
+          <p>Alkoholen är <strong>glycerol</strong>, och den har <strong>tre hydroxylgrupper</strong>.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna de gröna ringarna vid glycerolen.</li>
+              <li>Är de tre fettsyrorna lika långa?</li>
+              <li>En av dem ser annorlunda ut. Vilken, och hur?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k6-m5.svg" alt="En fettmolekyl. Till vänster glycerol med tre bindningar ut, till höger tre fettsyror av olika längd. Den mellersta har en knyck. De tre esterbindningarna är inringade.">
+            <figcaption>Ett fett är glycerol plus tre fettsyror. De tre är sällan lika.</figcaption>
+          </figure>
+          <p>Varje hydroxylgrupp kan reagera med karboxylgruppen hos en <strong>fettsyra</strong>.</p>
+          <p>Tre grupper, tre fettsyror, <strong>tre esterbindningar</strong>. Och sammanlagt tre vattenmolekyler som lämnar.</p>
+          <p>En sådan molekyl kallas också <strong>triglycerid</strong>. <em>Tri-</em> betyder tre, precis som i propantriol.</p>
+          <h2>Fettsyrorna är långa kolkedjor</h2>
+          <p>En <strong>fettsyra</strong> är en lång kolvätekedja med en <strong>karboxylgrupp</strong> i ena änden.</p>
+          <p>Kedjorna kan ha ungefär fyra till tjugofyra kolatomer. I vanliga fetter är tolv till tjugofyra det vanligaste.</p>
+          <p>De tre fettsyrorna i en fettmolekyl behöver <strong>inte vara likadana</strong>. En och samma triglycerid kan ha kedjor av olika längd och med olika många dubbelbindningar.</p>
+          <p>Det är därför det finns så oerhört många olika fetter, trots att alla följer samma modell.</p>
+          <h2>Egenskaperna kommer från fettsyrorna</h2>
+          <p>Glyceroldelen ser likadan ut i alla fetter. Alltid tre kolatomer, alltid tre bindningar ut.</p>
+          <p>Allt som varierar sitter i <strong>fettsyrorna</strong>.</p>
+          <p>En fettsyra kan vara kort eller lång. Kedjan kan ha bara enkelbindningar, eller en eller flera dubbelbindningar.</p>
+          <p>Det påverkar molekylens <strong>form</strong>. Och formen avgör hur nära andra fettmolekyler den kan komma.</p>
+          <p>Två fetter kan alltså ha exakt samma glyceroldel och ändå vara helt olika ämnen.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Hur många esterbindningar finns i en fettmolekyl, och varför just så många?</li>
+              <li>Hur många vattenmolekyler lämnar när ett fett bildas?</li>
+              <li>Hur många kolatomer har en vanlig fettsyra?</li>
+              <li>Är de tre fettsyrorna i ett fett likadana?</li>
+              <li>Vilken del av fettmolekylen är alltid densamma?</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Fetter kan se väldigt olika ut. Smör är fast, olivolja flytande. Ändå är de byggda enligt samma princip: <strong>glycerol och tre fettsyror</strong>, sammankopplade med esterbindningar.</p>
+          <p>För att förstå skillnaden måste vi titta på fettsyrorna. Det är deras längd och deras dubbelbindningar som avgör hur nära molekylerna kan komma varandra — och därmed om fettet är fast eller flytande.</p>
+          <h2>Fett innehåller tre esterbindningar</h2>
+          <p>I förra delkapitlet såg du hur en alkohol och en organisk syra bildar en <strong>ester</strong>, samtidigt som en vattenmolekyl lämnar.</p>
+          <p>Ett fett bildas på exakt samma sätt. Alkoholen är <strong>glycerol</strong>, som har tre hydroxylgrupper. Varje grupp kan reagera med karboxylgruppen hos en <strong>fettsyra</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k6-m5.svg" alt="En fettmolekyl. Till vänster glycerol med tre bindningar ut, till höger tre fettsyror av olika längd. Den mellersta har en knyck. De tre esterbindningarna är inringade.">
+            <figcaption>Glyceroldelen är alltid densamma. Det är fettsyrorna som varierar.</figcaption>
+          </figure>
+          <p>Resultatet blir en molekyl med <strong>tre esterbindningar</strong>, och sammanlagt <strong>tre vattenmolekyler</strong> lämnar.</p>
+          <p>En sådan fettmolekyl kallas också <strong>triglycerid</strong>.</p>
+          <h2>Fettsyrorna är långa kolkedjor</h2>
+          <p>En fettsyra är en lång kolvätekedja med en <strong>karboxylgrupp</strong> i ena änden.</p>
+          <p>Kedjorna kan innehålla ungefär fyra till tjugofyra kolatomer. I vanliga fetter är <strong>tolv till tjugofyra</strong> det vanligaste.</p>
+          <p>De tre fettsyrorna i en fettmolekyl behöver inte vara likadana. En triglycerid kan innehålla kedjor med olika längd och olika antal dubbelbindningar.</p>
+          <p>Det är därför det finns så många olika fetter trots att alla följer samma grundmodell.</p>
+          <h2>Egenskaperna kommer från fettsyrorna</h2>
+          <p>Glyceroldelen är densamma i alla triglycerider. Allt som varierar sitter i <strong>fettsyrorna</strong>.</p>
+          <p>En fettsyra kan vara kortare eller längre, och kedjan kan ha bara enkelbindningar eller en eller flera dubbelbindningar.</p>
+          <p>Det påverkar molekylens <strong>form</strong>, och formen avgör hur nära andra fettmolekyler den kommer.</p>
+          <p>Två fetter kan alltså ha samma glyceroldel och ändå vara helt olika ämnen.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>En fettmolekyl har en vattenvänlig ände och en lång vattenskyende svans</h2>
+          <p>Standardtexten beskriver fettet som glycerol plus tre fettsyror. Det är korrekt, men det säger inget om hur molekylen beter sig i vatten — och kroppen är full av vatten.</p>
+          <p>Ta en ensam <strong>fettsyra</strong> först. Den har en karboxylgrupp i ena änden och en lång kolkedja i den andra.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k6-m5.svg" alt="En fettmolekyl. Till vänster glycerol med tre bindningar ut, till höger tre fettsyror av olika längd. Den mellersta har en knyck. De tre esterbindningarna är inringade.">
+            <figcaption>Glyceroldelen är alltid densamma. Det är fettsyrorna som varierar.</figcaption>
+          </figure>
+          <p>Karboxylgruppen är <strong>vattenvänlig</strong>, av samma skäl som hydroxylgruppen i alkoholerna.</p>
+          <p>Kolkedjan är <strong>vattenskyende</strong>, precis som ett kolväte.</p>
+          <p>Det är alltså samma dragkamp du mötte i delkapitel 4 — men här är den extrem. Hos etanol var kolvätedelen två kolatomer. Hos en fettsyra kan den vara tjugo.</p>
+          <p>Kolkedjan vinner med bred marginal, och fettsyror löser sig därför inte i vatten.</p>
+          <p>Men det hindrar dem inte från att ordna sig. Lägger man fettsyror i vatten vänder de alla sina karboxylgrupper mot vattnet och sina kedjor bort från det. De bildar små klot med kedjorna inåt och grupperna utåt.</p>
+          <p>Det är den principen som gör <strong>tvål</strong> möjlig. Tvål är salter av fettsyror, och en tvållösning är full av sådana klot — som kan fånga in fett i mitten och transportera bort det i vattnet.</p>
+          <p>I en <strong>triglycerid</strong> finns däremot ingen fri karboxylgrupp kvar. Alla tre är upptagna i esterbindningar. Molekylen är därför helt vattenskyende, och det är därför olja och vatten skiljer sig i två skikt.</p>
+          <p><strong>Om modellen.</strong> Standardnivån beskriver fettet som en byggnad — glycerol plus tre delar. Det säger vad det består av men inte hur det uppför sig. Att en molekyl har en vattenvänlig och en vattenskyende del är ofta viktigare än vilka atomer den innehåller.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Mättat och omättat avgör om fettet är fast ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad kännetecknar en mättad fettsyra?</li>
+              <li>Varför får en omättad fettsyra en knyck?</li>
+              <li>Vad händer med packningen när kedjorna är knyckiga?</li>
+              <li>Vad är skillnaden mellan enkelomättat och fleromättat?</li>
+              <li>Varför är vegetabiliskt och animaliskt ingen kemisk indelning?</li>
+            </ul>
+          </div>
+
+          <h2>Mättade fettsyror är raka</h2>
+          <p>En <strong>mättad</strong> fettsyra har bara enkelbindningar mellan kolatomerna.</p>
+          <p>Kedjan kan då ligga i en jämn sicksack — i praktiken rak.</p>
+          <h2>Raka kedjor packas tätt</h2>
+          <p>Tänk dig många raka kedjor bredvid varandra. De kan ligga tätt, som spagetti i en oöppnad förpackning.</p>
+          <p>När de ligger nära uppstår svaga attraktionskrafter mellan dem. De kallas <strong>van der Waals-krafter</strong>.</p>
+          <p>Varje enskild kraft är svag. Men en lång kedja har <strong>många</strong> kontaktpunkter längs hela sin längd, och summan blir stor.</p>
+          <p>Därför krävs mycket energi för att skilja molekylerna åt.</p>
+          <p>Fetter med mycket mättade fettsyror har alltså hög smältpunkt. De är <strong>fasta</strong> vid rumstemperatur.</p>
+          <h2>Omättade fettsyror har en knyck</h2>
+          <p>En <strong>omättad</strong> fettsyra har minst en <strong>dubbelbindning</strong>.</p>
+          <p>Och nu kommer det avgörande: en dubbelbindning <strong>går inte att vrida på</strong>. Det såg du i delkapitel 2.</p>
+          <p>I naturens omättade fettsyror fortsätter kedjan åt olika håll på var sida om dubbelbindningen. Kedjan får en <strong>knyck</strong> som inte går att räta ut.</p>
+          <h2>Knyckiga kedjor packas glest</h2>
+          <p>Försök lägga knyckiga kedjor tätt bredvid varandra. Det går inte — knyckarna kommer i vägen.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna de streckade linjerna i varje panel.</li>
+              <li>Var sitter knyckarna, och vad har de gemensamt?</li>
+              <li>Vilken panel skulle vara svårast att pressa ihop?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k6-m6.svg" alt="Till vänster sex raka fettsyrekedjor som ligger tätt packade med många attraktionslinjer mellan sig. Till höger sex kedjor med en knyck var, som inte kan packas lika tätt och har färre attraktionslinjer.">
+            <figcaption>Raka kedjor ligger tätt. Knyckiga gör det inte.</figcaption>
+          </figure>
+          <p>Molekylerna får mindre kontaktyta mot varandra. Attraktionen blir svagare. Det krävs mindre energi för att de ska glida förbi varandra.</p>
+          <p>Därför är fetter med mycket omättade fettsyror <strong>flytande</strong> vid rumstemperatur.</p>
+          <h2>Enkelomättade och fleromättade</h2>
+          <p>En fettsyra med <strong>en</strong> dubbelbindning kallas <strong>enkelomättad</strong>.</p>
+          <p>En med <strong>två eller flera</strong> kallas <strong>fleromättad</strong>.</p>
+          <p>Varje dubbelbindning ger en knyck till. Fler knyckar betyder sämre packning och lägre smältpunkt.</p>
+          <p><strong>Olivolja</strong> har mycket enkelomättade fettsyror. <strong>Rapsolja</strong> har både enkelomättade och fleromättade. <strong>Fiskolja</strong> har mycket fleromättade.</p>
+          <p>Men antalet dubbelbindningar är inte allt. Kedjornas <strong>längd</strong> spelar också roll.</p>
+          <h2>Vegetabiliskt och animaliskt är ingen kemisk indelning</h2>
+          <p>Fetter delas ibland in i <strong>vegetabiliska</strong> och <strong>animaliska</strong>.</p>
+          <p>Den indelningen säger var fettet kommer ifrån — från växt eller djur. Den säger ingenting om hur molekylerna ser ut.</p>
+          <p>Mönstret stämmer ofta. Växtoljor har mer omättade fettsyror och är flytande. Djurfetter har mer mättade och är fasta.</p>
+          <p>Men det finns tydliga undantag.</p>
+          <p><strong>Kokosfett</strong> kommer från en växt men är fast, eftersom det har mycket mättade fettsyror.</p>
+          <p><strong>Fiskolja</strong> kommer från ett djur men är flytande, eftersom den har mycket fleromättade.</p>
+          <p>För en kemist är frågan alltså inte varifrån fettet kommer. Frågan är hur fettsyrorna ser ut.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad kännetecknar en mättad fettsyra?</li>
+              <li>Varför får en omättad fettsyra en knyck?</li>
+              <li>Vad händer med packningen när kedjorna är knyckiga?</li>
+              <li>Vad är skillnaden mellan enkelomättat och fleromättat?</li>
+              <li>Varför är vegetabiliskt och animaliskt ingen kemisk indelning?</li>
+            </ul>
+          </div>
+
+          <h2>Mättade fettsyror kan packas tätt</h2>
+          <p class="inledning">En <strong>mättad</strong> fettsyra har bara enkelbindningar mellan kolatomerna. Kedjan kan därför ligga rak.</p>
+          <p>Raka kedjor kan packas tätt. Molekylerna kommer nära varandra längs hela längden, och mellan dem uppstår <strong>van der Waals-krafter</strong>.</p>
+          <p>Varje enskild kraft är svag. Men en lång kedja har många kontaktpunkter, och summan blir stor.</p>
+          <p>Det krävs därför mycket energi för att skilja molekylerna åt. Fetter med mycket mättade fettsyror har hög smältpunkt och är ofta <strong>fasta</strong> vid rumstemperatur.</p>
+          <h2>Omättade fettsyror får en knyck</h2>
+          <p>En <strong>omättad</strong> fettsyra har minst en dubbelbindning.</p>
+          <p>En dubbelbindning skiljer sig från en enkelbindning på ett avgörande sätt: <strong>den går inte att vrida på</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k6-m6.svg" alt="Till vänster sex raka fettsyrekedjor som ligger tätt packade med många attraktionslinjer mellan sig. Till höger sex kedjor med en knyck var, som inte kan packas lika tätt och har färre attraktionslinjer.">
+            <figcaption>Ju fler kontaktpunkter mellan kedjorna, desto starkare hålls molekylerna ihop och desto högre blir smältpunkten.</figcaption>
+          </figure>
+          <p>I naturens omättade fettsyror fortsätter kolkedjan åt olika håll på var sida om dubbelbindningen. Kedjan får en tydlig <strong>knyck</strong> som inte går att räta ut.</p>
+          <p>Knyckiga kedjor kan inte packas tätt. Kontaktytan blir mindre, attraktionen svagare, och det krävs mindre energi för att molekylerna ska glida förbi varandra.</p>
+          <p>Därför är fetter med mycket omättade fettsyror <strong>flytande</strong> vid rumstemperatur.</p>
+          <h2>Enkelomättade och fleromättade</h2>
+          <p>En fettsyra med <strong>en</strong> dubbelbindning kallas enkelomättad. Med <strong>två eller flera</strong> kallas den fleromättad.</p>
+          <p>Varje dubbelbindning ger ytterligare en knyck. Fler knyckar betyder sämre packning och lägre smältpunkt.</p>
+          <p><strong>Olivolja</strong> innehåller mycket enkelomättade fettsyror. <strong>Rapsolja</strong> innehåller både enkelomättade och fleromättade. <strong>Fiskolja</strong> innehåller mycket fleromättade.</p>
+          <p>Men antalet dubbelbindningar är inte allt — kedjornas längd spelar också roll.</p>
+          <h2>Vegetabiliskt och animaliskt är ingen kemisk indelning</h2>
+          <p>Fetter delas ibland in i <strong>vegetabiliska</strong> och <strong>animaliska</strong>. Den indelningen säger var fettet kommer ifrån, inte hur molekylerna ser ut.</p>
+          <p>Mönstret stämmer ofta: växtoljor har mer omättade fettsyror och är flytande, djurfetter har mer mättade och är fasta.</p>
+          <p>Men det finns tydliga undantag. <strong>Kokosfett</strong> är vegetabiliskt och fast. <strong>Fiskolja</strong> är animalisk och flytande.</p>
+          <p>För kemisten är därför frågan inte varifrån fettet kommer, utan hur fettsyrorna ser ut.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Knycken har ett namn, och den går att ta bort</h2>
+          <p>Standardtexten säger att omättade fettsyror har en knyck som inte går att räta ut. Det stämmer — men bara för den sorts dubbelbindning som naturen använder.</p>
+          <p>En dubbelbindning kan nämligen sitta på <strong>två sätt</strong>.</p>
+          <p>Sitter kolkedjan på <strong>samma sida</strong> om dubbelbindningen kallas den <strong>cis</strong>. Då blir det en knyck.</p>
+          <p>Sitter den på <strong>var sin sida</strong> kallas den <strong>trans</strong>. Då fortsätter kedjan nästan rakt, trots dubbelbindningen.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k6-m6.svg" alt="Till vänster sex raka fettsyrekedjor som ligger tätt packade med många attraktionslinjer mellan sig. Till höger sex kedjor med en knyck var, som inte kan packas lika tätt och har färre attraktionslinjer.">
+            <figcaption>Ju fler kontaktpunkter mellan kedjorna, desto starkare hålls molekylerna ihop och desto högre blir smältpunkten.</figcaption>
+          </figure>
+          <p>Nästan alla omättade fettsyror i naturen är <strong>cis</strong>. Det finns ingen kemisk nödvändighet i det — det är enzymerna som bygger dem som gör det så.</p>
+          <p>Skillnaden får stora följder. En transfettsyra har en dubbelbindning men beter sig ändå nästan som en mättad: den packar sig tätt och ger ett fast fett.</p>
+          <p>Det har utnyttjats industriellt. Genom att tillsätta väte till omättade fettsyror kan man göra flytande olja fast — en process som kallas <strong>härdning</strong>. Görs den ofullständigt bildas transfetter som biprodukt, och under stora delar av 1900-talet fanns de i margarin och i mycket industribakat.</p>
+          <p>De har senare visat sig påverka hälsan negativt, och i dag är halterna reglerade i många länder.</p>
+          <p><strong>Om modellen.</strong> "Dubbelbindningen ger en knyck" är sant om cis-formen, som är den enda du möter i mat från naturen. Men knycken kommer inte av dubbelbindningen i sig — den kommer av <strong>vilken sida</strong> kedjan fortsätter på. Samma bindning, två geometrier, två helt olika material.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Fett byggs och bryts med samma reaktion ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad händer med vattnet när ett fett bildas?</li>
+              <li>Vad händer med vattnet när ett fett bryts ner?</li>
+              <li>Vad kallas reaktionen där vatten används för att bryta en bindning?</li>
+              <li>Vilka enzymer bryter ner fett?</li>
+              <li>Varför måste fettmolekylen delas innan kroppen kan ta upp den?</li>
+            </ul>
+          </div>
+
+          <h2>Åt ena hållet bildas vatten</h2>
+          <p>När ett fett bildas kopplas glycerol och fettsyror samman, och vatten lämnar.</p>
+          <p>Tre esterbindningar betyder tre vattenmolekyler.</p>
+          <h2>Åt andra hållet förbrukas vatten</h2>
+          <p>Reaktionen kan gå åt motsatt håll.</p>
+          <p>Då <strong>används</strong> vatten för att bryta esterbindningarna. Reaktionen heter <strong>hydrolys</strong>, och du mötte den i avsnitt 1.</p>
+          <p>Bryts alla tre bindningarna behövs tre vattenmolekyler. Kvar blir glycerolen och tre lösa fettsyror.</p>
+          <p>Samma system, två riktningar: <strong>bildas bindningar avges vatten, bryts de används vatten.</strong></p>
+          <h2>Utan hjälp går det för långsamt</h2>
+          <p>Esterbindningar kan reagera med vatten även utan hjälp. Problemet är hastigheten — det skulle ta alldeles för lång tid för att vara till nytta i en kropp.</p>
+          <p>Därför används <strong>enzymer</strong>.</p>
+          <p>De enzymer som bryter ner fett kallas <strong>lipaser</strong>. Ett lipas binder till fettmolekylen och gör att hydrolysen sker på bråkdelen av tiden.</p>
+          <h2>Därför måste fett smältas</h2>
+          <p>En fettmolekyl är för stor för att passera tarmväggen.</p>
+          <p>Lipaserna delar därför upp den i mindre delar. De kan tas upp av cellerna i tarmväggen.</p>
+          <p>Och där inne kopplas delarna ihop igen till nya fettmolekyler.</p>
+          <p>Samma reaktion, båda hållen. Bindningar byggs, bryts, och byggs igen.</p>
+          <p>Det du lärt dig om organiska reaktioner är alltså ingenting som bara händer i laboratorier. Det pågår i din tarm just nu.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad händer med vattnet när ett fett bildas?</li>
+              <li>Vad händer med vattnet när ett fett bryts ner?</li>
+              <li>Vad kallas reaktionen där vatten används för att bryta en bindning?</li>
+              <li>Vilka enzymer bryter ner fett?</li>
+              <li>Varför måste fettmolekylen delas innan kroppen kan ta upp den?</li>
+            </ul>
+          </div>
+
+          <h2>Esterbindningarna bryts med vatten</h2>
+          <p class="inledning">När ett fett bildas kopplas glycerol och fettsyror samman och vatten lämnar.</p>
+          <p>Reaktionen kan gå åt motsatt håll. Då <strong>används</strong> vatten för att bryta esterbindningarna, och reaktionen kallas <strong>hydrolys</strong>.</p>
+          <p>En triglycerid har tre esterbindningar. Bryts alla tre behövs tre vattenmolekyler, och kvar blir glycerol och tre fria fettsyror.</p>
+          <p>Det är alltså samma kemiska system åt två håll: <strong>bildas det esterbindningar avges vatten, bryts de används vatten.</strong></p>
+          <h2>Enzymer får reaktionen att gå snabbt</h2>
+          <p>Esterbindningar kan reagera med vatten även utan hjälp, men det går alldeles för långsamt för att vara användbart i en kropp.</p>
+          <p>Därför används <strong>enzymer</strong>. De som bryter ner fett kallas <strong>lipaser</strong>.</p>
+          <p>Ett lipas binder till fettmolekylen och gör att hydrolysen kan ske på bråkdelen av tiden.</p>
+          <h2>Stora molekyler delas i mindre delar</h2>
+          <p>En triglycerid är för stor för att passera tarmväggen.</p>
+          <p>Lipaserna delar därför upp den i mindre delar, som kan tas upp av cellerna i tarmväggen. Där kan delarna sedan kopplas ihop igen till nya fettmolekyler.</p>
+          <p>Samma reaktion, båda hållen: <strong>esterbindningar byggs genom kondensation och bryts genom hydrolys.</strong></p>
+          <p>Det du lärt dig om organiska reaktioner är alltså inte något som bara sker i laboratorier. Det sker i din tarm just nu.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Dubbelbindningarna är också fettets svaga punkt</h2>
+          <p>Standardtexten beskriver hur esterbindningarna bryts vid matsmältningen. Men fett kan förstöras på ett annat sätt också, och det sker utanför kroppen.</p>
+          <p>Fett <strong>härsknar</strong>. Och det sker på två skilda vägar.</p>
+          <p><strong>Den första är hydrolys.</strong> Vatten bryter esterbindningarna och frigör fettsyror. Korta fettsyror luktar — smörsyra med sina fyra kolatomer är precis den som ger härsket smör dess lukt. Det är samma molekyl du mötte i delkapitel 5.</p>
+          <p><strong>Den andra är oxidation</strong>, och den drabbar bara omättade fetter.</p>
+          <p>Kolatomen bredvid en dubbelbindning är ovanligt lättangripen. Syre från luften kan reagera där, och reaktionen startar en kedjereaktion som bryter sönder fettsyran i mindre bitar — bland annat aldehyder, som luktar starkt och obehagligt.</p>
+          <p>Det förklarar ett mönster som annars ser paradoxalt ut. <strong>Ju mer omättat ett fett är, desto snabbare härsknar det.</strong> Fiskolja håller sämst av alla vanliga fetter, eftersom den har flest dubbelbindningar.</p>
+          <p>Det förklarar också varför oljor säljs i mörka flaskor och varför det står att de ska förvaras svalt. Ljus och värme startar kedjereaktionen snabbare.</p>
+          <p><strong>Om modellen.</strong> Standardnivån behandlar esterbindningen som fettets svaga punkt, eftersom det är den kroppen bryter. Utanför kroppen är det tvärtom: esterbindningen håller bra, och det är dubbelbindningarna som ger vika. Vilken bindning som är svagast beror på vad som angriper den.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-2-fetter.json"
+           data-avsnitt="a2_fetter">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-2-fetter.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a2_fetter';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'livets-molekyler';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

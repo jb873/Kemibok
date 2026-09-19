@@ -1,0 +1,124 @@
+{
+  "avsnitt": 4,
+  "titel": "Kvävet, vitaminerna och mineralerna",
+  "delkapitel": "livets-molekyler",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 4 (Kvävet, vitaminerna och mineralerna), delkapitel Livets molekyler. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/livets-molekyler/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k4-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Urea",
+      "svar": "Urinämne, \\(\\ce{CO(NH2)2}\\). Kroppens sätt att göra sig av med kväve från nedbrutna aminosyror."
+    },
+    {
+      "id": "k4-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Ammoniak",
+      "svar": "\\(\\ce{NH3}\\). Giftig kväveförening som bildas när aminosyror bryts ner och som levern omvandlar till urea."
+    },
+    {
+      "id": "k4-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vitamin",
+      "svar": "Organiskt ämne som kroppen behöver i små mängder men inte kan tillverka tillräckligt av själv."
+    },
+    {
+      "id": "k4-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fettlösligt vitamin",
+      "svar": "Vitamin med stora opolära delar. A, D, E och K. Lagras i lever och fettvävnad."
+    },
+    {
+      "id": "k4-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vattenlösligt vitamin",
+      "svar": "Vitamin med många polära grupper. B-vitaminerna och C. Överskott lämnar med urinen."
+    },
+    {
+      "id": "k4-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Mineralämne",
+      "svar": "Grundämne som kroppen behöver, till exempel kalcium, järn eller zink."
+    },
+    {
+      "id": "k4-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kalcium",
+      "svar": "Mineralämne som i kroppen förekommer som jonen \\(\\ce{Ca^2+}\\)."
+    },
+    {
+      "id": "k4-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Järn",
+      "svar": "Mineralämne som bland annat sitter i hemoglobin och binder syret i blodet."
+    },
+    {
+      "id": "k4-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Jon",
+      "svar": "Atom eller atomgrupp med elektrisk laddning. Mineralämnen transporteras ofta som joner."
+    },
+    {
+      "id": "k4-b10",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Grundämne",
+      "svar": "Ämne som består av en enda sorts atomer och som inte kan brytas ner kemiskt till något enklare."
+    },
+    {
+      "id": "k4-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Ureacykeln",
+      "svar": "Serien av reaktioner i levern som omvandlar kväve till urea. Den kräver energi."
+    },
+    {
+      "id": "k4-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Fotokemisk reaktion",
+      "svar": "Reaktion som drivs av ljus i stället för av värme eller enzym. Vitamin D bildas så, och fotosyntesen är det andra exemplet i kapitlet."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k4-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför behöver kroppen göra urea av kvävet?",
+      "svar": "Kväve kan varken bli koldioxid eller vatten, och kroppen kan inte andas ut det som kvävgas. Det behövs en egen väg ut."
+    },
+    {
+      "id": "k4-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad avgör om ett vitamin är fettlösligt eller vattenlösligt?",
+      "svar": "Dragkampen mellan molekylens polära grupper och dess opolära kolvätedel. Vinner kolvätedelen blir ämnet fettlösligt."
+    },
+    {
+      "id": "k4-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför gör fåglar urinsyra i stället för urea?",
+      "svar": "Urinsyra löser sig knappt alls och kräver därför nästan inget vatten att göra sig av med. Fiskar slipper problemet helt och släpper ut ammoniak direkt."
+    },
+    {
+      "id": "k4-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför fungerar inte vitamin D-bildning genom ett fönster?",
+      "svar": "Reaktionen drivs av UV-strålning, och glas släpper igenom synligt ljus men stoppar det mesta av UV-strålningen."
+    }
+  ]
+}

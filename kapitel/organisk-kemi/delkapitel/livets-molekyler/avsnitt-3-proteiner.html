@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proteiner är kedjor av aminosyror – Livets molekyler – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Livets molekyler</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">3. Proteiner är kedjor av aminosyror</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 3</span>
+      <h1>Proteiner är kedjor av aminosyror</h1>
+      <p class="subtitel">— kedjor av aminosyror som viks till en form —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">En aminosyra har två funktionella grupper</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Aminosyror kopplas ihop till kedjor</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Formen kan förstöras</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-proteiner">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — En aminosyra har två funktionella grupper ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilket atomslag skiljer proteiner från kolhydrater och fetter?</li>
+              <li>Vilka två funktionella grupper finns i en aminosyra?</li>
+              <li>Vilken av dem är sur, och vilken är basisk?</li>
+              <li>Vad sitter bundet till kolatomen i mitten?</li>
+              <li>Vad är det som skiljer de tjugo aminosyrorna åt?</li>
+            </ul>
+          </div>
+
+          <p>Kolhydrater och fetter består av kol, väte och syre.</p>
+          <p>Proteiner är också organiska ämnen — men de innehåller dessutom <strong>kväve</strong>. Det gör dem kemiskt annorlunda.</p>
+          <p>De byggs varken av sockerringar eller fettsyror, utan av en helt egen sorts molekyler: <strong>aminosyror</strong>.</p>
+          <p>Vilket protein det blir avgörs av tre saker: vilka aminosyror som ingår, i vilken ordning de sitter, och hur kedjan sedan <strong>viks ihop</strong>.</p>
+          <h2>Kväve är det nya atomslaget</h2>
+          <p>Proteiner innehåller kol, väte och syre — precis som kolhydrater och fetter.</p>
+          <p>Men de innehåller också <strong>kväve</strong>. Och ibland <strong>svavel</strong>.</p>
+          <p>Kvävet sitter i aminosyrorna, och det är kvävet som gör proteiner till något eget.</p>
+          <p>Ett enda nytt atomslag, och en helt ny sorts kemi blir möjlig.</p>
+          <h2>Två grupper i samma molekyl</h2>
+          <p>En <strong>aminosyra</strong> har <strong>två</strong> funktionella grupper samtidigt. Det är ovanligt, och det är hela poängen med den.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna bindningarna från kolatomen i mitten.</li>
+              <li>Vilken grupp är sur, och vilken är basisk?</li>
+              <li>Vad står det i rutan, och varför står det just det?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k6-m8.svg" alt="En aminosyra. I mitten en kolatom med fyra bindningar: en aminogrupp till vänster med blå kväveatom, en karboxylgrupp till höger med röda syreatomer, en sidokedja märkt R uppåt och en väteatom nedåt.">
+            <figcaption>En syragrupp åt ena hållet, en basgrupp åt det andra. Och en ruta som är olika för varje aminosyra.</figcaption>
+          </figure>
+          <p>Den ena är en <strong>karboxylgrupp, –COOH</strong>. Samma syragrupp som i organiska syror. Den kan <strong>avge</strong> en vätejon — alltså fungerar den <strong>surt</strong>.</p>
+          <p>Den andra är en <strong>aminogrupp, –\(\ce{NH2}\)</strong>. Det är här kvävet sitter. Den kan <strong>ta upp</strong> en vätejon — alltså fungerar den <strong>basiskt</strong>.</p>
+          <p>En aminosyra har alltså både en syra och en bas i samma molekyl.</p>
+          <h2>Därför kan de kopplas ihop</h2>
+          <p>Tänk på vad det betyder.</p>
+          <p>Den ena änden vill lämna ifrån sig något. Den andra änden vill ta emot något.</p>
+          <p>Möter två aminosyror varandra passar de alltså ihop — den enas syragrupp mot den andras basgrupp.</p>
+          <p>Det är precis därför aminosyror kan bilda långa kedjor. Och det är därför proteiner alls kan finnas.</p>
+          <h2>Basfunktion och sidokedja</h2>
+          <p>Alla aminosyror har samma grundstruktur.</p>
+          <p>I mitten sitter en kolatom. Från den går <strong>fyra</strong> bindningar:</p>
+          <ul><li>en till <strong>karboxylgruppen</strong></li><li>en till <strong>aminogruppen</strong></li><li>en till en <strong>väteatom</strong></li><li>en till en <strong>sidokedja</strong></li></ul>
+          <p>Sidokedjan brukar markeras med bokstaven <strong>R</strong>. Den är det <strong>enda</strong> som skiljer aminosyrorna åt.</p>
+          <p>Vissa sidokedjor är små, andra stora. Några dras till vatten, andra undviker det. Några är elektriskt laddade.</p>
+          <p>I levande organismer används <strong>tjugo olika</strong> aminosyror. Samma grundmodell tjugo gånger — bara rutan är olika.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilket atomslag skiljer proteiner från kolhydrater och fetter?</li>
+              <li>Vilka två funktionella grupper finns i en aminosyra?</li>
+              <li>Vilken av dem är sur, och vilken är basisk?</li>
+              <li>Vad sitter bundet till kolatomen i mitten?</li>
+              <li>Vad är det som skiljer de tjugo aminosyrorna åt?</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Kolhydrater och fetter består av kol, väte och syre.</p>
+          <p>Proteiner är också organiska ämnen, men de innehåller dessutom <strong>kväve</strong>. Det gör dem kemiskt speciella.</p>
+          <p>De byggs varken av sockerringar eller fettsyror, utan av en helt annan sorts molekyler: <strong>aminosyror</strong>.</p>
+          <p>Vilket protein det blir avgörs av vilka aminosyror som ingår, i vilken ordning de sitter, och hur kedjan sedan <strong>viks</strong>.</p>
+          <h2>Kväve är det nya atomslaget</h2>
+          <p>Proteiner innehåller kol, väte och syre — och dessutom <strong>kväve</strong>. Ibland också svavel.</p>
+          <p>Kvävet sitter i aminosyrorna, och det är kvävet som skiljer proteiner från kolhydrater och fetter.</p>
+          <p>Ett enda nytt atomslag, och en helt ny sorts kemi blir möjlig.</p>
+          <h2>Karboxylgrupp i ena änden, aminogrupp i den andra</h2>
+          <p>En <strong>aminosyra</strong> innehåller två funktionella grupper samtidigt.</p>
+          <p>Den ena är en <strong>karboxylgrupp, –COOH</strong> — samma syragrupp som i organiska syror. Den kan avge en vätejon och fungerar därför <strong>surt</strong>.</p>
+          <p>Den andra är en <strong>aminogrupp, –\(\ce{NH2}\)</strong>. Den kan ta upp en vätejon och fungerar därför <strong>basiskt</strong>.</p>
+          <p>En aminosyra har alltså både en syragrupp och en basgrupp i samma molekyl.</p>
+          <p>Det är just därför de kan kopplas ihop till kedjor.</p>
+          <h2>Basfunktion och sidokedja</h2>
+          <p>Alla aminosyror har samma grundstruktur. I mitten sitter en kolatom bunden till fyra saker: en karboxylgrupp, en aminogrupp, en väteatom — och en <strong>sidokedja</strong>.</p>
+          <p>Sidokedjan är det enda som skiljer aminosyrorna åt. Den brukar markeras med bokstaven <strong>R</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k6-m8.svg" alt="En aminosyra. I mitten en kolatom med fyra bindningar: en aminogrupp till vänster med blå kväveatom, en karboxylgrupp till höger med röda syreatomer, en sidokedja märkt R uppåt och en väteatom nedåt.">
+            <figcaption>Aminosyran har två funktionella grupper samtidigt. Sidokedjan avgör vilken aminosyra det är.</figcaption>
+          </figure>
+          <p>Vissa sidokedjor är små, andra stora. Några dras till vatten, andra undviker det. Några är laddade.</p>
+          <p>I levande organismer används <strong>tjugo olika aminosyror</strong>. Samma grundmodell, tjugo olika sidokedjor.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Aminosyran är både syra och bas — mot sig själv</h2>
+          <p>Standardtexten säger att aminosyran har en syragrupp och en basgrupp i samma molekyl. Det stämmer, och det förklarar varför de kan kopplas ihop.</p>
+          <p>Men det väcker en fråga texten inte ställer: vad händer om <strong>de två grupperna reagerar med varandra</strong>?</p>
+          <p>Det gör de. Nästan hela tiden.</p>
+          <p>Karboxylgruppen avger sin vätejon. Aminogruppen tar emot en. Och eftersom de sitter på samma molekyl går vätejonen oftast bara den korta vägen mellan dem.</p>
+          <p>Resultatet är en molekyl som är <strong>positiv i ena änden och negativ i den andra</strong> — men neutral som helhet. En sådan molekyl kallas <strong>zwitterjon</strong>, av tyskans ord för tvekönad.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k6-m8.svg" alt="En aminosyra. I mitten en kolatom med fyra bindningar: en aminogrupp till vänster med blå kväveatom, en karboxylgrupp till höger med röda syreatomer, en sidokedja märkt R uppåt och en väteatom nedåt.">
+            <figcaption>Aminosyran har två funktionella grupper samtidigt. Sidokedjan avgör vilken aminosyra det är.</figcaption>
+          </figure>
+          <p>Det förklarar något märkligt med aminosyror. De är <strong>fasta ämnen</strong> med höga smältpunkter, ofta över 200 grader. Andra organiska molekyler av samma storlek är vätskor.</p>
+          <p>Skälet är att laddade molekyler dras till varandra mycket starkare än oladdade. En kristall av aminosyror hålls ihop nästan som ett salt.</p>
+          <p>Formen beror också på pH. I sur lösning tar aminogruppen upp en extra vätejon och hela molekylen blir positiv. I basisk lösning avger karboxylgruppen sin, och molekylen blir negativ.</p>
+          <p>Vid ett bestämt pH — olika för varje aminosyra — är den exakt neutral.</p>
+          <p><strong>Om modellen.</strong> "En syragrupp och en basgrupp" är rätt, men det antyder att de sitter stilla och väntar på andra molekyler. De reagerar i själva verket med varandra först. Och det är därför aminosyror beter sig som salter snarare än som de organiska molekyler de är.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Aminosyror kopplas ihop till kedjor ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilka grupper binder till varandra när två aminosyror kopplas ihop?</li>
+              <li>Vad kallas bindningen som bildas?</li>
+              <li>Vilka två tidigare reaktioner liknar denna?</li>
+              <li>Vad avgör vilket protein en kedja blir?</li>
+              <li>Vad är det som styr hur kedjan viks?</li>
+            </ul>
+          </div>
+
+          <h2>Syragruppen möter aminogruppen</h2>
+          <p>När två aminosyror reagerar binds den enas <strong>karboxylgrupp</strong> till den andras <strong>aminogrupp</strong>.</p>
+          <p>Samtidigt lämnar en <strong>OH-grupp</strong> från karboxylgruppen och ett <strong>H</strong> från aminogruppen.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vilken grupp lämnar OH, och vilken lämnar H?</li>
+              <li>Vilken färg har kväveatomen?</li>
+              <li>Jämför med bilderna av esterbildningen och av sockerringarna. Vad är likadant?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k6-m7.svg" alt="Två aminosyror kopplas ihop i tre steg. Den vänstra lämnar en OH-grupp från sin karboxylgrupp, den högra en väteatom från sin aminogrupp. De bildar vatten, och kvar blir en peptidbindning mellan kolatomen och kväveatomen.">
+            <figcaption>Tredje gången samma sak. OH och H lämnar som vatten, och molekylerna sitter ihop.</figcaption>
+          </figure>
+          <p>Vad blir OH plus H? Vatten, igen.</p>
+          <p>Kvar blir en ny bindning, och den kallas <strong>peptidbindning</strong>.</p>
+          <h2>Tredje gången samma sak</h2>
+          <p>Stanna upp här.</p>
+          <p>Det här är <strong>tredje gången</strong> du ser samma reaktion i boken.</p>
+          <p><strong>Ester:</strong> alkohol plus syra, vatten lämnar. <strong>Disackarid:</strong> två sockerringar, vatten lämnar. <strong>Protein:</strong> två aminosyror, vatten lämnar.</p>
+          <p>Tre helt olika ämnesgrupper. Samma sorts reaktion.</p>
+          <p>Den heter <strong>kondensationsreaktion</strong>, och den är ett av naturens vanligaste sätt att bygga stora molekyler av små.</p>
+          <h2>Kedjorna blir långa</h2>
+          <p>Många aminosyror med peptidbindningar emellan bildar en <strong>polypeptid</strong>.</p>
+          <p>Ett protein består av en eller flera sådana kedjor.</p>
+          <p>Storleken varierar enormt. Ett litet protein har omkring <strong>femtio</strong> aminosyror. Det största i människokroppen har nästan <strong>tjugosjutusen</strong>.</p>
+          <p>Men antalet är inte det viktigaste. Det avgörande är <strong>ordningen</strong>.</p>
+          <p>Byt plats på två aminosyror och du har ett annat protein.</p>
+          <h2>Kedjan viks ihop</h2>
+          <p>En rak kedja gör ingen nytta alls.</p>
+          <p>För att proteinet ska fungera måste kedjan vikas till en bestämd <strong>tredimensionell form</strong>.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna enheterna i varje steg. Är de lika många?</li>
+              <li>Följ kedjan med fingret i sista bilden. Går den att följa hela vägen?</li>
+              <li>Vad är det de streckade linjerna visar?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k6-m9.svg" alt="Tre steg. Först fem lösa aminosyror, sedan samma fem hopkopplade till en rak kedja, sist kedjan vikt till en tredimensionell form med streckade linjer som visar var den hålls ihop.">
+            <figcaption>Först byggs kedjan. Sedan viks den — och det är formen som gör nytta.</figcaption>
+          </figure>
+          <p>Det är <strong>sidokedjorna</strong> som styr veckningen. Några dras till vatten och söker sig utåt, mot omgivningen. Andra undviker vatten och gömmer sig inuti. Några bildar vätebindningar med varandra. Några stöter bort varandra för att de har samma laddning.</p>
+          <p>Alla dessa krafter drar och trycker samtidigt — och kedjan hamnar i en bestämd form.</p>
+          <h2>Formen avgör allt</h2>
+          <p>Och nu kommer poängen.</p>
+          <p><strong>Formen avgör funktionen.</strong></p>
+          <p>Det är därför ett enzym bara passar vissa ämnen. Det är därför ett protein kan bära syre medan ett annat bygger hår.</p>
+          <p>Formen är inte en detalj. Det är hela grejen.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilka grupper binder till varandra när två aminosyror kopplas ihop?</li>
+              <li>Vad kallas bindningen som bildas?</li>
+              <li>Vilka två tidigare reaktioner liknar denna?</li>
+              <li>Vad avgör vilket protein en kedja blir?</li>
+              <li>Vad är det som styr hur kedjan viks?</li>
+            </ul>
+          </div>
+
+          <h2>Syragruppen möter aminogruppen</h2>
+          <p class="inledning">När två aminosyror reagerar binds den enas <strong>karboxylgrupp</strong> till den andras <strong>aminogrupp</strong>.</p>
+          <p>Samtidigt lämnar en <strong>OH-grupp</strong> från karboxylgruppen och ett <strong>H</strong> från aminogruppen. Tillsammans bildar de <strong>vatten</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k6-m7.svg" alt="Två aminosyror kopplas ihop i tre steg. Den vänstra lämnar en OH-grupp från sin karboxylgrupp, den högra en väteatom från sin aminogrupp. De bildar vatten, och kvar blir en peptidbindning mellan kolatomen och kväveatomen.">
+            <figcaption>Karboxylgruppen binder till aminogruppen. Bindningen kallas peptidbindning.</figcaption>
+          </figure>
+          <p>Kvar blir en ny bindning, som kallas <strong>peptidbindning</strong>.</p>
+          <p>Det här är <strong>tredje gången</strong> du ser samma sorts reaktion. Ester, disackarid och nu protein — två molekyler kopplas ihop och en vattenmolekyl lämnar.</p>
+          <p>Reaktionstypen heter <strong>kondensationsreaktion</strong>.</p>
+          <h2>Kedjorna blir långa</h2>
+          <p>Många aminosyror med peptidbindningar emellan bildar en <strong>polypeptid</strong>. Ett protein består av en eller flera sådana kedjor.</p>
+          <p>Storleken varierar enormt. Ett litet protein har omkring <strong>femtio</strong> aminosyror. Det största som finns i människokroppen har nästan <strong>tjugosjutusen</strong>.</p>
+          <p>Men antalet är inte det viktiga. Det avgörande är <strong>ordningen</strong>.</p>
+          <p>Samma aminosyror i en annan ordning ger ett helt annat protein.</p>
+          <h2>Kedjan viks ihop till en bestämd form</h2>
+          <p>En rak kedja gör ingen nytta. För att proteinet ska fungera måste kedjan <strong>vikas</strong> till en bestämd tredimensionell form.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k6-m9.svg" alt="Tre steg. Först fem lösa aminosyror, sedan samma fem hopkopplade till en rak kedja, sist kedjan vikt till en tredimensionell form med streckade linjer som visar var den hålls ihop.">
+            <figcaption>Ordningen mellan aminosyrorna bestämmer hur kedjan viks, och veckningen bestämmer funktionen.</figcaption>
+          </figure>
+          <p>Det är sidokedjorna som styr veckningen. Några dras till vatten och söker sig utåt. Andra undviker vatten och hamnar inuti. Några bildar vätebindningar, andra stöter bort varandra.</p>
+          <p>Alla krafterna tillsammans gör att kedjan viks på ett bestämt sätt.</p>
+          <p>Och <strong>formen avgör funktionen</strong>. Det är därför ett enzym bara passar vissa ämnen, och därför ett protein kan vara byggmaterial medan ett annat transporterar syre.</p>
+          <p>Formen är inte en detalj. Den är hela poängen.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Kedjan viker sig själv — nästan alltid</h2>
+          <p>Standardtexten säger att sidokedjorna styr veckningen och att formen avgör funktionen. Båda delarna stämmer. Men det som är verkligt märkligt är att det <strong>fungerar</strong>.</p>
+          <p>Tänk på problemets storlek. En kedja med hundra aminosyror kan i princip vika sig på ett astronomiskt antal sätt. Skulle proteinet pröva sig fram slumpmässigt, en form i taget, skulle det ta längre tid än universums ålder att hitta rätt.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k6-m7.svg" alt="Två aminosyror kopplas ihop i tre steg. Den vänstra lämnar en OH-grupp från sin karboxylgrupp, den högra en väteatom från sin aminogrupp. De bildar vatten, och kvar blir en peptidbindning mellan kolatomen och kväveatomen.">
+            <figcaption>Karboxylgruppen binder till aminogruppen. Bindningen kallas peptidbindning.</figcaption>
+          </figure>
+          <p>Ändå viker sig ett protein på <strong>någon tiondels sekund</strong>.</p>
+          <p>Förklaringen är att det inte prövar sig fram. Veckningen sker i steg. Små delar av kedjan hittar snabbt sin lokala form, dessa delar hittar varandra, och strukturen faller på plats ungefär som en tratt — varje steg begränsar vad som kan hända härnäst.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k6-m9.svg" alt="Tre steg. Först fem lösa aminosyror, sedan samma fem hopkopplade till en rak kedja, sist kedjan vikt till en tredimensionell form med streckade linjer som visar var den hålls ihop.">
+            <figcaption>Ordningen mellan aminosyrorna bestämmer hur kedjan viks, och veckningen bestämmer funktionen.</figcaption>
+          </figure>
+          <p>Det betyder också något viktigt: <strong>all information om formen finns i ordningen mellan aminosyrorna</strong>. Ingenting annat behövs. Kokar man ett protein försiktigt och låter det svalna kan det ibland hitta tillbaka helt av sig självt.</p>
+          <p>I en cell går det ändå inte alltid rätt. Det är trångt, och en halvvikt kedja kan fastna i en grannmolekyl innan den hunnit bli färdig. Därför finns särskilda proteiner som kallas <strong>chaperoner</strong> — de håller nyfödda kedjor avskilda tills veckningen är klar.</p>
+          <p>Och när det ändå går fel kan följderna bli allvarliga. Vissa sjukdomar beror på proteiner som vikits på ett felaktigt sätt och sedan klumpar ihop sig.</p>
+          <p><strong>Om modellen.</strong> Standardnivån säger att kedjan viks till en bestämd form. Det låter som något som bara händer. I själva verket är det ett av biologins svåraste problem — och att naturen löser det på en tiondels sekund, varje gång, är förklaringen till att liv över huvud taget fungerar.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Formen kan förstöras ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad händer med peptidkedjan vid denaturering?</li>
+              <li>Vad är det som går förlorat?</li>
+              <li>Varför räcker värme eller ändrat pH?</li>
+              <li>Hur använder kroppen denaturering med flit?</li>
+              <li>Varför kan ett stekt ägg inte bli rått igen?</li>
+            </ul>
+          </div>
+
+          <h2>Denaturering är att formen går sönder</h2>
+          <p>När ett protein tappar sin veckade form kallas det <strong>denaturering</strong>.</p>
+          <p>Lägg noga märke till vad som <strong>inte</strong> händer.</p>
+          <p>Kedjan går inte sönder. Peptidbindningarna sitter kvar. Alla aminosyror är på plats i rätt ordning.</p>
+          <p>Det är <strong>formen</strong> som kollapsar.</p>
+          <p>Och det räcker. Ett enzym som tappat sin form passar inte längre till de ämnen det skulle arbeta med. Det är lika värdelöst som om det vore sönderklippt.</p>
+          <h2>Värme och pH räcker</h2>
+          <p>Varför går formen sönder så lätt?</p>
+          <p>Därför att veckningen hålls på plats av <strong>svaga bindningar</strong>, bland annat vätebindningar. De är mycket svagare än peptidbindningarna i själva kedjan.</p>
+          <p>Därför räcker det med värme eller ändrat pH.</p>
+          <h2>Ägget i stekpannan</h2>
+          <p>När du steker ett ägg denaturerar proteinerna i äggvitan.</p>
+          <p>De veckade molekylerna öppnar sig, och de delar som förut var gömda inuti hamnar utåt. Där möter de andra proteiner, och de fastnar i varandra.</p>
+          <p>Resultatet ser du: äggvitan går från genomskinlig och rinnig till vit och fast.</p>
+          <h2>Kroppen använder det också</h2>
+          <p>Även sur miljö denaturerar proteiner.</p>
+          <p>I magsäcken gör <strong>saltsyran</strong> just det med proteinerna i maten. De veckar upp sig, och då kommer enzymerna åt att bryta kedjan.</p>
+          <p>Det är alltså inte bara en olycka när proteiner denaturerar. Din kropp gör det med flit.</p>
+          <h2>Ofta går det inte att ångra</h2>
+          <p>Ett stekt ägg kan inte bli rått igen.</p>
+          <p>Men tänk på vad det betyder. Kedjan är inte avklippt — den finns kvar, hel.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna enheterna i båda bilderna. Är de lika många?</li>
+              <li>Vad finns i den vänstra bilden som saknas i den högra?</li>
+              <li>Varför är pilen tillbaka överkryssad?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k6-m10.svg" alt="Till vänster ett veckat protein som fungerar, till höger samma kedja uppveckad och utan form. Kedjan är hel i båda bilderna. En överkryssad pil tillbaka visar att det oftast inte går att ångra.">
+            <figcaption>Kedjan är hel i båda bilderna. Det som försvunnit är formen.</figcaption>
+          </figure>
+          <p>Det som är borta är den <strong>exakta veckning</strong> som behövdes.</p>
+          <p>Molekylen hittar helt enkelt inte tillbaka.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vad händer med peptidkedjan vid denaturering?</li>
+              <li>Vad är det som går förlorat?</li>
+              <li>Varför räcker värme eller ändrat pH?</li>
+              <li>Hur använder kroppen denaturering med flit?</li>
+              <li>Varför kan ett stekt ägg inte bli rått igen?</li>
+            </ul>
+          </div>
+
+          <h2>Denaturering är att formen går sönder</h2>
+          <p class="inledning">När ett protein förlorar sin veckade form kallas det <strong>denaturering</strong>.</p>
+          <p>Lägg märke till vad som <strong>inte</strong> händer: kedjan av aminosyror går inte sönder. Peptidbindningarna sitter kvar. Det är den tredimensionella <strong>formen</strong> som kollapsar.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k6-m10.svg" alt="Till vänster ett veckat protein som fungerar, till höger samma kedja uppveckad och utan form. Kedjan är hel i båda bilderna. En överkryssad pil tillbaka visar att det oftast inte går att ångra.">
+            <figcaption>Vid denaturering bryts inte peptidbindningarna. Det är de svaga bindningarna som håller veckningen som ger vika.</figcaption>
+          </figure>
+          <p>Det räcker för att proteinet ska sluta fungera. Ett enzym som tappat sin form passar inte längre till de ämnen det skulle arbeta med.</p>
+          <h2>Värme och pH räcker</h2>
+          <p>Veckningen hålls på plats av <strong>svaga bindningar</strong>, bland annat vätebindningar.</p>
+          <p>Därför räcker det med värme eller ändrat pH för att störa den.</p>
+          <p>När ett ägg steks denaturerar proteinerna i äggvitan. De förändras och bildar nya kontakter med varandra, och äggvitan går från genomskinlig och rinnig till vit och fast.</p>
+          <p>Även sur miljö fungerar. I magsäcken denaturerar <strong>saltsyran</strong> proteinerna i maten, vilket gör dem lättare för enzymerna att bryta ner.</p>
+          <p>Det är alltså inte bara en olycka när proteiner denaturerar. Kroppen använder det.</p>
+          <h2>Ofta går det inte att ångra</h2>
+          <p>I de flesta vardagliga fall går denaturering <strong>inte att återställa</strong>.</p>
+          <p>Ett stekt ägg kan inte bli rått igen.</p>
+          <p>Men lägg märke till vad det betyder. Kedjan är inte avklippt — den finns till stor del kvar. Det som är borta är den exakta veckning som behövdes.</p>
+          <p>Molekylen hittar helt enkelt inte tillbaka.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Ibland går det faktiskt att ångra</h2>
+          <p>Standardtexten säger att denaturering oftast inte går att återställa, och ger ägget som exempel. Det stämmer för ägg. Men det stämmer inte alltid, och undantaget är upplysande.</p>
+          <p>År 1961 gjorde den amerikanske forskaren Christian Anfinsen ett försök. Han tog ett enzym, bröt alla bindningar som höll veckningen, och lät kedjan veckla ut sig helt.</p>
+          <p>Enzymet slutade fungera, precis som väntat.</p>
+          <p>Sedan tog han försiktigt bort de ämnen som orsakat denatureringen.</p>
+          <p>Och enzymet <strong>vek sig tillbaka av sig självt</strong> — till exakt samma form, med full funktion.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k6-m10.svg" alt="Till vänster ett veckat protein som fungerar, till höger samma kedja uppveckad och utan form. Kedjan är hel i båda bilderna. En överkryssad pil tillbaka visar att det oftast inte går att ångra.">
+            <figcaption>Vid denaturering bryts inte peptidbindningarna. Det är de svaga bindningarna som håller veckningen som ger vika.</figcaption>
+          </figure>
+          <p>Det visade något avgörande: <strong>hela informationen om formen ligger i aminosyrornas ordning</strong>. Inget annat krävs. Anfinsen fick nobelpriset för det 1972.</p>
+          <p>Varför går det då inte med ett ägg?</p>
+          <p>Därför att ägget innehåller enormt många proteinmolekyler tätt ihop. När de vecklar ut sig fastnar de i <strong>varandra</strong> innan de hinner vika sig tillbaka. Det som bildas är ett nätverk av sammanklumpade kedjor, och där finns ingen väg tillbaka.</p>
+          <p>Skillnaden är alltså inte kemisk utan praktisk. En ensam molekyl kan hitta hem. En miljard molekyler i en klump kan det inte.</p>
+          <p><strong>Om modellen.</strong> "Denaturering går inte att ångra" är en bra tumregel för matlagning. Men det är inte en egenskap hos denatureringen — det är en följd av trängsel. Molekylen har fortfarande all information som behövs. Den hinner bara inte använda den.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-3-proteiner.json"
+           data-avsnitt="a3_proteiner">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-3-proteiner.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a3_proteiner';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'livets-molekyler';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" width="960" height="500" role="img" aria-labelledby="t">
+  <title id="t">En fettmolekyl. Till vänster glycerol med tre bindningar ut, till höger tre fettsyror av olika längd. Den mellersta har en knyck. De tre esterbindningarna är inringade</title>
+  <line x1="120" y1="93" x2="120" y2="187" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"   data-molekyl="glycerol"/>
+  <line x1="120" y1="213" x2="120" y2="307" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"   data-molekyl="glycerol"/>
+  <line x1="107" y1="80" x2="83" y2="80" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="glycerol"/>
+  <line x1="120" y1="67" x2="120" y2="55" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="glycerol"/>
+  <line x1="107" y1="200" x2="83" y2="200" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="glycerol"/>
+  <line x1="107" y1="320" x2="83" y2="320" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="glycerol"/>
+  <line x1="120" y1="333" x2="120" y2="345" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-molekyl="glycerol"/>
+  <line x1="133" y1="80" x2="153" y2="80" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="glycerol"/>
+  <line x1="133" y1="200" x2="153" y2="200" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="glycerol"/>
+  <line x1="133" y1="320" x2="153" y2="320" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-molekyl="glycerol"/>
+  <text x="120" y="86.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="glycerol">C</text>
+  <text x="120" y="206.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="glycerol">C</text>
+  <text x="120" y="326.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-molekyl="glycerol">C</text>
+  <text x="74" y="86.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="120" y="52.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="74" y="206.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="74" y="326.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="120" y="360.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-molekyl="glycerol">H</text>
+  <text x="166" y="86.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="glycerol">O</text>
+  <text x="166" y="206.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="glycerol">O</text>
+  <text x="166" y="326.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-molekyl="glycerol">O</text>
+  <text x="110" y="388" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">glycerol</text>
+  <line x1="179" y1="80" x2="199" y2="80" stroke="#5a9668" stroke-width="3.2" stroke-linecap="round" data-bind="O-C" data-mark="esterbindning" data-fettsyra="1"/>
+  <line x1="208.4" y1="67" x2="208.4" y2="59" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-fettsyra="1"/>
+  <line x1="215.6" y1="67" x2="215.6" y2="59" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-fettsyra="1"/>
+  <text x="212" y="86.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-fettsyra="1">C</text>
+  <text x="212" y="52.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-fettsyra="1">O</text>
+  <ellipse cx="218" cy="68" rx="30" ry="30" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="karboxyl" data-fettsyra="1"/>
+  <path d="M226 80 L246 70 L266 80 L286 70 L306 80 L326 70 L346 80 L366 70 L386 80 L406 70 L426 80 L446 70" fill="none" stroke="#3a3a3a" stroke-width="2.4" stroke-linejoin="round" data-kedja="1" data-kol="12" data-knyck="0"/>
+  <text x="456" y="75" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" text-anchor="start">fettsyra 1 · 12 C</text>
+  <ellipse cx="189" cy="80" rx="34" ry="18" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="esterbindning" data-fettsyra="1"/>
+  <line x1="179" y1="200" x2="199" y2="200" stroke="#5a9668" stroke-width="3.2" stroke-linecap="round" data-bind="O-C" data-mark="esterbindning" data-fettsyra="2"/>
+  <line x1="208.4" y1="187" x2="208.4" y2="179" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-fettsyra="2"/>
+  <line x1="215.6" y1="187" x2="215.6" y2="179" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-fettsyra="2"/>
+  <text x="212" y="206.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-fettsyra="2">C</text>
+  <text x="212" y="172.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-fettsyra="2">O</text>
+  <ellipse cx="218" cy="188" rx="30" ry="30" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="karboxyl" data-fettsyra="2"/>
+  <path d="M226 200 L246 190 L266 200 L286 190 L306 200 L326 190 L346 200 L366 190 L388.28 191.87 L403.15 175.16 L425.43 177.03 L440.29 160.33 L462.58 162.19 L477.44 145.49 L499.72 147.36 L514.59 130.65" fill="none" stroke="#3a3a3a" stroke-width="2.4" stroke-linejoin="round" data-kedja="2" data-kol="16" data-knyck="1"/>
+  <line x1="360" y1="197" x2="372" y2="197" stroke="#5a9668" stroke-width="2.2" data-dubbel="1"/>
+  <text x="524.59" y="135.65" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" text-anchor="start">fettsyra 2 · 16 C</text>
+  <ellipse cx="189" cy="200" rx="34" ry="18" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="esterbindning" data-fettsyra="2"/>
+  <line x1="179" y1="320" x2="199" y2="320" stroke="#5a9668" stroke-width="3.2" stroke-linecap="round" data-bind="O-C" data-mark="esterbindning" data-fettsyra="3"/>
+  <line x1="208.4" y1="307" x2="208.4" y2="299" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-fettsyra="3"/>
+  <line x1="215.6" y1="307" x2="215.6" y2="299" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-fettsyra="3"/>
+  <text x="212" y="326.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-fettsyra="3">C</text>
+  <text x="212" y="292.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-fettsyra="3">O</text>
+  <ellipse cx="218" cy="308" rx="30" ry="30" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="karboxyl" data-fettsyra="3"/>
+  <path d="M226 320 L246 310 L266 320 L286 310 L306 320 L326 310 L346 320 L366 310 L386 320 L406 310 L426 320 L446 310 L466 320 L486 310 L506 320 L526 310 L546 320 L566 310" fill="none" stroke="#3a3a3a" stroke-width="2.4" stroke-linejoin="round" data-kedja="3" data-kol="18" data-knyck="0"/>
+  <text x="576" y="315" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" text-anchor="start">fettsyra 3 · 18 C</text>
+  <ellipse cx="189" cy="320" rx="34" ry="18" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="esterbindning" data-fettsyra="3"/>
+  <text x="212" y="414"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" fill="#5a9668">tre esterbindningar</text>
+  <text x="480" y="482" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic">glycerol + tre fettsyror → fett + tre vattenmolekyler</text>
+</svg>

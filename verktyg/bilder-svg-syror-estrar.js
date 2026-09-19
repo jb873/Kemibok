@@ -14,67 +14,11 @@
 const fs = require('fs'), path = require('path');
 const ROT = path.join(__dirname, '..');
 const UT = path.join(ROT, 'kapitel', 'organisk-kemi', 'delkapitel', 'syror-och-estrar', 'img');
-fs.mkdirSync(UT, { recursive: true });
-const INK = '#2d4a35', SIGN = '#5a9668', KOL = '#3a3a3a', SYRE = '#C0392B', VATE = '#f5f0e4', VATSKA = '#a8c4d8', GRA = '#8A8A8A', GUL = '#e8c547';
-const FONT = `font-family="Georgia, 'Times New Roman', serif"`;
-const r2 = x => Math.round(x * 100) / 100;
-const svg = (w, h, titel, inneh) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-labelledby="t">
-  <title id="t">${titel}</title>
-${inneh}</svg>
-`;
-const txt = (x, y, t, extra = '') => `  <text x="${r2(x)}" y="${r2(y)}" ${/fill=/.test(extra) ? '' : `fill="${INK}"`} ${/font-size=/.test(extra) ? '' : 'font-size="16"'} ${/text-anchor=/.test(extra) ? '' : 'text-anchor="middle"'} ${FONT} ${extra}>${t}</text>\n`;
-const SUBT = { '₀': '0', '₁': '1', '₂': '2', '₃': '3', '₄': '4', '₅': '5', '₆': '6', '₇': '7', '₈': '8', '₉': '9' };
-const sub = s => s.replace(/([₀-₉]+)([^₀-₉]*)/g, (_, ix, rest) => `<tspan font-size="0.7em" dy="0.3em">${[...ix].map(c => SUBT[c]).join('')}</tspan>` + (rest ? `<tspan dy="-0.3em">${rest}</tspan>` : ''));
-// formel med syret i syrefärg: varje O-följd (med ev. H eller ⁻ efter) röd – C₂H₅OH → …<tspan>OH</tspan>, CH₃COOH → CH₃C<tspan>OOH</tspan>
-// (tspan-baslinjen följs explicit: index 0.3em ner, laddning 0.45em upp, och återställs i nästa segment – tomma tspan ignoreras)
-const formelO = s => {
-  const seg = []; for (const c of s) { const typ = SUBT[c] ? 'sub' : /[⁺⁻]/.test(c) ? 'sup' : 'bas', t = SUBT[c] || (c === '⁻' ? '−' : c === '⁺' ? '+' : c), rod = /[O⁻]/.test(c) || (c === 'H' && seg.length && seg[seg.length - 1].rod && /O$/.test(seg[seg.length - 1].t));
-    const f = seg[seg.length - 1]; if (f && f.typ === typ && f.rod === rod) { f.t += t; } else { seg.push({ typ, t, rod }); } }
-  let dy = 0, ut = '';
-  for (const x of seg) { const mal = x.typ === 'sub' ? 0.3 : x.typ === 'sup' ? -0.45 : 0, d = mal - dy; dy = mal;
-    ut += `<tspan${x.typ !== 'bas' ? ' font-size="0.7em"' : ''}${d ? ` dy="${r2(d)}em"` : ''}${x.rod ? ` fill="${SYRE}" data-o="1"` : ''}>${x.t}</tspan>`; }
-  return ut + (dy ? `<tspan dy="${r2(-dy)}em">​</tspan>` : '');
-};
-const linje = (x1, y1, x2, y2, farg = INK, bredd = 2, extra = '') => `  <line x1="${r2(x1)}" y1="${r2(y1)}" x2="${r2(x2)}" y2="${r2(y2)}" stroke="${farg}" stroke-width="${bredd}" stroke-linecap="round" ${extra}/>\n`;
-const cirkel = (x, y, r, fyll, kontur = INK, bredd = 1.2, extra = '') => `  <circle cx="${r2(x)}" cy="${r2(y)}" r="${r}" fill="${fyll}" stroke="${kontur}" stroke-width="${bredd}" ${extra}/>\n`;
-const ellips = (x, y, rx, ry, extra = '') => `  <ellipse cx="${r2(x)}" cy="${r2(y)}" rx="${r2(rx)}" ry="${r2(ry)}" fill="none" stroke="${SIGN}" stroke-width="1.4" ${extra}/>\n`;
-const rekt = (x, y, w, h, fyll, extra = '') => `  <rect x="${r2(x)}" y="${r2(y)}" width="${r2(w)}" height="${r2(h)}" fill="${fyll}" ${extra}/>\n`;
-const pil = (x1, y1, x2, y2, farg = INK, bredd = 2.5, extra = '') => {
-  const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L, s = bredd * 4, bx = x2 - ux * s, by = y2 - uy * s;
-  return `  <line x1="${r2(x1)}" y1="${r2(y1)}" x2="${r2(bx)}" y2="${r2(by)}" stroke="${farg}" stroke-width="${bredd}" stroke-linecap="round" ${extra}/>
-  <polygon points="${r2(x2)},${r2(y2)} ${r2(bx - uy * s * 0.5)},${r2(by + ux * s * 0.5)} ${r2(bx + uy * s * 0.5)},${r2(by - ux * s * 0.5)}" fill="${farg}" ${extra}/>\n`;
-};
-let antal = 0;
-const skriv = (fil, w, h, titel, inneh) => { fs.writeFileSync(path.join(UT, fil), svg(w, h, titel, inneh)); antal++; };
-
-// ---------- bokstavsstil: molekyl som data (atomer {t, x, y, …}, bindningar {a, b, n, …}) ----------
-const DX = 46, DY = 34, FS = 19, GAP = 7.2;
-function molekyl() {
-  const m = { atomer: [], bind: [] };
-  m.atom = (t, x, y, extra = {}) => { m.atomer.push(Object.assign({ t, x, y }, extra)); return m.atomer.length - 1; };
-  m.bond = (a, b, n = 1, extra = {}) => { m.bind.push(Object.assign({ a, b, n }, extra)); return m; };
-  m.ta = (ix) => { // ta bort atomer (index) och deras bindningar
-    const bort = new Set(ix); m.atomer = m.atomer.map((a, i) => bort.has(i) ? null : a); m.bind = m.bind.filter(b => !bort.has(b.a) && !bort.has(b.b)); return m;
-  };
-  return m;
-}
-function kedja(m, n, x0, y) { const ix = []; for (let i = 0; i < n; i++) { ix.push(m.atom('C', x0 + i * DX, y)); if (i) m.bond(ix[i - 1], ix[i]); } return ix; }
-const H = (m, c, dx, dy, extra = {}) => { const a = m.atomer[c]; const i = m.atom('H', a.x + dx, a.y + dy, extra); m.bond(c, i, 1, extra); return i; };
-const OH = (m, c, dx, dy, extra = {}) => { const a = m.atomer[c]; const o = m.atom('O', a.x + dx, a.y + dy, extra); m.bond(c, o, 1, extra); const h = m.atom('H', a.x + 2 * dx, a.y + 2 * dy, extra); m.bond(o, h, 1, extra); return [o, h]; };
-const Odbl = (m, c, dx, dy, extra = {}) => { const a = m.atomer[c]; const o = m.atom('O', a.x + dx, a.y + dy, extra); m.bond(c, o, 2, extra); return o; };
-function rita(m, o = {}) {
-  const tag = o.tag || '', fs_ = o.fontsize || FS, farg = t => t === 'O' ? SYRE : INK;
-  let s = '';
-  for (const b of m.bind) {
-    const A = m.atomer[b.a], B = m.atomer[b.b], dx = B.x - A.x, dy = B.y - A.y, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L, nx = -uy, ny = ux;
-    const kA = A.t === 'H' ? 9 : 13, kB = B.t === 'H' ? 9 : 13;
-    for (let j = 0; j < b.n; j++) { const o2 = (j - (b.n - 1) / 2) * GAP; s += linje(A.x + ux * kA + nx * o2, A.y + uy * kA + ny * o2, B.x - ux * kB + nx * o2, B.y - uy * kB + ny * o2, b.farg || INK, b.bredd || 2.2, `data-bind="${A.t}-${B.t}" ${b.mark ? `data-mark="${b.mark}"` : ''} ${b.streckad ? 'stroke-dasharray="4 3"' : ''} ${tag}`); }
-  }
-  for (const a of m.atomer) { if (!a) continue; if (a.bak) s += a.bak; s += txt(a.x, a.y + fs_ * 0.35, a.t, `font-size="${a.t === 'H' ? fs_ * 0.86 : fs_}" fill="${a.farg || farg(a.t)}" ${a.t !== 'H' ? 'font-weight="bold"' : ''} data-atom="${a.t}" ${a.mark ? `data-mark="${a.mark}"` : ''} ${tag}`); }
-  return s;
-}
-// stub: ledig bindning som slutar i tomma intet (L9 steg 2)
-const stub = (x, y, dx, dy, tag) => linje(x + dx * 0.3, y + dy * 0.3, x + dx * 0.8, y + dy * 0.8, GUL, 2.6, `data-stub="1" ${tag}`);
+// primitiver och molekylmodell delade sedan 2026-09-19 (lib-svg-bokstav.js, lyfta härifrån – bilderna byggs byte-identiskt)
+const B = require('./lib-svg-bokstav.js');
+const { INK, SIGN, KOL, SYRE, VATE, VATSKA, GRA, GUL, FONT, r2, txt, sub, formelO, linje, cirkel, ellips, rekt, pil, DX, DY, FS, molekyl, kedja, H, OH, Odbl, rita, stub, rakna, bindTal, grannar } = B;
+const SK = B.skrivare(UT); const skriv = SK.skriv;
+const KOND = require('./lib-kondensation.js');
 // standardmolekyler
 function etan(x0, y) { const m = molekyl(); const [c1, c2] = kedja(m, 2, x0, y); H(m, c1, 0, -DY); H(m, c1, 0, DY); H(m, c1, -DX, 0); H(m, c2, 0, -DY); H(m, c2, 0, DY); H(m, c2, DX, 0); return m; }
 function etanol(x0, y, extra = {}) { const m = molekyl(); const [c1, c2] = kedja(m, 2, x0, y); H(m, c1, 0, -DY); H(m, c1, 0, DY); H(m, c1, -DX, 0); H(m, c2, 0, -DY, extra.h1 || {}); H(m, c2, 0, DY, extra.h2 || {}); const [o, h] = OH(m, c2, DX, 0); m.o = o; m.oh = h; m.c2 = c2; return m; }
@@ -91,9 +35,6 @@ function ester(x0, y) {
   H(m, c3, 0, -DY); H(m, c3, 0, DY); H(m, c4, 0, -DY); H(m, c4, 0, DY); H(m, c4, DX, 0);
   m.c2 = c2; m.o = o; m.c3 = c3; return m;
 }
-const rakna = m => ({ C: m.atomer.filter(a => a && a.t === 'C').length, H: m.atomer.filter(a => a && a.t === 'H').length, O: m.atomer.filter(a => a && a.t === 'O').length });
-const bindTal = (m, i) => m.bind.filter(b => b.a === i || b.b === i).reduce((s, b) => s + b.n, 0);
-const grannar = (m, i) => m.bind.filter(b => b.a === i || b.b === i).map(b => b.a === i ? b.b : b.a);
 // ring runt karboxylgruppen: kolatom c, dubbelbundet O upp, O och H åt höger → ellips
 const karboxylRing = (m, c, tag = '') => { const a = m.atomer[c]; return ellips(a.x + DX, a.y - DY * 0.45, DX * 1.45, DY * 1.35, `data-ring="karboxyl" ${tag}`); };
 const ohRing = (m, o, tag = '') => { const a = m.atomer[o]; return ellips(a.x + DX / 2, a.y, DX * 0.95, 20, `data-ring="hydroxyl" ${tag}`); };
@@ -251,54 +192,37 @@ const ohRing = (m, o, tag = '') => { const a = m.atomer[o]; return ellips(a.x + 
   skriv('k5-l8.svg', W, HH, 'En tabell med sex estrar, vad deras doft påminner om och var de finns naturligt', ut);
 }
 
-// ---------- L9. Esterbildningen (3.2) ----------
+// ---------- L9. Esterbildningen (3.2) – gemensam uppställning med M3 och M7 (lib-kondensation.js) ----------
 const L9 = {};
 {
-  const W = 960, HH = 720, XS = 140, XA = 560;
-  let ut = '';
-  const stegRub = (y, t) => txt(30, y, t, `font-size="14" font-style="italic" fill="${SIGN}" text-anchor="start"`);
-  // ---- steg 1 ----
-  const y1 = 120;
-  ut += stegRub(60, 'Steg 1 – utgångsämnena');
-  const s1 = etansyra(XS, y1), a1 = etanol(XA, y1);
-  // markera syrans OH (o + oh) och alkoholens H på syret med gul fylld cirkel bakom
-  for (const i of [s1.o, s1.oh]) { const a = s1.atomer[i]; a.bak = cirkel(a.x, a.y, 15, GUL, 'none', 0, 'fill-opacity="0.75" data-lamnar="syra-OH"'); a.mark = 'syra-OH'; }
-  { const a = a1.atomer[a1.oh]; a.bak = cirkel(a.x, a.y, 15, GUL, 'none', 0, 'fill-opacity="0.75" data-lamnar="alkohol-H"'); a.mark = 'alkohol-H'; }
-  ut += rita(s1, { tag: 'data-steg="1" data-molekyl="etansyra"' }) + karboxylRing(s1, s1.c2, 'data-steg="1"');
-  ut += rita(a1, { tag: 'data-steg="1" data-molekyl="etanol"' }) + ohRing(a1, a1.o, 'data-steg="1"');
-  ut += txt(XS + DX / 2, y1 + 72, 'etansyra', 'font-size="14" font-weight="bold"') + txt(XA + DX / 2, y1 + 72, 'etanol', 'font-size="14" font-weight="bold"');
-  ut += txt((XS + 2 * DX + XA - DX) / 2 + 20, y1 - 30, 'dessa två lämnar', `font-size="13" font-style="italic" fill="${INK}"`) + linje((XS + 2 * DX + XA - DX) / 2 - 40, y1 - 24, (XS + 2 * DX + XA - DX) / 2 + 80, y1 - 24, GUL, 3);
-  L9.steg1 = { syra: s1, alkohol: a1 };
-  // ---- steg 2 ----
-  const y2 = 340;
-  ut += stegRub(280, 'Steg 2 – vattnet lämnar');
-  const s2 = etansyra(XS, y2), a2 = etanol(XA, y2);
-  const s2o = s2.atomer[s2.o], s2c = s2.atomer[s2.c2], a2h = a2.atomer[a2.oh], a2o = a2.atomer[a2.o];
-  s2.ta([s2.o, s2.oh]); a2.ta([a2.oh]);
-  ut += rita(s2, { tag: 'data-steg="2" data-molekyl="etansyra"' }) + stub(s2c.x, s2c.y, DX, 0, 'data-steg="2" data-molekyl="etansyra"');
-  ut += rita(a2, { tag: 'data-steg="2" data-molekyl="etanol"' }) + stub(a2o.x, a2o.y, DX, 0, 'data-steg="2" data-molekyl="etanol"');
-  // vattenmolekylen i egen ruta
-  const wx = 400, wy = y2 - 10;
-  ut += rekt(wx - 62, wy - 48, 124, 96, GUL, 'fill-opacity="0.35" rx="8" data-del="vattenruta"');
-  const w = molekyl(); const wo = w.atom('O', wx, wy - 8); H(w, wo, -30, 22); H(w, wo, 30, 22);
-  ut += rita(w, { tag: 'data-steg="2" data-molekyl="vatten"' }) + txt(wx, wy + 40, formelO('H₂O'), 'font-size="15" font-weight="bold"');
-  ut += pil(wx + 66, wy - 30, wx + 66, wy - 90, INK, 2.2) + txt(wx + 66, wy - 98, 'lämnar', 'font-size="12" font-style="italic"');
-  ut += txt(W / 2, y2 + 82, 'OH från syran och H från alkoholen bildar vatten', 'font-size="13" font-style="italic"');
-  L9.steg2 = { syra: s2, alkohol: a2, vatten: w };
-  // ---- steg 3 ----
-  const y3 = 560;
-  ut += stegRub(500, 'Steg 3 – esterbindningen');
-  const e = ester(300, y3);
-  ut += rita(e, { tag: 'data-steg="3" data-molekyl="ester"' });
-  const eb = e.atomer[e.c2], eo = e.atomer[e.o];
-  ut += ellips((eb.x + eo.x) / 2, y3, 30, 20, 'data-ring="esterbindning" data-steg="3"') + linje((eb.x + eo.x) / 2, y3 + 22, (eb.x + eo.x) / 2, y3 + 56, SIGN, 1.2) + txt((eb.x + eo.x) / 2, y3 + 72, 'esterbindning', `font-size="14" font-weight="bold" fill="${SIGN}"`);
-  ut += txt(300 + 2 * DX, y3 + 100, 'etyletanoat (etylacetat), ' + sub('CH₃') + '–C' + `<tspan fill="${SYRE}">OO</tspan>` + '–' + sub('CH₂') + '–' + sub('CH₃'), 'font-size="15" font-weight="bold"');
-  L9.steg3 = { ester: e };
-  // ordreaktionen med dubbelpil
-  const fy = HH - 22;
-  ut += txt(W / 2 - 60, fy, 'alkohol + organisk syra', 'font-size="15" font-style="italic" text-anchor="end"') + txt(W / 2 + 60, fy, 'ester + vatten', 'font-size="15" font-style="italic" text-anchor="start"');
-  ut += linje(W / 2 - 40, fy - 8, W / 2 + 40, fy - 8, INK, 1.6) + linje(W / 2 + 40, fy - 8, W / 2 + 33, fy - 13, INK, 1.6) + linje(W / 2 - 40, fy - 2, W / 2 + 40, fy - 2, INK, 1.6) + linje(W / 2 - 40, fy - 2, W / 2 - 33, fy + 3, INK, 1.6);
-  skriv('k5-l9.svg', W, HH, 'Esterbildningen i tre steg. Först etansyra och etanol med de delar markerade som ska lämna: en OH-grupp från syran och en väteatom från alkoholen. Sedan bildar de tillsammans en vattenmolekyl som lämnar. Sist sitter molekylerna ihop med en esterbindning', ut);
+  const { XS, XA } = KOND;
+  const steg1 = y1 => {
+    const s1 = etansyra(XS, y1), a1 = etanol(XA, y1);
+    // markera syrans OH (o + oh) och alkoholens H på syret med gul fylld cirkel bakom
+    for (const i of [s1.o, s1.oh]) { const at = s1.atomer[i]; at.bak = KOND.lamnar(at, 'syra-OH'); at.mark = 'syra-OH'; }
+    { const at = a1.atomer[a1.oh]; at.bak = KOND.lamnar(at, 'alkohol-H'); at.mark = 'alkohol-H'; }
+    L9.steg1 = { syra: s1, alkohol: a1 };
+    return rita(s1, { tag: 'data-steg="1" data-molekyl="etansyra"' }) + karboxylRing(s1, s1.c2, 'data-steg="1"')
+      + rita(a1, { tag: 'data-steg="1" data-molekyl="etanol"' }) + ohRing(a1, a1.o, 'data-steg="1"')
+      + txt(XS + DX / 2, y1 + 72, 'etansyra', 'font-size="14" font-weight="bold"') + txt(XA + DX / 2, y1 + 72, 'etanol', 'font-size="14" font-weight="bold"');
+  };
+  const steg2 = y2 => {
+    const s2 = etansyra(XS, y2), a2 = etanol(XA, y2);
+    const s2c = s2.atomer[s2.c2], a2o = a2.atomer[a2.o];
+    s2.ta([s2.o, s2.oh]); a2.ta([a2.oh]);
+    L9.steg2 = { syra: s2, alkohol: a2 };
+    return rita(s2, { tag: 'data-steg="2" data-molekyl="etansyra"' }) + stub(s2c.x, s2c.y, DX, 0, 'data-steg="2" data-molekyl="etansyra"')
+      + rita(a2, { tag: 'data-steg="2" data-molekyl="etanol"' }) + stub(a2o.x, a2o.y, DX, 0, 'data-steg="2" data-molekyl="etanol"');
+  };
+  const steg3 = y3 => {
+    const e = ester(300, y3); L9.steg3 = { ester: e };
+    const eb = e.atomer[e.c2], eo = e.atomer[e.o];
+    return rita(e, { tag: 'data-steg="3" data-molekyl="ester"' }) + KOND.bindRing((eb.x + eo.x) / 2, y3, 'esterbindning', 'esterbindning')
+      + txt(300 + 2 * DX, y3 + 100, 'etyletanoat (etylacetat), ' + sub('CH₃') + '–C' + `<tspan fill="${SYRE}">OO</tspan>` + '–' + sub('CH₂') + '–' + sub('CH₃'), 'font-size="15" font-weight="bold"');
+  };
+  const ut = KOND.kondensation({ steg1, steg2, steg3, steg2text: 'OH från syran och H från alkoholen bildar vatten', steg3etikett: 'Steg 3 – esterbindningen', reaktion: ['alkohol + organisk syra', 'ester + vatten'] });
+  L9.steg2.vatten = KOND.delar({}).vatten;
+  skriv('k5-l9.svg', KOND.W, KOND.HH, 'Esterbildningen i tre steg. Först etansyra och etanol med de delar markerade som ska lämna: en OH-grupp från syran och en väteatom från alkoholen. Sedan bildar de tillsammans en vattenmolekyl som lämnar. Sist sitter molekylerna ihop med en esterbindning', ut);
 }
 
 // ---------- L10. Fettmolekylen (3.3) ----------
@@ -331,7 +255,7 @@ const L9 = {};
 }
 
 // ================= KONTROLLER =================
-const las = f => fs.readFileSync(path.join(UT, f), 'utf8');
+const las = SK.las;
 const element = (s, filter) => [...s.matchAll(/<(text|circle|line|rect|path|ellipse|polygon|tspan|g)\b([^>]*)>/g)].map(m => { const at = { _tag: m[1] }; for (const a of m[2].matchAll(/([a-z0-9-]+)="([^"]*)"/g)) at[a[1]] = a[2]; return at; }).filter(filter);
 const rapport = []; function kolla(n, ok, t) { rapport.push(`${ok ? 'OK ' : 'FEL'} ${n}: ${t}`); if (!ok) process.exitCode = 1; }
 const antalAtom = (els, t) => els.filter(e => e['data-atom'] === t).length;
@@ -430,5 +354,5 @@ const valens = m => m.atomer.every((a, i) => !a || (a.t === 'C' ? bindTal(m, i) 
   const g = element(s, e => e['data-molekyl'] === 'glycerol');
   kolla('L10 tre esterbindningar', ringar.length === 3 && bind.length === 3 && ked.length === 3 && new Set(ked.map(e => e['data-kol'])).size === 3 && antalAtom(g, 'C') === 3 && antalAtom(g, 'O') === 3, `${ringar.length} ringar, ${bind.length} markerade bindningar, ${ked.length} fettsyror med ${ked.map(e => e['data-kol']).join('/')} kolatomer (olika långa); glycerol ${antalAtom(g, 'C')} C, ${antalAtom(g, 'O')} O`);
 }
-console.log(`${antal} SVG skrivna till ${path.relative(ROT, UT)}`);
+console.log(`${SK.antal} SVG skrivna till ${path.relative(ROT, UT)}`);
 console.log(rapport.join('\n'));

@@ -1,0 +1,124 @@
+{
+  "avsnitt": 3,
+  "titel": "Proteiner är kedjor av aminosyror",
+  "delkapitel": "livets-molekyler",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 3 (Proteiner är kedjor av aminosyror), delkapitel Livets molekyler. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/livets-molekyler/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k3-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Protein",
+      "svar": "Stor molekyl byggd av aminosyror sammankopplade med peptidbindningar."
+    },
+    {
+      "id": "k3-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Aminosyra",
+      "svar": "Molekyl med både en karboxylgrupp och en aminogrupp, plus en sidokedja."
+    },
+    {
+      "id": "k3-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Aminogrupp",
+      "svar": "Gruppen –\\(\\ce{NH2}\\). Innehåller kväve och kan ta upp en vätejon, alltså basisk."
+    },
+    {
+      "id": "k3-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Sidokedja",
+      "svar": "Den del av aminosyran som skiljer de tjugo aminosyrorna åt. Markeras med R."
+    },
+    {
+      "id": "k3-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Peptidbindning",
+      "svar": "Bindningen mellan två aminosyror, mellan karboxylgruppens kolatom och aminogruppens kväveatom."
+    },
+    {
+      "id": "k3-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Polypeptid",
+      "svar": "En kedja av aminosyror sammankopplade med peptidbindningar."
+    },
+    {
+      "id": "k3-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Veckning",
+      "svar": "Att aminosyrakedjan viks till en bestämd tredimensionell form. Formen avgör funktionen."
+    },
+    {
+      "id": "k3-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Denaturering",
+      "svar": "Att ett protein förlorar sin veckade form utan att kedjan går sönder."
+    },
+    {
+      "id": "k3-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kväve",
+      "svar": "Det atomslag som skiljer proteiner från kolhydrater och fetter."
+    },
+    {
+      "id": "k3-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Zwitterjon",
+      "svar": "En molekyl som är positiv i ena änden och negativ i den andra men neutral som helhet. Aminosyror är zwitterjoner."
+    },
+    {
+      "id": "k3-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Chaperon",
+      "svar": "Protein som håller nyfödda aminosyrakedjor avskilda tills veckningen är klar."
+    },
+    {
+      "id": "k3-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Anfinsens försök",
+      "svar": "Experiment från 1961 som visade att ett denaturerat enzym kan vika sig tillbaka helt av sig självt."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k3-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför kan aminosyror kopplas ihop till kedjor?",
+      "svar": "Den ena änden är sur och kan avge en vätejon, den andra är basisk och kan ta upp en. De passar alltså ihop."
+    },
+    {
+      "id": "k3-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer egentligen när ett ägg steks?",
+      "svar": "Proteinerna denaturerar. Kedjorna vecklar ut sig och fastnar i varandra, och äggvitan blir vit och fast."
+    },
+    {
+      "id": "k3-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför beter sig aminosyror som salter?",
+      "svar": "De är zwitterjoner med laddning i båda ändar. Laddade molekyler dras mycket starkare till varandra än oladdade, och därför är aminosyror fasta med höga smältpunkter."
+    },
+    {
+      "id": "k3-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför kan ett enzym vika sig tillbaka men inte ett ägg?",
+      "svar": "En ensam molekyl har all information som behövs. I ett ägg fastnar molekylerna i varandra innan de hinner vika sig tillbaka."
+    }
+  ]
+}

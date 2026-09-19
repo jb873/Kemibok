@@ -1,0 +1,128 @@
+{
+  "avsnitt": 1,
+  "titel": "Kolhydrater är byggda av sockerringar",
+  "delkapitel": "livets-molekyler",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 1 (Kolhydrater är byggda av sockerringar), delkapitel Livets molekyler, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/livets-molekyler/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k1-s1",
+      "typ": "tal",
+      "fraga": "Hur många kolatomer har en glukosmolekyl?",
+      "svar": 6,
+      "forklaring": "Fem av dem ingår i ringen tillsammans med en syreatom. Den sjätte sitter utanför."
+    },
+    {
+      "id": "k1-s2",
+      "typ": "tal",
+      "fraga": "Hur många atomer ingår i glukosringen?",
+      "svar": 6,
+      "forklaring": "Fem kolatomer plus en syreatom. Därför ritas ringen som en sexhörning."
+    },
+    {
+      "id": "k1-s3",
+      "typ": "tal",
+      "fraga": "Hur många monosackarider ingår i en disackarid?",
+      "svar": 2,
+      "forklaring": "Förleden *di-* betyder två. Sackaros består av glukos och fruktos."
+    },
+    {
+      "id": "k1-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas den enklaste sortens kolhydrat, alltså en enda sockerring?",
+      "svar": [
+        "monosackarid"
+      ],
+      "forklaring": "Glukos, fruktos och galaktos är alla monosackarider."
+    },
+    {
+      "id": "k1-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas bindningen mellan två sockerringar?",
+      "svar": [
+        "glykosidbindning"
+      ],
+      "forklaring": "Den bildas när en OH-grupp och en väteatom lämnar som vatten."
+    },
+    {
+      "id": "k1-s6",
+      "typ": "ord",
+      "fraga": "Vad kallas en reaktion där två molekyler kopplas ihop och vatten lämnar?",
+      "svar": [
+        "kondensationsreaktion"
+      ],
+      "forklaring": "Samma reaktionstyp bildar estrar, disackarider och proteiner."
+    },
+    {
+      "id": "k1-s7",
+      "typ": "ord",
+      "fraga": "Vilket enzym bryter ner stärkelse?",
+      "svar": [
+        "amylas"
+      ],
+      "forklaring": "Det passar stärkelsens bindningar men inte cellulosans, eftersom ringarna är vända olika."
+    },
+    {
+      "id": "k1-s8",
+      "typ": "formel",
+      "fraga": "Skriv molekylformeln för glukos.",
+      "svar": [
+        "C6H12O6"
+      ],
+      "forklaring": "Samma formel har fruktos och galaktos. De är isomerer."
+    },
+    {
+      "id": "k1-s9",
+      "typ": "flerval",
+      "fraga": "Varför heter det kolhydrat?",
+      "alternativ": [
+        "det innehåller vattenmolekyler",
+        "väte och syre finns i samma förhållande som i vatten",
+        "det bildas av vatten",
+        "det löser sig i vatten"
+      ],
+      "svar": 1,
+      "forklaring": "Namnet är en gammal gissning. Det sitter inga vattenmolekyler i molekylen."
+    },
+    {
+      "id": "k1-s10",
+      "typ": "flerval",
+      "fraga": "Vad skiljer glukos från galaktos?",
+      "alternativ": [
+        "antalet kolatomer",
+        "antalet syreatomer",
+        "åt vilket håll en OH-grupp pekar",
+        "att den ena är en ring"
+      ],
+      "svar": 2,
+      "forklaring": "De har exakt samma molekylformel men olika struktur. De är isomerer."
+    },
+    {
+      "id": "k1-s11",
+      "typ": "flerval",
+      "fraga": "Vad är skillnaden mellan stärkelse och cellulosa?",
+      "alternativ": [
+        "de byggs av olika sockerarter",
+        "varannan ring är vänd i cellulosan",
+        "cellulosa har längre kedjor",
+        "stärkelse innehåller mer syre"
+      ],
+      "svar": 1,
+      "forklaring": "Båda byggs av glukos. Vändningen ändrar bindningens form, och därför passar inte amylas."
+    },
+    {
+      "id": "k1-s12",
+      "typ": "flerval",
+      "fraga": "Varför är cellulosa så starkt?",
+      "alternativ": [
+        "bindningarna mellan ringarna är starkare",
+        "kedjorna är raka och hålls ihop av många vätebindningar",
+        "den innehåller metall",
+        "kedjorna är längre"
+      ],
+      "svar": 1,
+      "forklaring": "Varje vätebindning är svag, men mellan två långa kedjor finns tusentals av dem. ---"
+    }
+  ]
+}

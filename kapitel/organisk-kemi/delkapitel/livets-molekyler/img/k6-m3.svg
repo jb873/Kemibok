@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" width="960" height="720" role="img" aria-labelledby="t">
+  <title id="t">Två glukosringar kopplas ihop i tre steg. Först är en OH-grupp och en väteatom markerade, sedan bildar de en vattenmolekyl som lämnar, och sist sitter ringarna ihop med en glykosidbindning</title>
+  <text x="30" y="60"    font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668" text-anchor="start">Steg 1 – utgångsämnena</text>
+  <path d="M278 120 L259 87.09 L221 87.09 L202 120 L221 152.91 L259 152.91 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-steg="1" data-molekyl="glukos-v"/>
+  <circle cx="259" cy="87.09" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="259" y="92.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="upp" data-steg="1" data-molekyl="glukos-v">O</text>
+  <line x1="282" y1="120" x2="298" y2="120" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C1-OH" data-steg="1" data-molekyl="glukos-v"/>
+  <circle cx="308" cy="120" r="13" fill="#e8c547" stroke="none" stroke-width="0" fill-opacity="0.75" data-lamnar="vanster-OH"/>
+  <text x="308" y="125"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C1-OH" data-steg="1" data-molekyl="glukos-v">O</text>
+  <line x1="318" y1="120" x2="323" y2="120" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C1-OH" data-steg="1" data-molekyl="glukos-v"/>
+  <circle cx="330" cy="120" r="11" fill="#e8c547" stroke="none" stroke-width="0" fill-opacity="0.75" data-lamnar="vanster-OH"/>
+  <text x="330" y="124"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C1-OH" data-steg="1" data-molekyl="glukos-v">H</text>
+  <line x1="259" y1="156.91" x2="259" y2="172.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-steg="1" data-molekyl="glukos-v"/>
+  <text x="259" y="187.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-steg="1" data-molekyl="glukos-v">O</text>
+  <line x1="259" y1="192.91" x2="259" y2="197.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-steg="1" data-molekyl="glukos-v"/>
+  <text x="259" y="208.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-steg="1" data-molekyl="glukos-v">H</text>
+  <line x1="221" y1="156.91" x2="221" y2="172.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-steg="1" data-molekyl="glukos-v"/>
+  <text x="221" y="187.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-steg="1" data-molekyl="glukos-v">O</text>
+  <line x1="221" y1="192.91" x2="221" y2="197.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-steg="1" data-molekyl="glukos-v"/>
+  <text x="221" y="208.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-steg="1" data-molekyl="glukos-v">H</text>
+  <line x1="198" y1="120" x2="182" y2="120" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C4-OH" data-steg="1" data-molekyl="glukos-v"/>
+  <text x="172" y="125"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C4-OH" data-steg="1" data-molekyl="glukos-v">O</text>
+  <line x1="162" y1="120" x2="157" y2="120" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C4-OH" data-steg="1" data-molekyl="glukos-v"/>
+  <text x="150" y="124"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C4-OH" data-steg="1" data-molekyl="glukos-v">H</text>
+  <line x1="221" y1="83.09" x2="221" y2="71.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-steg="1" data-molekyl="glukos-v"/>
+  <text x="221" y="50.09" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-steg="1" data-molekyl="glukos-v">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <path d="M708 120 L689 87.09 L651 87.09 L632 120 L651 152.91 L689 152.91 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-steg="1" data-molekyl="glukos-h"/>
+  <circle cx="689" cy="87.09" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="689" y="92.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="upp" data-steg="1" data-molekyl="glukos-h">O</text>
+  <line x1="712" y1="120" x2="728" y2="120" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C1-OH" data-steg="1" data-molekyl="glukos-h"/>
+  <text x="738" y="125"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C1-OH" data-steg="1" data-molekyl="glukos-h">O</text>
+  <line x1="748" y1="120" x2="753" y2="120" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C1-OH" data-steg="1" data-molekyl="glukos-h"/>
+  <text x="760" y="124"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C1-OH" data-steg="1" data-molekyl="glukos-h">H</text>
+  <line x1="689" y1="156.91" x2="689" y2="172.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-steg="1" data-molekyl="glukos-h"/>
+  <text x="689" y="187.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-steg="1" data-molekyl="glukos-h">O</text>
+  <line x1="689" y1="192.91" x2="689" y2="197.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-steg="1" data-molekyl="glukos-h"/>
+  <text x="689" y="208.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-steg="1" data-molekyl="glukos-h">H</text>
+  <line x1="651" y1="156.91" x2="651" y2="172.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-steg="1" data-molekyl="glukos-h"/>
+  <text x="651" y="187.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-steg="1" data-molekyl="glukos-h">O</text>
+  <line x1="651" y1="192.91" x2="651" y2="197.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-steg="1" data-molekyl="glukos-h"/>
+  <text x="651" y="208.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-steg="1" data-molekyl="glukos-h">H</text>
+  <line x1="628" y1="120" x2="612" y2="120" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C4-OH" data-steg="1" data-molekyl="glukos-h"/>
+  <text x="602" y="125"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C4-OH" data-steg="1" data-molekyl="glukos-h">O</text>
+  <line x1="592" y1="120" x2="587" y2="120" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C4-OH" data-steg="1" data-molekyl="glukos-h"/>
+  <circle cx="580" cy="120" r="11" fill="#e8c547" stroke="none" stroke-width="0" fill-opacity="0.75" data-lamnar="hoger-H"/>
+  <text x="580" y="124"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C4-OH" data-steg="1" data-molekyl="glukos-h">H</text>
+  <line x1="651" y1="83.09" x2="651" y2="71.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-steg="1" data-molekyl="glukos-h"/>
+  <text x="651" y="50.09" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-steg="1" data-molekyl="glukos-h">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <text x="240" y="232" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold">glukos</text>
+  <text x="670" y="232" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold">glukos</text>
+  <text x="393" y="90"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" fill="#2d4a35">dessa två lämnar</text>
+  <line x1="333" y1="96" x2="453" y2="96" stroke="#e8c547" stroke-width="3" stroke-linecap="round" />
+  <text x="30" y="280"    font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668" text-anchor="start">Steg 2 – vattnet lämnar</text>
+  <path d="M278 340 L259 307.09 L221 307.09 L202 340 L221 372.91 L259 372.91 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-steg="2" data-molekyl="glukos-v"/>
+  <circle cx="259" cy="307.09" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="259" y="312.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="upp" data-steg="2" data-molekyl="glukos-v">O</text>
+  <line x1="288.2" y1="340" x2="305.2" y2="340" stroke="#e8c547" stroke-width="2.6" stroke-linecap="round" data-stub="1" data-sub="C1-ledig" data-steg="2" data-molekyl="glukos-v"/>
+  <line x1="259" y1="376.91" x2="259" y2="392.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-steg="2" data-molekyl="glukos-v"/>
+  <text x="259" y="407.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-steg="2" data-molekyl="glukos-v">O</text>
+  <line x1="259" y1="412.91" x2="259" y2="417.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-steg="2" data-molekyl="glukos-v"/>
+  <text x="259" y="428.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-steg="2" data-molekyl="glukos-v">H</text>
+  <line x1="221" y1="376.91" x2="221" y2="392.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-steg="2" data-molekyl="glukos-v"/>
+  <text x="221" y="407.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-steg="2" data-molekyl="glukos-v">O</text>
+  <line x1="221" y1="412.91" x2="221" y2="417.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-steg="2" data-molekyl="glukos-v"/>
+  <text x="221" y="428.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-steg="2" data-molekyl="glukos-v">H</text>
+  <line x1="198" y1="340" x2="182" y2="340" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C4-OH" data-steg="2" data-molekyl="glukos-v"/>
+  <text x="172" y="345"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C4-OH" data-steg="2" data-molekyl="glukos-v">O</text>
+  <line x1="162" y1="340" x2="157" y2="340" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C4-OH" data-steg="2" data-molekyl="glukos-v"/>
+  <text x="150" y="344"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C4-OH" data-steg="2" data-molekyl="glukos-v">H</text>
+  <line x1="221" y1="303.09" x2="221" y2="291.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-steg="2" data-molekyl="glukos-v"/>
+  <text x="221" y="270.09" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-steg="2" data-molekyl="glukos-v">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <path d="M708 340 L689 307.09 L651 307.09 L632 340 L651 372.91 L689 372.91 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-steg="2" data-molekyl="glukos-h"/>
+  <circle cx="689" cy="307.09" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="689" y="312.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="upp" data-steg="2" data-molekyl="glukos-h">O</text>
+  <line x1="712" y1="340" x2="728" y2="340" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C1-OH" data-steg="2" data-molekyl="glukos-h"/>
+  <text x="738" y="345"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C1-OH" data-steg="2" data-molekyl="glukos-h">O</text>
+  <line x1="748" y1="340" x2="753" y2="340" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C1-OH" data-steg="2" data-molekyl="glukos-h"/>
+  <text x="760" y="344"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C1-OH" data-steg="2" data-molekyl="glukos-h">H</text>
+  <line x1="689" y1="376.91" x2="689" y2="392.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-steg="2" data-molekyl="glukos-h"/>
+  <text x="689" y="407.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-steg="2" data-molekyl="glukos-h">O</text>
+  <line x1="689" y1="412.91" x2="689" y2="417.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-steg="2" data-molekyl="glukos-h"/>
+  <text x="689" y="428.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-steg="2" data-molekyl="glukos-h">H</text>
+  <line x1="651" y1="376.91" x2="651" y2="392.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-steg="2" data-molekyl="glukos-h"/>
+  <text x="651" y="407.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-steg="2" data-molekyl="glukos-h">O</text>
+  <line x1="651" y1="412.91" x2="651" y2="417.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-steg="2" data-molekyl="glukos-h"/>
+  <text x="651" y="428.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-steg="2" data-molekyl="glukos-h">H</text>
+  <line x1="628" y1="340" x2="612" y2="340" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C4-O" data-steg="2" data-molekyl="glukos-h"/>
+  <text x="602" y="345"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C4-O" data-steg="2" data-molekyl="glukos-h">O</text>
+  <line x1="593" y1="340" x2="578" y2="340" stroke="#e8c547" stroke-width="2.6" stroke-linecap="round" data-stub="1" data-sub="C4-O" data-steg="2" data-molekyl="glukos-h"/>
+  <line x1="651" y1="303.09" x2="651" y2="291.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-steg="2" data-molekyl="glukos-h"/>
+  <text x="651" y="270.09" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-steg="2" data-molekyl="glukos-h">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <rect x="338" y="282" width="124" height="96" fill="#e8c547" fill-opacity="0.35" rx="8" data-del="vattenruta"/>
+  <line x1="389.52" y1="329.69" x2="377.26" y2="338.68" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"   data-steg="2" data-molekyl="vatten"/>
+  <line x1="410.48" y1="329.69" x2="422.74" y2="338.68" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"   data-steg="2" data-molekyl="vatten"/>
+  <text x="400" y="328.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-steg="2" data-molekyl="vatten">O</text>
+  <text x="370" y="350.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="2" data-molekyl="vatten">H</text>
+  <text x="430" y="350.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="2" data-molekyl="vatten">H</text>
+  <text x="400" y="370" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold"><tspan>H</tspan><tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em" fill="#C0392B" data-o="1">O</tspan></text>
+  <line x1="466" y1="300" x2="466" y2="248.8" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <polygon points="466,240 470.4,248.8 461.6,248.8" fill="#2d4a35" />
+  <text x="466" y="232" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic">lämnar</text>
+  <text x="480" y="422" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">OH från den ena och H från den andra bildar vatten</text>
+  <text x="30" y="500"    font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668" text-anchor="start">Steg 3 – glykosidbindningen</text>
+  <path d="M434 560 L415 527.09 L377 527.09 L358 560 L377 592.91 L415 592.91 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-steg="3" data-molekyl="maltos"/>
+  <circle cx="415" cy="527.09" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="415" y="532.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="upp" data-steg="3" data-molekyl="maltos">O</text>
+  <line x1="415" y1="596.91" x2="415" y2="612.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="415" y="627.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-steg="3" data-molekyl="maltos">O</text>
+  <line x1="415" y1="632.91" x2="415" y2="637.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="415" y="648.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-steg="3" data-molekyl="maltos">H</text>
+  <line x1="377" y1="596.91" x2="377" y2="612.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="377" y="627.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-steg="3" data-molekyl="maltos">O</text>
+  <line x1="377" y1="632.91" x2="377" y2="637.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="377" y="648.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-steg="3" data-molekyl="maltos">H</text>
+  <line x1="354" y1="560" x2="338" y2="560" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C4-OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="328" y="565"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C4-OH" data-steg="3" data-molekyl="maltos">O</text>
+  <line x1="318" y1="560" x2="313" y2="560" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C4-OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="306" y="564"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C4-OH" data-steg="3" data-molekyl="maltos">H</text>
+  <line x1="377" y1="523.09" x2="377" y2="511.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="377" y="490.09" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-steg="3" data-molekyl="maltos">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <path d="M602 560 L583 527.09 L545 527.09 L526 560 L545 592.91 L583 592.91 Z" fill="none" stroke="#2d4a35" stroke-width="2" stroke-linejoin="round" data-ringform="6" data-steg="3" data-molekyl="maltos"/>
+  <circle cx="583" cy="527.09" r="11" fill="#f5f0e4" stroke="none" stroke-width="0" />
+  <text x="583" y="532.09"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-ring-o="upp" data-steg="3" data-molekyl="maltos">O</text>
+  <line x1="606" y1="560" x2="622" y2="560" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C1-OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="632" y="565"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C1-OH" data-steg="3" data-molekyl="maltos">O</text>
+  <line x1="642" y1="560" x2="647" y2="560" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C1-OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="654" y="564"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C1-OH" data-steg="3" data-molekyl="maltos">H</text>
+  <line x1="583" y1="596.91" x2="583" y2="612.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C2-OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="583" y="627.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C2-OH" data-steg="3" data-molekyl="maltos">O</text>
+  <line x1="583" y1="632.91" x2="583" y2="637.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C2-OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="583" y="648.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C2-OH" data-steg="3" data-molekyl="maltos">H</text>
+  <line x1="545" y1="596.91" x2="545" y2="612.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-O" data-sub="C3-OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="545" y="627.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#C0392B" data-atom="O" data-sub="C3-OH" data-steg="3" data-molekyl="maltos">O</text>
+  <line x1="545" y1="632.91" x2="545" y2="637.91" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="O-H" data-sub="C3-OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="545" y="648.91"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#2d4a35" data-atom="H" data-sub="C3-OH" data-steg="3" data-molekyl="maltos">H</text>
+  <line x1="545" y1="523.09" x2="545" y2="511.09" stroke="#2d4a35" stroke-width="2" stroke-linecap="round" data-bind="C-C" data-sub="C5-CH2OH" data-steg="3" data-molekyl="maltos"/>
+  <text x="545" y="490.09" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" data-grupp="CH2OH" data-sub="C5-CH2OH" data-steg="3" data-molekyl="maltos">CH<tspan font-size="0.7em" dy="0.3em">2</tspan><tspan fill="#C0392B">O</tspan>H</text>
+  <line x1="438" y1="560" x2="468" y2="560" stroke="#5a9668" stroke-width="3.2" stroke-linecap="round" data-bind="C-O" data-mark="glykosidbindning" data-steg="3"/>
+  <line x1="492" y1="560" x2="522" y2="560" stroke="#5a9668" stroke-width="3.2" stroke-linecap="round" data-bind="O-C" data-mark="glykosidbindning" data-steg="3"/>
+  <text x="480" y="565"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#C0392B" data-atom="O" data-brygga="1" data-steg="3">O</text>
+  <ellipse cx="480" cy="560" rx="30" ry="20" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="glykosidbindning" data-steg="3"/>
+  <line x1="480" y1="582" x2="480" y2="652" stroke="#5a9668" stroke-width="1.2" stroke-linecap="round" />
+  <text x="480" y="668"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#5a9668">glykosidbindning</text>
+  <text x="702" y="565" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" text-anchor="start">maltos, <tspan>C</tspan><tspan font-size="0.7em" dy="0.3em">12</tspan><tspan dy="-0.3em">H</tspan><tspan font-size="0.7em" dy="0.3em">22</tspan><tspan dy="-0.3em" fill="#C0392B" data-o="1">O</tspan><tspan font-size="0.7em" dy="0.3em">11</tspan><tspan dy="-0.3em">​</tspan></text>
+  <text x="420" y="698" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" text-anchor="end">två monosackarider</text>
+  <text x="540" y="698" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" text-anchor="start">en disackarid + vatten</text>
+  <line x1="440" y1="690" x2="520" y2="690" stroke="#2d4a35" stroke-width="1.6" stroke-linecap="round" />
+  <line x1="520" y1="690" x2="513" y2="685" stroke="#2d4a35" stroke-width="1.6" stroke-linecap="round" />
+  <line x1="440" y1="696" x2="520" y2="696" stroke="#2d4a35" stroke-width="1.6" stroke-linecap="round" />
+  <line x1="440" y1="696" x2="447" y2="701" stroke="#2d4a35" stroke-width="1.6" stroke-linecap="round" />
+</svg>

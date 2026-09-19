@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kolhydrater är byggda av sockerringar – Livets molekyler – Kemi</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/kemi.css">
+  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <link rel="stylesheet" href="../../../../css/fonts.css">
+</head>
+<body>
+
+  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <header class="hero-banner">
+    <div class="hero-inner">
+      <nav class="brodsmulor" aria-label="Brödsmulor">
+        <a href="../../../../index.html">Kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="../../index.html">Organisk kemi</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <a href="index.html">Livets molekyler</a>
+        <span class="skiljare" aria-hidden="true">›</span>
+        <span class="aktuell" aria-current="page">1. Kolhydrater är byggda av sockerringar</span>
+      </nav>
+      <span class="avsnitt-label">Avsnitt 1</span>
+      <h1>Kolhydrater är byggda av sockerringar</h1>
+      <p class="subtitel">— sockerringar, ensamma och i kedjor —</p>
+    </div>
+  </header>
+
+  <main class="sida">
+
+    <!-- ===== FLIKRAD ===== -->
+    <div class="flikar-rad" role="tablist">
+      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
+      <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
+      <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
+      <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
+    </div>
+
+    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
+         Flikknappen sätts disabled av JS om inga föreläsningar finns. ===== -->
+    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
+      <div class="forelasningar-lista"></div>
+    </section>
+
+    <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
+    <section class="flik-innehall" data-flik="las" role="tabpanel">
+
+      <!-- Underdelsväljare -->
+      <div class="underdel-valjare" role="tablist" aria-label="Textval">
+        <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
+          <span class="underdel-bokstav">A</span>
+          <span class="underdel-titel">En monosackarid är en ring av kol och syre</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="b" role="tab">
+          <span class="underdel-bokstav">B</span>
+          <span class="underdel-titel">Två sockerringar kan kopplas ihop</span>
+        </button>
+        <button type="button" class="underdel-knapp" data-underdel="c" role="tab">
+          <span class="underdel-bokstav">C</span>
+          <span class="underdel-titel">Stärkelse och cellulosa är samma byggsten vänd åt olika håll</span>
+        </button>
+      </div>
+
+      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
+      <div class="niva-valjare" role="group" aria-label="Textnivå"
+           data-niva-nyckel="kemi-niva-organisk-kemi-kolhydrater">
+        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
+        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
+        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
+      </div>
+
+      <!-- ==================== UNDERDEL A — En monosackarid är en ring av kol och syre ==================== -->
+      <div class="underdel-text" data-underdel="a">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Varför heter det kolhydrat, och varför är namnet missvisande?</li>
+              <li>Vilka atomer ingår i glukosringen?</li>
+              <li>Vad visar den förenklade strukturformeln, och vad utelämnar den?</li>
+              <li>Vad har glukos, fruktos och galaktos gemensamt?</li>
+              <li>Vad skiljer dem åt?</li>
+            </ul>
+          </div>
+
+          <p>Kolhydrater består av kol, väte och syre.</p>
+          <p>De enklaste är små sockermolekyler. De kan kopplas ihop två och två — eller byggas till kedjor med tusentals enheter.</p>
+          <p>Samma lilla byggsten kan alltså ge ämnen som är helt olika.</p>
+          <h2>Namnet betyder kol och vatten</h2>
+          <p>En av de vanligaste kolhydraterna är <strong>glukos</strong>. Formeln är <strong>\(\ce{C6H12O6}\)</strong>.</p>
+          <p>Titta på siffrorna. Sex kolatomer, tolv väteatomer, sex syreatomer.</p>
+          <p>Väte och syre står alltså i förhållandet två till ett — precis som i vatten, \(\ce{H2O}\).</p>
+          <p>Det är därifrån namnet <strong>kolhydrat</strong> kommer. Det betyder ungefär "kol och vatten".</p>
+          <h2>Men namnet är missvisande</h2>
+          <p>Det sitter inga vattenmolekyler fast på kolatomerna. Så är det inte.</p>
+          <p>Formeln räknar bara hur många atomer av varje slag molekylen innehåller. Den säger ingenting om hur de sitter ihop.</p>
+          <p>Och det är <strong>hur de sitter ihop</strong> som bestämmer egenskaperna. Namnet är en gammal gissning som blev kvar.</p>
+          <h2>Sex kolatomer bildar en ring</h2>
+          <p>Glukos har sex kolatomer. Men de ligger sällan i en rak rad.</p>
+          <p>I stället böjer sig kedjan och sluter sig till en <strong>ring</strong>.</p>
+          <p>Räkna vad som ingår i ringen: <strong>fem kolatomer plus en syreatom</strong>. Det blir sex hörn. Den sjätte kolatomen sitter utanför.</p>
+          <p>Att kolkedjor kan bilda ringar såg du redan i delkapitel 1. Glukos visar varför det spelar roll.</p>
+          <h2>Den förenklade strukturformeln</h2>
+          <p>En fullständig strukturformel för glukos har massor av atomer och blir nästan omöjlig att läsa.</p>
+          <p>Därför ritas sockerringar förenklat.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Hitta den röda syreatomen i ringen till höger.</li>
+              <li>Hur många hörn har sexhörningen, och vad är varje hörn?</li>
+              <li>Vilken kolatom sitter utanför ringen?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k6-m1.svg" alt="Glukos ritad på två sätt. Till vänster fullständigt med alla atomer, till höger förenklat som en sexhörning där ett hörn är en röd syreatom och OH-grupper sticker ut.">
+            <figcaption>Samma molekyl två gånger. Den högra är lättare att läsa.</figcaption>
+          </figure>
+          <p>Ringen ritas som en <strong>sexhörning</strong>. De flesta hörnen är kolatomer, och ett av dem är <strong>syreatomen</strong>. Från kolatomerna sticker <strong>OH-grupper</strong> ut.</p>
+          <p>Väteatomer som sitter på kol ritas inte alls.</p>
+          <p>Det låter som att man tappar information — men man tappar bara det som är likadant överallt. Kvar blir det viktiga: <strong>formen</strong> och <strong>var grupperna sitter</strong>.</p>
+          <h2>Glukos, fruktos och galaktos har samma formel</h2>
+          <p>Glukos är inte ensam om formeln \(\ce{C6H12O6}\).</p>
+          <p>Även <strong>fruktos</strong> och <strong>galaktos</strong> har sex kolatomer, tolv väteatomer och sex syreatomer.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Räkna hörnen i varje ring.</li>
+              <li>Jämför de två inringade OH-grupperna. Vad är skillnaden?</li>
+              <li>Vad står under alla tre ringarna?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k6-m2.svg" alt="Tre sockerringar. Glukos och galaktos som sexhörningar, fruktos som femhörning. Under alla tre står samma formel \(\ce{C6H12O6}\).">
+            <figcaption>Samma atomer i alla tre. Ändå är det tre olika ämnen.</figcaption>
+          </figure>
+          <p>Ändå är det tre olika ämnen. Atomerna sitter ihop på olika sätt.</p>
+          <p>De är alltså <strong>isomerer</strong> — samma begrepp som du mötte hos kolvätena.</p>
+          <p>Glukos och galaktos ritas som sexhörningar. Fruktos ritas oftast som en <strong>femhörning</strong>.</p>
+          <p>Samma atomer, olika form, olika ämnen.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Varför heter det kolhydrat, och varför är namnet missvisande?</li>
+              <li>Vilka atomer ingår i glukosringen?</li>
+              <li>Vad visar den förenklade strukturformeln, och vad utelämnar den?</li>
+              <li>Vad har glukos, fruktos och galaktos gemensamt?</li>
+              <li>Vad skiljer dem åt?</li>
+            </ul>
+          </div>
+
+          <p class="inledning">Kolhydrater är en stor grupp organiska ämnen som består av kol, väte och syre.</p>
+          <p>De enklaste är små sockermolekyler. De kan kopplas ihop två och två, eller byggas till mycket långa kedjor.</p>
+          <p>Samma lilla byggsten kan därför ge ämnen med helt olika egenskaper.</p>
+          <h2>Kolhydrater innehåller kol, väte och syre</h2>
+          <p>En av de vanligaste kolhydraterna är <strong>glukos</strong>, med molekylformeln <strong>\(\ce{C6H12O6}\)</strong>.</p>
+          <p>Lägg märke till förhållandet mellan väte och syre: tolv mot sex, alltså dubbelt så många väteatomer. Precis som i vatten, \(\ce{H2O}\).</p>
+          <p>Därifrån kommer namnet <strong>kolhydrat</strong> — ungefär "kol och vatten".</p>
+          <p>Men namnet är missvisande. Det sitter inga vattenmolekyler på kolatomerna. Formeln räknar bara atomerna, och det är <strong>hur de är bundna</strong> som bestämmer ämnets egenskaper.</p>
+          <h2>Sex kolatomer bildar en ring</h2>
+          <p>Glukos har sex kolatomer, men i vatten ligger de sällan i en rak kedja.</p>
+          <p>I stället böjer sig kedjan så att molekylen bildar en <strong>ring</strong>.</p>
+          <p>Fem av kolatomerna ingår i ringen, tillsammans med <strong>en syreatom</strong>. Den sjätte kolatomen sitter utanför. Ringen består alltså av sex atomer — fem kol och ett syre.</p>
+          <p>Att kolkedjor kan slutas till ringar såg du redan i delkapitel 1. Glukos är exemplet på varför det spelar roll.</p>
+          <h2>Den förenklade strukturformeln</h2>
+          <p>En fullständig strukturformel för glukos blir snabbt oläslig. Därför ritas sockerringar förenklat.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k6-m1.svg" alt="Glukos ritad på två sätt. Till vänster fullständigt med alla atomer, till höger förenklat som en sexhörning där ett hörn är en röd syreatom och OH-grupper sticker ut.">
+            <figcaption>Den förenklade formeln visar det viktigaste — ringens form och var grupperna sitter.</figcaption>
+          </figure>
+          <p>Ringen ritas som en <strong>sexhörning</strong>. De flesta hörnen är kolatomer, och ett av dem är syreatomen. Från kolatomerna sticker <strong>OH-grupper</strong> ut. Väteatomer som sitter på kol ritas inte ut.</p>
+          <p>Förenklingen gör det lättare att se det som är viktigast: <strong>formen</strong> och <strong>var grupperna sitter</strong>.</p>
+          <h2>Glukos, fruktos och galaktos har samma formel</h2>
+          <p>Glukos är inte ensam om formeln \(\ce{C6H12O6}\). Även <strong>fruktos</strong> och <strong>galaktos</strong> har sex kolatomer, tolv väteatomer och sex syreatomer.</p>
+          <p>Ändå är de tre olika ämnen, eftersom atomerna sitter ihop på olika sätt. De är <strong>isomerer</strong> — samma begrepp som hos kolvätena.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k6-m2.svg" alt="Tre sockerringar. Glukos och galaktos som sexhörningar, fruktos som femhörning. Under alla tre står samma formel \(\ce{C6H12O6}\).">
+            <figcaption>Glukos, fruktos och galaktos är isomerer — samma molekylformel, olika struktur.</figcaption>
+          </figure>
+          <p>Glukos och galaktos ritas som sexhörningar. Fruktos ritas oftast som en <strong>femhörning</strong>.</p>
+          <p>Samma atomer, olika form, olika ämnen.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Sockerringen är inte platt, och den öppnas hela tiden</h2>
+          <p>Standardtexten ritar glukos som en sexhörning. Det är det ritsätt alla kemister använder, och det fungerar. Men det döljer två saker.</p>
+          <p><strong>Ringen är inte platt.</strong> En sexhörning på papper ser plan ut, men bindningsvinklarna kring varje kolatom är ungefär 109 grader — samma vinkel som i metan. En plan sexkant skulle kräva 120 grader.</p>
+          <p>Ringen viker sig därför, och den vanligaste formen liknar en länstol sedd från sidan. Kemister kallar den just <strong>stolformen</strong>.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k6-m1.svg" alt="Glukos ritad på två sätt. Till vänster fullständigt med alla atomer, till höger förenklat som en sexhörning där ett hörn är en röd syreatom och OH-grupper sticker ut.">
+            <figcaption>Den förenklade formeln visar det viktigaste — ringens form och var grupperna sitter.</figcaption>
+          </figure>
+          <p>Det spelar roll. I stolformen pekar OH-grupperna antingen ut från ringen eller upp och ner från den, och vilket det blir avgör hur molekylen kan binda till andra.</p>
+          <p><strong>Ringen är inte heller permanent.</strong> I vattenlösning öppnar sig glukosringen hela tiden, blir en rak kedja ett ögonblick, och sluter sig igen.</p>
+          <p>Vid varje given tidpunkt är ungefär <strong>en molekyl på tusen</strong> öppen. Men eftersom det sker miljardtals gånger i sekunden hinner varje molekyl öppna och sluta sig mycket ofta.</p>
+          <p>Det förklarar en sak Standardtexten inte kan. När ringen sluter sig igen kan OH-gruppen vid en bestämd kolatom hamna antingen uppåt eller nedåt — och det är just den kolatomen som avgör om glukosen blir stärkelse eller cellulosa.</p>
+          <p>Formerna kallas <strong>alfa-glukos</strong> och <strong>beta-glukos</strong>. I ren glukoslösning finns båda samtidigt, eftersom molekylerna hela tiden öppnar och sluter sig.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k6-m2.svg" alt="Tre sockerringar. Glukos och galaktos som sexhörningar, fruktos som femhörning. Under alla tre står samma formel \(\ce{C6H12O6}\).">
+            <figcaption>Glukos, fruktos och galaktos är isomerer — samma molekylformel, olika struktur.</figcaption>
+          </figure>
+          <p><strong>Om modellen.</strong> Sexhörningen är en ritning, inte ett fotografi. Den visar vad som sitter bundet till vad, vilket är det viktiga. Men molekylen är varken plan eller stilla — och att den inte är stilla är förutsättningen för att två olika former alls ska kunna finnas.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL B — Två sockerringar kan kopplas ihop ==================== -->
+      <div class="underdel-text dold" data-underdel="b">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilka delar lämnar molekylerna när två sockerringar kopplas ihop?</li>
+              <li>Vad kallas bindningen som bildas?</li>
+              <li>Vilken tidigare reaktion liknar detta?</li>
+              <li>Vilka två monosackarider bygger upp laktos?</li>
+              <li>Vad händer med laktosen hos den som saknar laktas?</li>
+            </ul>
+          </div>
+
+          <h2>Vatten lämnar när bindningen bildas</h2>
+          <p>Två sockerringar kan kopplas ihop till en större molekyl.</p>
+          <p>Så här går det till.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Vilken ring lämnar OH, och vilken lämnar H?</li>
+              <li>Vad bildas av de två gula delarna?</li>
+              <li>Jämför med bilden av esterbildningen i förra delkapitlet. Vad är likadant?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k6-m3.svg" alt="Två glukosringar kopplas ihop i tre steg. Först är en OH-grupp och en väteatom markerade, sedan bildar de en vattenmolekyl som lämnar, och sist sitter ringarna ihop med en glykosidbindning.">
+            <figcaption>Följ de gula delarna. De blir en vattenmolekyl, och ringarna sitter ihop.</figcaption>
+          </figure>
+          <p>En <strong>OH-grupp</strong> på den ena ringen möter ett <strong>H</strong> från den andra. De två lämnar sina molekyler och sätter sig ihop.</p>
+          <p>Vad blir OH plus H? <strong>Vatten.</strong></p>
+          <p>Samtidigt bildas en ny bindning mellan ringarna, och den kallas <strong>glykosidbindning</strong>.</p>
+          <h2>Du har sett det förut</h2>
+          <p>Känner du igen mönstret?</p>
+          <p>Exakt samma sak hände vid esterbildningen i förra delkapitlet. En OH från den ena molekylen, ett H från den andra, en vattenmolekyl som lämnar, och en ny bindning.</p>
+          <p>Reaktioner av det slaget har ett eget namn: <strong>kondensationsreaktioner</strong>.</p>
+          <p>Du kommer att möta dem en gång till i det här delkapitlet.</p>
+          <h2>Disackarider består av två sockerringar</h2>
+          <p>När två monosackarider binds ihop bildas en <strong>disackarid</strong>. Förleden <em>di-</em> betyder två.</p>
+          <p><strong>Sackaros</strong> är vanligt strösocker. Det består av glukos och fruktos.</p>
+          <p><strong>Laktos</strong> är mjölksocker och består av glukos och galaktos.</p>
+          <p><strong>Maltos</strong> består av två glukosmolekyler.</p>
+          <p>Namnen säger tyvärr ingenting om vilka delar de har. Det får man lära sig.</p>
+          <h2>Bindningen kan brytas igen</h2>
+          <p>En glykosidbindning kan också brytas.</p>
+          <p>Då sker motsatsen: en <strong>vattenmolekyl används</strong> för att dela molekylen i två. Reaktionen kallas <strong>hydrolys</strong>.</p>
+          <p>Kondensation bildar vatten. Hydrolys förbrukar vatten. Samma bindning, två riktningar.</p>
+          <p>I kroppen sker det med hjälp av <strong>enzymer</strong>.</p>
+          <p>Enzymet <strong>laktas</strong> bryter glykosidbindningen i laktos, så att glukos och galaktos frigörs.</p>
+          <p>Den som bildar för lite laktas kan inte bryta bindningen. Laktosen når då tjocktarmen, och där bryter bakterierna ner den i stället. Då bildas bland annat gaser.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilka delar lämnar molekylerna när två sockerringar kopplas ihop?</li>
+              <li>Vad kallas bindningen som bildas?</li>
+              <li>Vilken tidigare reaktion liknar detta?</li>
+              <li>Vilka två monosackarider bygger upp laktos?</li>
+              <li>Vad händer med laktosen hos den som saknar laktas?</li>
+            </ul>
+          </div>
+
+          <h2>Vatten lämnar när bindningen bildas</h2>
+          <p class="inledning">Två monosackarider kan kopplas ihop till en större molekyl.</p>
+          <p>När det sker reagerar en <strong>OH-grupp</strong> på den ena med ett <strong>H</strong> från den andra. De lämnar tillsammans och bildar <strong>vatten</strong>.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k6-m3.svg" alt="Två glukosringar kopplas ihop i tre steg. Först är en OH-grupp och en väteatom markerade, sedan bildar de en vattenmolekyl som lämnar, och sist sitter ringarna ihop med en glykosidbindning.">
+            <figcaption>Samma reaktionstyp som esterbildningen — två molekyler kopplas ihop och vatten lämnar.</figcaption>
+          </figure>
+          <p>Samtidigt bildas en ny bindning mellan sockerringarna. Den kallas <strong>glykosidbindning</strong>.</p>
+          <p>Principen känner du igen från esterbildningen. Också där kopplades två molekyler ihop samtidigt som en vattenmolekyl lämnade.</p>
+          <p>Reaktioner av det slaget kallas <strong>kondensationsreaktioner</strong>.</p>
+          <h2>Disackarider består av två monosackarider</h2>
+          <p>När två monosackarider binds ihop bildas en <strong>disackarid</strong>. Förleden <em>di-</em> betyder två.</p>
+          <p><strong>Sackaros</strong> — vanligt strösocker — består av glukos och fruktos. <strong>Laktos</strong>, mjölksocker, består av glukos och galaktos. <strong>Maltos</strong> består av två glukosmolekyler.</p>
+          <p>Namnet på disackariden säger alltså ingenting om vilka delar den har. Det får man lära sig.</p>
+          <h2>Bindningen kan brytas igen</h2>
+          <p>En glykosidbindning kan också brytas. Då sker motsatsen: en <strong>vattenmolekyl används</strong> för att dela molekylen i två. Reaktionen kallas <strong>hydrolys</strong>.</p>
+          <p>I kroppen sker den med hjälp av <strong>enzymer</strong>.</p>
+          <p>Enzymet <strong>laktas</strong> bryter glykosidbindningen i laktos, så att glukos och galaktos bildas.</p>
+          <p>Den som bildar för lite laktas kan inte bryta bindningen. Laktosen når då tjocktarmen, där bakterier bryter ner den i stället — och då bildas bland annat gaser.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Reaktionen går åt det håll vattnet pekar</h2>
+          <p>Standardtexten säger att kondensation bildar vatten och hydrolys förbrukar det. Det stämmer, och paret är vackert symmetriskt. Men det väcker en fråga texten inte ställer.</p>
+          <p>Om samma reaktion kan gå åt båda hållen — vad bestämmer riktningen?</p>
+          <p>Svaret är <strong>hur mycket vatten som finns</strong>.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k6-m3.svg" alt="Två glukosringar kopplas ihop i tre steg. Först är en OH-grupp och en väteatom markerade, sedan bildar de en vattenmolekyl som lämnar, och sist sitter ringarna ihop med en glykosidbindning.">
+            <figcaption>Samma reaktionstyp som esterbildningen — två molekyler kopplas ihop och vatten lämnar.</figcaption>
+          </figure>
+          <p>I en torr miljö finns lite vatten att bilda. Då går reaktionen åt kondensationshållet, och bindningar byggs.</p>
+          <p>I en vattenrik miljö finns gott om vatten att förbruka. Då går reaktionen åt hydrolyshållet, och bindningar bryts.</p>
+          <p>Det låter enkelt, men det har en obehaglig följd. <strong>Din kropp är full av vatten.</strong> Ungefär sextio procent.</p>
+          <p>Det betyder att alla dina glykosidbindningar, esterbindningar och peptidbindningar hela tiden befinner sig i en miljö som vill bryta dem.</p>
+          <p>Varför faller du då inte isär?</p>
+          <p>Därför att reaktionen går <strong>oerhört långsamt</strong> utan hjälp. En peptidbindning i rent vatten tar uppskattningsvis flera hundra år att brytas av sig själv.</p>
+          <p>Enzymerna ändrar det. Ett enzym kan snabba upp hydrolysen miljontals gånger — men bara där och när kroppen vill att det ska ske.</p>
+          <p><strong>Om modellen.</strong> Att en reaktion "kan gå åt båda hållen" låter som att den väljer fritt. Den gör den inte. Riktningen bestäms av omgivningen, och hastigheten av om det finns ett enzym. Livet är byggt av bindningar som borde brytas men som inte hinner.</p>
+        </div>
+
+      </div>
+
+      <!-- ==================== UNDERDEL C — Stärkelse och cellulosa är samma byggsten vänd åt olika håll ==================== -->
+      <div class="underdel-text dold" data-underdel="c">
+
+        <!-- 📗 ENKEL -->
+        <div class="niva-innehall brodtext dold" data-niva="enkel">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilken monosackarid byggs både stärkelse och cellulosa av?</li>
+              <li>Vad är det som skiljer de två ringformerna åt?</li>
+              <li>Hur ligger ringarna i stärkelse jämfört med i cellulosa?</li>
+              <li>Varför kan amylas bryta den ena men inte den andra?</li>
+              <li>Varför blir cellulosa så starkt?</li>
+            </ul>
+          </div>
+
+          <h2>Båda är polymerer av glukos</h2>
+          <p>Sockerringar kan kopplas ihop i mycket långa kedjor.</p>
+          <p>Sådana stora molekyler kallas <strong>polymerer</strong>, och byggstenarna <strong>monomerer</strong>. Du känner igen orden från plasterna.</p>
+          <p>Både <strong>stärkelse</strong> och <strong>cellulosa</strong> är polymerer av glukos. En enda molekyl kan innehålla tusentals glukosenheter.</p>
+          <p>De är alltså byggda av <strong>exakt samma byggsten</strong>.</p>
+          <p>Och ändå är de så olika att du kan äta det ena men inte det andra.</p>
+          <h2>Skillnaden sitter i hur ringarna är vända</h2>
+          <p>Glukos kan bilda <strong>två mycket lika ringformer</strong>.</p>
+          <p>Skillnaden är liten. Det handlar om åt vilket håll <strong>en enda OH-grupp</strong> pekar vid en av kolatomerna. Uppåt eller nedåt.</p>
+          <div class="bildguide">
+            <div class="bildguide-rubrik">👁 Titta efter</div>
+            <ul>
+              <li>Var sitter den röda syreatomen i varje ring? Följ den längs båda kedjorna.</li>
+              <li>Vilken kedja är rakast?</li>
+              <li>Varför kan amylas bryta den ena men inte den andra?</li>
+            </ul>
+          </div>
+          <figure class="brodtext-bild enkel">
+            <img src="img/k6-m4.svg" alt="Två kedjor av fyra sockerringar. I den övre är alla ringar vända åt samma håll. I den nedre är varannan ring vänd ett halvt varv, och kedjan blir rakare.">
+            <figcaption>Samma byggsten i båda. Titta på hur ringarna är vända.</figcaption>
+          </figure>
+          <p><strong>Stärkelse</strong> byggs av den ena formen. Då hamnar alla ringar vända åt samma håll, och kedjan böjer sig lätt.</p>
+          <p><strong>Cellulosa</strong> byggs av den andra. Då blir <strong>varannan ring vänd ett halvt varv</strong>, och kedjan blir rak.</p>
+          <p>Det är allt. En OH-grupp som pekar åt fel håll.</p>
+          <h2>Därför kan amylas bryta den ena men inte den andra</h2>
+          <p>Ett enzym är kräsen. Det fungerar bara på en bestämd form.</p>
+          <p>Den del av enzymet där arbetet sker har en form som <strong>passar</strong> just det ämne enzymet ska arbeta med. Ungefär som en nyckel passar ett lås.</p>
+          <p>Enzymet <strong>amylas</strong> passar stärkelsens bindningar och kan bryta dem.</p>
+          <p>Cellulosans bindningar ser annorlunda ut i rummet, eftersom ringarna är vända. Amylas passar inte. Och människan har inget annat enzym som passar heller.</p>
+          <p>Därför kan du smälta potatis men inte papper — trots att båda är glukoskedjor.</p>
+          <h2>Därför är cellulosa starkt</h2>
+          <p>Den raka formen har en följd till.</p>
+          <p>Raka kedjor kan ligga <strong>tätt intill varandra</strong>. Och där OH-grupper på en kedja möter OH-grupper på nästa bildas bindningar mellan dem.</p>
+          <p>En sådan bindning kallas <strong>vätebindning</strong>. Den uppstår mellan en väteatom som sitter på syre och en syreatom i en annan molekyl.</p>
+          <p>Varje enskild vätebindning är svag. Men mellan två långa kedjor finns tusentals av dem.</p>
+          <p>Tillsammans blir kraften stor. Kedjorna hålls i täta buntar som bildar <strong>fibrer</strong>.</p>
+          <p>Det är därför trä bär upp ett helt träd, och därför bomullstråd inte går av.</p>
+        </div>
+
+        <!-- 📘 STANDARD -->
+        <div class="niva-innehall brodtext" data-niva="standard">
+
+          <div class="karnpunkter">
+            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
+            <ul>
+              <li>Vilken monosackarid byggs både stärkelse och cellulosa av?</li>
+              <li>Vad är det som skiljer de två ringformerna åt?</li>
+              <li>Hur ligger ringarna i stärkelse jämfört med i cellulosa?</li>
+              <li>Varför kan amylas bryta den ena men inte den andra?</li>
+              <li>Varför blir cellulosa så starkt?</li>
+            </ul>
+          </div>
+
+          <h2>Båda är polymerer av glukos</h2>
+          <p class="inledning">Glukosmolekyler kan kopplas samman i mycket långa kedjor. Sådana stora molekyler kallas <strong>polymerer</strong>, och byggstenarna <strong>monomerer</strong> — samma begrepp som hos plasterna.</p>
+          <p>Både <strong>stärkelse</strong> och <strong>cellulosa</strong> är polymerer av glukos. En enda molekyl kan innehålla tusentals glukosenheter.</p>
+          <p>De är alltså byggda av <strong>samma byggsten</strong>. Ändå är de helt olika ämnen.</p>
+          <p>Förklaringen sitter inte i vilka atomer de innehåller, utan i <strong>hur enheterna är kopplade</strong>.</p>
+          <h2>Skillnaden sitter i hur ringarna är vända</h2>
+          <p>Glukos kan bilda <strong>två mycket lika ringformer</strong>. Skillnaden är åt vilket håll en enda OH-grupp pekar vid en av kolatomerna.</p>
+          <p><strong>Stärkelse</strong> byggs av den ena formen. Ringarna hamnar då vända åt samma håll, och kedjan böjer sig lätt.</p>
+          <figure class="brodtext-bild standard">
+            <img src="img/k6-m4.svg" alt="Två kedjor av fyra sockerringar. I den övre är alla ringar vända åt samma håll. I den nedre är varannan ring vänd ett halvt varv, och kedjan blir rakare.">
+            <figcaption>Vändningen av varannan glukosenhet är hela skillnaden mellan stärkelse och cellulosa.</figcaption>
+          </figure>
+          <p><strong>Cellulosa</strong> byggs av den andra. Där blir <strong>varannan glukosenhet vriden ett halvt varv</strong> i förhållande till nästa, och kedjan blir rak.</p>
+          <p>Det är en mycket liten skillnad i molekylen. Konsekvenserna är enorma.</p>
+          <h2>Därför kan amylas bryta den ena men inte den andra</h2>
+          <p>Ett enzym fungerar bara på en bestämd molekylform. Den del av enzymet där reaktionen sker har en form som <strong>passar</strong> just det ämne enzymet ska arbeta med, ungefär som en nyckel i ett lås.</p>
+          <p>Enzymet <strong>amylas</strong> passar stärkelsens glykosidbindningar och kan bryta dem.</p>
+          <p>Cellulosans bindningar har en annan form i rummet. Amylas passar inte, och människan saknar det enzym som skulle passa.</p>
+          <p>Därför kan du smälta potatis men inte papper — trots att båda är glukoskedjor.</p>
+          <h2>Därför är cellulosa starkt</h2>
+          <p>Den raka formen har en följd till.</p>
+          <p>Raka kedjor kan ligga <strong>tätt intill varandra</strong>. Mellan OH-grupperna på olika kedjor bildas då bindningar — svaga var för sig, men mycket många.</p>
+          <p>En sådan bindning kallas <strong>vätebindning</strong>. Den uppstår mellan en väteatom som sitter på syre och en syreatom i en annan molekyl.</p>
+          <p>Tillsammans blir kraften betydande. Kedjorna hålls i täta buntar som bildar <strong>fibrer</strong>.</p>
+          <p>Det är därför trä bär och bomull håller.</p>
+        </div>
+
+        <!-- 📕 FORDJUPNING -->
+        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
+
+          <h2>Enzymet känner igen formen, inte ämnet</h2>
+          <p>Standardtexten säger att ett enzym passar en bestämd molekylform, som en nyckel i ett lås. Bilden är användbar, men den är för stel — och den förklarar inte varför skillnaden mellan stärkelse och cellulosa räcker.</p>
+          <p>Den del av enzymet där arbetet sker kallas det <strong>aktiva sätet</strong>. Det är en ficka i proteinets yta, formad av sidokedjorna från de aminosyror som råkar hamna där när kedjan viks.</p>
+          <p>Fickan har en bestämd form och en bestämd fördelning av laddningar. För att reaktionen ska ske måste molekylen passa i båda avseendena — den ska ha rätt form <strong>och</strong> vända rätt sida mot rätt plats i fickan.</p>
+          <p>Amylas aktiva säte är format efter stärkelsens bindning, där båda glukosringarna är vända likadant.</p>
+          <figure class="brodtext-bild fordjupning">
+            <img src="img/k6-m4.svg" alt="Två kedjor av fyra sockerringar. I den övre är alla ringar vända åt samma håll. I den nedre är varannan ring vänd ett halvt varv, och kedjan blir rakare.">
+            <figcaption>Vändningen av varannan glukosenhet är hela skillnaden mellan stärkelse och cellulosa.</figcaption>
+          </figure>
+          <p>I cellulosa är varannan ring vriden ett halvt varv. Bindningen mellan dem sitter därför i en annan vinkel. Molekylen kan inte lägga sig i fickan på det sätt som krävs, och reaktionen sker aldrig.</p>
+          <p>Det enzym som klarar cellulosa heter <strong>cellulas</strong>, och det har ett aktivt säte format efter den andra geometrin. Människan har det inte. Kor har det inte heller — men bakterierna i deras förmagar har.</p>
+          <p>Nyckelbilden har dessutom ett fel: enzymet är inte stelt. När molekylen närmar sig ändrar det aktiva sätet form en aning och sluter sig kring den. Det liknar mer en hand som griper än en nyckel som vrids.</p>
+          <p><strong>Om modellen.</strong> Nyckel och lås förklarar varför enzymer är selektiva, och det är den viktigaste poängen. Men verkligheten är rörlig. Enzymet och molekylen anpassar sig till varandra — och det är därför en så liten skillnad som en vänd sockerring kan räcka för att stänga ute ett enzym helt.</p>
+        </div>
+
+      </div>
+
+      <!-- DJUPDYKNINGAR -->
+      <section class="djupdykningar">
+        <span class="sektion-label">Vill du veta mer?</span>
+        <div class="fordj-kort-grid">
+          <a class="fordj-kort" href="djupdykning-laktos.html">
+            <span class="fordj-kort-ikon" aria-hidden="true">🥛</span>
+            <span class="fordj-kort-text">
+              <span class="fordj-kort-titel">Enzymet som skulle ha slutat</span>
+              <span class="fordj-kort-sammanfattning">Nästan alla däggdjur slutar tillverka laktas efter avvänjningen. Att kunna dricka mjölk som vuxen är undantaget — och förklaringen ligger både i en glykosidbindning och i att människor började hålla boskap.</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ===== ÖVA — tre arbetssätt (js/ova-arbetssatt.js) ovanpå flipcards.js + kortsvar.js ===== -->
+    <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
+      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
+        <span class="sektion-label">Hur vill du öva?</span>
+        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
+          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
+          <span class="ova-kort-titel">Plugga begrepp</span>
+          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
+          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
+          <span class="ova-kort-titel">Testa dig själv</span>
+          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
+        </button>
+        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
+          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
+          <span class="ova-kort-titel">Tillämpa</span>
+          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
+        </button>
+      </div>
+      <div class="flipcards-mount"
+           data-fil="../../data/flipcards/avsnitt-1-kolhydrater.json"
+           data-avsnitt="a1_kolhydrater">
+        <p class="flipcards-laddar">Laddar övningskort…</p>
+      </div>
+      <div class="kortsvar-mount"
+           data-fil="../../data/kortsvar/avsnitt-1-kolhydrater.json"></div>
+    </section>
+
+    <!-- ===== ELEVBOKEN ===== -->
+    <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
+      <div class="elevbok-fragor">
+        <p class="laddar-fragor">Laddar frågor ...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AVSNITT_ID-block FÖRE de externa skripten -->
+  <script>
+    const AVSNITT_ID = 'a1_kolhydrater';
+    const KAPITEL_ID = 'organisk-kemi';
+    const DELKAPITEL_ID = 'livets-molekyler';
+  </script>
+
+  <!-- MathJax + mhchem — SJÄLVHOSTAD, se KOMPONENTER DEL 8 -->
+  <script src="../../../../js/mathjax-config.js"></script>
+  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+  <script src="../../../../js/elevbok.js"></script>
+  <script src="../../../../js/avsnitt.js"></script>
+  <script src="../../../../js/bildmodal.js" defer></script>
+  <script src="../../../../js/egna-fragor.js" defer></script>
+  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
+  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
+  <script src="../../../../js/flipcards.js" defer></script>
+  <script src="../../../../js/kortsvar-gradering.js" defer></script>
+  <script src="../../../../js/kortsvar.js" defer></script>
+  <script src="../../../../js/ova-arbetssatt.js" defer></script>
+  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/elevfeedback.js" defer></script>
+</body>
+</html>

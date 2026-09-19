@@ -289,6 +289,34 @@ const AVSNITT_SYROR_ESTRAR = {
          'k5-l10.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Det betyder tre platser där esterbindningar kan bildas.', enkel: 'Den hade **tre** hydroxylgrupper.', fordjupning: 'En **omättad** har minst en dubbelbindning.' }
        } }
 };
+// Organisk kemi 6 "Livets molekyler" (arbetsorder 2026-09-19). Placering enligt bildspecen ("vid N:e rubriken", dk6-bildspecar.md),
+// på alla nivåer efter det stycke som bär bildens innehåll (samma princip som Fossila, Alkoholer och Syror och estrar).
+const AVSNITT_LIVETS = {
+  1: { dd: [{ slug: 'laktos', titel: 'Enzymet som skulle ha slutat', ikon: '🥛' }],   // djupdykning från 1.2 (ordern 2026-09-19)
+       bilder: {
+         'k6-m1.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Därför ritas sockerringar förenklat.', enkel: 'Därför ritas sockerringar förenklat.', fordjupning: 'kallar den just **stolformen**.' },
+         'k6-m2.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'eftersom atomerna sitter ihop på olika sätt. De är **isomerer** —', enkel: 'har sex kolatomer, tolv väteatomer och sex syreatomer.', fordjupning: 'eftersom molekylerna hela tiden öppnar och sluter sig.' },
+         'k6-m3.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'tillsammans och bildar **vatten**.', enkel: 'Så här går det till.', fordjupning: 'Svaret är **hur mycket vatten som finns**.' },
+         'k6-m4.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Ringarna hamnar då vända åt samma håll, och kedjan böjer', enkel: 'Uppåt eller nedåt.', fordjupning: 'där båda glukosringarna är vända likadant.' }
+       } },
+  2: { dd: [],
+       bilder: {
+         'k6-m5.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'grupp kan reagera med karboxylgruppen hos en **fettsyra**.', enkel: 'Alkoholen är **glycerol**, och den har **tre hydroxylgrupper**.', fordjupning: 'Den har en karboxylgrupp i ena änden och en lång kolkedja i den' },
+         'k6-m6.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'vrida på**.', enkel: 'Det går inte — knyckarna kommer i vägen.', fordjupning: 'Då fortsätter kedjan nästan rakt, trots' }
+       } },
+  3: { dd: [],
+       bilder: {
+         'k6-m7.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'bildar de **vatten**.', enkel: 'från karboxylgruppen och ett **H** från aminogruppen.', fordjupning: 'än universums ålder att hitta rätt.' },
+         'k6-m8.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Den brukar markeras med bokstaven **R**.', enkel: 'poängen med den.', fordjupning: 'kallas **zwitterjon**, av tyskans ord för tvekönad.' },
+         'k6-m9.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'måste kedjan **vikas** till en bestämd', enkel: 'måste kedjan vikas till en bestämd **tredimensionell form**.', fordjupning: 'varje steg begränsar vad som kan hända härnäst.' },
+         'k6-m10.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'Det är den tredimensionella **formen** som kollapsar.', enkel: 'Kedjan är inte avklippt — den finns kvar, hel.', fordjupning: 'till exakt samma form, med full funktion.' }
+       } },
+  4: { dd: [],
+       bilder: {
+         'k6-m11.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'och varje molekyl innehåller två kväveatomer.', enkel: 'Varje molekyl innehåller **två** kväveatomer.', fordjupning: 'men den här processen kostar.' },
+         'k6-m12.svg': { aktiv: ['enkel', 'standard', 'fordjupning'], standard: 'varierande slag.', enkel: '**Vitaminer** är organiska molekyler av mycket varierande slag.', fordjupning: 'byggda efter deras storlek och laddning.' }
+       } }
+};
 const DELKAPITEL = {
   // bank: id-prefix och avsnittsoffset i kapitlets begreppsbank (en fil per kapitel; id/avsnitt unika över delkapitlen)
   repetition: { titel: 'Bakgrund och repetition', avsnitt: AVSNITT_REPETITION, bank: { idPrefix: '', avsnittOffset: 0 } },
@@ -341,6 +369,16 @@ const DELKAPITEL = {
       'ättiksyra': 'finns redan i Syror och baser, syror avsnitt 5',
       'citronsyra': 'finns redan i Syror och baser, syror avsnitt 5',
       'katalysator': 'finns redan i Syror och baser, försurning avsnitt 3',
-      'glycerol': 'ägs av Alkoholer avsnitt 3 (kapitlets bank), som inför begreppet (Joachim 2026-09-18)' } } }
+      'glycerol': 'ägs av Alkoholer avsnitt 3 (kapitlets bank), som inför begreppet (Joachim 2026-09-18)' } } },
+  'livets-molekyler': { titel: 'Livets molekyler', kapitel: { id: 'organisk-kemi', titel: 'Organisk kemi' }, byggmapp: 'bygg', avsnitt: AVSNITT_LIVETS,
+    // kapitlets bank delas med de fem tidigare delkapitlen: id-prefix l, avsnitt 19–22. uteslut fylls av dubblettkontrollen
+    // (arbetsorder 2026-09-19 §5: alla 37 kandidater mot kapitelbanken och Syror och basers 167).
+    // Dubblettkontroll 2026-09-19: 37 kandidater mot 151 + 167 – fem träffar
+    bank: { idPrefix: 'l', avsnittOffset: 18, uteslut: {
+      'glukos': 'finns redan i Alkoholer avsnitt 2 (kapitlets bank)',
+      'fettsyra': 'finns redan i Organiska syror och estrar avsnitt 2 (kapitlets bank)',
+      'ammoniak': 'finns redan i Syror och baser, baser avsnitt 1',
+      'jon': 'finns redan i Syror och baser, repetition avsnitt 1',
+      'grundämne': 'finns redan i Syror och baser, repetition avsnitt 1' } } }
 };
 module.exports = { DELKAPITEL };

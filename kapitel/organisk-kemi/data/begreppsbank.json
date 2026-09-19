@@ -3,7 +3,7 @@
   "kapitel_titel": "Organisk kemi",
   "version": 3,
   "skapad": "2026-09-13",
-  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 26 + Kolväten 37 + Fossila bränslen och förbränning 39 + Alkoholer 27 + Organiska syror och estrar 22 = 151.",
+  "kommentar": "Begreppsbank för kapitlet Organisk kemi. Begreppen härleds 1:1 ur flipcardsens grundläggande begreppskort (kallfil); fördjupningsbegrepp finns bara som flipcards. Begreppsbanken renderar ren text: definitioner med formler är omformulerade utan formler här (leveransens avsnitt Begreppsbanken), flipcardsen behåller sina. Id och avsnittsnummer är unika över delkapitlen (id-prefix och löpande avsnittsnummer per delkapitel, som Historias begreppsbanker); delkapitel_titel grupperar. Kolatomen 26 + Kolväten 37 + Fossila bränslen och förbränning 39 + Alkoholer 27 + Organiska syror och estrar 22 + Livets molekyler 32 = 183.",
   "upplasning": {
     "min_ord": 8,
     "anvand_nyckelord": false
@@ -1367,6 +1367,294 @@
       "term": "arom",
       "expertdefinition": "Ett doft- eller smakämne. Många aromer är estrar.",
       "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-estrar.json"
+    },
+    {
+      "id": "kl1-b1",
+      "avsnitt": "19",
+      "avsnitt_titel": "Kolhydrater är byggda av sockerringar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "kolhydrat",
+      "expertdefinition": "Organisk förening av kol, väte och syre, där väte och syre står i förhållandet två till ett.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolhydrater.json"
+    },
+    {
+      "id": "kl1-b2",
+      "avsnitt": "19",
+      "avsnitt_titel": "Kolhydrater är byggda av sockerringar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "monosackarid",
+      "expertdefinition": "Den enklaste sortens kolhydrat, en enda sockerring.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolhydrater.json"
+    },
+    {
+      "id": "kl1-b4",
+      "avsnitt": "19",
+      "avsnitt_titel": "Kolhydrater är byggda av sockerringar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "fruktos",
+      "expertdefinition": "Monosackarid med samma formel som glukos men annan struktur. Ritas oftast som en femhörning.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolhydrater.json"
+    },
+    {
+      "id": "kl1-b5",
+      "avsnitt": "19",
+      "avsnitt_titel": "Kolhydrater är byggda av sockerringar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "galaktos",
+      "expertdefinition": "Monosackarid med samma formel som glukos. Ingår i laktos.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolhydrater.json"
+    },
+    {
+      "id": "kl1-b6",
+      "avsnitt": "19",
+      "avsnitt_titel": "Kolhydrater är byggda av sockerringar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "disackarid",
+      "expertdefinition": "Kolhydrat av två sammankopplade sockerringar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolhydrater.json"
+    },
+    {
+      "id": "kl1-b7",
+      "avsnitt": "19",
+      "avsnitt_titel": "Kolhydrater är byggda av sockerringar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "glykosidbindning",
+      "expertdefinition": "Bindningen mellan två sockerringar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolhydrater.json"
+    },
+    {
+      "id": "kl1-b8",
+      "avsnitt": "19",
+      "avsnitt_titel": "Kolhydrater är byggda av sockerringar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "kondensationsreaktion",
+      "expertdefinition": "Reaktion där två molekyler kopplas ihop och en vattenmolekyl lämnar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolhydrater.json"
+    },
+    {
+      "id": "kl1-b9",
+      "avsnitt": "19",
+      "avsnitt_titel": "Kolhydrater är byggda av sockerringar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "hydrolys",
+      "expertdefinition": "Reaktion där en bindning bryts med hjälp av en vattenmolekyl. Motsatsen till kondensation.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-1-kolhydrater.json"
+    },
+    {
+      "id": "kl2-b1",
+      "avsnitt": "20",
+      "avsnitt_titel": "Fetter är estrar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "triglycerid",
+      "expertdefinition": "En fettmolekyl: glycerol med tre fettsyror bundna med esterbindningar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-fetter.json"
+    },
+    {
+      "id": "kl2-b3",
+      "avsnitt": "20",
+      "avsnitt_titel": "Fetter är estrar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "mättad fettsyra",
+      "expertdefinition": "Fettsyra med bara enkelbindningar. Kedjan är rak och packas tätt.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-fetter.json"
+    },
+    {
+      "id": "kl2-b4",
+      "avsnitt": "20",
+      "avsnitt_titel": "Fetter är estrar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "omättad fettsyra",
+      "expertdefinition": "Fettsyra med minst en dubbelbindning. Kedjan får en knyck.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-fetter.json"
+    },
+    {
+      "id": "kl2-b5",
+      "avsnitt": "20",
+      "avsnitt_titel": "Fetter är estrar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "enkelomättad",
+      "expertdefinition": "Fettsyra med en dubbelbindning.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-fetter.json"
+    },
+    {
+      "id": "kl2-b6",
+      "avsnitt": "20",
+      "avsnitt_titel": "Fetter är estrar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "fleromättad",
+      "expertdefinition": "Fettsyra med två eller flera dubbelbindningar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-fetter.json"
+    },
+    {
+      "id": "kl2-b7",
+      "avsnitt": "20",
+      "avsnitt_titel": "Fetter är estrar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "van der waals-krafter",
+      "expertdefinition": "Svaga attraktionskrafter mellan molekyler. Många kontaktpunkter ger tillsammans en stark attraktion.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-fetter.json"
+    },
+    {
+      "id": "kl2-b8",
+      "avsnitt": "20",
+      "avsnitt_titel": "Fetter är estrar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "vegetabiliskt fett",
+      "expertdefinition": "Fett från växtriket. Säger var fettet kommer ifrån, inte hur molekylerna ser ut.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-fetter.json"
+    },
+    {
+      "id": "kl2-b9",
+      "avsnitt": "20",
+      "avsnitt_titel": "Fetter är estrar",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "lipas",
+      "expertdefinition": "Enzym som bryter esterbindningarna i fett.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-2-fetter.json"
+    },
+    {
+      "id": "kl3-b1",
+      "avsnitt": "21",
+      "avsnitt_titel": "Proteiner är kedjor av aminosyror",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "protein",
+      "expertdefinition": "Stor molekyl byggd av aminosyror sammankopplade med peptidbindningar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-proteiner.json"
+    },
+    {
+      "id": "kl3-b2",
+      "avsnitt": "21",
+      "avsnitt_titel": "Proteiner är kedjor av aminosyror",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "aminosyra",
+      "expertdefinition": "Molekyl med både en karboxylgrupp och en aminogrupp, plus en sidokedja.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-proteiner.json"
+    },
+    {
+      "id": "kl3-b3",
+      "avsnitt": "21",
+      "avsnitt_titel": "Proteiner är kedjor av aminosyror",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "aminogrupp",
+      "expertdefinition": "Gruppen –NH₂. Innehåller kväve och kan ta upp en vätejon, alltså basisk.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-proteiner.json"
+    },
+    {
+      "id": "kl3-b4",
+      "avsnitt": "21",
+      "avsnitt_titel": "Proteiner är kedjor av aminosyror",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "sidokedja",
+      "expertdefinition": "Den del av aminosyran som skiljer de tjugo aminosyrorna åt. Markeras med R.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-proteiner.json"
+    },
+    {
+      "id": "kl3-b5",
+      "avsnitt": "21",
+      "avsnitt_titel": "Proteiner är kedjor av aminosyror",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "peptidbindning",
+      "expertdefinition": "Bindningen mellan två aminosyror, mellan karboxylgruppens kolatom och aminogruppens kväveatom.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-proteiner.json"
+    },
+    {
+      "id": "kl3-b6",
+      "avsnitt": "21",
+      "avsnitt_titel": "Proteiner är kedjor av aminosyror",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "polypeptid",
+      "expertdefinition": "En kedja av aminosyror sammankopplade med peptidbindningar.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-proteiner.json"
+    },
+    {
+      "id": "kl3-b7",
+      "avsnitt": "21",
+      "avsnitt_titel": "Proteiner är kedjor av aminosyror",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "veckning",
+      "expertdefinition": "Att aminosyrakedjan viks till en bestämd tredimensionell form. Formen avgör funktionen.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-proteiner.json"
+    },
+    {
+      "id": "kl3-b8",
+      "avsnitt": "21",
+      "avsnitt_titel": "Proteiner är kedjor av aminosyror",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "denaturering",
+      "expertdefinition": "Att ett protein förlorar sin veckade form utan att kedjan går sönder.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-proteiner.json"
+    },
+    {
+      "id": "kl3-b9",
+      "avsnitt": "21",
+      "avsnitt_titel": "Proteiner är kedjor av aminosyror",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "kväve",
+      "expertdefinition": "Det atomslag som skiljer proteiner från kolhydrater och fetter.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-3-proteiner.json"
+    },
+    {
+      "id": "kl4-b1",
+      "avsnitt": "22",
+      "avsnitt_titel": "Kvävet, vitaminerna och mineralerna",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "urea",
+      "expertdefinition": "Urinämne, CO(NH₂)₂. Kroppens sätt att göra sig av med kväve från nedbrutna aminosyror.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-kvavet-vitaminerna-och-mineralerna.json"
+    },
+    {
+      "id": "kl4-b3",
+      "avsnitt": "22",
+      "avsnitt_titel": "Kvävet, vitaminerna och mineralerna",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "vitamin",
+      "expertdefinition": "Organiskt ämne som kroppen behöver i små mängder men inte kan tillverka tillräckligt av själv.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-kvavet-vitaminerna-och-mineralerna.json"
+    },
+    {
+      "id": "kl4-b4",
+      "avsnitt": "22",
+      "avsnitt_titel": "Kvävet, vitaminerna och mineralerna",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "fettlösligt vitamin",
+      "expertdefinition": "Vitamin med stora opolära delar. A, D, E och K. Lagras i lever och fettvävnad.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-kvavet-vitaminerna-och-mineralerna.json"
+    },
+    {
+      "id": "kl4-b5",
+      "avsnitt": "22",
+      "avsnitt_titel": "Kvävet, vitaminerna och mineralerna",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "vattenlösligt vitamin",
+      "expertdefinition": "Vitamin med många polära grupper. B-vitaminerna och C. Överskott lämnar med urinen.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-kvavet-vitaminerna-och-mineralerna.json"
+    },
+    {
+      "id": "kl4-b6",
+      "avsnitt": "22",
+      "avsnitt_titel": "Kvävet, vitaminerna och mineralerna",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "mineralämne",
+      "expertdefinition": "Grundämne som kroppen behöver, till exempel kalcium, järn eller zink.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-kvavet-vitaminerna-och-mineralerna.json"
+    },
+    {
+      "id": "kl4-b7",
+      "avsnitt": "22",
+      "avsnitt_titel": "Kvävet, vitaminerna och mineralerna",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "kalcium",
+      "expertdefinition": "Mineralämne som i kroppen förekommer som jonen Ca²⁺.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-kvavet-vitaminerna-och-mineralerna.json"
+    },
+    {
+      "id": "kl4-b8",
+      "avsnitt": "22",
+      "avsnitt_titel": "Kvävet, vitaminerna och mineralerna",
+      "delkapitel_titel": "Livets molekyler",
+      "term": "järn",
+      "expertdefinition": "Mineralämne som bland annat sitter i hemoglobin och binder syret i blodet.",
+      "kallfil": "kapitel/organisk-kemi/data/flipcards/avsnitt-4-kvavet-vitaminerna-och-mineralerna.json"
     }
   ]
 }

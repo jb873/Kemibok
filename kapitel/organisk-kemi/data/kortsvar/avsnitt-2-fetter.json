@@ -1,0 +1,132 @@
+{
+  "avsnitt": 2,
+  "titel": "Fetter är estrar",
+  "delkapitel": "livets-molekyler",
+  "version": "1.0",
+  "_kommentar": "Kortsvar för avsnitt 2 (Fetter är estrar), delkapitel Livets molekyler, leverans 2026-09-13. 12 frågor, 10 per omgång. Regel: frågan får inte innehålla svaret (KEMI-TILLAGG §8). Byggd ur doc/leveranser/livets-molekyler/kortsvar.md.",
+  "antal_per_omgang": 10,
+  "fragor": [
+    {
+      "id": "k2-s1",
+      "typ": "tal",
+      "fraga": "Hur många esterbindningar finns i en fettmolekyl?",
+      "svar": 3,
+      "forklaring": "Glycerol har tre hydroxylgrupper, och varje grupp kan binda en fettsyra."
+    },
+    {
+      "id": "k2-s2",
+      "typ": "tal",
+      "fraga": "Hur många vattenmolekyler lämnar när ett fett bildas?",
+      "svar": 3,
+      "forklaring": "En per esterbindning."
+    },
+    {
+      "id": "k2-s3",
+      "typ": "tal",
+      "fraga": "Hur många dubbelbindningar har en enkelomättad fettsyra?",
+      "svar": 1,
+      "forklaring": "En fleromättad har två eller flera."
+    },
+    {
+      "id": "k2-s4",
+      "typ": "ord",
+      "fraga": "Vad kallas en fettmolekyl med ett annat ord?",
+      "svar": [
+        "triglycerid"
+      ],
+      "forklaring": "*Tri-* betyder tre, efter de tre fettsyrorna."
+    },
+    {
+      "id": "k2-s5",
+      "typ": "ord",
+      "fraga": "Vad kallas en fettsyra som bara har enkelbindningar?",
+      "svar": [
+        "mättad"
+      ],
+      "forklaring": "Kedjan är rak och kan packas tätt, vilket ger fast fett."
+    },
+    {
+      "id": "k2-s6",
+      "typ": "ord",
+      "fraga": "Vilka enzymer bryter ner fett?",
+      "svar": [
+        "lipas"
+      ],
+      "forklaring": "De bryter esterbindningarna mellan glycerolen och fettsyrorna."
+    },
+    {
+      "id": "k2-s7",
+      "typ": "ord",
+      "fraga": "Vad kallas de svaga attraktionskrafterna mellan fettsyrekedjorna?",
+      "svar": [
+        "van der Waals-krafter"
+      ],
+      "forklaring": "Varje kraft är svag, men en lång kedja har många kontaktpunkter."
+    },
+    {
+      "id": "k2-s8",
+      "typ": "flerval",
+      "fraga": "Varför är smör fast och olivolja flytande?",
+      "alternativ": [
+        "smör innehåller mer fett",
+        "olivoljans kedjor har knyckar och packas sämre",
+        "smör är kallare",
+        "olivolja innehåller vatten"
+      ],
+      "svar": 1,
+      "forklaring": "Knyckarna kommer av dubbelbindningar som inte går att vrida på."
+    },
+    {
+      "id": "k2-s9",
+      "typ": "flerval",
+      "fraga": "Varför går en knyck i en fettsyra inte att räta ut?",
+      "alternativ": [
+        "kedjan är för lång",
+        "dubbelbindningen går inte att vrida",
+        "det sitter en OH-grupp i vägen",
+        "molekylen är för tung"
+      ],
+      "svar": 1,
+      "forklaring": "Det var samma sak du mötte hos alkenerna i delkapitel 2."
+    },
+    {
+      "id": "k2-s10",
+      "typ": "flerval",
+      "fraga": "Vad är vegetabiliskt och animaliskt för slags indelning?",
+      "alternativ": [
+        "en kemisk",
+        "en efter ursprung",
+        "en efter smältpunkt",
+        "en efter antal dubbelbindningar"
+      ],
+      "svar": 1,
+      "forklaring": "Kokosfett är vegetabiliskt och fast, fiskolja är animalisk och flytande."
+    },
+    {
+      "id": "k2-s11",
+      "typ": "flerval",
+      "fraga": "Vad krävs för att bryta en esterbindning i fett?",
+      "alternativ": [
+        "värme",
+        "vatten",
+        "syre",
+        "en syra"
+      ],
+      "svar": 1,
+      "forklaring": "Reaktionen kallas hydrolys och är motsatsen till kondensation."
+    },
+    {
+      "id": "k2-s12",
+      "typ": "flerval",
+      "fraga": "Varför måste fett brytas ner innan kroppen kan ta upp det?",
+      "alternativ": [
+        "det är giftigt",
+        "molekylerna är för stora för tarmväggen",
+        "det är surt",
+        "det innehåller vatten"
+      ],
+      "svar": 1,
+      "forklaring": "Lipaserna delar molekylen i mindre delar, som sedan kopplas ihop igen inne i cellerna. ---"
+    }
+  ]
+}

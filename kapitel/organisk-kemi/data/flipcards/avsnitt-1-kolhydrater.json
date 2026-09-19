@@ -1,0 +1,124 @@
+{
+  "avsnitt": 1,
+  "titel": "Kolhydrater är byggda av sockerringar",
+  "delkapitel": "livets-molekyler",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 1 (Kolhydrater är byggda av sockerringar), delkapitel Livets molekyler. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/livets-molekyler/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k1-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kolhydrat",
+      "svar": "Organisk förening av kol, väte och syre, där väte och syre står i förhållandet två till ett."
+    },
+    {
+      "id": "k1-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Monosackarid",
+      "svar": "Den enklaste sortens kolhydrat, en enda sockerring."
+    },
+    {
+      "id": "k1-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Glukos",
+      "svar": "Den vanligaste monosackariden, \\(\\ce{C6H12O6}\\). Bildas vid fotosyntesen och är byggsten i stärkelse och cellulosa."
+    },
+    {
+      "id": "k1-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fruktos",
+      "svar": "Monosackarid med samma formel som glukos men annan struktur. Ritas oftast som en femhörning."
+    },
+    {
+      "id": "k1-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Galaktos",
+      "svar": "Monosackarid med samma formel som glukos. Ingår i laktos."
+    },
+    {
+      "id": "k1-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Disackarid",
+      "svar": "Kolhydrat av två sammankopplade sockerringar."
+    },
+    {
+      "id": "k1-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Glykosidbindning",
+      "svar": "Bindningen mellan två sockerringar."
+    },
+    {
+      "id": "k1-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Kondensationsreaktion",
+      "svar": "Reaktion där två molekyler kopplas ihop och en vattenmolekyl lämnar."
+    },
+    {
+      "id": "k1-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Hydrolys",
+      "svar": "Reaktion där en bindning bryts med hjälp av en vattenmolekyl. Motsatsen till kondensation."
+    },
+    {
+      "id": "k1-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Stolform",
+      "svar": "Den vikta form en sockerring verkligen har. Ringen är inte plan, eftersom bindningsvinklarna är ungefär 109 grader."
+    },
+    {
+      "id": "k1-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Alfa- och beta-glukos",
+      "svar": "De två ringformer glukos kan bilda. Skillnaden är åt vilket håll en OH-grupp pekar. Alfa ger stärkelse, beta ger cellulosa."
+    },
+    {
+      "id": "k1-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Aktivt säte",
+      "svar": "Den ficka i ett enzym där reaktionen sker. Dess form och laddningar avgör vilka molekyler enzymet kan arbeta med."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k1-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Vad händer när två sockerringar kopplas ihop?",
+      "svar": "En OH-grupp från den ena och ett H från den andra lämnar och bildar vatten. Kvar blir en glykosidbindning."
+    },
+    {
+      "id": "k1-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför kan du smälta potatis men inte papper?",
+      "svar": "Båda är glukoskedjor, men i cellulosa är varannan ring vänd ett halvt varv. Amylas passar inte den formen, och människan saknar enzym som gör det."
+    },
+    {
+      "id": "k1-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför bryts inte dina bindningar av allt vatten i kroppen?",
+      "svar": "Reaktionen skulle gå åt det hållet, men den går oerhört långsamt utan enzym. En peptidbindning tar flera hundra år att brytas av sig själv."
+    },
+    {
+      "id": "k1-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför räcker en vänd sockerring för att stänga ute ett enzym?",
+      "svar": "Det aktiva sätet är format efter en bestämd geometri. Vänds ringen sitter bindningen i en annan vinkel, och molekylen kan inte lägga sig rätt i fickan."
+    }
+  ]
+}

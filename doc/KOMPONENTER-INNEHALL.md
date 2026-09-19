@@ -7,7 +7,7 @@
 > Innehållssessioner ser inte CSS — bara HTML. För att producera
 > fungerande markup måste de exakta klassnamnen vara dokumenterade.
 
-**Senast uppdaterad:** 2026-09-18 (v1.6)
+**Senast uppdaterad:** 2026-09-19 (v1.6)
 **Version:** 1.6 (Kemi)
 **DELAD-BAS:** v1.1 — måste matcha över alla ämnen
 **Ärvd från:** KOMPONENTER-INNEHALL-GEOGRAFI v1.6
@@ -1076,6 +1076,30 @@ ritstil för strukturformler.
 (`lib-notation.js`: `mathrm{C}_nmathrm{H}_{2n+2}`, aldrig `ce{}`). **Inuti en SVG** når MathJax inte in: där
 sätts de som SVG-text med nedsänkta index (`<tspan>`) och **kursivt n**, så att de ser ut som i löptexten (k2-c3).
 En bildspec ska inte be om `(...)` i en bild.
+
+**Färgsignaler i strukturformlerna** (v1.6). Tre signaler används samtidigt från och med Organisk kemi 6 *Livets molekyler*,
+och de ska betyda samma sak i alla delkapitel som använder dem:
+
+| Signal | Färg | Betyder | Sedan |
+|---|---|---|---|
+| Röd atom | `#C0392B` | syre | delkapitel 4 *Alkoholer* |
+| Blå atom | `#3D6BA8` | kväve | delkapitel 6 *Livets molekyler* |
+| Grön ring | `#5a9668`, tunn linje | den funktionella grupp som är bildens poäng (karboxyl-, hydroxyl-, aminogrupp) | delkapitel 5 (karboxylgruppen), utvidgad i 6 |
+| Gul markering | `#e8c547`, fylld cirkel bakom atomen | det som lämnar i en kondensation | L9, M3, M7 |
+
+Primitiverna och molekylmodellen är delade sedan 2026-09-19 (`verktyg/lib-svg-bokstav.js`, lyfta ur delkapitel 5:s ritverktyg
+utan att någon tidigare bild ändrades).
+
+**Kondensationsbilderna har en gemensam uppställning** (`verktyg/lib-kondensation.js`): esterbindningen (k5-l9),
+glykosidbindningen (k6-m3) och peptidbindningen (k6-m7) ritas i samma tre steg, med samma stegrubriker, samma placering
+(det som lämnar OH till vänster, det som lämnar H till höger), samma vattenruta, samma gula och gröna markeringar och samma
+bildmått (960 × 720). Bara molekylerna skiljer. Ritverktyget jämför de tre filerna programmatiskt vid varje bygge.
+
+**Nivåbundna begrepp kan öppnas i ett senare delkapitel** (Joachim 2026-09-19). *Hydrolys* (Fördjupning i delkapitel 5),
+*vätebindning* (Fördjupning i 4) och *van der Waals-krafter* (Fördjupning i 2) står på Standard i delkapitel 6, eftersom
+texten inte kan förklara kondensation/hydrolys, cellulosans styrka och de mättade fetternas fasthet utan dem. DOM-kontrollen
+av nivåbundna begrepp gäller per delkapitel, så de tidigare delkapitlen påverkas inte. Ett begrepp som var för svårt i ett
+tidigt delkapitel kan vara rimligt när boken byggts på.
 
 ---
 

@@ -1,0 +1,124 @@
+{
+  "avsnitt": 2,
+  "titel": "Fetter är estrar",
+  "delkapitel": "livets-molekyler",
+  "version": "1.0",
+  "kort_totalt": 16,
+  "_kommentar": "Flipcards för avsnitt 2 (Fetter är estrar), delkapitel Livets molekyler. 12 begreppskort + 4 modellkort = 16 kort; inga redogörelsekort (KEMI-TILLAGG §2). Formler som \\(\\ce{...}\\) renderas via KemiFormler-hooken i flipcards.js. Byggd ur doc/leveranser/livets-molekyler/flipcards.md.",
+  "begreppskort": [
+    {
+      "id": "k2-b1",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Triglycerid",
+      "svar": "En fettmolekyl: glycerol med tre fettsyror bundna med esterbindningar."
+    },
+    {
+      "id": "k2-b2",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fettsyra",
+      "svar": "Organisk syra med lång kolkedja, oftast tolv till tjugofyra kolatomer."
+    },
+    {
+      "id": "k2-b3",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Mättad fettsyra",
+      "svar": "Fettsyra med bara enkelbindningar. Kedjan är rak och packas tätt."
+    },
+    {
+      "id": "k2-b4",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Omättad fettsyra",
+      "svar": "Fettsyra med minst en dubbelbindning. Kedjan får en knyck."
+    },
+    {
+      "id": "k2-b5",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Enkelomättad",
+      "svar": "Fettsyra med en dubbelbindning."
+    },
+    {
+      "id": "k2-b6",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Fleromättad",
+      "svar": "Fettsyra med två eller flera dubbelbindningar."
+    },
+    {
+      "id": "k2-b7",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Van der Waals-krafter",
+      "svar": "Svaga attraktionskrafter mellan molekyler. Många kontaktpunkter ger tillsammans en stark attraktion."
+    },
+    {
+      "id": "k2-b8",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Vegetabiliskt fett",
+      "svar": "Fett från växtriket. Säger var fettet kommer ifrån, inte hur molekylerna ser ut."
+    },
+    {
+      "id": "k2-b9",
+      "type": "begrepp",
+      "niva": "grundlaggande",
+      "fraga": "Lipas",
+      "svar": "Enzym som bryter esterbindningarna i fett."
+    },
+    {
+      "id": "k2-b10",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Cis och trans",
+      "svar": "De två sätt en dubbelbindning kan sitta på. Cis ger en knyck, trans ger en nästan rak kedja."
+    },
+    {
+      "id": "k2-b11",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Härdning",
+      "svar": "Att tillsätta väte till omättade fettsyror så att flytande olja blir fast."
+    },
+    {
+      "id": "k2-b12",
+      "type": "begrepp",
+      "niva": "fordjupning",
+      "fraga": "Harskning",
+      "svar": "Att fett förstörs, antingen genom hydrolys som frigör luktande fettsyror eller genom att syre angriper dubbelbindningarna."
+    }
+  ],
+  "modellkort": [
+    {
+      "id": "k2-m1",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför är smör fast och olivolja flytande?",
+      "svar": "Smör har mest mättade fettsyror med raka kedjor som packas tätt. Olivolja har omättade med knyckar som hindrar packningen."
+    },
+    {
+      "id": "k2-m2",
+      "type": "modell",
+      "niva": "grundlaggande",
+      "fraga": "Varför har ett fett just tre fettsyror?",
+      "svar": "För att glycerol har tre hydroxylgrupper, och varje grupp kan bilda en esterbindning."
+    },
+    {
+      "id": "k2-m3",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför blandar sig inte olja med vatten, trots att fettsyror har en vattenvänlig ände?",
+      "svar": "I en triglycerid är alla tre karboxylgrupperna upptagna i esterbindningar. Det finns ingen vattenvänlig del kvar."
+    },
+    {
+      "id": "k2-m4",
+      "type": "modell",
+      "niva": "fordjupning",
+      "fraga": "Varför härsknar fiskolja snabbast av alla fetter?",
+      "svar": "Den har flest dubbelbindningar. Kolatomen bredvid en dubbelbindning angrips lätt av syre, och varje dubbelbindning är en svag punkt till."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" width="960" height="720" role="img" aria-labelledby="t">
+  <title id="t">Två aminosyror kopplas ihop i tre steg. Den vänstra lämnar en OH-grupp från sin karboxylgrupp, den högra en väteatom från sin aminogrupp. De bildar vatten, och kvar blir en peptidbindning mellan kolatomen och kväveatomen</title>
+  <text x="30" y="60"    font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668" text-anchor="start">Steg 1 – utgångsämnena</text>
+  <line x1="123" y1="120" x2="143" y2="120" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-C"   data-steg="1" data-molekyl="aminosyra-v"/>
+  <line x1="169" y1="120" x2="189" y2="120" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"   data-steg="1" data-molekyl="aminosyra-v"/>
+  <line x1="99.3" y1="112.62" x2="82.91" y2="101.31" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-H"   data-steg="1" data-molekyl="aminosyra-v"/>
+  <line x1="99.3" y1="127.38" x2="82.91" y2="138.69" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-H"   data-steg="1" data-molekyl="aminosyra-v"/>
+  <line x1="156" y1="133" x2="156" y2="145" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-steg="1" data-molekyl="aminosyra-v"/>
+  <line x1="156" y1="107" x2="156" y2="99" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-R"   data-steg="1" data-molekyl="aminosyra-v"/>
+  <line x1="198.4" y1="107" x2="198.4" y2="99" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="1" data-molekyl="aminosyra-v"/>
+  <line x1="205.6" y1="107" x2="205.6" y2="99" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="1" data-molekyl="aminosyra-v"/>
+  <line x1="215" y1="120" x2="235" y2="120" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="1" data-molekyl="aminosyra-v"/>
+  <line x1="261" y1="120" x2="285" y2="120" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"   data-steg="1" data-molekyl="aminosyra-v"/>
+  <text x="110" y="126.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#3D6BA8" font-weight="bold" data-atom="N"  data-steg="1" data-molekyl="aminosyra-v">N</text>
+  <text x="156" y="126.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-steg="1" data-molekyl="aminosyra-v">C</text>
+  <text x="202" y="126.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-steg="1" data-molekyl="aminosyra-v">C</text>
+  <text x="75.5" y="102.85"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="1" data-molekyl="aminosyra-v">H</text>
+  <text x="75.5" y="150.45"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="1" data-molekyl="aminosyra-v">H</text>
+  <text x="156" y="160.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="1" data-molekyl="aminosyra-v">H</text>
+  <rect x="141" y="73" width="30" height="26" fill="#5a9668" fill-opacity="0.18" rx="4" stroke="#5a9668" stroke-width="1.2" data-sidokedja="1"/>
+  <text x="156" y="92.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#5a9668" font-weight="bold" data-atom="R"  data-steg="1" data-molekyl="aminosyra-v">R</text>
+  <text x="202" y="92.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-steg="1" data-molekyl="aminosyra-v">O</text>
+  <circle cx="248" cy="120" r="15" fill="#e8c547" stroke="none" stroke-width="0" fill-opacity="0.75" data-lamnar="vanster-OH"/>
+  <text x="248" y="126.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O" data-mark="vanster-OH" data-steg="1" data-molekyl="aminosyra-v">O</text>
+  <circle cx="294" cy="120" r="15" fill="#e8c547" stroke="none" stroke-width="0" fill-opacity="0.75" data-lamnar="vanster-OH"/>
+  <text x="294" y="126.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H" data-mark="vanster-OH" data-steg="1" data-molekyl="aminosyra-v">H</text>
+  <ellipse cx="241.1" cy="104.7" rx="64.4" ry="44.2" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="karboxyl" data-steg="1"/>
+  <line x1="583" y1="120" x2="603" y2="120" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-C"   data-steg="1" data-molekyl="aminosyra-h"/>
+  <line x1="629" y1="120" x2="649" y2="120" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"   data-steg="1" data-molekyl="aminosyra-h"/>
+  <line x1="559.3" y1="112.62" x2="542.91" y2="101.31" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-H"   data-steg="1" data-molekyl="aminosyra-h"/>
+  <line x1="559.3" y1="127.38" x2="542.91" y2="138.69" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-H"   data-steg="1" data-molekyl="aminosyra-h"/>
+  <line x1="616" y1="133" x2="616" y2="145" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-steg="1" data-molekyl="aminosyra-h"/>
+  <line x1="616" y1="107" x2="616" y2="99" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-R"   data-steg="1" data-molekyl="aminosyra-h"/>
+  <line x1="658.4" y1="107" x2="658.4" y2="99" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="1" data-molekyl="aminosyra-h"/>
+  <line x1="665.6" y1="107" x2="665.6" y2="99" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="1" data-molekyl="aminosyra-h"/>
+  <line x1="675" y1="120" x2="695" y2="120" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="1" data-molekyl="aminosyra-h"/>
+  <line x1="721" y1="120" x2="745" y2="120" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"   data-steg="1" data-molekyl="aminosyra-h"/>
+  <text x="570" y="126.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#3D6BA8" font-weight="bold" data-atom="N"  data-steg="1" data-molekyl="aminosyra-h">N</text>
+  <text x="616" y="126.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-steg="1" data-molekyl="aminosyra-h">C</text>
+  <text x="662" y="126.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-steg="1" data-molekyl="aminosyra-h">C</text>
+  <circle cx="535.5" cy="96.2" r="15" fill="#e8c547" stroke="none" stroke-width="0" fill-opacity="0.75" data-lamnar="hoger-H"/>
+  <text x="535.5" y="102.85"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H" data-mark="hoger-H" data-steg="1" data-molekyl="aminosyra-h">H</text>
+  <text x="535.5" y="150.45"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="1" data-molekyl="aminosyra-h">H</text>
+  <text x="616" y="160.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="1" data-molekyl="aminosyra-h">H</text>
+  <rect x="601" y="73" width="30" height="26" fill="#5a9668" fill-opacity="0.18" rx="4" stroke="#5a9668" stroke-width="1.2" data-sidokedja="1"/>
+  <text x="616" y="92.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#5a9668" font-weight="bold" data-atom="R"  data-steg="1" data-molekyl="aminosyra-h">R</text>
+  <text x="662" y="92.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-steg="1" data-molekyl="aminosyra-h">O</text>
+  <text x="708" y="126.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-steg="1" data-molekyl="aminosyra-h">O</text>
+  <text x="754" y="126.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="1" data-molekyl="aminosyra-h">H</text>
+  <ellipse cx="556" cy="120" rx="44" ry="38" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="amino" data-steg="1"/>
+  <text x="156" y="196" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold">aminosyra</text>
+  <text x="616" y="196" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold">aminosyra</text>
+  <text x="393" y="90"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic" fill="#2d4a35">dessa två lämnar</text>
+  <line x1="333" y1="96" x2="453" y2="96" stroke="#e8c547" stroke-width="3" stroke-linecap="round" />
+  <text x="30" y="280"    font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668" text-anchor="start">Steg 2 – vattnet lämnar</text>
+  <line x1="123" y1="340" x2="143" y2="340" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-C"   data-steg="2" data-molekyl="aminosyra-v"/>
+  <line x1="169" y1="340" x2="189" y2="340" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"   data-steg="2" data-molekyl="aminosyra-v"/>
+  <line x1="99.3" y1="332.62" x2="82.91" y2="321.31" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-H"   data-steg="2" data-molekyl="aminosyra-v"/>
+  <line x1="99.3" y1="347.38" x2="82.91" y2="358.69" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-H"   data-steg="2" data-molekyl="aminosyra-v"/>
+  <line x1="156" y1="353" x2="156" y2="365" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-steg="2" data-molekyl="aminosyra-v"/>
+  <line x1="156" y1="327" x2="156" y2="319" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-R"   data-steg="2" data-molekyl="aminosyra-v"/>
+  <line x1="198.4" y1="327" x2="198.4" y2="319" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="2" data-molekyl="aminosyra-v"/>
+  <line x1="205.6" y1="327" x2="205.6" y2="319" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="2" data-molekyl="aminosyra-v"/>
+  <text x="110" y="346.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#3D6BA8" font-weight="bold" data-atom="N"  data-steg="2" data-molekyl="aminosyra-v">N</text>
+  <text x="156" y="346.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-steg="2" data-molekyl="aminosyra-v">C</text>
+  <text x="202" y="346.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-steg="2" data-molekyl="aminosyra-v">C</text>
+  <text x="75.5" y="322.85"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="2" data-molekyl="aminosyra-v">H</text>
+  <text x="75.5" y="370.45"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="2" data-molekyl="aminosyra-v">H</text>
+  <text x="156" y="380.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="2" data-molekyl="aminosyra-v">H</text>
+  <rect x="141" y="293" width="30" height="26" fill="#5a9668" fill-opacity="0.18" rx="4" stroke="#5a9668" stroke-width="1.2" data-sidokedja="1"/>
+  <text x="156" y="312.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#5a9668" font-weight="bold" data-atom="R"  data-steg="2" data-molekyl="aminosyra-v">R</text>
+  <text x="202" y="312.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-steg="2" data-molekyl="aminosyra-v">O</text>
+  <line x1="215.8" y1="340" x2="238.8" y2="340" stroke="#e8c547" stroke-width="2.6" stroke-linecap="round" data-stub="1" data-steg="2" data-molekyl="aminosyra-v"/>
+  <line x1="583" y1="340" x2="603" y2="340" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-C"   data-steg="2" data-molekyl="aminosyra-h"/>
+  <line x1="629" y1="340" x2="649" y2="340" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"   data-steg="2" data-molekyl="aminosyra-h"/>
+  <line x1="559.3" y1="347.38" x2="542.91" y2="358.69" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-H"   data-steg="2" data-molekyl="aminosyra-h"/>
+  <line x1="616" y1="353" x2="616" y2="365" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-steg="2" data-molekyl="aminosyra-h"/>
+  <line x1="616" y1="327" x2="616" y2="319" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-R"   data-steg="2" data-molekyl="aminosyra-h"/>
+  <line x1="658.4" y1="327" x2="658.4" y2="319" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="2" data-molekyl="aminosyra-h"/>
+  <line x1="665.6" y1="327" x2="665.6" y2="319" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="2" data-molekyl="aminosyra-h"/>
+  <line x1="675" y1="340" x2="695" y2="340" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="2" data-molekyl="aminosyra-h"/>
+  <line x1="721" y1="340" x2="745" y2="340" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"   data-steg="2" data-molekyl="aminosyra-h"/>
+  <text x="570" y="346.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#3D6BA8" font-weight="bold" data-atom="N"  data-steg="2" data-molekyl="aminosyra-h">N</text>
+  <text x="616" y="346.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-steg="2" data-molekyl="aminosyra-h">C</text>
+  <text x="662" y="346.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-steg="2" data-molekyl="aminosyra-h">C</text>
+  <text x="535.5" y="370.45"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="2" data-molekyl="aminosyra-h">H</text>
+  <text x="616" y="380.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="2" data-molekyl="aminosyra-h">H</text>
+  <rect x="601" y="293" width="30" height="26" fill="#5a9668" fill-opacity="0.18" rx="4" stroke="#5a9668" stroke-width="1.2" data-sidokedja="1"/>
+  <text x="616" y="312.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#5a9668" font-weight="bold" data-atom="R"  data-steg="2" data-molekyl="aminosyra-h">R</text>
+  <text x="662" y="312.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-steg="2" data-molekyl="aminosyra-h">O</text>
+  <text x="708" y="346.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-steg="2" data-molekyl="aminosyra-h">O</text>
+  <text x="754" y="346.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="2" data-molekyl="aminosyra-h">H</text>
+  <line x1="559.65" y1="332.86" x2="542.4" y2="320.96" stroke="#e8c547" stroke-width="2.6" stroke-linecap="round" data-stub="1" data-steg="2" data-molekyl="aminosyra-h"/>
+  <rect x="338" y="282" width="124" height="96" fill="#e8c547" fill-opacity="0.35" rx="8" data-del="vattenruta"/>
+  <line x1="389.52" y1="329.69" x2="377.26" y2="338.68" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"   data-steg="2" data-molekyl="vatten"/>
+  <line x1="410.48" y1="329.69" x2="422.74" y2="338.68" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"   data-steg="2" data-molekyl="vatten"/>
+  <text x="400" y="328.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-steg="2" data-molekyl="vatten">O</text>
+  <text x="370" y="350.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="2" data-molekyl="vatten">H</text>
+  <text x="430" y="350.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="2" data-molekyl="vatten">H</text>
+  <text x="400" y="370" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold"><tspan>H</tspan><tspan font-size="0.7em" dy="0.3em">2</tspan><tspan dy="-0.3em" fill="#C0392B" data-o="1">O</tspan></text>
+  <line x1="466" y1="300" x2="466" y2="248.8" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" />
+  <polygon points="466,240 470.4,248.8 461.6,248.8" fill="#2d4a35" />
+  <text x="466" y="232" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-style="italic">lämnar</text>
+  <text x="480" y="422" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic">OH från karboxylgruppen och H från aminogruppen bildar vatten</text>
+  <text x="30" y="500"    font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#5a9668" text-anchor="start">Steg 3 – peptidbindningen</text>
+  <line x1="263" y1="560" x2="283" y2="560" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-C"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="309" y1="560" x2="329" y2="560" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="239.3" y1="552.62" x2="222.91" y2="541.31" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-H"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="239.3" y1="567.38" x2="222.91" y2="578.69" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-H"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="296" y1="573" x2="296" y2="585" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="296" y1="547" x2="296" y2="539" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-R"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="338.4" y1="547" x2="338.4" y2="539" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="345.6" y1="547" x2="345.6" y2="539" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="355" y1="560" x2="375" y2="560" stroke="#5a9668" stroke-width="3.2" stroke-linecap="round" data-bind="C-N" data-mark="peptidbindning"  data-steg="3" data-molekyl="peptid"/>
+  <line x1="388" y1="573" x2="388" y2="585" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-H"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="401" y1="560" x2="421" y2="560" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="N-C"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="447" y1="560" x2="467" y2="560" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-C"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="434" y1="573" x2="434" y2="585" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-H"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="434" y1="547" x2="434" y2="539" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-R"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="476.4" y1="547" x2="476.4" y2="539" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="483.6" y1="547" x2="483.6" y2="539" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="493" y1="560" x2="513" y2="560" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="C-O"   data-steg="3" data-molekyl="peptid"/>
+  <line x1="539" y1="560" x2="563" y2="560" stroke="#2d4a35" stroke-width="2.2" stroke-linecap="round" data-bind="O-H"   data-steg="3" data-molekyl="peptid"/>
+  <text x="250" y="566.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#3D6BA8" font-weight="bold" data-atom="N"  data-steg="3" data-molekyl="peptid">N</text>
+  <text x="296" y="566.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-steg="3" data-molekyl="peptid">C</text>
+  <text x="342" y="566.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-steg="3" data-molekyl="peptid">C</text>
+  <text x="215.5" y="542.85"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="3" data-molekyl="peptid">H</text>
+  <text x="215.5" y="590.45"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="3" data-molekyl="peptid">H</text>
+  <text x="296" y="600.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="3" data-molekyl="peptid">H</text>
+  <rect x="281" y="513" width="30" height="26" fill="#5a9668" fill-opacity="0.18" rx="4" stroke="#5a9668" stroke-width="1.2" data-sidokedja="1"/>
+  <text x="296" y="532.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#5a9668" font-weight="bold" data-atom="R"  data-steg="3" data-molekyl="peptid">R</text>
+  <text x="342" y="532.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-steg="3" data-molekyl="peptid">O</text>
+  <text x="388" y="566.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#3D6BA8" font-weight="bold" data-atom="N"  data-steg="3" data-molekyl="peptid">N</text>
+  <text x="388" y="600.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="3" data-molekyl="peptid">H</text>
+  <text x="434" y="566.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-steg="3" data-molekyl="peptid">C</text>
+  <text x="480" y="566.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2d4a35" font-weight="bold" data-atom="C"  data-steg="3" data-molekyl="peptid">C</text>
+  <text x="434" y="600.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="3" data-molekyl="peptid">H</text>
+  <rect x="419" y="513" width="30" height="26" fill="#5a9668" fill-opacity="0.18" rx="4" stroke="#5a9668" stroke-width="1.2" data-sidokedja="1"/>
+  <text x="434" y="532.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#5a9668" font-weight="bold" data-atom="R"  data-steg="3" data-molekyl="peptid">R</text>
+  <text x="480" y="532.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-steg="3" data-molekyl="peptid">O</text>
+  <text x="526" y="566.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#C0392B" font-weight="bold" data-atom="O"  data-steg="3" data-molekyl="peptid">O</text>
+  <text x="572" y="566.65"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.34" fill="#2d4a35"  data-atom="H"  data-steg="3" data-molekyl="peptid">H</text>
+  <ellipse cx="365" cy="560" rx="30" ry="20" fill="none" stroke="#5a9668" stroke-width="1.4" data-ring="peptidbindning" data-steg="3"/>
+  <line x1="365" y1="582" x2="365" y2="616" stroke="#5a9668" stroke-width="1.2" stroke-linecap="round" />
+  <text x="365" y="632"   text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="bold" fill="#5a9668">peptidbindning</text>
+  <text x="388" y="660" fill="#2d4a35"  text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold">dipeptid – två aminosyror i kedja</text>
+  <text x="420" y="698" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" text-anchor="end">aminosyra + aminosyra</text>
+  <text x="540" y="698" fill="#2d4a35"   font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" text-anchor="start">peptid + vatten</text>
+  <line x1="440" y1="690" x2="520" y2="690" stroke="#2d4a35" stroke-width="1.6" stroke-linecap="round" />
+  <line x1="520" y1="690" x2="513" y2="685" stroke="#2d4a35" stroke-width="1.6" stroke-linecap="round" />
+  <line x1="440" y1="696" x2="520" y2="696" stroke="#2d4a35" stroke-width="1.6" stroke-linecap="round" />
+  <line x1="440" y1="696" x2="447" y2="701" stroke="#2d4a35" stroke-width="1.6" stroke-linecap="round" />
+</svg>
