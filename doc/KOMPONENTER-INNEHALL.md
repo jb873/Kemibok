@@ -9,7 +9,7 @@
 
 **Senast uppdaterad:** 2026-09-19 (v1.6)
 **Version:** 1.6 (Kemi)
-**DELAD-BAS:** v1.1 — måste matcha över alla ämnen
+**DELAD-BAS:** v1.2 — måste matcha över alla ämnen
 **Ärvd från:** KOMPONENTER-INNEHALL-GEOGRAFI v1.6
 **Källa för alla mallar:** Geografis v1.6 (DOM-verifierad hero-banner) + Historias mappstruktur
 
@@ -50,7 +50,7 @@ känner igen *ämnet*).
   samtidigt **och höj DELAD-BAS-versionen**.
 - 🎨 **ÄMNESEGET** — får skilja sig per ämne. Ändra fritt.
 
-**DELAD-BAS: v1.1** — höj (i alla ämnen samtidigt) närhelst en 🔗-sektion ändras.
+**DELAD-BAS: v1.2** — höj (i alla ämnen samtidigt) närhelst en 🔗-sektion ändras.
 
 ### Sektionskarta
 
@@ -70,6 +70,7 @@ känner igen *ämnet*).
 | DEL 4.6 — faktaruta | 🎨 ÄMNESEGET (ny, ej byggd) |
 | DEL 5 — Ej dokumenterade (boklokal lista) | 🎨 ÄMNESEGET |
 | DEL 6 — Process | 🔗 DELAD |
+| DEL 6 — Verifieringsregler (V1–V10, A1) | 🔗 DELAD |
 | DEL 7 — Föreläsning | 🔗 DELAD |
 | DEL 8 — Formler och notation | 🎨 ÄMNESEGET |
 | DEL 9 — Färgkonvention för bilder | 🎨 ÄMNESEGET |
@@ -796,6 +797,48 @@ Om HTML och CSS är internt motstridiga: **CSS vinner.**
 5. Komponenten läggs till i denna fil
 6. Loggas i `PLATTFORMS-ANDRINGAR.md` som Typ C-ändring
 
+### Verifieringsregler — och vad som vaktar dem
+
+**🔗 DELAD** · DELAD-BAS v1.2 · kanoniserad 2026-10-01, bevisad i matematikbygget (Spår 3)
+
+**META-PRINCIP: en regel som bara står nedskriven glöms.** Det har hänt sju gånger i
+mattearbetet. Varje *bevisad* regel ska vaktas av en **grind eller ett kontrakt**, inte bara
+dokumenteras. Dokumentet stoppar *ovetande*; bara enforcement stoppar *regression*. Vid varje
+ny regel: fråga **"vad vaktar den?"** — står svaret tomt är regeln ännu inte skyddad.
+
+Kolumnen **Vad vaktar den** är ärlig. Står det ett verktyg finns ett prov som fäller när regeln
+bryts. Står cellen tom finns ingen mätning, och regeln bärs bara av att någon minns den.
+**En tom cell är en TODO, inte ett klartecken.** Den ska skava.
+
+#### Verifiering — varje ämne med interaktivitet eller JS
+
+| # | Regel | Vad vaktar den (kemi) |
+|---|---|---|
+| V1 | **Verifiera i headless Chromium**, inte enbart node-harness — harness ger falska gröna bockar. Skalet puppeterar motorns **publika kontroller**, aldrig internt state (testa som en elev). | `verktyg/verifiera.js` — CDP-körare (mönstret från mattens `cdp-kor.js`); mäter även nätväg och konsolfel |
+| V2 | **En grind ska negativt verifieras** — återinför felet och se att den fäller. En grind som aldrig fällt är inte bevisad. |  |
+| V3 | **Mät effekten, inte attributet.** Ett kontrakt som mäter *formen* blir ett hinder för allt som gör rätt på annat sätt. |  |
+| V4 | **Mät det eleven ser**, inte det första som råkar matcha i DOM-ordningen. |  |
+| V5 | **Synlighet hör till beviset.** Ett grönt logikprov kan dölja en tom rendering. |  |
+| V6 | **Ett bevis på en vy säger inget om de andra.** Mät per flik, per blad, per årskurs/sida. |  |
+| V7 | **Mät innan du tror på utfallet.** Grinden har flera gånger fällt något som var rätt. |  |
+| V8 | **Kör grindarna en i taget.** Parallella körningar ger falska träffar. |  |
+| V9 | **Nya sidor måste in i grindarnas listor** — annars växer material utanför mätningen. |  |
+| V10 | **Generatorer: äkta oberoende slump**, verifierad med runs-test/autokorrelation — inte bara "inga dubbletter" (gäller varje ämne med slumpade uppgifter: matte, flipcards, tidslinjeövningar). |  |
+
+#### Arkitektur — alla ämnen
+
+| # | Regel | Vad vaktar den (kemi) |
+|---|---|---|
+| A1 | **Delade moduler, inte kopior.** En kopia driver isär även när den är märkt som kopia. DELAD-basen ärvs/synkas; kopieras aldrig. |  |
+
+En av elva rader har ett verktyg. **Tio har ingen.** `verifiera.js` kör proben i en riktig sida — men ingenting kontrollerar att den körts, att den negativt verifierats, eller att en ny sida kommit in i någon lista.
+
+> **Vad den här sektionen ersätter.** Av de elva reglerna stod **en** nedskriven förut: V1,
+> som prosa i DEL 6 i Kemiboken och Svenskboken. Det blockcitatet står kvar ordagrant där
+> det står — den här sektionen utökar det, ersätter det inte. Geografiboken och Historiaboken
+> hade inte ens den. **V10 fanns inte nedskriven någonstans.** De övriga nio
+> bars av praxis i mattearbetet utan att vara kanon i något ämne.
+
 ---
 
 ## DEL 7 — Föreläsnings-komponenten
@@ -1295,6 +1338,7 @@ När osäker — kolla referensimplementationen **plus** CSS:n **plus** JS:n. **
 ## Revisionshistorik
 **🎨 boklokal**
 
+- **DELAD-BAS v1.2 (2026-10-01):** Verifieringsreglerna kanoniserade i DEL 6 — tio verifieringsregler (V1–V10) och en arkitekturregel (A1), bevisade i matematikbygget, med kolumnen *vad vaktar den* per ämne. Inget befintligt ersatt: headless-posten i DEL 6 står kvar ordagrant och utökas. **DELAD-BAS höjd till v1.2** (höjs i alla ämnen samtidigt). Bokversionen i filnamnet oförändrad.
 - **v1.5 (2026-09-15/16):** DEL 10 – `[formel]`-märkningen är informativ (byggaren upptäcker formler själv); allmänna formler
   som kortsvarsfacit (mhchem i matematikläge + skrivbar form); 9.5 – ett ritsätt för molekyler per delkapitel (bokstavsstil i Kolväten, cirkelstil i
   Kolatomen) och allmänna formler i SVG som SVG-text med nedsänkta index och kursivt n; (...) endast i löptext
